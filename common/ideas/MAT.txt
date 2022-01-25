@@ -1,0 +1,113 @@
+ideas = {
+    country = {
+	    MAT_red_neoshumirism = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = 0.10
+			metacommy_drift = 0.01
+			political_power_factor = 0.10
+			}
+		}
+		MAT_KiberElektrichking = {
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			fascism_drift = 0.03
+			democratic_drift = 0.03
+			political_power_factor = -0.3
+			conscription_factor = -0.15
+			research_speed_factor = -0.05
+			}
+		}
+		MAT_Krasnaya_brigada_Tsukanova = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			vmestolev_drift = 0.03
+			political_power_factor = -0.3
+			conscription = -0.02
+			conscription_factor = -0.15
+			}
+		}
+		
+		MAT_YgZapad_bastion = {
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
+				}
+				targeted_modifier = {
+				tag = UKR
+				defense_bonus_against = 0.1
+			    }
+			     targeted_modifier = {
+				tag = KUR
+				defense_bonus_against = 0.1
+			    }
+		}
+		
+	}
+	
+	political_advisor = {
+
+        Anton_Dolzhansky = {
+        picture = idea_Anton_Dolzhansky
+            allowed = {
+                original_tag = MAT 
+				
+            }
+			available = {}
+            traits = { smooth_talking_charmer }
+        }
+	}
+	industrial_concern = {
+	    MAT_zablokorovano_hakerami = {
+		
+			
+			allowed = {
+				original_tag = MAT
+			}
+			
+
+			
+			research_bonus = {
+				industry = -0.15
+				electronics = -0.15
+			}
+			
+			traits = { zablokorovano_hakerami }
+			
+			modifier = {
+			}
+		}
+	}
+}	

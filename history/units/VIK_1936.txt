@@ -1,0 +1,151 @@
+division_template = {
+	name = "Московские стрельцы" 
+
+	division_names_group = VIK_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		
+	}
+	priority = 1
+}
+division_template = {
+	name = "Белые люди"
+
+	division_names_group = VIK_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+        support = {
+		artillery = { x = 0 y = 0 }
+    }
+	}
+	priority = 2
+}
+
+units = {
+	
+	division = {
+		name = "1-я дивизия Московских стельцов"
+		location = 350
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Элитная гвардия боебаб"
+		location = 301
+		division_template = "Белые люди"
+		start_experience_factor = 0.9
+	}
+	
+	division = {
+		name = "Кремлёвкий Полк"
+		location = 813
+		division_template = "Белые люди"
+		start_experience_factor = 0.9
+	}
+	
+    division = {
+		name = "2-я дивизия Московских стельцов"
+		location = 3327
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3-я дивизия Московских стельцов"
+		location = 11268
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "1-я дивизия Навальнят"
+		location = 214
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2-я дивизия Навальнят"
+		location = 254
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3-я дивизия Навальнят"
+		location = 6269
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Путлер Уходи!"
+		location = 11349
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Без права на досрочное!"
+		location = 6348
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "1-я центриская дивизия" 
+		location = 11282
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2-я центриская дивизия" 
+		location = 11330
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3-я центриская дивизия" 
+		location = 6316
+		division_template = "Московские стрельцы"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "Курильчане"
+		location = 121
+		division_template = "Белые люди"
+		start_experience_factor = 0.9
+	}
+	}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VIC"
+		}
+		requested_factories = 3
+		progress = 0.78
+		efficiency = 100
+	}
+}

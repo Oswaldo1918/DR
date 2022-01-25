@@ -1,0 +1,2319 @@
+###Фокусы_Дока
+focus_tree = {
+	id = Lazaret
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LAZ
+		}
+	} 
+	
+	continuous_focus_position = { x = 2 y = 1200 }
+	
+	default = no
+	
+	focus = {
+		id = LAZ_postanovka_voprosa
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10 
+		x = 17
+		y = 0
+		select_effect = {
+			country_event = { id = lazaret.0  days = 1 }
+		}
+			completion_reward = {
+					add_political_power = 150
+					add_stability = 0.05
+				}
+
+	}
+
+	focus = {
+		id = LAZ_KNOR_politica
+		icon = GFX_LAZ_vopros_vnutr_2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_postanovka_voprosa
+		}
+		x = 5
+		y = 1
+		select_effect = {
+			country_event = { id = lazaret.5  days = 17 }
+			
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = vmestolev
+				popularity = 0.05
+			country_event = { id = lazaret.7  days = 2 }
+			}
+	    }
+	}
+	
+
+	focus = {
+		id = LAZ_velikaya_chistka
+		icon = GFX_focus_spr_class_war
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_politica
+		}
+		
+		x = 7
+		y = 2
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = LAZ_develop_science
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_politica
+		}
+		
+		x = 5
+		y = 5
+			completion_reward = {
+add_research_slot = 1
+}
+	}
+	
+	focus = {
+		id = LAZ_rasstrelat_kerbonavtistov
+		icon = GFX_LAZ_focus_shoot_monstr 
+		cost = 5
+		prerequisite = {
+			focus = LAZ_zagovor_sredi_oldov
+			focus = LAZ_zagovor_v_armii
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+		 custom_effect_tooltip = LAZ_effect_tt
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_manpower = -100
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.01
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.01
+                }
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_manpower = -1000
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.02
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.02
+                }
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_manpower = -10000
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.05
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.05
+                }
+			}
+		}
+	}
+	focus = {
+		id = LAZ_rasstrelyat_chumakistov
+		icon = GFX_LAZ_chistka_2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_zagovor_v_armii
+			focus = LAZ_zagovor_sredi_oldov
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+		custom_effect_tooltip = LAZ_effect_tt
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_manpower = -100
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.01
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.01
+                }
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_manpower = -1000
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.02
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.02
+                }
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_manpower = -10000
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.05
+                }
+				add_popularity = {
+                    ideology = vmestolev
+                    popularity = 0.05
+                }
+			}
+		}
+	}
+	focus = {
+		id = LAZ_zagovor_v_armii
+		icon = GFX_LAZ_chistka_1
+		cost = 5
+		prerequisite = {
+			focus = LAZ_velikaya_chistka
+		}
+		mutually_exclusive = {
+			focus = LAZ_zagovor_sredi_oldov
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+		custom_effect_tooltip = LAZ_effect_tt
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_manpower = -100
+				add_war_support = 0.05
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_manpower = -1000
+				add_war_support = 0.15
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_manpower = -10000
+				add_war_support = 0.25
+			}
+		}
+	}
+	focus = {
+		id = LAZ_zagovor_sredi_oldov
+		icon = GFX_LAZ_focus_reznya
+		cost = 5
+		prerequisite = {
+			focus = LAZ_velikaya_chistka
+		}
+mutually_exclusive = {
+			focus = LAZ_zagovor_v_armii
+		}
+		x = 6
+		y = 3
+        completion_reward = {
+		custom_effect_tooltip = LAZ_effect_tt
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_manpower = -100
+				add_stability = 0.05
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_manpower = -1000
+				add_stability = 0.5
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_manpower = -10000
+				add_stability = 0.15
+			}
+		}
+	}
+	focus = {
+		id = LAZ_pokusheniye_na_Kerbonavta
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5
+		prerequisite = {
+			focus = LAZ_rasstrelat_kerbonavtistov
+		}
+		prerequisite = {
+			focus = LAZ_rasstrelyat_chumakistov
+		}
+		x = 7
+		y = 5
+        completion_reward = {
+			country_event = { id = lazaret.8 }
+		}
+	}
+	focus = {
+		id = LAZ_komitet_chernogo_spiska
+		icon = GFX_focus_cht_world_soc_language
+		cost = 5
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = LAZ_KNOR_politica
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_ideas = LAZ_idea_KChS_0
+				create_intelligence_agency = yes
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_ideas = LAZ_idea_KChS_1
+				create_intelligence_agency = yes
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_ideas = LAZ_idea_KChS_2
+				create_intelligence_agency = yes
+			}
+		}
+	}
+	focus = {
+		id = LAZ_spisok_levih
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = LAZ_komitet_chernogo_spiska
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+add_stability = 0.05
+add_political_power = -50
+}
+
+	}
+	focus = {
+		id = LAZ_spisok_pravih
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		prerequisite = {
+			focus = LAZ_komitet_chernogo_spiska
+		}
+		x = 4
+		y = 3
+			completion_reward = {
+add_war_support = 0.1
+add_political_power = -50
+}
+
+	}
+	focus = {
+		id = LAZ_KNOR_voyenka
+		icon = GFX_LAZ_vopros_army
+		cost = 5
+		prerequisite = {
+			focus = LAZ_postanovka_voprosa
+		}
+		x = 16
+		y = 1
+			completion_reward = {
+					army_experience = 10
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = LAZ_plan_lazaret_united_army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_voyenka
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_lazaret_moderat_army
+		}
+		available = {
+					has_completed_focus = LAZ_zagovor_sredi_oldov
+				}
+		x = 12
+		y = 2
+			completion_reward = {
+
+					swap_ideas = {
+							remove_idea = LAZ_razdutyy_apparat_moderov
+							add_idea = LAZ_plan_lazaret_united_army
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_chistit_moderatorov
+		icon = GFX_focus_cht_klonirovanie
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_lazaret_united_army
+		}
+		
+		x = 11
+		y = 3
+			completion_reward = {
+					army_experience = 5
+							add_ideas = LAZ_chistka_moderatorov
+						
+				}
+
+	}
+	focus = {
+		id = LAZ_soktatit_polnomochia_moderatorov
+		icon = GFX_goal_demand_sudetenland
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_lazaret_united_army
+		}
+		
+		x = 13
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAZ_plan_lazaret_united_army
+							add_idea = LAZ_soktatit_polnomochia_moderatorov
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_dobrovolcheskiye_korpusa
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = LAZ_soktatit_polnomochia_moderatorov
+		}
+		x = 13
+		y = 4
+			completion_reward = {
+			add_war_support = 0.05
+					swap_ideas = {
+							remove_idea = LAZ_soktatit_polnomochia_moderatorov
+							add_idea = LAZ_dobrovolcheskiye_korpusa
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_noviy_sostav
+		icon = GFX_focus_generic_little_entente
+		cost = 5
+		prerequisite = {
+			focus = LAZ_chistit_moderatorov
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+					army_experience = 20
+					swap_ideas = {
+							remove_idea = LAZ_chistka_moderatorov
+							add_idea = LAZ_noviy_sostav
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_tankovaya_armia
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		prerequisite = {
+			focus = LAZ_ofitseri_iz_moderatorov
+			focus = LAZ_moderatorskiye_otryadi
+	        focus = LAZ_dobrovolcheskiye_korpusa
+			focus = LAZ_noviy_sostav
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_plan_lazaret_moderat_army
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_voyenka
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_lazaret_united_army
+		}
+		available = {
+					has_completed_focus = LAZ_zagovor_v_armii
+				}
+		x = 20
+		y = 2
+			completion_reward = {
+					add_political_power = 50
+					swap_ideas = {
+							remove_idea = LAZ_razdutyy_apparat_moderov
+							add_idea = LAZ_plan_lazaret_moderat_army
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_razvitiye_artillerii
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_lazaret_moderat_army
+			focus = LAZ_plan_lazaret_united_army
+		}
+		x = 16
+		y = 3
+			completion_reward = {
+			army_experience = 10
+		add_tech_bonus = {
+				 name = LAZ_vooruzh_bonus
+				 bonus = 0.5
+				 uses = 2
+				 category = artillery
+				 category = infantry_tech
+				 category = infantry_weapons
+				 
+			    }
+}
+
+	}
+	focus = {
+		id = LAZ_razvitiye_PVO
+		icon = GFX_LAZ_Anti_Air_Guns
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_artillerii
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+add_tech_bonus = {
+			name = artillery_bonus
+			bonus = 0.7
+			uses = 2
+			technology = interwar_antiair
+			technology = antiair1
+			technology = antiair2
+			technology = antiair3
+			technology = antiair4
+			technology = antiair5
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_razvitiye_PTO
+		icon = GFX_LAZ_Anti_Tank_Guns
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_artillerii
+		}
+		x = 17
+		y = 4
+			completion_reward = {
+add_tech_bonus = {
+			name = artillery_bonus
+			bonus = 0.7
+			uses = 2
+			technology = interwar_antitank
+			technology = antitank1
+			technology = antitank2
+			technology = antitank3
+			technology = antitank4
+			technology = antitank5
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_bogi_voyni
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_PTO
+			focus = LAZ_razvitiye_PVO
+		}
+		x = 16
+		y = 5
+			completion_reward = {
+add_tech_bonus = {
+				 name = artillery_bonus
+				 bonus = 1.0
+				 uses = 2
+				 category = artillery
+				 category = rocketry
+			    }
+}
+
+	}
+	focus = {
+		id = LAZ_bronya_krepka
+		icon = GFX_focus_generic_army_tanks2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_bogi_voyni
+		}
+		prerequisite = {
+			focus = LAZ_tankovaya_armia
+		}
+		x = 14
+		y = 6
+			completion_reward = {
+			add_ideas = LAZ_bronya_krepka
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_lazaret_milita
+		icon = GFX_focus_chi_army_reform
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_lazaret_moderat_army
+		}
+		x = 19
+		y = 3
+			completion_reward = {
+			add_war_support = 0.05
+					add_ideas = LAZ_opolchenie
+				}
+
+	}
+	focus = {
+		id = LAZ_moderatorskiye_otryadi
+		icon = GFX_focus_mex_caudillo_private_armies
+		cost = 5
+		prerequisite = {
+			focus = LAZ_lazaret_milita
+		}
+		prerequisite = {
+			focus = LAZ_rasshirit_polnomochia_moderatorov
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAZ_opolchenie
+							add_idea = LAZ_opolchenie2
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_rasshirit_polnomochia_moderatorov
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_lazaret_moderat_army
+		}
+		x = 21
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAZ_plan_lazaret_moderat_army
+							add_idea = LAZ_rasshirit_polnomochia_moderatorov
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_obyedinyonnoye_komandovaniye
+		icon = GFX_goal_continuous_increase_nu
+		cost = 5
+		prerequisite = {
+			focus = LAZ_ofitseri_iz_moderatorov
+			focus = LAZ_moderatorskiye_otryadi
+	        focus = LAZ_dobrovolcheskiye_korpusa
+			focus = LAZ_noviy_sostav
+		}
+		
+		x = 19
+		y = 5
+			completion_reward = {
+					army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					if = {
+			limit = {
+				LAZ = {
+				is_in_faction_with = ARK
+			    is_in_faction_with = DON
+			    is_in_faction_with = UNT
+			    is_in_faction_with = MAT
+			    is_in_faction_with = WHS
+			    
+			}
+			}
+			ARK = {
+			army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					}
+			DON = {
+			army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					}
+			UNT = {
+			army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					}
+			MAT = {
+			army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					}	
+			WHS = {
+			army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					}		
+					
+		}	
+				}
+
+	}
+	focus = {
+		id = LAZ_ofitseri_iz_moderatorov
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = {
+			
+			focus = LAZ_rasshirit_polnomochia_moderatorov
+		}
+		x = 21
+		y = 4
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = LAZ_rasshirit_polnomochia_moderatorov
+							add_idea = LAZ_ofitseri_iz_moderatorov
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_lichnaya_initsiaviva_ofitserov
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		
+		prerequisite = {
+			focus = LAZ_ofitseri_iz_moderatorov
+			focus = LAZ_bogi_voyni
+			focus = LAZ_tankovaya_armia
+			focus = LAZ_motorizovannaya_armia
+		}
+		
+		x = 18
+		y = 6
+			completion_reward = {
+					add_ideas = LAZ_lichnaya_initsiaviva_ofitserov
+				}
+
+	}
+	focus = {
+		id = LAZ_seteviye_strimi_po_hoi
+		icon = GFX_focus_eng_special_air_service
+		cost = 5
+		
+		prerequisite = {
+			focus = LAZ_obyedinyonnoye_komandovaniye
+			focus = LAZ_bogi_voyni
+			focus = LAZ_tankovaya_armia
+			focus = LAZ_motorizovannaya_armia
+		}
+		x = 20
+		y = 6
+			completion_reward = {
+			        army_experience = 50
+					navy_experience = 15
+					air_experience = 15
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.2
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LAZ_flot
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		prerequisite = {
+			focus = LAZ_seteviye_strimi_po_hoi
+		}
+		x = 22
+		y = 7
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+        }
+		completion_reward = {
+			navy_experience = 10
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+
+	}
+	focus = {
+		id = LAZ_eskorti
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+		prerequisite = {
+			focus = LAZ_flot
+		}
+		mutually_exclusive = {
+			focus = LAZ_podlodki
+		}
+		x = 21
+		y = 8
+			completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+
+	}
+	focus = {
+		id = LAZ_podlodki
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		prerequisite = {
+			focus = LAZ_flot
+		}
+		mutually_exclusive = {
+			focus = LAZ_eskorti
+		}
+		x = 23
+		y = 8
+			completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+
+	}
+	focus = {
+		id = LAZ_KNOR_economica
+		icon = GFX_LAZ_vopros_econom
+		cost = 5
+		prerequisite = {
+			focus = LAZ_postanovka_voprosa
+		}
+		x = 30
+		y = 1
+			completion_reward = {
+country_event = { id = lazaret.11  days = 1 }
+}
+
+	}
+	focus = {
+		id = LAZ_plan_Untsa
+		icon = GFX_LAZ_plan_untz
+		cost = 2
+		prerequisite = {
+			focus = LAZ_KNOR_economica
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_Seregina
+			focus = LAZ_plan_Kurakova
+			focus = LAZ_plan_Morito
+		}
+		x = 25
+		y = 2
+			completion_reward = {
+#country_event = { id = lazaret.11  days = 1 }
+}
+
+	}
+	focus = {
+		id = LAZ_razvitiye_mekhanizastii
+		icon = GFX_goal_generic_production2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Untsa
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+                        add_ideas = LAZ_razvitiye_mekhanizastii 
+            }
+
+	}
+	focus = {
+		id = LAZ_plan_Seregina
+		icon = GFX_LAZ_plan_seregin
+		cost = 2
+		prerequisite = {
+			focus = LAZ_KNOR_economica
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_Untsa
+			focus = LAZ_plan_Kurakova
+			focus = LAZ_plan_Morito
+		}
+		x = 28
+		y = 2
+			completion_reward = {
+#country_event = { id = lazaret.12  days = 1 }
+}
+
+	}
+	focus = {
+		id = LAZ_usilit_rabochiy_kontrol
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Untsa
+			focus = LAZ_plan_Seregina
+		}
+		x = 26
+		y = 3
+			completion_reward = {
+        add_ideas = LAZ_rabochiy_kontrol
+}
+
+	}
+	focus = {
+		id = LAZ_bankovskaya_reforma
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Seregina
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+                add_ideas = LAZ_bankovskaya_reforma  
+            }
+
+	}
+	focus = {
+		id = LAZ_restavratsiya_MTS
+		icon = GFX_LAZ_focus_kolhoz
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_mekhanizastii
+			focus = LAZ_bankovskaya_reforma
+		}
+		prerequisite = {
+			focus = LAZ_usilit_rabochiy_kontrol
+		}
+		mutually_exclusive = {
+			focus = LAZ_rabochiye_gruppi_APK
+			focus = LAZ_rezvitiye_potrebitelskoy_kooperatsii
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+            swap_ideas = {
+				remove_idea = LAZ_rabochiy_kontrol
+				add_idea = LAZ_restavratsiya_MTS
+						 }
+			add_timed_idea = {
+				idea = LAZ_building_MTS
+				days = 90
+						     }						
+            }
+
+	}
+	focus = {
+		id = LAZ_sozdaniye_AGPU
+		icon = GFX_LAZ_violet_tomato
+		cost = 5
+		prerequisite = {
+			focus = LAZ_rezvitiye_potrebitelskoy_kooperatsii
+		}
+		
+		x = 30
+		y = 5
+			completion_reward = {
+            add_stability = 0.05
+			add_ideas = LAZ_AGPU
+            }
+
+	}
+	focus = {
+		id = LAZ_komitet_moderov_gosplana
+		icon = GFX_focus_cht_socialist_chudo
+		cost = 5
+		prerequisite = {
+			focus = LAZ_bankovskaya_reforma
+		}
+		x = 28
+		y = 5
+			completion_reward = {
+            add_ideas = LAZ_komitet_moderov_gosplana
+            }
+
+	}
+	
+	focus = {
+		id = LAZ_kolhoz_imeni_Indrzhikha
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Seregina
+			
+		}
+		x = 30
+		y = 3
+			completion_reward = {
+                add_ideas = LAZ_new_collectivization 
+				random_owned_controlled_state = {
+				    add_extra_state_shared_building_slots = 1
+				}
+        		random_owned_controlled_state = {
+				    add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {
+				    add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {
+				    add_extra_state_shared_building_slots = 1
+				}
+				random_owned_controlled_state = {
+				    add_extra_state_shared_building_slots = 1
+				}
+            }
+
+	}
+	focus = {
+		id = LAZ_plan_Kurakova
+		icon = GFX_LAZ_plan_kurakov
+		cost = 2
+		prerequisite = {
+			focus = LAZ_KNOR_economica
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_Untsa
+			focus = LAZ_plan_Seregina
+			focus = LAZ_plan_Morito
+		}
+		x = 32
+		y = 2
+			completion_reward = {
+#country_event = { id = lazaret.13  days = 1 }
+}
+
+	}
+	focus = {
+		id = LAZ_zadrait_diry
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Kurakova
+		}
+		x = 32
+		y = 3
+			completion_reward = {
+                        add_ideas =  LAZ_zadrait_diry
+            }
+
+	}
+	focus = {
+		id = LAZ_rezvitiye_potrebitelskoy_kooperatsii
+		icon = GFX_LAZ_focus_potreb_coop
+		cost = 5
+		prerequisite = {
+			focus = LAZ_kolhoz_imeni_Indrzhikha
+			focus = LAZ_zadrait_diry
+		}
+		mutually_exclusive = {
+			focus = LAZ_restavratsiya_MTS
+			focus = LAZ_rabochiye_gruppi_APK
+		}
+		x = 30
+		y = 4
+		    completion_reward = {
+                        add_ideas =  LAZ_potrebitelskoy_kooperatsii
+            }
+
+	}
+	focus = {
+		id = LAZ_ukrepit_fundament
+		icon = GFX_goal_generic_construction
+		cost = 5
+		prerequisite = {
+			focus = LAZ_zadrait_diry
+		}
+		x = 32
+		y = 5
+			completion_reward = {
+                        random_owned_controlled_state = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+                        random_owned_controlled_state = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+						random_owned_controlled_state = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+						random_owned_controlled_state = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+						228 = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+						258 = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+						260 = {              
+                                add_building_construction = {
+                                   type = infrastructure
+                                   level = 2
+                                   instant_build = yes
+                                }
+                        }
+            }
+
+	}
+	focus = {
+		id = LAZ_sliyaniye_munitsip_i_skh
+		icon = GFX_goal_generic_position_armies
+		cost = 5
+		prerequisite = {
+			focus = LAZ_restavratsiya_MTS
+		}
+		x = 26
+		y = 5
+			completion_reward = {
+                add_ideas = LAZ_sliyaniye_munitsip_i_skh
+            }
+
+	}
+	focus = {
+		id = LAZ_plan_Morito
+		icon = GFX_LAZ_plan_morito
+		cost = 2
+		prerequisite = {
+			focus = LAZ_KNOR_economica
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_Untsa
+			focus = LAZ_plan_Seregina
+			focus = LAZ_plan_Kurakova
+		}
+		x = 35
+		y = 2
+			completion_reward = {
+#country_event = { id = lazaret.14  days = 1 }
+}
+
+	}
+	focus = {
+		id = LAZ_agropredpriyatiya
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Kurakova
+			focus = LAZ_plan_Morito
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+                        add_ideas = LAZ_agroreformy
+            }
+
+	}
+	focus = {
+		id = LAZ_rabochiye_gruppi_APK
+		icon = GFX_LAZ_focus_work_group_APC
+		cost = 5
+		prerequisite = {
+			focus = LAZ_agropredpriyatiya
+		}
+		mutually_exclusive = {
+			focus = LAZ_restavratsiya_MTS
+			focus = LAZ_rezvitiye_potrebitelskoy_kooperatsii
+		}
+		x = 34
+		y = 4
+			completion_reward = {
+                        swap_ideas = {
+							remove_idea = LAZ_agroreformy
+							add_idea = LAZ_agroreformy_1
+					    }
+				 
+		    }
+    }
+
+	focus = {
+		id = LAZ_agrosuburbanizatsiya
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = LAZ_rabochiye_gruppi_APK
+		}
+		x = 34
+		y = 5
+			completion_reward = {
+                        swap_ideas = {
+							remove_idea = LAZ_agroreformy_1
+							add_idea = LAZ_agroreformy_2
+					    }
+				 
+		    }
+	}
+	focus = {
+		id = LAZ_razvitiye_exporta
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		prerequisite = {
+			focus = LAZ_sozdaniye_AGPU
+			focus = LAZ_agrosuburbanizatsiya
+		}
+		x = 33
+		y = 6
+			completion_reward = {
+			    add_ideas = export_focus
+                add_ideas = LAZ_razvitiye_exporta
+				add_timed_idea = {
+                idea = LAZ_smena_vektora_ecomoki
+                days = 120 
+                } 
+           }
+
+	}
+	focus = {
+		id = LAZ_modernizatsiya_flota
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_eskorti
+			focus = LAZ_podlodki
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+            navy_experience = 50
+            }
+
+	}
+	focus = {
+		id = LAZ_sem_novih_avianostsev
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+		prerequisite = {
+			focus = LAZ_modernizatsiya_flota
+		}
+		x = 22
+		y = 10
+			completion_reward = {
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = LAZ_ukrepleniye_ekonom_sv_mezhdu_klikami
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_mekhanizastii
+		}
+		x = 24
+		y = 4
+			completion_reward = {
+add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+							if = {
+			limit = {
+				LAZ = {
+				is_in_faction_with = ARK
+			    is_in_faction_with = DON
+			    is_in_faction_with = UNT
+			    is_in_faction_with = MAT
+			    is_in_faction_with = WHS
+			    
+			}
+			}
+			ARK = {
+
+					add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+					}
+			DON = {
+
+					add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+					}
+			UNT = {
+
+					add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+					}
+			MAT = {
+		
+					add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+					}	
+			WHS = {
+			
+					add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+					}		
+					
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_voyennye_vivisticii_v_kiki
+		icon = GFX_goal_generic_build_tank
+		cost = 5
+		
+		prerequisite = {
+			focus = LAZ_ukrepleniye_ekonom_sv_mezhdu_klikami
+		}
+		
+		x = 22
+		y = 5
+	completion_reward = {
+random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+							if = {
+			limit = {
+				LAZ = {
+				is_in_faction_with = ARK
+			    is_in_faction_with = DON
+			    is_in_faction_with = UNT
+			    is_in_faction_with = MAT
+			    is_in_faction_with = WHS
+			    
+			}
+			}
+			ARK = {
+
+			random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+					}
+			DON = {
+
+					random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+					}
+			UNT = {
+
+				random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+					}
+			MAT = {
+		
+					random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+					}	
+			WHS = {
+			
+					random_owned_controlled_state = {
+add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+                               }
+					}		
+					
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_razvitiye_raketnikh_tehnologiy
+		icon = GFX_focus_rocketry
+		cost = 5
+		prerequisite = {
+			focus = LAZ_ukrepleniye_ekonom_sv_mezhdu_klikami
+		}
+		x = 24
+		y = 5
+			completion_reward = {
+                add_tech_bonus = {
+                name = jet_rocket_bonus
+                ahead_reduction = 2
+                uses = 2
+                category = rocketry
+                category = jet_technology
+                }
+            }
+
+	}
+	focus = {
+		id = LAZ_dvoyniye_drudodni
+		icon = GFX_LAZ_focus_trudodny
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_raketnikh_tehnologiy
+		}
+		prerequisite = {
+			focus = LAZ_sliyaniye_munitsip_i_skh
+		}
+		x = 25
+		y = 6
+			completion_reward = {
+                        add_ideas = LAZ_dvoyniye_drudodni  
+            }
+
+	}
+	focus = {
+		id = LAZ_razvitiye_torgovogo_flota
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		prerequisite = {
+			focus = LAZ_flot
+		}
+		x = 25
+		y = 8
+			completion_reward = {
+            add_ideas = LAZ_razvitiye_torgovogo_flota
+}
+
+	}
+	
+	focus = {
+		id = LAZ_KNOR_po_chatu
+		icon = GFX_The_Tank_That_Haunts_The_World
+		cost = 5
+		prerequisite = {
+			focus = LAZ_spisok_pravih
+		}
+		prerequisite = {
+			focus = LAZ_spisok_levih
+		}
+		prerequisite = {
+			focus = LAZ_pokusheniye_na_Kerbonavta
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+country_event = { id = lazaret.10  days = 1 }
+}
+
+	}
+	focus = { #Полная_оккупация_чата
+		id = LAZ_plan_doka 
+		icon = GFX_LAZ_plan_Doka 
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_po_chatu
+		}
+		mutually_exclusive = {
+			
+			focus = LAZ_plan_shtazista
+		}
+		x = 4
+		y = 7
+			completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = CHT
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CDR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = DRC
+						}
+create_wargoal = {
+							type = annex_everything
+							target = DGC
+						}
+	create_wargoal = {
+							type = annex_everything
+							target = CCO
+						}
+create_wargoal = {
+							type = annex_everything
+							target = VTC
+						}
+	create_wargoal = {
+							type = annex_everything
+							target = CVT
+						}					
+}
+
+	}
+	
+		
+	focus = {
+		id = LAZ_plan_shtazista #Поддержка_штазиста_интеграция_доступна_после_достижения_развитого_социализма
+		icon = GFX_LAZ_plan_shtazi
+		cost = 5
+		prerequisite = {
+			focus = LAZ_KNOR_po_chatu
+		}
+		mutually_exclusive = {
+			
+			focus = LAZ_plan_doka
+		}
+		x = 2
+		y = 7
+		available = {
+					OR = {
+					CHT = { has_government = vmestolev }
+					DRC = { has_government= vmestolev }
+					CDR = { has_government = vmestolev }
+					}
+				}
+			completion_reward = {
+ if = {
+			limit = {
+				CHT = { has_government = vmestolev }
+			}
+			LAZ = {
+		 add_to_faction = CHT
+		 declare_war_on = {
+		        target = CVT
+		        type = annex_everything}
+		  }
+		}
+	 else_if = {
+			limit = {
+				OR = {
+				DRC = { has_government= vmestolev }
+				CDR = { has_government = vmestolev }
+				}
+			}
+			LAZ = {
+		 		 add_to_faction = DRC
+				 add_to_faction = CDR
+ declare_war_on = {
+		        target = VTC
+		        type = annex_everything
+				} 
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything
+				}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything
+				}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything
+				}
+		  }
+		}
+	else = {
+    create_wargoal = {
+							type = annex_everything
+							target = CHT
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CDR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = DRC
+						}
+create_wargoal = {
+							type = annex_everything
+							target = DGC
+						}
+	create_wargoal = {
+							type = annex_everything
+							target = CCO
+						}
+create_wargoal = {
+							type = annex_everything
+							target = VTC
+						}
+	create_wargoal = {
+							type = annex_everything
+							target = CVT
+						}
+}	
+	
+		
+}
+	}
+	focus = {
+		id = LAZ_rsfsr
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_plan_doka
+			focus = LAZ_plan_shtazista
+		}
+		available = {
+					controls_state = 195
+			        controls_state = 219
+			        controls_state = 217
+					controls_state = 222
+					controls_state = 260
+					controls_state = 214
+				}
+		x = 3
+		y = 8
+			completion_reward = {
+                set_cosmetic_tag = LAZ_rsfsr
+				set_province_name = { id = 3529 name = "Сталинград" }
+            }
+
+	}
+	focus = {
+		id = LAZ_mirniy_atom
+		icon = GFX_focus_wonderweapons
+		cost = 5
+		prerequisite = {
+			focus = LAZ_razvitiye_raketnikh_tehnologiy
+			focus = LAZ_komitet_moderov_gosplana
+			focus = LAZ_ukrepit_fundament
+		}
+		x = 29
+		y = 6
+			completion_reward = {
+                add_tech_bonus = {
+                    name = nuclear_bonus
+                    ahead_reduction = 2
+                    category = nuclear
+                }
+            }
+
+	}
+	
+	focus = {
+		id = LAZ_obyedinyonnaya_voyennaya_konseptsia
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 5
+		prerequisite = {
+			focus = LAZ_bronya_krepka
+			focus = LAZ_lichnaya_initsiaviva_ofitserov
+			focus = LAZ_seteviye_strimi_po_hoi
+			focus = LAZ_narodnaya_planovaya_shkola
+		}
+		x = 18
+		y = 7
+			completion_reward = {
+add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+}
+
+	}
+	focus = {
+		id = LAZ_narodnaya_planovaya_shkola
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		prerequisite = {
+			focus = LAZ_motorizovannaya_armia
+		}
+		x = 11
+		y = 6
+			completion_reward = {
+add_ideas = LAZ_narodnaya_planovaya_shkola
+}
+
+	}
+	focus = {
+		id = LAZ_motorizovannaya_armia
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = LAZ_ofitseri_iz_moderatorov
+			focus = LAZ_moderatorskiye_otryadi
+	        focus = LAZ_dobrovolcheskiye_korpusa
+			focus = LAZ_noviy_sostav
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+
+	}
+	focus = {
+		id = LAZ_upravleniye_voennoy_infrastructuroi
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = LAZ_narodnaya_planovaya_shkola
+			focus = LAZ_bronya_krepka
+			focus = LAZ_lichnaya_initsiaviva_ofitserov
+			focus = LAZ_seteviye_strimi_po_hoi
+		}
+		x = 15
+		y = 7
+			completion_reward = {
+add_ideas = LAZ_upravleniye_voennoy_infrastructuroi
+}
+
+	}
+	focus = {
+		id = LAZ_denatsionalizatsiya
+		icon = GFX_focus_mex_privatisation
+		cost = 5
+		prerequisite = {
+			focus = LAZ_plan_Morito
+		}
+		x = 36
+		y = 3
+			completion_reward = {
+                        add_political_power = 200
+						random_owned_controlled_state = {
+                                add_building_construction = {
+                                type = industrial_complex
+                                level = -1
+                                instant_build = yes
+                                }
+                        }
+						random_owned_controlled_state = {
+                                add_building_construction = {
+                                type = industrial_complex
+                                level = -1
+                                instant_build = yes
+                                }
+                        }
+						random_owned_controlled_state = {
+                                add_building_construction = {
+                                type = industrial_complex
+                                level = -1
+                                instant_build = yes
+                                }
+                        }
+						random_owned_controlled_state = {
+                                add_building_construction = {
+                                type = industrial_complex
+                                level = -1
+                                instant_build = yes
+                                }
+                        }
+            }
+
+	}
+	focus = {
+		id = LAZ_podderzhka_startapov
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = LAZ_denatsionalizatsiya
+		}
+		x = 36
+		y = 4
+			completion_reward = {
+                    random_list = {
+                       55 = {
+                       add_political_power = -50
+                       }
+                       15 = {
+                            add_tech_bonus = {
+                            name = industrial_bonus
+                            bonus = 1.0
+                            uses = 1
+                            category = industry
+                            }
+                       }
+                       15 = {
+                            add_tech_bonus = {
+                            name = secret_bonus
+                            bonus = 1.0
+                            uses = 1
+                            category = electronics
+                            }
+                       }
+                       15 = {
+                       add_political_power = 150
+                       }
+                    }  
+            }
+
+	}
+	focus = {
+		id = LAZ_prioritet_himproma
+		icon = GFX_focus_generic_tungsten
+		cost = 5
+		prerequisite = {
+			focus = LAZ_podderzhka_startapov
+		}
+		x = 36
+		y = 5
+			completion_reward = {
+                    add_tech_bonus = {
+                       name = GER_coal_liquidization
+                       bonus = 3.0
+                       uses = 1
+                       category = synth_resources
+                    }
+                   if = {
+                      random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                                type = synthetic_refinery
+                                level = 1
+                                instant_build = yes
+                        }
+                      }
+					  random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                                type = synthetic_refinery
+                                level = 1
+                                instant_build = yes
+                        }
+                      }
+					  random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                                type = synthetic_refinery
+                                level = 1
+                                instant_build = yes
+                        }
+                      }
+					  random_owned_controlled_state = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                                type = synthetic_refinery
+                                level = 1
+                                instant_build = yes
+                        }
+                      }
+                    } 
+            }
+
+	}
+	focus = {
+		id = LAZ_svobodnaya_torgovlya
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = LAZ_prioritet_himproma
+		}
+		prerequisite = {
+			focus = LAZ_agrosuburbanizatsiya
+		}
+		x = 35
+		y = 6
+			completion_reward = {
+                        add_ideas = free_trade
+            }
+
+	}
+	focus = {
+		id = LAZ_stroitelstvo_verfei
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		prerequisite = {
+			focus = LAZ_flot
+		}
+		x = 19
+		y = 8
+			completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+
+	}
+	focus = {
+		id = LAZ_reyd_po_sortiram
+		icon = GFX_LAZ_udar_sortir_ver_3
+		cost = 5
+		prerequisite = {
+			focus = LAZ_upravleniye_voennoy_infrastructuroi
+		}
+		x = 15
+		y = 8
+			completion_reward = {
+			country_event = { id = lazaret.24 }
+add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_obucheniye_drozdov
+		icon = GFX_LAZ_focus_drozdi1
+		cost = 5
+		prerequisite = {
+			focus = LAZ_reyd_po_sortiram
+		}
+		x = 13
+		y = 9
+			completion_reward = {
+add_ideas = LAZ_obucheniye_drozdov
+}
+
+	}
+	focus = {
+		id = LAZ_blizhniye_poleti
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_reyd_po_sortiram
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+air_experience = 5
+add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine
+		}
+}
+
+	}
+	focus = {
+		id = LAZ_konstruktsii_samoletov
+		icon = GFX_goal_continuous_air_production
+		cost = 5
+		prerequisite = {
+			focus = LAZ_reyd_po_sortiram
+		}
+		x = 15
+		y = 9
+			completion_reward = {
+air_experience = 35
+add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+}
+
+	}
+	focus = {
+		id = LAZ_dalniye_poleti
+		icon = GFX_focus_usa_escort_fighters
+		cost = 5
+		prerequisite = {
+			focus = LAZ_blizhniye_poleti
+		}
+		prerequisite = {
+			focus = LAZ_konstruktsii_samoletov
+		}
+		x = 16
+		y = 10
+			completion_reward = {
+air_experience = 15
+add_ideas = LAZ_dalniye_poleti
+}
+
+	}
+	focus = {
+		id = LAZ_strategicheskaya_aviatsiya
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+		prerequisite = {
+			focus = LAZ_dalniye_poleti
+		}
+		x = 16
+		y = 11
+			completion_reward = {
+add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+}
+
+	}
+	focus = {
+		id = LAZ_selektsiya_drozdov
+		icon = GFX_LAZ_focus_drozdi2
+		cost = 5
+		prerequisite = {
+			focus = LAZ_obucheniye_drozdov
+		}
+		x = 13
+		y = 10
+			completion_reward = {
+ swap_ideas = {
+				            remove_idea = LAZ_obucheniye_drozdov
+							add_idea = LAZ_selektsiya_drozdov
+				}
+}
+
+	}
+}

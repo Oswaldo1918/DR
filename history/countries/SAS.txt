@@ -1,0 +1,36 @@
+capital = 266
+
+oob = 123_1936
+
+set_research_slots = 4
+set_stability = 0.9
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+    SAS_krupniy_bloger
+}
+
+set_popularities = {
+	vmestolev = 100
+}
+set_politics = {
+	ruling_party = vmestolev
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Сас Великий"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "StAS.dds"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+	Shah_tehnokrat
+	Glav_heyter_internet
+	}
+}

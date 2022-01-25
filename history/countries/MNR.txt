@@ -1,0 +1,48 @@
+capital = 330
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 40
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+set_popularities = {
+	neutrality = 100
+}
+
+
+add_ideas = {
+}
+
+
+
+create_country_leader = {
+	name = "Боцик"
+	desc = "POLITICS_REDEZ_DESC"
+	picture = "Botsik.dds"
+	expire = "1999.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Зедерхан"
+	desc = "POLITICS_REDEZ_DESC"
+	picture = "Lzhezeder.dds"
+	expire = "1999.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}

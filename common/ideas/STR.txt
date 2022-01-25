@@ -1,0 +1,547 @@
+ideas = { 
+
+	country = {
+	    STR_perecos_v_economice = {
+	        picture = great_depression
+			
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    consumer_goods_factor = 0.1
+			    industrial_capacity_factory = 0.03
+			}
+		}
+	    STR_antialchogo = {
+	        picture = GFX_idea_antialchogo
+			
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    stability_factor = -0.25
+			    industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+	    STR_triumph = {
+		    picture = triumphant_will
+			
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    war_support_factor = 0.2
+				stability_factor = 0.2
+			}
+		}
+	    STR_nye_zazhimai_kritiku = {
+		    picture = glastnost
+
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    drift_defence_factor = -0.2
+				democratic_drift = 0.10
+				political_power_gain = -0.05
+			}
+		}
+		STR_golod = {
+		    picture = raj_risk_of_famine
+
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    industrial_capacity_factory = -0.5
+				stability_factor = -0.3
+			}
+		}
+		STR_POK_zapasi_yedi = {
+		    picture = raj_risk_of_famine
+
+ 			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+				monthly_population = 0.2
+			    supply_consumption_factor = -0.1
+			}
+		}
+	    STR_agrarnye_innovatii_0 = {
+		    picture = generic_production_bonus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    industrial_capacity_factory = 0.05
+				research_bonus = {
+				    industry = 0.05
+			    }
+			}
+		}
+	    STR_agrarnye_innovatii_1 = {
+		    picture = generic_production_bonus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = {
+			    industrial_capacity_factory = 0.05
+				research_bonus = {
+				    industry = 0.05
+				}
+				monthly_population = 0.3
+			}
+		}
+	    STR_agrarnye_innovatii_2 = {
+		    picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+
+			modifier = {
+			    industrial_capacity_factory = 0.05
+				monthly_population = 0.8
+			    supply_consumption_factor = -0.05
+				research_bonus = {
+				    industry = 0.05
+			    }
+			}
+		}
+	    STR_otchislili = {
+		    picture = generic_manpower_bonus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = { 
+				research_speed_factor = -0.70
+                stability_factor = -0.50
+				industrial_capacity_factory = -0.50
+			}
+		}
+	    STR_v_armii = {
+		    picture = generic_manpower_bonus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no }
+			
+			modifier = { 
+				research_speed_factor = -0.10
+                stability_factor = -0.10
+                army_org_factor = 0.15
+			}
+		}
+		STR_yebanye_dolgi_0 = {
+		
+			picture = yebanye_dolgi
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = { 
+				research_speed_factor = -0.10
+                stability_factor = -0.30
+                army_org_factor = -0.50
+				industrial_capacity_factory = -0.40
+				consumer_goods_factor = 0.20
+				join_faction_tension = 0.20
+				local_resources_factor = -0.1
+			}
+		}
+		STR_yebanye_dolgi_1 = {
+		
+			picture = yebanye_dolgi
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = { 
+				research_speed_factor = -0.15
+                stability_factor = -0.20
+                army_org_factor = -0.15
+				industrial_capacity_factory = -0.30
+				consumer_goods_factor = 0.15
+				join_faction_tension = 0.20
+				local_resources_factor = -0.1
+			}
+		}
+		STR_yebanye_dolgi_2 = {
+		
+			picture = yebanye_dolgi
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = { 
+				research_speed_factor = -0.10
+                stability_factor = -0.20
+                army_org_factor = -0.20
+				industrial_capacity_factory = -0.20
+				join_faction_tension = 0.20
+				local_resources_factor = -0.1
+			}
+		}
+		STR_yebanye_dolgi_3 = {
+		
+			picture = yebanye_dolgi
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = { 
+				research_speed_factor = -0.5
+                stability_factor = -0.15
+                army_org_factor = -0.10
+				industrial_capacity_factory = -0.10
+				join_faction_tension = 0.20
+				local_resources_factor = -0.05
+			}
+		}
+		STR_yebanye_dolgi_4 = {
+		
+			picture = yebanye_dolgi
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = { 
+                stability_factor = -0.05
+                army_org_factor = -0.05
+				join_faction_tension = 0.20
+				local_resources_factor = -0.02
+			}
+		}
+		STR_spirit_revolt_0 = {
+		    
+			picture = socialist_science_focus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = {
+			    political_power_gain = 0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		STR_spirit_revolt_1 = {
+		
+		    picture = socialist_science_focus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = {
+			    political_power_gain = 0.1
+				conscription_factor = 0.1
+				drift_defence_factor = 0.10
+			}
+		}
+		STR_spirit_revolt_2 = {
+		
+		    picture = socialist_science_focus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = {
+			    political_power_gain = 0.15
+				conscription_factor = 0.10
+				research_speed_factor = 0.15
+				drift_defence_factor = 0.25
+			}
+		}
+		STR_spirit_revolt_3 = {
+		
+		    picture = socialist_science_focus
+			
+			removal_cost = -1 
+				
+			allowed = { always = no } 
+
+			modifier = {
+			    political_power_gain = 0.25
+				conscription_factor = 0.25
+				research_speed_factor = 0.15
+				non_core_manpower = 0.1
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+	} 
+	tank_manufacturer = {
+	    		
+		designer = yes
+		
+		concern_stav_avtorem_disel = {
+		
+   			picture = GFX_idea_concern_stav_avtorem_disel
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		concern_stav_red_metallist = {
+			
+			picture = GFX_idea_concern_stav_red_metallist
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	industrial_concern = {
+				
+		concern_stav_electromech_zavod = {
+		
+		    picture = GFX_idea_concern_stav_electromech_zavod
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		concern_stav_radiozavod_signal = {
+			
+			picture = GFX_idea_concern_stav_radiozavod_signal
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	political_advisor = {
+	    grigoriy_yavlinskiy = {
+		
+	            picture = idea_Iavlinskiy
+			
+			    allowed = {
+				    original_tag = STR
+			    }
+				
+				available = {
+				    has_completed_focus = STR_rinocheg_poreshyaet
+			    }
+			
+			    traits = { captain_of_industry }
+		}
+		
+	    alex_yakovlev = {
+		
+			    picture = idea_Iakovlev
+			
+			    allowed = {
+				    original_tag = STR
+			    }
+				available = {
+				    has_completed_focus = STR_glastnots
+			    }
+			
+			    traits = { popular_figurehead }
+		}
+		
+		dmitriy_zaitsev = {
+		
+	            picture = idea_Dmitriy_Zaitsev
+			
+			    allowed = {
+				    original_tag = STR
+			    }
+			
+			    traits = { tamozhenniy_logist }
+		}
+		
+		pyotr_zvonov_politic = {
+		
+	            picture = idea_Zvonov
+			
+			    allowed = {
+				    original_tag = STR
+			    } 
+				
+				available = {
+				    has_completed_focus = STR_razvityie_zhivotnovodstva
+			    }
+			
+			    traits = { zhivotnovodstvo }
+		}
+		
+	}
+	army_chief = {
+	    alexsei_alexseev = {
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			picture = idea_Alexsei_Alexseev
+			
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	theorist = {
+	    nikilay_makarenko = {
+		
+			picture = idea_Nikilay_Makarenko
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = {  mass_assault_expert  }
+			
+			available = {
+				has_completed_focus = STR_starye_tovarishi
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	    vilkin = {
+		
+			picture = idea_Vilkin
+			
+			allowed = {
+				original_tag = STR
+			}
+			research_bonus = {
+				cat_mobile_warfare = 0.25
+			}
+			
+			traits = { blitzkrieg_theorist }
+			
+			available = {
+				has_completed_focus = STR_izuchit_hroniki_valkiryi
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		} 	
+	}
+	high_command = {
+		isaak_imbramovich = {
+			
+			allowed = {
+				original_tag = STR
+			}
+
+			traits = { army_concealment_2 }
+			
+			picture = idea_Isaak_Imbramovich
+			
+		}
+		
+		iskandir_chingizidov = {
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+            picture = idea_Iskandir_Chingizidov
+			
+			traits = { army_regrouping_2 }
+
+		}
+
+		sergey_putiniatin = {
+			
+			allowed = {
+				original_tag = STR
+			}
+			
+            picture = idea_Sergei_Pytiniatin
+			
+			traits = { army_commando_2 }
+		}
+		
+		pyotr_zvonov_general = {
+		
+	            picture = idea_Zvonov
+			
+			    allowed = {
+				    original_tag = STR
+			    } 
+				
+				available = {
+				    has_completed_focus = STR_razvityie_zhivotnovodstva
+			    }
+			
+			    traits = { army_cavalry_2 }
+		}
+	}
+}

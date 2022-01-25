@@ -1,0 +1,62 @@
+﻿division_template = {
+	name = "Дивизия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = AFG_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-я революционная дивизия"
+		location = 12111
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+		
+   division = {
+		name = "Революционная гвардия"
+		location = 10547
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2-я революционная дивизия"
+		location = 7405
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я революционная дивизия"
+		location = 7337
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "LIM"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}
+

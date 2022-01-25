@@ -1,0 +1,84 @@
+capital = 251
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.6
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_military_police = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	tech_support = 1
+}
+
+
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Царь Де Локсли I"
+	desc = "POLITICS_LOKSLI_DESC"
+	picture = "Deloksli.dds"
+	expire = "1999.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+	}
+	create_country_leader = {
+	name = "Ахора Мазда"
+	desc = "POLITICS_AHORA_DESC"
+	picture = "Ahora.dds"
+	expire = "1999.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+	}
+	create_corps_commander = {
+	name = "Ахора Мазда"
+	picture = "Ahora.dds"
+	traits = { }
+	skill = 2
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+	create_field_marshal = {
+	name = "Царь Де Локсли I"
+	picture = "Deloksli.dds"
+	traits = { }
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+	create_field_marshal = {
+	name = "Random47"
+	picture = ""
+	traits = { }
+	skill = 2
+	
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}

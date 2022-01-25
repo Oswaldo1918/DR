@@ -1,0 +1,243 @@
+ideas = {
+    country = {
+	    OSV_kerb = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			metacommy_drift = 0.01
+			political_power_factor = 0.05
+			}
+		}
+		OSV_kerb_nonactive = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = 0.05
+			political_power_factor = -0.1
+			}
+		}
+		OSV_ceation_of_usloviya = {
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			consumer_goods_factor = 0.1
+			}
+		}
+		OSV_stimulate_class_conflict = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			vmestolev_drift = 0.01
+			fascism_drift = 0.01
+			metacommy_drift = 0.01
+			democratic_drift = 0.01
+            consumer_goods_factor = -0.1
+			drift_defence_factor = 0.1
+			}
+		}
+		OSV_waiting = {
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = 0.1
+war_support_factor = -0.1
+defensive_war_stability_factor = 0.1
+			}
+		}
+		OSV_only_right_books = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = 0.1
+			political_power_factor = 0.1
+			conscription = 0.02
+			research_speed_factor = 0.05
+			}
+		}
+		OSV_nicto_ne_dolzno_meshat = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = 0.1
+			political_power_factor = 0.2
+			research_speed_factor = -0.05
+			}
+		}
+		OSV_only_Kerb_understand = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			party_popularity_stability_factor = 0.1
+			stability_factor  = 0.1
+			political_power_factor = 0.1
+			war_support_factor = 0.1
+			political_advisor_cost_factor = -0.1
+			metacommy_drift = 0.01
+			democratic_drift = 0.01
+			memoism_drift = 0.01
+			}
+		}
+		OSV_wide_selfmanagement = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = 0.1
+			political_power_factor = -0.1
+			}
+		}
+		OSV_end_of_dogma = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			political_power_factor = 0.1
+			war_support_factor = 0.1
+			drift_defence_factor = -0.5
+			}
+		}
+		  OSV_ban_party = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			     army_morale_factor = -0.1
+				 vmestolev_drift = -0.05
+			}
+		}           
+		OSV_rospusk_army = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			    command_power_gain_mult = -0.3
+				army_core_attack_factor = -0.1
+                army_core_defence_factor = -0.1
+                army_org_factor = -0.5
+			
+			}
+		}
+		OSV_Moscow_before_dark = {
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			stability_factor  = -0.1
+			political_power_factor = -0.2
+			}
+		}
+	}
+	
+	political_advisor = {
+
+        Alex_Chumak = {
+        picture = generic_political_advisor_europe_1
+            allowed = {
+                original_tag = OSV 
+				
+            }
+			available = {}
+            traits = { smooth_talking_charmer }
+        }
+		 Maxim_Chastoedov = {
+        picture = generic_political_advisor_europe_2
+            allowed = {
+                original_tag = OSV 
+				
+            }
+			available = {}
+            traits = { prince_of_terror }
+        }
+		Maxim_Nesterov = {
+        picture = generic_political_advisor_europe_3
+            allowed = {
+                original_tag = OSV 
+				
+            }
+			available = {}
+            traits = { silent_workhorse }
+        }
+		Iluya_Zarubin = {
+        picture = generic_political_advisor_europe_3
+            allowed = {
+                original_tag = OSV 
+				
+            }
+			available = {}
+            traits = { Революционный министр культуры }
+        }
+		Hitriy_bitard = {
+        picture = generic_political_advisor_europe_3
+            allowed = {
+                original_tag = OSV 
+				
+            }
+			available = {}
+            traits = { heels_nipper }
+        }
+	}
+}	

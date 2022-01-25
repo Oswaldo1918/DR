@@ -1,0 +1,44 @@
+add_namespace = UNT
+
+	
+#Конец гражданки
+country_event = {
+	id = UNT.1
+	title = UNT.1.t
+	desc = UNT.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UNT.1.a
+	ai_chance = {
+			base = 99
+			
+		}
+	LAZ = {
+	      annex_country = {
+			target = UNT
+			transfer_troops = yes
+		}
+		}
+	UNT = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+	}
+	}
+	
+	option = {
+	name = UNT.1.b
+	ai_chance = {
+			base = 1
+			
+		}
+	LAZ = {
+	create_wargoal = {
+		        target = UNT
+		        type = annex_everything
+			}	
+	}
+}

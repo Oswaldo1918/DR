@@ -1,0 +1,51 @@
+ideas = {
+       country = {
+	       UNT_YgVostok_bastion = {
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
+				}
+			     targeted_modifier = {
+				tag = NOD
+				defense_bonus_against = 0.15
+			    }
+				 targeted_modifier = {
+				tag = KRR
+				defense_bonus_against = 0.1
+			    }
+		    }
+			
+			UNT_indust_po_Untsu = {
+			picture = idea_tur_etatism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_arms_factory_factor = -0.15 
+				production_speed_infrastructure_factor= 0.1 
+				production_speed_industrial_complex_factor = 0.15 
+				conscription_factor = -0.15
+				}
+		    }
+	   }
+		
+}

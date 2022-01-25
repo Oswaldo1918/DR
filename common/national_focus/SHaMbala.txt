@@ -1,0 +1,51 @@
+focus_tree = {
+	id = SHaMbala
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SHM
+		}
+	}
+	default = no
+	focus = {
+		id = SHM_kurovodstvo
+		icon = GFX_SHM_kurovodstvo
+		cost = 2
+		x = 10
+		y = 0
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	

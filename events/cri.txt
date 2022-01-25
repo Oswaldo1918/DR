@@ -1,0 +1,29 @@
+add_namespace = cri
+
+	
+#присоединение к ноду
+country_event = {
+	id = cri.1
+	title = cri.1.t
+	desc = cri.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = cri.1.a
+		ai_chance = {
+			base = 60
+			
+		}
+	NOD = {country_event = { id = nod.17 hours = 20 random_hours = 8 }}
+	}
+	option = {
+	name = cri.1.b
+		ai_chance = {
+			base = 40
+		}
+	NOD = {country_event = { id = nod.18 hours = 20 random_hours = 8 }}
+	}
+}
+ 

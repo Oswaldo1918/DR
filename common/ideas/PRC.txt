@@ -1,0 +1,116 @@
+ideas = {
+    country = {
+	
+	        ZCH_vroraya_warlord_era = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_morale_factor = -0.25
+				  stability_factor = -0.15
+				  army_org_factor = -0.1
+			      war_support_factor = -0.1
+				  conscription = -0.5
+				  ai_get_ally_desire_factor = -100
+			}
+		}
+	
+	        PRC_pohod = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_morale_factor = -0.1
+				  stability_factor = -0.1
+				  army_org_factor = -0.15
+			      war_support_factor = -0.1
+				  ai_get_ally_desire_factor = -100
+			}
+		}
+	
+	        PRC_2_ris = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.1
+				  stability_factor = 0.1
+			}
+		}
+		
+		 PRC_bednost = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.1
+			}
+		}
+		
+		 PRC_xiaomi = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.05
+				  stability_factor = 0.1
+			}
+		}
+		
+		 PRC_huawai = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.1
+				  stability_factor = 0.05
+			}
+		}
+		
+		 PRC_sanatoriy = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  stability_factor = 0.2
+			}
+		}
+		
+     }
+
+}

@@ -1,0 +1,25 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Тупичковые военно-морские силы"			
+		naval_base = 3151  # Copenhagen
+		task_force = {
+			name = "Тупичковый подводный флот"
+			location = 3151  # Copenhagen			
+			ship = { name = "Г-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Гоблин" } } }
+			ship = { name = "Г-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Гоблин" } } }
+			ship = { name = "С-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+			ship = { name = "С-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+			ship = { name = "С-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+			ship = { name = "С-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+            ship = { name = "С-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+            ship = { name = "С-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUP version_name = "Класс Свинка" } } }
+		}		
+        task_force = {
+			name = "Тупичковый флот"
+			location = 3151  # Copenhagen			
+			ship = { name = "Тупичок" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TUP version_name = "Тупичок" } } }
+		}				
+	}
+}

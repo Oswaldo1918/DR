@@ -1,0 +1,33 @@
+capital = 354
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	democratic = 100
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Ким Кардашьян"
+	desc = POLITICS_THORVALD_STAUNING_DESC
+	picture = "Kim.dds"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = { 
+		
+	}
+}

@@ -1,0 +1,35 @@
+################
+  ### CHAT ###
+################
+
+territorii_natsional_4 = { 
+ icon = generic_prospect_for_resources
+		original_tag = VTC
+ allowed = {
+	}
+	visible = {
+		has_completed_focus = CHT_edinnyi_i_nedelymyi	
+	}
+}
+territorii_natsional_Axura_2 = { 
+ icon = generic_prospect_for_resources
+ allowed = {
+		original_tag = VTC
+	}
+	visible = {
+		has_completed_focus = CHT_edinnyi_i_nedelymyi_2
+	}
+}
+
+find_resourcesi_3 = {
+     icon = generic_prospect_for_resources
+     allowed = {
+		original_tag = VTC
+	}
+	 available = { 
+          num_of_civilian_factories > 10
+     }
+	 visible = {
+		has_completed_focus = CCO_progect_Samogon
+	}
+}

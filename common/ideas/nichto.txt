@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+		zzz_nichto = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = usa_great_depression_2
+			
+			modifier = {
+				political_power_cost = 3
+				conscription_factor = -1.0
+				local_resources_factor = -1.0
+				drift_defence_factor = 1.0
+				conscription = -1.0
+				research_speed_factor = -9.0
+				enemy_justify_war_goal_time = 99.99
+				weekly_manpower = -700
+			}
+		}
+	}
+}

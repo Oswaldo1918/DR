@@ -1,0 +1,33 @@
+capital = 398
+
+oob = 123_1936
+
+set_research_slots = 1
+set_stability = 0.2
+set_war_support = 0.3
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	memoism = 100
+}
+set_politics = {
+	ruling_party = memoism
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Дмитрий Соколов"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Sokolov.dds"
+	expire = "1999.1.1"
+	ideology = postironism
+	traits = {
+		
+	}
+}

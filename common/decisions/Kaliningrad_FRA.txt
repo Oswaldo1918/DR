@@ -1,0 +1,39 @@
+KLG_vrag_y_vorot = { #Враг у ворот
+
+	KLG_napadenie_mission = {
+
+		allowed = { always = no }
+
+		available = {
+		    has_goverment = neutrality
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 120
+		
+		fire_only_once = yes                          
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			VSB = {
+			    add_state_core = 763
+			    declare_war_on = {
+        		    target = KLG
+        		    type = annex_everything
+        	    }
+			}	
+			LUB = {
+			    add_state_core = 763
+			    declare_war_on = {
+    	    	    target = KLG
+    	    	    type = annex_everything
+        	    }
+	    	}
+	    }
+    }
+}

@@ -1,0 +1,44 @@
+capital = 160
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	democratic = 50
+	memoism = 50
+}
+set_politics = {
+	ruling_party = memoism
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Папич"
+	desc = "POLITICS__DESC"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = ancap
+	traits = {
+		Dozh
+	}
+}
+create_country_leader = {
+	name = "Стул"
+	desc = "POLITICS__DESC"
+	picture = "Stul_Papicha.dds"
+	expire = "1999.1.1"
+	ideology = gegelianism
+	traits = {
+		
+	}
+}

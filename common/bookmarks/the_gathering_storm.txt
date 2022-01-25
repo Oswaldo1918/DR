@@ -1,0 +1,233 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 3.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "LAZ"
+		default = yes
+		
+		"POK"={
+			history = "POK_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"KUR"={
+			history = "KUR_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"NOD"={
+			history = "NOD_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				nod_suverennaya_ter 
+				nod_bez_putina
+			}
+			focuses = {
+				
+			}
+		}
+		"CHT"={
+			history = "CHT_GATHERING_STORM_DESC"
+			ideology = memoism
+			ideas = {
+				cht_loksists
+				cht_great_srach
+				cht_shue
+			}
+			focuses = {
+				
+			}
+		}
+		"LAZ"={
+			history = "LAZ_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"MRD"={
+			history = "MRD_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}			
+		}
+		"DOT"={
+			history = "DOT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}			
+		}
+
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors #
+		"WHS"={
+			minor = yes
+			history = "WHS_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ZWN"={
+			minor = yes
+			history = "ZWN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"DON"={
+			minor = yes
+			history = "DON_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"UKB"={
+			minor = yes
+			history = "UKB_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"BSH"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"STR"={
+			minor = yes
+			history = "STR_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"OMS"={
+			minor = yes
+			history = "OMS_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"ZHS"={
+			minor = yes
+			history = "ZHS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"CHK"={
+			minor = yes
+			history = "CHK_GATHERING_STORM_DESC"
+			ideology = memoism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"BRT"={
+			minor = yes
+			history = "BRT_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"YSK"={
+			minor = yes
+			history = "YSK_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"KAZ"={
+			minor = yes
+			history = "KAZ_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

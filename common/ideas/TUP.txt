@@ -1,0 +1,408 @@
+ideas = {
+    country = {
+	        TUP_reklama = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.10
+			}
+		}
+		
+		TUP_reklama_shprot = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  consumer_goods_factor = -0.01
+			}
+		}
+		
+		TUP_obshini_i = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				 production_factory_max_efficiency_factor = 0.15
+				 line_change_production_efficiency_factor = -0.05
+				 production_speed_buildings_factor = 0.01
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+			}
+		}
+     }
+	 political_advisor = {
+		Dementiy = {
+			
+			
+			allowed = {
+				original_tag = "TUP"
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purged_kalinin }
+				NOT = { has_country_flag = counter_purge }
+			}
+			
+
+			
+			traits = { popular_figurehead }
+		}
+
+			
+		Serezha_ivanov = {
+			
+			
+			allowed = {
+				original_tag = "TUP"
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		Huys = {
+			
+			
+			allowed = {
+				original_tag = "TUP"
+			}
+			available = 
+			{
+				NOT = { has_country_flag = counter_purge }
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+		
+	army_chief = {
+		
+		
+		ulin = {
+			#Also unit leader: 779
+			
+			allowed = {
+				original_tag = TUP
+			}
+			available = {
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = TUP
+							original_tag = TUP
+							has_unit_leader = 779
+						} 
+					}
+				}
+			}
+			
+
+			
+			traits = { borisulingist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		isaev = {
+			#Also unit leader: 405
+			
+			allowed = {
+				original_tag = TUP
+			}
+			available = {
+			
+			}
+			
+
+			
+			traits = { army_chief_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	
+	}
+	navy_chief = {
+		
+		yasen_h+y = {
+			
+			
+			allowed = {
+				original_tag = TUP
+
+			}
+			available = 
+			{
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = TUP
+							original_tag = TUP
+							has_unit_leader = 780
+						} 
+					}
+				}
+			}
+			
+
+			
+			# PURGED
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		Warshipsov = {
+			
+			
+			allowed = {
+				original_tag = TUP
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_a }
+			}
+			
+
+			
+			# PURGED
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		miroslav_morozov = {
+			
+			
+			allowed = {
+				original_tag = TUP
+
+			}
+			available = 
+			{
+				has_completed_focus = TUP_soyuz_s_tactic_media
+			}
+			
+
+			
+			# PURGED
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		timin = {
+			
+			
+			allowed = {
+				original_tag = TUP
+
+			}
+			available = 
+			{
+			has_completed_focus = TUP_soyuz_s_tactic_media
+			}
+			
+
+			
+			# PURGED
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	
+	high_command = {
+	
+		yakovlev = {
+			#Also unit leader: 408
+			
+			allowed = {
+				original_tag = TUP
+			}
+			available = 
+			{
+				
+					NOT = { 
+						any_other_country = {
+							has_war_with = TUP
+							original_tag = TUP
+							has_unit_leader = 778
+						}
+					}
+				}
+			
+			
+
+			
+			traits = { army_concealment_2 }
+			# Almost certainly a psychopath
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		zhukov = {
+			#Also unit leader: 407
+			
+			allowed = {
+				original_tag = TUP
+
+			}
+			available = 
+			{
+				
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = TUP
+							original_tag = TUP
+							has_unit_leader = 999
+						} 
+					}
+				}
+			}
+			
+
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Alexsey_wolkov = {
+			#Also unit leader: 402
+			
+			allowed = {
+				original_tag = TUP # Unlocked via focus
+				
+			}
+			available = 
+			{
+				has_completed_focus = TUP_soyuz_s_tactic_media
+			}
+			
+
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		oleg_kiselev = {
+			#Also unit leader: 402
+			
+			allowed = {
+				original_tag = TUP # Unlocked via focus
+				
+			}
+			available = 
+			{
+				has_completed_focus = TUP_soyuz_s_tactic_media
+			}
+			
+
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dmitriy_shein = {
+			#Also unit leader: 402
+			
+			allowed = {
+				original_tag = TUP # Unlocked via focus
+				
+			}
+			available = 
+			{
+				has_completed_focus = TUP_soyuz_s_tactic_media
+			}
+			
+
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+		
+}

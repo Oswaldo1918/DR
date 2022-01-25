@@ -1,0 +1,41 @@
+capital = 227
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.7
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+}
+
+add_ideas = {
+	DON_Yg_bastion
+	DON_silnaya_ruka
+	partial_economic_mobilisation
+	limited_conscription
+}
+
+set_popularities = {
+	metacommy = 100
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Леонид Кураков"
+	desc = "POLITICS_KURAKOV_DESC"
+	picture = "Leonid_Kurakov.dds"
+	expire = "1999.1.1"
+	ideology = nacbol
+	traits = { Вечный_сепаратист
+		#
+	}
+}

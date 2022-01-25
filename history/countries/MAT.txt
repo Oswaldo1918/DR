@@ -1,0 +1,105 @@
+capital = 222
+
+oob = MAT_army
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	tech_support = 1
+	mobile_warfare = 1
+}
+
+add_ideas = {
+	MAT_red_neoshumirism
+	MAT_zablokorovano_hakerami
+	MAT_YgZapad_bastion
+	partial_economic_mobilisation
+	limited_conscription
+}
+
+set_popularities = {
+	metacommy = 70
+	vmestolev = 10
+	democratic = 10
+	fascism = 10
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Антон Орлов"
+	desc = "POLITICS_ORLOV_DESC"
+	picture = "Anton_Orlov.dds"
+	expire = "1999.1.1"
+	ideology = left_shumerism
+	traits = {
+		Lugal Shiz_na_tanke
+	}
+}
+create_country_leader = {
+	name = "Киа Рио"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Kia_Rio.dds"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "Киа Рио"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Kia_Rio.dds"
+	expire = "1999.1.1"
+	ideology = cybernetics
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "Данил Цуканов"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Danil_Tsukanov.dds"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+
+	}
+}
+
+
+create_field_marshal = {
+	name = "Антон Орлов"
+	id = 11111
+	picture = "Anton_Orlov.dds"
+	traits = { armor_officer aggressive_assaulter panzer_leader panzer_expert combined_arms_expert_short  }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Данил Цуканов"
+	id = 11112
+	portrait_path = ""
+	traits = {  infantry_officer }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2 
+}

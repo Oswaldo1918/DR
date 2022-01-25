@@ -1,0 +1,51 @@
+ideas = {
+       country = {
+	        ARK_building_sevflot = {
+		    picture = escort_effort_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.15 
+				production_speed_arms_factory_factor = -0.15 
+				production_speed_industrial_complex_factor = -0.15 
+				industrial_capacity_dockyard = 0.15
+			    }
+		    }
+			
+		    ARK_sev_bastion = {
+		    picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
+				}
+				targeted_modifier = {
+				tag = MHL
+				defense_bonus_against = 0.1
+			    }
+			     targeted_modifier = {
+				tag = POK
+				defense_bonus_against = 0.1
+			    }			    
+		    }
+	   }
+		
+}

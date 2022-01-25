@@ -1,0 +1,36 @@
+add_namespace = che
+
+	
+#возможное патриаршество
+country_event = {
+	id = che.1
+	title = che.1.t
+	desc = che.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = che.1.a
+	hidden_effect = {
+	kill_country_leader = yes
+	}
+	create_country_leader = {
+				name = "Дмитрий Гордон"
+				desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
+				picture = GFX_portrait_bul_georgi_kyoseivanov
+				expire = "1965.1.1"
+				ideology = fascism
+				traits = {
+					
+				}
+			}
+			NOD = {country_event = { id = nod.4 hours = 16 random_hours = 8 }}
+	}
+	option = {
+	name = che.2.a
+	NOD = {country_event = { id = nod.5 hours = 16 random_hours = 8 }}
+	add_political_power = 50
+	}
+}
+ 

@@ -1,0 +1,241 @@
+ideas = {
+    country = {
+	    KUR_koza = {
+			picture = GFX_idea_koza_russkogo_razvitiya
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			production_speed_buildings_factor = -0.15
+			line_change_production_efficiency_factor = -0.1
+			production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+		 KUR_kozlik = {
+			picture = GFX_idea_koza_russkogo_razvitiya
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			production_speed_buildings_factor = -0.10
+			line_change_production_efficiency_factor = -0.05
+			production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		
+		KUR_omovskie_poditeli = {
+			picture = GFX_idea_omovskie_poditeli
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			production_factory_max_efficiency_factor = -0.15
+			MONTHLY_POPULATION = 0.2
+			}
+		}
+		KUR_discriminacia = {
+			picture = GFX_idea_saf_history_of_segregation
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			
+			modifier = {
+			conscription_factor = -0.5
+			}
+		}
+		
+		KUR_na_rudniki = {
+			picture = GFX_etaj
+		
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			
+			local_resources_factor = 0.1
+			}
+		}
+		
+		KUR_pervi_etaj = {
+			picture = GFX_etaj
+		
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			research_speed_factor = -0.05
+			consumer_goods_factor = -0.05
+			resistance_damage_to_garrison = 0.1
+			political_power_factor = -0.15
+			production_speed_buildings_factor = 0.05
+			army_defence_factor = 0.05
+		    army_attack_factor = 0.05
+			local_resources_factor = 0.05
+			}
+		}
+		KUR_vtoroi_etaj = {
+			picture = GFX_etaj
+		
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			research_speed_factor = -0.1
+			consumer_goods_factor = -0.1
+			foreign_subversive_activites = 0.2
+			political_power_factor = -0.25
+			production_speed_buildings_factor = 0.1
+			army_defence_factor = 0.1
+		    army_attack_factor = 0.1
+			local_resources_factor = 0.1
+			}
+		}
+		KUR_tretii_etaj = {
+			picture = GFX_etaj
+		
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			research_speed_factor = -0.1
+			consumer_goods_factor = -0.1
+			foreign_subversive_activites = 0.3
+			political_power_factor = -0.35
+			production_speed_buildings_factor = 0.15
+			army_defence_factor = 0.15
+		    army_attack_factor = 0.15
+			local_resources_factor = 0.15
+			}
+		}
+		KUR_chetverti_etaj = {
+			picture = GFX_idea_chetverti_etaj
+		
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			research_speed_factor = -0.15
+			consumer_goods_factor = -0.15
+			foreign_subversive_activites = 0.4
+			political_power_factor = -0.4
+			production_speed_buildings_factor = 0.2
+			army_defence_factor = 0.2
+		    army_attack_factor = 0.2
+			local_resources_factor = 0.2
+			}
+		}
+	}	
+	political_advisor = {
+		pavel_gruginin = {
+			
+			
+			allowed = {
+				original_tag = "KUR"
+			}
+			available = {
+			has_completed_focus = KUR_kievska_sloboda
+			}
+			traits = { kolhoznik }
+	    }	
+	
+		anatoli_vaserman = {
+			
+			
+			allowed = {
+				original_tag = "KUR"
+			}
+			available = {
+			has_completed_focus = KUR_kievska_sloboda
+			}
+			traits = { erudit }
+	    }
+		
+        aleksandr_prohanov = {
+			
+			
+			allowed = {
+				original_tag = "KUR"
+			}
+			
+			traits = { pizdabol }
+	    }
+        joseph_satalin = {
+           allowed = {
+			original_tag = "KUR"
+				
+			}
+			cost = 250
+			available = {
+			has_completed_focus = KUR_nam_stain_otets
+			}
+			traits = { otets_chertei }		
+        }
+		necromant = {
+          allowed = {
+			original_tag = "KUR"
+			}
+			available = {
+			has_completed_focus = KUR_rise_of_dead
+			}
+			traits = { dedarmy }		
+        }
+    }
+	theorist = {
+	    vladimir_lenin = {
+			allowed = {
+				original_tag = "KUR"
+ 
+			}
+			available = {
+			has_completed_focus = KUR_lenin_jiv
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { atomna_bomba }
+		}
+	}
+	army_chief = {
+	    vladimir_kvachkov = {
+		allowed = {
+				original_tag = "KUR"
+			}
+			
+			traits = { specnaz }
+		}
+    }
+	
+	high_command = {
+		comrade_maior = {
+			
+			allowed = {
+				original_tag = KUR
+
+			}
+			
+			traits = { sanitar }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	}
+	}

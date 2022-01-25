@@ -1,0 +1,85 @@
+﻿division_template = {
+	name = "Неполживцы"
+
+	division_names_group = POK_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+
+	}
+	priority = 2
+}
+division_template = {
+	name = "РуSSкие"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = POK_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "Дивизия имени великого святого мученика Nikolaus Second"
+		location = 1821
+		division_template = "Неполживцы"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "Дивизия имени великого антисафка Александра Иссаевича Солженицына"
+		location = 1821
+		division_template = "Неполживцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Власовцы"
+		location = 1821
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Бедные немецкие солдаты убитые в совковом плену"
+		location = 13076
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Покаевшиеся дивизия"
+		location = 1771
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AFG"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

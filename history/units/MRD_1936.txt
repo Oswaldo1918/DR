@@ -1,0 +1,164 @@
+﻿division_template = {
+	name = "Урки-ополченцы"
+
+	division_names_group = MRD_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Гвардия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = MRD_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		anti-air_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+        anti_tank = { x = 0 y = 1 }
+		anti-air = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1-я дивизия Урков-ополченцев"
+		location = 7707 
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+		
+    division = {
+		name = "2-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10-я дивизия Урков-ополченцев"
+		location = 7707
+		division_template = "Урки-ополченцы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1-я гвардейская дивизия"
+		location = 2900
+		division_template = "Гвардия"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "2-я гвардейская дивизия"
+		location = 2900
+		division_template = "Гвардия"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "3-я гвардейская дивизия"
+		location = 2900
+		division_template = "Гвардия"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "4-я гвардейская дивизия"
+		location = 2900
+		division_template = "Гвардия"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "5-я гвардейская дивизия"
+		location = 2900
+		division_template = "Гвардия"
+		start_experience_factor = 1
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MRD"
+		}
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "MRD"
+		}
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "MRD"
+		}
+		equipment = {
+			type = artillery_equipment_1
+			creator = "MRD"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

@@ -1,0 +1,56 @@
+capital = 586
+
+oob = KAZ_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	democratic = 80
+	vmestolev = 20
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Борат Сагдиев"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Borat.dds"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Санат Жилкибаев"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Sanat.dds"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Шингиз"
+		picture = "shingiz.dds"
+	traits = { career_officer politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}

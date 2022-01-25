@@ -1,0 +1,129 @@
+﻿division_template = {
+	name = "Элитная пехота"
+
+	division_names_group = LAZ_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		bhaminf = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Пехота"
+
+	division_names_group = LAZ_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		
+	}
+	priority = 1
+}
+
+units = {
+	
+	division = {
+		name = "Доковцы"
+		location = 301
+		division_template = "Элитная пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1-я докофильская дивизия"
+		location = 301
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2-я докофильская дивизия"
+		location = 301
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я докофильская дивизия"
+		location = 401
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я докофильская дивизия"
+		location = 401
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5-я докофильская дивизия"
+		location = 6380
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-я докофильская дивизия"
+		location = 6380
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7-я докофильская дивизия"
+		location = 6380
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8-я докофильская дивизия"
+		location = 9395
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9-я докофильская дивизия"
+		location = 350
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "10-я докофильская дивизия"
+		location = 11236
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "LAZ"
+		}
+		requested_factories = 3
+		progress = 0.28
+		efficiency = 100
+	}
+}

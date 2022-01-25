@@ -1,0 +1,39 @@
+##################
+# SUPER EVENTS 
+##################
+
+add_namespace = super
+
+country_event = {	#Лазарет_объёдиняет_Россию
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			LAZ = { has_government = vmestolev }
+			has_country_flag = LAZ_reunite_russia_kostil
+			NOT = {
+				has_global_flag = LAZ_reunite_russia
+			}
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = LAZ_reunite_russia
+		set_global_flag = Super_Event_Visible
+		sound_effect = "test_udalsya"
+		
+		#WW2 Flag
+		set_global_flag = LAZ_reunite_russia_2
+	}
+}

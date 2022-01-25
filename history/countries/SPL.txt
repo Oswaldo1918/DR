@@ -1,0 +1,48 @@
+capital = 812
+
+oob = 123_1936
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	SPL_rodina
+	SPL_eston_parashut
+	SPL_victori_sofok
+	SPL_prisiv
+}
+
+set_popularities = {
+	democratic = 100
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Жильвинас Тратас"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Tratas.jpg"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Модестас Паулаускас"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Modestas.jpg"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,188 @@
+﻿capital = 252
+
+oob = CHT_1936
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.5
+set_technology = {	
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_military_police = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+    bhammer = 1	
+	tech_support = 1
+}
+
+add_ideas = {
+	CHT_loksists
+	CHT_great_srach
+	CHT_shue
+}
+
+set_popularities = {
+	memoism = 38
+	vmestolev = 19
+	neutrality = 22
+	anarhostalinism = 11
+	metacommy = 10
+}
+create_dynamic_country = {
+	original_tag = CHT
+	set_country_flag = CHT_deloksli_chat_flag
+	set_politics = {
+		ruling_party = neutrality
+	}
+	set_cosmetic_tag = CHT_deloksli_chat
+	set_research_slots = 3
+	reserve_dynamic_country = yes
+}
+set_politics = {
+	ruling_party = memoism
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Всечатский Совет"
+	desc = "POLITICS_MODER_SOVET_DESC"
+	picture = "Chat_Leder.dds"
+	expire = "1999.1.1"
+	ideology = postironism
+	traits = {
+		cabinet_crisis
+	}
+}
+
+create_country_leader = {
+	name = "Штазист"
+	desc = "POLITICS_SHTAZIST_DESC"
+	picture = "stazist.dds"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Кривой Месяц"
+	desc = "POLITICS_KRIMES_DESC"
+	picture = "mesyats.dds"
+	expire = "1999.1.1"
+	ideology = libertanian_chuchhe
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Даниил Тележный"
+	desc = "POLITICS_TELEZH_DESC"
+	picture = "telezniy.dds"
+	expire = "1999.1.1"
+	ideology = white_polpotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ахора Мазда"
+	desc = "POLITICS_AHORA_DESC"
+	picture = "Ahora.dds"
+	expire = "1999.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Де Локсли I"
+	desc = "POLITICS_LOKSLI_DESC"
+	picture = "deloksli.dds"
+	expire = "1999.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+	name = "Свидетель из Cumмунизма"
+	id = 22800
+	picture = "Cummunist.dds"
+	traits = { old_guard infantry_officer war_hero  }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Иван Гоголев"
+	id = 780
+	portrait_path = "gfx/leaders/CHT/ivan.dds"
+	traits = {  war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Дмитрий Зайцев"
+	id = 779
+	portrait_path = "gfx/leaders/CHT/zaytsev.dds"
+	traits = {  }
+	skill = 1
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolas Louder"
+	id = 778
+	portrait_path = "gfx/leaders/CHT/Nikolas.dds"
+	traits = {  war_hero }
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Саша Иванов"
+	id = 777
+	portrait_path = "gfx/leaders/CHT/ivanov.dds"
+	traits = {  war_hero }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Кривой Месяц"
+	id = 776
+	portrait_path = "gfx/leaders/CHT/mesyats.dds"
+	traits = {  war_hero }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+}

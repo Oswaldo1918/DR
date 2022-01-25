@@ -1,0 +1,39 @@
+capital = 260
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+add_ideas = {
+	UNT_indust_po_Untsu
+	UNT_YgVostok_bastion
+	partial_economic_mobilisation
+	limited_conscription
+}
+
+set_popularities = {
+	vmestolev = 100
+}
+set_politics = {
+	ruling_party = vmestolev
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Унц"
+	desc = "POLITICS_UNTS_DESC"
+	picture = "Unts.dds"
+	expire = "1999.1.1"
+	ideology = marxismus
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,35 @@
+capital = 524
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.6
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+ ZCH_vroraya_warlord_era
+}
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Санбой"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Sanboy.dds"
+	expire = "1999.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}

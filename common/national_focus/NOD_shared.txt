@@ -1,0 +1,2627 @@
+
+	shared_focus = {
+		id = NOD_otchayaniye_ili_net
+		icon = GFX_focus_generic_self_management
+		cost = 2
+		
+		x = 56
+		y = 0
+          completion_reward = {
+country_event = {
+							id = nod.1
+						    }
+          }
+	}
+	shared_focus = {
+		id = NOD_prodolzhat_poiski
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		prerequisite = {
+			focus = NOD_otchayaniye_ili_net
+		}
+		mutually_exclusive = {
+			focus = NOD_bratstvo_NOD
+		}
+		x = 41
+		y = 1
+		
+		available = {
+					has_country_flag = pitinist
+				}
+				
+           completion_reward = {
+							country_event = {
+							id = nod.3
+						    }
+			
+              }
+	}
+	shared_focus = {
+		id = NOD_bratstvo_NOD
+		icon = GFX_No_way
+		cost = 5
+		prerequisite = {
+			focus = NOD_otchayaniye_ili_net
+		}
+		mutually_exclusive = {
+			focus = NOD_prodolzhat_poiski
+		}
+		x = 71
+		y = 1
+available = {
+					has_country_flag = keyn
+				}
+completion_reward = {
+
+}
+
+	}
+	shared_focus = {
+		id = NOD_chuvstvo_ranga
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = {
+			focus = NOD_prodolzhat_poiski
+		}
+		x = 17
+		y = 2
+completion_reward = {
+            add_ideas = NOD_chuvstvo_ranga
+			add_popularity = { ideology = fascism popularity = 0.02 }			
+			add_popularity = { ideology = neutrality popularity = 0.04 }
+              }
+	}
+	shared_focus = {
+		id = NOD_flot
+		icon = GFX_goal_generic_construct_naval_dockyard
+		
+		
+		cost = 5
+		prerequisite = {
+			focus = NOD_chuvstvo_ranga
+		}
+		x = 6
+		y = 3
+		
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+        }
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	shared_focus = {
+		id = NOD_esmintsy
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+		prerequisite = {
+			focus = NOD_flot
+		}
+		x = 5
+		y = 4
+completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_avianostsy
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+		prerequisite = {
+			focus = NOD_flot
+		}
+		x = 6
+		y = 5
+completion_reward = {
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_tehn_zadymleniya
+		icon = GFX_goal_generic_navy_carrier_smoke
+		cost = 5
+		prerequisite = {
+			focus = NOD_avianostsy
+		}
+		x = 6
+		y = 6
+completion_reward = {
+		add_ideas = NOD_tehn_zadymleniya
+        }
+	}
+	shared_focus = {
+		id = NOD_kreysery
+		icon = GFX_focus_generic_cruiser2
+		cost = 5
+		prerequisite = {
+			focus = NOD_flot
+		}
+		x = 7
+		y = 4
+completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_VKS
+		icon = GFX_focus_NOD_vks
+		cost = 5
+		prerequisite = {
+			focus = NOD_chuvstvo_ranga
+		}
+		x = 10
+		y = 3
+     completion_reward = {
+	
+		add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 0.5
+			uses = 2
+			category = air_doctrine
+		}
+	}
+	}
+	shared_focus = {
+		id = NOD_russian_vityasi
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = NOD_VKS
+		}
+		x = 10
+		y = 4
+    completion_reward = {
+	air_experience = 40
+	add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 25
+			}
+	}
+	}
+	shared_focus = {
+		id = NOD_istrebiteli
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		prerequisite = {
+			focus = NOD_russian_vityasi
+		}
+		x = 9
+		y = 5
+     completion_reward = {
+         add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = NOD_bobry
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+		prerequisite = {
+			focus = NOD_russian_vityasi
+		}
+		x = 11
+		y = 5
+completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_strategi
+		icon = GFX_goal_generic_occypy_start_war
+		cost = 5
+		prerequisite = {
+			focus = NOD_bobry
+		}
+		x = 11
+		y = 6
+completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_podnyat_army_s_kolen
+		icon = GFX_goal_generic_position_armies
+		cost = 5
+		prerequisite = {
+			focus = NOD_chuvstvo_ranga
+		}
+		x = 17
+		y = 3
+completion_reward = {
+army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+add_war_support = 0.1
+add_to_variable = { barkov_coup = -1 }
+custom_effect_tooltip = NOD_barkov_aprove_tt
+}
+	}
+	shared_focus = {
+		id = NOD_tank_biatlon
+		icon = GFX_focus_NOD_tank
+		cost = 5
+		prerequisite = {
+			focus = NOD_podnyat_army_s_kolen
+		}
+		mutually_exclusive = {
+			focus = NOD_big_russian_orda
+		}
+		mutually_exclusive = {
+			focus = NOD_ogon_i_sila
+		}
+		mutually_exclusive = {
+			focus = NOD_doctrina_terpeniya
+		}
+		x = 14
+		y = 4
+completion_reward = {
+		  army_experience = 10
+          add_tech_bonus = {
+          bonus = 1.0
+          uses = 3
+          category = cat_mobile_warfare
+          }
+		  add_war_support = 0.05
+		  add_political_power = 50
+		}
+	}
+	shared_focus = {
+		id = NOD_project_Atmta
+		icon = GFX_focus_generic_army_tanks2
+		cost = 5
+		prerequisite = {
+			focus = NOD_tank_biatlon
+		}
+		x = 14
+		y = 5
+completion_reward = {
+			add_tech_bonus = {
+				name = NOD_tank_experiments
+				uses = 2
+				bonus = 1.0
+				category = armor
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_modifitsirovat_old_tanks
+		icon = GFX_goal_generic_build_tank
+		cost = 5
+		prerequisite = {
+			focus = NOD_project_Atmta
+		}
+		x = 14
+		y = 6
+completion_reward = {
+			add_ideas = NOD_modifitsirovat_old_tanks
+		}
+
+	}
+	shared_focus = {
+		id = NOD_2000_Atmtat
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 5
+		prerequisite = {
+			focus = NOD_modifitsirovat_old_tanks
+		}
+		x = 14
+		y = 7
+completion_reward ={
+custom_effect_tooltip = NOD_atmta_tt
+	  }
+	}
+	shared_focus = {
+		id = NOD_ogon_i_sila
+		icon = GFX_NOD_doctrina_artillerii
+		cost = 5
+		prerequisite = {
+			focus = NOD_podnyat_army_s_kolen
+		}
+		mutually_exclusive = {
+			focus = NOD_tank_biatlon
+		}
+		mutually_exclusive = {
+			focus = NOD_big_russian_orda
+		}
+		mutually_exclusive = {
+			focus = NOD_doctrina_terpeniya
+		}
+		x = 16
+		y = 4
+completion_reward = {
+			add_ideas = NOD_ogon_i_sila
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = cat_superior_firepower
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_kontsentratsiya_arti
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		prerequisite = {
+			focus = NOD_ogon_i_sila
+		}
+		
+		x = 16
+		y = 5
+completion_reward = {
+			add_ideas = NOD_kontsentratsiya_arti
+				add_tech_bonus = {
+				 name = artillery_bonus
+				 bonus = 1.0
+				 uses = 1
+				category = artillery
+			    }
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_react_art
+		icon = GFX_focus_rocketry
+		cost = 5
+		prerequisite = {
+			focus = NOD_kontsentratsiya_arti
+		}
+		
+		x = 16
+		y = 6
+completion_reward = {
+			add_ideas = NOD_react_art
+			add_tech_bonus = {
+			name = rocketry
+			bonus = 0.5
+			uses = 3
+			category = rocketry
+		}
+		
+		
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_voini_ognya
+		icon = GFX_focus_eye_in_fire
+		cost = 5
+		prerequisite = {
+			focus = NOD_react_art
+		}
+		
+		x = 16
+		y = 7
+completion_reward = {
+			add_ideas = NOD_voini_ognya
+			add_political_power = 20
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_doctrina_terpeniya
+		icon = GFX_focus_NOD_prevozmogat
+		cost = 5
+		prerequisite = {
+			focus = NOD_podnyat_army_s_kolen
+		}
+		mutually_exclusive = {
+			focus = NOD_tank_biatlon
+		}
+		mutually_exclusive = {
+			focus = NOD_big_russian_orda
+		}
+		mutually_exclusive = {
+			focus = NOD_ogon_i_sila
+		}
+		x = 18
+		y = 4
+completion_reward = {
+			add_ideas = NOD_doctrina_terpeniya
+			add_political_power = 150
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_osazhdyonnaya_krepost
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		prerequisite = {
+			focus = NOD_doctrina_terpeniya
+		}
+		
+		x = 18
+		y = 5
+completion_reward = {
+			add_ideas = NOD_osazhdyonnaya_krepost
+			add_stability = 0.05
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_analitika
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		prerequisite = {
+			focus = NOD_osazhdyonnaya_krepost
+		}
+		
+		x = 18
+		y = 6
+completion_reward = {
+			add_ideas = NOD_analitika
+			
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_prevozmoganiye
+		icon = GFX_focus_hol_united_netherlands
+		cost = 5
+		prerequisite = {
+			focus = NOD_analitika
+		}
+		
+		x = 18
+		y = 7
+completion_reward = {
+			add_ideas = NOD_prevozmoganiye
+			add_war_support = 0.1
+			
+		}
+	}
+	
+	shared_focus = {
+		id = NOD_big_russian_orda
+		icon = GFX_focus_NOD_orda
+		cost = 5
+		prerequisite = {
+			focus = NOD_podnyat_army_s_kolen
+		}
+		mutually_exclusive = {
+			focus = NOD_tank_biatlon
+		}
+		mutually_exclusive = {
+			focus = NOD_ogon_i_sila
+		}
+		mutually_exclusive = {
+			focus = NOD_doctrina_terpeniya
+		}
+		x = 20
+		y = 4
+completion_reward = {
+			add_manpower = 50000
+			add_ideas = NOD_big_russian_orda
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = cat_mass_assault
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_black_kalashy
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		prerequisite = {
+			focus = NOD_big_russian_orda
+		}
+		x = 20
+		y = 5
+completion_reward = {
+		        add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = NOD
+				}
+				
+				add_tech_bonus = {
+				 name = infantry_artillery_bonus
+				 bonus = 1.0
+				 uses = 1
+				 category = infantry_weapons
+			    }
+			}
+	}
+	shared_focus = {
+		id = NOD_uvelichit_rozhdaemost
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = NOD_black_kalashy
+		}
+		x = 20
+		y = 6
+
+		completion_reward = {
+			add_ideas = NOD_uvelichit_rozhdaemost
+			}
+	}
+	shared_focus = {
+		id = NOD_rashirit_prisyv
+		icon = GFX_focus_bg_red_wreath_sold
+		cost = 5
+		prerequisite = {
+			focus = NOD_uvelichit_rozhdaemost
+		}
+		x = 20
+		y = 7
+completion_reward = {
+			add_ideas = NOD_rashirit_prisyv
+			}
+	}
+	shared_focus = {
+		id = NOD_help_korpotsiy
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 5
+		prerequisite = {
+			focus = NOD_chuvstvo_ranga
+		}
+		x = 25
+		y = 3
+completion_reward = {
+add_political_power = 150
+add_ideas = NOD_help_korpotsiy
+add_popularity = { ideology = fascism popularity = 0.02 }			
+}
+	}
+	shared_focus = {
+		id = NOD_kontsern_im_Putina
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = NOD_help_korpotsiy
+		}
+		x = 23
+		y = 5
+completion_reward = {
+add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			   }
+			  239 = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}     
+}
+	}
+	shared_focus = {
+		id = NOD_electronic_Elbrys
+		icon = GFX_Computer_2
+		cost = 5
+		prerequisite = {
+			focus = NOD_kontsern_im_Putina
+		}
+		x = 23
+		y = 6
+completion_reward = {
+add_tech_bonus = {
+			name = electronics_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
+add_ideas = NOD_electronic_Elbrus
+
+}
+	}
+	shared_focus = {
+		id = NOD_Gazprom
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5
+		prerequisite = {
+			focus = NOD_help_korpotsiy
+		}
+		x = 25
+		y = 5
+completion_reward = {
+217 = {
+							add_resource = {
+									type = oil
+									amount = 2
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+401 = {
+							add_resource = {
+									type = oil
+									amount = 2
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				add_tech_bonus = {
+				name = synth_resources
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}		
+}
+	}
+	shared_focus = {
+		id = NOD_Rosteh
+		icon = GFX_goal_generic_production2
+		cost = 5
+		prerequisite = {
+			focus = NOD_help_korpotsiy
+		}
+		x = 27
+		y = 5
+completion_reward = {
+add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			   }
+	add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}	
+		401 = {
+		add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}	
+								}
+}
+	}
+	
+	shared_focus = {
+		id = NOD_Gazprombank
+		icon = GFX_focus_mex_privatisation
+		cost = 5
+		prerequisite = {
+			focus = NOD_Gazprom
+		}
+		x = 25
+		y = 6
+completion_reward = {
+add_political_power = 100
+239 = {
+add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+					}
+	add_ideas =	NOD_Gazprombank			
+ }
+	}
+	shared_focus = {
+		id = NOD_project_Kremlebot
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = NOD_Gazprombank
+		}
+		prerequisite = {
+			focus = NOD_electronic_Elbrys
+		}
+		prerequisite = {
+			focus = NOD_razshirit_proizvodstvo_guns
+		}
+		x = 25
+		y = 7
+completion_reward = {
+
+add_tech_bonus = {
+			name = codebreaking_bonus
+			bonus = 0.5
+			uses = 2
+			category = encryption_tech
+			category = decryption_tech
+		}
+
+}
+	}
+	shared_focus = {
+		id = NOD_razshirit_proizvodstvo_guns
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = NOD_Rosteh
+		}
+		x = 27
+		y = 6
+completion_reward = {
+
+    217 = {
+            add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 2		
+		}
+     239 = {
+            add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}    
+	245 = {
+            add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}
+	
+		  add_to_variable = { barkov_coup = -1 }
+custom_effect_tooltip = NOD_barkov_aprove_tt
+		             }
+	}
+shared_focus = {
+		id = NOD_project_Anafema
+		icon = GFX_focus_wonderweapons
+		cost = 5
+		prerequisite = {
+			focus = NOD_project_Kremlebot
+		}
+		
+		prerequisite = {
+			focus = NOD_kontrakt_s_tserkovy
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+          
+				add_tech_bonus = {
+				name = nuclear_bonus
+			    bonus = 1.0
+				uses = 2
+				category = nuclear
+				
+				
+			}
+	       
+		}
+	}
+shared_focus = {
+		id = NOD_made_in_Russia
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		prerequisite = {
+			focus = NOD_help_korpotsiy
+		}
+		mutually_exclusive = {
+			focus = NOD_skryt_prom_potentsial
+		}
+		x = 24
+		y = 4
+completion_reward = {
+add_stability = 0.05
+add_ideas = NOD_propag_industr
+
+217 = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}	
+		265 = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}
+        239 = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		}
+}
+	}
+	shared_focus = {
+		id = NOD_skryt_prom_potentsial
+		icon = GFX_goal_generic_defence
+		cost = 5
+		prerequisite = {
+			focus = NOD_help_korpotsiy
+		}
+		mutually_exclusive = {
+			focus = NOD_made_in_Russia
+		}
+		x = 26
+		y = 4
+completion_reward = {
+add_ideas = NOD_taynaya_industrializ
+add_offsite_building = { type = industrial_complex level = 2 }
+}
+	}
+	shared_focus = {
+		id = NOD_russian_sobornost
+		icon = GFX_focus_focus_fra_national_resistance_council
+		cost = 5
+		prerequisite = {
+			focus = NOD_prodolzhat_poiski
+		}
+		x = 32
+		y = 2
+		
+		available = {
+					has_country_flag = NOD_net_zagovora
+				}
+		
+completion_reward = {
+add_stability = 0.05
+add_ideas = NOD_russian_sobornost
+}
+	}
+	shared_focus = {
+		id = NOD_tserkov_svideteley_Putina
+		icon = GFX_putin_cult_of_personality
+		cost = 5
+		prerequisite = {
+			focus = NOD_russian_sobornost
+		}
+		mutually_exclusive = {
+			focus = NOD_revival_RPTS
+		}
+		x = 30
+		y = 3
+			available = {
+					NOT = {
+			has_country_flag = NOD_barkov_revolt
+		}
+				}
+completion_reward = {
+            add_ideas = NOD_tserkov_svideteley_Putina
+			add_political_power = 100
+			add_war_support = 0.1
+	}
+	}
+	shared_focus = {
+		id = NOD_revival_RPTS
+		icon = GFX_NOD_unite_church_and_state
+		cost = 5
+		prerequisite = {
+			focus = NOD_russian_sobornost
+		}
+		mutually_exclusive = {
+			focus = NOD_tserkov_svideteley_Putina
+		}
+		x = 34
+		y = 3
+completion_reward = {
+ CHE = {
+         country_event = {
+							id = che.1
+						    }
+						}
+							
+			add_political_power = 100
+			add_stability = 0.1
+			add_ideas = NOD_revival_RPTS
+	}
+	}
+	shared_focus = {
+		id = NOD_one_istinnaya_vera
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5
+		prerequisite = {
+			focus = NOD_tserkov_svideteley_Putina
+			focus = NOD_revival_RPTS
+		}
+		mutually_exclusive = {
+			focus = NOD_plavilniy_kotel_Putina
+		}
+		x = 30
+		y = 4
+		available = {
+					NOT = {
+			has_country_flag = NOD_barkov_revolt
+		}
+				}
+completion_reward = {
+            add_ideas = NOD_one_istinnaya_vera
+			add_political_power = 100
+			
+	}
+	}
+shared_focus = {
+		id = NOD_plavilniy_kotel_Putina
+		icon = GFX_focus_NOD_concordat
+		cost = 5
+		prerequisite = {
+			focus = NOD_revival_RPTS
+			focus = NOD_tserkov_svideteley_Putina
+		}
+		mutually_exclusive = {
+			focus = NOD_one_istinnaya_vera
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+         add_ideas = NOD_plavilniy_kotel_Putina
+			add_political_power = 100
+	}
+	}
+	shared_focus = {
+		id = NOD_building_new_hramov
+		icon = GFX_goal_generic_construction
+		cost = 5
+		prerequisite = {
+			focus = NOD_plavilniy_kotel_Putina
+			focus = NOD_one_istinnaya_vera
+		}
+		x = 32
+		y = 5
+completion_reward = {
+	add_political_power = 100
+			401 = { add_extra_state_shared_building_slots = 1 }
+			245 = { add_extra_state_shared_building_slots = 1 }
+			265 = { add_extra_state_shared_building_slots = 1 }
+			239 = { add_extra_state_shared_building_slots = 1 }
+			217 = { add_extra_state_shared_building_slots = 1 }
+	}
+	}
+	shared_focus = {
+		id = NOD_tserkovnoe_obrazovanie
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = NOD_building_new_hramov
+		}
+		x = 32
+		y = 6
+    completion_reward = {
+	add_political_power = 100
+	add_research_slot = 1
+	}
+	}
+	shared_focus = {
+		id = NOD_kontrakt_s_tserkovy
+		icon = GFX_goal_generic_intelligence_exchange 
+		cost = 5
+		prerequisite = {
+			focus = NOD_razshirit_proizvodstvo_guns
+		}
+		prerequisite = {
+			focus = NOD_tserkovnoe_obrazovanie
+		}
+		x = 30
+		y = 7
+completion_reward = {
+add_ideas = NOD_kontrakt_s_tserkovy
+       }
+	}
+	shared_focus = {
+		id = NOD_hramy_kreposty
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		prerequisite = {
+			focus = NOD_kontrakt_s_tserkovy
+		}
+		x = 29
+		y = 8
+     completion_reward = {
+add_ideas = NOD_hramy_kreposty
+    217 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									instant_build = yes
+									province = 3529
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 11484
+								}
+							
+						}
+	 245 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 11476
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3540
+								}	
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 9565
+								}
+						}				
+	  265 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 487
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 544
+								}	
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 11512
+								}
+						}	
+	   239 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3578
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 353
+								}	
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 239
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3304
+								}	
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3465
+								}
+						}
+	    265 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 6502
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 6339
+								}	
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 9337
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 410
+								}
+						}				
+       }
+	}
+	shared_focus = {
+		id = NOD_duhovenstvo_v_voyskah
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 5
+		prerequisite = {
+			focus = NOD_kontrakt_s_tserkovy
+		}
+		x = 31
+		y = 8
+completion_reward = {
+add_ideas = NOD_duhovenstvo_v_voyskah
+add_manpower = 25000
+       }
+	}
+	shared_focus = {
+		id = NOD_iskat_5_kolonnu
+		icon = GFX_putin_i_silovik 
+		cost = 5
+		
+		prerequisite = {
+			focus = NOD_otdel_E
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 37
+		y = 4
+completion_reward = {
+country_event = {
+							id = nod.10
+						    }
+
+							add_manpower = -500
+}
+	}
+	shared_focus = {
+		id = NOD_national_unity
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		
+		prerequisite = {
+			focus = NOD_iskat_5_kolonnu
+		}
+		prerequisite = {
+			focus = NOD_otrayady_Putina
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 38
+		y = 5
+completion_reward = {
+
+		set_country_flag = NOD_net_zagovora
+remove_ideas = NOD_zagovor_sorvan
+add_stability = 0.05
+if = {
+				limit = {
+					check_variable = { barkov_coup > 3 }
+				}
+				country_event = { id = nod.12 days = 2  }
+				load_focus_tree = NOD_barkov_tree
+			}
+}
+	}
+	
+	shared_focus = {
+		id = NOD_nats_iskluchitelnost
+		icon = GFX_goal_anschluss
+		cost = 5
+		prerequisite = {
+			focus = NOD_prodolzhat_poiski
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 48
+		y = 2
+		available = {
+					has_country_flag = NOD_net_zagovora
+				}
+		completion_reward = {
+add_popularity = { ideology = fascism popularity = 0.05 }	
+add_war_support = 0.1	
+	  }
+	}
+	
+	shared_focus = {
+		id = NOD_vostanovit_suverenitet_Russia
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = NOD_piter
+		}
+		prerequisite = {
+			focus = NOD_dv
+		}
+		prerequisite = {
+			focus = NOD_national_unity
+		}
+		x = 38
+		y = 10
+completion_reward = {
+	if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+				add_stability = 0.1
+				else = {
+				add_popularity = { ideology = fascism popularity = 0.1 }
+				add_stability = 0.1
+				}
+			}
+	if = {
+				limit = {
+
+					check_variable = { putin_find > 4 }
+
+				}
+				country_event = { id = nod.32 days = 2  }    #Putin returned
+				load_focus_tree = NOD_putin
+				set_global_flag = NOD_putin_return
+				
+				else_if = {
+				limit = {
+				
+				check_variable = { putin_find < 4 }
+				
+				NOD = {
+				       NOT = { has_government = neutrality }
+					   }
+				}
+				hidden_effect = { country_event = { id = nod.31 days = 2  }	}   #starikov takes power becose fedorov dont find Putin 
+			}
+				
+				
+			}		
+	  }
+	}
+	shared_focus = {
+		id = NOD_peregovory_s_kazakami
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		prerequisite = {
+			focus = NOD_nats_iskluchitelnost
+		}
+		x = 42
+		y = 3
+		available = {
+			has_war = no
+		}
+        ai_will_do = {
+        factor = 100
+		}
+completion_reward = {
+ KRR = {
+         country_event = {
+							id = krr.1
+						    }
+						}
+}
+
+	}
+	shared_focus = {
+		id = NOD_Donbass_nash
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		prerequisite = {
+			focus = NOD_peregovory_s_kazakami
+		}
+		available = {
+			has_war = no
+		}
+		x = 43
+		y = 4
+completion_reward = {
+ DON = {
+         country_event = {
+							id = don.1
+						    }
+						}
+}
+	}
+	
+	shared_focus = {
+		id = NOD_vosvanie_k_Poklonskoy
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		prerequisite = {
+			focus = NOD_peregovory_s_kazakami
+		}
+		x = 41
+		y = 4
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+        factor = 100
+		}
+completion_reward = {
+CRI = {
+         country_event = {
+							id = cri.1
+						    }
+						}
+}
+	}
+	shared_focus = {
+		id = NOD_sudba_ukraini
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 5
+		prerequisite = {
+			focus = NOD_vosvanie_k_Poklonskoy
+		    focus = NOD_Donbass_nash
+		}
+		x = 42
+		y = 5
+		available = {
+			has_war = no
+		}
+completion_reward = {
+ if = {
+			limit = {
+				 KUR = {
+			      exists = yes
+				  
+		        }
+				
+			}
+			country_event = { id = nod.20 }
+		}
+		
+		else = {
+			create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}						
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+		if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 1
+		}
+		}
+
+}
+	}
+	shared_focus = {
+		id = NOD_hazari
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		prerequisite = {
+			focus = NOD_nats_iskluchitelnost
+		}
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 46
+		y = 3
+completion_reward = {
+add_state_claim = 236
+add_state_claim = 237
+create_wargoal = {
+							type = annex_everything
+							target = HAZ
+						}
+}
+	}
+	shared_focus = {
+		id = NOD_kavkaz_vopros
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = NOD_peregovory_s_kazakami
+		}
+		prerequisite = {
+			focus = NOD_hazari
+		}
+		available = {
+			has_war = no
+		}
+		x = 45
+		y = 4
+completion_reward = {
+    create_wargoal = {
+							type = annex_everything
+							target = GEO
+						}
+    create_wargoal = {
+							type = annex_everything
+							target = CHK
+						}
+	create_wargoal = {
+							type = annex_everything
+							target = ARM
+						}	
+	create_wargoal = {
+							type = annex_everything
+							target = AZR
+						}			
+}
+	}
+	shared_focus = {
+		id = NOD_chat
+		icon = GFX_NOD_po_techeniyu
+		cost = 9.4
+		prerequisite = {
+			focus = NOD_sudba_ukraini
+		}
+		
+		available = {
+					has_war = no
+				}
+				
+		x = 42
+		y = 6
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = CHT
+						}
+create_wargoal = {
+							type = annex_everything
+							target = BSH
+						}
+create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+                    if = {
+						limit = {
+							country_exists = CHT
+						}
+						CHT = {
+							every_state = {
+									limit = {
+										is_owned_by = CHT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}
+                    if = {
+						limit = {
+							country_exists = BSH
+						}
+						BSH = {
+							every_state = {
+									limit = {
+										is_owned_by = BSH
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}   
+                    if = {
+						limit = {
+							country_exists = PRM
+						}
+						PRM = {
+							every_state = {
+									limit = {
+										is_owned_by = PRM
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}
+                    if = {
+						limit = {
+							country_exists = SKT
+						}
+						SKT = {
+							every_state = {
+									limit = {
+										is_owned_by = SKT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}				
+	}
+	}
+	shared_focus = {
+		id = NOD_za_uralom
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5
+		prerequisite = {
+			focus = NOD_chat
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 41
+		y = 7
+            completion_reward = {                   
+		    	create_wargoal = {
+							type = annex_everything
+							target = POK
+				}	
+                if = {
+						limit = {
+							country_exists = POK
+						}
+						POK = {
+							every_state = {
+									limit = {
+										is_owned_by = POK
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}				
+			}
+	}
+	shared_focus = {
+		id = NOD_v_sibir
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		prerequisite = {
+			focus = NOD_za_uralom
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 41
+		y = 8
+completion_reward = {
+			create_wargoal = {
+							type = annex_everything
+							target = MRD
+						}			
+			create_wargoal = {
+							type = annex_everything
+							target = BRT
+						}			
+					}
+					if = {
+						limit = {
+							country_exists = MRD
+						}
+						MRD = {
+							every_state = {
+									limit = {
+										is_owned_by = MRD
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}
+				    if = {
+						limit = {
+							country_exists = BRT
+						}
+						BRT = {
+							every_state = {
+									limit = {
+										is_owned_by = BRT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				}
+	}
+	shared_focus = {
+		id = NOD_dv
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		prerequisite = {
+			focus = NOD_v_sibir
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 41
+		y = 9
+completion_reward = {
+            create_wargoal = {
+							type = annex_everything
+							target = DOT
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = KOL
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = MAG
+						}			
+			create_wargoal = {
+							type = annex_everything
+							target = YAK
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = YWO
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = TUB
+						}	
+                        if = {
+						limit = {
+							country_exists = DOT
+						}
+						DOT = {
+							every_state = {
+									limit = {
+										is_owned_by = DOT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }	
+                        if = {
+						limit = {
+							country_exists = KOL
+						}
+						KOL = {
+							every_state = {
+									limit = {
+										is_owned_by = KOL
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                        if = {
+						limit = {
+							country_exists = MAG
+						}
+						MAG = {
+							every_state = {
+									limit = {
+										is_owned_by = MAG
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                        if = {
+						limit = {
+							country_exists = YAK
+						}
+						YAK = {
+							every_state = {
+									limit = {
+										is_owned_by = YAK
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                        if = {
+						limit = {
+							country_exists = YWO
+						}
+						YWO = {
+							every_state = {
+									limit = {
+										is_owned_by = YWO
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                        if = {
+						limit = {
+							country_exists = TUB
+						}
+						TUB = {
+							every_state = {
+									limit = {
+										is_owned_by = TUB
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }						
+					}
+	}
+	shared_focus = {
+		id = NOD_na_lazaret
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5
+		prerequisite = {
+			focus = NOD_chat
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 43
+		y = 7
+		
+		completion_reward = {
+		create_wargoal = {
+							type = annex_everything
+							target = OSV
+						}
+            create_wargoal = {
+							type = annex_everything
+							target = LAZ
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = UNT
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = ARK
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = MAT
+						}
+                                            if = {
+						limit = {
+							country_exists = OSV
+						}
+						OSV = {
+							every_state = {
+									limit = {
+										is_owned_by = OSV
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                                                if = {
+						limit = {
+							country_exists = LAZ
+						}
+						LAZ = {
+							every_state = {
+									limit = {
+										is_owned_by = LAZ
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                                                if = {
+						limit = {
+							country_exists = UNT
+						}
+						UNT = {
+							every_state = {
+									limit = {
+										is_owned_by = UNT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                                                if = {
+						limit = {
+							country_exists = ARK
+						}
+						ARK = {
+							every_state = {
+									limit = {
+										is_owned_by = ARK
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+                                                if = {
+						limit = {
+							country_exists = MAT
+						}
+						MAT = {
+							every_state = {
+									limit = {
+										is_owned_by = MAT
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }						
+					}
+	}
+	shared_focus = {
+		id = NOD_moskva
+		icon = GFX_focus_sobor_bez_pritsela
+		cost = 5
+		prerequisite = {
+			focus = NOD_na_lazaret
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 43
+		y = 8
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}						
+
+}
+	}
+	shared_focus = {
+		id = NOD_piter
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5
+		prerequisite = {
+			focus = NOD_moskva
+		}
+		
+		available = {
+					has_war = no
+				}
+		
+		x = 43
+		y = 9
+			completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = TUP
+						}
+create_wargoal = {
+							type = annex_everything
+							target = MHL
+						}
+create_wargoal = {
+							type = annex_everything
+							target = EBN
+						}
+						                       if = {
+						limit = {
+							country_exists = EBN
+						}
+						EBN = {
+							every_state = {
+									limit = {
+										is_owned_by = EBN
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }
+						
+}						
+	}
+#   shared_focus = 
+#		id = NOD_patrions_Karelii
+#		icon = GFX_goal_generic_military_deal
+#		cost = 5
+#		prerequisite = 
+#			focus = NOD_nats_iskluchitelnost
+#		
+#		x = 44
+#		y = 3
+#
+	
+	shared_focus = {
+		id = NOD_volosatye_ruki_Kremlay
+		icon = GFX_goal_demand_sudetenland
+		cost = 5
+		prerequisite = {
+			focus = NOD_prodolzhat_poiski
+		}
+		x = 40
+		y = 2
+completion_reward = {
+add_political_power = 1
+country_event = {
+							id = nod.11
+						    }
+}
+	}
+	shared_focus = {
+		id = NOD_vnesnie_operatsii
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = NOD_volosatye_ruki_Kremlay
+		}
+		prerequisite = {
+			focus = NOD_nats_iskluchitelnost
+		}
+		x = 48
+		y = 3
+completion_reward = {
+add_political_power = 200
+
+}
+	}
+	
+	
+	shared_focus = {
+		id = NOD_bel
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5
+		prerequisite = {
+			focus = NOD_vnesnie_operatsii
+		}
+		available = {
+		SIN = {
+					exists = no
+					}
+		ZHE = {
+					exists = no
+					}
+		KUR = {
+					exists = no
+					}
+		UKR = {
+					exists = no
+					}	
+		DON = {
+					exists = no
+					}
+		CHE = {
+					exists = no
+					}	
+			has_war = no					
+				}
+		x = 49
+		y = 4
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = WHS
+						}
+create_wargoal = {
+							type = annex_everything
+							target = ZWN
+						}
+						
+}
+	}
+	
+	shared_focus = {
+		id = NOD_pribaltika
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		prerequisite = {
+			focus = NOD_bel
+		}
+		available = {
+		has_completed_focus = NOD_piter
+			has_war = no
+				}
+		x = 49
+		y = 5
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = SPL
+						}
+create_wargoal = {
+							type = annex_everything
+							target = VSB
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KLG
+						}						
+}
+	}
+	
+	shared_focus = {
+		id = NOD_help_KZ
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		prerequisite = {
+			focus = NOD_vnesnie_operatsii
+		}
+		available = {
+					has_war = no
+				}
+		x = 47
+		y = 4
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = KAZ
+						}
+                                       if = {
+						limit = {
+							country_exists = KAZ
+						}
+						KAZ = {
+							every_state = {
+									limit = {
+										is_owned_by = KAZ
+									}
+									NOD = {
+									    add_state_claim = PREV
+									}
+							}
+						}
+				        }						
+}
+	}
+	shared_focus = {
+		id = NOD_war_s_ekstrimistamy
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			
+			focus = NOD_help_KZ
+		}
+		available = {
+		KAZ = {
+					exists = no
+					}
+			has_war = no			
+				}
+		x = 47
+		y = 5
+completion_reward = {
+create_wargoal = {
+							type = annex_everything
+							target = LIM
+						}	
+}
+	}
+	shared_focus = {
+		id = NOD_sred_asia
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		prerequisite = {
+			
+			focus = NOD_help_KZ
+		}
+		available = {
+		KAZ = {
+					exists = no
+					}
+			has_war = no		
+				}
+		x = 45
+		y = 5
+completion_reward = {
+add_political_power = 50
+create_wargoal = {
+							type = annex_everything
+							target = TAJ
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KYR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = TMS
+						}						
+}
+	}
+	shared_focus = {
+		id = NOD_otdel_E
+		icon = GFX_focus_volki_v_pogonah
+		cost = 5
+		prerequisite = {
+			focus = NOD_volosatye_ruki_Kremlay
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 38
+		y = 3
+completion_reward = {
+
+add_ideas = NOD_otdel_E
+add_to_variable = { barkov_coup = 1 }
+custom_effect_tooltip = NOD_barkov_not_aprove_tt
+}
+	}
+	shared_focus = {
+		id = NOD_otrayady_Putina
+		icon = GFX_focus_generic_little_entente
+		cost = 5
+		prerequisite = {
+			focus = NOD_otdel_E
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		x = 39
+		y = 4
+completion_reward = {
+country_event = { id = nod.19 }
+
+
+}
+	}
+	
+	shared_focus = {
+		id = NOD_shturmoviki
+		icon = GFX_goal_generic_CAS
+		cost = 5
+		prerequisite = {
+			focus = NOD_istrebiteli
+		}
+		x = 9
+		y = 6
+completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	shared_focus = {
+		id = NOD_boevoy_desantniy_modul
+		icon = GFX_focus_generic_paratrooper
+		cost = 5
+		prerequisite = {
+			focus = NOD_hramy_kreposty
+		}
+		prerequisite = {
+			focus = NOD_duhovenstvo_v_voyskah
+		}
+		x = 30
+		y = 9
+completion_reward = {
+add_ideas = NOD_boevoy_desantniy_modul
+            add_tech_bonus = {
+				name = uk_amphibious_focus
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = nod_paratroopers_focus
+				bonus = 1.0
+				uses = 1
+				category = para_tech
+			}
+			add_tech_bonus = {
+				name = uk_amphibious_focus
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+}
+	}
+	
+	shared_focus = {
+		id = NOD_vsya_vlast_Putiny
+		icon = GFX_focus_NOD_wide_Putin_walking
+		cost = 5
+		
+		
+		x = 38
+		y = 12
+
+	}
+	
+	shared_focus = {
+		id = NOD_God_Emperator
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = NOD_vsya_vlast_Putiny
+		}
+		mutually_exclusive = {
+			focus = NOD_president_Mira
+		}
+		x = 36
+		y = 13
+
+	}
+	shared_focus = {
+		id = NOD_president_Mira
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = NOD_vsya_vlast_Putiny
+		}
+		mutually_exclusive = {
+			focus = NOD_God_Emperator
+		}
+		x = 40
+		y = 13
+
+	}
+	#shared_focus = 
+	#	id = NOD_Putin_prorok
+	#	icon = GFX_goal_unknown
+	#	cost = 5
+	#	prerequisite = {
+	#		focus = NOD_bratstvo_NOD
+	#	}
+	#	x = 71
+	#	y = 2
+    #
+	#
+
+	shared_focus = {
+		id = NOD_funny_group
+		icon = GFX_focus_cht_klonirovanie
+		cost = 0.2
+		
+		x = 38
+		y = 6
+
+available = {			
+			
+			has_country_flag = NOD_barkov_revolt
+
+}
+
+          completion_reward = {
+create_corps_commander = {
+									name = "Ж-12"
+									id = 121212
+									portrait_path = "gfx/leaders/NOD/Zh_12.dds"
+									traits = {
+ war_hero politically_connected
+}
+									skill = 2
+									attack_skill = 2
+									defense_skill = 1
+									planning_skill = 1
+									logistics_skill = 2
+								}
+          }
+	}
+	
+	shared_focus = {
+		id = NOD_carrot_hand
+		icon = GFX_NOD_morkov_ruka
+		cost = 1
+		prerequisite = {
+			focus = NOD_funny_group
+		}
+		x = 37
+		y = 7
+		
+		available = {			
+			
+			has_country_flag = NOD_barkov_revolt
+
+}
+		
+          completion_reward = {
+        add_popularity = { ideology = neutrality popularity = 0.1 }	
+		add_stability = 0.05
+          }
+	}
+	
+	shared_focus = {
+		id = NOD_rifle_hand
+		icon = GFX_NOD_udar_po_medvedu
+		cost = 1
+		prerequisite = {
+			focus = NOD_funny_group
+		}
+		x = 39
+		y = 7
+
+available = {			
+			
+			has_country_flag = NOD_barkov_revolt
+
+}
+
+          completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.02 }
+			add_popularity = { ideology = metacommy popularity = -0.02 }
+			remove_ideas = NOD_otrayady_Putina_1
+			add_manpower = -200
+          }
+	}
+	
+	shared_focus = {
+		id = NOD_stratocracy
+		icon = GFX_prioritise_russia
+		cost = 1
+		prerequisite = {
+			focus = NOD_funny_group
+		}
+		x = 38
+		y = 8
+		
+		available = {			
+			
+			has_country_flag = NOD_barkov_revolt
+
+}
+		
+          completion_reward = {
+		  add_ideas = NOD_stratocracy
+		  add_political_power = 100
+          add_popularity = { ideology = neutrality popularity = 0.05 }
+		  
+          }
+	}
+	
+	shared_focus = {
+		id = NOD_putin_always_with_us
+		icon = GFX_NOD_remember_Putin
+		cost = 5
+		prerequisite = {
+			focus = NOD_stratocracy
+		}
+		x = 38
+		y = 9
+		
+		available = {			
+			
+			has_country_flag = NOD_barkov_revolt
+
+}
+		
+          completion_reward = {
+          country_event = { id = nod.40 }
+		  add_war_support = 0.02
+          }
+	}

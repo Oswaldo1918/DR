@@ -1,0 +1,25 @@
+﻿
+division_template = {
+	name = "Аврора"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = CHT_GAR_01
+
+	regiments = {
+		avrunit = { x = 0 y = 0 }
+    
+}
+priority = 2
+}
+
+units = {
+#Royal Army
+division = {
+name = "Аврора"
+
+location = 13219
+division_template = "Аврора"
+start_experience_factor = 0.5
+
+}
+
+

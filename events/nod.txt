@@ -1,0 +1,1821 @@
+add_namespace = nod
+
+# выбор между нодом и нодом
+country_event = {
+    id = nod.1
+	title = nod.1.t
+	desc = nod.1.d 
+	picture = GFX_report_event_dkr_after_maslenitsa
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.1.a
+	country_event = {   
+					id = nod.2 hours = 16 random_hours = 8
+						    }
+		
+	}
+	
+	#option = 
+	#name = nod.1.b
+	#	remove_ideas = NOD_bez_putina
+	#	hidden_effect = { set_country_flag = keyn }
+	
+}
+
+# неудавшийся переворот Кейна
+country_event = {
+    id = nod.2
+	title = nod.2.t
+	desc = nod.2.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.2.a
+	hidden_effect = { set_country_flag = pitinist }
+		add_manpower = -65
+		add_political_power = -50
+		add_stability = -0.05
+		set_party_name = {
+							ideology = metacommy
+							long_name = NOD_metin_party_long
+							name = NOD_metin_party
+						}
+						add_popularity = { ideology = metacommy popularity = -0.02 }
+						add_ideas = NOD_zagovor_sorvan
+						217 = {
+			
+			
+			limit = {
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.7
+			}
+		}
+	}
+}
+# после неудавшегося переворота Кейна
+country_event = {
+    id = nod.3
+	title = nod.3.t
+	desc = nod.3.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.3.a
+	add_stability = 0.05
+	add_political_power = -50
+	}
+}
+# Возвращение Патриарха
+country_event = {
+    id = nod.4
+	title = nod.4.t
+	desc = nod.4.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.4.a
+	add_political_power = -50
+	set_country_flag = legit_patr
+	}
+}
+# Выбор Патриарха
+country_event = {
+    id = nod.5
+	title = nod.5.t
+	desc = nod.5.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+# Феодор митрополит Волгоградский
+	option = {
+	name = nod.5.a
+	set_country_flag = feodor_patr
+	add_political_power = -50
+	}
+# Sinod
+	option = {
+	name = nod.5.b
+	set_country_flag = put_patr
+	add_stability = -0.01
+	add_political_power = 200
+	add_popularity = { ideology = fascism popularity = -0.1 }		
+	}
+}
+# Деньги на новые танки попилили на металлолом 
+country_event = {
+    id = nod.6
+	title = nod.6.t
+	desc = nod.6.d 
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.6.a
+                        add_political_power = -25
+					    add_war_support = -0.1
+						239 = { add_resource = {
+									type = steel
+									amount = 1
+								}
+							}
+							239 = { add_resource = {
+									type = chromium
+									amount = 2
+								}
+							}
+			            401 = { add_resource = {
+									type = steel
+									amount = 1
+								}
+							}
+							401 = { add_resource = {
+									type = chromium
+									amount = 2
+								}
+							}
+						265 = { add_resource = {
+									type = steel
+									amount = 1
+								}
+							}
+							265 = { add_resource = {
+									type = chromium
+									amount = 2
+								}
+							}
+			            245 = { add_resource = {
+									type = steel
+									amount = 1
+								}
+							}
+							245 = { add_resource = {
+									type = chromium
+									amount = 2
+								}
+							}
+	}
+}
+country_event = {
+    id = nod.7
+	title = nod.7.t
+	desc = nod.7.d 
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.7.a
+   set_technology = {
+	basic_heavy_tank = 1
+	}
+   add_equipment_to_stockpile = {
+							type = heavy_tank_equipment_1
+							amount = 700
+							producer = NOD
+						}
+				245 = { add_resource = {
+									type = steel
+									amount = 3
+								}
+							}
+				401 = { add_resource = {
+									type = chromium
+									amount = 3
+								}		
+						
+	}
+}
+}
+country_event = {
+    id = nod.8
+	title = nod.8.t
+	desc = nod.8.d 
+	picture = GFX_report_event_dkr_Mishustin_chotisdelal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.8.a
+   set_technology = {
+	basic_heavy_tank = 1
+	}
+   add_equipment_to_stockpile = {
+							type = heavy_tank_equipment_1
+							amount = 2000
+							producer = NOD
+						}
+			add_political_power = 100	
+						
+						
+	}
+}
+country_event = {
+    id = nod.9
+	title = nod.9.t
+	desc = nod.9.d 
+	picture = GFX_report_event_dkr_Mishustin_chotisdelal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.9.a
+	set_technology = {
+	basic_heavy_tank = 1
+	}
+   add_equipment_to_stockpile = {
+							type = heavy_tank_equipment_1
+							amount = 2200
+							producer = NOD
+						}
+			add_political_power = 100
+add_war_support = 0.02			
+						
+	}
+}
+
+country_event = {
+    id = nod.10
+	title = nod.10.t
+	desc = nod.10.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.10.a
+    
+	 add_political_power = 25
+	
+	 add_manpower = -75
+    
+	 add_popularity = { ideology = metacommy popularity = -0.02 }	
+	
+	    KUR = { 
+				if = {
+					limit = { NOT = { has_government = fascism } }
+					add_opinion_modifier = { target = NOD modifier = medium_decrease } 
+				}
+			}
+		NOD = { 
+				if = {
+					limit = { NOT = { has_government = metacommy } }
+					add_opinion_modifier = { target = KUR modifier = medium_decrease } 
+				}
+			}	
+				
+	}
+	
+	option = {
+	name = nod.10.b
+	
+	add_political_power = -75
+	
+	create_field_marshal = {
+									name = "Евгений Фёдоров"
+									id = 8010
+									portrait_path = "gfx/leaders/NOD/Fedorov.dds"
+									traits = { politically_connected }
+									skill = 2
+									attack_skill = 1
+									defense_skill = 1
+									planning_skill = 1
+									logistics_skill = 2
+								}
+          add_to_variable = { barkov_coup = 1 }
+	      custom_effect_tooltip = NOD_barkov_not_aprove_tt
+		  if = {
+				limit = {
+					check_variable = { barkov_coup > 3 }
+				}
+				country_event = { id = nod.39 days = 1  }
+				
+			}					
+	}
+	
+	add_to_variable = { barkov_coup = 1 }
+	
+	option = {
+	name = nod.10.c
+	
+	add_political_power = -15
+	
+	}
+	
+}
+
+country_event = {
+    id = nod.11
+	title = nod.11.t
+	desc = nod.11.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.11.a
+	
+add_to_variable = { barkov_coup = 1 }
+add_political_power = -10	
+custom_effect_tooltip = NOD_barkov_bugurt_tt
+						
+	if = {
+				limit = {
+					check_variable = { barkov_coup > 3 }
+				}
+				country_event = { id = nod.39 days = 1  }
+				
+			}					
+	}
+}
+
+country_event = {
+    id = nod.12
+	title = nod.12.t
+	desc = nod.12.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.12.a
+	
+	add_political_power = -300
+	add_stability = -0.05
+	add_war_support = 0.05
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}	
+			add_popularity = { ideology = metacommy popularity = 0.02 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+			remove_unit_leader = 8010
+			
+			hidden_effect = {
+			
+            set_country_flag = NOD_barkov_revolt
+		}
+			
+	}
+}
+
+country_event = {
+    id = nod.13
+	title = nod.13.t
+	desc = nod.13.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.13.a
+	add_political_power = 150
+		KRR = {
+			every_unit_leader = {
+				set_nationality = NOD
+			}
+		}
+		
+		annex_country = {
+			target = KRR
+			transfer_troops = yes
+		}
+	
+		create_wargoal = {
+							type = annex_everything
+							target = STR
+						}	   
+				
+				}				
+						
+	
+}
+
+country_event = {
+    id = nod.14
+	title = nod.14.t
+	desc = nod.14.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.14.a
+					
+	 declare_war_on = {
+		        target = KRR
+		        type = annex_everything
+				}
+	create_wargoal = {
+							type = annex_everything
+							target = STR
+						}		
+						
+	}
+}
+
+country_event = {
+    id = nod.15
+	title = nod.15.t
+	desc = nod.15.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.15.a
+	add_political_power = 100
+		annex_country = {
+			target = DON
+			transfer_troops = yes
+		}
+               
+				}				
+						
+	
+}
+
+country_event = {
+    id = nod.16
+	title = nod.16.t
+	desc = nod.16.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.16.a
+    if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+	
+						
+	}
+}
+
+country_event = {
+    id = nod.17
+	title = nod.17.t
+	desc = nod.17.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.17.a
+	add_political_power = 50
+	          CRI = {
+			every_unit_leader = {
+				set_nationality = NOD
+			}
+		}
+		
+		annex_country = {
+			target = CRI
+			transfer_troops = yes
+		}
+               
+				}				
+						
+	
+}
+
+country_event = {
+    id = nod.18
+	title = nod.18.t
+	desc = nod.18.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.18.a
+    
+	create_wargoal = {
+							type = annex_everything
+							target = CRI
+						}
+						
+	}
+}
+country_event = {
+    id = nod.19
+	title = nod.19.t
+	desc = nod.19.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.19.a
+    add_ideas = NOD_otrayady_Putina
+	add_political_power = 20			
+	}
+	
+	option = {
+	name = nod.19.b
+     add_ideas = NOD_otrayady_Putina_1
+	 add_manpower = 1000
+	 add_political_power = 75
+	add_to_variable = { barkov_coup = 1 }
+	custom_effect_tooltip = NOD_barkov_not_aprove_tt
+				
+	}
+	
+	option = {
+	name = nod.19.c
+    add_stability = 0.01
+	add_political_power = 100			
+	}
+}
+
+country_event = {
+    id = nod.20
+	title = nod.20.t
+	desc = nod.20.d 
+	picture = GFX_report_event_dkr_after_maslenitsa
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.20.a
+	
+add_political_power = -10
+ if = {
+			limit = {
+				 UKR = {
+			      exists = no
+				  
+		        }
+				CHE = {
+			      exists = no
+				  
+		        }
+			}
+			country_event = { id = kur.18 }
+		}
+		
+		else = {
+		KUR = {
+         country_event = {
+							id = kur.10
+						    }
+						}
+		}
+						
+						
+	}
+	option = {
+	name = nod.20.b
+	
+add_political_power = 10	
+create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}						
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+		if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}						
+						
+	}
+}
+
+country_event = {
+    id = nod.21
+	title = nod.21.t
+	desc = nod.21.d 
+	picture = GFX_report_event_dkr_after_maslenitsa
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.21.a
+    create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}						
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+		if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+	
+						
+	}
+}
+
+country_event = {
+    id = nod.22
+	title = nod.22.t
+	desc = nod.22.d 
+	picture = GFX_report_event_dkr_after_maslenitsa
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.22.a
+	KUR = {
+         country_event = {
+							id = kur.15
+						    }
+						}
+	}
+	
+	option = {
+	name = nod.22.b
+		KUR = {
+         country_event = {
+							id = kur.16
+						    }
+						}				
+	}
+	
+	option = {
+	name = nod.22.c
+		KUR = {
+         country_event = {
+							id = kur.17
+						    }
+						}				
+	}
+}
+
+country_event = {
+    id = nod.23
+	title = nod.23.t
+	desc = nod.23.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.23.a
+    KUR = { set_country_flag = with_NOD_1}
+	KUR = {
+	
+	 create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+	add_state_claim = 221
+	add_state_claim = 197
+	add_state_claim = 192
+	add_state_claim = 226
+	add_state_claim = 200
+	add_state_claim = 196	
+	}
+	diplomatic_relation = { country = KUR relation = non_aggression_pact }
+    add_state_claim = 228
+	add_state_claim = 227
+	
+	if = {
+			limit = {
+				227 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 227
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 227 }
+		}
+	if = {
+			limit = {
+				228 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 228
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 228 }
+		}
+		
+if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+		
+	}
+}
+
+country_event = {
+    id = nod.24
+	title = nod.23.t
+	desc = nod.23.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.23.a
+    KUR = { set_country_flag = with_NOD_2}
+	KUR = {
+	add_state_claim = 221
+	add_state_claim = 197
+	add_state_claim = 192
+	
+	create_wargoal = {
+							type = annex_everything
+							target = UKR
+							type = take_state_focus
+					        generator = { 221 }
+					        expire = 0
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 192 197 }
+					        expire = 0
+						}
+	
+	}
+	diplomatic_relation = { country = KUR relation = non_aggression_pact }
+    add_state_claim = 228
+	add_state_claim = 227
+	add_state_claim = 200
+	add_state_claim = 196
+	add_state_claim = 226
+	create_wargoal = {
+							type = annex_everything
+							target = UKR
+							type = take_state_focus
+					        generator = { 226 200 }
+					        expire = 0
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 196 }
+					        expire = 0
+						}
+	
+	if = {
+			limit = {
+				227 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 227
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 227 }
+		}
+	if = {
+			limit = {
+				228 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 228
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 228 }
+		}
+		
+if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+	
+	}
+}
+
+country_event = {
+    id = nod.25
+	title = nod.23.t
+	desc = nod.23.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.23.a
+    KUR = { set_country_flag = with_NOD_4}
+	KUR = {
+	
+	add_state_claim = 197
+	add_state_claim = 192
+	
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 192 197 }
+					        expire = 0
+						}
+	}
+	diplomatic_relation = { country = KUR relation = non_aggression_pact }
+    add_state_claim = 228
+	add_state_claim = 227
+	add_state_claim = 200
+	add_state_claim = 196
+	add_state_claim = 221
+	add_state_claim = 226
+	create_wargoal = {
+							type = annex_everything
+							target = UKR
+							type = take_state_focus
+					        generator = { 221 226 200 }
+					        expire = 0
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 196 }
+					        expire = 0
+						}			
+	if = {
+			limit = {
+				227 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 227
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 227 }
+		}
+	if = {
+			limit = {
+				228 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 228
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 228 }
+		}
+		
+if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+	
+	}
+}
+
+country_event = {
+    id = nod.26
+	title = nod.24.t
+	desc = nod.24.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.24.a
+    KUR = { set_country_flag = with_NOD_3}
+	KUR = {
+	add_state_claim = 221
+	add_state_claim = 197
+	add_state_claim = 192
+	add_state_claim = 226
+	create_wargoal = {
+							type = annex_everything
+							target = UKR
+							type = take_state_focus
+					        generator = { 221 226 }
+					        expire = 0
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 197 192 }
+					        expire = 0
+						}	
+	}
+	diplomatic_relation = { country = KUR relation = non_aggression_pact }
+    add_state_claim = 228
+	add_state_claim = 227
+	add_state_claim = 200
+	add_state_claim = 196
+	
+	create_wargoal = {
+							type = annex_everything
+							target = UKR
+							type = take_state_focus
+					        generator = { 200 }
+					        expire = 0
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+							type = take_state_focus
+					        generator = { 196 }
+					        expire = 0
+						}	
+	
+		if = {
+			limit = {
+				227 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 227
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 227 }
+		}
+	if = {
+			limit = {
+				228 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 228
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 228 }
+		}
+		
+if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}				
+	}
+	option = {
+	name = nod.24.b
+        create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}						
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+		if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+						
+	}
+}
+
+country_event = {
+    id = nod.27
+	title = nod.27.t
+	desc = nod.27.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.27.a
+    
+	KUR = {set_country_flag = with_NOD_1 }
+	diplomatic_relation = { country = KUR relation = non_aggression_pact }
+    add_state_claim = 228
+	add_state_claim = 227
+				
+	if = {
+			limit = {
+				227 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 227
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 227 }
+		}
+	if = {
+			limit = {
+				228 = {
+					OR = {
+						is_controlled_by = KUR
+						DON = {
+							controls_state = 228
+							is_in_faction_with = KUR
+							is_subject_of = KUR
+							
+						}
+					}
+				}
+			}
+			NOD = { transfer_state = 228 }
+		}
+		
+if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+	
+	}
+	option = {
+	name = nod.27.b
+	create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}						
+create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+		if = {
+			limit = {
+				 DON = {
+			      exists = yes
+				  	NOT = {
+				  is_subject_of = LAZ
+				  is_in_faction_with = LAZ
+				  }
+		        }
+				
+			}
+			create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+		}
+		
+		else = {
+			add_political_power = 2
+		}
+	}
+}
+country_event = {
+	id = nod.28
+	title = nod.28.t
+	desc = nod.28.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOD
+		OR = { 
+	    controls_state = 192
+		controls_state = 197
+		controls_state = 221
+		}
+		KUR = { has_country_flag = with_NOD_2 }
+		NOT =  { has_war_with = KUR }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		KUR = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = nod.28.a
+		
+			KUR = { transfer_state = 192 
+			        transfer_state = 197
+		            transfer_state = 221 }
+		}
+	}
+country_event = {
+	id = nod.29
+	title = nod.29.t
+	desc = nod.29.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOD
+		OR = { 
+	    controls_state = 192
+		controls_state = 197
+		controls_state = 221
+		controls_state = 226
+		}
+		KUR = { has_country_flag = with_NOD_3 }
+		NOT =  { has_war_with = KUR }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		KUR = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = nod.29.a
+		
+			KUR = { transfer_state = 192 
+			        transfer_state = 226
+					transfer_state = 221
+		            transfer_state = 197 }
+		}
+	}
+	country_event = {
+	id = nod.30
+	title = nod.30.t
+	desc = nod.30.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOD
+		OR = { 
+	    controls_state = 192
+		controls_state = 197
+		}
+		KUR = { has_country_flag = with_NOD_4 }
+		NOT =  { has_war_with = KUR }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		KUR = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = nod.30.a
+		
+			KUR = { transfer_state = 197 
+			        transfer_state = 192
+					}
+		}
+	}
+	country_event = {
+	id = nod.31
+	title = nod.31.t
+	desc = nod.31.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOD
+		has_completed_focus = NOD_vostanovit_suverenitet_Russia
+		NOT = { has_government = neutrality }
+	 }
+	
+	 option = {
+		name = nod.31.a
+
+	hidden_effect = {
+	kill_country_leader = yes
+	}
+	create_country_leader = {
+				name = "Николай Стариков"
+				desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
+				picture = "Starikov.dds"
+				expire = "1965.1.1"
+				ideology = falangism
+				traits = {
+					backroom_backstabber
+				}
+			}
+		set_politics = { ruling_party = fascism elections_allowed = no }	
+		}
+	}
+	country_event = {
+	id = nod.32
+	title = nod.32.t
+	desc = nod.32.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	trigger = {
+		tag = NOD
+	 }
+	
+	 option = {
+		name = nod.32.a
+
+	hidden_effect = {
+	kill_country_leader = yes
+	}
+	remove_ideas = NOD_bez_putina
+	create_country_leader = {
+				name = "Владимир Путин"
+				desc = "POLITICS_PUTIN_DESC"
+				picture = "Putin.dds"
+				expire = "1960.1.1"
+				ideology = falangism
+				traits = {
+				solar_putin
+				}
+			}
+		set_politics = { ruling_party = fascism elections_allowed = no }	
+		}
+	}
+	country_event = {
+    id = nod.33
+	title = nod.33.t
+	desc = nod.33.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.33.a
+	add_stability = 0.01
+	add_manpower= -2
+	
+	}
+}
+country_event = {
+    id = nod.34
+	title = nod.34.t
+	desc = nod.34.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.34.a
+	add_political_power = 100
+	}
+}
+country_event = {
+    id = nod.35
+	title = nod.35.t
+	desc = nod.35.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.35.a
+add_war_support = 0.01
+add_manpower= -6
+	}
+}
+country_event = {
+    id = nod.36
+	title = nod.36.t
+	desc = nod.36.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.36.a
+	add_political_power = -20
+	add_stability = -0.01
+	add_manpower= -1
+	}
+}
+country_event = {
+    id = nod.37
+	title = nod.37.t
+	desc = nod.37.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.37.a
+	add_stability = 0.01
+	}
+}
+country_event = {
+    id = nod.38
+	title = nod.38.t
+	desc = nod.38.d 
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.38.a
+add_stability = 0.1
+add_political_power = 100
+add_war_support = -0.02
+	}
+	option = {
+	name = nod.38.b
+add_war_support = 0.05
+add_political_power = 100
+set_capital = 219
+			 add_victory_points = { province = 301 value = -40 }
+
+	}
+	option = {
+	name = nod.38.c
+add_political_power = -100
+add_war_support = 0.1
+add_stability = -0.05
+set_capital = 195
+
+	}
+}
+country_event = {
+    id = nod.39
+	title = nod.39.t
+	desc = nod.39.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.39.a
+	add_manpower = -1
+	}
+}
+country_event = {
+    id = nod.40
+	title = nod.40.t
+	desc = nod.40.d 
+	picture = GFX_report_event_dkr_booty_traps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NOD
+	}
+
+	option = {
+	name = nod.40.a
+	remove_ideas = NOD_bez_putina
+	}
+}
+country_event = {
+	id = nod.41
+	title = nod.41.t
+	desc = nod.41.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOD
+		KUR = {
+		OR = { 
+		has_country_flag = with_NOD_4 
+		has_country_flag = with_NOD_3
+		has_country_flag = with_NOD_2
+		}
+		}
+		NOT = { has_war_with = KUR }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		KUR = { exists = yes }
+		KUR = { NOT = { has_war_with = NOD } }
+		KUR = { has_war_with = LAZ }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	 option = {
+		name = nod.41.a
+		ai_will_do = {
+        factor = 75
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = LAZ
+			}
+			
+		}
+	option = {
+		name = nod.41.b
+		ai_will_do = {
+        factor = 20
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = KUR
+			}
+			remove_diplomatic_relation = { country = KUR relation = non_aggression_pact }
+		}	
+	option = {
+		name = nod.41.c
+		ai_will_do = {
+        factor = 5
+		}
+		
+			
+		}	
+	}

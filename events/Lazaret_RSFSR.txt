@@ -1,0 +1,780 @@
+add_namespace = lazaret
+
+country_event = { #Пошлопоехало_первые_4_ивента_это_развернутый_лор
+
+	id = lazaret.0 
+        title = lazaret.0.t
+        desc = lazaret.0.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.0.a
+	}
+}
+country_event = {
+
+	id = lazaret.1
+        title = lazaret.1.t
+        desc = lazaret.1.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+		NOT = { has_completed_focus = LAZ_postanovka_voprosa }
+		focus_progress = {
+			focus = LAZ_postanovka_voprosa
+			progress > 0.2
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = lazaret.1.a
+	}
+	
+	option = {
+		name = lazaret.1.b
+	    complete_national_focus = LAZ_postanovka_voprosa
+	} 
+}
+country_event = {
+
+	id = lazaret.2
+        title = lazaret.2.t
+        desc = lazaret.2.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+		NOT = { has_completed_focus = LAZ_postanovka_voprosa }
+		focus_progress = {
+			focus = LAZ_postanovka_voprosa
+			progress > 0.4
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lazaret.2.a
+		complete_national_focus = LAZ_postanovka_voprosa
+	}
+	
+	option = {
+		name = lazaret.2.b
+	}
+}
+
+country_event = {
+
+	id = lazaret.3
+        title = lazaret.3.t
+        desc = lazaret.3.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+		NOT = { has_completed_focus = LAZ_postanovka_voprosa }
+		focus_progress = {
+			focus = LAZ_postanovka_voprosa
+			progress > 0.6
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 9
+	}
+	
+	option = {
+		name = lazaret.3.a
+	    add_ideas = LAZ_idea_obzor_SRL
+		complete_national_focus = LAZ_postanovka_voprosa
+	}
+}
+
+country_event = { #Ильгиз_вываливается_из_Чумного_Пакта
+
+	id = lazaret.4
+        title = lazaret.4.t
+        desc = lazaret.4.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = LAZ
+	    BSH = {
+			is_subject_of = LAZ
+		}
+		CHT = {
+			has_war = yes
+		}
+	}
+	
+	option = {
+		name = lazaret.4.a
+		remove_from_faction = BSH
+		end_puppet = BSH
+	}
+}
+
+#Далее_попёрла_внутренняя_политика_и_чисточки
+
+country_event = { #Ивент_о_необходимости_создания_независимой_от_армии_спецслужбы_будущей_КЧС_типа_КГБ
+
+	id = lazaret.5
+        title = lazaret.5.t
+        desc = lazaret.5.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.5.a
+		add_to_variable = { LAZ_specsluzhba = 1 }
+	}
+	option = {
+		name = lazaret.5.b
+		add_to_variable = { LAZ_specsluzhba = 2 }
+	}
+	option = {
+		name = lazaret.5.c
+		add_to_variable = { LAZ_specsluzhba = 3 }
+	}
+}
+#country_event = { #Закономерный_вопрос_кто_будет_руководить_чистками(на будущее, если будет гачистский и дадувнедрёжевский путь)
+#
+#	id = lazaret.6
+#       title = lazaret.6.t
+#        desc = lazaret.6.d
+#	picture = GFX_report_event_ast_parliament_house
+#
+#	is_triggered_only = yes
+#	
+#	option = {#коммунисты
+#		name = lazaret.6.a
+#	}
+#	option = {#гачисты
+#		name = lazaret.6.b
+#	}
+#	option = {#дадувнедрёж
+#		name = lazaret.6.с
+#	}
+#}
+country_event = { #Статус_модераторов
+
+	id = lazaret.7
+        title = lazaret.7.t
+        desc = lazaret.7.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.7.a
+	}
+	option = {
+		name = lazaret.7.b
+		add_days_mission_timeout = {
+			mission = LAZ_razval_mission
+			days = -10
+		}
+		add_stability = 0.1
+		add_war_support = 0.25
+	}
+}
+country_event = { #Покушение на Кербонавта
+
+	id = lazaret.8
+        title = lazaret.8.t
+        desc = lazaret.8.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = { #Керб_шот_килд
+		name = lazaret.8.a
+		remove_ideas = LAZ_kontra_2
+		remove_ideas = LAZ_kontra_1
+		remove_ideas = LAZ_kontra_0
+	}
+}
+
+country_event = { #Развал пакта
+
+	id = lazaret.9
+        title = lazaret.9.t
+        desc = lazaret.9.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = { #сторона Керба и Чумака
+		name = lazaret.9.a
+		LAZ = {
+			end_puppet = CHT
+			end_puppet = MAT
+			end_puppet = DON
+			end_puppet = ARK
+			end_puppet = UNT
+			end_puppet = WHS
+			end_puppet = BSH
+		}
+		set_country_flag = LAZ_bilo_vosstaniye
+		leave_faction = Chumnoy_pakt
+		MAT = {leave_faction = Chumnoy_pakt}
+		DON = {leave_faction = Chumnoy_pakt}
+		WHS = {leave_faction = Chumnoy_pakt}
+		UNT = {leave_faction = Chumnoy_pakt}
+		ARK = {leave_faction = Chumnoy_pakt}
+		BSH = {leave_faction = Chumnoy_pakt}
+		CHT = {leave_faction = Chumnoy_pakt}
+		OSV = {
+		        
+				LAZ = {
+			every_state = {
+			limit = {
+				is_owned_by = LAZ
+			}
+			OSV = {
+				add_state_core = PREV
+			}
+		  }
+		  }
+		  transfer_state = 253
+		  transfer_state = 248
+		  transfer_state = 247
+		  transfer_state = 246
+		declare_war_on = {
+		        target = LAZ
+		        type = civil_war
+			}
+		add_civil_war_target = LAZ
+		 division_template = { 
+				name = "Пехтура" 	
+				division_names_group = OSV_ARM_011
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }		
+					infantry = { x = 0 y = 3 }	
+					infantry = { x = 1 y = 0 }		
+					infantry = { x = 2 y = 0 }	
+				}
+			}
+		 247 = {
+				create_unit = {
+					division = "name = \"1-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"2-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \"3-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+                create_unit = {
+					division = "name = \"4-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"5-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 6-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 7-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 8-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 9-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+                create_unit = {
+					division = "name = \" 10-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 12-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+			}
+			OSV = { change_tag_from = LAZ }
+		}
+		                248 = { set_demilitarized_zone = no }
+			            247 = { set_demilitarized_zone = no }
+						246 = { set_demilitarized_zone = no }
+			            253 = { set_demilitarized_zone = no }
+	}
+	option = { #сторона Лазарета
+		name = lazaret.9.b
+		LAZ = {
+			end_puppet = CHT
+			end_puppet = MAT
+			end_puppet = DON
+			end_puppet = ARK
+			end_puppet = UNT
+			end_puppet = WHS
+			end_puppet = BSH
+		}
+		set_country_flag = LAZ_bilo_vosstaniye
+		leave_faction = Chumnoy_pakt
+		MAT = {leave_faction = Chumnoy_pakt}
+		DON = {leave_faction = Chumnoy_pakt}
+		WHS = {leave_faction = Chumnoy_pakt}
+		UNT = {leave_faction = Chumnoy_pakt}
+		ARK = {leave_faction = Chumnoy_pakt}
+		BSH = {leave_faction = Chumnoy_pakt}
+		CHT = {leave_faction = Chumnoy_pakt}
+		OSV = {
+		       
+				LAZ = {
+			every_state = {
+			limit = {
+				is_owned_by = LAZ
+			}
+			OSV = {
+				add_state_core = PREV
+			}
+		  }
+		  }
+		    transfer_state = 253
+			transfer_state = 248
+			transfer_state = 247
+			transfer_state = 246
+		declare_war_on = {
+		        target = LAZ
+		        type = civil_war
+			}
+		add_civil_war_target = LAZ
+		 division_template = { 
+				name = "Пехтура" 	
+				division_names_group = OSV_ARM_011
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }		
+					infantry = { x = 0 y = 3 }	
+					infantry = { x = 1 y = 0 }		
+					infantry = { x = 2 y = 0 }	
+				}
+			}
+		 247 = {
+				create_unit = {
+					division = "name = \"1-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"2-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \"3-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+                create_unit = {
+					division = "name = \"4-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 5-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 6-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 7-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 8-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 9-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+                create_unit = {
+					division = "name = \"10-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \" 11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+		        create_unit = {
+					division = "name = \" 12-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					owner = OSV
+				}
+			}
+		}
+		                248 = { set_demilitarized_zone = no }
+			            247 = { set_demilitarized_zone = no }
+						246 = { set_demilitarized_zone = no }
+			            253 = { set_demilitarized_zone = no }
+		} 
+	}
+	
+country_event = { #Доступ_к_экспансии_после_чисток
+	id = lazaret.10
+	title = lazaret.10.t
+	desc = lazaret.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+	}
+	
+	option = {
+	name = lazaret.10.a
+	 add_political_power = 50
+	 custom_effect_tooltip = LAZ_open_reunific_tt
+	  if = {
+			limit = {
+				has_country_flag = LAZ_bilo_vosstaniye
+			}
+			complete_national_focus = LAZ_plan_doka
+		}
+	}
+}
+	
+	
+country_event = { #КНОР_по_Экономике
+	id = lazaret.11
+	title = lazaret.11.t
+	desc = lazaret.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+	}
+	
+	option = {
+	name = lazaret.11.a
+	}
+}
+
+country_event = { #План_Унца
+
+	id = lazaret.12
+    title = lazaret.12.t
+    desc = lazaret.12.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.12.a
+	}
+}
+
+country_event = { #План_Серегина
+
+	id = lazaret.13
+    title = lazaret.13.t
+    desc = lazaret.13.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.13.a
+	}
+}
+
+country_event = { #План_Куракова
+
+	id = lazaret.14
+    title = lazaret.14.t
+    desc = lazaret.14.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.14.a
+	}
+}
+
+country_event = { #План_Морито
+
+	id = lazaret.15
+    title = lazaret.15.t
+    desc = lazaret.15.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.15.a
+	}
+}
+
+country_event = { #1-я_реакция_на_стрим_по_нейропсихологии
+
+	id = lazaret.16
+	title = lazaret.16.t
+	desc = lazaret.16.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.16.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #2-я_реакция_на_стрим_по_нейропсихологии
+
+	id = lazaret.17
+	title = lazaret.17.t
+	desc = lazaret.17.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.17.a
+	}
+}
+
+country_event = { #3-я_реакция_на_стрим_по_нейропсихологии
+
+	id = lazaret.18
+	title = lazaret.18.t
+	desc = lazaret.18.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.18.a
+	}
+}
+
+country_event = { #4-я_реакция_на_стрим_по_нейропсихологии
+
+	id = lazaret.19
+	title = lazaret.19.t
+	desc = lazaret.19.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.19.a
+		MAT = { add_stability = -0.15 }
+	}
+}
+
+country_event = { #5-я_реакция_на_стрим_по_нейропсихологии
+
+	id = lazaret.20
+	title = lazaret.20.t
+	desc = lazaret.20.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.20.a
+		add_political_power = -100
+		add_days_mission_timeout = {
+			mission = LAZ_razval_mission
+			days = -30
+		}
+	}
+}
+
+country_event = { #Стрим_по_Урбанистике
+
+	id = lazaret.21
+	title = lazaret.21.t
+	desc = lazaret.21.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.21.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #Стрим_по_НАО_1
+
+	id = lazaret.22
+	title = lazaret.22.t
+	desc = lazaret.22.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.22.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #Стрим_по_НАО_2
+
+	id = lazaret.23
+	title = lazaret.23.t
+	desc = lazaret.23.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.23.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #Вторжение_в_тупичок
+
+	id = lazaret.24
+	title = lazaret.24.t
+	desc = lazaret.24.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = lazaret.24.a
+		create_wargoal = {
+        type = annex_everything
+        target = TUP
+        }
+		hidden_effect = {
+		    if = {
+			        limit = {
+				        country_exists = TUP
+			        }
+			        TUP = {
+			            every_state = {
+			                limit = {
+				                is_owned_by = TUP
+			                }
+			                    LAZ = {
+				                   add_state_claim = PREV
+			                    }
+		                }
+		            }
+		    }
+		}
+	}
+}
+
+#claims to NOD when at war
+country_event = {
+	id = lazaret.99
+	title = lazaret.99.t
+	desc = lazaret.99.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+		has_war_with = NOD
+	}
+	
+	option = {
+	name = lazaret.99.a
+		
+	 if = {
+			limit = {
+				country_exists = NOD
+			}
+			NOD = {
+			every_state = {
+			limit = {
+				is_owned_by = NOD
+			}
+			LAZ = {
+				add_state_claim = PREV
+			}
+		  }
+		  }
+		}
+		
+		
+	}
+}
+
+#claims to KUR when at war
+country_event = {
+	id = lazaret.98
+	title = lazaret.98.t
+	desc = lazaret.98.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LAZ
+		has_war_with = KUR
+	}
+	
+	option = {
+	name = lazaret.98.a
+		
+	 if = {
+			limit = {
+				country_exists = KUR
+			}
+			KUR = {
+			every_state = {
+			limit = {
+				is_owned_by = KUR
+			}
+			LAZ = {
+				add_state_claim = PREV
+			}
+		  }
+		  }
+		}
+		
+		
+	}
+}

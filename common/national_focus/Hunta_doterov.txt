@@ -1,0 +1,2247 @@
+focus_tree = {
+	id = Hunta_doterov
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DOT
+		}
+	}
+	default = no
+	focus = {
+		id = DOT_pust_nachnyotsa_VAAGH
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 3,00
+		x = 21
+		y = 0
+			completion_reward = {
+					add_war_support = 0.15
+				}
+
+	}
+	focus = {
+		id = DOT_precratit_bespredel
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_pust_nachnyotsa_VAAGH
+		}
+		x = 19
+		y = 1
+			completion_reward = {
+					add_state_claim = 562
+					create_wargoal = {
+							type = annex_everything
+							target = MAG
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_verfi_magadana
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_precratit_bespredel
+		}
+		x = 18
+		y = 2
+			available = {
+					controls_state = 562
+				}
+			completion_reward = {
+					562 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_vernut_GULAG
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_precratit_bespredel
+		}
+		x = 20
+		y = 2
+			available = {
+					controls_state = 562
+				}
+			completion_reward = {
+					add_state_core = 562
+					add_ideas = DOT_GULAG
+				}
+
+	}
+	focus = {
+		id = DOT_poborot_strakh
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_pust_nachnyotsa_VAAGH
+		}
+		x = 23
+		y = 1
+			completion_reward = {
+					add_state_claim = 644
+					create_wargoal = {
+							type = annex_everything
+							target = KOL
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_gold_Kolymy
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_poborot_strakh
+		}
+		x = 22
+		y = 2
+			available = {
+					controls_state = 644
+				}
+			completion_reward = {
+					add_state_core = 644
+					add_timed_idea = {
+							idea = DOT_gold_Kolymy
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_zavodi_v_vostochnoy_sibiri
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_poborot_strakh
+		}
+		x = 24
+		y = 2
+			available = {
+					controls_state = 644
+				}
+			completion_reward = {
+					644 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_nauchitsya_komandovat
+		icon = GFX_focus_generic_military_academy
+		cost = 8,00
+		prerequisite = {
+			focus = DOT_verfi_magadana
+		}
+		prerequisite = {
+			focus = DOT_vernut_GULAG
+		}
+		prerequisite = {
+			focus = DOT_gold_Kolymy
+		}
+		prerequisite = {
+			focus = DOT_zavodi_v_vostochnoy_sibiri
+		}
+		x = 21
+		y = 3
+			completion_reward = {
+					remove_ideas = DOT_plohoe_kommandovanie
+				}
+
+	}
+	focus = {
+		id = DOT_udar_po_volkam
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_nauchitsya_komandovat
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					add_state_claim = 561
+					add_state_claim = 657
+					create_wargoal = {
+							type = annex_everything
+							target = YWO
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_vostanovit_infrastruktruru
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_udar_po_volkam
+		}
+		x = 18
+		y = 5
+			available = {
+					controls_state = 561
+					controls_state = 657
+				}
+			completion_reward = {
+					561 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					657 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_totalnaya_expluatatsya
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_udar_po_volkam
+		}
+		x = 20
+		y = 5
+			available = {
+					controls_state = 561
+					controls_state = 657
+				}
+			completion_reward = {
+					add_state_core = 561
+					add_state_core = 657
+					561 = {
+							add_extra_state_shared_building_slots = 2
+						}
+					657 = {
+							add_extra_state_shared_building_slots = 2
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_ugroza_DVR
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_nauchitsya_komandovat
+		}
+		x = 23
+		y = 4
+			completion_reward = {
+					add_state_claim = 655
+					add_state_claim = 537
+					add_state_claim = 560
+					add_state_claim = 408
+					add_state_claim = 409
+					create_wargoal = {
+							type = annex_everything
+							target = TUB
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_zavodi_v_primorie
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_ugroza_DVR
+		}
+		x = 22
+		y = 5
+			available = {
+					controls_state = 408
+				}
+			completion_reward = {
+					add_state_core = 655
+					add_state_core = 537
+					add_state_core = 560
+					add_state_core = 408
+					add_state_core = 409
+					408 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_verfi_vladivostoka
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_ugroza_DVR
+		}
+		x = 24
+		y = 5
+			available = {
+					controls_state = 408
+				}
+			completion_reward = {
+					408 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_new_gorizonty
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_vostanovit_infrastruktruru
+		}
+		prerequisite = {
+			focus = DOT_totalnaya_expluatatsya
+		}
+		prerequisite = {
+			focus = DOT_zavodi_v_primorie
+		}
+		prerequisite = {
+			focus = DOT_verfi_vladivostoka
+		}
+		x = 21
+		y = 6
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = DOT_velikiy_pohod_na_zapad
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_new_gorizonty
+		}
+		mutually_exclusive = {
+			focus = DOT_bratskiy_mir
+		}
+		x = 24
+		y = 7
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = DOT_nizlozhit_geniay
+		icon = GFX_goal_generic_major_war
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_velikiy_pohod_na_zapad
+		}
+		x = 25
+		y = 8
+			completion_reward = {
+					add_state_claim = 565
+					add_state_claim = 566
+					add_state_claim = 563
+					add_state_claim = 564
+					create_wargoal = {
+							type = annex_everything
+							target = BRT
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_unichtozhit_Mordor
+		icon = GFX_goal_generic_attack_allies
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_velikiy_pohod_na_zapad
+		}
+		x = 23
+		y = 8
+			completion_reward = {
+					add_state_claim = 516
+					add_state_claim = 574
+					create_wargoal = {
+							type = annex_everything
+							target = MRD
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = YAK
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_narastit_dobychu
+		icon = GFX_goal_generic_construction2
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_nizlozhit_geniay
+		}
+		prerequisite = {
+			focus = DOT_unichtozhit_Mordor
+		}
+		x = 24
+		y = 9
+			available = {
+					controls_state = 564
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = DOT_narastit_dobychu
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_vopros_s_Pok
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_narastit_dobychu
+		}
+		x = 24
+		y = 10
+			completion_reward = {
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = DOT_war_buryati
+		icon = GFX_goal_generic_cavalry
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_nizlozhit_geniay
+		}
+		x = 26
+		y = 9
+			available = {
+					controls_state = 564
+				}
+			completion_reward = {
+					add_state_core = 563
+					add_state_core = 564
+					add_state_core = 565
+					add_state_core = 566
+					division_template = {
+							name = "Боевые буряты"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									cavalry = {
+											x = 0
+											y = 0
+										}
+									cavalry = {
+											x = 0
+											y = 1
+										}
+									cavalry = {
+											x = 0
+											y = 2
+										}
+									cavalry = {
+											x = 1
+											y = 0
+										}
+									cavalry = {
+											x = 1
+											y = 1
+										}
+									cavalry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					564 = {
+							create_unit = {
+									division = "name = \"1ая дивизия бурятов\" division_template = \"Боевые буряты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая дивизия бурятов\" division_template = \"Боевые буряты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая дивизия бурятов\" division_template = \"Боевые буряты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_v_obhod
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_vopros_s_Pok
+		}
+		mutually_exclusive = {
+			focus = DOT_peret_naprolon
+		}
+		x = 26
+		y = 11
+			completion_reward = {
+					add_state_claim = 330
+					add_state_claim = 621
+					add_state_claim = 612
+					add_state_claim = 611
+					create_wargoal = {
+							type = annex_everything
+							target = MNR
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_stepi_Mongolii
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_v_obhod
+		}
+		x = 26
+		y = 12
+			completion_reward = {
+					add_state_claim = 330
+					add_state_claim = 621
+					add_state_claim = 612
+					add_state_claim = 611
+					create_wargoal = {
+							type = annex_everything
+							target = MNR
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_mongolskay_kava
+		icon = GFX_goal_generic_cavalry
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_stepi_Mongolii
+		}
+		x = 26
+		y = 13
+			completion_reward = {
+					division_template = {
+							name = "Монгольская кавалерия"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									cavalry = {
+											x = 0
+											y = 0
+										}
+									cavalry = {
+											x = 0
+											y = 1
+										}
+									cavalry = {
+											x = 0
+											y = 2
+										}
+									cavalry = {
+											x = 1
+											y = 0
+										}
+									cavalry = {
+											x = 1
+											y = 1
+										}
+									cavalry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					404 = {
+							create_unit = {
+									division = "name = \"1ая монгольская дивизия\" division_template = \"Монгольская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая монгольская дивизия\" division_template = \"Монгольская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая монгольская дивизия\" division_template = \"Монгольская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_dogovor_s_yigurami
+		icon = GFX_goal_generic_improve_relations
+		cost = 3,00
+		prerequisite = {
+			focus = DOT_mongolskay_kava
+		}
+		x = 26
+		y = 14
+			completion_reward = {
+					GLA = {
+							give_military_access = DOT
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_poconchit_s_KZ
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		prerequisite = {
+			focus = DOT_dogovor_s_yigurami
+		}
+		x = 26
+		y = 15
+			completion_reward = {
+					transfer_state = 588
+					transfer_state = 589
+					declare_war_on = {
+							type = annex_everything
+							target = KAZ
+						}
+					declare_war_on = {
+							type = annex_everything
+							target = LIM
+						}
+					if = {
+							limit = {
+									country_exists = LIM
+								}
+							LIM = {
+									every_state = {
+											limit = {
+													is_owned_by = LIM
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = KAZ
+								}
+							KAZ = {
+									every_state = {
+											limit = {
+													is_owned_by = KAZ
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					division_template = {
+							name = "Диверсанты"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									infantry = {
+											x = 0
+											y = 0
+										}
+									infantry = {
+											x = 0
+											y = 1
+										}
+									infantry = {
+											x = 1
+											y = 0
+										}
+									infantry = {
+											x = 1
+											y = 1
+										}
+								}
+						}
+					588 = {
+							create_unit = {
+									division = "name = \"1ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"4ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"5ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+					589 = {
+							create_unit = {
+									division = "name = \"6ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"7ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"8ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"9ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"10ая дивизия диверсантов\" division_template = \"Диверсанты\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_podavit_separatizm
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_poconchit_s_KZ
+		}
+		x = 25
+		y = 16
+			completion_reward = {
+					add_state_core = 583
+					add_state_core = 590
+					add_state_core = 588
+					add_state_core = 407
+					add_state_core = 406
+					controls_state = 404
+					add_state_core = 402
+					controls_state = 589
+					add_state_core = 587
+				}
+
+	}
+	focus = {
+		id = DOT_priziv_mestnih
+		icon = GFX_focus_generic_little_entente
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_poconchit_s_KZ
+		}
+		x = 27
+		y = 16
+			completion_reward = {
+					division_template = {
+							name = "Казахская кавалерия"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									cavalry = {
+											x = 0
+											y = 0
+										}
+									cavalry = {
+											x = 0
+											y = 1
+										}
+									cavalry = {
+											x = 0
+											y = 2
+										}
+									cavalry = {
+											x = 1
+											y = 0
+										}
+									cavalry = {
+											x = 1
+											y = 1
+										}
+									cavalry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					division_template = {
+							name = "Казахская пехота"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									infantry = {
+											x = 0
+											y = 0
+										}
+									infantry = {
+											x = 0
+											y = 1
+										}
+									infantry = {
+											x = 0
+											y = 2
+										}
+									infantry = {
+											x = 1
+											y = 0
+										}
+									infantry = {
+											x = 1
+											y = 1
+										}
+									infantry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					404 = {
+							create_unit = {
+									division = "name = \"1ая казахстанская дивизия\" division_template = \"Казахская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая казахстанская дивизия\" division_template = \"Казахская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая казахстанская дивизия\" division_template = \"Казахская кавалерия\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"4ая казахстанская дивизия\" division_template = \"Казахская пехота\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"5ая казахстанская дивизия\" division_template = \"Казахская пехота\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_vtorzhenie_po_Volge
+		icon = GFX_goal_generic_attack_allies
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_priziv_mestnih
+		}
+		prerequisite = {
+			focus = DOT_podavit_separatizm
+		}
+		x = 26
+		y = 17
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = NOD
+								}
+							NOD = {
+									every_state = {
+											limit = {
+													is_owned_by = NOD
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = HAZ
+								}
+							HAZ = {
+									every_state = {
+											limit = {
+													is_owned_by = HAZ
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = NOD
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = HAZ
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_war_kalmik
+		icon = GFX_goal_generic_cavalry
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_vtorzhenie_po_Volge
+		}
+		x = 25
+		y = 18
+			available = {
+					controls_state = 237
+				}
+			completion_reward = {
+					add_state_core = 236
+					add_state_core = 237
+					division_template = {
+							name = "Боевые калмыки"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									cavalry = {
+											x = 0
+											y = 0
+										}
+									cavalry = {
+											x = 0
+											y = 1
+										}
+									cavalry = {
+											x = 0
+											y = 2
+										}
+									cavalry = {
+											x = 1
+											y = 0
+										}
+									cavalry = {
+											x = 1
+											y = 1
+										}
+									cavalry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					237 = {
+							create_unit = {
+									division = "name = \"1ая калмычья дивизия\" division_template = \"Боевые калмыки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \2ая калмычья дивизия\" division_template = \"Боевые калмыки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая калмычья дивизия\" division_template = \"Боевые калмыки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_otryady_Vovana
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_vtorzhenie_po_Volge
+		}
+		x = 27
+		y = 18
+			available = {
+					controls_state = 217
+				}
+			completion_reward = {
+					division_template = {
+							name = "Отряды Вована"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									infantry = {
+											x = 0
+											y = 0
+										}
+									infantry = {
+											x = 0
+											y = 1
+										}
+									infantry = {
+											x = 0
+											y = 2
+										}
+									infantry = {
+											x = 1
+											y = 0
+										}
+									infantry = {
+											x = 1
+											y = 1
+										}
+									infantry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					217 = {
+							create_unit = {
+									division = "name = \"1ая дивизия якутов\" division_template = \"Отряды Вована\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая дивизия якутов\" division_template = \"Отряды Вована\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая дивизия якутов\" division_template = \"Отряды Вована\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_atakovat_Kuban
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 7,00
+		prerequisite = {
+			focus = DOT_war_kalmik
+		}
+		prerequisite = {
+			focus = DOT_otryady_Vovana
+		}
+		x = 26
+		y = 19
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = KRR
+								}
+							KRR = {
+									every_state = {
+											limit = {
+													is_owned_by = KRR
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = STR
+								}
+							STR = {
+									every_state = {
+											limit = {
+													is_owned_by = STR
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = KRR
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = STR
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_nashi_kazaki
+		icon = GFX_goal_generic_cavalry
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_atakovat_Kuban
+		}
+		x = 25
+		y = 20
+			available = {
+					controls_state = 234
+				}
+			completion_reward = {
+					division_template = {
+							name = "Казаки"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									cavalry = {
+											x = 0
+											y = 0
+										}
+									cavalry = {
+											x = 0
+											y = 1
+										}
+									cavalry = {
+											x = 0
+											y = 2
+										}
+									cavalry = {
+											x = 1
+											y = 0
+										}
+									cavalry = {
+											x = 1
+											y = 1
+										}
+									cavalry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					234 = {
+							create_unit = {
+									division = "name = \"1ая казачья дивизия\" division_template = \"Казаки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая казачья дивизия\" division_template = \"Казаки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая казачья дивизия\" division_template = \"Казаки\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_dary_Pridonya
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_atakovat_Kuban
+		}
+		x = 27
+		y = 20
+			completion_reward = {
+					add_state_core = 218
+					add_state_core = 238
+					add_state_core = 234
+					add_timed_idea = {
+							idea = DOT_dary_Pridonya
+							days = 180
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_sokruchit_ChP
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_nashi_kazaki
+		}
+		prerequisite = {
+			focus = DOT_dary_Pridonya
+		}
+		x = 26
+		y = 21
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = LAZ
+								}
+							LAZ = {
+									every_state = {
+											limit = {
+													is_owned_by = LAZ
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = ARK
+								}
+							ARK = {
+									every_state = {
+											limit = {
+													is_owned_by = ARK
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = WHS
+								}
+							WHS = {
+									every_state = {
+											limit = {
+													is_owned_by = WHS
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = MAT
+								}
+							MAT = {
+									every_state = {
+											limit = {
+													is_owned_by = MAT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = CHT
+								}
+							CHT = {
+									every_state = {
+											limit = {
+													is_owned_by = CHT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = DON
+								}
+							DON = {
+									every_state = {
+											limit = {
+													is_owned_by = DON
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = UNT
+								}
+							UNT = {
+									every_state = {
+											limit = {
+													is_owned_by = UNT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = LAZ
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ARK
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = WHS
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MAT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = DON
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = UNT
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_dovit_vishivshih
+		icon = GFX_goal_demand_sudetenland
+		cost = 7,00
+		prerequisite = {
+			focus = DOT_sokruchit_ChP
+		}
+		x = 26
+		y = 22
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = TUP
+								}
+							TUP = {
+									every_state = {
+											limit = {
+													is_owned_by = TUP
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = POK
+								}
+							POK = {
+									every_state = {
+											limit = {
+													is_owned_by = POK
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = MHL
+								}
+							MHL = {
+									every_state = {
+											limit = {
+													is_owned_by = MHL
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = EBN
+								}
+							EBN = {
+									every_state = {
+											limit = {
+													is_owned_by = EBN
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = CHK
+								}
+							CHK = {
+									every_state = {
+											limit = {
+													is_owned_by = CHK
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = PRM
+								}
+							PRM = {
+									every_state = {
+											limit = {
+													is_owned_by = PRM
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = SKT
+								}
+							SKT = {
+									every_state = {
+											limit = {
+													is_owned_by = SKT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SKT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = PRM
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MHL
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = EBN
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = TUP
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = POK
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHK
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_chas_X
+		icon = GFX_focus_attack_soviet
+		cost = 10,00
+		prerequisite = {
+			focus = DOT_nachat_mobilization
+		}
+		x = 22
+		y = 16
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = LAZ
+								}
+							LAZ = {
+									every_state = {
+											limit = {
+													is_owned_by = LAZ
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = ARK
+								}
+							ARK = {
+									every_state = {
+											limit = {
+													is_owned_by = ARK
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = WHS
+								}
+							WHS = {
+									every_state = {
+											limit = {
+													is_owned_by = WHS
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = MAT
+								}
+							MAT = {
+									every_state = {
+											limit = {
+													is_owned_by = MAT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = CHT
+								}
+							CHT = {
+									every_state = {
+											limit = {
+													is_owned_by = CHT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = DON
+								}
+							DON = {
+									every_state = {
+											limit = {
+													is_owned_by = DON
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = UNT
+								}
+							UNT = {
+									every_state = {
+											limit = {
+													is_owned_by = UNT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = BSH
+								}
+							BSH = {
+									every_state = {
+											limit = {
+													is_owned_by = BSH
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = PRM
+								}
+							PRM = {
+									every_state = {
+											limit = {
+													is_owned_by = PRM
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					if = {
+							limit = {
+									country_exists = SKT
+								}
+							SKT = {
+									every_state = {
+											limit = {
+													is_owned_by = SKT
+												}
+											DOT = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = LAZ
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ARK
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = WHS
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MAT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = DON
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = UNT
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = BSH
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = PRM
+							expire = 0
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SKT
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_bratskiy_mir
+		icon = GFX_goal_generic_improve_relations
+		cost = 7,00
+		prerequisite = {
+			focus = DOT_new_gorizonty
+		}
+		mutually_exclusive = {
+			focus = DOT_velikiy_pohod_na_zapad
+		}
+		available = {
+									country_exists = LAZ
+				}
+		x = 18
+		y = 7
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = DOT_Pact_Lybertsi_Kamchatka
+		icon = GFX_goal_generic_military_deal
+		cost = 7,00
+		prerequisite = {
+			focus = DOT_bratskiy_mir
+		}
+		x = 18
+		y = 8
+			completion_reward = {
+					give_guarantee = LAZ
+					LAZ = {
+							give_guarantee = LAZ
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_mirnaya_integratsia
+		icon = GFX_focus_generic_treaty
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_Pact_Lybertsi_Kamchatka
+		}
+		mutually_exclusive = {
+			focus = DOT_bro_dyymvirat
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+					LAZ = {
+							annex_country = {
+									target = DOT
+									transfer_troops = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_bro_dyymvirat
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 6,00
+		prerequisite = {
+			focus = DOT_Pact_Lybertsi_Kamchatka
+		}
+		mutually_exclusive = {
+			focus = DOT_mirnaya_integratsia
+		}
+		x = 19
+		y = 9
+			completion_reward = {
+					LAZ = {
+							add_ideas = LAZ_dyymvirat
+						}
+					LAZ = {
+							annex_country = {
+									target = DOT
+									transfer_troops = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_war_yakuti
+		icon = GFX_focus_generic_manpower
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_unichtozhit_Mordor
+		}
+		x = 22
+		y = 9
+			available = {
+					controls_state = 574
+				}
+			completion_reward = {
+					add_state_core = 574
+					add_state_core = 516
+					division_template = {
+							name = "Боевые якуты"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									infantry = {
+											x = 0
+											y = 0
+										}
+									infantry = {
+											x = 0
+											y = 1
+										}
+									infantry = {
+											x = 0
+											y = 2
+										}
+									infantry = {
+											x = 1
+											y = 0
+										}
+									infantry = {
+											x = 1
+											y = 1
+										}
+									infantry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					574 = {
+							create_unit = {
+									division = "name = \"1ая дивизия якутов\" division_template = \"Боевые якуты"\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая дивизия якутов\" division_template = \"Боевые якуты"\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая дивизия якутов\" division_template = \"Боевые якуты"\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_peret_naprolon
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 4,00
+		prerequisite = {
+			focus = DOT_vopros_s_Pok
+		}
+		mutually_exclusive = {
+			focus = DOT_v_obhod
+		}
+		x = 22
+		y = 11
+			completion_reward = {
+					add_state_claim = 582
+					add_state_claim = 573
+					add_state_claim = 581
+					add_state_claim = 572
+					add_state_claim = 635
+					add_state_claim = 579
+					add_state_claim = 580
+					add_state_claim = 403
+					add_state_claim = 571
+					add_state_claim = 578
+					add_state_claim = 570
+					add_state_claim = 40
+					add_state_claim = 654
+					add_state_claim = 569
+					add_state_claim = 568
+					add_state_claim = 567
+					add_state_claim = 329
+					add_state_claim = 577
+					add_state_claim = 576
+					add_state_claim = 575
+					create_wargoal = {
+							type = annex_everything
+							target = POK
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_new_Russia
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_dovit_vishivshih
+		}
+		x = 26
+		y = 23
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = DOT_unichtozhit_democraty
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_peret_naprolon
+		}
+		x = 22
+		y = 12
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = DOT_podchinit_ih
+		icon = GFX_focus_cze_german_puppet
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_unichtozhit_democraty
+		}
+		x = 21
+		y = 13
+			completion_reward = {
+					add_state_core = 582
+					add_state_core = 573
+					add_state_core = 581
+					add_state_core = 572
+					add_state_core = 635
+					add_state_core = 579
+					add_state_core = 580
+					add_state_core = 403
+					add_state_core = 571
+					add_state_core = 578
+					add_state_core = 570
+					add_state_core = 40
+					add_state_core = 654
+					add_state_core = 569
+					add_state_core = 568
+					add_state_core = 567
+					add_state_core = 329
+					add_state_core = 577
+					add_state_core = 576
+					add_state_core = 575
+				}
+
+	}
+	focus = {
+		id = DOT_pokazatelnie_sydi
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_unichtozhit_democraty
+		}
+		x = 23
+		y = 13
+			completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = DOT_nachat_mobilization
+		icon = GFX_focus_generic_little_entente
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_naratstit_promky
+		}
+		x = 22
+		y = 15
+			completion_reward = {
+					division_template = {
+							name = "Новый призыв"
+							division_names_group = DOT_GAR_01
+							regiments = {
+									infantry = {
+											x = 0
+											y = 0
+										}
+									infantry = {
+											x = 0
+											y = 1
+										}
+									infantry = {
+											x = 0
+											y = 2
+										}
+									infantry = {
+											x = 1
+											y = 0
+										}
+									infantry = {
+											x = 1
+											y = 1
+										}
+									infantry = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					404 = {
+							create_unit = {
+									division = "name = \"1ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"2ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"3ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"4ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"5ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"6ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"7ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"8ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"9ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+							create_unit = {
+									division = "name = \"10ая пехотная дивизия\" division_template = \"Новый призыв\" start_experience_factor = 0.3"
+									owner = DOT
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DOT_naratstit_promky
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_pokazatelnie_sydi
+		}
+		prerequisite = {
+			focus = DOT_podchinit_ih
+		}
+		x = 22
+		y = 14
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+}

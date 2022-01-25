@@ -1,0 +1,48 @@
+capital = 590
+
+oob = LIM_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+LIM_da_smert
+LIM_nepokornie_kozahi
+}
+
+set_popularities = {
+	metacommy = 100
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Эдуард Лимонов"
+	desc = "POLITICS_LIMONOV_DESC"
+	picture = "Limonov.dds"
+	expire = "1999.1.1"
+	ideology = nacbol
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Александр Дугин"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Dugin.dds"
+	expire = "1999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

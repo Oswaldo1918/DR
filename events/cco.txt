@@ -1,0 +1,98 @@
+add_namespace = cco
+	
+#Конец гражданки
+country_event = {
+	id = cco.8
+	title = chat.8.t
+	desc = chat.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.8.a
+	add_ideas = CHT_reconstruction_after_gw
+	}
+}
+ 
+ country_event = {
+    id = cco.999
+	title = chat.999.t
+	desc = chat.999.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CCO
+	}
+	
+	option = {
+	name = chat.999.a
+	hidden_effect = {
+	set_country_flag = bimba_bimba_2
+	}
+	
+ }
+ }
+ country_event = {
+    id = cco.998
+	title = chat.998.t
+	desc = chat.998.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CCO
+	}
+	
+	option = {
+	name = chat.998.a
+add_tech_bonus = {
+				add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 10
+				category = nuclear
+			}
+	    }
+	}  
+	}
+	country_event = {
+    id = cco.997
+	title = chat.997.t
+	desc = chat.997.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CCO
+	}
+	
+	option = {
+	name = chat.997.a
+    add_political_power = 50
+	add_ideas = CHT_alcog
+	}  
+	}
+	 country_event = {
+    id = cco.1000
+	title = cvt.1000.t
+	desc = cvt.1000.d
+	picture = GFX_event_pictures_report_event_tur_machine_gunners
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CCO
+	}
+	
+	option = {
+	name = cvt.1000.a
+	hidden_effect = {
+	set_country_flag = mercen_mercen
+	}
+	
+ }
+ }

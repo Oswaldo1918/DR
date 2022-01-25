@@ -1,0 +1,72 @@
+ideas = {
+       country = {
+	       WHS_nasledie_VeynshGV = {
+		   picture = the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				max_planning_factor = -0.2
+				conscription_factor = -0.15
+			    }
+		    }
+			
+			WHS_zapad_bastion = {
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
+				}
+				targeted_modifier = {
+				tag = ZWN
+				defense_bonus_against = 0.1
+			    }
+			     targeted_modifier = {
+				tag = KUR
+				defense_bonus_against = 0.1
+			    }			    
+		    }
+			
+			WHS_rsepkie_lapy_Tupichka = {
+			picture = idea_ger_the_great_red_menace
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.05
+				}
+				targeted_modifier = {
+				tag = TUP
+				defense_bonus_against = -0.1
+			    }			    
+		    }
+	   }
+		
+}

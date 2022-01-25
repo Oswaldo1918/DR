@@ -1,0 +1,59 @@
+capital = 202
+
+oob = KUR_1936
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	KUR_koza
+}
+
+set_popularities = {
+	metacommy = 100
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Сергей Кургинян"
+	desc = "POLITICS_KURGINYAN_DESC"
+	picture = "Kurginyan.dds"
+	expire = "1999.1.1"
+	ideology = fourth_floor
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Александр Роджерс"
+	picture = "rodgers.dds"
+	traits = { career_officer war_hero }
+	skill = 4
+	
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Павел Грудинин"
+	picture = "kandidatotnaroda.dds"
+	traits = { career_officer war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 10
+	logistics_skill = 1
+}

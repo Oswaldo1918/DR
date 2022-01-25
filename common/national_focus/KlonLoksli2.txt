@@ -1,0 +1,1284 @@
+focus_tree = {
+	id = KlonStazi2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VTC
+		}
+	}
+	default = no
+continuous_focus_position =  { x = 50 y = 100 }
+
+	focus = {
+		id = CHT_cruseeders_new_era_2
+		icon = GFX_focus_cht_crusaders_new_era
+		cost = 5
+		prerequisite = {
+			focus = CHT_roylist_time_2
+		}
+		x = 30
+		y = 6
+			completion_reward = {
+					add_war_support = 0.05
+					add_ideas = CHT_crus_n_e
+				}
+
+	}
+	focus = {
+		id = CHT_dobrovolec_army_2
+		icon = GFX_focus_generic_little_entente
+		cost = 5
+		prerequisite = {
+			focus = CHT_roylist_time_2
+		}
+		x = 32
+		y = 6
+			completion_reward = {
+					remove_ideas = CHT_loksists_1
+					add_ideas = CHT_loksists_2
+				}
+
+	}
+	focus = {
+		id = CHT_crusade_against_levakov_2
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		prerequisite = {
+			focus = CHT_cruseeders_new_era_2
+		}
+		prerequisite = {
+			focus = CHT_dobrovolec_army_2
+		}
+		x = 31
+		y = 7
+			completion_reward = {
+					add_timed_idea = {
+							idea = CHT_crusade_a_l
+							days = 360
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_free_monarhy_2
+		icon = GFX_focus_generic_monarchy_2
+		cost = 5
+		prerequisite = {
+			focus = CHT_crusade_against_levakov_2
+		}
+		x = 31
+		y = 8
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.10
+						}
+					add_political_power = 150
+					add_stability = 0.1
+				}
+
+	}
+	
+	focus = {
+		id = CHT_new_moderators_2
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5
+		prerequisite = {
+			focus = CHT_free_monarhy_2
+		}
+		prerequisite = {
+			focus = CHT_borba_s_partisanami_2
+		}
+		x = 31
+		y = 10
+			available = {
+					has_war = no
+				}
+			completion_reward = {
+					add_stability = 0.05
+					add_ideas = CHT_nov_moderi
+				}
+
+	}
+	focus = {
+		id = CHT_borba_s_partisanami_2
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5
+		
+		prerequisite = {
+			focus = CHT_free_monarhy_2
+		}
+		x = 31
+		y = 9
+			available = {
+					has_war = no
+				}
+			completion_reward = {
+					add_ideas = CHT_podavlen_partiz
+					add_ideas = CHT_great_srach_2
+					remove_ideas = CHT_great_srach_1
+				hidden_effect = {
+					
+					
+					set_global_flag = loksli_win 
+					CHT = {
+					change_tag_from = VTC }
+					
+					CHT = {
+					
+					
+					transfer_state = 399 
+		              transfer_state = 256
+			          transfer_state = 249
+					 transfer_state = 400 
+		             transfer_state = 252
+			         transfer_state = 255
+					 transfer_state = 250
+					 transfer_state = 251
+					 
+					 set_politics = { ruling_party = neutrality elections_allowed = no}
+					 
+                       add_popularity = {
+							ideology = neutrality
+							popularity = 0.4
+						}
+					 
+					 remove_ideas = CHT_pasaran
+					 remove_ideas = CHT_chat_red_army
+					 
+					 remove_ideas = CHT_sovet_truda_i_oborony
+					 remove_ideas = CHT_gulags
+					 remove_ideas = CHT_rabochee_samoupravlenie
+					 remove_ideas = CHT_great_srach_1
+					 remove_ideas = CHT_state_sindicalism
+					 remove_ideas = CHT_revolution_army_liberation_people
+					 add_ideas = CHT_podavlen_partiz
+					 add_ideas = CHT_great_srach_2
+					 
+					 complete_national_focus = CHT_cruseeders_new_era
+					 complete_national_focus = CHT_dobrovolec_army
+					 complete_national_focus = CHT_roylist_time
+					 complete_national_focus = CHT_inostrannya_pomosh
+					 complete_national_focus = CHT_naemniki
+					 complete_national_focus = CHT_crusade_against_levakov
+					 complete_national_focus = CHT_free_monarhy
+					 
+					 
+					 remove_unit_leader = 22800
+					 remove_unit_leader = 781
+					 remove_unit_leader = 780
+					 remove_unit_leader = 779
+					 remove_unit_leader = 778
+					 remove_unit_leader = 777
+					 remove_unit_leader = 776
+					 
+					 set_cosmetic_tag = CHT_loks
+					 load_oob = CHT_1936
+					 
+					
+VTC = {
+			            every_unit_leader = {
+				        set_nationality = CHT
+			            }
+		            }			
+news_event = {
+							id = dk_news.4
+						}
+						CCO = {remove_state_core = 399
+               remove_state_core = 256
+               remove_state_core = 249
+               remove_state_core = 400
+               remove_state_core = 252
+               remove_state_core = 250
+			   remove_state_core = 251
+               remove_state_core = 255 
+				} 
+		CDR	= {remove_state_core = 399
+               remove_state_core = 256
+               remove_state_core = 249
+               remove_state_core = 400
+               remove_state_core = 252
+               remove_state_core = 250
+			   remove_state_core = 251
+               remove_state_core = 255 
+				}				
+		DGC = {
+               remove_state_core = 399
+               remove_state_core = 256
+               remove_state_core = 249
+               remove_state_core = 400
+               remove_state_core = 252
+               remove_state_core = 250
+			   remove_state_core = 251
+               remove_state_core = 255 
+				}
+					 }
+					add_manpower = -1000
+				}
+}
+	}
+	focus = {
+		id = CHT_podelit_chat_2
+		icon = GFX_focus_cht_konfederation_monarhy
+		cost = 5
+		prerequisite = {
+			focus = CHT_new_moderators_2
+		}
+		prerequisite = {
+			focus = CHT_borba_s_partisanami_2
+		}
+		x = 32
+		y = 11
+			available = {
+					has_war = no
+				}
+			completion_reward = {
+					remove_ideas = CHT_shue
+					add_ideas = CHT_shue_1
+					add_ideas = CHT_razdel
+					add_political_power = 150
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = CHT_confederation_of_moderatorstv_2
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5
+		prerequisite = {
+			focus = CHT_podelit_chat_2
+		}
+		mutually_exclusive = {
+			focus = CHT_perevorot_Ahura_Mazdy_2
+		}
+		x = 32
+		y = 12
+			completion_reward = {
+					add_political_power = 50
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = CHT_inostrannya_pomosh_2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		prerequisite = {
+			focus = CHT_roylist_time_2
+		}
+		x = 34
+		y = 7
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 1000
+							producer = POK
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_naemniki_2
+		icon = GFX_focus_cht_naemniki_1
+		cost = 5
+		prerequisite = {
+			focus = CHT_inostrannya_pomosh_2
+		}
+		x = 33
+		y = 8
+		available = {
+					has_war = yes
+				}
+			completion_reward = {
+					custom_effect_tooltip = CHT_naem_tt
+					add_manpower = 150
+					add_ideas = CHT_plata
+					hidden_effect = {
+							division_template = {
+									name = "Chvkashniki"
+									division_names_group = CHT_ARM_50
+									regiments = {
+											infantry = {
+													x = 0
+													y = 0
+												}
+											infantry = {
+													x = 0
+													y = 1
+												}
+											infantry = {
+													x = 0
+													y = 2
+												}
+										}
+								}
+							capital_scope = {
+									create_unit = {
+											division = "name = \"Krichashiye petuchi\" division_template = \"Chvkashniki\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+								}
+							255 = {
+									create_unit = {
+											division = "name = \"Shvaynopekhota\" division_template = \"Chvkashniki\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_naemniki_minus_2
+		icon = GFX_focus_cht_naemniki_1
+		cost = 1
+		prerequisite = {
+			focus = CHT_naemniki_2
+		}
+		prerequisite = {
+			focus = CHT_borba_s_partisanami_2
+		}
+		x = 33
+		y = 9
+		available = {
+					has_war = no
+				}
+			completion_reward = {
+			add_political_power = -50
+					add_manpower = -150
+					remove_ideas = CHT_plata
+					   	delete_unit_template_and_units = {
+							division_template = "Chvkashniki"
+						}
+						
+				}
+
+	}
+	focus = {
+		id = CHT_inostran_investition_2
+		icon = GFX_focus_cht_new_nalogooblazhenie
+		cost = 5
+		prerequisite = {
+			focus = CHT_free_monarhy_2
+		}
+		prerequisite = {
+			focus = CHT_inostrannya_pomosh_2
+		}
+		prerequisite = {
+			focus = CHT_borba_s_partisanami_2
+		}
+		x = 34
+		y = 10
+			available = {
+					has_war = no
+				}
+			completion_reward = {
+			        add_political_power = -50
+					
+					add_ideas = CHT_ino_in
+					
+				
+				}
+
+	}
+	focus = {
+		id = CHT_free_economy_2
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		prerequisite = {
+			focus = CHT_confederation_of_moderatorstv_2
+		}
+		prerequisite = {
+			focus = CHT_inostran_investition_2
+		}
+		x = 34
+		y = 13
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CHT_ino_in
+							add_idea = CHT_ino_in_0
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_feodal_democracy_2
+		icon = GFX_focus_cht_feodal_democracy
+		cost = 5
+		prerequisite = {
+			focus = CHT_confederation_of_moderatorstv_2
+		}
+		prerequisite = {
+			focus = CHT_free_economy_2
+		}
+		x = 32
+		y = 13
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+					add_war_support = 0.1
+					add_stability = -0.05
+				}
+
+	}
+	focus = {
+		id = CHT_ogranichennoe_sderzhevanie_2
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		prerequisite = {
+			focus = CHT_feodal_democracy_2
+		}
+		mutually_exclusive = {
+			focus = CHT_polnyi_neutralitet_2
+		}
+		x = 33
+		y = 14
+			completion_reward = {
+					add_political_power = 10
+					set_rule = {
+							can_send_volunteers = yes
+						}
+					add_war_support = 0.05
+				}
+			create_wargoal = {
+					type = annex_everything
+					target = BSH
+				}
+
+	}
+	focus = {
+		id = CHT_stal_dlya_oruzheinikov_2
+		icon = GFX_focus_generic_steel
+		cost = 5
+		prerequisite = {
+			focus = CHT_free_economy_2
+		}
+		x = 35
+		y = 14
+			available = {
+					controls_state = 250
+				}
+			completion_reward = {
+					250 = {
+							add_resource = {
+									type = steel
+									amount = 16
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_oruzheinye_mastera_2
+		icon = GFX_goal_generic_small_arms
+		cost = 5
+		prerequisite = {
+			focus = CHT_stal_dlya_oruzheinikov_2
+		}
+		x = 35
+		y = 15
+			completion_reward = {
+					252 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					249 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_connect_moderatorstv_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = CHT_free_economy_2
+		}
+		x = 37
+		y = 14
+			available = {
+					controls_state = 250
+					controls_state = 256
+					controls_state = 255
+				}
+			completion_reward = {
+					250 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					256 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					255 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_zemlya_and_volya_2
+		icon = GFX_focus_cht_zhitnica_evropy
+		cost = 5
+		prerequisite = {
+			focus = CHT_connect_moderatorstv_2
+		}
+		x = 37
+		y = 15
+			available = {
+					controls_state = 249
+				}
+			completion_reward = {
+					249 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+	
+	focus = {
+		id = CHT_perestroit_apparat_upravleniz_2
+		icon = GFX_focus_generic_monarchy_1
+		cost = 5
+		prerequisite = {
+			focus = CHT_new_moderators_2
+		}
+		prerequisite = {
+			focus = CHT_borba_s_partisanami_2
+		}
+		x = 30
+		y = 11
+			completion_reward = {
+					remove_ideas = CHT_great_srach_2
+				}
+
+	}
+
+	focus = {
+		id = CHT_predostavit_sredstva_i_plany_2
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = CHT_national_kapitalists_2
+		}
+		x = 25
+		y = 18
+					completion_reward = {
+                add_stability = -0.05
+				add_ideas = CHT_vyzhivet_sylneyshiy
+            }
+				
+
+	}
+	focus = {
+		id = CHT_strategic_shcool_EWC_2
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 5
+		prerequisite = {
+			focus = CHT_chat_nation_2
+		}
+		x = 26
+		y = 19
+            completion_reward = {
+				 add_ideas = CHT_strategic_shcool_EWC
+                 add_popularity = {
+                 ideology = fascism
+                 popularity = 0.05
+                 }				 
+			}
+	}
+	focus = {
+		id = CHT_tank_school_2
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		
+		prerequisite = {
+			focus = CHT_motors_contracts_2
+		}
+		x = 28
+		y = 21
+            completion_reward = {
+			    swap_ideas = {
+				remove_idea = CHT_crus_n_e
+				add_idea = CHT_crus_n_e2
+				}
+			}
+	}
+	focus = {
+		id = CHT_absolute_power_2
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = CHT_fate_monarh_2
+		}
+		x = 29
+		y = 14
+    completion_reward = {
+	add_political_power = 100 
+	}
+	}
+	focus = {
+		id = CHT_konec_gorodov_2
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = CHT_razvit_industriu_2
+		}
+		x = 22
+		y = 20
+    completion_reward = {
+	add_ideas = CHT_deurbanization
+	}
+	}
+	focus = {
+		id = CHT_stavlenniki_Mazdy_2
+		icon = GFX_focus_generic_self_management
+		cost = 5
+		prerequisite = {
+			focus = CHT_strategic_shcool_EWC_2
+		}
+		x = 27
+		y = 20
+    completion_reward = {
+                 add_ideas = CHT_stavlenniki_Mazdy
+				 swap_ideas = {
+				 remove_idea = CHT_shue_1
+				 add_idea = CHT_uzakonennoe_shue
+				 }
+	}
+	}
+	focus = {
+		id = CHT_motors_contracts_2
+		icon = GFX_focus_generic_license_production
+		cost = 5
+		prerequisite = {
+			focus = CHT_national_army_2
+			
+		}
+		prerequisite = {
+			
+			focus = CHT_pereNODit_Nod_2
+		}
+		x = 30
+		y = 20
+			completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = CHT_pereNODit_Nod_2
+		icon = GFX_focus_cht_attack_nod
+		cost = 5
+		prerequisite = {
+			focus = CHT_vneshnya_politika_2
+		}
+		x = 30
+		y = 19
+			completion_reward = {
+					add_ideas = CHT_torgovlya_s_NOD_i_Iydeey
+				}
+
+	}
+	focus = {
+		id = CHT_national_army_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = CHT_chat_nation_2
+		}
+		
+		x = 28
+		y = 19
+completion_reward = {
+                add_ideas = extensive_conscription
+            }
+	}
+	focus = {
+		id = CHT_united_war_concern_2
+		icon = GFX_focus_cze_military_research_institute
+		cost = 5
+		prerequisite = {
+			focus = CHT_predostavit_sredstva_i_plany_2
+		}
+		x = 24
+		y = 19
+			completion_reward = {
+add_ideas = CHT_united_war_concern
+}
+
+	}
+	focus = {
+		id = CHT_pokorit_malye_strany_2
+		icon = GFX_goal_generic_military_deal
+		cost = 5
+		prerequisite = {
+			focus = CHT_vneshnya_politika_2
+		}
+		x = 31
+		y = 18
+             completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+				}
+	}
+	focus = {
+		id = CHT_poborot_soprotivlenie_2
+		icon = GFX_focus_cht_klonirovanie
+		cost = 5
+		prerequisite = {
+			focus = CHT_absolute_power_2
+		}
+		
+		x = 28
+		y = 15
+        completion_reward = {
+                remove_ideas = CHT_soprotivlenie
+				remove_ideas = CHT_nov_moderi
+				add_stability = 0.1
+            }
+	}
+	focus = {
+		id = CHT_razvit_industriu_2
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5
+		prerequisite = {
+			focus = CHT_predostavit_sredstva_i_plany_2
+		}
+		x = 22
+		y = 19
+			completion_reward = {
+					add_ideas = CHT_deindustrialization	
+				}
+
+	}
+	focus = {
+		id = CHT_chat_nation_2
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 5
+		prerequisite = {
+			focus = CHT_edinnyi_i_nedelymyi_2
+		}
+		x = 27
+		y = 17
+
+			completion_reward = {
+           add_stability = 0.1
+       }
+
+	}
+	focus = {
+		id = CHT_vstupit_antidoc_pakt_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = CHT_vneshnya_politika_2
+		}
+		x = 29
+		y = 18
+			completion_reward = {
+					create_faction = Antilevak_pact
+					create_wargoal = {
+							type = annex_everything
+							target = LAZ
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_vneshnya_politika_2
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5
+		prerequisite = {
+			focus = CHT_edinnyi_i_nedelymyi_2
+		}
+		x = 29
+		y = 17
+completion_reward = {
+			      add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = CHT_national_kapitalists_2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = CHT_edinnyi_i_nedelymyi_2
+		}
+		x = 25
+		y = 17
+completion_reward = {
+			      add_political_power = 100  
+				}
+	}
+	focus = {
+		id = CHT_razrabotka_resursov_2
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = CHT_infrastructere_ulucshenie_2
+			
+		}
+		
+		x = 24
+		y = 21
+completion_reward = {
+					250 = {
+							add_resource = {
+									type = steel
+									amount = 8
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+	}
+	focus = {
+		id = CHT_soc_strat_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = CHT_chat_nation_2
+		}
+		x = 27
+		y = 18
+completion_reward = {
+			 add_ideas = CHT_socstratifikation
+             }
+	}
+	focus = {
+		id = CHT_infrastructere_ulucshenie_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = CHT_united_war_concern_2
+		}
+		x = 24
+		y = 20
+       completion_reward = { 
+       country_event = {
+	   id = vtc.21
+	   }
+	   random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+	 256 = {
+	         add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+							level = 1
+							 instant_build = yes
+								}
+	}
+	}
+	}
+	focus = {
+		id = CHT_uni_cap_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = CHT_konec_gorodov_2
+		}
+		x = 22
+		y = 21
+completion_reward = {
+			 add_ideas = CHT_dekapitalization
+             }
+	}
+	focus = {
+		id = CHT_fate_monarh_2
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 5
+		prerequisite = {
+			focus = CHT_perevorot_Ahura_Mazdy_2
+		}
+		x = 30
+		y = 13
+    completion_reward = {
+	country_event = {
+	id = vtc.20
+	}
+	}
+	}
+	focus = {
+		id = CHT_motorisation_army_2
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = CHT_motors_contracts_2
+			focus = CHT_infrastructere_ulucshenie_2
+		}
+		x = 26
+		y = 21
+             completion_reward = {
+		     add_ideas = CHT_mehanizatsia_army
+		}
+	}
+	focus = {
+		id = CHT_edinnyi_i_nedelymyi_2
+		icon = GFX_focus_hol_united_netherlands
+		cost = 5
+		prerequisite = {
+			focus = CHT_poborot_soprotivlenie_2
+		}
+		x = 27
+		y = 16
+			completion_reward = {
+					remove_ideas = CHT_razdel
+					add_political_power = -100
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_obdumat_plan_2
+		icon = GFX_goal_generic_position_armies
+		cost = 5
+		prerequisite = {
+			focus = CHT_united_chat_army_2
+		}
+		x = 31
+		y = 17
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = BUL_national_military_academy
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_great_plan_oborony_2
+		icon = GFX_goal_generic_defence
+		cost = 5
+		prerequisite = {
+			focus = CHT_polnyi_neutralitet_2
+			focus = CHT_ogranichennoe_sderzhevanie_2
+		}
+		x = 32
+		y = 15
+			available = {
+					has_goverment = neutrality
+				}
+			completion_reward = {
+					251 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 497
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 365
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 9391
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 9365
+								}
+						}
+					250 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3372
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 6353
+								}
+						}
+					255 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 6382
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 6394
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 3360
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 11335
+								}
+						}
+					399 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 12244
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 12203
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_united_chat_army_2
+		icon = GFX_focus_chi_army_reform
+		cost = 5
+		prerequisite = {
+			focus = CHT_great_plan_oborony_2
+		}
+		x = 32
+		y = 16
+			completion_reward = {
+					add_political_power = -150
+					add_stability = 0.05
+					add_ideas = CHT_un_arm
+				}
+
+	}
+	focus = {
+		id = CHT_enemy_planes_vzyati_na_mushku_2
+		icon = GFX_focus_generic_air_defense
+		cost = 5
+		prerequisite = {
+			focus = CHT_united_chat_army_2
+		}
+		x = 33
+		y = 17
+			completion_reward = {
+					255 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					399 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					251 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					252 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					250 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					400 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+					249 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHT_perevorot_Ahura_Mazdy_2
+		icon = GFX_goal_support_fascism
+		cost = 5
+		prerequisite = {
+			focus = CHT_podelit_chat_2
+		}
+		prerequisite = {
+			focus = CHT_perestroit_apparat_upravleniz_2
+		}
+		mutually_exclusive = {
+			focus = CHT_confederation_of_moderatorstv_2
+		}
+		x = 30
+		y = 12
+			completion_reward = {
+					country_event = {
+							id = vtc.17
+						}
+					add_stability = -0.1
+					add_ideas = CHT_soprotivlenie
+				}
+
+	}
+	focus = {
+		id = CHT_polnyi_neutralitet_2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5
+		prerequisite = {
+			focus = CHT_feodal_democracy_2
+		}
+		mutually_exclusive = {
+			focus = CHT_ogranichennoe_sderzhevanie_2
+		}
+		x = 31
+		y = 14
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.15
+					add_ideas = neutrality_idea
+				}
+
+	}
+	
+}

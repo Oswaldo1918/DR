@@ -1,0 +1,25 @@
+ideas = {
+       country = {
+	       sour_loser = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_factor = -0.10
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+	   }
+		
+}

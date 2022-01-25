@@ -1,0 +1,36 @@
+add_namespace = WHS
+
+	
+#Конец гражданки
+country_event = {
+	id = WHS.1
+	title = WHS.1.t
+	desc = WHS.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = WHS.1.a
+	LAZ = {
+	      annex_country = {
+			target = WHS
+			transfer_troops = yes
+		}
+		}
+	WHS = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+	}
+	}
+	
+	option = {
+	name = WHS.1.b
+	LAZ = {
+	create_wargoal = {
+		        target = WHS
+		        type = annex_everything
+			}	
+	}
+}

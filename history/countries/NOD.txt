@@ -1,0 +1,122 @@
+capital = 217
+
+oob = NOD_1936
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1  
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	bicycle_infantry = 1
+}
+
+
+
+set_popularities = {
+	fascism = 75
+	neutrality = 15
+	anarhostalinism = 1
+	metacommy = 4
+	democratic = 4
+	vmestolev = 1
+}
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+add_ideas = {
+    NOD_suverennaya_ter
+	NOD_bez_putina
+}
+
+create_country_leader = {
+	name = "Евгений Федоров"
+	desc = "POLITICS_FEDOROV_DESC"
+	picture = "Fedorov.dds"
+	expire = "1999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		coordinator 
+	}
+}
+create_country_leader = {
+	name = "Роман Барков"
+	desc = "POLITICS_BARKOV_DESC"
+	picture = "барков.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_field_marshal = {
+	name = "Роман Барков"
+	id = 12030
+	picture = "барков.dds"
+	traits = { infantry_officer war_hero  }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Роман Озонов"
+	picture = "ozon.dds"
+	traits = { infantry_officer expert_improviser }
+	id = 12031
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Александр Хирург"
+	picture = "Alex_Hirurg.dds"
+	traits = { politically_connected }
+	id = 12032
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Иван Охлобыстин"
+	picture = "Ivan_Ohlabystin.dds"
+	traits = { harsh_leader trait_reckless }
+	id = 12033
+	skill = 1
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

@@ -1,0 +1,93 @@
+capital = 246
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.1
+set_war_support = 0.9
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+
+
+set_popularities = {
+	memoism = 60
+	democratic = 40
+}
+set_politics = {
+	ruling_party = memoism
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Алексей Чумак"
+	desc = "POLITICS_CHUMAK_DESC"
+	picture = "Chumak.dds"
+	expire = "1999.1.1"
+	ideology = postironism
+	traits = {
+		old_guard_leader
+	}
+}
+
+create_country_leader = {
+	name = "Кербонавт"
+	desc = "POLITICS_KERB_DESC"
+	picture = "Kerbonavt.dds"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+		economic_reformer
+	}
+}
+
+create_country_leader = {
+	name = "Кербонавт"
+	desc = "POLITICS_KERB_DESC"
+	picture = "Kerbonavt.dds"
+	expire = "1999.1.1"
+	ideology = white_polpotism
+	traits = {
+		economic_reformer
+	}
+}
+create_corps_commander = {
+	name = "Кербонавт"
+	id = 22628
+	portrait_path = "gfx/leaders/OSV/Kerbonavt.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Максим Частоедов"
+	id = 25114
+	portrait_path = "gfx/leaders/OSV/Kerbonavt.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Алексей Чумак"
+	id = 25111
+	portrait_path = "gfx/leaders/OSV/Chumak.dds"
+	traits = {  }
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

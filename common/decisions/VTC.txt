@@ -1,0 +1,162 @@
+territorii_natsional_5 = { 
+ develop_sykt_5 = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 70
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+				 }
+ develop_perm_5 = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+				 }
+ develop_bash_5 = {
+      cost = 50           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 70 
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+ develop_nod_5 = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 401
+			   controls_state = 239
+			   controls_state = 265
+			   controls_state = 245
+			   controls_state = 217
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 401
+		  add_state_core = 239
+		  add_state_core = 265
+		  add_state_core = 245
+		  add_state_core = 217
+		  }
+				 }
+ 
+}
+
+territorii_natsional_Axura_2 = { 
+ develop_sykt_6 = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 70
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+				 }
+ develop_perm_6 = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+				 }
+ develop_bash_6 = {
+      cost = 50           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 70 
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+ develop_doc_2 = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 246
+			   controls_state = 242
+			   controls_state = 243
+			   controls_state = 247
+			   controls_state = 219
+			   controls_state = 223
+               controls_state = 248
+			   controls_state = 253
+			   controls_state = 254
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 246
+		  add_state_core = 242
+		  add_state_core = 243
+		  add_state_core = 247
+		  add_state_core = 219
+		  add_state_core = 223
+		  add_state_core = 248
+		  add_state_core = 253
+		  add_state_core = 254
+		  }
+				 }
+ 
+}
+
+find_resourcesi_3 = {
+     develop_bimba_3 = {
+	      cost = 150
+		  available = {
+               has_country_flag = bimba_bimba
+          }
+
+		  days_remove = 150
+		  		 fire_only_once = yes
+          remove_effect = {
+		  custom_effect_tooltip = CHT_bimba_tt
+            hidden_effect = {   
+               random_list = { 
+	           50 = { 
+			   country_event = {
+							id = chat.997
+						}
+		}
+	 50 = {
+	 country_event = {
+							id = chat.998
+						}
+	 }  
+	 }
+			}   
+          }
+      }
+}

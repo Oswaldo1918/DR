@@ -1,0 +1,52 @@
+capital = 575
+
+oob = 123_1936
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	metacommy = 100
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = YAK
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = URK
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.5
+	}
+}
+
+create_country_leader = {
+	name = "Саурон"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Sauron.dds"
+	expire = "1999.1.1"
+	ideology = sauronism
+	traits = {
+		mad
+	}
+}

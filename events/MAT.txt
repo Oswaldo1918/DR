@@ -1,0 +1,44 @@
+add_namespace = MAT
+
+	
+#Конец гражданки
+country_event = {
+	id = MAT.1
+	title = MAT.1.t
+	desc = MAT.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MAT.1.a
+	ai_chance = {
+			base = 10
+			
+		}
+	LAZ = {
+	      annex_country = {
+			target = MAT
+			transfer_troops = yes
+		}
+		}
+	MAT = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+	}
+	}
+	
+	option = {
+	name = MAT.1.b
+	ai_chance = {
+			base = 90
+			
+		}
+	LAZ = {
+	create_wargoal = {
+		        target = MAT
+		        type = annex_everything
+			}	
+	}
+}

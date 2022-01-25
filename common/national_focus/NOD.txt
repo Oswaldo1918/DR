@@ -1,0 +1,41 @@
+focus_tree = {
+	id = NOD
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = NOD
+		}
+	}
+
+	shared_focus = NOD_otchayaniye_ili_net
+
+}
+focus_tree = {
+	id = NOD_barkov_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOD
+		}
+	}
+
+	shared_focus = NOD_otchayaniye_ili_net
+	shared_focus = NOD_funny_group
+	
+}
+focus_tree = {
+	id = NOD_putin
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = NOD
+		}
+	}
+
+	shared_focus = NOD_otchayaniye_ili_net
+	shared_focus = NOD_vsya_vlast_Putiny
+	
+}

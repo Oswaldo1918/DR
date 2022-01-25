@@ -1,0 +1,670 @@
+ideas = {
+
+	country = {
+	
+	    NOD_suverennaya_ter = {
+
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			  war_support_factor = 0.05
+			  army_core_defence_factor = 0.1
+			  conscription = 0.05
+			}
+		}
+		
+	   
+		NOD_bez_putina = {
+		
+		 picture = chi_wargaming_division
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_morale_factor = -0.01
+		    stability_factor = -0.15
+			}
+		}
+		
+	NOD_chuvstvo_ranga = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			drift_defence_factor = 0.05
+			army_org_factor = 0.01
+		    stability_factor = 0.01
+			
+			}
+		}
+	
+   
+	NOD_zagovor_sorvan = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+		    stability_factor = -0.05
+			political_power_factor = -0.01
+			}
+		}
+	
+   
+   
+	NOD_help_korpotsiy = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+		    materiel_manufacturer_cost_factor = -0.1
+			industrial_concern_cost_factor = -0.1
+			political_power_factor = 0.01
+			party_popularity_stability_factor = 0.05
+			consumer_goods_factor = 0.05
+			
+			}
+		}
+		
+	NOD_propag_industr = {
+	
+	picture = generic_worker
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+		    industrial_capacity_factory = 0.05
+			consumer_goods_factor = 0.05
+			monthly_population = 0.01
+			
+			}
+			
+	}	
+	
+	NOD_taynaya_industrializ = {
+	
+	picture = generic_worker
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+		    industry_air_damage_factor = -0.2
+			encryption_factor = 0.2
+			enemy_operative_detection_chance = 10
+			civilian_intel_to_others = -10
+			
+			}
+			
+	}
+	NOD_electronic_Elbrus = {
+	
+	picture = generic_worker
+			
+			removal_cost = -1
+			
+			modifier = {
+	        research_speed_factor = 0.05
+			}
+			
+	}
+	NOD_Gazprombank = {
+	
+	picture = generic_worker
+			
+			removal_cost = -1
+			
+			modifier = {
+	        consumer_goods_factor = -0.1
+			}
+			
+	}
+	NOD_tehn_zadymleniya = {
+		
+		 picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1
+			
+			modifier = {
+			naval_critical_effect_factor = -0.05
+			naval_retreat_chance = 0.05
+			}
+		}
+		
+		NOD_modifitsirovat_old_tanks = {
+		
+		 picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				
+			}
+		}
+		
+		NOD_big_russian_orda = {
+		
+		 picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_morale_factor = 0.05
+			land_reinforce_rate = 0.05
+			}
+		}
+		
+		NOD_uvelichit_rozhdaemost = {
+		
+		 picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.5
+			consumer_goods_factor = 0.1
+			}
+		}
+		
+		NOD_rashirit_prisyv = {
+		
+		 picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.1
+			training_time_factor = -0.1
+			}
+		}
+		
+		NOD_russian_sobornost = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			drift_defence_factor = 0.1
+            surrender_limit = 0.1
+			}
+		}
+		
+		NOD_tserkov_svideteley_Putina = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_morale_factor = 0.05
+            offence = 0.05
+			}
+		}
+		
+		NOD_revival_RPTS = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_morale_factor = 0.05
+            defence = 0.05
+			}
+		}
+		
+		NOD_one_istinnaya_vera = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+			justify_war_goal_time = -0.2
+            occupation_cost = -0.3
+            offence = 0.05
+            recruitable_population = 0.02
+            army_morale_factor = 0.05
+			}
+		}
+		
+		NOD_plavilniy_kotel_Putina = {
+		
+		 picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+            defence = 0.05
+            non_core_manpower = 0.3
+            recruitable_population = 0.05
+			}
+		}
+		NOD_hramy_kreposty = {
+		
+		picture = generic_exploit_mines
+			
+			removal_cost = -1
+			
+            modifier = {
+			    production_speed_bunker_factor = 0.10
+				
+			}
+			
+		}
+		NOD_kontrakt_s_tserkovy = {
+		
+		picture = generic_exploit_mines
+			
+			removal_cost = -1
+			
+            modifier = {
+			    production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				
+			}
+			
+		}
+		NOD_duhovenstvo_v_voyskah = {
+		
+		picture = generic_exploit_mines
+			
+			removal_cost = -1
+			
+            modifier = {
+			    army_morale_factor = 0.05
+			}
+			
+		}
+		NOD_boevoy_desantniy_modul = {
+			
+			removal_cost = -1
+			
+			modifier = {
+				amphibious_invasion = 0.10
+				special_forces_defence_factor = 0.01
+			    special_forces_attack_factor = 0.01
+			}
+			
+		}
+		NOD_otrayady_Putina = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			    war_support_factor = 0.02
+				recruitable_population = 0.01
+			}
+			
+		}
+		
+		NOD_otrayady_Putina_1 = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			    drift_defence_factor = 0.05
+			    army_org_factor = -0.05
+			    war_support_factor = 0.05
+				recruitable_population = 0.02
+			}
+			
+		}
+		
+		NOD_doctrina_terpeniya = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			recruitable_population = 0.02
+			army_speed_factor = -0.05
+			max_dig_in_factor = 0.05
+			}
+			
+		}
+		
+		NOD_osazhdyonnaya_krepost = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			recruitable_population = 0.02
+			army_defence_factor = 0.05
+			dig_in_speed = 2
+			max_dig_in_factor = 0.05
+			army_morale_factor = 0.03
+			production_speed_bunker_factor = 0.15
+			defensive_war_stability_factor = 0.5
+			}
+			
+		}
+		
+		NOD_analitika = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			max_planning_factor = 0.1
+			planning_speed = 0.25
+			}
+			
+		}
+		
+		NOD_prevozmoganiye = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			army_morale_factor = 0.1
+			army_defence_factor = 0.05
+			dig_in_speed = 1
+			}
+			
+		}
+		
+		NOD_kontsentratsiya_arti = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			breakthrough_factor = 0.1
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					breakthrough_factor = 0.02				
+					instant = yes
+				}
+			}
+			
+		}
+		
+		NOD_react_art = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			breakthrough_factor = 0.1
+			}
+			equipment_bonus = {
+				motorized_rocket_unit = {
+					breakthrough_factor = 0.02				
+					instant = yes
+				}
+			}
+			
+			modifier = {
+			breakthrough_factor = 0.1
+			}
+			equipment_bonus = {
+				rocket_artillery = {
+					breakthrough_factor = 0.02				
+					instant = yes
+				}
+			}
+			
+		}
+		
+		NOD_voini_ognya = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			army_morale_factor = 0.05
+			army_org_factor = 0.05
+			war_support_factor = 0.05
+			special_forces_training_time_factor = -0.3
+			 enemy_partisan_effect = 0.01
+			}
+			
+		}
+		
+		NOD_ogon_i_sila = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			army_morale_factor = 0.01
+			army_org_factor = 0.01
+		    army_attack_factor = 0.05
+			}
+			
+		}
+		
+		NOD_stratocracy = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			army_org_factor = 0.1
+			
+			}
+			
+		}
+		
+		NOD_otdel_E = {
+		
+		picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+            modifier = {
+			encryption_factor = 0.05
+			decryption_factor = 0.1
+			enemy_operative_detection_chance = 10
+			
+			}
+			
+		}
+   }
+   
+	
+	political_advisor = {
+    NOD_patr_kirill = { 
+			
+			picture = generic_political_advisor_europe_5
+
+			available = {
+				has_completed_focus = NOD_revival_RPTS
+			}
+
+			visible = {
+				has_country_flag = legit_patr
+				
+			}
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { patr_kir great_survivor }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+      NOD_patr_feodor = { 
+			
+			picture = generic_political_advisor_europe_5
+
+			available = {
+				has_completed_focus = NOD_revival_RPTS
+			}
+
+			visible = {
+				has_country_flag = feodor_patr
+				
+			}
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { staunch_constitutionalist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	 NOD_nik_star = { 
+			
+			picture = Nikolay_Starikov
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+	NOD_zah_pril = { 
+			
+			picture = Zahar_Prilepin
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { fascist_demagogue hawk }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		
+	NOD_mic_sove = { 
+			
+			picture = Miha_Sov
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { propaganda_bungler }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+	NOD_mar_kata = { 
+			
+			picture = Mariya_Katasonova
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+	NOD_saj_umal = { 
+			
+			picture = Sazhi_Umaloatova
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	NOD_ste_zoto = { 
+			
+			picture = stepan_zotov
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { prince_of_terror }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	NOD_corp_one = { 
+			
+			picture = alan_lushnikov
+			
+			allowed = {
+				original_tag = NOD
+				
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 5
+			}
+		}	
+	}
+	army_chief = {
+
+		
+	}
+	high_command = {
+	   
+		
+		
+	}
+}

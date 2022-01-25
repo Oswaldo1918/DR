@@ -1,0 +1,98 @@
+capital = 651
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+
+}
+
+
+
+set_popularities = {
+    memoism = 30
+	democratic = 5
+	vmestolev = 20
+	fascism = 20
+	neutrality = 15
+	anarhostalinism = 10
+}
+set_politics = {
+	ruling_party = vmestolev
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Товарищ Мухамедьянов"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "TovarishMy.dds"
+	expire = "1999.1.1"
+	ideology = leninismus
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alisher Morgenshtern"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Morgen.dds"
+	expire = "1999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Бебей"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "babay.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Башкирский избирком"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "cik_bash.dds"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Даниил Григорьев"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Grigorev.dds"
+	expire = "1999.1.1"
+	ideology = ortodox_anstal
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Ильгизар Азнагулов"
+	id = 223434
+	picture = ""
+	traits = { }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}

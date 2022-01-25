@@ -1,0 +1,45 @@
+capital = 742
+
+oob = 123_1936
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+}
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Равшан Первый"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Ravshan.dds"
+	expire = "1999.1.1"
+	ideology = despotism 
+	traits = {
+		#
+	}
+}
+create_field_marshal = {
+	name = "Джамшут"
+		picture = "Dzhamshut.dds"
+	traits = { old_guard politically_connected inflexible_strategist }
+	skill = 2
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

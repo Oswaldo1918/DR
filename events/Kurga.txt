@@ -1,0 +1,432 @@
+add_namespace = kur
+
+# Moscou return
+country_event = {
+	id = kur.1
+	title = kur.1.t
+	desc = kur.1.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KUR
+		813 = { is_fully_controlled_by = KUR }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = { 
+		name = kur.1.a
+		add_political_power = 100
+	
+	}
+	option = { # Refuse
+		name = kur.1.b
+		 set_politics = { ruling_party = democratic }
+		    add_popularity = {
+         ideology = democratic
+		 popularity = 0.5
+		 }
+		 KUR = { country_event = { days = 2 id = kur.14} }
+	}
+	option = { # Refuse
+		name = kur.1.o
+		 set_politics = { ruling_party = fascism }
+		    add_popularity = {
+         ideology = fascism
+		 popularity = 0.5
+       }
+	}
+	}
+	#pact
+	country_event = {
+	id = kur.10
+	title = kur.10.t
+	desc = kur.10.d
+	picture = GFX_report_nod_kurga
+	
+	is_triggered_only = yes
+
+	option = {
+		name = kur.10.a
+		add_political_power = -10
+		
+		NOD = { country_event = { days = 1 id = nod.22}
+		
+	}
+	option = {
+		name = kur.10.b
+		NOD = { country_event = { days = 1 id = nod.21}} 
+	}
+}
+}
+
+country_event = {
+	id = kur.11
+	title = kur.11.t
+	desc = kur.11.d
+	picture = GFX_report_nod_kurga
+	
+	is_triggered_only = yes
+
+	option = {
+		name = kur.11.a
+	
+		}
+	}
+country_event = {
+	id = kur.12
+	title = kur.12.t
+	desc = kur.12.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.12.a
+	create_country_leader = {
+	name = "Николай Платошкин"
+	desc = "POLITICS_PLATOSHKIN_DESC"
+	picture = "Platishkin.dds"
+	expire = "1999.1.1"
+	ideology = fourth_floor
+	traits = {
+	 antiextremist#
+	}
+	}
+	remove_idea = KUR_koza
+	}
+}
+country_event = {
+	id = kur.13
+	title = kur.13.t
+	desc = kur.13.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.13.a
+	remove_idea = KUR_koza
+	add_ideas = KUR_kozlik
+		
+	}
+}	
+ country_event = {
+	id = kur.14
+	title = kur.14.t
+	desc = kur.14.d
+	picture = GFX_report_rugat_vlast
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = kur.14.a
+	hidden_effect = {
+	VIK = {
+	           transfer_state = 813
+			   transfer_state = 219
+			   transfer_state = 246
+			   transfer_state = 247
+			   transfer_state = 248
+			   transfer_state = 253
+               add_state_core = 813
+               add_state_core = 219
+			   add_state_core = 246
+			   add_state_core = 247
+			   add_state_core = 248
+			   add_state_core = 253
+			   add_state_core = 242
+			   add_state_core = 243
+			   add_state_core = 205
+			   add_state_core = 223
+			   add_state_core = 254
+			   add_state_core = 224
+			   add_state_core = 222
+			   add_state_core = 220
+			   add_state_core = 240
+			   add_state_core = 258
+			   add_state_core = 257
+			   add_state_core = 260
+			   add_state_core = 239
+			   add_state_core = 401
+			   add_state_core = 265
+			   add_state_core = 217
+			   add_state_core = 245
+			   add_state_core = 221
+			   add_state_core = 226
+			   add_state_core = 200
+			   add_state_core = 228
+			   add_state_core = 227
+			   add_state_core = 814
+			   add_state_core = 225
+			   add_state_core = 193
+			   add_state_core = 202
+			   add_state_core = 201
+			   add_state_core = 198
+			   add_state_core = 203
+			   add_state_core = 259
+			   add_state_core = 207
+			   add_state_core = 206
+			   add_state_core = 241
+			   add_state_core = 204
+			   add_state_core = 194
+			   declare_war_on = {
+		       target = KUR
+			   type = annex_everything}
+			   load_oob = VIK_1936}
+	}
+}
+}
+
+country_event = {
+	id = kur.15
+	title = kur.15.t
+	desc = kur.15.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.15.a
+	NOD = { country_event = { id = nod.23}}
+		
+	}
+	option = {
+	name = kur.15.b
+	NOD = { country_event = { days = 1 id = nod.21}}
+		
+	}
+}	
+
+country_event = {
+	id = kur.16
+	title = kur.16.t
+	desc = kur.16.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.16.a
+	NOD = { country_event = { id = nod.24}}
+		
+	}
+	option = {
+	name = kur.16.b
+	NOD = { country_event = { days = 1 id = nod.26}}
+		
+	}
+	option = {
+	name = kur.16.c
+	NOD = { country_event = { days = 1 id = nod.21}}
+		
+	}
+}	
+
+country_event = {
+	id = kur.17
+	title = kur.17.t
+	desc = kur.17.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.17.a
+	NOD = { country_event = { id = nod.25}}
+	
+		
+	}
+	option = {
+	name = kur.17.b
+	NOD = { country_event = { days = 1 id = nod.21}}
+		
+	}
+}	
+
+country_event = {
+	id = kur.18
+	title = kur.18.t
+	desc = kur.18.d
+	picture = GFX_report_nov_soc
+	
+	is_triggered_only = yes
+
+	option = {
+	name = kur.18.a
+	NOD = { country_event = { id = nod.27}}
+	
+		
+	}
+	option = {
+	name = kur.18.b
+	NOD = { country_event = { days = 1 id = nod.21}}
+		
+	}
+}
+country_event = {
+	id = kur.19
+	title = kur.19.t
+	desc = kur.19.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KUR
+		OR = { 
+	    controls_state = 196
+		controls_state = 200
+		controls_state = 226
+		}
+		has_country_flag = with_NOD_2 
+		NOT =  { has_war_with = NOD }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		NOD = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = kur.19.a
+		
+			NOD = { transfer_state = 196 
+			        transfer_state = 226
+		            transfer_state = 200 }
+		}
+	}
+	country_event = {
+	id = kur.20
+	title = kur.20.t
+	desc = kur.20.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KUR
+		OR = { 
+	    controls_state = 196
+		controls_state = 200
+		}
+		has_country_flag = with_NOD_3
+		NOT =  { has_war_with = NOD }			
+		UKR = { exists = no }
+        CHE = { exists = no } 
+		NOD = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = kur.19.a
+		
+			NOD = { transfer_state = 196 
+			        
+		            transfer_state = 200 }
+		}
+	}
+	country_event = {
+	id = kur.21
+	title = kur.21.t
+	desc = kur.21.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KUR
+		OR = { 
+	    controls_state = 196
+		controls_state = 200
+		controls_state = 226
+		controls_state = 221
+		}
+		has_country_flag = with_NOD_4 
+		NOT =  { has_war_with = NOD }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		NOD = { exists = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	 option = {
+		name = kur.19.a
+		
+			NOD = { transfer_state = 196 
+			        transfer_state = 226
+		            transfer_state = 200
+					transfer_state = 221
+					}
+		}
+	}
+	country_event = {
+	id = kur.22
+	title = kur.22.t
+	desc = kur.22.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = KUR
+		OR = { 
+		has_country_flag = with_NOD_4 
+		has_country_flag = with_NOD_3
+		has_country_flag = with_NOD_2
+		}
+		NOT = { has_war_with = NOD }
+        UKR = { exists = no }
+        CHE = { exists = no }
+		NOD = { exists = yes }
+		NOD = { NOT = { has_war_with = KUR } }
+		NOD = { has_war_with = LAZ }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	 option = {
+		name = kur.22.a
+		ai_will_do = {
+        factor = 75
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = LAZ
+			}
+			
+		}
+	option = {
+		name = kur.22.b
+		ai_will_do = {
+        factor = 20
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = NOD
+			}
+			remove_diplomatic_relation = { country = NOD relation = non_aggression_pact }
+		}	
+	option = {
+		name = kur.22.c
+		ai_will_do = {
+        factor = 5
+		}
+		
+			
+		}	
+	}

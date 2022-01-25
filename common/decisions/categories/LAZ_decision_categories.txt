@@ -1,0 +1,73 @@
+#########################
+  ### LAZARET_RSFSR ###
+#########################
+
+LAZ_military_annexation_kliki = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ	
+		
+	}
+	visible = { 
+	has_country_flag = LAZ_bilo_vosstaniye 
+	}
+}
+LAZ_integration_kliki = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ	
+	}
+	visible = { 
+	has_completed_focus = LAZ_KNOR_po_chatu
+	NOT = {
+	has_country_flag = LAZ_bilo_vosstaniye 
+	}
+	}
+}
+
+	allowed = {
+		tag = LAZ	
+		CHT = {
+			      exists = no
+				}
+	}
+	visible = { has_completed_focus = LAZ_KNOR_po_chatu }
+
+LAZ_nationalization_SSSR = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+}
+LAZ_war_za_SSSR = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+	visible = { 
+	 OR = { 
+	 has_completed_focus = LAZ_plan_doka 
+	 has_completed_focus = LAZ_plan_shtazista
+	 }
+	}
+}
+LAZ_reunification_category = {
+	icon = military_operation
+	allowed = {
+		original_tag = LAZ
+	}
+	visible = {
+	
+	OR = { 
+	 has_completed_focus = LAZ_plan_doka 
+	 has_completed_focus = LAZ_plan_shtazista
+	 
+	}
+	}
+}
+LAZ_proizvodstvo_kontenta = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+}

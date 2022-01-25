@@ -1,0 +1,224 @@
+################
+  ### NOD ###
+################
+
+atmta_category = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_2000_Atmtat
+	}
+}
+
+ter_naz_krr = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_peregovory_s_kazakami
+	}
+}
+
+ter_naz_donb = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_Donbass_nash
+	}
+}
+
+ter_naz_str = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_peregovory_s_kazakami
+	}
+}
+
+ter_naz_haz = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_hazari
+	}
+}
+
+ter_naz_crim = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_vosvanie_k_Poklonskoy
+	}
+}
+
+ter_naz_sev_kau = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_kavkaz_vopros
+	}
+}
+
+ter_naz_yug_kau = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_kavkaz_vopros
+	}
+}
+
+ter_naz_cht = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_chat
+	}
+}
+
+ter_naz_ukri = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_sudba_ukraini
+	}
+}
+
+ter_naz_centr_rus = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_na_lazaret
+	}
+}
+
+ter_naz_piter_i_td = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_piter
+	}
+}
+
+ter_naz_zauralye_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_za_uralom
+	}
+}
+
+ter_naz_sibir_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_v_sibir
+	}
+}
+
+ter_naz_dv_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_dv
+	}
+}
+
+ter_naz_bel_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_bel
+	}
+}
+
+ter_naz_prib_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_pribaltika
+	}
+}
+
+ter_naz_srasia_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_help_KZ
+	}
+}
+
+find_putin_nod = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	has_completed_focus = NOD_national_unity
+	has_government = fascism
+	}
+}
+
+NOD_capital_vopros_category = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	controls_state = 195
+	controls_state = 219
+	controls_state = 217
+	
+	}
+}		
+
+NOD_reunification_category = {
+	icon = military_operation
+	allowed = {
+		original_tag = NOD	
+	}
+	visible = {
+	controls_state = 195
+	controls_state = 219
+	controls_state = 217
+	controls_state = 570
+	controls_state = 564
+	controls_state = 408
+	
+	has_completed_focus = NOD_vostanovit_suverenitet_Russia
+	}
+}

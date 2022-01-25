@@ -1,0 +1,47 @@
+capital = 218
+
+oob = KRR_1936
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.3
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+KRR_zavihrenia
+}
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Дмитрий Дибров"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Dibrov.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		prince_of_terror
+	}
+}	
+create_field_marshal = {
+	name = "Дмитрий Дибров"
+	id = 514105
+	picture = "Dibrov.dds"
+	traits = { old_guard cavalry_expert harsh_leader }
+	skill = 1
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}

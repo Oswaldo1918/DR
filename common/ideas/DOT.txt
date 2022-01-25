@@ -1,0 +1,58 @@
+ideas = {
+        country = {
+		    DOT_vlast_steel_kleshnya = {
+
+			   picture = air_war_plans_division_focus
+			
+			   modifier = {
+			   conscription = 0.02
+			   stability_factor = 0.1
+			   army_org_factor = 0.05
+			   }
+		    }
+			DOT_plohoe_kommandovanie = {
+
+			   picture = idea_chi_incompetent_officers
+			
+			   modifier = {
+			   max_command_power = -20
+			   army_org = -10
+			   max_planning_factor = -0.5
+			   }
+		    }
+	        DOT_GULAG = {
+
+			   picture = idea_ast_classify_aliens
+			
+			   modifier = {
+			   consumer_goods_factor = -0.05
+			   production_speed_buildings_factor = 0.1 
+			   }
+		    }
+			DOT_gold_Kolymy = {
+
+			   picture = spr_seize_the_gold_reserves
+			
+			   modifier = {
+			   consumer_goods_factor = -0.15
+			   }
+		    }
+			DOT_dary_Pridonya = {
+
+			   picture = spr_seize_the_gold_reserves
+			
+			   modifier = {
+			   consumer_goods_factor = -0.15
+			   }
+		    }
+			DOT_narastit_dobychu = {
+
+			   picture = spr_seize_the_gold_reserves
+			
+			   modifier = {
+			   local_resources = 0.15
+			   }
+		    }
+	    }
+		
+}

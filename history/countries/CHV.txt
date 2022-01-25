@@ -1,0 +1,37 @@
+﻿capital = 803
+
+oob = ЧВК_1936
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0
+set_technology = {
+	infantry_weapons = 1
+	masin = 1
+}
+
+add_ideas = {
+	CHV_war_promka
+}
+
+set_popularities = {
+	democratic = 75
+	fascism = 25
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Алексей Шерстнёв"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Sherst.jpg"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

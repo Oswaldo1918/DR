@@ -1,0 +1,75 @@
+division_template = {
+	name = "Мертвяки"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = KUR_DED_01
+
+	regiments = {
+	skeleton = { x = 0 y = 0 }
+    skeleton = { x = 0 y = 1 }
+    skeleton = { x = 0 y = 2 }
+    skeleton = { x = 1 y = 0 }
+    skeleton = { x = 1 y = 1 }
+	skeleton = { x = 1 y = 2 }
+	skeleton = { x = 2 y = 0 }
+    skeleton = { x = 2 y = 1 }
+	skeleton = { x = 2 y = 2 }
+}
+priority = 1
+}
+units = {
+	division = {
+		name = "Восставшие красноармейцы"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.3
+	}
+		
+       division = {
+		name = "Некродивизия"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Метафизичные красноармейцы"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Бессмертные коммунисты"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.3
+	}
+		
+       division = {
+		name = "Крещённые мертвецы"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "Грибные мертвецы"
+		location = 525
+		division_template = "Мертвяки"
+		start_experience_factor = 0.4
+	}
+	
+	
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KUR"
+		}
+		requested_factories = 1
+		progress = 1
+		efficiency = 100
+	}
+}

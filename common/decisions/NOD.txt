@@ -1,0 +1,1629 @@
+atmta_category = {	# Постройка танков атмта
+	nod_atmta = {
+		icon = generic_operation	
+		available = {
+			original_tag = NOD
+		}
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 150
+		days_remove = 100
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {		
+		hidden_effect = {
+	 random_list = { 
+	 25 = {
+	     country_event = {
+							id = nod.6
+						    }
+			  
+	 }
+	 25 = {
+	     country_event = {
+							id = nod.7
+						    }           
+					  
+	 }
+	 25 = {
+	      country_event = {
+							id = nod.8
+						    }          
+					  
+	 }
+	 25 = { 
+	  country_event = {
+							id = nod.9
+						    }  
+	                    
+	 }
+	 }
+	}	
+		}
+		fire_only_once = yes
+	}
+}
+ter_naz_donb = { 
+ naz_done = {
+       cost = 50
+ available = {
+              controls_state = 227
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 227
+				 }
+			fire_only_once = yes	 
+		}
+  naz_luga = {
+       cost = 50
+ available = {
+              controls_state = 228
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 228
+				 }
+			fire_only_once = yes	 
+		}	
+}
+
+ter_naz_krr = { 
+ naz_rost = {
+       cost = 50
+ available = {
+              controls_state = 218
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 218
+				 }
+			fire_only_once = yes	 
+		}
+ naz_vlgd = {
+       cost = 50
+ available = {
+              controls_state = 238
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 238
+				 }
+				fire_only_once = yes 
+		}
+  naz_kras = {
+       cost = 50
+ available = {
+              controls_state = 234
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 234
+				 }
+			fire_only_once = yes	 
+		}	
+}
+
+ter_naz_str = { 
+ naz_str = {
+       cost = 50
+ available = {
+              controls_state = 235
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 235
+				 }
+				fire_only_once = yes 
+		}
+}
+
+ter_naz_haz = { 
+ naz_haz_1 = {
+       cost = 50
+ available = {
+              controls_state = 236
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 236
+				 }
+			fire_only_once = yes	 
+		}
+ naz_haz_2 = {
+       cost = 50
+ available = {
+              controls_state = 237
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 237
+				 }
+			fire_only_once = yes	 
+		}	
+}
+
+ter_naz_crim = { 
+ naz_crim = {
+       cost = 50
+ available = {
+              controls_state = 137
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 137
+				 }
+			fire_only_once = yes	 
+		}
+}
+ter_naz_sev_kau = { 
+ naz_checn = {
+       cost = 50
+ available = {
+              controls_state = 232
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 232
+				 }
+			fire_only_once = yes	 
+		}
+ naz_sev = {
+       cost = 50
+ available = {
+              controls_state = 233
+          }
+
+		  days_remove = 35
+                 remove_effect = {
+				 add_state_core = 233
+				 }
+			fire_only_once = yes	 
+		}	
+}
+ter_naz_yug_kau = { 
+ naz_geog = {
+       cost = 50
+ available = {
+              controls_state = 231
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 231
+				 }
+			fire_only_once = yes	 
+		}
+ naz_arm = {
+       cost = 50
+ available = {
+              controls_state = 230
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 230
+				 }
+			fire_only_once = yes	 
+		}
+  naz_azr = {
+       cost = 50
+ available = {
+              controls_state = 229
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 229
+				 }
+			fire_only_once = yes	 
+		}
+}
+ter_naz_cht = { 
+ naz_samara = {
+       cost = 50
+ available = {
+              controls_state = 251
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 251
+				 }
+			fire_only_once = yes	 
+		}
+naz_ulyan = {
+       cost = 50
+ available = {
+              controls_state = 250
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 250
+				 }
+			fire_only_once = yes	 
+		}
+naz_pen = {
+       cost = 50
+ available = {
+              controls_state = 255
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 255
+				 }
+			fire_only_once = yes	 
+		}
+naz_tat = {
+       cost = 50
+ available = {
+              controls_state = 249
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 249
+				 }
+			fire_only_once = yes	 
+		}	
+naz_chebok = {
+       cost = 50
+ available = {
+              controls_state = 256
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 256
+				 }
+			fire_only_once = yes	 
+		}
+naz_gorkiy = {
+       cost = 50
+ available = {
+              controls_state = 252
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 252
+				 }
+			fire_only_once = yes	 
+		}
+naz_izhev = {
+       cost = 50
+ available = {
+              controls_state = 399
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 399
+				 }
+			fire_only_once = yes	 
+		}
+naz_kirov = {
+       cost = 50
+ available = {
+              controls_state = 400
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 400
+				 }
+			fire_only_once = yes	 
+		}
+naz_nod_oren = {
+       cost = 50
+ available = {
+              controls_state = 652
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 652
+				 }
+			fire_only_once = yes	 
+		}
+naz_nod_ufa = {
+       cost = 50
+ available = {
+              controls_state = 651
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 651
+				 }
+			fire_only_once = yes	 
+		}
+naz_nod_prm = {
+       cost = 50
+ available = {
+              controls_state = 398
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 398
+				 }
+			fire_only_once = yes	 
+		}
+naz_nod_skt = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+			fire_only_once = yes	 
+		}		
+}
+
+ter_naz_ukri = {
+naz_ukr_step_2_1 = {
+       cost = 25
+ available = {
+              controls_state = 196
+			  controls_state = 200
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 196
+				 add_state_core = 200
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_step_2_2 = {
+       cost = 25
+ available = {
+              controls_state = 226
+			  
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 226
+				
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_step_3 = {
+       cost = 25
+ available = {
+              controls_state = 221
+			  
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 221
+				
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_step_on_od = {
+       cost = 25
+ available = {
+ OR = {       controls_state = 197
+              controls_state = 192
+			  }
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 197
+				 add_state_core = 192
+				 }
+			fire_only_once = yes	 
+		}	
+naz_ukr_step_levober = {
+       cost = 50
+ available = {
+ OR = {       controls_state = 225
+              controls_state = 193
+			  controls_state = 259
+			  }
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 225
+				 add_state_core = 193
+				 add_state_core = 259
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_step_pravober = {
+       cost = 50
+ available = {
+ OR = {       controls_state = 203
+              controls_state = 202
+			  controls_state = 201
+              controls_state = 198
+			  }
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 201
+				 add_state_core = 202
+				 add_state_core = 203
+				 add_state_core = 198
+				 }
+			fire_only_once = yes	 
+		}	
+naz_ukr_step_zapaden = {
+       cost = 50
+ available = {
+ OR = {       controls_state = 199
+              controls_state = 92
+			  controls_state = 91
+			  controls_state = 89
+			  controls_state = 80
+			  }
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 199
+				 add_state_core = 92
+				 add_state_core = 91
+				 add_state_core = 89
+				 add_state_core = 80
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_hun = {
+       cost = 25
+ available = {
+              controls_state = 73
+			  
+          }
+
+		  days_remove = 15
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 73
+				
+				 }
+			fire_only_once = yes	 
+		}
+naz_ukr_bess = {
+       cost = 25
+ available = {
+ OR = { 
+              controls_state = 78
+			  controls_state = 766
+			  }
+          }
+
+		  days_remove = 15
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 78
+				 add_state_core = 766				
+				 }
+			fire_only_once = yes	 
+		}		
+}
+
+ter_naz_centr_rus = {
+naz_voron = {
+       cost = 100
+ available = {
+ OR = {
+              controls_state = 260
+			  controls_state = 258
+			  controls_state = 257
+			  }
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 260
+				 add_state_core = 257
+				 add_state_core = 258
+				 }
+			fire_only_once = yes	 
+		}
+naz_orel_kurs = {
+       cost = 100
+ available = {
+              OR = { 
+	    controls_state = 224
+		controls_state = 222
+		controls_state = 220
+		controls_state = 240
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 224
+				 add_state_core = 222
+				 add_state_core = 220
+				 add_state_core = 240
+				 }
+			fire_only_once = yes	 
+		}
+naz_laz_mos_east = {
+       cost = 100
+ available = {
+              OR = { 
+	    controls_state = 248
+		controls_state = 253
+		controls_state = 254
+		
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 248
+				 add_state_core = 253
+				 add_state_core = 254
+				 }
+			fire_only_once = yes	 
+		}
+naz_laz_mos_west_sev = {
+       cost = 100
+ available = {
+              OR = { 
+	    controls_state = 247
+		controls_state = 246
+		controls_state = 242
+		
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 247
+				 add_state_core = 246
+				 add_state_core = 242
+				 }
+			fire_only_once = yes	 
+		}
+naz_laz_mos_west_south = {
+       cost = 100
+ available = {
+              OR = { 
+	    controls_state = 243
+		controls_state = 205
+		controls_state = 223
+		
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 243
+				 add_state_core = 205
+				 add_state_core = 223
+				 }
+			fire_only_once = yes	 
+		}
+naz_laz_moskva = {
+       cost = 100
+ available = {
+	    controls_state = 219
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 219
+				 
+				 }
+			fire_only_once = yes	 
+		}
+naz_archang = {
+       cost = 100
+ available = {
+              OR = { 
+	    controls_state = 262
+		controls_state = 214
+		controls_state = 351
+		
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 263
+				 add_state_core = 214
+				 add_state_core = 351
+				 }
+			fire_only_once = yes	 
+		}		
+}
+ter_naz_piter_i_td =  {
+     naz_sz_west = {
+       cost = 50
+      available = {
+              OR = { 
+		controls_state = 210
+		controls_state = 209
+		controls_state = 208
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 210
+				 add_state_core = 209
+                 add_state_core = 208
+				 }
+			fire_only_once = yes	 
+		}
+		
+		naz_sz_east = {
+       cost = 50
+      available = {
+              OR = { 
+		controls_state = 263
+		controls_state = 264
+		controls_state = 244
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 263
+				 add_state_core = 264
+                 add_state_core = 244
+				 }
+			fire_only_once = yes	 
+		}
+		
+		naz_len_petrog = {
+       cost = 50
+      available = {
+
+		 controls_state = 195
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 195
+ set_province_name = { id = 3151 name = "Петроград" }
+				 }
+			fire_only_once = yes	 
+		}
+		
+     naz_nod_karelia = {
+       cost = 50
+      available = {
+              OR = { 
+		controls_state = 216
+		controls_state = 215
+		controls_state = 146
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 216
+				 add_state_core = 215
+                 add_state_core = 146
+				 }
+			fire_only_once = yes	 
+		}
+	 naz_nod_murm = {
+       cost = 50
+      available = {
+              OR = { 
+		controls_state = 213
+		controls_state = 722
+		controls_state = 147
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 213
+				 add_state_core = 722
+                 add_state_core = 147
+				 }
+			fire_only_once = yes	 
+		}	
+		
+	}
+	
+   ter_naz_zauralye_nod = {
+
+naz_nod_magnitka = {
+       cost = 50
+      available = {
+             
+		controls_state = 582
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 582
+				 }
+			fire_only_once = yes	 
+		}
+  naz_nod_gori = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+		controls_state = 573
+		controls_state = 581
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 573
+				 add_state_core = 581
+				 
+				 }
+			fire_only_once = yes	 
+		}   
+  naz_nod_ekb = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+		controls_state = 572
+		controls_state = 653
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 572
+				 add_state_core = 635
+				 
+				 }
+			fire_only_once = yes	 
+		}
+ naz_nod_other_zap_sib = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+		controls_state = 579
+		controls_state = 580
+		controls_state = 403
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 579
+				 add_state_core = 580
+				 add_state_core = 403
+				 
+				 }
+			fire_only_once = yes	 
+		}	
+	 }
+	 
+	 ter_naz_sibir_nod = {
+	 
+	  naz_nod_oms_nov = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 571
+		controls_state = 570
+		controls_state = 578
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 571
+				 add_state_core = 578
+				 add_state_core = 570
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_barn = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 40
+		controls_state = 654
+		controls_state = 569
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 40
+				 add_state_core = 654
+				 add_state_core = 569
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_kryar = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 568
+		controls_state = 567
+		controls_state = 329
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 568
+				 add_state_core = 567
+				 add_state_core = 329
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_mor = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 516
+		controls_state = 577
+		controls_state = 576
+		controls_state = 575
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 516
+				 add_state_core = 577
+				 add_state_core = 576
+				 add_state_core = 575
+				 
+				 }
+			fire_only_once = yes	 
+		}	
+	  naz_nod_bur = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 566
+		controls_state = 565
+		controls_state = 564
+		controls_state = 563
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 566
+				 add_state_core = 565
+				 add_state_core = 564
+				 add_state_core = 563
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	}  
+	
+	ter_naz_dv_nod = {
+	naz_nod_north = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 644
+		controls_state = 562
+		controls_state = 574
+		controls_state = 637
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 644
+				 add_state_core = 562
+				 add_state_core = 574
+				 add_state_core = 637
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_south = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 409
+		controls_state = 561
+		controls_state = 560
+		controls_state = 657
+		controls_state = 408
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 657
+				 add_state_core = 561
+				 add_state_core = 560
+				 add_state_core = 409
+				 add_state_core = 408
+				 
+				 }
+			fire_only_once = yes	 
+		}
+		
+	naz_nod_otrova = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 537
+		controls_state = 655
+		controls_state = 555
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 655
+				 add_state_core = 537
+				 add_state_core = 555
+
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	
+	 }
+	
+	ter_naz_bel_nod = {
+	 naz_nod_east_bel = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 241
+		controls_state = 206
+		controls_state = 207
+		controls_state = 204
+		controls_state = 194
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 241
+				 add_state_core = 206
+				 add_state_core = 207
+                 add_state_core = 204
+				 add_state_core = 194
+				 
+				 }
+			fire_only_once = yes	 
+		}
+		naz_nod_west_bel = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+		controls_state = 96
+		controls_state = 95
+		controls_state = 94
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 96
+				 add_state_core = 95
+				 add_state_core = 94
+
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	}
+	
+	ter_naz_prib_nod = {
+	 naz_nod_est = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+		controls_state = 191
+		controls_state = 13
+		
+		}
+		
+          }
+
+		  days_remove = 100
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 191
+				 add_state_core = 13
+			
+
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	 naz_nod_lat = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+		controls_state = 190
+		controls_state = 12
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 190
+				 add_state_core = 12
+			
+
+				 
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_lit = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+	    controls_state = 784
+		controls_state = 189
+		controls_state = 188
+		controls_state = 11
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 784
+				 add_state_core = 189
+				 add_state_core = 188
+				 add_state_core = 11
+
+				 }
+			fire_only_once = yes	 
+		}
+	 naz_nod_klg = {
+       cost = 25
+      available = {
+             
+		controls_state = 763
+
+          }
+
+		  days_remove = 15
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 763
+
+				 }
+			fire_only_once = yes	 
+		}	
+	}
+	
+	ter_naz_srasia_nod = {
+	
+	 naz_nod_kaz = {
+       cost = 100
+      available = {
+             
+	   OR = { 
+	    controls_state = 407
+		controls_state = 406
+		controls_state = 404
+		controls_state = 402
+		controls_state = 589
+		controls_state = 587
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 407
+				 add_state_core = 406
+				 controls_state = 404
+				 add_state_core = 402
+				 controls_state = 589
+				 add_state_core = 587
+
+				 }
+			fire_only_once = yes	 
+		}
+	naz_nod_nbp = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+	    controls_state = 583
+		controls_state = 590
+		controls_state = 588
+		
+		}
+		
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 583
+				 add_state_core = 590
+				 add_state_core = 588
+
+				 }
+			fire_only_once = yes	 
+		}	
+	naz_nod_sa = {
+       cost = 50
+      available = {
+             
+	   OR = { 
+	    controls_state = 732
+		controls_state = 585
+		controls_state = 584
+		controls_state = 405
+		controls_state = 742
+		}
+		
+          }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 742
+				 add_state_core = 732
+				 add_state_core = 585
+				 add_state_core = 584
+                 add_state_core = 405
+				 }
+			fire_only_once = yes	 
+		}
+	}
+	find_putin_nod = {
+	find_putin_gelen = {
+       cost = 50
+      available = {
+             
+   controls_state = 234
+  }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+add_to_variable = { putin_find = 1 }
+country_event = { id = nod.33 days = 1  }
+				 }
+			fire_only_once = yes
+		
+		}
+	find_putin_mosk = {
+       cost = 50
+      available = {
+             
+   controls_state = 219
+  }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+add_to_variable = { putin_find = 1 }
+country_event = { id = nod.34 days = 1  }
+				 }
+			fire_only_once = yes
+			
+		}
+	
+	find_putin_piter = {
+       cost = 50
+      available = {
+             
+   controls_state = 195
+  }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+add_to_variable = { putin_find = 1 }
+country_event = { id = nod.35 days = 1  }
+				 }
+			fire_only_once = yes
+			
+		}
+	find_putin_udm = {
+       cost = 50
+      available = {
+             
+   controls_state = 399
+  }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+add_to_variable = { putin_find = 1 }
+country_event = { id = nod.36 days = 1  }
+				 }
+			fire_only_once = yes	
+			
+		}
+	find_putin_altay = {
+       cost = 50
+      available = {
+             
+   controls_state = 654
+  }
+
+		  days_remove = 50
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+add_to_variable = { putin_find = 1 }
+country_event = { id = nod.37 days = 1  }
+				 }
+			fire_only_once = yes
+			
+		}	
+	}
+	NOD_capital_vopros_category = { 
+ NOD_capital_vopros = {
+       cost = 50
+ available = {
+              controls_state = 195
+			  controls_state = 219
+			  controls_state = 217
+          }
+
+		  days_remove = 1
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 country_event = { id = nod.38 days = 1 }
+				 }
+				fire_only_once = yes 
+		}
+}
+NOD_reunification_category = { 
+ NOD_reunification_1 = {
+       cost = 5
+ available = {
+              controls_state = 195
+			  controls_state = 219
+			  controls_state = 217
+          }
+		  
+visible = {
+			has_government = fascism
+			NOT = {
+				has_global_flag = NOD_putin_return
+			}
+		}
+		
+		  days_remove = 0
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 set_cosmetic_tag = NOD_starikov
+				 news_event = {
+							id = dk_news.10
+						}
+					set_party_name = {
+							ideology = fascism
+							long_name = NOD_star_party_long
+							name = NOD_star_party
+						}
+				 }
+				fire_only_once = yes 
+		}
+ NOD_reunification_2 = {
+       cost = 5
+ available = {
+              controls_state = 195
+			  controls_state = 219
+			  controls_state = 217
+          }
+		  
+visible = {
+			has_government = fascism
+			has_global_flag = NOD_putin_return
+		}
+		
+		  days_remove = 0
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 set_cosmetic_tag = NOD_put
+				 news_event = {
+							id = dk_news.11
+						}
+
+				 }
+				fire_only_once = yes 
+		}
+	NOD_reunification_3 = {
+       cost = 5
+ available = {
+              controls_state = 195
+			  controls_state = 219
+			  controls_state = 217
+          }
+
+visible = {
+			has_government = neutrality
+		}
+
+		  days_remove = 0
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 set_cosmetic_tag = NOD_bark
+				 news_event = {
+							id = dk_news.12
+						}
+
+				 }
+				fire_only_once = yes 
+		}	
+}

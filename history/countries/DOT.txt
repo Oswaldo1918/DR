@@ -1,0 +1,46 @@
+capital = 637
+
+oob = DOT_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.9
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+    marines	
+	tech_support = 1
+}
+
+
+
+	add_ideas = {
+		DOT_vlast_steel_kleshnya
+	    DOT_plohoe_kommandovanie
+		closed_economy
+	    service_by_requirement
+	    partial_economic_mobilisation
+	}
+
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Воваан"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Vovan.dds"
+	expire = "1999.1.1"
+	ideology = centrism
+	traits = { 
+		#
+	}
+}

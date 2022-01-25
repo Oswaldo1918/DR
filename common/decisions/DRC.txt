@@ -1,0 +1,88 @@
+territorii_natsional_4 = { 
+ develop_sykt_4 = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 70
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+				 }
+ develop_perm_4 = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+				 }
+ develop_bash_4 = {
+      cost = 50           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 70 
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+ develop_nod_4 = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 401
+			   controls_state = 239
+			   controls_state = 265
+			   controls_state = 245
+			   controls_state = 217
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 401
+		  add_state_core = 239
+		  add_state_core = 265
+		  add_state_core = 245
+		  add_state_core = 217
+		  }
+				 }
+ develop_pok_2 = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 573
+			   controls_state = 572
+			   controls_state = 653
+			   controls_state = 403
+			   controls_state = 580
+			   controls_state = 581
+			   controls_state = 579
+          }
+
+		  days_remove = 70	
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 573
+		  add_state_core = 572
+		  add_state_core = 653
+		  add_state_core = 403
+		  add_state_core = 580
+		  add_state_core = 581
+		  add_state_core = 579
+		  }
+				 }			 
+ 			 
+ 
+}

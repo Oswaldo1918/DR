@@ -1,0 +1,1267 @@
+plan_schield_category = {	# Проект Щит
+	cht_anti_lazaret_rubezh = {
+		icon = generic_operation	
+		available = {
+			has_war = no
+			has_full_control_of_state = 252
+			has_full_control_of_state = 255
+			has_full_control_of_state = 400
+			CHT = {
+				owns_state = 252 
+				owns_state = 255 
+				owns_state = 400
+			}
+			num_of_civilian_factories_available_for_projects > 0 
+		}
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		highlight_provinces = {
+			12130
+			1278
+			1258
+		}
+		cost = 100
+		days_remove = 80
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {			
+			252 = { 
+				set_building_level = { 
+					type = bunker level = 3 province = { 
+						all_provinces = yes limit_to_border = yes level < 1	
+					}
+				}
+			}
+			255 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6343
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9276
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 376
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6329
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3266
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3221
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3360
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6353
+					instant_build = yes
+				}
+			}
+			400 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3004
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 175
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 73
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9180
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3071
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3186
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11192
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6110
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11110
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cht_syktyvkar_ukreplrnie = {
+		icon = generic_operation	
+		available = {
+			has_war = no
+			has_full_control_of_state = 397
+			CHT = {
+				owns_state = 397
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}		
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 1
+		}
+		highlight_provinces = {
+			186
+			7330
+			11200
+			3155
+			1295
+			10579
+			7712
+			7898
+		}
+		cost = 50
+		days_remove = 50
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {			
+			397 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 186
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7330
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11200
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3155
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1295
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10579
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7712
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7898
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cht_perm_ukreplenie = {
+		icon = generic_operation	
+		available = {
+			has_war = no
+			has_full_control_of_state = 398
+			CHT = {
+				owns_state = 398	
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}		
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 1
+		}
+		highlight_provinces = {
+			4802
+			12187
+			12527
+			1754
+			11228
+			12216
+			10314
+		}
+		cost = 50
+		days_remove = 50
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {			
+			398 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4802
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12187
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12527
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1754
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11228
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12216
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10314
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	cht_bashkirya_ukreplenie = {
+		icon = generic_operation	
+		available = {
+			has_war = no
+			has_full_control_of_state = 651	
+			CHT = {
+				owns_state = 651	
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}		
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 1
+		}
+		highlight_provinces = {
+			12130
+			1278
+			1258
+		}
+		cost = 25
+		days_remove = 25
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {			
+			651 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 12130
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1278
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1258
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+find_resourcesi = {
+     develop_bimba = {
+	      cost = 150
+		  available = {
+               has_country_flag = bimba_bimba
+          }
+
+		  days_remove = 150
+		  ai_will_do = {
+        factor = 100
+		}
+		  		 fire_only_once = yes
+          remove_effect = {
+		  custom_effect_tooltip = CHT_bimba_tt
+            hidden_effect = {   
+               random_list = { 
+	           50 = { 
+			   country_event = {
+							id = chat.997
+						}
+		}
+	 50 = {
+	 country_event = {
+							id = chat.998
+						}
+	 }  
+	 }
+			}   
+          }
+      }
+}
+rasp_blue_rev  = {
+attak_sykt = {
+       cost = 15
+ available = {
+              
+          }
+           ai_will_do = {
+        factor = 100
+		}
+		 fire_only_once = yes
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+				 }
+			}
+    naz_sykt = {
+       cost = 30
+ available = {
+              controls_state = 397
+          }
+fire_only_once = yes
+		  days_remove = 15
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+			}
+attak_prm = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+				 }
+			}
+ naz_perm = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+			}
+attak_sever = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = ARK
+						}
+				 }
+			}			
+naz_sever = {
+       cost = 50          
+		available = {
+		       add_state_core = 213
+               controls_state = 214
+			   controls_state = 262
+			   controls_state = 351
+          }
+
+		  days_remove = 50	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 213
+		  add_state_core = 214
+		  add_state_core = 262
+		  add_state_core = 351
+		  }
+			}
+attak_voronez = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = UNT
+						}
+				 }
+			}			
+naz_voronez = {
+       cost = 50          
+		available = {
+               controls_state = 257
+			   controls_state = 258
+			   controls_state = 260
+          }
+
+		  days_remove = 50	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 257
+		  add_state_core = 258
+		  add_state_core = 260
+		  }
+			}
+	attak_orel = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = MAT
+						}
+				 }
+			}		
+naz_oryol = {
+       cost = 80          
+		available = {
+               controls_state = 222
+			   controls_state = 220
+			   controls_state = 224
+			   controls_state = 240
+          }
+
+		  days_remove = 60	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 222
+		  add_state_core = 220
+		  add_state_core = 224
+		  add_state_core = 240
+		  }
+			}
+	attak_bash = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = BSH
+						}
+				 }
+			}		
+ naz_bash = {
+      cost = 40           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 40 
+		  ai_will_do = {
+        factor = 100
+		}
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+	attak_nod = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = NOD
+						}
+				 }
+			}			 
+ naz_nod = {
+       cost = 100          
+			available = {
+               
+			   controls_state = 401
+			   controls_state = 239
+			   controls_state = 265
+			   controls_state = 245
+			   controls_state = 217
+          }
+
+		  days_remove = 75
+          ai_will_do = {
+        factor = 100
+		}		  
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 401
+		  add_state_core = 239
+		  add_state_core = 265
+		  add_state_core = 245
+		  add_state_core = 217
+		  }
+				 }
+		attak_laz = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = LAZ
+						}
+				create_wargoal = {
+							type = annex_everything
+							target = OSV
+						}	
+				 }
+			}
+ naz_moskva_east = {
+       cost = 100          
+			available = {
+               
+			   controls_state = 247
+			   controls_state = 219
+			   controls_state = 248
+			   controls_state = 253
+			   controls_state = 254
+          }
+
+		  days_remove = 75	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 247
+		  add_state_core = 219
+		  add_state_core = 248
+		  add_state_core = 253
+		  add_state_core = 254
+		  }
+				 } 
+naz_moskva_west = {
+       cost = 100          
+			available = {
+               
+			   controls_state = 246
+			   controls_state = 219
+			   controls_state = 224
+			   controls_state = 242
+			   controls_state = 243
+			   controls_state = 223
+			   controls_state = 205
+          }
+
+		  days_remove = 75	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 246
+		  add_state_core = 219
+		  add_state_core = 224
+		  add_state_core = 242
+		  add_state_core = 243
+		  add_state_core = 223
+		  add_state_core = 205
+		  }
+				 }
+attak_haz = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = HAZ
+						}
+				 }
+			}
+attak_pok = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = POK
+						}
+				 }
+			}
+attak_tup = {
+       cost = 15
+ available = {
+              
+          }
+
+		 fire_only_once = yes
+		 ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 create_wargoal = {
+							type = annex_everything
+							target = tup
+						}
+				 }
+			}	
+}
+territorii_natsional = { 
+ develop_sykt = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 70
+		  ai_will_do = {
+        factor = 100
+		}
+		fire_only_once = yes
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+				 }
+ develop_perm = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70
+          ai_will_do = {
+        factor = 100
+		}		  
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+				 }
+ develop_bash = {
+      cost = 50           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 70 
+		  ai_will_do = {
+        factor = 100
+		}
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+ develop_nod = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 401
+			   controls_state = 239
+			   controls_state = 265
+			   controls_state = 245
+			   controls_state = 217
+          }
+
+		  days_remove = 70	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 401
+		  add_state_core = 239
+		  add_state_core = 265
+		  add_state_core = 245
+		  add_state_core = 217
+		  }
+				 }
+ 
+}
+territorii_natsionaliz = { 
+ naz_sykt = {
+       cost = 50
+ available = {
+              controls_state = 397
+          }
+
+		  days_remove = 70
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 397
+				 }
+				 }
+ naz_perm = {
+       cost = 50          
+		available = {
+               controls_state = 398
+          }
+
+		  days_remove = 70	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 398
+		  }
+				 }
+ naz_bash = {
+      cost = 50           
+			available = {
+               
+			   controls_state = 651
+			   controls_state = 652
+          }
+
+		  days_remove = 70 
+		  ai_will_do = {
+        factor = 100
+		}
+			fire_only_once = yes
+			remove_effect = {
+			add_state_core = 651
+			add_state_core = 652
+			}
+				 } 
+ naz_nod = {
+       cost = 50          
+			available = {
+               
+			   controls_state = 401
+			   controls_state = 239
+			   controls_state = 265
+			   controls_state = 245
+			   controls_state = 217
+          }
+
+		  days_remove = 70	
+		  ai_will_do = {
+        factor = 100
+		}
+		  fire_only_once = yes
+		  remove_effect = {
+		  add_state_core = 401
+		  add_state_core = 239
+		  add_state_core = 265
+		  add_state_core = 245
+		  add_state_core = 217
+		  }
+				 }
+ 
+}
+CHT_cummissariats = {
+	CHT_south_cummissariat = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = memoism
+			controls_state = 236
+			controls_state = 238
+			controls_state = 234
+			controls_state = 235
+			controls_state = 232
+			controls_state = 218
+			has_war = no
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = memoism
+		}
+
+		complete_effect = {
+			release = HAZ
+			set_province_name = { id = 9753 name = "Assтрахань" }
+			HAZ = {
+				set_cosmetic_tag = HAZ_cummissariat
+				create_country_leader = {
+					name = "Алексей Поднебесный"
+					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+					picture = "gfx/leaders/Сummissariat/Podnebesnyi.dds"
+					expire = "1965.1.1"
+					ideology = gachi
+					traits = {
+					}
+				}
+			transfer_state = 236
+			transfer_state = 238
+			transfer_state = 234
+			transfer_state = 235
+			transfer_state = 232
+			transfer_state = 218
+			}
+			set_autonomy = { target = HAZ autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+	CHT_sibirien_cummissariat = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = memoism
+			controls_state = 653
+			has_war = no
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = memoism
+		}
+
+		complete_effect = {
+			release = POK
+			set_province_name = { id = 1821 name = "Leatherбург" }
+			POK = {
+				set_cosmetic_tag = POK_cummissariat
+				create_country_leader = {
+					name = "Вольдемар Пыня"
+					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+					picture = "gfx/leaders/Сummissariat/Woldemar.dds"
+					expire = "1965.1.1"
+					ideology = gachi
+					traits = {
+					}
+				}
+			}
+			set_autonomy = { target = POK autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+	CHT_ukraine_cummissariat = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = memoism
+			controls_state = 202
+			controls_state = 201
+			controls_state = 91
+			controls_state = 199
+			controls_state = 198
+			controls_state = 192
+			controls_state = 199
+			controls_state = 203
+			controls_state = 197
+			controls_state = 766
+			controls_state = 196
+			controls_state = 193
+			controls_state = 226
+			controls_state = 200
+			controls_state = 259
+			controls_state = 225
+			controls_state = 221
+			controls_state = 228
+			controls_state = 227
+			controls_state = 80
+			has_war = no
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = memoism
+		}
+
+		complete_effect = {
+			release = SIN
+			set_province_name = { id = 525 name = "Куев" }
+			SIN = {
+				set_cosmetic_tag = SIN_cummissariat
+				create_country_leader = {
+				name = "Олег Ляшко"
+					desc = "POLITICS_THORVALD_STAUNING_DESC"
+					picture = "Lyasko.dds"
+					expire = "1999.1.1"
+					ideology = gachi
+					traits = {
+						#
+					}
+				}
+				transfer_state = 202
+			    transfer_state = 201
+			    transfer_state = 91
+			    transfer_state = 199
+			    transfer_state = 198
+				transfer_state = 192
+			    transfer_state = 199
+			    transfer_state = 203
+			    transfer_state = 197
+			    transfer_state = 766
+				transfer_state = 196
+			    transfer_state = 193
+			    transfer_state = 226
+			    transfer_state = 200
+			    transfer_state = 259
+				transfer_state = 225
+			    transfer_state = 221
+			    transfer_state = 228
+			    transfer_state = 227
+			    transfer_state = 80
+				transfer_state = 78
+			    transfer_state = 89
+				set_capital = 202
+				add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 199
+			    			    add_state_core = 198
+							    add_state_core = 192
+			    			    add_state_core = 199
+			    			    add_state_core = 203
+			   			        add_state_core = 197
+			    			    add_state_core = 766
+							    add_state_core = 196
+			    			    add_state_core = 193
+			    			    add_state_core = 226
+			    			    add_state_core = 200
+			    			    add_state_core = 259
+							    add_state_core = 225
+			    			    add_state_core = 221
+			    			    add_state_core = 228
+			    			    add_state_core = 227
+			    			    add_state_core = 80
+							    add_state_core = 78
+			    			    add_state_core = 89
+			}
+			set_autonomy = { target = SIN autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+	CHT_toopichok_cummissariat = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = memoism
+			controls_state = 195
+			has_war = no
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = memoism
+		}
+
+		complete_effect = {
+			release = TUP
+			set_province_name = { id = 3151 name = "Голубая Устрица" }
+			TUP = {
+				set_cosmetic_tag = TUP_cummissariat
+				create_country_leader = {
+					name = "Терентий"
+					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+					picture = "gfx/leaders/Сummissariat/Terentyi.dds"
+					expire = "1965.1.1"
+					ideology = gachi
+					traits = {
+					}
+				}
+			}
+			set_autonomy = { target = TUP autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+	CHT_step_cummissariat = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_government = memoism
+			controls_state = 586
+			controls_state = 590
+			controls_state = 588
+			controls_state = 583
+			has_war = no
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_government = memoism
+		}
+
+		complete_effect = {
+			release = KAZ
+			set_province_name = { id = 4333 name = "Boy-Султан" }
+			KAZ = {
+				set_cosmetic_tag = KAZ_cummissariat
+				create_country_leader = {
+					name = "Адам Фриц"
+					desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+					picture = "gfx/leaders/KAZ/Kot_Fritz.dds"
+					expire = "1965.1.1"
+					ideology = gachi
+					traits = {
+					}
+				}
+				transfer_state = 586
+			    transfer_state = 590
+			    transfer_state = 588
+			    transfer_state = 583
+				add_state_core = 590
+			}
+			set_autonomy = { target = KAZ autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+}
+
+	cht_directive_228 = {
+		
+		icon = generic_scorched_earth
+		
+		available = {
+			has_war = yes			
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+        factor = 100
+		}
+		visible = {
+			has_war = yes
+			OR = {
+				controls_state = 225
+				controls_state = 220
+				controls_state = 260				
+			}			
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -14
+			}
+			if = {
+				limit = {
+					controls_state = 225
+				}
+				225 = {
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 220
+				}
+				220 = {
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 260
+				}
+				260 = {
+					damage_building = {
+						type = infrastructure
+						damage = 3
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				surrender_progress > 0.1
+			}	
+		}	
+	}
+ 
+find_resourc = {
+     plata_po_schetam = {
+           available = {
+               has_country_flag = mercen_mercen
+          }
+          cost = 50
+		  ai_will_do = {
+        factor = 100
+		}
+          complete_effect = {
+               add_manpower = -120
+			   remove_ideas = CHT_plata
+		      delete_unit_template_and_units = {
+	          division_template = "Chvkashniki"
+						}
+          }
+          
+     } 
+	}

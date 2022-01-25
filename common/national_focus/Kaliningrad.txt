@@ -1,0 +1,409 @@
+focus_tree = {
+	id = Kaliningrad
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KLG
+		}
+	}
+	default = no
+	focus = {
+		id = KLG_plohie_vesti
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2,00
+		x = 10
+		y = 0
+			completion_reward = {
+					country_event = {
+							id = KLG.1
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_plohie_vesti
+		}
+		x = 10
+		y = 1
+			completion_reward = {
+					country_event = {
+							id = KLG.2
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_nachat_mobilizatsiy
+		icon = GFX_focus_generic_little_entente
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
+		}
+		x = 6
+		y = 2
+			completion_reward = {
+					add_ideas = extensive_conscription
+				}
+
+	}
+	focus = {
+		id = KLG_otkrut_sklady
+		icon = GFX_goal_generic_small_arms
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_nachat_mobilizatsiy
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 750
+							producer = KLG
+						}
+					add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 150
+							producer = KLG
+						}
+					add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 150
+							producer = KLG
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_vydat_gun_people
+		icon = GFX_focus_generic_little_entente
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_otkrut_sklady
+		}
+		x = 5
+		y = 4
+		    completion_reward = {
+			        division_template = {
+	                        name = "Народное ополчение"				
+	                        division_names_group = KLG_GAR_01
+
+	                       regiments = {
+		                    infantry = { x = 0 y = 0 }
+		                    infantry = { x = 0 y = 1 }
+                            infantry = { x = 1 y = 0 }
+                            infantry = { x = 1 y = 1 }
+                           }
+                    }
+                            
+     
+							763 = {
+									create_unit = {
+											division = "name = \"1ая дивизия народного ополчения\" division_template = \"Народное ополчение\" start_experience_factor = 0.3"
+											owner = KLG
+										}
+								
+							
+									create_unit = {
+											division = "name = \"2ая дивизия народного ополчения\" division_template = \"Пензенская армия\" start_experience_factor = 0.3"
+											owner = KLG
+										}
+								}     	
+			}
+
+	}
+	focus = {
+		id = KLG_lion_baltika
+		icon = GFX_focus_eng_special_air_service
+		cost = 1,00
+		prerequisite = {
+			focus = KLG_nachat_mobilizatsiy
+		}
+		x = 7
+		y = 3
+		    completion_reward = {
+			        division_template = {
+	                        name = "Морпехи"				
+	                        division_names_group = KLG_GAR_01
+
+	                       regiments = {
+		                    marine = { x = 0 y = 0 }
+		                    marine = { x = 0 y = 1 }
+							marine = { x = 0 y = 2 }
+							marine = { x = 0 y = 3 }
+                            marine = { x = 1 y = 0 }
+                            marine = { x = 1 y = 1 }
+							marine = { x = 1 y = 2 }
+							marine = { x = 1 y = 3 }
+                           }
+                    }
+                            
+     
+							763 = {
+									create_unit = {
+											division = "name = \"1ая дивизия морпехов\" division_template = \"Морпехи\" start_experience_factor = 0.3"
+											owner = KLG
+										}
+								}     	
+			}
+
+	}
+	focus = {
+		id = KLG_komendantskiy_chas
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 1,00
+		prerequisite = {
+			focus = KLG_lion_baltika
+		}
+		x = 7
+		y = 4
+		    completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = KLG_prizvat_rekonstruktorov
+		icon = GFX_focus_generic_manpower
+		cost = 2
+		prerequisite = {
+			focus = KLG_komendantskiy_chas
+		}
+		prerequisite = {
+			focus = KLG_vydat_gun_people
+		}
+		x = 6
+		y = 5
+		    completion_reward = {
+					add_manpower = 15000
+				}
+
+	}
+	focus = {
+		id = KLG_economoka_voennogo_vremeny
+		icon = GFX_focus_generic_tank_production
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
+		}
+		x = 14
+		y = 2
+			completion_reward = {
+					add_ideas = partial_economic_mobilisation
+				}
+
+	}
+	focus = {
+		id = KLG_do_more
+		icon = GFX_goal_generic_military_sphere
+		cost = 2
+		prerequisite = {
+			focus = KLG_nachat_mobilizatsiy
+			focus = KLG_economoka_voennogo_vremeny
+		}
+		x = 10
+		y = 3
+		    completion_reward = {
+					add_ideas = KLG_do_more
+			}
+
+	}
+	focus = {
+		id = KLG_defense_liniya_yg
+		icon = GFX_goal_generic_fortify_city
+		cost = 2
+		prerequisite = {
+			focus = KLG_do_more
+		}
+		x = 9
+		y = 4
+		    completion_reward = {
+					763 = {
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 6332
+								}
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 395
+								}
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 3384
+								}
+						}
+			}
+
+	}
+	focus = {
+		id = KLG_defense_liniya_sever
+		icon = GFX_goal_generic_defence
+		cost = 2
+		prerequisite = {
+			focus = KLG_do_more
+		}
+		x = 11
+		y = 4
+		    completion_reward = {
+					763 = {
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 11265
+							}
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 348
+							}
+							add_building_construction = {
+									type = bunker
+									level = 2
+									instant_build = yes
+									province = 281
+								}
+						   }
+			}
+
+	}
+	focus = {
+		id = KLG_obligatsii_voen_zayma
+		icon = GFX_focus_cht_cumpital
+		cost = 10,00
+		prerequisite = {
+			focus = KLG_economoka_voennogo_vremeny
+		}
+		x = 13
+		y = 3
+		    completion_reward = {
+					add_ideas = KLG_obligatsii_voen_zayma
+			}
+
+	}
+	focus = {
+		id = KLG_trudovaya_mobilizatsiya
+		icon = GFX_goal_generic_construction2
+		cost = 3,00
+		prerequisite = {
+			focus = KLG_obligatsii_voen_zayma
+		}
+		x = 13
+		y = 4
+		    completion_reward = {
+					add_ideas = KLG_obligatsii_voen_zayma
+			}
+
+	}
+	focus = {
+		id = KLG_reconstruktsia_voennih_zavodov
+		icon = GFX_goal_generic_small_arms
+		cost = 2,00
+		prerequisite = {
+			focus = KLG_economoka_voennogo_vremeny
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_build_war_infrastryktyry
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KLG_reconstruktsia_voennih_zavodov
+		}
+		x = 15
+		y = 4
+		    completion_reward = {
+					763 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_narastit_dobychu_yantarya
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = KLG_trudovaya_mobilizatsiya
+		}
+		prerequisite = {
+			focus = KLG_build_war_infrastryktyry
+		}
+		x = 14
+		y = 5
+		    completion_reward = {
+					763 = {
+							add_extra_state_shared_building_slots = 3
+						}
+				}
+
+	}
+	focus = {
+		id = KLG_time_to_war
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = {
+			focus = KLG_narastit_dobychu_yantarya
+		}
+		prerequisite = {
+			focus = KLG_prizvat_rekonstruktorov
+		}
+		x = 10
+		y = 6
+		    completion_reward = {
+					add_war_support = 0.15
+				}
+
+	}
+}

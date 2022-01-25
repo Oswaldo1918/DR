@@ -1,0 +1,37 @@
+capital = 656
+
+oob = KUW_1936
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_popularities = {
+	democratic = 100
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Джордж Буш - младший"
+	desc = "POLITICS_DESC"
+	picture = "Bush.dds"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+	    Glava_CHBK
+		Sraniy_kovboy
+	}
+}
+
+
+	

@@ -1,0 +1,79 @@
+﻿division_template = {
+name = "Кинематографисты"
+
+	division_names_group = AFG_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "Исторические консультанты"
+		location = 9206
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "Операторы"
+		location = 9206
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Режиссеры"
+		location = 11159
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Сценаристы"
+		location = 11159
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "Продюссеры"
+		location = 3071
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "Актеры"
+		location = 3071
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Звукорежиссеры"
+		location = 9206
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Гримеры"
+		location = 11159
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+}
+

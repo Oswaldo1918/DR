@@ -1,0 +1,651 @@
+ideas = {
+    country = {
+	        DON_silnaya_ruka = {
+			picture = nkvd_2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor_factor = 0.1
+				decryption = 1
+				encryption = 1
+				army_morale_factor = 0.1
+				}
+		    }
+			
+	        DON_Yg_bastion = {
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_factor = 0.1
+				}
+				targeted_modifier = {
+				tag = UKR
+				defense_bonus_against = 0.1
+			    }
+			     targeted_modifier = {
+				tag = NOD
+				defense_bonus_against = 0.1
+			    }
+				 targeted_modifier = {
+				tag = KRR
+				defense_bonus_against = 0.1
+			    }
+		    }
+	
+	        DON_polit_krisis = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  stability_factor = -0.1
+				  war_support_factor = -0.1
+			}
+		}
+		    DON_proukr_podpole = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_factory_max_efficiency_factor = -0.2
+				  political_power_gain = -0.1
+			}
+		}
+		    DON_prom_zastoy = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_factory_efficiency_gain_factor = -0.2
+				  production_speed_buildings_factor = -0.5
+			}
+		}
+		    DON_neprof_army = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_core_attack_factor = 0.15
+				  army_org_factor = -0.1
+				  planning_speed = -0.2
+				  max_planning = -0.2
+			}
+		}
+		    DON_plan_Guboreva = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_morale_factor = -0.2
+				  training_time_army_factor = 0.2
+			}
+		}
+		    DON_plan_Strelkova = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_org_factor = 0.1
+				  max_planning = 0.1
+			}
+		}
+		    DON_red_oraculs = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  recon_factor = 1
+				  research_speed_factor = 0.1
+			}
+		}
+		    DON_commune_krepostnih = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_buildings_factor = 0.1
+				  production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		    DON_kult_Minina_i_Pozharskogo = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_core_defence_factor = 0.1
+				  partisan_effect = 0.5
+			}
+		}
+		    DON_red_popi = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  stability_factor = 0.05
+				  consumer_goods_factor = -0.05
+			}
+		}
+		    DON_fiveletnie_plani = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_buildings_factor = 0.1
+				  production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		    DON_new_stankostroenie = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_buildings_factor = 0.1
+				  production_factory_efficiency_gain_factor = 0.1
+				  production_factory_start_efficiency_factor = 0.1
+				  line_change_production_efficiency_factor = 0.1
+			}
+		}
+		    DON_donetskiy_segment_OGAS = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_buildings_factor = 0.25
+				  production_factory_efficiency_gain_factor = 0.25
+				  production_factory_start_efficiency_factor = 0.25
+				  line_change_production_efficiency_factor = 0.25
+				  consumer_goods_factor = -0.1
+			}
+		}
+		    DON_Black_Kamen = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_bunker_factor = 0.3
+				  army_armor_defence_factor = 0.15
+			}
+		}
+		    DON_army_trolls = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  decryption_factor = 2
+				  encryption_factor = 2
+				  recon_factor = 2
+			}
+		}
+		    DON_new_oprichnina = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  political_power_gain = 0.05
+				  stability_factor = 0.1
+				  war_support_factor = 0.15
+				  enemy_partisan_effect = -0.2
+			}
+		}
+		    DON_oprichnina_v_voiskah = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_morale_factor = 0.05
+				  army_attack_factor = 0.1
+				  political_power_gain = 0.05
+				  stability_factor = 0.1
+				  war_support_factor = 0.15
+				  enemy_partisan_effect = -0.2
+				  army_org = 5
+				  land_reinforce_rate = 0.05
+			}
+		}
+		    DON_shturmoviki = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  experience_loss_factor = -0.1
+				  supply_consumpment_factor = -0.10
+				  army_infantry_defence_factor = 0.15
+			}
+		}
+		    DON_setetsentricheskaia_voyna = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  planning_speed = 0.2
+				  max_planning = 0.15
+				  army_org_factor = 0.1
+			}
+		}
+		    DON_otzhim = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  equipment_capture_factor = 0.5
+			}
+		}
+		     DON_russian_vpered = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_attack_factor = 0.1
+				  army_speed_factor = 0.1
+			}
+		}
+			 DON_russian_nazad = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_defence_factor = 0.1
+				  dig_in_speed_factor = 0.1
+			}
+		}
+		    DON_Donbass_serdtse_Russia = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		    DON_Dneprovskie_soglasheniia = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  political_power_gain = -0.05
+				  war_support_factor = -0.1
+			}
+		}
+		    DON_Missiia_v_Pynigrad = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  political_power_gain = -0.05
+				  war_support_factor = 0.1
+			}
+		}
+		    DON_Donbass_eto_Evropa = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_infrastructure_factor = 0.1
+				  local_resources_factor = 0.1
+			}
+		}
+		    DON_Donbass_koloniia_kolonii = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  conscription_factor = 0.05
+				  local_resources_factor = 0.1
+			}
+		}
+		    DON_Poznat_Syt_Vremeni = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_arms_factory_factor = 0.1
+			}
+		}
+		    DON_Donbass_rodina_shoggotov = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_morale_factor = 0.05
+				  war_support_factor = 0.1
+			}
+		}
+		    DON_New_gosmehanizm = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  political_power_gain = 0.15
+				  consumer_goods_factor = -0.05
+			}
+		}
+		    DON_Tsentralizatsiia = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  conscription_factor = 0.03
+				  consumer_goods_factor = -0.05
+			}
+		}
+		    DON_Anarhosindikalizm = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  industry_air_damage_factor = -0.3
+			}
+		}
+		    DON_Monumental_arhitektura = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  production_speed_buildings_factor = 0.1
+			}
+		}
+		    DON_New_obrazavatelnie_standarty = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  research_speed_factor = 0.05
+				  war_support_factor = 0.1
+			}
+		}
+		    DON_Vosstanovlenie_razrushennih_zavodov = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  industry_repair_factor = 0.5
+			}
+		}
+		    DON_Voen_avtarkiia = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+		}
+	  }
+	        DON_Vse_dlia_fronta = { 
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				motorised_infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+		       }
+			    modifier = {
+				  conscription_factor = -0.03
+				  war_support_factor = 0.2
+			}
+     }
+	        DON_Bog_voyni = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_artillery_attack_factor = 0.15
+			}
+		}
+		    DON_Nasledie_Koshkina = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_armor_speed_factor = 0.2
+			}
+		}
+		    DON_Vozdushononazemnoe_vraimodeystvie = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  army_bonus_air_superiority_factor = 0.2
+				  air_night_penalty = -0.2
+			}
+		}
+		    DON_Vozvrazhenie_kapitala = {
+			
+			      picture = generic_morale_bonus
+			
+			      removal_cost = -1
+			
+			      allowed = { always = no }
+			
+			
+			      modifier = {
+				  war_support_factor = -0.10
+				  production_speed_buildings_factor = 0.1
+			}
+		}
+	} 
+}	

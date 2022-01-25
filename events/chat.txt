@@ -1,0 +1,1991 @@
+add_namespace = chat
+
+# Лор Чата
+country_event = {
+    id = chat.1
+	title = chat.1.t
+	desc = chat.1.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.1.a
+	}
+}	
+# Выборы
+country_event = {
+    id = chat.2
+	title = chat.2.t
+	desc = chat.2.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = CHT
+	}
+	
+	
+	option = {
+		name = chat.2.a
+		set_country_flag = stazi_u_vlasti
+		complete_national_focus = CHT_stazist
+		set_politics = { ruling_party = vmestolev }
+		CHT = {
+			country_event = { days = 25 id = chat.7 }
+		}
+    }
+
+    option = {
+		name = chat.2.b
+		complete_national_focus = CHT_de_loksli
+		set_politics = { ruling_party = vmestolev }
+		CHT = {
+			country_event = { days = 1 id = chat.7 }
+		}
+    }
+}	
+
+# Гражданка через Штурм
+country_event = {
+    id = chat.3
+	title = chat.3.t
+	desc = chat.3.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = CHT
+	}
+	
+	
+	option = {
+	name = chat.3.a
+	hidden_effect = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	LAZ = {
+			end_puppet = CHT
+		}
+          leave_faction = Chumnoy_pakt
+	      set_global_flag = chat_civil_war
+	      remove_unit_leader = 776
+	      remove_unit_leader = 777
+		  remove_unit_leader = 778
+		  remove_unit_leader = 779
+		  remove_unit_leader = 780
+	      if = {
+        CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+
+			}	
+		}
+	}	
+	option = {
+	name = chat.3.b
+	hidden_effect = {
+	CHT = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
+	}
+	LAZ = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+	      if = {
+        CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                CDR = { change_tag_from = CHT }
+			}	
+		}
+	}	
+		option = {
+	name = chat.3.c
+	hidden_effect = {
+	CHT = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
+	}
+	LAZ = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+	      if = {
+        CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                CCO = { change_tag_from = CHT }
+			}	
+		}
+	}
+	option = {
+	name = chat.3.e
+	hidden_effect = {
+	CHT = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
+	}
+	LAZ = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+	      if = {
+        CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                VTC = { change_tag_from = CHT }
+			}	
+		}
+	}	
+	option = {
+	name = chat.3.f
+	hidden_effect = {
+	CHT = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
+	}
+	LAZ = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+	      if = {
+        CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                DGC = { change_tag_from = CHT }
+			}	
+		}
+	}	
+}	
+# Съезд Совета
+country_event = {
+    id = chat.4
+	title = chat.4.t
+	desc = chat.4.d 
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chat.4.a
+		hidden_effect = {
+		set_country_flag = cht_ignor_svidetel
+		CHT = {
+			country_event = { days = 1 id = chat.6 }
+		}
+		}
+	}
+	
+	option = {
+		name = chat.4.b
+		hidden_effect = {
+		CHT = {
+			country_event = { days = 1 id = chat.5 }
+		}
+		}
+	}
+}
+
+# Гачисты под стражей
+country_event = {
+	id = chat.5
+	title = chat.5.t
+	desc = chat.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes
+
+	option = { 
+	name = chat.5.a
+	set_country_flag = cht_arrest_svidetel
+    remove_unit_leader = 22800
+	}
+}
+
+
+# Гачисты взяли власть
+country_event = {
+	id = chat.6
+	title = chat.6.t
+	desc = chat.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.6.a
+	hidden_effect = {
+	complete_national_focus = CHT_war_polozheniye
+	}
+	}
+}	
+# Беспорядки на юге
+country_event = {
+	id = chat.7
+	title = chat.7.t
+	desc = chat.7.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.7.a 
+	add_stability = -0.05
+	add_political_power = -25
+	}
+	
+}	
+#Конец гражданки
+country_event = {
+	id = chat.8
+	title = chat.8.t
+	desc = chat.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.8.a
+	add_ideas = CHT_reconstruction_after_gw
+	}
+}
+
+#Мятеж
+country_event = {
+	id = chat.9
+	title = chat.9.t
+	desc = chat.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.9.a 
+			            
+			 hidden_effect = {
+			 remove_ideas = CHT_land_reform
+			 division_template = { 
+				name = "Восставшие юзеры" 	
+				division_names_group = CHT_ARM_04
+
+				regiments = {
+							infantry = { x = 0 y = 0 }
+		                    infantry = { x = 0 y = 1 }
+		                    infantry = { x = 0 y = 2 }
+		                    infantry = { x = 1 y = 0 }
+		                    infantry = { x = 1 y = 1 }
+		                    infantry = { x = 1 y = 2 }		
+					
+				}
+				
+			}
+			251 = {
+				create_unit = {
+					division = "name = \"1 Юзерская Дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"2 Юзерская Дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"3 Юзерская Дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"4 Юзерская Дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"5 Юзерская Дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				}
+					     set_capital = 251
+						249 = { set_demilitarized_zone = no }
+			            250 = { set_demilitarized_zone = no }
+						251 = { set_demilitarized_zone = no }
+			            255 = { set_demilitarized_zone = no }
+		DRC =  {transfer_state = 400
+				transfer_state = 399
+				transfer_state = 252
+				transfer_state = 256
+				add_state_core = 399
+				add_state_core = 256
+				add_state_core = 400
+				add_state_core = 252
+				
+				
+				}
+		if = {
+				limit = {
+					has_country_flag = CHT_army_flag
+				}
+				division_template = { 
+				name = "Дивизия Южного гарнизона" 	
+				division_names_group = CHT_ARM_02
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }				
+					infantry = { x = 0 y = 2 }		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				
+			}
+			 251 = {
+				create_unit = {
+					division = "name = \"Самарская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"Дивизия им. Пугачёва\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"Дивизия им. Галкина\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CHT
+				}
+				
+			}
+			250 = {
+			    create_unit = {
+					division = "name = \"Симбирская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CHT
+				}
+			}
+			249 = {
+			    create_unit = {
+					division = "name = \"Казанская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CHT
+				}
+			}
+		}
+			if = {
+				limit = {
+					has_country_flag = CHT_opolcheniye_flag
+				}
+				division_template = { 
+				name = "Дивизия ополченцев" 	
+				division_names_group = CHT_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }						
+				}
+				
+			}
+	        251 = {
+				create_unit = {
+					division = "name = \"1 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+		        create_unit = {
+					division = "name = \"3 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+
+			}
+	        255 = {			
+				create_unit = {
+					division = "name = \"4 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+				 create_unit = {
+					division = "name = \"5 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+			}
+            250 = {
+				create_unit = {
+					division = "name = \"Батальон защиты Ульяновска\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+						create_unit = {
+					division = "name = \"Батальон защиты Симбирска\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+		    }
+		    249 = {
+				create_unit = {
+					division = "name = \"Татары\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+						create_unit = {
+					division = "name = \"Татары\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = ROOT
+				}
+		    }
+    }		
+                    delete_unit_template_and_units = {
+							division_template = "Олды"
+						}
+					delete_unit_template_and_units = {
+							division_template = "Левацкая Дружина"
+						}
+					delete_unit_template_and_units = {
+							division_template = "Модеры"
+						}
+					delete_unit_template_and_units = {
+							division_template = "Юзеры"
+						}
+						
+		remove_unit_leader = 777
+		remove_unit_leader = 778
+		remove_unit_leader = 779
+		remove_unit_leader = 780
+		
+		create_corps_commander = {
+	 name = "Ахора Мазда"
+	 id = 781
+	 picture = "Ahora.dds"
+	 traits = { }
+	 skill = 2
+	
+	 attack_skill = 1
+	 defense_skill = 3
+	 planning_skill = 2
+	 logistics_skill = 3
+        }
+		
+		LAZ = {
+			end_puppet = CHT
+		}
+       
+		 remove_ideas =  CHT_loksists
+		 add_ideas = CHT_loksists_1
+		 remove_ideas = CHT_great_srach 
+		 add_ideas = CHT_great_srach_1
+		leave_faction = Chumnoy_pakt
+		declare_war_on = {
+		        target = DRC
+		        type = civil_war
+			}
+			add_civil_war_target = DRC
+	            set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			 DRC = {
+		 capital = 252
+		 add_ideas = CHT_shue
+		 add_ideas = CHT_great_srach_1
+		
+		}
+		DRC = {
+		    division_template = { 
+				name = "Юзеры" 	
+				division_names_group = CHT_ARM_03
+
+				regiments = {
+							infantry = { x = 0 y = 0 }
+		                    infantry = { x = 0 y = 1 }
+		                    infantry = { x = 0 y = 2 }
+		                    infantry = { x = 1 y = 0 }
+		                    infantry = { x = 1 y = 1 }
+		                    infantry = { x = 1 y = 2 }		
+					
+				}
+				
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"2 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"3 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"4 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"5 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = DRC
+				}
+				
+			}
+		   if = {
+				limit = {
+					CHT = { has_country_flag = CHT_levaki_flag }
+				}
+				DRC = { 
+				division_template = { 
+				name = "Левацкая Дружина" 	
+				division_names_group = CHT_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }						
+				}
+				
+			}
+			 252 = {
+				create_unit = {
+					division = "name = \"1-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"2-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+		        create_unit = {
+					division = "name = \"3-я Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				 create_unit = {
+					division = "name = \"4-я Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+			}	
+			256 = {
+			 create_unit = {
+					division = "name = \"5-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"6-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"7-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+		        
+		    }
+			399 = {
+			 create_unit = {
+					division = "name = \"8-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"9-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"10-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = DRC
+				}
+        }
+	}
+		  if = {
+				limit = {
+					CHT = { has_country_flag = CHT_oldi_flag }
+				}
+				DRC = { 
+				division_template = { 
+				name = "Олды" 	
+				division_names_group = CHT_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }		
+					infantry = { x = 0 y = 2 }						
+				}
+				
+			}
+			
+				capital_scope = {
+				create_unit = {
+					division = "name = \"1-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"2-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"3-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"4-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = DRC
+				}
+				create_unit = {
+					division = "name = \"5-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = DRC
+				}
+			}
+				
+		      
+		  }
+        }
+		}
+    }
+    }
+	}
+	}
+##### set_capital = 251
+		start_civil_war = {
+				ruling_party = neutrality
+				ideology = vmestolev
+				size = 0.5
+				capital = 252
+				states = { 252 256 400 399 }
+			}
+			#
+			create_wargoal = {
+        type = take_state_focus
+		target = CHT
+        expire = 0
+        generator = { 249 250 251 255 }
+}
+#
+        add_state_claim = 249
+		add_state_claim = 250
+		add_state_claim = 251
+		add_state_claim = 255
+			######
+#Оцепление совета
+country_event = {
+	id = chat.10
+	title = chat.10.t
+	desc = chat.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.10.a
+	}
+}
+
+#Ввод войск в столицу
+country_event = {
+	id = chat.11
+	title = chat.11.t
+	desc = chat.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.11.a
+	}
+}
+
+#Арест Де Локсли
+country_event = {
+	id = chat.12
+	title = chat.12.t
+	desc = chat.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.12.a
+		hidden_effect = {
+		leave_faction = Chumnoy_pakt
+		LAZ = {
+			end_puppet = CHT
+		}
+     
+		                249 = { set_demilitarized_zone = no }
+			            250 = { set_demilitarized_zone = no }
+						251 = { set_demilitarized_zone = no }
+			            255 = { set_demilitarized_zone = no }
+						
+						delete_unit_template_and_units = {
+							division_template = "Модеры"
+						}
+					    delete_unit_template_and_units = {
+							division_template = "Юзеры"
+						}
+						
+		CVT =  {transfer_state = 255
+				transfer_state = 251
+				transfer_state = 249
+				transfer_state = 250
+				
+				
+				add_state_core = 249
+				
+				
+				add_state_core = 250
+				add_state_core = 251
+				add_state_core = 255
+				
+				declare_war_on = {
+		        target = CHT
+		        type = civil_war
+			                    }
+							add_civil_war_target = CHT	
+			}
+			
+				CVT = {
+		 add_ideas = CHT_shue
+		 add_ideas = CHT_great_srach_1
+		 add_ideas = CHT_loksists_1
+		
+		 division_template = { 
+				name = "Восставшие юзеры" 	
+				division_names_group = CHT_ARM_05
+
+				regiments = {
+							infantry = { x = 0 y = 0 }
+		                    infantry = { x = 0 y = 1 }
+		                    infantry = { x = 0 y = 2 }
+		                    infantry = { x = 1 y = 0 }
+		                    infantry = { x = 1 y = 1 }
+		                    infantry = { x = 1 y = 2 }		
+					
+				}
+				
+			}
+			251 = {
+				create_unit = {
+					division = "name = \"1 Восставшая дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"2 Восставшая дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"3 Восставшая дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"4 Восставшая дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"5 Восставшая дивизия\" division_template = \"Восставшие юзеры\" start_experience_factor = 0.2"  
+					owner = CVT
+				}
+			}
+		
+		}
+		
+		 remove_unit_leader = 776	
+		 remove_ideas =  CHT_loksists
+		 remove_ideas = CHT_great_srach
+		 add_ideas = CHT_great_srach_1
+		
+		division_template = { 
+				name = "Юзеры" 	
+				division_names_group = CHT_ARM_07
+
+				regiments = {
+							infantry = { x = 0 y = 0 }
+		                    infantry = { x = 0 y = 1 }
+		                    infantry = { x = 0 y = 2 }
+		                    infantry = { x = 1 y = 0 }
+		                    infantry = { x = 1 y = 1 }
+		                    infantry = { x = 1 y = 2 }		
+					
+				}
+				
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"2 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"3 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"4 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"5 Юзерская Дивизия\" division_template = \"Юзеры\" start_experience_factor = 0.2"  
+					owner = CHT
+				}
+				
+			}		
+		           CVT = {
+				   create_corps_commander = {
+	                    name = "Ахора Мазда"
+	                    id = 781
+	                    picture = "Ahora.dds"
+	                    traits = { }
+	                    skill = 2
+	
+	                    attack_skill = 1
+	                    defense_skill = 3
+	                    planning_skill = 2
+	                    logistics_skill = 3
+                    }
+				} 
+				CVT = {
+				 create_corps_commander = {
+	                        name = "Кривой Месяц"
+	                        id = 776
+	                        portrait_path = "gfx/leaders/CHT/mesyats.dds"
+	                        traits = {  war_hero }
+	                        skill = 2
+	
+	                        attack_skill = 2
+	                        defense_skill = 4
+	                        planning_skill = 1
+	                        logistics_skill = 3
+                            }
+				
+				}
+				
+	
+	          CVT = {	
+				 random_list = {
+				 50 = {
+				
+				division_template = { 
+				name = "Дивизия Южного гарнизона" 	
+				division_names_group = CHT_ARM_99
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }				
+					infantry = { x = 0 y = 2 }		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				
+			}
+			 251 = {
+				create_unit = {
+					division = "name = \"Самарская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"Дивизия им. Пугачёва\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"Дивизия им. Галкина\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CVT
+				}
+				
+			}
+
+			250 = {
+			    create_unit = {
+					division = "name = \"Симбирская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CVT
+				}
+			}
+			
+			249 = {
+			    create_unit = {
+					division = "name = \"Казанская дивизия\" division_template = \"Дивизия Южного гарнизона\" start_experience_factor = 0.3"  
+					owner = CVT
+				}
+			}
+		}
+			50 = {
+				
+				division_template = { 
+				name = "Дивизия ополченцев" 	
+				division_names_group = CHT_ARM_98
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }						
+				}
+				
+			}
+	        251 = {
+				create_unit = {
+					division = "name = \"1 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"2 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+		        create_unit = {
+					division = "name = \"3 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+
+			}
+			
+	        255 = {			
+				create_unit = {
+					division = "name = \"4 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+				 create_unit = {
+					division = "name = \"5 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+				create_unit = {
+					division = "name = \"6 дивизия ополченцев\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+			}
+			
+            250 = {
+				create_unit = {
+					division = "name = \"Батальон защиты Ульяновска\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+						create_unit = {
+					division = "name = \"Батальон защиты Симбирска\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+		    }
+			
+		    249 = {
+				create_unit = {
+					division = "name = \"Татары\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+						create_unit = {
+					division = "name = \"Татары\" division_template = \"Дивизия ополченцев\" start_experience_factor = -0.3"  
+					owner = CVT
+				}
+		    }
+    }
+        }
+	} }
+	    }
+	}
+	country_event = {
+	id = chat.13
+	title = chat.13.t
+	desc = chat.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	 name = chat.13.a
+	 hidden_effect = {
+	 random_list = { 
+	 50 = {
+	 set_country_flag = CHT_levaki_flag
+	 division_template = { 
+				name = "Левацкая Дружина" 	
+				division_names_group = CHT_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }				
+					
+				}
+				
+			}
+			capital_scope = {
+			
+				create_unit = {
+					division = "name = \"1-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+					}
+				create_unit = {
+					division = "name = \"2-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+		        create_unit = {
+					division = "name = \"3-я Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				 create_unit = {
+					division = "name = \"4-я Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"5-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"6-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"7-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+		        create_unit = {
+					division = "name = \"8-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"9-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"10-ая Левацкая Дружина\" division_template = \"Левацкая Дружина\" start_experience_factor = -0.1"  
+					owner = CHT
+				}
+            }
+		 
+		}		 
+	}
+	
+	 
+	 50 = {set_country_flag = CHT_oldi_flag
+	 division_template = {
+				name = "Олды" 	
+				division_names_group = CHT_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }		
+					infantry = { x = 0 y = 1 }		
+					infantry = { x = 0 y = 2 }		
+				    infantry = { x = 0 y = 3 }		
+					
+	            	
+			        
+				}
+				
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"2-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"3-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"4-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = CHT
+				}
+				create_unit = {
+					division = "name = \"5-ая Олдовая Дивизия\" division_template = \"Олды\" start_experience_factor = 0.8"  
+					owner = CHT
+				}
+				
+			}
+		
+		}
+	 
+	 } 
+	 }
+	}
+    country_event = {
+    id = chat.14
+	title = chat.14.t
+	desc = chat.14.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.14.a
+	hidden_effect = {
+	 random_list = { 
+	 50 = {
+	                 252 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+	 }
+	 50 = { 
+	 add_timed_idea = { idea = CHT_land_reform days = 360 } 
+					add_popularity = {
+							ideology = neutrality
+							popularity = -0.05
+						}
+	 }
+	 }
+	}
+	}
+ }
+  country_event = {
+    id = chat.15
+	title = chat.15.t
+	desc = chat.15.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.15.a
+	hidden_effect = {
+	
+	 }
+	}
+	
+ }
+  country_event = {
+    id = chat.16
+	title = chat.16.t
+	desc = chat.16.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.16.a
+	hidden_effect = {
+	 random_list = { 
+	 50 = {
+	                 add_stability = -0.05
+					 add_popularity = {
+							
+							ideology = vmestolev
+							popularity = -0.1
+						}
+				      add_manpower = -1000
+					  add_war_support = 0.1
+	 }
+	 50 = { 
+	                add_political_power = -25
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.1
+						}
+						249 = { set_demilitarized_zone = yes }
+			            250 = { set_demilitarized_zone = yes }
+						251 = { set_demilitarized_zone = yes }
+			            255 = { set_demilitarized_zone = yes }
+	 }
+	 }
+	}
+	}
+ }
+ country_event = {
+    id = chat.17
+	title = chat.17.t
+	desc = chat.17.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	 name = chat.17.a
+	 hidden_effect = {
+	set_politics = { ruling_party = fascism elections_allowed = no }
+	 create_country_leader = {
+	        name = "Ахора Мазда"
+	        desc = "POLITICS_THORVALD_STAUNING_DESC"
+	        picture = "Ahora1.dds"
+	        expire = "1999.1.1"
+	        ideology = falangism
+	        traits = {
+		               #
+	                }
+	    }              set_party_name = {
+							ideology = fascism
+							long_name = CHT_ahora_party_long
+							name = CHT_ahora_party
+						}
+						add_popularity = { ideology = fascism popularity = 0.2 }	
+		
+		
+			
+	 }
+	 add_manpower = -100
+	}
+	
+ }
+ country_event = {
+     id = chat.18
+	 title = chat.18.t
+	 desc = chat.18.d
+	 picture = GFX_news_event_eng_imperial_conference
+	
+	 fire_only_once = yes
+	 is_triggered_only = yes
+	 trigger = {
+		tag = CHT
+	}
+	
+	 option = {
+	 name = chat.18.a
+	 custom_effect_tooltip = CHT_mesyats_purged_tt
+	 hidden_effect = { 
+	 
+	 255 = { set_demilitarized_zone = yes }
+	
+	 }
+	  
+	}
+	
+ }
+ country_event = {
+    id = chat.19
+	title = chat.19.t
+	desc = chat.19.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.19.a
+	add_manpower = -1000
+	hidden_effect = {
+	255 = { set_demilitarized_zone = no }
+	 }
+	}
+	
+ }
+
+ country_event = {
+    id = chat.20
+	title = chat.20.t
+	desc = chat.20.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.20.a
+	add_manpower = -1
+	add_stability = -0.10
+	add_political_power = -100
+	remove_ideas = CHT_loksists_2
+	
+	}
+	option = {
+	name = chat.20.b
+	add_political_power = -200
+	add_war_support = -0.10
+	add_ideas = CHT_puppet_tsar
+	}
+ }
+  country_event = {
+    id = chat.21
+	title = chat.21.t
+	desc = chat.21.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.21.a
+	add_stability = 0.01
+	add_political_power = 10
+	}
+	
+ }
+ country_event = {
+    id = chat.22
+	title = chat.22.t
+	desc = chat.22.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.22.a
+	add_stability = -0.1
+	add_political_power = -100
+	complete_national_focus = CHT_nedovolnye_slaves
+	}
+	
+ }
+  country_event = {
+    id = chat.23
+	title = chat.23.t
+	desc = chat.23.d
+	picture = GFX_report_event_tur_writing_desk
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.23.a
+	add_ideas = CHT_sila
+	}
+	option = {
+	name = chat.23.b
+	add_ideas = CHT_uspeh
+	}
+	option = {
+	name = chat.23.c
+	add_ideas = CHT_friendship
+	}
+ }
+ country_event = {
+    id = chat.24
+	title = chat.24.t
+	desc = chat.24.d
+	picture = GFX_report_event_tur_writing_desk
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.24.a
+    add_political_power = 100
+	}  
+	}
+	 country_event = {
+    id = chat.25
+	title = chat.25.t
+	desc = chat.25.d
+	picture = GFX_report_event_tur_writing_desk
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.25.a
+    add_political_power = 50
+	}  
+	}
+ country_event = {
+    id = chat.999
+	title = chat.999.t
+	desc = chat.999.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.999.a
+	hidden_effect = {
+	set_country_flag = bimba_bimba
+	}
+	
+ }
+ }
+ country_event = {
+    id = chat.998
+	title = chat.998.t
+	desc = chat.998.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.998.a
+add_tech_bonus = {
+			name = nuclear_bonus
+			bonus = 8
+			uses = 3
+			category = nuclear
+		}	
+			
+	}  
+	}
+	country_event = {
+    id = chat.997
+	title = chat.997.t
+	desc = chat.997.d
+	picture = GFX_news_event_eng_imperial_conference
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.997.a
+    add_political_power = 50
+	add_ideas = CHT_alcog
+	}  
+	}
+	 country_event = {
+    id = chat.1000
+	title = chat.1000.t
+	desc = chat.1000.d
+	picture = GFX_event_pictures_report_event_tur_machine_gunners
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CHT
+	}
+	
+	option = {
+	name = chat.1000.a
+	hidden_effect = {
+	set_country_flag = mercen_mercen
+	}
+	
+ }
+ }

@@ -1,0 +1,1394 @@
+focus_tree = {
+	id = KerbChumak
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OSV
+		}
+	}
+	continuous_focus_position = { x = 100 y = 2350 }
+	default = no
+	focus = {
+		id = OSV_all_power_against
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 2
+		x = 12
+		y = 0
+			completion_reward = {
+					add_political_power = 10
+                    add_war_support = 0.1
+							
+				}
+
+	}
+	focus = {
+		id = OSV_common_usiliya
+		icon = GFX_goal_generic_national_unity
+		cost = 2
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = OSV_all_power_against
+		}
+			completion_reward = {
+					add_stability = 0.1
+							
+				}
+
+	}
+	focus = {
+		id = OSV_anti_revision
+		icon = GFX_goal_generic_army_motorized
+		cost = 2
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = OSV_common_usiliya
+		}
+		mutually_exclusive = {
+			focus = OSV_wide_front
+		}
+			completion_reward = {
+			add_war_support = -0.1
+			add_to_variable = { kerb_power = 1 }
+					division_template = {
+									name = "Опергруппа"
+									division_names_group = OSV_KER_01
+									regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+
+												
+										}
+								}
+							248 = {
+									create_unit = {
+											division = "name = \"1-ya Opergruppa ''Kant''\" division_template = \"Опергруппа\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+									create_unit = { 
+											division = "name = \"2-ya Opergruppa ''Hegel''\" division_template = \"Опергруппа\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+									create_unit = {
+											division = "name = \"3-ya Opergruppa ''Marx''\" division_template = \"Опергруппа\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+									create_unit = {
+											division = "name = \"4-ya Opergruppa ''Engels''\" division_template = \"Опергруппа\" start_experience_factor = 0.5"
+											owner = ROOT
+										}
+								}
+							
+				}
+
+	}
+	focus = {
+		id = OSV_wide_front
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 2
+		x = 13
+		y = 2
+		prerequisite = {
+			focus = OSV_common_usiliya
+		}
+		mutually_exclusive = {
+			focus = OSV_anti_revision
+		}
+			completion_reward = {
+			add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+			add_popularity = {
+							ideology = neutrality
+							popularity = 0.1
+						}			
+				division_template = {
+									name = "Широкофронитисты"
+									division_names_group = OSV_CHU_02
+									regiments = {
+											infantry = {
+													x = 0
+													y = 0
+												}
+											infantry = {
+													x = 0
+													y = 1
+												}
+											infantry = {
+													x = 0
+													y = 2
+												}
+											infantry = {
+													x = 0
+													y = 3
+												}	
+											support = {
+											  artillery = { x = 0 y = 0 }
+	                                }
+										}
+								}
+							248 = {
+									create_unit = {
+											division = "name = \"Дивизия национального возврождения \" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Дивизия интернационалиста Антохина\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Народная Дружина Солидаристов\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Радикальные центристы\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Дивизия Архангела Михаила\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Союз Меча и Орала\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									create_unit = {
+											division = "name = \"Дивизия  Пастернака\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1"
+											owner = OSV
+										}
+									
+								}	
+							
+				}
+
+	}
+	focus = {
+		id = OSV_roses_are_red
+		icon = GFX_BEL_socialist_infrastructure2
+		cost = 3
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = OSV_anti_revision
+			focus = OSV_wide_front
+		}
+		mutually_exclusive = {
+			focus = OSV_1000_flowers
+		}
+			completion_reward = {
+			add_war_support = -0.05
+			add_to_variable = { kerb_power = 1 }
+	                 	random_owned_controlled_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = OSV_1000_flowers
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 3
+		x = 13
+		y = 3
+		prerequisite = {
+		focus = OSV_anti_revision
+		focus = OSV_wide_front
+		}
+		mutually_exclusive = {
+			focus = OSV_roses_are_red
+		}
+			completion_reward = {
+			add_ideas = optimizaciya
+								random_list = { 
+	 50 = {
+	                 random_owned_controlled_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+	 }
+	 50 = { 
+	 random_owned_controlled_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+	 }
+	 }
+							
+				}
+
+	}
+	focus = {
+		id = OSV_ne_boltay
+		icon = GFX_goal_generic_construct_military
+		cost = 3
+		x = 11
+		y = 4
+		prerequisite = {
+			focus = OSV_roses_are_red
+			focus = OSV_1000_flowers
+		}
+		mutually_exclusive = {
+			focus = OSV_free_speech
+		}
+			completion_reward = {
+			add_to_variable = { kerb_power = 1 }
+				add_political_power = -150
+				add_stability =	0.05	
+							
+				}
+
+	}
+	focus = {
+		id = OSV_free_speech
+		icon = GFX_goal_generic_propaganda
+		cost = 3
+		x = 13
+		y = 4
+		prerequisite = {
+			focus = OSV_roses_are_red
+			focus = OSV_1000_flowers
+		}
+		mutually_exclusive = {
+			focus = OSV_ne_boltay
+		}
+			completion_reward = {
+			add_political_power = 150
+				add_war_support = 0.02
+				add_stability =	-0.1
+				add_popularity = {
+							ideology = memoism
+							popularity = -0.15
+						}
+				}
+
+	}
+	focus = {
+		id = OSV_personal_controversies
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 3
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = OSV_ne_boltay
+			focus = OSV_free_speech
+		}
+		
+			completion_reward = {
+					if = {
+				limit = {
+					check_variable = { kerb_power > 1 }
+				}
+				complete_national_focus = OSV_kerb
+				 else ={
+				 complete_national_focus = OSV_chumak
+				 }
+				
+			}
+							
+				}
+
+	}
+	focus = {
+		id = OSV_kerb
+		icon = GFX_goal_generic_support_metacommy
+		cost = 3
+		x = 6
+		y = 6
+		prerequisite = {
+			focus = OSV_personal_controversies
+		}
+		mutually_exclusive = {
+		focus = OSV_chumak
+		}
+			completion_reward = {
+					  set_politics = {
+				ruling_party = metacommy
+				elections_allowed = no
+			}
+			add_ideas = OSV_kerb				
+				}
+
+	}
+	focus = {
+		id = OSV_kerb_left
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 2
+		x = 4
+		y = 7
+		prerequisite = {
+			focus = OSV_kerb
+		}
+		
+			completion_reward = {
+			add_manpower = -500
+					add_political_power = -100
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.2
+						}	
+				}
+
+	}
+	focus = {
+		id = OSV_kerb_nonactive
+		icon = GFX_focus_rom_abdicate
+		cost = 2
+		x = 6
+		y = 7
+		prerequisite = {
+			focus = OSV_kerb
+		}
+		
+			completion_reward = {
+			add_manpower = -500
+					add_political_power = -100
+					add_popularity = {
+							ideology = memoism
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.2
+						}
+				add_ideas = OSV_kerb_nonactive		
+				}
+
+	}
+	focus = {
+		id = OSV_kerb_right
+		icon = GFX_goal_generic_political_pressure
+		cost = 2
+		x = 8
+		y = 7
+		prerequisite = {
+			focus = OSV_kerb
+		}
+		
+			completion_reward = {
+			add_manpower = -500
+			add_political_power = -100
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = -0.1
+						}		
+					add_popularity = {
+							ideology = memoism
+							popularity = -0.1
+						}		
+				}
+
+	}
+	focus = {
+		id = OSV_ultraantirevis
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = 6
+		y = 8
+		prerequisite = {
+			focus = OSV_kerb_left
+			focus = OSV_kerb_nonactive
+			focus = OSV_kerb_right
+		}
+		
+			completion_reward = {
+			add_political_power = 50
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.1
+						}		
+				}
+
+	}
+	focus = {
+		id = OSV_magnum_opus
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		x = 6
+		y = 9
+		prerequisite = {
+			focus = OSV_ultraantirevis
+		}
+		
+			completion_reward = {
+					add_political_power = 300
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+					add_country_leader_trait = dictator		
+				}
+
+	}
+	focus = {
+		id = OSV_ceation_of_usloviya
+		icon = GFX_focus_cht_nep
+		cost = 5
+		x = 9
+		y = 10
+		prerequisite = {
+			focus = OSV_magnum_opus
+		}
+		
+			completion_reward = {
+					add_timed_idea = {
+							idea = OSV_ceation_of_usloviya
+							days = 360
+						}	
+				}
+
+	}
+	focus = {
+		id = OSV_true_prol_not_fat
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5
+		x = 11
+		y = 11
+		prerequisite = {
+			focus = OSV_ceation_of_usloviya
+		}
+		
+			completion_reward = {
+				add_ideas = optimizaciya	
+				add_manpower = -15000			
+				}
+
+	}
+	
+	focus = {
+		id = OSV_plan_of_privatization
+		icon = GFX_focus_cht_cumpital
+		cost = 5
+		x = 9
+		y = 11
+		prerequisite = {
+			focus = OSV_ceation_of_usloviya
+		}
+		
+			completion_reward = {
+					
+					add_ideas = privatizaciya		
+				}
+
+	}
+	focus = {
+		id = OSV_attack_peasants
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 5
+		x = 12
+		y = 12
+		prerequisite = {
+			focus = OSV_true_prol_not_fat
+		}
+		
+			completion_reward = {
+					add_ideas = kolhozi
+					add_stability = -0.1		
+				}
+
+	}
+	focus = {
+		id = OSV_fabricks_and_fabricants
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		x = 8
+		y = 12
+		prerequisite = {
+			focus = OSV_plan_of_privatization
+		}
+		
+			completion_reward = {
+				
+			  248 = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1	
+			
+		}
+		 246 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}				
+				}
+
+	}
+	focus = {
+		id = OSV_stimulate_class_conflict
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5
+		x = 10
+		y = 12
+		prerequisite = {
+			focus = OSV_plan_of_privatization
+		}
+		
+			completion_reward = {
+					
+					add_ideas = OSV_stimulate_class_conflict		
+				}
+
+	}
+	focus = {
+		id = OSV_automatisation 
+		icon = GFX_goal_generic_production2
+		cost = 5
+		x = 9
+		y = 13
+		prerequisite = {
+			focus = OSV_stimulate_class_conflict	
+		}
+		prerequisite = {
+			focus = OSV_fabricks_and_fabricants
+			
+		}
+		
+			completion_reward = {
+					
+				add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+				
+			   }
+			   add_tech_bonus = {
+				name = electro_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics	
+				
+			   }
+				}
+
+	}
+	focus = {
+		id = OSV_pure_marxism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5
+		x = 6
+		y = 10
+		prerequisite = {
+			focus = OSV_magnum_opus
+		}
+		
+			completion_reward = {
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.25
+						}
+							
+				}
+
+	}
+	focus = {
+		id = OSV_desovetization
+		icon = GFX_focus_generic_manpower
+		cost = 5
+		x = 6
+		y = 11
+		prerequisite = {
+			focus = OSV_pure_marxism
+		}
+		available = {
+					LAZ = {
+			      exists = no
+				}
+			} 
+			completion_reward = {
+					    create_wargoal = {
+							type = annex_everything
+							target = ARK
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = MAT
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = CHT
+						}
+			            create_wargoal = {
+							type = annex_everything
+							target = UNT
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+			            create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+					    create_wargoal = {
+							type = annex_everything
+							target = TUP
+						}
+			            create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+                        if = {
+							limit = {
+									country_exists = ARK
+								}
+							ARK = {
+									every_state = {
+											limit = {
+													is_owned_by = ARK
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}	
+                        if = {
+							limit = {
+									country_exists = MAT
+								}
+							MAT = {
+									every_state = {
+											limit = {
+													is_owned_by = MAT
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}  
+                        if = {
+							limit = {
+									country_exists = CHT
+								}
+							CHT = {
+									every_state = {
+											limit = {
+													is_owned_by = CHT
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}     
+                        if = {
+							limit = {
+									country_exists = UNT
+								}
+							UNT = {
+									every_state = {
+											limit = {
+													is_owned_by = UNT
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						} 
+                        if = {
+							limit = {
+									country_exists = SKT
+								}
+							SKT = {
+									every_state = {
+											limit = {
+													is_owned_by = SKT
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}                    
+                        if = {
+							limit = {
+									country_exists = PRM
+								}
+							PRM = {
+									every_state = {
+											limit = {
+													is_owned_by = PRM
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}   
+                        if = {
+							limit = {
+									country_exists = TUP
+								}
+							TUP = {
+									every_state = {
+											limit = {
+													is_owned_by = TUP
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}      
+                        if = {
+							limit = {
+									country_exists = DON
+								}
+							DON = {
+									every_state = {
+											limit = {
+													is_owned_by = DON
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}    
+			}
+
+	}
+	focus = {
+		id = OSV_rev_in_europe
+		icon = GFX_focus_ger_great_red_menace
+		cost = 5
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = OSV_desovetization
+		}
+		available = {
+					has_war = no
+		DON = {
+					exists = no
+					}
+		TUP = {
+					exists = no
+					}
+		PRM = {
+					exists = no
+					}	
+		SKT = {
+					exists = no
+					}
+		CHT = {
+					exists = no
+					}
+		UNT = {
+					exists = no
+					}
+		MAT = {
+					exists = no
+					}
+		ARK = {
+					exists = no
+					}	
+		
+				}
+			completion_reward = {
+		  add_state_core = 220
+		  add_state_core = 222
+		  add_state_core = 224
+		  add_state_core = 240
+		   add_state_core = 258
+		  add_state_core = 257
+		  add_state_core = 260
+		   add_state_core = 228
+		  add_state_core = 227
+		   add_state_core = 400
+		  add_state_core = 252
+		  add_state_core = 255
+		  add_state_core = 256
+		  add_state_core = 249
+		  add_state_core = 250
+		  add_state_core = 399
+		  add_state_core = 251
+		   add_state_core = 251
+		  add_state_core = 214
+		  add_state_core = 213
+		   add_state_core = 397
+		   add_state_core = 398
+		   add_state_core = 264
+		  add_state_core = 263
+		  add_state_core = 208
+		  add_state_core = 209
+		  add_state_core = 244
+		  add_state_core = 210
+		  add_state_core = 195
+					create_wargoal = {
+							type = annex_everything
+							target = WHS
+					}
+			        create_wargoal = {
+							type = annex_everything
+							target = SPL
+					}
+			        create_wargoal = {
+							type = annex_everything
+							target = ZWN
+					}
+			        create_wargoal = {
+							type = annex_everything
+							target = VSB
+					}
+			        create_wargoal = {
+							type = annex_everything
+							target = KLG
+					}		
+					if = {
+							limit = {
+									country_exists = WHS
+								}
+							WHS = {
+									every_state = {
+											limit = {
+													is_owned_by = WHS
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+					}	
+                    if = {
+							limit = {
+									country_exists = SPL
+								}
+							SPL = {
+									every_state = {
+											limit = {
+													is_owned_by = SPL
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+					} 
+                    if = {
+							limit = {
+									country_exists = ZWN
+								}
+							ZWN = {
+									every_state = {
+											limit = {
+													is_owned_by = ZWN
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+					}   
+                    if = {
+							limit = {
+									country_exists = VSB
+								}
+							VSB = {
+									every_state = {
+											limit = {
+													is_owned_by = VSB
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+					}   
+                    if = {
+							limit = {
+									country_exists = KLG
+								}
+							KLG = {
+									every_state = {
+											limit = {
+													is_owned_by = KLG
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+					}    					
+			}
+
+	}
+		focus = {
+		id = OSV_steps_tuhach
+		icon = GFX_focus_hol_united_netherlands
+		cost = 5
+		x = 5
+		y = 13
+		prerequisite = {
+			focus = OSV_rev_in_europe
+		}
+		available = {
+		WHS = {
+					exists = no
+					}
+		KLG = {
+					exists = no
+					}
+		VSB = {
+					exists = no
+					}	
+		ZWN = {
+					exists = no
+					}
+		SPL = {
+					exists = no
+					}		
+		}
+		
+		mutually_exclusive = {
+		focus = OSV_waiting
+		
+	    }	
+		  completion_reward = {
+		   add_state_core = 207
+		  add_state_core = 206
+		  add_state_core = 204
+		  add_state_core = 241
+		  add_state_core = 194
+		   add_state_core = 191
+		  add_state_core = 12
+		  add_state_core = 13
+		   add_state_core = 96
+		  add_state_core = 95
+		  add_state_core = 94
+		   add_state_core = 784
+		  add_state_core = 11
+		  add_state_core = 189
+		  add_state_core = 190
+		   add_state_core = 763
+		
+			create_wargoal = {
+							type = annex_everything
+							target = POL
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = LUB
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = AUS
+						}
+			create_wargoal = {
+							type = annex_everything
+							target = HUN
+						}
+                        if = {
+							limit = {
+									country_exists = POL
+								}
+							POL = {
+									every_state = {
+											limit = {
+													is_owned_by = POL
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}     
+                        if = {
+							limit = {
+									country_exists = LUB
+								}
+							LUB = {
+									every_state = {
+											limit = {
+													is_owned_by = LUB
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}    
+                        if = {
+							limit = {
+									country_exists = AUS
+								}
+							AUS = {
+									every_state = {
+											limit = {
+													is_owned_by = AUS
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}     
+                        if = {
+							limit = {
+									country_exists = HUN
+								}
+							HUN = {
+									every_state = {
+											limit = {
+													is_owned_by = HUN
+												}
+											OSV = {
+													add_state_claim = PREV
+												}
+										}
+								}
+						}   						
+				}
+
+	}
+	focus = {
+		id = OSV_waiting
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		x = 7
+		y = 13
+		available = {
+					has_war = no
+						WHS = {
+					exists = no
+					}
+		KLG = {
+					exists = no
+					}
+		VSB = {
+					exists = no
+					}	
+		ZWN = {
+					exists = no
+					}
+		SPL = {
+					exists = no
+					}	
+				}
+		prerequisite = {
+			focus = OSV_rev_in_europe
+		}
+		mutually_exclusive = {
+		focus = OSV_steps_tuhach
+		
+	    }	
+		  completion_reward = {
+		   add_state_core = 207
+		  add_state_core = 206
+		  add_state_core = 204
+		  add_state_core = 241
+		  add_state_core = 194
+		   add_state_core = 191
+		  add_state_core = 12
+		  add_state_core = 13
+		   add_state_core = 96
+		  add_state_core = 95
+		  add_state_core = 94
+		   add_state_core = 784
+		  add_state_core = 11
+		  add_state_core = 189
+		  add_state_core = 190
+		   add_state_core = 763
+					add_ideas = OSV_waiting	
+				}
+
+	}
+	focus = {
+		id = OSV_all_must_read
+		icon = GFX_focus_research
+		cost = 5
+		x = 3
+		y = 10
+		prerequisite = {
+			focus = OSV_magnum_opus
+		}
+			
+		  completion_reward = {
+					add_research_slot = 1
+					add_war_support = -0.05		
+				}
+
+	}
+	focus = {
+		id = OSV_education_camps
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		x = 4
+		y = 11
+		prerequisite = {
+			focus = OSV_all_must_read
+		}
+			
+		  completion_reward = {
+					add_tech_bonus = {
+				name = rocet_bonus
+				bonus = 0.7
+				uses = 1
+				category = rocketry	
+				
+			   }
+			 		add_ideas = CHT_gulags_2
+			
+				}
+
+	}
+	focus = {
+		id = OSV_only_right_books
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		x = 3
+		y = 12
+		prerequisite = {
+			focus = OSV_all_must_read
+		}
+			
+		  completion_reward = {
+					
+					add_ideas = OSV_only_right_books		
+				}
+
+	}
+	focus = {
+		id = OSV_nicto_ne_dolzno_meshat
+		icon = GFX_focus_cht_ascetism
+		cost = 5
+		x = 2
+		y = 13
+		prerequisite = {
+			focus = OSV_all_must_read
+		}
+			
+		  completion_reward = {
+					add_ideas = OSV_nicto_ne_dolzno_meshat
+							
+				}
+
+	}
+	focus = {
+		id = OSV_only_Kerb_understand
+		icon = GFX_focus_AST_squander_bug
+		cost = 5
+		x = 6
+		y = 14
+		prerequisite = {
+			focus = OSV_nicto_ne_dolzno_meshat
+		}
+		prerequisite = {
+			focus = OSV_only_right_books
+		}
+		prerequisite = {
+			focus = OSV_education_camps
+		}
+		prerequisite = {
+			focus = OSV_rev_in_europe
+		}
+		prerequisite = {
+			focus = OSV_automatisation
+		}
+		prerequisite = {
+		    focus = OSV_attack_peasants
+		}
+		  completion_reward = {
+					add_ideas = OSV_only_Kerb_understand
+							
+				}
+
+	}
+	
+	focus = {
+		id = OSV_chumak
+		icon = GFX_goal_generic_support_memoism
+		cost = 3
+		x = 18
+		y = 6
+		prerequisite = {
+			focus = OSV_personal_controversies
+		}
+		mutually_exclusive = {
+		focus = OSV_kerb
+		}
+			completion_reward = {
+					add_political_power = 100
+					add_popularity = {
+							ideology = memoism
+							popularity = 0.2
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}	
+				}
+
+	}
+	focus = {
+		id = OSV_end_of_dogma
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5
+		x = 18
+		y = 7
+		prerequisite = {
+			focus = OSV_chumak
+		}
+			completion_reward = {
+				add_ideas =	OSV_end_of_dogma
+
+					add_political_power = 100	
+				}
+
+	}
+	focus = {
+		id = OSV_open_turmi
+		icon = GFX_focus_mex_arrest_general_cedillo
+		cost = 5
+		x = 16
+		y = 8
+		prerequisite = {
+			focus = OSV_end_of_dogma
+		}
+			completion_reward = {
+					add_stability = -0.15
+						add_manpower = 22566	
+
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = OSV_mnogouklad
+		icon = GFX_focus_jap_zaibatsu
+		cost = 5
+		x = 16
+		y = 9
+		prerequisite = {
+			focus = OSV_open_turmi
+		}
+			completion_reward = {
+				add_ideas = privatizaciya
+				add_ideas = kolhozi
+					add_political_power = 100			
+				}
+
+	}
+	focus = {
+		id = OSV_ban_moderi
+		icon = GFX_goal_generic_political_pressure
+		cost = 5
+		x = 18
+		y = 8
+		prerequisite = {
+			focus = OSV_end_of_dogma
+		}
+			completion_reward = {
+				add_stability = -0.1	
+				add_manpower = -1000
+				add_political_power = 100		
+				}
+
+	}
+	focus = {
+		id = OSV_wide_selfmanagement
+		icon = GFX_focus_mex_caudillo_private_armies
+		cost = 5
+		x = 18
+		y = 9
+		prerequisite = {
+			focus = OSV_ban_moderi
+		}
+			completion_reward = {
+				add_ideas = OSV_wide_selfmanagement
+					add_political_power = 150		
+				}
+
+	}
+	focus = {
+		id = OSV_ban_party
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = OSV_end_of_dogma
+		}
+			completion_reward = {
+			    add_manpower = -1000
+				add_political_power = 100
+				add_stability = -0.1
+						add_ideas = OSV_ban_party	
+				}
+
+	}
+	focus = {
+		id = OSV_rospusk_army
+		icon = GFX_focus_focus_fra_maquis
+		cost = 5
+		x = 20
+		y = 9
+		prerequisite = {
+			focus = OSV_ban_party
+		}
+			completion_reward = {
+					add_stability = -0.1
+					add_war_support = -0.2
+							add_ideas = OSV_rospusk_army
+				}
+
+	}
+	focus = {
+		id = OSV_Moscow_before_dark
+		icon = GFX_focus_sobor_bez_pritsela
+		cost = 5
+		x = 18
+		y = 10
+		prerequisite = {
+			focus = OSV_rospusk_army
+		}
+		prerequisite = {
+			focus = OSV_wide_selfmanagement
+		}
+		prerequisite = {
+			focus = OSV_mnogouklad
+		}
+			completion_reward = {
+					add_ideas = OSV_Moscow_before_dark
+					add_political_power = -300
+				}
+
+	}
+}
