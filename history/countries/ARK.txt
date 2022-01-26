@@ -16,6 +16,8 @@ set_technology = {
 	tech_support = 1
 }
 
+recruit_character = ARK_Ludvig
+
 add_ideas = {
 	ARK_building_sevflot
 	ARK_sev_bastion
@@ -33,16 +35,6 @@ set_politics = {
 
 set_convoys = 100
 
-create_country_leader = {
-	name = "Людвиг Ян"
-	desc = "POLITICS_UNCLE_YAN_DESC"
-	picture = "Ludvig.dds"
-	expire = "1999.1.1"
-	ideology = stalinismus
-	traits = {
-		
-	}
-}
 create_equipment_variant = {
 		name = "Класс Курочка"				
 		type = ship_hull_submarine_1

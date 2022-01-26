@@ -1,4 +1,4 @@
-capital = 227
+чcapital = 227
 
 oob = 123_1936
 
@@ -8,6 +8,8 @@ set_war_support = 0
 set_technology = {
 	infantry_weapons = 1
 }
+
+recruit_character = ALI_sovdick
 
 add_ideas = {
 free_trade	
@@ -23,13 +25,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Совет директоров"
-	desc = POLITICS_THORVALD_STAUNING_DESC
-	picture = Ali.dds
-	expire = 1999.1.1
-	ideology = liberalism
-	traits = { 
-	}
-}

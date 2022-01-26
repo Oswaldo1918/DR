@@ -16,6 +16,12 @@ set_technology = {
 	early_fighter = 1
 }
 
+recruit_character = CDR_stazist
+
+recruit_character = CDR_ivan
+recruit_character = CDR_zaytsev
+recruit_character = CDR_nikolas
+
 set_convoys = 40
 
 set_politics = {
@@ -27,64 +33,4 @@ set_popularities = {
 }
 
 add_ideas = {
-}
-
-
-create_country_leader = {
-	name = "Штазист"
-	desc = "POLITICS_SHTAZIST_DESC"
-	picture = "Stazist.dds"
-	expire = "1999.1.1"
-	ideology = marxismus
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Штазист"
-	id = 228001
-	picture = "gfx/leaders/CHT/Stazist.dds"
-	traits = { old_guard infantry_officer war_hero  }
-	skill = 3
-
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Иван Гоголев"
-	portrait_path = "gfx/leaders/CHT/ivan.dds"
-	traits = {  war_hero }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Дмитрий Зайцев"
-	portrait_path = "gfx/leaders/CHT/zaytsev.dds"
-	traits = {  }
-	skill = 1
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nikolas Louder"
-	portrait_path = "gfx/leaders/CHT/Nikolas.dds"
-	traits = {  war_hero }
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 3
 }

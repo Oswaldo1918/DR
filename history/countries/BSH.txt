@@ -12,7 +12,13 @@ set_technology = {
 
 }
 
+recruit_character = BSH_muhamed
+recruit_character = BSH_morgen
+recruit_character = BSH_babay
+recruit_character = BSH_grigorev
+recruit_character = BSH_cik_bash
 
+recruit_character = BSH_ilgizar
 
 set_popularities = {
     memoism = 30
@@ -28,71 +34,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Товарищ Мухамедьянов"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "TovarishMy.dds"
-	expire = "1999.1.1"
-	ideology = leninismus
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alisher Morgenshtern"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Morgen.dds"
-	expire = "1999.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Бебей"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "babay.dds"
-	expire = "1999.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Башкирский избирком"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "cik_bash.dds"
-	expire = "1999.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Даниил Григорьев"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Grigorev.dds"
-	expire = "1999.1.1"
-	ideology = ortodox_anstal
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Ильгизар Азнагулов"
-	id = 223434
-	picture = ""
-	traits = { }
-	skill = 3
-
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}

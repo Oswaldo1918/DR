@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-
+recruit_character = ASM_asmolov
 
 set_popularities = {
 	metacommy = 100
@@ -20,14 +20,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Константин Асмолов"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Asmolov.dds"
-	expire = "1999.1.1"
-	ideology = fourth_floor
-	traits = {
-		verhovniy_necomant
-	}
-}

@@ -14,6 +14,8 @@ set_technology = {
 	early_fighter = 1
 }
 
+recruit_character = AUS_Karl
+
 add_ideas = {
 	sour_loser
 }
@@ -28,25 +30,3 @@ set_popularities = {
 }
 
 set_stability = 0.50
-
-create_country_leader = {
-	name = "Карл Эглессер"
-	desc = "POLITICS_DESC"
-	picture = "Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		Gospodin_one_protsent
-	}
-}
-
-create_field_marshal = {
-	name = "Karl Eglseer"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trait_mountaineer trickster }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}

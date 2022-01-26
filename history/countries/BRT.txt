@@ -9,6 +9,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = BRT_kodzima
+
 add_ideas = {
 kodzimstvo
 }
@@ -22,14 +24,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Хидео Кодзима"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Kodzima.dds"
-	expire = "1999.1.1"
-	ideology = liberalism
-	traits = {
-		genius
-	}
-}

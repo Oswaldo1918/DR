@@ -9,6 +9,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = ARM_nardy
+
 add_ideas = {
 }
 
@@ -21,14 +23,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Совет Любителей Нард"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Nardy.dds"
-	expire = "1999.1.1"
-	ideology = postironism
-	traits = {
-		#
-	}
-}
