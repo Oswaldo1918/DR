@@ -1,0 +1,91 @@
+characters={
+	CDR_stazist = {
+		name = "Штазист"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CDR/Stazist.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHT/Stazist.dds"
+				small = ".dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = marxismus
+			traits = {  }
+			desc = "POLITICS_SHTAZIST_DESC"
+		    id=-1
+	   }
+	   
+	   field_marshal = {
+			traits = { old_guard infantry_officer war_hero  }
+	        skill = 3
+
+	        attack_skill = 4
+	        defense_skill = 2
+	        planning_skill = 3
+	        logistics_skill = 2
+			legacy_id = -1
+		}
+    }
+	CDR_ivan = {
+		name = "Иван Гоголев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHT/ivan.dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    traits = {  war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+		legacy_id = -1
+		}
+    }
+	CDR_zaytsev = {
+		name = "Дмитрий Зайцев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHT/zaytsev.dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    traits = { war_hero }
+	    skill = 2
+	
+	    attack_skill = 3
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 4
+		legacy_id = -1
+		}
+    }
+	CDR_nikolas = {
+		name = "Nikolas Louder"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHT/Nikolas.dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    skill = 2
+	
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 3
+		legacy_id = -1
+		}
+    }
+}

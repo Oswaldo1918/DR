@@ -1,0 +1,32 @@
+characters={
+	AUS_Karl = {
+		name = "Карл Эглессер"
+		portraits = {
+			civilian = {
+				large = "Portrait_Europe_Generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = nazism
+	    traits = { 
+		Gospodin_one_protsent
+	    }
+		id=-1
+	   }
+	   
+	   create_field_marshal ={
+			traits={ trickster trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+    }
+}

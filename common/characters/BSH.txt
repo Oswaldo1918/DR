@@ -1,0 +1,90 @@
+characters={
+	BSH_muhamed = {
+		name = "Товарищ Мухамедьянов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/TovarishMy.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = leninismus
+		    id=-1
+	   }
+    }
+	
+	BSH_morgen = {
+		name = "Alisher Morgenshtern"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Morgen.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = fascism_ideology
+		    id=-1
+	   }
+    }
+	
+	BSH_babay = {
+		name = "Бебей"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/babay.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = despotism
+		    id=-1
+	   }
+    }
+	
+	BSH_grigorev = {
+		name = "Даниил Григорьев"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Grigorev.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = ortodox_anstal
+		    id=-1
+	   }
+    }
+	
+	BSH_cik_bash = {
+		name = "Башкирский избирком"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/cik_bash.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = conservatism
+		    id=-1
+	   }
+    }
+	
+	BSH_ilgizar = {
+		name = "Ильгизар Азнагулов"
+		portraits = {
+			army = {
+				large = ".dds"
+				small = ".dds"
+			}
+		}
+		field_marshal = {
+			traits = {}
+			skill = 3
+	        attack_skill = 4
+	        defense_skill = 2
+	        planning_skill = 3
+	        logistics_skill = 2
+			legacy_id = -1
+		}
+    }
+}

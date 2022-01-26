@@ -1,0 +1,33 @@
+characters={
+	ALB_Semen = {
+		name = "Константин Семин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALB/Semen.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = marxismus
+	    traits = { 
+		legasy_of_hodcha
+	    }
+		id=-1
+	   }
+    }
+	ALB_kozloigorek = {
+		name = "Совет козлов-геймеров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALB/kolzloigori.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = libertanian_chuchhe 
+	    traits = { 
+	    }
+		id=-1
+	   }
+    }
+}

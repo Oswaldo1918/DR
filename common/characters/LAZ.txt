@@ -1,0 +1,674 @@
+characters = {
+	LAZ_Plague_Doctor = {
+		name = "Чумной Доктор"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAZ/Plague_Doctor.dds"
+			}
+			army = {
+			    large = "gfx/leaders/LAZ/Plague_Doctor.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_PLAGUE_DOCTOR_DESC"
+			ideology = marxismus
+			expire = "3000.1.1"
+			id = -1
+		}
+		field_marshal = {
+	    traits = { old_guard }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_Kerbonavt = {
+	name = "Кербонавт"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OSV/Kerbonavt.dds"
+			}
+			army = {
+			    large = "gfx/leaders/OSV/Kerbonavt.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = ""
+			ideology = nacbol
+			expire = "3000.1.1"
+			id = -1
+		}
+	}
+	
+	LAZ_Chumak = {
+	name = "Алексей Чумаков"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OSV/Chumak.dds"
+			}
+			army = {
+			    large = "gfx/leaders/OSV/Chumak.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = ""
+			ideology = postironism
+			expire = "3000.1.1"
+			id = -1
+		}
+	}	
+	
+	LAZ_Egor = {
+	name = "Егор Невьянцев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/LAZ/Egor.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { old_guard }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_Civis = {
+	name = "Ordinarius Civis"
+		portraits = {
+			army = {
+			    large = ".dds"
+			}
+		}
+		corps_commander = {
+	    traits = { old_guard }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_Mazov = {
+		name = "Kras Mazov"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/LAZ/Mazov.dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_RAPER = {
+		name = "PAJILOY RAPER"
+		portraits = {
+			army = {
+			    large = ".dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_svyazist = {
+		name = "Связист-телефонист"
+		portraits = {
+			army = {
+			    large = ".dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_vladislave = {
+		name = "Владислав Фархутдинов"
+		portraits = {
+			army = {
+			    large = ".dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_artur = {
+		name = "Артур Олейников"
+		portraits = {
+			army = {
+			    large = ".dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	LAZ_Darker_Loony = {
+		name = "Darker Loony"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { nkvd_rezident }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Ohrim = {
+		name = "Леонид Охрiм"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Maksim_Osipov = {
+		name = "Максим Осипов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_1 = {
+		name = "[ДАННЫЕ УДАЛЕНЫ]"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { backroom_sponsor_rezhima }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_figura = {
+		name = "Фигура"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { Editor }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_petr_grigorev = {
+		name = "Пётр Григорьев"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { marxist_academic }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_roman_katuntsev = {
+		name = "Роман Катунцев"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { marxist_philosopher }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Bobichka = {
+		name = "Bobichka"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { Technocrat }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_evro4 = {
+		name = "evro4"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { fortification_armchair_general }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Denis_Kuznetsov = {
+		name = "Денис Кузнецов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { Urbanist }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Boris_Godynov = {
+		name = "Борис Годунов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { Materialist_krestonostets }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Pila_Ivanna = {
+		name = "Пила Иванна"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = LAZ
+				
+			}			
+			traits = { Psychologist }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Danil_Tsukanov = {
+		name = "Данил Цуканов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		army_chief = {	
+			original_tag = LAZ
+			}
+	       available = { NOT = { country_exists = MAT }
+				has_completed_decision = LAZ_core_MAT
+		   }
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Kurakov = {
+		name = "Лeонид Кураков"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		army_chief = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			available = { NOT = { country_exists = DON }
+			has_completed_decision = LAZ_core_DON		   
+			}
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_Yan = {
+		name = "Людвиг Ян"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		navy_chief = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			idea_token = Yan2
+	       available = { NOT = { country_exists = ARK }
+                         NOT = { has_idea = Yan1 }
+				has_completed_decision = LAZ_core_ARK
+			}
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+		theorist = {	
+			available = { 
+				NOT = { country_exists = ARK }
+				NOT = { has_idea = Yan2 }
+				has_completed_decision = LAZ_core_ARK
+			}
+			idea_token = Yan1
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.15
+			}
+			
+			traits = { naval_theorist }
+	    }
+	}
+	
+	LAZ_Denis_Seregin = {
+		name = "Денис Серёгин"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			idea_token = Denis_Seregin2
+	       available = { 
+				NOT = { country_exists = WHS }
+				NOT = { has_idea = Denis_Seregin1 }
+				has_completed_decision = LAZ_core_WHS
+			}
+			
+			traits = { guerilla_warfare_expert }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+		theorist = {	
+			idea_token = Denis_Seregin1
+			available = { 
+				NOT = { country_exists = WHS }
+				NOT = { has_idea = Denis_Seregin2 }
+				has_completed_decision = LAZ_core_WHS
+			}
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mass_assault = 0.15
+			}
+			
+			traits = { mass_assault_expert }
+	    }
+	}
+	
+	LAZ_Anton_Orlov = {
+		name = "Антон Орлов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			idea_token = Anton_Orlov2
+	       available = {
+				NOT = { country_exists = MAT }
+				NOT = { has_idea = Anton_Orlov1 }
+				has_completed_decision = LAZ_core_MAT
+			}
+		   
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+		theorist = {	
+			idea_token = Anton_Orlov1
+			available = { 
+				NOT = { country_exists = MAT }
+				NOT = { has_idea = Anton_Orlov2 }
+				has_completed_decision = LAZ_core_MAT
+		   }
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+
+			traits = { mobile_warfare_expert }
+	    }
+	}
+	
+	LAZ_Shchelkunova = {
+		name = "Л. Щелкунова"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			idea_token = LAZ_Shchelkunova
+	       allowed = {
+			original_tag = LAZ
+			}
+	       available = {}
+			traits = { school_of_psychology }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	LAZ_mixan_teoretic = {
+		name = "Михан Теоретик"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		theorist = {	
+			allowed = {
+			original_tag = LAZ
+			}
+			idea_token = LAZ_mixan_teoretic
+	       allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+
+			
+			traits = { rocket_scientist }
+	    }
+	}
+}

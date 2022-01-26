@@ -1,0 +1,271 @@
+characters = {
+	NOD_Fedorov = {
+		name = "Евгений Федоров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOD/Fedorov.dds"
+			}
+			army = {
+			    large = "gfx/leaders/NOD/Fedorov.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+
+		country_leader = {
+			traits = { coordinator }
+			desc = "POLITICS_FEDOROV_DESC"
+			ideology = fascism_ideology
+			expire = "3000.1.1"
+			id = -1
+		}
+	}
+	NOD_Barkov = {
+	name = "Роман Барков"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOD/барков.dds"
+			}
+			army = {
+			    large = "gfx/leaders/NOD/барков.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_BARKOV_DESC"
+			ideology = despotism
+			expire = "3000.1.1"
+			id = -1
+		}
+		field_marshal = {
+	    traits = { infantry_officer war_hero  }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 4
+		legacy_id = -1
+        }
+	}	
+	NOD_ozon = {
+	name = "Роман Озонов"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/ozon.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer expert_improviser  }
+	    skill = 1
+    	attack_skill = 1
+    	defense_skill = 3
+    	planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	NOD_Alex_Hirurg = {
+	name = Александр Хирург"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/Alex_Hirurg.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	NOD_Ivan_Ohlabystin = {
+	name = "Иван Охлобыстин"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/Ivan_Ohlabystin.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		corps_commander = {
+	    traits = { harsh_leader trait_reckless }
+	    skill = 1	
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	
+	NOD_patr_feodor = {
+		name = "Патриарх Феодор"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_5"
+			}
+		}
+
+		political_advisor = {
+			available = {
+				has_completed_focus = NOD_revival_RPTS
+			}
+			visible = {
+				has_country_flag = feodor_patr
+				
+			}		
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { staunch_constitutionalist }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_nik_star = {
+		name = "Николай Стариков"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/Nikolay_Starikov.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_zah_pril = {
+		name = "Захар Прилепин"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/Zahar_Prilepin.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { fascist_demagogue hawk }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_mic_sove = {
+		name = "Михаил Советский"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/Miha_Sov.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { propaganda_bungler }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_mar_kata = {
+		name = "Мария Катасонова"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/Mariya_Katasonova.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { smooth_talking_charmer }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_saj_umal = {
+		name = "Сажи Умалатова"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/Sazhi_Umaloatova.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_ste_zoto = {
+		name = "Степан Зотов"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/stepan_zotov.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	NOD_corp_one = {
+		name = "Алан Лужников"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/alan_lushnikov.dds"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { war_industrialist }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+}

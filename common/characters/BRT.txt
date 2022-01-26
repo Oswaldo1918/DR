@@ -1,0 +1,16 @@
+characters={
+	BRT_kodzima = {
+		name = "Хидео Кодзима"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRT/Kodzima.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = liberalism
+			traits = { genius }
+		    id=-1
+	   }
+    }
+}

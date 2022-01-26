@@ -1,0 +1,932 @@
+characters = {
+	LAZ_Chat_Leder = {
+		name = "Всечатский Совет"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/Chat_Leder.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/Chat_Leder.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_MODER_SOVET_DESC"
+			ideology = postironism
+	traits = {
+		cabinet_crisis
+	}
+			expire = "3000.1.1"
+			id = -1
+		}
+	}
+	
+	CHT_stazist = {
+	name = "Штазист"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/stazist.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/stazist.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_SHTAZIST_DESC"
+			ideology = marxismus
+			expire = "3000.1.1"
+			id = -1
+		}
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = vmestolev
+		    }
+			
+			traits = { red_army_organizer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_mesyats = {
+	name = "Кривой Месяц"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/mesyats.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/mesyats.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_KRIMES_DESC"
+			ideology = libertanian_chuchhe
+			expire = "3000.1.1"
+			id = -1
+		}
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = anarhostalinism
+		    }
+			
+			traits = { Partisan_vozhd }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2	
+	    attack_skill = 2
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 3
+		legacy_id = -1
+        }
+	}	
+	
+	CHT_telezniy = {
+	name = "Даниил Тележный"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/telezniy.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/telezniy.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_TELEZH_DESC"
+			ideology = white_polpotism
+			expire = "3000.1.1"
+			id = -1
+		}
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = metacommy
+		    }
+			
+			traits = { Organizator_geril }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_Ahora = {
+	name = "Ахора Мазда"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/Ahora.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/Ahora.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_AHORA_DESC"
+			ideology = fascism
+			expire = "3000.1.1"
+			id = -1
+		}
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = fascism
+		    }
+
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		high_command = {
+			allowed = {
+				original_tag = CHT
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	    
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		political_advisor = {
+			 allowed = {
+                original_tag = CHT 
+				
+            }
+			available = {
+			    NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = milo }
+				NOT = { has_government = metacommy }
+			}
+            traits = { anti_levak }
+        }
+	}
+	
+	CHT_deloksli = {
+	name = "Де Локсли I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/deloksli.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/deloksli.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_LOKSLI_DESC"
+			ideology = oligarchism
+			expire = "3000.1.1"
+			id = -1
+		}
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = neutrality
+		    }
+			
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_Cummunist = {
+	name = "Свидетель из Cumмунизма"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/Cummunist.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/Cummunist.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		field_marshal = {
+	    traits = { old_guard infantry_officer war_hero  }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+		army_chief = {
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = memoism
+		    }
+			
+			traits = { army_chief_offensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_ivan = {
+	name = "Иван Гоголев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/Egor.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { war_hero }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+		legacy_id = -1
+        }
+	}
+	
+	CHT_zaytsev = {
+	name = "Дмитрий Зайцев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/zaytsev.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { war_hero }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 4
+		legacy_id = -1
+        }
+		high_command = {
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_infantry_1  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_Nikolas = {
+		name = "Nikolas Louder"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/Nikolas.dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  war_hero }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+	
+	CHT_ivanov = {
+		name = "Саша Иванов"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/ivanov.dds"
+			}
+		}
+
+		corps_commander = {
+	    traits = {  war_hero }
+	skill = 2	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+		legacy_id = -1
+        }
+		high_command = {
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	CHT_wladislav_zalujniy = {
+		name = "Владислав Залужный"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = metacommy 
+			}
+            traits = { economist_chtrasserist }
+	    }
+	}
+	
+	CHT_anton_simusov = {
+		name = "Антон Симусов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = metacommy 
+			}
+            traits = { adventurous_daredevil }
+	    }
+		high_command = {
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = metacommy
+		   }
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	CHT_ostin_pauers = {
+		name = "Остин Пауэрс"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+				
+            }
+			    available = {
+			    has_government = metacommy 
+			}
+				
+            traits = { prince_of_terror  }
+	    }
+	}
+	
+	CHT_gus = {
+		name = "Товарищ Гусь"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { lieutenant_of_industry }
+	    }
+	}
+	
+	CHT_roman_latyshev = {
+		name = "Роман Латышев"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { ministr_defitsita }
+	    }
+	}
+	
+	CHT_andraste = {
+		name = "Вестник Андрасте"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { economic_organizer }
+	    }
+	}
+	
+	CHT_anstal_from_people = {
+		name = "Анонимус"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = anarhostalinism 
+				}
+				
+            traits = { backroom_backstabber }
+	    }
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = anarhostalinism
+		   }
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	CHT_dmitry_safonov = {
+		name = "Дмитрий Сафонов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = anarhostalinism 
+				}
+				
+            traits = { dobrovolno_prinuditelniy_collectivizator }
+	    }
+	}
+	
+	CHT_kon_v_palto = {
+		name = "Конь в пальто"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = anarhostalinism 
+				}
+				
+            traits = { economist_anarhii }
+	    }
+	}
+	
+	CHT_boy_from_saratov = {
+		name = "Boy next Саратов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = memoism 
+				}
+				
+            traits = { our_right_to_survive }
+	    }
+	}
+	
+	CHT_mich_sim = {
+		name = "Михаил Симонян"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = memoism 
+				}
+				
+            traits = { economic_reformer }
+	    }
+	}
+	
+	CHT_weest_wee = {
+		name = "Weest_Wee"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+			}
+			    available = {
+				has_government = memoism 
+				}
+				
+            traits = { railroad_enthusiast }
+	    }
+	}
+	
+	CHT_mich_duke = {
+		name = "Duke Michael II"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+				
+            }
+			available = {
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = metacommy }
+			}
+            traits = { regional_traditionalist_leader }
+	    }
+		high_command = {
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = neutrality
+		   }
+			traits = { army_entrenchment_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	evro_fourth = {
+		name = "Евро4"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		political_advisor = {	
+			allowed = {
+                original_tag = CHT 
+				
+            }
+			available = {
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = metacommy }
+			}
+            traits = { vliyatelniy_kupets }
+	    }
+	}
+	
+	CHT_kot_fritz = {
+		name = "Кот Фриц"
+		portraits = {
+			army = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = memoism
+		   }
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	CHT_nik_vas = {
+		name = "Никита Васиslave"
+		portraits = {
+			army = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = memoism
+		   }
+			traits = { navy_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	CHT_felix_kornilov = {
+		name = "Феликс Корнилов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	    
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	CHT_yuriy_lain = {
+		name = "Юрий Ларин"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	       
+			traits = { army_chief_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	CHT_field_sekretar = {
+		name = "Полевой Секретарь"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_chief_organizational_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	CHT_wyach_step = {
+		name = "Вячеслав Степанов"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+           has_government = anarhostalinism
+		   }
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	CHT_Ruazerg = {
+		name = "Ruazerg"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+	       available = {		
+		   }
+			traits = { voenniy_kustar }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	CHT_Neon_Petrovich = {
+		name = "Neon Petrovich"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		air_chief = {	
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = anarhostalinism
+		    }
+			
+			traits = { stalin_sokol }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	CHT_DoomHammer = {
+		name = "DoomHammer"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		high_command = {	
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = metacommy
+		    }
+			
+			traits = { Master_PVO }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	CHT_North_demon = {
+		name = "North demon"
+		portraits = {
+			civilian = {
+				small = "generic_political_advisor_europe_3"
+			}
+		}
+
+		navy_chief = {	
+			allowed = {
+				original_tag = CHT
+			}
+			available = {		
+                has_government = metacommy
+		    }
+					
+			traits = { Pribrezhniy_fortificator }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+}

@@ -1,0 +1,91 @@
+characters={
+	CCO_mesyats = {
+		name = "Кривой Месяц"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CCO/Mesyats.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHT/mesyats.dds"
+				small = ".dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = libertanian_chuchhe
+			traits = { dictator }
+		    id=-1
+	   }
+	   
+	   field_marshal = {
+			traits = { old_guard infantry_officer war_hero  }
+	        skill = 3
+
+	        attack_skill = 4
+	        defense_skill = 2
+	        planning_skill = 3
+	        logistics_skill = 2
+			legacy_id = -1
+		}
+    }
+	CCO_ribakov = {
+		name = "Сергей Рыбаков"
+		portraits = {
+			army = {
+				large = ".dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    traits = {}
+	    skill = 2
+	
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+		legacy_id = -1
+		}
+    }
+	CCO_shedrin = {
+		name = "Евгений Щедрин"
+		portraits = {
+			army = {
+				large = ".dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    traits = {}
+	    skill = 2
+	
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+		legacy_id = -1
+		}
+    }
+	CCO_gremlin = {
+		name = "Gainful Gremlin"
+		portraits = {
+			army = {
+				large = ".dds"
+				small = ".dds"
+			}
+		}
+	   
+	    corps_commander = {
+	    traits = {}
+	    skill = 2
+	
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+		legacy_id = -1
+		}
+    }
+}
