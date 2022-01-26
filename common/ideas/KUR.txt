@@ -15,44 +15,35 @@ ideas = {
 			}
 		}
 		
-		 KUR_kozlik = {
-			picture = GFX_idea_koza_russkogo_razvitiya
+		KUR_polit_neodnoznach = {
+			picture = cht_shizofrenia
 			
 			removal_cost = -1
 			
-			allowed = { always = no }
-			
-			
 			modifier = {
-			production_speed_buildings_factor = -0.10
-			line_change_production_efficiency_factor = -0.05
-			production_factory_max_efficiency_factor = -0.05
+			political_power_gain = -0.05
+			drift_defence_factor = 0.3
+			metacommy_drift = 0.03
+			fascism_drift = 0.02
+			memoism_drift = 0.02
+			vmestolev_drift = 0.01
 			}
 		}
 		
-		KUR_omovskie_poditeli = {
-			picture = GFX_idea_omovskie_poditeli
-			
-			removal_cost = -1
-			
-			allowed = { always = no }
-			
+		KUR_nedobit_bander = {
+			picture = cht_shizofrenia
 			
 			modifier = {
-			production_factory_max_efficiency_factor = -0.15
-			MONTHLY_POPULATION = 0.2
+			stability_factor = -0.05
+			weekly_manpower = -14
 			}
 		}
-		KUR_discriminacia = {
-			picture = GFX_idea_saf_history_of_segregation
-			
-			removal_cost = -1
-			
-			allowed = { always = no }
-			
+		KUR_razruha_v_umah = {
+			picture = cht_shizofrenia
 			
 			modifier = {
-			conscription_factor = -0.5
+			political_power_gain = -0.01
+			war_stability_factor = -0.1
 			}
 		}
 		

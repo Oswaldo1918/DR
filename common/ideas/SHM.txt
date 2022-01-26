@@ -1,0 +1,58 @@
+ideas = {
+        country = {
+	        SHM_krutie_ochki_1 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				    political_power_gain = 0.05				    	
+                    stability_factor = 0.05			   
+		        }
+	        }
+	        SHM_krutie_ochki_2 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_gain = 0.05				    	
+                stability_factor = 0.05	
+				recon_factor = 0.05 
+			    }
+		    }
+			SHM_tibet_tradition = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					
+                conscription_factor = -0.3
+				consumer_goods_factor = -0.1
+				local_resources_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			    }
+		    }
+			
+			SHM_mount_krepost = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				production_speed_bunker_factor = 0.1
+				max_dig_in_factor = 0.05
+			    }
+		    }
+			
+			SHM_man_in_the_high_mountain = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				production_speed_bunker_factor = 0.1
+				max_dig_in_factor = 0.05
+				political_power_gain = 0.05				    	
+                stability_factor = 0.05	
+			    }
+		    }
+	   }
+		
+}
