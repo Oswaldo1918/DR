@@ -1,0 +1,481 @@
+focus_tree = {
+	id = Albania
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALB
+		}
+	}
+	default = no
+	focus = {
+		id = ALB_Khoja_Legacy
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10,00
+		x = 14
+		y = 0
+		completion_reward = {
+			add_country_leader_trait = Khoja_Legacy
+		}
+	}
+	focus = {
+		id = ALB_kozlovodstvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_Khoja_Legacy
+		}
+		x = 15
+		y = 1
+        completion_reward = {
+			add_ideas = ALB_kozlovodstvo
+		}
+	}
+	focus = {
+		id = ALB_collectivization
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_Khoja_Legacy
+		}
+		x = 11
+		y = 1
+        completion_reward = {
+			add_ideas = kolhozi
+		}
+	}
+	focus = {
+		id = ALB_more_bunkers
+		icon = GFX_goal_generic_fortify_city
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_Khoja_Legacy
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+			add_ideas = ALB_bunkervodstvo
+		}
+
+	}
+	focus = {
+		id = ALB_open_new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_collectivization
+		}
+		prerequisite = {
+			focus = ALB_more_bunkers
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = ALB_AGITPROP
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_kozlovodstvo
+		}
+		prerequisite = {
+			focus = ALB_more_bunkers
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = ALB_railway_between_cities
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_Khoja_Legacy
+		}
+		x = 17
+		y = 1
+        completion_reward = {
+			build_railway = {
+				start_province  = 9914
+                target_state = 11767
+			}
+			build_railway = {
+				start_province  = 9914
+                target_province  = 914
+			}
+		}
+	}
+	focus = {
+		id = ALB_tirana_university
+		icon = GFX_focus_research
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_railway_between_cities
+		}
+		prerequisite = {
+			focus = ALB_kozlovodstvo
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = ALB_opening_of_the_century
+		icon = GFX_focus_big_brain
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_tirana_university
+		}
+		prerequisite = {
+			focus = ALB_AGITPROP
+		}
+		prerequisite = {
+			focus = ALB_open_new_factories
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			add_stability = -0.15
+		}
+
+	}
+	focus = {
+		id = ALB_refuel_the_generator
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_opening_of_the_century
+		}
+		x = 14
+		y = 4
+        completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = ALB_arrange_a_dressing_down_for_the_players
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_refuel_the_generator
+		}
+		x = 14
+		y = 5
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_stability = -0.05
+			add_manpower = -5000
+			44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+	}
+	focus = {
+		id = ALB_goat_hunting
+		icon = GFX_goat_hunting
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_arrange_a_dressing_down_for_the_players
+		}
+		x = 16
+		y = 6
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    remove_ideas = ALB_kozlovodstvo
+		    add_stability = -0.05
+			44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+	}
+	focus = {
+		id = ALB_the_right_skating_rink
+		icon = GFX_the_right_skating_rink
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_goat_hunting
+		}
+		x = 16
+		y = 7
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 500
+                producer = ALB
+            }
+		    add_war_support = 0.05
+			44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+	}
+	focus = {
+		id = ALB_purge_of_players
+		icon = GFX_LAZ_focus_reznya
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_arrange_a_dressing_down_for_the_players
+		}
+		x = 12
+		y = 6
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		add_stability = -0.05
+		hidden_effect = {
+		    random_list = {
+            50 = {
+				 add_popularity = {
+                 ideology = vmestolev
+                 popularity = 0.5
+                 }
+            }
+            50 = {
+				 set_political_party = {
+                 ideology = anarhostalinism
+                 popularity = 50
+                 }
+            }
+            }
+		}
+		}
+	}
+	focus = {
+		id = ALB_purge_of_sympathizers
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_purge_of_players
+		}
+		x = 12
+		y = 7
+		available = {
+			has_government = vmestolev
+		}
+		completion_reward = {
+		    add_popularity = {
+                 ideology = vmestolev
+                 popularity = 0.01
+                 }
+			44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+
+	}
+	focus = {
+		id = ALB_chess_segregation
+		icon = GFX_chess
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_arrange_a_dressing_down_for_the_players
+		}
+		x = 10
+		y = 6
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_ideas = ALB_chess_segregation
+		}
+	}
+	focus = {
+		id = ALB_beat_the_players
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_chess_segregation
+		}
+		x = 10
+		y = 7
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_manpower = -5000
+		    44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+	}
+	focus = {
+		id = ALB_mobilize_loyal
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_arrange_a_dressing_down_for_the_players
+		}
+		x = 18
+		y = 6
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_manpower = 15000
+		}
+	}
+	focus = {
+		id = ALB_strengthen_the_pressure_of_AGITPROP
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_mobilize_loyal
+		}
+		x = 18
+		y = 7
+		available = {
+			has_government = vmestolev
+		}
+        completion_reward = {
+		    add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = ALB_start_the_generators_of_war
+		icon = GFX_generators_of_war
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_beat_the_players
+		}
+		prerequisite = {
+			focus = ALB_purge_of_sympathizers
+		}
+		prerequisite = {
+			focus = ALB_the_right_skating_rink
+		}
+		prerequisite = {
+			focus = ALB_strengthen_the_pressure_of_AGITPROP
+		}
+		prerequisite = {
+			focus = ALB_deratization
+		}
+		x = 14
+		y = 8
+		available = {
+			has_government = vmestolev
+		}
+		completion_reward = {
+		    add_manpower = 50000
+			add_ideas = scraping_the_barrel 
+			add_ideas = tot_economic_mobilisation 
+		}
+
+	}
+	focus = {
+		id = ALB_the_great_antigamer_campaign
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_start_the_generators_of_war
+		}
+		x = 14
+		y = 9
+		available = {
+			has_government = vmestolev
+		}
+		completion_reward = {
+		    add_ideas = ALB_the_great_antigamer_campaign
+		    create_wargoal = {
+            type = annex_everything
+            target = HRV
+            }
+			create_wargoal = {
+            type = annex_everything
+            target = PGR
+            }
+			create_wargoal = {
+            type = annex_everything
+            target = TSG
+            }
+			create_wargoal = {
+            type = annex_everything
+            target = BER
+            }
+		}
+
+	}
+	focus = {
+		id = ALB_deratization
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_arrange_a_dressing_down_for_the_players
+		}
+		x = 14
+		y = 6
+		available = {
+			has_government = vmestolev
+		}
+		completion_reward = {
+		    44 = {
+			add_manpower = -15000
+			}
+			805 = {
+			add_manpower = -15000
+			}
+		}
+
+	}
+}

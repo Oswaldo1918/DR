@@ -9,11 +9,107 @@ focus_tree = {
 	}
 	default = no
 	focus = {
+		id = SHM_blizhe_k_black_sun
+		icon = GFX_goal_unknown
+		cost = 5,00
+		x = 9
+		y = 0
+            completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			}
+	}
+	focus = {
+		id = SHM_izyazhniy_siluet
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_blizhe_k_black_sun
+		}
+		x = 7
+		y = 1
+		    completion_reward = {
+			add_ideas = SHM_krutie_ochki_1
+			}
+
+	}
+	focus = {
+		id = SHM_daleko_glyazhu
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_izyazhniy_siluet
+		}
+		x = 7
+		y = 2
+            completion_reward = {
+			    swap_ideas = {
+					remove_idea = SHM_krutie_ochki_1
+					add_idea = SHM_krutie_ochki_2
+				}
+			}
+	}
+	focus = {
+		id = SHM_somebody_that_i_used_to_know
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_daleko_glyazhu
+		}
+		x = 7
+		y = 3
+            completion_reward = {
+
+			}   
+	}
+	focus = {
+		id = SHM_vozradit_tibet_tradition
+		icon = GFX_focus_cht_slaves_masses
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_blizhe_k_black_sun
+		}
+		x = 9
+		y = 1
+            completion_reward = {
+                add_ideas = SHM_tibet_tradition   
+			}      
+	}
+	focus = {
+		id = SHM_issledovat_dzen_buddim
+		icon = GFX_goal_tfv_smiling_buddha
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_vozradit_tibet_tradition
+		}
+		x = 9
+		y = 2
+            completion_reward = {
+                add_political_power = 100  
+			}   
+	}
+	focus = {
+		id = SHM_drevnie_znania
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_issledovat_dzen_buddim
+		}
+		x = 9
+		y = 3
+            completion_reward = {
+                add_research_slot = 1
+			}    
+	}
+	focus = {
 		id = SHM_kurovodstvo
 		icon = GFX_SHM_kurovodstvo
-		cost = 2
-		x = 10
-		y = 0
+		cost = 2,00
+		prerequisite = {
+			focus = SHM_blizhe_k_black_sun
+		}
+		x = 11
+		y = 1
 			completion_reward = {
 					random_owned_controlled_state = {
 							limit = {
@@ -48,4 +144,53 @@ focus_tree = {
 				}
 
 	}
-	
+	focus = {
+		id = SHM_kulinar_festival
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_kurovodstvo
+		}
+		x = 11
+		y = 2
+            completion_reward = {
+                add_stability = 0.1
+				add_political_power = 100
+			}  
+	}
+	focus = {
+		id = SHM_mount_krepost
+		icon = GFX_goal_generic_construct_military
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_kulinar_festival
+		}
+		x = 11
+		y = 3		
+            completion_reward = {
+                add_ideas = SHM_mount_krepost
+			}         
+	}
+	focus = {
+		id = SHM_man_in_the_high_mountain
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = SHM_somebody_that_i_used_to_know
+		}
+		prerequisite = {
+			focus = SHM_drevnie_znania
+		}
+		prerequisite = {
+			focus = SHM_mount_krepost
+		}
+		x = 9
+		y = 4
+            completion_reward = {
+                swap_ideas = {
+					remove_idea = SHM_mount_krepost
+					add_idea = SHM_man_in_the_high_mountain
+				}
+			}    
+	}
+}
