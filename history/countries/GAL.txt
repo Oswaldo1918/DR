@@ -1,4 +1,4 @@
-capital = 568
+capital = 570
 
 oob = 123_1936
 
@@ -13,7 +13,8 @@ add_ideas = {
 }
 
 set_popularities = {
-	fascism = 100
+	fascism = 50
+	metacommy = 50
 }
 set_politics = {
 	ruling_party = fascism
@@ -25,9 +26,20 @@ set_convoys = 40
 create_country_leader = {
 	name = "Александр Пушной"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Alexandr.jpg"
+	picture = "Pushnoy.dds"
 	expire = "1999.1.1"
 	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Павел Лукин"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Lukin.dds"
+	expire = "1999.1.1"
+	ideology = lukinism
 	traits = {
 		#
 	}

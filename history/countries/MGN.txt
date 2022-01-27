@@ -12,22 +12,22 @@ set_technology = {
 
 
 set_popularities = {
-	fascism = 100
+	vmestolev = 100
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = vmestolev
 	elections_allowed = no	
 }
 
 set_convoys = 40
 
 create_country_leader = {
-	name = "Трофим Лысенко"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Trofim.dds"
+	name = "Капитан Андерграунд"
+	desc = "POLITICS_ANDGROUND_DESC"
+	picture = "CapitanA.dds"
 	expire = "1999.1.1"
-	ideology = fascism_ideology
+	ideology = stalinismus
 	traits = {
-		#
+		 prince_of_terror
 	}
 }

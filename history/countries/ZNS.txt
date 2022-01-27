@@ -12,22 +12,22 @@ set_technology = {
 
 
 set_popularities = {
-	democratic = 100
+	anarhostalinism = 100
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = anarhostalinism
 	elections_allowed = no	
 }
 
 set_convoys = 40
 
 create_country_leader = {
-	name = "Юрий Шевчук"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Shevchuk.dds"
+	name = "Андрей Рудой"
+	desc = "POLITICS_RUDOY_DESC"
+	picture = "Rudoy.dds"
 	expire = "1999.1.1"
-	ideology = conservatism
+	ideology = libertanian_chuchhe
 	traits = {
-		#
+     Ne_typoy
 	}
 }
