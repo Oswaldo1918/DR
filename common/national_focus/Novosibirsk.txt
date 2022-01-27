@@ -644,7 +644,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 			    limit = {
-				check_variable = { has_idea = GAL_marakumba_1 }
+				GAL = {has_idea = GAL_marakumba_1}
 				}
 				swap_ideas = {
 							remove_idea = add_ideas = GAL_marakumba_1
