@@ -1,0 +1,56 @@
+characters={
+    GAL_pusnoy = {
+		name = "Александр Пушной"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/GAL/Pushnoy.dds"
+			}
+		}
+
+        country_leader = {
+			ideology = fascism_ideology
+			expire = "1999.3.1.1"
+			id = -1
+		}	
+	}
+
+	GAL_lukin = {
+		name = "Павел Лукин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/GAL/Lukin.dds"
+			}
+		}
+
+        country_leader = {
+			ideology = lukinism
+			expire = "1999.3.1.1"
+			id = -1
+		}	
+	}
+	
+	GAL_andrey_kupcov = {
+		name = "Андрей Купцов"
+
+		portraits = {
+			army = {
+				small = "idea_GAL_andrey_kupcov"
+				large = "gfx/leaders/GAL/Kupcov.dds"
+			}
+		}
+
+	    field_marshal = {
+			traits = { old_guard career_officer infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+}
