@@ -644,11 +644,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 			    limit = {
-				GAL = {has_idea = GAL_marakumba_1}
+				has_idea = GAL_marakumba_1
 				}
 				swap_ideas = {
-							remove_idea = add_ideas = GAL_marakumba_1
-							add_idea = add_ideas = GAL_marakumba_2
+							remove_idea = GAL_marakumba_1
+							add_idea = GAL_marakumba_2
 						}
 			}
 	     	if = {
@@ -656,8 +656,8 @@ focus_tree = {
 					has_idea = GAL_marakumba_2
 				}
 				swap_ideas = {
-							remove_idea = add_ideas = GAL_marakumba_2
-							add_idea = add_ideas = GAL_marakumba_3
+							remove_idea = GAL_marakumba_2
+							add_idea = GAL_marakumba_3
 						}
 			}
 			if = {
@@ -665,8 +665,8 @@ focus_tree = {
 					has_idea = GAL_marakumba_3
 				}
 				swap_ideas = {
-							remove_idea = add_ideas = GAL_marakumba_3
-							add_idea = add_ideas = GAL_marakumba_4
+							remove_idea = GAL_marakumba_3
+							add_idea = GAL_marakumba_4
 						}
 			}
 			if = {
@@ -674,8 +674,8 @@ focus_tree = {
 					has_idea = GAL_marakumba_4
 				}
 				swap_ideas = {
-							remove_idea = add_ideas = GAL_marakumba_4
-							add_idea = add_ideas = GAL_marakumba_5
+							remove_idea = GAL_marakumba_4
+							add_idea = GAL_marakumba_5
 						}
 			}
 			if = {
@@ -683,8 +683,8 @@ focus_tree = {
 					has_idea = GAL_marakumba_5
 				}
 				swap_ideas = {
-							remove_idea = add_ideas = GAL_marakumba_5
-							add_idea = add_ideas = GAL_marakumba_6
+							remove_idea = GAL_marakumba_5
+							add_idea = GAL_marakumba_6
 						}
 			}
 		}
