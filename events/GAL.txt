@@ -1,0 +1,25 @@
+add_namespace = GAL
+
+	
+country_event = {
+	id = GAL.1 
+	title = GAL.1.t
+	desc = GAL.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.1.a
+    add_stability = 0.1
+	}
+	
+	option = {
+	name = GAL.1.b
+    add_political_power = 150
+	}
+}
