@@ -179,7 +179,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_gosbank_i
+				}
 	}
 	focus = {
 		id = GAL_goskomcen
@@ -190,7 +192,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_goskomcen_i
+				}
 	}
 	focus = {
 		id = GAL_PBK
@@ -201,7 +205,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_PBK_i
+				}
 	}
 	focus = {
 		id = GAL_minvneshtorg
@@ -212,6 +218,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 7
+		        completion_reward = {
+					add_ideas = GAL_minvneshtorg_i
+				}
 
 	}
 	focus = {
@@ -223,7 +232,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_SovMin_i
+				}
 	}
 	focus = {
 		id = GAL_narodnoye_opolcheniye
@@ -350,7 +361,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_goskomtrud_i
+				}
 	}
 	focus = {
 		id = GAL_gosplan
@@ -361,7 +374,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_gosplan_i
+				}
 	}
 	focus = {
 		id = GAL_gosstat
@@ -372,7 +387,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_gosstat_i
+				}
 	}
 	focus = {
 		id = GAL_gossnab
@@ -383,7 +400,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_gossnab_i
+				}
 	}
 	focus = {
 		id = GAL_rossnab
@@ -394,7 +413,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 7
-
+                completion_reward = {
+					add_ideas = GAL_rossnab_i
+				}
 	}
 	focus = {
 		id = GAL_genii_v_NII
