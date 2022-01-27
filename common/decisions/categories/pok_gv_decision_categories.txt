@@ -1,0 +1,27 @@
+################
+  ### CHAT ###
+################
+
+
+zahvat_terri = { 
+ icon = generic_prospect_for_resources
+    allowed = {
+	OR = {
+		original_tag = OMS
+		original_tag = ZNS
+		original_tag = YSK
+		original_tag = GAL
+		original_tag = MGN
+		}
+	}
+	visible = {
+	POK = {NOT = {has_war = yes}}
+	OR = {
+		original_tag = OMS
+		original_tag = ZNS
+		original_tag = YSK
+		original_tag = GAL
+		original_tag = MGN
+		}
+	}
+}
