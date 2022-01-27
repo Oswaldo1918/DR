@@ -23,3 +23,83 @@ country_event = {
     add_political_power = 150
 	}
 }
+
+country_event = {
+	id = GAL.2
+	title = GAL.2.t
+	desc = GAL.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = GAL
+		owns_state = 583
+		controls_state = 583
+		owns_state = 590
+		controls_state = 590
+		owns_state = 588
+		controls_state = 588
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.2.a
+    clr_country_flag = GAL_stop_marakumba_up
+			if = {
+			    limit = {
+				has_idea = GAL_marakumba_1
+				NOT = { has_country_flag = GAL_stop_marakumba_up }
+				}
+				set_country_flag = GAL_stop_marakumba_up
+				swap_ideas = {
+							remove_idea = GAL_marakumba_1
+							add_idea = GAL_marakumba_2
+						}
+			}
+	     	if = {
+		 		limit = {
+					has_idea = GAL_marakumba_2
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
+				}
+				set_country_flag = GAL_stop_marakumba_up
+				swap_ideas = {
+							remove_idea = GAL_marakumba_2
+							add_idea = GAL_marakumba_3
+						}
+			}
+			if = {
+		 		limit = {
+					has_idea = GAL_marakumba_3
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
+				}
+				set_country_flag = GAL_stop_marakumba_up
+				swap_ideas = {
+							remove_idea = GAL_marakumba_3
+							add_idea = GAL_marakumba_4
+						}
+			}
+			if = {
+		 		limit = {
+					has_idea = GAL_marakumba_4
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
+				}
+				set_country_flag = GAL_stop_marakumba_up
+				swap_ideas = {
+							remove_idea = GAL_marakumba_4
+							add_idea = GAL_marakumba_5
+						}
+			}
+			if = {
+		 		limit = {
+					has_idea = GAL_marakumba_5
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
+				}
+				set_country_flag = GAL_stop_marakumba_up
+				swap_ideas = {
+							remove_idea = GAL_marakumba_5
+							add_idea = GAL_marakumba_6
+						}
+			}
+	}
+
+}
