@@ -85,7 +85,73 @@ ideas = {
 			GAL_goskomcen_i = {
 	
 			   modifier = {
+			    consumer_goods_factor = 0.05
+		    	stability_factor = 0.05
+			    }
+		    }
+			
+			GAL_gosbank_i = {
+	
+			   modifier = {
+			    consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_goskomtrud_i = {
+	
+			   modifier = {
+		    	stability_factor = 0.05
+			    }
+		    }
+			
+			GAL_gosplan_i = {
+	
+			   modifier = {
+		    	industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.12
+			    }
+		    }
+			
+			GAL_gossnab_i = {
+	
+			   modifier = {
+		    	industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			    }
+		    }
+			
+			GAL_gosstat_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.01
+			    }
+		    }
+			
+			GAL_minvneshtorg_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_PBK_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_rossnab_i = {
+	
+			   modifier = {
 		    	stability_factor = 0.1
+			    }
+		    }
+			
+			GAL_SovMin_i = {
+	
+			   modifier = {
+		    	political_power_factor = 0.05
 			    }
 		    }
 	   }
