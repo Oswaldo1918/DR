@@ -642,10 +642,13 @@ focus_tree = {
 		y = 13
 		
 		completion_reward = {
+		clr_country_flag = GAL_stop_marakumba_up
 			if = {
 			    limit = {
 				has_idea = GAL_marakumba_1
+				NOT = { has_country_flag = GAL_stop_marakumba_up }
 				}
+				set_country_flag = GAL_stop_marakumba_up
 				swap_ideas = {
 							remove_idea = GAL_marakumba_1
 							add_idea = GAL_marakumba_2
@@ -654,7 +657,9 @@ focus_tree = {
 	     	if = {
 		 		limit = {
 					has_idea = GAL_marakumba_2
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
 				}
+				set_country_flag = GAL_stop_marakumba_up
 				swap_ideas = {
 							remove_idea = GAL_marakumba_2
 							add_idea = GAL_marakumba_3
@@ -663,7 +668,9 @@ focus_tree = {
 			if = {
 		 		limit = {
 					has_idea = GAL_marakumba_3
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
 				}
+				set_country_flag = GAL_stop_marakumba_up
 				swap_ideas = {
 							remove_idea = GAL_marakumba_3
 							add_idea = GAL_marakumba_4
@@ -672,7 +679,9 @@ focus_tree = {
 			if = {
 		 		limit = {
 					has_idea = GAL_marakumba_4
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
 				}
+				set_country_flag = GAL_stop_marakumba_up
 				swap_ideas = {
 							remove_idea = GAL_marakumba_4
 							add_idea = GAL_marakumba_5
@@ -681,7 +690,9 @@ focus_tree = {
 			if = {
 		 		limit = {
 					has_idea = GAL_marakumba_5
+					NOT = { has_country_flag = GAL_stop_marakumba_up }
 				}
+				set_country_flag = GAL_stop_marakumba_up
 				swap_ideas = {
 							remove_idea = GAL_marakumba_5
 							add_idea = GAL_marakumba_6
