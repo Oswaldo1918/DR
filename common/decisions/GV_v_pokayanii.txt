@@ -26,17 +26,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+		clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -72,17 +75,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -118,17 +124,20 @@ zahvat_terri = {
         }
 
         complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -164,17 +173,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+       clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -210,17 +222,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+            clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -256,17 +271,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -302,17 +320,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -348,17 +369,20 @@ zahvat_terri = {
         }
 
         complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -394,17 +418,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -440,17 +467,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -486,17 +516,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -532,17 +565,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -577,17 +613,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+      clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
@@ -613,17 +652,20 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        	if = {
-		 		limit = {
-					has_country_flag = 1_deystviye
-				}
-				set_country_flag = 2_deystviya
-			}
+        clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = 1_deystviye }
 				}
 				set_country_flag = 1_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = 1_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = 2_deystviya
 			}
 		}
 
