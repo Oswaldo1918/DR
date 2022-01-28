@@ -10,6 +10,7 @@ import_marakumbi = {
         visible = {
             has_completed_focus = GAL_import_marakumbi
 			NOT = {has_idea = GAL_marakumba_import_3}
+			NOT = {has_idea = GAL_marakumba_6}
         }
 		
 		complete_effect = {
