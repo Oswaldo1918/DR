@@ -25,3 +25,16 @@ zahvat_terri = {
 		}
 	}
 }
+
+
+import_marakumbi = { 
+ icon = generic_prospect_for_resources
+    allowed = {
+    has_completed_focus = GAL_import_marakumbi
+    original_tag = GAL
+	}
+	visible = {
+    has_completed_focus = GAL_import_marakumbi
+    original_tag = GAL
+	}
+}
