@@ -1,0 +1,319 @@
+add_namespace = dk_news
+
+# Начало ГВ через выборы
+news_event = {
+    id = dk_news.1
+	title = dk_news.1.t
+	desc = dk_news.1.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.1.a
+		trigger = {
+			original_tag = CHT
+		}
+	}
+	option = {
+	name = dk_news.1.a
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+
+}	
+# Начало ГВ через ВП
+news_event = {
+    id = dk_news.2
+	title = dk_news.2.t
+	desc = dk_news.2.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.2.a
+		trigger = {
+			original_tag = CHT
+		}
+	}
+
+	option = {
+	name = dk_news.2.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}		
+}	
+# Победа Штазиста "оригинал" 
+news_event = {
+    id = dk_news.3
+	title = dk_news.3.t
+	desc = dk_news.3.d
+	picture = GFX_news_event_073
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.3.a
+		trigger = {
+			original_tag = CHT
+		}
+	}	
+
+	option = {
+	name = dk_news.3.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+}
+# Победа Де Локсли 
+news_event = {
+    id = dk_news.4
+	title = dk_news.4.t
+	desc = dk_news.4.d
+	picture = GFX_news_event_saf_soldiers_2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.4.a
+		trigger = {
+			original_tag = CHT
+		}
+	}	
+
+	option = {
+	name = dk_news.4.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+}
+# Победа Свидетеля
+news_event = {
+    id = dk_news.5
+	title = dk_news.5.t
+	desc = dk_news.5.d
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.5.a
+		trigger = {
+			original_tag = CHT
+		}
+	}
+	
+	option = {
+	name = dk_news.5.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+}
+# Победа Тележного
+news_event = {
+    id = dk_news.6
+	title = dk_news.6.t
+	desc = dk_news.6.d
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.6.a
+		trigger = {
+			original_tag = CHT
+		}
+	}
+	
+	option = {
+	name = dk_news.6.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+}
+# Победа Месяца	
+news_event = {
+    id = dk_news.7
+	title = dk_news.7.t
+	desc = dk_news.7.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.7.a
+		trigger = {
+			original_tag = CHT
+		}
+	}
+	
+	option = {
+	name = dk_news.7.b
+		trigger = { 
+			NOT = { original_tag = CHT }
+		}
+	}
+}
+# "Самокарантин"
+country_event = {
+    id = dk_news.8
+	title = dk_news.8.t
+	desc = dk_news.8.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.8.a
+	}
+}
+# НОД в Москве
+news_event = {
+    id = dk_news.9
+	title = dk_news.9.t
+	desc = dk_news.9.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	trigger = {
+		219 = { is_controlled_by = NOD }
+		219 = { is_owned_by = LAZ }
+		NOD = { has_war_with = LAZ }
+	}
+	option = {
+	name = dk_news.9.a
+		trigger = {
+			original_tag = NOD
+		}
+	}
+	
+	option = {
+	name = dk_news.9.b
+		trigger = { 
+			NOT = { original_tag = NOD }
+		}
+	}
+}
+
+news_event = {
+    id = dk_news.10
+	title = dk_news.10.t
+	desc = dk_news.10.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.10.a
+		trigger = {
+			original_tag = NOD
+		}
+	}
+	
+	option = {
+	name = dk_news.10.b
+		trigger = { 
+			NOT = { original_tag = NOD }
+		}
+	}
+}
+
+news_event = {
+    id = dk_news.11
+	title = dk_news.11.t
+	desc = dk_news.11.d
+	picture = GFX_report_event_dkr_putin_news_event
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.11.a
+		trigger = {
+			original_tag = NOD
+		}
+	}
+	
+	option = {
+	name = dk_news.11.b
+		trigger = { 
+			NOT = { original_tag = NOD }
+		}
+	}
+}
+
+news_event = {
+    id = dk_news.12
+	title = dk_news.12.t
+	desc = dk_news.12.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.12.a
+		trigger = {
+			original_tag = NOD
+		}
+	}
+	
+	option = {
+	name = dk_news.12.b
+		trigger = { 
+			NOT = { original_tag = NOD }
+		}
+	}
+}
+news_event = {
+    id = dk_news.13
+	title = dk_news.13.t
+	desc = dk_news.13.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.13.a
+		trigger = {
+			original_tag = LAZ
+		}
+	set_country_flag = LAZ_reunite_russia_kostil	
+	}
+	
+	option = {
+	name = dk_news.13.b
+		trigger = { 
+			NOT = { original_tag = LAZ }
+		}
+	set_country_flag = LAZ_reunite_russia_kostil	
+	}
+}
