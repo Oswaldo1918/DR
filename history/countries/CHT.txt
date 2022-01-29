@@ -5,57 +5,15 @@ oob = CHT_1936
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.5
-set_technology = {	
+set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_military_police = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	gwtank = 1
-	early_fighter = 1
-    bhammer = 1	
-	tech_support = 1
+	early_fighter = 1	
 }
-
-recruit_character = LAZ_Chat_Leder
-recruit_character = CHT_stazist
-recruit_character = CHT_mesyats
-recruit_character = CHT_telezniy
-recruit_character = CHT_Ahora
-recruit_character = CHT_deloksli
-
-recruit_character = CHT_Cummunist
-recruit_character = CHT_ivan
-recruit_character = CHT_zaytsev
-recruit_character = CHT_Nikolas
-recruit_character = CHT_ivanov
-
-recruit_character = CHT_wladislav_zalujniy
-recruit_character = CHT_anton_simusov
-recruit_character = CHT_ostin_pauers
-recruit_character = CHT_gus
-recruit_character = CHT_roman_latyshev
-recruit_character = CHT_andraste
-recruit_character = CHT_anstal_from_people
-recruit_character = CHT_dmitry_safonov
-recruit_character = CHT_kon_v_palto
-recruit_character = CHT_boy_from_saratov
-recruit_character = CHT_mich_sim
-recruit_character = CHT_weest_wee
-recruit_character = CHT_mich_duke
-recruit_character = evro_fourth
-
-recruit_character = CHT_kot_fritz
-recruit_character = CHT_nik_vas
-recruit_character = CHT_felix_kornilov
-recruit_character = CHT_yuriy_lain
-recruit_character = CHT_field_sekretar
-recruit_character = CHT_wyach_step
-recruit_character = CHT_Ruazerg
-
-recruit_character = CHT_Neon_Petrovich
-recruit_character = CHT_DoomHammer
-recruit_character = CHT_North_demon
 
 add_ideas = {
 	CHT_loksists
@@ -65,7 +23,7 @@ add_ideas = {
 
 set_popularities = {
 	memoism = 38
-	vmestolev = 19
+	communism = 19
 	neutrality = 22
 	anarhostalinism = 11
 	metacommy = 10
@@ -86,3 +44,143 @@ set_politics = {
 }
 
 set_convoys = 40
+
+create_country_leader = {
+	name = "Всечатский Совет"
+	desc = "POLITICS_MODER_SOVET_DESC"
+	picture = "Chat_Leder.dds"
+	expire = "1999.1.1"
+	ideology = postironism
+	traits = {
+		cabinet_crisis
+	}
+}
+
+create_country_leader = {
+	name = "Штазист"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "stazist.dds"
+	expire = "1999.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Кривой Месяц"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "mesyats.dds"
+	expire = "1999.1.1"
+	ideology = libertanian_chuchhe
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Даниил Тележный"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "telezniy.dds"
+	expire = "1999.1.1"
+	ideology = white_polpotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ахора Мазда"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Ahora.dds"
+	expire = "1999.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Де Локсли I"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "deloksli.dds"
+	expire = "1999.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+	name = "Свидетель из Cumмунизма"
+	id = 22800
+	picture = "Cummunist.dds"
+	traits = { old_guard infantry_officer war_hero  }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Иван Гоголев"
+	id = 780
+	portrait_path = "gfx/leaders/CHT/ivan.dds"
+	traits = {  war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Дмитрий Зайцев"
+	id = 779
+	portrait_path = "gfx/leaders/CHT/zaytsev.dds"
+	traits = {  }
+	skill = 1
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolas Louder"
+	id = 778
+	portrait_path = "gfx/leaders/CHT/Nikolas.dds"
+	traits = {  war_hero }
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Саша Иванов"
+	id = 777
+	portrait_path = "gfx/leaders/CHT/ivanov.dds"
+	traits = {  war_hero }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Кривой Месяц"
+	id = 776
+	portrait_path = "gfx/leaders/CHT/mesyats.dds"
+	traits = {  war_hero }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+}
