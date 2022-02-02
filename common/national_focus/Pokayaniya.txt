@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = POK_socoprosi_v_zapadnih_zemlyah
 		icon = GFX_focus_generic_military_academy
-		cost = 5,00
+		cost = 5
 		x = 14
 		y = 0
 
@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = POK_socoprosi_v_vostochnih_zemlyah
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5,00
+		cost = 5
 		x = 16
 		y = 0
 
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = POK_podgotovka_k_viboram
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = POK_socoprosi_v_zapadnih_zemlyah
 		}
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = POK_usilit_ohranu_uchastkov
 		icon = GFX_focus_bg_red_wreath_sold
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = POK_podgotovka_k_viboram
 		}
@@ -52,7 +52,7 @@ focus_tree = {
 	focus = {
 		id = POK_vibori
 		icon = GFX_focus_cht_vybory
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_usilit_ohranu_uchastkov
 		}
@@ -79,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = POK_voennoye_polozheniye
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_vibori
 		}
@@ -111,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = POK_navedeniye_poryadka_v_vostochnih_oblastyah
 		icon = GFX_goal_generic_position_armies
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_voennoye_polozheniye
 		}
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = POK_silniy_president
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_navedeniye_poryadka_v_vostochnih_oblastyah
 		}
@@ -136,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = POK_nam_grozyat_strashniye_veshi_opyat_pridut_communisti
 		icon = GFX_goal_anti_comintern_pact
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_silniy_president
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = POK_silniy_parlament
 		icon = GFX_focus_generic_military_academy
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_navedeniye_poryadka_v_vostochnih_oblastyah
 		}
@@ -161,7 +161,7 @@ focus_tree = {
 	focus = {
 		id = POK_hrami_v_shagovoy_dostupnosti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_silniy_president
 			focus = POK_silniy_parlament
@@ -173,7 +173,7 @@ focus_tree = {
 	focus = {
 		id = POK_memorial
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_silniy_parlament
 		}
@@ -184,7 +184,7 @@ focus_tree = {
 	focus = {
 		id = POK_economicheskiy_liberalism
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_navedeniye_poryadka_v_vostochnih_oblastyah
 		}
@@ -195,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = POK_pokayanskaya_osvoboditelnaya_armiya
 		icon = GFX_focus_generic_little_entente
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_voennoye_polozheniye
 		}
@@ -206,7 +206,7 @@ focus_tree = {
 	focus = {
 		id = POK_opit_nemeckih_osvoboditeley
 		icon = GFX_goal_generic_army_tanks
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_pokayanskaya_osvoboditelnaya_armiya
 		}
@@ -220,7 +220,7 @@ focus_tree = {
 	focus = {
 		id = POK_panzergrad
 		icon = GFX_focus_generic_industry_3
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_opit_nemeckih_osvoboditeley
 		}
@@ -231,7 +231,7 @@ focus_tree = {
 	focus = {
 		id = POK_upor_na_artu
 		icon = GFX_goal_generic_army_artillery2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_pokayanskaya_osvoboditelnaya_armiya
 		}
@@ -245,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = POK_shturmoviki
 		icon = GFX_Stuka
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_pokayanskaya_osvoboditelnaya_armiya
 		}
@@ -259,7 +259,7 @@ focus_tree = {
 	focus = {
 		id = POK_gummanitarniye_bombardirovki
 		icon = GFX_focus_wonderweapons
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_pokayanskaya_osvoboditelnaya_armiya
 		}
@@ -273,7 +273,7 @@ focus_tree = {
 	focus = {
 		id = POK_gummanitarniye_kreposti
 		icon = GFX_goal_generic_air_bomber
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_gummanitarniye_bombardirovki
 		}
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = POK_razgon_parlamenta
 		icon = GFX_goal_pok_beliy_dom
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_nam_grozyat_strashniye_veshi_opyat_pridut_communisti
 		}
@@ -295,7 +295,7 @@ focus_tree = {
 	focus = {
 		id = POK_proekt_opohmel
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = POK_razgon_parlamenta
 		}

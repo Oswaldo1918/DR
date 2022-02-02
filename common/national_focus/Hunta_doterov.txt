@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = DOT_pust_nachnyotsa_VAAGH
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 3,00
+		cost = 3
 		x = 21
 		y = 0
 			completion_reward = {
@@ -22,7 +22,7 @@ focus_tree = {
 	focus = {
 		id = DOT_precratit_bespredel
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_pust_nachnyotsa_VAAGH
 		}
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = DOT_verfi_magadana
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_precratit_bespredel
 		}
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = {
 		id = DOT_vernut_GULAG
 		icon = GFX_focus_spa_save_the_alcazar
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_precratit_bespredel
 		}
@@ -83,7 +83,7 @@ focus_tree = {
 	focus = {
 		id = DOT_poborot_strakh
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_pust_nachnyotsa_VAAGH
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = DOT_gold_Kolymy
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_poborot_strakh
 		}
@@ -123,7 +123,7 @@ focus_tree = {
 	focus = {
 		id = DOT_zavodi_v_vostochnoy_sibiri
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_poborot_strakh
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = DOT_nauchitsya_komandovat
 		icon = GFX_focus_generic_military_academy
-		cost = 8,00
+		cost = 8
 		prerequisite = {
 			focus = DOT_verfi_magadana
 		}
@@ -170,7 +170,7 @@ focus_tree = {
 	focus = {
 		id = DOT_udar_po_volkam
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_nauchitsya_komandovat
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = DOT_vostanovit_infrastruktruru
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_udar_po_volkam
 		}
@@ -223,7 +223,7 @@ focus_tree = {
 	focus = {
 		id = DOT_totalnaya_expluatatsya
 		icon = GFX_focus_SAF_colonialist_crusade
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_udar_po_volkam
 		}
@@ -248,7 +248,7 @@ focus_tree = {
 	focus = {
 		id = DOT_ugroza_DVR
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_nauchitsya_komandovat
 		}
@@ -271,7 +271,7 @@ focus_tree = {
 	focus = {
 		id = DOT_zavodi_v_primorie
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_ugroza_DVR
 		}
@@ -300,7 +300,7 @@ focus_tree = {
 	focus = {
 		id = DOT_verfi_vladivostoka
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_ugroza_DVR
 		}
@@ -324,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = DOT_new_gorizonty
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_vostanovit_infrastruktruru
 		}
@@ -347,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = DOT_velikiy_pohod_na_zapad
 		icon = GFX_focus_ger_strike_at_the_source
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_new_gorizonty
 		}
@@ -364,7 +364,7 @@ focus_tree = {
 	focus = {
 		id = DOT_nizlozhit_geniay
 		icon = GFX_goal_generic_major_war
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_velikiy_pohod_na_zapad
 		}
@@ -386,7 +386,7 @@ focus_tree = {
 	focus = {
 		id = DOT_unichtozhit_Mordor
 		icon = GFX_goal_generic_attack_allies
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_velikiy_pohod_na_zapad
 		}
@@ -411,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = DOT_narastit_dobychu
 		icon = GFX_goal_generic_construction2
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_nizlozhit_geniay
 		}
@@ -434,7 +434,7 @@ focus_tree = {
 	focus = {
 		id = DOT_vopros_s_Pok
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_narastit_dobychu
 		}
@@ -448,7 +448,7 @@ focus_tree = {
 	focus = {
 		id = DOT_war_buryati
 		icon = GFX_goal_generic_cavalry
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_nizlozhit_geniay
 		}
@@ -512,7 +512,7 @@ focus_tree = {
 	focus = {
 		id = DOT_v_obhod
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_vopros_s_Pok
 		}
@@ -537,7 +537,7 @@ focus_tree = {
 	focus = {
 		id = DOT_stepi_Mongolii
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_v_obhod
 		}
@@ -559,7 +559,7 @@ focus_tree = {
 	focus = {
 		id = DOT_mongolskay_kava
 		icon = GFX_goal_generic_cavalry
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_stepi_Mongolii
 		}
@@ -616,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = DOT_dogovor_s_yigurami
 		icon = GFX_goal_generic_improve_relations
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = DOT_mongolskay_kava
 		}
@@ -632,7 +632,7 @@ focus_tree = {
 	focus = {
 		id = DOT_poconchit_s_KZ
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = DOT_dogovor_s_yigurami
 		}
@@ -751,7 +751,7 @@ focus_tree = {
 	focus = {
 		id = DOT_podavit_separatizm
 		icon = GFX_focus_spr_crush_the_revolution
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_poconchit_s_KZ
 		}
@@ -773,7 +773,7 @@ focus_tree = {
 	focus = {
 		id = DOT_priziv_mestnih
 		icon = GFX_focus_generic_little_entente
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_poconchit_s_KZ
 		}
@@ -868,7 +868,7 @@ focus_tree = {
 	focus = {
 		id = DOT_vtorzhenie_po_Volge
 		icon = GFX_goal_generic_attack_allies
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_priziv_mestnih
 		}
@@ -924,7 +924,7 @@ focus_tree = {
 	focus = {
 		id = DOT_war_kalmik
 		icon = GFX_goal_generic_cavalry
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_vtorzhenie_po_Volge
 		}
@@ -986,7 +986,7 @@ focus_tree = {
 	focus = {
 		id = DOT_otryady_Vovana
 		icon = GFX_focus_ger_assassinate_mussolini
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_vtorzhenie_po_Volge
 		}
@@ -1046,7 +1046,7 @@ focus_tree = {
 	focus = {
 		id = DOT_atakovat_Kuban
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 7,00
+		cost = 7
 		prerequisite = {
 			focus = DOT_war_kalmik
 		}
@@ -1102,7 +1102,7 @@ focus_tree = {
 	focus = {
 		id = DOT_nashi_kazaki
 		icon = GFX_goal_generic_cavalry
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_atakovat_Kuban
 		}
@@ -1162,7 +1162,7 @@ focus_tree = {
 	focus = {
 		id = DOT_dary_Pridonya
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_atakovat_Kuban
 		}
@@ -1182,7 +1182,7 @@ focus_tree = {
 	focus = {
 		id = DOT_sokruchit_ChP
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_nashi_kazaki
 		}
@@ -1338,7 +1338,7 @@ focus_tree = {
 	focus = {
 		id = DOT_dovit_vishivshih
 		icon = GFX_goal_demand_sudetenland
-		cost = 7,00
+		cost = 7
 		prerequisite = {
 			focus = DOT_sokruchit_ChP
 		}
@@ -1491,7 +1491,7 @@ focus_tree = {
 	focus = {
 		id = DOT_chas_X
 		icon = GFX_focus_attack_soviet
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = DOT_nachat_mobilization
 		}
@@ -1704,7 +1704,7 @@ focus_tree = {
 	focus = {
 		id = DOT_bratskiy_mir
 		icon = GFX_goal_generic_improve_relations
-		cost = 7,00
+		cost = 7
 		prerequisite = {
 			focus = DOT_new_gorizonty
 		}
@@ -1724,7 +1724,7 @@ focus_tree = {
 	focus = {
 		id = DOT_Pact_Lybertsi_Kamchatka
 		icon = GFX_goal_generic_military_deal
-		cost = 7,00
+		cost = 7
 		prerequisite = {
 			focus = DOT_bratskiy_mir
 		}
@@ -1741,7 +1741,7 @@ focus_tree = {
 	focus = {
 		id = DOT_mirnaya_integratsia
 		icon = GFX_focus_generic_treaty
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_Pact_Lybertsi_Kamchatka
 		}
@@ -1763,7 +1763,7 @@ focus_tree = {
 	focus = {
 		id = DOT_bro_dyymvirat
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 6,00
+		cost = 6
 		prerequisite = {
 			focus = DOT_Pact_Lybertsi_Kamchatka
 		}
@@ -1788,7 +1788,7 @@ focus_tree = {
 	focus = {
 		id = DOT_war_yakuti
 		icon = GFX_focus_generic_manpower
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_unichtozhit_Mordor
 		}
@@ -1850,7 +1850,7 @@ focus_tree = {
 	focus = {
 		id = DOT_peret_naprolon
 		icon = GFX_focus_generic_strike_at_democracy3
-		cost = 4,00
+		cost = 4
 		prerequisite = {
 			focus = DOT_vopros_s_Pok
 		}
@@ -1891,7 +1891,7 @@ focus_tree = {
 	focus = {
 		id = DOT_new_Russia
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_dovit_vishivshih
 		}
@@ -1905,7 +1905,7 @@ focus_tree = {
 	focus = {
 		id = DOT_unichtozhit_democraty
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_peret_naprolon
 		}
@@ -1919,7 +1919,7 @@ focus_tree = {
 	focus = {
 		id = DOT_podchinit_ih
 		icon = GFX_focus_cze_german_puppet
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_unichtozhit_democraty
 		}
@@ -1952,7 +1952,7 @@ focus_tree = {
 	focus = {
 		id = DOT_pokazatelnie_sydi
 		icon = GFX_focus_hol_war_on_pacifism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_unichtozhit_democraty
 		}
@@ -1966,7 +1966,7 @@ focus_tree = {
 	focus = {
 		id = DOT_nachat_mobilization
 		icon = GFX_focus_generic_little_entente
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_naratstit_promky
 		}
@@ -2051,7 +2051,7 @@ focus_tree = {
 	focus = {
 		id = DOT_naratstit_promky
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = DOT_pokazatelnie_sydi
 		}

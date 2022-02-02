@@ -12,7 +12,7 @@ continuous_focus_position =  { x = 50 y = 100 }
 focus = {
 		id = CHT_roylist_time_1
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 1,00
+		cost = 1
 		
 		mutually_exclusive = {
 			focus = CHT_penza_grupe_1
@@ -30,7 +30,7 @@ focus = {
 	focus = {
 		id = CHT_cruseeders_new_era_1
 		icon = GFX_focus_cht_crusaders_new_era
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_roylist_time_1
 		}
@@ -45,7 +45,7 @@ focus = {
 	focus = {
 		id = CHT_dobrovolec_army_1
 		icon = GFX_focus_generic_little_entente
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_roylist_time_1
 		}
@@ -60,7 +60,7 @@ focus = {
 	focus = {
 		id = CHT_crusade_against_levakov_1
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_cruseeders_new_era_1
 		}
@@ -264,7 +264,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_podelit_chat_1
 		icon = GFX_focus_cht_konfederation_monarhy
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_new_moderators_1
 		}
@@ -329,7 +329,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_naemniki_1
 		icon = GFX_focus_cht_naemniki_1
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_inostrannya_pomosh_1
 		}
@@ -428,7 +428,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_free_economy_1
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_confederation_of_moderatorstv_1
 		}
@@ -452,7 +452,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_feodal_democracy_1
 		icon = GFX_focus_cht_feodal_democracy
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_confederation_of_moderatorstv_1
 		}
@@ -474,7 +474,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_ogranichennoe_sderzhevanie_1
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_feodal_democracy_1
 		}
@@ -499,7 +499,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_stal_dlya_oruzheinikov_1
 		icon = GFX_focus_generic_steel
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_free_economy_1
 		}
@@ -527,7 +527,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_oruzheinye_mastera_1
 		icon = GFX_goal_generic_small_arms
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_stal_dlya_oruzheinikov_1
 		}
@@ -554,7 +554,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_connect_moderatorstv_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_free_economy_1
 		}
@@ -593,7 +593,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_zemlya_and_volya_1
 		icon = GFX_focus_cht_zhitnica_evropy
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_connect_moderatorstv_1
 		}
@@ -617,7 +617,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_penza_grupe_1
 		icon = GFX_focus_cht_libertarian_chuchheists
-		cost = 1,00
+		cost = 1
 		
 		mutually_exclusive = {
 			focus = CHT_roylist_time_1
@@ -632,7 +632,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_penza_army_1
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_roylist_time_1
 			focus = CHT_penza_grupe_1
@@ -679,7 +679,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_communal_factories_1
 		icon = GFX_focus_generic_industry_1
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = CHT_penza_grupe_1
 		}
@@ -752,7 +752,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_raschirit_podderzku_oficerstva_1
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 1,00
+		cost = 1
 		prerequisite = {
 			focus = CHT_penza_grupe_1
 		}
@@ -767,7 +767,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_militarize_peasents_1
 		icon = GFX_focus_secret_rearmament
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = CHT_penza_grupe_1
 		}
@@ -782,7 +782,7 @@ create_corps_commander = {
 	focus = {
 		id = CHT_oficeer_perevorot_1
 		icon = GFX_focus_cht_klonirovanie
-		cost = 1,00
+		cost = 1
 		prerequisite = {
 			focus = CHT_communal_factories_1
 		}
@@ -829,7 +829,7 @@ remove_unit_leader = 8760}
 	focus = {
 		id = CHT_expropriet_predpriates_1
 		icon = GFX_focus_grab_factories
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_oficeer_perevorot_1
 		}
@@ -843,7 +843,7 @@ remove_unit_leader = 8760}
 	focus = {
 		id = CHT_duh_free_territory_1
 		icon = GFX_focus_cht_free_territory
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_oficeer_perevorot_1
 		}
@@ -857,7 +857,7 @@ remove_unit_leader = 8760}
 	focus = {
 		id = CHT_partisans_1
 		icon = GFX_focus_prc_infiltration
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_duh_free_territory_1
 		}
@@ -875,7 +875,7 @@ remove_unit_leader = 8760}
 focus = {
 		id = CHT_anarh_economy_1
 		icon = GFX_focus_generic_self_management
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_no_gods_no_masters_1
 		}
@@ -899,7 +899,7 @@ focus = {
 	focus = {
 		id = CHT_razvedka_resursov_1
 		icon = GFX_goal_generic_construction2
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_razvitie_voourezheniy_1
 		}
@@ -925,7 +925,7 @@ focus = {
 	focus = {
 		id = CHT_progect_Samogon_1
 		icon = GFX_focus_wonderweapons
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_autarcy_1
 		}
@@ -941,7 +941,7 @@ focus = {
 	focus = {
 		id = CHT_comitet_defense_anarhy_1
 		icon = GFX_goal_generic_defence
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_barternaia_economica_1
 			focus = CHT_tovarniy_znak_vozhdia_1
@@ -956,7 +956,7 @@ focus = {
 	focus = {
 		id = CHT_autarcy_1
 		icon = GFX_goal_generic_oil_refinery
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_razvedka_resursov_1
 		}
@@ -971,7 +971,7 @@ focus = {
 	focus = {
 		id = CHT_dezetsentrirovannoe_planirovanie_1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_barternaia_economica_1
 		}
@@ -985,7 +985,7 @@ focus = {
 	focus = {
 		id = CHT_razvitie_voourezheniy_1
 		icon = GFX_goal_generic_army_artillery
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_barternaia_economica_1
 			focus = CHT_tovarniy_znak_vozhdia_1
@@ -1006,7 +1006,7 @@ focus = {
 	focus = {
 		id = CHT_barternaia_economica_1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_anarh_economy_1
 		}
@@ -1024,7 +1024,7 @@ focus = {
 	focus = {
 		id = CHT_economy_people_obschin_1
 		icon = GFX_goal_generic_national_unity
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_dezetsentrirovannoe_planirovanie_1
 		}
@@ -1042,7 +1042,7 @@ focus = {
 	focus = {
 		id = CHT_predsedatel_mesyats_1
 		icon = GFX_focus_cht_mesyats
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_no_gods_no_masters_1
 		}
@@ -1073,7 +1073,7 @@ focus = {
 	focus = {
 		id = CHT_vooruzhennyi_narod_1
 		icon = GFX_goal_rhineland
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_predsedatel_mesyats_1
 		}
@@ -1086,7 +1086,7 @@ focus = {
 	focus = {
 		id = CHT_obshinnaya_milicia_1
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_vooruzhennyi_narod_1
 		}
@@ -1100,7 +1100,7 @@ focus = {
 	focus = {
 		id = CHT_idealogical_fanatism_1
 		icon = GFX_focus_eye_in_fire
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_obshinnaya_milicia_1
 		}
@@ -1123,7 +1123,7 @@ focus = {
 	focus = {
 		id = CHT_isolation_1
 		icon = GFX_focus_cht_isolation
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_predsedatel_mesyats_1
 		}
@@ -1137,7 +1137,7 @@ focus = {
 	focus = {
 		id = CHT_podgotovka_diversionnykh_otryadov_1
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_isolation_1
 		}
@@ -1165,7 +1165,7 @@ focus = {
 	focus = {
 		id = CHT_zaslon_ot_gosudarstv_1
 		icon = GFX_goal_generic_fortify_city
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_podgotovka_diversionnykh_otryadov_1
 		}
@@ -1179,7 +1179,7 @@ focus = {
 	focus = {
 		id = CHT_podderzhat_culture_samobytnyst_1
 		icon = GFX_focus_big_brain
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_isolation_1
 		}
@@ -1197,7 +1197,7 @@ focus = {
 	focus = {
 		id = CHT_natural_granycy_chata_1
 		icon = GFX_focus_generic_little_entente
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_podderzhat_culture_samobytnyst_1
 		}
@@ -1220,7 +1220,7 @@ focus = {
 	focus = {
 		id = CHT_holy_war_1
 		icon = GFX_focus_cht_attack_nod
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_natural_granycy_chata_1
 		}
@@ -1247,7 +1247,7 @@ focus = {
 	focus = {
 		id = CHT_trebovat_territorii_1
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_natural_granycy_chata_1
 		}
@@ -1272,7 +1272,7 @@ focus = {
 	focus = {
 		id = CHT_tovarniy_znak_vozhdia_1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_anarh_economy_1
 		}
@@ -1289,7 +1289,7 @@ focus = {
 	focus = {
 		id = CHT_mayak_libertarnogo_chuchhe_1
 		icon = GFX_goal_generic_military_sphere
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_holy_war_1
 		}
@@ -1306,7 +1306,7 @@ focus = {
 	focus = {
 		id = CHT_svyaz_mezhdu_obchinami_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_tovarniy_znak_vozhdia_1
 		}
@@ -1374,7 +1374,7 @@ focus = {
 	focus = {
 		id = CHT_perestroit_apparat_upravleniz_1
 		icon = GFX_focus_generic_monarchy_1
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_new_moderators_1
 		}
@@ -1391,7 +1391,7 @@ focus = {
 focus = {
 		id = CHT_no_gods_no_masters_1
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_people_war_1
 		}
@@ -1484,7 +1484,7 @@ focus = {
 	focus = {
 		id = CHT_people_war_1
 		icon = GFX_goal_generic_secret_weapon
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_expropriet_predpriates_1
 		}
@@ -1501,7 +1501,7 @@ focus = {
 	focus = {
 		id = CHT_predostavit_sredstva_i_plany_1
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = CHT_national_kapitalists_1
 		}
@@ -1517,7 +1517,7 @@ focus = {
 	focus = {
 		id = CHT_strategic_shcool_EWC_1
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_chat_nation_1
 		}
@@ -1534,7 +1534,7 @@ focus = {
 	focus = {
 		id = CHT_tank_school_1
 		icon = GFX_goal_generic_army_tanks
-		cost = 5,00
+		cost = 5
 		
 		prerequisite = {
 			focus = CHT_motors_contracts_1
@@ -1551,7 +1551,7 @@ focus = {
 	focus = {
 		id = CHT_absolute_power_1
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_fate_monarh_1
 		}
@@ -1564,7 +1564,7 @@ focus = {
 	focus = {
 		id = CHT_konec_gorodov_1
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_razvit_industriu_1
 		}
@@ -1577,7 +1577,7 @@ focus = {
 	focus = {
 		id = CHT_stavlenniki_Mazdy_1
 		icon = GFX_focus_generic_self_management
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_strategic_shcool_EWC_1
 		}
@@ -1594,7 +1594,7 @@ focus = {
 	focus = {
 		id = CHT_motors_contracts_1
 		icon = GFX_focus_generic_license_production
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_national_army_1
 			
@@ -1619,7 +1619,7 @@ focus = {
 	focus = {
 		id = CHT_pereNODit_Nod_1
 		icon = GFX_focus_cht_attack_nod
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_vneshnya_politika_1
 		}
@@ -1633,7 +1633,7 @@ focus = {
 	focus = {
 		id = CHT_national_army_1
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_chat_nation_1
 		}
@@ -1647,7 +1647,7 @@ completion_reward = {
 	focus = {
 		id = CHT_united_war_concern_1
 		icon = GFX_focus_cze_military_research_institute
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_predostavit_sredstva_i_plany_1
 		}
@@ -1661,7 +1661,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_pokorit_malye_strany_1
 		icon = GFX_goal_generic_military_deal
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_vneshnya_politika_1
 		}
@@ -1681,7 +1681,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_poborot_soprotivlenie_1
 		icon = GFX_focus_cht_klonirovanie
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_absolute_power_1
 		}
@@ -1697,7 +1697,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_razvit_industriu_1
 		icon = GFX_goal_generic_construct_civilian
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_predostavit_sredstva_i_plany_1
 		}
@@ -1711,7 +1711,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_chat_nation_1
 		icon = GFX_focus_ger_reichskommisariats
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_edinnyi_i_nedelymyi_1
 		}
@@ -1726,7 +1726,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_vstupit_antidoc_pakt_1
 		icon = GFX_goal_anti_comintern_pact
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_vneshnya_politika_1
 		}
@@ -1744,7 +1744,7 @@ add_ideas = CHT_united_war_concern
 	focus = {
 		id = CHT_vneshnya_politika_1
 		icon = GFX_goal_generic_territory_or_war
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_edinnyi_i_nedelymyi_1
 		}
@@ -1758,7 +1758,7 @@ completion_reward = {
 	focus = {
 		id = CHT_national_kapitalists_1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_edinnyi_i_nedelymyi_1
 		}
@@ -1771,7 +1771,7 @@ completion_reward = {
 	focus = {
 		id = CHT_razrabotka_resursov_1
 		icon = GFX_goal_generic_construction2
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_infrastructere_ulucshenie_1
 			
@@ -1797,7 +1797,7 @@ completion_reward = {
 	focus = {
 		id = CHT_soc_strat_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_chat_nation_1
 		}
@@ -1810,7 +1810,7 @@ completion_reward = {
 	focus = {
 		id = CHT_infrastructere_ulucshenie_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_united_war_concern_1
 		}
@@ -1887,7 +1887,7 @@ completion_reward = {
 	focus = {
 		id = CHT_uni_cap_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_konec_gorodov_1
 		}
@@ -1900,7 +1900,7 @@ completion_reward = {
 	focus = {
 		id = CHT_fate_monarh_1
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_perevorot_Ahura_Mazdy_1
 		}
@@ -1915,7 +1915,7 @@ completion_reward = {
 	focus = {
 		id = CHT_motorisation_army_1
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_motors_contracts_1
 			focus = CHT_infrastructere_ulucshenie_1
@@ -1929,7 +1929,7 @@ completion_reward = {
 	focus = {
 		id = CHT_edinnyi_i_nedelymyi_1
 		icon = GFX_focus_hol_united_netherlands
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_poborot_soprotivlenie_1
 		}
@@ -1948,7 +1948,7 @@ completion_reward = {
 	focus = {
 		id = CHT_obdumat_plan_1
 		icon = GFX_goal_generic_position_armies
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_united_chat_army_1
 		}
@@ -1968,7 +1968,7 @@ completion_reward = {
 	focus = {
 		id = CHT_great_plan_oborony_1
 		icon = GFX_goal_generic_defence
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_polnyi_neutralitet_1
 			focus = CHT_ogranichennoe_sderzhevanie_1
@@ -2065,7 +2065,7 @@ completion_reward = {
 	focus = {
 		id = CHT_united_chat_army_1
 		icon = GFX_focus_chi_army_reform
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_great_plan_oborony_1
 		}
@@ -2081,7 +2081,7 @@ completion_reward = {
 	focus = {
 		id = CHT_enemy_planes_vzyati_na_mushku_1
 		icon = GFX_focus_generic_air_defense
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_united_chat_army_1
 		}
@@ -2143,7 +2143,7 @@ completion_reward = {
 	focus = {
 		id = CHT_perevorot_Ahura_Mazdy_1
 		icon = GFX_goal_support_fascism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_podelit_chat_1
 		}
@@ -2167,7 +2167,7 @@ completion_reward = {
 	focus = {
 		id = CHT_polnyi_neutralitet_1
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CHT_feodal_democracy_1
 		}
@@ -2186,7 +2186,7 @@ completion_reward = {
 	focus = {
 		id = CHT_obmen_spetsialistami_1
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CHT_svyaz_mezhdu_obchinami_1
 		}
