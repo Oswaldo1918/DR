@@ -22,24 +22,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
 		clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -71,24 +71,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -120,24 +120,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 
         complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -169,24 +169,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
        clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -218,24 +218,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
             clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -267,24 +267,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -316,24 +316,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -365,24 +365,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 
         complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -414,24 +414,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -463,24 +463,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -512,24 +512,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -561,24 +561,24 @@ zahvat_terri = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -587,15 +587,15 @@ zahvat_terri = {
 	      transfer_state = 573
 		    if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 			}
 		}
     }
@@ -609,24 +609,24 @@ zahvat_terri = {
 			factor = 4
 		}
         visible = {
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
       clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
@@ -648,30 +648,30 @@ zahvat_terri = {
 			factor = 4
 		}
         visible = {
-			NOT = { has_country_flag = 2_deystviya }
+			NOT = { has_country_flag = dva_deystviya }
         }
 		
 		complete_effect = {
         clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
-					NOT = { has_country_flag = 1_deystviye }
+					NOT = { has_country_flag = one_deystviye }
 				}
-				set_country_flag = 1_deystviye
+				set_country_flag = one_deystviye
 				set_country_flag = stop_deystviya				
 			}
 			if = {
 		 		limit = {
-					has_country_flag = 1_deystviye
+					has_country_flag = one_deystviye
 					NOT = { has_country_flag = stop_deystviya }
 				}
-				set_country_flag = 2_deystviya
+				set_country_flag = dva_deystviya
 			}
 		}
 
 		remove_effect = {
 	division_template = {
-	name = "Ополчение"
+	name = "Opolcheniye"
 									
 	division_names_group = 123_INF_01
 
@@ -685,15 +685,15 @@ zahvat_terri = {
 	}
 							capital_scope = {
 									create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Ополчение" start_experience_factor = -0.1"
+											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
 											owner = ROOT
 										}
 										create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Ополчение" start_experience_factor = -0.1"
+											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
 											owner = ROOT
 										}
 										create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Ополчение" start_experience_factor = -0.1"
+											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
 											owner = ROOT
 										}
 										}
