@@ -30,7 +30,20 @@ set_technology = {
 	bicycle_infantry = 1
 }
 
-
+recruit_character = NOD_Fedorov
+recruit_character = NOD_Barkov
+recruit_character = NOD_ozon
+recruit_character = NOD_Alex_Hirurg
+recruit_character = NOD_Ivan_Ohlabystin
+recruit_character = NOD_patr_feodor
+recruit_character = NOD_nik_star
+recruit_character = NOD_zah_pril
+recruit_character = NOD_mic_sove
+recruit_character = NOD_mar_kata
+recruit_character = NOD_saj_umal
+recruit_character = NOD_ste_zoto
+recruit_character = NOD_corp_one
+recruit_character = SOV_mikhail_kalinin
 
 set_popularities = {
 	fascism = 75
@@ -50,73 +63,4 @@ set_convoys = 40
 add_ideas = {
     NOD_suverennaya_ter
 	NOD_bez_putina
-}
-
-create_country_leader = {
-	name = "Евгений Федоров"
-	desc = "POLITICS_FEDOROV_DESC"
-	picture = "Fedorov.dds"
-	expire = "1999.1.1"
-	ideology = fascism_ideology
-	traits = {
-		coordinator 
-	}
-}
-create_country_leader = {
-	name = "Роман Барков"
-	desc = "POLITICS_BARKOV_DESC"
-	picture = "барков.dds"
-	expire = "1999.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Роман Барков"
-	id = 12030
-	picture = "барков.dds"
-	traits = { infantry_officer war_hero  }
-	skill = 3
-
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Роман Озонов"
-	picture = "ozon.dds"
-	traits = { infantry_officer expert_improviser }
-	id = 12031
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Александр Хирург"
-	picture = "Alex_Hirurg.dds"
-	traits = { politically_connected }
-	id = 12032
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Иван Охлобыстин"
-	picture = "Ivan_Ohlabystin.dds"
-	traits = { harsh_leader trait_reckless }
-	id = 12033
-	skill = 1
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
 }
