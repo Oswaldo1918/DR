@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = KUR_I_etazh
 		icon = GFX_goal_generic_political_pressure
-		cost = 2,00
+		cost = 2
 		x = 13
 		y = 0
 
@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = KUR_raskrit_vrazh_shemi
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		x = 27
 		y = 0
 
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = KUR_minoboroni
 		icon = GFX_goal_generic_military_sphere
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_I_etazh
 		}
@@ -38,7 +38,7 @@ focus_tree = {
 	focus = {
 		id = KUR_smotr_sil
 		icon = GFX_focus_cht_klonirovanie
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_minoboroni
 		}
@@ -49,7 +49,7 @@ focus_tree = {
 	focus = {
 		id = KUR_no_VSU
 		icon = GFX_LAZ_chistka_1
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_smotr_sil
 		}
@@ -63,7 +63,7 @@ focus_tree = {
 	focus = {
 		id = KUR_filtr_VSU
 		icon = GFX_focus_bg_red_wreath_sold
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_smotr_sil
 		}
@@ -77,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = KUR_zampoliti_KPU
 		icon = GFX_focus_generic_military_mission
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_filtr_VSU
 		}
@@ -91,7 +91,7 @@ focus_tree = {
 	focus = {
 		id = KUR_avtomat_delo
 		icon = GFX_LAZ_chistka_2
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_minoboroni
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = KUR_kompomis
 		icon = GFX_goal_generic_improve_relations
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_avtomat_delo
 		}
@@ -113,7 +113,7 @@ focus_tree = {
 	focus = {
 		id = KUR_verbovka_new_sutevtsev
 		icon = GFX_focus_generic_little_entente
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_filtr_VSU
 			focus = KUR_kompomis
@@ -128,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = KUR_siloviki
 		icon = GFX_goal_generic_demand_territory
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_I_etazh
 		}
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = KUR_boevie_druzhini
 		icon = GFX_focus_cht_revolutionary_army
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_siloviki
 		}
@@ -153,7 +153,7 @@ focus_tree = {
 	focus = {
 		id = KUR_opora_na_organi
 		icon = GFX_focus_bsh_poryadok_v_strane
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_siloviki
 		}
@@ -167,7 +167,7 @@ focus_tree = {
 	focus = {
 		id = KUR_sovmilitioner
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_boevie_druzhini
 			focus = KUR_opora_na_organi
@@ -179,7 +179,7 @@ focus_tree = {
 	focus = {
 		id = KUR_dobit_diversantov
 		icon = GFX_focus_cze_german_puppet
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_sovmilitioner
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = KUR_nagrazhdenie
 		icon = GFX_goal_generic_national_unity
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_dobit_diversantov
 		}
@@ -201,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = KUR_MVD
 		icon = GFX_goal_generic_political_pressure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_I_etazh
 		}
@@ -212,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = KUR_operatsiya_Maskarad
 		icon = GFX_focus_SOV_the_last_purge
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_MVD
 		}
@@ -227,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = KUR_front_protiv_Platoshkina
 		icon = GFX_focus_SOV_purge_bukharinists
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_MVD
 		}
@@ -242,7 +242,7 @@ focus_tree = {
 	focus = {
 		id = KUR_front_protiv_KPRF
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_MVD
 		}
@@ -257,7 +257,7 @@ focus_tree = {
 	focus = {
 		id = KUR_pilkiy_kontinent
 		icon = GFX_focus_por_latin_american_communism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_operatsiya_Maskarad
 			focus = KUR_front_protiv_Platoshkina
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = KUR_komandirovka_v_BRA
 		icon = GFX_goal_generic_position_armies
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_pilkiy_kontinent
 		}
@@ -281,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = KUR_mineconomi
 		icon = GFX_goal_generic_production
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_I_etazh
 		}
@@ -292,7 +292,7 @@ focus_tree = {
 	focus = {
 		id = KUR_nauch_proizvod_baza
 		icon = GFX_goal_generic_production2
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_mineconomi
 		}
@@ -303,7 +303,7 @@ focus_tree = {
 	focus = {
 		id = KUR_gospredpriyatiya
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_nauch_proizvod_baza
 		}
@@ -314,7 +314,7 @@ focus_tree = {
 	focus = {
 		id = KUR_vosstanovit_zhd
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_gospredpriyatiya
 		}
@@ -325,7 +325,7 @@ focus_tree = {
 	focus = {
 		id = KUR_stroyki_komsomol
 		icon = GFX_focus_generic_join_comintern
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_vosstanovit_zhd
 		}
@@ -339,7 +339,7 @@ focus_tree = {
 	focus = {
 		id = KUR_narodnie_predpriyatiya
 		icon = GFX_BEL_socialist_infrastructure2
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_nauch_proizvod_baza
 		}
@@ -350,7 +350,7 @@ focus_tree = {
 	focus = {
 		id = KUR_aktsii_rabochim
 		icon = GFX_cht_bumagi_ruka
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_narodnie_predpriyatiya
 		}
@@ -361,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = KUR_vlozhitsya_v_infrastrukturu
 		icon = GFX_goal_generic_construct_civilian
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_aktsii_rabochim
 		}
@@ -372,7 +372,7 @@ focus_tree = {
 	focus = {
 		id = KUR_SOLIDARIZM_SUKA
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_raskrit_vrazh_shemi
 		}
@@ -383,7 +383,7 @@ focus_tree = {
 	focus = {
 		id = KUR_putinsocrev
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_SOLIDARIZM_SUKA
 		}
@@ -394,7 +394,7 @@ focus_tree = {
 	focus = {
 		id = KUR_natsimperstvo
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_putinsocrev
 		}
@@ -405,7 +405,7 @@ focus_tree = {
 	focus = {
 		id = KUR_taktika_neozhid_otstypleniya
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_natsimperstvo
 		}
@@ -416,7 +416,7 @@ focus_tree = {
 	focus = {
 		id = KUR_kachestvo_a_ne_chislo
 		icon = GFX_focus_chi_army_reform
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_no_VSU
 		}
@@ -427,7 +427,7 @@ focus_tree = {
 	focus = {
 		id = KUR_stroyki_sutevtsi
 		icon = GFX_goal_generic_soviet_construction
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_vosstanovit_zhd
 		}
@@ -441,7 +441,7 @@ focus_tree = {
 	focus = {
 		id = KUR_koordinats_sovet
 		icon = GFX_goal_generic_national_unity
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_vlozhitsya_v_infrastrukturu
 			focus = KUR_stroyki_sutevtsi
@@ -454,7 +454,7 @@ focus_tree = {
 	focus = {
 		id = KUR_putin_orden_progerssorov
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_SOLIDARIZM_SUKA
 		}
@@ -465,7 +465,7 @@ focus_tree = {
 	focus = {
 		id = KUR_kasta_upravlentsev
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_putin_orden_progerssorov
 		}
@@ -476,7 +476,7 @@ focus_tree = {
 	focus = {
 		id = KUR_intsitut_issledovaniy_peregod_period
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_kasta_upravlentsev
 		}
@@ -487,7 +487,7 @@ focus_tree = {
 	focus = {
 		id = KUR_vstupit_v_NOD
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_intsitut_issledovaniy_peregod_period
 		}
@@ -504,7 +504,7 @@ focus_tree = {
 	focus = {
 		id = KUR_monopoliya_na_politiku
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = KUR_taktika_neozhid_otstypleniya
 		}

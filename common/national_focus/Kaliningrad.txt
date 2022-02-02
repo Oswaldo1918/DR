@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = KLG_plohie_vesti
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 2,00
+		cost = 2
 		x = 10
 		y = 0
 			completion_reward = {
@@ -24,7 +24,7 @@ focus_tree = {
 	focus = {
 		id = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_plohie_vesti
 		}
@@ -40,7 +40,7 @@ focus_tree = {
 	focus = {
 		id = KLG_nachat_mobilizatsiy
 		icon = GFX_focus_generic_little_entente
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
 		}
@@ -54,7 +54,7 @@ focus_tree = {
 	focus = {
 		id = KLG_otkrut_sklady
 		icon = GFX_goal_generic_small_arms
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_nachat_mobilizatsiy
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = KLG_vydat_gun_people
 		icon = GFX_focus_generic_little_entente
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_otkrut_sklady
 		}
@@ -120,7 +120,7 @@ focus_tree = {
 	focus = {
 		id = KLG_lion_baltika
 		icon = GFX_focus_eng_special_air_service
-		cost = 1,00
+		cost = 1
 		prerequisite = {
 			focus = KLG_nachat_mobilizatsiy
 		}
@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = KLG_komendantskiy_chas
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 1,00
+		cost = 1
 		prerequisite = {
 			focus = KLG_lion_baltika
 		}
@@ -187,7 +187,7 @@ focus_tree = {
 	focus = {
 		id = KLG_economoka_voennogo_vremeny
 		icon = GFX_focus_generic_tank_production
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_vystyplenie_Verhovnogoglavtokomanduyzhego
 		}
@@ -282,7 +282,7 @@ focus_tree = {
 	focus = {
 		id = KLG_obligatsii_voen_zayma
 		icon = GFX_focus_cht_cumpital
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = KLG_economoka_voennogo_vremeny
 		}
@@ -296,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = KLG_trudovaya_mobilizatsiya
 		icon = GFX_goal_generic_construction2
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = KLG_obligatsii_voen_zayma
 		}
@@ -310,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = KLG_reconstruktsia_voennih_zavodov
 		icon = GFX_goal_generic_small_arms
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = KLG_economoka_voennogo_vremeny
 		}

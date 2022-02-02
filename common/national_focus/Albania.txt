@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = ALB_Khoja_Legacy
 		icon = GFX_focus_generic_soviet_politics
-		cost = 10,00
+		cost = 10
 		x = 14
 		y = 0
 		completion_reward = {
@@ -21,7 +21,7 @@ focus_tree = {
 	focus = {
 		id = ALB_kozlovodstvo
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_Khoja_Legacy
 		}
@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = ALB_collectivization
 		icon = GFX_focus_prc_agrarian_socialism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_Khoja_Legacy
 		}
@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = ALB_more_bunkers
 		icon = GFX_goal_generic_fortify_city
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_Khoja_Legacy
 		}
@@ -61,7 +61,7 @@ focus_tree = {
 	focus = {
 		id = ALB_open_new_factories
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_collectivization
 		}
@@ -107,7 +107,7 @@ focus_tree = {
 	focus = {
 		id = ALB_AGITPROP
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_kozlovodstvo
 		}
@@ -124,7 +124,7 @@ focus_tree = {
 	focus = {
 		id = ALB_railway_between_cities
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_Khoja_Legacy
 		}
@@ -144,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = ALB_tirana_university
 		icon = GFX_focus_research
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_railway_between_cities
 		}
@@ -161,7 +161,7 @@ focus_tree = {
 	focus = {
 		id = ALB_opening_of_the_century
 		icon = GFX_focus_big_brain
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_tirana_university
 		}
@@ -181,7 +181,7 @@ focus_tree = {
 	focus = {
 		id = ALB_refuel_the_generator
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_opening_of_the_century
 		}
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = ALB_arrange_a_dressing_down_for_the_players
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = ALB_refuel_the_generator
 		}
@@ -217,7 +217,7 @@ focus_tree = {
 	focus = {
 		id = ALB_goat_hunting
 		icon = GFX_goat_hunting
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
@@ -241,7 +241,7 @@ focus_tree = {
 	focus = {
 		id = ALB_the_right_skating_rink
 		icon = GFX_the_right_skating_rink
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_goat_hunting
 		}
@@ -269,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = ALB_purge_of_players
 		icon = GFX_LAZ_focus_reznya
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
@@ -301,7 +301,7 @@ focus_tree = {
 	focus = {
 		id = ALB_purge_of_sympathizers
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_purge_of_players
 		}
@@ -327,7 +327,7 @@ focus_tree = {
 	focus = {
 		id = ALB_chess_segregation
 		icon = GFX_chess
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = ALB_beat_the_players
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_chess_segregation
 		}
@@ -365,7 +365,7 @@ focus_tree = {
 	focus = {
 		id = ALB_mobilize_loyal
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
@@ -381,7 +381,7 @@ focus_tree = {
 	focus = {
 		id = ALB_strengthen_the_pressure_of_AGITPROP
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = ALB_mobilize_loyal
 		}
@@ -397,7 +397,7 @@ focus_tree = {
 	focus = {
 		id = ALB_start_the_generators_of_war
 		icon = GFX_generators_of_war
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = ALB_beat_the_players
 		}
@@ -428,7 +428,7 @@ focus_tree = {
 	focus = {
 		id = ALB_the_great_antigamer_campaign
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = ALB_start_the_generators_of_war
 		}
@@ -461,7 +461,7 @@ focus_tree = {
 	focus = {
 		id = ALB_deratization
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
