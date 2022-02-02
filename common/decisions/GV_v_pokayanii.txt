@@ -639,7 +639,7 @@ zahvat_terri = {
 		}
     }
 	
-		add_divki = {
+	add_vintovki_2 = {
         icon = decision_generic_intelligence_operation
 		days_remove = 20
 		days_re_enable = 0
@@ -652,7 +652,7 @@ zahvat_terri = {
         }
 		
 		complete_effect = {
-        clr_country_flag = stop_deystviya
+      clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -670,33 +670,11 @@ zahvat_terri = {
 		}
 
 		remove_effect = {
-	division_template = {
-	name = "Opolcheniye"
-									
-	division_names_group = 123_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	priority = 0
-	}
-							capital_scope = {
-									create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
-											owner = ROOT
-										}
-										create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
-											owner = ROOT
-										}
-										create_unit = {
-											division = "name = "1-я дивизия ополчения" division_template = "Opolcheniye" start_experience_factor = -0.1"
-											owner = ROOT
-										}
-										}
+		  add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 500
+							producer = ROOT
+						}
 		}
     }
 }
