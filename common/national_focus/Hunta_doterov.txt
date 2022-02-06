@@ -464,7 +464,60 @@ focus_tree = {
 		}
 		x = 19
 		y = 1
+            completion_reward = {
+			air_experience = 25
 
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}	   
 	}
 	focus = {
 		id = DOT_vovaan_bombardirovshchiki
@@ -478,6 +531,17 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
+		    completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}  
 
 	}
 	focus = {
@@ -492,7 +556,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-
+            completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}       
 	}
 	focus = {
 		id = DOT_vovaan_bomba
@@ -503,6 +575,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+		    completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		} 
 
 	}
 	focus = {
@@ -517,7 +596,20 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-
+            completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}     
 	}
 	focus = {
 		id = DOT_VovaanDV
@@ -532,7 +624,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-
+            add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+			}  
 	}
 	focus = {
 		id = DOT_vovaan_flot
@@ -543,7 +642,103 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
-
+            completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}   
 	}
 	focus = {
 		id = DOT_kreyserskie_operatsii
@@ -554,7 +749,16 @@ focus_tree = {
 		}
 		x = 22
 		y = 2
-
+            completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}   
 	}
 	focus = {
 		id = DOT_vovaaan_morpehi
@@ -568,7 +772,14 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
-
+            add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+			}     
 	}
 	focus = {
 		id = DOT_kreyser_velikaya_vovanya
@@ -587,6 +798,16 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
+		    completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		} 
 
 	}
 	focus = {
@@ -598,7 +819,15 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
-
+            completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}     
 	}
 	focus = {
 		id = DOT_podvodniy_eskadron
@@ -609,7 +838,15 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
-
+            completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}     
 	}
 	focus = {
 		id = DOT_lincor_velikaya_vovania
@@ -629,7 +866,18 @@ focus_tree = {
 		}
 		x = 23
 		y = 4
-
+            completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}  
 	}
 	focus = {
 		id = DOT_avianosec_velikaya_vovania
@@ -648,7 +896,18 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
-
+            completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}     
 	}
 	focus = {
 		id = DOT_verfi_magadana
@@ -661,7 +920,22 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
-
+            562 = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}     
 	}
 	focus = {
 		id = DOT_verfi_vladivostoka
@@ -674,7 +948,22 @@ focus_tree = {
 		}
 		x = 22
 		y = 5
-
+            408 = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}    
 	}
 	focus = {
 		id = DOT_ukrepit_pozitsii_hunti
@@ -698,7 +987,36 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
-
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}    
 	}
 	focus = {
 		id = DOT_atlantis
