@@ -8,7 +8,10 @@ state={
 
 	history={
 		owner = DOT
-		#add_core_of = DOT
+		victory_points = {
+			13037 1
+		}
+        add_core_of = DOT
 		#add_claim_by = SOV # Removed because of too much aggression
 		buildings = {
 			infrastructure = 2
