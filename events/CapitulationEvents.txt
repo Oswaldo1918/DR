@@ -24,12 +24,24 @@ news_event = {
 						FROM.FROM = { has_government = democratic }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { has_government = vmestolev }
+						FROM.FROM = { has_government = vmestolev }
 					}
 					AND = {
 						ROOT = { has_government = neutrality }
 						FROM.FROM = { has_government = neutrality }
+					}
+					AND = {
+						ROOT = { has_government = anarhostalinism }
+						FROM.FROM = { has_government = anarhostalinism }
+					}
+					AND = {
+						ROOT = { has_government = metacommy }
+						FROM.FROM = { has_government = metacommy }
+					}
+					AND = {
+						ROOT = { has_government = memoism }
+						FROM.FROM = { has_government = memoism }
 					}
 				}
 			}
@@ -50,8 +62,8 @@ news_event = {
 					FROM.FROM = { has_government = fascism }
 				}
 				AND = {
-					ROOT = { has_government = communism }
-					FROM.FROM = { has_government = communism }
+					ROOT = { has_government = vmestolev }
+					FROM.FROM = { has_government = vmestolev }
 				}
 			}
 			FROM.FROM = {
@@ -135,12 +147,24 @@ news_event = {
 						FROM.FROM = { has_government = democratic }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { has_government = vmestolev }
+						FROM.FROM = { has_government = vmestolev }
 					}
 					AND = {
 						ROOT = { has_government = neutrality }
 						FROM.FROM = { has_government = neutrality }
+					}
+					AND = {
+						ROOT = { has_government = anarhostalinism }
+						FROM.FROM = { has_government = anarhostalinism }
+					}
+					AND = {
+						ROOT = { has_government = metacommy }
+						FROM.FROM = { has_government = metacommy }
+					}
+					AND = {
+						ROOT = { has_government = memoism }
+						FROM.FROM = { has_government = memoism }
 					}
 				}
 			}
