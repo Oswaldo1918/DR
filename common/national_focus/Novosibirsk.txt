@@ -64,7 +64,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
-		x = 14
+		x = 13
 		y = 3
 			completion_reward = {
 					country_event = {
@@ -80,8 +80,23 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
-		x = 16
+		x = 15
 		y = 3
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = GAL_rasprostraneniye_knig_kupcova
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = GAL_vopros_o_staline
+			focus = GAL_antilenin
+		}
+		x = 13
+		y = 4
 			completion_reward = {
 					add_political_power = 150
 				}
@@ -95,7 +110,7 @@ focus_tree = {
 			focus = GAL_antilenin
 			focus = GAL_vopros_o_staline
 		}
-		x = 16
+		x = 15
 		y = 4
 			completion_reward = {
 					add_ideas = GAL_kult_lichnosti_Kalinina_i
@@ -103,18 +118,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_rasprostraneniye_knig_kupcova
-		icon = GFX_goal_generic_propaganda
+		id = GAL_nosorog_revolutsii
+		icon = GFX_focus_generic_soviet_politics
 		cost = 10,00
 		prerequisite = {
-			focus = GAL_vopros_o_staline
-			focus = GAL_antilenin
+			focus = GAL_lukinistskaya_revolutsiya
 		}
-		x = 14
-		y = 4
-			completion_reward = {
-					add_political_power = 150
-				}
+		x = 17
+		y = 3
 
 	}
 	focus = {
@@ -124,7 +135,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
-		x = 18
+		x = 19
 		y = 3
 			completion_reward = {
 					add_ideas = GAL_biznes
@@ -154,6 +165,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = GAL_BEZ_a_ne_BES
+		}
+		prerequisite = {
+			focus = GAL_nosorog_revolutsii
 		}
 		x = 16
 		y = 5
@@ -216,34 +230,6 @@ focus_tree = {
 		y = 7
 			completion_reward = {
 					add_ideas = GAL_goskomcen_i
-				}
-
-	}
-	focus = {
-		id = GAL_PBK
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 1,00
-		prerequisite = {
-			focus = GAL_unichtozheniye_starih_pravitelstvennih_struktur
-		}
-		x = 13
-		y = 7
-			completion_reward = {
-					add_ideas = GAL_PBK_i
-				}
-
-	}
-	focus = {
-		id = GAL_minvneshtorg
-		icon = GFX_goal_generic_trade
-		cost = 1,00
-		prerequisite = {
-			focus = GAL_unichtozheniye_starih_pravitelstvennih_struktur
-		}
-		x = 15
-		y = 7
-			completion_reward = {
-					add_ideas = GAL_minvneshtorg_i
 				}
 
 	}
@@ -356,13 +342,21 @@ focus_tree = {
 		icon = GFX_goal_generic_radar
 		cost = 10,00
 		prerequisite = {
-			focus = GAL_narodnoye_opolcheniye
-		}
-		prerequisite = {
 			focus = GAL_genii_v_NII
 		}
 		x = 19
 		y = 9
+
+	}
+	focus = {
+		id = GAL_bomba
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = GAL_focus_na_radari
+		}
+		x = 20
+		y = 10
 
 	}
 	focus = {
@@ -373,12 +367,12 @@ focus_tree = {
 			focus = GAL_genii_v_NII
 		}
 		x = 21
-		y = 10
+		y = 9
 
 	}
 	focus = {
 		id = GAL_kosmoleti
-		icon = GFX_CAS
+		icon = GFX_goal_Cosmoleti
 		cost = 10,00
 		prerequisite = {
 			focus = GAL_Stroyka_kosmoporta
@@ -395,7 +389,7 @@ focus_tree = {
 			focus = GAL_kosmoleti
 		}
 		x = 21
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -420,50 +414,8 @@ focus_tree = {
 		x = 23
 		y = 8
 			available_if_capitulated = yes
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-				}
 			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
+			        	570 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
@@ -496,50 +448,8 @@ focus_tree = {
 		x = 25
 		y = 8
 			available_if_capitulated = yes
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-				}
 			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
+					570 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
@@ -551,14 +461,34 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_sovhozi
-		icon = GFX_focus_prc_agrarian_socialism
+		id = GAL_tanki_na_tractornom_zavode
+		icon = GFX_goal_generic_army_tanks
 		cost = 10,00
 		prerequisite = {
 			focus = GAL_proizvodstvo_combainov
 		}
 		prerequisite = {
 			focus = GAL_proizvodstvo_tractorov
+		}
+		x = 24
+		y = 9
+            completion_reward = {
+					570 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+	}
+	focus = {
+		id = GAL_sovhozi
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10,00
+		prerequisite = {
+			focus = GAL_tanki_na_tractornom_zavode
 		}
 		x = 24
 		y = 13
@@ -633,14 +563,42 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GAL_PBK
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 1,00
+		prerequisite = {
+			focus = GAL_unichtozheniye_starih_pravitelstvennih_struktur
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+					add_ideas = GAL_PBK_i
+				}
+
+	}
+	focus = {
+		id = GAL_minvneshtorg
+		icon = GFX_goal_generic_trade
+		cost = 1,00
+		prerequisite = {
+			focus = GAL_unichtozheniye_starih_pravitelstvennih_struktur
+		}
+		x = 15
+		y = 7
+			completion_reward = {
+					add_ideas = GAL_minvneshtorg_i
+				}
+
+	}
+	focus = {
 		id = GAL_speznaz
 		icon = GFX_goal_generic_special_forces
 		cost = 10,00
 		prerequisite = {
-			focus = GAL_narodnoye_opolcheniye
+			focus = GAL_SovMin
 		}
-		x = 17
-		y = 9
+		x = 16
+		y = 8
 
 	}
 	focus = {
@@ -650,8 +608,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_speznaz
 		}
+		prerequisite = {
+			focus = GAL_narodnoye_opolcheniye
+		}
 		x = 17
-		y = 10
+		y = 9
 
 	}
 	focus = {
@@ -661,8 +622,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_export_lukinizma
 		}
-		x = 17
-		y = 11
+		x = 16
+		y = 10
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -678,8 +639,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_vtorzheniye_na_celenu
 		}
+		prerequisite = {
+			focus = GAL_bashkiriya
+		}
 		x = 17
-		y = 12
+		y = 11
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -708,7 +672,7 @@ focus_tree = {
 			focus = GAL_centralnaya_rossiya
 		}
 		x = 16
-		y = 13
+		y = 12
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -745,7 +709,7 @@ focus_tree = {
 			focus = GAL_minvneshtorg
 		}
 		x = 15
-		y = 10
+		y = 11
 			completion_reward = {
 					add_ideas = GAL_marakumba_import_0
 				}
@@ -762,19 +726,13 @@ focus_tree = {
 			focus = GAL_import_marakumbi
 		}
 		prerequisite = {
-			focus = GAL_marakumbniye_regioni_rossii
-		}
-		prerequisite = {
-			focus = GAL_sever
-		}
-		prerequisite = {
-			focus = GAL_bivshie_respupliki
-		}
-		prerequisite = {
 			focus = GAL_sovhozi
 		}
 		prerequisite = {
 			focus = GAL_legalizaciya
+		}
+		prerequisite = {
+			focus = GAL_bivshie_respupliki
 		}
 		x = 16
 		y = 14
@@ -809,25 +767,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_bomba
-		icon = GFX_focus_wonderweapons
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_focus_na_radari
-		}
-		x = 19
-		y = 10
-
-	}
-	focus = {
 		id = GAL_bashkiriya
 		icon = GFX_goal_attak_bash
 		cost = 10,00
 		prerequisite = {
 			focus = GAL_export_lukinizma
 		}
-		x = 19
-		y = 11
+		x = 18
+		y = 10
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -841,10 +788,13 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 10,00
 		prerequisite = {
+			focus = GAL_vtorzheniye_na_celenu
+		}
+		prerequisite = {
 			focus = GAL_bashkiriya
 		}
 		x = 19
-		y = 12
+		y = 11
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -888,11 +838,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_centralnaya_rossiya
 		}
-		prerequisite = {
-			focus = GAL_DV
-		}
 		x = 18
-		y = 13
+		y = 12
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -926,9 +873,12 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		cost = 10,00
 		prerequisite = {
-			focus = GAL_DV
+			focus = GAL_marakumbniye_regioni_rossii
 		}
-		x = 20
+		prerequisite = {
+			focus = GAL_sever
+		}
+		x = 17
 		y = 13
 			completion_reward = {
 					create_wargoal = {
@@ -1058,7 +1008,10 @@ focus_tree = {
 		icon = GFX_focus_cht_new_nalogooblazhenie
 		cost = 10,00
 		prerequisite = {
-			focus = GAL_naz_torgovci
+			focus = GAL_tabachnaya_monopoliya
+		}
+		prerequisite = {
+			focus = GAL_vodochnaya_monopoliya
 		}
 		x = 11
 		y = 12
@@ -1087,17 +1040,6 @@ focus_tree = {
 		}
 		x = 11
 		y = 13
-
-	}
-	focus = {
-		id = GAL_nosorog_revolutsii
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_SovMin
-		}
-		x = 16
-		y = 8
 
 	}
 }
