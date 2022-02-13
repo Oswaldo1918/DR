@@ -12,12 +12,11 @@ characters = {
 		}
 
 		country_leader = {
-			traits = {  }
 			desc = "POLITICS_MODER_SOVET_DESC"
 			ideology = postironism
-	traits = {
-		cabinet_crisis
-	}
+	        traits = {
+	         	cabinet_crisis
+	        }
 			expire = "3000.1.1"
 			id = -1
 		}
@@ -292,6 +291,7 @@ characters = {
 		portraits = {
 			army = {
 			    large = "gfx/leaders/CHT/zaytsev.dds"
+				small = "GFX_idea_Dmitriy_Zaitsev"
 			}
 		}
 		corps_commander = {
@@ -342,6 +342,7 @@ characters = {
 		portraits = {
 			army = {
 			    large = "gfx/leaders/CHT/ivanov.dds"
+				small = "GFX_idea_Sasha_Ivanov"
 			}
 		}
 
