@@ -15,6 +15,15 @@ set_technology = {
 	basic_battery = 1
 }
 
+
+recruit_character = TUP_goblin
+recruit_character = TUP_dementiy
+recruit_character = TUP_klim_zhukov
+recruit_character = TUP_egor_yakovlev
+recruit_character = TUP_boris_yulin
+recruit_character = TUP_dmitriy_varshipsov
+recruit_character = TUP_Admiral
+
 add_ideas = {
 	TUP_dikiy_sevzapad
 	TUP_home_of_revolution
@@ -31,74 +40,6 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Дмитрий Пучков"
-	desc = "POLITICS_GOBLIN_DESC"
-	picture = "Puchkov.dds"
-	expire = "1999.1.1"
-	ideology = libertanian_chuchhe
-	traits = {
-		dictator
-	}
-}
-
-create_corps_commander = {
-	name = "Клим Жуков"
-	picture = "zhukov.dds"
-	traits = { career_officer war_hero }
-	skill = 9
-	
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 9
-	logistics_skill = 10
-}
-
-create_corps_commander = {
-	name = "Егор Яковлев"
-	picture = "yakovlev.dds"
-	traits = { career_officer war_hero }
-	skill = 5
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 6
-}
-
-create_corps_commander = {
-	name = "Борис Юлин"
-	picture = "yulin.dds"
-	traits = { war_hero }
-	skill = 5
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 6
-}
-
-create_navy_leader = {
-	name = "Дмитрий Варшипсов"
-		picture = "shipsov.dds"
-	traits = { seawolf }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-create_navy_leader = {
-	name = "Адмирал ясен х.й"
-		picture = "zhukov.dds"
-	traits = {  }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
 
     create_equipment_variant = {
 		name = "Класс Свинка"				
