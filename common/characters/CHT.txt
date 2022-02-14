@@ -40,7 +40,7 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -74,7 +74,7 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -117,7 +117,7 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -151,7 +151,7 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -165,7 +165,7 @@ characters = {
 				factor = 1
 			}
 		}
-		high_command = {
+		advisor={ slot = high_command
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -216,7 +216,7 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -252,7 +252,7 @@ characters = {
 	    logistics_skill = 2
 		legacy_id = -1
         }
-		army_chief = {
+		advisor={ slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -303,7 +303,7 @@ characters = {
 	logistics_skill = 4
 		legacy_id = -1
         }
-		high_command = {
+		advisor={ slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -355,7 +355,7 @@ characters = {
 	logistics_skill = 3
 		legacy_id = -1
         }
-		high_command = {
+		advisor={ slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -378,7 +378,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -398,7 +398,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -408,7 +408,7 @@ characters = {
 			}
             traits = { adventurous_daredevil }
 	    }
-		high_command = {
+		advisor={ slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -431,7 +431,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 				
@@ -452,7 +452,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -472,7 +472,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -492,7 +492,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -512,7 +512,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -522,7 +522,7 @@ characters = {
 				
             traits = { backroom_backstabber }
 	    }
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -545,7 +545,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -565,7 +565,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -585,7 +585,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -605,7 +605,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -625,7 +625,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 			}
@@ -645,7 +645,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 				
@@ -658,7 +658,7 @@ characters = {
 			}
             traits = { regional_traditionalist_leader }
 	    }
-		high_command = {
+		advisor={ slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -681,7 +681,7 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={ slot = political_advisor
 			allowed = {
                 original_tag = CHT 
 				
@@ -704,7 +704,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -727,7 +727,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -750,7 +750,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -777,7 +777,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -804,7 +804,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -826,7 +826,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -848,7 +848,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
@@ -892,7 +892,7 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor={ slot = high_command	
 			allowed = {
 				original_tag = CHT
 			}
