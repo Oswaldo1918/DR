@@ -13,6 +13,9 @@ set_technology = {
 	fuel_silos = 1
 }
 
+recruit_character = IRQ_zhirik
+recruit_character = IRQ_saddam
+
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -31,39 +34,3 @@ set_popularities = {
 	fascism = 40
 	neutrality = 60
 }
-
-create_country_leader = {
-	name = "Владимир Жириновский"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "gfx/leaders/IRQ/Zhir.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		Vne_politkategoriy
-	}
-}
-
-create_country_leader = {
-	name = "Саддам Хусейн"
-	desc = ""
-	picture = "gfx/leaders/IRQ/Saddam.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Саддам Хусейн"
-	id = 21111
-	picture = "Saddam_general.dds"
-	traits = { old_guard infantry_officer war_hero  }
-	skill = 3
-
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
