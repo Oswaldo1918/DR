@@ -128,7 +128,7 @@ characters = {
 		name = "PAJILOY RAPER"
 		portraits = {
 			army = {
-			    large = ".dds"
+			    large = "gfx/leaders/LAZ/RAPER.dds"
 			}
 		}
 
@@ -147,7 +147,7 @@ characters = {
 		name = "Связист-телефонист"
 		portraits = {
 			army = {
-			    large = ".dds"
+			    large = "gfx/leaders/LAZ/telefonist.dds"
 			}
 		}
 
@@ -166,7 +166,7 @@ characters = {
 		name = "Владислав Фархутдинов"
 		portraits = {
 			army = {
-			    large = ".dds"
+			    large = "gfx/leaders/LAZ/Vlad.dds"
 			}
 		}
 
@@ -185,7 +185,7 @@ characters = {
 		name = "Артур Олейников"
 		portraits = {
 			army = {
-			    large = ".dds"
+			    large = "gfx/leaders/LAZ/Artur.dds"
 			}
 		}
 
@@ -208,7 +208,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -228,7 +229,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -248,7 +250,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor	
 			allowed = {
 				original_tag = LAZ
 				
@@ -268,7 +271,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -288,7 +292,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -308,7 +313,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -328,7 +334,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -348,7 +355,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -368,7 +376,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -388,7 +397,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -408,7 +418,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -428,7 +439,8 @@ characters = {
 			}
 		}
 
-		political_advisor = {	
+		advisor={
+			slot = political_advisor
 			allowed = {
 				original_tag = LAZ
 				
@@ -448,33 +460,42 @@ characters = {
 			}
 		}
 
-		army_chief = {	
-			original_tag = LAZ
-			}
-	       available = { NOT = { country_exists = MAT }
-				has_completed_decision = LAZ_core_MAT
+		advisor = {	
+		   slot = army_chief
+		   
+		    allowed = {
+				original_tag = LAZ
+		    }
+			
+	       available = { 
+		   NOT = { country_exists = MAT }
+		   has_completed_decision = LAZ_core_MAT		   
 		   }
-			traits = { army_chief_defensive_2 }
+		   traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
 				factor = 1
-			}
-	    }
+	    	}
+		}	
 	}
 	
 	LAZ_Kurakov = {
 		name = "Лeонид Кураков"
 		portraits = {
 			civilian = {
-				small = "generic_political_advisor_europe_3"
+				small = "GFX_idea_Leonid_Kurakov"
 			}
 		}
 
-		army_chief = {	
+		advisor = {	
+		    slot = army_chief
+		   
 			allowed = {
-			original_tag = LAZ
+			    original_tag = LAZ
 			}
-			available = { NOT = { country_exists = DON }
+			
+			available = { 
+			NOT = { country_exists = DON }
 			has_completed_decision = LAZ_core_DON		   
 			}
 			traits = { army_chief_offensive_2 }
@@ -489,18 +510,21 @@ characters = {
 		name = "Людвиг Ян"
 		portraits = {
 			civilian = {
-				small = "generic_political_advisor_europe_3"
+				small = "GFX_idea_Ludvig_Yan"
 			}
 		}
 
-		navy_chief = {	
+		advisor = {	
+		    slot = navy_chief
+			
 			allowed = {
-			original_tag = LAZ
+			    original_tag = LAZ
 			}
 			idea_token = Yan2
-	       available = { NOT = { country_exists = ARK }
-                         NOT = { has_idea = Yan1 }
-				has_completed_decision = LAZ_core_ARK
+	        available = { 
+			NOT = { country_exists = ARK }
+            NOT = { has_idea = Yan1 }
+			has_completed_decision = LAZ_core_ARK
 			}
 			traits = { navy_chief_commerce_raiding_1 }
 			
@@ -508,13 +532,16 @@ characters = {
 				factor = 1
 			}
 	    }
-		theorist = {	
+		advisor = {	
+		    slot = theorist
+
 			available = { 
 				NOT = { country_exists = ARK }
 				NOT = { has_idea = Yan2 }
 				has_completed_decision = LAZ_core_ARK
 			}
 			idea_token = Yan1
+			
 			allowed = {
 				original_tag = LAZ
 			}
@@ -535,12 +562,15 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor = {
+		    slot = high_command
+		
 			allowed = {
 			original_tag = LAZ
 			}
+			
 			idea_token = Denis_Seregin2
-	       available = { 
+	        available = { 
 				NOT = { country_exists = WHS }
 				NOT = { has_idea = Denis_Seregin1 }
 				has_completed_decision = LAZ_core_WHS
@@ -552,7 +582,9 @@ characters = {
 				factor = 1
 			}
 	    }
-		theorist = {	
+		advisor = {	
+		    slot = theorist
+			
 			idea_token = Denis_Seregin1
 			available = { 
 				NOT = { country_exists = WHS }
@@ -582,12 +614,14 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor = {
+		    slot = high_command
+			
 			allowed = {
 			original_tag = LAZ
 			}
 			idea_token = Anton_Orlov2
-	       available = {
+	        available = {
 				NOT = { country_exists = MAT }
 				NOT = { has_idea = Anton_Orlov1 }
 				has_completed_decision = LAZ_core_MAT
@@ -599,7 +633,9 @@ characters = {
 				factor = 1
 			}
 	    }
-		theorist = {	
+		advisor = {	
+		    slot = theorist
+			
 			idea_token = Anton_Orlov1
 			available = { 
 				NOT = { country_exists = MAT }
@@ -629,15 +665,14 @@ characters = {
 			}
 		}
 
-		high_command = {	
+		advisor = {
+		    slot = high_command
+			
 			allowed = {
 			original_tag = LAZ
 			}
 			idea_token = LAZ_Shchelkunova
-	       allowed = {
-			original_tag = LAZ
-			}
-	       available = {}
+	        available = {}
 			traits = { school_of_psychology }
 			
 			ai_will_do = {
@@ -654,14 +689,13 @@ characters = {
 			}
 		}
 
-		theorist = {	
+		advisor = {	
+		    slot = theorist
+			
 			allowed = {
 			original_tag = LAZ
 			}
 			idea_token = LAZ_mixan_teoretic
-	       allowed = {
-				original_tag = LAZ
-			}
 			
 			research_bonus = {
 				rocketry = 0.15
