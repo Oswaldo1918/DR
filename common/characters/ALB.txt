@@ -30,4 +30,23 @@ characters={
 		id=-1
 	   }
     }
+	ALB_shigin = {
+		name = "Андрей Шигин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_shigin"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			allowed = {
+                original_tag = CHT
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { revolutionary_poet }
+	    }
+    }
 }

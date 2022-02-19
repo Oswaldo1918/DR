@@ -754,470 +754,238 @@ ideas = {
 		}		
 	}
 	
-	political_advisor = {
-	LAZ_Darker_Loony = { 
-			
-			picture = generic_political_advisor_europe_3
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			allowed = {
-				original_tag = LAZ
-				
-			}
-			
-			traits = { nkvd_rezident }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	LAZ_Ohrim = { 
-			
-			picture = generic_political_advisor_europe_3
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			allowed = {
-				original_tag = LAZ
-				
-			}
-			
-			traits = { head_of_intelligence }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	LAZ_Maksim_Osipov = { 
-			
-			picture = generic_political_advisor_europe_3
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			allowed = {
-				original_tag = LAZ
-				
-			}
-			
-			traits = { popular_figurehead }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	LAZ_1 = { 
-			
-			picture = generic_political_advisor_europe_3
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			allowed = {
-				original_tag = LAZ
-				
-			}
-			
-			traits = { backroom_sponsor_rezhima }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	
-    LAZ_figura = { 
-			
-			picture = generic_political_advisor_europe_3
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			allowed = {
-				original_tag = LAZ
-				
-			}
-			
-			traits = { Editor }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	tank_manufacturer = { 
 		
-	
-	LAZ_petr_grigorev = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { marxist_academic }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-	LAZ_roman_katuntsev = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { marxist_philosopher }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-    LAZ_Bobichka = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { Technocrat }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-	LAZ_evro4 = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { fortification_armchair_general }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	LAZ_Denis_Kuznetsov = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { Urbanist }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-    LAZ_Boris_Godynov = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-		
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { Materialist_krestonostets }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-    LAZ_Pila_Ivanna = { 
-			
-			picture = generic_political_advisor_europe_3
-
-            allowed = {
-			original_tag = LAZ
-			
-		    }
-
-			available = {
-			}
-
-			visible = {
-			}
-			
-			
-			traits = { Psychologist }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}		
-	}
-	
-	army_chief= {
-	
-	Danil_Tsukanov = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-			original_tag = LAZ
-			}
-	       available = { NOT = { country_exists = MAT }
-				has_completed_decision = LAZ_core_MAT
-		   }
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-	LAZ_Kurakov = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-			original_tag = LAZ
-			}
-			available = { NOT = { country_exists = DON }
-			has_completed_decision = LAZ_core_DON		   
-			}
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	navy_chief= {
-	
-	Yan2 = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-			original_tag = LAZ
-			}
-	       available = { NOT = { country_exists = ARK }
-                         NOT = { has_idea = Yan1 }
-				has_completed_decision = LAZ_core_ARK
-			}
-			traits = { navy_chief_commerce_raiding_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	}
-	
-	high_command = {
-	     Denis_Seregin2 = {
-		 
-			ledger = army
-			
-			picture = generic_army_asia_3
-			
-			allowed = {
-			original_tag = LAZ
-			}
-			available = { 
-				NOT = { country_exists = WHS }
-				NOT = { has_idea = Denis_Seregin1 }
-				has_completed_decision = LAZ_core_WHS
-			}
-			
-			traits = { guerilla_warfare_expert }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		Anton_Orlov2 = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-				original_tag = LAZ
-			}
-			available = {
-				NOT = { country_exists = MAT }
-				NOT = { has_idea = Anton_Orlov1 }
-				has_completed_decision = LAZ_core_MAT
-			}
-		   
-			traits = { army_armored_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		Stavr_Agronom = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-				original_tag = LAZ
-			}
-			available = {
-				NOT = { country_exists = STR }	
-			}
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		LAZ_Shchelkunova = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-			original_tag = LAZ
-			}
-	       available = {}
-			traits = { school_of_psychology }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		LAZ_Shtazist = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-			original_tag = LAZ
-			}
-	       available = { NOT = { country_exists = CHT }  
-		   }
-			traits = { army_commando_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-		
-	materiel_manufacturer = {
-			
 		designer = yes
 		
-		chumhimprom = {
-			
-			cost = 250
+		LAZ_mitishinskiy_mash_zavod = {
+
 			
 			allowed = {
 				original_tag = LAZ
 			}
 			
 			research_bonus = {
-			industry = 0.05
-			synth_resources = 0.1	
-			artillery = 0.1
+				armor = 0.15
 			}
 			
-			traits = { him_prom }
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		LAZ_gusenichniy_zavod = {
+		
+            picture = idea_usa_tank_destroyer_board
+			
+			allowed = {
+				original_tag = LAZ
+				original_tag = ARK
+				original_tag = CHT
+				original_tag = UNT
+				original_tag = MAT
+				original_tag = BSH
+				original_tag = WHS
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
 			
 			modifier = {
+			    resistance_damage_to_garrison = -0.25 
+          		foreign_subversive_activites = -0.3
+        		non_core_manpower = 0.02
 			}
-		}	
-		
-	
-		
-		tula_arms_plant = {
 			
+			traits = { tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+			
+			
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		LAZ_mig = {
 			
 			allowed = {
 				original_tag = LAZ
 			}
 			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LAZ_AK_im_ilyushina = { 
+			allowed = {
+				original_tag = LAZ
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
 
+		LAZ_dubnenskiy_mash_zavod = { 
+
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LAZ_Su = {
+
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+
+	}
+	
+	industrial_concern = {
+		
+		LAZ_chumhimprom = {
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LAZ_bolshevichka = {
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		LAZ_rubin = {
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		LAZ_mash_zavod_im_kalinina = {
+			
+			allowed = {
+				original_tag = LAZ
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		LAZ_tula = {
+
+			
+			allowed = {
+				original_tag = LAZ
+			}
 			
 			research_bonus = {
 				infantry_weapons = 0.15
@@ -1225,113 +993,27 @@ ideas = {
 			
 			traits = { infantry_equipment_manufacturer }
 			
-			modifier = {
+			ai_will_do = {
+				factor = 2
 			}
 		}
 		
-		gaz = {
-			
+		
+
+		
+		LAZ_tutaev_motor_plant = {
 			
 			allowed = {
 				original_tag = LAZ
 			}
-			
-
 			
 			research_bonus = {
 				motorized_equipment = 0.15
-				mot_rockets = 0.50
 			}
 			
 			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
 		}
-	} 
-    theorist = {
-	   mixan_teoretic = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = LAZ
-			}
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-
-			
-			traits = { rocket_scientist }
-		}
-		
-		Denis_Seregin1 = {
-			ledger = army
-			
-			available = { 
-				NOT = { country_exists = WHS }
-				NOT = { has_idea = Denis_Seregin2 }
-				has_completed_decision = LAZ_core_WHS
-			}
-			
-			allowed = {
-				original_tag = LAZ
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mass_assault = 0.15
-			}
-			
-			traits = { mass_assault_expert }
-		}
-		
-		
-		Anton_Orlov1 = {
-			ledger = army
-			
-			available = { 
-				NOT = { country_exists = MAT }
-				NOT = { has_idea = Anton_Orlov2 }
-				has_completed_decision = LAZ_core_MAT
-		   }
-			
-			allowed = {
-				original_tag = LAZ
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mobile_warfare = 0.15
-			}
-
-			traits = { mobile_warfare_expert }
-			
-		}
-		
-		Yan1 = {
-			
-			ledger = navy
-			
-			available = { 
-				NOT = { country_exists = ARK }
-				NOT = { has_idea = Yan2 }
-				has_completed_decision = LAZ_core_ARK
-			}
-			
-			allowed = {
-				original_tag = LAZ
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.15
-			}
-			
-			traits = { naval_theorist }
-			
-		}
-	}	
+	}
+	
+	
 }

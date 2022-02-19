@@ -647,5 +647,174 @@ ideas = {
 				  production_speed_buildings_factor = 0.1
 			}
 		}
-	} 
+	}
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		DON_ASZ = {
+
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { repair_and_refurbishment_plant }
+			
+			modifier = {
+				naval_accidents_chance = -0.15
+				repair_speed_factor = 0.1
+				refit_ic_cost = -0.1
+				refit_speed = 0.1
+			}
+			
+		}
+	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		DON_LA-RZ = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+	}
+	
+	industrial_concern = {
+		
+		DON_LNPZ = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		DON_DMZ = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		DON_DonNU = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		DON_DKZHI = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		DON_LPZ = {
+
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		DON_EARZ = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}	
 }	

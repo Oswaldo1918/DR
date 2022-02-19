@@ -1226,319 +1226,22 @@ ideas = {
 	
    }
 	
-   
-	
-	political_advisor = {
-
-		wladislav_zalujniy = {
-
-         picture = generic_air_europe_3
-
-            allowed = {
-                original_tag = CHT
-				
-            }
-			available = {
-			    has_government = metacommy 
-			}
-            traits = { economist_chtrasserist }
-        }
-		anton_simusov = {
-
-        picture = generic_air_europe_1
-
-            allowed = {
-                original_tag = CHT
-				
-            }
-			available = {
-			    has_government = metacommy 
-			}
-            traits = { adventurous_daredevil }
-        }
+   	tank_manufacturer = { 
 		
-		ostin_pauers = {
-
-         picture = generic_army_europe_1
-
-            allowed = {
-                original_tag = CHT 
-				
-            }
-			    available = {
-			    has_government = metacommy 
-			}
-				
-            traits = { prince_of_terror  }
-        }
+		designer = yes
 		
-		gus = {
-        picture = generic_air_europe_2
-            allowed = {
-                original_tag = CHT
-				
-            }
-			available = {
-			    has_government = vmestolev 
-			}
-            traits = { lieutenant_of_industry }
-        }
-		
-		roman_latyshev = {
-        picture = idea_roman_latyshev
-            allowed = {
-                original_tag = CHT
-				
-            }
-			available = {
-			    has_government = vmestolev 
-			}
-            traits = { ministr_defitsita }
-        }
-		
-		nickolay_kuznetsov = {
-        picture = generic_air_europe_1
-            allowed = {
-                original_tag = CHT
-				
-            }
-			available = {
-			    has_government = vmestolev 
-			}
-            traits = { economic_organizer }
-        }
-		
-		anstal_from_people = {
+		CHT_Arzamasskiy_MZ = {
 
-         picture = generic_army_europe_1
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = anarhostalinism 
-				}
-				
-            traits = { backroom_backstabber }
-        }
-		
-		dmitry_safonov = {
-
-         picture = generic_army_europe_1
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = anarhostalinism 
-				}
-				
-            traits = { dobrovolno_prinuditelniy_collectivizator }
-        }
-		kon_v_palto = {
-
-         picture = generic_army_europe_1
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = anarhostalinism 
-				}
-				
-            traits = { economist_anarhii }
-        }
-		
-		boy_from_saratov = { 
-
-
-         picture = generic_army_europe_1
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = memoism 
-				}
-				
-            traits = { our_right_to_survive }
-        }
-		mich_sim = { 
-
-
-         picture = generic_army_europe_3
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = memoism 
-				}
-				
-            traits = { economic_reformer }
-        }
-		weest_wee = { 
-
-
-         picture = generic_army_europe_3
-
-            allowed = {
-                original_tag = CHT 
-			}
-			    available = {
-				has_government = memoism 
-				}
-				
-            traits = { railroad_enthusiast }
-        }
-		 mich_duke = {
-        picture = generic_army_europe_2
-            allowed = {
-                original_tag = CHT 
-				
-            }
-			available = {
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = memoism }
-				NOT = { has_government = metacommy }
-			}
-            traits = { regional_traditionalist_leader }
-        }
-		evro_fourth = {
-        picture = generic_army_europe_2
-            allowed = {
-                original_tag = CHT 
-				
-            }
-			available = {
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = memoism }
-				NOT = { has_government = metacommy }
-			}
-            traits = { vliyatelniy_kupets }
-        }
-		ahora = {
-        picture = generic_army_europe_1
-            allowed = {
-                original_tag = CHT 
-				
-            }
-			available = {
-			    NOT = { has_government = memoism }
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = milo }
-				NOT = { has_government = metacommy }
-			}
-            traits = { anti_levak }
-        }
-	}
-	army_chief = {
-	
-	CHT_mesyats = {
-			
-			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = CHT
 			}
-			available = {		
-                has_government = anarhostalinism
-		    }
 			
-			traits = { Partisan_vozhd }
-			
-			ai_will_do = {
-				factor = 1
+			research_bonus = {
+				armor = 0.15
 			}
-		}
-		
-		CHT_stazi = {
 			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = CHT
-			}
-			available = {		
-                has_government = vmestolev
-		    }
-			
-			traits = { red_army_organizer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		CHT_Telezhniy = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = CHT
-			}
-			available = {		
-                has_government = metacommy
-		    }
-			
-			traits = { Organizator_geril }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		CHT_svidetel = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = CHT
-			}
-			available = {		
-                has_government = memoism
-		    }
-			
-			traits = { army_chief_offensive_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		CHT_deloksli = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = CHT
-			}
-			available = {		
-                has_government = neutrality
-		    }
-			
-			traits = { army_chief_defensive_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-	CHT_ahora = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = CHT
-			}
-			available = {		
-                has_government = fascism
-		    }
-
-			traits = { army_chief_drill_2 }
+			traits = { fast_tank_manufacturer }
 			
 			ai_will_do = {
 				factor = 1
@@ -1547,319 +1250,215 @@ ideas = {
 		
 	}
 	
-	air_chief = {
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		CHT_red_sormovo = {
 
-        Neon_Petrovich = {
-
-			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = CHT
 			}
-			available = {		
-                has_government = anarhostalinism
-		    }
 			
-			traits = { stalin_sokol }
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		CHT_sokol = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		DoomHammer = {
+		CHT_UAPK = { 
 
-			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = CHT
 			}
-			available = {		
-                has_government = metacommy
-		    }
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CHT_KazAvZ = {
+
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		CHT_tat_neft = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CHT_tyazhmash = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		CHT_ChEAZ = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		CHT_Nizhegorodskiy_MZ = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		CHT_UlMechZ = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				artillery = 0.5
+			}
 			
 			traits = { Master_PVO }
 			
-			ai_will_do = {
-				factor = 1
+			modifier = {
+				# +10% arty/at/aa research speed
 			}
 		}
+		
+		CHT_Izhmash = {
 
-	}
-
-	navy_chief = {
-
-		North_demon = {
-
-			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = CHT
 			}
-			available = {		
-                has_government = metacommy
-		    }
-					
-			traits = { Pribrezhniy_fortificator }
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
+		}				
+		
+		CHT_GAZ = {
+			
+			allowed = {
+				original_tag = CHT
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
 		}
-
 	}
 	
-	high_command = {
-	     kot_fritz = {
-			ledger = army
-			
-			picture = generic_army_asia_3
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = memoism
-		   }
-			traits = { army_commando_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		nik_vas = {
-			ledger = army
-			
-			picture = generic_army_asia_4
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = memoism
-		   }
-			traits = { navy_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		who = {
-			ledger = army
-			
-			picture = generic_army_asia_4
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = memoism
-		   }
-			traits = { air_pilot_training_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-        anton_simusovus = {
-			ledger = army
-			
-			picture = generic_air_europe_1
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = metacommy
-		   }
-			traits = { army_infantry_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		 michus_duke = {
-			ledger = army
-			
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = neutrality
-		   }
-			traits = { army_entrenchment_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		felix_kornilov= {
-			ledger = army
-			
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = CHT
-				NOT = { has_government = democratic }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = memoism }
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
-			}
-	    
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		ahora_2 = {
-			ledger = army
-			
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = CHT
-				NOT = { has_government = democratic }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = memoism }
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
-			}
-	    
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		 yuriy_lain = {
-			ledger = army
-			
-			picture = generic_army_asia_2
-
-			allowed = {
-				original_tag = CHT
-				NOT = { has_government = democratic }
-				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = memoism }
-				NOT = { has_government = vmestolev }
-				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
-			}
-	       
-			traits = { army_chief_drill_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		sasha_ivanov = {
-			ledger = army
-			
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = vmestolev
-		   }
-			traits = { army_armored_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		field_sekretar = {
-			ledger = army
-			
-			picture = generic_army_asia_1
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = vmestolev
-		   }
-			traits = { army_chief_organizational_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		 dmiry_zautsev = {
-			ledger = army
-			
-			picture = generic_air_europe_1
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = vmestolev
-		   }
-			traits = { army_infantry_1  }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		anstalus_from_people = {
-			ledger = army
-			
-			picture = unknown
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = anarhostalinism
-		   }
-			traits = { air_chief_night_operations_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		wyach_step = {
-			ledger = army
-			
-			picture = soviet_army_2
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = anarhostalinism
-		   }
-			traits = { army_infantry_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		Ruazerg = {
-			ledger = army
-			
-			picture = soviet_army_2
-
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-		   }
-			traits = { voenniy_kustar }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 }

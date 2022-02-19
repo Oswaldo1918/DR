@@ -1184,7 +1184,7 @@ Vodoley = {
 	anti_communist = {
 		random = no
 		communism_acceptance = -50
-		communism_drift = -0.01
+		vmestolev_drift = -0.01
 
 		ai_will_do = {
 			factor = 1
@@ -1383,7 +1383,7 @@ Vodoley = {
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		army_org_factor = 0.12
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		
 		ai_will_do = {
 			factor = 2
@@ -1454,7 +1454,7 @@ Vodoley = {
 	disdain_for_politicians_1 = {
 		random = no
 		political_power_factor = 0.05
-		communism_drift = -0.01
+		vmestolev_drift = -0.01
 		fascism_drift = -0.01
 		democratic_drift = -0.01
 	}
@@ -1462,7 +1462,7 @@ Vodoley = {
 	disdain_for_politicians_2 = {
 		random = no
 		political_power_factor = 0.1
-		communism_drift = -0.02
+		vmestolev_drift = -0.02
 		fascism_drift = -0.02
 		democratic_drift = -0.02
 	}
@@ -1619,7 +1619,7 @@ Vodoley = {
 
 	arkhigos = {
 		random = no
-		communism_drift = -0.02
+		vmestolev_drift = -0.02
 		democratic_drift = -0.02
 		fascism_acceptance = 35
 		army_core_defence_factor = 0.05
@@ -1982,7 +1982,7 @@ Vodoley = {
 		trade_opinion_factor = 0.15
 		democratic_drift = 0.05
 		fascism_drift = -0.1
-		communism_drift = -0.1
+		vmestolev_drift = -0.1
 	}
 
 	marxist_academic = {
@@ -1990,7 +1990,7 @@ Vodoley = {
 		sprite = 13
 
 		political_power_factor = 0.05
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 	}
 
 	marxist_priest = {
@@ -2078,7 +2078,7 @@ Vodoley = {
 		political_power_gain = 0.05
 		economy_cost_factor = -0.15
 		production_factory_max_efficiency_factor = 0.07
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 	}
 
 	prime_minister_husnu = {
@@ -2087,7 +2087,7 @@ Vodoley = {
 
 		war_support_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 	}
 
 	prime_minister_menderes = {
@@ -2181,7 +2181,7 @@ Vodoley = {
 		random = no
 		sprite = 13
 
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		political_power_factor = 0.15
 		stability_factor = 0.05
 		war_support_factor = 0.05
@@ -2254,7 +2254,7 @@ Vodoley = {
 		random = no
 		political_power_factor = 0.15
 		political_advisor_cost_factor = -0.1
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		enemy_justify_war_goal_time = 0.25
 		opinion_gain_monthly_factor = 0.15
 		opinion_gain_monthly_same_ideology_factor = 0.3
@@ -2365,7 +2365,7 @@ Vodoley = {
 	marxist_philosopher = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		political_power_factor = 0.1
 		research_speed_factor = 0.05
 	}
@@ -2511,7 +2511,7 @@ Vodoley = {
 
 	stalin_architect_of_communism = {
 		random = no
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		master_ideology_drift = 0.1
 		puppet_cost_factor = -0.2
 	}
@@ -2806,7 +2806,7 @@ Vodoley = {
 	political_commissar = {
 		random = no
 		sprite = 13
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		political_power_factor = 0.05
 		max_command_power = 30
 	}
@@ -3004,7 +3004,7 @@ Vodoley = {
 		sprite = 13
 		stability_weekly = -0.001
 		political_power_factor = 0.10
-		communism_drift = 0.03
+		vmestolev_drift = 0.03
 		neutrality_drift = 0.15
 	}
 
@@ -3053,7 +3053,7 @@ Vodoley = {
 		random = no
 		# Boosts Communism
 		sprite = 13
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -3146,7 +3146,7 @@ Vodoley = {
 		random = no
 		sprite = 13
 
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		consumer_goods_factor = -0.05
 		
 		ai_will_do = {
@@ -3165,7 +3165,7 @@ Vodoley = {
 	anti_communist_crusader = {
 		sprite = 13
 		stability_factor = 0.05
-		communism_drift = -0.1
+		vmestolev_drift = -0.1
 
 		ai_will_do = {
 			factor = 1
@@ -3569,7 +3569,7 @@ Vodoley = {
 		sprite = 13
 
 		war_support_factor = 0.1
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -3654,7 +3654,7 @@ Vodoley = {
 
 		non_core_manpower = 0.02
 		weekly_manpower = 250
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -3756,7 +3756,7 @@ Vodoley = {
 		random = no
 		sprite = 13
 
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		war_support_factor = 0.1
 		stability_factor = 0.1
 		
@@ -3782,7 +3782,7 @@ Vodoley = {
 		random = no
 		sprite = 13
 
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		political_power_factor = 0.15
 		
 		ai_will_do = {
@@ -3912,7 +3912,7 @@ Vodoley = {
 		random = no
 		sprite = 13
 		fascism_drift = -0.05
-		communism_drift = -0.05
+		vmestolev_drift = -0.05
 		democratic_drift = 0.05
 		democratic_acceptance = 40
 	}
@@ -4005,7 +4005,7 @@ Vodoley = {
 	veteran_anti_bolshevik = {
 		random = no
 		sprite = 13
-		communism_drift = -0.05
+		vmestolev_drift = -0.05
 		non_core_manpower = -0.005
 		conscription_factor = 0.1
 	}
@@ -4013,28 +4013,28 @@ Vodoley = {
 	revolutionary_poet = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		political_power_factor = 0.15
 	}
 
 	socialist_justice = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		resistance_target = -0.05
 	}
 
 	marxist_fundementalist = {
 		random = no
 		sprite = 13
-		communism_drift = 0.1
+		vmestolev_drift = 0.1
 		stability_factor = 0.15
 	}
 
 	patriotic_socialist = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		war_support_factor = 0.1
 	}
 
@@ -4097,7 +4097,7 @@ Vodoley = {
 	leftist_intellectual = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		communism_acceptance = 25
 		research_speed_factor = 0.05
 	}
@@ -4173,14 +4173,14 @@ Vodoley = {
 	anti_bolshevik_leftist = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		conscription_factor = 0.15
 	}
 
 	devoted_marxist = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		opinion_gain_monthly_same_ideology_factor = 1.0
 		stability_factor = 0.1
 	}
@@ -4188,7 +4188,7 @@ Vodoley = {
 	baltic_revolutionary = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 	}
@@ -4232,7 +4232,7 @@ Vodoley = {
 	socialist_autocrat = {
 		random = no
 		sprite = 13
-		communism_drift = 0.05
+		vmestolev_drift = 0.05
 		political_power_factor = 0.2
 	}
 	
