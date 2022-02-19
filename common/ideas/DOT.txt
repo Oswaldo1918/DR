@@ -314,6 +314,25 @@ ideas = {
 			   special_forces_attack_factor = 0.05
 			   }
 		    }
+			DOT_psarni = {
+
+			   picture = idea_chi_incompetent_officers
+			
+			   modifier = {
+			   enemy_operative_capture_chance_factor = 0.1
+			   enemy_operative_detection_chance_factor = 0.1
+			   resistance_growth = -0.1
+			   }
+		    }
+			DOT_boyevei_psi = {
+
+			   picture = idea_chi_incompetent_officers
+			
+			   modifier = {
+			   army_speed_factor = 0.1
+			   war_support_factor = 0.2
+			   }
+		    }
 	    }
 		
 }
