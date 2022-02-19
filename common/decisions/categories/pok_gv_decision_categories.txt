@@ -28,12 +28,16 @@ zahvat_terri = {
 
 import_marakumbi = { 
  icon = generic_prospect_for_resources
-    allowed = {
-    has_completed_focus = GAL_import_marakumbi
-    original_tag = GAL
+    visible = {
+		original_tag = GAL
+		has_country_flag = GAL_marakumba_cf
 	}
+}
+
+GST_cat = { 
+ icon = generic_prospect_for_resources
 	visible = {
-    has_completed_focus = GAL_import_marakumbi
-    original_tag = GAL
+		original_tag = GAL
+		has_country_flag = GST_stroyka_country_flag
 	}
 }

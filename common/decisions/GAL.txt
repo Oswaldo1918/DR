@@ -1,14 +1,14 @@
 import_marakumbi = {
 
     up_import_marakumbi = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_generic_economy
 		days_re_enable = 0
 
         ai_will_do = {
 			factor = 4
 		}
         visible = {
-            has_completed_focus = GAL_import_marakumbi
+	      	has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_3}
 			NOT = {has_idea = GAL_marakumba_6}
         }
@@ -109,15 +109,14 @@ import_marakumbi = {
     }
 	
 	down_import_marakumbi = {
-        icon = decision_generic_intelligence_operation
-		days_remove = 20
+        icon = decision_category_generic_economy
 		days_re_enable = 0
 
         ai_will_do = {
 			factor = 4
 		}
         visible = {
-            has_completed_focus = GAL_import_marakumbi
+            has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_0}
         }
 		
@@ -216,4 +215,76 @@ import_marakumbi = {
 
     }
 	
+}
+
+GST_cat = {
+
+ GST_stroyka = {
+        icon = decision_eng_install_government
+		days_remove = 400
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+        visible = {
+		    has_country_flag = GST_stroyka_country_flag
+			NOT = { has_country_flag = GAL_GST_stroyka_cf }
+        }
+		
+		modifier = {
+			civilian_factory_use = 7
+		}
+		
+		remove_effect = {
+        set_country_flag = GAL_GST_stroyka_cf
+		add_offsite_building = { type = industrial_complex level = 1 }	
+		}
+
+    }
+	
+	GST_stroyka_CF = {
+        icon = decision_category_generic_industry
+		days_remove = 100
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+		visible = {
+			has_country_flag = GAL_GST_stroyka_cf
+        }
+     
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect = {
+		add_offsite_building = { type = industrial_complex level = 1 }	
+		}
+
+    }
+	
+	GST_stroyka_MF = {
+        icon = decision_category_generic_industry
+		days_remove = 100
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+		visible = {
+			has_country_flag = GAL_GST_stroyka_cf
+        }
+  
+		modifier = {
+			civilian_factory_use = 4
+		}
+		
+		remove_effect = {
+		add_offsite_building = { type = arms_factory level = 1 }	
+		}
+
+    }
+
 }

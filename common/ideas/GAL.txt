@@ -39,38 +39,39 @@ ideas = {
 	
 			   modifier = {
 				MONTHLY_POPULATION = -0.5
-		    	stability_factor = -0.07
+		    	stability_factor = -0.3
 			    }
 		    }
 			
 			GAL_marakumba_2 = {
 	
 			   modifier = {
-				MONTHLY_POPULATION = -0.2
-		    	stability_factor = -0.03
+				MONTHLY_POPULATION = -0.4
+		    	stability_factor = -0.25
 			    }
 		    }
 			
 			GAL_marakumba_3 = {
 	
 			   modifier = {
-				MONTHLY_POPULATION = 0.1
+				MONTHLY_POPULATION = -0.3
+		    	stability_factor = -0.2
 			    }
 		    }
 			
 			GAL_marakumba_4 = {
 	
 			   modifier = {
-				MONTHLY_POPULATION = 0.3
-		    	stability_factor = 0.03
+				MONTHLY_POPULATION = -0.2
+		    	stability_factor = -0.1
 			    }
 		    }
 			
 			GAL_marakumba_5 = {
 	
 			   modifier = {
-				MONTHLY_POPULATION = 0.6
-		    	stability_factor = 0.07
+				MONTHLY_POPULATION = 0.05
+		    	stability_factor = 0.05
 			    }
 		    }
 			
@@ -169,6 +170,13 @@ ideas = {
 			    }
 		    }
 			
+			GAL_ed_budget_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
 			GAL_rossnab_i = {
 	
 			   modifier = {
@@ -180,6 +188,66 @@ ideas = {
 	
 			   modifier = {
 		    	political_power_factor = 0.05
+			    }
+		    }
+			
+			GAL_kosmoleti_i = {
+	
+			   modifier = {
+		    	air_maximum_speed_factor = 0.1
+			    }
+		    }
+			
+			GAL_speznaz_i = {
+	
+			   modifier = {
+		    	army_leader_start_level = 2
+				special_forces_attack_factor = 0.1
+	        	special_forces_defence_factor = 0.1
+			    }
+		    }
+			
+			GAL_nar_op_i = {
+	
+			   modifier = {
+		    	conscription = 0.05
+			    }
+		    }
+			
+			GAL_genii_v_NII_i = {
+	
+			   modifier = {
+		    	research_speed_factor = 0.1
+			    }
+		    }
+			
+			GAL_vodochnaya_monopoliya_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_tabachnaya_monopoliya_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.01
+			    }
+		    }
+			
+			GAL_chastnaya_torgovlya_i = {
+	
+			   modifier = {
+				consumer_goods_factor = -0.01
+		    	stability_factor = -0.05
+			    }
+		    }
+			
+			GAL_naz_torgovci_i = {
+	
+			   modifier = {
+				political_power_gain = 0.05
+		    	stability_factor = -0.1
 			    }
 		    }
 	   }

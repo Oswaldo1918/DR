@@ -1,7 +1,7 @@
 zahvat_terri = {
 
     zahvat_329 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -50,7 +50,7 @@ zahvat_terri = {
     }
 	
 	zahvat_578 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -99,7 +99,7 @@ zahvat_terri = {
     }
 	
 	zahvat_569 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -148,7 +148,7 @@ zahvat_terri = {
     }
 	
 	zahvat_577 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -197,7 +197,7 @@ zahvat_terri = {
     }
 	
 	zahvat_576 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -246,7 +246,7 @@ zahvat_terri = {
     }
 	
 		zahvat_575 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -295,7 +295,7 @@ zahvat_terri = {
     }
 	
 	zahvat_567 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -344,7 +344,7 @@ zahvat_terri = {
     }
 	
 	zahvat_654 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -393,7 +393,7 @@ zahvat_terri = {
     }
 	
 	zahvat_824 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -442,7 +442,7 @@ zahvat_terri = {
     }
 	
 	zahvat_403 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -491,7 +491,7 @@ zahvat_terri = {
     }
 	
 	zahvat_572 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -540,7 +540,7 @@ zahvat_terri = {
     }
 	
 	zahvat_573 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
 
@@ -601,7 +601,7 @@ zahvat_terri = {
     }
 	
 	add_vintovki = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
 
@@ -640,7 +640,7 @@ zahvat_terri = {
     }
 	
 	add_vintovki_2 = {
-        icon = decision_generic_intelligence_operation
+        icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
 
@@ -671,10 +671,10 @@ zahvat_terri = {
 
 		remove_effect = {
 		  add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 500
-							producer = ROOT
-						}
+				type = infantry_equipment_0
+				amount = 500
+				producer = ROOT
+			}
 		}
     }
 }

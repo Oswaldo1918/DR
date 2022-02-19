@@ -14,7 +14,9 @@ focus_tree = {
 		cost = 10,00
 		x = 28
 		y = 0
-
+            completion_reward = {
+					add_stability = 0.1
+				}
 	}
 	focus = {
 		id = GAL_cowboyi
@@ -126,7 +128,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-
+            completion_reward = {
+					add_stability = 0.1
+				}
 	}
 	focus = {
 		id = GAL_dat_svobodu_biznesu
@@ -145,13 +149,15 @@ focus_tree = {
 	focus = {
 		id = GAL_BEZ_a_ne_BES
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = GAL_dat_svobodu_biznesu
 		}
 		x = 18
 		y = 4
-
+            completion_reward = {
+					add_political_power = 50
+				}
 	}
 	focus = {
 		id = GAL_unichtozhit_barinov-hozyainov
@@ -256,7 +262,10 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
-
+            completion_reward = {
+					add_ideas = GAL_nar_op_i
+				}
+				
 	}
 	focus = {
 		id = GAL_gosplan
@@ -335,7 +344,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 8
-
+            completion_reward = {
+					add_ideas = GAL_genii_v_NII_i
+				}
 	}
 	focus = {
 		id = GAL_focus_na_radari
@@ -346,7 +357,15 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
-
+            completion_reward = {
+					570 = {
+							add_building_construction = {
+								type = radar_station
+								level = 2
+								instant_build = yes
+							}
+					}
+			}
 	}
 	focus = {
 		id = GAL_bomba
@@ -357,7 +376,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 10
-
+        completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+			}
+		}
 	}
 	focus = {
 		id = GAL_Stroyka_kosmoporta
@@ -368,7 +394,15 @@ focus_tree = {
 		}
 		x = 21
 		y = 9
-
+            completion_reward = {
+					570 = {
+							add_building_construction = {
+								type = air_base
+								level = 5
+								instant_build = yes
+							}
+					}
+			}
 	}
 	focus = {
 		id = GAL_kosmoleti
@@ -378,8 +412,10 @@ focus_tree = {
 			focus = GAL_Stroyka_kosmoporta
 		}
 		x = 21
-		y = 11
-
+		y = 11	
+            completion_reward = {
+					add_ideas = GAL_kosmoleti_i
+				}
 	}
 	focus = {
 		id = GAL_proekt_velikikogo_kosmicheskogo_tambova
@@ -390,7 +426,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 13
-
+            completion_reward = {
+					set_country_flag = GST_stroyka_country_flag
+				}
 	}
 	focus = {
 		id = GAL_proizvodstvo_combainov
@@ -599,12 +637,15 @@ focus_tree = {
 		}
 		x = 16
 		y = 8
+            completion_reward = {
+					add_ideas = GAL_speznaz_i
+				}
 
 	}
 	focus = {
 		id = GAL_export_lukinizma
 		icon = GFX_focus_generic_little_entente
-		cost = 10,00
+		cost = 2
 		prerequisite = {
 			focus = GAL_speznaz
 		}
@@ -613,7 +654,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 9
-
+            completion_reward = {
+					create_intelligence_agency = yes
+				}
 	}
 	focus = {
 		id = GAL_vtorzheniye_na_celenu
@@ -712,8 +755,8 @@ focus_tree = {
 		y = 11
 			completion_reward = {
 					add_ideas = GAL_marakumba_import_0
+					set_country_flag = GAL_marakumba_cf
 				}
-
 	}
 	focus = {
 		id = GAL_samoobespecheniye_marakumboy
@@ -736,6 +779,79 @@ focus_tree = {
 		}
 		x = 16
 		y = 14
+		
+		available = {
+			owns_state = 218
+		    controls_state = 218
+			owns_state = 238
+		    controls_state = 238
+			owns_state = 245
+		    controls_state = 245
+			owns_state = 234
+		    controls_state = 234
+			owns_state = 137
+		    controls_state = 137
+			owns_state = 235
+		    controls_state = 235
+		}
+		
+		 completion_reward = {
+					add_ideas = GAL_marakumba_6
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_1
+								}
+									remove_idea = GAL_marakumba_1
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_2
+								}
+									remove_idea = GAL_marakumba_2
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_3
+								}
+									remove_idea = GAL_marakumba_3
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_4
+								}
+									remove_idea = GAL_marakumba_4
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_5
+								}
+									remove_idea = GAL_marakumba_5
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_import_0
+								}
+									remove_idea = GAL_marakumba_import_0
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_import_1
+								}
+									remove_idea = GAL_marakumba_import_1
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_import_2
+								}
+									remove_idea = GAL_marakumba_import_2
+					}
+					if = {
+							limit = {
+									has_idea = GAL_marakumba_import_3
+								}
+									remove_idea = GAL_marakumba_import_3
+					}
+				}
 
 	}
 	focus = {
@@ -753,7 +869,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 8
-
+	        completion_reward = {
+					add_ideas = GAL_ed_budget_i
+				}
 	}
 	focus = {
 		id = GAL_obshestvo_bezsmertnih_strannikov_vselennoy
@@ -764,7 +882,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 15
-
+        completion_reward = {
+					add_stability = 0.4
+				}
 	}
 	focus = {
 		id = GAL_bashkiriya
@@ -965,7 +1085,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 9
-
+            completion_reward = {
+					add_ideas = GAL_vodochnaya_monopoliya_i
+				}
 	}
 	focus = {
 		id = GAL_tabachnaya_monopoliya
@@ -976,7 +1098,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 9
-
+            completion_reward = {
+					add_ideas = GAL_tabachnaya_monopoliya_i
+				}
 	}
 	focus = {
 		id = GAL_chastnaya_torgovlya
@@ -990,7 +1114,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 10
-
+            completion_reward = {
+					add_ideas = GAL_chastnaya_torgovlya_i
+				}
 	}
 	focus = {
 		id = GAL_naz_torgovci
@@ -1001,7 +1127,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 11
-
+            completion_reward = {
+					add_ideas = GAL_naz_torgovci_i
+				}
 	}
 	focus = {
 		id = GAL_reforma_pensii
@@ -1015,7 +1143,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 12
-
+ completion_reward = {
+					add_stability = 0.05
+				}
 	}
 	focus = {
 		id = GAL_mobilizaciya_nauchnih_sotrudnikov
@@ -1040,6 +1170,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 13
-
+		
+		 completion_reward = {
+					add_stability = 0.05
+				}
 	}
 }
