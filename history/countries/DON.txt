@@ -12,6 +12,17 @@ set_technology = {
 	early_fighter = 1
 }
 
+recruit_character = DON_leonid_kurakov
+recruit_character = DON_strelkov
+recruit_character = DON_mozgovoy
+recruit_character = DON_batmen
+recruit_character = DON_motorola
+recruit_character = DON_givi
+recruit_character = DON_Kosrubitskiy
+recruit_character = DON_pavel_gubarev
+recruit_character = DON_ajo_benes
+recruit_character = DON_andrej_purgin
+
 add_ideas = {
 	DON_Yg_bastion
 	DON_silnaya_ruka
@@ -29,13 +40,3 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Леонид Кураков"
-	desc = "POLITICS_KURAKOV_DESC"
-	picture = "Leonid_Kurakov.dds"
-	expire = "1999.1.1"
-	ideology = nacbol
-	traits = { Вечный_сепаратист
-		#
-	}
-}

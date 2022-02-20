@@ -1,0 +1,374 @@
+characters={
+    DON_leonid_kurakov = {
+		name = "Леонид Кураков"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Leonid_Kurakov.dds"
+			}
+		}
+
+        country_leader = {
+			ideology = nacbol
+			traits = { Вечный_сепаратист }
+			expire = "1999.3.1.1"
+			id = -1
+		}	
+	}
+	
+	DON_strelkov = {
+		name = "Игорь Стрелков"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_igor_strelkov"
+				large = "gfx/leaders/DON/Strelkov.dds"
+			}
+		}
+
+        field_marshal={
+			traits={ infantry_officer organisational_leader defensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = DON_strelkov
+			allowed = {
+				original_tag = DON
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		
+	}
+	
+	DON_mozgovoy = {
+		name = "Алексей Мозговой"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_aleksey_mozgovoy"
+				large = "gfx/leaders/DON/Mozgovoy.dds"
+			}
+		}
+
+        corps_commander={
+			traits={ inflexible_strategist bearer_of_artillery }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = DON_mozgovoy
+			allowed = {
+				original_tag = DON
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+		
+	}
+	
+	DON_batmen = {
+		name = "Александр «Бэтмен» Беднов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_aleksandr_batmen_bednov"
+				large = "gfx/leaders/DON/Batman.dds"
+			}
+		}
+
+        corps_commander={
+			traits={ commando ranger trait_engineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = DON_batmen
+			allowed = {
+				original_tag = DON
+			}
+			traits = {
+				army_regrouping_2
+			}
+		}
+		
+	}
+	
+	DON_motorola = {
+		name = "Арсен «Моторола» Павлов"
+
+		portraits = {
+			army = {
+	       		small = "GFX_idea_Motorola"
+				large = "gfx/leaders/DON/Motorola.dds"
+			}
+		}
+
+        corps_commander={
+			traits={ trait_reckless trickster urban_assault_specialist }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+		
+	}
+	
+	DON_givi = {
+		name = "Михаил «Гиви» Толстых"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/DON/Givi.dds"
+			}
+		}
+
+        corps_commander={
+			traits={ trait_reckless armor_officer brilliant_strategist }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+		
+	}
+	
+	DON_Kosrubitskiy = {
+		name = "Алексей Кострубицкий"
+
+		portraits = {
+			army = {
+			    small = "GFX_idea_alexey_kostrubitsky"
+				large = "gfx/leaders/DON/Kosrubitskiy.dds"
+			}
+		}
+
+       	navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+		
+		advisor={
+			slot = navy_chief
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				navy_chief_commerce_raiding_2 
+			}
+		}
+		
+	}
+	
+	DON_pavel_gubarev = {
+		name = "Павел Губарев"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_pavel_gubarev"
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+		
+	}
+	
+	DON_ajo_benes = {
+		name = "Айо Бенес"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_beness_aijo"
+				large = "gfx/leaders/DON/Portrait_DON_Beness_Aijo.dds"				
+			}
+		}
+		
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+
+        advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				propaganda_expert 
+			}
+		}
+		
+	}
+	
+	DON_andrej_purgin = {
+		name = "Андрей Пургин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_andrey_purgin"
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+		
+	}
+	
+	DON_andrej_purgin = {
+		name = "Андрей Пургин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_andrey_purgin"
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+		
+	}
+	
+	DON_aleksandr_zhuchkovsky = {
+		name = "Александр Жучковский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_alexander_zhuchkovsky"
+			}
+		}
+
+        advisor={
+			slot = air_chief
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				army_bonus_air_superiority_factor 
+			}
+		}
+		
+	}
+	
+	DON_valentin_matuzenko = {
+		name = "Валентин Матузенко"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_valentin_matuzenko"
+			}
+		}
+
+        advisor={
+			slot = high_command
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				army_armored_2 
+			}
+		}
+		
+	}
+	
+	DON_valentin_matuzenko = {
+		name = "Сергей «Хмурый» Петровский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_sergey_gloomy_petrovsky"
+			}
+		}
+
+        advisor={
+			slot = theorist
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				superior_firepower_expert 
+			}
+		}
+		
+	}
+}

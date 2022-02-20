@@ -62,7 +62,7 @@ characters={
 		}
 
        corps_commander = {
-	        traits = { career_officer war_hero }
+	        traits = { brilliant_strategist politically_connected media_personality }
 	        skill = 5	
 	        attack_skill = 1
 	        defense_skill = 4
@@ -84,7 +84,7 @@ characters={
 		}
 
         corps_commander = {
-	        traits = { career_officer war_hero }
+	        traits = { career_officer politically_connected }
 	        skill = 3
 	        attack_skill = 1
 	        defense_skill = 3
@@ -105,11 +105,53 @@ characters={
 		}
 
         corps_commander = {
-	        traits = { war_hero }
+	        traits = { inflexible_strategist }
 	        skill = 3	
 	        attack_skill = 1
 	        defense_skill = 3
 	        planning_skill = 2
+	        logistics_skill = 3
+        }
+		
+	}
+	
+	TUP_pavel_badirov = {
+		name = "Павел Бадыров"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_pavel_badirov"
+				large = "gfx/leaders/TUP/Badirov.dds"
+			}
+		}
+
+        corps_commander = {
+	        traits = { media_personality armor_officer panzer_leader }
+	        skill = 2
+	        attack_skill = 3
+	        defense_skill = 2
+	        planning_skill = 2
+	        logistics_skill = 2
+        }
+		
+	}
+	
+	TUP_mihail_lapidus = {
+		name = "Михаил Лапидус"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_mihail_lapidus"
+				large = "gfx/leaders/TUP/Mihail_Lapidus.dds"
+			}
+		}
+
+        corps_commander = {
+	        traits = { media_personality urban_assault_specialist }
+	        skill = 2
+	        attack_skill = 1
+	        defense_skill = 4
+	        planning_skill = 3
 	        logistics_skill = 3
         }
 		

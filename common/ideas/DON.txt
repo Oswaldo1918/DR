@@ -653,6 +653,70 @@ ideas = {
 		
 		designer = yes
 		
+		DON_ZimM = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			available = {
+				controls_state = 221
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		DON_HBZ = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			available = {
+				controls_state = 221
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		DON_HKBM = {
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			available = {
+				controls_state = 221
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 	}
 	
 	naval_manufacturer = { 
@@ -710,7 +774,30 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+
+        DON_Motor_sich = { 
+
+			
+			allowed = {
+				original_tag = DON
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			available = {
+				controls_state = 200
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
 
 	}
 	
