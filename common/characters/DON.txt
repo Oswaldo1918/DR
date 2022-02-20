@@ -39,6 +39,7 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = DON_strelkov
+
 			allowed = {
 				original_tag = DON
 			}
@@ -72,6 +73,7 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = DON_mozgovoy
+
 			allowed = {
 				original_tag = DON
 			}
@@ -105,6 +107,7 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = DON_batmen
+
 			allowed = {
 				original_tag = DON
 			}
@@ -180,6 +183,8 @@ characters={
 		
 		advisor={
 			slot = navy_chief
+			idea_token = DON_Kosrubitskiy
+
 			allowed = {
 				original_tag = DON
 			}
@@ -204,6 +209,8 @@ characters={
 
         advisor={
 			slot = political_advisor
+			idea_token = DON_pavel_gubarev
+
 			allowed = {
 				original_tag = DON
 			}
@@ -239,6 +246,8 @@ characters={
 
         advisor={
 			slot = political_advisor
+			idea_token = DON_ajo_benes
+
 			allowed = {
 				original_tag = DON
 			}
@@ -263,30 +272,8 @@ characters={
 
         advisor={
 			slot = political_advisor
-			allowed = {
-				original_tag = DON
-			}
-			ai_will_do = {
-				factor = 10
-			}
-			traits = {
-				silent_workhorse 
-			}
-		}
-		
-	}
-	
-	DON_andrej_purgin = {
-		name = "Андрей Пургин"
+			idea_token = DON_andrej_purgin
 
-		portraits = {
-			army = {
-				small = "GFX_idea_andrey_purgin"
-			}
-		}
-
-        advisor={
-			slot = political_advisor
 			allowed = {
 				original_tag = DON
 			}
@@ -311,6 +298,8 @@ characters={
 
         advisor={
 			slot = air_chief
+			idea_token = DON_aleksandr_zhuchkovsky
+
 			allowed = {
 				original_tag = DON
 			}
@@ -318,7 +307,7 @@ characters={
 				factor = 10
 			}
 			traits = {
-				army_bonus_air_superiority_factor 
+				air_chief_ground_support_2 
 			}
 		}
 		
@@ -335,6 +324,8 @@ characters={
 
         advisor={
 			slot = high_command
+			idea_token = DON_valentin_matuzenko
+
 			allowed = {
 				original_tag = DON
 			}
@@ -359,6 +350,8 @@ characters={
 
         advisor={
 			slot = theorist
+			idea_token = DON_sergey_petrovsky
+
 			allowed = {
 				original_tag = DON
 			}

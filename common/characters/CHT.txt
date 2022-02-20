@@ -40,7 +40,9 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		advisor={ slot = army_chief
+		advisor={
+    		slot = army_chief
+			idea_token = CHT_stazist
 			allowed = {
 				original_tag = CHT
 			}
@@ -74,7 +76,9 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		advisor={ slot = army_chief
+		advisor={
+    		slot = army_chief
+			idea_token = CHT_mesyats
 			allowed = {
 				original_tag = CHT
 			}
@@ -117,7 +121,9 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		advisor={ slot = army_chief
+		advisor={
+    		slot = army_chief
+			idea_token = CHT_telezniy
 			allowed = {
 				original_tag = CHT
 			}
@@ -151,7 +157,9 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		advisor={ slot = army_chief
+		advisor={
+    		slot = army_chief
+			idea_token = CHT_Ahora1
 			allowed = {
 				original_tag = CHT
 			}
@@ -165,7 +173,9 @@ characters = {
 				factor = 1
 			}
 		}
-		advisor={ slot = high_command
+		advisor={
+    		slot = high_command
+			idea_token = CHT_Ahora2
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -182,11 +192,12 @@ characters = {
 				factor = 1
 			}
 		}
-		political_advisor = {
-			 allowed = {
-                original_tag = CHT 
-				
+		advisor = {
+     		slot = political_advisor
+			allowed = {
+                original_tag = CHT 			
             }
+			idea_token = CHT_Ahora3
 			available = {
 			    NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
@@ -216,7 +227,9 @@ characters = {
 			expire = "3000.1.1"
 			id = -1
 		}
-		advisor={ slot = army_chief
+		advisor={ 
+	    	idea_token = CHT_deloksli
+		    slot = army_chief
 			allowed = {
 				original_tag = CHT
 			}
@@ -252,7 +265,9 @@ characters = {
 	    logistics_skill = 2
 		legacy_id = -1
         }
-		advisor={ slot = army_chief
+		advisor={
+     		slot = army_chief
+			idea_token = CHT_Cummunist
 			allowed = {
 				original_tag = CHT
 			}
@@ -303,13 +318,15 @@ characters = {
 	logistics_skill = 4
 		legacy_id = -1
         }
-		advisor={ slot = high_command
+		advisor={ 
+	    	idea_token = CHT_zaytsev
+		    slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
-	       available = {		
-           has_government = vmestolev
-		   }
+	        available = {		
+            has_government = vmestolev
+		    }
 			traits = { army_infantry_1  }
 			
 			ai_will_do = {
@@ -355,7 +372,9 @@ characters = {
 	logistics_skill = 3
 		legacy_id = -1
         }
-		advisor={ slot = high_command
+		advisor={ 
+	    	idea_token = CHT_ivanov
+		    slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -378,7 +397,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+	    	idea_token = CHT_wladislav_zalujniy
+      		slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -398,7 +419,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+	    	idea_token = CHT_anton_simusov1
+     		slot = political_advisor
 			allowed = {
                 original_tag = CHT
 				
@@ -408,7 +431,9 @@ characters = {
 			}
             traits = { adventurous_daredevil }
 	    }
-		advisor={ slot = high_command
+		advisor={
+	    	idea_token = CHT_anton_simusov2
+    		slot = high_command
 			allowed = {
 				original_tag = CHT
 			}
@@ -431,7 +456,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_ostin_pauers
 			allowed = {
                 original_tag = CHT 
 				
@@ -452,7 +479,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_gus
 			allowed = {
                 original_tag = CHT
 				
@@ -472,7 +501,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_roman_latyshev
 			allowed = {
                 original_tag = CHT
 				
@@ -492,7 +523,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_andraste
 			allowed = {
                 original_tag = CHT
 				
@@ -512,7 +545,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_anstal_from_people1
 			allowed = {
                 original_tag = CHT 
 			}
@@ -522,7 +557,9 @@ characters = {
 				
             traits = { backroom_backstabber }
 	    }
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_anstal_from_people2
 			allowed = {
 				original_tag = CHT
 			}
@@ -545,7 +582,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_dmitry_safonov
 			allowed = {
                 original_tag = CHT 
 			}
@@ -565,7 +604,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_kon_v_palto
 			allowed = {
                 original_tag = CHT 
 			}
@@ -585,7 +626,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_boy_from_saratov
 			allowed = {
                 original_tag = CHT 
 			}
@@ -605,7 +648,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_mich_sim
 			allowed = {
                 original_tag = CHT 
 			}
@@ -625,7 +670,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_weest_wee
 			allowed = {
                 original_tag = CHT 
 			}
@@ -645,7 +692,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+     		slot = political_advisor
+			idea_token = CHT_mich_duke1
 			allowed = {
                 original_tag = CHT 
 				
@@ -658,7 +707,9 @@ characters = {
 			}
             traits = { regional_traditionalist_leader }
 	    }
-		advisor={ slot = high_command
+		advisor={
+    		slot = high_command
+			idea_token = CHT_mich_duke2
 			allowed = {
 				original_tag = CHT
 			}
@@ -681,7 +732,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = political_advisor
+		advisor={
+    		slot = political_advisor
+			idea_token = CHT_mich_duke2 = evro_fourth
 			allowed = {
                 original_tag = CHT 
 				
@@ -704,7 +757,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_kot_fritz
 			allowed = {
 				original_tag = CHT
 			}
@@ -727,7 +782,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_nik_vas
 			allowed = {
 				original_tag = CHT
 			}
@@ -750,7 +807,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_felix_kornilov
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -777,7 +836,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_yuriy_lain
 			allowed = {
 				original_tag = CHT
 				NOT = { has_government = democratic }
@@ -804,7 +865,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_field_sekretar
 			allowed = {
 				original_tag = CHT
 			}
@@ -826,7 +889,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_wyach_step
 			allowed = {
 				original_tag = CHT
 			}
@@ -848,7 +913,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_Ruazerg
 			allowed = {
 				original_tag = CHT
 			}
@@ -869,7 +936,9 @@ characters = {
 			}
 		}
 
-		air_chief = {	
+		advisor = {	
+	    	slot = air_chief
+			idea_token = CHT_Neon_Petrovich
 			allowed = {
 				original_tag = CHT
 			}
@@ -892,7 +961,9 @@ characters = {
 			}
 		}
 
-		advisor={ slot = high_command	
+		advisor={
+    		slot = high_command	
+			idea_token = CHT_DoomHammer
 			allowed = {
 				original_tag = CHT
 			}
@@ -915,7 +986,9 @@ characters = {
 			}
 		}
 
-		navy_chief = {	
+		advisor = {	
+	    	slot = navy_chief
+	    	idea_token = CHT_North_demon
 			allowed = {
 				original_tag = CHT
 			}
