@@ -1,0 +1,44 @@
+﻿division_template = {
+name = "Пехота"
+
+	division_names_group = 123_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "1-я дивизия"
+		location = 3449
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "2-я дивизия"
+		location = 502
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я дивизия"
+		location = 11487
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+
+}
+
