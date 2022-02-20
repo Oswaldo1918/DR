@@ -85,6 +85,7 @@ country_event = {
         CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
+			   transfer_state = 833
                add_state_core = 399
                add_state_core = 256
                add_state_core = 249
@@ -93,6 +94,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
 			   declare_war_on = {
 		        target = CCO
 		        type = annex_everything}
@@ -118,6 +120,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -144,6 +147,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -169,6 +173,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255 
+               add_state_core = 833
 			    declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -202,10 +207,10 @@ country_event = {
 			end_puppet = CHT
 		}
 	set_global_flag = chat_civil_war
-	      if = {
-        CDR = {transfer_state = 399 
+               CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
+			   transfer_state = 833
                add_state_core = 399
                add_state_core = 256
                add_state_core = 249
@@ -214,6 +219,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
 			   declare_war_on = {
 		        target = CCO
 		        type = annex_everything}
@@ -239,6 +245,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -265,6 +272,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -290,6 +298,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255 
+               add_state_core = 833
 			    declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -306,11 +315,10 @@ country_event = {
 				add_ideas = CHT_great_srach_1
 	            add_ideas = CHT_shue
 				} 
-                CDR = { change_tag_from = CHT }
-			}	
+                CDR = { change_tag_from = CHT }	
 		}
 	}	
-		option = {
+	option = {
 	name = chat.3.c
 	hidden_effect = {
 	CHT = {
@@ -323,10 +331,10 @@ country_event = {
 			end_puppet = CHT
 		}
 	set_global_flag = chat_civil_war
-	      if = {
-        CDR = {transfer_state = 399 
+               CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
+			   transfer_state = 833
                add_state_core = 399
                add_state_core = 256
                add_state_core = 249
@@ -335,6 +343,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
 			   declare_war_on = {
 		        target = CCO
 		        type = annex_everything}
@@ -360,6 +369,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -386,6 +396,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -411,6 +422,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255 
+               add_state_core = 833
 			    declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -428,7 +440,6 @@ country_event = {
 	            add_ideas = CHT_shue
 				} 
                 CCO = { change_tag_from = CHT }
-			}	
 		}
 	}
 	option = {
@@ -444,10 +455,10 @@ country_event = {
 			end_puppet = CHT
 		}
 	set_global_flag = chat_civil_war
-	      if = {
-        CDR = {transfer_state = 399 
+             CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
+			   transfer_state = 833
                add_state_core = 399
                add_state_core = 256
                add_state_core = 249
@@ -456,6 +467,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
 			   declare_war_on = {
 		        target = CCO
 		        type = annex_everything}
@@ -481,6 +493,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -507,6 +520,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -532,6 +546,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255 
+               add_state_core = 833
 			    declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -548,8 +563,7 @@ country_event = {
 				add_ideas = CHT_great_srach_1
 	            add_ideas = CHT_shue
 				} 
-                VTC = { change_tag_from = CHT }
-			}	
+                VTC = { change_tag_from = CHT }	
 		}
 	}	
 	option = {
@@ -565,10 +579,10 @@ country_event = {
 			end_puppet = CHT
 		}
 	set_global_flag = chat_civil_war
-	      if = {
-        CDR = {transfer_state = 399 
+              CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
+			   transfer_state = 833
                add_state_core = 399
                add_state_core = 256
                add_state_core = 249
@@ -577,6 +591,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
 			   declare_war_on = {
 		        target = CCO
 		        type = annex_everything}
@@ -602,6 +617,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -628,6 +644,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255
+			   add_state_core = 833
                 declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -653,6 +670,7 @@ country_event = {
                add_state_core = 250
 			   add_state_core = 251
                add_state_core = 255 
+               add_state_core = 833
 			    declare_war_on = {
 		        target = CDR
 		        type = annex_everything}
@@ -671,7 +689,6 @@ country_event = {
 				} 
                 DGC = { change_tag_from = CHT }
 			}	
-		}
 	}	
 }	
 # Съезд Совета

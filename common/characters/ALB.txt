@@ -41,13 +41,74 @@ characters={
 		    slot = political_advisor
 			idea_token = ALB_shigin
 			allowed = {
-                original_tag = CHT
+                original_tag = ALB
 				
             }
 			available = {
 			    has_government = vmestolev
 			}
             traits = { revolutionary_poet }
+	    }
+    }
+	ALB_batov = {
+		name = "Александр Батов"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/idea_batov.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_batov
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { technocrat }
+	    }
+    }
+	ALB_bot_palach = {
+		name = "Бот-палач"
+		portraits = {
+			civilian = {
+				small = "gfx/ideas/idea_bot_palach.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_bot_palach
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { prince_of_terror }
+	    }
+    }
+	ALB_yaroslavsky = {
+		name = "Товарищ Ярославский"
+		portraits = {
+			army = {
+				small = "gfx/ideas/idea_yaroslavsky.dds"
+				large = "gfx/leaders/GAL/Yaroslavsky.dds"
+			}
+		}
+		advisor={ 
+		    slot = army_chief
+			idea_token = ALB_yaroslavsky
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { red_army_organizer }
 	    }
     }
 }
