@@ -4,7 +4,17 @@
 
 leader_traits = {
 
-Vodoley = {
+    chestniy_ment = {
+		sprite = 13
+		political_power_factor = 0.03
+		resistance_damage_to_garrison = -0.25 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Vodoley = {
         political_power_factor = -0.05
         command_power_gain = -0.05
 

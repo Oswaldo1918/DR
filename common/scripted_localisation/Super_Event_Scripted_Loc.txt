@@ -1,0 +1,53 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = LAZ_reunite_russia
+        }
+        localization_key = "sp_event_LAZ_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = MGN_reunite_russia
+        }
+        localization_key = "sp_event_MGN_reunite_russia"
+    }
+	
+}
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = LAZ_reunite_russia
+        }
+        localization_key = "sp_event_LAZ_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = MGN_reunite_russia
+        }
+        localization_key = "sp_event_MGN_reunite_russia_REMARK"
+    }
+}
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = LAZ_reunite_russia
+        }
+        localization_key = "sp_event_LAZ_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = MGN_reunite_russia
+        }
+        localization_key = "sp_event_MGN_reunite_russia_QUOTE"
+    }
+}	

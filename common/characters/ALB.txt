@@ -54,7 +54,7 @@ characters={
 		name = "Александр Батов"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/idea_batov.dds"
+				small = "GFX_idea_batov"
 			}
 		}
 		advisor={ 
@@ -74,7 +74,7 @@ characters={
 		name = "Бот-палач"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/idea_bot_palach.dds"
+				small = "GFX_idea_bot_palach"
 			}
 		}
 		advisor={ 
@@ -90,12 +90,49 @@ characters={
             traits = { prince_of_terror }
 	    }
     }
+	ALB_patelis = {
+		name = "Димитрис Пателис"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_patelis"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_patelis
+			allowed = {
+                original_tag = ALB
+				
+            }
+            traits = { marxist_academic }
+	    }
+    }
+	ALB_hose = {
+		name = "Хосе Гонсалес-Лопес"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_hose"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_hose
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { silent_workhorse }
+	    }
+    }
 	ALB_yaroslavsky = {
 		name = "Товарищ Ярославский"
 		portraits = {
 			army = {
-				small = "gfx/ideas/idea_yaroslavsky.dds"
-				large = "gfx/leaders/GAL/Yaroslavsky.dds"
+				small = "GFX_idea_yaroslavsky"
+				large = "gfx/leaders/ALB/Yaroslavsky.dds"
 			}
 		}
 		advisor={ 
@@ -110,5 +147,15 @@ characters={
 			}
             traits = { red_army_organizer }
 	    }
+		
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
     }
 }

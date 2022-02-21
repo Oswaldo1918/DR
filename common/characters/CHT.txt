@@ -30,7 +30,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/stazist.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_shtazist"
 			}
 		}
 		country_leader = {
@@ -66,7 +66,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/mesyats.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_mesyats"
 			}
 		}
 		country_leader = {
@@ -111,7 +111,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/telezniy.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_telezhniy"
 			}
 		}
 		country_leader = {
@@ -147,7 +147,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/Ahora.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_ahora"
 			}
 		}
 		country_leader = {
@@ -217,7 +217,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/deloksli.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_deloksli"
 			}
 		}
 		country_leader = {
@@ -253,7 +253,7 @@ characters = {
 			}
 			army = {
 			    large = "gfx/leaders/CHT/Cummunist.dds"
-				small = "GFX_idea_RCH_minister_chief_of_police"
+				small = "GFX_idea_cummunist"
 			}
 		}
 		field_marshal = {
@@ -287,7 +287,8 @@ characters = {
 	name = "Иван Гоголев"
 		portraits = {
 			army = {
-			    large = "gfx/leaders/CHT/Egor.dds"
+			    large = "gfx/leaders/CHT/ivan.dds"
+				small = "GFX_idea_ivan"
 			}
 		}
 		corps_commander = {
@@ -340,6 +341,7 @@ characters = {
 		portraits = {
 			army = {
 			    large = "gfx/leaders/CHT/Nikolas.dds"
+				small = "GFX_idea_nikolas"
 			}
 		}
 
@@ -393,7 +395,7 @@ characters = {
 		name = "Владислав Залужный"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/idea_wladislav_zalujniy.dds"
+				small = "GFX_idea_wladislav_zalujniy"
 			}
 		}
 
@@ -415,7 +417,7 @@ characters = {
 		name = "Антон Симусов"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/idea_anton_simusov.dds"
+				small = "GFX_idea_anton_simusov"
 			}
 		}
 
@@ -452,7 +454,7 @@ characters = {
 		name = "Остин Пауэрс"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/idea_ostin_pauers.dds"
+				small = "GFX_idea_ostin_pauers"
 			}
 		}
 
@@ -753,7 +755,7 @@ characters = {
 		name = "Кот Фриц"
 		portraits = {
 			army = {
-				small = "GFX_generic_political_advisor_europe_3"
+				small = "GFX_idea_kot_fritz"
 			}
 		}
 
