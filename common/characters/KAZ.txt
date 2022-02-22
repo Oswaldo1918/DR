@@ -1,0 +1,59 @@
+characters={
+	KAZ_borat = {
+		name = "Борат Сагдиев"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KAZ/Borat.dds"
+			}
+		}
+
+        country_leader = {
+	    	expire = "1999.1.1"
+        	ideology = conservatism
+         	traits = {
+        		#
+         	}
+		}	
+	}
+
+	KAZ_sanat = {
+		name = "Санат Жилкибаев"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_KUR_rojers"
+				large = "gfx/leaders/KAZ/Sanat.dds"
+			}
+		}
+		
+		country_leader = {
+	    	expire = "1999.1.1"
+        	ideology = marxismus
+         	traits = {
+        		#
+         	}
+		}	
+	}
+	
+	KAZ_shingiz = {
+		name = "Шингиз"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_KAZ_shingiz"
+				large = "gfx/leaders/KAZ/shingiz.dds"
+			}
+		}
+		
+		corps_commander = {
+        	traits = { career_officer politically_connected }
+         	skill = 3
+          	attack_skill = 3
+          	defense_skill = 1
+          	planning_skill = 2
+        	logistics_skill = 2
+        }
+	}
+}

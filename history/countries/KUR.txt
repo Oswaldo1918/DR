@@ -9,6 +9,10 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = KUR_kurginyan
+recruit_character = KUR_rojers
+recruit_character = KUR_grudinin
+
 add_ideas = {
 	KUR_polit_neodnoznach
 	KUR_nedobit_bander
@@ -24,38 +28,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Сергей Кургинян"
-	desc = "POLITICS_KURGINYAN_DESC"
-	picture = "Kurginyan.dds"
-	expire = "1999.1.1"
-	ideology = fourth_floor
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Александр Роджерс"
-	picture = "rodgers.dds"
-	traits = { career_officer war_hero }
-	skill = 4
-	
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Павел Грудинин"
-	picture = "kandidatotnaroda.dds"
-	traits = { career_officer war_hero }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 10
-	logistics_skill = 1
-}

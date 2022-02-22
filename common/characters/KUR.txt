@@ -1,0 +1,60 @@
+characters={
+	KUR_kurginyan = {
+		name = "Сергей Кургинян"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/Kurginyan.dds"
+			}
+		}
+
+        country_leader = {
+        	expire = "1999.1.1"
+        	ideology = fourth_floor
+        	traits = {
+        		#
+        	}
+		}	
+	}
+
+	KUR_rojers = {
+		name = "Александр Роджерс"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_KUR_rojers"
+				large = "gfx/leaders/KUR/rodgers.dds"
+			}
+		}
+		
+		corps_commander = {
+        	traits = { career_officer war_hero }
+        	skill = 4	
+        	attack_skill = 4
+        	defense_skill = 1
+           	planning_skill = 1
+        	logistics_skill = 1
+        }
+	}
+	
+	KUR_grudinin = {
+		name = "Павел Грудинин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_KUR_pavel_gruginin"
+				large = "gfx/leaders/KUR/kandidatotnaroda.dds"
+			}
+		}
+		
+		corps_commander = {
+        	traits = { career_officer war_hero }
+        	skill = 4	
+        	attack_skill = 4
+        	defense_skill = 1
+           	planning_skill = 1
+        	logistics_skill = 1
+        }
+	}
+}
