@@ -10,7 +10,8 @@ set_technology = {
 	motorised_infantry = 1
 }
 
-
+recruit_character = YUG_vulovic
+recruit_character = YUG_mladic
 
 set_popularities = {
 	neutrality = 100
@@ -22,13 +23,3 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Родолюб Вулович"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "vulovic.dds"
-	expire = "1999.1.1"
-	ideology = centrism
-	traits = {
-		war_hero_leader
-	}
-}

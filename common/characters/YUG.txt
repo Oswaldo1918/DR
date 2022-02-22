@@ -1,0 +1,40 @@
+characters={
+	YUG_vulovic = {
+		name = "Родолюб Вулович"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/YUG/vulovic.dds"
+			}
+		}
+
+        country_leader = {
+	expire = "1999.1.1"
+	ideology = centrism
+	traits = {
+		war_hero_leader
+	}
+		}	
+	}
+
+	YUG_mladic = {
+		name = "Ратко Младич"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_YUG_mladic"
+				large = "gfx/leaders/YUG/mladic.dds"
+			}
+		}
+		
+		corps_commander = {
+        	traits = { career_officer politically_connected }
+         	skill = 4
+          	attack_skill = 4
+          	defense_skill = 2
+          	planning_skill = 2
+        	logistics_skill = 2
+        }
+	}
+}
