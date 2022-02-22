@@ -570,7 +570,11 @@ ideas = {
 	
 	industrial_concern = {
 		
-		NOD_saratovskiy_NPZ = {
+		NOD_gazprom = {
+		
+		   available = {		
+           has_completed_focus = NOD_Gazprom
+		   }
 			
 			allowed = {
 				original_tag = NOD
@@ -605,7 +609,11 @@ ideas = {
 			traits = { industrial_concern }
 		}
 
-		NOD_REMO = {
+		NOD_KB_elbrus = {
+		
+		   available = {		
+           has_completed_focus = NOD_electronic_Elbrys
+		   }
 			
 			allowed = {
 				original_tag = NOD
@@ -640,7 +648,11 @@ ideas = {
 			}
 		}
 		
-		NOD_barricadi = {
+		NOD_rosteh = {
+		
+		   available = {		
+           has_completed_focus = NOD_Rosteh
+		   }
 
 			
 			allowed = {
