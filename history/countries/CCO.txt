@@ -16,8 +16,6 @@ set_technology = {
 	tech_support = 1
 }
 
-recruit_character = CCO_mesyats
-
 recruit_character = CCO_ribakov
 recruit_character = CCO_shedrin
 recruit_character = CCO_gremlin
@@ -32,64 +30,4 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Кривой Месяц"
-	desc = "POLITICS_KRIMES_DESC"
-	picture = "Mesyats.dds"
-	expire = "1999.1.1"
-	ideology = libertanian_chuchhe
-	traits = {
-		dictator
-	}
-}
-
-create_field_marshal = {
-	name = "Кривой Месяц"
-	id = 228003
-	picture = "gfx/leaders/CHT/mesyats.dds"
-	traits = { old_guard infantry_officer war_hero  }
-	skill = 3
-
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Сергей Рыбаков"
-	id = 70000
-	portrait_path = ""
-	traits = {   }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Евгений Щедрин"
-	id = 70001
-	portrait_path = ""
-	traits = {   }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = " Gainful Gremlin"
-	id = 70002
-	portrait_path = ""
-	traits = {   }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
 	

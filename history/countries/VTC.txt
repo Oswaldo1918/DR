@@ -28,49 +28,6 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Царь Де Локсли I"
-	desc = "POLITICS_LOKSLI_DESC"
-	picture = "Deloksli.dds"
-	expire = "1999.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-	}
-	create_country_leader = {
-	name = "Ахора Мазда"
-	desc = "POLITICS_AHORA_DESC"
-	picture = "Ahora.dds"
-	expire = "1999.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-	}
-	create_corps_commander = {
-	name = "Ахора Мазда"
-	picture = "Ahora.dds"
-	traits = { }
-	skill = 2
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-	create_field_marshal = {
-	name = "Царь Де Локсли I"
-	picture = "Deloksli.dds"
-	traits = { }
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
 	create_field_marshal = {
 	name = "Random47"
 	picture = ""

@@ -31,27 +31,6 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Даниил Тележный"
-	desc = "POLITICS_TELEZH_DESC"
-	picture = "Telezniy.dds"
-	expire = "1999.1.1"
-	ideology = white_polpotism
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-							name = "Даниил Тележный"
-							id = 782
-							portrait_path = "gfx/leaders/DGC/Telezniy.dds"
-							traits = { Inflexible_Strategist Infantry_Officer Organizer Guerilla_Fighter }
-							skill = 4
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 2
-							logistics_skill = 4
-						}
 create_corps_commander = {
 	name = "Сектант Сектантович"
 	id = 50001

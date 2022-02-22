@@ -497,174 +497,178 @@ ideas = {
    }
    
 	
-	political_advisor = {
-    NOD_patr_kirill = { 
-			
-			picture = generic_political_advisor_europe_5
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		NOD_VTZ = {
 
-			available = {
-				has_completed_focus = NOD_revival_RPTS
-			}
-
-			visible = {
-				has_country_flag = legit_patr
-				
-			}
 			
 			allowed = {
 				original_tag = NOD
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		NOD_VSZ = {
+			
+			allowed = {
+			original_tag = NOD
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}	
+			
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		NOD_SAZ = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
 				
 			}
 			
-			traits = { patr_kir great_survivor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
+	}
+	
+	industrial_concern = {
+		
+		NOD_saratovskiy_NPZ = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-      NOD_patr_feodor = { 
-			
-			picture = generic_political_advisor_europe_5
-
-			available = {
-				has_completed_focus = NOD_revival_RPTS
-			}
-
-			visible = {
-				has_country_flag = feodor_patr
-				
-			}
+		NOD_red_oktyabr = {
 			
 			allowed = {
 				original_tag = NOD
-				
 			}
 			
-			traits = { staunch_constitutionalist }
-
+			research_bonus = {
+				industry = 0.15
+				
+			}
 			ai_will_do = {
-				factor = 1
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		NOD_REMO = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		NOD_FNPZ_titan-barricadi = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
 			}
 		}
 		
-	 NOD_nik_star = { 
-			
-			picture = Nikolay_Starikov
+		NOD_barricadi = {
+
 			
 			allowed = {
 				original_tag = NOD
-				
 			}
 			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-	NOD_zah_pril = { 
-			
-			picture = Zahar_Prilepin
-			
-			allowed = {
-				original_tag = NOD
-				
+			research_bonus = {
+				infantry_weapons = 0.15
 			}
 			
-			traits = { fascist_demagogue hawk }
-
-			ai_will_do = {
-				factor = 3
-			}
-		}
-		
-	NOD_mic_sove = { 
+			traits = { infantry_equipment_manufacturer }
 			
-			picture = Miha_Sov
-			
-			allowed = {
-				original_tag = NOD
-				
-			}
-			
-			traits = { propaganda_bungler }
-
 			ai_will_do = {
 				factor = 2
 			}
 		}
 		
-	NOD_mar_kata = { 
-			
-			picture = Mariya_Katasonova
+		NOD_trolza = {
 			
 			allowed = {
 				original_tag = NOD
-				
 			}
 			
-			traits = { smooth_talking_charmer }
-
-			ai_will_do = {
-				factor = 5
+			research_bonus = {
+				motorized_equipment = 0.15
 			}
+			
+			traits = { motorized_equipment_manufacturer }
 		}
-		
-	NOD_saj_umal = { 
-			
-			picture = Sazhi_Umaloatova
-			
-			allowed = {
-				original_tag = NOD
-				
-			}
-			
-			traits = { captain_of_industry }
-
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	NOD_ste_zoto = { 
-			
-			picture = stepan_zotov
-			
-			allowed = {
-				original_tag = NOD
-				
-			}
-			
-			traits = { prince_of_terror }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	NOD_corp_one = { 
-			
-			picture = alan_lushnikov
-			
-			allowed = {
-				original_tag = NOD
-				
-			}
-			
-			traits = { war_industrialist }
-
-			ai_will_do = {
-				factor = 5
-			}
-		}	
-	}
-	army_chief = {
-
-		
-	}
-	high_command = {
-	   
-		
-		
 	}
 }

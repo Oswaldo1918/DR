@@ -49,4 +49,35 @@ ideas = {
 		    }
 	   }
 		
+		industrial_concern = {
+
+		ALB_tirana_universitet = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+		
+		ALB_gosbunkerstroy = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+		
+			modifier = {
+			   production_speed_bunker_factor = 0.15
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+	}
 }

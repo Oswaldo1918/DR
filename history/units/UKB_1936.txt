@@ -38,49 +38,49 @@ division_template = {
 units = {
 	division = {
 		name = "1-я пехотная дивизия"		
-		location = 11437
+		location = 11541
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 	}
 	division = {
 		name = "2-я пехотная дивизия"		
-		location = 11437
+		location = 9531
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 	}
 	division = {
 		name = "3-я пехотная дивизия"		
-		location = 11437
+		location = 6530
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 	}
 	division = {
 		name = "4-я пехотная дивизия"		
-		location = 11437
+		location = 11461
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 	}
 	division = {
 		name = "1-я дивизия ополчения"		
-		location = 11437
+		location = 486
 		division_template = "Ополчение"
         start_experience_factor = 0.1
 	}
 	division = {
 		name = "2-я дивизия ополчения"		
-		location = 11437
+		location = 472
 		division_template = "Ополчение"
         start_experience_factor = 0.1
 	}
 	division = {
 		name = "3-я дивизия ополчения"		
-		location = 11437
+		location = 429
 		division_template = "Ополчение"
         start_experience_factor = 0.1
 	}
 	division = {
 		name = "4-я дивизия ополчения"		
-		location = 11437
+		location = 9571
 		division_template = "Ополчение"
         start_experience_factor = 0.1
 	}
@@ -109,7 +109,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "UKB"
+			creator = "UKR"
 		}
 		requested_factories = 2
 		progress = 0.28

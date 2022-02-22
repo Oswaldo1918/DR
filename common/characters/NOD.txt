@@ -47,6 +47,24 @@ characters = {
 		legacy_id = -1
         }
 	}	
+	NOD_britva = {
+	name = "Борис Бритва"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/борис.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		corps_commander = {
+	    traits = { armor_officer harsh_leader  }
+	    skill = 2
+    	attack_skill = 3
+    	defense_skill = 1
+    	planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
 	NOD_ozon = {
 	name = "Роман Озонов"
 		portraits = {
@@ -66,7 +84,7 @@ characters = {
         }
 	}
 	NOD_Alex_Hirurg = {
-	name = Александр Хирург"
+	name = "Александр Хирург"
 		portraits = {
 			army = {
 			    large = "gfx/leaders/NOD/Alex_Hirurg.dds"
@@ -135,12 +153,12 @@ characters = {
 		name = "Николай Стариков"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/Nikolay_Starikov.dds"
+				small = "GFX_idea_Nikolay_Starikov"
 			}
 		}
 
 		advisor = {
-    		slot = political_advisor
+    		slot = political_advisor	
 			idea_token = NOD_nik_star
 			allowed = {
 				original_tag = NOD
@@ -157,7 +175,7 @@ characters = {
 		name = "Захар Прилепин"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/Zahar_Prilepin.dds"
+				small = "GFX_idea_Zahar_Prilepin"
 			}
 		}
 
@@ -179,7 +197,7 @@ characters = {
 		name = "Михаил Советский"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/Miha_Sov.dds"
+				small = "GFX_idea_Miha_Sov"
 			}
 		}
 
@@ -201,7 +219,7 @@ characters = {
 		name = "Мария Катасонова"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/Mariya_Katasonova.dds"
+				small = "GFX_idea_Mariya_Katasonova"
 			}
 		}
 
@@ -223,7 +241,7 @@ characters = {
 		name = "Сажи Умалатова"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/Sazhi_Umaloatova.dds"
+				small = "GFX_idea_Sazhi_Umaloatova"
 			}
 		}
 
@@ -245,7 +263,7 @@ characters = {
 		name = "Степан Зотов"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/stepan_zotov.dds"
+				small = "GFX_idea_stepan_zotov"
 			}
 		}
 
@@ -267,7 +285,7 @@ characters = {
 		name = "Алан Лужников"
 		portraits = {
 			civilian = {
-				small = "gfx/ideas/alan_lushnikov.dds"
+				small = "GFX_idea_alan_lushnikov"
 			}
 		}
 
