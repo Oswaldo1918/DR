@@ -46,6 +46,21 @@ characters = {
 	    logistics_skill = 4
 		legacy_id = -1
         }
+		advisor = {	
+		    slot = army_chief
+		    idea_token = NOD_Barkov
+			allowed = {
+			    original_tag = NOD
+			}
+			
+			available = { 	   
+			}
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}	
 	NOD_britva = {
 	name = "Борис Бритва"
@@ -64,6 +79,21 @@ characters = {
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor = {	
+		    slot = high_command
+		    idea_token = NOD_Barkov
+			allowed = {
+			    original_tag = NOD
+			}
+			
+			available = { 	   
+			}
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}
 	NOD_ozon = {
 	name = "Роман Озонов"
@@ -93,6 +123,24 @@ characters = {
 		}
 		corps_commander = {
 	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	NOD_vandaley = {
+	name = "Вандалей Йелендав"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/вандалей.dds"
+				small = "GFX_idea_RCH_minister_chief_of_police"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
 	    skill = 1
 	    attack_skill = 1
 	    defense_skill = 1
