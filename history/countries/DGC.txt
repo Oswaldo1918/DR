@@ -31,6 +31,17 @@ set_politics = {
 
 set_convoys = 40
 
+create_country_leader = {
+	name = "Даниил Тележный"
+	desc = "POLITICS_LOKSLI_DESC"
+	picture = "telezniy.dds"
+	expire = "1998.1.1"
+	ideology = white_polpotism
+	traits = {
+		#
+	}
+	}
+
 create_corps_commander = {
 	name = "Сектант Сектантович"
 	id = 50001
