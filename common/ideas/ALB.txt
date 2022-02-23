@@ -50,7 +50,7 @@ ideas = {
 
 			ALB_gum_yug = {
 
-			    picture = GFX_idea_GAL_marakumba_import_3
+			    picture = idea_GAL_marakumba_import_3
 			
 			    modifier = {
 				    MONTHLY_POPULATION = 0.1
@@ -60,7 +60,7 @@ ideas = {
 			
 			ALB_gum_gre = {
 
-			    picture = GFX_idea_GAL_marakumba_import_3
+			    picture = idea_GAL_marakumba_import_3
 			
 			    modifier = {
 				    MONTHLY_POPULATION = 0.1
@@ -70,7 +70,7 @@ ideas = {
 			
 			ALB_gum_tup = {
 
-			    picture = GFX_idea_GAL_marakumba_import_3
+			    picture = idea_GAL_marakumba_import_3
 			
 			    modifier = {
 				    MONTHLY_POPULATION = 0.1
@@ -80,7 +80,7 @@ ideas = {
 			
 			ALB_gum_to_alb = {
 
-			    picture = GFX_idea_GAL_minvneshtorg_i
+			    picture = idea_GAL_minvneshtorg_i
 			
 			    modifier = {
 				    consumer_goods_factor = 0.05	   
@@ -89,11 +89,11 @@ ideas = {
 			
 			ALB_economiya = {
 
-			    picture = GFX_idea_GAL_gosplan_i
+			    picture = GAL_gosplan_i
 			
 			    modifier = {
 				    consumer_goods_factor = -0.07	
-                    stability = -0.05					
+                    stability_factor = -0.05					
 		        }
 	        }
 	   }

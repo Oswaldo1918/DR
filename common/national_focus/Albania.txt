@@ -25,6 +25,9 @@ focus_tree = {
 		cost = 1,00
 		x = 24
 		y = 3
+		available = {
+					has_government = anarhostalinism
+				}
             completion_reward = {
 					remove_ideas = ALB_chess_segregation
 					remove_ideas = ALB_the_great_antigamer_campaign
@@ -203,6 +206,10 @@ focus_tree = {
 		x = 24
 		y = 4
 		
+		available = {
+					has_government = anarhostalinism
+				}
+		
 		completion_reward = {
 					add_political_power = 150
 				}
@@ -217,6 +224,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 5
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 		        TUP = {
@@ -235,6 +245,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 		        PGR = {
@@ -253,6 +266,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 	        	YUG = {
@@ -280,6 +296,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 					add_stability = 0.1
@@ -295,6 +314,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 7
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 					add_ideas = ALB_economiya
@@ -319,6 +341,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 6
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 					add_political_power = 150
@@ -334,6 +359,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
+		available = {
+					has_government = anarhostalinism
+				}
 		
 		completion_reward = {
 					add_ideas = privatizaciya
