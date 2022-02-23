@@ -317,3 +317,31 @@ news_event = {
 	set_country_flag = LAZ_reunite_russia_kostil	
 	}
 }
+news_event = {
+    id = dk_news.14
+	title = dk_news.14.t
+	desc = dk_news.14.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.14.a
+	}
+}
+news_event = {
+    id = dk_news.15
+	title = dk_news.15.t
+	desc = dk_news.15.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.15.a
+	}
+}

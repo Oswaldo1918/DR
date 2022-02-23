@@ -20,6 +20,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ALB_kozlorevolutsiya
+		icon = GFX_goal_generic_support_anstal
+		cost = 1,00
+		x = 24
+		y = 3
+            completion_reward = {
+					remove_ideas = ALB_chess_segregation
+					remove_ideas = ALB_the_great_antigamer_campaign
+				}
+	}
+	focus = {
 		id = ALB_collectivization
 		icon = GFX_focus_prc_agrarian_socialism
 		cost = 5,00
@@ -183,6 +194,153 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ALB_sud_nad_seminim
+		icon = GFX_goal_anti_comintern_pact
+		cost = 2,00
+		prerequisite = {
+			focus = ALB_kozlorevolutsiya
+		}
+		x = 24
+		y = 4
+		
+		completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ALB_gum_pomosh_tup
+		icon = GFX_goal_generic_major_alliance
+		cost = 3,00
+		prerequisite = {
+			focus = ALB_sud_nad_seminim
+		}
+		x = 22
+		y = 5
+		
+		completion_reward = {
+		        TUP = {
+					country_event = {
+							id = ALB.4
+						}
+				}
+        }
+	}
+	focus = {
+		id = ALB_gum_pomosh_gre
+		icon = GFX_focus_generic_befriend_greece
+		cost = 3,00
+		prerequisite = {
+			focus = ALB_sud_nad_seminim
+		}
+		x = 24
+		y = 5
+		
+		completion_reward = {
+		        PGR = {
+					country_event = {
+							id = ALB.3
+						}
+				}
+        }
+	}
+	focus = {
+		id = ALB_gum_pomosh_yug
+		icon = GFX_focus_invite_yugoslavia
+		cost = 3,00
+		prerequisite = {
+			focus = ALB_sud_nad_seminim
+		}
+		x = 26
+		y = 5
+		
+		completion_reward = {
+	        	YUG = {
+					country_event = {
+							id = ALB.2
+						}
+				}
+        }
+	}
+	focus = {
+		id = ALB_silnaya_ruka
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_gum_pomosh_tup
+		}
+		prerequisite = {
+			focus = ALB_gum_pomosh_gre
+		}
+		prerequisite = {
+			focus = ALB_gum_pomosh_yug
+		}
+		mutually_exclusive = {
+			focus = ALB_oslablenie_rezhima
+		}
+		x = 23
+		y = 6
+		
+		completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = ALB_rezhim_economii
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_silnaya_ruka
+		}
+		x = 23
+		y = 7
+		
+		completion_reward = {
+					add_ideas = ALB_economiya
+				}
+
+	}
+	focus = {
+		id = ALB_oslablenie_rezhima
+		icon = GFX_goal_tripartite_pact
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_gum_pomosh_tup
+		}
+		prerequisite = {
+			focus = ALB_gum_pomosh_gre
+		}
+		prerequisite = {
+			focus = ALB_gum_pomosh_yug
+		}
+		mutually_exclusive = {
+			focus = ALB_silnaya_ruka
+		}
+		x = 25
+		y = 6
+		
+		completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ALB_albanskiy_NEP
+		icon = GFX_focus_cht_cumpital
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_oslablenie_rezhima
+		}
+		x = 25
+		y = 7
+		
+		completion_reward = {
+					add_ideas = privatizaciya
+				}
+
+	}
+	focus = {
 		id = ALB_refuel_the_generator
 		icon = GFX_refuel_the_generator
 		cost = 5,00
@@ -297,10 +455,9 @@ focus_tree = {
 												}
 										}
 									50 = {
-											set_political_party = {
-													ideology = anarhostalinism
-													popularity = 50
-												}
+											country_event = {
+			                    				id = ALB.1
+			                      			}
 										}
 								}
 						}
@@ -459,7 +616,7 @@ focus_tree = {
 					create_wargoal = {
 							type = annex_everything
 							target = YUG
-						}	
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = PGR

@@ -121,9 +121,6 @@ characters={
                 original_tag = ALB
 				
             }
-			available = {
-			    has_government = vmestolev
-			}
             traits = { silent_workhorse }
 	    }
     }
@@ -156,6 +153,9 @@ characters={
 	    planning_skill = 2
 	    logistics_skill = 2
 		legacy_id = -1
+		visible = {
+			has_government = vmestolev
+			}
         }
     }
 }

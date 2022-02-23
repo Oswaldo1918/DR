@@ -1,0 +1,147 @@
+add_namespace = ALB
+
+	
+country_event = {
+	id = ALB.1 
+	title = ALB.1.t
+	desc = ALB.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ALB
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.1.a
+    start_civil_war = {
+				ruling_party = vmestolev
+				ideology = anarhostalinism
+				size = 0.1
+				capital = 44
+				states = { 805 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ALB
+					has_government = anarhostalinism
+				}
+				load_oob = "ALB_kozli"
+				set_war_support = 0.8
+			}
+			news_event = {id = dk_news.14}
+	}
+	
+	option = {
+	name = ALB.1.b
+        set_politics = {
+     	ruling_party = anarhostalinism
+       	elections_allowed = no	
+        }
+		news_event = {id = dk_news.15}
+	}
+}
+
+
+country_event = {
+	id = ALB.2
+	title = ALB.2.t
+	desc = ALB.2.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.2.a
+	ALB = {
+            add_timed_idea = {
+				idea = ALB_gum_yug
+				days = 300
+			}
+		}	
+	YUG	= {
+            add_timed_idea = {
+				idea = ALB_gum_to_alb
+				days = 300
+			}
+		}
+	}
+	
+	option = {
+	name = ALB.2.b
+      
+	}
+}
+
+country_event = {
+	id = ALB.3
+	title = ALB.3.t
+	desc = ALB.3.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.3.a
+	ALB = {
+            add_timed_idea = {
+				idea = ALB_gum_gre
+				days = 300
+			}
+		}	
+	PGR	= {
+            add_timed_idea = {
+				idea = ALB_gum_to_alb
+				days = 300
+			}
+		}
+	}
+	
+	option = {
+	name = ALB.3.b
+      
+	}
+}
+
+
+country_event = {
+	id = ALB.4
+	title = ALB.4.t
+	desc = ALB.4.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.3.a
+	ALB = {
+            add_timed_idea = {
+				idea = ALB_gum_tup
+				days = 300
+			}
+		}	
+	TUP	= {
+            add_timed_idea = {
+				idea = ALB_gum_to_alb
+				days = 300
+			}
+		}
+	}
+	
+	option = {
+	name = ALB.3.b
+      
+	}
+}
+
+
+
+
+

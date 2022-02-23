@@ -12,7 +12,7 @@ ideas = {
 	        }
 	        ALB_bunkervodstvo = {
 
-			    picture = cht_shizofrenia
+			    picture = ALB_gosbunkerstroy
 			
 			    modifier = {
 				production_speed_bunker_factor = 0.15
@@ -47,6 +47,55 @@ ideas = {
 				max_dig_in_factor = 0.05
 			    }
 		    }
+
+			ALB_gum_yug = {
+
+			    picture = GFX_idea_GAL_marakumba_import_3
+			
+			    modifier = {
+				    MONTHLY_POPULATION = 0.1
+				    consumer_goods_factor = -0.05	   
+		        }
+	        }
+			
+			ALB_gum_gre = {
+
+			    picture = GFX_idea_GAL_marakumba_import_3
+			
+			    modifier = {
+				    MONTHLY_POPULATION = 0.1
+				    consumer_goods_factor = -0.05	   
+		        }
+	        }
+			
+			ALB_gum_tup = {
+
+			    picture = GFX_idea_GAL_marakumba_import_3
+			
+			    modifier = {
+				    MONTHLY_POPULATION = 0.1
+				    consumer_goods_factor = -0.05	   
+		        }
+	        }
+			
+			ALB_gum_to_alb = {
+
+			    picture = GFX_idea_GAL_minvneshtorg_i
+			
+			    modifier = {
+				    consumer_goods_factor = 0.05	   
+		        }
+	        }
+			
+			ALB_economiya = {
+
+			    picture = GFX_idea_GAL_gosplan_i
+			
+			    modifier = {
+				    consumer_goods_factor = -0.07	
+                    stability = -0.05					
+		        }
+	        }
 	   }
 		
 		industrial_concern = {
