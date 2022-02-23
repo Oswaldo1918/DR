@@ -42,6 +42,18 @@ create_country_leader = {
 	}
 	}
 
+ create_field_marshal = {
+ 	name = "Даниил Тележный"
+	picture = "telezniy.dds"
+            			traits = { Inflexible_Strategist Infantry_Officer Organizer Guerilla_Fighter }
+							skill = 4
+							attack_skill = 4
+							defense_skill = 3
+							planning_skill = 2
+							logistics_skill = 4
+                			legacy_id = -1
+            		}
+
 create_corps_commander = {
 	name = "Сектант Сектантович"
 	id = 50001
