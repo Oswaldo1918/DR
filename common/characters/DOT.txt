@@ -1,0 +1,270 @@
+characters={
+	DOT_vovan = {
+		name = "Воваан"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Vovan.dds"
+				small = "GFX_idea_DOT_vovan"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+        	ideology = postironism
+        	traits = { 
+        		#
+        	}
+	    }
+
+        corps_commander={
+			traits={ infantry_officer politically_connected }
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}		
+    }
+	DOT_soldatskiy_komitet = {
+		name = "Солдатский комитет"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOT/Soldatskiy_komitet.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+        	ideology = libertanian_chuchhe
+        	traits = { 
+        		#
+        	}
+	   }
+    }
+	DOT_batya = {
+		name = "Генерал «Батя» Талалаев"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Batya.dds"
+				small = "GFX_idea_DOT_batya"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+        	ideology = centrism
+        	traits = { 
+        		#
+        	}
+	   }
+	    field_marshal={
+			traits={ infantry_officer harsh_leader  }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+	DOT_prapor = {
+		name = "Николай «Дикий прапор» Казаков"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Dikiy_Prapor.dds"
+				small = "GFX_idea_DOT_dikiy_prapor"
+			}
+		}
+
+	    corps_commander={
+			traits={ infantry_officer trait_cautious }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+		
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = DOT_prapor
+			ledger = army
+			allowed = {
+				original_tag = DOT
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+    }
+	DOT_voenkom = {
+		name = "Военком"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Voenkom.dds"
+				small = "GFX_idea_DOT_voenkom"
+			}
+		}
+
+	    corps_commander={
+			traits={ infantry_officer harsh_leader }
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = DOT_voenkom
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				army_chief_drill_1
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+    }
+	DOT_general-veteran = {
+		name = "Генерал-ветеран"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/general-veteran.dds"
+				small = "GFX_idea_DOT_general-veteran"
+			}
+		}
+
+	    corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = DOT_general-veteran
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				army_chief_old_guard
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+    }
+	DOT_semenich = {
+		name = "Контр-адмирал Семёныч"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
+			}
+		}
+
+	   navy_leader = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = 0
+		}
+		
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = DOT_semenich
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.200
+			}
+		}	
+    }
+	DOT_gen_air = {
+		name = "Генерал-лейтенант авиации"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_DOT_gen_air"
+			}
+		}
+		
+			advisor = {	
+			slot = air_chief
+			idea_token = DOT_gen_air
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+    }
+	DOT_osobist = {
+		name = "Особист"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_DOT_osobist"
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = DOT_osobist
+			allowed = {
+				original_tag = DOT
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}
+    }
+	DOT_cheburashka = {
+		name = "Чербурашка-у которого-нет-друзей"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_DOT_cheburashka"
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = DOT_cheburashka
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				popular_figurehead 
+			}
+		}
+    }
+	 
+}

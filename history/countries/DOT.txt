@@ -13,7 +13,16 @@ set_technology = {
 	tech_support = 1
 }
 
-
+recruit_character = DOT_vovan
+recruit_character = DOT_soldatskiy_komitet
+recruit_character = DOT_batya
+recruit_character = DOT_prapor
+recruit_character = DOT_voenkom
+recruit_character = DOT_general-veteran
+recruit_character = DOT_semenich
+recruit_character = DOT_gen_air
+recruit_character = DOT_osobist
+recruit_character = DOT_cheburashka
 
 	add_ideas = {
 		DOT_vlast_steel_kleshnya
@@ -25,22 +34,14 @@ set_technology = {
 
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 33
+    anarhostalinism = 40
+	memoism = 27
+	
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = anarhostalinism
 	elections_allowed = no	
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Воваан"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Vovan.dds"
-	expire = "1999.1.1"
-	ideology = centrism
-	traits = { 
-		#
-	}
-}
