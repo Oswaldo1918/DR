@@ -35,7 +35,9 @@ bookmarks = {
 				nod_bez_putina
 			}
 			focuses = {
-				
+				NOD_prodolzhat_poiski
+				NOD_otdel_E
+				NOD_otrayady_Putina
 			}
 		}
 		"CHT"={
@@ -47,7 +49,9 @@ bookmarks = {
 				cht_shue
 			}
 			focuses = {
-				
+				CHT_vibori
+				CHT_new_order
+				CHT_blue_revolution
 			}
 		}
 		"LAZ"={
@@ -57,7 +61,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-				
+				LAZ_KNOR_politica
+				LAZ_KNOR_voyenka
+				LAZ_KNOR_economica
 			}
 		}
 		"MRD"={
@@ -72,12 +78,14 @@ bookmarks = {
 		}
 		"DOT"={
 			history = "DOT_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = anarhostalinism
 			ideas = {
 				
 			}
 			focuses = {
-				
+				DOT_srochnik_lives_matter
+				DOT_ochistit_huntu_ot_rakov
+				DOT_boyevei_psi
 			}			
 		}
 
@@ -96,51 +104,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-				
-			}
-		}
-		"WHS"={
-			minor = yes
-			history = "WHS_GATHERING_STORM_DESC"
-			ideology = anarhostalinism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"ZWN"={
-			minor = yes
-			history = "ZWN_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"DON"={
-			minor = yes
-			history = "DON_GATHERING_STORM_DESC"
-			ideology = metacommy
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"UKB"={
-			minor = yes
-			history = "UKB_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				
-			}
-			focuses = {
-				
+	     		ALB_goat_hunting
+				ALB_start_the_generators_of_war
+				ALB_kozlorevolutsiya
 			}
 		}
 		"BSH"={
@@ -151,7 +117,35 @@ bookmarks = {
 				
 			}
 			focuses = {
+				BSH_morgen
+				BSH_babay
+				BSH_grig
+			}
+		}
+		"KLG"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
 				
+			}
+			focuses = {
+				KLG_plohie_vesti
+				KLG_lion_baltika
+				KLG_economoka_voennogo_vremeny
+			}
+		}
+		"SHM"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				SHM_kurovodstvo
+				SHM_issledovat_dzen_buddim
+				SHM_drevnie_znania
 			}
 		}
 		"STR"={
@@ -166,53 +160,7 @@ bookmarks = {
 			}
 		}
 		
-		"ZHS"={
-			minor = yes
-			history = "ZHS_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
 		
-		"CHK"={
-			minor = yes
-			history = "CHK_GATHERING_STORM_DESC"
-			ideology = memoism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"BRT"={
-			minor = yes
-			history = "BRT_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-	
-		"KAZ"={
-			minor = yes
-			history = "KAZ_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
 
 
 		effect = {
