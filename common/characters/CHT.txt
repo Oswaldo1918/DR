@@ -92,15 +92,7 @@ characters = {
 				factor = 1
 			}
 		}
-		corps_commander = {
-	    traits = {  }
-	    skill = 2	
-	    attack_skill = 2
-	    defense_skill = 4
-	    planning_skill = 1
-	    logistics_skill = 3
-		legacy_id = -1
-        }
+		
 	}	
 	
 	CHT_telezniy = {
@@ -264,6 +256,9 @@ characters = {
 	    planning_skill = 3
 	    logistics_skill = 2
 		legacy_id = -1
+		visible = {
+			has_government = memoism
+			}
         }
 		advisor={
      		slot = army_chief
@@ -307,7 +302,7 @@ characters = {
 		portraits = {
 			army = {
 			    large = "gfx/leaders/CHT/zaytsev.dds"
-				small = "GFX_idea_Dmitriy_Zaitsev"
+				small = "GFX_idea_CHT_Dmitriy_Zaitsev"
 			}
 		}
 		corps_commander = {
@@ -736,7 +731,7 @@ characters = {
 
 		advisor={
     		slot = political_advisor
-			idea_token = CHT_mich_duke2 = evro_fourth
+			idea_token = evro_fourth
 			allowed = {
                 original_tag = CHT 
 				

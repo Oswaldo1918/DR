@@ -16,7 +16,13 @@ set_technology = {
 	tech_support = 1
 }
 
-
+recruit_character = VTC_Ahora
+recruit_character = VTC_deloksli
+recruit_character = VTC_mich_duke
+recruit_character = VTC_evro_fourth
+recruit_character = VTC_felix_kornilov
+recruit_character = VTC_yuriy_lain
+recruit_character = VTC_random47
 
 set_popularities = {
 	neutrality = 100
@@ -28,14 +34,3 @@ set_politics = {
 
 set_convoys = 40
 
-	create_field_marshal = {
-	name = "Random47"
-	picture = ""
-	traits = { }
-	skill = 2
-	
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}

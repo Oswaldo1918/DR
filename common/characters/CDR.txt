@@ -6,8 +6,8 @@ characters={
 				large = "gfx/leaders/CDR/Stazist.dds"
 			}
 			army = {
-				large = "gfx/leaders/CHT/Stazist.dds"
-				small = ".dds"
+				large = "gfx/leaders/CDR/Stazist.dds"
+				small = "GFX_idea_CHT_shtazist"
 			}
 		}
 		country_leader = {
@@ -29,63 +29,149 @@ characters={
 			legacy_id = -1
 		}
     }
-	CDR_ivan = {
-		name = "Иван Гоголев"
+	
+	CDR_gus = {
+		name = "Товарищ Гусь"
 		portraits = {
-			army = {
-				large = "gfx/leaders/CHT/ivan.dds"
-				small = ".dds"
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
 			}
 		}
-	   
-	    corps_commander = {
-	    traits = {  war_hero }
-	skill = 3
+
+		advisor={
+    		slot = political_advisor
+			idea_token = CDR_gus
+			allowed = {
+                original_tag = CDR
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { lieutenant_of_industry }
+	    }
+	}
 	
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 3
-		legacy_id = -1
+	CDR_roman_latyshev = {
+		name = "Роман Латышев"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
 		}
-    }
+
+		advisor={
+    		slot = political_advisor
+			idea_token = CDR_roman_latyshev
+			allowed = {
+                original_tag = CDR
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { ministr_defitsita }
+	    }
+	}
+	
+	CDR_andraste = {
+		name = "Вестник Андрасте"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = CDR_andraste
+			allowed = {
+                original_tag = CDR
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { economic_organizer }
+	    }
+	}
+	
+	CDR_field_sekretar = {
+		name = "Полевой Секретарь"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = high_command	
+			idea_token = CDR_field_sekretar
+			allowed = {
+				original_tag = CDR
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_chief_organizational_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
 	CDR_zaytsev = {
-		name = "Дмитрий Зайцев"
+	name = "Дмитрий Зайцев"
 		portraits = {
 			army = {
-				large = "gfx/leaders/CHT/zaytsev.dds"
-				small = ".dds"
+			    large = "gfx/leaders/CHT/zaytsev.dds"
+				small = "GFX_idea_CHT_Dmitriy_Zaitsev"
 			}
 		}
-	   
-	    corps_commander = {
-	    traits = { war_hero }
-	    skill = 2
-	
-	    attack_skill = 3
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 4
-		legacy_id = -1
+		
+		advisor={ 
+	    	idea_token = CDR_zaytsev
+		    slot = high_command
+			allowed = {
+				original_tag = CDR
+			}
+	        available = {		
+            has_government = vmestolev
+		    }
+			traits = { army_infantry_1  }
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
-    }
-	CDR_nikolas = {
-		name = "Nikolas Louder"
+	}
+	
+	CDR_ivanov = {
+		name = "Саша Иванов"
 		portraits = {
 			army = {
-				large = "gfx/leaders/CHT/Nikolas.dds"
-				small = ".dds"
+			    large = "gfx/leaders/CHT/ivanov.dds"
+				small = "GFX_idea_CHT_Sasha_Ivanov"
 			}
 		}
-	   
-	    corps_commander = {
-	    skill = 2
-	
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 3
-		legacy_id = -1
+
+		
+		advisor={ 
+	    	idea_token = CDR_ivanov
+		    slot = high_command
+			allowed = {
+				original_tag = CDR
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
-    }
+	}
+	
 }

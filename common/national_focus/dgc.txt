@@ -498,16 +498,8 @@ focus_tree = {
 					change_tag_from = DGC }
 					CHT = {
 					
-					
-					transfer_state = 399 
-		              transfer_state = 256
-			          transfer_state = 249
-					 transfer_state = 400 
-		             transfer_state = 252
-			         transfer_state = 255
-					 transfer_state = 250
-					 transfer_state = 251
-					 
+					 annex_country = { target = DGC transfer_troops = yes }
+				
 					 set_politics = { ruling_party = metacommy elections_allowed = no}
 					 
                        add_popularity = {
@@ -530,15 +522,7 @@ focus_tree = {
 					 complete_national_focus = CHT_state_sindicalism
 					 complete_national_focus = CHT_sovet_truda_i_oborony
 					 complete_national_focus = CHT_kontrol_nad_chatom
-					 remove_unit_leader = 22800
-					 remove_unit_leader = 781
-					 remove_unit_leader = 780
-					 remove_unit_leader = 779
-					 remove_unit_leader = 778
-					 remove_unit_leader = 777
-					 remove_unit_leader = 776
 					 set_cosmetic_tag = CHT_shtaz
-					 load_oob = CHT_1936
 					 
 					DGC = {
 			            every_unit_leader = {
@@ -556,6 +540,7 @@ focus_tree = {
                remove_state_core = 250
 			   remove_state_core = 251
                remove_state_core = 255 
+			   remove_state_core = 833
 				} 
 		VTC	= {remove_state_core = 399
                remove_state_core = 256
@@ -565,6 +550,7 @@ focus_tree = {
                remove_state_core = 250
 			   remove_state_core = 251
                remove_state_core = 255 
+			   remove_state_core = 833
 				}				
 		CDR = {
                remove_state_core = 399
@@ -575,6 +561,7 @@ focus_tree = {
                remove_state_core = 250
 			   remove_state_core = 251
                remove_state_core = 255 
+			   remove_state_core = 833
 				}
 					}
 					 

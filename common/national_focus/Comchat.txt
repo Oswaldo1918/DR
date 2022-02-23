@@ -159,16 +159,8 @@ add_political_power = 50
 					CHT = {
 					change_tag_from = CDR }
 					CHT = {
-					
-					
-					transfer_state = 399 
-		              transfer_state = 256
-			          transfer_state = 249
-					 transfer_state = 400 
-		             transfer_state = 252
-			         transfer_state = 255
-					 transfer_state = 250
-					 transfer_state = 251
+									
+                    annex_country = { target = CDR transfer_troops = yes }
 					 
 					 set_politics = { ruling_party = vmestolev elections_allowed = no}
 					 
@@ -190,11 +182,7 @@ add_political_power = 50
 					 complete_national_focus = CHT_creating_squads_troll
 					 complete_national_focus = CHT_chat_red_army
 					 complete_national_focus = CHT_united_chat
-					 remove_unit_leader = 22800
-					 remove_unit_leader = 781
-					 remove_unit_leader = 776
 					 set_cosmetic_tag = CHT_shtaz
-					 load_oob = CHT_1936
 					 news_event = {
 							id = dk_news.3
 						}
@@ -208,34 +196,40 @@ add_political_power = 50
 					 LAZ = { has_completed_focus = LAZ_plan_shtazista }
 					 LAZ = { add_to_faction = CHT } 
 					 }
+					 
+					  
+					 
 					CCO = {remove_state_core = 399
-               remove_state_core = 256
-               remove_state_core = 249
-               remove_state_core = 400
-               remove_state_core = 252
-               remove_state_core = 250
-			   remove_state_core = 251
-               remove_state_core = 255 
-				} 
-		VTC	= {remove_state_core = 399
-               remove_state_core = 256
-               remove_state_core = 249
-               remove_state_core = 400
-               remove_state_core = 252
-               remove_state_core = 250
-			   remove_state_core = 251
-               remove_state_core = 255 
-				}				
-		DGC = {
-               remove_state_core = 399
-               remove_state_core = 256
-               remove_state_core = 249
-               remove_state_core = 400
-               remove_state_core = 252
-               remove_state_core = 250
-			   remove_state_core = 251
-               remove_state_core = 255 
-				}
+                           remove_state_core = 256
+                           remove_state_core = 249
+                           remove_state_core = 400
+                           remove_state_core = 252
+                           remove_state_core = 250
+               			   remove_state_core = 251
+                           remove_state_core = 255 
+            			   remove_state_core = 833 
+           				} 
+               		VTC	= {remove_state_core = 399
+                           remove_state_core = 256
+                           remove_state_core = 249
+                           remove_state_core = 400
+                           remove_state_core = 252
+                           remove_state_core = 250
+              			   remove_state_core = 251
+                           remove_state_core = 255 
+              			   remove_state_core = 833 			   
+         				}				
+             		DGC = {
+                           remove_state_core = 399
+                           remove_state_core = 256
+                           remove_state_core = 249
+                           remove_state_core = 400
+                           remove_state_core = 252
+                           remove_state_core = 250
+             			   remove_state_core = 251
+                           remove_state_core = 255 
+             			   remove_state_core = 833 			   
+				        }
 					}
 				}
 	}

@@ -1,0 +1,248 @@
+characters={
+	VTC_Ahora = {
+	name = "Ахора Мазда"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/Ahora.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/Ahora.dds"
+				small = "GFX_idea_CHT_ahora"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_AHORA_DESC"
+			ideology = fascism_idealogy
+			expire = "3000.1.1"
+			id = -1
+		}
+		advisor={
+    		slot = army_chief
+			idea_token = VTC_Ahora1
+			allowed = {
+				original_tag = VTC
+			}
+			available = {		
+                has_government = fascism
+		    }
+
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+    		slot = high_command
+			idea_token = VTC_Ahora2
+			allowed = {
+				original_tag = VTC
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	    
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+     		slot = political_advisor
+			allowed = {
+                original_tag = VTC 			
+            }
+			idea_token = VTC_Ahora3
+			available = {
+			    NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = milo }
+				NOT = { has_government = metacommy }
+			}
+            traits = { anti_levak }
+        }
+	}
+	
+	VTC_deloksli = {
+	name = "Де Локсли I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/deloksli.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/deloksli.dds"
+				small = "GFX_idea_CHT_deloksli"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_LOKSLI_DESC"
+			ideology = oligarchism
+			expire = "3000.1.1"
+			id = -1
+		}
+		advisor={ 
+	    	idea_token = VTC_deloksli
+		    slot = army_chief
+			allowed = {
+				original_tag = VTC
+			}
+			available = {		
+                has_government = neutrality
+		    }
+			
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	VTC_mich_duke = {
+		name = "Duke Michael II"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+     		slot = political_advisor
+			idea_token = VTC_mich_duke1
+			allowed = {
+                original_tag = VTC 
+				
+            }
+			available = {
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = metacommy }
+			}
+            traits = { regional_traditionalist_leader }
+	    }
+		advisor={
+    		slot = high_command
+			idea_token = VTC_mich_duke2
+			allowed = {
+				original_tag = VTC
+			}
+	       available = {		
+           has_government = neutrality
+		   }
+			traits = { army_entrenchment_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	VTC_evro_fourth = {
+		name = "Евро4"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = VTC_evro_fourth
+			allowed = {
+                original_tag = VTC 
+				
+            }
+			available = {
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = metacommy }
+			}
+            traits = { vliyatelniy_kupets }
+	    }
+	}
+	
+	VTC_felix_kornilov = {
+		name = "Феликс Корнилов"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = high_command	
+			idea_token = VTC_felix_kornilov
+			allowed = {
+				original_tag = VTC
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	    
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	VTC_yuriy_lain = {
+		name = "Юрий Ларин"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = high_command	
+			idea_token = VTC_yuriy_lain
+			allowed = {
+				original_tag = VTC
+				NOT = { has_government = democratic }
+				NOT = { has_government = anarhostalinism }
+				NOT = { has_government = memoism }
+				NOT = { has_government = vmestolev }
+				NOT = { has_government = metacommy }
+				NOT = { has_government = milo }
+			}
+	       
+			traits = { army_chief_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	VTC_random47 = {
+		name = "Random47"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+        field_marshal = { 
+		traits = { }
+	skill = 2
+	
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+		}
+	}
+}

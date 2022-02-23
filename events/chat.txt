@@ -184,97 +184,10 @@ country_event = {
 				add_ideas = CHT_great_srach_1
 	            add_ideas = CHT_shue
 				} 
-				CHT_stazist = { set_nationality = CDR
-	    		add_country_leader_role = {
-			        field_marshal = {
-            			traits = { old_guard infantry_officer war_hero  }
-               	        skill = 3
-
-            	        attack_skill = 4
-             	        defense_skill = 2
-	                    planning_skill = 3
-            	        logistics_skill = 2
-            			legacy_id = -1
-            		}
-		    	}
-		    }
-			CHT_mesyats = { set_nationality = CCO
-			add_country_leader_role = {
-			        field_marshal = {
-            			traits = { old_guard infantry_officer war_hero  }
-               	        skill = 3
-
-             	        attack_skill = 4
-            	        defense_skill = 2
-             	        planning_skill = 3
-            	        logistics_skill = 2
-            			legacy_id = -1
-            		}
-		    	}
-		    }
-			CHT_telezniy = { set_nationality = DGC
-			add_country_leader_role = {
-			        field_marshal = {
-            			traits = { Inflexible_Strategist Infantry_Officer Organizer Guerilla_Fighter }
-							skill = 4
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 2
-							logistics_skill = 4
-                			legacy_id = -1
-            		}
-		    	}
-		    }
-			CHT_Ahora = { set_nationality = VTC
-			add_country_leader_role = {
-			        create_corps_commander = {
-                    traits = {   }
-                   	skill = 2
-	
-                 	attack_skill = 2
-                	defense_skill = 4
-                	planning_skill = 1
-                 	logistics_skill = 3
-            			legacy_id = -1
-            		}
-		    	}
-		    }
-			CHT_deloksli = { set_nationality = VTC
-			add_country_leader_role = {
-			        field_marshal = {
-            			traits = { }
-                    	skill = 1
-	
-                    	attack_skill = 1
-                    	defense_skill = 2
-                    	planning_skill = 3
-                       	logistics_skill = 3
-            			legacy_id = -1
-            		}
-		    	}
-		    }
 			CHT_ivan = { set_nationality = CDR }
 			CHT_zaytsev = { set_nationality = CDR }
 			CHT_Nikolas = { set_nationality = CDR }
 			CHT_ivanov = { set_nationality = CDR }
-			CHT_wladislav_zalujniy = { set_nationality = DGC }
-			CHT_anton_simusov = { set_nationality = DGC }
-			CHT_ostin_pauers = { set_nationality = DGC }
-			CHT_gus = { set_nationality = CDR }
-			CHT_roman_latyshev = { set_nationality = CDR }
-			CHT_andraste = { set_nationality = CDR }
-			CHT_anstal_from_people = { set_nationality = CCO }
-			CHT_dmitry_safonov = { set_nationality = CCO }
-			CHT_kon_v_palto = { set_nationality = CCO }
-			CHT_mich_duke = { set_nationality = VTC }
-			evro_fourth = {	set_nationality = VTC }
-			CHT_felix_kornilov = { set_nationality = VTC }
-			CHT_yuriy_lain = { set_nationality = VTC }
-			CHT_field_sekretar = { set_nationality = CDR }
-			CHT_wyach_step = { set_nationality = CCO }
-			CHT_Neon_Petrovich = { set_nationality = CCO }
-			CHT_DoomHammer = { set_nationality = DGC }
-			CHT_North_demon = { set_nationality = DGC }				
 		}
 	}	
 	option = {
@@ -290,7 +203,7 @@ country_event = {
 			end_puppet = CHT
 		}
 	set_global_flag = chat_civil_war
-               CDR = {transfer_state = 399 
+                      CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
 			   transfer_state = 833
@@ -399,6 +312,10 @@ country_event = {
 	            add_ideas = CHT_shue
 				} 
                 CDR = { change_tag_from = CHT }	
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }
 		}
 	}	
 	option = {
@@ -523,6 +440,10 @@ country_event = {
 	            add_ideas = CHT_shue
 				} 
                 CCO = { change_tag_from = CHT }
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }				
 		}
 	}
 	option = {
@@ -647,6 +568,10 @@ country_event = {
 	            add_ideas = CHT_shue
 				} 
                 VTC = { change_tag_from = CHT }	
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }				
 		}
 	}	
 	option = {
@@ -771,6 +696,10 @@ country_event = {
 	            add_ideas = CHT_shue
 				} 
                 DGC = { change_tag_from = CHT }
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }
 			}	
 	}	
 }	

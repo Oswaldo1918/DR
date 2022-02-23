@@ -160,15 +160,7 @@ completion_reward = {
 					change_tag_from = DRC }
 					CHT = {
 					
-					
-					transfer_state = 399 
-		              transfer_state = 256
-			          transfer_state = 249
-					 transfer_state = 400 
-		             transfer_state = 252
-			         transfer_state = 255
-					 transfer_state = 250
-					 transfer_state = 251
+				annex_country = { target = DRC transfer_troops = yes }
 					 
 					 set_politics = { ruling_party = vmestolev elections_allowed = no}
 					 
@@ -197,11 +189,7 @@ completion_reward = {
 					 complete_national_focus = CHT_creating_squads_troll
 					 complete_national_focus = CHT_chat_red_army
 					 complete_national_focus = CHT_united_chat
-					 remove_unit_leader = 22800
-					 remove_unit_leader = 781
-					 remove_unit_leader = 776
 					 set_cosmetic_tag = CHT_shtaz
-					 load_oob = CHT_1936
 					 news_event = {
 							id = dk_news.3
 						}
@@ -218,6 +206,7 @@ completion_reward = {
                remove_state_core = 250
 			   remove_state_core = 251
                remove_state_core = 255 
+			    remove_state_core = 833
 				} 
 					}
 				}
@@ -1321,14 +1310,7 @@ completion_reward = {
 					CHT = {
 					
 					
-					transfer_state = 399 
-		              transfer_state = 256
-			          transfer_state = 249
-					 transfer_state = 400 
-		             transfer_state = 252
-			         transfer_state = 255
-					 transfer_state = 250
-					 transfer_state = 251
+				annex_country = { target = DRC transfer_troops = yes }
 					 
 					 set_politics = { ruling_party = metacommy elections_allowed = no}
 					 
@@ -1359,15 +1341,7 @@ completion_reward = {
 					 complete_national_focus = CHT_state_sindicalism
 					 complete_national_focus = CHT_sovet_truda_i_oborony
 					 complete_national_focus = CHT_kontrol_nad_chatom
-					 remove_unit_leader = 22800
-					 remove_unit_leader = 781
-					 remove_unit_leader = 780
-					 remove_unit_leader = 779
-					 remove_unit_leader = 778
-					 remove_unit_leader = 777
-					 remove_unit_leader = 776
 					 set_cosmetic_tag = CHT_shtaz
-					 load_oob = CHT_1936
 					 
 					 create_corps_commander = {
 							name = "Остин Пауэрс"
@@ -1424,6 +1398,7 @@ completion_reward = {
                remove_state_core = 250
 			   remove_state_core = 251
                remove_state_core = 255 
+			   remove_state_core = 833
 				} 
 					 }
 					 
