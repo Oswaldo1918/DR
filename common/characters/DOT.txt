@@ -63,6 +63,9 @@ characters={
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
     }
 	DOT_prapor = {
@@ -82,6 +85,9 @@ characters={
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
 		
 		advisor = {
@@ -97,6 +103,9 @@ characters={
 			}
 			traits = {
 				nuclear_scientist
+			}
+			visible = {
+			has_completed_focus = DOT_odna_semya
 			}
 		}
     }
@@ -117,6 +126,9 @@ characters={
 			planning_skill=4
 			logistics_skill=2
 			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
 		
 		advisor = {
@@ -131,6 +143,9 @@ characters={
 				cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			visible = {
+			has_completed_focus = DOT_odna_semya
 			}
 		}
     }
@@ -151,6 +166,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
 		advisor = {
 			slot = army_chief
@@ -164,6 +182,9 @@ characters={
 				cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			visible = {
+			has_completed_focus = DOT_odna_semya
 			}
 		}
     }
@@ -183,6 +204,9 @@ characters={
 			maneuvering_skill = 1
 			coordination_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
 		
 		
@@ -198,6 +222,9 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 0.200
+			}
+			visible = {
+			has_completed_focus = DOT_odna_semya
 			}
 		}	
     }
@@ -217,6 +244,9 @@ characters={
 			}
 			traits = {
 				air_chief_ground_support_2
+			}
+			visible = {
+			has_completed_focus = DOT_odna_semya
 			}
 			cost = 100
 			ai_will_do = {

@@ -29,6 +29,23 @@ ideas = {
 			   production_speed_buildings_factor = 0.1 
 			   }
 		    }
+			DOT_yeti_i = {
+
+			   picture = idea_ast_classify_aliens
+			
+	 		   modifier = {
+	         	special_forces_attack_factor = 0.1
+	        	special_forces_defence_factor = 0.1
+			   }
+		    }
+			DOT_topl_dlya_sold = {
+
+			   picture = idea_ast_classify_aliens
+			
+	 		   modifier = {
+	         	fuel_gain_factor = 0.05
+			   }
+		    }
 			DOT_gold_Kolymy = {
 
 			   picture = spr_seize_the_gold_reserves

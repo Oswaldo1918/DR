@@ -15,12 +15,16 @@ country_event = {
 	
 	option = {
 	name = DOT.1.a
-   
+		trigger = {
+			DOT = {has_completed_focus = DOT_soldatskaya_massa}
+		}
 	}
-	
 	option = {
 	name = DOT.1.b
-        set_politics = {
+		trigger = {
+			DOT = {has_completed_focus = DOT_ochistit_huntu_ot_rakov}
+		}
+		set_politics = {
      	ruling_party = memoism
        	elections_allowed = no	
         }
