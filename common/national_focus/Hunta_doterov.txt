@@ -136,7 +136,11 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-
+        completion_reward = {
+					country_event = {
+							id = DOT.1
+						}
+				}
 	}
 	focus = {
 		id = DOT_zapas_ammunitsii
@@ -1060,6 +1064,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
+		available = {
+			controls_state = 562
+		}
 		completion_reward = {
             562 = {
 					limit = {
@@ -1090,6 +1097,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 5
+		available = {
+			controls_state = 408
+		}
 		completion_reward = {
             408 = {
 					limit = {
@@ -1120,6 +1130,11 @@ focus_tree = {
 		}
 		x = 8
 		y = 7
+		completion_reward = {
+					add_stability = 0.1
+					add_war_support = 0.05
+					add_political_power = 300
+				}
 
 	}
 	focus = {
@@ -1176,6 +1191,17 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
+		
+		completion_reward = {  
+	        navy_experience = 50
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}   
+		}
 
 	}
 	focus = {
