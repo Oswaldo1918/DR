@@ -1,0 +1,28 @@
+#########################
+  ### LAZARET_RSFSR ###
+#########################
+
+DOT_nationalization_Russia = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+	visible = { 
+	 OR = { 
+	 has_completed_focus = DOT_srochnik_lives_matter 
+	 has_completed_focus = DOT_odna_semya
+	 }
+	}
+}
+DOT_war_za_Russia = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+	visible = { 
+	 OR = { 
+	 has_completed_focus = DOT_srochnik_lives_matter 
+	 has_completed_focus = DOT_odna_semya
+	 }
+	}
+}
