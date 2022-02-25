@@ -318,11 +318,11 @@ country_event = {
 
 	option = {
 	name = nod.9.a
-	 set_technology = {
-	basic_heavy_tank_chassis = 1
-	}
+      	set_technology = {
+          	basic_heavy_tank_chassis = 1
+     	}
                	create_equipment_variant = {
-					name = "Atmta"
+					name = "ATMTA"
 					type = heavy_tank_chassis_1
 					parent_version = 0
 					modules = {
@@ -341,14 +341,9 @@ country_event = {
 					}
 					icon = "gfx/interface/technologies/NOD_ATMTA.dds"
 				}
-   add_equipment_to_stockpile = {
-							type = heavy_tank_chassis_1
-							amount = 2200
-							producer = NOD
-							variant_name = "Atmta"
-						}
-			add_political_power = 100
-add_war_support = 0.02			
+                add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 2200 producer = NOD variant_name = "ATMTA" }
+		    	add_political_power = 100
+                add_war_support = 0.02			
 						
 	}
 }
