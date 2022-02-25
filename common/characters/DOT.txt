@@ -296,5 +296,73 @@ characters={
 			}
 		}
     }
-	 
+	
+	DOT_bomba = {
+		name = "Бомба"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Bomba.dds"
+				small = "GFX_idea_DOT_Bomba"
+			}
+		}
+
+        corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}		
+    }
+	
+	DOT_shtik = {
+		name = "Штык"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Shtik.dds"
+				small = "GFX_idea_DOT_shtik"
+			}
+		}
+
+        corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}		
+    }
+	
+    DOT_pulya = {
+		name = "Пуля"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Pulya.dds"
+				small = "GFX_idea_DOT_pulya"
+			}
+		}
+
+        corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}		
+    }	
 }

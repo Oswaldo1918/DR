@@ -12,7 +12,7 @@ ideas = {
 		    }
 			DOT_plohoe_kommandovanie = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   max_command_power = -20
@@ -22,7 +22,7 @@ ideas = {
 		    }
 	        DOT_GULAG = {
 
-			   picture = idea_ast_classify_aliens
+			   picture = GAL_gosbank_i
 			
 			   modifier = {
 			   consumer_goods_factor = -0.05
@@ -31,7 +31,7 @@ ideas = {
 		    }
 			DOT_yeti_i = {
 
-			   picture = idea_ast_classify_aliens
+			   picture = ast_classify_aliens
 			
 	 		   modifier = {
 	         	special_forces_attack_factor = 0.1
@@ -40,7 +40,7 @@ ideas = {
 		    }
 			DOT_topl_dlya_sold = {
 
-			   picture = idea_ast_classify_aliens
+			   picture = ast_classify_aliens
 			
 	 		   modifier = {
 	         	fuel_gain_factor = 0.05
@@ -48,7 +48,7 @@ ideas = {
 		    }
 			DOT_gold_Kolymy = {
 
-			   picture = spr_seize_the_gold_reserves
+			   picture = GAL_PBK_i
 			
 			   modifier = {
 			   consumer_goods_factor = -0.15
@@ -64,7 +64,7 @@ ideas = {
 		    }
 			DOT_narastit_dobychu = {
 
-			   picture = spr_seize_the_gold_reserves
+			   picture = GAL_PBK_i
 			
 			   modifier = {
 			   local_resources = 0.15
@@ -72,7 +72,7 @@ ideas = {
 		    }
 			DOT_mobilizatsya_resursov = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = GAL_gosplan_i
 			
 			   modifier = {
 			   local_resources_factor = 0.05
@@ -82,7 +82,7 @@ ideas = {
 		    }
 			DOT_vovaan_zavodi = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = GAL_vodochnaya_monopoliya_i
 			
 			   modifier = {
 			   production_speed_industrial_complex_factor = 0.15 
@@ -91,7 +91,7 @@ ideas = {
 		    }
 			DOT_voennoe_stroitelstvo = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = GAL_tabachnaya_monopoliya_i
 			
 			   modifier = {
 			   production_speed_industrial_complex_factor = -0.15 
@@ -126,7 +126,7 @@ ideas = {
 		}
 			DOT_military_lives_matter = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   political_power_gain = -0.2
@@ -136,7 +136,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_1 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   political_power_gain = -0.1
@@ -149,7 +149,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_2 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   political_power_gain = -0.05
@@ -163,7 +163,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_3 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   stability_factor = -0.1
@@ -177,7 +177,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_4 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   stability_factor = -0.1
@@ -192,7 +192,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_5 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   war_support_factor = -0.15
@@ -206,7 +206,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_6 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			    political_power_gain = -0.1
@@ -222,7 +222,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_7 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			    political_power_gain = -0.1
@@ -240,7 +240,7 @@ ideas = {
 		    }
 			DOT_umniye_teammeiti = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
                 army_org_factor = 0.025
@@ -250,7 +250,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_8 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   political_power_gain = -0.1
@@ -263,7 +263,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_9 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   stability_factor = -0.1
@@ -275,7 +275,7 @@ ideas = {
 		    }
 			DOT_military_lives_matter_10 = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   stability_factor = -0.1
@@ -291,7 +291,7 @@ ideas = {
 		    }
 			DOT_oficerskiye_kursi = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = GAL_mentovshina
 			
 			   modifier = {
 			   army_leader_cost_factor = -0.1
@@ -301,7 +301,7 @@ ideas = {
 		    }
 			DOT_v_etom_nasha_strategiya = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   army_leader_cost_factor = -0.1
@@ -313,7 +313,7 @@ ideas = {
 		    }
 			DOT_vrucnuyu_menyat_landshvti = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   dig_in_speed_factor = 0.05
@@ -324,7 +324,7 @@ ideas = {
 		    }
 			DOT_spetsializ_of_teammates = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   special_forces_cap = 0.02
@@ -333,7 +333,7 @@ ideas = {
 		    }
 			DOT_psarni = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   enemy_operative_capture_chance_factor = 0.1
@@ -343,7 +343,7 @@ ideas = {
 		    }
 			DOT_boyevei_psi = {
 
-			   picture = idea_chi_incompetent_officers
+			   picture = chi_incompetent_officers
 			
 			   modifier = {
 			   army_speed_factor = 0.1

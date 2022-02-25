@@ -42,6 +42,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Даниил Тележный"
+	desc = "POLITICS_SHTAZIST_DESC"
+	picture = "telezniy.dds"
+	expire = "1999.1.1"
+	ideology = white_polpotism
+	traits = {
+		#
+	}
+}
+
 create_corps_commander = {
 	name = "Иван Гоголев"
 	portrait_path = "gfx/leaders/CHT/ivan.dds"

@@ -21,7 +21,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_STR_motorized_equipment_medium"
+		name = "GFX_STR_motorized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/zaporozhets.dds"
 	}
 	
@@ -32,6 +32,21 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_DON_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/DON_Ural-4320.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_STR_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/zaporozhets.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DOT_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_Ural-4320.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_motorised_infantry_medium"
 		texturefile = "gfx/interface/technologies/DON_Ural-4320.dds"
 	}
 	

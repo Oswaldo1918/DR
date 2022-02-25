@@ -104,5 +104,25 @@ ideas = {
 		}		
 
 	}
+	
+		industrial_concern = {
 		
+		UKR_roshen = {
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+	}		
 }	
