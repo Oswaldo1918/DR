@@ -151,6 +151,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = DOT_umniye_teammeiti
+		icon = GFX_focus_generic_little_entente
+		cost = 5,00
+		prerequisite = {
+			focus = DOT_Boyevie_gruppa_po_5_chelovek
+		}
+		prerequisite = {
+			focus = DOT_voting_for_leader
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					add_ideas = DOT_umniye_teammeiti
+				}
+
+	}
+	focus = {
 		id = DOT_zapas_ammunitsii
 		icon = GFX_goal_generic_consumer_goods
 		cost = 5,00
@@ -165,20 +182,6 @@ focus_tree = {
 							amount = 500
 							producer = DOT
 						}
-				}
-
-	}
-	focus = {
-		id = DOT_custom_weapons
-		icon = GFX_DOT_custom_weapons
-		cost = 5,00
-		prerequisite = {
-			focus = DOT_voting_for_leader
-		}
-		x = 7
-		y = 5
-			completion_reward = {
-					add_ideas = DOT_custom_weapons
 				}
 
 	}
@@ -200,19 +203,19 @@ focus_tree = {
 
 	}
 	focus = {
-		id = DOT_umniye_teammeiti
-		icon = GFX_focus_generic_little_entente
+		id = DOT_custom_weapons
+		icon = GFX_DOT_custom_weapons
 		cost = 5,00
-		prerequisite = {
-			focus = DOT_Boyevie_gruppa_po_5_chelovek
-		}
 		prerequisite = {
 			focus = DOT_licnaya_initsiativa
 		}
-		x = 5
+		prerequisite = {
+			focus = DOT_voting_for_leader
+		}
+		x = 7
 		y = 5
 			completion_reward = {
-					add_ideas = DOT_umniye_teammeiti
+					add_ideas = DOT_custom_weapons
 				}
 
 	}
@@ -221,8 +224,9 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5,00
 		prerequisite = {
-			focus = DOT_umniye_teammeiti
 			focus = DOT_custom_weapons
+			focus = DOT_umniye_teammeiti
+			focus = DOT_MMR
 		}
 		mutually_exclusive = {
 			focus = DOT_obyazatelnaya_sluzhba_v_doterskih_voiskah
@@ -1269,7 +1273,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_doctrine
 		cost = 5,00
 		prerequisite = {
-			focus = DOT_Boyevie_gruppa_po_5_chelovek
+			focus = DOT_MMR
 		}
 		x = 3
 		y = 6
@@ -1284,9 +1288,6 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = DOT_umniye_teammeiti
-		}
-		prerequisite = {
-			focus = DOT_MMR
 		}
 		x = 5
 		y = 6
