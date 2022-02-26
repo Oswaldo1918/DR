@@ -296,7 +296,53 @@ characters={
 			}
 		}
     }
-	
+	DOT_ploskogubcev = {
+		name = "Старший Сержант Плоскогубцев"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_DOT_ploskogubcev"
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = DOT_ploskogubcev
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				prince_of_terror 
+			}
+			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}
+    }
+	DOT_kamenshik = {
+		name = "Каменщик без зарплаты"
+		portraits = {
+			army = {
+		    	small = ""
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = DOT_kamenshik
+			allowed = {
+				original_tag = DOT
+			}
+			modifier = {
+			production_speed_bunker_factor = 0.2
+			production_speed_industrial_complex_factor = 0.1
+			conscription_factor = -0.05
+			stability_factor = -0.1			
+			}
+			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}
+    }
 	DOT_bomba = {
 		name = "Бомба"
 		portraits = {
@@ -362,6 +408,180 @@ characters={
 			legacy_id=0
 			visible = {
 			has_completed_focus = DOT_soldatskaya_massa
+			}
+		}		
+    }
+
+    DOT_torontotokyo = {
+		name = "TORONTOTOKYO"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/TORONTOTOKYO.dds"
+				small = "GFX_idea_DOT_TORONTOTOKYO"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+    }	
+	
+	DOT_gpk = {
+		name = "gpk"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/gpk.dds"
+				small = "GFX_idea_DOT_gpk"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}
+
+        advisor = {
+			slot = army_chief
+			idea_token = DOT_gpk
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+    }	
+	
+	DOT_illias = {
+		name = "illias"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/illias.dds"
+				small = "GFX_idea_DOT_illias"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+    }	
+	
+	DOT_Miposhka = {
+		name = "Miposhka"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Miposhka.dds"
+				small = "GFX_idea_DOT_Miposhka"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+		
+		  advisor = {
+			slot = high_command
+			idea_token = DOT_Miposhka
+			allowed = {
+				original_tag = DOT
+			}
+			traits = {
+				army_artillery_1
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+    }	
+	
+	DOT_DM = {
+		name = "DM виртус"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/DM.dds"
+				small = "GFX_idea_DOT_DM"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+		}		
+    }	
+	
+	DOT_Collapse = {
+		name = "Collapse"
+		portraits = {
+			army = {
+		    	large = "gfx/leaders/DOT/Collapse.dds"
+				small = "GFX_idea_DOT_Collapse"
+			}
+		}
+
+        corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
 			}
 		}		
     }	
