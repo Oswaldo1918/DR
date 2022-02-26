@@ -212,6 +212,29 @@ country_event = {
 
 	option = {
 	name = nod.7.a
+		set_technology = {
+          	basic_heavy_tank_chassis = 1
+     	}
+               	create_equipment_variant = {
+					name = "ATMTA"
+					type = heavy_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_heavy_cannon_2
+						turret_type_slot = tank_heavy_three_man_tank_turret
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = sloped_armor
+						special_type_slot_3 = smoke_launchers
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 8
+						tank_nsb_armor_upgrade = 6
+					}
+					icon = "gfx/interface/technologies/NOD_ATMTA.dds"
+				}
      add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 700 producer = NOD variant_name = "ATMTA" }
 				245 = { add_resource = {
 									type = steel
@@ -241,6 +264,29 @@ country_event = {
 
 	option = {
 	name = nod.8.a
+		set_technology = {
+          	basic_heavy_tank_chassis = 1
+     	}
+               	create_equipment_variant = {
+					name = "ATMTA"
+					type = heavy_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_heavy_cannon_2
+						turret_type_slot = tank_heavy_three_man_tank_turret
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = sloped_armor
+						special_type_slot_3 = smoke_launchers
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 8
+						tank_nsb_armor_upgrade = 6
+					}
+					icon = "gfx/interface/technologies/NOD_ATMTA.dds"
+				}
      add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 2000 producer = NOD variant_name = "ATMTA" }
 			add_political_power = 100													
 	}
@@ -260,6 +306,29 @@ country_event = {
 
 	option = {
 	name = nod.9.a
+		set_technology = {
+          	basic_heavy_tank_chassis = 1
+     	}
+               	create_equipment_variant = {
+					name = "ATMTA"
+					type = heavy_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_heavy_cannon_2
+						turret_type_slot = tank_heavy_three_man_tank_turret
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = sloped_armor
+						special_type_slot_3 = smoke_launchers
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 8
+						tank_nsb_armor_upgrade = 6
+					}
+					icon = "gfx/interface/technologies/NOD_ATMTA.dds"
+				}
                 add_equipment_to_stockpile = { type = heavy_tank_chassis_1 amount = 2200 producer = NOD variant_name = "ATMTA" }
 		    	add_political_power = 100
                 add_war_support = 0.02			

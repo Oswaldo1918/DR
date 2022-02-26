@@ -12,6 +12,19 @@ name = "Пираты"
 		marine = { x = 2 y = 1 }
 		marine = { x = 2 y = 2 }
 	}
+	priority = 2
+}
+division_template = {
+name = "Бандиты"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
 	priority = 1
 }
 
