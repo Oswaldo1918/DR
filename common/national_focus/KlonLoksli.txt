@@ -789,33 +789,8 @@ create_corps_commander = {
 		y = 8
 		    completion_reward = {
 			set_politics = { ruling_party = anarhostalinism elections_allowed = no }
-
-			create_country_leader = {
-				name = "Хунта офицеров"
-				desc = "POLITICS_MILITARY_JUNTA_DESC"
-				portrait_path = "gfx/leaders/CHT/lib_mil_junta.dds"
-				expire = "1965.1.1"
-				ideology = libertanian_chuchhe
-				traits = {
-					divided_interests
-				}
-			}
 			remove_ideas = CHT_loksists_1
                 add_popularity = { ideology = anarhostalinism popularity = 0.2 }
-				create_corps_commander = {
-							name = "Никита Хапов"
-							id = 784456455
-							portrait_path = ""
-							traits = { trait_cautious }
-							skill = 2
-							attack_skill = 2
-							defense_skill = 3
-							planning_skill = 2
-							logistics_skill = 2
-						}
-                 hidden_effect = { remove_unit_leader = 781
-remove_unit_leader = 8760}
-				 
 				}
 
 	}
@@ -1045,16 +1020,15 @@ focus = {
 		x = 44
 		y = 12
 			completion_reward = {
-			        create_country_leader = {
-	                name = "Кривой Месяц"
-	                desc = "POLITICS_THORVALD_STAUNING_DESC"
-	                picture = "mesyats.dds"
-	                expire = "1999.1.1"
-	                ideology = libertanian_chuchhe
-	                traits = {
-                Great_vozhd_revolution
-	            }
-    }
+			       add_country_leader_role = {
+									character = "CVT_mesyats"
+									country_leader = {
+										ideology=libertanian_chuchhe
+										traits = { Great_vozhd_revolution }
+										expire="1999.1.1"
+									}
+									promote_leader = yes
+								}
 					
 					add_popularity = {
 							ideology = anarhostalinism

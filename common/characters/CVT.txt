@@ -1,5 +1,5 @@
 characters={
-	VTC_Ahora = {
+	CVT_Ahora = {
 	name = "Ахора Мазда"
 		portraits = {
 			civilian = {
@@ -19,9 +19,9 @@ characters={
 		}
 		advisor={
     		slot = army_chief
-			idea_token = VTC_Ahora1
+			idea_token = CVT_Ahora1
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 			}
 			available = {		
                 has_government = fascism
@@ -35,9 +35,9 @@ characters={
 		}
 		advisor={
     		slot = high_command
-			idea_token = VTC_Ahora2
+			idea_token = CVT_Ahora2
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 				NOT = { has_government = democratic }
 				NOT = { has_government = anarhostalinism }
 				NOT = { has_government = memoism }
@@ -55,9 +55,9 @@ characters={
 		advisor = {
      		slot = political_advisor
 			allowed = {
-                original_tag = VTC 			
+                original_tag = CVT 			
             }
-			idea_token = VTC_Ahora3
+			idea_token = CVT_Ahora3
 			available = {
 			    NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
@@ -67,9 +67,23 @@ characters={
 			}
             traits = { anti_levak }
         }
+		
+		corps_commander = {
+			traits = {   }
+         	skill = 2
+	
+         	attack_skill = 2
+        	defense_skill = 4
+        	planning_skill = 1
+        	logistics_skill = 3
+			legacy_id = -1
+			visible = {
+			NOT = {has_completed_focus = CHT_oficeer_perevorot_1}
+			}
+		}
 	}
 	
-	VTC_deloksli = {
+	CVT_deloksli = {
 	name = "Де Локсли I"
 		portraits = {
 			civilian = {
@@ -88,10 +102,10 @@ characters={
 			id = -1
 		}
 		advisor={ 
-	    	idea_token = VTC_deloksli
+	    	idea_token = CVT_deloksli
 		    slot = army_chief
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 			}
 			available = {		
                 has_government = neutrality
@@ -103,8 +117,93 @@ characters={
 				factor = 1
 			}
 		}
+		
+		corps_commander = {
+	    	traits = { }
+          	skill = 1
+	 
+            attack_skill = 1
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 3
+			legacy_id = -1
+			visible = {
+			NOT = {has_completed_focus = CHT_oficeer_perevorot_1}
+			}
+		}
 	}
-	VTC_mich_duke = {
+	
+	CVT_hunta = {
+	name = "Хунта офицеров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/lib_mil_junta.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/lib_mil_junta.dds"
+				small = "GFX_idea_CHT_ahora"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_MILITARY_JUNTA_DESC"
+			expire = "1965.1.1"
+			ideology = libertanian_chuchhe
+			traits = { divided_interests }
+			id = -1
+		}
+	}
+	
+	CVT_mesyats = {
+		name = "Кривой Месяц"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CCO/Mesyats.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHT/mesyats.dds"
+				small = "GFX_idea_CHT_mesyats"
+			}
+		}
+	   
+	   corps_commander = {
+			traits = { war_hero  }
+	        skill = 2
+
+	        attack_skill = 2
+        	defense_skill = 4
+          	planning_skill = 1
+          	logistics_skill = 3
+			legacy_id = -1
+		}
+    }
+	
+	CVT_hapov = {
+		name = "Никита Хапов"
+		portraits = {
+			civilian = {
+				large = ".dds"
+			}
+			army = {
+				large = ".dds"
+				small = ""
+			}
+		}
+	   
+	   corps_commander = {
+			traits = { trait_cautious }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			has_completed_focus = CHT_oficeer_perevorot_1
+			}
+		}
+    }
+	
+	CVT_mich_duke = {
 		name = "Duke Michael II"
 		portraits = {
 			civilian = {
@@ -114,9 +213,9 @@ characters={
 
 		advisor={
      		slot = political_advisor
-			idea_token = VTC_mich_duke1
+			idea_token = CVT_mich_duke1
 			allowed = {
-                original_tag = VTC 
+                original_tag = CVT 
 				
             }
 			available = {
@@ -129,9 +228,9 @@ characters={
 	    }
 		advisor={
     		slot = high_command
-			idea_token = VTC_mich_duke2
+			idea_token = CVT_mich_duke2
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 			}
 	       available = {		
            has_government = neutrality
@@ -144,7 +243,7 @@ characters={
 		}
 	}
 	
-	VTC_evro_fourth = {
+	CVT_evro_fourth = {
 		name = "Евро4"
 		portraits = {
 			civilian = {
@@ -154,9 +253,9 @@ characters={
 
 		advisor={
     		slot = political_advisor
-			idea_token = VTC_evro_fourth
+			idea_token = CVT_evro_fourth
 			allowed = {
-                original_tag = VTC 
+                original_tag = CVT 
 				
             }
 			available = {
@@ -169,7 +268,7 @@ characters={
 	    }
 	}
 	
-	VTC_felix_kornilov = {
+	CVT_felix_kornilov = {
 		name = "Феликс Корнилов"
 		portraits = {
 			civilian = {
@@ -179,9 +278,9 @@ characters={
 
 		advisor={
     		slot = high_command	
-			idea_token = VTC_felix_kornilov
+			idea_token = CVT_felix_kornilov
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 				NOT = { has_government = democratic }
 				NOT = { has_government = anarhostalinism }
 				NOT = { has_government = memoism }
@@ -198,7 +297,7 @@ characters={
 	    }
 	}
 	
-	VTC_yuriy_lain = {
+	CVT_yuriy_lain = {
 		name = "Юрий Ларин"
 		portraits = {
 			civilian = {
@@ -208,9 +307,9 @@ characters={
 
 		advisor={
     		slot = high_command	
-			idea_token = VTC_yuriy_lain
+			idea_token = CVT_yuriy_lain
 			allowed = {
-				original_tag = VTC
+				original_tag = CVT
 				NOT = { has_government = democratic }
 				NOT = { has_government = anarhostalinism }
 				NOT = { has_government = memoism }
@@ -227,7 +326,7 @@ characters={
 	    }
 	}
 	
-	VTC_random47 = {
+	CVT_random47 = {
 		name = "Random47"
 		portraits = {
 			civilian = {

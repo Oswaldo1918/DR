@@ -1,0 +1,198 @@
+characters={
+	DRC_stazist = {
+		name = "Штазист"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRC/Stazist.dds"
+			}
+			army = {
+				large = "gfx/leaders/DRC/Stazist.dds"
+				small = "GFX_idea_CHT_shtazist"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = marxismus
+			traits = {  }
+			desc = "POLITICS_SHTAZIST_DESC"
+		    id=-1
+	   }
+	   
+	   field_marshal = {
+			traits = { old_guard infantry_officer war_hero  }
+	        skill = 3
+
+	        attack_skill = 4
+	        defense_skill = 2
+	        planning_skill = 3
+	        logistics_skill = 2
+			legacy_id = -1
+		}
+    }
+	
+	DRC_telezniy = {
+		name = "Даниил Тележный"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DRC/telezniy.dds"
+			}
+			army = {
+				large = "gfx/leaders/DRC/telezniy.dds"
+				small = "GFX_idea_CHT_shtazist"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = white_polpotism
+			traits = {  }
+			desc = "POLITICS_SHTAZIST_DESC"
+		    id=-1
+	   }
+	   
+    }
+	
+	DRC_gus = {
+		name = "Товарищ Гусь"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = DRC_gus
+			allowed = {
+                original_tag = DRC
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { lieutenant_of_industry }
+	    }
+	}
+	
+	DRC_roman_latyshev = {
+		name = "Роман Латышев"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = DRC_roman_latyshev
+			allowed = {
+                original_tag = DRC
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { ministr_defitsita }
+	    }
+	}
+	
+	DRC_andraste = {
+		name = "Вестник Андрасте"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = DRC_andraste
+			allowed = {
+                original_tag = DRC
+				
+            }
+			available = {
+			    has_government = vmestolev 
+			}
+            traits = { economic_organizer }
+	    }
+	}
+	
+	DRC_field_sekretar = {
+		name = "Полевой Секретарь"
+		portraits = {
+			civilian = {
+				small = "GFX_generic_political_advisor_europe_3"
+			}
+		}
+
+		advisor={
+    		slot = high_command	
+			idea_token = DRC_field_sekretar
+			allowed = {
+				original_tag = DRC
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_chief_organizational_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	DRC_zaytsev = {
+	name = "Дмитрий Зайцев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/zaytsev.dds"
+				small = "GFX_idea_CHT_Dmitriy_Zaitsev"
+			}
+		}
+		
+		advisor={ 
+	    	idea_token = DRC_zaytsev
+		    slot = high_command
+			allowed = {
+				original_tag = DRC
+			}
+	        available = {		
+            has_government = vmestolev
+		    }
+			traits = { army_infantry_1  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	DRC_ivanov = {
+		name = "Саша Иванов"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/CHT/ivanov.dds"
+				small = "GFX_idea_CHT_Sasha_Ivanov"
+			}
+		}
+
+		
+		advisor={ 
+	    	idea_token = DRC_ivanov
+		    slot = high_command
+			allowed = {
+				original_tag = DRC
+			}
+	       available = {		
+           has_government = vmestolev
+		   }
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}
