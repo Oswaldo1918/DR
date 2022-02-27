@@ -12,10 +12,10 @@ set_technology = {
 
 
 set_popularities = {
-	democratic = 100
+	memoism = 100
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = memoism
 	elections_allowed = no	
 }
 
@@ -26,7 +26,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Lyasko.dds"
 	expire = "1999.1.1"
-	ideology = conservatism
+	ideology = gachi
 	traits = {
 		#
 	}
