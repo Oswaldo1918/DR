@@ -440,6 +440,11 @@ equipments = {
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
+		resources = {
+			#oil = 1
+			aluminium = 2
+			rubber = 1
+		}
 	}
 
 	# Early Bomber
@@ -457,7 +462,7 @@ equipments = {
 		air_bombing = 23
 		air_ground_attack = 21
 		
-		# build_cost_ic = 18
+		build_cost_ic = 40
 		naval_strike_attack = 10
 		naval_strike_targetting = 15
 		fuel_consumption = 0.1

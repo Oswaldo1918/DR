@@ -215,11 +215,15 @@ ter_naz_sev_kau = {
        cost = 50
  available = {
               controls_state = 233
+			  controls_state = 821
+			  controls_state = 827
           }
 
 		  days_remove = 35
                  remove_effect = {
 				 add_state_core = 233
+				 add_state_core = 821
+				 add_state_core = 827
 				 }
 			fire_only_once = yes	 
 		}	
@@ -229,6 +233,8 @@ ter_naz_yug_kau = {
        cost = 50
  available = {
               controls_state = 231
+			  controls_state = 826
+			  controls_state = 828
           }
 
 		  days_remove = 35
@@ -237,6 +243,8 @@ ter_naz_yug_kau = {
 		}
                  remove_effect = {
 				 add_state_core = 231
+				 add_state_core = 826
+				 add_state_core = 828
 				 }
 			fire_only_once = yes	 
 		}
@@ -336,6 +344,7 @@ naz_chebok = {
        cost = 50
  available = {
               controls_state = 256
+			  controls_state = 833
           }
 
 		  days_remove = 35
@@ -344,6 +353,7 @@ naz_chebok = {
 		}
                  remove_effect = {
 				 add_state_core = 256
+				 add_state_core = 833
 				 }
 			fire_only_once = yes	 
 		}
@@ -613,6 +623,7 @@ naz_ukr_bess = {
  OR = { 
               controls_state = 78
 			  controls_state = 766
+			  controls_state = 834
 			  }
           }
 
@@ -622,7 +633,8 @@ naz_ukr_bess = {
 		}
                  remove_effect = {
 				 add_state_core = 78
-				 add_state_core = 766				
+				 add_state_core = 766	
+                 add_state_core = 834				 
 				 }
 			fire_only_once = yes	 
 		}		
@@ -960,6 +972,7 @@ naz_nod_magnitka = {
 		controls_state = 579
 		controls_state = 580
 		controls_state = 403
+		controls_state = 824
 		}
 		
           }
@@ -972,7 +985,7 @@ naz_nod_magnitka = {
 				 add_state_core = 579
 				 add_state_core = 580
 				 add_state_core = 403
-				 
+				 add_state_core = 824
 				 }
 			fire_only_once = yes	 
 		}	
@@ -1116,6 +1129,7 @@ naz_nod_magnitka = {
 		controls_state = 562
 		controls_state = 574
 		controls_state = 637
+		controls_state = 822
 		}
 		
           }
@@ -1129,7 +1143,7 @@ naz_nod_magnitka = {
 				 add_state_core = 562
 				 add_state_core = 574
 				 add_state_core = 637
-				 
+				 add_state_core = 822
 				 }
 			fire_only_once = yes	 
 		}

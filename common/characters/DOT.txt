@@ -107,6 +107,9 @@ characters={
 			visible = {
 			has_completed_focus = DOT_odna_semya
 			}
+			available = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
     }
 	DOT_voenkom = {
@@ -147,6 +150,9 @@ characters={
 			visible = {
 			has_completed_focus = DOT_odna_semya
 			}
+			available = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}
     }
 	DOT_general-veteran = {
@@ -184,6 +190,9 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
+			available = {
 			has_completed_focus = DOT_odna_semya
 			}
 		}
@@ -226,6 +235,9 @@ characters={
 			visible = {
 			has_completed_focus = DOT_odna_semya
 			}
+			available = {
+			has_completed_focus = DOT_odna_semya
+			}
 		}	
     }
 	DOT_gen_air = {
@@ -246,6 +258,9 @@ characters={
 				air_chief_ground_support_2
 			}
 			visible = {
+			has_completed_focus = DOT_odna_semya
+			}
+			available = {
 			has_completed_focus = DOT_odna_semya
 			}
 			cost = 100
@@ -316,6 +331,9 @@ characters={
 			visible = {
 			has_completed_focus = DOT_soldatskaya_massa
 			}
+			available = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
 		}
     }
 	DOT_kamenshik = {
@@ -339,6 +357,9 @@ characters={
 			stability_factor = -0.1			
 			}
 			visible = {
+			has_completed_focus = DOT_soldatskaya_massa
+			}
+			available = {
 			has_completed_focus = DOT_soldatskaya_massa
 			}
 		}
@@ -473,6 +494,9 @@ characters={
 			visible = {
 			has_completed_focus = DOT_ochistit_huntu_ot_rakov
 			}
+			available = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
 		}		
     }	
 	
@@ -535,6 +559,9 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+			available = {
 			has_completed_focus = DOT_ochistit_huntu_ot_rakov
 			}
 		}		

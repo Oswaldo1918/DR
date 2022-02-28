@@ -678,4 +678,27 @@ focus_tree = {
 				}
 
 	}
+	focus = {
+		id = ALB_kumachevaya_respublica
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_the_great_antigamer_campaign
+		}
+		x = 14
+		y = 10
+		
+		available = {
+					has_government = vmestolev
+					controls_state = 48
+					controls_state = 797
+					controls_state = 107
+					controls_state = 47
+					controls_state = 109
+				}
+			completion_reward = {
+					set_cosmetic_tag = ALB_kumach_resp
+				}
+
+	}
 }
