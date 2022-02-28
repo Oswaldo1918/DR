@@ -643,7 +643,7 @@ ideas = {
 			}
 			
 			visible = {
-			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			has_completed_focus = NOD_revival_RPTS
 			}
 			
 			ai_will_do = {
@@ -667,6 +667,10 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.05
 			production_speed_arms_factory_factor = 0.1
+			}
+			
+			visible = {
+			has_completed_focus = NOD_tserkov_svideteley_Putina
 			}
 			
 			ai_will_do = {
