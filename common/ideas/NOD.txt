@@ -625,6 +625,56 @@ ideas = {
 			
 			traits = { electronics_concern }
 		}		
+		
+		NOD_RPZ = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				industry = 0.03
+				
+			}
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_industrial_complex_factor = 0.1
+			}
+			
+			visible = {
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			}
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}	
+		
+		NOD_CSP = {
+			
+			allowed = {
+				original_tag = NOD
+			}
+			
+			research_bonus = {
+				industry = 0.03
+				
+			}
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_arms_factory_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}	
 	}
 	
 	materiel_manufacturer = {
