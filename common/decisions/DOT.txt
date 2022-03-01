@@ -360,6 +360,7 @@ DOT_nationalization_Russia = {
 		cost = 30
 
 		available = {
+			controls_state = 564		
 			controls_state = 565
 			controls_state = 516
 			controls_state = 577
@@ -385,6 +386,7 @@ DOT_nationalization_Russia = {
 		days_remove = 45
 		
 		remove_effect = {
+			add_state_core = 564		
       		add_state_core = 565
 			add_state_core = 516
 			add_state_core = 577
@@ -408,7 +410,6 @@ DOT_nationalization_Russia = {
 		cost = 30
 
 		available = {
-			controls_state = 564
 			controls_state = 561
 			controls_state = 574
 			controls_state = 644
@@ -429,7 +430,6 @@ DOT_nationalization_Russia = {
         factor = 100
 		}
 		remove_effect = {
-			add_state_core = 564
 			add_state_core = 561
 			add_state_core = 574
 			add_state_core = 644
