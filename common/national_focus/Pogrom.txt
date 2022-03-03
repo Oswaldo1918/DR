@@ -1,0 +1,221 @@
+focus_tree = {
+	id = Pogrom
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YSK
+		}
+	}
+	default = no
+	focus = {
+		id = YSK_economicheskiy_liberalism
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		mutually_exclusive = {
+			focus = YSK_goskap
+		}
+		x = 21
+		y = 0
+
+	}
+	focus = {
+		id = YSK_goskap
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		mutually_exclusive = {
+			focus = YSK_economicheskiy_liberalism
+		}
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = YSK_nazlib
+		icon = GFX_goal_support_democracy
+		cost = 10
+		mutually_exclusive = {
+			focus = YSK_nazi_rus
+			focus = YSK_monarhiya
+		}
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = YSK_nazi_rus
+		icon = GFX_focus_SAF_support_ossewabrandwag
+		cost = 10
+		mutually_exclusive = {
+			focus = YSK_nazlib
+			focus = YSK_monarhiya
+		}
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = YSK_monarhiya
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		mutually_exclusive = {
+			focus = YSK_nazlib
+			focus = YSK_nazi_rus
+		}
+		x = 17
+		y = 0
+
+	}
+	focus = {
+		id = YSK_vtorzheniye_v_bashkiriyu
+		icon = GFX_goal_attak_bash
+		cost = 10
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = YSK_rasshiteniye_VDV
+		icon = GFX_focus_generic_paratrooper
+		cost = 10
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = YSK_edinorazoviy_platezh
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = YSK_nazlib
+			focus = YSK_nazi_rus
+		}
+		mutually_exclusive = {
+			focus = YSK_podpiska
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = YSK_zapret_vseh_partiy
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = YSK_nazi_rus
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = YSK_podpiska
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = YSK_nazi_rus
+			focus = YSK_monarhiya
+		}
+		mutually_exclusive = {
+			focus = YSK_edinorazoviy_platezh
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = YSK_egor_I_pOGROMNIY
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YSK_monarhiya
+		}
+		mutually_exclusive = {
+			focus = YSK_regent_pri_romanove
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = YSK_regent_pri_romanove
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YSK_monarhiya
+		}
+		mutually_exclusive = {
+			focus = YSK_egor_I_pOGROMNIY
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = YSK_rasshireniye_pischproma
+		icon = GFX_focus_cht_zhitnica_evropy
+		cost = 10
+		prerequisite = {
+			focus = YSK_goskap
+			focus = YSK_economicheskiy_liberalism
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = YSK_svinovodstvo
+		icon = GFX_svinyi
+		cost = 10
+		prerequisite = {
+			focus = YSK_rasshireniye_pischproma
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = YSK_russkiye_vpered
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10
+		prerequisite = {
+			focus = YSK_rasshiteniye_VDV
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = YSK_pohod_za_pelmenyami
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YSK_vtorzheniye_v_bashkiriyu
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = YSK_pivoprom
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YSK_svinovodstvo
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = YSK_komi
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YSK_pohod_za_pelmenyami
+		}
+		x = 29
+		y = 2
+
+	}
+}
