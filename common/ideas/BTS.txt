@@ -1,0 +1,100 @@
+ideas = {
+        country = {
+	        BTS_voen_upor = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				    production_speed_arms_factory_factor = 0.1
+		        }
+	        }
+			
+			BTS_legkoprom_upor = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				    production_speed_industrial_complex_factor = 0.1
+					consumer_goods_factor = -0.05
+		        }
+	        }
+			
+			BTS_razvitie_legkoproma = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					consumer_goods_factor = -0.05
+		        }
+	        }
+			
+			BTS_sh_teh = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					consumer_goods_factor = -0.05
+		        }
+	        }
+			
+			BTS_cowboy = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					army_morale_factor = 0.1
+		        }
+	        }
+			
+			BTS_int_prom = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					consumer_goods_factor = -0.1
+		        }
+	        }
+			
+			BTS_ortodox_sopr = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				army_org_factor = -0.05
+				military_leader_cost_factor = 1.00
+				stability_factor = -0.15
+				conscription = -0.01
+		        }
+	        }
+	   }
+	   
+	   tank_manufacturer = { 
+	
+		designer = yes
+		
+		BTS_seul_TZ = {
+			
+			allowed = {
+                original_tag = BTS			
+			}
+			
+		   available = {		
+           has_completed_focus = BTS_Seulskiy_TZ
+		   }
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+		
+		industrial_concern = {
+
+		
+	}
+}

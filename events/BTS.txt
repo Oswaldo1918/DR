@@ -1,0 +1,170 @@
+add_namespace = BTS
+
+	
+country_event = { #выбор упора пятилетки
+	id = BTS.1 
+	title = BTS.1.t
+	desc = BTS.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.1.a
+    add_ideas = BTS_voen_upor
+	}
+	
+	option = {
+	name = BTS.1.b
+    add_ideas = BTS_legkoprom_upor   
+	}
+}
+
+country_event = { #удачная опреация
+	id = BTS.2
+	title = BTS.2.t
+	desc = BTS.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.2.a
+	add_manpower = 50
+        add_days_mission_timeout = {
+			mission = BTS_myatezh_mission
+			days = 30
+		}
+	}
+}
+
+country_event = { #нормальная опреация
+	id = BTS.3
+	title = BTS.3.t
+	desc = BTS.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.3.a
+	add_manpower = -10
+        add_days_mission_timeout = {
+			mission = BTS_myatezh_mission
+			days = 20
+		}
+	}
+}
+
+country_event = { #неудачная опреация
+	id = BTS.4
+	title = BTS.4.t
+	desc = BTS.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.4.a
+	add_manpower = -50
+        add_days_mission_timeout = {
+			mission = BTS_myatezh_mission
+			days = 10
+		}
+	}
+}
+
+country_event = { #помощь от Тупичка
+	id = BTS.5
+	title = BTS.5.t
+	desc = BTS.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.5.a
+	BTS = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = TUP }
+        add_days_mission_timeout = {
+			mission = BTS_myatezh_mission
+			days = 20
+		}
+		add_stability = 0.05
+	}
+	TUP = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -500 producer = TUP } }
+	}
+	
+	option = {
+	name = BTS.5.b
+	BTS = { add_days_mission_timeout = { mission = BTS_myatezh_mission days = 10 }
+		add_stability = 0.05
+	}
+	}
+}
+
+country_event = { #ковбои
+	id = BTS.6
+	title = BTS.6.t
+	desc = BTS.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.6.a
+    add_ideas = BTS_cowboy
+	}
+	
+	option = {
+	name = BTS.6.b
+    load_oob = BTS_cowboys_1936
+	}
+}
+
+country_event = { #асмолов запрос на союз
+	id = BTS.7
+	title = BTS.7.t
+	desc = BTS.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BTS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BTS.7.a
+	BTS = {	create_faction = SOKP }
+	BTS = { add_to_faction = ASM puppet = ASM}
+	}
+	
+	option = {
+	name = BTS.7.b
+    BTS = {	complete_national_focus = BTS_SVO_protiv_asmolova }
+	}
+}
