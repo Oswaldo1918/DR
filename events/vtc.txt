@@ -30,16 +30,7 @@ country_event = {
 	 name = chat.17.a
 	 hidden_effect = {
 	set_politics = { ruling_party = fascism elections_allowed = no }
-	 create_country_leader = {
-	        name = "Ахора Мазда"
-	        desc = "POLITICS_THORVALD_STAUNING_DESC"
-	        picture = "Ahora1.dds"
-	        expire = "1999.1.1"
-	        ideology = falangism
-	        traits = {
-		               #
-	                }
-	    }              set_party_name = {
+	               set_party_name = {
 							ideology = fascism
 							long_name = CHT_ahora_party_long
 							name = CHT_ahora_party

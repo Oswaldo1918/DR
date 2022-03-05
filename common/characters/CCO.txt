@@ -1,4 +1,23 @@
 characters={
+    CCO_hunta = {
+	name = "Хунта офицеров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHT/lib_mil_junta.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHT/lib_mil_junta.dds"
+				small = "GFX_idea_CHT_ahora"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_MILITARY_JUNTA_DESC"
+			expire = "1965.1.1"
+			ideology = libertanian_chuchhe
+			traits = { divided_interests }
+			id = -1
+		}
+	} 
 	CCO_mesyats = {
 		name = "Кривой Месяц"
 		portraits = {
@@ -7,16 +26,9 @@ characters={
 			}
 			army = {
 				large = "gfx/leaders/CHT/mesyats.dds"
-				small = ".dds"
+				small = "GFX_idea_CHT_mesyats"
 			}
 		}
-		country_leader = {
-	        expire = "1999.1.1"
-	        ideology = libertanian_chuchhe
-			traits = { dictator }
-		    id=-1
-	   }
-	   
 	   field_marshal = {
 			traits = { old_guard infantry_officer war_hero  }
 	        skill = 3

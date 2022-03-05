@@ -185,6 +185,10 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	trigger = {
+		date < 3.2.16
+	}
+	
 	option = {
 	name = dk_news.8.a
 	}

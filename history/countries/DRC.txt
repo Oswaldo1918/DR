@@ -14,7 +14,17 @@ set_technology = {
 	gwtank_chassis = 1
 	early_fighter = 1
 	tech_support = 1
+	basic_train = 1
 }
+
+recruit_character = DRC_stazist
+recruit_character = DRC_telezniy
+recruit_character = DRC_gus
+recruit_character = DRC_roman_latyshev
+recruit_character = DRC_andraste
+recruit_character = DRC_field_sekretar
+recruit_character = DRC_zaytsev
+recruit_character = DRC_ivanov
 
 set_convoys = 40
 
@@ -30,61 +40,3 @@ add_ideas = {
 
 }
 
-
-create_country_leader = {
-	name = "Штазист"
-	desc = "POLITICS_SHTAZIST_DESC"
-	picture = "Stazist.dds"
-	expire = "1999.1.1"
-	ideology = marxismus
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Даниил Тележный"
-	desc = "POLITICS_SHTAZIST_DESC"
-	picture = "telezniy.dds"
-	expire = "1999.1.1"
-	ideology = white_polpotism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Иван Гоголев"
-	portrait_path = "gfx/leaders/CHT/ivan.dds"
-	traits = {  war_hero }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Дмитрий Зайцев"
-	portrait_path = "gfx/leaders/CHT/zaytsev.dds"
-	traits = {  }
-	skill = 1
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nikolas Louder"
-	portrait_path = "gfx/leaders/CHT/Nikolas.dds"
-	traits = {  war_hero }
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 3
-}

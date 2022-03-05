@@ -192,26 +192,7 @@ add_political_power = 50
 				        set_nationality = CHT
 			            }
 		            }
-					 if = { 
-					 LAZ = { has_completed_focus = LAZ_plan_shtazista }
-					 LAZ = { add_to_faction = CHT } 
-					 }
-					  if = { 
-					 limit = { CDR = {has_idea = CDR_gus} }
-					 CHT = {add_ideas = CHT_gus}
-					 }
-					   if = { 
-					 limit = { CDR = {has_idea = CDR_roman_latyshev} }
-					 CHT = {add_ideas = CDR_roman_latyshev}
-					 }
-					   if = { 
-					 limit = { CDR = {has_idea = CDR_andraste} }
-					 CHT = {add_ideas = CDR_andraste}
-					 }
-					    if = { 
-					 limit = { CDR = {has_idea = CDR_field_sekretar} }
-					 CHT = {add_ideas = CDR_field_sekretar}
-					 }
+					
 					 
 					   
 					 

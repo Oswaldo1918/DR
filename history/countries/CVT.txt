@@ -14,7 +14,20 @@ set_technology = {
 	gwtank_chassis = 1
 	early_fighter = 1
 	tech_support = 1
+	basic_train = 1
 }
+
+recruit_character = CVT_Ahora
+recruit_character = CVT_deloksli
+recruit_character = CVT_hunta
+recruit_character = CVT_mesyats
+recruit_character = CVT_hapov
+recruit_character = CVT_mich_duke
+recruit_character = CVT_evro_fourth
+recruit_character = CVT_felix_kornilov
+recruit_character = CVT_yuriy_lain
+recruit_character = CVT_random47
+
 
 add_ideas = {
 	
@@ -29,63 +42,3 @@ set_politics = {
 }
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "Царь Де Локсли I"
-	desc = "POLITICS_LOKSLI_DESC"
-	picture = "Deloksli.dds"
-	expire = "1998.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-	}
-	create_country_leader = {
-	name = "Ахора Мазда"
-	desc = "POLITICS_AHORA_DESC"
-	picture = "ahora.dds"
-	expire = "1998.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-	}
-	
-create_corps_commander = {
-	name = "Кривой Месяц"
-	id = 7760
-	picture = "mesyats.dds"
-	traits = {  war_hero }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ахора Мазда"
-	id = 77601
-	picture = "gfx/leaders/CHT/ahora.dds"
-	traits = {   }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_field_marshal = {
-	name = "Царь Де Локсли I"
-	id = 8760
-	picture = "Deloksli.dds"
-	traits = { }
-	skill = 1
-	
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}

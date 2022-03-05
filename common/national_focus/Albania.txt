@@ -16,22 +16,24 @@ focus_tree = {
 		y = 0
 			completion_reward = {
 					add_country_leader_trait = Khoja_Legacy
+					add_political_power = 150
 				}
 
 	}
 	focus = {
 		id = ALB_kozlorevolutsiya
-		icon = GFX_goal_generic_support_anstal
+		icon = GFX_goal_kulaki_muzhiki
 		cost = 1,00
 		x = 24
 		y = 3
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-            completion_reward = {
+			completion_reward = {
 					remove_ideas = ALB_chess_segregation
 					remove_ideas = ALB_the_great_antigamer_campaign
 				}
+
 	}
 	focus = {
 		id = ALB_collectivization
@@ -205,36 +207,34 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
-		
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
+			completion_reward = {
 					add_political_power = 150
 				}
 
 	}
 	focus = {
 		id = ALB_gum_pomosh_tup
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_generic_befriend_tupichok
 		cost = 3,00
 		prerequisite = {
 			focus = ALB_sud_nad_seminim
 		}
 		x = 22
 		y = 5
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
-		        TUP = {
-					country_event = {
-							id = ALB.4
+			completion_reward = {
+					TUP = {
+							country_event = {
+									id = ALB.4
+								}
 						}
 				}
-        }
+
 	}
 	focus = {
 		id = ALB_gum_pomosh_gre
@@ -245,17 +245,17 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
-		        PGR = {
-					country_event = {
-							id = ALB.3
+			completion_reward = {
+					PGR = {
+							country_event = {
+									id = ALB.3
+								}
 						}
 				}
-        }
+
 	}
 	focus = {
 		id = ALB_gum_pomosh_yug
@@ -266,17 +266,17 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
-	        	YUG = {
-					country_event = {
-							id = ALB.2
+			completion_reward = {
+					YUG = {
+							country_event = {
+									id = ALB.2
+								}
 						}
 				}
-        }
+
 	}
 	focus = {
 		id = ALB_silnaya_ruka
@@ -296,11 +296,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
+			completion_reward = {
 					add_stability = 0.03
 				}
 
@@ -314,11 +313,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 7
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
+			completion_reward = {
 					add_ideas = ALB_economiya
 				}
 
@@ -341,11 +339,10 @@ focus_tree = {
 		}
 		x = 25
 		y = 6
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
+			completion_reward = {
 					add_political_power = 150
 				}
 
@@ -359,11 +356,10 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
-		available = {
+			available = {
 					has_government = anarhostalinism
 				}
-		
-		completion_reward = {
+			completion_reward = {
 					add_ideas = privatizaciya
 				}
 
@@ -484,8 +480,8 @@ focus_tree = {
 										}
 									50 = {
 											country_event = {
-			                    				id = ALB.1
-			                      			}
+													id = ALB.1
+												}
 										}
 								}
 						}
@@ -679,6 +675,57 @@ focus_tree = {
 					805 = {
 							add_manpower = -15000
 						}
+				}
+
+	}
+	focus = {
+		id = ALB_kumachevaya_respublica
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		cost = 10,00
+		prerequisite = {
+			focus = ALB_the_great_antigamer_campaign
+		}
+		x = 14
+		y = 10
+		
+		available = {
+					has_government = vmestolev
+					controls_state = 48
+					controls_state = 797
+					controls_state = 107
+					controls_state = 47
+					controls_state = 109
+				}
+			completion_reward = {
+					set_cosmetic_tag = ALB_kumach_resp
+					add_state_core = 47
+				    add_state_core = 185
+				    add_state_core = 186
+				    add_state_core = 187
+					add_state_core = 731
+				    add_state_core = 182
+				    add_state_core = 341
+				    add_state_core = 797
+					add_state_core = 105
+				    add_state_core = 103
+				    add_state_core = 163
+				    add_state_core = 804
+					add_state_core = 104
+				    add_state_core = 109
+				    add_state_core = 107
+				    add_state_core = 108
+					add_state_core = 106
+				    add_state_core = 802
+					add_state_core = 803
+				    add_state_core = 48
+				    add_state_core = 801
+				    add_state_core = 211
+					add_state_core = 212
+				    add_state_core = 77
+				    add_state_core = 81
+				    add_state_core = 46
+					add_state_core = 82
+				    add_state_core = 764
 				}
 
 	}

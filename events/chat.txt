@@ -863,6 +863,10 @@ country_event = {
 				
 				
 				}
+			CHT_ivan = { set_nationality = DRC }
+			CHT_zaytsev = { set_nationality = DRC }
+			CHT_Nikolas = { set_nationality = DRC }
+			CHT_ivanov = { set_nationality = DRC }
 		if = {
 				limit = {
 					has_country_flag = CHT_army_flag
@@ -2018,3 +2022,35 @@ add_tech_bonus = {
 	
  }
  }
+ country_event = {
+	id = chat.228
+	title = chat.228.t
+	desc = chat.228.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = chat.228.a
+	LAZ = {
+	      annex_country = {
+			target = CHT
+			transfer_troops = yes
+		}
+		}
+	CHT = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+	}
+	}
+	
+	option = {
+	name = chat.228.b
+	LAZ = {
+	create_wargoal = {
+		        target = CHT
+		        type = annex_everything
+			}	
+	}
+}
