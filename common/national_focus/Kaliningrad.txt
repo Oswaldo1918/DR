@@ -282,7 +282,7 @@ focus_tree = {
 	focus = {
 		id = KLG_obligatsii_voen_zayma
 		icon = GFX_focus_cht_cumpital
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = KLG_economoka_voennogo_vremeny
 		}
@@ -353,7 +353,7 @@ focus_tree = {
 	focus = {
 		id = KLG_build_war_infrastryktyry
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
+		cost = 3
 		prerequisite = {
 			focus = KLG_reconstruktsia_voennih_zavodov
 		}
@@ -373,7 +373,7 @@ focus_tree = {
 	focus = {
 		id = KLG_narastit_dobychu_yantarya
 		icon = GFX_goal_generic_position_armies
-		cost = 10
+		cost = 3
 		prerequisite = {
 			focus = KLG_trudovaya_mobilizatsiya
 		}
@@ -392,7 +392,7 @@ focus_tree = {
 	focus = {
 		id = KLG_time_to_war
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10
+		cost = 3
 		prerequisite = {
 			focus = KLG_narastit_dobychu_yantarya
 		}
