@@ -1,0 +1,16 @@
+characters={
+	ZNS_Rudoy = {
+		name = "Андрей Рудой"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POK/Rudoy.dds"
+			}
+		}
+		country_leader = {
+		    desc = "POLITICS_RUDOY_DESC"
+	        expire = "1999.1.1"
+	        ideology = libertanian_chuchhe
+		    id=-1
+	   }
+    }
+}
