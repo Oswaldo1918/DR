@@ -1,0 +1,727 @@
+focus_tree = {
+	id = Magnitigorsk
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MGN
+		}
+	}
+	default = no
+	focus = {
+		id = MGN_revolutsiya_na_nemetskiye_dengi
+		icon = GFX_focus_generic_befriend_shm
+		cost = 10,00
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = MGN_ukrepit_sever
+		icon = GFX_goal_generic_construct_military
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_revolutsiya_na_nemetskiye_dengi
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = MGN_zagradotryadi
+		icon = GFX_CHT_ogon_po_rev
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_ukrepit_sever
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = MGN_voenniy_communism
+		icon = GFX_focus_after_krisis_kontrol
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_ukrepit_sever
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = MGN_krasniy_terror
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_zagradotryadi
+		}
+		prerequisite = {
+			focus = MGN_voenniy_communism
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = MGN_sovkovaya_propaganda
+		icon = GFX_goal_generic_radar
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_krasniy_terror
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = MGN_neefectivnaya_comandnaya_economika
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = MGN_zagubit_derevnu
+		icon = GFX_focus_cht_zhitnica_evropy
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = MGN_serp_i_molot_smert_i_golod
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_zagubit_derevnu
+		}
+		x = 3
+		y = 9
+
+	}
+	focus = {
+		id = MGN_deficit
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = MGN_besplatniy_trud_gulaga
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = MGN_caloshi
+		icon = GFX_DOT_sapog
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = MGN_vorovat_technologii
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_caloshi
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = MGN_kult_palachey
+		icon = GFX_focus_SOV_stalins_cult_of_personality
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = MGN_posadit_tolko_nevinovnih
+		icon = GFX_focus_cht_slave_divisions
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_kult_palachey
+		}
+		mutually_exclusive = {
+			focus = MGN_polovina_sidit
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = MGN_polovina_sidit
+		icon = GFX_focus_generic_military_academy
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_kult_palachey
+		}
+		mutually_exclusive = {
+			focus = MGN_posadit_tolko_nevinovnih
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = MGN_polovina_ohranyaet
+		icon = GFX_focus_bg_red_wreath_sold
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_polovina_sidit
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = MGN_vinovnih-v_pravitelstvo
+		icon = GFX_focus_generic_military_mission
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_posadit_tolko_nevinovnih
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = MGN_karatelnaya_psihiatriya
+		icon = GFX_focus_SOV_behead_the_snake
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_vinovnih-v_pravitelstvo
+			focus = MGN_polovina_ohranyaet
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = MGN_shtrafnaya_armiya
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_shtrafnaya_armiya
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = MGN_tankovoye_myaso
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		}
+		mutually_exclusive = {
+			focus = MGN_chernaya_pehota
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = MGN_chernaya_pehota
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		}
+		mutually_exclusive = {
+			focus = MGN_tankovoye_myaso
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = MGN_perevooruzheniye
+		icon = GFX_focus_secret_rearmament
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_tankovoye_myaso
+			focus = MGN_chernaya_pehota
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = MGN_piki
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_karatelnaya_psihiatriya
+		}
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = MGN_cherenki
+		icon = GFX_goal_cherenki
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = MGN_gruzoviki_s_nadpisyu_hleb
+		icon = GFX_goal_truck_hleb
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_cherenki
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = MGN_mauseri
+		icon = GFX_goal_mauser_c96
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		mutually_exclusive = {
+			focus = MGN_walter_mod2
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = MGN_voevat_po_globusu
+		icon = GFX_focus_POL_support_global_falangism
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_shtrafnaya_armiya
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = MGN_rasprostranenie_evreyskoy_vlasti
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = MGN_opustit_celenu
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_rasprostranenie_evreyskoy_vlasti
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = MGN_obratit_kazahov_v_rabov
+		icon = GFX_focus_cze_german_puppet
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_opustit_celenu
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = MGN_sr_aziya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_obratit_kazahov_v_rabov
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = MGN_ural
+		icon = GFX_goal_bsh_prm_skt
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_obratit_kazahov_v_rabov
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = MGN_mordor
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_rasprostranenie_evreyskoy_vlasti
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = MGN_pohod_na_kolimu
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_mordor
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = MGN_DV
+		icon = GFX_goal_DV
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_pohod_na_kolimu
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = MGN_laz
+		icon = GFX_focus_generic_attack_lazaret
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_ural
+		}
+		prerequisite = {
+			focus = MGN_DV
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = MGN_tup
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = MGN_pribaltica
+		icon = GFX_focus_LAT_threat_on_our_border
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_tup
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = MGN_yug_rossii
+		icon = GFX_goal_yug_rossii
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = MGN_Ukraina
+		icon = GFX_goal_ukraine
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_yug_rossii
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = MGN_weishnoria
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = MGN_ves_god_sneg
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_perekrasit_vse_v_seriy_cvet
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = MGN_ocheredi
+		icon = GFX_focus_cht_zacryt_granyci
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_deficit
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = MGN_vse_na_vpk
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = MGN_obogashat_uran_na_skovorodke
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_vse_na_vpk
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = MGN_rasstrel_za_opozdaniye
+		icon = GFX_LAZ_chistka_2
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_besplatniy_trud_gulaga
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = MGN_perekrasit_vse_v_seriy_cvet
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_polovina_ohranyaet
+			focus = MGN_vinovnih-v_pravitelstvo
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = MGN_colotushki
+		icon = GFX_focus_cht_samoupravlenie
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_karatelnaya_psihiatriya
+		}
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = MGN_tankovaya_promka
+		icon = GFX_focus_generic_tank_production
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_tractorniye_voyska
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = MGN_vizhigatel_mozgov
+		icon = GFX_goal_vizhigatel
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = MGN_borba_s_lzhenaukami
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_vorovat_technologii
+		}
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = MGN_walter_mod2
+		icon = GFX_goal_walter_mod2
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		mutually_exclusive = {
+			focus = MGN_mauseri
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = MGN_hohlomor
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_teleportaciya_narodov
+		}
+		mutually_exclusive = {
+			focus = MGN_vidumat_ukrainu
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = MGN_vidumat_ukrainu
+		icon = GFX_proclaim_ussr
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_teleportaciya_narodov
+		}
+		mutually_exclusive = {
+			focus = MGN_hohlomor
+		}
+		x = 12
+		y = 11
+
+	}
+	focus = {
+		id = MGN_teleportaciya_narodov
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = MGN_tractorniye_voyska
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_vse_na_vpk
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = MGN_neftyanaya_igla
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_caloshi
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = MGN_homo_soveticus
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_pribaltica
+		}
+		prerequisite = {
+			focus = MGN_Ukraina
+		}
+		prerequisite = {
+			focus = MGN_kavkaz
+		}
+		x = 23
+		y = 12
+
+	}
+	focus = {
+		id = MGN_kavkaz
+		icon = GFX_goal_kavkaz
+		cost = 10,00
+		prerequisite = {
+			focus = MGN_yug_rossii
+		}
+		x = 25
+		y = 11
+
+	}
+}
