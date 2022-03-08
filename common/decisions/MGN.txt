@@ -37,3 +37,124 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
     }
 
 }
+
+MGN_repressii = {
+
+    MGN_depressiya_andegraunda_mission = {
+
+		icon = ger_mefo_bills
+
+		available = {		
+			has_completed_focus = MGN_krasniy_terror
+			NOT = { has_country_flag = MGN_cap_andeg_depres }
+		}
+
+		days_mission_timeout = 150
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+        country_event = { id = MGN.2 }
+		}
+	}
+	
+	MGN_depressiya_prohodit_mission = {
+
+		icon = ger_mefo_bills
+
+		available = {		
+			has_completed_focus = MGN_krasniy_terror
+            has_country_flag = MGN_cap_andeg_depres
+		}
+
+		days_mission_timeout = 60
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+        clr_country_flag = MGN_cap_andeg_depres
+		remove_country_leader_trait = depressiya_andegraunda
+		}
+	}
+
+    MGN_rasstreli = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_krasniy_terror
+		}
+		
+		cost = 50
+		
+		days_remove = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_manpower = -1000
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 11
+	       	 }
+		}
+	}
+	
+	MGN_mladenci = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_cherniye_voronki
+		}
+		
+		cost = 75
+		
+		days_remove = 30
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_manpower = -10
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 35
+	       	 }
+		}
+	}
+	
+	MGN_pionerki = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_cherniye_voronki
+		}
+		
+		cost = 100
+		
+		days_remove = 40
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_manpower = -30
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 50
+	       	 }
+		}
+	}
+
+}

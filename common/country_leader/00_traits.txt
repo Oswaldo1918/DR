@@ -4,6 +4,18 @@
 
 leader_traits = {
 
+    depressiya_andegraunda = {
+		political_power_factor = -0.5
+		consumer_goods_factor = 0.5
+		stability_factor = -0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		random = no
+	}
+
     chestniy_ment = {
 		sprite = 13
 		political_power_factor = 0.03

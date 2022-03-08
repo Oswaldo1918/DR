@@ -99,6 +99,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+		
+		completion_reward = {
+				
+				}
 
 	}
 	focus = {
@@ -804,6 +808,15 @@ completion_reward = {
 		}
 		x = 15
 		y = 11
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
 
 	}
 	focus = {
@@ -871,6 +884,18 @@ completion_reward = {
 		}
 		x = 5
 		y = 10
+		available = {
+					controls_state = 562
+					controls_state = 644
+				}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
 
 	}
 	focus = {
