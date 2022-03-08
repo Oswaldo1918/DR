@@ -1,0 +1,69 @@
+ideas = {
+       country = {
+	   
+	        MGN_nemetskiye_dengi = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.05
+			    }
+		    }
+	   
+			MGN_zagrad_otryadi = {
+	
+			   modifier = {
+				army_attack_factor = 0.1
+				experience_loss_factor = 0.05
+			    }
+		    }
+			
+			MGN_voen_communism = {
+	
+			   modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.1
+			    }
+		    }
+			
+			MGN_neefect_com_ec = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.1
+					stability_factor = -0.2
+			    }
+		    }
+			
+			MGN_deficit_i = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = -0.05
+			    }
+		    }
+			
+			MGN_besplatniy_trud_gulaga_i = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.1
+			    }
+		    }
+			
+			MGN_caloshi_i = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.05
+					research_speed_factor = -0.1
+			    }
+		    }
+	   }
+	   
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		
+	}
+	
+	industrial_concern = {
+	
+	}
+}

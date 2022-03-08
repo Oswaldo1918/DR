@@ -1,0 +1,31 @@
+add_namespace = MGN
+
+	
+country_event = { #деньги от шамбалы
+	id = MGN.1 
+	title = MGN.1.t
+	desc = MGN.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = MGN
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MGN.1.a
+    MGN = {
+            add_timed_idea = {
+				idea = MGN_nemetskiye_dengi
+				days = 300
+			}
+		}	
+	}
+	
+	option = {
+	name = MGN.1.b
+
+	}
+}
+
