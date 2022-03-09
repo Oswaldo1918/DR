@@ -47,6 +47,7 @@ MGN_repressii = {
 		available = {		
 			has_completed_focus = MGN_krasniy_terror
 			NOT = { has_country_flag = MGN_cap_andeg_depres }
+			hidden_trigger = { always = no }
 		}
 
 		days_mission_timeout = 150
@@ -59,29 +60,6 @@ MGN_repressii = {
 
 		timeout_effect = {
         country_event = { id = MGN.2 }
-		}
-	}
-	
-	MGN_depressiya_prohodit_mission = {
-
-		icon = ger_mefo_bills
-
-		available = {		
-			has_completed_focus = MGN_krasniy_terror
-            has_country_flag = MGN_cap_andeg_depres
-		}
-
-		days_mission_timeout = 60
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-        clr_country_flag = MGN_cap_andeg_depres
-		remove_country_leader_trait = depressiya_andegraunda
 		}
 	}
 
@@ -153,6 +131,161 @@ MGN_repressii = {
 			 add_days_mission_timeout = {
 		    	mission = MGN_depressiya_andegraunda_mission
 		    	days = 50
+	       	 }
+		}
+	}
+	
+	MGN_teleportaciya = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_teleportaciya_narodov
+		}
+		
+		cost = 100
+		
+		days_remove = 40
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			completion_reward = {
+					821 = {
+							add_manpower = -5000
+						}
+					644 = {
+							add_manpower = 5000
+						}
+					137 = {
+							add_manpower = -5000
+						}
+					516 = {
+							add_manpower = 5000
+						}
+					91 = {
+							add_manpower = -5000
+						}
+					824 = {
+							add_manpower = 5000
+						}	
+				}
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 50
+	       	 }
+		}
+	}
+	
+	MGN_lzhe_mat_resh = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_borba_s_lzhenaukami
+		}
+		
+		cost = 300
+		
+		fire_only_once = yes 
+		
+		days_remove = 1
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			completion_reward = {
+			add_ideas = MGN_lzhe_mat
+				}
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 150
+	       	 }
+		}
+	}
+	
+	MGN_lzhe_fil_resh = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_borba_s_lzhenaukami
+		}
+		
+		cost = 150
+		
+		fire_only_once = yes 
+		
+		days_remove = 1
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			completion_reward = {
+			add_ideas = MGN_lzhe_fil
+				}
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 75
+	       	 }
+		}
+	}
+	
+	MGN_lzhe_cib_resh = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_borba_s_lzhenaukami
+		}
+		
+		cost = 100
+		
+		fire_only_once = yes 
+		
+		days_remove = 1
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			completion_reward = {
+			add_ideas = MGN_lzhe_cib
+				}
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 50
+	       	 }
+		}
+	}
+	
+	MGN_lzhe_gen_resh = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_borba_s_lzhenaukami
+		}
+		
+		cost = 75
+		
+		fire_only_once = yes 
+		
+		days_remove = 1
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			completion_reward = {
+			add_ideas = MGN_lzhe_gen
+				}
+			 add_days_mission_timeout = {
+		    	mission = MGN_depressiya_andegraunda_mission
+		    	days = 40
 	       	 }
 		}
 	}

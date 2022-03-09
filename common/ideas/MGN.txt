@@ -40,6 +40,21 @@ ideas = {
 			    }
 		    }
 			
+			MGN_ocheredi_i = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = -0.05
+			    }
+		    }
+			
+			MGN_sneg = {
+	
+			   modifier = {
+					acclimatization_cold_climate_gain_factor = 0.5
+			    }
+		    }
+			
 			MGN_besplatniy_trud_gulaga_i = {
 	
 			   modifier = {
@@ -52,6 +67,89 @@ ideas = {
 			   modifier = {
 					consumer_goods_factor = -0.05
 					research_speed_factor = -0.1
+			    }
+		    }
+			
+			MGN_black_peh = {
+	
+			   modifier = {
+					conscription = 0.05
+			    }
+		    }
+			
+			MGN_vopreki_i = {
+	
+			   modifier = {
+					experience_gain_army_factor  = -0.1
+			    }
+		    }
+			
+			MGN_c96 = {
+	
+			   modifier = {
+					army_attack_factor = 0.1
+					army_defence_factor = 0.1
+			    }
+		    }
+			
+			MGN_w_mod2 = {
+	
+			   modifier = {
+					resistance_growth = -0.25
+			    }
+		    }
+			
+			MGN_piki_i = {
+	
+			   modifier = {
+					resistance_growth = -0.25
+			    }
+		    }
+			
+			MGN_rastrel_za_opozdaniye_i = {
+	
+			   modifier = {
+					weekly_manpower = -10
+					industrial_capacity_factory = 0.1				
+			    }
+		    }
+			
+			MGN_lzhe_mat = {
+	
+			   modifier = {
+					political_power_gain = 0.1
+					research_speed_factor = -0.1
+			    }
+		    }
+			
+			MGN_lzhe_fil = {
+	
+			   modifier = {
+					political_power_gain = 0.06
+					research_speed_factor = -0.06
+			    }
+		    }
+			
+			MGN_lzhe_cib = {
+	
+			   modifier = {
+					political_power_gain = 0.05
+					research_speed_factor = -0.05
+			    }
+		    }
+			
+			MGN_lzhe_gen = {
+	
+			   modifier = {
+					political_power_gain = 0.03
+					research_speed_factor = -0.03
+			    }
+		    }
+			
+			MGN_globus = {
+	
+			   modifier = {
+					max_planning_factor = 0.2
 			    }
 		    }
 	   }
