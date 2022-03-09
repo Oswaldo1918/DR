@@ -1057,6 +1057,11 @@ focus_tree = {
 		}
 		x = 11
 		y = 11
+		
+		available = {
+					controls_state = 653
+				}
+				
 			completion_reward = {
 					653 = {
 							add_building_construction = {
@@ -1196,6 +1201,12 @@ focus_tree = {
 		}
 		x = 13
 		y = 9
+		
+		available = {
+					controls_state = 580
+					controls_state = 403
+				}
+				
 			completion_reward = {
 					580 = {
 							add_extra_state_shared_building_slots = 1
