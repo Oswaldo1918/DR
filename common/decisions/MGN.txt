@@ -40,29 +40,6 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
 
 MGN_repressii = {
 
-    MGN_depressiya_andegraunda_mission = {
-
-		icon = ger_mefo_bills
-
-		available = {		
-			has_completed_focus = MGN_krasniy_terror
-			NOT = { has_country_flag = MGN_cap_andeg_depres }
-			hidden_trigger = { always = no }
-		}
-
-		days_mission_timeout = 150
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-        country_event = { id = MGN.2 }
-		}
-	}
-
     MGN_rasstreli = {
 
 		icon = ger_mefo_bills
@@ -73,17 +50,17 @@ MGN_repressii = {
 		
 		cost = 50
 		
-		days_remove = 10
+		days_re_enable = 180
 		
 		ai_will_do = {
         factor = 100
 		}
 		remove_effect = {
 			add_manpower = -1000
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 11
-	       	 }
+			add_timed_idea = {
+				idea = MGN_bonus_ot_rasstrel
+				days = 179
+			}
 		}
 	}
 	
@@ -97,17 +74,17 @@ MGN_repressii = {
 		
 		cost = 75
 		
-		days_remove = 30
+		days_re_enable = 180
 		
 		ai_will_do = {
         factor = 100
 		}
 		remove_effect = {
 			add_manpower = -10
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 35
-	       	 }
+			add_timed_idea = {
+				idea = MGN_bonus_ot_mladencev
+				days = 179
+			} 
 		}
 	}
 	
@@ -121,17 +98,17 @@ MGN_repressii = {
 		
 		cost = 100
 		
-		days_remove = 40
+		days_re_enable = 180
 		
 		ai_will_do = {
         factor = 100
 		}
 		remove_effect = {
 			add_manpower = -30
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 50
-	       	 }
+			add_timed_idea = {
+				idea = MGN_bonus_ot_pionerok
+				days = 179
+			}  
 		}
 	}
 	
@@ -145,7 +122,7 @@ MGN_repressii = {
 		
 		cost = 100
 		
-		days_remove = 40
+		days_re_enable = 180
 		
 		ai_will_do = {
         factor = 100
@@ -170,13 +147,37 @@ MGN_repressii = {
 					824 = {
 							add_manpower = 5000
 						}	
+						add_timed_idea = {
+				idea = MGN_bonus_ot_teleportacii
+				days = 179
+			}  
 				}
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 50
-	       	 }
+			 
 		}
 	}
+	
+	MGN_evr_zhertvoprinosh = {
+
+		icon = ger_mefo_bills
+
+		available = {			
+			has_completed_focus = MGN_rasprostranenie_evreyskoy_vlasti
+		}
+		
+		cost = 100
+		
+		days_re_enable = 180
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_manpower = -150
+			add_timed_idea = {
+				idea = MGN_bonus_ot_zhertvoprinosh
+				days = 179
+			}  
+		}
 	
 	MGN_lzhe_mat_resh = {
 
@@ -199,10 +200,7 @@ MGN_repressii = {
 			completion_reward = {
 			add_ideas = MGN_lzhe_mat
 				}
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 150
-	       	 }
+			 
 		}
 	}
 	
@@ -255,10 +253,6 @@ MGN_repressii = {
 			completion_reward = {
 			add_ideas = MGN_lzhe_cib
 				}
-			 add_days_mission_timeout = {
-		    	mission = MGN_depressiya_andegraunda_mission
-		    	days = 50
-	       	 }
 		}
 	}
 	
