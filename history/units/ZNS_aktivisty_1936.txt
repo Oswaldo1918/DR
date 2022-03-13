@@ -1,0 +1,40 @@
+﻿
+division_template = {
+	name = "Активисты"
+
+	division_names_group = ZNS_03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+
+}
+priority = 1
+}
+
+units = {
+division = {
+#name = "1-я дивизия активистов Стейшен Маркс"
+
+location = 4724
+division_template = "Активисты"
+
+}
+division = {
+#name = "2-я дивизия активистов РотФронта"
+
+location = 4724
+division_template = "Активисты"
+
+}
+division = {
+#name = "3-я дивизия активистов профсоюзов"
+
+location = 4724
+division_template = "Активисты"
+
+}
+}
+
