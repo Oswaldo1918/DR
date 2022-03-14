@@ -193,6 +193,60 @@ ideas = {
 			    }
 	    	}
 			
+			MGN_polovina_sidit = {
+	
+			   modifier = {
+					consumer_goods_factor = -0.01
+					production_speed_buildings_factor = 0.1
+			    }
+		    }
+			
+			MGN_polovina_ohranyaet = {
+	
+			   modifier = {
+					conscription = 0.05
+			    }
+		    }
+			
+			MGN_sidyat_nevinovniye = {
+	
+			   modifier = {
+					political_power_gain = 0.05
+			    }
+		    }
+			
+			MGN_vinovniye_u_vlasti = {
+	
+			   modifier = {
+					stability_factor = 0.05
+			    }
+		    }
+			
+			MGN_psihiatr = {
+	
+			   modifier = {
+					political_power_gain = 0.03
+					resistance_growth = -0.5
+			    }
+		    }
+			
+			MGN_vorovat_tehi = {
+	
+			   modifier = {
+					operation_steal_tech_civilian_cost = -0.5
+					operation_steal_tech_army_cost = -0.5
+					operation_steal_tech_navy_cost = -0.5
+					operation_steal_tech_airforce_cost = -0.5
+			    }
+		    }
+			
+			MGN_tractor_voyska = {
+	
+			   modifier = {
+					land_night_attack = 0.5
+			    }
+		    }
+			
 			MGN_bonus_ot_rasstrel = {
 	
 			   modifier = {

@@ -219,6 +219,10 @@ focus_tree = {
 		}
 		x = 15
 		y = 9
+		
+		completion_reward = {
+					add_ideas = MGN_vorovat_tehi
+				}
 
 	}
 	focus = {
@@ -247,6 +251,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 6
+			completion_reward = {
+					add_ideas = MGN_sidyat_nevinovniye
+				}
 
 	}
 	focus = {
@@ -261,6 +268,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 6
+			completion_reward = {
+					add_ideas = MGN_polovina_sidit
+				}
 
 	}
 	focus = {
@@ -272,6 +282,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
+			completion_reward = {
+					add_ideas = MGN_vinovniye_u_vlasti
+				}
 
 	}
 	focus = {
@@ -283,6 +296,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 7
+			completion_reward = {
+					add_ideas = MGN_polovina_ohranyaet
+				}
 
 	}
 	focus = {
@@ -295,6 +311,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 8
+			completion_reward = {
+					add_ideas = MGN_psihiatr
+				}
 
 	}
 	focus = {
@@ -402,8 +421,7 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
-		
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_escho_narozhayut
 				}
 
@@ -420,8 +438,7 @@ focus_tree = {
 		}
 		x = 22
 		y = 7
-		
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_tankiii
 				}
 
@@ -570,7 +587,7 @@ focus_tree = {
 		}
 		x = 25
 		y = 6
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_globus
 				}
 
@@ -591,7 +608,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MGN_rasprostranenie_evreyskoy_vlasti
-		icon = GFX_focus_cht_revolutionary_army
+		icon = GFX_goal_jew_vlast
 		cost = 5,00
 		prerequisite = {
 			focus = MGN_sovkovaya_propaganda
@@ -599,8 +616,8 @@ focus_tree = {
 		x = 29
 		y = 5
 			completion_reward = {
-					
-				}
+
+}
 
 	}
 	focus = {
@@ -1065,11 +1082,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 11
-		
-		available = {
+			available = {
 					controls_state = 653
 				}
-				
 			completion_reward = {
 					653 = {
 							add_building_construction = {
@@ -1154,6 +1169,35 @@ focus_tree = {
 		}
 		x = 16
 		y = 11
+		
+		completion_reward = {
+					202 = { add_manpower = -15000 }
+					193 = { add_manpower = -15000 }
+					225 = { add_manpower = -15000 }
+					259 = { add_manpower = -15000 }
+					203 = { add_manpower = -15000 }
+					201 = { add_manpower = -15000 }
+					198 = { add_manpower = -15000 }
+					199 = { add_manpower = -15000 }
+					93 = { add_manpower = -15000 }
+					91 = { add_manpower = -15000 }
+					89 = { add_manpower = -15000 }
+					80 = { add_manpower = -15000 }
+					73 = { add_manpower = -15000 }
+					add_stability = 0.1
+					add_state_core = 202
+					add_state_core = 193
+					add_state_core = 225
+					add_state_core = 259
+					add_state_core = 203
+					add_state_core = 201
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 93
+					add_state_core = 89
+					add_state_core = 80
+					add_state_core = 73
+				}
 
 	}
 	focus = {
@@ -1168,6 +1212,22 @@ focus_tree = {
 		}
 		x = 18
 		y = 11
+		
+				completion_reward = {
+					add_stability = -0.1
+					add_state_core = 202
+					add_state_core = 193
+					add_state_core = 225
+					add_state_core = 259
+					add_state_core = 203
+					add_state_core = 201
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 93
+					add_state_core = 89
+					add_state_core = 80
+					add_state_core = 73
+				}
 
 	}
 	focus = {
@@ -1198,6 +1258,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 9
+		
+			completion_reward = {
+					add_ideas = MGN_tractor_voyska
+				}
 
 	}
 	focus = {
@@ -1209,12 +1273,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 9
-		
-		available = {
+			available = {
 					controls_state = 580
 					controls_state = 403
 				}
-				
 			completion_reward = {
 					580 = {
 							add_extra_state_shared_building_slots = 1
