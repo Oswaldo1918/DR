@@ -53,4 +53,31 @@ characters={
 			legacy_id = 0
 		}
 	}
+	
+	GAL_Rosov = {
+		name = "Николай Росов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_DON_beness_aijo"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = GAL_Rosov
+
+			allowed = {
+				original_tag = GAL
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				propaganda_expert 
+			}
+		}
+		
+	}
 }

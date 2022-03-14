@@ -4,16 +4,35 @@
 
 leader_traits = {
 
-    depressiya_andegraunda = {
-		political_power_factor = -0.5
-		consumer_goods_factor = 0.5
-		stability_factor = -0.5
+    crovaviy_agronom = {
+		weekly_manpower = -10
+		consumer_goods_factor = -0.3
 		
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+    crovaviy_culinar = {
+		sprite = 13
+		weekly_manpower = -10
+		consumer_goods_factor = -0.1
+		stability_factor = 0.5
 		
-		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    crovaviy_schetovod = {
+		sprite = 10
+		weekly_manpower = -10
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.1		
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
     chestniy_ment = {

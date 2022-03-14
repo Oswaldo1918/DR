@@ -113,6 +113,27 @@ characters = {
 		legacy_id = -1
         }
 	}
+	NOD_zh12 = {
+	name = "Ж-12"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/Zh_12.dds"
+				small = "GFX_idea_NOD_zh12"
+			}
+		}
+		corps_commander = {
+	    traits = { war_hero politically_connected }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+		legacy_id = -1
+		visible = {
+			has_completed_focus = NOD_funny_group
+			}
+        }
+	}
 	NOD_Alex_Hirurg = {
 	name = "Александр Хирург"
 		portraits = {

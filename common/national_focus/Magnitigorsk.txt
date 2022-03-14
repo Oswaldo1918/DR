@@ -219,8 +219,7 @@ focus_tree = {
 		}
 		x = 15
 		y = 9
-		
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_vorovat_tehi
 				}
 
@@ -1057,7 +1056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MGN_perekrasit_vse_v_seriy_cvet
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_MGN_mnogo_kydey_i_porovolka
 		cost = 5,00
 		prerequisite = {
 			focus = MGN_polovina_ohranyaet
@@ -1169,21 +1168,46 @@ focus_tree = {
 		}
 		x = 16
 		y = 11
-		
-		completion_reward = {
-					202 = { add_manpower = -15000 }
-					193 = { add_manpower = -15000 }
-					225 = { add_manpower = -15000 }
-					259 = { add_manpower = -15000 }
-					203 = { add_manpower = -15000 }
-					201 = { add_manpower = -15000 }
-					198 = { add_manpower = -15000 }
-					199 = { add_manpower = -15000 }
-					93 = { add_manpower = -15000 }
-					91 = { add_manpower = -15000 }
-					89 = { add_manpower = -15000 }
-					80 = { add_manpower = -15000 }
-					73 = { add_manpower = -15000 }
+			completion_reward = {
+					202 = {
+							add_manpower = -15000
+						}
+					193 = {
+							add_manpower = -15000
+						}
+					225 = {
+							add_manpower = -15000
+						}
+					259 = {
+							add_manpower = -15000
+						}
+					203 = {
+							add_manpower = -15000
+						}
+					201 = {
+							add_manpower = -15000
+						}
+					198 = {
+							add_manpower = -15000
+						}
+					199 = {
+							add_manpower = -15000
+						}
+					93 = {
+							add_manpower = -15000
+						}
+					91 = {
+							add_manpower = -15000
+						}
+					89 = {
+							add_manpower = -15000
+						}
+					80 = {
+							add_manpower = -15000
+						}
+					73 = {
+							add_manpower = -15000
+						}
 					add_stability = 0.1
 					add_state_core = 202
 					add_state_core = 193
@@ -1212,8 +1236,7 @@ focus_tree = {
 		}
 		x = 18
 		y = 11
-		
-				completion_reward = {
+			completion_reward = {
 					add_stability = -0.1
 					add_state_core = 202
 					add_state_core = 193
@@ -1258,7 +1281,6 @@ focus_tree = {
 		}
 		x = 11
 		y = 9
-		
 			completion_reward = {
 					add_ideas = MGN_tractor_voyska
 				}
@@ -1341,6 +1363,21 @@ focus_tree = {
 							type = annex_everything
 							target = AZR
 						}
+				}
+
+	}
+	focus = {
+		id = MGN_rasstrelyat_solnce
+		icon = GFX_focus_jap_manchurian_project
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_hohlomor
+			focus = MGN_vidumat_ukrainu
+		}
+		x = 17
+		y = 12
+		completion_reward = {
+					add_ideas = MGN_solnce
 				}
 
 	}
