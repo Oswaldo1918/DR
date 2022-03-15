@@ -234,7 +234,7 @@ characters={
 				factor = 10
 			}
 			traits = {
-				 
+				gazoviy_gigant 
 			}
 		}
 		
@@ -316,6 +316,141 @@ characters={
 			}
 			traits = {
 				toplivniy_baron 
+			}
+		}
+		
+	}
+	
+	POK_bikov = {
+		name = "Дмитрий Быков"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_bikov"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_bikov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				freedom_fighter
+			}
+		}
+		
+	}
+	
+	POK_g_popov = {
+		name = "Гавриил Попов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_g_popov"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_g_popov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				economist
+			}
+		}
+		
+	}
+	
+	POK_kasyanov = {
+		name = "Михаил Касьянов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_kasyanov"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_kasyanov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				economy_reformer
+			}
+		}
+		
+	}
+	
+	POK_svanidze = {
+		name = "Николай Сванидзе"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_svanidze"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_svanidze
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				the_academic
+			}
+		}
+		
+	}
+	
+	POK_titov = {
+		name = "Борис Титов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_titov"
+				large = "gfx/leaders/GAL/Rosov.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_titov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				the_statist
 			}
 		}
 		
