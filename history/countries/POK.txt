@@ -30,6 +30,19 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = POK_PBN
+recruit_character = POK_bukin
+recruit_character = POK_sharanskiy
+recruit_character = POK_romanova
+recruit_character = POK_grudin
+recruit_character = POK_chubays
+recruit_character = POK_gaydar
+recruit_character = POK_Iavlinskiy
+recruit_character = POK_lyadov
+recruit_character = POK_miller
+recruit_character = POK_pivovarov
+recruit_character = POK_potanin
+recruit_character = POK_sechin
 
 set_popularities = { 
     democratic = 40
@@ -58,29 +71,6 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Покаян Беспруфович"
-	desc = "POLITICS_POKAYAN_DESC"
-	picture = "Solzhenicin.dds"
-	expire = "1999.1.1"
-	ideology = liberalism
-	traits = {
-		Otec_russkoy_democracy
-	}
-}
-
-create_country_leader = {
-	name = "Геннадий Букин"
-	desc = "POLITICS_BUKIN_DESC"
-	picture = "Bukin.dds"
-	expire = "1999.1.1"
-	ideology = gachi
-	traits = {
-		ideological_crusader
-		el_jefe_maximo
-	}
-}
-
-create_country_leader = {
 	name = "Капитан Андерграунд"
 	desc = "POLITICS_ANDGROUND_DESC"
 	picture = "CapitanA.dds"
@@ -103,28 +93,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Лев Щаранский"
-	desc = "POLITICS_SHWARANSK_DESC"
-	picture = "Sharansky.dds"
-	expire = "1999.1.1"
-	ideology = fourth_floor
-	traits = {
-		Ljesharanskiy
-	}
-}
-
-create_country_leader = {
-	name = "Мария Романова"
-	desc = "POLITICS_ROMANOVA_DESC"
-	picture = "Czarica.dds"
-	expire = "1999.1.1"
-	ideology = oligarchism
-	traits = {
-		popular_queen
-	}
-}
-
-create_country_leader = {
 	name = "Егор Просвирнин"
 	desc = "POLITICS_PROSVERLEN_DESC"
 	picture = "Pogrom.dds"
@@ -133,18 +101,4 @@ create_country_leader = {
 	traits = {
 		Purer
 	}
-}
-
-
-create_corps_commander = {
-	name = "Фёдор Грудин"
-		picture = "Grudin.dds"
-	traits = { winter_specialist infantry_officer }
-	id = 1200
-	skill = 3
-	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 3
 }
