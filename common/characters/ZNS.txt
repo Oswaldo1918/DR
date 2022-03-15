@@ -5,9 +5,24 @@ characters={
 			civilian = {
 				large = "gfx/leaders/POK/Rudoy.dds"
 			}
+			army = {
+				large = "gfx/leaders/POK/Rudoy.dds"
+			}
 		}
+		
+		field_marshal={
+			traits={ organisational_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=0
+		}
+		
 		country_leader = {
 		    desc = "POLITICS_RUDOY_DESC"
+			traits = { Ne_typoy Slabie_nogi }
 	        expire = "1999.1.1"
 	        ideology = libertanian_chuchhe
 		    id=-1

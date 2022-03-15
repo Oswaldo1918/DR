@@ -3,6 +3,32 @@
 @tier3 = 10
 
 leader_traits = {
+    
+	Nakachal_nogi = {
+    	army_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    Slabie_nogi_silnie_ruki = {
+    	army_speed_factor = -0.2
+		offence = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Slabie_nogi = {
+    	army_speed_factor = -0.1
+		offence = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
     toplivniy_baron = {
     	sprite = 6
@@ -503,6 +529,7 @@ leader_traits = {
     Ne_typoy = {
 		random = no
 		research_speed_factor = 0.1
+		stability_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
