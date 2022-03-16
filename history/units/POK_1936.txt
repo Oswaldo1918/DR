@@ -4,18 +4,18 @@
 	division_names_group = POK_ARM_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 
 	}
-	priority = 2
+	priority = 1
 }
 division_template = {
 	name = "РуSSкие"				# Militia units (lowest experience, oldest equipment)
@@ -26,9 +26,12 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	priority = 1
 }
@@ -66,6 +69,55 @@ units = {
 	division = {
 		name = "Покаевшиеся дивизия"
 		location = 1771
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Красноярский ОМОН"
+		location = 4724
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Уренгойская дивизия"
+		location = 10536
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Северяная дивизия"
+		location = 10536
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1-я пехотная дивизия"
+		location = 7274
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2-я пехотная дивизия"
+		location = 1297
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я пехотная дивизия"
+		location = 10696
+		division_template = "РуSSкие"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я пехотная дивизия"
+		location = 10256
 		division_template = "РуSSкие"
 		start_experience_factor = 0.3
 	}
