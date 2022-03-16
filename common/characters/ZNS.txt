@@ -154,4 +154,22 @@ characters={
             traits = { social_revolutionary }
 	    }
     }
+	
+	ZNS_Sahnin = {
+		name = "Алексей Сахнин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Sahnin"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Sahnin
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { freedom_fighter }
+	    }
+    }
 }
