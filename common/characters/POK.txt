@@ -94,13 +94,160 @@ characters={
 			}
 		}
 
-	    create_corps_commander = {
+	    corps_commander = {
 			traits = { winter_specialist infantry_officer }
         	skill = 3
          	attack_skill = 3
         	defense_skill = 3
         	planning_skill = 1
         	logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	POK_nevzorov = {
+		name = "Александр Невзоров"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_nevzorov"
+				large = "gfx/leaders/POK/Nevzorov.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+        	skill = 3
+         	attack_skill = 4
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	POK_psihocossack = {
+		name = "Психоказак"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_psihocossack"
+				large = "gfx/leaders/POK/Psychocossack.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { infantry_officer }
+        	skill = 1
+         	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 1
+        	logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	
+	POK_kolya = {
+		name = "Коля Уренгойский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_kolya"
+				large = "gfx/leaders/POK/kolya_1.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { infantry_officer }
+        	skill = 2
+         	attack_skill = 3
+        	defense_skill = 1
+        	planning_skill = 2
+        	logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	
+	POK_babchenko = {
+		name = "Аркадий Бабченко"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_babchenko"
+				large = "gfx/leaders/POK/babchenko.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { armor_officer panzer_leader }
+        	skill = 2
+         	attack_skill = 2
+        	defense_skill = 1
+        	planning_skill = 1
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	POK_evdokimov = {
+		name = "Сергей Евдокимов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_evdokimov"
+				large = "gfx/leaders/POK/Sergey_Evdokimov.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { armor_officer panzer_leader }
+        	skill = 4
+         	attack_skill = 4
+        	defense_skill = 3
+        	planning_skill = 2
+        	logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	POK_shmonov = {
+		name = "Александр Шмонов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_shmonov"
+				large = "gfx/leaders/POK/Shmonov.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { trait_engineer }
+        	skill = 2
+         	attack_skill = 2
+        	defense_skill = 1
+        	planning_skill = 2
+        	logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	
+	POK_zubov = {
+		name = "Андрей Зубов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_zubov"
+				large = "gfx/leaders/POK/Zubov.dds"
+			}
+		}
+
+	    corps_commander = {
+			traits = { infantry_officer }
+        	skill = 3
+         	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
 			legacy_id = 0
 		}
 	}
