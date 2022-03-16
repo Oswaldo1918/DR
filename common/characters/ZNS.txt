@@ -3,10 +3,10 @@ characters={
 		name = "Андрей Рудой"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POK/Rudoy.dds"
+				large = "gfx/leaders/ZNS/Rudoy.dds"
 			}
 			army = {
-				large = "gfx/leaders/POK/Rudoy.dds"
+				large = "gfx/leaders/ZNS/Rudoy.dds"
 			}
 		}
 		
@@ -27,5 +27,149 @@ characters={
 	        ideology = libertanian_chuchhe
 		    id=-1
 	   }
+    }
+	
+	ZNS_Kon = {
+		name = "Конь"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZNS/Kon.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer trait_reckless cavalry_leader ranger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	ZNS_Grey_shapka = {
+		name = "Серая Шапка"
+		portraits = {
+			army = {
+				small = "GFX_idea_semyon_timoshenko"
+				large = "gfx/leaders/ZNS/Grey_shapka.dds"
+			}
+		}
+
+		corps_commander = {
+			traits = { career_officer politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0  
+		}
+	}
+
+	ZNS_Tereza = {
+		name = "Мария Тереза"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZNS/Tereza.dds"
+				small= "GFX_idea_SOV_issa_pliyev"
+			}
+			civilian = {
+				small = "GFX_idea_Tereza"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Tereza
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { marx_feminist }
+	    }
+		corps_commander = {
+			traits = { career_officer politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+	
+	ZNS_Kozhnev = {
+		name = "Дмитрий Кожнев"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Kozhnev"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Kozhnev
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { ambitious_union_boss }
+	    }
+    }
+	
+	ZNS_Fedor_Muhin = {
+		name = "Фёдор Мухин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Fedor_Muhin"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Fedor_Muhin
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { political_commissar }
+	    }
+    }
+	 
+	ZNS_Ukraintsev = {
+		name = "Кирилл Украинцев"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Ukraintsev"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Ukraintsev
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { social_revolutionary }
+	    }
+    }
+	
+	ZNS_Sahnin = {
+		name = "Алексей Сахнин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Sahnin"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Sahnin
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { freedom_fighter }
+	    }
     }
 }
