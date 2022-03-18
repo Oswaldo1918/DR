@@ -45,19 +45,24 @@ technologies = {
 
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.05
+		coordination_bonus = 0.04
 		
 		path = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 2 }
 		}
 		
+		enable_equipment_modules = { 
+			tank_radio_1
+		}
+
 		folder = {
 			name = support_folder
 			position = { x = 11 y = 9 } # x = 12 y = 0
@@ -92,13 +97,13 @@ technologies = {
 			building = radar_station
 			level = 1
 		}
-		
+		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = decimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1.75
 		
 		folder = {
 			name = electronics_folder
@@ -127,11 +132,12 @@ technologies = {
 			leads_to_tech = improved_decimetric_radar 
 			research_cost_coeff = 1
 		}
-		
-		research_cost = 1.5
+		coordination_bonus = 0.01
+		research_cost = 1.25
 		start_year = 5
 		enable_equipment_modules = { 
 			ship_radar_1
+			tank_radio_2
 		}
 		folder = {
 			name = electronics_folder
@@ -171,7 +177,7 @@ technologies = {
 			building = radar_station
 			level = 3
 		}
-		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_2
 		}
@@ -181,7 +187,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 6
 		
 		folder = {
@@ -217,9 +223,10 @@ technologies = {
 			building = radar_station
 			level = 4
 		}
-
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
+			tank_radio_3
 		}
 
 		static_anti_air_hit_chance_factor = 0.2
@@ -229,7 +236,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 7
 		
 		folder = {
@@ -265,7 +272,7 @@ technologies = {
 			building = radar_station
 			level = 5
 		}
-
+		coordination_bonus = 0.01
 		
 
 		static_anti_air_hit_chance_factor = 0.2
@@ -275,7 +282,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 8
 		
 		folder = {
@@ -311,14 +318,14 @@ technologies = {
 			building = radar_station
 			level = 6
 		}
-
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_4
 		}
 		
 		static_anti_air_hit_chance_factor = 0.2
 		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 9
 		
 		folder = {
@@ -430,7 +437,9 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		
+		enable_equipment_modules = {
+			stabilizer
+		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
 			research_cost_coeff = 1
@@ -535,7 +544,9 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 5
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
@@ -573,7 +584,9 @@ technologies = {
 
 		# encryption 2
 		encryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 7
 		
@@ -614,7 +627,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 9
 		
@@ -655,7 +670,9 @@ technologies = {
 
 		# decryption 1
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 5
 		
@@ -692,7 +709,9 @@ technologies = {
 
 		# decryption 2
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 7
 		
@@ -729,7 +748,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 9
 		
@@ -1062,7 +1083,9 @@ technologies = {
 		
 		start_year = 11
 		research_cost = 2
-
+		enable_equipment_modules = {
+			tank_gas_turbine_engine
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 11 }
@@ -1182,9 +1205,35 @@ technologies = {
 		}
 		
 		nuclear_production = 1
-		
+		on_research_complete = {
+			if = {
+				limit = {
+					tag = USA
+					has_war_with = JAP
+				}
+				play_warning_to_japan_effect = yes
+			}
+		}
 		categories = {
 			nuclear
 		}
+	}
+
+	lar_decryption_bonus_tech = {
+				
+		research_cost = 1.5 #Carrier Variant
+		start_year = 11
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		decryption_power = 10
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		################
 	}
 }
