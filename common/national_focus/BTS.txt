@@ -867,6 +867,13 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
+		
+		completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ASM
+						}
+				}
 
 	}
 	focus = {
@@ -889,6 +896,13 @@ focus_tree = {
 		}
 		x = 23
 		y = 8
+		
+		completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ZHR
+						}
+				}
 
 	}
 }
