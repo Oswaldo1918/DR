@@ -1,0 +1,1331 @@
+focus_tree = {
+	id = Magnitigorsk
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MGN
+		}
+	}
+	default = no
+	focus = {
+		id = MGN_revolutsiya_na_nemetskiye_dengi
+		icon = GFX_focus_generic_befriend_shm
+		cost = 1,00
+		x = 20
+		y = 0
+			completion_reward = {
+					SHM = {
+							country_event = {
+									id = MGN.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_ukrepit_sever
+		icon = GFX_goal_generic_construct_military
+		cost = 3,00
+		prerequisite = {
+			focus = MGN_revolutsiya_na_nemetskiye_dengi
+		}
+		x = 20
+		y = 1
+			completion_reward = {
+					582 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 7401
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 1334
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 10185
+								}
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = 4265
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_zagradotryadi
+		icon = GFX_CHT_ogon_po_rev
+		cost = 1,00
+		prerequisite = {
+			focus = MGN_ukrepit_sever
+		}
+		x = 19
+		y = 2
+			completion_reward = {
+					add_ideas = MGN_zagrad_otryadi
+				}
+
+	}
+	focus = {
+		id = MGN_voenniy_communism
+		icon = GFX_focus_after_krisis_kontrol
+		cost = 1,00
+		prerequisite = {
+			focus = MGN_ukrepit_sever
+		}
+		x = 21
+		y = 2
+			completion_reward = {
+					add_ideas = MGN_voen_communism
+				}
+
+	}
+	focus = {
+		id = MGN_krasniy_terror
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 3,00
+		prerequisite = {
+			focus = MGN_zagradotryadi
+		}
+		prerequisite = {
+			focus = MGN_voenniy_communism
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = MGN_sovkovaya_propaganda
+		icon = GFX_goal_generic_radar
+		cost = 2,00
+		prerequisite = {
+			focus = MGN_krasniy_terror
+		}
+		x = 20
+		y = 4
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = MGN_neefectivnaya_comandnaya_economika
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 12
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = MGN_voen_communism
+							add_ideas = MGN_neefect_com_ec
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_zagubit_derevnu
+		icon = GFX_focus_cht_zhitnica_evropy
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 10
+		y = 8
+			completion_reward = {
+					add_stability = -0.05
+					add_ideas = kolhozi
+				}
+
+	}
+	focus = {
+		id = MGN_serp_i_molot_smert_i_golod
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_zagubit_derevnu
+		}
+		x = 9
+		y = 9
+			completion_reward = {
+					add_manpower = -5000
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = MGN_deficit
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 11
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_deficit_i
+				}
+
+	}
+	focus = {
+		id = MGN_besplatniy_trud_gulaga
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_besplatniy_trud_gulaga_i
+				}
+
+	}
+	focus = {
+		id = MGN_caloshi
+		icon = GFX_DOT_sapog
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 14
+		y = 8
+			completion_reward = {
+					add_ideas = MGN_caloshi_i
+				}
+
+	}
+	focus = {
+		id = MGN_vorovat_technologii
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_caloshi
+		}
+		x = 15
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_vorovat_tehi
+				}
+
+	}
+	focus = {
+		id = MGN_kult_palachey
+		icon = GFX_focus_SOV_stalins_cult_of_personality
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 18
+		y = 5
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = MGN_posadit_tolko_nevinovnih
+		icon = GFX_focus_cht_slave_divisions
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_kult_palachey
+		}
+		mutually_exclusive = {
+			focus = MGN_polovina_sidit
+		}
+		x = 17
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_sidyat_nevinovniye
+				}
+
+	}
+	focus = {
+		id = MGN_polovina_sidit
+		icon = GFX_focus_generic_military_academy
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_kult_palachey
+		}
+		mutually_exclusive = {
+			focus = MGN_posadit_tolko_nevinovnih
+		}
+		x = 19
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_polovina_sidit
+				}
+
+	}
+	focus = {
+		id = MGN_vinovnih-v_pravitelstvo
+		icon = GFX_focus_generic_military_mission
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_posadit_tolko_nevinovnih
+		}
+		x = 17
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_vinovniye_u_vlasti
+				}
+
+	}
+	focus = {
+		id = MGN_polovina_ohranyaet
+		icon = GFX_focus_bg_red_wreath_sold
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_polovina_sidit
+		}
+		x = 19
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_polovina_ohranyaet
+				}
+
+	}
+	focus = {
+		id = MGN_karatelnaya_psihiatriya
+		icon = GFX_focus_SOV_behead_the_snake
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_vinovnih-v_pravitelstvo
+			focus = MGN_polovina_ohranyaet
+		}
+		x = 20
+		y = 8
+			completion_reward = {
+					add_ideas = MGN_psihiatr
+				}
+
+	}
+	focus = {
+		id = MGN_perekrasit_vse_v_krasniy
+		icon = GFX_LAZ_test_flag
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_polovina_ohranyaet
+			focus = MGN_vinovnih-v_pravitelstvo
+		}
+		mutually_exclusive = {
+			focus = MGN_perekrasit_vse_v_seriy_cvet
+		}
+		x = 16
+		y = 8
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = MGN_shtrafnaya_armiya
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 23
+		y = 5
+			completion_reward = {
+					load_oob = MGN_shtraf_1936
+				}
+
+	}
+	focus = {
+		id = MGN_cherniye_voronki
+		icon = GFX_goal_generic_army_motorized
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_shtrafnaya_armiya
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_shtrafnaya_armiya
+		}
+		x = 23
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_escho_narozhayut
+				}
+
+	}
+	focus = {
+		id = MGN_tankovoye_myaso
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		}
+		mutually_exclusive = {
+			focus = MGN_chernaya_pehota
+		}
+		x = 22
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_tankiii
+				}
+
+	}
+	focus = {
+		id = MGN_chernaya_pehota
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
+		}
+		mutually_exclusive = {
+			focus = MGN_tankovoye_myaso
+		}
+		x = 24
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_black_peh
+				}
+
+	}
+	focus = {
+		id = MGN_perevooruzheniye
+		icon = GFX_focus_secret_rearmament
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_tankovoye_myaso
+			focus = MGN_chernaya_pehota
+		}
+		x = 23
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_piki
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_karatelnaya_psihiatriya
+		}
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 20
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_piki_i
+				}
+
+	}
+	focus = {
+		id = MGN_colotushki
+		icon = GFX_focus_cht_samoupravlenie
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_karatelnaya_psihiatriya
+		}
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+					set_technology = {
+							bhammer = 1
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_cherenki
+		icon = GFX_goal_cherenki
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		x = 23
+		y = 10
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_mauseri
+		icon = GFX_goal_mauser_c96
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		mutually_exclusive = {
+			focus = MGN_walter_mod2
+		}
+		x = 24
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_c96
+				}
+
+	}
+	focus = {
+		id = MGN_letayushiye_grobi
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_cherenki
+		}
+		x = 24
+		y = 11
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_voevat_po_globusu
+		icon = GFX_focus_POL_support_global_falangism
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_shtrafnaya_armiya
+		}
+		x = 25
+		y = 6
+			completion_reward = {
+					add_ideas = MGN_globus
+				}
+
+	}
+	focus = {
+		id = MGN_vopreki
+		icon = GFX_focus_cht_slave_divisions
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_voevat_po_globusu
+		}
+		x = 26
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_vopreki_i
+				}
+
+	}
+	focus = {
+		id = MGN_rasprostranenie_evreyskoy_vlasti
+		icon = GFX_goal_jew_vlast
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_sovkovaya_propaganda
+		}
+		x = 29
+		y = 5
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = MGN_opustit_celenu
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_rasprostranenie_evreyskoy_vlasti
+		}
+		x = 28
+		y = 6
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = LIM
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_obratit_kazahov_v_rabov
+		icon = GFX_focus_cze_german_puppet
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_opustit_celenu
+		}
+		x = 28
+		y = 7
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = KAZ
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_sr_aziya
+		icon = GFX_goal_generic_political_pressure
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_obratit_kazahov_v_rabov
+		}
+		x = 26
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = TAJ
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = KYR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = TMS
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_ural
+		icon = GFX_goal_bsh_prm_skt
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_obratit_kazahov_v_rabov
+		}
+		x = 28
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = BSH
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_mordor
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_rasprostranenie_evreyskoy_vlasti
+		}
+		x = 30
+		y = 6
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = MRD
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_pohod_na_kolimu
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_mordor
+		}
+		x = 30
+		y = 7
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = KOL
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_DV
+		icon = GFX_goal_DV
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_pohod_na_kolimu
+		}
+		x = 30
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = BRT
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = YAK
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = YWO
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MAG
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = DOT
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = TUB
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_laz
+		icon = GFX_focus_generic_attack_lazaret
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_ural
+		}
+		prerequisite = {
+			focus = MGN_DV
+		}
+		x = 29
+		y = 9
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = LAZ
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHT
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = UNT
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MAT
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_tup
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 27
+		y = 10
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = TUP
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ARK
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = MHL
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = EBN
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_pribaltica
+		icon = GFX_focus_LAT_threat_on_our_border
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_tup
+		}
+		x = 27
+		y = 11
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = SPL
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = VSB
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = KLG
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_yug_rossii
+		icon = GFX_goal_yug_rossii
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 31
+		y = 10
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = NOD
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = KRR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = HAZ
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = STR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CRI
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHK
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_Ukraina
+		icon = GFX_goal_ukraine
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_yug_rossii
+		}
+		x = 29
+		y = 11
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = DON
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = UKR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CHE
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = KUR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SIN
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ZHE
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_gruzoviki_s_nadpisyu_hleb
+		icon = GFX_goal_truck_hleb
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_cherenki
+		}
+		x = 22
+		y = 11
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_weishnoria
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_laz
+		}
+		x = 29
+		y = 10
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ZWN
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = WHS
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_ves_god_sneg
+		icon = GFX_focus_jap_manchurian_project
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_perekrasit_vse_v_krasniy
+			focus = MGN_perekrasit_vse_v_seriy_cvet
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_sneg
+				}
+
+	}
+	focus = {
+		id = MGN_ocheredi
+		icon = GFX_focus_cht_zacryt_granyci
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_deficit
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_ocheredi_i
+				}
+
+	}
+	focus = {
+		id = MGN_vse_na_vpk
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_neefectivnaya_comandnaya_economika
+		}
+		x = 12
+		y = 8
+			completion_reward = {
+					add_ideas = BTS_voen_upor
+					add_ideas = war_economy
+				}
+
+	}
+	focus = {
+		id = MGN_obogashat_uran_na_skovorodke
+		icon = GFX_focus_wonderweapons
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_vse_na_vpk
+		}
+		x = 12
+		y = 10
+			available = {
+					controls_state = 562
+					controls_state = 644
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_rasstrel_za_opozdaniye
+		icon = GFX_LAZ_chistka_2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_besplatniy_trud_gulaga
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+					add_ideas = MGN_rastrel_za_opozdaniye_i
+				}
+
+	}
+	focus = {
+		id = MGN_perekrasit_vse_v_seriy_cvet
+		icon = GFX_MGN_mnogo_kydey_i_porovolka
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_polovina_ohranyaet
+			focus = MGN_vinovnih-v_pravitelstvo
+		}
+		mutually_exclusive = {
+			focus = MGN_perekrasit_vse_v_krasniy
+		}
+		x = 18
+		y = 8
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = MGN_tankovaya_promka
+		icon = GFX_focus_generic_tank_production
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_tractorniye_voyska
+		}
+		x = 11
+		y = 11
+			available = {
+					controls_state = 653
+				}
+			completion_reward = {
+					653 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_vizhigatel_mozgov
+		icon = GFX_goal_vizhigatel
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 19
+		y = 10
+			available = {
+					controls_state = 202
+				}
+			completion_reward = {
+					202 = {
+							add_building_construction = {
+									type = radar_station
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_borba_s_lzhenaukami
+		icon = GFX_focus_research2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_vorovat_technologii
+		}
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = MGN_walter_mod2
+		icon = GFX_goal_walter_mod2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		mutually_exclusive = {
+			focus = MGN_mauseri
+		}
+		x = 26
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_w_mod2
+				}
+
+	}
+	focus = {
+		id = MGN_hohlomor
+		icon = GFX_goal_generic_attack_allies
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_teleportaciya_narodov
+		}
+		mutually_exclusive = {
+			focus = MGN_vidumat_ukrainu
+		}
+		x = 16
+		y = 11
+			completion_reward = {
+					202 = {
+							add_manpower = -15000
+						}
+					193 = {
+							add_manpower = -15000
+						}
+					225 = {
+							add_manpower = -15000
+						}
+					259 = {
+							add_manpower = -15000
+						}
+					203 = {
+							add_manpower = -15000
+						}
+					201 = {
+							add_manpower = -15000
+						}
+					198 = {
+							add_manpower = -15000
+						}
+					199 = {
+							add_manpower = -15000
+						}
+					93 = {
+							add_manpower = -15000
+						}
+					91 = {
+							add_manpower = -15000
+						}
+					89 = {
+							add_manpower = -15000
+						}
+					80 = {
+							add_manpower = -15000
+						}
+					73 = {
+							add_manpower = -15000
+						}
+					add_stability = 0.1
+					add_state_core = 202
+					add_state_core = 193
+					add_state_core = 225
+					add_state_core = 259
+					add_state_core = 203
+					add_state_core = 201
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 93
+					add_state_core = 89
+					add_state_core = 80
+					add_state_core = 73
+				}
+
+	}
+	focus = {
+		id = MGN_vidumat_ukrainu
+		icon = GFX_proclaim_ussr
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_teleportaciya_narodov
+		}
+		mutually_exclusive = {
+			focus = MGN_hohlomor
+		}
+		x = 18
+		y = 11
+			completion_reward = {
+					add_stability = -0.1
+					add_state_core = 202
+					add_state_core = 193
+					add_state_core = 225
+					add_state_core = 259
+					add_state_core = 203
+					add_state_core = 201
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 93
+					add_state_core = 89
+					add_state_core = 80
+					add_state_core = 73
+				}
+
+	}
+	focus = {
+		id = MGN_teleportaciya_narodov
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_ves_god_sneg
+		}
+		x = 17
+		y = 10
+			available = {
+					controls_state = 821
+					controls_state = 644
+					controls_state = 137
+					controls_state = 516
+					controls_state = 91
+					controls_state = 824
+				}
+
+	}
+	focus = {
+		id = MGN_tractorniye_voyska
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_vse_na_vpk
+		}
+		x = 11
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_tractor_voyska
+				}
+
+	}
+	focus = {
+		id = MGN_neftyanaya_igla
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_caloshi
+		}
+		x = 13
+		y = 9
+			available = {
+					controls_state = 580
+					controls_state = 403
+				}
+			completion_reward = {
+					580 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+					403 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_homo_soveticus
+		icon = GFX_focus_Dead_Communist
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_pribaltica
+		}
+		prerequisite = {
+			focus = MGN_Ukraina
+		}
+		prerequisite = {
+			focus = MGN_kavkaz
+		}
+		x = 29
+		y = 12
+			completion_reward = {
+					set_rule = {
+							can_use_kamikaze_pilots = yes
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_kavkaz
+		icon = GFX_goal_kavkaz
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_yug_rossii
+		}
+		x = 31
+		y = 11
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = GEO
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ARM
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = AZR
+						}
+				}
+
+	}
+	focus = {
+		id = MGN_rasstrelyat_solnce
+		icon = GFX_focus_jap_manchurian_project
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_hohlomor
+			focus = MGN_vidumat_ukrainu
+		}
+		x = 17
+		y = 12
+		completion_reward = {
+					add_ideas = MGN_solnce
+				}
+
+	}
+}

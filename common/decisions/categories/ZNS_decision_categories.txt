@@ -1,0 +1,13 @@
+#########################
+  ### LAZARET_RSFSR ###
+#########################
+
+ZNS_resovization = {
+	icon = military_operation
+	allowed = {
+		tag = DOT		
+	}
+	visible = {
+	 has_completed_focus = ZNS_Pau_Pau_Pau_Pau
+	}
+}

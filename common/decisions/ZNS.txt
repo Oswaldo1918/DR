@@ -1,0 +1,658 @@
+ZNS_resovization = {
+
+    ZNS_cor_LAZ = {
+       cost = 100
+        available = {
+              OR = { 
+	    controls_state = 243
+		controls_state = 205
+		controls_state = 223
+		controls_state = 219
+		controls_state = 247
+		controls_state = 246
+		controls_state = 242
+		controls_state = 248
+		controls_state = 253
+		controls_state = 254
+		}
+          }
+
+		  days_remove = 35
+		  ai_will_do = {
+        factor = 100
+		}
+                 remove_effect = {
+				 add_state_core = 243
+				 add_state_core = 205
+				 add_state_core = 223
+				 add_state_core = 219
+				 add_state_core = 247
+				 add_state_core = 246
+				 add_state_core = 242
+				 add_state_core = 248
+				 add_state_core = 253
+				 add_state_core = 254
+				 
+				 }
+			fire_only_once = yes	 
+		} 
+
+    ZNS_cor_UNT = { #Интеграция_Воронежа
+	
+		cost = 30
+
+		available = {
+			controls_state = 258
+			controls_state = 257
+			controls_state = 260
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 258
+			add_state_core = 257
+			add_state_core = 260
+		}	
+	}  
+
+    ZNS_cor_MAT = { #Интеграция_Орла
+	
+		cost = 40
+
+		available = {
+			controls_state = 220
+			controls_state = 222
+			controls_state = 224
+			controls_state = 240
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 220
+			add_state_core = 222
+			add_state_core = 224
+			add_state_core = 240
+		}	
+	}  
+
+    ZNS_core_ARK = { #Интеграция_Архангельска
+	
+		cost = 30
+
+		available = {
+			controls_state = 214
+			controls_state = 825
+			controls_state = 351
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 214
+			add_state_core = 825
+			add_state_core = 351
+		}	
+	}
+
+    ZNS_core_CHT = { #Интеграция_CHT
+	
+		cost = 30
+
+		available = {
+			controls_state = 251
+			controls_state = 250
+			controls_state = 249
+			controls_state = 255
+			controls_state = 256
+			controls_state = 252
+			controls_state = 399
+			controls_state = 400
+			controls_state = 833
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		  remove_effect = {
+			add_state_core = 251
+			add_state_core = 250
+			add_state_core = 249
+			add_state_core = 255
+			add_state_core = 256
+			add_state_core = 252
+			add_state_core = 399
+			add_state_core = 400
+			add_state_core = 833
+		  }		
+	}
+
+	ZNS_core_TUP = { #Интеграция_Тупичка
+	
+		cost = 30
+
+		available = {
+			controls_state = 195
+			controls_state = 208
+			controls_state = 244
+			controls_state = 264
+			controls_state = 209
+			controls_state = 263
+			controls_state = 210
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		
+		remove_effect = {
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 244
+			add_state_core = 264
+			add_state_core = 209
+			add_state_core = 263
+			add_state_core = 210
+		}	
+	}
+	ZNS_core_Karelia = { #Интеграция_Карелия
+	
+		cost = 30
+
+		available = {
+			controls_state = 213
+			controls_state = 722
+			controls_state = 215
+			controls_state = 216
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 213
+			add_state_core = 722
+			add_state_core = 215
+			add_state_core = 216
+		}	
+	}
+	ZNS_core_VIB = { #Интеграция_Выборга
+	
+		cost = 10
+
+		available = {
+			controls_state = 146
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 146
+
+		}	
+	}
+	ZNS_core_KLG = { #Интеграция_Калининграда
+	
+		cost = 10
+
+		available = {
+			controls_state = 763
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 763
+
+		}	
+	}
+	ZNS_core_Kuban = { #Интеграция_Кубани
+	
+		cost = 30
+
+		available = {
+			controls_state = 218
+			controls_state = 238
+			controls_state = 234
+			controls_state = 235
+			controls_state = 237
+			controls_state = 236
+			controls_state = 232
+			controls_state = 233
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 234
+			add_state_core = 235
+			add_state_core = 237
+			add_state_core = 236
+			add_state_core = 232
+			add_state_core = 233
+		}	
+	}
+	ZNS_core_Komi_Perm = { #Интеграция_Коми_и_Перми
+	
+		cost = 30
+
+		available = {
+			controls_state = 397
+			controls_state = 398
+			controls_state = 581
+			controls_state = 262
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 15
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 397
+			add_state_core = 398
+			add_state_core = 581
+			add_state_core = 262
+		}	
+	}
+	ZNS_core_NOD = { #Интеграция_НОДа
+	
+		cost = 30
+
+		available = {
+			controls_state = 217
+			controls_state = 265
+			controls_state = 245
+			controls_state = 239
+			controls_state = 401
+			controls_state = 829
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 217
+			add_state_core = 265
+			add_state_core = 245
+			add_state_core = 239
+			add_state_core = 401
+			add_state_core = 829
+		}	
+	}
+	ZNS_core_MRD = { #Интеграция_Сибири
+	
+		cost = 30
+
+		available = {
+			controls_state = 516			
+		}
+		ai_will_do = {
+        factor = 100
+		}
+		fire_only_once = yes
+		
+		days_remove = 45
+		
+		remove_effect = {
+			add_state_core = 516
+		}	
+	}
+	ZNS_core_DV = { #Интеграция_Дальнего_Востока
+	
+		cost = 30
+
+		available = {
+			controls_state = 561
+			controls_state = 574
+			controls_state = 644
+			controls_state = 657
+			controls_state = 560
+			controls_state = 409
+			controls_state = 408
+			controls_state = 655
+            controls_state = 537
+			controls_state = 562				
+			controls_state = 822
+			controls_state = 555
+			controls_state = 637
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 561
+			add_state_core = 574
+			add_state_core = 644
+			add_state_core = 657
+			add_state_core = 560
+			add_state_core = 409
+			add_state_core = 408
+			add_state_core = 655
+            add_state_core = 537
+			add_state_core = 562
+			add_state_core = 822
+			controls_state = 555
+			controls_state = 637
+		}	
+	}
+	ZNS_core_SredAsia = { #Интеграция_Средней_Азии
+	
+		cost = 30
+
+		available = {
+			controls_state = 407
+			controls_state = 406
+			controls_state = 402
+			controls_state = 587
+			controls_state = 404
+			controls_state = 583
+			controls_state = 590
+			controls_state = 588
+			controls_state = 589
+			controls_state = 586
+			controls_state = 584
+			controls_state = 585
+			controls_state = 405
+			controls_state = 742
+			controls_state = 732		
+            controls_state = 823	
+        	controls_state = 830
+			controls_state = 831
+			controls_state = 832				
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 45
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 407
+			add_state_core = 406
+			add_state_core = 402
+			add_state_core = 587
+			add_state_core = 404
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 588
+			add_state_core = 589
+			add_state_core = 586
+			add_state_core = 584
+			add_state_core = 585
+			add_state_core = 405
+			add_state_core = 742
+			add_state_core = 732
+			add_state_core = 823	
+			add_state_core = 830
+			add_state_core = 831
+			add_state_core = 832	
+		}	
+	}
+	ZNS_core_Kavkaz = { #Интеграция_Кавказа
+	
+		cost = 30
+
+		available = {
+			controls_state = 231
+			controls_state = 229
+			controls_state = 230
+			controls_state = 821
+			controls_state = 826
+			controls_state = 827
+			controls_state = 828
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 231
+			add_state_core = 229
+			add_state_core = 230
+			add_state_core = 821
+			add_state_core = 826
+			add_state_core = 827
+			add_state_core = 828
+		}	
+	}
+	ZNS_core_RTN = { #Интеграция_Карпатской_Рутении
+	
+		cost = 10
+
+		available = {
+			controls_state = 73
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 73
+
+		}	
+	}
+	ZNS_core_Hohloland = { #Интеграция_Украина
+	
+		cost = 30
+
+		available = {
+			controls_state = 137
+			controls_state = 196
+			controls_state = 200
+			controls_state = 192
+			controls_state = 203
+			controls_state = 226
+			controls_state = 198
+			controls_state = 259
+			controls_state = 193
+			controls_state = 225
+			controls_state = 91
+			controls_state = 93
+			controls_state = 199
+			controls_state = 221
+			controls_state = 201
+			controls_state = 202
+			controls_state = 89
+			controls_state = 80
+			controls_state = 197			
+			controls_state = 834
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 137
+			add_state_core = 196
+			add_state_core = 200
+			add_state_core = 192
+			add_state_core = 203
+			add_state_core = 226
+			add_state_core = 198
+			add_state_core = 259
+			add_state_core = 193
+			add_state_core = 225
+			add_state_core = 91
+			add_state_core = 93
+			add_state_core = 199
+			add_state_core = 221
+			add_state_core = 201
+			add_state_core = 202
+			add_state_core = 89
+			add_state_core = 80
+			add_state_core = 197
+			add_state_core = 834
+		}	
+	}
+	ZNS_core_MOL = { #Интеграция_Молдовы
+	
+		cost = 30
+
+		available = {
+			controls_state = 766
+			controls_state = 78
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 15
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 766
+			add_state_core = 78
+		}	
+	}
+	ZNS_core_Pribaltika = { #Интеграция_Прибалтики
+	
+		cost = 30
+
+		available = {
+			controls_state = 13
+			controls_state = 191
+			controls_state = 12
+			controls_state = 190
+			controls_state = 189
+			controls_state = 188
+			controls_state = 11
+			controls_state = 784
+			controls_state = 808
+			controls_state = 809
+			controls_state = 810
+			controls_state = 811
+			controls_state = 812
+			controls_state = 813
+			controls_state = 814
+			controls_state = 815
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 13
+			add_state_core = 191
+			add_state_core = 12
+			add_state_core = 190
+			add_state_core = 189
+			add_state_core = 188
+			add_state_core = 11
+			add_state_core = 784
+			add_state_core = 808
+			add_state_core = 809
+			add_state_core = 810
+			add_state_core = 811
+			add_state_core = 812
+			add_state_core = 813
+			add_state_core = 814
+			add_state_core = 815
+		}	
+	}
+	ZNS_core_Zapadnoy_Veshnorii = { #Интеграция_Западной_Вейшнории
+	
+		cost = 30
+
+		available = {
+			controls_state = 94
+			controls_state = 95
+			controls_state = 96
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 94
+			add_state_core = 95
+			add_state_core = 96
+		}	
+	}
+	ZNS_cor_WHS = { #Интеграция_Вейшнории
+	
+		cost = 50
+
+		available = {
+			controls_state = 207
+			controls_state = 206
+			controls_state = 204
+			controls_state = 194
+			controls_state = 241
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 207
+			add_state_core = 206
+			add_state_core = 204
+			add_state_core = 194
+			add_state_core = 241
+		}	
+	}
+}	

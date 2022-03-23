@@ -1,7 +1,7 @@
 ﻿division_template = {
-name = "Пехота"
+name = "Ополченцы"
 
-	division_names_group = 123_INF_01
+	division_names_group = ZNS_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,28 +14,86 @@ name = "Пехота"
 	priority = 1
 }
 
+division_template = {
+	name = "Курьеры"				
+
+	division_names_group = ZNS_02
+
+	regiments = {
+		bicycle_battalion = { x = 0 y = 0 }
+        bicycle_battalion = { x = 0 y = 1 }
+        bicycle_battalion = { x = 1 y = 0 }
+		bicycle_battalion = { x = 1 y = 1 }
+		bicycle_battalion = { x = 2 y = 0 }
+		bicycle_battalion = { x = 2 y = 1 }
+
+}
+	
+priority = 2
+}
+
 units = {
-	#Royal Afghani Army
 	division = {
-		name = "Восставшие рабочие"
-		location = 10639
-		division_template = "Пехота"
+		name = "1-е крестьянское ополчение"
+		location = 4724
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "2-е крестьянское ополчение"
+		location = 4724
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-е крестьянское ополчение"
+		location = 4724
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+    
+    division = {
+		name = "1-е рабочее ополчение"
+		location = 4724
+		division_template = "Ополченцы"
 		start_experience_factor = 0.3
 	}
 	
    division = {
-		name = "Восставшие рабочие"
-		location = 10639
-		division_template = "Пехота"
+		name = "2-е рабочее ополчение"
+		location = 4724
+		division_template = "Ополченцы"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "Восставшие рабочие"
-		location = 10639
-		division_template = "Пехота"
+		name = "3-е рабочее ополчение"
+		location = 4724
+		division_template = "Ополченцы"
 		start_experience_factor = 0.3
 	}
 
+    division = {
+		name = "Курьеры Delivery Club"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "Курьеры Яндекс.Еда"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Курьеры ExDel"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}  	
 }
 

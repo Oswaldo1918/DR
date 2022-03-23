@@ -11,23 +11,24 @@ focus_tree = {
 	focus = {
 		id = BTS_prodolzhit_k_pop_perestroyku
 		icon = GFX_goal_generic_soviet_construction
-		cost = 10,00
+		cost = 5
 		mutually_exclusive = {
 			focus = BTS_myatezhniki_v_verhah
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 16
 		y = 0
-            completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_political_power = 150
 				}
+
 	}
 	focus = {
 		id = BTS_myatezhniki_v_verhah
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 10,00
+		cost = 5
 		mutually_exclusive = {
 			focus = BTS_prodolzhit_k_pop_perestroyku
 		}
@@ -38,81 +39,85 @@ focus_tree = {
 	focus = {
 		id = BTS_voennoe_polozheniye
 		icon = GFX_focus_SOV_mobilization_plan
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_prodolzhit_k_pop_perestroyku
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 16
 		y = 1
-		
-		  completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_political_power = 150
 					add_stability = -0.1
 				}
+
 	}
 	focus = {
 		id = BTS_patiletka
 		icon = GFX_focus_five_year_plan
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_voennoe_polozheniye
 		}
-		available = {
-			has_government = anarhostalinism
-			has_completed_focus = BTS_boyeviye_operacii
-			}
 		x = 11
 		y = 2
-		completion_reward = {
-            country_event = {
-				id = BTS.1 
-			}
-		}
+			available = {
+					has_government = anarhostalinism
+					has_completed_focus = BTS_boyeviye_operacii
+				}
+			completion_reward = {
+					country_event = {
+							id = BTS.1
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_legkoprom
 		icon = GFX_goal_generic_consumer_goods
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_patiletka
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 9
 		y = 3
-            completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_stability = 0.05
 					add_ideas = BTS_razvitie_legkoproma
 					if = {
-						limit = { has_idea = BTS_legkoprom_upor }
-							525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
+							limit = {
+									has_idea = BTS_legkoprom_upor
 								}
-						    }
+							525 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
 						}
 				}
+
 	}
 	focus = {
 		id = BTS_samoupravleniye
 		icon = GFX_focus_cht_samoupravlenie
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_patiletka
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 11
 		y = 3
-		 completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_stability = 0.05
 				}
 
@@ -120,16 +125,16 @@ focus_tree = {
 	focus = {
 		id = BTS_povisit_platezhi
 		icon = GFX_focus_cht_cumpital
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_samoupravleniye
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 11
 		y = 5
-		completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_stability = 0.05
 				}
 
@@ -137,61 +142,65 @@ focus_tree = {
 	focus = {
 		id = BTS_osnovaniye_oruzheynoy_promki
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_patiletka
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 13
 		y = 3
-                completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
 								}
-						    }
+						}
 					if = {
-						limit = { has_idea = BTS_voen_upor }
-							525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
+							limit = {
+									has_idea = BTS_voen_upor
 								}
-						    }
+							525 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
 						}
 				}
+
 	}
 	focus = {
 		id = BTS_verfi
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_osnovaniye_oruzheynoy_promki
 			focus = BTS_legkoprom
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 12
 		y = 4
-            completion_reward = {
-			navy_experience = 25
-					        525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					navy_experience = 25
+					525 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
 									type = dockyard
 									level = 1
 									instant_build = yes
 								}
-						    }
+						}
 				}
+
 	}
 	focus = {
 		id = BTS_rashireniye_porta
@@ -201,52 +210,55 @@ focus_tree = {
 			focus = BTS_osnovaniye_oruzheynoy_promki
 			focus = BTS_legkoprom
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 10
 		y = 4
+			available = {
+					has_government = anarhostalinism
+				}
 
 	}
 	focus = {
 		id = BTS_podgotovka_pilotov
 		icon = GFX_focus_SOV_women_in_aviation
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_verfi
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 12
 		y = 6
-		completion_reward = {
-        air_experience = 25
-        } 
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					air_experience = 25
+				}
+
 	}
 	focus = {
 		id = BTS_Seulskiy_TZ
 		icon = GFX_focus_generic_tank_production
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_osnovaniye_oruzheynoy_promki
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 13
 		y = 5
-		 completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					if = {
-						limit = { has_idea = BTS_voen_upor }
-							525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
+							limit = {
+									has_idea = BTS_voen_upor
 								}
-						    }
+							525 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
 						}
 				}
 
@@ -254,16 +266,16 @@ focus_tree = {
 	focus = {
 		id = BTS_boyeviye_operacii
 		icon = GFX_focus_cht_mesyats_doctrine
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_voennoe_polozheniye
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 16
 		y = 2
-		completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					army_experience = 30
 				}
 
@@ -271,148 +283,154 @@ focus_tree = {
 	focus = {
 		id = BTS_chistka_gosapparata
 		icon = GFX_focus_SOV_the_last_purge
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_boyeviye_operacii
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 15
 		y = 3
-        completion_reward = {
-			add_political_power = 150
-			 add_days_mission_timeout = {
-		    	mission = BTS_myatezh_mission
-		    	days = 10
-	       	 }
-		}
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					add_political_power = 150
+					add_days_mission_timeout = {
+							mission = BTS_myatezh_mission
+							days = 10
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_snabzheniye_otdalenih_regionov
 		icon = GFX_focus_SOV_the_road_of_life
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_boyeviye_operacii
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 17
 		y = 3
+			available = {
+					has_government = anarhostalinism
+				}
 
 	}
 	focus = {
 		id = BTS_snaryazhenie_ot_tup
 		icon = GFX_focus_generic_befriend_tupichok
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_chistka_gosapparata
 			focus = BTS_snabzheniye_otdalenih_regionov
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 16
 		y = 4
-        completion_reward = {
-            TUP = {
-	      		country_event = {
-	    			id = BTS.5
-			    } 
-			}
-		}
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					TUP = {
+							country_event = {
+									id = BTS.5
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_cowboyi_miticha
 		icon = GFX_goal_lukin_cowboy
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_snaryazhenie_ot_tup
 		}
 		prerequisite = {
 			focus = BTS_chistka_gosapparata
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 15
 		y = 5
-        completion_reward = {
-	      		country_event = {
-	    			id = BTS.6
-			    } 
-		}
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					country_event = {
+							id = BTS.6
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_aviarazvedka
 		icon = GFX_focus_yug_rogozarski
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_cowboyi_miticha
 		}
-		available = {
-			has_government = anarhostalinism
-			has_completed_focus = BTS_aeroport
-			has_completed_focus = BTS_podgotovka_pilotov
-			}
 		x = 14
 		y = 6
-        completion_reward = {
-	      	 add_days_mission_timeout = {
-		    	mission = BTS_myatezh_mission
-		    	days = 30
-	       	 }
-		}
+			available = {
+					has_government = anarhostalinism
+					has_completed_focus = BTS_aeroport
+					has_completed_focus = BTS_podgotovka_pilotov
+				}
+			completion_reward = {
+					add_days_mission_timeout = {
+							mission = BTS_myatezh_mission
+							days = 30
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_aviaudari
 		icon = GFX_goal_generic_air_bomber
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_cowboyi_miticha
 		}
-		available = {
-			has_government = anarhostalinism
-			has_completed_focus = BTS_aeroport
-			has_completed_focus = BTS_podgotovka_pilotov
-			}
 		x = 16
 		y = 6
-        completion_reward = {
-	      	 add_days_mission_timeout = {
-		    	mission = BTS_myatezh_mission
-		    	days = 30
-	       	 }
-		}
+			available = {
+					has_government = anarhostalinism
+					has_completed_focus = BTS_aeroport
+					has_completed_focus = BTS_podgotovka_pilotov
+				}
+			completion_reward = {
+					add_days_mission_timeout = {
+							mission = BTS_myatezh_mission
+							days = 30
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_sotrudnichestvo_s_crestyanami
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_snabzheniye_otdalenih_regionov
 		}
 		prerequisite = {
 			focus = BTS_snaryazhenie_ot_tup
 		}
-		available = {
-			has_government = anarhostalinism
-			has_completed_focus = BTS_povisit_platezhi
-			}
 		x = 17
 		y = 5
-        completion_reward = {
-	      	 add_days_mission_timeout = {
-		    	mission = BTS_myatezh_mission
-		    	days = 30
-	       	 }
-		}
+			available = {
+					has_government = anarhostalinism
+					has_completed_focus = BTS_povisit_platezhi
+				}
+			completion_reward = {
+					add_days_mission_timeout = {
+							mission = BTS_myatezh_mission
+							days = 30
+						}
+				}
+
 	}
 	focus = {
 		id = BTS_pobeda_nad_BTS_soprotivleniem
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_aviarazvedka
 		}
@@ -422,110 +440,114 @@ focus_tree = {
 		prerequisite = {
 			focus = BTS_sotrudnichestvo_s_crestyanami
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 16
 		y = 7
+			available = {
+					has_government = anarhostalinism
+				}
 
 	}
 	focus = {
 		id = BTS_SVO_protiv_asmolova
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_pobeda_nad_BTS_soprotivleniem
 		}
 		mutually_exclusive = {
-			focus = BTS_soyuz_s_asmolovim
+			focus = BTS_integratsiya_promki
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 13
 		y = 8
-        completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = ASM
 						}
 				}
+
 	}
 	focus = {
 		id = BTS_deBTSizaciya
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_pobeda_nad_BTS_soprotivleniem
 		}
 		mutually_exclusive = {
 			focus = BTS_legalizciya_ortodocs_BTS
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 17
 		y = 8
-		
-		 completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_political_power = 150
 				}
+
 	}
 	focus = {
 		id = BTS_zapret_BTS
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_deBTSizaciya
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 17
 		y = 9
-		 completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_political_power = 150
 				}
+
 	}
 	focus = {
 		id = BTS_legalizciya_ortodocs_BTS
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_pobeda_nad_BTS_soprotivleniem
 		}
 		mutually_exclusive = {
 			focus = BTS_deBTSizaciya
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 19
 		y = 8
-         completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_stability = 0.05
 				}
+
 	}
 	focus = {
 		id = BTS_control_nad_oppoziciyey
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_legalizciya_ortodocs_BTS
 		}
-		available = {
-			has_government = anarhostalinism
-			}
 		x = 19
 		y = 9
-         completion_reward = {
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
 					add_stability = 0.05
 				}
+
 	}
 	focus = {
 		id = BTS_svoi_v_armii
 		icon = GFX_focus_generic_manpower
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_myatezhniki_v_verhah
 		}
@@ -536,7 +558,7 @@ focus_tree = {
 	focus = {
 		id = BTS_provokacii
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_svoi_v_armii
 		}
@@ -545,196 +567,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = BTS_proizvodstvo_SH_tehniki
-		icon = GFX_goal_proizvodstvo_combaynov
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_legkoprom
-		}
-		available = {
-			has_government = anarhostalinism
-			}
-		x = 9
-		y = 5
-            completion_reward = {
-					add_ideas = BTS_sh_teh
-					if = {
-						limit = { has_idea = BTS_legkoprom_upor }
-							525 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						    }
-						}
-				}
-	}
-	focus = {
-		id = BTS_aeroport
-		icon = GFX_goal_generic_air_fighter
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_rashireniye_porta
-		}
-		available = {
-			has_government = anarhostalinism
-			}
-		x = 10
-		y = 6
-        completion_reward = {
-					525 = {
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-	}
-	focus = {
-		id = BTS_soyuz_s_asmolovim
-		icon = GFX_goal_generic_major_alliance
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_pobeda_nad_BTS_soprotivleniem
-		}
-		available = {
-			has_government = anarhostalinism
-			}
-		mutually_exclusive = {
-			focus = BTS_SVO_protiv_asmolova
-		}
-		x = 15
-		y = 8
-		
-		 completion_reward = {
-					 ASM = {
-	              		country_event = {
-	            			id = BTS.7
-		         	    } 
-		        	}
-				}
-
-	}
-	focus = {
-		id = BTS_SEV
-		icon = GFX_focus_SOV_the_comecon
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_integratsiya_promki
-		}
-		available = {
-			NOT = { has_completed_focus = BTS_SVO_protiv_asmolova }
-			ASM = { is_subject_of = BTS }
-		}
-		x = 15
-		y = 10
-
-	}
-	focus = {
-		id = BTS_integratsiya_promki
-		icon = GFX_focus_SOV_merge_plants
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_soyuz_s_asmolovim
-		}
-		available = {
-			NOT = { has_completed_focus = BTS_SVO_protiv_asmolova }
-			ASM = { is_subject_of = BTS }
-		}
-		x = 15
-		y = 9
-		 completion_reward = {
-					BTS = { add_ideas = BTS_int_prom }
-					ASM = { add_ideas = BTS_int_prom }
-				}
-
-	}
-	focus = {
-		id = BTS_kult_miticha
-		icon = GFX_focus_prc_agrarian_socialism
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_zapret_BTS
-		}
-		available = {
-			has_government = anarhostalinism
-			}
-		x = 17
-		y = 10
-		
-		completion_reward = {
-					add_country_leader_trait = dictator
-				}
-
-	}
-	focus = {
-		id = BTS_pluralizm
-		icon = GFX_focus_generic_military_academy
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_control_nad_oppoziciyey
-		}
-		available = {
-			has_government = anarhostalinism
-			}
-		x = 19
-		y = 10
-		
-		completion_reward = {
-					add_political_power = 100
-				}
-	}
-	focus = {
-		id = BTS_podtyagivaniye_econom_urovnya
-		icon = GFX_focus_cht_socialist_chudo
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_SVO_protiv_asmolova
-		}
-		available = {
-			has_government = anarhostalinism
-			owns_state = 527
-			}
-		x = 13
-		y = 9
-		
-		completion_reward = {
-					        527 = {
-						    	add_extra_state_shared_building_slots = 1
-						    	add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						    }
-				}
-
-	}
-	focus = {
-		id = BTS_edinaya_strana
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10,00
-		prerequisite = {
-			focus = BTS_podtyagivaniye_econom_urovnya
-		}
-		available = {
-			has_government = anarhostalinism
-			owns_state = 527
-			}
-		x = 13
-		y = 10
-		completion_reward = {
-					      add_state_core = 527
-				}
-
-	}
-	focus = {
 		id = BTS_svoi_v_pravitelstve
 		icon = GFX_focus_generic_military_academy
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_myatezhniki_v_verhah
 		}
@@ -745,7 +580,7 @@ focus_tree = {
 	focus = {
 		id = BTS_sabotazh
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_svoi_v_pravitelstve
 		}
@@ -756,7 +591,7 @@ focus_tree = {
 	focus = {
 		id = BTS_vzatie_vlasti
 		icon = GFX_goal_generic_attack_allies
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = BTS_provokacii
 		}
@@ -765,6 +600,309 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
+
+	}
+	focus = {
+		id = BTS_obezatelnoye_proslushivaniye_bts
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		prerequisite = {
+			focus = BTS_vzatie_vlasti
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = BTS_kult_btsnikov
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = BTS_obezatelnoye_proslushivaniye_bts
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = BTS_proizvodstvo_tonn_kosmetici
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = BTS_vzatie_vlasti
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = BTS_proizvodstvo_SH_tehniki
+		icon = GFX_goal_proizvodstvo_combaynov
+		cost = 5
+		prerequisite = {
+			focus = BTS_legkoprom
+		}
+		x = 9
+		y = 5
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					add_ideas = BTS_sh_teh
+					if = {
+							limit = {
+									has_idea = BTS_legkoprom_upor
+								}
+							525 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_aeroport
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = BTS_rashireniye_porta
+		}
+		x = 10
+		y = 6
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					525 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_soyuz_s_asmolovim
+		icon = GFX_goal_generic_major_alliance
+		cost = 5
+		prerequisite = {
+			focus = BTS_rasshireniye_promki
+		}
+		x = 15
+		y = 10
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					ASM = {
+							country_event = {
+									id = BTS.7
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_integratsiya_promki
+		icon = GFX_focus_SOV_merge_plants
+		cost = 5
+		prerequisite = {
+			focus = BTS_pobeda_nad_BTS_soprotivleniem
+		}
+		mutually_exclusive = {
+			focus = BTS_SVO_protiv_asmolova
+		}
+		x = 15
+		y = 8
+			available = {
+					NOT = {
+							has_completed_focus = BTS_SVO_protiv_asmolova
+						}
+					ASM = {
+							is_subject_of = BTS
+						}
+				}
+			completion_reward = {
+					BTS = {
+							add_ideas = BTS_int_prom
+						}
+					ASM = {
+							add_ideas = BTS_int_prom
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_kult_miticha
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5
+		prerequisite = {
+			focus = BTS_zapret_BTS
+		}
+		x = 17
+		y = 10
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					add_country_leader_trait = dictator
+				}
+
+	}
+	focus = {
+		id = BTS_pluralizm
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		prerequisite = {
+			focus = BTS_control_nad_oppoziciyey
+		}
+		x = 19
+		y = 10
+			available = {
+					has_government = anarhostalinism
+				}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = BTS_podtyagivaniye_econom_urovnya
+		icon = GFX_focus_cht_socialist_chudo
+		cost = 5
+		prerequisite = {
+			focus = BTS_SVO_protiv_asmolova
+		}
+		x = 13
+		y = 9
+			available = {
+					has_government = anarhostalinism
+					owns_state = 527
+				}
+			completion_reward = {
+					527 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_edinaya_strana
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		prerequisite = {
+			focus = BTS_podtyagivaniye_econom_urovnya
+		}
+		x = 13
+		y = 10
+			available = {
+					has_government = anarhostalinism
+					owns_state = 527
+				}
+			completion_reward = {
+					add_state_core = 527
+				}
+
+	}
+	focus = {
+		id = BTS_rasshireniye_promki
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		prerequisite = {
+			focus = BTS_integratsiya_promki
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = BTS_obezatelnoye_nosheniye_kosmetici
+		icon = GFX_goal_generic_support_milo
+		cost = 5
+		prerequisite = {
+			focus = BTS_proizvodstvo_tonn_kosmetici
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = BTS_k_poperi-v_koreyu
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		prerequisite = {
+			focus = BTS_obezatelnoye_proslushivaniye_bts
+		}
+		prerequisite = {
+			focus = BTS_proizvodstvo_tonn_kosmetici
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = BTS_obyedineniye_korei
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = BTS_kult_btsnikov
+		}
+		prerequisite = {
+			focus = BTS_k_poperi-v_koreyu
+		}
+		prerequisite = {
+			focus = BTS_obezatelnoye_nosheniye_kosmetici
+		}
+		x = 23
+		y = 6
+		
+		completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ASM
+						}
+				}
+
+	}
+	focus = {
+		id = BTS_koncerti_bts
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		prerequisite = {
+			focus = BTS_obyedineniye_korei
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = BTS_vtorzheniye_v_manchzhuriyu
+		icon = GFX_focus_jap_cast_the_die
+		cost = 5
+		prerequisite = {
+			focus = BTS_koncerti_bts
+		}
+		x = 23
+		y = 8
+		
+		completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ZHR
+						}
+				}
 
 	}
 }

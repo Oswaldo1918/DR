@@ -276,6 +276,10 @@ LAZ_integration_kliki = {
 		days_remove = 30
 		
 		remove_effect = {
+		LAZ = {
+			end_puppet = CHT
+		}
+        CHT = { leave_faction = Chumnoy_pakt }
 		CHT = {
 			country_event = chat.228
 		    }
@@ -296,6 +300,10 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		fire_only_once = yes
 	
 		 remove_effect = {
+		 LAZ = {
+			end_puppet = ARK
+		}
+        ARK = { leave_faction = Chumnoy_pakt }
 				ARK = {
 			country_event = ARK.1
 		    }
@@ -341,6 +349,10 @@ LAZ_int_ARK = { #Интеграция_Архангельска
         factor = 100
 		}
 		 remove_effect = {
+		 LAZ = {
+			end_puppet = WHS
+		}
+        WHS = { leave_faction = Chumnoy_pakt }
 			WHS = {
 			country_event = WHS.1
 		    }
@@ -386,6 +398,10 @@ LAZ_int_ARK = { #Интеграция_Архангельска
         factor = 100
 		}
 		 remove_effect = {
+		 LAZ = {
+			end_puppet = UNT
+		}
+        UNT = { leave_faction = Chumnoy_pakt }
 			UNT = {
 			country_event = UNT.1
 		    }
@@ -428,6 +444,10 @@ LAZ_int_ARK = { #Интеграция_Архангельска
         factor = 100
 		}
 		 remove_effect = {
+		 LAZ = {
+			end_puppet = MAT
+		}
+        MAT = { leave_faction = Chumnoy_pakt }
 				MAT = {
 			country_event = MAT.1
 		    }
@@ -471,6 +491,10 @@ LAZ_int_ARK = { #Интеграция_Архангельска
         factor = 100
 		}
 		 remove_effect = {
+		 LAZ = {
+			end_puppet = DON
+		}
+        DON = { leave_faction = Chumnoy_pakt }
 			DON = {
 			country_event = DON.1
 		    }

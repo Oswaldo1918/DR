@@ -1,0 +1,218 @@
+characters = {
+	MGN_CapitanA = {
+		name = "Капитан Андерграунд"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGN/CapitanA.dds"
+			}
+		}
+
+		country_leader = {
+			desc = "POLITICS_ANDGROUND_DESC"
+			expire = "1999.1.1"
+        	ideology = stalinismus
+        	traits = {
+         		 prince_of_terror
+        	}
+			id = -1
+		}
+	}
+	MGN_Madyanov = {
+	name = "Роман Мадянов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGN/Madyanov.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MGN/Madyanov.dds"
+				small = "GFX_idea_MGN_madyanov"
+			}
+		}
+		field_marshal = {
+	    traits = { infantry_officer war_hero inspirational_leader trait_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 4
+		legacy_id = -1
+        }
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = MGN_Madyanov
+			ledger = army
+			allowed = {
+				original_tag = MGN
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}	
+	}	
+	
+	MGN_blohin = {
+	name = "Василий Блохин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGN/Blohin.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MGN/Blohin.dds"
+				small = "GFX_idea_MGN_blohin"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected  }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 4
+		legacy_id = -1
+        }
+		advisor = {
+			slot = political_advisor	
+			idea_token = MGN_blohin
+			allowed = {
+				original_tag = MGN			
+			}			
+			traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+			has_completed_focus = MGN_cherniye_voronki
+			}
+		}	
+	}	
+	
+	MGN_turbovskiy = {
+	name = "Наум Турбовский"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGN/Turbovskiy.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MGN/Turbovskiy.dds"
+				small = "GFX_idea_MGN_turbovskiy"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+		
+	}	
+	
+	MGN_garanin = {
+		name = "Степан Гаранин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MGN_garanin"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor	
+			idea_token = MGN_garanin
+			allowed = {
+				original_tag = MGN			
+			}			
+			traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	MGN_komolov = {
+		name = "Олег Комолов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MGN_komolov"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor	
+			idea_token = MGN_komolov
+			allowed = {
+				original_tag = MGN			
+			}			
+			traits = { crovaviy_schetovod }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	MGN_zhrenkele = {
+		name = "Доктор Жренкеле"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MGN_zhrenkele"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor	
+			idea_token = MGN_zhrenkele
+			allowed = {
+				original_tag = MGN				
+			}			
+			traits = { crovaviy_culinar }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	MGN_trofim = {
+		name = "Трофим Лысенко"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MGN_trofim"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor	
+			idea_token = MGN_trofim
+			allowed = {
+				original_tag = MGN				
+			}			
+			traits = { crovaviy_agronom }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	MGN_admin_vnb = {
+		name = "Глава ВНБ"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MGN_admin_VNB"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor	
+			idea_token = MGN_admin_vnb
+			allowed = {
+				original_tag = MGN				
+			}			
+			traits = { political_commissar }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+}

@@ -1,0 +1,41 @@
+﻿division_template = {
+	name = "Курьеры"				
+
+	division_names_group = ZNS_02
+
+	regiments = {
+		bicycle_battalion = { x = 0 y = 0 }
+        bicycle_battalion = { x = 0 y = 1 }
+        bicycle_battalion = { x = 1 y = 0 }
+		bicycle_battalion = { x = 1 y = 1 }
+		bicycle_battalion = { x = 2 y = 0 }
+		bicycle_battalion = { x = 2 y = 1 }
+
+}
+	
+priority = 2
+}
+
+units = {
+    division = {
+		name = "Курьеры Delivery Club"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "Курьеры Яндекс.Еда"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Курьеры ExDel"
+		location = 4724
+		division_template = "Курьеры"
+		start_experience_factor = 0.3
+	}  	
+}
+

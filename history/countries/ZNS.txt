@@ -1,19 +1,52 @@
-capital = 570
+capital = 568
 
-oob = 123_1936
+oob = ZNS_1936
 
-set_research_slots = 1
-set_stability = 0.9
-set_war_support = 0
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1  
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	bicycle_infantry = 1
 	basic_train = 1
 }
 
+recruit_character = ZNS_Rudoy
+recruit_character = ZNS_Kon
+recruit_character = ZNS_Grey_shapka
+recruit_character = ZNS_Tereza
 
+recruit_character = ZNS_Kozhnev
+recruit_character = ZNS_Fedor_Muhin
+recruit_character = ZNS_Ukraintsev
 
 set_popularities = {
-	anarhostalinism = 100
+	fascism = 15
+	neutrality = 20
+	anarhostalinism = 25
+	metacommy = 10
+	democratic = 20
+	vmestolev = 10
 }
 set_politics = {
 	ruling_party = anarhostalinism
@@ -21,14 +54,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Андрей Рудой"
-	desc = "POLITICS_RUDOY_DESC"
-	picture = "Rudoy.dds"
-	expire = "1999.1.1"
-	ideology = libertanian_chuchhe
-	traits = {
-     Ne_typoy
-	}
-}

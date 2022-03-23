@@ -3,6 +3,111 @@
 @tier3 = 10
 
 leader_traits = {
+    
+	marx_feminist = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		conscription = 0.02
+	}
+	
+	Nakachal_nogi = {
+    	army_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    Slabie_nogi_silnie_ruki = {
+    	army_speed_factor = -0.2
+		offence = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Slabie_nogi = {
+    	army_speed_factor = -0.1
+		offence = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gazoviy_gigant = {
+    	sprite = 6
+		consumer_goods_factor = -0.02
+		stability_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    toplivniy_baron = {
+    	sprite = 6
+		fuel_gain_factor_from_states = 0.1
+		max_fuel_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    borec_za_ecologiyu = {
+		stability_factor = 0.02
+		MONTHLY_POPULATION = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    pokrovitel_alcogolnoy_promki = {
+	    sprite = 10
+		consumer_goods_factor = -0.03
+		stability_factor = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	crovaviy_agronom = {
+		weekly_manpower = -10
+		consumer_goods_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    crovaviy_culinar = {
+		sprite = 13
+		weekly_manpower = -10
+		consumer_goods_factor = -0.01
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    crovaviy_schetovod = {
+		sprite = 10
+		weekly_manpower = -10
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.1		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
     chestniy_ment = {
 		sprite = 13
@@ -443,6 +548,7 @@ leader_traits = {
     Ne_typoy = {
 		random = no
 		research_speed_factor = 0.1
+		stability_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1193,7 +1299,7 @@ leader_traits = {
 
 	anti_communist = {
 		random = no
-		communism_acceptance = -50
+		vmestolev_acceptance = -50
 		vmestolev_drift = -0.01
 
 		ai_will_do = {
@@ -1685,7 +1791,7 @@ leader_traits = {
 		consumer_goods_factor = -0.03
 		democratic_acceptance = 50
 		fascism_acceptance = -25
-		communism_acceptance = -25
+		vmestolev_acceptance = -25
 	}
 
 	the_young_magnate = {
@@ -2519,7 +2625,7 @@ leader_traits = {
 		annex_cost_factor = -0.1
 	}
 
-	stalin_architect_of_communism = {
+	stalin_architect_of_vmestolev = {
 		random = no
 		vmestolev_drift = 0.1
 		master_ideology_drift = 0.1
@@ -3061,7 +3167,7 @@ leader_traits = {
 	# drift is a percent applied weekly
 	communist_revolutionary = {
 		random = no
-		# Boosts Communism
+		# Boosts vmestolev
 		sprite = 13
 		vmestolev_drift = 0.1
 		
@@ -4108,7 +4214,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		vmestolev_drift = 0.05
-		communism_acceptance = 25
+		vmestolev_acceptance = 25
 		research_speed_factor = 0.05
 	}
 

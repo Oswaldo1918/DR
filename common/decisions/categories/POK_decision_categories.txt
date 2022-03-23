@@ -49,3 +49,24 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
 	}
 }
 
+MGN_repressii = { 
+ icon = generic_prospect_for_resources
+	visible = {
+		original_tag = MGN
+		has_completed_focus = MGN_krasniy_terror
+	}
+}
+
+MGN_nationalization_Russia = { 
+ icon = generic_prospect_for_resources
+	visible = {
+		original_tag = MGN
+	}
+}
+
+MGN_poisk_relikviy = { 
+ icon = generic_prospect_for_resources
+	visible = {
+		original_tag = MGN
+	}
+}

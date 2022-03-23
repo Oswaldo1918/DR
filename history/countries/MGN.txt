@@ -8,9 +8,18 @@ set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
+	penal_infantry = 1
 }
 
-
+recruit_character = MGN_CapitanA
+recruit_character = MGN_Madyanov
+recruit_character = MGN_blohin
+recruit_character = MGN_turbovskiy
+recruit_character = MGN_garanin
+recruit_character = MGN_komolov
+recruit_character = MGN_zhrenkele
+recruit_character = MGN_trofim
+recruit_character = MGN_admin_vnb
 
 set_popularities = {
 	vmestolev = 100
@@ -21,14 +30,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Капитан Андерграунд"
-	desc = "POLITICS_ANDGROUND_DESC"
-	picture = "CapitanA.dds"
-	expire = "1999.1.1"
-	ideology = stalinismus
-	traits = {
-		 prince_of_terror
-	}
-}

@@ -1,6 +1,16 @@
 spriteTypes = {			
 	
 	#Нацдухи
+	
+	spriteType = {
+		name = "GFX_idea_ZNS_noviye_crasniye"
+		texturefile = "gfx/interface/ideas/ZNS_noviye_crasniye.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_ZNS_burocrati"
+		texturefile = "gfx/interface/ideas/ZNS_burocrati.dds"
+	}	
     	
 	spriteType = {
 		name = "GFX_idea_GAL_barini_hozyaini"
@@ -242,5 +252,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_stalin3000"
 		texturefile = "gfx/interface/goals/goal_stalin3000.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_jew_vlast"
+		texturefile = "gfx/interface/goals/goal_jew_vlast.dds"	
 	}
 }

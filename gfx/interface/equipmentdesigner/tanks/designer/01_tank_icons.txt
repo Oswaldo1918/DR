@@ -195,20 +195,23 @@ LAZ = {
     light_tank_chassis_0 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"			
+			    "gfx/interface/technologies/LAZ_T-26-30.dds"		
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"				
 			}
 		}
 	}
 	light_tank_chassis_1 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"				
+			    "gfx/interface/technologies/LAZ_T-26-30.dds" 
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"					
 			}
 		}
 	}
 	light_tank_chassis_2 = {
 		pool = {
 			icons = {
+	    		"gfx/interface/technologies/LAZ_T-26-30.dds"		
 				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"			
 			}
 		}
@@ -216,39 +219,40 @@ LAZ = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"				
+			    "gfx/interface/technologies/LAZ_T-26-30.dds"		 
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"
 			}
 		}
 	}
 	medium_tank_chassis_0 = {
 		pool = {
 			icons = {
+    			"gfx/interface/technologies/LAZ_T-82A.dds"						
 				"gfx/interface/technologies/LAZ_kub-76.dds"		
-                "gfx/interface/technologies/LAZ_T-82A.dds"						
 			}
 		}
 	}
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = {
+	    		"gfx/interface/technologies/LAZ_T-82A.dds"		
 				"gfx/interface/technologies/LAZ_kub-76.dds"		
-				"gfx/interface/technologies/LAZ_T-82A.dds"		
 			}
 		}
 	}
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_kub-76.dds"	
-                "gfx/interface/technologies/LAZ_T-82A.dds"						
+		    	"gfx/interface/technologies/LAZ_T-82A.dds"		
+				"gfx/interface/technologies/LAZ_kub-76.dds"					
 			}
 		}
 	}
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = {
+			    "gfx/interface/technologies/LAZ_T-82A.dds"		
 				"gfx/interface/technologies/LAZ_kub-76.dds"		
-				"gfx/interface/technologies/LAZ_T-82A.dds"		
 			}
 		}
 	}
@@ -256,6 +260,7 @@ LAZ = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/LAZ_BMDT-64.dds" 
+				"gfx/interface/technologies/LAZ_T-26-76.dds"		
 			}
 		}
 	}
@@ -263,6 +268,7 @@ LAZ = {
 		pool = {
 			icons = {
             	"gfx/interface/technologies/LAZ_BMDT-64.dds" 
+				"gfx/interface/technologies/LAZ_T-26-76.dds"	
 			}
 		}
 	}
@@ -270,6 +276,7 @@ LAZ = {
 		pool = {
 			icons = {
 	            "gfx/interface/technologies/LAZ_BMDT-64.dds" 
+				"gfx/interface/technologies/LAZ_T-26-76.dds"	
 			}
 		}
 	}
@@ -277,6 +284,7 @@ LAZ = {
 		pool = {
 			icons = {
             	"gfx/interface/technologies/LAZ_BMDT-64.dds" 
+				"gfx/interface/technologies/LAZ_T-26-76.dds"	
 			}
 		}
 	}
@@ -286,27 +294,31 @@ CHT = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"			
+				"gfx/interface/technologies/CHT_BMP-60PB.dds"			
 			}
 		}
 	}
 	light_tank_chassis_1 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"				
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"	
+				"gfx/interface/technologies/CHT_BMP-60PB.dds"			
 			}
 		}
 	}
 	light_tank_chassis_2 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"			
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"	
+				"gfx/interface/technologies/CHT_BMP-60PB.dds"			
 			}
 		}
 	}
 	light_tank_chassis_3 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"				
+				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"			
+				"gfx/interface/technologies/CHT_BMP-60PB.dds"			
 			}
 		}
 	}
@@ -883,5 +895,90 @@ DON = {
 		}
 	}
 }	
-
+POK = {
+    light_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz1.dds"			
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz1.dds"				
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz2.dds"			
+			}
+		}
+	}
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/DOT_ASU-26.dds"				
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz3.dds"			
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz3.dds"		
+			}
+		}
+	}
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pz4.dds"		
+			}
+		}
+	}
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/POK_pantera.dds"		
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/DOT_T-80-45.dds" 
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = {
+            	"gfx/interface/technologies/DOT_T-80-45.dds" 
+			}
+		}
+	}
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = {
+	            "gfx/interface/technologies/POK_tigr.dds" 
+			}
+		}
+	}
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = {
+            	"gfx/interface/technologies/POK_tigr2.dds" 
+			}
+		}
+	}
+}	
 

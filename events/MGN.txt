@@ -1,0 +1,49 @@
+add_namespace = MGN
+
+	
+country_event = { #деньги от шамбалы
+	id = MGN.1 
+	title = MGN.1.t
+	desc = MGN.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = MGN
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MGN.1.a
+    MGN = {
+            add_timed_idea = {
+				idea = MGN_nemetskiye_dengi
+				days = 300
+			}
+		}	
+	}
+	
+	option = {
+	name = MGN.1.b
+
+	}
+}
+
+country_event = { #депрессия андеграунда
+	id = MGN.2
+	title = MGN.2.t
+	desc = MGN.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = MGN
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MGN.2.a
+     add_country_leader_trait = depressiya_andegraunda
+	 set_country_flag = MGN_cap_andeg_depres
+	}
+}
