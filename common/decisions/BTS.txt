@@ -88,4 +88,55 @@ BTS_soprotivleniye_btsnikov = {
 }
 
 BTS_koncerti = {
+BTS_core_PRDK = { 
+	
+		cost = 10
+
+		available = {
+			controls_state = 527
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 527
+
+		}	
+	}
+	BTS_core_ZHR = { 
+	
+		cost = 10
+
+		available = {
+			controls_state = 328
+			controls_state = 717
+			controls_state = 716
+			controls_state = 745
+			controls_state = 714
+			controls_state = 715
+			controls_state = 610
+			controls_state = 761
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            add_state_core = 328
+			add_state_core = 717
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 714
+			add_state_core = 715
+			add_state_core = 610
+			add_state_core = 761
+		}	
+	}
 }
