@@ -645,8 +645,13 @@ focus_tree = {
 		x = 23
 		y = 3
 		completion_reward = {
+            		remove_ideas = BTS_ortodox_sopr
 					remove_ideas = BTS_sabotazh_i
 					remove_ideas = BTS_provocacii_i
+					set_politics = {
+                   	ruling_party = memoism
+                	elections_allowed = no	
+                    }
 				}
 	}
 	focus = {
