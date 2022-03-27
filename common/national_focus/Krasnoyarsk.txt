@@ -29,9 +29,9 @@ focus_tree = {
 		cost = 5,00
 		x = 30
 		y = 6
-		available = { 
-	    controls_state = 572
-		}
+			available = {
+					controls_state = 572
+				}
 			completion_reward = {
 					add_political_power = 100
 					add_stability = 0.1
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_sindikalizm
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 5,00
+		cost = 1,00
 		x = 15
 		y = 14
 			available = {
@@ -57,20 +57,6 @@ focus_tree = {
 							ideology = anarhostalinism
 							popularity = 0.2
 						}
-				}
-
-	}
-	focus = {
-		id = ZNS_vosstanovleniye_ot_gv
-		icon = GFX_goal_generic_production
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_Big_Beriya_Teyp
-		}
-		x = 34
-		y = 7
-			completion_reward = {
-					add_ideas = ZNS_posledstviya_gv
 				}
 
 	}
@@ -123,7 +109,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ZNS_legkaya_reabilitatsiya_Stalina
 		}
-		x = 11
+		x = 12
 		y = 9
 			completion_reward = {
 					swap_ideas = {
@@ -134,13 +120,56 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ZNS_trudovyye_armii
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
+		}
+		x = 10
+		y = 10
+			completion_reward = {
+					add_ideas = ZNS_trudovyye_armii
+				}
+
+	}
+	focus = {
+		id = ZNS_novyye_lishentsy
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_trudovyye_armii
+		}
+		x = 9
+		y = 11
+			completion_reward = {
+					add_ideas = ZNS_novyye_lishentsy
+				}
+
+	}
+	focus = {
+		id = ZNS_goneniya_na_byurokratiyu
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_trudovyye_armii
+		}
+		x = 11
+		y = 11
+			completion_reward = {
+					add_stability = -0.1
+					add_ideas = ZNS_goneniya_na_byurokratiyu
+				}
+
+	}
+	focus = {
 		id = ZNS_osudit_Stalina
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
 		}
-		x = 9
+		x = 13
 		y = 10
 			completion_reward = {
 					add_popularity = {
@@ -151,49 +180,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_vychistit_stalinistov_iz_partii
-		icon = GFX_goal_unknown
+		id = ZNS_otklyuchit_tserkov_ot_finansirovaniya
+		icon = GFX_focus_cze_german_puppet
 		cost = 5,00
 		prerequisite = {
-			focus = ZNS_osudit_Stalina
+			focus = ZNS_Stalin_ili_Trotskiy
 		}
-		x = 8
-		y = 11
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = ZNS_Trotskiy
-							add_idea = ZNS_Trotskiy_1
-						}
-				}
-
-	}
-	focus = {
-		id = ZNS_goneniya_na_byurokratiyu
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_osudit_Stalina
-		}
-		x = 10
-		y = 11
-			completion_reward = {
-					add_stability = -0.1
-					add_ideas = ZNS_goneniya_na_byurokratiyu
-				}
-
-	}
-	focus = {
-		id = ZNS_trudovyye_armii
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
-		}
-		x = 13
+		x = 15
 		y = 10
-			completion_reward = {
-					add_ideas = ZNS_trudovyye_armii
-				}
 
 	}
 	focus = {
@@ -201,10 +195,10 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		cost = 5,00
 		prerequisite = {
-			focus = ZNS_Stalin_ili_Trotskiy
+			focus = ZNS_otklyuchit_tserkov_ot_finansirovaniya
 		}
 		x = 15
-		y = 10
+		y = 11
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
@@ -232,7 +226,7 @@ focus_tree = {
 			focus = ZNS_natsionalizatsiya
 		}
 		x = 15
-		y = 11
+		y = 12
 			completion_reward = {
 					add_ideas = kolhozi
 				}
@@ -246,7 +240,7 @@ focus_tree = {
 			focus = ZNS_kollektivizatsiya
 		}
 		x = 15
-		y = 12
+		y = 13
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_building_construction = {
@@ -300,20 +294,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_otklyuchit_tserkov_ot_finansirovaniya
-		icon = GFX_focus_cze_german_puppet
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_industrializatsiya
-		}
-		x = 15
-		y = 13
-
-	}
-	focus = {
 		id = ZNS_profsoyuz_Rabochiy
 		icon = GFX_goal_generic_construct_civilian
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -327,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_uvelichit_zp
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Rabochiy
 		}
@@ -351,71 +334,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
 		}
-		x = 19
+		x = 18
 		y = 9
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = ZNS_Stalin_ili_Trotskiy
 							add_idea = ZNS_Stalin
-						}
-				}
-
-	}
-	focus = {
-		id = ZNS_spravedlivost_ili_genotsid
-		icon = GFX_focus_cht_zacryt_granyci
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_legkaya_reabilitatsiya_Stalina
-		}
-		x = 17
-		y = 10
-			completion_reward = {
-					add_war_support = 0.1
-				}
-
-	}
-	focus = {
-		id = ZNS_trud_zaklyuchonnykh
-		icon = GFX_focus_SOV_penal_battalions
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_spravedlivost_ili_genotsid
-		}
-		x = 17
-		y = 11
-			completion_reward = {
-					add_ideas = ZNS_trud_zaklyuchonnykh
-				}
-
-	}
-	focus = {
-		id = ZNS_profsoyuz_Kurer
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_sindikalizm
-		}
-		x = 17
-		y = 15
-			completion_reward = {
-					add_ideas = ZNS_profsoyuz_Kurer
-				}
-
-	}
-	focus = {
-		id = ZNS_postroit_velodorozhki
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_profsoyuz_Kurer
-		}
-		x = 17
-		y = 16
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = ZNS_profsoyuz_Kurer
-							add_idea = ZNS_profsoyuz_Kurer_1
 						}
 				}
 
@@ -427,7 +351,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Stalina
 		}
-		x = 19
+		x = 17
 		y = 10
 			completion_reward = {
 					swap_ideas = {
@@ -444,7 +368,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_vygnat_trotskistov
 		}
-		x = 19
+		x = 17
 		y = 11
 			completion_reward = {
 					swap_ideas = {
@@ -455,20 +379,61 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_front_s_levoliberalami
-		icon = GFX_goal_unknown
+		id = ZNS_kurs_na_sotsializm_v_odnoy_strane
+		icon = GFX_focus_SOV_father_of_nations
 		cost = 5,00
 		prerequisite = {
-			focus = ZNS_osnovat_Soyuz_Anstalov
+			focus = ZNS_kult_lichnosti_s_nizu
 		}
-		x = 21
-		y = 8
+		x = 17
+		y = 12
 			completion_reward = {
-					add_stability = 0.1
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.1
+					add_country_leader_trait = stalin_heart_of_steel
+				}
+
+	}
+	focus = {
+		id = ZNS_profsoyuz_Kurer
+		icon = GFX_goal_unknown
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_sindikalizm
+		}
+		x = 17
+		y = 15
+			completion_reward = {
+					add_ideas = ZNS_profsoyuz_Kurer
+				}
+
+	}
+	focus = {
+		id = ZNS_postroit_velodorozhki
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_profsoyuz_Kurer
+		}
+		x = 17
+		y = 16
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_profsoyuz_Kurer
+							add_idea = ZNS_profsoyuz_Kurer_1
 						}
+				}
+
+	}
+	focus = {
+		id = ZNS_spravedlivost_ili_genotsid
+		icon = GFX_focus_cht_zacryt_granyci
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_legkaya_reabilitatsiya_Stalina
+		}
+		x = 20
+		y = 10
+			completion_reward = {
+					add_war_support = 0.1
 				}
 
 	}
@@ -477,10 +442,10 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		cost = 5,00
 		prerequisite = {
-			focus = ZNS_legkaya_reabilitatsiya_Stalina
+			focus = ZNS_spravedlivost_ili_genotsid
 		}
-		x = 21
-		y = 10
+		x = 19
+		y = 11
 			completion_reward = {
 					random_owned_controlled_state = {
 							limit = {
@@ -517,14 +482,63 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ZNS_profsoyuz_Uchonyy
+		icon = GFX_goal_unknown
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_sindikalizm
+		}
+		x = 19
+		y = 15
+			completion_reward = {
+					add_ideas = ZNS_profsoyuz_Uchonyy
+				}
+
+	}
+	focus = {
+		id = ZNS_novyye_NII
+		icon = GFX_focus_research2
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_profsoyuz_Uchonyy
+		}
+		x = 19
+		y = 16
+			completion_reward = {
+					add_research_slot = 1
+					swap_ideas = {
+							remove_idea = ZNS_profsoyuz_Uchonyy
+							add_idea = ZNS_profsoyuz_Uchonyy_1
+						}
+				}
+
+	}
+	focus = {
+		id = ZNS_trud_zaklyuchonnykh
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_spravedlivost_ili_genotsid
+		}
+		x = 21
+		y = 11
+			completion_reward = {
+					add_ideas = ZNS_trud_zaklyuchonnykh
+				}
+
+	}
+	focus = {
 		id = ZNS_sov_obzhepit
 		icon = GFX_focus_cht_zhitnica_evropy
 		cost = 5,00
 		prerequisite = {
+			focus = ZNS_trud_zaklyuchonnykh
+		}
+		prerequisite = {
 			focus = ZNS_podderzhat_maloye_predprinimatelstvo
 		}
-		x = 21
-		y = 11
+		x = 20
+		y = 12
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = ZNS_podderzhat_maloye_predprinimatelstvo
@@ -534,22 +548,40 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_kurs_na_sotsializm_v_odnoy_strane
-		icon = GFX_focus_SOV_father_of_nations
+		id = ZNS_znamya_burzh_svobod
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 5,00
 		prerequisite = {
-			focus = ZNS_trud_zaklyuchonnykh
-		}
-		prerequisite = {
-			focus = ZNS_kult_lichnosti_s_nizu
+			focus = ZNS_kurs_na_sotsializm_v_odnoy_strane
 		}
 		prerequisite = {
 			focus = ZNS_sov_obzhepit
 		}
-		x = 19
-		y = 12
+		x = 18
+		y = 13
+            completion_reward = {
+					add_ideas = ZNS_znamya_burzh_svobod
+					add_popularity = {
+						ideology = anarhostalinism
+						popularity = 0.1
+					}
+			}   
+	}
+	focus = {
+		id = ZNS_front_s_levoliberalami
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_osnovat_Soyuz_Anstalov
+		}
+		x = 21
+		y = 8
 			completion_reward = {
-					add_country_leader_trait = stalin_heart_of_steel
+					add_stability = 0.1
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
 				}
 
 	}
@@ -840,6 +872,20 @@ focus_tree = {
 							idea = ZNS_RevDrop
 							days = 250
 						}
+				}
+
+	}
+	focus = {
+		id = ZNS_vosstanovleniye_ot_gv
+		icon = GFX_goal_generic_production
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_Big_Beriya_Teyp
+		}
+		x = 34
+		y = 7
+			completion_reward = {
+					add_ideas = ZNS_posledstviya_gv
 				}
 
 	}
@@ -2537,32 +2583,33 @@ focus_tree = {
 		}
 		x = 66
 		y = 9
-		completion_reward = {
-        random_owned_controlled_state = {
+			completion_reward = {
+					random_owned_controlled_state = {
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
 								}
 							add_extra_state_shared_building_slots = 1
-						} 
-		random_owned_controlled_state = {
+						}
+					random_owned_controlled_state = {
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
 								}
 							add_extra_state_shared_building_slots = 1
-						} 
-        random_owned_controlled_state = {
+						}
+					random_owned_controlled_state = {
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
 								}
 							add_extra_state_shared_building_slots = 1
-						} 						
-		}				
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_mass_motorization
@@ -2573,9 +2620,10 @@ focus_tree = {
 		}
 		x = 65
 		y = 10
-        completion_reward = {
-            add_ideas =  ZNS_mass_motorization     		
-		}        
+			completion_reward = {
+					add_ideas = ZNS_mass_motorization
+				}
+
 	}
 	focus = {
 		id = ZNS_new_project_tanks
@@ -2586,14 +2634,15 @@ focus_tree = {
 		}
 		x = 64
 		y = 11
-        completion_reward = {
-        add_tech_bonus = {
-                name = armor_bonus
-                bonus = 1.0
-                uses = 2
-                category = armor
-            }
-        }    
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_razrabotka_istrebitiley
@@ -2604,20 +2653,21 @@ focus_tree = {
 		}
 		x = 66
 		y = 11
-        completion_reward = {
-        add_tech_bonus = {
-                name = fighter_bonus
-                bonus = 1.0
-                uses = 2
-                technology = early_fighter
-                technology = fighter1
-                technology = fighter2
-                technology = fighter3
-                technology = heavy_fighter1
-                technology = heavy_fighter2
-                technology = heavy_fighter3
-            }
-    }  
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_shturmoviki
@@ -2628,15 +2678,16 @@ focus_tree = {
 		}
 		x = 66
 		y = 13
-        completion_reward = {
-        add_tech_bonus = {
-                name = CAS_bonus
-                bonus = 1.0
-                ahead_reduction = 2
-                uses = 1
-                category = cas_bomber
-            }
-    }  
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_razrabotat_btr
@@ -2647,14 +2698,15 @@ focus_tree = {
 		}
 		x = 65
 		y = 12
-        completion_reward = {
-        add_tech_bonus = {
-                name = motorized_bonus
-                ahead_reduction = 2
-                uses = 1
-                category = motorized_equipment
-            }
-    }  
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_army_manevry
@@ -2665,15 +2717,16 @@ focus_tree = {
 		}
 		x = 67
 		y = 10
-        completion_reward = {
-        army_experience = 35
-        add_doctrine_cost_reduction = {
-                name = land_doc_bonus
-                cost_reduction = 0.5
-                uses = 2
-                category = land_doctrine
-            }
-    }   
+			completion_reward = {
+					army_experience = 35
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_remroty
@@ -2684,14 +2737,15 @@ focus_tree = {
 		}
 		x = 68
 		y = 11
-        completion_reward = {
-        add_tech_bonus = {
-                name = maintenance_company_tech_bonus
-                bonus = 3.0
-                uses = 1
-                category = maintenance_company_tech
-            }
-    }        
+			completion_reward = {
+					add_tech_bonus = {
+							name = maintenance_company_tech_bonus
+							bonus = 3.0
+							uses = 1
+							category = maintenance_company_tech
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_roty_svyazi
@@ -2702,14 +2756,15 @@ focus_tree = {
 		}
 		x = 67
 		y = 12
-        completion_reward = {
-        add_tech_bonus = {
-                name = signal_company_tech_bonus
-                bonus = 3.0
-                uses = 1
-                category = signal_company_tech
-            }
-    }   
+			completion_reward = {
+					add_tech_bonus = {
+							name = signal_company_tech_bonus
+							bonus = 3.0
+							uses = 1
+							category = signal_company_tech
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_stalnaya_vilna
@@ -2726,14 +2781,15 @@ focus_tree = {
 		}
 		x = 66
 		y = 14
-        completion_reward = {
-            add_tech_bonus = {
-                name = signal_company_tech_bonus
-                bonus = 3.0
-                uses = 1
-                category = signal_company_tech
-            }
-        }    
+			completion_reward = {
+					add_tech_bonus = {
+							name = signal_company_tech_bonus
+							bonus = 3.0
+							uses = 1
+							category = signal_company_tech
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_prizvat_bolshe_kurerov
@@ -2775,10 +2831,13 @@ focus_tree = {
 		}
 		x = 71
 		y = 11
-        completion_reward = {
-					swap_ruler_traits = { remove = Slabie_nogi 
-					add = Slabie_nogi_silnie_ruki }
-				}     
+			completion_reward = {
+					swap_ruler_traits = {
+							remove = Slabie_nogi
+							add = Slabie_nogi_silnie_ruki
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_upor_na_nogi
@@ -2792,10 +2851,13 @@ focus_tree = {
 		}
 		x = 73
 		y = 11
-        completion_reward = {
-					swap_ruler_traits = { remove = Slabie_nogi 
-					add = Nakachal_nogi }
-				}  
+			completion_reward = {
+					swap_ruler_traits = {
+							remove = Slabie_nogi
+							add = Nakachal_nogi
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_konoarmiyskiye_nashi_polki
@@ -2966,6 +3028,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ZNS_vychistit_stalinistov_iz_partii
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_osudit_Stalina
+		}
+		x = 13
+		y = 11
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Trotskiy
+							add_idea = ZNS_Trotskiy_1
+						}
+				}
+
+	}
+	focus = {
 		id = ZNS_ZAGNIVAYUSHCHAYA_PRIBALTIKA
 		icon = GFX_goal_generic_major_war
 		cost = 2,00
@@ -3056,55 +3135,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_profsoyuz_Uchonyy
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_sindikalizm
-		}
-		x = 19
-		y = 15
-			completion_reward = {
-					add_ideas = ZNS_profsoyuz_Uchonyy
-				}
-
-	}
-	focus = {
-		id = ZNS_novyye_NII
-		icon = GFX_focus_research2
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_profsoyuz_Uchonyy
-		}
-		x = 19
-		y = 16
-			completion_reward = {
-					add_research_slot = 1
-					swap_ideas = {
-							remove_idea = ZNS_profsoyuz_Uchonyy
-							add_idea = ZNS_profsoyuz_Uchonyy_1
-						}
-				}
-
-	}
-	focus = {
-		id = ZNS_novyye_lishentsy
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = ZNS_trudovyye_armii
-		}
-		x = 13
-		y = 11
-			completion_reward = {
-					add_ideas = ZNS_novyye_lishentsy
-				}
-
-	}
-	focus = {
 		id = ZNS_profsoyuz_Uchitel
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -3118,7 +3151,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_osvobodit_ot_bumazhnoy_volokty
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Uchitel
 		}
@@ -3135,7 +3168,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Krestyanin
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -3149,7 +3182,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_mekhanizatsiya_sol
 		icon = GFX_goal_proizvodstvo_combaynov
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Krestyanin
 		}
@@ -3166,7 +3199,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_federatsiya_profsoyuzov
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 1,00
 		prerequisite = {
 			focus = ZNS_osvobodit_ot_bumazhnoy_volokty
 		}
@@ -3201,7 +3234,10 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_novyye_lishentsy
 		}
-		x = 13
+		prerequisite = {
+			focus = ZNS_goneniya_na_byurokratiyu
+		}
+		x = 10
 		y = 12
 			completion_reward = {
 					add_ideas = ZNS_podchinit_partgos_apparutu
@@ -3215,10 +3251,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_vychistit_stalinistov_iz_partii
 		}
-		prerequisite = {
-			focus = ZNS_goneniya_na_byurokratiyu
-		}
-		x = 9
+		x = 13
 		y = 12
 			completion_reward = {
 					swap_ideas = {
@@ -3238,7 +3271,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_podchinit_partgos_apparutu
 		}
-		x = 11
+		x = 12
 		y = 13
 			completion_reward = {
 					add_country_leader_trait = triumphant_revolutionary
