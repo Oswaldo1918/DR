@@ -1,0 +1,62 @@
+characters = {
+	EGY_Voronin = {
+		name = "Николай Петрович"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Voronin.dds"
+			}
+			army = {
+			    large = "gfx/leaders/EGY/Voronin.dds"
+			}
+		}
+
+		country_leader = {
+			expire = "1999.1.1"
+        	ideology = stalinismus
+        	traits = {
+         		 nkvd_rezident
+        	}
+			id = -1
+		}
+		
+		field_marshal = {
+	    traits = { infantry_officer war_hero inspirational_leader trait_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 4
+		legacy_id = -1
+        }
+	}
+	EGY_Voronin_Ra = {
+	name = "Воронин Ра"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Voronin_Ra.dds"
+			}
+			army = {
+			    large = "gfx/leaders/EGY/Voronin_Ra.dds"
+			}
+		}
+		
+		country_leader = {
+			expire = "1999.1.1"
+        	ideology = postironism
+        	traits = {
+         		 
+        	}
+			id = -1
+		}
+		
+		field_marshal = {
+	    traits = { infantry_officer war_hero inspirational_leader trait_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 4
+		legacy_id = -1
+        }	
+	}
+}
