@@ -103,8 +103,8 @@ focus_tree = {
 		x = 20
 		y = 3
 			completion_reward = {
-
-}
+            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
+            }
 
 	}
 	focus = {
@@ -131,7 +131,7 @@ focus_tree = {
 		x = 12
 		y = 5
 			completion_reward = {
-					swap_ideas = {
+					swap_idea = {
 							remove_idea = MGN_voen_communism
 							add_ideas = MGN_neefect_com_ec
 						}
@@ -356,7 +356,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
-
+        completion_reward = {
+            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
+        }   
 	}
 	focus = {
 		id = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
@@ -561,9 +563,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-			completion_reward = {
-
-}
+		completion_reward = {
+            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
+        }
 
 	}
 	focus = {
@@ -1084,7 +1086,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 10
-
+        completion_reward = {
+            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
+        }    
 	}
 	focus = {
 		id = MGN_walter_mod2
@@ -1198,7 +1202,7 @@ focus_tree = {
 					add_state_core = 80
 					add_state_core = 73
 				}
-
+              
 	}
 	focus = {
 		id = MGN_teleportaciya_narodov
@@ -1217,7 +1221,9 @@ focus_tree = {
 					controls_state = 91
 					controls_state = 824
 				}
-
+        completion_reward = {
+            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
+        } 
 	}
 	focus = {
 		id = MGN_tractorniye_voyska

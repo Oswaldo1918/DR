@@ -1,0 +1,19 @@
+characters={
+	TUN_Soros = {
+		name = "Джордж Сорос"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUN/Soros.jpg"
+			}
+		} 
+		country_leader = {	    
+        	traits = {
+         		 finance_graduate
+				 Ubludok
+        	}
+		    ideology = ancap
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}
