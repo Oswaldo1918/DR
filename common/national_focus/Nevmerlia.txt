@@ -1,0 +1,74 @@
+focus_tree = {
+	id = Nevmerlia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	default = no
+	focus = {
+		id = UKR_zhenshina_folksfurer
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = UKR_podderzhka_ot_azova
+		icon = GFX_focus_generic_little_entente
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_zhenshina_folksfurer
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = UKR_kult_gramshi
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_podderzhka_ot_azova
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = UKR_antifasciskiy_congress
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_kult_gramshi
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = UKR_szhiganiye_shvabr
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_kult_gramshi
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = UKR_antifainterlegion
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_antifasciskiy_congress
+		}
+		x = 11
+		y = 4
+
+	}
+}
