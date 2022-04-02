@@ -1,0 +1,35 @@
+capital = 450
+
+oob = LBA_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = LBA_Kaddafi
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+LBA_jamahiriya
+}
+
+set_popularities = {
+	metacommy = 40
+	vmestolev = 10
+	democratic = 10
+	memoism = 10
+    fascism = 10
+	neutrality = 10
+	anarhostalinism = 10
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 100

@@ -1,0 +1,31 @@
+characters={
+    LRG_Rommel = {
+		name = "Эрвин Роммель"
+
+		portraits = {
+		    civilian = {
+				large = "gfx/leaders/LRG/Rommel.dds"
+			}
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/LRG/Rommel.dds"
+			}
+		}
+        
+		field_marshal = {
+    		traits = { old_guard infantry_officer war_hero  }
+        	skill = 3
+        	attack_skill = 4
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+		
+        country_leader = {
+		    ideology = despotism
+			expire = "1965.1.1"
+        	traits = { our_right_to_survive Popadanets }
+		}	
+	}
+}
