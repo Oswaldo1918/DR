@@ -1,0 +1,26 @@
+ideas = {
+       country = {
+	        LBA_jamahiriya  = {
+		    picture = raj_marginalized_muslim_community_happy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				metacommy_drift = 0.03
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1 
+			    }
+		    }
+	   }
+		
+}

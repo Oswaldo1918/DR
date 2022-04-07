@@ -1,0 +1,21 @@
+ideas = {
+       country = {
+	        SWI_otsutstviye_vozrasta_soglasiya  = {
+		    picture = generic_constitutional_guarantee
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+		        political_power_factor = -0.05
+		        conscription_factor = 0.1
+		        monthly_population  = 1
+			    }
+		    }
+	   }
+		
+}

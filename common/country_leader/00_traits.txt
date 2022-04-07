@@ -3,7 +3,33 @@
 @tier3 = 10
 
 leader_traits = {
-    
+	
+	edinstvenniy_politik= {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+	}
+	
+	Zhivee_vseh_zhivih = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		defensive = 0.03
+	}
+	
+	Popadanets = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		offence = 0.03
+	}
+	
 	Ubludok = {
 		random = no
 		sprite = 13

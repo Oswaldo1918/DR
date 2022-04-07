@@ -1,0 +1,25 @@
+ideas = {
+       country = {
+	        LRG_neft = {
+		    picture = great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				base_fuel_gain_factor = -0.2
+				fuel_gain_factor_from_states = -0.2
+				fuel_gain_factor = -100
+				max_fuel_factor = -0.2 
+			    }
+		    }
+	   }
+		
+}
