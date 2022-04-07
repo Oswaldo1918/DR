@@ -9,22 +9,62 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = UKR_zhenshina_folksfurer
-		icon = GFX_goal_generic_demand_territory
+		id = UKR_decommunisatsiya
+		icon = GFX_goal_antilenin
 		cost = 10,00
-		x = 12
+		x = 13
 		y = 0
 
 	}
 	focus = {
-		id = UKR_podderzhka_ot_azova
+		id = UKR_liniya_poroha
+		icon = GFX_goal_generic_construct_military
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_decommunisatsiya
+		}
+		mutually_exclusive = {
+			focus = UKR_shumilova
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = UKR_shumilova
 		icon = GFX_focus_generic_little_entente
 		cost = 10,00
 		prerequisite = {
-			focus = UKR_zhenshina_folksfurer
+			focus = UKR_decommunisatsiya
 		}
-		x = 12
+		mutually_exclusive = {
+			focus = UKR_liniya_poroha
+		}
+		x = 16
 		y = 1
+
+	}
+	focus = {
+		id = UKR_agrarnaya_sverhderzhava
+		icon = GFX_goal_proizvodstvo_combaynov
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_shumilova
+			focus = UKR_liniya_poroha
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = UKR_alkoprom
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_agrarnaya_sverhderzhava
+		}
+		x = 13
+		y = 3
 
 	}
 	focus = {
@@ -32,9 +72,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = UKR_podderzhka_ot_azova
+			focus = UKR_shumilova
 		}
-		x = 12
+		x = 16
 		y = 2
 
 	}
@@ -45,18 +85,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_kult_gramshi
 		}
-		x = 11
-		y = 3
-
-	}
-	focus = {
-		id = UKR_szhiganiye_shvabr
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = UKR_kult_gramshi
-		}
-		x = 13
+		x = 15
 		y = 3
 
 	}
@@ -67,8 +96,142 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_antifasciskiy_congress
 		}
-		x = 11
+		x = 15
 		y = 4
+
+	}
+	focus = {
+		id = UKR_szhiganiye_shvabr
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_kult_gramshi
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = UKR_osvobodit_donbass_ot_shvabr
+		icon = GFX_goal_Novorossia
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_antifainterlegion
+		}
+		prerequisite = {
+			focus = UKR_szhiganiye_shvabr
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = UKR_pohod_na_kiev
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_osvobodit_donbass_ot_shvabr
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = UKR_(((odessa)))
+		icon = GFX_goal_jew_vlast
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_osvobodit_donbass_ot_shvabr
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = UKR_nazbati_v_MVD
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_decommunisatsiya
+		}
+		mutually_exclusive = {
+			focus = UKR_nazbati_v_VSU
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = UKR_nazbati_v_VSU
+		icon = GFX_focus_generic_military_mission
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_decommunisatsiya
+		}
+		mutually_exclusive = {
+			focus = UKR_nazbati_v_MVD
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = UKR_vzrivi_kondicionerov
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_nazbati_v_MVD
+			focus = UKR_nazbati_v_VSU
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = UKR_poter_net
+		icon = GFX_focus_generic_manpower
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_vzrivi_kondicionerov
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = UKR_shushpanzeri
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_vzrivi_kondicionerov
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = UKR_oplot
+		icon = GFX_goal_continuous_armor_production
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_shushpanzeri
+		}
+		prerequisite = {
+			focus = UKR_poter_net
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = UKR_galitsiya
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_pohod_na_kiev
+		}
+		x = 15
+		y = 7
 
 	}
 }
