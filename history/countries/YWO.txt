@@ -2,7 +2,7 @@ capital = 657
 
 oob = YWO_1936
 
-set_research_slots = 1
+set_research_slots = 2
 set_stability = 0.15
 set_war_support = 0.70
 set_technology = {
@@ -11,7 +11,12 @@ set_technology = {
 }
 
 add_ideas = {
-}
+		closed_economy
+	    limited_conscription 
+	    partial_economic_mobilisation
+		YWO_wolf_society
+		YWO_svyashechennoe_pisanie_patsanskikh_tsitat
+	}
 
 set_popularities = {
 	memoism = 100
