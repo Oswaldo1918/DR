@@ -1,73 +1,325 @@
-add_namespace = don
+add_namespace = donbass
 
+country_event = { #Вводная_по_ситуации_в_Донбассе
+
+	id = donbass.1
+	title = donbass.1.t
+	desc = donbass.1.d
+	picture = GFX_report_event_albanian_partisans
 	
-#присоединение к ноду
-country_event = {
-	id = don.1
-	title = don.1.t
-	desc = don.1.d
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.1.a
+	}	
+}
+
+country_event = { #Пригласить_в_альянс_Унца
+	id = donbass.2
+	title = donbass.2.t
+	desc = donbass.2.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
 	is_triggered_only = yes	
 	
 	option = {
-	name = don.1.a
-	ai_chance = {
-			base = 10
-			modifier = {
-				factor = 10
-				is_in_faction_with = NOD
-			}
-			modifier = {
-				factor = 50
-				has_government = fascism
-			}
-			modifier = {
-				factor = 50
-				has_government = neutrality
-			}
-		}
-	NOD = {country_event = { id = nod.15 hours = 20 random_hours = 8 }}
+		DON = { add_to_faction = UNT }
+		name = donbass.2.a
+		DON = { country_event = donbass.3 }
 	}
+	
 	option = {
-	name = don.1.b
-	ai_chance = {
-			base = 50	
-		}
-	NOD = {country_event = { id = nod.16 hours = 20 random_hours = 8 }}
+		name = donbass.2.b
+		DON = { country_event = donbass.4 }
 	}
 }
 
 country_event = {
-	id = don.2
-	title = don.2.t
-	desc = don.2.d
+	id = donbass.3
+	title = donbass.3.t
+	desc = donbass.3.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
 	is_triggered_only = yes	
 	
 	option = {
-	name = don.2.a
-	LAZ = {
-	      annex_country = {
-			target = DON
-			transfer_troops = yes
-		}
-		}
-	DOM = {
-			every_unit_leader = {
-				set_nationality = LAZ
-			}
-	}
-	}
-	
-	option = {
-	name = don.2.b
-	LAZ = {
-	create_wargoal = {
-		        target = DON
-		        type = annex_everything
-			}	
+		name = donbass.3.a
+		add_political_power = 20
 	}
 }
 
+country_event = {
+	id = donbass.4
+	title = donbass.4.t
+	desc = donbass.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.4.a
+		add_political_power = -5
+	}
+}
+country_event = { #Пригласить_в_альянс_Орлова
+	id = donbass.5
+	title = donbass.5.t
+	desc = donbass.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		DON = { add_to_faction = MAT }
+		name = donbass.5.a
+		DON = { country_event = donbass.6 }
+	}
+	
+	option = {
+		name = donbass.5.b
+		DON = { country_event = donbass.7 }
+	}
+}
+
+country_event = {
+	id = donbass.6
+	title = donbass.6.t
+	desc = donbass.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.6.a
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = donbass.7
+	title = donbass.7.t
+	desc = donbass.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.7.a
+		add_political_power = -5
+	}
+}
+country_event = { #Пригласить_в_альянс_Людвига_Яна
+	id = donbass.8
+	title = donbass.8.t
+	desc = donbass.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		DON = { add_to_faction = ARK }
+		name = donbass.8.a
+		DON = { country_event = donbass.9 }
+	}
+	
+	option = {
+		name = donbass.8.b
+		DON = { country_event = donbass.10 }
+	}
+}
+
+country_event = {
+	id = donbass.9
+	title = donbass.9.t
+	desc = donbass.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.9.a
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = donbass.10
+	title = donbass.10.t
+	desc = donbass.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.10.a
+		add_political_power = -5
+	}
+}
+
+country_event = { #Пригласить_в_альянс_Штазиста
+	id = donbass.11
+	title = donbass.11.t
+	desc = donbass.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		DON = { add_to_faction = CHT }
+		name = donbass.11.a
+		DON = { country_event = donbass.12 }
+	}
+	
+	option = {
+		name = donbass.11.b
+		DON = { country_event = donbass.13 }
+	}
+}
+
+country_event = {
+	id = donbass.12
+	title = donbass.12.t
+	desc = donbass.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.12.a
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = donbass.13
+	title = donbass.13.t
+	desc = donbass.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.13.a
+		add_political_power = -5
+	}
+}
+
+country_event = { #Запрос_помощи_у_Лазарета
+	id = donbass.14
+	title = donbass.14.t
+	desc = donbass.14.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.14.a
+		DON = { country_event = donbass.15 }
+		add_ideas = DON_idea_lazaret_dotatsii_1
+	}
+	
+	option = {
+		name = donbass.14.b
+		DON = { country_event = donbass.16 }		
+	}
+}
+
+country_event = {
+	id = donbass.15
+	title = donbass.15.t
+	desc = donbass.15.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.15.a
+		add_political_power = 20
+		add_ideas = DON_idea_lazaret_support_1
+	}
+}
+
+country_event = {
+	id = donbass.16
+	title = donbass.16.t
+	desc = donbass.16.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.16.a
+		add_political_power = -5
+	}
+}
+
+country_event = { #Расширить_помощь_Лазарета
+	id = donbass.17
+	title = donbass.17.t
+	desc = donbass.17.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.17.a
+		DON = { country_event = donbass.18 }
+		add_ideas = DON_idea_lazaret_dotatsii_2
+	}
+	
+	option = {
+		name = donbass.17.b
+		DON = { country_event = donbass.18 }		
+	}
+	
+	option = {
+		name = donbass.17.с
+		DON = { country_event = donbass.19 }		
+	}
+}
+
+country_event = {
+	id = donbass.18
+	title = donbass.18.t
+	desc = donbass.18.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.18.a
+		add_political_power = 20
+		add_ideas = DON_idea_lazaret_support_2
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = donbass.19
+	title = donbass.19.t
+	desc = donbass.19.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.19.a
+		add_political_power = -5
+	}
+}
+
+country_event = {
+	id = donbass.20
+	title = donbass.20.t
+	desc = donbass.20.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = donbass.20.a
+		add_political_power = -100
+		remove_ideas = DON_idea_lazaret_support_1
+		add_manpower = -100
+	}
+}

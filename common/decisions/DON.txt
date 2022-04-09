@@ -1,0 +1,83 @@
+DON_create_alliance_plan_b = {
+
+	DON_create_alliance_with_UNT = { #Пригласить_в_альянс_Унца
+	
+		cost = 25
+		
+		available = {
+			has_completed_focus = DON_plan_B
+			has_war = no 
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+           factor = 100
+		}
+		remove_effect = {
+			UNT = {
+				country_event = donbass.2
+		    }
+	    }
+	}
+	
+	DON_create_alliance_with_MAT = { #Пригласить_в_альянс_Орлова
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_plan_B
+			has_war = no 
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			MAT = {
+				country_event = donbass.5
+		    }
+	    }
+	}
+	
+	DON_create_alliance_with_ARK = { #Пригласить_в_альянс_Людвига_Яна
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_plan_B
+			has_war = no 
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			ARK = {
+				country_event = donbass.8
+		    }
+	    }
+	}
+	
+	DON_create_alliance_with_CHT = { #Пригласить_в_альянс_Штазиста
+	
+		cost = 25
+		
+		available = {
+			has_completed_focus = DON_plan_B
+			has_war = no 
+			CHT = {
+				has_war = no 
+				has_government = vmestolev
+				is_in_faction = no
+			}
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			CHT = {
+				country_event = donbass.11
+		    }
+	    }
+	}
+}
