@@ -1,0 +1,63 @@
+characters={
+    UKR_poroshenko = {
+		name = "Петр Порошенко"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/UKR/Poroshenko.dds"
+			}
+		}
+
+        country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = fascism_ideology
+			traits = {
+	         	poroshenko_title
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}	
+	}
+	UKR_snake = {
+		name = "Павел Снейк"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_POK_grudin"
+				large = "gfx/leaders/UKR/Snake.dds"
+			}
+		}
+
+	     country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = libertanian_chuchhe
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}	
+	}
+	UKR_shumilova = {
+		name = "Ирина Шумилова"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_UKR_shumilova_1"
+				large = "gfx/leaders/UKR/Shumilova.dds"
+			}
+		}
+
+	     corps_commander = {
+			traits = {  trait_reckless   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+}

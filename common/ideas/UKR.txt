@@ -1,5 +1,26 @@
 ideas = {
-
+    country = {
+	        UKR_shumilova = {
+			
+			    traits = { popular_figurehead }
+	        }
+			
+			UKR_agr_sverh = {
+			
+			    modifier = {
+					consumer_goods_factor = -0.05
+		        }
+	        }
+			
+			UKR_fin_nez_a = {
+			
+			    modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = 0.1
+		        }
+	        }
+    }
+	
 	tank_manufacturer = { 
 		
 		designer = yes

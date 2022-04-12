@@ -1,0 +1,48 @@
+add_namespace = UKR
+
+	
+#ЯО
+country_event = {
+	id = UKR.1
+	title = UKR.1.t
+	desc = UKR.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.1.a
+	create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+	}
+	option = {
+	name = UKR.1.b
+	create_wargoal = {
+			type = annex_everything
+			target = ASM
+		}
+	}
+}
+
+country_event = {
+	id = UKR.2
+	title = UKR.2.t
+	desc = UKR.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.2.a
+	UKR ={
+	        create_wargoal = {
+		    	type = annex_everything
+		    	target = ROOT
+		    }
+	    }
+	}
+}
+
+
