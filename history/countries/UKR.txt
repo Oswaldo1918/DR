@@ -13,6 +13,7 @@ set_technology = {
 recruit_character = UKR_poroshenko
 recruit_character = UKR_snake
 recruit_character = UKR_shumilova
+recruit_character = UKR_poter_net
 
 set_popularities = {
 	fascism = 100
@@ -23,14 +24,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Петр Порошенко"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Poroshenko.dds"
-	expire = "1999.1.1"
-	ideology = fascism_ideology
-	traits = {
-		poroshenko_title
-	}
-}

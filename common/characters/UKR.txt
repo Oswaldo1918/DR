@@ -60,4 +60,39 @@ characters={
 		}
 	}
 	
+	UKR_poter_net = {
+		name = "Дмитрий Тымчук"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_UKR_shumilova_1"
+				large = "gfx/leaders/UKR/Poter_net.dds"
+			}
+		}
+
+	     corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+		
+		 advisor={
+			slot = high_command
+			idea_token = UKR_poter_net
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+			has_completed_focus = UKR_poter_net
+			}
+			traits = {
+				poter_net 
+			}
+		}	
+	}
+	
 }
