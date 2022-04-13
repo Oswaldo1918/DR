@@ -12,17 +12,11 @@ country_event = {
 	
 	option = {
 	name = UKR.1.a
-	create_wargoal = {
-			type = annex_everything
-			target = UKR
-		}
+	UKR = { country_event = { id = UKR.3 } }
 	}
 	option = {
 	name = UKR.1.b
-	create_wargoal = {
-			type = annex_everything
-			target = ASM
-		}
+
 	}
 }
 
@@ -45,4 +39,66 @@ country_event = {
 	}
 }
 
+#Ультиматум
+country_event = {
+	id = UKR.3
+	title = UKR.3.t
+	desc = UKR.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.3.a
+	set_country_flag = UKR_stop_YaO
+	}
+	option = {
+	name = UKR.3.b
+    NOD = { country_event = { id = UKR.4 } }
+	}
+}
 
+#Опрерация "Zрада"
+country_event = {
+	id = UKR.4
+	title = UKR.4.t
+	desc = UKR.4.d
+	picture = GFX_report_event_dkr_bam_bl
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.4.a
+	UKR = { country_event = { id = UKR.5 } }
+	}
+}
+
+#Опрерация "Zрада" - последствия
+country_event = {
+	id = UKR.5
+	title = UKR.5.t
+	desc = UKR.5.d
+	picture = GFX_report_event_dkr_bam_bl
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.5.a
+	news_event = {id = dk_news.16}
+	    221 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+		226 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+		200 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+	}
+}

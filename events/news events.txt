@@ -349,3 +349,17 @@ news_event = {
 	name = dk_news.15.a
 	}
 }
+news_event = {
+    id = dk_news.16
+	title = dk_news.16.t
+	desc = dk_news.16.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.16.a
+	}
+}
