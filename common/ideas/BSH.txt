@@ -1,0 +1,202 @@
+ideas = {
+       country = {
+	        BSH_plotneyshaya_zastroyka = {
+
+			picture = cht_shizofrenia
+			
+			   modifier = {
+			    local_building_slots_factor = 0.2
+				consumer_goods_factor = -0.03
+			    }
+		    }
+			
+			BSH_kult_zdoroviy_obraz_zhizni = {
+
+			picture = cht_shizofrenia
+			
+			   modifier = {
+			    MONTHLY_POPULATION = 0.5
+				consumer_goods_factor = 0.05
+				training_time_factor = -0.1
+			    }
+		    }
+			
+			BSH_aferist_economika = {
+
+			picture = cht_shizofrenia
+			
+			   modifier = {
+			    production_factory_start_efficiency_factor = 0.1 
+				consumer_goods_factor = -0.1
+			    }
+		    }
+			
+			BSH_furrey_rezhut_stoya = {
+
+			picture = cht_shizofrenia
+			
+			   modifier = {
+			    targeted_modifier = {
+			    tag = YWO
+			    attack_bonus_against = 0.1
+			    defense_bonus_against = 0.1
+		        }
+				war_support_factor = 0.15
+			    }
+		    }
+			
+			BSH_prinuditelniy_trud = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			    }
+		    }
+			
+			BSH_yahont = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				max_dig_in_factor = 0.1
+				defence = 0.05
+			    }
+		    }
+			
+			BSH_chernogolovku = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				army_morale_factor = 0.1
+				max_planning_factor = 0.1
+			    }
+		    }
+			
+			BSH_evrey = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05 
+			    }
+		    }
+			
+			BSH_svyaz_s_evreyskimi_obzhinami = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				consumer_goods_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.075 
+			    }
+		    }
+			
+			BSH_ottsovskaya_liniya = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			    }
+		    }
+			
+			BSH_sila_stepey = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+			    }
+		    }
+			
+			BSH_materinskaya_liniya = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			    }
+		    }
+			
+			BSH_sev_stoykost = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			    }
+		    }
+			
+			BSH_imbu = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				offence = 0.05
+				org_loss_when_moving = 0.15
+			    }
+		    }
+	   }
+		
+}
