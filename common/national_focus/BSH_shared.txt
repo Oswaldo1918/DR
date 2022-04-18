@@ -592,6 +592,7 @@
 						}
 					add_political_power = 150
 					load_focus_tree = BSH_bebs_tree
+					country_event = BSH.2
 				}
 			ai_will_do = {
 					factor = 2
@@ -607,9 +608,9 @@
 		}
 		x = 23
 		y = 4
-        available = {					
+		visible = {
 			has_completed_focus = BSH_new_formats
-        }
+		}
         completion_reward = {
 					add_popularity = {
 							ideology = democratic
@@ -624,6 +625,9 @@
 							popularity = 0.10
 						}
 					add_political_power = 100
+					country_event = {
+                        id = BSH.1
+                    }
 				}  		
 	}
 	shared_focus = {
@@ -635,9 +639,9 @@
 		}
 		x = 23
 		y = 5
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }
+		}
         completion_reward = {
 					add_popularity = {
 							ideology = fascism
@@ -659,9 +663,9 @@
 		}
 		x = 22
 		y = 6
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					651 = { add_extra_state_shared_building_slots = 3}
 					652 = { add_extra_state_shared_building_slots = 3}
@@ -677,9 +681,9 @@
 		}
 		x = 24
 		y = 6
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }
+		}
 		completion_reward = {
 					add_ideas = BSH_kult_zdoroviy_obraz_zhizni				
 		}
@@ -696,25 +700,25 @@
 		}
 		x = 23
 		y = 7
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		} 
 		completion_reward = {
 					add_ideas = BSH_aferist_economika				
 		}
 	}
 	shared_focus = {
 		id = BSH_furrey_rezhut_stoya
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_aferist_economika
 		}
 		x = 21
 		y = 8
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					add_ideas = BSH_furrey_rezhut_stoya				
 		}
@@ -728,6 +732,9 @@
 		}
 		x = 23
 		y = 8
+		visible = {
+			has_completed_focus = BSH_new_formats
+		}
         completion_reward = {
 		            set_province_name = {
 							id = 1350
@@ -756,16 +763,16 @@
 		}
 		x = 23
 		y = 9
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
         completion_reward = {
 		            add_ideas = BSH_prinuditelniy_trud			
 		}  		
 	}
 	shared_focus = {
 		id = BSH_delat_yahont
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_yahont
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prinuditelniy_trud
@@ -776,9 +783,9 @@
 		}
 		x = 23
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
         completion_reward = {
 		            add_ideas = BSH_yahont			
 		}    		
@@ -792,16 +799,16 @@
 		}
 		x = 25
 		y = 8
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }
+		}
         completion_reward = {
 		            load_oob = BSH_forward_1936			
 		}    		
 	}
 	shared_focus = {
 		id = BSH_delat_chernogolovku
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_chernogolovka
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prinuditelniy_trud
@@ -812,9 +819,9 @@
 		}
 		x = 25
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 		            add_ideas = BSH_chernogolovku	
 		}
@@ -909,18 +916,19 @@
 	}
 	shared_focus = {
 		id = BSH_DNK_test
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_DNK_test
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_aferist_economika
 		}
 		x = 29
 		y = 8
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }  
+		} 
 		completion_reward = {
 					add_political_power = 100
+					country_event = BSH.3
 				}
 	}
 	shared_focus = {
@@ -936,9 +944,9 @@
 		}
 		x = 27
 		y = 9
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }  
+		} 
         completion_reward = {
 					add_ideas = BSH_evrey
 				}  		
@@ -952,9 +960,9 @@
 		}
 		x = 27
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					swap_ideas = {
 							remove_idea = BSH_evrey
@@ -975,9 +983,9 @@
 		}
 		x = 29
 		y = 9
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					add_ideas = BSH_ottsovskaya_liniya
 				}
@@ -991,9 +999,9 @@
 		}
 		x = 29
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					swap_ideas = {
 							remove_idea = BSH_ottsovskaya_liniya
@@ -2246,7 +2254,7 @@
 	}
 	shared_focus = {
 		id = BSH_delat_imbu
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_imba
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prinuditelniy_trud
@@ -2257,9 +2265,9 @@
 		}
 		x = 21
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }
+		}
         completion_reward = {
 					add_ideas = BSH_imbu
 				}   		
@@ -2278,9 +2286,13 @@
 		}
 		x = 24
 		y = 11
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		} 
+		completion_reward = {
+					add_political_power = 100
+					add_stability = 0.1
+				}
 	}
 	shared_focus = {
 		id = BSH_oppazitsiya_Olega
@@ -2296,9 +2308,9 @@
 		}
 		x = 22
 		y = 11
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        }    
+		}   
 	}
 	shared_focus = {
 		id = BSH_materinskaya_liniya
@@ -2313,9 +2325,9 @@
 		}
 		x = 31
 		y = 9
-        available = {					
-			has_completed_focus = BSH_materinskaya_liniya
-        } 
+        visible = {
+			has_completed_focus = BSH_new_formats
+		}
 		completion_reward = {
 					add_ideas = BSH_materinskaya_liniya
 				}
@@ -2329,9 +2341,9 @@
 		}
 		x = 31
 		y = 10
-        available = {					
+        visible = {
 			has_completed_focus = BSH_new_formats
-        } 
+		}
 		completion_reward = {
 					swap_ideas = {
 							remove_idea = BSH_materinskaya_liniya

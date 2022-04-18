@@ -35,12 +35,13 @@ ideas = {
 
 			picture = cht_shizofrenia
 			
-			   modifier = {
+			   
 			    targeted_modifier = {
 			    tag = YWO
 			    attack_bonus_against = 0.1
 			    defense_bonus_against = 0.1
 		        }
+			    modifier = {
 				war_support_factor = 0.15
 			    }
 		    }
@@ -194,7 +195,7 @@ ideas = {
 
 			    modifier = {
 				offence = 0.05
-				org_loss_when_moving = 0.15
+				org_loss_when_moving = -0.15
 			    }
 		    }
 	   }
