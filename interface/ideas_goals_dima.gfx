@@ -34,7 +34,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/.dds"
 	}
 	
-	#фокусы 
+	#фокусы  
 	
 	SpriteType = {
 		name = "GFX_ZNS_tri_stati"
@@ -57,7 +57,27 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_ZNS_rudoy_oryot"
-		texturefile = "gfx/interface/goals/focus_ZNS_rudoy_oryot.dds"	
+		name = "GFX_BSH_imba"
+		texturefile = "gfx/interface/goals/BSH_imba.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_BSH_chernogolovka"
+		texturefile = "gfx/interface/goals/BSH_chernogolovka.dds"	
+	} 
+
+	SpriteType = {
+		name = "GFX_BSH_yahont"
+		texturefile = "gfx/interface/goals/BSH_yahont.dds"	
+	} 
+	
+	SpriteType = {
+		name = "GFX_BSH_ploteyshaya"
+		texturefile = "gfx/interface/goals/BSH_ploteyshaya.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_BSH_DNK_test"
+		texturefile = "gfx/interface/goals/BSH_DNK_test.dds"	
 	}
 }
