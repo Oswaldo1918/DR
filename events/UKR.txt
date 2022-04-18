@@ -169,33 +169,6 @@ country_event = {
 	
 	trigger = {
 	check_variable = { UKR_pb_soprot_var = 10 }
-	}
-	
-	option = {
-	name = UKR.8.a
-    	create_country_leader = {
-        	name = "Временное правительство Днепра"
-        	desc = "POLITICS_THORVALD_STAUNING_DESC"
-        	picture = "Stul_PB.dds"
-         	expire = "1999.1.1"
-        	ideology = marxismus
-         	traits = {
-        		#
-         	}
-        }
-	}
-}
-
-country_event = {
-	id = UKR.8
-	title = UKR.8.t
-	desc = UKR.8.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	is_triggered_only = yes	
-	
-	trigger = {
-	check_variable = { UKR_pb_soprot_var = 10 }
 	has_idea = UKR_nek_grup
 	}
 	
