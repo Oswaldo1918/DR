@@ -461,7 +461,9 @@ focus_tree = {
 			available = {
 					has_government = anarhostalinism
 				}
-
+            completion_reward = {
+            	remove_ideas = BTS_ortodox_sopr
+			} 
 	}
 	focus = {
 		id = BTS_SVO_protiv_asmolova

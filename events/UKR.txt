@@ -20,6 +20,7 @@ country_event = {
 	}
 }
 
+#Некая группа
 country_event = {
 	id = UKR.2
 	title = UKR.2.t
@@ -28,13 +29,20 @@ country_event = {
 	
 	is_triggered_only = yes	
 	
+	trigger = {
+		tag = UKR
+		NOT = { has_completed_focus = UKR_peremanivaniye_ludey_s_donbassa }
+		focus_progress = {
+			focus = UKR_peremanivaniye_ludey_s_donbassa
+			progress > 0.1
+		}
+ 	}
+	
 	option = {
 	name = UKR.2.a
-	UKR ={
-	        create_wargoal = {
-		    	type = annex_everything
-		    	target = ROOT
-		    }
+	add_ideas = UKR_nek_grup
+	hidden = { country_event = { id = UKR.6 days = 25 } 
+	    add_to_variable = { var = UKR_pb_soprot_var value = 5 }
 	    }
 	}
 }
@@ -100,5 +108,128 @@ country_event = {
 			damage_building = { type = arms_factory damage = 0.5 }
 			damage_building = { type = infrastructure damage = 0.5 }
 		}	
+	}
+}
+
+#Терракт некой группы
+country_event = {
+	id = UKR.6
+	title = UKR.6.t
+	desc = UKR.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+
+	option = {
+	name = UKR.6.a
+	226 = { add_manpower = -3 }
+	add_to_variable = { var = UKR_pb_soprot_var value = 1 }
+	}
+}
+
+#Операция против некой группы
+country_event = {
+	id = UKR.7
+	title = UKR.7.t
+	desc = UKR.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.7.a
+	add_political_power = 50
+	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	}
+	
+	option = {
+	name = UKR.7.b
+	add_stability = 0.05
+	226 = { add_manpower = -250 }
+	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	}
+	
+	option = {
+	name = UKR.7.c
+	226 = { add_manpower = -250 }
+	653 = { add_manpower = 250 }
+	add_political_power = 25
+	add_stability = 0.02
+	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	}
+}
+
+country_event = {
+	id = UKR.8
+	title = UKR.8.t
+	desc = UKR.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+	check_variable = { UKR_pb_soprot_var = 10 }
+	}
+	
+	option = {
+	name = UKR.8.a
+    	create_country_leader = {
+        	name = "Временное правительство Днепра"
+        	desc = "POLITICS_THORVALD_STAUNING_DESC"
+        	picture = "Stul_PB.dds"
+         	expire = "1999.1.1"
+        	ideology = marxismus
+         	traits = {
+        		#
+         	}
+        }
+	}
+}
+
+country_event = {
+	id = UKR.8
+	title = UKR.8.t
+	desc = UKR.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+	check_variable = { UKR_pb_soprot_var = 10 }
+	has_idea = UKR_nek_grup
+	}
+	
+	option = {
+	name = UKR.8.a
+    	create_country_leader = {
+        	name = "Временное правительство Днепра"
+        	desc = "POLITICS_THORVALD_STAUNING_DESC"
+        	picture = "Stul_PB.dds"
+         	expire = "1999.1.1"
+        	ideology = marxismus
+         	traits = {
+        		#
+         	}
+        }
+		remove_ideas = UKR_nek_grup
+	}
+}
+
+country_event = {
+	id = UKR.9
+	title = UKR.9.t
+	desc = UKR.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+	check_variable = { UKR_pb_soprot_var = 1 }
+	has_idea = UKR_nek_grup
+	}
+	
+	option = {
+	name = UKR.9.a
+		remove_ideas = UKR_nek_grup
 	}
 }

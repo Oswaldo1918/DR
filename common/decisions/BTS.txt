@@ -4,7 +4,7 @@ BTS_soprotivleniye_btsnikov = {
 
 		icon = ger_mefo_bills
 
-		available = {
+		visible = {
 			hidden_trigger = { always = no }			
 			has_completed_focus = BTS_voennoe_polozheniye
 		}

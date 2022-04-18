@@ -13,7 +13,7 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAB_camo.dds" 
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC_camo.dds"
-                "gfx/interface/technologies/Shushpanzer.dds" 
+                "gfx/interface/technologies/Shushpanzer4.dds" 
 				"gfx/interface/technologies/Shushpanzer_ZSU.dds" 
 				"gfx/interface/technologies/T26_PVO.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABA.dds" 
@@ -39,7 +39,7 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAB_camo.dds" 
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC_camo.dds"
-				"gfx/interface/technologies/Shushpanzer2.dds" 
+				"gfx/interface/technologies/Shushpanzer.dds" 
 				"gfx/interface/technologies/ZSU_2.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA_camo.dds" 
@@ -65,7 +65,7 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC_camo.dds"
 				"gfx/interface/technologies/Shushpanzer3.dds" 
-				"gfx/interface/technologies/Shushpanzer4.dds" 
+				"gfx/interface/technologies/Shushpanzer2.dds" 
 				"gfx/interface/technologies/ZSU.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA_camo.dds" 
@@ -1083,4 +1083,47 @@ POK = {
 		}
 	}
 }	
-
+LRG = {
+light_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz1.dds"			
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz1.dds"				
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz2.dds"			
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz3.dds"			
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz3.dds"		
+			}
+		}
+	}
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LRG_pz4.dds"		
+			}
+		}
+	}
+}
