@@ -4,6 +4,25 @@
 
 leader_traits = {
     
+	karlan_of_terror = {
+		sprite = 13
+		resistance_damage_to_garrison = -0.25 
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hranitel_parkov = {
+		random = no
+		sprite = 13
+
+		consumer_goods_factor = 0.05
+		stability_factor = 0.1
+	}
+	
 	vozhdya = {
 		random = no
 		sprite = 13

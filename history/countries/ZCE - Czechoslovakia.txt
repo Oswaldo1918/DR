@@ -6,13 +6,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "CZE_1936"
+	set_oob = "123_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "CZE_1936_nsb"
+	set_oob = "123_1936"
 }
 
 set_technology = {
@@ -29,7 +29,8 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-recruit_character = 
+
+recruit_character = ZCE_Kamikadze
 
 
 if = {
@@ -137,4 +138,3 @@ if = {
 		CZE_fortification_focus
 	}
 }
-

@@ -29,6 +29,8 @@ set_technology = {
 	
 }
 
+recruit_character = BAV_Shevtsov
+
 if = {
 	limit = {
 		NOT = {
@@ -84,4 +86,15 @@ set_popularities = {
 }
 
 add_ideas = {
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	BAV_oplot_protiv_migrantov
+	BAV_fraykor
+}
+
+set_autonomy = {
+	target = ZCE
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.5
 }

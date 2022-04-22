@@ -74,7 +74,6 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
 }
 if = {
 	limit = {
@@ -106,7 +105,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -152,9 +150,10 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	FRG_polit_borba
 }
 
-recruit_character =
+recruit_character = FRG_Bebrok
 
 
 if = {
@@ -550,4 +549,10 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
+}
+
+set_autonomy = {
+	target = BAV
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.5
 }
