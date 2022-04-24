@@ -1,8 +1,8 @@
-capital = 58
+capital = 7
 
-oob = 123_1936
+oob = "123_1936"
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -10,15 +10,11 @@ set_technology = {
 	basic_train = 1
 }
 
-add_ideas = {
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-	NEU_zatyazh_pereezd
-	NEU_zakat_europe
-}
+recruit_character = MRH_keks_ukrop
 
-recruit_character = NEU_Gekay
+add_ideas = {
+		MRH_drugs_revolution
+}
 
 set_popularities = {
 	democratic = 100
