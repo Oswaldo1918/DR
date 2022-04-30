@@ -66,7 +66,7 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC_camo.dds"
 				"gfx/interface/technologies/Shushpanzer3.dds" 
 				"gfx/interface/technologies/Shushpanzer2.dds" 
-				"gfx/interface/technologies/ZSU.dds" 
+				"gfx/interface/technologies/BTR-3D.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA_camo.dds" 
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBB.dds" 
@@ -82,12 +82,89 @@ default = {
 			}
 		}
 	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/gwtank.dds"
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_AAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_AAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_AAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_AAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ABC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_ACC_camo.dds" 
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BBA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BBA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BAA_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BBC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BBC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_BCC_camo.dds" 
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAC_camo.dds"
+				"gfx/interface/technologies/MLI-84M.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CCA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CCA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CCB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CCB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAA_camo.dds" 
+			}
+		}
+	}
     modern_tank_chassis_1 = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/T-55.dds" 
 				"gfx/interface/technologies/T-2S3.dds" 
 				"gfx/interface/technologies/ZRK.dds" 
+				"gfx/interface/technologies/ZSU.dds" 
 				"gfx/interface/technologies/Leopard-I.dds" 
 				"gfx/interface/technologies/ProtA.dds" 
 				"gfx/interface/technologies/M46_Patton.dds" 
