@@ -1,0 +1,16 @@
+characters={
+	BAV_Shevtsov = {
+		name = "Алексей Шевцов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAV/Shevtsov.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1" 
+	        ideology = nazism
+			traits = { karlan_of_terror prodavets_govna microfurer }
+		    id=-1
+	   }
+    }
+}

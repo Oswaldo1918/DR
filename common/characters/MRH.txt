@@ -1,0 +1,18 @@
+characters={
+	MRH_keks_ukrop = {
+		name = "Кекс и Укроп"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MRH/keks_ukrop.dds"
+			}
+		} 
+		country_leader = {	    
+        	traits = {
+         		pod_kayfom
+        	}
+		    ideology = ancap
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}
