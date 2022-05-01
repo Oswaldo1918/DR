@@ -2879,9 +2879,9 @@ add_ideas = CHT_cumpit
 					has_government = memoism
 				}
 completion_reward = {
-                add_tech_bonus = {
+                add_doctrine_cost_reduction = {
 				name = tank_bonus
-				bonus = 1.0
+				cost_reduction = 1.0
 				uses = 1
 				category = armor
 				}
@@ -2902,9 +2902,9 @@ completion_reward = {
 				}
 		completion_reward = {
         army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 1.0
+				cost_reduction = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -3604,8 +3604,8 @@ completion_reward = {
 					has_government = vmestolev
 				}
 			completion_reward = {
-					add_tech_bonus = {
-							bonus = 1.0
+					add_doctrine_cost_reduction = {
+							cost_reduction = 1.0
 							uses = 2
 							category = land_doctrine
 						}
@@ -4035,9 +4035,9 @@ completion_reward = {
 		y = 20
 			completion_reward = {
 			army_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 1.0
+				cost_reduction = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -4392,8 +4392,8 @@ available = {
 				}
 completion_reward = {
 army_experience = 50
-add_tech_bonus = {
-							bonus = 1.0
+add_doctrine_cost_reduction = {
+							cost_reduction = 1.0
 							uses = 1
 							category = land_doctrine
 						}
@@ -4459,9 +4459,9 @@ completion_reward = { add_ideas = CHT_mehanizatsia_army }
 		y = 17
 			completion_reward = {
 					army_experience = 15
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = BUL_national_military_academy
-							bonus = 1.0
+							cost_reduction = 1.0
 							uses = 2
 							category = land_doctrine
 						}
