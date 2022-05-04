@@ -47,6 +47,44 @@ ideas = {
 					political_power_factor = -0.05
 		        }
 	        }
+			
+			UKR_oligarhiya = {
+			
+			    modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = -0.1
+		        }
+	        }
+			
+			UKR_evr_arm = {
+			
+			    modifier = {
+				    conscription = 0.05
+		        }
+	        }
+			
+			UKR_evr_gen = {
+			
+			    modifier = {
+			    	stability_factor = -0.05
+				    political_power_factor = 0.1
+		        }
+	        }
+			
+			UKR_goi = {
+	
+			   modifier = {
+					stability_factor = -0.05
+					industrial_capacity_factory = 0.1				
+			    }
+		    }
+			
+			UKR_shabbat = {
+			
+			    modifier = {
+				    political_power_factor = 0.05
+		        }
+	        }
     }
 	
 	tank_manufacturer = { 
