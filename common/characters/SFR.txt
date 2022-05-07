@@ -1,0 +1,50 @@
+characters={
+	SFR_Fresko = {
+		name = "Жак Фреско"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SFR/Fresko.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = libertanian_chuchhe
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+	
+	SFR_Fantomas = {
+		name = "Фантомас"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SFR/Fantomas.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = nacbol
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+	
+	SFR_Kagar = {
+		name = "Борис Кагарлицкий"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SFR/Kagar.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = socialism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		country_leader = {
+		    ideology = marxismus
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+	
+	
+}

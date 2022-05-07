@@ -1,0 +1,43 @@
+﻿capital = 29
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = EFR_Dbill
+recruit_character = EFR_LePen
+
+add_ideas = {
+		limited_conscription
+	    partial_economic_mobilisation
+        EFR_france_gv
+	    EFR_kult_skorosti
+        EFR_front_pravih		
+}
+
+declare_war_on = {
+	target = SFR
+	type = annex_everything
+}
+declare_war_on = {
+	target = LFR
+	type = annex_everything
+}
+
+set_popularities = {
+	memoism = 34
+	fascism = 33
+	neutrality = 33
+}
+set_politics = {
+	ruling_party = memoism
+	elections_allowed = no	
+}
+
+set_convoys = 100
