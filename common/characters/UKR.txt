@@ -24,7 +24,7 @@ characters={
 
 		portraits = {
 			army = {
-				small = "GFX_idea_POK_grudin"
+				small = "GFX_idea_UKR_shumilova_1"
 				large = "gfx/leaders/UKR/Snake.dds"
 			}
 		}
@@ -49,17 +49,36 @@ characters={
 			}
 		}
 
-	     corps_commander = {
-			traits = {  trait_reckless   }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = 0
-		}
+	     country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = white_polpotism
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}	
 	}
-	
+	UKR_benya = {
+		name = "Игорь Коломойский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_UKR_shumilova_1"
+				large = "gfx/leaders/UKR/Ihor_Kolomoyskyi.dds"
+			}
+		}
+
+	     country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = ancap
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}	
+	}
 	UKR_poter_net = {
 		name = "Дмитрий Тымчук"
 

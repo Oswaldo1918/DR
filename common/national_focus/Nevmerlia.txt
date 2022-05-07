@@ -378,6 +378,12 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
+		
+		completion_reward = {
+							country_event = {
+									id = UKR.12
+								}
+				}
 
 	}
 	focus = {
@@ -389,6 +395,10 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
+		
+		completion_reward = {
+				add_manpower = 15000
+				}
 
 	}
 	focus = {
@@ -400,6 +410,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		
+		completion_reward = {
+					add_political_power = 150
+				    	country_event = {
+									id = UKR.13
+								}		
+				}
 
 	}
 	focus = {
@@ -414,6 +431,21 @@ focus_tree = {
 		}
 		x = 17
 		y = 5
+		
+		completion_reward = {
+					add_political_power = -50
+					add_stability = -0.03
+					set_popularities = {
+                    	metacommy = 100
+                    }
+                    set_politics = {
+                     	ruling_party = metacommy
+                       	elections_allowed = no	
+                    }
+				    	country_event = {
+									id = UKR.14
+								}
+				}
 
 	}
 	focus = {
@@ -838,13 +870,11 @@ focus_tree = {
 							ahead_reduction = 2
 							category = nuclear
 						}
-					hidden = {
 							NOD = {
 									country_event = {
 											id = UKR.1
 										}
 								}
-						}
 				}
 
 	}

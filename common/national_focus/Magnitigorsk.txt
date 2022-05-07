@@ -10,12 +10,12 @@ focus_tree = {
 	default = no
 	focus = {
 		id = MGN_revolutsiya_na_nemetskiye_dengi
-		icon = GFX_focus_generic_befriend_shm
+		icon = GFX_goal_frg_ally
 		cost = 1,00
 		x = 20
 		y = 0
 			completion_reward = {
-					SHM = {
+					FRG = {
 							country_event = {
 									id = MGN.1
 								}
@@ -103,8 +103,8 @@ focus_tree = {
 		x = 20
 		y = 3
 			completion_reward = {
-            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
-            }
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -356,9 +356,10 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
-        completion_reward = {
-            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
-        }   
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
+
 	}
 	focus = {
 		id = MGN_soldat_ne_zhalet_babi_eshe_narozhaut
@@ -563,9 +564,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-		completion_reward = {
-            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
-        }
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -1086,9 +1087,10 @@ focus_tree = {
 		}
 		x = 15
 		y = 10
-        completion_reward = {
-            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
-        }    
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
+
 	}
 	focus = {
 		id = MGN_walter_mod2
@@ -1202,7 +1204,7 @@ focus_tree = {
 					add_state_core = 80
 					add_state_core = 73
 				}
-              
+
 	}
 	focus = {
 		id = MGN_teleportaciya_narodov
@@ -1221,9 +1223,10 @@ focus_tree = {
 					controls_state = 91
 					controls_state = 824
 				}
-        completion_reward = {
-            custom_effect_tooltip = MGN_new_resheniya_effect_tt   
-        } 
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
+
 	}
 	focus = {
 		id = MGN_tractorniye_voyska
@@ -1329,7 +1332,7 @@ focus_tree = {
 		}
 		x = 17
 		y = 12
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_solnce
 				}
 

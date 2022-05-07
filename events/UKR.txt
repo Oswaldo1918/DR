@@ -253,3 +253,74 @@ country_event = {
 
 	}
 }
+#Антифа конгресс
+country_event = {
+	id = UKR.12
+	title = UKR.12.t
+	desc = UKR.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.12.a
+		add_political_power = 150
+		SHM = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+		ZCE = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+		BAV = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+	}
+}
+#Ультиматум пороха
+country_event = {
+	id = UKR.13
+	title = UKR.13.t
+	desc = UKR.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.13.a
+		add_political_power = -50
+	}
+}
+#Борьба с Шумиловой
+country_event = {
+	id = UKR.14
+	title = UKR.14.t
+	desc = UKR.14.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.14.a
+		add_political_power = -150
+		
+	}
+	option = {
+	name = UKR.14.a
+		country_event = {
+			id = UKR.15
+		}
+	}
+}
+country_event = {
+	id = UKR.15
+	title = UKR.15.t
+	desc = UKR.15.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.15.a
+	complete_national_focus = UKR_sverzheniye_shumilovoy	
+	complete_national_focus = UKR_oligarhiya	
+	}
+	option = {
+	name = UKR.15.b
+	complete_national_focus = UKR_sverzheniye_shumilovoy	
+	complete_national_focus = UKR_bratva_rvetsa_k_vlasti
+	}
+}
