@@ -1,0 +1,17 @@
+characters={
+    IZR_Kanevskiy = {
+		name = "Леонид Каневский"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Kanevskiy.dds"
+			}
+		}
+
+        country_leader = {
+		    ideology = despotism
+			expire = "1965.1.1"
+        	traits = { popular_figurehead }
+		}	
+	}
+}

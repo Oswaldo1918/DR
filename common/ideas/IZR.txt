@@ -1,0 +1,37 @@
+ideas = {
+        country = {
+	        IZR_tsentr_mir_evreystva = {
+
+			picture = generic_volunteer_expedition_bonus
+			
+			    modifier = {
+			    political_power_factor = 0.1
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			IZR_volneniya_sredi_arabov = {
+
+			picture = raj_marginalized_muslim_community_angry
+			
+			    modifier = {
+			    war_support_factor = -0.15
+				stability_weekly = -0.01
+				conscription_factor = -0.15
+			    }
+		    }
+			
+			IZR_vtoraya_tserkov_Hrista = {
+
+			picture = MEX_church_power_5
+			
+			    modifier = {
+			    war_support_factor = -0.15
+				stability_weekly = -0.01
+				industrial_capacity_factory = -0.15
+			    }
+		    }
+	   }
+		
+}
