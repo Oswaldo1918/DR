@@ -1,0 +1,34 @@
+characters={
+	EFR_Dbill = {
+		name = "Эдуард Д'Билл"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EFR/Dbill.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = postironism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+	
+	EFR_LePen = {
+		name = "Марин Ле Пен"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EFR/LePen.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = fascism_ideology
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		country_leader = {
+		    ideology = despotism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}
