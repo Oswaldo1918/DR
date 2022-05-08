@@ -14,8 +14,6 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC_camo.dds"
                 "gfx/interface/technologies/Shushpanzer4.dds" 
-				"gfx/interface/technologies/Shushpanzer_ZSU.dds" 
-				"gfx/interface/technologies/T26_PVO.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABA_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABB.dds" 
@@ -31,7 +29,14 @@ default = {
 			}
 		}
 	}
-
+    light_tank_aa_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/Shushpanzer_ZSU.dds" 
+				"gfx/interface/technologies/T26_PVO.dds" 
+			}
+		}
+	}
 	light_tank_chassis_2 = {
 		pool = {
 			icons = {
@@ -40,7 +45,6 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC_camo.dds"
 				"gfx/interface/technologies/Shushpanzer.dds" 
-				"gfx/interface/technologies/ZSU_2.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAA.dds" 
@@ -56,6 +60,13 @@ default = {
 			}
 		}
 	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/ZSU_2.dds" 
+			}
+		}
+	}
 
 	light_tank_chassis_3 = {
 		pool = {
@@ -65,8 +76,7 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAC_camo.dds"
 				"gfx/interface/technologies/Shushpanzer3.dds" 
-				"gfx/interface/technologies/Shushpanzer2.dds" 
-				"gfx/interface/technologies/BTR-3D.dds" 
+				"gfx/interface/technologies/Shushpanzer2.dds"  
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBA_camo.dds" 
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BBB.dds" 
@@ -79,6 +89,13 @@ default = {
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BCB_camo.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAA_camo.dds" 
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BTR-3D.dds"
 			}
 		}
 	}
@@ -142,7 +159,6 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAC.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CAC_camo.dds"
-				"gfx/interface/technologies/MLI-84M.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBA_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_medium_CBB.dds" 
@@ -158,20 +174,55 @@ default = {
 			}
 		}
 	}
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/MLI-84M.dds"
+			}
+		}
+	}
     modern_tank_chassis_1 = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/T-55.dds" 
 				"gfx/interface/technologies/T-2S3.dds" 
-				"gfx/interface/technologies/ZRK.dds" 
-				"gfx/interface/technologies/ZSU.dds" 
 				"gfx/interface/technologies/Leopard-I.dds" 
 				"gfx/interface/technologies/ProtA.dds" 
 				"gfx/interface/technologies/M46_Patton.dds" 
 				"gfx/interface/technologies/Centurion.dds" 
 			}
 		}
-	}	
+	}
+	modern_tank_destroyer_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/Kanonenjagdpanzer.dds" 
+			}
+		}
+	}
+	modern_tank_artillery_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/Object-704.dds" 
+			}
+		}
+	}
+	modern_tank_aa_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/ZRK.dds" 
+				"gfx/interface/technologies/ZSU.dds" 
+				"gfx/interface/technologies/ZSU-57-2.dds" 
+			}
+		}
+	}
+    super_heavy_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/ger_superheavy_tank.dds" 
+			}
+		}
+	}
 }
 TUP = {
 	heavy_tank_chassis_2 = {
