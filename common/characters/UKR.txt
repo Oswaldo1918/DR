@@ -79,6 +79,26 @@ characters={
 			id = -1
 		}	
 	}
+	UKR_beliy = {
+		name = "Саша Белый"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_UKR_shumilova_1"
+				large = "gfx/leaders/UKR/Sasha_White.dds"
+			}
+		}
+
+	     country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = postironism
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}	
+	}
 	UKR_poter_net = {
 		name = "Дмитрий Тымчук"
 

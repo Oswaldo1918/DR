@@ -4,16 +4,20 @@ UKR_sopr_pb_cat = {
 
 		icon = ger_mefo_bills
 
-		visible = {
-			hidden_trigger = { always = no }			
-			has_idea = UKR_nek_grup
+		visible = {			
+			OR = {
+			has_idea = UKR_nek_grup1
+			has_idea = UKR_nek_grup2
+			has_idea = UKR_nek_grup3
+			has_idea = UKR_nek_grup4
+			has_idea = UKR_nek_grup5
+			}
 		}
 
 		days_mission_timeout = 170
-		fire_only_once = yes
 
 		cancel_trigger = {	
-			NOT = { has_idea = UKR_nek_grup }
+			
 		}
 
 		remove_effect = {
@@ -23,7 +27,7 @@ UKR_sopr_pb_cat = {
 		}
 
 		timeout_effect = {
-		add_to_variable = { var = UKR_pb_soprot_var value = 1 }
+		UKR_pb_sopr_up
 		}
 	}
 
@@ -35,12 +39,18 @@ UKR_sopr_pb_cat = {
 			factor = 4
 		}
        available = {
-             has_idea = UKR_nek_grup
+             
 		
           }
 
         visible = {
-			has_idea = UKR_nek_grup
+		OR = {
+			has_idea = UKR_nek_grup1
+			has_idea = UKR_nek_grup2
+			has_idea = UKR_nek_grup3
+			has_idea = UKR_nek_grup4
+			has_idea = UKR_nek_grup5
+			}	
 		}
 		
 		days_remove = 150

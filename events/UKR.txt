@@ -40,10 +40,8 @@ country_event = {
 	
 	option = {
 	name = UKR.2.a
-	add_ideas = UKR_nek_grup
-	hidden = { country_event = { id = UKR.6 days = 25 } 
-	    add_to_variable = { var = UKR_pb_soprot_var value = 5 }
-	    }
+	add_ideas = UKR_nek_grup3
+        country_event = { id = UKR.6 days = 25 } 
 	}
 }
 
@@ -123,7 +121,7 @@ country_event = {
 	option = {
 	name = UKR.6.a
 	226 = { add_manpower = -2 }
-	add_to_variable = { var = UKR_pb_soprot_var value = 1 }
+	UKR_pb_sopr_up
 	}
 }
 
@@ -139,14 +137,14 @@ country_event = {
 	option = {
 	name = UKR.7.a
 	add_political_power = 50
-	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	UKR_pb_sopr_down
 	}
 	
 	option = {
 	name = UKR.7.b
 	add_stability = 0.05
 	226 = { add_manpower = -250 }
-	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	UKR_pb_sopr_down
 	}
 	
 	option = {
@@ -155,7 +153,7 @@ country_event = {
 	653 = { add_manpower = 250 }
 	add_political_power = 25
 	add_stability = 0.02
-	add_to_variable = { var = UKR_pb_soprot_var value = -1 }
+	UKR_pb_sopr_down
 	}
 }
 
@@ -168,8 +166,11 @@ country_event = {
 	is_triggered_only = yes	
 	
 	trigger = {
-	check_variable = { UKR_pb_soprot_var = 10 }
-	has_idea = UKR_nek_grup
+	has_idea = UKR_nek_grup5
+	}
+	
+	mean_time_to_happen = {
+		days = 100
 	}
 	
 	option = {
@@ -191,7 +192,7 @@ country_event = {
         	ruling_party = vmestolev
         	elections_allowed = no	
         }
-		remove_ideas = UKR_nek_grup
+		remove_ideas = UKR_nek_grup5
 	}
 }
 
@@ -204,13 +205,16 @@ country_event = {
 	is_triggered_only = yes	
 	
 	trigger = {
-	check_variable = { UKR_pb_soprot_var = 1 }
-	has_idea = UKR_nek_grup
+	has_idea = UKR_nek_grup1
+	}
+	
+	mean_time_to_happen = {
+		days = 100
 	}
 	
 	option = {
 	name = UKR.9.a
-		remove_ideas = UKR_nek_grup
+		remove_ideas = UKR_nek_grup1
 	}
 }
 

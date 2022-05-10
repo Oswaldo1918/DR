@@ -131,12 +131,9 @@ focus_tree = {
 		x = 12
 		y = 5
 			completion_reward = {
-					swap_idea = {
-							remove_idea = MGN_voen_communism
-							add_ideas = MGN_neefect_com_ec
-						}
-				}
-
+				remove_ideas = MGN_voen_communism
+				add_ideas = MGN_neefect_com_ec
+			}
 	}
 	focus = {
 		id = MGN_zagubit_derevnu
