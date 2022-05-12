@@ -17,6 +17,9 @@ characters={
 	        }
 			expire = "1999.3.1"
 			id = -1
+			visible = {
+			NOT = { has_completed_focus = UKR_socialism_s_chelovecheskim_licom }
+			}
 		}	
 	}
 	UKR_snake = {
@@ -57,6 +60,22 @@ characters={
 	        }
 			expire = "1999.3.1"
 			id = -1
+			visible = {
+			NOT = { has_completed_focus = UKR_socialism_s_chelovecheskim_licom }
+			}
+		}	
+		
+		 country_leader = {
+    		desc = "POLITICS_THORVALD_STAUNING_DESC"
+			ideology = fascism_ideology
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+			visible = {
+			has_completed_focus = UKR_socialism_s_chelovecheskim_licom
+			}
 		}	
 	}
 	UKR_benya = {

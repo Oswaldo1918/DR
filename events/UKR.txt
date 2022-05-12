@@ -300,7 +300,14 @@ country_event = {
 	option = {
 	name = UKR.14.a
 		add_political_power = -150
-		
+		add_timed_idea = {
+				idea = UKR_sabotazh
+				days = 320
+		}
+		add_timed_idea = {
+				idea = UKR_mafia
+				days = 320
+		}
 	}
 	option = {
 	name = UKR.14.a
