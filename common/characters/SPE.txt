@@ -1,0 +1,18 @@
+characters={
+
+	SPE_Shariy = {
+		name = "Шарий-ата"
+
+		portraits = {
+		    civilian={
+				large="gfx/leaders/SPE/Shariy.dds"
+			}
+		}
+
+        country_leader = {
+			ideology = theocracy
+			expire = "1999.3.1.1"
+			id = -1
+		}
+	}
+}

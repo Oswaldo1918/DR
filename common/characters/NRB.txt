@@ -1,0 +1,18 @@
+characters={
+    NRB_Baskov = {
+		name = "Николай Басков"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/NRB/Baskov.dds"
+			}
+		}
+
+        country_leader = {
+			ideology = nacbol
+			traits = { Popadanets }
+			expire = "1999.3.1.1"
+			id = -1
+		}	
+	}
+}
