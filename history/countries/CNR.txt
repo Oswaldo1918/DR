@@ -1,0 +1,32 @@
+capital = 165
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	basic_train = 1
+}
+
+recruit_character = CNR_Hasel
+
+add_ideas = {
+		limited_conscription
+	    partial_economic_mobilisation
+		CNR_no_pasaran
+}
+
+set_popularities = {
+	anarhostalinism = 33
+	metacommy = 33
+	vmestolev = 34
+}
+set_politics = {
+	ruling_party = vmestolev
+	elections_allowed = no	
+}
+
+set_convoys = 100
