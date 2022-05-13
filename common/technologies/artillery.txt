@@ -826,6 +826,11 @@ technologies = {
 		}
 
 		static_anti_air_damage_factor = 0.1
+				
+		path = {
+			leads_to_tech = AA_rocket
+			research_cost_coeff = 1
+		}
 
 		enable_equipment_modules = {
 			ship_anti_air_4
@@ -1295,6 +1300,12 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
+				
+		path = {
+			leads_to_tech = PTUR
+			research_cost_coeff = 1
+		}
+		
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3

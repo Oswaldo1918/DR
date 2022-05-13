@@ -159,8 +159,8 @@ country_event = { #асмолов запрос на союз
 	
 	option = {
 	name = BTS.7.a
-	BTS = {	create_faction = SOKP }
-	BTS = { add_to_faction = ASM puppet = ASM}
+	BTS = {	give_guarantee = ASM }
+	ASM = { give_guarantee = BTS }
 	}
 	
 	option = {

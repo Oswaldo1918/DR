@@ -1,0 +1,91 @@
+﻿
+division_template = {
+	name = "Пехота"				
+
+	division_names_group = LRG_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+		
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+
+}
+priority = 1
+}
+division_template = {
+	name = "Немецкие танки"
+
+	division_names_group = LRG_Arm_01
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+        heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Мотопехота" 	
+	
+	division_names_group = LRG_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+
+units = {
+        division = {
+        name = "1я пехотная дивизия"
+
+        location = 1149
+        division_template = "Пехота"
+        }
+		division = {
+        name = "2я мотопехотная дивизия"
+
+        location = 1149
+        division_template = "Мотопехота"
+        }
+		division = {
+        name = "1я танковая дивизия"
+
+        location = 1149
+        division_template = "Немецкие танки"
+        }
+		division = {
+        name = "2я танковая дивизия"
+
+        location = 1149
+        division_template = "Немецкие танки"
+        }
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LRG"
+		}
+	}	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "LRG" 
+		}
+	}
+}

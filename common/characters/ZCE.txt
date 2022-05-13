@@ -1,0 +1,16 @@
+characters={
+	ZCE_Kamikadze = {
+		name = "Камикадзе Ди"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZCE/Kamikadze.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = nazism
+			traits = { prince_of_terror new_heydrich rusofob_paranoya }
+		    id=-1
+	   }
+    }
+}

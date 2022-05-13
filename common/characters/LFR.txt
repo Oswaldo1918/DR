@@ -1,0 +1,29 @@
+characters={
+	LFR_Makron = {
+		name = "Эмманюэль Макрон"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LFR/Makron.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = ancap
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+	
+	LFR_Anri = {
+		name = "Бернар-Анри Леви"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LFR/Anri.jpg"
+			}
+		}
+		country_leader = {
+		    ideology = liberalism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}

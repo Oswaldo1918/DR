@@ -1,0 +1,18 @@
+characters={
+	SWE_martin_anward = {
+		name = "Мартин Анвард"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/Anward.dds"
+			}
+		} 
+		country_leader = {	    
+        	traits = {
+         		captain_of_industry 
+        	}
+		    ideology = ancap
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}

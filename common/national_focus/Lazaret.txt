@@ -687,9 +687,9 @@ add_tech_bonus = {
 		y = 5
 			completion_reward = {
 					army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
@@ -706,45 +706,45 @@ add_tech_bonus = {
 			}
 			ARK = {
 			army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
 					}
 			DON = {
 			army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
 					}
 			UNT = {
 			army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
 					}
 			MAT = {
 			army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
 					}	
 			WHS = {
 			army_experience = 10
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.5
+							cost_reduction = 0.5
 							uses = 1
 							category = land_doctrine
 						}
@@ -808,9 +808,9 @@ add_tech_bonus = {
 			        army_experience = 50
 					navy_experience = 15
 					air_experience = 15
-					add_tech_bonus = {
+					add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 0.2
+							cost_reduction = 0.2
 							uses = 2
 							category = land_doctrine
 						}
@@ -1866,9 +1866,9 @@ create_wargoal = {
 		x = 18
 		y = 7
 			completion_reward = {
-add_tech_bonus = {
+add_doctrine_cost_reduction = {
 							name = land_doc_bonus
-							bonus = 1.0
+							cost_reduction = 1.0
 							uses = 2
 							category = land_doctrine
 						}
@@ -2194,9 +2194,9 @@ add_ideas = LAZ_upravleniye_voennoy_infrastructuroi
 		y = 8
 			completion_reward = {
 			country_event = { id = lazaret.24 }
-add_tech_bonus = {
+add_doctrine_cost_reduction = {
 			name = air_doc_bonus
-			bonus = 1.0
+			cost_reduction = 1.0
 			uses = 1
 			category = air_doctrine
 		}
@@ -2228,9 +2228,9 @@ add_ideas = LAZ_obucheniye_drozdov
 		y = 9
 			completion_reward = {
 air_experience = 5
-add_tech_bonus = {
+add_doctrine_cost_reduction = {
 			name = air_doc_bonus
-			bonus = 1.0
+			cost_reduction = 1.0
 			uses = 1
 			category = air_doctrine
 		}

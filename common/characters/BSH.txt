@@ -33,12 +33,30 @@ characters={
 			civilian = {
 				large = "gfx/leaders/BSH/babay.dds"
 			}
-		}
+		} 
 		country_leader = {
 	        expire = "1999.1.1"
 	        ideology = despotism
 		    id=-1
-	   }
+	    }
+    }
+	
+	BSH_babaynefash = {
+		name = "Бебнито Бебсолинни"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/babaynefas.dds"
+			}
+		}
+		
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+	         	vozhdya fascist_militia_leader
+	        }
+	        ideology = nefascism
+		    id=-1
+	    }
     }
 	
 	BSH_grigorev = {
@@ -73,7 +91,7 @@ characters={
 		name = "Ильгизар Азнагулов"
 		portraits = {
 			army = {
-				large = ".dds"
+				large = "gfx/leaders/BSH/ilgizar.dds"
 				small = ".dds"
 			}
 		}
@@ -87,4 +105,112 @@ characters={
 			legacy_id = -1
 		}
     }
+	
+	BSH_Brenya = {
+		name = "Эфиоп Бреня"
+		portraits = {
+		    army = {
+			    large = "gfx/leaders/BSH/Brenya.dds"
+				small = "GFX_idea_africa_generic_2"
+			}
+			civilian = {     
+				small = "GFX_idea_africa_generic_2"
+			}
+		}
+        corps_commander = {
+	    traits = { trait_engineer }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 4
+		legacy_id = -1
+        }  
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Brenya
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { lieutenant_of_industry }
+	    }
+	}
+	
+	BSH_Andruha = {
+		name = "Андрюха"
+		portraits = {
+			civilian = {     
+				small = "GFX_idea_africa_generic_2"
+			}
+		}
+
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Andruha
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { prince_of_terror }
+	    }
+	}
+	
+	BSH_Nastya = {
+		name = "Настя"
+		portraits = {
+			civilian = {     
+				small = "GFX_idea_africa_generic_2"
+			}
+		}
+
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Nastya
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { princess_of_terror }
+	    }
+	}
+	
+	BSH_Oleg = {
+		name = "Олег"
+		portraits = {
+			civilian = { 
+                large = "gfx/leaders/BSH/Oleg.dds" 			
+				small = "GFX_idea_africa_generic_2"
+			}
+		}
+        country_leader = {
+			traits = {  }
+			desc = "POLITICS_LOKSLI_DESC"
+			ideology = white_polpotism
+			expire = "3000.1.1"
+			id = -1
+		} 
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Oleg
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+			    has_completed_focus = BSH_babay
+				NOT = { has_completed_focus = BSH_rasprava_nad_oppozitsiey }
+			}
+            traits = { popular_figurehead }
+	    }
+	}
 }

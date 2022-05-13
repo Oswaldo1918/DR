@@ -38,8 +38,6 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
     }
 	
 	MGN_pobeda_v_gv = { #Интеграция_Сибири
-	
-		cost = 30
 
 		available = {
 			controls_state = 577
@@ -61,7 +59,7 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
 		}
 		fire_only_once = yes
 		
-		days_remove = 45
+		days_remove = 0
 		
 		remove_effect = {
 			add_state_core = 577
@@ -275,6 +273,7 @@ MGN_repressii = {
 				days = 179
 			}  
 		}
+	}	
 	
 	MGN_lzhe_mat_resh = {
 

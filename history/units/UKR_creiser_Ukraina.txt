@@ -1,0 +1,14 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Raketniy Creiser"			
+		naval_base = 9571
+		task_force = {				
+			name = "Raketniy Creiser"			
+			location = 9571 
+			ship = { name = "Украина" definition = light_cruiser equipment = { torpedo_cruiser_mtg = { amount = 1 owner = UKR } } }
+		}				
+	}
+} 

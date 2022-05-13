@@ -10,12 +10,12 @@ focus_tree = {
 	default = no
 	focus = {
 		id = MGN_revolutsiya_na_nemetskiye_dengi
-		icon = GFX_focus_generic_befriend_shm
+		icon = GFX_goal_frg_ally
 		cost = 1,00
 		x = 20
 		y = 0
 			completion_reward = {
-					SHM = {
+					FRG = {
 							country_event = {
 									id = MGN.1
 								}
@@ -103,8 +103,8 @@ focus_tree = {
 		x = 20
 		y = 3
 			completion_reward = {
-
-}
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -131,12 +131,9 @@ focus_tree = {
 		x = 12
 		y = 5
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = MGN_voen_communism
-							add_ideas = MGN_neefect_com_ec
-						}
-				}
-
+				remove_ideas = MGN_voen_communism
+				add_ideas = MGN_neefect_com_ec
+			}
 	}
 	focus = {
 		id = MGN_zagubit_derevnu
@@ -356,6 +353,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -562,8 +562,8 @@ focus_tree = {
 		x = 29
 		y = 5
 			completion_reward = {
-
-}
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -1084,6 +1084,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 10
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -1217,6 +1220,9 @@ focus_tree = {
 					controls_state = 91
 					controls_state = 824
 				}
+			completion_reward = {
+					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+				}
 
 	}
 	focus = {
@@ -1323,7 +1329,7 @@ focus_tree = {
 		}
 		x = 17
 		y = 12
-		completion_reward = {
+			completion_reward = {
 					add_ideas = MGN_solnce
 				}
 

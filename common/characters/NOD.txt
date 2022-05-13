@@ -6,7 +6,7 @@ characters = {
 				large = "gfx/leaders/NOD/Fedorov.dds"
 			}
 			army = {
-			    large = "gfx/leaders/NOD/Fedorov.dds"
+			    large = "gfx/leaders/NOD/Fedorov_gamer.dds"
 				small = "GFX_idea_RCH_minister_chief_of_police"
 			}
 		}
@@ -222,6 +222,7 @@ characters = {
 		name = "Николай Стариков"
 		portraits = {
 			civilian = {
+			        large = "gfx/leaders/NOD/Starikov.dds"
 				small = "GFX_idea_NOD_Nikolay_Starikov"
 			}
 		}
@@ -366,6 +367,40 @@ characters = {
 				
 			}			
 			traits = { war_industrialist }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	NOD_podolyaka = {
+		name = "Юрий Подоляка"
+		portraits = {
+			civilian = {
+			    large = "gfx/leaders/NOD/Podolyaka.dds"
+				small = "GFX_idea_NOD_Podolyaka"
+			}
+			army = {
+                large = "gfx/leaders/NOD/Podolyaka.dds"
+			}
+		}
+        corps_commander = {
+	    traits = { brilliant_strategist thorough_planner }
+	    skill = 7
+    	attack_skill = 2
+    	defense_skill = 1
+    	planning_skill = 10
+	    logistics_skill = 2
+		desc = NOD_podolyaka_desc
+		legacy_id = -1
+        }
+		advisor = {
+    		slot = theorist	
+			idea_token = NOD_podolyaka
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { military_theorist }
 			ai_will_do = {
 				factor = 1
 			}

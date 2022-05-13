@@ -1,0 +1,69 @@
+UKR_pb_sopr_up = {
+	if = {
+		limit = { has_idea = UKR_nek_grup4 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup4
+			add_idea = UKR_nek_grup5
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup3 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup3
+			add_idea = UKR_nek_grup4
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup2 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup2
+			add_idea = UKR_nek_grup3
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup1 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup1
+			add_idea = UKR_nek_grup2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = UKR_nek_grup1 } }
+		add_ideas = UKR_nek_grup1
+	}
+}
+
+UKR_pb_sopr_down = {
+	if = {
+		limit = { has_idea = UKR_nek_grup5 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup5
+			add_idea = UKR_nek_grup4
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup4 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup4
+			add_idea = UKR_nek_grup3
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup3 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup3
+			add_idea = UKR_nek_grup2
+		}
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup2 }
+		swap_ideas = {
+			remove_idea = UKR_nek_grup2
+			add_idea = UKR_nek_grup1
+		}		
+	}
+	else_if = {
+		limit = { has_idea = UKR_nek_grup1 } 
+		remove_idea = UKR_nek_grup1
+	}
+}

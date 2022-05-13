@@ -4,6 +4,109 @@
 
 leader_traits = {
     
+	pod_kayfom = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.1
+	}
+	
+	microfurer = {
+		random = no
+		political_power_factor = 0.05
+	}
+	
+	prodavets_govna = {
+		random = no
+		consumer_goods_factor = -0.05
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	
+	new_heydrich = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.1
+		political_power_factor = -0.1
+		consumer_goods_factor = -0.05
+		monthly_population = -0.75
+		conscription_factor = -0.1
+	}
+	
+	rusofob_paranoya = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		political_power_factor = 0.05
+		opinion_gain_monthly_factor = -0.05
+		subjects_autonomy_gain = -0.1
+	}
+	
+	karlan_of_terror = {
+		sprite = 13
+		resistance_damage_to_garrison = -0.25 
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hranitel_parkov = {
+		random = no
+		sprite = 13
+
+		consumer_goods_factor = 0.05
+		stability_factor = 0.1
+	}
+	
+	vozhdya = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.25
+	}
+	
+    poter_net = {
+		random = no
+		sprite = 5
+
+		experience_loss_factor = -0.15
+	}
+	
+	edinstvenniy_politik= {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+	}
+	
+	Zhivee_vseh_zhivih = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		defensive = 0.03
+	}
+	
+	Popadanets = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		offence = 0.03
+	}
+	
+	Ubludok = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.1
+		political_power_factor = -0.1
+	}
+	
 	marx_feminist = {
 		random = no
 		sprite = 13

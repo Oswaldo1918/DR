@@ -1,0 +1,46 @@
+capital = 16
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	basic_train = 1
+}
+
+recruit_character = SFR_Fresko
+recruit_character = SFR_Fantomas
+recruit_character = SFR_Kagar
+
+add_ideas = {
+		limited_conscription
+	    partial_economic_mobilisation
+        EFR_france_gv 
+        SFR_new_rev_terror   
+   		SFR_front_levih 
+}
+
+declare_war_on = {
+	target = EFR
+	type = annex_everything
+}
+declare_war_on = {
+	target = LFR
+	type = annex_everything
+}
+
+set_popularities = {
+	anarhostalinism = 25
+	metacommy = 25
+	democratic = 25
+	vmestolev = 25
+}
+set_politics = {
+	ruling_party = anarhostalinism
+	elections_allowed = no	
+}
+
+set_convoys = 100

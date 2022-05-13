@@ -1,0 +1,18 @@
+characters={
+	SWI_Svetov = {
+		name = "Михаил Светов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWI/Svetov.jpg"
+			}
+		} 
+		country_leader = {	    
+        	traits = {
+         		 edinstvenniy_politik otsutstviye_vozrasta_soglasiya
+        	}
+		    ideology = ancap
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}

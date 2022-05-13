@@ -1,0 +1,27 @@
+ideas = {
+       country = {
+	        BAV_oplot_protiv_migrantov = {
+
+			picture = saf_ossewabrandwag_2
+			    targeted_modifier = {
+			    tag = NEU
+			    attack_bonus_against = 0.1
+		        }  
+			    modifier = {
+			    war_support_factor = 0.15
+			    }
+		    }
+			BAV_fraykor = {
+
+			picture = general_staff
+			
+			   modifier = {
+			    political_power_gain = -0.1
+				army_org_factor = -0.05
+				compliance_growth = 0.05
+				conscription = 0.01
+			    }
+		    }
+	   }
+		
+}

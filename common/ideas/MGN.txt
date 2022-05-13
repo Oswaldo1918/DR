@@ -2,6 +2,8 @@ ideas = {
        country = {
 	   
 	        MGN_nemetskiye_dengi = {
+			
+			picture = spr_seize_the_gold_reserves
 	
 			   modifier = {
 					consumer_goods_factor = -0.05
@@ -9,6 +11,8 @@ ideas = {
 		    }
 	   
 			MGN_zagrad_otryadi = {
+			
+			picture = GAL_mentovshina
 	
 			   modifier = {
 				army_attack_factor = 0.1
@@ -17,6 +21,8 @@ ideas = {
 		    }
 			
 			MGN_escho_narozhayut = {
+			
+			picture = GAL_mentovshina
 	
 			   modifier = {
 				weekly_manpower = 200
@@ -33,6 +39,8 @@ ideas = {
 		    }
 			
 			MGN_neefect_com_ec = {
+			
+			picture = GAL_gosplan_i
 	
 			   modifier = {
 		            production_speed_buildings_factor = 0.1
@@ -42,6 +50,8 @@ ideas = {
 		    }
 			
 			MGN_deficit_i = {
+			
+			picture = great_depression
 	
 			   modifier = {
 					consumer_goods_factor = -0.05
@@ -50,6 +60,8 @@ ideas = {
 		    }
 			
 			MGN_ocheredi_i = {
+			
+			picture = great_depression
 	
 			   modifier = {
 					consumer_goods_factor = -0.05
@@ -65,6 +77,8 @@ ideas = {
 		    }
 			
 			MGN_besplatniy_trud_gulaga_i = {
+			
+			picture = generic_production_bonus
 	
 			   modifier = {
 					production_speed_buildings_factor = 0.1
@@ -72,6 +86,8 @@ ideas = {
 		    }
 			
 			MGN_caloshi_i = {
+			
+			picture = great_depression
 	
 			   modifier = {
 	    		    industrial_capacity_factory = 0.15		
@@ -81,6 +97,8 @@ ideas = {
 		    }
 			
 			MGN_black_peh = {
+			
+			picture = idea_chi_army_corruption
 	
 			   modifier = {
 					conscription = 0.05
@@ -88,6 +106,8 @@ ideas = {
 		    }
 			
 			MGN_vopreki_i = {
+			
+			picture = idea_chi_incompetent_officers
 	
 			   modifier = {
 					experience_gain_army_factor  = -0.1
@@ -97,6 +117,8 @@ ideas = {
 		    }
 			
 			MGN_c96 = {
+			
+			picture = GAL_mentovshina
 	
 			   modifier = {
 					army_attack_factor = 0.1
@@ -105,6 +127,8 @@ ideas = {
 		    }
 			
 			MGN_w_mod2 = {
+			
+			picture = GAL_mentovshina
 	
 			   modifier = {
 					resistance_growth = -0.25
@@ -112,6 +136,8 @@ ideas = {
 		    }
 			
 			MGN_piki_i = {
+			
+			picture = idea_eng_special_air_service
 	
 			   modifier = {
 					resistance_growth = -0.25
@@ -127,6 +153,8 @@ ideas = {
 		    }
 			
 			MGN_rastrel_za_opozdaniye_i = {
+			
+			picture = idea_generic_secret_police
 	
 			   modifier = {
 					weekly_manpower = -75
@@ -139,6 +167,7 @@ ideas = {
 			   modifier = {
 					political_power_gain = 0.1
 					research_speed_factor = -0.1
+					stability_factor = 0.1
 			    }
 		    }
 			
@@ -147,6 +176,7 @@ ideas = {
 			   modifier = {
 					political_power_gain = 0.06
 					research_speed_factor = -0.06
+					stability_factor = 0.06
 			    }
 		    }
 			
@@ -155,6 +185,7 @@ ideas = {
 			   modifier = {
 					political_power_gain = 0.05
 					research_speed_factor = -0.05
+					stability_factor = 0.05
 			    }
 		    }
 			
@@ -163,6 +194,7 @@ ideas = {
 			   modifier = {
 					political_power_gain = 0.03
 					research_speed_factor = -0.03
+					stability_factor = 0.03
 			    }
 		    }
 			
@@ -175,7 +207,7 @@ ideas = {
 			
 			MGN_tankiii = {
 			
-		    picture = generic_the_london_naval_treaty
+		    picture = idea_man_five_year_plan_tank
 			
 			removal_cost = -1
 

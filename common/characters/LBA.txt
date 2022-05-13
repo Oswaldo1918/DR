@@ -1,0 +1,33 @@
+characters={	
+	LBA_Kaddafi = {
+		name = "Муаммар Каддафи"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Kaddafi.dds"
+			}
+			army = {
+				large = "gfx/leaders/LBA/Kaddafi.dds"
+				small = "GFX_idea_CHT_shtazist"
+			}
+		}
+		
+		field_marshal = {
+	    traits = { old_guard infantry_officer war_hero  }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 2
+	    planning_skill = 3
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+		
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = islam_socialism
+			traits = { Zhivee_vseh_zhivih }
+		    id=-1
+	   }
+	   
+    }
+	
+}

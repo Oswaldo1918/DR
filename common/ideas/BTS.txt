@@ -9,6 +9,13 @@ ideas = {
 		        }
 	        }
 			
+			BTS_migraciya_btsnikov = {
+	
+			   modifier = {
+					weekly_manpower = 1000				
+			    }
+		    }
+			
 			BTS_legkoprom_upor = {
 
 			    picture = cht_shizofrenia
@@ -46,6 +53,15 @@ ideas = {
 		        }
 	        }
 			
+			BTS_cosmetica = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+					army_morale_factor = 0.1
+		        }
+	        }
+			
 			BTS_int_prom = {
 
 			    picture = cht_shizofrenia
@@ -66,6 +82,47 @@ ideas = {
 				conscription = -0.01
 		        }
 	        }
+			
+			BTS_sabotazh_i = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.3
+		        }
+	        }
+			
+			BTS_provocacii_i = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				army_org_factor = -0.1
+				stability_factor = -0.1
+		        }
+	        }
+			
+			BTS_myatezhniki = {
+	
+			   modifier = {
+			        memoism_drift  = 0.1
+			    }
+		    }
+			
+			BTS_svoi_p = {
+	
+			   modifier = {
+			        political_power_gain = 0.1
+			    }
+		    }
+			
+			BTS_svoi_a = {
+	
+			   modifier = {
+					army_org_factor = 0.05
+			    }
+		    }
 	   }
 	   
 	   tank_manufacturer = { 

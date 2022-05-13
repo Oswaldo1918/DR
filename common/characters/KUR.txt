@@ -1,4 +1,4 @@
-characters={
+characters={ 
 	KUR_kurginyan = {
 		name = "Сергей Кургинян"
 
@@ -12,6 +12,25 @@ characters={
         country_leader = {
         	expire = "1999.1.1"
         	ideology = fourth_floor
+        	traits = {
+        		#
+        	}
+		}	
+	}
+	
+	KUR_medvedchuk = {
+		name = "Виктор Медведчук"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/medvedchuk.dds"
+			}
+		}
+
+        country_leader = {
+        	expire = "1999.1.1"
+        	ideology = conservatism
         	traits = {
         		#
         	}

@@ -1,0 +1,24 @@
+focus_tree = {
+	id = SWE
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	continuous_focus_position = { x = 100 y = 2350 }
+	default = no
+	focus = {
+		id = SWE_steklozavod
+		icon = GFX_SWE_steklozavod
+		cost = 5
+		
+		x = 5
+		y = 3
+			completion_reward = {
+					
+				}
+
+	}
+}

@@ -1,0 +1,67 @@
+UKR_sopr_pb_cat = {
+
+    UKR_povisheniye_sopr = {
+
+		icon = ger_mefo_bills
+
+		visible = {			
+			OR = {
+			has_idea = UKR_nek_grup1
+			has_idea = UKR_nek_grup2
+			has_idea = UKR_nek_grup3
+			has_idea = UKR_nek_grup4
+			has_idea = UKR_nek_grup5
+			}
+		}
+
+		days_mission_timeout = 170
+
+		cancel_trigger = {	
+			
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		UKR_pb_sopr_up
+		}
+	}
+
+    UKR_borba_s_pb = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+       available = {
+             
+		
+          }
+
+        visible = {
+		OR = {
+			has_idea = UKR_nek_grup1
+			has_idea = UKR_nek_grup2
+			has_idea = UKR_nek_grup3
+			has_idea = UKR_nek_grup4
+			has_idea = UKR_nek_grup5
+			}	
+		}
+		
+		days_remove = 150
+		ai_will_do = {
+        factor = 100
+		}
+        remove_effect = {
+			country_event = {
+							id = UKR.7
+						}
+		}
+		
+    }
+}

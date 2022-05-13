@@ -1,0 +1,20 @@
+################
+  ### UKR ###
+################
+
+UKR_sopr_pb_cat = {
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		original_tag = UKR		
+	}
+	visible = {
+	OR = {
+			has_idea = UKR_nek_grup1
+			has_idea = UKR_nek_grup2
+			has_idea = UKR_nek_grup3
+			has_idea = UKR_nek_grup4
+			has_idea = UKR_nek_grup5
+			}
+	}
+}

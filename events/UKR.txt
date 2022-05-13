@@ -1,0 +1,337 @@
+add_namespace = UKR
+
+	
+#ЯО
+country_event = {
+	id = UKR.1
+	title = UKR.1.t
+	desc = UKR.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.1.a
+	UKR = { country_event = { id = UKR.3 } }
+	}
+	option = {
+	name = UKR.1.b
+
+	}
+}
+
+#Некая группа
+country_event = {
+	id = UKR.2
+	title = UKR.2.t
+	desc = UKR.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+		tag = UKR
+		NOT = { has_completed_focus = UKR_peremanivaniye_ludey_s_donbassa }
+		focus_progress = {
+			focus = UKR_peremanivaniye_ludey_s_donbassa
+			progress > 0.1
+		}
+ 	}
+	
+	option = {
+	name = UKR.2.a
+	add_ideas = UKR_nek_grup3
+        country_event = { id = UKR.6 days = 25 } 
+	}
+}
+
+#Ультиматум
+country_event = {
+	id = UKR.3
+	title = UKR.3.t
+	desc = UKR.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.3.a
+	set_country_flag = UKR_stop_YaO
+	}
+	option = {
+	name = UKR.3.b
+    NOD = { country_event = { id = UKR.4 } }
+	}
+}
+
+#Опрерация "Zрада"
+country_event = {
+	id = UKR.4
+	title = UKR.4.t
+	desc = UKR.4.d
+	picture = GFX_report_event_dkr_bam_bl
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.4.a
+	UKR = { country_event = { id = UKR.5 } }
+	}
+}
+
+#Опрерация "Zрада" - последствия
+country_event = {
+	id = UKR.5
+	title = UKR.5.t
+	desc = UKR.5.d
+	picture = GFX_report_event_dkr_bam_bl
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.5.a
+	news_event = {id = dk_news.16}
+	    221 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+		226 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+		200 = {
+        	damage_building = { type = industrial_complex damage = 0.5 }
+			damage_building = { type = arms_factory damage = 0.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}	
+	}
+}
+
+#Терракт некой группы
+country_event = {
+	id = UKR.6
+	title = UKR.6.t
+	desc = UKR.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+
+	option = {
+	name = UKR.6.a
+	226 = { add_manpower = -2 }
+	UKR_pb_sopr_up
+	}
+}
+
+#Операция против некой группы
+country_event = {
+	id = UKR.7
+	title = UKR.7.t
+	desc = UKR.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.7.a
+	add_political_power = 50
+	UKR_pb_sopr_down
+	}
+	
+	option = {
+	name = UKR.7.b
+	add_stability = 0.05
+	226 = { add_manpower = -250 }
+	UKR_pb_sopr_down
+	}
+	
+	option = {
+	name = UKR.7.c
+	226 = { add_manpower = -250 }
+	653 = { add_manpower = 250 }
+	add_political_power = 25
+	add_stability = 0.02
+	UKR_pb_sopr_down
+	}
+}
+
+country_event = {
+	id = UKR.8
+	title = UKR.8.t
+	desc = UKR.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+	has_idea = UKR_nek_grup5
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+	name = UKR.8.a
+    	create_country_leader = {
+        	name = "Временное правительство Днепра"
+        	desc = "POLITICS_THORVALD_STAUNING_DESC"
+        	picture = "Stul_PB.dds"
+         	expire = "1999.1.1"
+        	ideology = marxismus
+         	traits = {
+        		#
+         	}
+        }
+		set_popularities = {
+         	vmestolev = 100
+        }
+        set_politics = {
+        	ruling_party = vmestolev
+        	elections_allowed = no	
+        }
+		remove_ideas = UKR_nek_grup5
+	}
+}
+
+country_event = {
+	id = UKR.9
+	title = UKR.9.t
+	desc = UKR.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+	has_idea = UKR_nek_grup1
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {
+	name = UKR.9.a
+		remove_ideas = UKR_nek_grup1
+	}
+}
+
+country_event = {
+	id = UKR.10
+	title = UKR.10.t
+	desc = UKR.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.10.a
+		remove_ideas = UKR_evr_arm
+	}
+	
+	option = {
+	name = UKR.10.b
+		remove_ideas = UKR_evr_gen
+	}
+}
+
+country_event = {
+	id = UKR.11
+	title = UKR.11.t
+	desc = UKR.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.11.a
+		create_faction = kosher_pact
+        add_to_faction = UKR
+        add_to_faction = ZHE
+	}
+	
+	option = {
+	name = UKR.11.b
+
+	}
+}
+#Антифа конгресс
+country_event = {
+	id = UKR.12
+	title = UKR.12.t
+	desc = UKR.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.12.a
+		add_political_power = 150
+		SHM = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+		ZCE = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+		BAV = { add_opinion_modifier = { target = UKR modifier = anti_fascist_diplomacy_focus }}
+	}
+}
+#Ультиматум пороха
+country_event = {
+	id = UKR.13
+	title = UKR.13.t
+	desc = UKR.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.13.a
+		add_political_power = -50
+	}
+}
+#Борьба с Шумиловой
+country_event = {
+	id = UKR.14
+	title = UKR.14.t
+	desc = UKR.14.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.14.a
+		add_political_power = -150
+		add_timed_idea = {
+				idea = UKR_sabotazh
+				days = 320
+		}
+		add_timed_idea = {
+				idea = UKR_mafia
+				days = 320
+		}
+	}
+	option = {
+	name = UKR.14.a
+		country_event = {
+			id = UKR.15
+		}
+	}
+}
+country_event = {
+	id = UKR.15
+	title = UKR.15.t
+	desc = UKR.15.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.15.a
+	complete_national_focus = UKR_sverzheniye_shumilovoy	
+	complete_national_focus = UKR_oligarhiya	
+	}
+	option = {
+	name = UKR.15.b
+	complete_national_focus = UKR_sverzheniye_shumilovoy	
+	complete_national_focus = UKR_bratva_rvetsa_k_vlasti
+	}
+}

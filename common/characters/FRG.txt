@@ -1,0 +1,16 @@
+characters={
+	FRG_Bebrok = {
+		name = "Анналена Бербок"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/Bebrok.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = ecofascism
+			traits = { hranitel_parkov }
+		    id=-1
+	   }
+    }
+}
