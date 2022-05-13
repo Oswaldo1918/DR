@@ -1,0 +1,198 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 3.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "LAZ"
+		default = yes
+		
+		"POK"={
+			history = "POK_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"KUR"={
+			history = "KUR_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"NOD"={
+			history = "NOD_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				nod_suverennaya_ter 
+				nod_bez_putina
+			}
+			focuses = {
+				NOD_prodolzhat_poiski
+				NOD_otdel_E
+				NOD_otrayady_Putina
+			}
+		}
+		"CHT"={
+			history = "CHT_GATHERING_STORM_DESC"
+			ideology = memoism
+			ideas = {
+				cht_loksists
+				cht_great_srach
+				cht_shue
+			}
+			focuses = {
+				CHT_vibori
+				CHT_new_order
+				CHT_blue_revolution
+			}
+		}
+		"LAZ"={
+			history = "LAZ_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				
+			}
+			focuses = {
+				LAZ_KNOR_politica
+				LAZ_KNOR_voyenka
+				LAZ_KNOR_economica
+			}
+		}
+		"MRD"={
+			history = "MRD_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}			
+		}
+		"DOT"={
+			history = "DOT_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				
+			}
+			focuses = {
+				DOT_srochnik_lives_matter
+				DOT_ochistit_huntu_ot_rakov
+				DOT_boyevei_psi
+			}			
+		}
+
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors #
+		"ALB"={
+			minor = yes
+			history = "WHS_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				
+			}
+			focuses = {
+	     		ALB_goat_hunting
+				ALB_start_the_generators_of_war
+				ALB_kozlorevolutsiya
+			}
+		}
+		"BSH"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				BSH_morgen
+				BSH_babay
+				BSH_grig
+			}
+		}
+		"KLG"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				KLG_plohie_vesti
+				KLG_lion_baltika
+				KLG_economoka_voennogo_vremeny
+			}
+		}
+		"SHM"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				SHM_kurovodstvo
+				SHM_issledovat_dzen_buddim
+				SHM_drevnie_znania
+			}
+		}
+<<<<<<< HEAD
+		"DON"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = democratic
+=======
+		"BTS"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+>>>>>>> dda7a85680fb37bacca862c724b2ab6024321e63
+			ideas = {
+				
+			}
+			focuses = {
+<<<<<<< HEAD
+			}
+		}
+=======
+				BTS_prodolzhit_k_pop_perestroyku
+				BTS_myatezhniki_v_verhah
+				BTS_patiletka
+			}
+		}
+		"UKR"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				
+			}
+			focuses = {
+				UKR_decommunisatsiya
+				UKR_kult_gramshi
+				UKR_sneyk
+			}
+		}
+		
+>>>>>>> dda7a85680fb37bacca862c724b2ab6024321e63
+		
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
