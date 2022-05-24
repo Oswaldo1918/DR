@@ -1,0 +1,44 @@
+characters = {
+	CHA_Ernest_Khalimov = {
+		name = "Эрнест Халимов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHA/Gigachad_Khalimov.dds"
+			}
+			army = {
+			    large = "gfx/leaders/CHA/Gigachad_Khalimov.dds"
+				small = "GFX_idea_CHA_gigachad"
+			}
+		}
+
+		country_leader = {
+			traits = { 
+				the_only_man
+			}
+			desc = "POLITICS_GIGACHAD_DESC"
+			ideology = gachi
+			expire = "3000.1.1"
+			id = -1
+		}
+		
+		field_marshal = {
+			traits = { 
+				war_hero
+				brilliant_strategist
+				offensive_doctrine
+				trickster expert_improviser
+				desert_fox trait_mountaineer
+				ranger
+				adaptable
+				inspirational_leader
+				organisational_leader
+			}
+			skill = 9
+			attack_skill = 9
+			defense_skill = 9
+			planning_skill = 9
+			logistics_skill = 9
+			legacy_id = -1
+        }
+	}
+}
