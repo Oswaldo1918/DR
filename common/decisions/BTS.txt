@@ -4,11 +4,6 @@ BTS_soprotivleniye_btsnikov = {
 
 		icon = ger_mefo_bills
 
-		visible = {
-			hidden_trigger = { always = no }			
-			has_completed_focus = BTS_voennoe_polozheniye
-		}
-
 		days_mission_timeout = 200
 		fire_only_once = yes
 
