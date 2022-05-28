@@ -1,0 +1,119 @@
+ideas = {
+        country = {
+	        OMS_kustarnoe_proizvodstvo = {
+			
+			    removal_cost = -1
+
+			    picture = FRA_motorized_focus
+            
+			    modifier = {
+			        industrial_capacity_factory = 0.05
+			    }
+			
+			    equipment_bonus = {
+				    support_equipment = {
+				    build_cost_ic = -0.1	
+                    reliability = -0.05 					
+					instant = yes
+				    }
+				    infantry_equipment = {
+					build_cost_ic = -0.1
+                    reliability = -0.05    					
+					instant = yes
+				    }
+			    }		
+		    }
+			
+			OMS_psihodel_v_army = {
+			
+			    removal_cost = -1
+
+			    picture = FRA_motorized_focus
+            
+			    modifier = {
+			        army_org_factor = -0.05
+					army_attack_factor = 0.15
+					experience_gain_army_factor = -0.07
+					experience_loss_factor = -0.05
+			    }		
+		    } 
+			
+			OMS_partizan_army = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+			    partisan_effect = 0.1
+			    training_time_factor = -0.1
+			    army_org_factor = -0.05
+			    planning_speed = -0.10
+			    conscription = 0.02
+			    army_core_defence_factor = 0.05
+			    }
+			}
+			
+			OMS_partizan_army_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+			    partisan_effect = 0.2
+			    training_time_factor = -0.2
+			    army_org_factor = -0.05
+			    planning_speed = -0.10
+			    conscription = 0.03
+			    army_core_defence_factor = 0.05
+			    }
+		    }
+			
+			OMS_pomozh_iz_DrygoyRussia = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+			    training_time_factor = -0.1
+			    army_org_factor = 0.1
+			    planning_speed = -0.1
+			    experience_gain_army = 0.05
+				max_command_power = 50
+				command_power_gain = 0.05
+			    }
+		    }
+			
+			OMS_pomozh_iz_DrygoyRussia_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+			    max_command_power = 50
+				command_power_gain = 0.05
+			    experience_gain_army = 0.05
+			    }
+		    }
+			
+			OMS_radio_omsk = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+			    political_advisor_cost_factor = 0.05
+			    }
+		    }
+			
+			OMS_radio_omsk_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				political_advisor_cost_factor = 0.05
+			    conscription = 0.005
+				war_support_factor = 0.2
+			    }
+		    }
+			
+			OMS_nacbol_otechesvo_v_opasnosti = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			    }
+		    }
+	    }
+		
+}

@@ -1,0 +1,62 @@
+ideas = {
+    country = {
+		CHA_All_Alone = {
+			picture = CHA_All_Alone
+			modifier = {
+				can_create_factions = no
+				can_join_factions = no
+				military_leader_cost_factor = 250
+				monthly_population = -0.75
+				foreign_subversive_activites = -0.75
+				resistance_damage_to_garrison = -0.75
+				stability_factor = -0.05
+				drift_defence_factor = 1
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 0.5
+		    }
+	    }
+		CHA_Giga_Chad = {
+			picture = CHA_Giga_Chad
+			modifier = {
+				offence = 0.75
+			defence = 0.75
+			political_power_factor = 0.5
+			army_org_factor = 0.75
+			army_speed_factor = 0.75
+			army_morale_factor = 0.75
+			dig_in_speed_factor = 0.75
+			experience_gain_army_factor = 0.75
+			heat_attrition_factor = -1
+			winter_attrition_factor = -1
+			recon_factor = 0.75
+			consumer_goods_factor = -0.75
+			research_speed_factor = 0.75
+			special_forces_attack_factor = 0.75
+			special_forces_defence_factor = 0.75
+			cavalry_attack_factor = 0.75
+			cavalry_defence_factor = 0.75
+			production_speed_air_base_factor = 0.75
+			production_speed_naval_base_factor = 0.75
+			production_speed_rocket_site_factor = 0.75
+			production_speed_radar_station_factor = 0.75
+			production_speed_nuclear_reactor_factor = 0.75
+			production_speed_industrial_complex_factor = 0.75
+			production_speed_infrastructure_factor = 0.75
+			production_speed_synthetic_refinery_factor = 0.75
+			production_speed_arms_factory_factor = 0.75
+			production_speed_dockyard_factor = 0.75	
+			production_speed_fuel_silo_factor = 0.75
+			production_speed_bunker_factor = 0.75
+			production_speed_coastal_bunker_factor = 0.75
+			production_speed_anti_air_building_factor = 0.75
+			production_speed_arms_factory_factor = 0.75
+			planning_speed = 0.75
+			max_planning = 0.75
+			army_core_attack_factor = 0.75
+			army_core_defence_factor = 0.75
+			industrial_capacity_factory = 0.75
+			resistance_growth_on_our_occupied_states = 0.75
+		    }
+	    }
+	}
+}

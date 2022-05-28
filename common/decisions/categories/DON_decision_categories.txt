@@ -1,0 +1,13 @@
+###################
+  ### DONBASS ###
+###################
+
+DON_create_alliance_plan_b = {
+	icon = military_operation
+	allowed = {
+		tag = DON
+	}
+	visible = { 
+		has_completed_focus = DON_plan_B
+	}
+}
