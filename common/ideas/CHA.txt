@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		CHA_All_Alone = {
-			picture = CHA_All_Alone
+			picture = idea_isolation
 			modifier = {
 				can_create_factions = no
 				can_join_factions = no
@@ -16,9 +16,9 @@ ideas = {
 		    }
 	    }
 		CHA_Giga_Chad = {
-			picture = CHA_Giga_Chad
+			picture = generic_volunteer_expedition_bonus
 			modifier = {
-				offence = 0.75
+			offence = 0.75
 			defence = 0.75
 			political_power_factor = 0.5
 			army_org_factor = 0.75
