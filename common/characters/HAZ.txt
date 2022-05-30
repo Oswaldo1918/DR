@@ -1,0 +1,16 @@
+characters={
+	HAZ_RenTV = {
+		name = "Директор Рен ТВ"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAZ/RenTV.dds"
+			}
+		}
+		country_leader = { backroom_backstabber
+	        expire = "1999.1.1"
+	        ideology = gachi
+			traits = { backroom_backstabber }
+		    id=-1
+	    }
+    }
+}
