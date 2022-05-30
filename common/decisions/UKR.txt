@@ -3,6 +3,14 @@ UKR_sopr_pb_cat = {
     UKR_povisheniye_sopr = {
 
 		icon = ger_mefo_bills
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		activation = {
+			always = no
+		}
 
 		visible = {			
 			OR = {
