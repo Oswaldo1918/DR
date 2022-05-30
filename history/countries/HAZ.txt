@@ -3,11 +3,19 @@ capital = 236
 oob = HAZ_1936
 
 set_research_slots = 1
-set_stability = 0.9
-set_war_support = 0
+set_stability = 0.5
+set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
+}
+
+recruit_character = HAZ_RenTV
+
+add_ideas = {
+		limited_conscription
+	    partial_economic_mobilisation
+		HAZ_polnaya_lazha
 }
 
 set_popularities = {
@@ -19,14 +27,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Директор Рен ТВ"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "RenTV.dds"
-	expire = "1999.1.1"
-	ideology = gachi
-	traits = {
-		#
-	}
-}
