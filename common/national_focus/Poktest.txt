@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = POK
+			tag = TES
 		}
 	}
 	default = no
@@ -14,10 +14,9 @@ focus_tree = {
 		cost = 15,00
 		x = 19
 		y = 0
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_nauchpoperi
@@ -25,10 +24,9 @@ focus_tree = {
 		cost = 10,00
 		x = 32
 		y = 0
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_end_civil_conflict
@@ -36,42 +34,22 @@ focus_tree = {
 		cost = 10,00
 		x = 19
 		y = 20
-			completion_reward = {
-
-}
-
-	}
-	focus = {
-		id = POK_majoritar
-		icon = GFX_POK_majoritarnaya
-		cost = 10,00
-		prerequisite = {
-			focus = POK_liberal_coalition
-			focus = POK_under_one_umbrella
-		}
-		mutually_exclusive = {
-			focus = POK_proportional
-		}
-		x = 23
-		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_prepare_first_free_elections
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_strana_svobodnih_lyudey
 		}
 		x = 19
 		y = 1
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_ohrana_uchastkov
@@ -82,16 +60,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-			completion_reward = {
-					add_ideas = limited_conscription
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 120
-							producer = POK
-						}
-					add_command_power = 5
-				}
-
+        completion_reward = {
+			add_ideas = limited_conscription
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 120
+				producer = POK
+			}
+			add_command_power = 5
+		} 
 	}
 	focus = {
 		id = POK_the_viborshiki
@@ -105,10 +82,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}  
 	}
 	focus = {
 		id = POK_european_standart
@@ -122,14 +98,13 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_anti_totalitarian_cenz
-		icon = GFX_POK_antitotalit_cenz
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		cost = 10,00
 		prerequisite = {
 			focus = POK_european_standart
@@ -137,10 +112,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}  
 	}
 	focus = {
 		id = POK_smi
@@ -149,22 +123,12 @@ focus_tree = {
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
 		x = 19
 		y = 2
-			completion_reward = {
-					add_political_power = 150
-					add_stability = 0.05
-				}
-
+        completion_reward = {
+			add_political_power = 150
+            add_stability = 0.05   			
+		}   
 	}
 	focus = {
 		id = POK_registr_partiy
@@ -175,14 +139,13 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}  
 	}
 	focus = {
 		id = POK_vote_heart
-		icon = GFX_POK_heart_voting
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_smi
@@ -194,28 +157,26 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_Pokayan_interview
-		icon = GFX_POK_interwiev_Pokayan
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_vote_heart
 		}
 		x = 17
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_vote_mind
-		icon = GFX_POK_smart_voting
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_smi
@@ -227,14 +188,13 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_war_of_compromats
-		icon = GFX_POK_war_of_compromats
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_vote_heart
@@ -242,28 +202,26 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-			completion_reward = {
-					add_political_power = -50
-				}
-
+        completion_reward = {
+		    add_political_power = -50     	
+		}    
 	}
 	focus = {
 		id = POK_support_itelligentsiya
-		icon = GFX_POK_support_untelligentsiya
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10,00
 		prerequisite = {
 			focus = POK_vote_mind
 		}
 		x = 21
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_promises
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_Pokayan_interview
@@ -274,14 +232,13 @@ focus_tree = {
 		}
 		x = 19
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_under_one_umbrella
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_registr_partiy
@@ -291,14 +248,13 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_liberal_coalition
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_registr_partiy
@@ -308,14 +264,30 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
+	}
+	focus = {
+		id = POK_majoritar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POK_liberal_coalition
+			focus = POK_under_one_umbrella
+		}
+		mutually_exclusive = {
+			focus = POK_proportional
+		}
+		x = 23
+		y = 4
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_proportional
-		icon = GFX_POK_proportional
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_liberal_coalition
@@ -326,10 +298,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_national_fronts
@@ -341,10 +312,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}          
 	}
 	focus = {
 		id = POK_manifet_sharingeconomisma
@@ -355,10 +325,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 1
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_carsharing
@@ -369,10 +338,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 2
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_koworking
@@ -383,10 +351,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_kolivingi
@@ -397,10 +364,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_sharing_meaning_of_production
@@ -414,10 +380,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_viski_Jameson_licenze
@@ -428,10 +393,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_wise_congress_of_sciense
@@ -442,10 +406,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 1
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_new_shcool_programm
@@ -456,10 +419,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 2
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_monopoly_na_SMI
@@ -470,10 +432,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_develop_electronika
@@ -487,10 +448,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_plagiat_scince
@@ -501,10 +461,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_ultrazvuk_dvigatel
@@ -518,10 +477,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_kultur_update
@@ -532,10 +490,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_profiling
@@ -546,10 +503,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_kameri_v_banyah
@@ -563,10 +519,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}   
 	}
 	focus = {
 		id = POK_ageinst_old
@@ -577,10 +532,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_expropriation_of_nakopiteli
@@ -591,10 +545,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_union_of_youth_generations
@@ -605,10 +558,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 5
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}  
 	}
 	focus = {
 		id = POK_learning_english
@@ -619,10 +571,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_porrige
@@ -639,10 +590,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = POK_prozrachnaya_system
@@ -653,10 +603,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_sharing_realism_art
@@ -670,10 +619,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_vseobhee_doveriye_vlasti
@@ -690,10 +638,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 7
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_power_president
@@ -707,10 +654,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 7
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		} 
 	}
 	focus = {
 		id = POK_power_parlament
@@ -724,14 +670,13 @@ focus_tree = {
 		}
 		x = 22
 		y = 7
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_udar_po_partisanam
-		icon = GFX_POK_udar_po_partizanam
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 10,00
 		prerequisite = {
 			focus = POK_anti_totalitarian_cenz
@@ -739,14 +684,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
-			completion_reward = {
-					army_experience = 5
-				}
-
+        completion_reward = {
+			army_experience = 5 
+		}       
 	}
 	focus = {
 		id = POK_imushestv_cenz
-		icon = GFX_POK_imushestvenniy_cenz
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 10,00
 		prerequisite = {
 			focus = POK_the_viborshiki
@@ -754,10 +698,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_vibori_vibori
@@ -771,37 +714,26 @@ focus_tree = {
 		}
 		x = 19
 		y = 8
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}    
 	}
 	focus = {
 		id = POK_smi
-		icon = GFX_POK_SMI
+		icon = GFX_goal_generic_radar
 		cost = 10,00
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
 		x = 19
 		y = 2
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_support_buisenes
-		icon = GFX_focus_cht_new_nalogooblazhenie
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = POK_promises
@@ -814,10 +746,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 6
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_GAZPROM
@@ -828,10 +759,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 20
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_law_of_Novodvorskava
@@ -842,10 +772,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 16
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_sderzhki_i_protivovesi
@@ -859,10 +788,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 15
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}             
 	}
 	focus = {
 		id = POK_proyect_EVA
@@ -876,10 +804,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 15
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_lunar_Putin
@@ -893,10 +820,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 16
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}          
 	}
 	focus = {
 		id = POK_Eltsin_death_brigades
@@ -907,10 +833,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 20
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}        
 	}
 	focus = {
 		id = POK_ot_Volgi_do_Eniseya
@@ -924,10 +849,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 19
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}      
 	}
 	focus = {
 		id = POK_prostite_nas
@@ -938,10 +862,9 @@ focus_tree = {
 		}
 		x = 42
 		y = 16
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}         
 	}
 	focus = {
 		id = POK_protect_burjua
@@ -952,14 +875,13 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
-			completion_reward = {
-					add_ideas = POK_protect_burjua
-					swap_ideas = {
-							remove_idea = POK_Metostazi_sovka
-							add_idea = POK_Metostazi_sovka_1
-						}
-				}
-
+        completion_reward = {
+			add_ideas = POK_protect_burjua
+			swap_ideas = {
+                remove_idea = POK_Metostazi_sovka
+                add_idea = POK_Metostazi_sovka_1
+			}
+		}       
 	}
 	focus = {
 		id = POK_chrezvichaniye_p
@@ -973,10 +895,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 9
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_komitet_spaseniya
@@ -990,10 +911,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 9
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}       
 	}
 	focus = {
 		id = POK_strong_hand_of_liberalism
@@ -1004,10 +924,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 11
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}         
 	}
 	focus = {
 		id = POK_strong_hand_of_market
@@ -1018,10 +937,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 11
-			completion_reward = {
-
-}
-
+        completion_reward = {
+			
+		}           
 	}
 	focus = {
 		id = POK_war_industry
@@ -1032,7 +950,7 @@ focus_tree = {
 		}
 		x = 19
 		y = 10
-			completion_reward = {
+        completion_reward = {
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -1049,20 +967,20 @@ focus_tree = {
 																			building = arms_factory
 																			size > 0
 																			include_locked = yes
-																		}
+																	}
 																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
+															}
+													}
+											}
+									}
+							}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
-								}
-						}
+							}
+					}
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -1079,20 +997,20 @@ focus_tree = {
 																			building = arms_factory
 																			size > 0
 																			include_locked = yes
-																		}
+																	}
 																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
+															}
+													}
+											}
+									}
+							}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
-								}
-						}
+							}
+					}
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -1109,22 +1027,21 @@ focus_tree = {
 																			building = arms_factory
 																			size > 0
 																			include_locked = yes
-																		}
+																	}
 																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
+															}
+													}
+											}
+									}
+							}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
 									level = 1
 									instant_build = yes
-								}
-						}
-				}
-
+							}
+					}
+		}     
 	}
 	focus = {
 		id = POK_max_exploit_in_war_time
@@ -1138,13 +1055,12 @@ focus_tree = {
 		}
 		x = 18
 		y = 11
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = POK_protect_burjua
-							add_idea = POK_protect_burjua_1
-						}
-				}
-
+        completion_reward = {
+		    swap_ideas = {
+                remove_idea = POK_protect_burjua
+                add_idea = POK_protect_burjua_1
+			}      			
+		}     
 	}
 	focus = {
 		id = POK_war_time_oslableniye_gnyota
@@ -1158,13 +1074,12 @@ focus_tree = {
 		}
 		x = 20
 		y = 11
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = POK_protect_burjua
-							add_idea = POK_protect_burjua_3
-						}
-				}
-
+        completion_reward = {
+			swap_ideas = {
+                remove_idea = POK_protect_burjua
+                add_idea = POK_protect_burjua_3
+			}      			
+		}       
 	}
 	focus = {
 		id = POK_chyotkiye_polnomochiya
@@ -1211,13 +1126,12 @@ focus_tree = {
 		}
 		x = 21
 		y = 12
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = POK_protect_burjua_3
-							add_idea = POK_protect_burjua_4
-						}
-				}
-
+        completion_reward = {
+			swap_ideas = {
+                remove_idea = POK_protect_burjua_3
+                add_idea = POK_protect_burjua_4
+			}      			
+		}     
 	}
 	focus = {
 		id = POK_pokazat_zlo_bolshevizma
@@ -1242,7 +1156,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 14
-
+        completion_reward = {
+		    army_experience = 10       
+            swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam_1
+                add_idea = POK_Gore_Pobeditelam_3
+			}
+		}      
 	}
 	focus = {
 		id = POK_remember_ROA
@@ -1254,7 +1174,27 @@ focus_tree = {
 		}
 		x = 16
 		y = 15
-
+        completion_reward = {			
+			army_experience = 10
+			if = {
+                limit = {
+                    has_idea = POK_Gore_Pobeditelam_2
+                }
+                swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam_2
+                add_idea = POK_Gore_Pobeditelam_4
+			    }
+            }
+			if = {
+                limit = {
+                    has_idea = POK_Gore_Pobeditelam_3
+                }
+                swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam_3
+                add_idea = POK_Gore_Pobeditelam_5
+			   }
+            }
+		}       
 	}
 	focus = {
 		id = POK_free_weapon_trade
@@ -1265,19 +1205,18 @@ focus_tree = {
 		}
 		x = 19
 		y = 12
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = POK_Metostazi_sovka_1
-							add_idea = POK_Metostazi_sovka_2
-						}
-					add_ideas = free_trade
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 500
-							producer = POK
-						}
-				}
-
+		completion_reward = {
+            swap_ideas = {
+                remove_idea = POK_Metostazi_sovka_1
+                add_idea = POK_Metostazi_sovka_2
+			} 
+			add_ideas = free_trade
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = POK
+			}
+		}	
 	}
 	focus = {
 		id = POK_parlament_army
@@ -1316,7 +1255,14 @@ focus_tree = {
 		}
 		x = 17
 		y = 13
-
+        completion_reward = {
+            add_ideas = limited_conscription
+			swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam
+                add_idea = POK_Gore_Pobeditelam_1
+			}
+			army_experience = 10
+		}        
 	}
 	focus = {
 		id = POK_night_sentinels
@@ -1502,7 +1448,13 @@ focus_tree = {
 		}
 		x = 16
 		y = 14
-
+        completion_reward = {
+			swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam_1
+                add_idea = POK_Gore_Pobeditelam_2
+			}
+			army_experience = 10
+		}     
 	}
 	focus = {
 		id = POK_ostavit_Pokayana_v_pokoye
@@ -1845,10 +1797,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 13
-			completion_reward = {
-					add_ideas = POK_flot_yaht
-				}
-
+        completion_reward = {
+			add_ideas =  POK_flot_yaht
+		}   
 	}
 	focus = {
 		id = POK_new_candidates?
@@ -1947,13 +1898,12 @@ focus_tree = {
 		}
 		x = 17
 		y = 12
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = POK_protect_burjua_1
-							add_idea = POK_protect_burjua_2
-						}
-				}
-
+        completion_reward = {
+		    swap_ideas = {
+                remove_idea = POK_protect_burjua_1
+                add_idea = POK_protect_burjua_2
+			}      			
+		}    
 	}
 	focus = {
 		id = POK_subsidii_war_industry
@@ -2048,7 +1998,13 @@ focus_tree = {
 		}
 		x = 15
 		y = 16
-
+        completion_reward = {
+			swap_ideas = {
+                remove_idea = POK_Gore_Pobeditelam_1
+                add_idea = POK_Gore_Pobeditelam_2
+			}
+			army_experience = 10
+		}     
 	}
 	focus = {
 		id = POK_amerikanskiy_opit

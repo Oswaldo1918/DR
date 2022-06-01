@@ -865,6 +865,235 @@ ideas = {
 				consumer_goods_factor = -0.05
 			    }
 			}
+			ZNS_antikrinzh_protest = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.7
+				war_support_factor = -0.7
+			    }
+			}
+			ZNS_antikrinzh_protest_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.6
+				war_support_factor = -0.6
+			    }
+			}
+			ZNS_antikrinzh_protest_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+			    }
+			}
+			ZNS_antikrinzh_protest_3 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.4
+			    }
+			}
+			ZNS_antikrinzh_protest_4 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			    }
+			}
+			ZNS_antikrinzh_protest_5 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			    }
+			}
+			ZNS_antikrinzh_protest_6 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			    }
+			}
+			ZNS_sverhchelovek = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+			    }
+			}
+			ZNS_sverhchelovek_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.05
+				resistance_growth = -0.05
+			    }
+			}
+			ZNS_sverhchelovek_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.05
+				resistance_growth = -0.05
+				resistance_damage_to_garrison = -0.05
+			    }
+			}
+			ZNS_sverhchelovek_3 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.1
+				resistance_growth = -0.05
+				resistance_damage_to_garrison = -0.05
+			    }
+			}
+			ZNS_eksperimentalnaya_metodika_lecheniya_shizy = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				drift_defence_factor = 0.1
+				fascism_drift = -0.02
+				democratic_drift = -0.02
+				metacommy_drift = -0.02
+				memoism_drift = -0.02
+				neutrality_drift = -0.02
+				vmestolev_drift = -0.02
+			    }
+			}
+			ZNS_translytsiya_BBT_vnutri_strani = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.1
+			    }
+			}
+			ZNS_translytsiya_BBT_v_drugie_strani = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_attack_factor = 0.05
+			    }
+			}
+			ZNS_vozdeysvie_BBT = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				army_org_factor = -0.2
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+			    }
+			}
+			ZNS_eksperimenti_nad_yspevaimostu = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				research_speed_factor = 0.05
+			    }
+			}
 	   }
 		
 }

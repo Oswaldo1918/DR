@@ -61,6 +61,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ZNS_rap_experiments
+		icon = GFX_goal_unknown
+		cost = 5,00
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 37
+		y = 12
+
+	}
+	focus = {
 		id = ZNS_osnovat_Soyuz_Anstalov
 		icon = GFX_goal_generic_support_anstal
 		cost = 5,00
@@ -188,9 +199,10 @@ focus_tree = {
 		}
 		x = 15
 		y = 10
-        completion_reward = {
+			completion_reward = {
 					add_ideas = ZNS_otklyuchit_tserkov_ot_finansirovaniya
-				}   
+				}
+
 	}
 	focus = {
 		id = ZNS_natsionalizatsiya
@@ -561,13 +573,14 @@ focus_tree = {
 		}
 		x = 18
 		y = 13
-            completion_reward = {
+			completion_reward = {
 					add_ideas = ZNS_znamya_burzh_svobod
 					add_popularity = {
-						ideology = anarhostalinism
-						popularity = 0.1
-					}
-			}   
+							ideology = anarhostalinism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = ZNS_front_s_levoliberalami
@@ -1059,6 +1072,90 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ZNS_zvukovoe_oruzhie
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_rap_experiments
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 35
+		y = 13
+        completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}     
+	}
+	focus = {
+		id = ZNS_zvukovoy_tank
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_zvukovoe_oruzhie
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 35
+		y = 14
+        completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}       
+	}
+	focus = {
+		id = ZNS_vivedenie_sverhcheloveka
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_rap_experiments
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = ZNS_opiti_nad_zk
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_vivedenie_sverhcheloveka
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = ZNS_eksperimentalnaya_metodika_lecheniya_shizy
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_opiti_nad_zk
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 37
+		y = 15
+
+	}
+	focus = {
 		id = ZNS_khip_khop_revolyutsiya
 		icon = GFX_focus_AST_squander_bug
 		cost = 5,00
@@ -1072,6 +1169,9 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 100
+				country_event = {
+	            id = ZNS.1
+	            }	
 				}
 
 	}
@@ -1102,6 +1202,34 @@ focus_tree = {
 							popularity = -0.1
 						}
 				}
+
+	}
+	focus = {
+		id = ZNS_translirovat_BBT_vnutri_strani
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_rap_experiments
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = ZNS_translirovat_BBT_v_drugie_strani
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = ZNS_translirovat_BBT_vnutri_strani
+		}
+		visible = {			
+			has_country_flag = antikrinzh_vosstanie
+		}
+		x = 39
+		y = 14
 
 	}
 	focus = {

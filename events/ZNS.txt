@@ -1,0 +1,190 @@
+add_namespace = ZNS
+
+	
+country_event = { 
+	id = ZNS.1 
+	title = ZNS.1.t
+	desc = ZNS.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.1.a 
+	    add_ideas = ZNS_antikrinzh_protest
+        country_event = { id = ZNS.2 days = 280 }    		
+    }
+}
+
+country_event = { 
+	id = ZNS.2 
+	title = ZNS.2.t
+	desc = ZNS.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.2.a
+		set_country_flag = antikrinzh_vosstanie
+		trigger = {
+			OR = {
+			has_idea = ZNS_antikrinzh_protest
+			has_idea = ZNS_antikrinzh_protest_1
+			has_idea = ZNS_antikrinzh_protest_2
+			has_idea = ZNS_antikrinzh_protest_3
+			has_idea = ZNS_antikrinzh_protest_4
+			has_idea = ZNS_antikrinzh_protest_5
+			has_idea = ZNS_antikrinzh_protest_6
+			}
+		}
+    }
+	option = {
+	    name = ZNS.2.b
+        trigger = {
+			has_country_flag = krinzh_podeda
+		}
+    }
+}
+
+country_event = { #Выведение_сверхчеловека
+	id = ZNS.3 
+	title = ZNS.3.t
+	desc = ZNS.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.3.a
+	    add_ideas = ZNS_sverhchelovek
+    }
+}
+
+country_event = { #Опыты_со_сном
+	id = ZNS.4 
+	title = ZNS.4.t
+	desc = ZNS.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.4.a      
+	    swap_ideas = {
+			remove_idea = ZNS_sverhchelovek
+			add_idea = ZNS_sverhchelovek_1
+		}
+    }
+}
+
+country_event = { #Опыты_над_слухом
+	id = ZNS.5 
+	title = ZNS.5.t
+	desc = ZNS.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.5.a      
+	    swap_ideas = {
+			remove_idea = ZNS_sverhchelovek_1
+			add_idea = ZNS_sverhchelovek_2
+		}
+    }
+}
+
+country_event = { #Опыты_над_разумом
+	id = ZNS.6 
+	title = ZNS.6.t
+	desc = ZNS.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.6.a      
+	    swap_ideas = {
+			remove_idea = ZNS_sverhchelovek_2
+			add_idea = ZNS_sverhchelovek_3
+		}
+    }
+}
+
+country_event = { #Опыты_над_зк
+	id = ZNS.7 
+	title = ZNS.7.t
+	desc = ZNS.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.7.a	    
+    }
+}
+
+country_event = { #лечение_шизы
+	id = ZNS.8 
+	title = ZNS.8.t
+	desc = ZNS.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.8.a
+        add_ideas = ZNS_eksperimentalnaya_metodika_lecheniya_shizy 	    
+    }
+}
+
+country_event = { #эксперимент_над_учениками
+	id = ZNS.9 
+	title = ZNS.9.t
+	desc = ZNS.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.9.a
+        add_ideas = ZNS_eksperimenti_nad_yspevaimostu	    
+    }
+}
