@@ -5,9 +5,36 @@
 ZNS_resovization = {
 	icon = military_operation
 	allowed = {
-		tag = DOT		
+		tag = ZNS		
 	}
 	visible = {
 	 has_completed_focus = ZNS_Pau_Pau_Pau_Pau
+	}
+}
+ZNS_khip_khop_revolyutsiya = {
+	icon = military_operation
+	allowed = {
+		tag = ZNS		
+	}
+	visible = {
+	 has_completed_focus = ZNS_khip_khop_revolyutsiya
+	}
+}
+ZNS_rap_experiments = {
+	icon = military_operation
+	allowed = {
+		tag = ZNS		
+	}
+	visible = {
+	 has_completed_focus = ZNS_rap_experiments
+	}
+}
+ZNS_translirovat_BBT_v_drugie_strani_1 = {
+	icon = military_operation
+	allowed = {
+		tag = ZNS		
+	}
+	visible = {
+	 has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
 	}
 }

@@ -655,4 +655,591 @@ ZNS_resovization = {
 			add_state_core = 241
 		}	
 	}
+}
+
+ZNS_khip_khop_revolyutsiya = {       
+    ZNS_vnedrenie_khip_khop_revolyutsii = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_left_rep
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest
+				add_idea = ZNS_antikrinzh_protest_1
+			}
+		}	
+	}
+    ZNS_vnedrenie_khip_khop_revolyutsii_1 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_fond_borby_s_alkogolizmom
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest_1
+				add_idea = ZNS_antikrinzh_protest_2
+			}
+		}	
+	}
+    ZNS_vnedrenie_khip_khop_revolyutsii_2 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_fond_borby_s_alkogolizmom
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest_2
+				add_idea = ZNS_antikrinzh_protest_3
+			}
+		}	
+	} 
+    ZNS_vnedrenie_khip_khop_revolyutsii_3 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_rvansk_ritm_kurazha
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest_3
+				add_idea = ZNS_antikrinzh_protest_4
+			}
+		}	
+	} 
+    ZNS_vnedrenie_khip_khop_revolyutsii_4 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_borba_s_infokholuyami
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest_4
+				add_idea = ZNS_antikrinzh_protest_5
+			}
+		}	
+	} 
+    ZNS_vnedrenie_khip_khop_revolyutsii_5 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_borba_s_infokholuyami
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ideas = {
+				remove_idea = ZNS_antikrinzh_protest_5
+				add_idea = ZNS_antikrinzh_protest_6
+			}
+		}	
+	}
+    ZNS_vnedrenie_khip_khop_revolyutsii_6 = { 
+	
+		cost = 25
+
+		available = {
+		has_completed_focus = ZNS_davay_gazochku_pribavlyay
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+				remove_ideas = ZNS_antikrinzh_protest_6
+				set_country_flag = krinzh_podeda
+		}	
+	}     	
+}
+
+ZNS_rap_experiments = {
+    ZNS_vivedenie_sverhcheloveka = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_rap_experiments
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.9
+	        }
+		}	
+	}
+    ZNS_zvukovoe_oruzhie = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_zvukovoe_oruzhie
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 1
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}	
+		}	
+	} 
+    ZNS_zvukovoy_tank = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_zvukovoy_tank
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}	
+		}	
+	}
+    ZNS_vivedenie_sverhcheloveka = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_vivedenie_sverhcheloveka
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.3
+	        }
+		}	
+	}
+    ZNS_opiti_so_snom = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_vivedenie_sverhcheloveka
+		has_idea = ZNS_sverhchelovek_1
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.4
+	        }
+		}	
+	}
+    ZNS_opiti_nad_cluhom = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_vivedenie_sverhcheloveka
+		has_idea = ZNS_sverhchelovek_2
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.5
+	        }
+		}	
+	}
+    ZNS_opiti_nad_razumom = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_vivedenie_sverhcheloveka
+		has_idea = ZNS_sverhchelovek_3
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.6
+	        }
+		}	
+	}
+    ZNS_opiti_nad_zk = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_opiti_nad_zk
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.7
+	        }
+		}	
+	}
+    ZNS_eksperimentalnaya_metodika_lecheniya_shizy = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_eksperimentalnaya_metodika_lecheniya_shizy
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = {
+	            id = ZNS.8
+	        }
+		}	
+	}
+    ZNS_translirovat_BBT_vnutri_strani = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_vnutri_strani
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_ideas = ZNS_translytsiya_BBT_vnutri_strani
+		}	
+	}
+    ZNS_translirovat_BBT_v_drugie_strani = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = ZNS_translytsiya_BBT_vnutri_strani
+				add_idea = ZNS_translytsiya_BBT_v_drugie_strani
+			}
+		}	
+	}        	
+}
+
+ZNS_translirovat_BBT_v_drugie_strani_1 = { 
+    ZNS_translirovat_BBT_v_DOT = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = DOT
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					DOT = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			DOT = {
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	}  
+    ZNS_translirovat_BBT_v_CHT = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = CHT
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					CHT = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			CHT = {
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	} 
+    ZNS_translirovat_BBT_v_BSH = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = BSH
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					BSH = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			BSH = { 
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	} 
+    ZNS_translirovat_BBT_v_NOD = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = NOD
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					NOD = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			NOD = {
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	} 
+    ZNS_translirovat_BBT_v_LAZ = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = LAZ
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					LAZ = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			LAZ = {
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	} 
+    ZNS_translirovat_BBT_v_UKR = { 
+	
+		cost = 100
+
+		available = {
+		has_completed_focus = ZNS_translirovat_BBT_v_drugie_strani
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+		is_neighbor_of = UKR
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					UKR = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {  
+			UKR = {
+			    add_timed_idea = {
+					idea = ZNS_vozdeysvie_BBT
+					days = 90
+				}
+			}	
+		}	
+	}       
+	
 }	
