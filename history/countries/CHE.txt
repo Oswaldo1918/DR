@@ -2,7 +2,7 @@ capital = 192
 
 oob = CHE_1936
 
-set_research_slots = 1
+set_research_slots = 2
 set_stability = 0.7
 set_war_support = 0.9
 set_technology = {
@@ -10,7 +10,10 @@ set_technology = {
 	basic_train = 1
 }
 
-
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
 
 set_popularities = {
 	fascism = 100
