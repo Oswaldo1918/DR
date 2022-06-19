@@ -1,0 +1,52 @@
+ideas = {
+       country = {
+	   
+	        MRD_mracniy_sever = {
+			
+			picture = SOV_the_road_of_life
+	
+			   modifier = {
+					stability_factor = -0.25
+					war_support_factor = -0.25
+					encryption_factor = 0.4
+			    }
+		    }
+			
+			MRD_legacy_of_army = {
+			
+			picture = SOV_war_heroes
+	
+			   modifier = {
+					consumer_goods_factor = 0.05
+					army_org_factor = 0.05
+					acclimatization_cold_climate_gain_factor = 0.5
+					experience_gain_army = 0.005
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					army_morale_factor = -0.1
+					conscription_factor = -0.1
+			    }
+		    }
+			
+			MRD_mechti_ob_poddanom = {
+			
+			picture = tur_etatism_bonus
+	
+			   modifier = {
+					weekly_manpower = 15
+					consumer_goods_factor = 0.02
+					war_support_factor = 0.05
+			    }
+		    }
+	   
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		
+	}
+	
+	industrial_concern = {
+	
+	}
+}

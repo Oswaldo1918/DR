@@ -1,0 +1,26 @@
+ideas = {
+       country = {
+	        TUB_iditki_mashinistki = {
+
+			picture = cht_shizofrenia
+			
+			   modifier = {
+			    war_support_factor = -0.15
+				stability_factor = -0.15
+				consumer_goods_factor = 0.05
+			    }
+		    }
+			
+			TUB_new_nkvd = {
+
+			picture = nkvd_2
+			
+			   modifier = {
+			    decryption_factor = 0.1
+			    encryption_factor = 0.1
+				operative_slot = 1
+			    }
+		    }
+	   }
+		
+}

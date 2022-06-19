@@ -1,0 +1,26 @@
+ideas = {
+       country = {
+	        MAG_vory_v_gosudarstve = {
+
+			picture = generic_intel_bonus
+			
+			   modifier = {
+			    political_power_gain = -0.05
+				consumer_goods_factor = -0.1
+				war_support_factor  = 0.1
+				stability_factor = -0.1
+				army_org_factor = -0.05
+			    }
+		    }
+			MAG_petushinnoe_podpole = {
+
+			picture = generic_communism_drift_bonus
+			
+			   modifier = {
+			    stability_factor = -0.1
+				vmestolev_drift = 0.01
+			    }
+		    }
+	   }
+		
+}

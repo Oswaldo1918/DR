@@ -1,0 +1,29 @@
+ideas = {
+       country = {
+	        PRM_ural_karapuz = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+			    army_core_defence_factor = 0.05
+				democratic_drift = 0.01
+				vmestolev_drift = 0.01
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			SKT_hui_ded_Maksim = {
+
+			picture = generic_intel_bonus
+			
+			   modifier = {
+			    breakthrough_factor = 0.15
+				army_attack_factor = 0.15
+			    monthly_population = 3
+				consumer_goods_factor = -0.1
+			    }
+		    }
+	   }
+		
+}

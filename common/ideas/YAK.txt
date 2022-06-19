@@ -1,0 +1,31 @@
+ideas = {
+        country = {
+			YAK_war_against_devils = {
+
+			picture = spr_anti_fascist_crusade
+			
+			   
+			    targeted_modifier = {
+			    tag = LAZ
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = NOD
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = TUP
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = POK
+			    attack_bonus_against = 0.1
+		        }
+			    modifier = {
+				war_support_factor = 0.15
+				justify_war_goal_time = -0.15
+			    }
+		    }
+	    }
+		
+}
