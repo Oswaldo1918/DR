@@ -1,0 +1,31 @@
+characters={
+    	SIR_Bashar = {
+		name = "Башар аль-Ассад"
+
+		portraits = {
+		    civilian={
+				large="gfx/leaders/SIR/Bashar.dds"
+			}
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/Bashar.dds"
+			}
+		}
+
+        country_leader = {
+		    ideology = despotism
+			expire = "1965.1.1"
+        	traits = {  }
+		}	
+		
+		field_marshal = {
+    		traits = { old_guard infantry_officer war_hero  }
+        	skill = 3
+        	attack_skill = 4
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+}

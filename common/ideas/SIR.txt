@@ -1,0 +1,26 @@
+ideas = {
+       country = {
+	        SIR_GSB = {
+
+			picture = cht_shizofrenia
+			    targeted_modifier = {
+			    tag = IZR
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = IRQ
+			    attack_bonus_against = 0.1
+		        }   
+			    modifier = {
+				army_core_attack_factor = 0.075
+				acclimatization_hot_climate_gain_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army = 0.05
+				surrender_limit = 0.05
+				conscription = 0.025
+				war_support_factor = 0.075
+			    }
+		    }
+	   }
+		
+}
