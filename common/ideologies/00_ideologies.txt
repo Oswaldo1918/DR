@@ -37,6 +37,10 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
@@ -47,6 +51,7 @@ ideologies = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 		
@@ -95,6 +100,10 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
@@ -105,6 +114,7 @@ ideologies = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 		
@@ -163,6 +173,10 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
@@ -173,6 +187,7 @@ ideologies = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 		
@@ -221,6 +236,9 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = no
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
 		}
 		
 		modifiers = {
@@ -231,6 +249,7 @@ ideologies = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 		
@@ -281,6 +300,10 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 
 modifiers = {
@@ -291,6 +314,7 @@ modifiers = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 
@@ -344,6 +368,10 @@ modifiers = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 
 modifiers = {
@@ -354,6 +382,7 @@ modifiers = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 
@@ -397,6 +426,10 @@ modifiers = {
 			can_puppet = yes
 			can_send_volunteers = no
 			can_create_factions = no
+			can_join_factions = no
+			can_join_factions_not_allowed_diplomacy = no
+			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
@@ -407,6 +440,7 @@ modifiers = {
 			take_states_cost_factor = -1
 			annex_cost_factor = -1
 			puppet_cost_factor = 1
+			guarantee_tension = 100
 			}
 		}
 		
