@@ -1,0 +1,31 @@
+capital = 658
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = DVA_Abu
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+DVA_mayak_dvacha
+DVA_nepopulyarniy_Abu
+}
+
+set_popularities = {
+	democratic = 90
+	fascism = 10
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 40
