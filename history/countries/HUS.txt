@@ -1,0 +1,30 @@
+capital = 293
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = HUS_husi
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+HUS_shiit_revolution
+HUS_razrushenniy_Yemen
+}
+
+set_popularities = {
+	fascism = 100
+}
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no	
+}
+
+set_convoys = 40

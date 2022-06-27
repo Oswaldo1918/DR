@@ -1,0 +1,31 @@
+characters = {
+	HUS_husi = {
+		name = "Абдул-Малик Аль-Хуси"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUS/Husi.dds"
+			}
+			army = {
+			    large = "gfx/leaders/HUS/Husi.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+
+		country_leader = {
+			traits = {  }
+			desc = ""
+			ideology = cybernetics
+			expire = "3000.1.1"
+			id = -1
+		}
+		field_marshal = {
+	    traits = {  }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+		legacy_id = -1
+        }
+	}
+}
