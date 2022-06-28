@@ -1,0 +1,31 @@
+capital = 117
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = UGI_Nappi
+
+add_ideas = {
+UGI_ekstremism_nazi_maoist
+limited_conscription
+low_economic_mobilisation
+}
+
+set_popularities = {
+	metacommy = 30
+	vmestolev = 15
+	anarhostalinism = 55
+}
+set_politics = {
+	ruling_party = anarhostalinism
+	elections_allowed = no	
+}
+
+set_convoys = 200

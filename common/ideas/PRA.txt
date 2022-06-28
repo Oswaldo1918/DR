@@ -1,0 +1,25 @@
+ideas = {
+       country = {
+	        PRA_flot_yaht = {
+
+			picture = generic_sea_focused_navy
+			
+			    modifier = {
+			    industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = -0.1
+				experience_gain_navy = 0.002
+				consumer_goods_factor = 0.2
+			    }
+				
+				equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			    }
+		    }
+	   }
+		
+}
