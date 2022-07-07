@@ -16,16 +16,10 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name = "Super_Event_image_LAZ_reunite_russia"
-			spriteType = "GFX_sp_event_LAZ_reunite_russia"
+			name = "Super_Event_image_Base"
+			spriteType = "GFX_sp_event_Base"
 			position = {x = 0 y = 0}
-		}
-		
-		iconType = {
-			name = "Super_Event_image_MGN_reunite_russia"
-			spriteType = "GFX_sp_event_MGN_reunite_russia"
-			position = {x = 0 y = 0}
-		}
+		}	
 		
 		
 		#############
@@ -70,5 +64,59 @@ guiTypes = {
 			buttonText = "[get_super_event_remark]"
 			buttonFont = "hoi_20b"
 		}
+	}
+	
+	containerWindowType = {
+		name = "sp_event_laz"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_LAZ_reunite_russia"
+			spriteType = "GFX_sp_event_LAZ_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+		containerWindowType = {
+		name = "sp_event_mgn"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_MGN_reunite_russia"
+			spriteType = "GFX_sp_event_MGN_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+		containerWindowType = {
+		name = "sp_event_nod_barkov"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_NOD_Barkov_reunite_russia"
+			spriteType = "GFX_sp_event_NOD_Barkov_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
 	}
 }

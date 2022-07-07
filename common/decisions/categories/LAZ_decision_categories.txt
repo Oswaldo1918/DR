@@ -71,3 +71,15 @@ LAZ_proizvodstvo_kontenta = {
 		tag = LAZ		
 	}
 }
+LAZ_annex_puppets_cat = {
+	icon = military_operation
+	allowed = {
+		tag = LAZ		
+	}
+	visible = { 
+	 OR = { 
+	 has_completed_focus = LAZ_plan_doka 
+	 has_completed_focus = LAZ_plan_shtazista
+	 }
+	}
+}

@@ -310,7 +310,8 @@ news_event = {
 		trigger = {
 			original_tag = LAZ
 		}
-	set_country_flag = LAZ_reunite_russia_kostil	
+	set_country_flag = LAZ_reunite_russia_kostil
+	country_event = { days = 1 id = super.1}
 	}
 	
 	option = {
@@ -318,7 +319,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = LAZ }
 		}
-	set_country_flag = LAZ_reunite_russia_kostil	
+	set_country_flag = LAZ_reunite_russia_kostil
+	country_event = { days = 1 id = super.1}
 	}
 }
 news_event = {
