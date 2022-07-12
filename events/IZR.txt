@@ -1,0 +1,102 @@
+add_namespace = IZR
+
+	
+#
+country_event = {
+	id = IZR.1
+	title = IZR.1.t
+	desc = IZR.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+    tag = IZR
+    IZR = { has_stability < 0.36 }
+    }
+	
+	option = {
+	        name = IZR.1.a 			            
+			hidden_effect = {
+			    swap_ideas = {
+					remove_idea = IZR_volneniya_sredi_arabov
+					add_idea = IZR_volneniya_sredi_arabov_1
+				}  
+			    swap_ideas = {
+					remove_idea = IZR_vtoraya_tserkov_Hrista
+					add_idea = IZR_vtoraya_tserkov_Hrista_1
+				} 
+		        ARV = {
+				    transfer_state = 455							
+				}
+				ARV = {
+				    add_state_core = 455							
+				}
+		        declare_war_on = {
+		            target = ARV
+		            type = civil_war
+		        }
+		        add_civil_war_target = ARV
+		        ARV = {
+		            capital = 455
+		        }
+				
+				ARV = {
+		            load_oob = ARV_1936
+		        }
+				
+				ARV = {
+				    if = {
+							limit = {
+									country_exists = IZR
+							}
+							IZR = {
+									every_state = {
+											limit = {
+													is_owned_by = IZR
+											}
+											ARV = {
+													add_state_core = PREV
+											}
+									}
+							}
+					}
+				}
+				
+				TSB = {
+				    transfer_state = 553							
+				}
+				TSB = {
+				    add_state_core = 553							
+				}
+		        declare_war_on = {
+		            target = TSB
+		            type = civil_war
+		        }
+		        add_civil_war_target = TSB
+		        TSB = {
+		            capital = 553
+		        }
+				
+				TSB = {
+		            load_oob = TSB_1936
+		        }
+				
+				TSB = {
+				    if = {
+							limit = {
+									country_exists = IZR
+								}
+							IZR = {
+									every_state = {
+											limit = {
+													is_owned_by = IZR
+											}
+											TBS = {
+													add_state_core = PREV
+											}
+									}
+								}
+					}
+				}		
+            }
+	}
+}

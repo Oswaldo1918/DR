@@ -1,0 +1,15 @@
+characters={
+	TSB_Iisus = {
+		name = "Иисус Христос"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TSB/Iisus.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = ortodox_anstal
+		    id=-1
+	    }
+    }
+}

@@ -911,7 +911,9 @@ create_wargoal = {
 						}
 	add_state_claim = 221
 	add_state_claim = 197
+	add_state_claim = 834
 	add_state_claim = 192
+	add_state_claim = 834
 	add_state_claim = 226
 	add_state_claim = 200
 	add_state_claim = 196	
@@ -997,6 +999,7 @@ country_event = {
 	add_state_claim = 221
 	add_state_claim = 197
 	add_state_claim = 192
+	add_state_claim = 834
 	
 	create_wargoal = {
 							type = annex_everything
@@ -1009,7 +1012,7 @@ create_wargoal = {
 							type = annex_everything
 							target = CHE
 							type = take_state_focus
-					        generator = { 192 197 }
+					        generator = { 192 197 834 }
 					        expire = 0
 						}
 	
@@ -1112,12 +1115,13 @@ country_event = {
 	
 	add_state_claim = 197
 	add_state_claim = 192
+	add_state_claim = 834
 	
 create_wargoal = {
 							type = annex_everything
 							target = CHE
 							type = take_state_focus
-					        generator = { 192 197 }
+					        generator = { 192 197 834 }
 					        expire = 0
 						}
 	}
@@ -1219,6 +1223,7 @@ country_event = {
 	add_state_claim = 221
 	add_state_claim = 197
 	add_state_claim = 192
+	add_state_claim = 834
 	add_state_claim = 226
 	create_wargoal = {
 							type = annex_everything
@@ -1231,7 +1236,7 @@ create_wargoal = {
 							type = annex_everything
 							target = CHE
 							type = take_state_focus
-					        generator = { 197 192 }
+					        generator = { 197 192 834 }
 					        expire = 0
 						}	
 	}
@@ -1479,6 +1484,7 @@ country_event = {
 	trigger = {
 		tag = NOD
 		OR = { 
+		controls_state = 834
 	    controls_state = 192
 		controls_state = 197
 		controls_state = 221
@@ -1499,7 +1505,8 @@ country_event = {
 		
 			KUR = { transfer_state = 192 
 			        transfer_state = 197
-		            transfer_state = 221 }
+		            transfer_state = 221
+					transfer_state = 834 }
 		}
 	}
 country_event = {
@@ -1514,6 +1521,7 @@ country_event = {
 		tag = NOD
 		OR = { 
 	    controls_state = 192
+		controls_state = 834
 		controls_state = 197
 		controls_state = 221
 		controls_state = 226
@@ -1535,7 +1543,9 @@ country_event = {
 			KUR = { transfer_state = 192 
 			        transfer_state = 226
 					transfer_state = 221
-		            transfer_state = 197 }
+		            transfer_state = 197
+				    transfer_state = 834
+				}
 		}
 	}
 	country_event = {
@@ -1551,6 +1561,7 @@ country_event = {
 		OR = { 
 	    controls_state = 192
 		controls_state = 197
+		controls_state = 834
 		}
 		KUR = { has_country_flag = with_NOD_4 }
 		NOT =  { has_war_with = KUR }
@@ -1568,6 +1579,7 @@ country_event = {
 		
 			KUR = { transfer_state = 197 
 			        transfer_state = 192
+					transfer_state = 834
 					}
 		}
 	}

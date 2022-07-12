@@ -1,0 +1,27 @@
+capital = 553
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+}
+
+recruit_character = TSB_Iisus
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
+
+set_popularities = {
+	anarhostalinism = 100
+}
+set_politics = {
+	ruling_party = anarhostalinism
+	elections_allowed = no	
+}
+
+set_convoys = 40

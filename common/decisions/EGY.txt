@@ -1,0 +1,27 @@
+EGY_vtorzhenie_v_sinai = { 
+
+	EGY_sinai = {
+
+		available = {
+		IZR = {
+	   has_war_with = ARV
+	   }
+	   IZR = {
+       has_war_with = TSB 	
+	   }
+		}
+
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			declare_war_on = {
+                target = IZR
+                type = annex_everything
+            }			
+		}
+    }
+}
