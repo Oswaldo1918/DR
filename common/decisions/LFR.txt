@@ -1,0 +1,66 @@
+LFR_annex_looser = { 
+
+	LFR_annex_SFR = {
+
+		available = {
+		SFR = {
+	   has_war_with = LFR
+	   }
+	   LFR = {
+      	      controls_state = 16
+			  controls_state = 20
+	          controls_state = 24
+	          controls_state = 25
+	          controls_state = 26
+	          controls_state = 31
+	          controls_state = 33
+	   }
+		}
+
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = SFR
+			transfer_troops = no
+		}	
+		}
+    }
+	
+	LFR_annex_EFR = {
+
+		available = {
+		EFR = {
+	   has_war_with = LFR
+	   }
+	   LFR = {
+	   	      controls_state = 17
+	          controls_state = 18
+	          controls_state = 21
+			  controls_state = 22
+	          controls_state = 27
+	          controls_state = 28
+			  controls_state = 29
+			  controls_state = 32
+	          controls_state = 785
+	   }
+		}
+
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    annex_country = {
+			target = EFR
+			transfer_troops = no
+		}	
+		}
+    }
+}
