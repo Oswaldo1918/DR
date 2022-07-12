@@ -3,6 +3,19 @@
 @tier3 = 10
 
 leader_traits = {
+
+    genialniy_tankoviy_konstructor = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
     
 	the_only_man = {
 		random = no

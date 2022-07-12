@@ -166,6 +166,31 @@ ideas = {
 		
 		designer = yes
 		
+		UKR_rostic = {
+			
+			allowed = {
+				original_tag = UKR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			available = {
+				has_country_leader = {
+			    	character = UKR_poroshenko
+			    	ruling_only = yes
+			    }
+			}
+			
+			traits = { genialniy_tankoviy_konstructor }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
 		UKR_ZimM = {
 			
 			allowed = {
