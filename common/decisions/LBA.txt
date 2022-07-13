@@ -1,0 +1,27 @@
+LBA_annex_looser = { 
+
+	LBA_annex_LGR = {
+
+		available = {
+		LRG = {
+	   has_war_with = LBA
+	   }
+	   LBA = {
+      	      controls_state = 448
+		}
+        }
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = LRG
+			transfer_troops = no
+		}	
+		}
+        
+    }
+}
