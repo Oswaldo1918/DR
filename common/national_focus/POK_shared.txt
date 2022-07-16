@@ -1,17 +1,7 @@
-focus_tree = {
-	id = Poktest
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = TES
-		}
-	}
-	default = no
-	focus = {
+	shared_focus = {
 		id = POK_strana_svobodnih_lyudey
 		icon = GFX_goal_support_democracy
-		cost = 15,00
+		cost = 5
 		x = 19
 		y = 0
 			completion_reward = {
@@ -19,10 +9,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_nauchpoperi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		x = 32
 		y = 0
 			completion_reward = {
@@ -30,10 +20,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_end_civil_conflict
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		x = 19
 		y = 20
 			completion_reward = {
@@ -41,10 +31,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_prepare_first_free_elections
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_strana_svobodnih_lyudey
 		}
@@ -55,10 +45,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ohrana_uchastkov
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -75,10 +65,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_the_viborshiki
 		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ohrana_uchastkov
 		}
@@ -92,10 +82,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_european_standart
 		icon = GFX_focus_focus_fra_ratify_stresa
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ohrana_uchastkov
 		}
@@ -109,10 +99,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_anti_totalitarian_cenz
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 10,00
+		icon = GFX_POK_antitotalit_cenz
+		cost = 5
 		prerequisite = {
 			focus = POK_european_standart
 			focus = POK_the_viborshiki
@@ -124,10 +114,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_smi
-		icon = GFX_goal_generic_propaganda
-		cost = 10,00
+		icon = GFX_POK_SMI
+		cost = 5
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -142,10 +132,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_registr_partiy
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -156,10 +146,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vote_heart
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_heart_voting
+		cost = 5
 		prerequisite = {
 			focus = POK_smi
 			focus = POK_ohrana_uchastkov
@@ -175,10 +165,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_Pokayan_interview
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_interwiev_Pokayan
+		cost = 5
 		prerequisite = {
 			focus = POK_vote_heart
 		}
@@ -189,10 +179,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vote_mind
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_smart_voting
+		cost = 5
 		prerequisite = {
 			focus = POK_smi
 			focus = POK_registr_partiy
@@ -208,10 +198,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_war_of_compromats
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_war_of_compromats
+		cost = 5
 		prerequisite = {
 			focus = POK_vote_heart
 			focus = POK_vote_mind
@@ -223,10 +213,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_support_itelligentsiya
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10,00
+		icon = GFX_POK_support_untelligentsiya
+		cost = 5
 		prerequisite = {
 			focus = POK_vote_mind
 		}
@@ -237,10 +227,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_promises
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Pokayan_interview
 			focus = POK_support_itelligentsiya
@@ -255,10 +245,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_under_one_umbrella
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_goal_generic_defence
+		cost = 5
 		prerequisite = {
 			focus = POK_registr_partiy
 		}
@@ -272,10 +262,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_liberal_coalition
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_registr_partiy
 		}
@@ -289,10 +279,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_majoritar
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_majoritarnaya
+		cost = 5
 		prerequisite = {
 			focus = POK_liberal_coalition
 			focus = POK_under_one_umbrella
@@ -307,10 +297,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_proportional
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_liberal_coalition
 			focus = POK_under_one_umbrella
@@ -325,10 +315,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_national_fronts
 		icon = GFX_focus_generic_forest_brothers
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_proportional
 			focus = POK_majoritar
@@ -340,10 +330,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_manifet_sharingeconomisma
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_nauchpoperi
 		}
@@ -354,10 +344,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_carsharing
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_manifet_sharingeconomisma
 		}
@@ -368,10 +358,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_koworking
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_carsharing
 		}
@@ -382,10 +372,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kolivingi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_carsharing
 		}
@@ -396,10 +386,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_sharing_meaning_of_production
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_koworking
 		}
@@ -413,10 +403,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_viski_Jameson_licenze
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_sharing_meaning_of_production
 		}
@@ -427,10 +417,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_wise_congress_of_sciense
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_nauchpoperi
 		}
@@ -441,10 +431,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_shcool_programm
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_wise_congress_of_sciense
 		}
@@ -455,10 +445,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_monopoly_na_SMI
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_wise_congress_of_sciense
 		}
@@ -469,10 +459,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_develop_electronika
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_shcool_programm
 		}
@@ -486,10 +476,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_plagiat_scince
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_develop_electronika
 		}
@@ -500,10 +490,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ultrazvuk_dvigatel
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_viski_Jameson_licenze
 		}
@@ -517,10 +507,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kultur_update
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_monopoly_na_SMI
 		}
@@ -531,10 +521,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_profiling
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kultur_update
 		}
@@ -545,10 +535,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kameri_v_banyah
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_develop_electronika
 		}
@@ -562,10 +552,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ageinst_old
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kultur_update
 		}
@@ -576,10 +566,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_expropriation_of_nakopiteli
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ageinst_old
 		}
@@ -590,10 +580,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_union_of_youth_generations
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kultur_update
 		}
@@ -604,10 +594,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_learning_english
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kultur_update
 		}
@@ -618,10 +608,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_porrige
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ageinst_old
 		}
@@ -638,10 +628,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_prozrachnaya_system
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kameri_v_banyah
 		}
@@ -652,10 +642,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_sharing_realism_art
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_union_of_youth_generations
 		}
@@ -669,10 +659,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vseobhee_doveriye_vlasti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prozrachnaya_system
 		}
@@ -689,10 +679,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_power_president
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_president
+		cost = 5
 		prerequisite = {
 			focus = POK_support_buisenes
 		}
@@ -706,10 +696,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_power_parlament
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_parlament
+		cost = 5
 		prerequisite = {
 			focus = POK_support_buisenes
 		}
@@ -723,10 +713,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_udar_po_partisanam
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_anti_totalitarian_cenz
 			focus = POK_imushestv_cenz
@@ -738,10 +728,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_imushestv_cenz
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10,00
+		icon = GFX_POK_imushestvenniy_cenz
+		cost = 5
 		prerequisite = {
 			focus = POK_the_viborshiki
 			focus = POK_european_standart
@@ -753,10 +743,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vibori_vibori
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_power_parlament
 		}
@@ -770,27 +760,11 @@ focus_tree = {
 }
 
 	}
-	focus = {
-		id = POK_smi
-		icon = GFX_goal_generic_radar
-		cost = 10,00
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		prerequisite = {
-			focus = POK_prepare_first_free_elections
-		}
-		x = 19
-		y = 2
-			completion_reward = {
-
-}
-
-	}
-	focus = {
+	
+	shared_focus = {
 		id = POK_support_buisenes
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_promises
 		}
@@ -807,10 +781,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_GAZPROM
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_podnyat_level_of_corruption
 		}
@@ -821,10 +795,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_law_of_Novodvorskava
 		icon = GFX_focus_cze_german_puppet
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
@@ -835,10 +809,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_sderzhki_i_protivovesi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_otkaz_ot_chrezvich_polnomochiy
 		}
@@ -852,10 +826,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_proyect_EVA
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_otkaz_ot_chrezvich_polnomochiy
 		}
@@ -869,10 +843,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_lunar_Putin
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_proyect_EVA
 		}
@@ -886,10 +860,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_Eltsin_death_brigades
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_alcoholism_or_death
 		}
@@ -900,10 +874,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ot_Volgi_do_Eniseya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_full_separation
 		}
@@ -917,10 +891,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_prostite_nas
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_KONR
 		}
@@ -931,10 +905,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_protect_burjua
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
 		prerequisite = {
 			focus = POK_vibori_vibori
 		}
@@ -949,10 +923,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_chrezvichaniye_p
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_power_president
 		}
@@ -966,10 +940,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_komitet_spaseniya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_vibori_vibori
 		}
@@ -983,10 +957,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_strong_hand_of_liberalism
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_russkiy_Pinochet
 		}
@@ -997,10 +971,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_strong_hand_of_market
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_russkiy_Pinochet
 		}
@@ -1011,10 +985,10 @@ focus_tree = {
 }
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_war_industry
 		icon = GFX_focus_generic_tank_production
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_protect_burjua
 		}
@@ -1114,10 +1088,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_max_exploit_in_war_time
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_war_industry
 		}
@@ -1134,10 +1108,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_war_time_oslableniye_gnyota
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_war_industry
 		}
@@ -1154,10 +1128,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_chyotkiye_polnomochiya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_USA_expirience
 		}
@@ -1168,10 +1142,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_russkiy_Pinochet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_chrezvichaniye_p
 		}
@@ -1179,10 +1153,10 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_fight_for_free_people
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_parlament_army
 		}
@@ -1190,10 +1164,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_bulochka_i_tramvaychik
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_war_time_oslableniye_gnyota
 		}
@@ -1207,10 +1181,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_pokazat_zlo_bolshevizma
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
 		}
@@ -1223,10 +1197,10 @@ focus_tree = {
 			}
 		}          
 	}
-	focus = {
+	shared_focus = {
 		id = POK_nationalniye_bataloni
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_private_armies
 		}
@@ -1244,10 +1218,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_remember_ROA
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_united_army
 			focus = POK_nationalniye_bataloni
@@ -1277,10 +1251,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_free_weapon_trade
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_war_industry
 		}
@@ -1300,10 +1274,10 @@ focus_tree = {
 			}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_parlament_army
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_Novgorod
 		}
@@ -1311,10 +1285,10 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_permanent_privatization
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_privatiz_dohodov
 		}
@@ -1414,10 +1388,10 @@ focus_tree = {
 						}
 		}				
 	}
-	focus = {
+	shared_focus = {
 		id = POK_private_armies
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
 		}
@@ -1433,10 +1407,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_night_sentinels
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_russkiy_Pinochet
 		}
@@ -1444,10 +1418,10 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_nologe_for_common_peaple
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_lunar_Putin
 		}
@@ -1455,10 +1429,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_land_of_the_strong
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Running_in_the_90s
 		}
@@ -1466,10 +1440,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_otkaz_ot_chrezvich_polnomochiy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_old_svyazi
 		}
@@ -1480,10 +1454,10 @@ focus_tree = {
 		y = 14
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_work_with_old_parlament
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_strong_hand_of_liberalism
 		}
@@ -1494,10 +1468,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_state_duma
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_rospusk_parlamenta
 		}
@@ -1505,10 +1479,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_rospusk_parlamenta
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_strong_hand_of_liberalism
 		}
@@ -1519,10 +1493,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_old_svyazi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_work_with_old_parlament
 		}
@@ -1530,10 +1504,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_gazoprovodi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_strong_hand_of_market
 		}
@@ -1544,10 +1518,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_France_expirience
 		icon = GFX_focus_fra_french_union
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_sderzhki_i_protivovesi
 		}
@@ -1558,10 +1532,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_USA_expirience
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_sderzhki_i_protivovesi
 		}
@@ -1572,10 +1546,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_buildings_in_EKB
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_land_of_the_strong
 		}
@@ -1583,10 +1557,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_razvodyashiy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_lunar_Putin
 		}
@@ -1594,10 +1568,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
 		}
@@ -1607,10 +1581,10 @@ focus_tree = {
 			add_ideas = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
 		}         
 	}
-	focus = {
+	shared_focus = {
 		id = POK_united_army
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_private_armies
 		}
@@ -1628,10 +1602,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ostavit_Pokayana_v_pokoye
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
@@ -1642,10 +1616,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_no_need_president
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
@@ -1656,10 +1630,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kanzler_Shulman
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_no_need_president
 		}
@@ -1670,10 +1644,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_alcoholism_or_death
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_land_of_the_strong
 		}
@@ -1681,10 +1655,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kioski
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_buildings_in_EKB
 		}
@@ -1692,10 +1666,10 @@ focus_tree = {
 		y = 20
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_patriotic_song
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost =5
 		prerequisite = {
 			focus = POK_Running_in_the_90s
 		}
@@ -1703,10 +1677,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_state_for_friends
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_razvodyashiy
 		}
@@ -1717,10 +1691,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_first_and_eternal
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Eltsin_death_brigades
 		}
@@ -1734,10 +1708,10 @@ focus_tree = {
 		y = 22
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_Running_in_the_90s
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Ya_prihozhu
 		}
@@ -1745,10 +1719,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_Ya_prihozhu
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_proyect_EVA
 		}
@@ -1759,10 +1733,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_federative_pact
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_vertical_vlasti
 			focus = POK_Eltsin_death_brigades
@@ -1774,10 +1748,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_land_of_the_vozhd
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Eltsin_death_brigades
 		}
@@ -1788,10 +1762,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_support_russian_nationalism
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_patriotic_song
 		}
@@ -1799,10 +1773,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kult_pokayaniya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_pokazat_zlo_bolshevizma
 		}
@@ -1815,10 +1789,10 @@ focus_tree = {
 			}
 		}      
 	}
-	focus = {
+	shared_focus = {
 		id = POK_kult_of_Nepolzhivov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_night_sentinels
 		}
@@ -1826,10 +1800,10 @@ focus_tree = {
 		y = 14
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_Burn_soviet_books
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_radical_decommunisation
 		}
@@ -1837,10 +1811,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_purge_of_unloyal
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Eltsin_death_brigades
 			focus = POK_GAZPROM
@@ -1852,10 +1826,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_liberalism_patriotism
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_state_for_friends
 		}
@@ -1863,10 +1837,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_good_tsar_bad_boyars
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_liberalism_patriotism
 		}
@@ -1874,10 +1848,10 @@ focus_tree = {
 		y = 20
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_podnyat_level_of_corruption
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_state_for_friends
 		}
@@ -1885,10 +1859,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_zadobrit_silovikov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_GAZPROM
 		}
@@ -1896,10 +1870,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vertical_vlasti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
 		}
@@ -1907,10 +1881,10 @@ focus_tree = {
 		y = 20
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_usilit_administr_presidenta
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_chyotkiye_polnomochiya
 		}
@@ -1918,10 +1892,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_promise_social_garantii
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_good_tsar_bad_boyars
 		}
@@ -1929,10 +1903,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_privatiz_dohodov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_market_fundamentalism
 		}
@@ -1942,10 +1916,10 @@ focus_tree = {
 		    add_ideas = POK_privatiz_dohodov
 		}        
 	}
-	focus = {
+	shared_focus = {
 		id = POK_natsionalizat_rashodov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_market_fundamentalism
 		}
@@ -1955,10 +1929,10 @@ focus_tree = {
 			add_ideas = POK_natsionalizat_rashodov
 		}    
 	}
-	focus = {
+	shared_focus = {
 		id = POK_face_of_state
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_zadobrit_silovikov
 		}
@@ -1969,10 +1943,10 @@ focus_tree = {
 		y = 22
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_flot_yaht
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
 		}
@@ -1983,10 +1957,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_candidates?
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_federative_pact
 		}
@@ -1994,10 +1968,10 @@ focus_tree = {
 		y = 22
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_parad_suverenitetov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
 		}
@@ -2008,10 +1982,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_otdel_lobburovaniya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
 		}
@@ -2019,10 +1993,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_free_market_fundamentalism
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_subsidii_war_industry
 			focus = POK_not_help_buisness
@@ -2036,10 +2010,10 @@ focus_tree = {
 			}
 		}            
 	}
-	focus = {
+	shared_focus = {
 		id = POK_sistema_uchitsya_proshat
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
 			focus = POK_GAZPROM
@@ -2051,10 +2025,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_remember_Novgorod
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_komitet_spaseniya
 		}
@@ -2062,10 +2036,10 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_remember_fevral_1917
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_Novgorod
 		}
@@ -2076,10 +2050,10 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_oslabit_control_biznesa
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_max_exploit_in_war_time
 		}
@@ -2093,10 +2067,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_subsidii_war_industry
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_flot_yaht
 		}
@@ -2202,10 +2176,10 @@ focus_tree = {
 						}		
 		}
 	}
-	focus = {
+	shared_focus = {
 		id = POK_lyudi_s_horochimi_saces
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_garantii_svobodi
 		}
@@ -2219,10 +2193,10 @@ focus_tree = {
 		y = 14
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ruined_hope_of_peacefull_democratisatsiya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_Novgorod
 		}
@@ -2233,10 +2207,10 @@ focus_tree = {
 		y = 11
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_not_help_buisness
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_flot_yaht
 		}
@@ -2252,10 +2226,10 @@ focus_tree = {
 			}
 		}	
 	}
-	focus = {
+	shared_focus = {
 		id = POK_regressive_nalog
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_natsionalizat_rashodov
 		}
@@ -2271,10 +2245,10 @@ focus_tree = {
 			}
 		}       
 	}
-	focus = {
+	shared_focus = {
 		id = POK_pay_and_repent
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_airport_Nikolaya_Second
 		}
@@ -2287,10 +2261,10 @@ focus_tree = {
 			}
 		}       
 	}
-	focus = {
+	shared_focus = {
 		id = POK_opit_nemetskih_osvoboditeley
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_ROA
 		}
@@ -2317,10 +2291,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_amerikanskiy_opit
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_ROA
 		}
@@ -2347,10 +2321,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_gumanitarniye_bombardirovki
 		icon = GFX_goal_generic_occupy_start_war
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_zakidat_snaryadami
 			focus = POK_panzergrad
@@ -2374,10 +2348,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_shturmoviki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_panzergrad
 			focus = POK_zakidat_snaryadami
@@ -2399,10 +2373,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_panzergrad
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_opit_nemetskih_osvoboditeley
 		}
@@ -2429,10 +2403,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_zakidat_snaryadami
 		icon = GFX_goal_generic_army_artillery
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_amerikanskiy_opit
 		}
@@ -2459,10 +2433,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = full_contract_army
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_gumanitarniye_bombardirovki
 			focus = POK_shturmoviki
@@ -2478,10 +2452,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_freedom_folkshturm
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_shturmoviki
 			focus = POK_gumanitarniye_bombardirovki
@@ -2497,10 +2471,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_open_borders
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_permanent_privatization
 		}
@@ -2516,10 +2490,10 @@ focus_tree = {
 			} 
 		}	
 	}
-	focus = {
+	shared_focus = {
 		id = POK_free_birja_truda
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_regressive_nalog
 		}
@@ -2535,10 +2509,10 @@ focus_tree = {
 			}
 		}         
 	}
-	focus = {
+	shared_focus = {
 		id = POK_otmenit_trudovoy_codex
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_free_birja_truda
 		}
@@ -2554,10 +2528,10 @@ focus_tree = {
 			}
 		}             
 	}
-	focus = {
+	shared_focus = {
 		id = POK_open_for_investitsii
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_open_borders
 		}
@@ -2602,10 +2576,10 @@ focus_tree = {
             add_offsite_building = { type = industrial_complex level = 1 }      			
 		}        
 	}
-	focus = {
+	shared_focus = {
 		id = POK_airport_Nikolaya_Second
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_kult_pokayaniya
 		}
@@ -2625,10 +2599,10 @@ focus_tree = {
 			}
 		}       
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_flag_and_simbols
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
 			focus = POK_full_separation
@@ -2637,10 +2611,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_radical_decommunisation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_lyudi_s_horochimi_saces
 		}
@@ -2648,10 +2622,10 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_destroy_sov_buildings
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_radical_decommunisation
 		}
@@ -2659,10 +2633,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ally_loyal_monarchists
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ruined_hope_of_peacefull_democratisatsiya
 		}
@@ -2673,10 +2647,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_ally_evrosocdems
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_remember_fevral_1917
 		}
@@ -2687,10 +2661,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_libdem_purity
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ruined_hope_of_peacefull_democratisatsiya
 			focus = POK_remember_fevral_1917
@@ -2703,10 +2677,10 @@ focus_tree = {
 		y = 12
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_fem_batalion
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_fight_for_free_people
 		}
@@ -2714,10 +2688,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_monarch_referendum
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_POK_skull_crown
+		cost = 5
 		prerequisite = {
 			focus = POK_garantii_loyalnosti
 		}
@@ -2725,10 +2699,10 @@ focus_tree = {
 		y = 14
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_russian_confederation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_parad_suverenitetov
 		}
@@ -2739,10 +2713,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_united_states_of_russia
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
 		}
@@ -2753,10 +2727,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_full_separation
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_parad_suverenitetov
 		}
@@ -2767,10 +2741,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_russian_prometey
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_russian_confederation
 		}
@@ -2781,10 +2755,10 @@ focus_tree = {
 		y = 20
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_KONR
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_lyudi_s_horochimi_saces
 		}
@@ -2792,10 +2766,10 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_vibornost_vsego
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_united_states_of_russia
 		}
@@ -2803,10 +2777,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_sherifs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_vibornost_vsego
 		}
@@ -2817,10 +2791,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_elections
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_lyudi_s_horochimi_saces
 		}
@@ -2828,10 +2802,10 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_decentralization_of_nologe
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_united_states_of_russia
 		}
@@ -2839,10 +2813,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_end_militarism
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_chaging_mentality
 		}
@@ -2853,10 +2827,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_garantii_svobodi
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_libdem_purity
 		}
@@ -2864,10 +2838,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_social_garantii
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ally_evrosocdems
 		}
@@ -2875,10 +2849,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_garantii_loyalnosti
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_ally_loyal_monarchists
 		}
@@ -2886,10 +2860,10 @@ focus_tree = {
 		y = 13
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_history
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_chaging_mentality
 		}
@@ -2897,10 +2871,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_private_police
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
 		}
@@ -2908,10 +2882,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_chaging_mentality
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
 		}
@@ -2922,10 +2896,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_exploit_rusosovki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Burn_soviet_books
 		}
@@ -2933,10 +2907,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_proshay_nemitaya_rossiya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_full_separation
 		}
@@ -2947,10 +2921,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_no_need_chagnes
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
 		}
@@ -2961,10 +2935,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_destroy_socrealism_art
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_Burn_soviet_books
 		}
@@ -2975,10 +2949,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_destroy_soviet_military
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
 		}
@@ -2989,10 +2963,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_support_small_buisness
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
@@ -3000,10 +2974,10 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_small_buisnes_submarines
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
 		}
@@ -3011,10 +2985,10 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_stop_teaching
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_no_need_chagnes
 		}
@@ -3022,10 +2996,10 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_elini_i_morloki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_stop_teaching
 		}
@@ -3033,10 +3007,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_new_new_russian
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_new_history
 		}
@@ -3044,10 +3018,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_k_USA_cherez_vostok
 		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_end_civil_conflict
 		}
@@ -3055,10 +3029,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_srednyaya_asia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_end_civil_conflict
 		}
@@ -3066,10 +3040,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_panoramnoye_okno_v_Evropu
 		icon = GFX_focus_SOV_reinforce_western_naval_bases
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_end_civil_conflict
 		}
@@ -3077,10 +3051,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_help_republics
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 5
 		prerequisite = {
 			focus = POK_russian_prometey
 		}
@@ -3088,10 +3062,10 @@ focus_tree = {
 		y = 21
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_SNG_reborn
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_russian_prometey
 			focus = POK_new_federative_pact
@@ -3100,10 +3074,10 @@ focus_tree = {
 		y = 22
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_to_world_market
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_open_for_investitsii
 		}
@@ -3119,10 +3093,10 @@ focus_tree = {
             add_ideas = POK_to_world_market      			
 		}	
 	}
-	focus = {
+	shared_focus = {
 		id = POK_elites_of_elites
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost =5
 		prerequisite = {
 			focus = full_contract_army
 			focus = POK_freedom_folkshturm
@@ -3152,10 +3126,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_platit_nazmenam
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
 		}
@@ -3166,10 +3140,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_no_posobiyam
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
 		}
@@ -3180,10 +3154,10 @@ focus_tree = {
 		y = 19
 
 	}
-	focus = {
+	shared_focus = {
 		id = POK_small_buisnes_nuka_and_rocet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
 		}
@@ -3191,4 +3165,4 @@ focus_tree = {
 		y = 18
 
 	}
-}
+
