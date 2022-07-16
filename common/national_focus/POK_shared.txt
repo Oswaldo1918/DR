@@ -229,7 +229,7 @@
 	}
 	shared_focus = {
 		id = POK_promises
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 5
 		prerequisite = {
 			focus = POK_Pokayan_interview
@@ -264,7 +264,7 @@
 	}
 	shared_focus = {
 		id = POK_liberal_coalition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 5
 		prerequisite = {
 			focus = POK_registr_partiy
@@ -748,10 +748,8 @@
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_power_parlament
-		}
-		prerequisite = {
 			focus = POK_power_president
+			focus = POK_power_parlament
 		}
 		x = 19
 		y = 8
@@ -1446,8 +1444,6 @@
 		cost = 5
 		prerequisite = {
 			focus = POK_old_svyazi
-		}
-		prerequisite = {
 			focus = POK_new_state_duma
 		}
 		x = 6
@@ -1570,7 +1566,7 @@
 	}
 	shared_focus = {
 		id = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
-		icon = GFX_goal_unknown
+		icon = GFX_POK_udar_po_partizanam
 		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
@@ -1635,9 +1631,7 @@
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_no_need_president
-		}
-		prerequisite = {
+		    focus = POK_no_need_president
 			focus = POK_ostavit_Pokayana_v_pokoye
 		}
 		x = 33
@@ -2181,12 +2175,8 @@
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_garantii_svobodi
-		}
-		prerequisite = {
 			focus = POK_social_garantii
-		}
-		prerequisite = {
+			focus = POK_garantii_svobodi
 			focus = POK_garantii_loyalnosti
 		}
 		x = 29
@@ -2263,7 +2253,7 @@
 	}
 	shared_focus = {
 		id = POK_opit_nemetskih_osvoboditeley
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		cost = 5
 		prerequisite = {
 			focus = POK_remember_ROA
@@ -2663,7 +2653,7 @@
 	}
 	shared_focus = {
 		id = POK_libdem_purity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 5
 		prerequisite = {
 			focus = POK_ruined_hope_of_peacefull_democratisatsiya
@@ -2746,10 +2736,8 @@
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_russian_confederation
-		}
-		prerequisite = {
 			focus = POK_full_separation
+			focus = POK_russian_confederation
 		}
 		x = 39
 		y = 20
@@ -2819,8 +2807,6 @@
 		cost = 5
 		prerequisite = {
 			focus = POK_chaging_mentality
-		}
-		prerequisite = {
 			focus = POK_no_need_chagnes
 		}
 		x = 30
