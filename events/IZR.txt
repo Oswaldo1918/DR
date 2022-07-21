@@ -69,6 +69,23 @@ country_event = {
 				TSB = {
 				    add_state_core = 553							
 				}
+				TSB = {
+				    if = {
+							limit = {
+									country_exists = IZR
+								}
+							IZR = {
+									every_state = {
+											limit = {
+													is_owned_by = IZR
+											}
+											TSB = {
+													add_state_core = PREV
+											}
+									}
+							}
+					}
+				}
 		        declare_war_on = {
 		            target = TSB
 		            type = civil_war
@@ -80,25 +97,7 @@ country_event = {
 				
 				TSB = {
 		            load_oob = TSB_1936
-		        }
-				
-				TSB = {
-				    if = {
-							limit = {
-									country_exists = IZR
-								}
-							IZR = {
-									every_state = {
-											limit = {
-													is_owned_by = IZR
-											}
-											TBS = {
-													add_state_core = PREV
-											}
-									}
-								}
-					}
-				}		
+		        }		
             }
 	}
 }

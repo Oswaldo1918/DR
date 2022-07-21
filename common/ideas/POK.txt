@@ -983,6 +983,30 @@ ideas = {
                 monthly_population = 0.25       				
 			}
 		}
+		
+		POK_Arta = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			rule = {
+				can_join_opposite_factions = no
+				can_create_factions = yes
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0,1
+			}
+		}
     }
 	
 	tank_manufacturer = { 
