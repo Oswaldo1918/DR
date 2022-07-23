@@ -10,8 +10,8 @@ focus_tree = {
 	default = no
 	focus = {
 		id = SHM_blizhe_k_black_sun
-		icon = GFX_goal_unknown
-		cost = 5,00
+		icon = GFX_SHM_blizhe_k_black_sun
+		cost = 5
 		x = 9
 		y = 0
 			completion_reward = {
@@ -22,8 +22,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SHM_izyazhniy_siluet
-		icon = GFX_goal_unknown
-		cost = 5,00
+		icon = GFX_SHM_siluet
+		cost = 5
 		prerequisite = {
 			focus = SHM_blizhe_k_black_sun
 		}
@@ -36,8 +36,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SHM_daleko_glyazhu
-		icon = GFX_goal_unknown
-		cost = 5,00
+		icon = GFX_SHM_daleko_glyazhu
+		cost = 5
 		prerequisite = {
 			focus = SHM_izyazhniy_siluet
 		}
@@ -53,22 +53,24 @@ focus_tree = {
 	}
 	focus = {
 		id = SHM_somebody_that_i_used_to_know
-		icon = GFX_goal_unknown
-		cost = 5,00
+		icon = GFX_SHM_sombody
+		cost = 5
 		prerequisite = {
 			focus = SHM_daleko_glyazhu
 		}
 		x = 7
 		y = 3
 			completion_reward = {
-
+LIM = {
+ add_popularity = { ideology = fascism popularity = 0.1 }
+ }
 }
 
 	}
 	focus = {
 		id = SHM_vozradit_tibet_tradition
 		icon = GFX_focus_cht_slaves_masses
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = SHM_blizhe_k_black_sun
 		}
@@ -81,8 +83,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SHM_issledovat_dzen_buddim
-		icon = GFX_goal_tfv_smiling_buddha
-		cost = 5,00
+		icon = GFX_SHM_issledovat_dzen_buddim
+		cost = 5
 		prerequisite = {
 			focus = SHM_vozradit_tibet_tradition
 		}
@@ -96,7 +98,7 @@ focus_tree = {
 	focus = {
 		id = SHM_drevnie_znania
 		icon = GFX_focus_research
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = SHM_issledovat_dzen_buddim
 		}
@@ -110,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = SHM_kurovodstvo
 		icon = GFX_SHM_kurovodstvo
-		cost = 2,00
+		cost = 2
 		prerequisite = {
 			focus = SHM_blizhe_k_black_sun
 		}
@@ -153,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = SHM_kulinar_festival
 		icon = GFX_focus_cht_zhitnica_evropy
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = SHM_kurovodstvo
 		}
@@ -168,7 +170,7 @@ focus_tree = {
 	focus = {
 		id = SHM_mount_krepost
 		icon = GFX_goal_generic_construct_military
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = SHM_kulinar_festival
 		}
@@ -182,7 +184,7 @@ focus_tree = {
 	focus = {
 		id = SHM_man_in_the_high_mountain
 		icon = GFX_focus_GRE_a_land_of_mountains
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = SHM_somebody_that_i_used_to_know
 		}

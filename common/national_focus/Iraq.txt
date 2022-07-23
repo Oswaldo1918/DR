@@ -1,6 +1,13 @@
 focus_tree = {
 	id = IRQ
 	default = no
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRQ
+		}
+	}
 	focus = {
 		id = IRQ_army_effort
 		icon = GFX_goal_generic_allies_build_infantry

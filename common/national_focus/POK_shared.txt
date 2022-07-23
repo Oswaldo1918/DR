@@ -1769,7 +1769,7 @@
 	}
 	shared_focus = {
 		id = POK_kult_pokayaniya
-		icon = GFX_goal_unknown
+		icon = GFX_POK_kult_pokayaniya
 		cost = 5
 		prerequisite = {
 			focus = POK_pokazat_zlo_bolshevizma
@@ -2425,7 +2425,7 @@
 	}
 	shared_focus = {
 		id = full_contract_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5
 		prerequisite = {
 			focus = POK_gumanitarniye_bombardirovki
@@ -2568,7 +2568,7 @@
 	}
 	shared_focus = {
 		id = POK_airport_Nikolaya_Second
-		icon = GFX_goal_unknown
+		icon = GFX_POK_airport_Nikolaya_Second
 		cost = 5
 		prerequisite = {
 			focus = POK_kult_pokayaniya
