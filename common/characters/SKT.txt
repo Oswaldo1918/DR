@@ -12,4 +12,234 @@ characters={
 		   id=-1
 	   }
     }
+	
+	SKT_levoborod = {
+		name = "Игорь Александров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKT/LevoBOROD.dds"
+			}
+		}
+		country_leader = {
+	       expire = "1999.1.1"
+	       ideology = libertanian_chuchhe
+		   id=-1
+	   }
+    }
+	
+	SKT_kulov = {
+		name = "Олег Кулов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_kulov"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_kulov
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { storonnik_kimovstva pragmatic }
+	    }
+    }
+	
+	SKT_reutskiy = {
+		name = "Александр Реутский"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_reutskiy"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_reutskiy
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { top_vaifu }
+	    }
+    }
+	
+	SKT_fomin = {
+		name = "Александр Фомин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_fomin"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_fomin
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { marxist_academic }
+	    }
+    }
+	
+	SKT_filya = {
+		name = "Филипп Ценин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_filya"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_filya
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { hudozhnik }
+	    }
+    }
+	
+	SKT_cybergulag = {
+		name = "Вадим Самойлов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_cybergulag"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_cybergulag
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { nkvd_rezident }
+	    }
+    }
+	
+	SKT_pechenka = {
+		name = "Печенька"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_pechenka"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_pechenka
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { komissar_travli }
+	    }
+    }
+	
+	SKT_supa_syel = {
+		name = "Андрей Губин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_supa_syel"
+			}
+		}
+		advisor={ 
+		    slot = high_command
+			idea_token = SKT_supa_syel
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { army_chief_offensive_1 }
+	    }
+    }
+	
+	SKT_unicorn = {
+		name = "Капитан Юникорн"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_unicorn"
+			}
+		}
+		advisor={ 
+		    slot = high_command
+			idea_token = SKT_unicorn
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { army_cavalry_2 }
+	    }
+    }
+	
+	SKT_zhofer = {
+		name = "Павел Якубовский"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_zhofer"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_zhofer
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { zhofer }
+	    }
+    }
+	
+	SKT_animecom = {
+		name = "Роман Черкасский"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_animecom"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_animecom
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { memodel }
+	    }
+    }
+	
+	SKT_tovbard = {
+		name = "Товарищ Бард"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_tovbard"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_tovbard
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { musicant }
+	    }
+    }
+	
+	SKT_kosmov = {
+		name = "Иван Космов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_kosmov"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = SKT_kosmov
+			allowed = {
+                original_tag = SKT
+				
+            }
+            traits = { backroom_backstabber }
+	    }
+    }
 }
