@@ -69,41 +69,6 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { gw_tank_equipment = { owner = "LFR" } }
 	}
-
-	division= {	# "20ème Division d'Infanterie"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 6657
-		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-
-	division= {	# "1ère Division Légère Mécanique"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9737
-		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
-		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "LFR" } }
-	}
-	
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 9523
-		division_template = "Division L'Militia"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
 	
 	division= {	
 		division_name = {
@@ -111,17 +76,6 @@ units = {
 			name_order = 4
 		}
 		location = 9534
-		division_template = "Division L'Militia"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 6529
 		division_template = "Division L'Militia"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5

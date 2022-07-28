@@ -2,10 +2,27 @@ add_namespace = ALB
 
 	
 country_event = {
+	id = ALB.0
+	title = ALB.0.t
+	desc = ALB.0.d
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.0.a
+	add_stability = -0.15
+	}
+}
+	
+country_event = {
 	id = ALB.1 
 	title = ALB.1.t
 	desc = ALB.1.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_kozli_shahmati
 	
 	trigger = {
 		tag = ALB
@@ -141,8 +158,3 @@ country_event = {
       
 	}
 }
-
-
-
-
-

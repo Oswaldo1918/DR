@@ -223,7 +223,10 @@
 		x = 21
 		y = 4
 			completion_reward = {
-
+ add_timed_idea = {
+      idea = POK_support_itelligentsiya
+      days = 120 
+         }
 }
 
 	}
@@ -1197,7 +1200,7 @@
 	}
 	shared_focus = {
 		id = POK_nationalniye_bataloni
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_POK_nationalniye_bataloni
 		cost = 5
 		prerequisite = {
 			focus = POK_private_armies
@@ -1218,7 +1221,7 @@
 	}
 	shared_focus = {
 		id = POK_remember_ROA
-		icon = GFX_goal_unknown
+		icon = GFX_POK_remember_ROA
 		cost = 5
 		prerequisite = {
 			focus = POK_united_army
@@ -1388,7 +1391,7 @@
 	}
 	shared_focus = {
 		id = POK_private_armies
-		icon = GFX_goal_unknown
+		icon = GFX_POK_private_armies
 		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
@@ -1579,7 +1582,7 @@
 	}
 	shared_focus = {
 		id = POK_united_army
-		icon = GFX_POK_united_army
+		icon = GFX_focus_generic_little_entente
 		cost = 5
 		prerequisite = {
 			focus = POK_private_armies
@@ -1769,7 +1772,7 @@
 	}
 	shared_focus = {
 		id = POK_kult_pokayaniya
-		icon = GFX_goal_unknown
+		icon = GFX_POK_kult_pokayaniya
 		cost = 5
 		prerequisite = {
 			focus = POK_pokazat_zlo_bolshevizma
@@ -2425,7 +2428,7 @@
 	}
 	shared_focus = {
 		id = full_contract_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5
 		prerequisite = {
 			focus = POK_gumanitarniye_bombardirovki
@@ -2444,7 +2447,7 @@
 	}
 	shared_focus = {
 		id = POK_freedom_folkshturm
-		icon = GFX_goal_unknown
+		icon = GFX_POK_freedom_folkshturm
 		cost = 5
 		prerequisite = {
 			focus = POK_shturmoviki
@@ -2463,7 +2466,7 @@
 	}
 	shared_focus = {
 		id = POK_open_borders
-		icon = GFX_goal_unknown
+		icon = GFX_POK_open_borders
 		cost = 5
 		prerequisite = {
 			focus = POK_permanent_privatization
@@ -2482,7 +2485,7 @@
 	}
 	shared_focus = {
 		id = POK_free_birja_truda
-		icon = GFX_goal_unknown
+		icon = GFX_POK_free_birja_truda
 		cost = 5
 		prerequisite = {
 			focus = POK_regressive_nalog
@@ -2501,7 +2504,7 @@
 	}
 	shared_focus = {
 		id = POK_otmenit_trudovoy_codex
-		icon = GFX_goal_unknown
+		icon = GFX_POK_otmenit_trudovoy_codex
 		cost = 5
 		prerequisite = {
 			focus = POK_free_birja_truda
@@ -2520,7 +2523,7 @@
 	}
 	shared_focus = {
 		id = POK_open_for_investitsii
-		icon = GFX_goal_unknown
+		icon = GFX_POK_open_for_investitsii
 		cost = 5
 		prerequisite = {
 			focus = POK_open_borders
@@ -2568,7 +2571,7 @@
 	}
 	shared_focus = {
 		id = POK_airport_Nikolaya_Second
-		icon = GFX_goal_unknown
+		icon = GFX_POK_airport_Nikolaya_Second
 		cost = 5
 		prerequisite = {
 			focus = POK_kult_pokayaniya
@@ -2745,7 +2748,7 @@
 	}
 	shared_focus = {
 		id = POK_new_KONR
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_KONR
 		cost = 5
 		prerequisite = {
 			focus = POK_lyudi_s_horochimi_saces
