@@ -10,6 +10,21 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = SKT_maksim
+recruit_character = SKT_levoborod
+recruit_character = SKT_kulov
+recruit_character = SKT_reutskiy
+recruit_character = SKT_fomin
+recruit_character = SKT_filya
+recruit_character = SKT_cybergulag
+recruit_character = SKT_pechenka
+recruit_character = SKT_supa_syel
+recruit_character = SKT_unicorn
+recruit_character = SKT_zhofer
+recruit_character = SKT_animecom
+recruit_character = SKT_tovbard
+recruit_character = SKT_kosmov
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
@@ -27,13 +42,3 @@ set_politics = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Дед Максим"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Maksim.dds"
-	expire = "1999.1.1"
-	ideology = gachi
-	traits = {
-		
-	}
-}
