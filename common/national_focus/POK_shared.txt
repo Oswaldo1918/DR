@@ -1131,7 +1131,7 @@
 	}
 	shared_focus = {
 		id = POK_chyotkiye_polnomochiya
-		icon = GFX_goal_unknown
+		icon = GFX_POK_chyotkiye_polnomochiya
 		cost = 5
 		prerequisite = {
 			focus = POK_USA_expirience
@@ -1184,7 +1184,7 @@
 	}
 	shared_focus = {
 		id = POK_pokazat_zlo_bolshevizma
-		icon = GFX_goal_unknown
+		icon = GFX_POK_pokazat_zlo_bolshevizma
 		cost = 5
 		prerequisite = {
 			focus = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
@@ -1288,7 +1288,7 @@
 	}
 	shared_focus = {
 		id = POK_permanent_privatization
-		icon = GFX_goal_unknown
+		icon = GFX_POK_permanent_privatization
 		cost = 5
 		prerequisite = {
 			focus = POK_privatiz_dohodov
@@ -1443,7 +1443,7 @@
 	}
 	shared_focus = {
 		id = POK_otkaz_ot_chrezvich_polnomochiy
-		icon = GFX_goal_unknown
+		icon = GFX_POK_otkaz_ot_chrezvich_po
 		cost = 5
 		prerequisite = {
 			focus = POK_old_svyazi
@@ -1455,7 +1455,7 @@
 	}
 	shared_focus = {
 		id = POK_work_with_old_parlament
-		icon = GFX_goal_unknown
+		icon = GFX_POK_work_with_old_parlament
 		cost = 5
 		prerequisite = {
 			focus = POK_strong_hand_of_liberalism
@@ -1469,7 +1469,7 @@
 	}
 	shared_focus = {
 		id = POK_new_state_duma
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_state_duma
 		cost = 5
 		prerequisite = {
 			focus = POK_rospusk_parlamenta
@@ -1533,7 +1533,7 @@
 	}
 	shared_focus = {
 		id = POK_USA_expirience
-		icon = GFX_goal_unknown
+		icon = GFX_POK_USA_expirience
 		cost = 5
 		prerequisite = {
 			focus = POK_sderzhki_i_protivovesi
@@ -1955,7 +1955,7 @@
 
 	}
 	shared_focus = {
-		id = POK_new_candidates?
+		id = POK_new_candidates
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -1992,7 +1992,7 @@
 	}
 	shared_focus = {
 		id = POK_free_market_fundamentalism
-		icon = GFX_goal_unknown
+		icon = GFX_POK_free_market_fundamentalism
 		cost = 5
 		prerequisite = {
 			focus = POK_subsidii_war_industry
@@ -2175,7 +2175,7 @@
 	}
 	shared_focus = {
 		id = POK_lyudi_s_horochimi_saces
-		icon = GFX_goal_unknown
+		icon = GFX_POK_lyudi_s_horochimi_saces
 		cost = 5
 		prerequisite = {
 			focus = POK_social_garantii
@@ -2427,7 +2427,7 @@
 
 	}
 	shared_focus = {
-		id = full_contract_army
+		id = POK_full_contract_army
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5
 		prerequisite = {
@@ -2440,7 +2440,7 @@
 		x = 17
 		y = 19
 			completion_reward = {
-					add_ideas = full_contract_army
+					add_ideas = POK_full_contract_army
 					army_experience = 10
 				}
 
@@ -2454,7 +2454,7 @@
 			focus = POK_gumanitarniye_bombardirovki
 		}
 		mutually_exclusive = {
-			focus = full_contract_army
+			focus = POK_full_contract_army
 		}
 		x = 15
 		y = 19
@@ -3084,10 +3084,10 @@
 	}
 	shared_focus = {
 		id = POK_elites_of_elites
-		icon = GFX_goal_unknown
+		icon = GFX_POK_elites_of_elites
 		cost =5
 		prerequisite = {
-			focus = full_contract_army
+			focus = POK_full_contract_army
 			focus = POK_freedom_folkshturm
 		}
 		x = 16
