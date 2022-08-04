@@ -26,6 +26,9 @@
 		cost = 5
 		x = 19
 		y = 20
+		available = {
+			has_war = no
+		}
 			completion_reward = {
 
 }
@@ -1091,7 +1094,7 @@
 	}
 	shared_focus = {
 		id = POK_max_exploit_in_war_time
-		icon = GFX_focus_cht_slaves_masses
+		icon = GFX_focus_SOV_penal_battalions
 		cost = 5
 		prerequisite = {
 			focus = POK_war_industry
@@ -1111,7 +1114,7 @@
 	}
 	shared_focus = {
 		id = POK_war_time_oslableniye_gnyota
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_collective
 		cost = 5
 		prerequisite = {
 			focus = POK_war_industry
@@ -1451,7 +1454,9 @@
 		}
 		x = 6
 		y = 14
-
+        available = {
+			has_war = no
+		}
 	}
 	shared_focus = {
 		id = POK_work_with_old_parlament
@@ -1880,7 +1885,7 @@
 	}
 	shared_focus = {
 		id = POK_usilit_administr_presidenta
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 5
 		prerequisite = {
 			focus = POK_chyotkiye_polnomochiya
@@ -1928,7 +1933,7 @@
 	}
 	shared_focus = {
 		id = POK_face_of_state
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
 		prerequisite = {
 			focus = POK_zadobrit_silovikov
@@ -1942,7 +1947,7 @@
 	}
 	shared_focus = {
 		id = POK_flot_yaht
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		prerequisite = {
 			focus = POK_free_weapon_trade
@@ -2035,7 +2040,7 @@
 	}
 	shared_focus = {
 		id = POK_remember_fevral_1917
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_focus_focus_fra_revolution_upmost
 		cost = 5
 		prerequisite = {
 			focus = POK_remember_Novgorod
@@ -2690,7 +2695,9 @@
 		}
 		x = 26
 		y = 14
-
+available = {
+			has_war = no
+		}
 	}
 	shared_focus = {
 		id = POK_russian_confederation
@@ -2791,6 +2798,9 @@
 		}
 		x = 33
 		y = 15
+		available = {
+			has_war = no
+		}
 
 	}
 	shared_focus = {
@@ -2965,7 +2975,7 @@
 	}
 	shared_focus = {
 		id = POK_small_buisnes_submarines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
@@ -3117,7 +3127,7 @@
 	}
 	shared_focus = {
 		id = POK_platit_nazmenam
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GRE_reevaluating_the_drachma
 		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
