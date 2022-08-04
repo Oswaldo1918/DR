@@ -48,7 +48,7 @@ set_politics = {
 set_convoys = 100
 
 create_equipment_variant = {
-		name = "R-35"
+		name = "AMR-1"
 		type = light_tank_chassis_1
 		parent_version = 0
 		modules = {
@@ -63,5 +63,5 @@ create_equipment_variant = {
 			tank_nsb_engine_upgrade = 5
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = ""
+		icon = "gfx/interface/technologies/FRA_amr_33.dds"
 }

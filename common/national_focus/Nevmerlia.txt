@@ -1718,10 +1718,11 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5,00
 		prerequisite = {
-			focus = UKR_yaderniy_antilevackiy_pohod
+			focus = UKR_vozvrasheniye_urala
+			focus = UKR_anti_Z
 		}
 		x = 25
-		y = 14
+		y = 15
 			available = {
 					controls_state = 653
 					controls_state = 219
@@ -1961,6 +1962,28 @@ focus_tree = {
 							elections_allowed = no
 						}
 				}
+
+	}
+	focus = {
+		id = UKR_vozvrasheniye_urala
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_yaderniy_antilevackiy_pohod
+		}
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = UKR_anti_Z
+		icon = GFX_focus_yug_zmaj
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_yaderniy_antilevackiy_pohod
+		}
+		x = 26
+		y = 14
 
 	}
 }
