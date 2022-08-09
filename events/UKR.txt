@@ -335,3 +335,21 @@ country_event = {
 	complete_national_focus = UKR_bratva_rvetsa_k_vlasti
 	}
 }
+country_event = {
+	id = UKR.16
+	title = UKR.16.t
+	desc = UKR.16.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = UKR.16.a
+        load_oob = UKR_shtrafzhenbati
+	}
+	
+	option = {
+	name = UKR.16.b
+        add_ideas = UKR_zhenlagi
+	}
+}
