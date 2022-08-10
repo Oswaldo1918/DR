@@ -170,7 +170,27 @@ default = {
 			}
 		}
 	}
-
+	medium_tank_destroyer_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_at_1.dds" 
+			}
+		}
+	}
+	medium_tank_artillery_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_art_1.dds" 
+			}
+		}
+	}
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_aa_1.dds"
+			}
+		}
+	}
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = {
@@ -193,7 +213,27 @@ default = {
 			}
 		}
 	}
-
+	medium_tank_destroyer_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_at_2.dds" 
+			}
+		}
+	}
+	medium_tank_artillery_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_art_2.dds" 
+			}
+		}
+	}
+    medium_tank_aa_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_aa_2.dds"
+			}
+		}
+	}
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = {
@@ -216,10 +256,25 @@ default = {
 			}
 		}
 	}
+	medium_tank_destroyer_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_at_3.dds" 
+			}
+		}
+	}
+	medium_tank_artillery_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_st_art_3.dds" 
+			}
+		}
+	}
 	medium_tank_aa_chassis_3 = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/MLI-84M.dds"
+				"gfx/interface/technologies/generic_st_aa_3.dds"
 			}
 		}
 	}
