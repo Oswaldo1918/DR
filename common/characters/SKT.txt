@@ -13,6 +13,15 @@ characters={
 	   }
     }
 	
+	SKT_sovet_borodachey = {
+		name = "Совет Бородачей"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKT/.dds"
+			}
+		}
+    }
+	
 	SKT_levoborod = {
 		name = "Игорь Александров"
 		portraits = {
@@ -22,7 +31,7 @@ characters={
 		}
 		country_leader = {
 	       expire = "1999.1.1"
-	       ideology = libertanian_chuchhe
+	       ideology = marxismus
 		   id=-1
 	   }
     }

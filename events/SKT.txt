@@ -1,0 +1,39 @@
+add_namespace = SKT
+
+	
+country_event = { #выбор 
+	id = SKT.1 
+	title = SKT.1.t
+	desc = SKT.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = SKT.1.a
+    set_political_party = {
+    ideology = vmestolev
+    popularity = 50
+    }
+	}
+	
+	option = {
+	name = SKT.1.b
+    set_political_party = {
+    ideology = metacommy
+    popularity = 50
+    }   
+	}
+	
+	option = {
+	name = SKT.1.c
+    set_political_party = {
+    ideology = fascism
+    popularity = 50
+    }   
+	}
+}
