@@ -874,8 +874,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-		
-		completion_reward = {
+			completion_reward = {
 					country_event = {
 							id = UKR.16
 						}
@@ -1725,7 +1724,7 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_vozvrasheniye_urala
-			focus = UKR_anti_Z
+			focus = UKR_Z_net
 		}
 		x = 25
 		y = 15
@@ -1849,7 +1848,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_chernaya_kniga_kraskonizma
+		id = UKR_chernaya_kniga_kapitalizma
 		icon = GFX_focus_por_workers_of_iberia
 		cost = 5,00
 		prerequisite = {
@@ -1867,7 +1866,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_mobilization_plan
 		cost = 5,00
 		prerequisite = {
-			focus = UKR_chernaya_kniga_kraskonizma
+			focus = UKR_chernaya_kniga_kapitalizma
 		}
 		x = 15
 		y = 7
@@ -1909,35 +1908,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_sanitarov_na_nozhi
-		icon = GFX_goal_generic_major_war
-		cost = 5,00
-		prerequisite = {
-			focus = UKR_expert_po_vsem_voprosam
-		}
-		x = 16
-		y = 9
-			completion_reward = {
-					add_political_power = 150
-				}
-
-	}
-	focus = {
-		id = UKR_vlast_shizam
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = UKR_sanitarov_na_nozhi
-		}
-		x = 16
-		y = 10
-			completion_reward = {
-					set_cosmetic_tag = UKR_shue_ppsh
-					add_political_power = 150
-				}
-
-	}
-	focus = {
 		id = UKR_genocid_ribov
 		icon = GFX_focus_RAJ_indian_gurkhas
 		cost = 5,00
@@ -1947,27 +1917,6 @@ focus_tree = {
 		}
 		x = 20
 		y = 11
-
-	}
-	focus = {
-		id = UKR_socialism_s_chelovecheskim_licom
-		icon = GFX_focus_SAF_support_ossewabrandwag
-		cost = 5,00
-		prerequisite = {
-			focus = UKR_expert_po_vsem_voprosam
-		}
-		x = 14
-		y = 9
-			completion_reward = {
-					set_cosmetic_tag = UKR_shuelova
-					set_popularities = {
-							fascism = 100
-						}
-					set_politics = {
-							ruling_party = fascism
-							elections_allowed = no
-						}
-				}
 
 	}
 	focus = {
@@ -1982,7 +1931,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_anti_Z
+		id = UKR_Z_net
 		icon = GFX_focus_yug_zmaj
 		cost = 10,00
 		prerequisite = {
@@ -1990,6 +1939,39 @@ focus_tree = {
 		}
 		x = 26
 		y = 14
+
+	}
+	focus = {
+		id = UKR_unichtozheniye_moskvi
+		icon = GFX_focus_SOV_the_defense_of_moscow
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_rashireniye_EKB
+		}
+		x = 23
+		y = 16
+
+	}
+	focus = {
+		id = UKR_unichtozheniye_spb
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_rashireniye_EKB
+		}
+		x = 25
+		y = 16
+
+	}
+	focus = {
+		id = UKR_unichtozheniye_donetska
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_rashireniye_EKB
+		}
+		x = 27
+		y = 16
 
 	}
 }
