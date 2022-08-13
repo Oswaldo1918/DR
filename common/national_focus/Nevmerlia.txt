@@ -557,45 +557,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_stroyka_novih_kvartir
-		icon = GFX_MGT_seriy_totalitarism
-		cost = 5,00
+		id = UKR_razvitie_promki_stroymaterialov
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
 		prerequisite = {
 			focus = UKR_sneyk
 		}
 		x = 21
 		y = 4
-			available = {
-					controls_state = 221
-					controls_state = 226
-					controls_state = 200
-				}
-			completion_reward = {
-					221 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					226 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					200 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
 
 	}
 	focus = {
@@ -631,13 +600,13 @@ focus_tree = {
 		icon = GFX_focus_prc_infiltration
 		cost = 5,00
 		prerequisite = {
-			focus = UKR_stroyka_novih_kvartir
-		}
-		prerequisite = {
 			focus = UKR_baykerskiye_voyska
 		}
 		prerequisite = {
 			focus = UKR_obyasnyat_politec_na_shluhah
+		}
+		prerequisite = {
+			focus = UKR_razvitie_promki_stroymaterialov
 		}
 		x = 23
 		y = 5
@@ -828,6 +797,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_kartonnaya_bronya
+		icon = GFX_focus_NOD_tank
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_oplot
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
 		id = UKR_pervonachalnoye_nakopleniye_cvartir
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 5,00
@@ -863,6 +843,17 @@ focus_tree = {
 		}
 		x = 25
 		y = 10
+
+	}
+	focus = {
+		id = UKR_inform_agentstvo_sneyka
+		icon = GFX_POK_SMI
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_repressii_protiv_zhertv_propagandi
+		}
+		x = 27
+		y = 11
 
 	}
 	focus = {
@@ -1545,6 +1536,48 @@ focus_tree = {
 		}
 		x = 46
 		y = 7
+
+	}
+	focus = {
+		id = UKR_stroyka_novih_kvartir
+		icon = GFX_MGT_seriy_totalitarism
+		cost = 5,00
+		prerequisite = {
+			focus = UKR_razvitie_promki_stroymaterialov
+		}
+		x = 21
+		y = 5
+			available = {
+					controls_state = 221
+					controls_state = 226
+					controls_state = 200
+				}
+			completion_reward = {
+					221 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					226 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					200 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
