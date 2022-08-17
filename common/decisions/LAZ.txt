@@ -2333,9 +2333,9 @@ LAZ_annex_puppets_cat = {
         }
 
 		fire_only_once = no
-		
+		###is_ai = yes###
 		available = {
-        is_ai = no
+        
 				CHT = { 
 				 is_puppet_of = LAZ 
 				}

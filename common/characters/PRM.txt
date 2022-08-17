@@ -1,0 +1,206 @@
+characters={
+	PRM_Sokolov = {
+		name = "Дмитрий Соколов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRM/Sokolov.dds"
+			}
+		}
+		country_leader = {
+	       expire = "1999.1.1"
+	       ideology = memoism
+		   id=-1
+	   }
+    }
+	
+	PRM_Brekotkin = {
+		name = "Дмитрий Брекоткин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRM/Brekotkin.dds"
+			}
+		}
+		country_leader = {
+	       expire = "1999.1.1"
+	       ideology = memoism
+		   id=-1
+	   }
+    }
+	
+	PRM_Rosov = {
+		name = "Николай Росов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRM/Rosov.dds"
+			}
+		}
+		country_leader = {
+	       expire = "1999.1.1"
+	       ideology = fascism
+		   id=-1
+	   }
+    }
+	
+	PRM_Olezhko = {
+		name = "Женя Олежко"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_Olezhko"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_Olezhko
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { pragmatic }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_1 = {
+		name = "Залипаев №11"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_1"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_klon_Zalipaeva_1
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { top_vaifu }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_2 = {
+		name = "Залипаев №12"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_2"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_klon_Zalipaeva_2
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { marxist_academic }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_3 = {
+		name = "Залипаев №13"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_3"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_klon_Zalipaeva_3
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { hudozhnik }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_4 = {
+		name = "Залипаев №14"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_4"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_klon_Zalipaeva_4
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { nkvd_rezident }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_5 = {
+		name = "Залипаев №15"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_5"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_klon_Zalipaeva_5
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { komissar_travli }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_6 = {
+		name = "Залипаев №16"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_6"
+			}
+		}
+		advisor={ 
+		    slot = high_command
+			idea_token = PRM_klon_Zalipaeva_6
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { army_chief_offensive_1 }
+	    }
+    }
+	
+	PRM_klon_Zalipaeva_7 = {
+		name = "Залипаев №17"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_klon_Zalipaeva_7"
+			}
+		}
+		advisor={ 
+		    slot = high_command
+			idea_token = PRM_klon_Zalipaeva_7
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { army_cavalry_2 }
+	    }
+    }
+	
+	PRM_Netiyevskiy = {
+		name = "Сергей Нетиевский"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_PRM_Netiyevskiy"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = PRM_Netiyevskiy
+			allowed = {
+                original_tag = PRM
+				
+            }
+            traits = { backroom_backstabber }
+	    }
+    }
+	
+}
