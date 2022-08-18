@@ -5,7 +5,20 @@ characters={
 			civilian = {
 				large = "gfx/leaders/PRM/Sokolov.dds"
 			}
+			army = {
+                large = "gfx/leaders/PRM/Sokolov.dds"
+			}
 		}
+		corps_commander = {
+	    traits = { }
+	    skill = 2
+    	attack_skill = 1
+    	defense_skill = 1
+    	planning_skill = 1
+	    logistics_skill = 1
+		desc = PRM_Sokolov_desc
+		legacy_id = -1
+        }
 		country_leader = {
 	       expire = "1999.1.1"
 	       ideology = memoism
@@ -33,6 +46,9 @@ characters={
 			civilian = {
 				large = "gfx/leaders/PRM/Rosov.dds"
 			}
+			army = {
+                large = "gfx/leaders/PRM/Rosov.dds"
+			}
 		}
 		country_leader = {
 	       expire = "1999.1.1"
@@ -55,7 +71,7 @@ characters={
                 original_tag = PRM
 				
             }
-            traits = { pragmatic }
+            traits = { popular_figurehead }
 	    }
     }
 	
@@ -73,7 +89,7 @@ characters={
                 original_tag = PRM
 				
             }
-            traits = { top_vaifu }
+            traits = {  }
 	    }
     }
 	
