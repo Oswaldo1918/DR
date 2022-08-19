@@ -3,12 +3,26 @@ capital = 398
 oob = 123_1936
 
 set_research_slots = 2
-set_stability = 0.5
+set_stability = 0.25
 set_war_support = 0.5
 set_technology = {
-	infantry_weapons = 1
+infantry_weapons = 1
+	tech_support = 1		
+	tech_military_police = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
 	basic_train = 1
 }
+
+recruit_character = PRM_Sokolov
+recruit_character = PRM_Brekotkin
+recruit_character = PRM_Rosov
+recruit_character = PRM_Olezhko
+recruit_character = PRM_Netiyevskiy
 
 add_ideas = {
 limited_conscription
@@ -17,7 +31,13 @@ PRM_ural_karapuz
 }
 
 set_popularities = {
-	memoism = 100
+	democratic = 20
+	memoism = 35
+	vmestolev = 20
+	neutrality = 20
+	anarhostalinism = 1
+	metacommy = 1
+	fascism = 3
 }
 set_politics = {
 	ruling_party = memoism
@@ -32,6 +52,16 @@ create_country_leader = {
 	picture = "Sokolov.dds"
 	expire = "1999.1.1"
 	ideology = postironism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Николай Росов"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Rosov.dds"
+	expire = "1999.1.1"
+	ideology = fascism
 	traits = {
 		
 	}

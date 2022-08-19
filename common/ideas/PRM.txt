@@ -13,6 +13,40 @@ ideas = {
 			    }
 		    }
 			
+			 PRM_ural_karapuz_1 = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+			    army_core_defence_factor = 0.05
+				democratic_drift = 0.01
+				vmestolev_drift = 0.01
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			PRM_obshestvo_spektaklya = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = 0.05
+				memoism_drift = 0.01
+			    }
+		    }
+			
+			PRM_reeksport_tovarov = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+                trade_opinion_factor = 0.2
+				consumer_goods_factor = -0.05
+			    }
+		    }
+			
 			SKT_hui_ded_Maksim = {
 
 			picture = generic_intel_bonus
