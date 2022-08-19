@@ -1,24 +1,157 @@
 ideas = {
        country = {
-	        SKT_GSB = {
+	        SKT_narodniy_neftegaz = {
 
-			picture = cht_shizofrenia
-			    targeted_modifier = {
-			    tag = IZR
-			    attack_bonus_against = 0.1
-		        }
-				targeted_modifier = {
-				tag = IRQ
-			    attack_bonus_against = 0.1
-		        }   
+			picture = cht_shizofrenia  
 			    modifier = {
-				army_core_attack_factor = 0.075
-				acclimatization_hot_climate_gain_factor = 0.05
-				army_morale_factor = 0.05
-				experience_gain_army = 0.05
-				surrender_limit = 0.05
-				conscription = 0.025
-				war_support_factor = 0.075
+				consumer_goods_factor = 0.05
+				state_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				base_fuel_gain_factor = 0.15
+			    }
+		    }
+			SKT_narodniy_neftegaz_1 = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.1
+				state_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				base_fuel_gain_factor = 0.15
+				monthly_population = 0.15
+			    }
+		    }
+			SKT_narodniy_neftegaz_2 = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.075
+				state_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				base_fuel_gain_factor = 0.2
+				monthly_population = 0.15
+			    }
+		    }
+			SKT_new_infrastruktura = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				production_speed_infrastructure_factor = 0.15 
+			    }
+		    }
+			SKT_big_socialka = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				production_speed_infrastructure_factor = 0.15
+                consumer_goods_factor = 0.1 
+                monthly_population = 0.75
+                production_factory_start_efficiency_factor = 0.05           				
+			    }
+		    }
+			SKT_Komi_dlya_ludey = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				production_speed_infrastructure_factor = 0.15
+                consumer_goods_factor = 0.175 
+                monthly_population = 1.5
+                production_factory_start_efficiency_factor = 0.075
+                state_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				base_fuel_gain_factor = 0.2      				
+			    }
+		    }
+			SKT_new_sposobi_dobichi = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				local_resources_factor = 0.10     				
+			    }
+		    }
+			SKT_narastit_neftedobichy = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				local_resources_factor = 0.15
+				base_fuel_gain_factor = 0.1
+			    }
+		    }
+			SKT_SovOil = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.075
+                local_resources_factor = 0.10   
+                production_factory_efficiency_gain_factor = 0.075
+			    }
+		    }
+			SKT_SovOil_1 = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.125
+                local_resources_factor = 0.15   
+                production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.075
+			    }
+		    }
+			SKT_SovOil_2 = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.1
+                local_resources_factor = 0.15   
+                production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.075
+				research_speed_factor = 0.075
+			    }
+		    }
+			SKT_SovOil_2 = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.1
+                local_resources_factor = 0.25   
+                production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.075
+				research_speed_factor = 0.075
+				base_fuel_gain_factor = 0.1
+				monthly_population = 0.25
+			    }
+		    }
+			SKT_avangard_lumpen_kassir = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				vmestolev_drift = 0.01
+				party_popularity_stability_factor = 0.15
+				stability_factor = 0.05
+				drift_defence_factor = 0.3
+			    }
+		    }
+			SKT_sev_mayak_zhozhekizma = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				vmestolev_drift = 0.01
+				stability_factor = 0.1
+				drift_defence_factor = 0.2
+			    }
+		    }
+			SKT_fanernaya_arkhitektura = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				production_speed_buildings_factor = 0.075 
+			    }
+		    }
+			SKT_opit_sevkor_ansabley_pesen = {
+
+			picture = cht_shizofrenia  
+			    modifier = {
+				political_power_gain = 0.1
+                vmestolev_drift = 0.01     				
 			    }
 		    }
 	   }
