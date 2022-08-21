@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position =  { x = 50 y = 100 }
 	focus = {
 		id = SKT_blizost_smerti
 		icon = GFX_goal_unknown
@@ -336,9 +337,25 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_sev_mayak_zhozhekizma
 		}
+		available = {
+			has_idea = SKT_reutskiy
+		}
 		x = 7
 		y = 10
-
+        completion_reward = {
+			add_opinion_modifier = {
+                target = SIR
+                modifier = backed_our_cause
+            }
+            add_opinion_modifier = {
+                target = EGY
+                modifier = backed_our_cause
+            }
+            add_opinion_modifier = {
+                target = HUS
+                modifier = backed_our_cause
+            } 
+        }             
 	}
 	focus = {
 		id = SKT_KSKR
@@ -349,7 +366,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 11
-
+        completion_reward = {
+			add_ideas = SKT_KSKR
+        }          
 	}
 	focus = {
 		id = SKT_help_arabam
@@ -358,9 +377,32 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_KSKR
 		}
+		available = {
+		    IZR = {
+	        has_war_with = ARV
+	        }
+	        IZR = {
+            has_war_with = SIR 	
+	        }
+		}
 		x = 7
 		y = 12
-
+        completion_reward = {
+			ARV = {  
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SKT
+            }
+			}
+			SIR = {  
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SKT
+            }
+			}
+        }         
 	}
 	focus = {
 		id = SKT_Israel_must_destroy
@@ -371,7 +413,23 @@ focus_tree = {
 		}
 		x = 7
 		y = 13
-
+        completion_reward = {
+			ARV = {  
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SKT
+            }
+			}
+			SIR = {  
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = SKT
+            }
+			}
+			IZR = { add_stability = -0.05 }
+        }            
 	}
 	focus = {
 		id = SKT_golos_stepey
@@ -380,9 +438,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_sev_mayak_zhozhekizma
 		}
+		available = {
+			has_idea = SKT_fomin
+		}
 		x = 13
 		y = 10
-
+        completion_reward = {
+			add_war_support = 0.1
+        }              
 	}
 	focus = {
 		id = SKT_priznat_Veshnoriu
@@ -393,7 +456,12 @@ focus_tree = {
 		}
 		x = 13
 		y = 11
-
+        completion_reward = {
+			add_opinion_modifier = {
+                target = WHS
+                modifier = backed_our_cause
+            }
+        }      
 	}
 	focus = {
 		id = SKT_kommunist_agora
@@ -404,7 +472,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 12
-
+        completion_reward = {
+			add_ideas = SKT_kommunist_agora
+        }       
 	}
 	focus = {
 		id = SKT_manifest_metamodernizma
@@ -415,7 +485,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 12
-
+        completion_reward = {
+			add_popularity = {
+            ideology = vmestolev
+            popularity = 0.1
+            }
+            add_war_support = 0.1       			
+        }       
 	}
 	focus = {
 		id = SKT_razvodid_kochevoy_kartofel
@@ -429,7 +505,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 13
-
+        completion_reward = {
+			add_ideas = SKT_razvodid_kochevoy_kartofel
+        }         
 	}
 	focus = {
 		id = SKT_otdel_expansion
@@ -440,7 +518,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
-
+        completion_reward = {
+			add_ideas = SKT_otdel_expansion
+        }       
 	}
 	focus = {
 		id = SKT_osvobodid_komi_permyakov
@@ -451,7 +531,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 9
-
+        completion_reward = {
+			add_state_core = 398
+			declare_war_on = {
+                target = PRM
+                type = annex_everything
+            }
+        }       
 	}
 	focus = {
 		id = SKT_join_ChumPact
@@ -463,9 +549,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SKT_prodolzhit_expansii
 		}
+		available = {
+		has_country = LAZ
+		}
 		x = 17
 		y = 10
-
+        completion_reward = {
+			SKT = { add_to_faction = Chumnoi_Pakt }
+			LAZ = {
+			set_autonomy = {
+	target = SKT
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.5
+}
+			}
+        }       
 	}
 	focus = {
 		id = SKT_annex_Arkhangelsk
@@ -474,9 +572,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_osvobodid_komi_permyakov
 		}
+		available = {
+		NOT = { country_exists = LAZ }
+		}
 		x = 18
 		y = 11
-
+        completion_reward = {
+			ARK = { country_event = SKT.2 }
+        }       
 	}
 	focus = {
 		id = SKT_prodolzhit_expansii
@@ -490,7 +593,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 10
-
+        completion_reward = {
+			add_war_support = 0.1
+        }       
 	}
 	focus = {
 		id = SKT_narodniy_neftegaz
@@ -1163,6 +1268,7 @@ focus_tree = {
 		y = 14
         completion_reward = {
 			add_political_power = 100
+			add_stability = 0.075
         }      
 	}
 	focus = {
@@ -1178,11 +1284,7 @@ focus_tree = {
 		x = 3
 		y = 14
         completion_reward = {
-			SKT = {
-    SKT_kulov = {
-        set_nationality = ASM
-    }
-}
+		SKT_kulov = { set_nationality = ASM }
         }        
 	}
 	focus = {
@@ -1197,7 +1299,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 13
-
+        completion_reward = {
+		    add_ideas = SKT_elementi_chuchhe           
+        }         
 	}
 	focus = {
 		id = SKT_otpravit_Reutsa_na_BV
@@ -1212,7 +1316,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 14
-
+        completion_reward = {
+		SKT_reutskiy = { set_nationality = SIR }
+        }        
 	}
 	focus = {
 		id = SKT_ostavit_Reutsa
@@ -1227,7 +1333,10 @@ focus_tree = {
 		}
 		x = 7
 		y = 14
-
+        completion_reward = {
+			add_political_power = 100
+			add_stability = 0.075
+        }         
 	}
 	focus = {
 		id = SKT_Reuts_valit_v_Japan
@@ -1242,7 +1351,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 14
-
+        completion_reward = {
+		SKT_reutskiy = { set_nationality = JPE }
+        }       
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_v_Veishnoriu
@@ -1257,7 +1368,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 14
-
+        completion_reward = {
+		SKT_fomin = { set_nationality = WHS }
+        }      
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_v_Mongoliu
@@ -1272,7 +1385,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 14
-
+        completion_reward = {
+		SKT_fomin = { set_nationality = MNR }
+        }         
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_po_Komi
@@ -1287,6 +1402,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 14
-
+        completion_reward = {
+			add_political_power = 100
+			add_stability = 0.075
+        }      
 	}
 }

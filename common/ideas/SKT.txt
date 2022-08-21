@@ -154,6 +154,50 @@ ideas = {
                 vmestolev_drift = 0.01     				
 			    }
 		    }
+			SKT_elementi_chuchhe = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+                metacommy_drift = 0.001     				
+			    }
+		    }
+			SKT_KSKR = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.1
+                army_morale_factor = 0.1      				
+			    }
+		    }
+			SKT_kommunist_agora = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				vmestolev_drift = 0.01
+                war_support_factor = 0.05
+                drift_defence_factor = 0.3    				
+			    }
+		    }
+			SKT_razvodid_kochevoy_kartofel = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.05  
+ 				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+			    }
+		    }
+			SKT_otdel_expansion = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				war_support_factor = 0.15
+				offensive_war_stability_factor = 0.15
+			    }
+		    }
 	   }
 		
 }
