@@ -198,6 +198,23 @@ ideas = {
 				offensive_war_stability_factor = 0.15
 			    }
 		    }
+			SKT_no_step_back = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				dig_in_speed_factor = -0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			    }
+		    }
+			SKT_pochetniy_karaul = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+			    }
+		    }
 	   }
 		
 }
