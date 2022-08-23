@@ -1,0 +1,252 @@
+add_namespace = prm
+
+country_event = { #чё там в Перми
+	id = prm.0 
+	title = prm.0.t
+	desc = prm.0.d
+	picture = GFX_report_event_dkr_bebey_disco
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.0.a
+	}
+}
+	
+	
+country_event = { #Уральские пельмени продолжают правление, а Росов куда-то пропадает. А ещё к ниму никто не пришёл на фан-встречу из-за нового выпуска Уральских пельменей.
+	id = prm.1 
+	title = prm.1.t
+	desc = prm.1.d
+	picture = GFX_report_event_dkr_bebey_disco
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.1.a
+    add_popularity = {
+    ideology = memoism
+    popularity = 0.25
+    } 
+	}
+}
+
+country_event = { #Съезд проход успешно. Концерт сорван. Вождём и руководителем Перми назначен Росов
+	id = prm.2
+	title = prm.2.t
+	desc = prm.2.d
+	picture = GFX_report_event_dkr_bebey_disco
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.2.a
+	add_political_power = -50
+	}
+}
+
+country_event = { #принципы управления Пельмении
+	id = prm.3
+	title = prm.3.t
+	desc = prm.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.3.a
+	}
+}
+country_event = { #Всех оставшихся сторонников Росова, а также активных сочувствующих Лазарету или Покаянии вычищают
+	id = prm.4
+	title = prm.4.t
+	desc = prm.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.4.a
+	}
+}
+country_event = { #Идеология социзма и дружба с пони
+	id = prm.5
+	title = prm.5.t
+	desc = prm.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.5.a
+	}
+}
+
+country_event = { #Поэзия Вуефаста
+	id = prm.6
+	title = prm.6.t
+	desc = prm.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.6.a
+	}
+}
+country_event = { #Вуефаст выёбывается на христианство
+	id = prm.7
+	title = prm.7.t
+	desc = prm.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.7.a
+	}
+}
+country_event = { #Росов косплеит нацдема
+	id = prm.8
+	title = prm.8.t
+	desc = prm.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.8.a
+	}
+}
+country_event = { #росов не уходит с собрания партии до тех пор, пока оно не окупится и не отпускает никого
+	id = prm.9
+	title = prm.9.t
+	desc = prm.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.9.a
+	}
+}
+country_event = { #Абмициозность Росова не заканчиается на главе Пермского края
+	id = prm.10
+	title = prm.10.t
+	desc = prm.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.10.a
+	}
+}
+country_event = { #Если победил Барнаул, то примазывается к ним, а возможно даже берёт из себе в случае поражения
+	id = prm.11
+	title = prm.11.t
+	desc = prm.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.11.a
+	}
+}
+country_event = { #Если нет никого лучше Вуефаста, то почему бы им не быть нескольким
+	id = prm.12
+	title = prm.12.t
+	desc = prm.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.12.a
+	}
+}
+country_event = { #Мы сохраним нейтралитет и это будет нам таки выгодно! Все вокруг пиздятся, ВНБ крадёт товары с южноуральского торгового маршрута, гиганты сражаются друг с другом, и могут торговать только через нас.
+	id = prm.13
+	title = prm.13.t
+	desc = prm.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.13.a
+	}
+}
+country_event = { #марионетка Барнаула и особенно нацдемоа, с возможно аннексией, но с секретным путём по захвату власти в покаянии
+	id = prm.14
+	title = prm.14.t
+	desc = prm.14.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = PRM
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = prm.14.a
+	}
+}

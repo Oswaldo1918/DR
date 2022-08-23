@@ -19,6 +19,10 @@ country_event = { #выбор
     ideology = vmestolev
     popularity = 50
     }
+	complete_national_focus = SKT_left_boroda
+	set_politics = {
+	ruling_party = vmestolev
+    }
 	}
 	
 	option = {
@@ -26,7 +30,11 @@ country_event = { #выбор
     set_political_party = {
     ideology = metacommy
     popularity = 50
-    }   
+    } 
+    complete_national_focus = SKT_tsentrist_boroda
+  	set_politics = {
+	ruling_party = metacommy
+    }
 	}
 	
 	option = {
@@ -34,6 +42,51 @@ country_event = { #выбор
     set_political_party = {
     ideology = fascism
     popularity = 50
-    }   
+    } 
+	complete_national_focus = SKT_right_boroda
+	set_politics = {
+	ruling_party = fascism
+    }
+	}
+}
+
+country_event = { #выбор 
+	id = SKT.2 
+	title = SKT.2.t
+	desc = SKT.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = SKT.2.a
+        SKT = {
+		annex_country = {
+    target = ARK
+    transfer_troops = yes
+          }
+		}
+	}
+	
+	option = {
+	name = SKT.2.b
+    SKT = {
+        declare_war_on = {
+                target = ARK
+                type = annex_everything
+        }
+        every_state = {
+			limit = {
+				is_owned_by = ARK
+			}
+			SKT = {
+				add_state_claim = PREV
+			}
+		}      		
+    }        	
 	}
 }

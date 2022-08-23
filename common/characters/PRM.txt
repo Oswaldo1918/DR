@@ -6,7 +6,7 @@ characters={
 				large = "gfx/leaders/PRM/Sokolov.dds"
 			}
 			army = {
-                large = "gfx/leaders/PRM/Sokolov.dds"
+                large = "gfx/leaders/PRM/Sokolov_army.dds"
 			}
 		}
 		corps_commander = {
@@ -24,6 +24,29 @@ characters={
 	       ideology = memoism
 		   id=-1
 	   }
+    }
+	
+	PRM_Myasnikov_1 = {
+		name = "Вячеслав Мясников"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRM/Myasnikov.dds"
+			}
+			army = {
+                large = "gfx/leaders/PRM/Myasnikov_army.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { }
+	    skill = 1
+    	attack_skill = 2
+    	defense_skill = 1
+    	planning_skill = 1
+	    logistics_skill = 1
+		desc = PRM_Myasnikov_1_desc
+		legacy_id = -1
+        }
+	
     }
 	
 	PRM_Brekotkin = {

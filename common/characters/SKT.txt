@@ -150,6 +150,9 @@ characters={
 			civilian = {
 				small = "GFX_idea_SKT_supa_syel"
 			}
+			army = {
+				large = "gfx/leaders/SKT/supa_syel_army.dds"
+			}
 		}
 		advisor={ 
 		    slot = high_command
@@ -167,6 +170,9 @@ characters={
 		portraits = {
 			civilian = {
 				small = "GFX_idea_SKT_unicorn"
+			}
+			army = {
+				large = "gfx/leaders/SKT/unicorn_army.dds"
 			}
 		}
 		advisor={ 
@@ -250,5 +256,14 @@ characters={
             }
             traits = { backroom_backstabber }
 	    }
+    }
+	
+	SKT_Aleksandr_Lebedev = {
+		name = "Александр Леденёв"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/Aleksandr_Lebedev_army.dds"
+			}
+		}
     }
 }

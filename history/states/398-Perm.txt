@@ -5,7 +5,9 @@ state = {
 	manpower = 2135879
 	state_category = rural
 	resources = {
-		aluminium = 6 # was: 10
+		aluminium = 10 # was: 16
+		steel= 10 # was: 16
+		oil = 10 # was: 12
 	}
 
 	history = {
@@ -16,7 +18,13 @@ state = {
 
 		}
 		victory_points = {
-			7375 1 
+			7375 7 
+		}
+		victory_points = {
+			12527 3 
+		}
+		victory_points = {
+			206 2 
 		}
 		add_core_of = PRM
 		1939.1.1 = {
