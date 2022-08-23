@@ -320,6 +320,20 @@ default = {
 			}
 		}
 	}
+	heavy_tank_artillery_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_tt_art_1.dds" 
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/generic_tt_art_2.dds" 
+			}
+		}
+	}
 }
 TUP = {
 	heavy_tank_chassis_2 = {
@@ -540,6 +554,13 @@ LAZ = {
 		pool = {
 			icons = {	 
 				"gfx/interface/technologies/LAZ_BMPT-2-76.dds"
+			}
+		}
+	}
+	light_tank_destroyer_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/LAZ_BMPAT-2-76.dds" 
 			}
 		}
 	}
