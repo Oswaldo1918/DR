@@ -23,6 +23,9 @@ focus_tree = {
 		id = SKT_da_i_Komi_ostalos_s_nim
 		icon = GFX_goal_generic_demand_territory
 		cost = 1,00
+		available = {
+					has_completed_focus = SKT_vot_i_pomer_ded_Maksim
+				}
 		x = 35
 		y = 4
 			completion_reward = {
@@ -862,7 +865,6 @@ focus_tree = {
 }
 								}
 						}
-					load_focus_tree = PostDedMaksim_Komi
 				}
 
 	}
