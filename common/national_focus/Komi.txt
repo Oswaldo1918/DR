@@ -105,6 +105,36 @@ focus_tree = {
 							ideology = vmestolev
 							popularity = 0.05
 						}
+                    add_corps_commander_role  = {
+    character = SKT_unicorn
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+                   }
+                add_corps_commander_role  = {
+    character = SKT_supa_syel
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        } 
+		add_corps_commander_role  = {
+    character = SKT_Aleksandr_Lebedev
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
 				}
 
 	}
@@ -125,6 +155,16 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			add_field_marshal_role  = {
+  character = SKT_levoborod
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+}
 		}          
 	}
 	focus = {
