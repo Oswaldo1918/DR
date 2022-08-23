@@ -203,9 +203,7 @@ completion_reward = {
 							popularity = 0.15
 						}
 				add_ideas = PRM_obshestvo_spektaklya	
-				country_event = {
-							id = prm.3
-						    }
+
 				}
 	}
 	focus = {
@@ -382,9 +380,7 @@ completion_reward = {
 						remove_idea = PRM_kult_of_personality
 						add_idea = PRM_kult_of_personality_1
 						}
-						country_event = {
-							id = prm.7
-						    }
+			
 				}
 	}
 	focus = {
@@ -454,9 +450,7 @@ country_event = {
 		y = 5
 completion_reward = {
 				remove_ideas = PRM_ural_karapuz
-				country_event = {
-							id = prm.10
-						    }
+
 				}
 	}
 	focus = {
@@ -486,9 +480,7 @@ completion_reward = {
 		x = 33
 		y = 5
 completion_reward = {
-			country_event = {
-							id = prm.11
-						    }
+
 				}
 	}
 	focus = {
@@ -504,10 +496,7 @@ completion_reward = {
 		x = 30
 		y = 6
 completion_reward = {
-add_ideas = CHT_klon
-country_event = {
-							id = prm.12
-						    }
+add_ideas = CHT_klon 
 				}
 	}
 	focus = {

@@ -34,8 +34,16 @@ country_event = { #Уральские пельмени продолжают пр
 	name = prm.1.a
     add_popularity = {
     ideology = memoism
-    popularity = 0.25
+    popularity = 0.05
     } 
+	add_country_flag
+	}
+	option = {
+	name = prm.2.a
+    add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+    }
 	}
 }
 
