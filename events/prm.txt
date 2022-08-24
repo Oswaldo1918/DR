@@ -14,11 +14,15 @@ country_event = { #чё там в Перми
 	
 	option = {
 	name = prm.0.a
+	set_country_flag = show_must_go_on
+	}
+	option = {
+	name = prm.0.b
+	set_country_flag = syezd
 	}
 }
 	
-	
-country_event = { #Уральские пельмени продолжают правление, а Росов куда-то пропадает. А ещё к ниму никто не пришёл на фан-встречу из-за нового выпуска Уральских пельменей.
+country_event = { #Уральские пельмени продолжают правление
 	id = prm.1 
 	title = prm.1.t
 	desc = prm.1.d
@@ -36,14 +40,15 @@ country_event = { #Уральские пельмени продолжают пр
     ideology = memoism
     popularity = 0.05
     } 
-	add_country_flag
+	set_country_flag = brekotkin
 	}
 	option = {
-	name = prm.2.a
+	name = prm.1.b
     add_popularity = {
     ideology = neutrality
     popularity = 0.05
     }
+	set_country_flag = sokolov
 	}
 }
 
@@ -61,7 +66,6 @@ country_event = { #Съезд проход успешно. Концерт сор
 	
 	option = {
 	name = prm.2.a
-	add_political_power = -50
 	}
 }
 
@@ -95,6 +99,7 @@ country_event = { #Всех оставшихся сторонников Росо
 	
 	option = {
 	name = prm.4.a
+	add_manpower = -100
 	}
 }
 country_event = { #Идеология социзма и дружба с пони
@@ -111,6 +116,8 @@ country_event = { #Идеология социзма и дружба с пони
 	
 	option = {
 	name = prm.5.a
+	add_political_power = 25
+	recruit_character = PRM_Olezhko
 	}
 }
 
@@ -128,6 +135,7 @@ country_event = { #Поэзия Вуефаста
 	
 	option = {
 	name = prm.6.a
+	add_named_threat = { threat = 5 name = PRM_Vuefast_1 }
 	}
 }
 country_event = { #Вуефаст выёбывается на христианство
@@ -176,6 +184,7 @@ country_event = { #росов не уходит с собрания партии
 	
 	option = {
 	name = prm.9.a
+	add_named_threat = { threat = 2 name = PRM_Vuefast_2 }
 	}
 }
 country_event = { #Абмициозность Росова не заканчиается на главе Пермского края
