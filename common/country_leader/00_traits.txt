@@ -4,13 +4,6 @@
 
 leader_traits = {
 
-    black_metallist = {
-		random = no
-		sprite = 13
-
-		political_power_factor = 0.02
-		war_support_factor = 0.075
-	}
 
     levoborod = {
 		random = no
@@ -32,7 +25,8 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		#
+		political_power_factor = 0.02
+		war_support_factor = 0.075
 	}
 
     komissar_travli = {
