@@ -60,7 +60,13 @@ division_template = {
 		}
 		x = 25
 		y = 1
+		available = {
+					has_country_flag = show_must_go_on
+				}
 completion_reward = {
+	country_event = {
+					id = prm.1
+				 }
 				398 = {
 							add_building_construction = {
 									type = radar_station
@@ -71,13 +77,10 @@ completion_reward = {
 					add_manpower = -1
 	add_stability = 0.10
 	add_political_power = -100
-	country_event = {
-							id = prm.1
-						    }
+
 				}
-			
 	}
-	focus = {
+	focus = { 
 		id = PRM_syezd_Ros_part_vozrozhd
 		icon = GFX_PRM_syezd_Ros_part_vozrozhd
 		cost = 5
@@ -89,6 +92,9 @@ completion_reward = {
 		}
 		x = 31
 		y = 1
+		available = {
+					has_country_flag = syezd
+				}
 completion_reward = {
 					add_popularity = {
 							ideology = fascism
@@ -130,6 +136,9 @@ completion_reward = {
 		}
 		x = 24
 		y = 2
+				available = {
+					has_country_flag = brekotkin
+				}
 completion_reward = {
 	
 	create_country_leader = {
@@ -183,6 +192,9 @@ add_war_support = 0.05
 		}
 		x = 26
 		y = 2
+				available = {
+					has_country_flag = sokolov
+				}
 completion_reward = {
 	add_political_power = 100
 				}
@@ -203,9 +215,7 @@ completion_reward = {
 							popularity = 0.15
 						}
 				add_ideas = PRM_obshestvo_spektaklya	
-				country_event = {
-							id = prm.3
-						    }
+
 				}
 	}
 	focus = {
@@ -382,9 +392,7 @@ completion_reward = {
 						remove_idea = PRM_kult_of_personality
 						add_idea = PRM_kult_of_personality_1
 						}
-						country_event = {
-							id = prm.7
-						    }
+			
 				}
 	}
 	focus = {
@@ -454,9 +462,7 @@ country_event = {
 		y = 5
 completion_reward = {
 				remove_ideas = PRM_ural_karapuz
-				country_event = {
-							id = prm.10
-						    }
+
 				}
 	}
 	focus = {
@@ -486,9 +492,7 @@ completion_reward = {
 		x = 33
 		y = 5
 completion_reward = {
-			country_event = {
-							id = prm.11
-						    }
+
 				}
 	}
 	focus = {
@@ -504,10 +508,7 @@ completion_reward = {
 		x = 30
 		y = 6
 completion_reward = {
-add_ideas = CHT_klon
-country_event = {
-							id = prm.12
-						    }
+add_ideas = CHT_klon 
 				}
 	}
 	focus = {

@@ -751,7 +751,7 @@
 	}
 	shared_focus = {
 		id = POK_vibori_vibori
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vibori_vibori
 		cost = 5
 		prerequisite = {
 			focus = POK_power_president
@@ -815,7 +815,7 @@
 	}
 	shared_focus = {
 		id = POK_sderzhki_i_protivovesi
-		icon = GFX_goal_unknown
+		icon = GFX_POK_sderzhki_i_protivovesi
 		cost = 5
 		prerequisite = {
 			focus = POK_otkaz_ot_chrezvich_polnomochiy
@@ -888,7 +888,7 @@
 		mutually_exclusive = {
 			focus = POK_proshay_nemitaya_rossiya
 		}
-		x = 37
+		x = 36
 		y = 19
 			completion_reward = {
 
@@ -946,7 +946,7 @@
 	}
 	shared_focus = {
 		id = POK_komitet_spaseniya
-		icon = GFX_goal_unknown
+		icon = GFX_POK_komitet_spaseniya
 		cost = 5
 		prerequisite = {
 			focus = POK_vibori_vibori
@@ -1170,7 +1170,7 @@
 	}
 	shared_focus = {
 		id = POK_bulochka_i_tramvaychik
-		icon = GFX_goal_unknown
+		icon = GFX_POK_bulochka_i_tramvaychik
 		cost = 5
 		prerequisite = {
 			focus = POK_war_time_oslableniye_gnyota
@@ -1793,7 +1793,7 @@
 	}
 	shared_focus = {
 		id = POK_kult_of_Nepolzhivov
-		icon = GFX_goal_unknown
+		icon = GFX_POK_kult_of_Nepolzhivov
 		cost = 5
 		prerequisite = {
 			focus = POK_night_sentinels
@@ -1874,7 +1874,7 @@
 	}
 	shared_focus = {
 		id = POK_vertical_vlasti
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vertical_vlasti
 		cost = 5
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
@@ -1907,7 +1907,7 @@
 	}
 	shared_focus = {
 		id = POK_privatiz_dohodov
-		icon = GFX_focus_cht_new_nalogooblazhenie
+		icon = GFX_POK_burg2
 		cost = 5
 		prerequisite = {
 			focus = POK_free_market_fundamentalism
@@ -1920,7 +1920,7 @@
 	}
 	shared_focus = {
 		id = POK_natsionalizat_rashodov
-		icon = GFX_goal_unknown
+		icon = GFX_POK_prolet
 		cost = 5
 		prerequisite = {
 			focus = POK_free_market_fundamentalism
@@ -1961,7 +1961,7 @@
 	}
 	shared_focus = {
 		id = POK_new_candidates
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vertical_vlasti
 		cost = 5
 		prerequisite = {
 			focus = POK_new_federative_pact
@@ -1986,7 +1986,7 @@
 	}
 	shared_focus = {
 		id = POK_otdel_lobburovaniya
-		icon = GFX_goal_unknown
+		icon = GFX_POK_otdel_lobburovaniya
 		cost = 5
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
@@ -2054,7 +2054,7 @@
 	}
 	shared_focus = {
 		id = POK_oslabit_control_biznesa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 5
 		prerequisite = {
 			focus = POK_max_exploit_in_war_time
@@ -2071,7 +2071,7 @@
 	}
 	shared_focus = {
 		id = POK_subsidii_war_industry
-		icon = GFX_goal_unknown
+		icon = GFX_POK_subsidii_war_industry
 		cost = 5
 		prerequisite = {
 			focus = POK_flot_yaht
@@ -2081,6 +2081,9 @@
 		}
 		x = 20
 		y = 14
+		available = {
+			has_war = yes
+		}
         completion_reward = {
 		    add_timed_idea = {
 				idea = POK_subsidii_war_industry
@@ -2207,7 +2210,7 @@
 	}
 	shared_focus = {
 		id = POK_not_help_buisness
-		icon = GFX_goal_unknown
+		icon = GFX_POK_not_help_buisness
 		cost = 5
 		prerequisite = {
 			focus = POK_flot_yaht
@@ -2226,7 +2229,7 @@
 	}
 	shared_focus = {
 		id = POK_regressive_nalog
-		icon = GFX_goal_unknown
+		icon = GFX_POK_regressive_nalog
 		cost = 5
 		prerequisite = {
 			focus = POK_natsionalizat_rashodov
@@ -2766,7 +2769,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_vibornost_vsego
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vibori_vibori
 		cost = 5
 		prerequisite = {
 			focus = POK_united_states_of_russia
@@ -2791,7 +2794,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_new_elections
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vibori_vibori
 		cost = 5
 		prerequisite = {
 			focus = POK_lyudi_s_horochimi_saces
@@ -2805,7 +2808,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_decentralization_of_nologe
-		icon = GFX_goal_unknown
+		icon = GFX_POK_decentralization_of_nologe
 		cost = 5
 		prerequisite = {
 			focus = POK_united_states_of_russia
@@ -2916,7 +2919,7 @@ available = {
 		mutually_exclusive = {
 			focus = POK_ot_Volgi_do_Eniseya
 		}
-		x = 39
+		x = 38
 		y = 19
 
 	}
@@ -3063,7 +3066,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_SNG_reborn
-		icon = GFX_goal_unknown
+		icon = GFX_POK_SNG_reborn
 		cost = 5
 		prerequisite = {
 			focus = POK_russian_prometey
@@ -3127,7 +3130,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_platit_nazmenam
-		icon = GFX_focus_GRE_reevaluating_the_drachma
+		icon = GFX_focus_cht_new_nalogooblazhenie
 		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas
@@ -3141,7 +3144,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_no_posobiyam
-		icon = GFX_goal_unknown
+		icon = GFX_POK_no_posobiyam
 		cost = 5
 		prerequisite = {
 			focus = POK_prostite_nas

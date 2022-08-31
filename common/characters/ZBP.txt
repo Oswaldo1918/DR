@@ -1,0 +1,18 @@
+characters={
+	ZBP_Varg_Vicernes = {
+		name = "Варг Викернес"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZBP/Varg_Vicernes.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = nazism
+	    traits = { 
+		musicant
+	    }
+		id=-1
+	   }
+    }
+}

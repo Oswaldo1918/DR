@@ -1,0 +1,18 @@
+ideas = {
+       country = {
+	        ZBP_permaculture = {
+
+			picture = generic_agrarian_reform
+			
+			   modifier = {
+			    monthly_population = 0.5
+				industrial_capacity_factory = -0.075
+				production_speed_buildings_factor = -0.075
+				consumer_goods_factor = -0.1
+				supply_consumption_factor = -0.05
+				research_speed_factor = -0.15
+			    }
+		    }
+	   }
+		
+}
