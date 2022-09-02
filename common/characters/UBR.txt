@@ -1,0 +1,19 @@
+characters={
+	UBR_Roger_Waters = {
+		name = "Роджер Уотерс"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UBR/Roger_Waters.dds"
+			}
+		}
+		country_leader = {
+		    ideology = stalinismus
+            traits = {
+	         	musicant
+                hardliner_stalinist    
+	        }   
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}

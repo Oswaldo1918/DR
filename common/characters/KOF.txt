@@ -1,0 +1,15 @@
+characters={
+	KOF_voen_sovet = {
+		name = "Военный совет"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOF/voen_sovet.dds"
+			}
+		}
+		country_leader = {
+		    ideology = nazism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+    }
+}
