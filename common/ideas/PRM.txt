@@ -105,6 +105,201 @@ ideas = {
 				consumer_goods_factor = -0.1
 			    }
 		    }
-	   }
+	    }
 		
+		aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		PRM_Aviadvigatel = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { dviglo_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		PRM_Proton_PM = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { rocket_dviglo_aircraft_manufacturer }
+			
+		
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	    tank_manufacturer = { 
+		
+		designer = yes
+		
+		PRM_Motovilihinskiy_zavod_1 = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				
+			}
+			
+			equipment_bonus = {
+			light_tank_artillery = {
+				build_cost_ic = -0.15
+			}
+			medium_tank_artillery = {
+				build_cost_ic = -0.15 
+			}
+			modern_tank_artillery = {
+				build_cost_ic = -0.15 
+			}
+			heavy_tank_artillery = {
+				build_cost_ic = -0.15 
+			}
+			}
+		}
+		
+	    }     
+	
+		industrial_concern = {
+		PRM_TrikolorTV = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			available = {
+				has_completed_focus = PRM_trikolor_TV
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				production_speed_radar_station_factor = 0.15 
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+
+        PRM_PermZhD = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			modifier = {
+			    production_speed_supply_node_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				production_speed_infrastructure_factor = 0.15 
+			}
+			
+			research_bonus = {
+				industry = 0.075
+			}
+			
+			traits = { industrial_concern }
+		}
+
+        PRM_UcolKalCumbinat = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+				monthly_population = 0.15
+			}
+			
+			research_bonus = {
+				industry = 0.075
+			}
+			
+			traits = { industrial_concern }
+		}
+
+        PRM_LysvenskyMetallurgicalZavod = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			modifier = {
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}    		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		PRM_Motovilihinskiy_zavod = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				
+			}
+			
+			equipment_bonus = {
+			artillery = {
+				build_cost_ic = -0.15
+			}
+			rocket_artillery = {
+				build_cost_ic = -0.15 
+			}
+			mot_rockets = {
+				build_cost_ic = -0.15 
+			}
+			}
+		}
+    }
+	}	
 }

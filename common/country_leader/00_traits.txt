@@ -4,6 +4,38 @@
 
 leader_traits = {
 
+    rocket_dviglo_aircraft_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			rocketry = {
+			    air_agility = 0.1    
+				reliability = 0.1
+			}		
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}  
+
+    dviglo_aircraft_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			rocketry = {
+			    air_agility = 0.1    
+				reliability = 0.1
+			}
+			CAS_equipment = {
+				air_agility = 0.1 
+				reliability = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}         
+
     hardliner_stalinist = {
 		random = no
 		sprite = 13
