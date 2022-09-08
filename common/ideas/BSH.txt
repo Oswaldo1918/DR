@@ -198,6 +198,112 @@ ideas = {
 				org_loss_when_moving = -0.15
 			    }
 		    }
-	   }
+	    }
 		
+		aircraft_manufacturer = { 
+			
+		    designer = yes
+		
+		    BSH_UfMot = {
+			
+			allowed = {
+				original_tag = BSH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { dviglo_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		    }
+			
+			BSH_Strela = {
+			
+			allowed = {
+				original_tag = BSH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { rocket_dviglo_aircraft_manufacturer }
+			
+		
+			
+			ai_will_do = {
+				factor = 1
+			}
+		    }
+		}
+		
+		industrial_concern = {
+		
+			BSH_Bashneft = {
+			
+			allowed = {
+				original_tag = BSH
+			}
+			
+			research_bonus = {
+				synth_resources = 0.2
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		    }
+			
+			BSH_Ormeto = {
+			
+			allowed = {
+				original_tag = BSH
+			}
+			
+			modifier = {
+			    production_factory_efficiency_gain_factor = 0.075 
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+		   BSH_OrStan = {
+			
+			allowed = {
+				original_tag = BSH
+			}
+			
+			modifier = {
+			    production_factory_max_efficiency_factor = 0.075 
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		   }
+		}
 }
