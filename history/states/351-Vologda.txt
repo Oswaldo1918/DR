@@ -4,6 +4,10 @@ state={
 	name="STATE_351" # Vologda
 	manpower = 2352100
 	
+	resources={
+		steel=40.000
+	}
+	
 	state_category = town
 
 	history={
@@ -14,7 +18,11 @@ state={
 		}
 		add_core_of = ARK
 		victory_points = {
-			9131 3
+			9131 5
+		}
+		
+		victory_points = {
+			3124 2
 		}
 	}
 
