@@ -435,6 +435,170 @@ DOT_nationalization_Russia = {
             add_state_core = 537
 		}	
 	}
+	DOT_core_Amur = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 561
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 561
+		}	
+	}
+	DOT_core_Nikolayevsk = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 560
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 560
+		}	
+	}
+	DOT_core_Birobidzhan = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 657
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 657
+		}	
+	}
+	DOT_core_Khabarovsk = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 409
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 409
+		}	
+	}
+	DOT_core_Vladivostok = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 408
+		}	
+	}
+	DOT_core_Sahalin = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 655
+			controls_state = 537
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 655
+			add_state_core = 537
+		}	
+	}
+	DOT_core_Chita = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 563
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 563
+		}	
+	}
+	DOT_core_Ulan_Ude = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 564
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 564
+		}	
+	}
+	DOT_core_Bodaybo = { 
+	
+		cost = 20
+
+		available = {
+			controls_state = 565
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 565
+		}	
+	}
 	DOT_core_sevDV = { #Интеграция_Дальнего_Востока
 	
 		cost = 30
@@ -1017,6 +1181,10 @@ DOT_war_POK = { #
 		available = {
 		has_war = no 
 		is_neighbor_of = POK
+		controls_state = 408
+		controls_state = 564
+		controls_state = 574
+		controls_state = 657
 		}
 		
 		fire_only_once = yes
@@ -1083,6 +1251,10 @@ DOT_war_MRD = { #
 		available = {
 		has_war = no 
 		is_neighbor_of = MRD
+		controls_state = 408
+		controls_state = 564
+		controls_state = 574
+		controls_state = 657
 		}
 		
 		fire_only_once = yes
