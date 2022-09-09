@@ -2496,4 +2496,151 @@ annex_country = {
 		}
 		}
     }
+	
+	LAZ_annex_ark_puppet = {
+	    
+		cost = 100
+		
+        visible = {
+          OR = { 
+	     has_completed_focus = LAZ_plan_doka 
+	     has_completed_focus = LAZ_plan_shtazista
+	    }
+        }
+
+		fire_only_once = no
+		
+		available = {
+        is_ai = no
+				ARK = { 
+				 is_puppet_of = LAZ 
+				}
+		}
+	   
+		days_remove = 35
+		
+		remove_effect = {
+annex_country = {
+			target = ARK
+			transfer_troops = yes
+		}
+		}
+    }
+	
+	LAZ_annex_skt_puppet = {
+	    
+		cost = 10
+		
+        visible = {
+          OR = { 
+	     has_completed_focus = LAZ_plan_doka 
+	     has_completed_focus = LAZ_plan_shtazista
+	    }
+        }
+
+		fire_only_once = no
+		
+		available = {
+        is_ai = no
+				SKT = { 
+				 is_puppet_of = LAZ 
+				}
+		}
+	   
+		days_remove = 35
+		
+		remove_effect = {
+annex_country = {
+			target = SKT
+			transfer_troops = yes
+		}
+		}
+    }
+	LAZ_annex_whs_puppet = {
+	    
+		cost = 100
+		
+        visible = {
+          OR = { 
+	     has_completed_focus = LAZ_plan_doka 
+	     has_completed_focus = LAZ_plan_shtazista
+	    }
+        }
+
+		fire_only_once = no
+		
+		available = {
+        is_ai = no
+				WHS = { 
+				 is_puppet_of = LAZ 
+				}
+		}
+	   
+		days_remove = 35
+		
+		remove_effect = {
+annex_country = {
+			target = WHS
+			transfer_troops = yes
+		}
+		}
+    }
+	LAZ_annex_unt_puppet = {
+	    
+		cost = 100
+		
+        visible = {
+          OR = { 
+	     has_completed_focus = LAZ_plan_doka 
+	     has_completed_focus = LAZ_plan_shtazista
+	    }
+        }
+
+		fire_only_once = no
+		
+		available = {
+        is_ai = no
+				UNT = { 
+				 is_puppet_of = LAZ 
+				}
+		}
+	   
+		days_remove = 35
+		
+		remove_effect = {
+annex_country = {
+			target = UNT
+			transfer_troops = yes
+		}
+		}
+    }
+	LAZ_annex_mat_puppet = {
+	    
+		cost = 100
+		
+        visible = {
+          OR = { 
+	     has_completed_focus = LAZ_plan_doka 
+	     has_completed_focus = LAZ_plan_shtazista
+	    }
+        }
+
+		fire_only_once = no
+		
+		available = {
+        is_ai = no
+				MAT = { 
+				 is_puppet_of = LAZ 
+				}
+		}
+	   
+		days_remove = 35
+		
+		remove_effect = {
+annex_country = {
+			target = MAT
+			transfer_troops = yes
+		}
+		}
+    }
 }
