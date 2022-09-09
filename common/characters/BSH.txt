@@ -213,4 +213,23 @@ characters={
             traits = { popular_figurehead }
 	    }
 	}
+	
+	BSH_Tolyan = {
+		name = "Толян"
+		portraits = {
+			civilian = { 
+                large = "gfx/leaders/BSH/Tolyan.dds" 			
+				small = "GFX_idea_africa_generic_2"
+			}
+		} 
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Tolyan
+			allowed = {
+                original_tag = BSH 
+				
+            }
+            traits = { popular_figurehead }
+	    }
+	}
 }
