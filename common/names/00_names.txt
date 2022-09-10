@@ -156,15 +156,16 @@ default = {
 			Бабабой Бэбсич Бубсич Бабинатор Ли Бреня Фурри Дэн4ик Дэн Ромашка Пахом Ян Абзац Троцкист
 			Карась Джим Минор Баженослав Женя Илья Никита Стас Герман Дюша Анти Адольф Лаговаз Гений Евгений
 			Альберт Косипоша Жмых Валера Иван Андрей Игорь Максим Герасим Иосиф Лёха Лехаим Алан Ибрагим Федот
+			Санчо Михай Федот Яков
 		}
 		surnames = { 
 			Мелентьев Корнеплод Сухостой Жеманный Дрочила Вишняков Железный Амброзиус-Кусто
-			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змеев 
+			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змей 
 			Великолепный Сицин Эфиоп Фурриёб Нечеловек Виноградов Интроврот Пахомов ХохлореZ 
 			Хохлорейх Петрович Сидорыч Лох Зрада Перемога Генотьба Днярежим Минорный Олежко 
 			Гоблин Хапов Метёлкин Кринж Крид Мазов Базов Антибазов Генштаб Гитлер Мудила 
 			Обемка Понасенков Слазиет Перечпок Пацер Пацифика Зедер Жмышенко Чечен Даг Анимешник
-			Артишок Зильберман 
+			Артишок Зильберман Укроп Штырь Кекс Пиндос Травапил Сталин Камзонов Чёрт Пубертат Дамагер Танк
 		}
 	}
 	female = {
@@ -201,25 +202,32 @@ VSB = {
 
 FRA = {
 	male = {
-		names = {  
-			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
-			Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
-			François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
-			Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
-			Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
-		 }
+		names = { 
+			Адский Виктор Паштет Димон Вован Абрамка Рафаэль Текила Гаррье Насрал Напас Яне 
+			Бабабой Бэбсич Бубсич Бабинатор Ли Бреня Фурри Дэн4ик Дэн Ромашка Пахом Ян Абзац Троцкист
+			Карась Джим Минор Баженослав Женя Илья Никита Стас Герман Дюша Анти Адольф Лаговаз Гений Евгений
+			Альберт Косипоша Жмых Валера Иван Андрей Игорь Максим Герасим Иосиф Лёха Лехаим Алан Ибрагим Федот
+			Санчо Михай Федот Яков
+		}
+		surnames = { 
+			Мелентьев Корнеплод Сухостой Жеманный Дрочила Вишняков Железный Амброзиус-Кусто
+			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змей 
+			Великолепный Сицин Эфиоп Фурриёб Нечеловек Виноградов Интроврот Пахомов ХохлореZ 
+			Хохлорейх Петрович Сидорыч Лох Зрада Перемога Генотьба Днярежим Минорный Олежко 
+			Гоблин Хапов Метёлкин Кринж Крид Мазов Базов Антибазов Генштаб Гитлер Мудила 
+			Обемка Понасенков Слазиет Перечпок Пацер Пацифика Зедер Жмышенко Чечен Даг Анимешник
+			Артишок Зильберман Укроп Штырь Кекс Пиндос Травапил Сталин Камзонов Чёрт Пубертат Дамагер Танк
+		}
 	}
 	female = {
-		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa }
+		names = {
+			Вумен
+		}
+		surnames = {
+			Момент
+		}
 	}
-	surnames = {
-		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
-		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
-		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
-		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
-		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
-	}
-	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+	callsigns = { XXX_Dim4ik_XXX ЕБИТЕЛЬ СИЛЬНЫЙ Deman666 }
 }
 
 ITA = {
@@ -1040,19 +1048,32 @@ KAR = {
 #Crimea
 CRI = {
 	male = {
-		names = {  
-			Andrij Anton Artem Borys Denys Dmytro Fedir Havrylo Henadij Heorhij Hryhorij Ivan Josyp Kazymyr Kostyantyn Kuzma Leontij Maksym Musa Mykola Mykyta Oleh Oleksandr Sava Serhij Stanislav Svyatoslav Trokhym Volodymyr Yaroslav Vitalij Yehor Yukhym Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady Giorgi Grigoriy Igor Ilya Lev Maxim Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri Ablâziz Ahtem Amet Asan Bekir Fikret İbraim İlmi Memet Redvan Refat Refiyîk Remzi Seit Seitnebi Seitümer Server Sîdîyîk Sinaver Ümer Üsein Üzeir Vait 
+		names = { 
+			Адский Виктор Паштет Димон Вован Абрамка Рафаэль Текила Гаррье Насрал Напас Яне 
+			Бабабой Бэбсич Бубсич Бабинатор Ли Бреня Фурри Дэн4ик Дэн Ромашка Пахом Ян Абзац Троцкист
+			Карась Джим Минор Баженослав Женя Илья Никита Стас Герман Дюша Анти Адольф Лаговаз Гений Евгений
+			Альберт Косипоша Жмых Валера Иван Андрей Игорь Максим Герасим Иосиф Лёха Лехаим Алан Ибрагим Федот
+			Санчо Михай Федот Яков
+		}
+		surnames = { 
+			Мелентьев Корнеплод Сухостой Жеманный Дрочила Вишняков Железный Амброзиус-Кусто
+			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змей 
+			Великолепный Сицин Эфиоп Фурриёб Нечеловек Виноградов Интроврот Пахомов ХохлореZ 
+			Хохлорейх Петрович Сидорыч Лох Зрада Перемога Генотьба Днярежим Минорный Олежко 
+			Гоблин Хапов Метёлкин Кринж Крид Мазов Базов Антибазов Генштаб Гитлер Мудила 
+			Обемка Понасенков Слазиет Перечпок Пацер Пацифика Зедер Жмышенко Чечен Даг Анимешник
+			Артишок Зильберман Укроп Штырь Кекс Пиндос Травапил Сталин Камзонов Чёрт Пубертат Дамагер Танк
 		}
 	}
 	female = {
-		names = { 
-						Anastasiya Ayshe Lyudmyla Nina Olha Olena Oleksandra Kseniya Rayisa Ruslana Tetyana Vladyslava Yevheniya Yuliya Zoya Adilye Alie Alime Anife Dzhemile Ediye Fatime Feruze Maiye Medine Melvade Pakize Rushena Şefiqa Sultanie Uriye Vaspie Zekie Zore
- }
+		names = {
+			Вумен
+		}
+		surnames = {
+			Момент
+		}
 	}
-	surnames = { 
-		Antonenko Bilyk Blyznyuk Bondarchuk Borysenko Demchuk Dmytruk Dorosh Hajduk Havrylenko Havrylyuk Hlushko Holub Ishchuk Kolisnyk Kostyuchenko Lyashenko Makarenko Mykytyuk Nahornyj Novak Osadchuk Ostapchuk Pavlov Petruk Protsenko Prykhodko Prysyazhnyuk Pylypenko Ruban Shevchuk Stadnyk Taranenko Tkachuk Velychko Yakovenko Zaporozhets Zayets Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Zavoyko Abdullaev Abdurakhmanov Akhtemov Aliev Ametov Azizov Bahşış Bakhshish Bekirov Devletov Emirov Ibragimov Ibraimov Ilyasov Isaev Kadyrov Kamilov Khaybulaev Kyrbanov Mamutov Memetov Muratov Osmanov Rakhimov Ramazanov Refatov Serverov Sharipov Useinov Usmanov Vaitov Yosopov Yunusov Yusupov 
-	}
-	callsigns = {  }
+	callsigns = { XXX_Dim4ik_XXX ЕБИТЕЛЬ СИЛЬНЫЙ Deman666 }
 }
 
 
@@ -5319,37 +5340,62 @@ KUB = {
 KUR = {
 	male = {
 		names = { 
-		 	Ardelan Armanc Bejno Belengaz Bêmal Berhem Bijûn Ehmedê Coban Dana Dilêr Ferhat Gazîn Gulê Hilkar Loran Nîbar Pêdvî Piştîvan Polan Roşan Samal Şervan Şînwar Şahîn Welhat Xorto Zanyar Zinar Zorav	
-		 }
+			Адский Виктор Паштет Димон Вован Абрамка Рафаэль Текила Гаррье Насрал Напас Яне 
+			Бабабой Бэбсич Бубсич Бабинатор Ли Бреня Фурри Дэн4ик Дэн Ромашка Пахом Ян Абзац Троцкист
+			Карась Джим Минор Баженослав Женя Илья Никита Стас Герман Дюша Анти Адольф Лаговаз Гений Евгений
+			Альберт Косипоша Жмых Валера Иван Андрей Игорь Максим Герасим Иосиф Лёха Лехаим Алан Ибрагим Федот
+			Санчо Михай Федот Яков
+		}
+		surnames = { 
+			Мелентьев Корнеплод Сухостой Жеманный Дрочила Вишняков Железный Амброзиус-Кусто
+			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змей 
+			Великолепный Сицин Эфиоп Фурриёб Нечеловек Виноградов Интроврот Пахомов ХохлореZ 
+			Хохлорейх Петрович Сидорыч Лох Зрада Перемога Генотьба Днярежим Минорный Олежко 
+			Гоблин Хапов Метёлкин Кринж Крид Мазов Базов Антибазов Генштаб Гитлер Мудила 
+			Обемка Понасенков Слазиет Перечпок Пацер Пацифика Зедер Жмышенко Чечен Даг Анимешник
+			Артишок Зильберман Укроп Штырь Кекс Пиндос Травапил Сталин Камзонов Чёрт Пубертат Дамагер Танк
+		}
 	}
 	female = {
 		names = {
-			Alîn Berhem Birca Dilşa Estêr Esrîn Gilya Guhdar Gulbawan Gulxatûn Hejîn Huzan Jêla Merîvan Navbihar Nazenîn Rejnê Rihan Rozerîn Seîran Sorgul Tara
+			Вумен
+		}
+		surnames = {
+			Момент
 		}
 	}
-	surnames = {  
-		Ako Arî Avşîn Bado Bangîn Bateyî Bêdeng Bênaw Bênewa Berhem Berpal Berwan Bexşan Bijar Bîrhat Dilbirîn Erdelan Espar Fener Ferhat Ferman Gerdîn Gewher Goran Gulîn Hemreş Herdî Hêro Hewram Kajaw Kamîran Karzan Kinê Lêzan Miraz Mîrhem Mîrko Nalîn Nêçîrvan Nekeroz Peşêw Rêbar Rênas Rîbar Rodî Sajjadi Şerefkendî Şêrefxan Serheng Şûrbaz Wirya Xanî‎ Xerdel Xoşnaw Zarî Zengî
-	}
-	callsigns = { }
+	callsigns = { XXX_Dim4ik_XXX ЕБИТЕЛЬ СИЛЬНЫЙ Deman666 }
 }
 #Ukraine
 UKR = {
 	male = {
 		names = { 
-			Andrij Anton Artem Borys Denys Dmytro Fedir Havrylo Henadij Heorhij Hryhorij Ivan Josyp Kazymyr Kostyantyn Kuzma Leontij Maksym Musa Mykola Mykyta Oleh Oleksandr Omelyan Pavlo Pylyp Sava Serhij Stanislav Svyatoslav Trokhym Volodymyr Yaroslav Vitalij Yehor Yukhym Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+			Адский Виктор Паштет Димон Вован Абрамка Рафаэль Текила Гаррье Насрал Напас Яне 
+			Бабабой Бэбсич Бубсич Бабинатор Ли Бреня Фурри Дэн4ик Дэн Ромашка Пахом Ян Абзац Троцкист
+			Карась Джим Минор Баженослав Женя Илья Никита Стас Герман Дюша Анти Адольф Лаговаз Гений Евгений
+			Альберт Косипоша Жмых Валера Иван Андрей Игорь Максим Герасим Иосиф Лёха Лехаим Алан Ибрагим Федот
+			Санчо Михай Федот Яков
+		}
+		surnames = { 
+			Мелентьев Корнеплод Сухостой Жеманный Дрочила Вишняков Железный Амброзиус-Кусто
+			Сансет Реуц Рюцке Плоскогубцев Насралвсундук Лавандос Обсос Стаякотят Дюбуа Змей 
+			Великолепный Сицин Эфиоп Фурриёб Нечеловек Виноградов Интроврот Пахомов ХохлореZ 
+			Хохлорейх Петрович Сидорыч Лох Зрада Перемога Генотьба Днярежим Минорный Олежко 
+			Гоблин Хапов Метёлкин Кринж Крид Мазов Базов Антибазов Генштаб Гитлер Мудила 
+			Обемка Понасенков Слазиет Перечпок Пацер Пацифика Зедер Жмышенко Чечен Даг Анимешник
+			Артишок Зильберман Укроп Штырь Кекс Пиндос Травапил Сталин Камзонов Чёрт Пубертат Дамагер Танк
 		}
 	}
 	female = {
-		names = { 
-			Anastasiya Ayshe Halyna Hanna Ivanna Lina Lyudmyla Nina Olha Olena Oleksandra Kseniya Rayisa Ruslana Tetyana Vladyslava Yevheniya Yuliya Zoya   
+		names = {
+			Вумен
+		}
+		surnames = {
+			Момент
 		}
 	}
-	surnames = {
-		Antonenko Bilyk Blyznyuk Bondarchuk Borysenko Demchuk Dmytruk Dorosh Hajduk Havrylenko Havrylyuk Hlushko Holub Horbenko Hrytsaj Ivanov Ishchuk Kolisnyk Kostyuchenko Lyashenko Makarenko Mykytyuk Nahornyj Novak Osadchuk Ostapchuk Pavlov Petruk Protsenko Prykhodko Prysyazhnyuk Pylypenko Ruban Semenyuk Sereda Shevchuk Stadnyk Taranenko Tkachuk Tsymbalyuk Vasylyev Velychko Yakovenko Zaporozhets Zayets Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov         Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
-
+	callsigns = { XXX_Dim4ik_XXX ЕБИТЕЛЬ СИЛЬНЫЙ Deman666 }
 	}
-	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
-}
 
 ### Caucasus
 GEO = {
