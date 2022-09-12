@@ -4,7 +4,14 @@
 
 leader_traits = {
 
-    rocket_dviglo_aircraft_manufacturer = { 
+    nanotoliy = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		research_speed_factor = 0.02
+	} 
+	
+	rocket_dviglo_aircraft_manufacturer = { 
 		random = no
 		equipment_bonus = {
 			rocketry = {
