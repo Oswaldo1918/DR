@@ -121,6 +121,22 @@ ideas = {
 			    }
 		    }
 			
+			BSH_ural_israel = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
+                conscription_factor = -0.1   				
+			    }
+		    }
+			
 			BSH_ottsovskaya_liniya = {
 		
 			    picture = chi_incompetent_officers 
@@ -150,6 +166,23 @@ ideas = {
 				acclimatization_hot_climate_gain_factor = 0.1
 				cavalry_attack_factor = 0.15
 				cavalry_defence_factor = 0.15
+			    }
+		    }
+			
+			BSH_vladika_stepey = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				acclimatization_hot_climate_gain_factor = 0.175
+				cavalry_attack_factor = 0.175
+				cavalry_defence_factor = 0.175
+				conscription_factor = 0.1
 			    }
 		    }
 			
@@ -184,6 +217,23 @@ ideas = {
 			    }
 		    }
 			
+			BSH_uzhas_severa = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				acclimatization_cold_climate_gain_factor = 0.15
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				non_core_manpower = 0.05
+			    }
+		    }
+			
 			BSH_imbu = {
 		
 			    picture = chi_incompetent_officers 
@@ -196,6 +246,245 @@ ideas = {
 			    modifier = {
 				offence = 0.05
 				org_loss_when_moving = -0.15
+			    }
+		    }
+			
+			BSH_zabaytit_na_hram_Olegu = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+			    }
+		    }
+			
+			BSH_obzhestvo_ravenstva = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = 0.1
+				monthly_population = 0.5
+			    }
+		    }
+			
+			BSH_odna_party = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				party_popularity_stability_factor = 0.15
+				stability_factor = 0.01
+			    }
+		    }
+			
+			BSH_uberech_narod_ot_democraty = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				party_popularity_stability_factor = 0.15
+				stability_factor = 0.025
+				memoism_drift = 0.075
+				vmestolev_drift = -0.01
+				anarhostalinism_drift = -0.01
+				metacommy_drift = -0.01
+				democratic_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+			    }
+		    }
+			
+			BSH_strong_natsprovitelstvo = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_gain = 0.05
+				stability_factor = 0.025
+				memoism_drift = 0.075
+				vmestolev_drift = -0.01
+				anarhostalinism_drift = -0.01
+				metacommy_drift = -0.01
+				democratic_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+			    }
+		    }
+			
+			BSH_cheloveku_opasno_davat_mnogo_svobodi = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				party_popularity_stability_factor = 0.15
+				offensive_war_stability_factor = 0.15
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				memoism_drift = 0.075
+				vmestolev_drift = -0.0125
+				anarhostalinism_drift = -0.0125
+				metacommy_drift = -0.0125
+				democratic_drift = -0.0125
+				fascism_drift = -0.0125
+				neutrality_drift = -0.0125
+			    }
+		    }
+			
+			BSH_prevoshodstvo_great_nation = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				party_popularity_stability_factor = 0.15
+				offensive_war_stability_factor = 0.15
+				enemy_justify_war_goal_time = -0.15
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				memoism_drift = 0.075
+				vmestolev_drift = -0.0125
+				anarhostalinism_drift = -0.0125
+				metacommy_drift = -0.0125
+				democratic_drift = -0.0125
+				fascism_drift = -0.0125
+				neutrality_drift = -0.0125
+			    }
+		    }
+			
+			BSH_otstanennost_gosva = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.025
+				consumer_goods_factor = -0.05
+				non_core_manpower = -0.1
+			    }
+		    }
+			
+			BSH_goshelp_obshinam = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.025
+				consumer_goods_factor = 0.05
+				non_core_manpower = 0.1
+			    }
+		    }
+			
+			BSH_pokonshit_konets_potreb_decadansa = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.1
+			    }
+		    }
+			
+			BSH_prodvigat_kult_potrebleniya = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.1
+			    }
+		    }
+			
+			BSH_upor_na_tehno_economic_prevoshodstvo = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05 
+				production_factory_max_efficiency_factor = 0.05 
+				research_speed_factor = 0.05
+			    }
+		    }
+			
+			BSH_podderzhat_monopoliy = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.015
+				production_factory_max_efficiency_factor = 0.05
+                production_factory_start_efficiency_factor = 0.5 				
+				research_speed_factor = 0.05
 			    }
 		    }
 	    }
@@ -246,6 +535,29 @@ ideas = {
 		}
 		
 		industrial_concern = {
+		
+		    PRM_degradachTV = {
+			
+			allowed = {
+				original_tag = PRM
+			}
+			
+			available = {
+				has_completed_focus = BSH_osnovat_degradachTV
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				production_speed_radar_station_factor = 0.15 
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		    }   
 		
 			BSH_Bashneft = {
 			

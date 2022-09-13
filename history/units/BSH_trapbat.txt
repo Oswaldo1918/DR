@@ -1,0 +1,38 @@
+﻿division_template = {
+name = "Трапбаты"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1-я дивизия трапбатов"
+		location = 1278
+		division_template = "Трапбаты"
+		start_experience_factor = 0.9
+	}
+    	division = {
+		name = "2-я дивизия трапбатов"
+		location = 1278
+		division_template = "Трапбаты"
+		start_experience_factor = 0.9
+	}
+    	division = {
+		name = "3-я дивизия трапбатов"
+		location = 1278
+		division_template = "Трапбаты"
+		start_experience_factor = 0.9
+	}      	
+}
+

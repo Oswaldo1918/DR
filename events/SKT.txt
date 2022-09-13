@@ -24,30 +24,6 @@ country_event = { #выбор
 	ruling_party = vmestolev
     }
 	}
-	
-	option = {
-	name = SKT.1.b
-    set_political_party = {
-    ideology = metacommy
-    popularity = 50
-    } 
-    complete_national_focus = SKT_tsentrist_boroda
-  	set_politics = {
-	ruling_party = metacommy
-    }
-	}
-	
-	option = {
-	name = SKT.1.c
-    set_political_party = {
-    ideology = fascism
-    popularity = 50
-    } 
-	complete_national_focus = SKT_right_boroda
-	set_politics = {
-	ruling_party = fascism
-    }
-	}
 }
 
 country_event = { #выбор 
