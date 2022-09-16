@@ -1159,6 +1159,72 @@ Sever_empire = {
             }
 		}	
 	}
+	BSH_war_CHT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = CHT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = CHT
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_LAZ = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = LAZ
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = LAZ
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_TUP = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = TUP
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = TUP
+                   type = annex_everything
+            }
+		}	
+	}
     BSH_war_KOL = { 
 	
 		cost = 30
@@ -1276,6 +1342,10 @@ Sever_empire = {
 			controls_state = 577
 			controls_state = 576
 			controls_state = 575
+			controls_state = 582
+			controls_state = 573
+			controls_state = 572
+			controls_state = 403
 		}
 		
 		fire_only_once = yes
@@ -1291,6 +1361,10 @@ Sever_empire = {
 			add_state_core = 577
 			add_state_core = 576
 			add_state_core = 575
+			add_state_core = 582
+			add_state_core = 573
+			add_state_core = 572
+			add_state_core = 403
 		}	
 	}
     BSH_core_SKT = { #Интеграция_Коми
@@ -1449,6 +1523,82 @@ Sever_empire = {
 		}
 		remove_effect = {
 			add_state_core = 637
+		}	
+	}
+    BSH_core_CHT_1 = { #Интеграция_ЧАТа
+	
+		cost = 30
+
+		available = {
+			controls_state = 249
+			controls_state = 250
+			controls_state = 251
+			controls_state = 255
+			controls_state = 256
+			controls_state = 399
+			controls_state = 400
+			controls_state = 833
+			controls_state = 252
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 249
+			add_state_core = 250
+			add_state_core = 251
+			add_state_core = 255
+			add_state_core = 256
+			add_state_core = 399
+			add_state_core = 400
+			add_state_core = 833
+			add_state_core = 252
+		}	
+	}
+    BSH_core_LAZ = { #Интеграция_Лазарета
+	
+		cost = 30
+
+		available = {
+			controls_state = 219
+			controls_state = 247
+			controls_state = 248
+			controls_state = 253
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 219
+			add_state_core = 247
+			add_state_core = 248
+			add_state_core = 253
+		}	
+	}
+    BSH_core_TUP = { #Интеграция_Тихвина
+	
+		cost = 30
+
+		available = {
+			controls_state = 264
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 264
 		}	
 	}      	
 }
