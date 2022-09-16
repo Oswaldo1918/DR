@@ -791,6 +791,18 @@ ideas = {
 				consumer_goods_factor = -0.05
 			    }
 		    }
+			
+			BSH_photozhabi_iskusstvo = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+			   	stability_weekly = -0.001
+			    political_power_gain = 0.025
+				stability_factor = -0.025
+				consumer_goods_factor = -0.05
+			    }
+		    }
 	    }
 		
 		aircraft_manufacturer = { 

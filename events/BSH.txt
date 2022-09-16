@@ -60,7 +60,7 @@ country_event = { #ДНК тест
 	}
 }
 
-country_event = { #
+country_event = { #фотожабы
 	id = BSH.4
 	title = BSH.4.t
 	desc = BSH.4.d
@@ -74,5 +74,40 @@ country_event = { #
 	
 	option = {
 	name = BSH.4.a
+	add_advisor_role = {
+    character = BSH_kotak
+    advisor = {
+        slot = political_advisor
+        cost = 50
+        idea_token = BSH_kotak
+        traits = {
+            photozaluper
+        }
+        allowed = {
+            always = yes
+        }
+    }
+    }
+	add_advisor_role = {
+    character = BSH_vladislave_dikun
+    advisor = {
+        slot = political_advisor
+        cost = 50
+        idea_token = BSH_vladislave_dikun
+        traits = {
+            photozhaber
+        }
+        allowed = {
+            always = yes
+        }
+    }
+    }
+	add_ideas = BSH_photozhabi_iskusstvo
+	}
+	
+	option = {
+	name = BSH.4.b
+	add_manpower = -156
+	add_war_support = 0.075
 	}
 }

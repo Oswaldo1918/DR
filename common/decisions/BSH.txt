@@ -178,5 +178,1277 @@ proect_Nasti = {
             modifier = offered_support
             }
 			}
+	}	
+}
+
+Ural_Israel = {
+    BSH_war_PRM = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = PRM
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = PRM
+                   type = annex_everything
+            }
+		}	
 	}
+    BSH_war_CHT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = CHT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = CHT
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_POK = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = POK
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = POK
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_core_UDM = { #Интеграция_Удмуртии
+	
+		cost = 30
+
+		available = {
+			controls_state = 399
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 399
+		}	
+	}
+    BSH_core_PRM = { #Интеграция_Перми
+	
+		cost = 30
+
+		available = {
+			controls_state = 398
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 398
+		}	
+	}
+    BSH_core_POK = { #Интеграция_Покаянии
+	
+		cost = 30
+
+		available = {
+			controls_state = 582
+			controls_state = 573
+			controls_state = 572
+			controls_state = 653
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 582
+			add_state_core = 573
+			add_state_core = 572
+			add_state_core = 653
+		}	
+	}    	
+}
+
+Bashkir_hanstvo = {
+    BSH_war_KAZ = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = KAZ
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = KAZ
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_LIM = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = LIM
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = LIM
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_TAJ = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = TAJ
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = TAJ
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_KYR = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = KYR
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = KYR
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_TMS = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = TMS
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = TMS
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_GLA = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = GLA
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = GLA
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_MNR = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = MNR
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = MNR
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_BRT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = BRT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = BRT
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_POK_1 = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = POK
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = POK
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_NOD = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = NOD
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = NOD
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_HAZ = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = HAZ
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = HAZ
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_KRR = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = KRR
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = KRR
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_STR = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = STR
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = STR
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_STR = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = STR
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = STR
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_CHT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = CHT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = CHT
+                   type = annex_everything
+            }
+		}	
+	}
+	
+	BSH_core_POK_1 = { #Интеграция_Покаянии
+	
+		cost = 30
+
+		available = {
+			controls_state = 582
+			controls_state = 571
+			controls_state = 572
+			controls_state = 570
+			controls_state = 40
+			controls_state = 569
+			controls_state = 654
+			controls_state = 568
+			controls_state = 567
+			controls_state = 329
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 582
+			add_state_core = 571
+			add_state_core = 572
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 569
+			add_state_core = 654
+			add_state_core = 568
+			add_state_core = 567
+			add_state_core = 329
+		}	
+	}
+	BSH_core_KAZ = { #Интеграция_Казахстана
+	
+		cost = 30
+
+		available = {
+			controls_state = 406
+			controls_state = 407
+			controls_state = 402
+			controls_state = 587
+			controls_state = 404
+			controls_state = 588
+			controls_state = 589
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 406
+			add_state_core = 407
+			add_state_core = 402
+			add_state_core = 587
+			add_state_core = 404
+			add_state_core = 588
+			add_state_core = 589
+		}	
+	}
+	BSH_core_KYR = { #Интеграция_Киргизии
+	
+		cost = 30
+
+		available = {
+			controls_state = 732
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 732
+		}	
+	}
+	BSH_core_TMS = { #Интеграция_Туркменистана
+	
+		cost = 30
+
+		available = {
+			controls_state = 584
+			controls_state = 832
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 584
+			add_state_core = 832
+		}	
+	}
+	BSH_core_TAJ = { #Интеграция_Узбекистана_и_Таджикистана
+	
+		cost = 30
+
+		available = {
+			controls_state = 823
+			controls_state = 831
+			controls_state = 830
+			controls_state = 585
+			controls_state = 405
+			controls_state = 742
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 823
+			add_state_core = 831
+			add_state_core = 830
+			add_state_core = 585
+			add_state_core = 405
+			add_state_core = 742
+		}	
+	}
+	BSH_core_LIM = { #Интеграция_ДругРоссии
+	
+		cost = 30
+
+		available = {
+			controls_state = 583
+			controls_state = 588
+			controls_state = 590
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 583
+			add_state_core = 588
+			add_state_core = 590
+		}	
+	}
+	BSH_core_HAZ = { #Интеграция_Хазарии
+	
+		cost = 30
+
+		available = {
+			controls_state = 236
+			controls_state = 237
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 236
+			add_state_core = 237
+		}	
+	}
+	BSH_core_STR = { #Интеграция_Ставрополя
+	
+		cost = 30
+
+		available = {
+			controls_state = 235
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 235
+		}	
+	}
+	BSH_core_KRR = { #Интеграция_Кубани
+	
+		cost = 30
+
+		available = {
+			controls_state = 218
+			controls_state = 234
+			controls_state = 238
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 218
+			add_state_core = 234
+			add_state_core = 238
+		}	
+	}
+	BSH_core_NOD = { #Интеграция_НОДа
+	
+		cost = 30
+
+		available = {
+			controls_state = 217
+			controls_state = 829
+			controls_state = 401
+			controls_state = 239
+			controls_state = 245
+			controls_state = 265
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 217
+			add_state_core = 829
+			add_state_core = 401
+			add_state_core = 239
+			add_state_core = 245
+			add_state_core = 265
+		}	
+	}
+	BSH_core_CHT = { #Интеграция_ЧАТа
+	
+		cost = 30
+
+		available = {
+			controls_state = 249
+			controls_state = 250
+			controls_state = 251
+			controls_state = 255
+			controls_state = 256
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 249
+			add_state_core = 250
+			add_state_core = 251
+			add_state_core = 255
+			add_state_core = 256
+		}	
+	}
+	BSH_core_GLA = { #Интеграция_ГАО
+	
+		cost = 30
+
+		available = {
+			controls_state = 619
+			controls_state = 617
+			controls_state = 618
+			controls_state = 287
+			controls_state = 759
+			controls_state = 760
+			controls_state = 755
+			controls_state = 756
+			controls_state = 754
+			controls_state = 616
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 619
+			add_state_core = 617
+			add_state_core = 618
+			add_state_core = 287
+			add_state_core = 759
+			add_state_core = 760
+			add_state_core = 755
+			add_state_core = 756
+			add_state_core = 754
+			add_state_core = 616
+		}	
+	}
+	BSH_core_MNR = { #Интеграция_Монголии
+	
+		cost = 30
+
+		available = {
+			controls_state = 818
+			controls_state = 820
+			controls_state = 330
+			controls_state = 817
+			controls_state = 819
+			controls_state = 621
+			controls_state = 611
+			controls_state = 612
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 818
+			add_state_core = 820
+			add_state_core = 330
+			add_state_core = 817
+			add_state_core = 819
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 612
+		}	
+	}
+	BSH_core_BRT = { #Интеграция_Бурятии
+	
+		cost = 30
+
+		available = {
+			controls_state = 563
+			controls_state = 564
+			controls_state = 565
+			controls_state = 566
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 563
+			add_state_core = 564
+			add_state_core = 565
+			add_state_core = 566
+		}	
+	}
+}
+
+Sever_empire = {
+    BSH_war_PRM_1 = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = PRM
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = PRM
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_SKT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = SKT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = SKT
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_ARK = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = ARK
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = ARK
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_MHL = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = MHL
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = MHL
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_EBN = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = EBN
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = EBN
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_POK_2 = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = POK
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = POK
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_MRD = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = MRD
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = MRD
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_KOL = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = KOL
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = KOL
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_YAK = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = YAK
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = YAK
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_MAG = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = MAG
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = MAG
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_war_DOT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = DOT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = DOT
+                   type = annex_everything
+            }
+		}	
+	}
+    BSH_core_PRM_1 = { #Интеграция_Перми
+	
+		cost = 30
+
+		available = {
+			controls_state = 398
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 398
+		}	
+	}
+    BSH_core_POK_2 = { #Интеграция_Покаянии
+	
+		cost = 30
+
+		available = {
+			controls_state = 580
+			controls_state = 579
+			controls_state = 824
+			controls_state = 577
+			controls_state = 576
+			controls_state = 575
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 580
+			add_state_core = 579
+			add_state_core = 824
+			add_state_core = 577
+			add_state_core = 576
+			add_state_core = 575
+		}	
+	}
+    BSH_core_SKT = { #Интеграция_Коми
+	
+		cost = 30
+
+		available = {
+			controls_state = 262
+			controls_state = 397
+			controls_state = 581
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 262
+			add_state_core = 397
+			add_state_core = 581
+		}	
+	}
+    BSH_core_ARK = { #Интеграция_Аркхангельска
+	
+		cost = 30
+
+		available = {
+			controls_state = 351
+			controls_state = 214
+			controls_state = 825
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 351
+			add_state_core = 214
+			add_state_core = 825
+		}	
+	}
+    BSH_core_MHL = { #Интеграция_Карелии
+	
+		cost = 30
+
+		available = {
+			controls_state = 215
+			controls_state = 216
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 215
+			add_state_core = 216
+		}	
+	}
+    BSH_core_EBN = { #Интеграция_Мурманска
+	
+		cost = 30
+
+		available = {
+			controls_state = 213
+			controls_state = 722
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 213
+			add_state_core = 722
+		}	
+	}
+	BSH_core_MRD = { #Интеграция_Мордовии
+	
+		cost = 30
+
+		available = {
+			controls_state = 516
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 516
+		}	
+	}
+    BSH_core_KOL = { #Интеграция_Колымы
+	
+		cost = 30
+
+		available = {
+			controls_state = 644
+			controls_state = 822
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 644
+			add_state_core = 822
+		}	
+	}
+    BSH_core_MAG = { #Интеграция_Магадана
+	
+		cost = 30
+
+		available = {
+			controls_state = 562
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 562
+		}	
+	}
+    BSH_core_MAG = { #Интеграция_Магадана
+	
+		cost = 30
+
+		available = {
+			controls_state = 637
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 637
+		}	
+	}      	
 }
