@@ -690,7 +690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_nefashism_kak_reshenie_sovr_polit_problem
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_ob_osnovah_nefasizma
@@ -708,7 +708,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_osnovat_degradachTV
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
@@ -726,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_priglasit_nareschikov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_klonirovanie
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_osnovat_degradachTV
@@ -843,7 +843,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_odna_party
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
@@ -904,7 +904,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_mnogopartiynost
-		icon = GFX_goal_unknown
+		icon = GFX_POK_proportional
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
@@ -969,7 +969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_voendistsip_v_gosstrukturah
-		icon = GFX_goal_unknown
+		icon = GFX_DOT_boyevaya_gruppa_po_5
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_meriticraty
@@ -989,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_attack_taynie_organisation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_voendistsip_v_gosstrukturah
@@ -1006,7 +1006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_zapret_na_virazhenie_opasnih_polit_vzglyadov
-		icon = GFX_goal_unknown
+		icon = GFX_CHT_ogon_po_rev
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_attack_taynie_organisation
@@ -1026,7 +1026,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_slaves_masses
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_zapret_na_virazhenie_opasnih_polit_vzglyadov
@@ -1066,7 +1066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_opravdanie_voyni
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_unitarism
@@ -1209,7 +1209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_ilusion_vunora
-		icon = GFX_goal_unknown
+		icon = GFX_DOT_voting_for_leader
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_mnogopartiynost
@@ -1229,7 +1229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_preobladanie_gosva_nad_chelovekom
-		icon = GFX_goal_unknown
+		icon = GFX_focus_bsh_poryadok_v_strane
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_ilusion_vunora
@@ -1249,7 +1249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_goshelp_obshinam
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_otstanennost_gosva_1
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_ilusion_vunora
@@ -1266,7 +1266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_prevoshodstvo_nashey_culture
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_preobladanie_gosva_nad_chelovekom
@@ -1346,7 +1346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_nash_new_dom
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_evrey
@@ -1363,7 +1363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_ural_israel
-		icon = GFX_goal_unknown
+		icon = GFX_goal_jew_vlast
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_svyaz_s_evreyskimi_obzhinami
@@ -1377,7 +1377,7 @@ focus_tree = {
 					has_completed_focus = BSH_new_formats
 				}
 			completion_reward = {
-			    add_country_leader_trait = second_moisey 
+					add_country_leader_trait = second_moisey
 					swap_ideas = {
 							remove_idea = BSH_svyaz_s_evreyskimi_obzhinami
 							add_idea = BSH_ural_israel
@@ -1428,7 +1428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_zov_predkov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_restore_cossack_units
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_ottsovskaya_liniya
@@ -1445,7 +1445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_vladika_stepey
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_sila_stepey
@@ -1459,7 +1459,7 @@ focus_tree = {
 					has_completed_focus = BSH_new_formats
 				}
 			completion_reward = {
-			        add_country_leader_trait = spirit_of_genghis  
+					add_country_leader_trait = spirit_of_genghis
 					swap_ideas = {
 							remove_idea = BSH_sila_stepey
 							add_idea = BSH_vladika_stepey
@@ -1510,7 +1510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_bogatstva_severa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_new_nalogooblazhenie
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_materinskaya_liniya
@@ -1540,7 +1540,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_uzhas_severa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_sev_stoykost
@@ -1554,7 +1554,7 @@ focus_tree = {
 					has_completed_focus = BSH_new_formats
 				}
 			completion_reward = {
-			    add_country_leader_trait = uzhas_severa 
+					add_country_leader_trait = uzhas_severa
 					swap_ideas = {
 							remove_idea = BSH_sev_stoykost
 							add_idea = BSH_uzhas_severa
@@ -1594,6 +1594,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = BSH_delat_yahont
+			focus = BSH_delat_chernogolovku
 		}
 		x = 17
 		y = 12
@@ -1634,6 +1635,7 @@ focus_tree = {
 			focus = BSH_prinuditelniy_trud
 		}
 		mutually_exclusive = {
+			focus = BSH_delat_imbu
 			focus = BSH_delat_yahont
 		}
 		x = 21
@@ -1671,7 +1673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_propagandirovat_borby_nastiy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_strong_army_dlya_zazhity
@@ -1691,7 +1693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_prevoshodstvo_great_nation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_fourth_ally
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_voyna_otobrazhenie_nashey_suzhnosti
@@ -1711,7 +1713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_economoc_gosvmeshatelstvo
-		icon = GFX_GFX_Karl_Marx
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prodvigat_duh_tsennosti
@@ -1729,7 +1731,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_podderzhat_monopoliy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_privatisation
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_pokonshit_konets_potreb_decadansa
@@ -1750,7 +1752,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_upor_na_tehno_economic_prevoshodstvo
-		icon = GFX_goal_unknown
+		icon = GFX_cht_kluch_strelki
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prevoshodstvo_great_nation
@@ -1767,7 +1769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_prodvigat_kult_potrebleniya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_trade
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_propagandirovat_borby_nastiy
@@ -1784,7 +1786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_pokonshit_konets_potreb_decadansa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_slave_divisions
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prevoshodstvo_great_nation
@@ -1858,7 +1860,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_strong_army_dlya_zazhity
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prevoshodstvo_nashey_culture
@@ -1878,7 +1880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_cheloveku_opasno_davat_mnogo_svobodi
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_otstanennost_gosva
@@ -1902,13 +1904,11 @@ focus_tree = {
 		icon = GFX_BSH_true_nefascism
 		cost = 5,00
 		prerequisite = {
-			focus = BSH_opravdanie_voyni
-		}
-		prerequisite = {
 			focus = BSH_podderzhat_monopoliy
+			focus = BSH_economoc_gosvmeshatelstvo
 		}
 		prerequisite = {
-			focus = BSH_economoc_gosvmeshatelstvo
+			focus = BSH_opravdanie_voyni
 		}
 		x = 29
 		y = 16
@@ -3293,7 +3293,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_zabaytit_na_hram_Olegu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_rasprava_nad_oppozitsiey
@@ -3313,7 +3313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_uspokoit_zril
-		icon = GFX_goal_unknown
+		icon = GFX_focus_bsh_poryadok_v_strane
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_zabaytit_na_hram_Olegu
@@ -3330,7 +3330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_povesit_Babaya
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cze_german_puppet
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_oppazitsiya_Olega
@@ -3350,7 +3350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_obzhestvo_ravenstva
-		icon = GFX_GFX_Karl_Marx
+		icon = GFX_goal_generic_support_anstal
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_povesit_Babaya
