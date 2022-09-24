@@ -1,33 +1,3368 @@
 focus_tree = {
 	id = BSH
 	country = {
-		base = 0
-		modifier = {
-			add = 10
-			tag = BSH
-		}
-	}
-
-	shared_focus = BSH_vib
-    shared_focus = BSH_army_effort
-    shared_focus = BSH_aviation_effort   
-    shared_focus = BSH_naval_effort         
-    shared_focus = BSH_industrial_effort          	
-}
-focus_tree = {
-	id = BSH_bebs_tree
-	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = BSH
 		}
 	}
+	default = no
+	focus = {
+		id = BSH_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		x = 1
+		y = 0
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
 
-	shared_focus = BSH_vib
-	shared_focus = BSH_vspomnit_o_starih_znakomih
-	shared_focus = BSH_army_effort
-    shared_focus = BSH_aviation_effort   
-    shared_focus = BSH_naval_effort         
-    shared_focus = BSH_industrial_effort   
+	}
+	focus = {
+		id = BSH_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		cost = 10,00
+		x = 5
+		y = 0
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			complete_tooltip = {
+					air_experience = 25
+					if = {
+							limit = {
+									has_country_flag = aviation_effort_AB
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_doctrine_cost_reduction = {
+							name = air_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											NOT = {
+													free_building_slots = {
+															building = air_base
+															size > 1
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					add_doctrine_cost_reduction = {
+							name = air_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		x = 9
+		y = 0
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_industrial_effort
+		icon = GFX_goal_generic_production
+		cost = 10,00
+		x = 13
+		y = 0
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
+						}
+				}
+			ai_will_do = {
+					factor = 3
+					modifier = {
+							factor = 0
+							date < 1939.1.1
+							OR = {
+									tag = GXC
+									tag = YUN
+									tag = SHX
+									tag = XSM
+									tag = BEL
+									tag = LUX
+									tag = HOL
+									tag = DEN
+									num_of_controlled_states < 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_vib
+		icon = GFX_goal_generic_national_unity
+		cost = 7,00
+		x = 29
+		y = 0
+			available = {
+					BSH = {
+							NOT = {
+									is_subject_of = LAZ
+								}
+						}
+					CHT = {
+							has_war = yes
+						}
+				}
+			completion_reward = {
+					add_political_power = 50
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_vspomnit_o_starih_znakomih
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		x = 29
+		y = 4
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = memoism
+							popularity = 0.10
+						}
+					add_political_power = 100
+					country_event = {
+							id = BSH.1
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_naval_effort
+		}
+		mutually_exclusive = {
+			focus = BSH_large_navy
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_naval_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_naval_effort
+		}
+		mutually_exclusive = {
+			focus = BSH_flexible_navy
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_naval_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_flexible_navy
+			focus = BSH_large_navy
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_flexible_navy
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_army_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_army_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_morgen
+		icon = GFX_focus_AST_squander_bug
+		cost = 2,00
+		prerequisite = {
+			focus = BSH_vib
+		}
+		mutually_exclusive = {
+			focus = BSH_babay
+			focus = BSH_grig
+		}
+		x = 25
+		y = 1
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.35
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.10
+						}
+				}
+			ai_will_do = {
+					factor = 25
+				}
+
+	}
+	focus = {
+		id = BSH_sip_lave
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_morgen
+		}
+		x = 25
+		y = 2
+			completion_reward = {
+					add_stability = -0.1
+					add_ideas = privatizaciya
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_noviy_avtomat
+		icon = GFX_focus_secret_rearmament
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_sip_lave
+		}
+		x = 25
+		y = 3
+			completion_reward = {
+					add_war_support = 0.1
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 500
+							producer = POK
+						}
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 3
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_babay
+		icon = GFX_goal_generic_defence
+		cost = 2,00
+		prerequisite = {
+			focus = BSH_vib
+		}
+		mutually_exclusive = {
+			focus = BSH_morgen
+			focus = BSH_grig
+		}
+		x = 29
+		y = 1
+			completion_reward = {
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.50
+						}
+				}
+			ai_will_do = {
+					factor = 25
+				}
+
+	}
+	focus = {
+		id = BSH_ural_paris
+		icon = GFX_focus_bsh_reconstruction
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_babay
+		}
+		x = 29
+		y = 2
+			completion_reward = {
+					set_province_name = {
+							id = 4354
+							name = "Стерлипариж"
+						}
+					add_victory_points = {
+							province = 4354
+							value = 10
+						}
+					651 = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 4
+						}
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_new_formats
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ural_paris
+		}
+		x = 29
+		y = 3
+			completion_reward = {
+					add_research_slot = 1
+					add_doctrine_cost_reduction = {
+							cost_reduction = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = memoism
+							popularity = 0.10
+						}
+					add_political_power = 150
+					load_focus_tree = BSH_bebs_tree
+					country_event = BSH.2
+				}
+			ai_will_do = {
+					factor = 2
+				}
+
+	}
+	focus = {
+		id = BSH_hello_vsem_nashim
+		icon = GFX_goal_generic_political_pressure
+		cost = 2,00
+		prerequisite = {
+			focus = BSH_vspomnit_o_starih_znakomih
+		}
+		x = 29
+		y = 5
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = memoism
+							popularity = 0.15
+						}
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = BSH_ob_osnovah_nefasizma
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_hello_vsem_nashim
+		}
+		x = 29
+		y = 6
+			completion_reward = {
+					visible = {
+							has_completed_focus = BSH_new_formats
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = memoism
+							popularity = 0.15
+						}
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = BSH_nefashism_kak_reshenie_sovr_polit_problem
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ob_osnovah_nefasizma
+		}
+		x = 29
+		y = 7
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = BSH_osnovat_degradachTV
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
+		}
+		x = 19
+		y = 8
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = BSH_priglasit_nareschikov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_osnovat_degradachTV
+		}
+		x = 17
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_corps_commander_role = {
+							character = BSH_bebey_vezhaet
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_grisha_rak
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_andrey_EbaLumba
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_bubsich
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_bebey_shutnyara
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_ulya_metalcor
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = BSH_gosha_gachivar
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_sformorovat_trapbati_iz_zrilov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_osnovat_degradachTV
+		}
+		x = 21
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					load_oob = BSH_trapbat
+				}
+
+	}
+	focus = {
+		id = BSH_odna_party
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
+		}
+		mutually_exclusive = {
+			focus = BSH_mnogopartiynost
+		}
+		x = 25
+		y = 8
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_odna_party
+					add_popularity = {
+							ideology = memoism
+							popularity = 1
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_uberech_narod_ot_democraty
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_odna_party
+		}
+		x = 24
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_odna_party
+							add_idea = BSH_uberech_narod_ot_democraty
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_otstanennost_gosva
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_uberech_narod_ot_democraty
+		}
+		x = 23
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_otstanennost_gosva
+				}
+
+	}
+	focus = {
+		id = BSH_mnogopartiynost
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
+		}
+		mutually_exclusive = {
+			focus = BSH_odna_party
+		}
+		x = 33
+		y = 8
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_mnogopartiynost
+					set_popularities = {
+							memoism = 70
+							democratic = 5
+							neutrality = 5
+							fascism = 5
+							anarhostalinism = 5
+							vmestolev = 5
+							metacommy = 5
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_meriticraty
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_odna_party
+			focus = BSH_mnogopartiynost
+		}
+		x = 29
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_meriticraty
+				}
+
+	}
+	focus = {
+		id = BSH_zdoroviy_obraz_zhizni
+		icon = GFX_goal_generic_demand_territory
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_odna_party
+			focus = BSH_mnogopartiynost
+		}
+		x = 27
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_kult_zdoroviy_obraz_zhizni
+				}
+
+	}
+	focus = {
+		id = BSH_voendistsip_v_gosstrukturah
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_meriticraty
+		}
+		x = 29
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_meriticraty
+							add_idea = BSH_voendistsip_v_gosstrukturah
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_attack_taynie_organisation
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_voendistsip_v_gosstrukturah
+		}
+		x = 29
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_war_support = 0.075
+				}
+
+	}
+	focus = {
+		id = BSH_zapret_na_virazhenie_opasnih_polit_vzglyadov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_attack_taynie_organisation
+		}
+		x = 29
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = PRM_ural_karapuz
+							add_idea = BSH_ural_karapuz_1
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_zapret_na_virazhenie_opasnih_polit_vzglyadov
+		}
+		x = 29
+		y = 13
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_voendistsip_v_gosstrukturah
+							add_idea = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_unitarism
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
+		}
+		x = 29
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
+							add_idea = BSH_unitarism
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_opravdanie_voyni
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_unitarism
+		}
+		x = 29
+		y = 15
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_unitarism
+							add_idea = BSH_opravdanie_voyni
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_forward
+		icon = GFX_goal_generic_army_motorized
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_mnogopartiynost
+			focus = BSH_odna_party
+		}
+		x = 31
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					load_oob = BSH_forward_1936
+				}
+
+	}
+	focus = {
+		id = BSH_furrey_rezhut_stoya
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_forward
+		}
+		x = 31
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_furrey_rezhut_stoya
+				}
+
+	}
+	focus = {
+		id = BSH_grig
+		icon = GFX_BEL_socialist_infrastructure2
+		cost = 2,00
+		prerequisite = {
+			focus = BSH_vib
+		}
+		mutually_exclusive = {
+			focus = BSH_morgen
+			focus = BSH_babay
+		}
+		x = 33
+		y = 1
+			completion_reward = {
+					set_politics = {
+							ruling_party = anarhostalinism
+							elections_allowed = no
+						}
+					add_popularity = {
+							ideology = vmestolev
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.4
+						}
+				}
+			ai_will_do = {
+					factor = 25
+				}
+
+	}
+	focus = {
+		id = BSH_pechatat_dengi
+		icon = GFX_focus_cht_socialist_chudo
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_grig
+		}
+		x = 33
+		y = 2
+			completion_reward = {
+					add_political_power = -50
+					add_extra_state_shared_building_slots = 3
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_new_deal
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_pechatat_dengi
+		}
+		x = 33
+		y = 3
+			completion_reward = {
+					add_stability = 0.02
+					add_ideas = kolhozi
+					651 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					652 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = industrial_bonus_grig
+							bonus = 0.5
+							uses = 2
+							category = industry
+						}
+				}
+			ai_will_do = {
+					factor = 100
+				}
+
+	}
+	focus = {
+		id = BSH_ilusion_vunora
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_mnogopartiynost
+		}
+		x = 34
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_mnogopartiynost
+							add_idea = BSH_ilusion_vunora
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_preobladanie_gosva_nad_chelovekom
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ilusion_vunora
+		}
+		x = 33
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_ilusion_vunora
+							add_idea = BSH_preobladanie_gosva_nad_chelovekom
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_goshelp_obshinam
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ilusion_vunora
+		}
+		x = 35
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_goshelp_obshinam
+				}
+
+	}
+	focus = {
+		id = BSH_prevoshodstvo_nashey_culture
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_preobladanie_gosva_nad_chelovekom
+			focus = BSH_goshelp_obshinam
+		}
+		x = 32
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_preobladanie_gosva_nad_chelovekom
+							add_idea = BSH_prevoshodstvo_nashey_culture
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_DNK_test
+		icon = GFX_BSH_DNK_test
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_nefashism_kak_reshenie_sovr_polit_problem
+		}
+		x = 42
+		y = 8
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_political_power = 100
+					country_event = BSH.3
+				}
+
+	}
+	focus = {
+		id = BSH_evrey
+		icon = GFX_goal_jew_vlast
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_DNK_test
+		}
+		mutually_exclusive = {
+			focus = BSH_materinskaya_liniya
+			focus = BSH_ottsovskaya_liniya
+		}
+		x = 38
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_evrey
+				}
+
+	}
+	focus = {
+		id = BSH_svyaz_s_evreyskimi_obzhinami
+		icon = GFX_focus_cht_new_nalogooblazhenie
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_evrey
+		}
+		x = 37
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_evrey
+							add_idea = BSH_svyaz_s_evreyskimi_obzhinami
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_nash_new_dom
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_evrey
+		}
+		x = 39
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = BSH_ural_israel
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_svyaz_s_evreyskimi_obzhinami
+		}
+		prerequisite = {
+			focus = BSH_nash_new_dom
+		}
+		x = 38
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+			    add_country_leader_trait = second_moisey 
+					swap_ideas = {
+							remove_idea = BSH_svyaz_s_evreyskimi_obzhinami
+							add_idea = BSH_ural_israel
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_ottsovskaya_liniya
+		icon = GFX_goal_generic_cavalry
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_DNK_test
+		}
+		mutually_exclusive = {
+			focus = BSH_evrey
+			focus = BSH_materinskaya_liniya
+		}
+		x = 42
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_ottsovskaya_liniya
+				}
+
+	}
+	focus = {
+		id = BSH_sila_stepey
+		icon = GFX_focus_SOV_restore_cossack_units
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ottsovskaya_liniya
+		}
+		x = 41
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_ottsovskaya_liniya
+							add_idea = BSH_sila_stepey
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_zov_predkov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_ottsovskaya_liniya
+		}
+		x = 43
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = BSH_vladika_stepey
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_sila_stepey
+		}
+		prerequisite = {
+			focus = BSH_zov_predkov
+		}
+		x = 42
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+			        add_country_leader_trait = spirit_of_genghis  
+					swap_ideas = {
+							remove_idea = BSH_sila_stepey
+							add_idea = BSH_vladika_stepey
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_materinskaya_liniya
+		icon = GFX_DOT_atlantis
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_DNK_test
+		}
+		mutually_exclusive = {
+			focus = BSH_evrey
+			focus = BSH_ottsovskaya_liniya
+		}
+		x = 46
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_materinskaya_liniya
+				}
+
+	}
+	focus = {
+		id = BSH_sev_stoykost
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_materinskaya_liniya
+		}
+		x = 45
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_materinskaya_liniya
+							add_idea = BSH_sev_stoykost
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_bogatstva_severa
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_materinskaya_liniya
+		}
+		x = 47
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_uzhas_severa
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_sev_stoykost
+		}
+		prerequisite = {
+			focus = BSH_bogatstva_severa
+		}
+		x = 46
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+			    add_country_leader_trait = uzhas_severa 
+					swap_ideas = {
+							remove_idea = BSH_sev_stoykost
+							add_idea = BSH_uzhas_severa
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_plotneyshaya_zastroyka
+		icon = GFX_BSH_ploteyshaya
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_zdoroviy_obraz_zhizni
+		}
+		x = 27
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					651 = {
+							add_extra_state_shared_building_slots = 3
+						}
+					652 = {
+							add_extra_state_shared_building_slots = 3
+						}
+					add_ideas = BSH_plotneyshaya_zastroyka
+				}
+
+	}
+	focus = {
+		id = BSH_delat_imbu
+		icon = GFX_BSH_imba
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prinuditelniy_trud
+		}
+		mutually_exclusive = {
+			focus = BSH_delat_yahont
+		}
+		x = 17
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_imbu
+				}
+
+	}
+	focus = {
+		id = BSH_delat_yahont
+		icon = GFX_BSH_yahont
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prinuditelniy_trud
+		}
+		mutually_exclusive = {
+			focus = BSH_delat_imbu
+			focus = BSH_delat_chernogolovku
+		}
+		x = 19
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_yahont
+				}
+
+	}
+	focus = {
+		id = BSH_delat_chernogolovku
+		icon = GFX_BSH_chernogolovka
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prinuditelniy_trud
+		}
+		mutually_exclusive = {
+			focus = BSH_delat_yahont
+		}
+		x = 21
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_chernogolovku
+				}
+
+	}
+	focus = {
+		id = BSH_bayti_na_donuti
+		icon = GFX_cht_bumagi_ruka
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_priglasit_nareschikov
+		}
+		prerequisite = {
+			focus = BSH_vopros_fotozhab
+		}
+		prerequisite = {
+			focus = BSH_sformorovat_trapbati_iz_zrilov
+		}
+		x = 18
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_aferist_economika
+				}
+
+	}
+	focus = {
+		id = BSH_propagandirovat_borby_nastiy
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_strong_army_dlya_zazhity
+		}
+		x = 32
+		y = 13
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_strong_army_dlya_zazhity
+							add_idea = BSH_propagandirovat_borby_nastiy
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_prevoshodstvo_great_nation
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_voyna_otobrazhenie_nashey_suzhnosti
+		}
+		x = 26
+		y = 13
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_voyna_otobrazhenie_nashey_suzhnosti
+							add_idea = BSH_prevoshodstvo_great_nation
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_economoc_gosvmeshatelstvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prodvigat_duh_tsennosti
+			focus = BSH_prodvigat_kult_potrebleniya
+		}
+		x = 32
+		y = 15
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_economoc_gosvmeshatelstvo
+				}
+
+	}
+	focus = {
+		id = BSH_podderzhat_monopoliy
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_pokonshit_konets_potreb_decadansa
+			focus = BSH_upor_na_tehno_economic_prevoshodstvo
+		}
+		x = 26
+		y = 15
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_upor_na_tehno_economic_prevoshodstvo
+							add_idea = BSH_podderzhat_monopoliy
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_upor_na_tehno_economic_prevoshodstvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prevoshodstvo_great_nation
+		}
+		x = 27
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_upor_na_tehno_economic_prevoshodstvo
+				}
+
+	}
+	focus = {
+		id = BSH_prodvigat_kult_potrebleniya
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_propagandirovat_borby_nastiy
+		}
+		x = 33
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_prodvigat_kult_potrebleniya
+				}
+
+	}
+	focus = {
+		id = BSH_pokonshit_konets_potreb_decadansa
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prevoshodstvo_great_nation
+		}
+		x = 25
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_pokonshit_konets_potreb_decadansa
+				}
+
+	}
+	focus = {
+		id = BSH_prodvigat_duh_tsennosti
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_propagandirovat_borby_nastiy
+		}
+		x = 31
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_prodvigat_duh_tsennosti
+				}
+
+	}
+	focus = {
+		id = BSH_voyna_otobrazhenie_nashey_suzhnosti
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_cheloveku_opasno_davat_mnogo_svobodi
+		}
+		x = 26
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_cheloveku_opasno_davat_mnogo_svobodi
+							add_idea = BSH_voyna_otobrazhenie_nashey_suzhnosti
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_strong_natsprovitelstvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_uberech_narod_ot_democraty
+		}
+		x = 25
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_uberech_narod_ot_democraty
+							add_idea = BSH_strong_natsprovitelstvo
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_strong_army_dlya_zazhity
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_prevoshodstvo_nashey_culture
+		}
+		x = 32
+		y = 12
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_prevoshodstvo_nashey_culture
+							add_idea = BSH_strong_army_dlya_zazhity
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_cheloveku_opasno_davat_mnogo_svobodi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_otstanennost_gosva
+			focus = BSH_strong_natsprovitelstvo
+		}
+		x = 26
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = BSH_uberech_narod_ot_democraty
+							add_idea = BSH_cheloveku_opasno_davat_mnogo_svobodi
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_true_nefascism
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_opravdanie_voyni
+		}
+		prerequisite = {
+			focus = BSH_podderzhat_monopoliy
+		}
+		prerequisite = {
+			focus = BSH_economoc_gosvmeshatelstvo
+		}
+		x = 29
+		y = 16
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_stability = 0.1
+					add_war_support = 0.1
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = BSH_lager_Nizhuganovo
+		icon = GFX_focus_cht_slaves_masses
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_sformorovat_trapbati_iz_zrilov
+		}
+		prerequisite = {
+			focus = BSH_vopros_fotozhab
+		}
+		prerequisite = {
+			focus = BSH_priglasit_nareschikov
+		}
+		x = 20
+		y = 10
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					set_province_name = {
+							id = 1350
+							name = "Нищуганово"
+						}
+					add_victory_points = {
+							province = 1350
+							value = 5
+						}
+					652 = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_extra_state_shared_building_slots = 2
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_prinuditelniy_trud
+		icon = GFX_focus_bsh_poryadok_v_strane
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_lager_Nizhuganovo
+		}
+		prerequisite = {
+			focus = BSH_bayti_na_donuti
+		}
+		x = 19
+		y = 11
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_prinuditelniy_trud
+				}
+
+	}
+	focus = {
+		id = BSH_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_army_effort
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_army_effort
+			bypass = {
+					has_tech = motorised_infantry
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 3.0
+							technology = motorised_infantry
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_army_effort
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_army_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_equipment_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_equipment_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_motorization_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_motorization_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_doctrine_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_doctrine_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_equipment_effort_2
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_equipment_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_mechanization_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_mechanization_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_equipment_effort_3
+		}
+		prerequisite = {
+			focus = BSH_doctrine_effort_2
+		}
+		prerequisite = {
+			focus = BSH_armor_effort
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_equipment_effort_3
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							cost_reduction = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_aviation_effort
+		}
+		mutually_exclusive = {
+			focus = BSH_bomber_focus
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_aviation_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_aviation_effort
+		}
+		mutually_exclusive = {
+			focus = BSH_fighter_focus
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_aviation_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_bomber_focus
+			focus = BSH_fighter_focus
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_bomber_focus
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			complete_tooltip = {
+					air_experience = 25
+					if = {
+							limit = {
+									has_country_flag = aviation_effort_2_AB
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_doctrine_cost_reduction = {
+							name = air_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											OR = {
+													NOT = {
+															is_controlled_by = ROOT
+														}
+													NOT = {
+															free_building_slots = {
+																	building = air_base
+																	size > 1
+																}
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					add_doctrine_cost_reduction = {
+							name = air_doc_bonus
+							cost_reduction = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_CAS_effort
+		icon = GFX_goal_generic_CAS
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_aviation_effort_2
+		}
+		prerequisite = {
+			focus = BSH_motorization_effort
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_aviation_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_rocket_effort
+		icon = GFX_focus_rocketry
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_aviation_effort_2
+		}
+		prerequisite = {
+			focus = BSH_infrastructure_effort
+		}
+		x = 0
+		y = 2
+		relative_position_id = BSH_aviation_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_aviation_effort_2
+		}
+		prerequisite = {
+			focus = BSH_flexible_navy
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_aviation_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_large_navy
+			focus = BSH_flexible_navy
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_large_navy
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_submarine_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_submarine_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_cruiser_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_cruiser_effort
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_industrial_effort
+		}
+		x = -1
+		y = 1
+		relative_position_id = BSH_industrial_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_industrial_effort
+		}
+		x = 1
+		y = 1
+		relative_position_id = BSH_industrial_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_construction_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_construction_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_production_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_production_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_construction_effort_2
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_construction_effort_2
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_production_effort_2
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_production_effort_2
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_infrastructure_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_infrastructure_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_infrastructure_effort
+		}
+		x = 2
+		y = 1
+		relative_position_id = BSH_infrastructure_effort
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_infrastructure_effort_2
+		}
+		x = -2
+		y = 1
+		relative_position_id = BSH_infrastructure_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_extra_tech_slot
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_infrastructure_effort_2
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_infrastructure_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = BSH_extra_tech_slot_2
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_extra_tech_slot
+		}
+		x = 0
+		y = 1
+		relative_position_id = BSH_extra_tech_slot
+			available = {
+					num_of_factories > 50
+				}
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = BSH_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = BSH_infrastructure_effort_2
+		}
+		x = 2
+		y = 1
+		relative_position_id = BSH_infrastructure_effort_2
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 1.0
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_rasprava_nad_oppozitsiey
+		icon = GFX_focus_bsh_poryadok_v_strane
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_delat_chernogolovku
+			focus = BSH_delat_imbu
+			focus = BSH_delat_yahont
+		}
+		mutually_exclusive = {
+			focus = BSH_oppazitsiya_Olega
+		}
+		x = 20
+		y = 13
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = BSH_oppazitsiya_Olega
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_delat_imbu
+			focus = BSH_delat_yahont
+			focus = BSH_delat_chernogolovku
+		}
+		mutually_exclusive = {
+			focus = BSH_rasprava_nad_oppozitsiey
+		}
+		x = 18
+		y = 13
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = anarhostalinism
+						}
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.5
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_vopros_fotozhab
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_osnovat_degradachTV
+		}
+		x = 19
+		y = 9
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					country_event = BSH.4
+				}
+
+	}
+	focus = {
+		id = BSH_zabaytit_na_hram_Olegu
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_rasprava_nad_oppozitsiey
+		}
+		x = 20
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = BSH_zabaytit_na_hram_Olegu
+							days = 360
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_uspokoit_zril
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_zabaytit_na_hram_Olegu
+		}
+		x = 20
+		y = 15
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = BSH_povesit_Babaya
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_oppazitsiya_Olega
+		}
+		x = 18
+		y = 14
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.25
+						}
+				}
+
+	}
+	focus = {
+		id = BSH_obzhestvo_ravenstva
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = BSH_povesit_Babaya
+		}
+		x = 18
+		y = 15
+			visible = {
+					has_completed_focus = BSH_new_formats
+				}
+			completion_reward = {
+					add_ideas = BSH_obzhestvo_ravenstva
+				}
+
+	}
 }
