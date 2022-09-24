@@ -640,7 +640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_hello_vsem_nashim
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_BSH_hello_vsem_nashim
 		cost = 2,00
 		prerequisite = {
 			focus = BSH_vspomnit_o_starih_znakomih
@@ -665,7 +665,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_ob_osnovah_nefasizma
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_political_pressure
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_hello_vsem_nashim
@@ -826,7 +826,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_sformorovat_trapbati_iz_zrilov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_penal_battalions
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_osnovat_degradachTV
@@ -867,7 +867,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_uberech_narod_ot_democraty
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_odna_party
@@ -887,7 +887,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_otstanennost_gosva
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_otstanennost_gosva
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_uberech_narod_ot_democraty
@@ -933,7 +933,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_meriticraty
-		icon = GFX_goal_unknown
+		icon = GFX_POK_vertical_vlasti
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_odna_party
@@ -1046,7 +1046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_unitarism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_chestniy_chelovek_ne_boitsya_gosnadzora
@@ -1711,7 +1711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_economoc_gosvmeshatelstvo
-		icon = GFX_goal_unknown
+		icon = GFX_GFX_Karl_Marx
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_prodvigat_duh_tsennosti
@@ -1801,7 +1801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_prodvigat_duh_tsennosti
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NOD_concordat
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_propagandirovat_borby_nastiy
@@ -1818,7 +1818,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_voyna_otobrazhenie_nashey_suzhnosti
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_voyna_otobrazhenie_nashey_suzhnosti
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_cheloveku_opasno_davat_mnogo_svobodi
@@ -1838,7 +1838,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_strong_natsprovitelstvo
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_strong_natsprovitelstvo
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_uberech_narod_ot_democraty
@@ -1899,7 +1899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_true_nefascism
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_true_nefascism
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_opravdanie_voyni
@@ -3276,7 +3276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_vopros_fotozhab
-		icon = GFX_goal_unknown
+		icon = GFX_BSH_vopros_fotozhab
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_osnovat_degradachTV
@@ -3350,7 +3350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BSH_obzhestvo_ravenstva
-		icon = GFX_goal_unknown
+		icon = GFX_GFX_Karl_Marx
 		cost = 5,00
 		prerequisite = {
 			focus = BSH_povesit_Babaya
