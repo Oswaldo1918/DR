@@ -111,3 +111,20 @@ country_event = { #фотожабы
 	add_war_support = 0.075
 	}
 }
+country_event = { #спецотдел деградача
+	id = BSH.5
+	title = BSH.5.t
+	desc = BSH.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.5.a
+	add_ideas = BSH_kontrol_anomaliy
+	}
+}
