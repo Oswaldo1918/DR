@@ -8,7 +8,6 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position =  { x = 100 y = 200 }
 	focus = {
 		id = SKT_blizost_smerti
 		icon = GFX_POK_skull_crown
@@ -24,11 +23,11 @@ focus_tree = {
 		id = SKT_da_i_Komi_ostalos_s_nim
 		icon = GFX_goal_generic_demand_territory
 		cost = 1,00
-		available = {
-					has_completed_focus = SKT_vot_i_pomer_ded_Maksim
-				}
 		x = 35
 		y = 4
+			available = {
+					has_completed_focus = SKT_vot_i_pomer_ded_Maksim
+				}
 			completion_reward = {
 					add_stability = -0.05
 				}
@@ -106,36 +105,42 @@ focus_tree = {
 							ideology = vmestolev
 							popularity = 0.05
 						}
-                    add_corps_commander_role  = {
-    character = SKT_unicorn
-	    traits = {  }
-	    skill = 1
-	    attack_skill = 1
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 1
-		legacy_id = -1
-                   }
-                add_corps_commander_role  = {
-    character = SKT_supa_syel
-	    traits = {  }
-	    skill = 1
-	    attack_skill = 1
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 1
-		legacy_id = -1
-        } 
-		add_corps_commander_role  = {
-    character = SKT_Aleksandr_Lebedev
-	    traits = {  }
-	    skill = 1
-	    attack_skill = 1
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 1
-		legacy_id = -1
-        }
+					add_corps_commander_role = {
+							character = SKT_unicorn
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = SKT_supa_syel
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = SKT_Aleksandr_Lebedev
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
 				}
 
 	}
@@ -148,25 +153,28 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
-        completion_reward = {
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-			add_field_marshal_role  = {
-  character = SKT_levoborod
-	    traits = {  }
-	    skill = 1
-	    attack_skill = 1
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 1
-		legacy_id = -1
+			completion_reward = {
+					army_experience = 25
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_field_marshal_role = {
+							character = SKT_levoborod
+							traits = {
+
 }
-		}          
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+				}
+
 	}
 	focus = {
 		id = SKT_strelik_podgotovka
@@ -177,15 +185,16 @@ focus_tree = {
 		}
 		x = 16
 		y = 9
-        completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = infantry__bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-			}
-		}       
+			completion_reward = {
+					army_experience = 20
+					add_tech_bonus = {
+							name = infantry__bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
 	}
 	focus = {
 		id = SKT_no_step_back
@@ -196,9 +205,10 @@ focus_tree = {
 		}
 		x = 20
 		y = 9
-        completion_reward = {
-			add_ideas = SKT_no_step_back
-		}       
+			completion_reward = {
+					add_ideas = SKT_no_step_back
+				}
+
 	}
 	focus = {
 		id = SKT_otdel_expansion
@@ -408,7 +418,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_gazifitsirovat_gosvo
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_narodniy_neftegaz
@@ -425,7 +435,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_desheviy_benzin
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_gazifitsirovat_gosvo
@@ -487,7 +497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Komi_dlya_ludey
-		icon = GFX_goal_unknown
+		icon = GFX_BEL_socialist_infrastructure2
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_desheviy_benzin
@@ -506,7 +516,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_SovOil
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 10,00
 		prerequisite = {
 			focus = SKT_vipolnenie_obezhaniy
@@ -613,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_ugledobicha_v_Vorkute
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coal
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_narodniy_neftegaz
@@ -682,7 +692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Pechor_GRES
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tes
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_leshoz_Ukhta
@@ -984,7 +994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_svobodnaya_kassa_svobodnaya_strana
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_natsionalizirovat_Magnit
@@ -998,7 +1008,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_tsentrist_boroda
-		icon = GFX_goal_unknown
+		icon = GFX_No_way
 		cost = 1,00
 		prerequisite = {
 			focus = SKT_borodatie_vibory
@@ -1012,7 +1022,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_sev_mayak_zhozhekizma
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_organizovat_mladozhozhekov
@@ -1030,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_nalazhivanie_otnosheniy_s_SK
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_sev_mayak_zhozhekizma
@@ -1050,7 +1060,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_fanernaya_arkhitektura
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_nalazhivanie_otnosheniy_s_SK
@@ -1073,7 +1083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_opit_sevkor_ansabley_pesen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_nalazhivanie_otnosheniy_s_SK
@@ -1087,7 +1097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_araaaabskiy_vostok
-		icon = GFX_goal_unknown
+		icon = GFX_focus_TUR_treaty_of_saadabad
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_sev_mayak_zhozhekizma
@@ -1115,7 +1125,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_KSKR
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_klonirovanie
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_araaaabskiy_vostok
@@ -1164,7 +1174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Israel_must_destroy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_help_arabam
@@ -1194,7 +1204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_golos_stepey
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_cavalry
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_sev_mayak_zhozhekizma
@@ -1211,7 +1221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_priznat_Veshnoriu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_golos_stepey
@@ -1228,7 +1238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_kommunist_agora
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_priznat_Veshnoriu
@@ -1260,7 +1270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_razvodid_kochevoy_kartofel
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_restore_cossack_units
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_kommunist_agora
@@ -1312,7 +1322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_High_tech_High_life
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_narastit_neftedobichy
@@ -1331,7 +1341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_avangard_lumpen_kassir
-		icon = GFX_goal_unknown
+		icon = GFX_focus_por_workers_of_iberia
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_High_tech_High_life
@@ -1348,7 +1358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_right_boroda
-		icon = GFX_goal_unknown
+		icon = GFX_No_way
 		cost = 1,00
 		prerequisite = {
 			focus = SKT_borodatie_vibory
@@ -1362,7 +1372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_razrabotka_roket
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rocketry
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_fanernaya_arkhitektura
@@ -1382,7 +1392,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_razrabotka_yadreakt
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tes
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_opit_sevkor_ansabley_pesen
@@ -1400,7 +1410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_ostavit_Kulova
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 1,00
 		prerequisite = {
 			focus = SKT_elementi_chuchhe
@@ -1418,7 +1428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_vislat_Kulova_v_SevKor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 1,00
 		prerequisite = {
 			focus = SKT_elementi_chuchhe
@@ -1437,7 +1447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_elementi_chuchhe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_sovet_truda_i_oborony
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_razrabotka_yadreakt
@@ -1454,7 +1464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_otpravit_Reutsa_na_BV
-		icon = GFX_goal_unknown
+		icon = GFX_goal_dzhamahiriya
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_Israel_must_destroy
@@ -1474,7 +1484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_ostavit_Reutsa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_Israel_must_destroy
@@ -1493,7 +1503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Reuts_valit_v_Japan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_Israel_must_destroy
@@ -1513,7 +1523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_v_Veishnoriu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_razvodid_kochevoy_kartofel
@@ -1533,7 +1543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_v_Mongoliu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_razvodid_kochevoy_kartofel
@@ -1553,7 +1563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_Fomin_kochuet_po_Komi
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_razvodid_kochevoy_kartofel
@@ -1585,28 +1595,29 @@ focus_tree = {
 		}
 		x = 18
 		y = 10
-        completion_reward = {
+			completion_reward = {
 					add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 3
-				category = infantry_weapons
-				category = artillery
-			}
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 3
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-				}      
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 3
+							category = infantry_weapons
+							category = artillery
+						}
+					army_experience = 50
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 3
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
 	}
 	focus = {
 		id = SKT_pochetniy_karaul
@@ -1617,8 +1628,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 9
-        completion_reward = {
+			completion_reward = {
 					add_ideas = SKT_pochetniy_karaul
-				}       
+				}
+
 	}
 }
