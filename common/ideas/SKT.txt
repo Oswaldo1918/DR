@@ -215,6 +215,70 @@ ideas = {
 				army_org_factor = 0.05
 			    }
 		    }
+			SKT_sah_crisis = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.2
+                stability_factor = -0.1   				
+			    }
+		    }
+			SKT_sah_crisis_1 = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.1
+                stability_factor = -0.05   				
+			    }
+		    }
+			SKT_sabotazh_capitalistov = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.05
+                stability_weekly = -0.01 
+			    }
+		    }
+			SKT_sabotazh_capitalistov_1 = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.035
+				political_power_gain = -0.035
+                stability_weekly = -0.01 
+			    }
+		    }
+			SKT_sabotazh_capitalistov_2 = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.015
+				political_power_gain = -0.015
+                stability_weekly = -0.01 
+			    }
+		    }
+			SKT_eksperpriatsia_babyshek = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.05
+			    }
+		    }
+			SKT_import_sah_svekly = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.025
+			    }
+		    }
+			SKT_eksport_sah_svekly = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = -0.025
+			    }
+		    }		
 	    }
 		
 		industrial_concern = {

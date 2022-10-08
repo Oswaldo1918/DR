@@ -34,6 +34,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SKT_obvinit_burdzhuev_v_vaflerstve
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 2,00
+		x = 20
+		y = 9
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SKT_sabotazh_capitalistov
+							add_idea = SKT_sabotazh_capitalistov_1
+						}
+				}
+
+	}
+	focus = {
 		id = SKT_borodatie_vibory
 		icon = GFX_focus_cht_vybory
 		cost = 3,00
@@ -52,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_left_boroda
-		icon = GFX_goal_support_communism
+		icon = GFX_SKT_left_borod
 		cost = 1,00
 		prerequisite = {
 			focus = SKT_borodatie_vibory
@@ -91,14 +105,312 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SKT_saharniy_crisis
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 1,00
+		prerequisite = {
+			focus = SKT_vipolnenie_obezhaniy
+		}
+		x = 20
+		y = 8
+			completion_reward = {
+					add_political_power = -100
+					add_stability = -0.1
+					country_event = {
+							id = SKT.3
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_eksperpriatsia_babyshek
+		icon = GFX_goal_generic_demand_territory
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_saharniy_crisis
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+					add_timed_idea = {
+							idea = SKT_eksperpriatsia_babyshek
+							days = 180
+						}
+					add_stability = -0.05
+				}
+
+	}
+	focus = {
+		id = SKT_stravit_kapitalistov_i_opg
+		icon = GFX_focus_cht_slave_divisions
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_obvinit_burdzhuev_v_vaflerstve
+		}
+		x = 20
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SKT_sabotazh_capitalistov_1
+							add_idea = SKT_sabotazh_capitalistov_2
+						}
+					397 = {
+							add_manpower = -570
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_dobit_vizhivshih
+		icon = GFX_goal_unichtozhit_barinov-hozyainov
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_stravit_kapitalistov_i_opg
+		}
+		x = 20
+		y = 11
+			completion_reward = {
+					remove_ideas = SKT_sabotazh_capitalistov_2
+					397 = {
+							add_manpower = -137
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_natsionalizirovat_Magnit
+		icon = GFX_focus_grab_factories
+		cost = 10,00
+		prerequisite = {
+			focus = SKT_eksperpriatsia_babyshek
+		}
+		x = 17
+		y = 10
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_import_svekly
+		icon = GFX_goal_generic_major_alliance
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_saharniy_crisis
+		}
+		x = 23
+		y = 9
+			completion_reward = {
+					add_timed_idea = {
+							idea = SKT_import_sah_svekly
+							days = 180
+						}
+					ARK = {
+							add_timed_idea = {
+									idea = SKT_eksport_sah_svekly
+									days = 180
+								}
+						}
+					swap_ideas = {
+							remove_idea = SKT_sah_crisis
+							add_idea = SKT_sah_crisis_1
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_otrit_sahzavodi
+		icon = GFX_SKT_sah_zavod
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_import_svekly
+		}
+		x = 23
+		y = 10
+			completion_reward = {
+					remove_ideas = SKT_sah_crisis
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_svobodnaya_kassa_svobodnaya_strana
+		icon = GFX_goal_generic_demand_territory
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_natsionalizirovat_Magnit
+		}
+		prerequisite = {
+			focus = SKT_otrit_sahzavodi
+		}
+		prerequisite = {
+			focus = SKT_dobit_vizhivshih
+		}
+		x = 20
+		y = 12
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
 		id = SKT_organizovat_mladozhozhekov
 		icon = GFX_goal_generic_national_unity
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
+			focus = SKT_svobodnaya_kassa_svobodnaya_strana
 		}
 		x = 7
-		y = 8
+		y = 13
 			completion_reward = {
 					add_political_power = 100
 					add_popularity = {
@@ -145,80 +457,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_a_ya_v_armii_sluzhil
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
-		}
-		x = 18
-		y = 8
-			completion_reward = {
-					army_experience = 25
-					add_doctrine_cost_reduction = {
-							name = land_doc_bonus
-							cost_reduction = 0.5
-							uses = 1
-							category = land_doctrine
-						}
-					add_field_marshal_role = {
-							character = SKT_levoborod
-							traits = {
-
-}
-							skill = 1
-							attack_skill = 1
-							defense_skill = 1
-							planning_skill = 1
-							logistics_skill = 1
-							legacy_id = -1
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_strelik_podgotovka
-		icon = GFX_SKT_strelk_trenirovki_3
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_a_ya_v_armii_sluzhil
-		}
-		x = 16
-		y = 9
-			completion_reward = {
-					army_experience = 20
-					add_tech_bonus = {
-							name = infantry__bonus
-							bonus = 1.0
-							uses = 1
-							category = infantry_weapons
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_no_step_back
-		icon = GFX_focus_cht_slave_divisions
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_a_ya_v_armii_sluzhil
-		}
-		x = 20
-		y = 9
-			completion_reward = {
-					add_ideas = SKT_no_step_back
-				}
-
-	}
-	focus = {
 		id = SKT_otdel_expansion
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 1,00
 		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
+			focus = SKT_svobodnaya_kassa_svobodnaya_strana
 		}
-		x = 23
-		y = 8
+		x = 22
+		y = 13
 			completion_reward = {
 					add_ideas = SKT_otdel_expansion
 				}
@@ -231,14 +477,31 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_otdel_expansion
 		}
-		x = 23
-		y = 9
+		x = 22
+		y = 14
 			completion_reward = {
 					add_state_core = 398
 					declare_war_on = {
 							target = PRM
 							type = annex_everything
 						}
+				}
+
+	}
+	focus = {
+		id = SKT_prodolzhit_expansii
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_osvobodid_komi_permyakov
+		}
+		mutually_exclusive = {
+			focus = SKT_join_ChumPact
+		}
+		x = 23
+		y = 15
+			completion_reward = {
+					add_war_support = 0.1
 				}
 
 	}
@@ -252,8 +515,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SKT_prodolzhit_expansii
 		}
-		x = 22
-		y = 10
+		x = 21
+		y = 15
 			available = {
 					has_country = LAZ
 				}
@@ -272,55 +535,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_annex_Arkhangelsk
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_osvobodid_komi_permyakov
-		}
-		x = 23
-		y = 11
-			available = {
-					NOT = {
-							country_exists = LAZ
-						}
-				}
-			completion_reward = {
-					ARK = {
-							country_event = SKT.2
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_prodolzhit_expansii
-		icon = GFX_goal_generic_major_war
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_osvobodid_komi_permyakov
-		}
-		mutually_exclusive = {
-			focus = SKT_join_ChumPact
-		}
-		x = 24
-		y = 10
-			completion_reward = {
-					add_war_support = 0.1
-				}
-
-	}
-	focus = {
 		id = SKT_narodniy_neftegaz
 		icon = GFX_goal_generic_soviet_construction
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
+			focus = SKT_svobodnaya_kassa_svobodnaya_strana
 		}
 		mutually_exclusive = {
 			focus = SKT_SovOil
 		}
-		x = 28
-		y = 8
+		x = 26
+		y = 13
 			completion_reward = {
 					add_ideas = SKT_narodniy_neftegaz
 					random_owned_controlled_state = {
@@ -423,8 +648,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_narodniy_neftegaz
 		}
-		x = 27
-		y = 9
+		x = 25
+		y = 14
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SKT_narodniy_neftegaz
@@ -440,8 +665,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_gazifitsirovat_gosvo
 		}
-		x = 27
-		y = 10
+		x = 25
+		y = 15
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SKT_narodniy_neftegaz_1
@@ -457,8 +682,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_narodniy_neftegaz
 		}
-		x = 29
-		y = 9
+		x = 27
+		y = 14
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_building_construction = {
@@ -485,8 +710,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_new_infrastruktura
 		}
-		x = 29
-		y = 10
+		x = 27
+		y = 15
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SKT_new_infrastruktura
@@ -505,8 +730,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_big_socialka
 		}
-		x = 28
-		y = 11
+		x = 26
+		y = 16
 			completion_reward = {
 					remove_ideas = SKT_narodniy_neftegaz_1
 					remove_ideas = SKT_big_socialka
@@ -519,13 +744,13 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		cost = 10,00
 		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
+			focus = SKT_svobodnaya_kassa_svobodnaya_strana
 		}
 		mutually_exclusive = {
 			focus = SKT_narodniy_neftegaz
 		}
-		x = 34
-		y = 8
+		x = 32
+		y = 13
 			completion_reward = {
 					add_ideas = SKT_SovOil
 					random_owned_controlled_state = {
@@ -629,8 +854,8 @@ focus_tree = {
 			focus = SKT_narodniy_neftegaz
 			focus = SKT_SovOil
 		}
-		x = 31
-		y = 9
+		x = 29
+		y = 14
 			completion_reward = {
 					add_resource = {
 							type = steel
@@ -647,8 +872,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_ugledobicha_v_Vorkute
 		}
-		x = 31
-		y = 10
+		x = 29
+		y = 15
 			completion_reward = {
 					397 = {
 							limit = {
@@ -697,8 +922,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_leshoz_Ukhta
 		}
-		x = 31
-		y = 11
+		x = 29
+		y = 16
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_building_construction = {
@@ -706,6 +931,58 @@ focus_tree = {
 									level = 2
 									instant_build = yes
 								}
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_new_sposobi_dobichi
+		icon = GFX_goal_generic_construction2
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_SovOil
+		}
+		x = 31
+		y = 14
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 2
+							category = excavation_tech
+						}
+					add_ideas = SKT_new_sposobi_dobichi
+				}
+
+	}
+	focus = {
+		id = SKT_narastit_neftedobichy
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_new_sposobi_dobichi
+		}
+		x = 31
+		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SKT_new_sposobi_dobichi
+							add_idea = SKT_narastit_neftedobichy
+						}
+					add_resource = {
+							type = steel
+							amount = 10
+							state = 581
+						}
+					add_resource = {
+							type = steel
+							amount = 10
+							state = 397
+						}
+					add_resource = {
+							type = steel
+							amount = 10
+							state = 262
 						}
 				}
 
@@ -739,54 +1016,73 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_new_sposobi_dobichi
-		icon = GFX_goal_generic_construction2
+		id = SKT_eksportoriebtir_economika
+		icon = GFX_goal_generic_positive_trade_relations
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_SovOil
 		}
 		x = 33
-		y = 9
+		y = 14
 			completion_reward = {
-					add_tech_bonus = {
-							name = industrial_bonus
-							bonus = 1.0
-							uses = 2
-							category = excavation_tech
+					swap_ideas = {
+							remove_idea = SKT_SovOil
+							add_idea = SKT_SovOil_1
 						}
-					add_ideas = SKT_new_sposobi_dobichi
+					add_ideas = free_trade
 				}
 
 	}
 	focus = {
-		id = SKT_narastit_neftedobichy
-		icon = GFX_goal_generic_oil_refinery
+		id = SKT_pribili_v_nauku
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_new_sposobi_dobichi
+			focus = SKT_eksportoriebtir_economika
 		}
 		x = 33
-		y = 10
+		y = 15
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = SKT_new_sposobi_dobichi
-							add_idea = SKT_narastit_neftedobichy
+							remove_idea = SKT_SovOil_1
+							add_idea = SKT_SovOil_2
 						}
-					add_resource = {
-							type = steel
-							amount = 10
-							state = 581
-						}
-					add_resource = {
-							type = steel
-							amount = 10
-							state = 397
-						}
-					add_resource = {
-							type = steel
-							amount = 10
-							state = 262
-						}
+				}
+
+	}
+	focus = {
+		id = SKT_High_tech_High_life
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_narastit_neftedobichy
+		}
+		prerequisite = {
+			focus = SKT_pribili_v_nauku
+		}
+		x = 32
+		y = 16
+			completion_reward = {
+					remove_ideas = SKT_narastit_neftedobichy
+					remove_ideas = SKT_SovOil_2
+					add_ideas = SKT_High_tech_High_life
+				}
+
+	}
+	focus = {
+		id = SKT_avangard_lumpen_kassir
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_High_tech_High_life
+		}
+		prerequisite = {
+			focus = SKT_Komi_dlya_ludey
+		}
+		x = 29
+		y = 17
+			completion_reward = {
+					add_ideas = SKT_avangard_lumpen_kassir
 				}
 
 	}
@@ -920,93 +1216,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_natsionalizirovat_Magnit
-		icon = GFX_focus_grab_factories
-		cost = 10,00
-		prerequisite = {
-			focus = SKT_vipolnenie_obezhaniy
-		}
-		x = 37
-		y = 8
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_svobodnaya_kassa_svobodnaya_strana
-		icon = GFX_goal_generic_demand_territory
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_natsionalizirovat_Magnit
-		}
-		x = 37
-		y = 9
-			completion_reward = {
-					add_stability = 0.1
-				}
-
-	}
-	focus = {
 		id = SKT_tsentrist_boroda
 		icon = GFX_No_way
 		cost = 1,00
@@ -1021,6 +1230,72 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SKT_a_ya_v_armii_sluzhil
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_svobodnaya_kassa_svobodnaya_strana
+		}
+		x = 17
+		y = 13
+			completion_reward = {
+					army_experience = 25
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_field_marshal_role = {
+							character = SKT_levoborod
+							traits = {
+
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_strelik_podgotovka
+		icon = GFX_SKT_strelk_trenirovki_3
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_a_ya_v_armii_sluzhil
+		}
+		x = 15
+		y = 14
+			completion_reward = {
+					army_experience = 20
+					add_tech_bonus = {
+							name = infantry__bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_no_step_back
+		icon = GFX_focus_cht_slave_divisions
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_a_ya_v_armii_sluzhil
+		}
+		x = 19
+		y = 14
+			completion_reward = {
+					add_ideas = SKT_no_step_back
+				}
+
+	}
+	focus = {
 		id = SKT_sev_mayak_zhozhekizma
 		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
@@ -1028,7 +1303,7 @@ focus_tree = {
 			focus = SKT_organizovat_mladozhozhekov
 		}
 		x = 7
-		y = 9
+		y = 14
 			completion_reward = {
 					add_ideas = SKT_sev_mayak_zhozhekizma
 					add_popularity = {
@@ -1046,7 +1321,7 @@ focus_tree = {
 			focus = SKT_sev_mayak_zhozhekizma
 		}
 		x = 2
-		y = 10
+		y = 15
 			available = {
 					has_idea = SKT_kulov
 				}
@@ -1066,7 +1341,7 @@ focus_tree = {
 			focus = SKT_nalazhivanie_otnosheniy_s_SK
 		}
 		x = 1
-		y = 11
+		y = 16
 			completion_reward = {
 					add_ideas = SKT_fanernaya_arkhitektura
 					397 = {
@@ -1082,6 +1357,26 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SKT_razrabotka_roket
+		icon = GFX_focus_rocketry
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_fanernaya_arkhitektura
+		}
+		x = 1
+		y = 17
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
 		id = SKT_opit_sevkor_ansabley_pesen
 		icon = GFX_focus_generic_military_mission
 		cost = 5,00
@@ -1089,9 +1384,44 @@ focus_tree = {
 			focus = SKT_nalazhivanie_otnosheniy_s_SK
 		}
 		x = 3
-		y = 11
+		y = 16
 			completion_reward = {
 					add_ideas = SKT_opit_sevkor_ansabley_pesen
+				}
+
+	}
+	focus = {
+		id = SKT_razrabotka_yadreakt
+		icon = GFX_focus_generic_tes
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_opit_sevkor_ansabley_pesen
+		}
+		x = 3
+		y = 17
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_elementi_chuchhe
+		icon = GFX_focus_cht_sovet_truda_i_oborony
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_razrabotka_yadreakt
+		}
+		prerequisite = {
+			focus = SKT_razrabotka_roket
+		}
+		x = 2
+		y = 18
+			completion_reward = {
+					add_ideas = SKT_elementi_chuchhe
 				}
 
 	}
@@ -1103,7 +1433,7 @@ focus_tree = {
 			focus = SKT_sev_mayak_zhozhekizma
 		}
 		x = 7
-		y = 10
+		y = 15
 			available = {
 					has_idea = SKT_reutskiy
 				}
@@ -1131,7 +1461,7 @@ focus_tree = {
 			focus = SKT_araaaabskiy_vostok
 		}
 		x = 7
-		y = 11
+		y = 16
 			completion_reward = {
 					add_ideas = SKT_KSKR
 				}
@@ -1145,7 +1475,7 @@ focus_tree = {
 			focus = SKT_KSKR
 		}
 		x = 7
-		y = 12
+		y = 17
 			available = {
 					IZR = {
 							has_war_with = ARV
@@ -1180,7 +1510,7 @@ focus_tree = {
 			focus = SKT_help_arabam
 		}
 		x = 7
-		y = 13
+		y = 18
 			completion_reward = {
 					ARV = {
 							add_equipment_to_stockpile = {
@@ -1210,7 +1540,7 @@ focus_tree = {
 			focus = SKT_sev_mayak_zhozhekizma
 		}
 		x = 13
-		y = 10
+		y = 15
 			available = {
 					has_idea = SKT_fomin
 				}
@@ -1227,7 +1557,7 @@ focus_tree = {
 			focus = SKT_golos_stepey
 		}
 		x = 13
-		y = 11
+		y = 16
 			completion_reward = {
 					add_opinion_modifier = {
 							target = WHS
@@ -1244,7 +1574,7 @@ focus_tree = {
 			focus = SKT_priznat_Veshnoriu
 		}
 		x = 12
-		y = 12
+		y = 17
 			completion_reward = {
 					add_ideas = SKT_kommunist_agora
 				}
@@ -1258,7 +1588,7 @@ focus_tree = {
 			focus = SKT_priznat_Veshnoriu
 		}
 		x = 14
-		y = 12
+		y = 17
 			completion_reward = {
 					add_popularity = {
 							ideology = vmestolev
@@ -1279,304 +1609,23 @@ focus_tree = {
 			focus = SKT_manifest_metamodernizma
 		}
 		x = 13
-		y = 13
+		y = 18
 			completion_reward = {
 					add_ideas = SKT_razvodid_kochevoy_kartofel
 				}
 
 	}
 	focus = {
-		id = SKT_eksportoriebtir_economika
-		icon = GFX_goal_generic_positive_trade_relations
+		id = SKT_pochetniy_karaul
+		icon = GFX_focus_cht_klonirovanie
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_SovOil
+			focus = SKT_a_ya_v_armii_sluzhil
 		}
-		x = 35
-		y = 9
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = SKT_SovOil
-							add_idea = SKT_SovOil_1
-						}
-					add_ideas = free_trade
-				}
-
-	}
-	focus = {
-		id = SKT_pribili_v_nauku
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_eksportoriebtir_economika
-		}
-		x = 35
-		y = 10
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = SKT_SovOil_1
-							add_idea = SKT_SovOil_2
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_High_tech_High_life
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_narastit_neftedobichy
-		}
-		prerequisite = {
-			focus = SKT_pribili_v_nauku
-		}
-		x = 34
-		y = 11
-			completion_reward = {
-					remove_ideas = SKT_narastit_neftedobichy
-					remove_ideas = SKT_SovOil_2
-					add_ideas = SKT_High_tech_High_life
-				}
-
-	}
-	focus = {
-		id = SKT_avangard_lumpen_kassir
-		icon = GFX_focus_por_workers_of_iberia
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_High_tech_High_life
-		}
-		prerequisite = {
-			focus = SKT_Komi_dlya_ludey
-		}
-		x = 31
-		y = 12
-			completion_reward = {
-					add_ideas = SKT_avangard_lumpen_kassir
-				}
-
-	}
-	focus = {
-		id = SKT_right_boroda
-		icon = GFX_No_way
-		cost = 1,00
-		prerequisite = {
-			focus = SKT_borodatie_vibory
-		}
-		mutually_exclusive = {
-			focus = SKT_left_boroda
-		}
-		x = 50
-		y = 6
-
-	}
-	focus = {
-		id = SKT_razrabotka_roket
-		icon = GFX_focus_rocketry
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_fanernaya_arkhitektura
-		}
-		x = 1
-		y = 12
-			completion_reward = {
-					add_tech_bonus = {
-							name = jet_rocket_bonus
-							ahead_reduction = 2
-							uses = 2
-							category = rocketry
-							category = jet_technology
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_razrabotka_yadreakt
-		icon = GFX_focus_generic_tes
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_opit_sevkor_ansabley_pesen
-		}
-		x = 3
-		y = 12
-			completion_reward = {
-					add_tech_bonus = {
-							name = nuclear_bonus
-							ahead_reduction = 2
-							category = nuclear
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_ostavit_Kulova
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 1,00
-		prerequisite = {
-			focus = SKT_elementi_chuchhe
-		}
-		mutually_exclusive = {
-			focus = SKT_vislat_Kulova_v_SevKor
-		}
-		x = 1
+		x = 17
 		y = 14
 			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.075
-				}
-
-	}
-	focus = {
-		id = SKT_vislat_Kulova_v_SevKor
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 1,00
-		prerequisite = {
-			focus = SKT_elementi_chuchhe
-		}
-		mutually_exclusive = {
-			focus = SKT_ostavit_Kulova
-		}
-		x = 3
-		y = 14
-			completion_reward = {
-					SKT_kulov = {
-							set_nationality = ASM
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_elementi_chuchhe
-		icon = GFX_focus_cht_sovet_truda_i_oborony
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_razrabotka_yadreakt
-		}
-		prerequisite = {
-			focus = SKT_razrabotka_roket
-		}
-		x = 2
-		y = 13
-			completion_reward = {
-					add_ideas = SKT_elementi_chuchhe
-				}
-
-	}
-	focus = {
-		id = SKT_otpravit_Reutsa_na_BV
-		icon = GFX_goal_dzhamahiriya
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_Israel_must_destroy
-		}
-		mutually_exclusive = {
-			focus = SKT_ostavit_Reutsa
-			focus = SKT_Reuts_valit_v_Japan
-		}
-		x = 5
-		y = 14
-			completion_reward = {
-					SKT_reutskiy = {
-							set_nationality = SIR
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_ostavit_Reutsa
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_Israel_must_destroy
-		}
-		mutually_exclusive = {
-			focus = SKT_otpravit_Reutsa_na_BV
-			focus = SKT_Reuts_valit_v_Japan
-		}
-		x = 7
-		y = 14
-			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.075
-				}
-
-	}
-	focus = {
-		id = SKT_Reuts_valit_v_Japan
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_Israel_must_destroy
-		}
-		mutually_exclusive = {
-			focus = SKT_otpravit_Reutsa_na_BV
-			focus = SKT_ostavit_Reutsa
-		}
-		x = 9
-		y = 14
-			completion_reward = {
-					SKT_reutskiy = {
-							set_nationality = JPE
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_Fomin_kochuet_v_Veishnoriu
-		icon = GFX_goal_generic_improve_relations
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_razvodid_kochevoy_kartofel
-		}
-		mutually_exclusive = {
-			focus = SKT_Fomin_kochuet_po_Komi
-			focus = SKT_Fomin_kochuet_v_Mongoliu
-		}
-		x = 11
-		y = 14
-			completion_reward = {
-					SKT_fomin = {
-							set_nationality = WHS
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_Fomin_kochuet_v_Mongoliu
-		icon = GFX_goal_generic_major_alliance
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_razvodid_kochevoy_kartofel
-		}
-		mutually_exclusive = {
-			focus = SKT_Fomin_kochuet_v_Veishnoriu
-			focus = SKT_Fomin_kochuet_po_Komi
-		}
-		x = 15
-		y = 14
-			completion_reward = {
-					SKT_fomin = {
-							set_nationality = MNR
-						}
-				}
-
-	}
-	focus = {
-		id = SKT_Fomin_kochuet_po_Komi
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_razvodid_kochevoy_kartofel
-		}
-		mutually_exclusive = {
-			focus = SKT_Fomin_kochuet_v_Veishnoriu
-			focus = SKT_Fomin_kochuet_v_Mongoliu
-		}
-		x = 13
-		y = 14
-			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.075
+					add_ideas = SKT_pochetniy_karaul
 				}
 
 	}
@@ -1593,8 +1642,8 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_pochetniy_karaul
 		}
-		x = 18
-		y = 10
+		x = 17
+		y = 15
 			completion_reward = {
 					add_tech_bonus = {
 							name = infantry_artillery_bonus
@@ -1620,16 +1669,192 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_pochetniy_karaul
-		icon = GFX_focus_cht_klonirovanie
+		id = SKT_annex_Arkhangelsk
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_a_ya_v_armii_sluzhil
+			focus = SKT_osvobodid_komi_permyakov
 		}
-		x = 18
-		y = 9
+		x = 22
+		y = 16
+			available = {
+					NOT = {
+							country_exists = LAZ
+						}
+				}
 			completion_reward = {
-					add_ideas = SKT_pochetniy_karaul
+					ARK = {
+							country_event = SKT.2
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_right_boroda
+		icon = GFX_No_way
+		cost = 1,00
+		prerequisite = {
+			focus = SKT_borodatie_vibory
+		}
+		mutually_exclusive = {
+			focus = SKT_left_boroda
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = SKT_ostavit_Kulova
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 1,00
+		prerequisite = {
+			focus = SKT_elementi_chuchhe
+		}
+		mutually_exclusive = {
+			focus = SKT_vislat_Kulova_v_SevKor
+		}
+		x = 1
+		y = 19
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.075
+				}
+
+	}
+	focus = {
+		id = SKT_vislat_Kulova_v_SevKor
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 1,00
+		prerequisite = {
+			focus = SKT_elementi_chuchhe
+		}
+		mutually_exclusive = {
+			focus = SKT_ostavit_Kulova
+		}
+		x = 3
+		y = 19
+			completion_reward = {
+					SKT_kulov = {
+							set_nationality = ASM
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_otpravit_Reutsa_na_BV
+		icon = GFX_goal_dzhamahiriya
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_Israel_must_destroy
+		}
+		mutually_exclusive = {
+			focus = SKT_ostavit_Reutsa
+			focus = SKT_Reuts_valit_v_Japan
+		}
+		x = 5
+		y = 19
+			completion_reward = {
+					SKT_reutskiy = {
+							set_nationality = SIR
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_ostavit_Reutsa
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_Israel_must_destroy
+		}
+		mutually_exclusive = {
+			focus = SKT_otpravit_Reutsa_na_BV
+			focus = SKT_Reuts_valit_v_Japan
+		}
+		x = 7
+		y = 19
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.075
+				}
+
+	}
+	focus = {
+		id = SKT_Reuts_valit_v_Japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_Israel_must_destroy
+		}
+		mutually_exclusive = {
+			focus = SKT_otpravit_Reutsa_na_BV
+			focus = SKT_ostavit_Reutsa
+		}
+		x = 9
+		y = 19
+			completion_reward = {
+					SKT_reutskiy = {
+							set_nationality = JPE
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_Fomin_kochuet_v_Veishnoriu
+		icon = GFX_goal_generic_improve_relations
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_razvodid_kochevoy_kartofel
+		}
+		mutually_exclusive = {
+			focus = SKT_Fomin_kochuet_po_Komi
+			focus = SKT_Fomin_kochuet_v_Mongoliu
+		}
+		x = 11
+		y = 19
+			completion_reward = {
+					SKT_fomin = {
+							set_nationality = WHS
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_Fomin_kochuet_v_Mongoliu
+		icon = GFX_goal_generic_major_alliance
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_razvodid_kochevoy_kartofel
+		}
+		mutually_exclusive = {
+			focus = SKT_Fomin_kochuet_v_Veishnoriu
+			focus = SKT_Fomin_kochuet_po_Komi
+		}
+		x = 15
+		y = 19
+			completion_reward = {
+					SKT_fomin = {
+							set_nationality = MNR
+						}
+				}
+
+	}
+	focus = {
+		id = SKT_Fomin_kochuet_po_Komi
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_razvodid_kochevoy_kartofel
+		}
+		mutually_exclusive = {
+			focus = SKT_Fomin_kochuet_v_Veishnoriu
+			focus = SKT_Fomin_kochuet_v_Mongoliu
+		}
+		x = 13
+		y = 19
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.075
 				}
 
 	}

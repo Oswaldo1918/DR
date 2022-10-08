@@ -26,7 +26,7 @@ country_event = { #выбор
 	}
 }
 
-country_event = { #выбор 
+country_event = { #ультиматум Яну 
 	id = SKT.2 
 	title = SKT.2.t
 	desc = SKT.2.d
@@ -64,5 +64,24 @@ country_event = { #выбор
 			}
 		}      		
     }        	
+	}
+}
+
+country_event = { #После выборов 
+	id = SKT.3 
+	title = SKT.3.t
+	desc = SKT.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = SKT.3.a
+        add_ideas = SKT_sah_crisis
+		add_ideas = SKT_sabotazh_capitalistov
 	}
 }
