@@ -1,0 +1,57 @@
+﻿division_template = {
+name = "Ковбои"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+name = "Морпехи"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1-я Группа ковбоев"
+		location = 8085
+		division_template = "Ковбои"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-я Группа ковбоев"
+		location = 5005
+		division_template = "Ковбои"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я Группа ковбоев"
+		location = 7953
+		division_template = "Ковбои"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1-я Дивизия морпехов"
+		location = 8085
+		division_template = "Морпехи"
+		start_experience_factor = 0.3
+	}
+}
+

@@ -1,0 +1,33 @@
+﻿division_template = {
+name = "Христианские партизаны"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-я христианская дивизия"
+		location = 10696
+		division_template = "Христианские партизаны"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-я христианская дивизия"
+		location = 10696
+		division_template = "Христианские партизаны"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "3-я христианская дивизия"
+		location = 10696
+		division_template = "Христианские партизаны"
+		start_experience_factor = 0.3
+	}	
+}
+

@@ -1,0 +1,100 @@
+﻿division_template = {
+	name = "Ополченцы"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = WHS_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+			
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "1-я дивизия ополчения "
+		location = 9554
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "2-я дивизия ополчения "
+		location = 215
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я дивизия ополчения "
+		location = 11313
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я дивизия ополчения "
+		location = 3759
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5-я дивизия ополчения "
+		location = 11216
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-я дивизия ополчения "
+		location = 11370
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7-я дивизия ополчения "
+		location = 3267
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8-я дивизия ополчения "
+		location = 6220
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9-я дивизия ополчения "
+		location = 6371 
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "10-я дивизия ополчения "
+		location = 3219 
+		division_template = "Ополченцы"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "WHS"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

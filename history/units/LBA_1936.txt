@@ -1,0 +1,54 @@
+﻿
+division_template = {
+	name = "Пехота"
+
+	division_names_group = LBA_03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+
+}
+priority = 1
+}
+
+units = {
+division = {
+#name = "1-я дивизия ливийской освободительной армии"
+location = 10067
+division_template = "Пехота"
+}
+division = {
+#name = "2-я дивизия ливийской освободительной армии"
+location = 1118
+division_template = "Пехота"
+}
+division = {
+#name = "3-я дивизия ливийской освободительной армии"
+location = 1174
+division_template = "Пехота"
+}
+division = {
+#name = "4-я дивизия ливийской освободительной армии"
+location = 12009
+division_template = "Пехота"
+}
+division = {
+#name = "5-я дивизия ливийской освободительной армии"
+location = 4176
+division_template = "Пехота"
+}
+division = {
+#name = "6-я дивизия ливийской освободительной армии"
+location = 4051
+division_template = "Пехота"
+}
+division = {
+#name = "7-я дивизия ливийской освободительной армии"
+location = 1041
+division_template = "Пехота"
+}
+}
+

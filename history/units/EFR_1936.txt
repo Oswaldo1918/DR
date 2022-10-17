@@ -1,0 +1,394 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = EFR_INF_01
+	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division L'Militia"		
+	division_names_group = EFR_MIL_01
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+priority = 0
+}
+
+division_template = {
+	name = "Division AutoMécanique" 		# Division Légère Mécanique
+	division_names_group = EFR_MEC_01
+
+	regiments = {                           		# Bn. of Hotchkiss, then Souma (Med.) tanks
+		motorized = { x = 0 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### #####
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11548
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		name = "3ème Brigade de Chars de Combat"
+		location = 11548
+		division_template = "Division AutoMécanique" 		
+		start_experience_factor = 0.2
+		force_equipment_variants = { gw_tank_equipment = { owner = "EFR" } }
+	}
+
+	division= {	# "20ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 9609
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+
+	division= {	# "1ère Division Légère Mécanique"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6770
+		division_template = "Division AutoMécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "EFR" } }
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11548
+		division_template = "Division AutoMécanique"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 11565
+		division_template = "Division L'Militia"	# Colonial unit, reserve equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "EFR" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6621
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11420
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11516
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3946
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9853
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6917
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6915
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11720
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 625
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3959
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3961
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9507
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9725
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9578
+		division_template = "Division AutoMécanique"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3549
+		division_template = "Division L'Militia"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11521
+		division_template = "Division AutoMécanique"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+### Air Wings
+air_wings = {
+	# Z.d'Op. Aériennes Nord -- Lille
+	29 = { 
+		# Groupement de Chasse 21 
+		# Groupement de Chasse 23
+		fighter_equipment_0 = {
+			owner = "EFR" 
+			amount = 192
+		}
+		# Groupement de Bombardment 6
+		# Groupement de Bombardment 9
+		tac_bomber_equipment_1 =  {
+			owner = "EFR" 
+			amount = 10
+		}
+	}
+
+	# Z.d'Op. Aériennes Est -- Reims
+	18 = {
+		# Groupement de Chasse 22
+		fighter_equipment_0 = {
+			owner = "EFR" 
+			amount = 45
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "EFR"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "EFR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+###################

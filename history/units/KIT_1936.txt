@@ -1,0 +1,209 @@
+﻿division_template = {
+	name = "Гарнизонная дивизия НОАК"
+
+	division_names_group = PRC_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Танковая дивизия НОАК"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = PRC_TNK_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Моторизованная дивизия НОАК"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = PRC_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-я танковая дивизия НОАК"
+		location = 9843
+		division_template = "Танковая дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+		
+    division = {
+		name = "2-я танковая дивизия НОАК"
+		location = 9843
+		division_template = "Танковая дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я танковая дивизия НОАК"
+		location = 9843
+		division_template = "Танковая дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я танковая дивизия НОАК"
+		location = 9843
+		division_template = "Танковая дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5-я танковая дивизия НОАК"
+		location = 12012
+		division_template = "Танковая дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1-я гарнизонная дивизия НОАК"
+		location = 12012
+		division_template = "Гарнизонная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2-я гарнизонная дивизия НОАК"
+		location = 9843
+		division_template = "Гарнизонная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я гарнизонная дивизия НОАК"
+		location = 9843
+		division_template = "Гарнизонная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "2-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я моторизованная дивизия НОАК"
+		location = 12012
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "10-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "11-я моторизованная дивизия НОАК"
+		location = 7044
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "12-я моторизованная дивизия НОАК"
+		location = 9843
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "13-я моторизованная дивизия НОАК"
+		location = 1628
+		division_template = "Моторизованная дивизия НОАК"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "KIT"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}

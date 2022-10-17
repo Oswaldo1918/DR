@@ -1,0 +1,88 @@
+﻿division_template = {
+	name = "Kazaki"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = KRR_GAR_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-й казацкий полк"
+		location = 9417
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+		
+   division = {
+		name = "8-й казацкий полк"
+		location = 6741
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2-й казацкий полк"
+		location = 9417
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-й казацкий полк"
+		location = 717
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-й казацкий полк"
+		location = 11400
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "5-й казацкий полк"
+		location = 11450
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-й казацкий полк"
+		location = 3734
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7-й казацкий полк"
+		location = 3720
+		division_template = "Kazaki"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "KRR"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}
+

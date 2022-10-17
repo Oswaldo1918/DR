@@ -1,0 +1,118 @@
+﻿division_template = {
+	name = "Ополчение"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = DON_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Пехотная дивизия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = DON_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+
+units = {
+	division = {
+		name = "1-я пехотная дивизия"		
+		location = 11541
+		division_template = "Пехотная дивизия"
+        start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-я пехотная дивизия"		
+		location = 9531
+		division_template = "Пехотная дивизия"
+        start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я пехотная дивизия"		
+		location = 6530
+		division_template = "Пехотная дивизия"
+        start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-я пехотная дивизия"		
+		location = 11461
+		division_template = "Пехотная дивизия"
+        start_experience_factor = 0.3
+	}
+	division = {
+		name = "1-я дивизия ополчения"		
+		location = 486
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "2-я дивизия ополчения"		
+		location = 472
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "3-я дивизия ополчения"		
+		location = 429
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "4-я дивизия ополчения"		
+		location = 9571
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "5-я дивизия ополчения"		
+		location = 11437
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "6-я дивизия ополчения"		
+		location = 11437
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+	division = {
+		name = "7-я дивизия ополчения"		
+		location = 11437
+		division_template = "Ополчение"
+        start_experience_factor = 0.1
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "UKR"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}

@@ -1,0 +1,121 @@
+﻿division_template = {
+name = "Подсасы"
+
+	division_names_group = 123_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+name = "Кавалерийские Подсасы"
+
+	division_names_group = 123_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "1-я Подсасная дивизия"
+		location = 10837
+		division_template = "Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-я Подсасная дивизия"
+		location = 1896
+		division_template = "Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я Подсасная дивизия"
+		location = 10737
+		division_template = "Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1-я пограничная дивизия"
+		location = 1636
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-я пограничная дивизия"
+		location = 4755
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я пограничная дивизия"
+		location = 4825
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-я пограничная дивизия"
+		location = 10454
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-я пограничная дивизия"
+		location = 4901
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6-я пограничная дивизия"
+		location = 7604
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7-я пограничная дивизия"
+		location = 1822
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8-я пограничная дивизия"
+		location = 829
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9-я пограничная дивизия"
+		location = 12756
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10-я пограничная дивизия"
+		location = 1636
+		division_template = "Кавалерийские Подсасы"
+		start_experience_factor = 0.3
+	}
+	
+}
+

@@ -1,0 +1,37 @@
+﻿
+division_template = {
+	name = "Орден FF"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = ZNS_05
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+priority = 1
+}
+
+units = {
+#Royal Army
+division = {
+#name = "Дивизия FF «Мария Тереза»"
+
+location = 4724
+division_template = "Орден FF"
+
+}
+division = {
+#name = "Дивизия FF «Марина Марго»"
+
+location = 4724
+division_template = "Орден FF"
+
+}
+}
+

@@ -1,0 +1,41 @@
+﻿division_template = {
+name = "Пехота"
+
+	division_names_group = 123_INF_01
+
+	regiments = {
+		penal_battalion = { x = 0 y = 0 }
+		penal_battalion = { x = 0 y = 1 }
+		penal_battalion = { x = 0 y = 2 }
+		penal_battalion = { x = 1 y = 0 }
+		penal_battalion = { x = 1 y = 1 }
+		penal_battalion = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "Восставшие рабочие"
+		location = 10256
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "Восставшие рабочие"
+		location = 10256
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Восставшие рабочие"
+		location = 10256
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+
+}
+

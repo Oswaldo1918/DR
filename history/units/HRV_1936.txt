@@ -1,0 +1,94 @@
+﻿division_template = {
+	name = "Дивизия пехоты"
+
+	division_names_group = 123_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Боснийская артиллерия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = PRC_MOT_01
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+        artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+        infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-я дивизия Боснийской артиллерии"
+		location = 11899
+		division_template = "Боснийская артиллерия"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "2-я дивизия Боснийской артиллерии"
+		location = 11741
+		division_template = "Боснийская артиллерия"
+		start_experience_factor = 0.4
+	}
+
+      division = {
+		name = "3-я дивизия Боснийской артиллерии"
+		location = 982
+		division_template = "Боснийская артиллерия"
+		start_experience_factor = 0.4
+	}
+
+        division = {
+		name = "1-я дивизия пехоты"
+		location = 11581
+		division_template = "Дивизия пехоты"
+		start_experience_factor = 0.3
+	}
+
+        division = {
+		name = "2-я дивизия пехоты"
+		location = 6647
+		division_template = "Дивизия пехоты"
+		start_experience_factor = 0.3
+	}
+
+        division = {
+		name = "3-я дивизия пехоты"
+		location = 6889
+		division_template = "Дивизия пехоты"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "HRV"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}

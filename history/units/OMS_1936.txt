@@ -1,0 +1,83 @@
+﻿division_template = {
+name = "Советские партизане"
+
+	division_names_group = ZNS_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+	
+priority = 2
+}
+
+units = {
+	division = {
+		name = "1-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+    division = {
+		name = "2-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+    
+    division = {
+		name = "4-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "5-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	} 
+
+    division = {
+		name = "7-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+   division = {
+		name = "8-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9-е партизанская дивизия"
+		location = 10696
+		division_template = "Советские партизане"
+		start_experience_factor = 0.3
+	}	
+}

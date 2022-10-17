@@ -1,0 +1,20 @@
+﻿division_template = {
+name = "Невинные заключенные"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "1-й отряд невинных зеков"
+		location = 4744
+		division_template = "Невинные заключенные"
+		start_experience_factor = 0.3
+	}
+	
+}
+
