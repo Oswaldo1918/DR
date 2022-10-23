@@ -129,3 +129,21 @@ country_event = { #спецотдел деградача
 	set_country_flag = кukich_cryptid
 	}
 }
+country_event = { #птичку жалко
+	id = BSH.6
+	title = BSH.6.t
+	desc = BSH.6.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.6.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}

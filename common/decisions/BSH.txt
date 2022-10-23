@@ -46,22 +46,6 @@ BSH_ribolyudi = {
 			}
 			country_event = BSH.11
     }
-}
-BSH_kadr_barabashka = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.10
-    }
 }	
 BSH_sterlitamakskaya_mish = {
 	      cost = 50
@@ -76,7 +60,7 @@ BSH_sterlitamakskaya_mish = {
 			mission = BSH_kukich_fate_mission
 			days = 50
 			}
-			country_event = BSH.9
+			country_event = BSH.10
     }
 }
 BSH_perdyozhniy_duh = {
