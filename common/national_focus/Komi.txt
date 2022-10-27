@@ -34,20 +34,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_obvinit_burdzhuev_v_vaflerstve
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 2,00
-		x = 20
-		y = 9
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = SKT_sabotazh_capitalistov
-							add_idea = SKT_sabotazh_capitalistov_1
-						}
-				}
-
-	}
-	focus = {
 		id = SKT_borodatie_vibory
 		icon = GFX_focus_cht_vybory
 		cost = 3,00
@@ -142,6 +128,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SKT_obvinit_burdzhuev_v_vaflerstve
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 2,00
+		prerequisite = {
+			focus = SKT_saharniy_crisis
+		}
+		x = 20
+		y = 9
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SKT_sabotazh_capitalistov
+							add_idea = SKT_sabotazh_capitalistov_1
+						}
+				}
+
+	}
+	focus = {
 		id = SKT_stravit_kapitalistov_i_opg
 		icon = GFX_focus_cht_slave_divisions
 		cost = 2,00
@@ -180,7 +183,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_natsionalizirovat_Magnit
-		icon = GFX_focus_grab_factories
+		icon = GFX_focus_cht_state_sindicat
 		cost = 10,00
 		prerequisite = {
 			focus = SKT_eksperpriatsia_babyshek
@@ -490,7 +493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SKT_prodolzhit_expansii
-		icon = GFX_goal_generic_major_war
+		icon = GFX_SKT_prodolzhit_expansii
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_osvobodid_komi_permyakov
@@ -1077,7 +1080,6 @@ focus_tree = {
 			focus = SKT_High_tech_High_life
 			focus = SKT_Komi_dlya_ludey
 		}
-
 		x = 29
 		y = 17
 			completion_reward = {
