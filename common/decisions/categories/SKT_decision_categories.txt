@@ -182,3 +182,13 @@ SKT_war_za_SSSR = {
 	 has_completed_focus = SKT_prodolzhit_expansii
 	}
 }
+
+SKT_poisk_borodi = {
+	icon = military_operation
+	allowed = {
+		tag = SKT		
+	}
+	visible = {
+	 has_completed_focus = SKT_osvobodid_komi_permyakov
+	}
+}

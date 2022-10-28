@@ -2113,7 +2113,7 @@ SKT_war_DON = {
 		remove_effect = {
 			create_wargoal = {
                    target = DON
-                   type = puppet_wargoal_focus
+                   type = annex_everything
             }
 		}	
 	}
@@ -2141,3 +2141,230 @@ SKT_war_UNT = {
 		}	
 	}	
 }	
+
+SKT_poisk_borodi = {
+    SKT_poisk_borodi_v_Permi = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 398
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi
+				add_idea = SKT_borod_bez_borodi_1
+			}
+		}	
+	}
+	SKT_poisk_borodi_na_severe = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 214
+		has_idea = SKT_borod_bez_borodi_1
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_1
+				add_idea = SKT_borod_bez_borodi_2
+			}
+		}	
+	}
+    SKT_poisk_borodi_v_Chate = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 252
+		has_idea = SKT_borod_bez_borodi_2
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_2
+				add_idea = SKT_borod_bez_borodi_3
+			}
+		}	
+	} 
+    SKT_poisk_borodi_v_Moskve = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 219
+		has_idea = SKT_borod_bez_borodi_3
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_3
+				add_idea = SKT_borod_bez_borodi_4
+			}
+		}	
+	}
+    SKT_poisk_borodi_v_Stalingrade = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 217
+		has_idea = SKT_borod_bez_borodi_4
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_4
+				add_idea = SKT_borod_bez_borodi_5
+			}
+		}	
+	}
+    SKT_poisk_borodi_v_Kieve = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 202
+		has_idea = SKT_borod_bez_borodi_5
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_5
+				add_idea = SKT_borod_bez_borodi_6
+			}
+		}	
+	}
+    SKT_poisk_borodi_v_Sverdlovske = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 653
+		has_idea = SKT_borod_bez_borodi_6
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_6
+				add_idea = SKT_borod_bez_borodi_7
+			}
+		}	
+	}
+    SKT_poisk_borodi_v_Irkutske = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 566
+		has_idea = SKT_borod_bez_borodi_7
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_7
+				add_idea = SKT_borod_bez_borodi_8
+			}
+		}	
+	}
+    SKT_poisk_borodi_vo_Vladivostoke = { 
+	
+		cost = 30
+
+		available = {
+		controls_state = 408
+		has_idea = SKT_borod_bez_borodi_8
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SKT_borod_bez_borodi_8
+				add_idea = SKT_borod_bez_borodi_9
+			}
+			set_country_leader_portrait = {
+	        ideology = vmestolev
+	        portrait = LevoBOROD_s_borodoy
+            }
+		}	
+	}
+    SKT_vopros_borodi = { 
+	
+		cost = 30
+
+		visible = {
+	    has_idea = SKT_borod_bez_borodi_9
+	    }
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			country_event = SKT.5
+			set_portraits = {
+                character = SKT_levoborod
+                army = { small ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
+                civilian = { large ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
+            }
+		}	
+	}      	
+}

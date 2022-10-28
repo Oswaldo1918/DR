@@ -402,6 +402,7 @@ focus_tree = {
 		y = 12
 			completion_reward = {
 					add_stability = 0.1
+					country_event = SKT.4
 				}
 
 	}
@@ -1331,6 +1332,16 @@ focus_tree = {
 							target = ASM
 							modifier = backed_our_cause
 						}
+					add_corps_commander_role = {
+							character = SKT_kulov
+							traits = { media_personality  harsh_leader  organizer  guerilla_fighter }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+							legacy_id = -1
+						}
 				}
 
 	}
@@ -1451,6 +1462,16 @@ focus_tree = {
 							target = HUS
 							modifier = backed_our_cause
 						}
+					add_corps_commander_role = {
+							character = SKT_reutskiy
+							traits = { media_personality  trait_reckless  trickster  desert_fox }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 2
+							logistics_skill = 2
+							legacy_id = -1
+						}
 				}
 
 	}
@@ -1461,7 +1482,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_araaaabskiy_vostok
 		}
-		x = 7
+		x = 6
 		y = 16
 			completion_reward = {
 					add_ideas = SKT_KSKR
@@ -1474,6 +1495,9 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_KSKR
+		}
+		prerequisite = {
+			focus = SKT_priznat_Veshnoriu_1
 		}
 		x = 7
 		y = 17
@@ -1547,6 +1571,16 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_war_support = 0.1
+					add_corps_commander_role = {
+							character = SKT_fomin
+							traits = { media_personality  trickster  cavalry_expert  expert_improviser }
+							skill = 2
+							attack_skill = 2
+							defense_skill = 2
+							planning_skill = 7
+							logistics_skill = 2
+							legacy_id = -1
+						}
 				}
 
 	}
@@ -1685,7 +1719,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					ARK = {
-							country_event = SKT.2
+							country_event = ARK.2
 						}
 				}
 
@@ -1856,6 +1890,23 @@ focus_tree = {
 			completion_reward = {
 					add_political_power = 100
 					add_stability = 0.075
+				}
+
+	}
+	focus = {
+		id = SKT_priznat_Veshnoriu_1
+		icon = GFX_goal_generic_major_alliance
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_araaaabskiy_vostok
+		}
+		x = 8
+		y = 16
+			completion_reward = {
+					add_opinion_modifier = {
+							target = WHS
+							modifier = backed_our_cause
+						}
 				}
 
 	}

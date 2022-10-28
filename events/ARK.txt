@@ -34,3 +34,45 @@ country_event = {
 			}	
 	}
 }
+}
+
+country_event = { #ультиматум Яну от БОРОДа
+	id = ARK.2 
+	title = ARK.2.t
+	desc = ARK.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ARK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ARK.2.a
+        SKT = {
+		annex_country = {
+    target = ARK
+    transfer_troops = yes
+          }
+		}
+	}
+	
+	option = {
+	name = ARK.2.b
+    SKT = {
+        declare_war_on = {
+                target = ARK
+                type = annex_everything
+        }
+        every_state = {
+			limit = {
+				is_owned_by = ARK
+			}
+			SKT = {
+				add_state_claim = PREV
+			}
+		}      		
+    }        	
+	}
+}

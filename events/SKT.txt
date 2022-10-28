@@ -85,3 +85,48 @@ country_event = { #После выборов
 		add_ideas = SKT_sabotazh_capitalistov
 	}
 }
+
+country_event = { #Начало поисков бороды
+	id = SKT.4 
+	title = SKT.4.t
+	desc = SKT.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = SKT.4.a
+        add_ideas = SKT_borod_bez_borodi
+	}
+}
+
+country_event = { #Вопрос бороды
+	id = SKT.5 
+	title = SKT.5.t
+	desc = SKT.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = SKT.5.a
+        swap_ideas = {
+			remove_idea = SKT_borod_bez_borodi_9
+			add_idea = SKT_borod_bez_borodi_10
+		}
+	}
+	option = {
+	    name = SKT.5.b
+        add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+	}
+}
