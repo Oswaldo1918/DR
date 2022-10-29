@@ -778,7 +778,8 @@ naz_archang = {
 	    controls_state = 825
 		controls_state = 214
 		controls_state = 351
-		
+		controls_state = 879
+		controls_state = 880
 		}
           }
 
@@ -790,6 +791,8 @@ naz_archang = {
 				 add_state_core = 825
 				 add_state_core = 214
 				 add_state_core = 351
+				 add_state_core = 879
+			     add_state_core = 880
 				 }
 			fire_only_once = yes	 
 		}		
@@ -1075,6 +1078,7 @@ naz_nod_magnitka = {
              
 	   OR = { 
 		controls_state = 516
+		controls_state = 878
 		controls_state = 577
 		controls_state = 576
 		controls_state = 575
@@ -1088,6 +1092,7 @@ naz_nod_magnitka = {
 		}
                  remove_effect = {
 				 add_state_core = 516
+				 add_state_core = 878
 				 add_state_core = 577
 				 add_state_core = 576
 				 add_state_core = 575
@@ -1132,6 +1137,10 @@ naz_nod_magnitka = {
 		controls_state = 644
 		controls_state = 562
 		controls_state = 574
+		controls_state = 874
+		controls_state = 875
+		controls_state = 876
+		controls_state = 877
 		controls_state = 637
 		controls_state = 822
 		}
@@ -1146,6 +1155,10 @@ naz_nod_magnitka = {
 				 add_state_core = 644
 				 add_state_core = 562
 				 add_state_core = 574
+				 controls_state = 874
+		         controls_state = 875
+		         controls_state = 876
+		         controls_state = 877
 				 add_state_core = 637
 				 add_state_core = 822
 				 }
@@ -1372,6 +1385,7 @@ naz_nod_magnitka = {
 	    controls_state = 407
 		controls_state = 406
 		controls_state = 404
+		controls_state = 881
 		controls_state = 402
 		controls_state = 589
 		controls_state = 587
@@ -1387,9 +1401,10 @@ naz_nod_magnitka = {
                  remove_effect = {
 				 add_state_core = 407
 				 add_state_core = 406
-				 controls_state = 404
+				 add_state_core = 404
+				 add_state_core = 881
 				 add_state_core = 402
-				 controls_state = 589
+				 add_state_core = 589
 				 add_state_core = 587
 
 				 }
@@ -1403,7 +1418,7 @@ naz_nod_magnitka = {
 	    controls_state = 583
 		controls_state = 590
 		controls_state = 588
-		
+		controls_state = 882
 		}
 		
           }
@@ -1416,7 +1431,7 @@ naz_nod_magnitka = {
 				 add_state_core = 583
 				 add_state_core = 590
 				 add_state_core = 588
-
+                 add_state_core = 882      
 				 }
 			fire_only_once = yes	 
 		}	

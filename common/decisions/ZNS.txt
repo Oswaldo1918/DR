@@ -93,6 +93,8 @@ ZNS_resovization = {
 			controls_state = 214
 			controls_state = 825
 			controls_state = 351
+			controls_state = 879
+			controls_state = 880
 		}
 		
 		fire_only_once = yes
@@ -105,6 +107,8 @@ ZNS_resovization = {
 			add_state_core = 214
 			add_state_core = 825
 			add_state_core = 351
+			add_state_core = 879
+			add_state_core = 880
 		}	
 	}
 
@@ -336,6 +340,7 @@ ZNS_resovization = {
 		
 		remove_effect = {
 			add_state_core = 516
+			add_state_core = 878
 		}	
 	}
 	ZNS_core_DV = { #Интеграция_Дальнего_Востока
@@ -343,6 +348,8 @@ ZNS_resovization = {
 		cost = 30
 
 		available = {
+			controls_state = 565
+			controls_state = 564
 			controls_state = 561
 			controls_state = 574
 			controls_state = 644
@@ -352,10 +359,14 @@ ZNS_resovization = {
 			controls_state = 408
 			controls_state = 655
             controls_state = 537
-			controls_state = 562				
-			controls_state = 822
+			controls_state = 562
 			controls_state = 555
 			controls_state = 637
+			controls_state = 822
+			controls_state = 876
+			controls_state = 877
+			controls_state = 874
+			controls_state = 875
 		}
 		
 		fire_only_once = yes
@@ -365,6 +376,8 @@ ZNS_resovization = {
         factor = 100
 		}
 		remove_effect = {
+			add_state_core = 565
+			add_state_core = 564
 			add_state_core = 561
 			add_state_core = 574
 			add_state_core = 644
@@ -375,9 +388,13 @@ ZNS_resovization = {
 			add_state_core = 655
             add_state_core = 537
 			add_state_core = 562
+			add_state_core = 555
+			add_state_core = 637
 			add_state_core = 822
-			controls_state = 555
-			controls_state = 637
+			controls_state = 876
+			controls_state = 877
+			controls_state = 874
+			controls_state = 875
 		}	
 	}
 	ZNS_core_SredAsia = { #Интеграция_Средней_Азии
@@ -392,6 +409,8 @@ ZNS_resovization = {
 			controls_state = 404
 			controls_state = 583
 			controls_state = 590
+			controls_state = 881
+			controls_state = 882
 			controls_state = 588
 			controls_state = 589
 			controls_state = 586
@@ -420,6 +439,8 @@ ZNS_resovization = {
 			add_state_core = 404
 			add_state_core = 583
 			add_state_core = 590
+			add_state_core = 881
+			add_state_core = 882
 			add_state_core = 588
 			add_state_core = 589
 			add_state_core = 586

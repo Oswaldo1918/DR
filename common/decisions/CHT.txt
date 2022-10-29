@@ -401,6 +401,8 @@ attak_sykt = {
        cost = 30
  available = {
               controls_state = 397
+			  controls_state = 262
+			  controls_state = 581
           }
 fire_only_once = yes
 		  days_remove = 15
@@ -409,6 +411,8 @@ fire_only_once = yes
 		}
                  remove_effect = {
 				 add_state_core = 397
+				 add_state_core = 262
+			     add_state_core = 581
 				 }
 			}
 attak_prm = {
@@ -466,7 +470,9 @@ naz_sever = {
 		       add_state_core = 213
                controls_state = 214
 			   controls_state = 262
-			   controls_state = 351
+			   controls_state = 351			   
+			   controls_state = 879
+			   controls_state = 880
           }
 
 		  days_remove = 50	
@@ -479,6 +485,8 @@ naz_sever = {
 		  add_state_core = 214
 		  add_state_core = 262
 		  add_state_core = 351
+		  add_state_core = 879
+		  add_state_core = 880
 		  }
 			}
 attak_voronez = {

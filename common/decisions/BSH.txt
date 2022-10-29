@@ -843,6 +843,7 @@ Bashkir_hanstvo = {
 			controls_state = 404
 			controls_state = 588
 			controls_state = 589
+			controls_state = 881
 		}
 		
 		fire_only_once = yes
@@ -859,6 +860,7 @@ Bashkir_hanstvo = {
 			add_state_core = 404
 			add_state_core = 588
 			add_state_core = 589
+			add_state_core = 881
 		}	
 	}
 	BSH_core_KYR = { #Интеграция_Киргизии
@@ -935,6 +937,7 @@ Bashkir_hanstvo = {
 			controls_state = 583
 			controls_state = 588
 			controls_state = 590
+			controls_state = 882
 		}
 		
 		fire_only_once = yes
@@ -947,6 +950,7 @@ Bashkir_hanstvo = {
 			add_state_core = 583
 			add_state_core = 588
 			add_state_core = 590
+			add_state_core = 882
 		}	
 	}
 	BSH_core_HAZ = { #Интеграция_Хазарии
@@ -1550,6 +1554,8 @@ Sever_empire = {
 			controls_state = 351
 			controls_state = 214
 			controls_state = 825
+			controls_state = 879
+			controls_state = 880
 		}
 		
 		fire_only_once = yes
@@ -1562,6 +1568,8 @@ Sever_empire = {
 			add_state_core = 351
 			add_state_core = 214
 			add_state_core = 825
+			add_state_core = 879
+			add_state_core = 880
 		}	
 	}
     BSH_core_MHL = { #Интеграция_Карелии
@@ -1610,6 +1618,7 @@ Sever_empire = {
 
 		available = {
 			controls_state = 516
+			controls_state = 878
 		}
 		
 		fire_only_once = yes
@@ -1620,6 +1629,7 @@ Sever_empire = {
 		}
 		remove_effect = {
 			add_state_core = 516
+			add_state_core = 878
 		}	
 	}
     BSH_core_KOL = { #Интеграция_Колымы
@@ -1629,6 +1639,7 @@ Sever_empire = {
 		available = {
 			controls_state = 644
 			controls_state = 822
+			controls_state = 875
 		}
 		
 		fire_only_once = yes
@@ -1640,6 +1651,7 @@ Sever_empire = {
 		remove_effect = {
 			add_state_core = 644
 			add_state_core = 822
+			add_state_core = 875
 		}	
 	}
     BSH_core_MAG = { #Интеграция_Магадана
@@ -1648,6 +1660,7 @@ Sever_empire = {
 
 		available = {
 			controls_state = 562
+			controls_state = 874
 		}
 		
 		fire_only_once = yes
@@ -1658,6 +1671,29 @@ Sever_empire = {
 		}
 		remove_effect = {
 			add_state_core = 562
+			add_state_core = 874
+		}	
+	}
+	BSH_core_YAK = { #Интеграция_Якутия
+	
+		cost = 30
+
+		available = {
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 562
+			add_state_core = 876
+			add_state_core = 574			
 		}	
 	}
     BSH_core_MAG = { #Интеграция_Магадана
@@ -1666,6 +1702,7 @@ Sever_empire = {
 
 		available = {
 			controls_state = 637
+			controls_state = 874
 		}
 		
 		fire_only_once = yes
@@ -1676,6 +1713,7 @@ Sever_empire = {
 		}
 		remove_effect = {
 			add_state_core = 637
+			add_state_core = 874
 		}	
 	}
     BSH_core_CHT_1 = { #Интеграция_ЧАТа

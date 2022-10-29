@@ -28,6 +28,8 @@ LAZ_military_annexation_kliki = {
 			controls_state = 214
 			controls_state = 825
 			controls_state = 351
+			controls_state = 879
+			controls_state = 880
 		}
 		
 		fire_only_once = yes
@@ -40,6 +42,8 @@ LAZ_military_annexation_kliki = {
 			add_state_core = 214
 			add_state_core = 825
 			add_state_core = 351
+			add_state_core = 879
+			add_state_core = 880
 		}	
 	}
 	
@@ -318,6 +322,8 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			controls_state = 214
 			controls_state = 825
 			controls_state = 351
+			controls_state = 879
+			controls_state = 880
 		}
 		
 		fire_only_once = yes
@@ -330,6 +336,8 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			add_state_core = 214
 			add_state_core = 825
 			add_state_core = 351
+			add_state_core = 879
+			add_state_core = 880
 		}	
 	}
 	
@@ -1471,6 +1479,8 @@ LAZ_core_CHT = { #Интеграция_CHT
 			controls_state = 404
 			controls_state = 583
 			controls_state = 590
+			controls_state = 881
+			controls_state = 882
 			controls_state = 588
 			controls_state = 589
 			controls_state = 586
@@ -1499,6 +1509,8 @@ LAZ_core_CHT = { #Интеграция_CHT
 			add_state_core = 404
 			add_state_core = 583
 			add_state_core = 590
+			add_state_core = 881
+			add_state_core = 882
 			add_state_core = 588
 			add_state_core = 589
 			add_state_core = 586
@@ -1554,6 +1566,7 @@ LAZ_core_CHT = { #Интеграция_CHT
 
 		available = {
 			controls_state = 516
+			controls_state = 878
 			controls_state = 577
 			controls_state = 571
 			controls_state = 570
@@ -1578,6 +1591,7 @@ LAZ_core_CHT = { #Интеграция_CHT
 		
 		remove_effect = {
 			add_state_core = 516
+			add_state_core = 878
 			add_state_core = 577
 			add_state_core = 571
 			add_state_core = 570
@@ -1614,6 +1628,10 @@ LAZ_core_CHT = { #Интеграция_CHT
 			controls_state = 555
 			controls_state = 637
 			controls_state = 822
+			controls_state = 876
+			controls_state = 877
+			controls_state = 874
+			controls_state = 875
 		}
 		
 		fire_only_once = yes
@@ -1638,6 +1656,10 @@ LAZ_core_CHT = { #Интеграция_CHT
 			add_state_core = 555
 			add_state_core = 637
 			add_state_core = 822
+			controls_state = 876
+			controls_state = 877
+			controls_state = 874
+			controls_state = 875
 		}	
 	}
 }

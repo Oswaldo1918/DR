@@ -93,6 +93,8 @@ DOT_nationalization_Russia = {
 			controls_state = 214
 			controls_state = 825
 			controls_state = 351
+			controls_state = 879
+			controls_state = 880
 		}
 		
 		fire_only_once = yes
@@ -105,6 +107,8 @@ DOT_nationalization_Russia = {
 			add_state_core = 214
 			add_state_core = 825
 			add_state_core = 351
+			add_state_core = 879
+			add_state_core = 880
 		}	
 	}
 
@@ -363,6 +367,7 @@ DOT_nationalization_Russia = {
 			controls_state = 564		
 			controls_state = 565
 			controls_state = 516
+			controls_state = 878
 			controls_state = 577
 			controls_state = 571
 			controls_state = 570
@@ -389,6 +394,7 @@ DOT_nationalization_Russia = {
 			add_state_core = 564		
       		add_state_core = 565
 			add_state_core = 516
+			add_state_core = 878
 			add_state_core = 577
 			add_state_core = 571
 			add_state_core = 570
@@ -605,8 +611,12 @@ DOT_nationalization_Russia = {
 
 		available = {
 			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+			controls_state = 874
+			controls_state = 875
 			controls_state = 644
-			controls_state = 562				
+			controls_state = 562    			
 			controls_state = 822
 		}
 		
@@ -617,6 +627,10 @@ DOT_nationalization_Russia = {
         factor = 100
 		}
 		remove_effect = {
+		    add_state_core = 876
+			add_state_core = 877
+			add_state_core = 874
+			add_state_core = 875          
 			add_state_core = 574
 			add_state_core = 644
 			add_state_core = 562
