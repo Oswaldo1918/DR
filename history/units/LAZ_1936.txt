@@ -138,7 +138,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "LAZ"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.28
 		efficiency = 100
 	}
@@ -147,7 +147,7 @@ instant_effect = {
 			type = motorized_equipment_1
 			creator = "LAZ"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.28
 		efficiency = 100
 	}
@@ -156,7 +156,16 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "LAZ"
 		}
-		requested_factories = 3
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = bhammer_equipment_1
+			creator = "LAZ"
+		}
+		requested_factories = 1
 		progress = 0.28
 		efficiency = 100
 	}
