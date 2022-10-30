@@ -2061,6 +2061,20 @@ technologies = {
 			camelry
 		}		
 	}
+	
+	bhammer = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 3
+
+		enable_subunits = {
+			bhammer_equipment_1
+		}
+	}
 
 	######### FROM SOVIET FOCUS ##########
 	penal_infantry = {
