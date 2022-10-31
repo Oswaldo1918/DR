@@ -1360,28 +1360,6 @@ Sever_empire = {
             }
 		}	
 	}
-	BSH_war_CHT = { 
-	
-		cost = 30
-
-		available = {
-		has_war = no 
-		is_neighbor_of = CHT
-		}
-		
-		fire_only_once = yes
-		
-		#days_remove = 30
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			create_wargoal = {
-                   target = CHT
-                   type = annex_everything
-            }
-		}	
-	}
 	BSH_war_LAZ = { 
 	
 		cost = 30
@@ -1422,6 +1400,28 @@ Sever_empire = {
 		remove_effect = {
 			create_wargoal = {
                    target = TUP
+                   type = annex_everything
+            }
+		}	
+	}
+	BSH_war_CHT = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = CHT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = CHT
                    type = annex_everything
             }
 		}	
@@ -1836,7 +1836,7 @@ Sever_empire = {
 			add_state_core = 264
 		}	
 	}
-    BSH_form_Sever_empire = { #Формирование Гиперборея
+    BSH_form_Sever_empire = { #Формирование Гипербореи
 	
 		cost = 30
 
