@@ -14,6 +14,13 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = KLG_Korneev
+recruit_character = KLG_Suren
+
+recruit_character = KLG_Taifun
+recruit_character = KLG_Eva_Panda
+recruit_character = KLG_Hors
+
 activate_mission = KLG_napadenie_mission
 
 add_ideas = {
@@ -23,7 +30,8 @@ KLG_dom_Sovetov
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 67
+	vmestolev = 33
 }
 set_politics = {
 	ruling_party = neutrality
@@ -31,14 +39,3 @@ set_politics = {
 }
 
 set_convoys = 250
-
-create_country_leader = {
-	name = "Андрей Корнеев"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Andrey.dds"
-	expire = "1999.1.1"
-	ideology = despotism 
-	traits = {
-		cornered_fox
-	}
-}
