@@ -1,0 +1,117 @@
+characters={
+	KLG_Korneev = {
+		name = "Андрей Корнеев"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KLG/Andrey.dds"
+			}
+			army = {
+				large = "gfx/leaders/KLG/Andrey_general.dds"
+			}
+		}
+		country_leader = {
+		    ideology = despotism
+			traits = {
+		        cornered_fox
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { infantry_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	KLG_Suren = {
+		name = "Сурен Цормудян"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KLG/Suren.dds"
+			}
+			army = {
+				large = "gfx/leaders/KLG/Suren_general.dds"
+			}
+		}
+		country_leader = {
+		    ideology = marxismus
+			traits = {		     
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { infantry_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	KLG_Taifun = {
+		name = "Тайфун"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KLG/Taifun.dds"				
+			}
+			army = {
+				large = "gfx/leaders/KLG/Taifun.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	KLG_Eva_Panda = {
+		name = "Ева Панда"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KLG/Eva_Panda.dds"
+			}
+			army = {
+				large = "gfx/leaders/KLG/Eva_Panda.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	KLG_Hors = {
+		name = "Хорс"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KLG/Hors.dds"
+			}
+			army = {
+				large = "gfx/leaders/KLG/Hors.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+}
