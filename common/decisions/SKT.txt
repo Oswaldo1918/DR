@@ -2083,6 +2083,29 @@ SKT_war_LAZ = {
             }
 		}	
 	}
+	
+SKT_war_OSV = { 
+	
+		cost = 30
+
+		available = {
+		 has_war = no 
+		 is_neighbor_of = OSV
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = OSV
+                   type = annex_everything
+            }
+		}	
+	}	
 
 SKT_war_MAT = { 
 	
