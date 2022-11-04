@@ -12,4 +12,30 @@ characters={
 		    id=-1
 	    }
     }
+	FSK_Shon_Konneri = {
+		name = "Шон Коннери"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FSK/Shon_Konneri.dds"
+				
+			}
+			army = {
+				small = "GFX_idea_FSK_Shon_Konneri"
+				large = "gfx/leaders/FSK/Shon_Konneri.dds"
+			}
+		}
+		country_leader = {
+		    ideology = centrism
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		corps_commander = {
+        	traits = { career_officer politically_connected }
+         	skill = 3
+          	attack_skill = 2
+          	defense_skill = 4
+          	planning_skill = 2
+        	logistics_skill = 2
+        }
+    }
 }
