@@ -1,0 +1,35 @@
+﻿division_template = {
+name = "Стражи Христианской Революции"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1-ый корпус стражей христианской революции"
+		location = 200
+		division_template = "Стражи Христианской Революции"
+		start_experience_factor = 1
+	}
+    	division = {
+		name = "2-ый корпус стражей христианской революции"
+		location = 200
+		division_template = "Стражи Христианской Революции"
+		start_experience_factor = 1
+	}
+    	division = {
+		name = "3-ый корпус стражей христианской революции"
+		location = 200
+		division_template = "Стражи Христианской Революции"
+		start_experience_factor = 1
+	}      	
+}
+
