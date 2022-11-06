@@ -1,0 +1,37 @@
+Form_Don_Kavkaz = { 
+    Don_Kavkaz = {
+        cost = 150
+        available = {
+        controls_state = 827
+		controls_state = 828
+		controls_state = 233
+		controls_state = 235
+		controls_state = 234
+		controls_state = 238
+		controls_state = 218
+		controls_state = 237
+		controls_state = 236
+		controls_state = 826
+		controls_state = 231
+		controls_state = 230
+		controls_state = 229
+        }
+		days_remove = 35
+        remove_effect = {
+		set_cosmetic_tag = CHK_Don_Kavkaz
+		add_state_core = 827
+		add_state_core = 828
+		add_state_core = 233
+		add_state_core = 235
+		add_state_core = 234
+		add_state_core = 238
+		add_state_core = 218
+		add_state_core = 237
+		add_state_core = 236
+		add_state_core = 826
+		add_state_core = 231
+		add_state_core = 230
+		add_state_core = 229
+		}
+	}
+}				 
