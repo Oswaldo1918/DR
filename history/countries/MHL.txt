@@ -11,28 +11,25 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = MHL_Mihalkov
+recruit_character = MHL_Zhmil
+
+recruit_character = MHL_Nevskiy
+recruit_character = MHL_Petrov
+recruit_character = MHL_Kozlovskiy
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
 }
 
 set_popularities = {
-	democratic = 100
+	democratic = 67
+	neutrality = 33
 }
 set_politics = {
 	ruling_party = democratic
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Никита Михалков"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "MHL.dds"
-	expire = "1999.1.1"
-	ideology = conservatism
-	traits = {
-		utomlennyi_solncem
-	}
-}
+set_convoys = 200
