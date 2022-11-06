@@ -12,6 +12,7 @@ name = "Горное ополчение"
 	priority = 2
 }
 
+division_template = {
 name = "Городское ополчение"
 
 	regiments = {
@@ -39,7 +40,7 @@ units = {
 		start_experience_factor = 1
 	}
     division = {
-		name = "3-ый корпус горного ополчения"
+		name = "Элитный корпус АХМАТ"
 		location = 3672
 		division_template = "Горное ополчение"
 		start_experience_factor = 1
