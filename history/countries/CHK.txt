@@ -1,6 +1,6 @@
 ﻿capital = 821
 
-oob = 123_1936
+oob = CHK_1936
 
 set_research_slots = 2
 set_stability = 0.5
@@ -10,13 +10,22 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = CHK_Ka_Dy_Rov
+recruit_character = CHK_Zahaev
+
+recruit_character = CHK_Cha_La_Ev
+recruit_character = CHK_Yts_Mi_Gov
+
+recruit_character = CHK_Mutsu_Ra_Ev
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
 }
 
 set_popularities = {
-	memoism = 100
+	memoism = 67
+	metacommy = 33
 }
 set_politics = {
 	ruling_party = memoism
@@ -24,14 +33,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Ка Ды Ров"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Ka_Dy_Rov.dds"
-	expire = "1999.1.1"
-	ideology = gachi
-	traits = {
-		caukas_lion
-	}
-}
