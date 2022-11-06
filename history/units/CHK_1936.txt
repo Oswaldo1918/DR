@@ -1,0 +1,55 @@
+﻿division_template = {
+name = "Горное ополчение"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+name = "Городское ополчение"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-ый корпус горного ополчения"
+		location = 3672
+		division_template = "Горное ополчение"
+		start_experience_factor = 1
+	}
+    division = {
+		name = "2-ый корпус горного ополчения"
+		location = 3672
+		division_template = "Горное ополчение"
+		start_experience_factor = 1
+	}
+    division = {
+		name = "Элитный корпус АХМАТ"
+		location = 3672
+		division_template = "Горное ополчение"
+		start_experience_factor = 1
+	}
+    division = {
+		name = "1-ый корпус городского ополчения"
+		location = 3672
+		division_template = "Городское ополчение"
+		start_experience_factor = 1
+	}	
+}
+

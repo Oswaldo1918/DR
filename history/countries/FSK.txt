@@ -1,6 +1,6 @@
 capital = 136
 
-oob = 123_1936
+oob = FSK_1936
 
 set_research_slots = 3
 set_stability = 0.5
@@ -11,10 +11,12 @@ set_technology = {
 }
 
 recruit_character = FSK_Ilya_Maddison
+recruit_character = FSK_Shon_Konneri
 
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
+FSK_KSHR
 }
 
 set_popularities = {
@@ -22,7 +24,7 @@ set_popularities = {
 	neutrality = 25
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	elections_allowed = no	
 }
 

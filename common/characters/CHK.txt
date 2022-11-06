@@ -1,0 +1,123 @@
+characters={
+	CHK_Ka_Dy_Rov = {
+		name = "Ка Ды Ров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHK/Ka_Dy_Rov.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHK/Ka_Dy_Rov.dds"
+				small= "idea_CHK_Ka_Dy_Rov"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+		        Partisan_vozhd 
+	        }
+	        ideology = gachi
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { infantry_officer guerilla_fighter harsh_leader }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	
+	CHK_Zahaev = {
+		name = "Имран Захаев"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHK/Imran_Zahaev.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHK/Imran_Zahaev.dds"
+				small= "idea_CHK_Imran_Zahaev"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+		        freedom_fighter
+	        }
+	        ideology = nacbol
+		    id=-1
+	    }
+		corps_commander = {
+	    traits = { infantry_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	CHK_Cha_La_Ev = {
+		name = "Ча Ла Ев"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHK/Cha_La_Ev.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHK/Cha_La_Ev.dds"
+				small= "idea_CHK_Cha_La_Ev"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer guerilla_fighter }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	CHK_Yts_Mi_Gov = {
+		name = "Уц Ми Гов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHK/Yts_Mi_Gov.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHK/Yts_Mi_Gov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer guerilla_fighter }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	CHK_Mutsu_Ra_Ev = {
+		name = "Му Цу Раев"
+		portraits = {
+			civilian = {
+				small= "idea_CHK_Mutsu_Ra_Ev"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = CHK_Mutsu_Ra_Ev
+			allowed = {
+                original_tag = CHK
+				
+            }
+            traits = { musicant }
+	    }
+    }
+}
