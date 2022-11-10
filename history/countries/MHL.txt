@@ -21,11 +21,15 @@ recruit_character = MHL_Kozlovskiy
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
+MHL_sev_oplon_konservatisma
+MHL_igra_v_armiy
 }
 
 set_popularities = {
-	democratic = 67
-	neutrality = 33
+	democratic = 45
+	neutrality = 25
+	anarhostalinism = 15 
+	vmestolev = 15
 }
 set_politics = {
 	ruling_party = democratic
