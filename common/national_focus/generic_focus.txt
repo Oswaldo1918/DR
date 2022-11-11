@@ -1,15 +1,11 @@
 focus_tree = {
-	id = IRQ
+	id = generic_focus
 	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = IRQ
-		}
+		factor = 1
 	}
-	default = no
+	default = yes
 	focus = {
-		id = IRQ_army_effort
+		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10,00
 		x = 1
@@ -28,7 +24,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_aviation_effort
+		id = aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		cost = 10,00
 		x = 5
@@ -114,7 +110,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_naval_effort
+		id = naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10,00
 		x = 9
@@ -242,7 +238,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_industrial_effort
+		id = industrial_effort
 		icon = GFX_goal_generic_production
 		cost = 10,00
 		x = 13
@@ -278,36 +274,31 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_izr_vopros
-		icon = GFX_goal_jew_vlast
-		cost = 1,00
-		x = 22
+		id = political_effort
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		x = 24
 		y = 0
-			available = {
-					IZR = {
-							has_war_with = ARV
-						}
-					IZR = {
-							has_war_with = TSB
-						}
-				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					add_political_power = 10
+					add_political_power = 120
 				}
 
 	}
 	focus = {
-		id = IRQ_flexible_navy
+		id = flexible_navy
 		icon = GFX_goal_generic_build_navy
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_naval_effort
+			focus = naval_effort
 		}
 		mutually_exclusive = {
-			focus = IRQ_large_navy
+			focus = large_navy
 		}
-		x = 8
+		x = -1
 		y = 1
+		relative_position_id = naval_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -337,17 +328,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_large_navy
+		id = large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_naval_effort
+			focus = naval_effort
 		}
 		mutually_exclusive = {
-			focus = IRQ_flexible_navy
+			focus = flexible_navy
 		}
-		x = 10
+		x = 1
 		y = 1
+		relative_position_id = naval_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -373,16 +365,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_submarine_effort
+		id = submarine_effort
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_flexible_navy
-			focus = IRQ_large_navy
+			focus = flexible_navy
+			focus = large_navy
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_flexible_navy
+		relative_position_id = flexible_navy
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -409,15 +401,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_doctrine_effort
+		id = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_army_effort
+			focus = army_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_army_effort
+		relative_position_id = army_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -432,15 +424,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_motorization_effort
+		id = motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_army_effort
+			focus = army_effort
 		}
 		x = 1
 		y = 1
-		relative_position_id = IRQ_army_effort
+		relative_position_id = army_effort
 			bypass = {
 					has_tech = motorised_infantry
 				}
@@ -456,148 +448,450 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_podderzhat_IZR
-		icon = GFX_goal_israel_ally
-		cost = 2,00
+		id = left
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_izr_vopros
+			focus = political_effort
 		}
 		mutually_exclusive = {
-			focus = IRQ_podderzhat_Bashara
+			focus = right
+			focus = 3_put
 		}
-		x = 17
+		x = 19
 		y = 1
+			available = {
+					OR = {
+							has_government = anarhostalinism
+							has_government = metacommy
+							has_government = vmestolev
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 100
+					factor = 5
 				}
 			completion_reward = {
-					add_political_power = 150
-					add_stability = -0.15
+					add_timed_idea = {
+							idea = collectivist_ethos_focus
+							days = 1095
+						}
 				}
 
 	}
 	focus = {
-		id = IRQ_ukrepit_zapad
-		icon = GFX_goal_generic_fortify_city
-		cost = 2,00
+		id = anstal
+		icon = GFX_goal_generic_support_anstal
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_podderzhat_IZR
+			focus = left
+		}
+		mutually_exclusive = {
+			focus = vmestolev
+			focus = metacommy
 		}
 		x = 17
 		y = 2
-			ai_will_do = {
-					factor = 100
+			available = {
+					OR = {
+							has_government = anarhostalinism
+							has_government = neutrality
+						}
 				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					680 = {
-							add_building_construction = {
-									type = bunker
-									level = 1
-									instant_build = yes
-									province = 6883
-								}
-							add_building_construction = {
-									type = bunker
-									level = 1
-									instant_build = yes
-									province = 1606
-								}
-							add_building_construction = {
-									type = bunker
-									level = 1
-									instant_build = yes
-									province = 3942
-								}
-							add_building_construction = {
-									type = bunker
-									level = 1
-									instant_build = yes
-									province = 7513
-								}
-							add_building_construction = {
-									type = bunker
-									level = 1
-									instant_build = yes
-									province = 12442
-								}
+					add_timed_idea = {
+							idea = anarhostalinism1
+							days = 720
 						}
 				}
 
 	}
 	focus = {
-		id = IRQ_napravit_voensovetnikov_IZR
-		icon = GFX_focus_cht_klonirovanie
-		cost = 2,00
+		id = esli_kazhdiy_vozhd_to_nikto_ne_vozhd
+		icon = GFX_goal_generic_support_anstal
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_ukrepit_zapad
+			focus = anstal
 		}
-		x = 16
+		x = 17
 		y = 3
-			ai_will_do = {
-					factor = 100
+			available = {
+					has_government = anarhostalinism
 				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					IZR = {
-							army_experience = 40
-							add_command_power = 100
-						}
+					add_stability = 0.20
+					add_political_power = 150
 				}
 
 	}
 	focus = {
-		id = IRQ_otpravit_oruzhie_IZR
-		icon = GFX_focus_focus_fra_maquis
-		cost = 2,00
+		id = kommuni
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_ukrepit_zapad
-		}
-		x = 18
-		y = 3
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					IZR = {
-							add_equipment_to_stockpile = {
-									type = infantry_equipment
-									amount = 1000
-									producer = IRQ
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_evrryskiy_biznes
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_otpravit_oruzhie_IZR
-		}
-		prerequisite = {
-			focus = IRQ_napravit_voensovetnikov_IZR
+			focus = esli_kazhdiy_vozhd_to_nikto_ne_vozhd
 		}
 		x = 17
 		y = 4
-			ai_will_do = {
-					factor = 100
+			available = {
+					has_government = anarhostalinism
 				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = IRQ_torgovlya_s_Iydeey
+					add_ideas = kommuni
 				}
 
 	}
 	focus = {
-		id = IRQ_ldpr
-		icon = GFX_BSH_ploteyshaya
+		id = vmestolev
+		icon = GFX_goal_support_communism
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_izr_vopros
+			focus = left
 		}
 		mutually_exclusive = {
-			focus = IRQ_baas
+			focus = anstal
+			focus = metacommy
+		}
+		x = 19
+		y = 2
+			available = {
+					OR = {
+							has_government = vmestolev
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_timed_idea = {
+							idea = internationalism
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = kolektivizaciya
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10,00
+		prerequisite = {
+			focus = vmestolev
+		}
+		x = 19
+		y = 3
+			available = {
+					has_government = vmestolev
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = kolhozi
+				}
+
+	}
+	focus = {
+		id = industrializaciya
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
+		prerequisite = {
+			focus = kolektivizaciya
+		}
+		x = 19
+		y = 4
+			available = {
+					has_government = vmestolev
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = metacommy
+		icon = GFX_goal_generic_support_metacommy
+		cost = 10,00
+		prerequisite = {
+			focus = left
+		}
+		mutually_exclusive = {
+			focus = anstal
+			focus = vmestolev
 		}
 		x = 21
+		y = 2
+			available = {
+					has_government = metacommy
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_timed_idea = {
+							idea = metacommy1
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = krasniy_monarch
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10,00
+		prerequisite = {
+			focus = metacommy
+		}
+		x = 21
+		y = 3
+			available = {
+					has_government = metacommy
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = vernost_imperatoru
+		icon = GFX_focus_cht_klonirovanie
+		cost = 10,00
+		prerequisite = {
+			focus = krasniy_monarch
+		}
+		x = 21
+		y = 4
+			available = {
+					has_government = metacommy
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.30
+					add_war_support = 0.30
+					add_ideas = vernost_vozhdu
+				}
+
+	}
+	focus = {
+		id = 3_put
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = political_effort
+		}
+		mutually_exclusive = {
+			focus = left
+			focus = right
+		}
+		x = 24
+		y = 1
+			available = {
+					OR = {
+							has_government = memoism
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = collectivist_ethos_focus
+							days = 1095
+						}
+				}
+
+	}
+	focus = {
+		id = memoism
+		icon = GFX_goal_generic_support_memoism
+		cost = 10,00
+		prerequisite = {
+			focus = 3_put
+		}
+		x = 24
+		y = 2
+			available = {
+					OR = {
+							has_government = memoism
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = memoism1
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = konveyernoye_proizvodstvo_memov
+		icon = GFX_focus_konveyer_memov
+		cost = 10,00
+		prerequisite = {
+			focus = memoism
+		}
+		x = 24
+		y = 3
+			available = {
+					OR = {
+							has_government = memoism
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_ideas = memi
+				}
+
+	}
+	focus = {
+		id = est_1_pravilo-net_pravil
+		icon = GFX_goal_generic_support_memoism
+		cost = 10,00
+		prerequisite = {
+			focus = konveyernoye_proizvodstvo_memov
+		}
+		x = 24
+		y = 4
+			available = {
+					OR = {
+							has_government = memoism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_political_power = 150
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = right
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10,00
+		prerequisite = {
+			focus = political_effort
+		}
+		mutually_exclusive = {
+			focus = left
+			focus = 3_put
+		}
+		x = 29
+		y = 1
+			available = {
+					OR = {
+							has_government = neutrality
+							has_government = democratic
+							has_government = fascism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 100
+							any_neighbor_country = {
+									has_government = neutrality
+								}
+						}
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = anticommy
+							days = 1095
+						}
+				}
+
+	}
+	focus = {
+		id = anet
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = right
+		}
+		mutually_exclusive = {
+			focus = neorek
+			focus = rinpor
+		}
+		x = 27
 		y = 2
 			available = {
 					OR = {
@@ -618,228 +912,145 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_bani
-		icon = GFX_goal_unknown
+		id = sinkretism
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_ldpr
+			focus = anet
 		}
-		mutually_exclusive = {
-			focus = IRQ_ubezhishe
-			focus = IRQ_nazionalniy_front
-		}
-		x = 20
+		x = 27
 		y = 3
+			available = {
+					OR = {
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+				}
 
 	}
 	focus = {
-		id = IRQ_berem_vseh
-		icon = GFX_goal_generic_improve_relations
+		id = estestvennaya_ierarchiya
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_bani
+			focus = sinkretism
 		}
-		x = 20
+		x = 27
 		y = 4
+			available = {
+					OR = {
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_political_power = 150
+				}
 
 	}
 	focus = {
-		id = IRQ_baas
-		icon = GFX_goal_arab_baas
+		id = neorek
+		icon = GFX_goal_support_fascism
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_izr_vopros
+			focus = right
 		}
 		mutually_exclusive = {
-			focus = IRQ_ldpr
+			focus = anet
+			focus = rinpor
 		}
-		x = 23
+		x = 29
 		y = 2
+			available = {
+					OR = {
+							has_government = neutrality
+							has_government = fascism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = nationalism
+							days = 1095
+						}
+				}
 
 	}
 	focus = {
-		id = IRQ_nazionalniy_front
-		icon = GFX_goal_generic_alliance
+		id = militarism
+		icon = GFX_goal_generic_political_pressure
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_ldpr
-			focus = IRQ_baas
+			focus = neorek
 		}
-		mutually_exclusive = {
-			focus = IRQ_bani
-			focus = IRQ_ubezhishe
-		}
-		x = 22
+		x = 29
 		y = 3
+			available = {
+					OR = {
+							has_government = neutrality
+							has_government = fascism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = militarism_focus
+					army_experience = 20
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
 
 	}
 	focus = {
-		id = IRQ_razdel_sfer_vliyaniya
-		icon = GFX_focus_generic_military_academy
+		id = furer
+		icon = GFX_goal_generic_political_pressure
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_nazionalniy_front
+			focus = militarism
 		}
-		x = 22
+		x = 29
 		y = 4
-
-	}
-	focus = {
-		id = IRQ_ubezhishe
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_baas
-		}
-		mutually_exclusive = {
-			focus = IRQ_bani
-			focus = IRQ_nazionalniy_front
-		}
-		x = 24
-		y = 3
-
-	}
-	focus = {
-		id = IRQ_fedaini_saddama
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_ubezhishe
-		}
-		x = 24
-		y = 4
-
-	}
-	focus = {
-		id = IRQ_podderzhat_Bashara
-		icon = GFX_goal_syria_ally
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_izr_vopros
-		}
-		mutually_exclusive = {
-			focus = IRQ_podderzhat_IZR
-		}
-		x = 27
-		y = 1
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					add_political_power = -150
-					add_stability = 0.15
-				}
-
-	}
-	focus = {
-		id = IRQ_vernut_sporterry
-		icon = GFX_focus_generic_self_management
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_podderzhat_Bashara
-		}
-		x = 27
-		y = 2
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					SIR = {
-							set_state_owner = 680
-						}
-					add_stability = 0.05
-					add_war_support = -0.1
-				}
-
-	}
-	focus = {
-		id = IRQ_napravit_voensovetnikov
-		icon = GFX_focus_cht_klonirovanie
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_vernut_sporterry
-		}
-		x = 26
-		y = 3
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					SIR = {
-							army_experience = 40
-							add_command_power = 100
+			available = {
+					OR = {
+							has_government = fascism
 						}
 				}
-
-	}
-	focus = {
-		id = IRQ_otpravit_oruzhie
-		icon = GFX_focus_focus_fra_maquis
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_vernut_sporterry
-		}
-		x = 28
-		y = 3
-			ai_will_do = {
-					factor = 100
-				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					SIR = {
-							add_equipment_to_stockpile = {
-									type = infantry_equipment
-									amount = 1000
-									producer = IRQ
-								}
-						}
+					add_country_leader_trait = dictator
 				}
 
 	}
 	focus = {
-		id = IRQ_invest_v_SUR
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_napravit_voensovetnikov
-		}
-		prerequisite = {
-			focus = IRQ_otpravit_oruzhie
-		}
-		x = 27
-		y = 4
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					SIR = {
-							677 = {
-									add_building_construction = {
-											type = arms_factory
-											level = 1
-											instant_build = yes
-										}
-								}
-							677 = {
-									add_building_construction = {
-											type = industrial_complex
-											level = 1
-											instant_build = yes
-										}
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_equipment_effort
+		id = equipment_effort
 		icon = GFX_goal_generic_small_arms
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_army_effort
+			focus = army_effort
 		}
 		x = -1
 		y = 1
-		relative_position_id = IRQ_army_effort
+		relative_position_id = army_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -854,15 +1065,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_equipment_effort_2
+		id = equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_equipment_effort
+			focus = equipment_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_equipment_effort
+		relative_position_id = equipment_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -877,15 +1088,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_mechanization_effort
+		id = mechanization_effort
 		icon = GFX_goal_generic_build_tank
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_motorization_effort
+			focus = motorization_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_motorization_effort
+		relative_position_id = motorization_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -899,15 +1110,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_doctrine_effort_2
+		id = doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_doctrine_effort
+			focus = doctrine_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_doctrine_effort
+		relative_position_id = doctrine_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -922,15 +1133,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_equipment_effort_3
+		id = equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_equipment_effort_2
+			focus = equipment_effort_2
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_equipment_effort_2
+		relative_position_id = equipment_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -945,15 +1156,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_armor_effort
+		id = armor_effort
 		icon = GFX_goal_generic_army_tanks
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_mechanization_effort
+			focus = mechanization_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_mechanization_effort
+		relative_position_id = mechanization_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -967,21 +1178,21 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_special_forces
+		id = special_forces
 		icon = GFX_goal_generic_special_forces
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_equipment_effort_3
+			focus = equipment_effort_3
 		}
 		prerequisite = {
-			focus = IRQ_doctrine_effort_2
+			focus = doctrine_effort_2
 		}
 		prerequisite = {
-			focus = IRQ_armor_effort
+			focus = armor_effort
 		}
 		x = 1
 		y = 1
-		relative_position_id = IRQ_equipment_effort_3
+		relative_position_id = equipment_effort_3
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1001,18 +1212,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_fighter_focus
+		id = fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_aviation_effort
+			focus = aviation_effort
 		}
 		mutually_exclusive = {
-			focus = IRQ_bomber_focus
+			focus = bomber_focus
 		}
 		x = -1
 		y = 1
-		relative_position_id = IRQ_aviation_effort
+		relative_position_id = aviation_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1032,18 +1243,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_bomber_focus
+		id = bomber_focus
 		icon = GFX_goal_generic_air_bomber
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_aviation_effort
+			focus = aviation_effort
 		}
 		mutually_exclusive = {
-			focus = IRQ_fighter_focus
+			focus = fighter_focus
 		}
 		x = 1
 		y = 1
-		relative_position_id = IRQ_aviation_effort
+		relative_position_id = aviation_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1060,16 +1271,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_aviation_effort_2
+		id = aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_bomber_focus
-			focus = IRQ_fighter_focus
+			focus = bomber_focus
+			focus = fighter_focus
 		}
 		x = -1
 		y = 1
-		relative_position_id = IRQ_bomber_focus
+		relative_position_id = bomber_focus
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			complete_tooltip = {
@@ -1157,18 +1368,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_CAS_effort
+		id = CAS_effort
 		icon = GFX_goal_generic_CAS
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_aviation_effort_2
+			focus = aviation_effort_2
 		}
 		prerequisite = {
-			focus = IRQ_motorization_effort
+			focus = motorization_effort
 		}
 		x = -1
 		y = 1
-		relative_position_id = IRQ_aviation_effort_2
+		relative_position_id = aviation_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1183,18 +1394,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_rocket_effort
+		id = rocket_effort
 		icon = GFX_focus_rocketry
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_aviation_effort_2
+			focus = aviation_effort_2
 		}
 		prerequisite = {
-			focus = IRQ_infrastructure_effort
+			focus = infrastructure_effort
 		}
 		x = 0
 		y = 2
-		relative_position_id = IRQ_aviation_effort_2
+		relative_position_id = aviation_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1216,18 +1427,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_NAV_effort
+		id = NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_aviation_effort_2
+			focus = aviation_effort_2
 		}
 		prerequisite = {
-			focus = IRQ_flexible_navy
+			focus = flexible_navy
 		}
 		x = 1
 		y = 1
-		relative_position_id = IRQ_aviation_effort_2
+		relative_position_id = aviation_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1242,16 +1453,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_cruiser_effort
+		id = cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_large_navy
-			focus = IRQ_flexible_navy
+			focus = large_navy
+			focus = flexible_navy
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_large_navy
+		relative_position_id = large_navy
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1279,15 +1490,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_destroyer_effort
+		id = destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_submarine_effort
+			focus = submarine_effort
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_submarine_effort
+		relative_position_id = submarine_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1314,15 +1525,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_capital_ships_effort
+		id = capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_cruiser_effort
+			focus = cruiser_effort
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_cruiser_effort
+		relative_position_id = cruiser_effort
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1352,15 +1563,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_construction_effort
+		id = construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_industrial_effort
+			focus = industrial_effort
 		}
 		x = -1
 		y = 1
-		relative_position_id = IRQ_industrial_effort
+		relative_position_id = industrial_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1421,15 +1632,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_production_effort
+		id = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_industrial_effort
+			focus = industrial_effort
 		}
 		x = 1
 		y = 1
-		relative_position_id = IRQ_industrial_effort
+		relative_position_id = industrial_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1490,15 +1701,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_construction_effort_2
+		id = construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_construction_effort
+			focus = construction_effort
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_construction_effort
+		relative_position_id = construction_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1559,15 +1770,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_production_effort_2
+		id = production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_production_effort
+			focus = production_effort
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_production_effort
+		relative_position_id = production_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1628,15 +1839,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_infrastructure_effort
+		id = infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_construction_effort_2
+			focus = construction_effort_2
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_construction_effort_2
+		relative_position_id = construction_effort_2
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			bypass = {
@@ -1721,15 +1932,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_production_effort_3
+		id = production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_production_effort_2
+			focus = production_effort_2
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_production_effort_2
+		relative_position_id = production_effort_2
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1790,15 +2001,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_infrastructure_effort_2
+		id = infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_infrastructure_effort
+			focus = infrastructure_effort
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_infrastructure_effort
+		relative_position_id = infrastructure_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			bypass = {
@@ -1883,15 +2094,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_construction_effort_3
+		id = construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_infrastructure_effort
+			focus = infrastructure_effort
 		}
 		x = 2
 		y = 1
-		relative_position_id = IRQ_infrastructure_effort
+		relative_position_id = infrastructure_effort
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1952,15 +2163,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_nuclear_effort
+		id = nuclear_effort
 		icon = GFX_focus_wonderweapons
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_infrastructure_effort_2
+			focus = infrastructure_effort_2
 		}
 		x = -2
 		y = 1
-		relative_position_id = IRQ_infrastructure_effort_2
+		relative_position_id = infrastructure_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1980,15 +2191,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_extra_tech_slot
+		id = extra_tech_slot
 		icon = GFX_focus_research
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_infrastructure_effort_2
+			focus = infrastructure_effort_2
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_infrastructure_effort_2
+		relative_position_id = infrastructure_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1997,15 +2208,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_extra_tech_slot_2
+		id = extra_tech_slot_2
 		icon = GFX_focus_research
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_extra_tech_slot
+			focus = extra_tech_slot
 		}
 		x = 0
 		y = 1
-		relative_position_id = IRQ_extra_tech_slot
+		relative_position_id = extra_tech_slot
 			available = {
 					num_of_factories > 50
 				}
@@ -2019,15 +2230,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_secret_weapons
+		id = secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_infrastructure_effort_2
+			focus = infrastructure_effort_2
 		}
 		x = 2
 		y = 1
-		relative_position_id = IRQ_infrastructure_effort_2
+		relative_position_id = infrastructure_effort_2
 			search_filters = { FOCUS_FILTER_RESEARCH }
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2050,121 +2261,239 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_ogranichitsya_podderzhkoy
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 2,00
+		id = democratichnaya_armiya
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_invest_v_SUR
+			focus = kommuni
 		}
-		mutually_exclusive = {
-			focus = IRQ_edinim_frontom
-		}
-		x = 26
+		x = 17
 		y = 5
-			ai_will_do = {
-					factor = 100
+			available = {
+					has_government = anarhostalinism
 				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			completion_reward = {
-					SIR = {
-							add_equipment_to_stockpile = {
-									type = infantry_equipment
-									amount = 2000
-									producer = IRQ
-								}
-						}
+					add_ideas = democratichnaya_armiya
 				}
 
 	}
 	focus = {
-		id = IRQ_edinim_frontom
-		icon = GFX_focus_cht_wwod_woysk
-		cost = 2,00
+		id = revarmy
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_invest_v_SUR
+			focus = industrializaciya
 		}
-		mutually_exclusive = {
-			focus = IRQ_ogranichitsya_podderzhkoy
-		}
-		x = 28
+		x = 19
 		y = 5
+			available = {
+					has_government = vmestolev
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = revarmy
+				}
+
+	}
+	focus = {
+		id = podavleniye_nevernih
+		icon = GFX_focus_cze_german_puppet
+		cost = 10,00
+		prerequisite = {
+			focus = vernost_imperatoru
+		}
+		x = 21
+		y = 5
+			available = {
+					has_government = metacommy
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					set_popularities = {
+							metacommy = 100
+						}
+					add_ideas = metacommy1
+				}
+
+	}
+	focus = {
+		id = memnaya_anarhiya
+		icon = GFX_focus_mem_anarhy
+		cost = 10,00
+		prerequisite = {
+			focus = est_1_pravilo-net_pravil
+		}
+		x = 24
+		y = 5
+			available = {
+					OR = {
+							has_government = memoism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 100
+					factor = 5
 				}
 			completion_reward = {
+					add_political_power = 200
 					add_stability = 0.1
-					add_war_support = 0.1
-					create_faction = M_Liga
-					add_to_faction = SIR
-					add_to_war = {
-							targeted_alliance = PREV
-							enemy = IZR
-							hostility_reason = asked_to_join
-						}
-					add_to_war = {
-							targeted_alliance = PREV
-							enemy = TSB
-							hostility_reason = asked_to_join
-						}
 				}
 
 	}
 	focus = {
-		id = IRQ_udar_v_tol
-		icon = GFX_focus_TUR_support_the_golden_square
-		cost = 2,00
+		id = reguliruemaya_anarhiya
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
 		prerequisite = {
-			focus = IRQ_evrryskiy_biznes
+			focus = estestvennaya_ierarchiya
 		}
-		mutually_exclusive = {
-			focus = IRQ_ne_vlezat_v_voynu
-		}
-		x = 18
+		x = 27
 		y = 5
-			ai_will_do = {
-					factor = 100
-				}
-			completion_reward = {
-					add_stability = -0.1
-					add_war_support = 0.15
-					create_faction = ME_Liga
-					add_to_faction = IZR
-					add_state_claim = 677
-					add_to_war = {
-							targeted_alliance = PREV
-							enemy = ARV
-							hostility_reason = asked_to_join
-						}
-					add_to_war = {
-							targeted_alliance = PREV
-							enemy = TSB
-							hostility_reason = asked_to_join
-						}
-					add_to_war = {
-							targeted_alliance = PREV
-							enemy = SIR
-							hostility_reason = asked_to_join
+			available = {
+					OR = {
+							has_government = neutrality
 						}
 				}
-
-	}
-	focus = {
-		id = IRQ_ne_vlezat_v_voynu
-		icon = GFX_goal_generic_military_sphere
-		cost = 2,00
-		prerequisite = {
-			focus = IRQ_evrryskiy_biznes
-		}
-		mutually_exclusive = {
-			focus = IRQ_udar_v_tol
-		}
-		x = 16
-		y = 5
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 100
+					factor = 5
 				}
 			completion_reward = {
 					add_political_power = 150
-					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		cost = 10,00
+		prerequisite = {
+			focus = furer
+		}
+		x = 29
+		y = 5
+			available = {
+					OR = {
+							has_government = fascism
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
+
+	}
+	focus = {
+		id = rinpor
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = right
+		}
+		mutually_exclusive = {
+			focus = anet
+			focus = neorek
+			focus = rinpor
+			focus = rinpor
+		}
+		x = 31
+		y = 2
+			available = {
+					OR = {
+							has_government = neutrality
+							has_government = democratic
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = rinpor
+							days = 1095
+						}
+				}
+
+	}
+	focus = {
+		id = optimizaciya
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10,00
+		prerequisite = {
+			focus = rinpor
+		}
+		x = 31
+		y = 3
+			available = {
+					OR = {
+							has_government = neutrality
+							has_government = democratic
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_ideas = optimizaciya
+				}
+
+	}
+	focus = {
+		id = privatizaciya
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = optimizaciya
+		}
+		x = 31
+		y = 4
+			available = {
+					OR = {
+							has_government = democratic
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_ideas = privatizaciya
+				}
+
+	}
+	focus = {
+		id = ruka_rinka
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = privatizaciya
+		}
+		x = 31
+		y = 5
+			available = {
+					OR = {
+							has_government = democratic
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_ideas = ruka_rinka
 				}
 
 	}
