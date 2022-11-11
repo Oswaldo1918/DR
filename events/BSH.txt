@@ -152,3 +152,129 @@ country_event = { #птичку жалко
 	set_country_flag = 
 	}
 }
+country_event = { #каловый барабашка строительство
+	id = BSH.7
+	title = BSH.7.t
+	desc = BSH.7.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.7.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #уриновый леприкон прорыв в медицине
+	id = BSH.8
+	title = BSH.8.t
+	desc = BSH.8.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.8.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #пердёжный дух
+	id = BSH.9
+	title = BSH.9.t
+	desc = BSH.9.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.9.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #мышь
+	id = BSH.10
+	title = BSH.10.t
+	desc = BSH.10.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.10.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #рыболюди
+	id = BSH.11
+	title = BSH.11.t
+	desc = BSH.11.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.11.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #кадровый барабашка
+	id = BSH.12
+	title = BSH.12.t
+	desc = BSH.12.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.12.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}
+country_event = { #каловый некромант
+	id = BSH.13
+	title = BSH.13.t
+	desc = BSH.13.d
+	picture = GFX_report_event_dkr_degradach
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.13.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+}

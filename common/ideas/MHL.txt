@@ -1,0 +1,28 @@
+ideas = {
+       country = {
+	        MHL_sev_oplon_konservatisma = {
+
+			picture = generic_volunteer_expedition_bonus
+			
+			    modifier = {
+			    surrender_limit = 0.03
+				stability_factor = 0.1
+				democratic_drift = 0.03
+				neutrality_drift = 0.03
+			    }
+		    }
+			
+			MHL_igra_v_armiy = {
+
+			picture = cht_shizofrenia
+			
+			    modifier = {
+			    political_power_gain = 0.1 
+			    war_support_factor = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			    }
+		    }
+	   }
+		
+}

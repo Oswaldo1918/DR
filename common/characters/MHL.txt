@@ -1,0 +1,108 @@
+characters={
+	MHL_Mihalkov = {
+		name = "Никита Михалков"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MHL/Mihalkov.dds"
+			}
+			army = {
+				large = "gfx/leaders/MHL/Mihalkov_general.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+			the_statist
+	        }
+	        ideology = conservatism
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { media_personality }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	MHL_Zhmil = {
+		name = "Владислав Жмилевский"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MHL/Zhmil.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+	        }
+	        ideology = despotism
+		    id=-1
+	    }
+    }
+	
+	MHL_Nevskiy = {
+		name = "Александр «Arnold Schwarzenegger» Курицын"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MHL/Nevskiy.dds"
+			}
+			army = {
+				large = "gfx/leaders/MHL/Nevskiy.dds"
+		    }
+		}	
+		corps_commander = {
+	    traits = { media_personality politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	MHL_Petrov = {
+		name = "Александр Петров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MHL/Petrov.dds"
+			}
+			army = {
+				large = "gfx/leaders/MHL/Petrov.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { media_personality politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	MHL_Kozlovskiy = {
+		name = "Данила Козловский"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MHL/Kozlovskiy.dds"
+			}
+			army = {
+				large = "gfx/leaders/MHL/Kozlovskiy.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { media_personality politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+}
