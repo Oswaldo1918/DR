@@ -2246,17 +2246,16 @@ add_doctrine_cost_reduction = {
 		}
 		x = 15
 		y = 9
-			completion_reward = {
-air_experience = 35
-add_tech_bonus = {
+		completion_reward = {
+            air_experience = 35
+			    add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
-				uses = 1
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
 			}
-}
+        }
 
 	}
 	focus = {
@@ -2286,19 +2285,16 @@ add_ideas = LAZ_dalniye_poleti
 		}
 		x = 16
 		y = 11
-			completion_reward = {
-add_tech_bonus = {
+		completion_reward = {
+			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
+				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
-}
-
-	}
+        }
+    }
 	focus = {
 		id = LAZ_selektsiya_drozdov
 		icon = GFX_LAZ_focus_drozdi2

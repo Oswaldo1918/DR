@@ -307,9 +307,9 @@ focus_tree = {
 		cost = 2,00
 		x = 29
 		y = 4
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
+			available = {
+				has_completed_focus = BSH_new_formats
+		}
 			completion_reward = {
 					add_popularity = {
 							ideology = democratic
@@ -630,7 +630,6 @@ focus_tree = {
 							popularity = 0.10
 						}
 					add_political_power = 150
-					load_focus_tree = BSH_bebs_tree
 					country_event = BSH.2
 				}
 			ai_will_do = {
@@ -646,10 +645,7 @@ focus_tree = {
 			focus = BSH_vspomnit_o_starih_znakomih
 		}
 		x = 29
-		y = 5
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
+		y = 5			
 			completion_reward = {
 					add_popularity = {
 							ideology = fascism
