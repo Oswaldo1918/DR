@@ -133,7 +133,7 @@ country_event = { #птичку жалко
 	id = BSH.6
 	title = BSH.6.t
 	desc = BSH.6.d
-	picture = GFX_report_event_dkr_degradach
+	picture = GFX_report_event_dkr_degradach_kukich
 	
 	trigger = {
 		tag = BSH
@@ -156,7 +156,7 @@ country_event = { #каловый барабашка строительство
 	id = BSH.7
 	title = BSH.7.t
 	desc = BSH.7.d
-	picture = GFX_report_event_dkr_degradach
+	picture = GFX_report_event_dkr_degradach_kal
 	
 	trigger = {
 		tag = BSH
@@ -184,6 +184,11 @@ country_event = { #уриновый леприкон прорыв в медиц�
 	
 	option = {
 	name = BSH.8.a
+	add_ideas = BSH_kontrol_anomaliy
+	set_country_flag = 
+	}
+	option = {
+	name = BSH.8.b
 	add_ideas = BSH_kontrol_anomaliy
 	set_country_flag = 
 	}
@@ -276,5 +281,27 @@ country_event = { #каловый некромант
 	name = BSH.13.a
 	add_ideas = BSH_kontrol_anomaliy
 	set_country_flag = 
+	}
+}
+country_event = { #фазмид
+	id = BSH.14
+	title = BSH.14.t
+	desc = BSH.14.d
+	picture = GFX_report_event_dkr_degradach_phasmid
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.14.a
+	add_ideas = BSH_kontrol_anomaliy 
+	add_popularity = {
+    ideology = memoism
+    popularity = 0.05
+    } 
+	add_political_power = 50
 	}
 }
