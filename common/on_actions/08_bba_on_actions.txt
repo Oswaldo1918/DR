@@ -29,21 +29,6 @@ on_actions = {
 					SWI_find_democratic_planes_seller = yes 
 				} 
 			}
-		} 
-		effect = {
-			#Albania - Oil concessions to Italy
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ALB = { #Oil Concessions.
-					give_resource_rights = {
-						receiver = ITA
-						state = 44
-						resources = { oil }
-					}
-				}
-			}
 		}
 		effect = {
 			# League of Nations Members
