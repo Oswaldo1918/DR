@@ -305,3 +305,65 @@ country_event = { #фазмид
 	add_political_power = 50
 	}
 }
+country_event = { #огненная креветка кози
+	id = BSH.15
+	title = BSH.15.t
+	desc = BSH.15.d
+	picture = GFX_report_event_dkr_degradach_kozi
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.15.a
+	add_ideas = BSH_kontrol_anomaliy 
+	country_event = BSH.16
+	}
+	option = {
+	name = BSH.15.b
+	add_ideas = BSH_kontrol_anomaliy 
+	country_event = BSH.17
+}
+}
+country_event = { #ликвидация кози
+	id = BSH.16
+	title = BSH.16.t
+	desc = BSH.16.d
+	picture = GFX_report_event_dkr_degradach_kozi
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.16.a 
+	add_political_power = 50
+	}
+}
+country_event = { #польза креветки
+	id = BSH.17
+	title = BSH.17.t
+	desc = BSH.17.d
+	picture = GFX_report_event_dkr_degradach_kozi
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = BSH.17.a
+	add_ideas = BSH_kontrol_anomaliy 
+	add_popularity = {
+    ideology = memoism
+    popularity = 0.05
+    } 
+	add_political_power = 50
+	}
+}
