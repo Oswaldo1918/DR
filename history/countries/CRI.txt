@@ -10,9 +10,13 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = CRI_Poklonskay
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
+CRI_grezi_o_Russia_KMP
+CRI_nasazhdenie_tsarebozhiya
 }
 
 set_popularities = {
@@ -24,14 +28,3 @@ set_politics = {
 }
 
 set_convoys = 40
-
-create_country_leader = {
-	name = "Няш-Мяш"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Poklonskay.dds"
-	expire = "1999.1.1"
-	ideology = rexism
-	traits = {
-		
-	}
-}

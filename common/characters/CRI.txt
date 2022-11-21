@@ -1,0 +1,18 @@
+characters={
+	CRI_Poklonskay = {
+		name = "Наталья Поклонская"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRI/Poklonskay.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+	         	nyash_myash 
+	        }
+	        ideology = rexism
+		    id=-1
+	   }
+    }
+}

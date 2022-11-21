@@ -3,6 +3,16 @@
 @tier3 = 10
 
 leader_traits = {
+  
+    nyash_myash = {
+		sprite = 13
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
     photozaluper = {
 		sprite = 13

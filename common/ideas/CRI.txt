@@ -1,0 +1,27 @@
+ideas = {
+       country = {
+	        CRI_grezi_o_Russia_KMP = {
+
+			picture = SOV_the_true_tsars
+			
+			    modifier = {
+			    war_support_factor = 0.1
+				political_power_gain = 0.1
+				justify_war_goal_time = -0.1
+			    }
+		    }
+			
+			CRI_nasazhdenie_tsarebozhiya = {
+
+			picture = SOV_crowning_jewel_of_russia
+			
+			    modifier = {
+			    war_support_factor = 0.05
+			    stability_factor = -0.05
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+			    }
+		    }
+	   }
+		
+}
