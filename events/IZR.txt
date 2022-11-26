@@ -37,8 +37,14 @@ country_event = {
 		            type = civil_war
 		        }
 		        add_civil_war_target = ARV
+				ARV = {
+				    add_state_core = 455							
+				}
 		        ARV = {
-		            capital = 455
+		            declare_war_on = {
+		            target = TSB
+		            type = annex_everything
+		            }
 		        }
 				
 				ARV = {
@@ -97,7 +103,10 @@ country_event = {
 				
 				TSB = {
 		            load_oob = TSB_1936
-		        }		
+		        }
+                IRQ = {
+		            complete_national_focus = IRQ_izr_vopros
+		        }         				
             }
 	}
 }
