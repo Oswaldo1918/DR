@@ -5,6 +5,7 @@ bebs_test_category = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_completed_focus = BSH_hello_vsem_nashim
@@ -14,6 +15,8 @@ kukich_cryptid = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+        has_government = memoism
+
 	}
 	visible = {
 		has_country_flag = kukich_cryptid
@@ -23,6 +26,7 @@ opposition_Oleg = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_completed_focus = BSH_oppazitsiya_Olega
@@ -32,6 +36,7 @@ proect_Nasti = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_idea_token = BSH_Nastya
@@ -41,6 +46,7 @@ Ural_Israel = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_completed_focus = BSH_evrey
@@ -50,6 +56,7 @@ Bashkir_hanstvo = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_completed_focus = BSH_ottsovskaya_liniya
@@ -59,6 +66,7 @@ Sever_empire = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
+		has_government = memoism
 	}
 	visible = {
 	    has_completed_focus = BSH_materinskaya_liniya
