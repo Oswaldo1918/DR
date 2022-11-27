@@ -18,18 +18,17 @@ division_template = {
 name = "Бандиты"
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
 	}
 	priority = 1
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "Черноморские пираты"
 		location = 11670
@@ -37,5 +36,25 @@ units = {
 		start_experience_factor = 0.3
 	}
 	
+	division = {
+		name = "Приднестровская мафия"
+		location = 741
+		division_template = "Бандиты"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Херсонская бригада"
+		location = 721
+		division_template = "Бандиты"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Николаевское ОПГ"
+		location = 11683
+		division_template = "Бандиты"
+		start_experience_factor = 0.3
+	}
 }
 

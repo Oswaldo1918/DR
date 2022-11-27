@@ -1,0 +1,104 @@
+﻿division_template = {
+name = "ЧВК"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Служба Безопасности"				
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+
+}
+
+support = 	{
+	}
+	
+priority = 0
+}
+
+units = {
+	division = {
+		name = "Служба Безопасности Циндао"
+		location = 10000
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Шанхая"
+		location = 7014
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Сучжоу"
+		location = 10076
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Нанкина"
+		location = 11913
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Гонконга"
+		location = 10062
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Макао"
+		location = 4189
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Гуанчжоу"
+		location = 1047
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Служба Безопасности Хайнаня"
+		location = 1070
+		division_template = "Служба Безопасности"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "ЧВК"
+		location = 7014
+		division_template = "ЧВК"
+		start_experience_factor = 0.4
+	}
+}
+

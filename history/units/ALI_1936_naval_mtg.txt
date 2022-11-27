@@ -1,0 +1,15 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Силы сопровождения"			
+		naval_base = 7014  
+        task_force = {
+			name = "1-я дивизия эсминцев"
+			location = 7014  		
+			ship = { name = "Шанхай" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ALI version_name = "Корабль сопровождения" } } }
+			ship = { name = "Циндао" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ALI version_name = "Корабль сопровождения" } } }
+			ship = { name = "Гонконг" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ALI version_name = "Корабль сопровождения" } } }
+		}
+	}
+}

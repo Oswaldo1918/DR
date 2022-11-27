@@ -1,12 +1,15 @@
 capital = 192
 
 oob = CHE_1936
+set_naval_oob = "CHE_1936_naval_mtg"
 
 set_research_slots = 2
 set_stability = 0.7
 set_war_support = 0.9
 set_technology = {
 	infantry_weapons = 1
+	early_ship_hull_light = 1
+	basic_battery = 1
 	basic_train = 1
 }
 
@@ -35,3 +38,20 @@ create_country_leader = {
 		#
 	}
 }
+
+create_equipment_variant = {
+		name = "Рейдовый корабль"
+		type = ship_hull_light_1
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}

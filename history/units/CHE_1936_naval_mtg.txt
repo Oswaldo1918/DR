@@ -1,0 +1,13 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Рейдовые силы"			
+		naval_base = 11670  
+        task_force = {
+			name = "Рейдовый флот"
+			location = 11670  		
+			ship = { name = "Веселый Роджер" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHE version_name = "Рейдовый корабль" } } }
+		}
+	}
+}
