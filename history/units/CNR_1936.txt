@@ -1,0 +1,109 @@
+﻿division_template = {
+	name = "Ополчение"
+
+	division_names_group = CNR_INF_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+    division = {
+        #name = "1й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "2й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "3й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "4й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "5й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "6й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "7й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+	    division = {
+        #name = "8й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "9й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "10й корпус революционного ополчения"
+        location = 9764
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CNR"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}

@@ -1,0 +1,143 @@
+﻿division_template = {
+    name = "Пехотная дивизия"
+	
+	division_names_group = PRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Ополчение"
+
+	division_names_group = PRA_INF_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "1-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7-я пехотная дивизия"
+		location = 11805
+		division_template = "Пехотная дивизия"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "1-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7-ый корпус ополчения"
+		location = 11805
+		division_template = "Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRA"
+		}
+		requested_factories = 7
+		progress = 0.28
+		efficiency = 100
+	}
+}
