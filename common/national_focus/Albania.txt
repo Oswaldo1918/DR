@@ -136,9 +136,13 @@ focus_tree = {
 		x = 14
 		y = 2
 			completion_reward = {
-					add_political_power = 100
-				}
-
+				add_political_power = 100
+				set_portraits = {
+                character = SKT_levoborod
+                army = { small ="gfx/leaders/SKT/Semen_1.dds" }
+                civilian = { large ="gfx/leaders/SKT/Semen_1.dds" }
+                }
+			}
 	}
 	focus = {
 		id = ALB_railway_between_cities

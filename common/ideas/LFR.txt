@@ -11,6 +11,16 @@ ideas = {
 				democratic_drift = 0.01
 			    }
 		    }
+	        LFR_france_postgv = {
+
+			picture = FRA_factory_strikes
+			
+			    modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.1			
+			    }
+		    }
 	   }
 		
 }

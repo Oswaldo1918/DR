@@ -1,0 +1,24 @@
+ideas = {
+    country = {
+	    CHE_criminal_volnica = {
+			picture = generic_purge
+			modifier = {
+			    consumer_goods_factor = -0.1
+                stability_factor = -0.1
+				army_org_factor = -0.05
+                political_power_factor = 0.075     				
+		    }
+	    }
+        CHE_contrabanda_oruzhiem = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+			    industrial_capacity_factory = 0.075
+                production_factory_max_efficiency_factor = 0.075                   				
+		    }
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}			
+	    }
+}

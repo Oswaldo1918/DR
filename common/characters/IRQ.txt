@@ -13,7 +13,17 @@ characters={
 		    ideology = despotism
 			expire = "1965.1.1"
         	traits = { Vne_politkategoriy }
-		}	
+		}
+
+        field_marshal = {
+    		traits = { old_guard infantry_officer war_hero  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}      		
 	}
 
 	IRQ_saddam = {
@@ -37,10 +47,73 @@ characters={
 		
 		field_marshal = {
     		traits = { old_guard infantry_officer war_hero  }
-        	skill = 3
-        	attack_skill = 4
+        	skill = 2
+        	attack_skill = 2
         	defense_skill = 2
-        	planning_skill = 3
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	IRQ_ali_hassan_al_majid = {
+		name = "Али Хасан аль-Маджид"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/IRQ/ali_hassan_al_majid.dds"
+			}
+		}
+		
+		corps_commander = {
+    		traits = { politically_connected  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	IRQ_Izzat_Ibrahim_al_Douri = {
+		name = "Иззат Ибрагим ад-Дури"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/IRQ/Izzat_Ibrahim_al-Douri.dds"
+			}
+		}
+		
+		corps_commander = {
+    		traits = { politically_connected  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	IRQ_Vasiliy_Vlasov = {
+		name = "Василий Власов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/IRQ/Vasiliy_Vlasov.dds"
+			}
+		}
+		
+		corps_commander = {
+    		traits = { politically_connected  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
 		}

@@ -1,0 +1,31 @@
+ideas = {
+       country = {
+	        GEO_sevkavkaz_partizan_war = {
+			
+			picture = chi_war_of_resistance3
+
+			removal_cost = -1
+			
+			    modifier = {
+                    stability_factor = -0.15
+                    weekly_manpower = -35
+					conscription_factor = -0.3
+                    experience_gain_army = 0.05    					
+			    }
+		    }
+			
+			GEO_sotrudnishestvo_s_ukraintsami = {
+			
+			picture = generic_foreign_capital
+
+			removal_cost = -1
+			
+			    modifier = {
+                    consumer_goods_factor = -0.025
+                    industrial_capacity_factory = 0.05
+                    production_speed_buildings_factor = 0.025      					
+			    }
+		    }
+	   }
+		
+}
