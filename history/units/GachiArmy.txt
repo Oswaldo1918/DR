@@ -4,16 +4,15 @@
 	division_names_group = CHT_ARM_01
 
 	regiments = {
-		bhaminf = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		bhaminf = { x = 0 y = 1 }
 		bhaminf = { x = 0 y = 2 }
-		bhaminf = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		bhaminf = { x = 1 y = 1 }
 		bhaminf = { x = 1 y = 2 }
-		bhaminf = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		bhaminf = { x = 2 y = 1 }
-		bhaminf = { x = 2 y = 2 }
-		
+		bhaminf = { x = 2 y = 2 }		
 	}
 	priority = 2
 }
@@ -24,12 +23,11 @@ division_template = {
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }		
 	}
 	priority = 1
 }

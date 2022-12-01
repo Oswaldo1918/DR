@@ -1,7 +1,7 @@
 ﻿division_template = {
 name = "Пехота"
 
-	division_names_group = AFG_ARM_01
+	division_names_group = CCO_ARM_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -12,8 +12,23 @@ name = "Пехота"
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 		bhaminf = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+name = "Ополчение"
+
+	division_names_group = CCO_ARM_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
 	}
 	priority = 0
 }
@@ -30,35 +45,35 @@ units = {
     division = {
 		name = "Восставшие ансталы"
 		location = 9258
-		division_template = "Пехота"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Восставшие ансталы"
 		location = 9258
-		division_template = "Пехота"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Восставшие ансталы"
 		location = 9258
-		division_template = "Пехота"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Восставшие ансталы"
 		location = 9258
-		division_template = "Пехота"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Восставшие ансталы"
 		location = 9258
-		division_template = "Пехота"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
