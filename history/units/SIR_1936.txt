@@ -14,6 +14,21 @@
 	priority = 1
 }
 division_template = {
+name = "Ополчение"
+
+	division_names_group = SIR_INF_02
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
 	name = "Верблюды"				# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = SIR_CAV_01
@@ -54,21 +69,28 @@ units = {
     division = {
         #name = "4ya pehotnaya"
         location = 12473
-        division_template = "Воины Сирии"
+        division_template = "Ополчение"
         start_experience_factor = 0.5
     }
 
     division = {
         #name = "5ya pehotnaya"
         location = 12473
-        division_template = "Воины Сирии"
+        division_template = "Ополчение"
         start_experience_factor = 0.5
     }
 
     division = {
         #name = "6ya pehotnaya"
         location = 12473
-        division_template = "Воины Сирии"
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "7ya pehotnaya"
+        location = 12473
+        division_template = "Верблюды"
         start_experience_factor = 0.5
     }
 
@@ -88,13 +110,6 @@ units = {
 
     division = {
         #name = "3ya camal"
-        location = 12473
-        division_template = "Верблюды"
-        start_experience_factor = 0.5
-    }
-
-    division = {
-        #name = "4ya camal"
         location = 12473
         division_template = "Верблюды"
         start_experience_factor = 0.5
