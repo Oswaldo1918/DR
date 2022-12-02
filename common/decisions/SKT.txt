@@ -2395,11 +2395,10 @@ SKT_poisk_borodi = {
 		}
 		remove_effect = {
 			country_event = SKT.5
-			set_portraits = {
-                character = SKT_levoborod
-                army = { small ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
-                civilian = { large ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
-            }
+		set_country_leader_portrait = {
+	        ideology = marxismus
+	        portrait = "gfx/leaders/SKT/LevoBOROD_s_borodoy.dds"
+        }
 		}	
 	}
  
