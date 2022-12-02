@@ -492,7 +492,16 @@ completion_reward = {
 		x = 33
 		y = 5
 completion_reward = {
-
+IF = {
+    limit = { country_exists = POK }
+	PRM = {
+	add_opinion_modifier = { target = POK modifier = small_increase }}
+}
+IF = {
+   limit = { country_exists = YSK }
+	PRM = {
+	add_opinion_modifier = { target = YSK modifier = medium_increase }}
+}
 				}
 	}
 	focus = {
@@ -534,7 +543,7 @@ add_ideas = CHT_klon
 						
 					}
 	}
-	focus = {
+	focus = { 
 		id = PRM_podsos
 		icon = GFX_No_way
 		cost = 5
@@ -543,6 +552,9 @@ add_ideas = CHT_klon
 		}
 		x = 33
 		y = 6
+			available = {
+					has_country_flag = operation_podsos
+				}
 completion_reward = {
 						country_event = {
 							id = prm.14
