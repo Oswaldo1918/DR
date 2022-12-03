@@ -364,7 +364,27 @@ ideas = {
 				stability_factor = 0.15
 				political_power_gain = 0.15
 			    }
-		    }       			
+		    }
+            SKT_vse_dly_fronta = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+			    supply_factor = 0.05
+				out_of_supply_factor = -0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			    }
+		    }
+            SKT_exstrim_turism = {
+
+			    picture = cht_shizofrenia  
+			    modifier = {
+				consumer_goods_factor = 0.025
+				weekly_manpower = 55
+				conscription_factor = 0.15
+                experience_gain_army = 0.025
+			    }
+		    }    			
 	    }
 		
 		industrial_concern = {
