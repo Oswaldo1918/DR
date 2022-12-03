@@ -519,6 +519,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SKT_prodolzhit_expansii
 		}
+		available = {
+		has_war = no 
+		OR = {
+		is_neighbor_of = ARK
+		is_neighbor_of = LAZ
+		 }
+		}
 		x = 21
 		y = 15
 			available = {
