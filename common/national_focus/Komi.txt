@@ -1723,9 +1723,17 @@ focus_tree = {
 		x = 22
 		y = 16
 			available = {
-					NOT = {
-							country_exists = LAZ
+					OR = {
+					 NOT = {
+							 country_exists = LAZ 
+							 } 
+					NOT = {		
+					LAZ = {
+						has_government = vmestolev
+						          }
+					        }
 						}
+						
 				}
 			completion_reward = {
 					ARK = {
