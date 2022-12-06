@@ -1,6 +1,6 @@
 ideas = {
-       country = {
-	       UNT_YgVostok_bastion = {
+        country = {
+	        UNT_YgVostok_bastion = {
 			picture = FRA_fortification_focus
 			
 			allowed = {
@@ -46,6 +46,27 @@ ideas = {
 				conscription_factor = -0.15
 				}
 		    }
-	   }
+	   
+	   		UNT_neudach_vostoch_pohod = {
+			    picture = anti_soviet_pact
+			
+			    allowed = {
+				    always = no
+			    }
+
+			    allowed_civil_war = {
+				    always = yes
+			    }
+
+			    removal_cost = -1
+			
+			    modifier = {
+			    war_support_factor = -0.15
+				stability_factor = -0.15
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.3
+				}
+		    }
+	    }
 		
 }
