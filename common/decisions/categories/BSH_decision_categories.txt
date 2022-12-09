@@ -46,7 +46,7 @@ Ural_Israel = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
-		has_government = memoism
+		BSH = { has_government = memoism }
 	}
 	visible = {
 	    has_completed_focus = BSH_evrey
@@ -56,7 +56,7 @@ Bashkir_hanstvo = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
-		has_government = memoism
+		BSH = { has_government = memoism }
 	}
 	visible = {
 	    has_completed_focus = BSH_ottsovskaya_liniya
@@ -66,7 +66,7 @@ Sever_empire = {
     icon = generic_prospect_for_resources
     allowed = {
 		original_tag = BSH
-		has_government = memoism
+		BSH = { has_government = memoism }
 	}
 	visible = {
 	    has_completed_focus = BSH_materinskaya_liniya

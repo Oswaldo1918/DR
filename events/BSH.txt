@@ -228,6 +228,11 @@ country_event = { #мышь
 	add_ideas = BSH_kontrol_anomaliy
 	set_country_flag = 
 	}
+	option = {
+	name = BSH.10.b
+	add_political_power = 50
+	add_stability = 0.01
+	}
 }
 country_event = { #рыболюди
 	id = BSH.11
