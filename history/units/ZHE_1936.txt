@@ -1,0 +1,117 @@
+﻿division_template = {
+	name = "Территориальная оборона"
+
+	division_names_group = ZHE_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Пехотная бригада"
+
+	division_names_group = ZHE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Иностранный легион"
+
+	division_names_group = ZHE_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+    division = {
+        #name = "Иностранный легион"
+        location = 3483
+        division_template = "Иностранный легион"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Львовская пехотная бригада"
+        location = 3483
+        division_template = "Пехотная бригада"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }       
+
+    division = {
+        #name = "Львовская тероборона"
+        location = 11479
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Станиславская тероборона"
+        location = 11411
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Черновецкая тероборона"
+        location = 577
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Проскуровская тероборона"
+        location = 3457
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ZHE"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}

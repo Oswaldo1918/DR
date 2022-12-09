@@ -1,0 +1,94 @@
+﻿division_template = {
+	name = "Территориальная оборона"
+
+	division_names_group = SIN_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Казаки"
+
+	division_names_group = SIN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Пехотная бригада"
+
+	division_names_group = ZHE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+    division = {
+        #name = "Ковельская тероборона"
+        location = 422
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Ровенская тероборона"
+        location = 6557
+        division_template = "Территориальная оборона"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+	
+	division = {
+        #name = "Ковельское казачество"
+        location = 422
+        division_template = "Казаки"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+
+    division = {
+        #name = "Ровенское казачество"
+        location = 6557
+        division_template = "Казаки"
+        start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+    }
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SIN"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+}
