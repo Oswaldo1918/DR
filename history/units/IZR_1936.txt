@@ -150,3 +150,16 @@ units = {
 		start_equipment_factor = 0.7
     }
 }
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "IZR"
+		}
+		requested_factories = 3
+		progress = 0.28
+		efficiency = 100
+	}
+}
