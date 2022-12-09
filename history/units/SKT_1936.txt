@@ -1,57 +1,88 @@
 ﻿division_template = {
-	name = "Сыктывкарское ополчение"
+	name = "Ополчение"
 
-	division_names_group = 123_INF_01
+	division_names_group = SKT_INF_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Стрелковая дивизия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = SKT_INF_02
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }			
 	}
 	priority = 1
 }
 
 units = {
 	division = {
-		name = "1-я дивизия ополчения"
+		name = "Сыктывкарский корпус ополчения"
 		location = 108 
-		division_template = "Сыктывкарское ополчение"
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 		
     division = {
-		name = "2-я дивизия ополчения"
-		location = 108
-		division_template = "Сыктывкарское ополчение"
+		name = "Воркутинский корпус ополчения"
+		location = 11098
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "3-я дивизия ополчения"
-		location = 108
-		division_template = "Сыктывкарское ополчение"
+		name = "Ухтинский корпус ополчения"
+		location = 3155
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "4-я дивизия ополчения"
-		location = 108
-		division_template = "Сыктывкарское ополчение"
+		name = "Интийский корпус ополчения"
+		location = 7712
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "5-я дивизия ополчения"
-		location = 108
-		division_template = "Сыктывкарское ополчение"
+		name = "Печорский корпус ополчения"
+		location = 9230
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
 	}
 	
 	division = {
-		name = "6-я дивизия ополчения"
-		location = 108
-		division_template = "Сыктывкарское ополчение"
+		name = "Североуральский корпус ополчения"
+		location = 10551
+		division_template = "Ополчение"
 		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SKT"
+		}
+		requested_factories = 3
+		progress = 0.28
+		efficiency = 100
 	}
 }
