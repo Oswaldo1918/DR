@@ -350,6 +350,16 @@ ideas = {
 			   war_support_factor = 0.2
 			   }
 		    }
+			DOT_migratsiya_rakov = {
+
+			    picture = chi_incompetent_officers
+			
+			    modifier = {
+			    stability_weekly = -0.001
+				weekly_manpower = 500 
+				monthly_population = 1
+			    }
+		    }
 	    }
 		
 		industrial_concern = {
