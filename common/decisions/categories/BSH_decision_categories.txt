@@ -9,6 +9,7 @@ bebs_test_category = {
 	}
 	visible = {
 	    has_completed_focus = BSH_hello_vsem_nashim
+		has_country_flag = kukich_cryptid
 	}
 }
 bebs_persons_category = {
@@ -19,17 +20,6 @@ bebs_persons_category = {
 	}
 	visible = {
 	    has_completed_focus = BSH_hello_vsem_nashim
-	}
-}
-kukich_cryptid = {
-    icon = generic_prospect_for_resources
-    allowed = {
-		original_tag = BSH
-        has_government = memoism
-
-	}
-	visible = {
-		has_country_flag = kukich_cryptid
 	}
 }
 opposition_Oleg = {
