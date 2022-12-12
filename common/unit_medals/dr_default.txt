@@ -281,5 +281,169 @@ unit_medals = {
 		}
 		
 	}
+	
+	metacommy_medal_1 = {
+		
+		available = { 
+			has_government = metacommy
+		}
+		frame = 1
+		icon = "GFX_medal_icon_metacommy"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	metacommy_medal_2 = {
+		
+		available = { 
+			has_government = metacommy
+		}
+		frame = 2
+		icon = "GFX_medal_icon_metacommy"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+			army_defence_factor = 0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	metacommy_medal_3 = {
+		
+		available = { 
+			has_government = metacommy
+		}
+		frame = 3
+		icon = "GFX_medal_icon_metacommy"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	metacommy_medal_4 = {
+		
+		available = { 
+			has_government = metacommy
+		}
+		frame = 4
+		icon = "GFX_medal_icon_metacommy"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	memoism_orden_za_rofl = {
+		
+		available = { 
+			has_government = memoism
+		}
+		frame = 1
+		icon = "GFX_medal_icon_memoism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	memoism_orden_gch3 = {
+		
+		available = { 
+			has_government = memoism
+		}
+		frame = 2
+		icon = "GFX_medal_icon_memoism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+			army_defence_factor = 0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	memoism_orden_gch2 = {
+		
+		available = { 
+			has_government = memoism
+		}
+		frame = 3
+		icon = "GFX_medal_icon_memoism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	memoism_orden_gch1 = {
+		
+		available = { 
+			has_government = memoism
+		}
+		frame = 4
+		icon = "GFX_medal_icon_memoism"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
 		
 }		
