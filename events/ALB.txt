@@ -163,3 +163,20 @@ country_event = {
       
 	}
 }
+
+country_event = {
+	id = ALB.5
+	title = ALB.5.t
+	desc = ALB.5.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = ALB.5.a
+	    add_ideas = ALB_chudo_marxsism_misli
+        add_manpower = 1		
+	}
+}

@@ -1,0 +1,13 @@
+#########################
+  ### LAZARET_RSFSR ###
+#########################
+
+ALB_literally_1914 = {
+	icon = military_operation
+	allowed = {
+		tag = ALB		
+	}
+	visible = {
+	 has_completed_focus = ALB_literally_1914
+	}
+}

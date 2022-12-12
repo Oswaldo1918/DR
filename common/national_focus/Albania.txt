@@ -11,14 +11,35 @@ focus_tree = {
 	focus = {
 		id = ALB_Khoja_Legacy
 		icon = GFX_focus_generic_soviet_politics
-		cost = 10,00
+		cost = 5,00
 		x = 14
 		y = 0
-			completion_reward = {
-					add_country_leader_trait = Khoja_Legacy
-					add_political_power = 150
+		completion_reward = {
+			add_country_leader_trait = Khoja_Legacy
+			add_political_power = 150
+			44 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9914
 				}
-
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11767
+				}
+			}
+            805 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 914
+				}
+			}        			
+		}
 	}
 	focus = {
 		id = ALB_kozlorevolutsiya
@@ -137,17 +158,12 @@ focus_tree = {
 		y = 2
 			completion_reward = {
 					add_political_power = 100
-					set_portraits = {
-							character = SKT_levoborod
-							army = { small  ="gfx/leaders/SKT/Semen_1.dds" }
-							civilian = { large  ="gfx/leaders/SKT/Semen_1.dds" }
-						}
 				}
 
 	}
 	focus = {
 		id = ALB_railway_between_cities
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_railroad
 		cost = 5,00
 		prerequisite = {
 			focus = ALB_Khoja_Legacy
@@ -274,20 +290,19 @@ focus_tree = {
 		}
 		x = 23
 		y = 7
-		
-		available = {
+			available = {
 					controls_state = 44
 				}
-		completion_reward = {
-				44 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+			completion_reward = {
+					44 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
 
 	}
 	focus = {
@@ -299,10 +314,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 8
-		
 			completion_reward = {
 					add_ideas = ALB_videokarta
 				}
+
 	}
 	focus = {
 		id = ALB_rock
@@ -313,10 +328,10 @@ focus_tree = {
 		}
 		x = 25
 		y = 7
-		
-		completion_reward = {
-				add_stability = 0.1
-			}
+			completion_reward = {
+					add_stability = 0.1
+				}
+
 	}
 	focus = {
 		id = ALB_gum_pomosh_yug
@@ -360,7 +375,7 @@ focus_tree = {
 			available = {
 					has_government = anarhostalinism
 				}
-			completion_reward = {		
+			completion_reward = {
 					add_political_power = 150
 				}
 
@@ -442,7 +457,7 @@ focus_tree = {
 	focus = {
 		id = ALB_arrange_a_dressing_down_for_the_players
 		icon = GFX_focus_bsh_poryadok_v_strane
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_refuel_the_generator
 		}
@@ -652,7 +667,7 @@ focus_tree = {
 	focus = {
 		id = ALB_start_the_generators_of_war
 		icon = GFX_generators_of_war
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_beat_the_players
 		}
@@ -674,6 +689,10 @@ focus_tree = {
 					has_government = vmestolev
 				}
 			completion_reward = {
+			        add_timed_idea = {
+							idea = ALB_slet_antieskapistov_internatsionalistov
+							days = 180
+					}        
 					add_manpower = 50000
 					add_ideas = scraping_the_barrel
 					add_ideas = tot_economic_mobilisation
@@ -683,15 +702,12 @@ focus_tree = {
 	focus = {
 		id = ALB_the_great_antigamer_campaign
 		icon = GFX_focus_usa_focus_on_europe
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = ALB_narastit_proizvodstvo_diselya
+			focus = ALB_start_the_generators_of_war
 		}
-		prerequisite = {
-			focus = ALB_dvizhki_dlya_mocikov
-		}
-		x = 12
-		y = 11
+		x = 14
+		y = 9
 			available = {
 					has_government = vmestolev
 				}
@@ -723,7 +739,7 @@ focus_tree = {
 	focus = {
 		id = ALB_deratization
 		icon = GFX_goal_anti_comintern_pact
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_arrange_a_dressing_down_for_the_players
 		}
@@ -745,12 +761,12 @@ focus_tree = {
 	focus = {
 		id = ALB_kumachevaya_respublica
 		icon = GFX_goal_cumach_resp
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_the_great_antigamer_campaign
 		}
-		x = 12
-		y = 12
+		x = 14
+		y = 10
 			available = {
 					has_government = vmestolev
 					controls_state = 48
@@ -795,70 +811,71 @@ focus_tree = {
 	focus = {
 		id = ALB_TMZ
 		icon = GFX_focus_generic_truck
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_start_the_generators_of_war
 		}
-		x = 12
+		x = 11
 		y = 9
-		
-		available = {
+			available = {
 					controls_state = 44
 				}
-		completion_reward = {
-				44 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
+			completion_reward = {
+					44 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
 						}
 				}
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
+
 	}
 	focus = {
 		id = ALB_dvizhki_dlya_mocikov
 		icon = GFX_focus_generic_mocik_up
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = ALB_TMZ
+			focus = ALB_geologorazvedka
 		}
-		x = 12
-		y = 10
-		
-		available = {
+		prerequisite = {
+			focus = ALB_narastit_proizvodstvo_diselya
+		}
+		x = 11
+		y = 11
+			available = {
 					controls_state = 44
 				}
-		completion_reward = {
-				44 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
+			completion_reward = {
+					44 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
 						}
+					add_ideas = ALB_dvizhki
 				}
-				add_ideas = ALB_dvizhki
-		}
 
 	}
 	focus = {
 		id = ALB_geologorazvedka
 		icon = GFX_goal_generic_oil_refinery
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = ALB_start_the_generators_of_war
+			focus = ALB_TMZ
 		}
-		x = 14
-		y = 9
-		
-		completion_reward = {
+		x = 12
+		y = 10
+			completion_reward = {
 					44 = {
 							add_resource = {
 									type = oil
@@ -871,14 +888,13 @@ focus_tree = {
 	focus = {
 		id = ALB_narastit_proizvodstvo_diselya
 		icon = GFX_focus_cht_socialist_chudo
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = ALB_geologorazvedka
+			focus = ALB_TMZ
 		}
-		x = 14
+		x = 10
 		y = 10
-		
-		available = {
+			available = {
 					controls_state = 44
 				}
 			completion_reward = {
@@ -896,40 +912,50 @@ focus_tree = {
 	focus = {
 		id = ALB_228_tomov_pss_polyakova
 		icon = GFX_focus_228_pss
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_lenina_nado_chitat
 		}
 		x = 18
 		y = 10
-		
-		completion_reward = {
-					add_political_power = 150
+			completion_reward = {
+				add_political_power = 150
+				swap_ideas = {
+					remove_idea = ALB_lenin
+					add_idea = ALB_lenin_1
 				}
-
+			}
 	}
 	focus = {
 		id = ALB_literally_1914
 		icon = GFX_ot_baldi
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = ALB_lenina_nado_chitat
+			focus = ALB_228_tomov_pss_polyakova
 		}
-		x = 16
-		y = 10
-
+		prerequisite = {
+			focus = ALB_chudo_marxsism_misli
+		}
+		x = 17
+		y = 11
+        completion_reward = {
+			add_political_power = 150
+			swap_ideas = {
+				remove_idea = ALB_lenin_1
+				add_idea = ALB_lenin_2
+			}
+		}           
 	}
 	focus = {
 		id = ALB_lenina_nado_chitat
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_start_the_generators_of_war
 		}
 		x = 17
 		y = 9
-		
-		available = {
+			available = {
 					has_government = vmestolev
 				}
 			completion_reward = {
@@ -940,49 +966,57 @@ focus_tree = {
 	focus = {
 		id = ALB_raketnaya_programma
 		icon = GFX_focus_rocketry
-		cost = 10,00
-		prerequisite = {
-			focus = ALB_literally_1914
-		}
-		prerequisite = {
-			focus = ALB_228_tomov_pss_polyakova
-		}
-		prerequisite = {
-			focus = ALB_narastit_proizvodstvo_diselya
-		}
-		x = 15
-		y = 12
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
-			}
-		}
-
-	}
-	focus = {
-		id = ALB_perekrasit_lunu_v_rosoviy
-		icon = GFX_focus_rise_of_lenin
-		cost = 10,00
-		prerequisite = {
-			focus = ALB_raketnaya_programma
-		}
+		cost = 5,00
 		prerequisite = {
 			focus = ALB_kumachevaya_respublica
 		}
 		x = 14
-		y = 13
-		
-		available = {
+		y = 11
+			completion_reward = {
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 2
+					category = rocketry
+				}
+			}
+	}
+	focus = {
+		id = ALB_perekrasit_lunu_v_rosoviy
+		icon = GFX_focus_rise_of_lenin
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_dvizhki_dlya_mocikov
+		}
+		prerequisite = {
+			focus = ALB_literally_1914
+		}
+		prerequisite = {
+			focus = ALB_raketnaya_programma
+		}
+		x = 14
+		y = 12
+			available = {
 					has_tech = advanced_rocket_engines
 				}
-		
-            completion_reward = {
+			completion_reward = {
 					add_political_power = 150
-				}		
+				}
 
+	}
+	focus = {
+		id = ALB_chudo_marxsism_misli
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		cost = 5,00
+		prerequisite = {
+			focus = ALB_lenina_nado_chitat
+		}
+		x = 16
+		y = 10
+        completion_reward = {
+			country_event = {
+				id = ALB.5
+			}
+		}         
 	}
 }
