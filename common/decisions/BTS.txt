@@ -16,6 +16,10 @@ BTS_soprotivleniye_btsnikov = {
 
 		complete_effect = {
 		}
+		
+		visible = {
+		NOT = { has_completed_focus = BTS_pobeda_nad_BTS_soprotivleniem	}
+    	}
 
 		timeout_effect = {
 		complete_national_focus = BTS_vzatie_vlasti

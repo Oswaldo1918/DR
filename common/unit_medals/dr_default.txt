@@ -197,5 +197,89 @@ unit_medals = {
 		}
 		
 	}
+	
+	
+	
+	anstal_orden_stalin = {
+		
+		available = { 
+			has_government = anarhostalinism
+		}
+		frame = 1
+		icon = "GFX_medal_icon_anstal"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	anstal_star = {
+		
+		available = { 
+			has_government = anarhostalinism
+		}
+		frame = 2
+		icon = "GFX_medal_icon_anstal"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale_factor = 0.1
+			army_defence_factor = 0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	anstal_orden_revolutsii = {
+		
+		available = { 
+			has_government = anarhostalinism
+		}
+		frame = 3
+		icon = "GFX_medal_icon_anstal"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+	
+	anstal_orden_mahno = {
+		
+		available = { 
+			has_government = anarhostalinism
+		}
+		frame = 4
+		icon = "GFX_medal_icon_anstal"
+	
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
 		
 }		
