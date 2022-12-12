@@ -1708,6 +1708,34 @@ Sever_empire = {
 	}    	
 }
 bebs_test_category = {
+BSH_kukich_fate_mission = {
+
+		allowed = { always = yes }
+
+		available = {
+		    has_goverment = memoism
+			hidden_trigger = { always = no }
+		    has_completed_focus = BSH_osnovat_degradachTV
+		}
+
+		days_mission_timeout = 28
+		
+		fire_only_once = yes                          
+
+        cancel_trigger = {	
+			has_country_flag = dont_eat_kukich
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			country_event = BSH.6
+	    }
+    }
 BSH_kozi = {
 	      cost = 50
 		    visible = {
@@ -1795,66 +1823,127 @@ BSH_kaloviy_barabashka = {
 			country_event = BSH.7
     }
 }
-    
-BSH_kukich_fate_mission = {
-
-		allowed = { always = yes }
-
-		available = {
-		    has_goverment = memoism
-			hidden_trigger = { always = no }
-		    has_completed_focus = BSH_osnovat_degradachTV
-		}
-
-		days_mission_timeout = 28
-		
-		fire_only_once = yes                          
-
-        cancel_trigger = {	
-			has_country_flag = dont_eat_kukich
-		}
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			country_event = BSH.6
-	    }
-    }
 }
 bebs_persons_category = {
 bebs_persons_osnova = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_Zheka = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_clown = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_fedor_gennadievich = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_mikola_tyan = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_tabu = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_razumist = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_polpot = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_berdyayev = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 bebs_persons_marx = {
-
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
+}
+bebs_persons_yebok = {
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
+}
+bebs_persons_stul = {
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			}
+remove_effect = {
+		  	 
+			
+    }
 }
 }
 #BSH_kaloviy_nekromant = {
