@@ -1,194 +1,3 @@
-bebs_test_category = {
-BSH_kozi = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 OR = {      
-				 has_completed_focus = BSH_otstanennost_gosva
-				 has_completed_focus = BSH_goshelp_obshinam
-			  }
-			}
-
-		   days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.15
-    }
-   }
-BSH_phasmid= {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				has_completed_focus = BSH_lager_Nizhuganovo
-			}
-
-		   days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.14
-    }
-   }
-BSH_kaloviy_nekromant = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		   days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.13
-    }
-   }
-BSH_kadr_barabashka = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.12
-    }
-}	
-BSH_ribolyudi = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.11
-    }
-}	
-BSH_sterlitamakskaya_mish = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.10
-    }
-}
-BSH_perdyozhniy_duh = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.9
-    }
-}
-BSH_urina_lepricon = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.8
-    }
-}
-BSH_kaloviy_barabashka = {
-	      cost = 50
-		    visible = {
-			   has_completed_focus = BSH_osnovat_degradachTV
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.7
-    }
-}
-       #####BSH_dont_eat_kukich = {
-	  ####    cost = 14
-		####    visible = {
-		####	    has_completed_focus = BSH_osnovat_degradachTV
-		####	}
-
-		####  days_remove = 14
-		####  		 fire_only_once = yes
-         ####   remove_effect = {
-		 #### 	 set_country_flag = dont_eat_kukich
-   ### }
-####}
-BSH_kukich_fate_mission = {
-
-		allowed = { always = yes }
-
-		available = {
-		    has_goverment = memoism
-			hidden_trigger = { always = no }
-		    has_completed_focus = BSH_osnovat_degradachTV
-		}
-
-		days_mission_timeout = 28
-		
-		fire_only_once = yes                          
-
-        cancel_trigger = {	
-			has_country_flag = dont_eat_kukich
-		}
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			country_event = BSH.6
-	    }
-    }
-}
 opposition_Oleg = {
     rally_Olegovtsy = {
 	      cost = 50
@@ -1721,7 +1530,6 @@ Sever_empire = {
 		available = {
 			controls_state = 644
 			controls_state = 822
-			controls_state = 875
 		}
 		
 		fire_only_once = yes
@@ -1733,7 +1541,6 @@ Sever_empire = {
 		remove_effect = {
 			add_state_core = 644
 			add_state_core = 822
-			add_state_core = 875
 		}	
 	}
     BSH_core_MAG = { #Интеграция_Магадана
@@ -1756,6 +1563,28 @@ Sever_empire = {
 			add_state_core = 874
 		}	
 	}
+	BSH_core_MAG = { #Интеграция_Камчатки
+	
+		cost = 30
+
+		available = {
+			controls_state = 637
+			controls_state = 555
+			controls_state = 875
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 637
+			add_state_core = 555
+			add_state_core = 875
+		}	
+	}
 	BSH_core_YAK = { #Интеграция_Якутия
 	
 		cost = 30
@@ -1776,26 +1605,6 @@ Sever_empire = {
 			add_state_core = 562
 			add_state_core = 876
 			add_state_core = 574			
-		}	
-	}
-    BSH_core_MAG = { #Интеграция_Магадана
-	
-		cost = 30
-
-		available = {
-			controls_state = 637
-			controls_state = 874
-		}
-		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			add_state_core = 637
-			add_state_core = 874
 		}	
 	}
     BSH_core_CHT_1 = { #Интеграция_ЧАТа
@@ -1898,11 +1707,49 @@ Sever_empire = {
 		}	
 	}    	
 }
-kukich_cryptid = {
+bebs_test_category = {
+BSH_kozi = {
+	      cost = 50
+		    visible = {
+			    has_completed_focus = BSH_osnovat_degradachTV
+				 OR = {      
+				 has_completed_focus = BSH_otstanennost_gosva
+				 has_completed_focus = BSH_goshelp_obshinam
+			  }
+			}
+
+		   days_remove = 14
+		  		 fire_only_once = yes
+            remove_effect = {
+		  	 add_days_mission_timeout = {
+			mission = BSH_kukich_fate_mission
+			days = 50
+			}
+			country_event = BSH.15
+    }
+   }
+BSH_phasmid= {
+	      cost = 50
+		    visible = {
+			    has_completed_focus = BSH_osnovat_degradachTV
+				has_completed_focus = BSH_lager_Nizhuganovo
+			}
+
+		   days_remove = 14
+		  		 fire_only_once = yes
+            remove_effect = {
+		  	 add_days_mission_timeout = {
+			mission = BSH_kukich_fate_mission
+			days = 50
+			}
+			country_event = BSH.14
+    }
+   }
+
 BSH_sterlitamakskaya_mish = {
 	      cost = 50
 		    visible = {
-			    has_country_flag = kukich_cryptid
+			    has_completed_focus = BSH_osnovat_degradachTV
 			}
 
 		  days_remove = 14
@@ -1912,45 +1759,14 @@ BSH_sterlitamakskaya_mish = {
 			mission = BSH_kukich_fate_mission
 			days = 50
 			}
-			country_event = BSH.9
+			country_event = BSH.10
     }
 }
-BSH_perdyozhniy_duh = {
-	      cost = 50
-		    visible = {
-			    has_country_flag = kukich_cryptid
-			}
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.9
-    }
-}
 BSH_urina_lepricon = {
 	      cost = 50
 		    visible = {
-			    has_country_flag = kukich_cryptid
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
-			country_event = BSH.8
-    }
-}
-BSH_urina_lepricon = {
-	      cost = 50
-		    visible = {
-			    has_country_flag = kukich_cryptid
+			    has_completed_focus = BSH_osnovat_degradachTV
 			}
 
 		  days_remove = 14
@@ -1966,7 +1782,7 @@ BSH_urina_lepricon = {
 BSH_kaloviy_barabashka = {
 	      cost = 50
 		    visible = {
-			    has_country_flag = kukich_cryptid
+			   has_completed_focus = BSH_osnovat_degradachTV
 			}
 
 		  days_remove = 14
@@ -1979,28 +1795,18 @@ BSH_kaloviy_barabashka = {
 			country_event = BSH.7
     }
 }
-       BSH_dont_eat_kukich = {
-	      cost = 14
-		    visible = {
-			    has_country_flag = BSH_Kukich_cryptid
-			}
-
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 set_country_flag = dont_eat_kukich
-    }
-}
+    
 BSH_kukich_fate_mission = {
 
-		allowed = { always = no }
+		allowed = { always = yes }
 
 		available = {
 		    has_goverment = memoism
 			hidden_trigger = { always = no }
+		    has_completed_focus = BSH_osnovat_degradachTV
 		}
 
-		days_mission_timeout = 120
+		days_mission_timeout = 28
 		
 		fire_only_once = yes                          
 
@@ -2019,3 +1825,111 @@ BSH_kukich_fate_mission = {
 	    }
     }
 }
+bebs_persons_category = {
+bebs_persons_osnova = {
+
+}
+bebs_persons_Zheka = {
+
+}
+bebs_persons_clown = {
+
+}
+bebs_persons_fedor_gennadievich = {
+
+}
+bebs_persons_mikola_tyan = {
+
+}
+bebs_persons_tabu = {
+
+}
+bebs_persons_razumist = {
+
+}
+bebs_persons_polpot = {
+
+}
+bebs_persons_berdyayev = {
+
+}
+bebs_persons_marx = {
+
+}
+}
+#BSH_kaloviy_nekromant = {
+	      #cost = 50
+		    #visible = {
+			    #has_completed_focus = BSH_osnovat_degradachTV
+			#}
+
+		   #days_remove = 14
+		  		 #fire_only_once = yes
+            #remove_effect = {
+		  	 #add_days_mission_timeout = {
+			#mission = BSH_kukich_fate_mission
+			#days = 50
+			#}
+			#country_event = BSH.13
+    #}
+   #}
+###BSH_kadr_barabashka = {
+	      ###cost = 50
+		   ### visible = {
+			###    has_completed_focus = BSH_osnovat_degradachTV
+			###}
+
+		 ####days_remove = 14
+		  		 ###fire_only_once = yes
+            ####remove_effect = {
+		  	###add_days_mission_timeout = {
+			#mission = BSH_kukich_fate_mission
+			#days = 50
+			##}
+			###country_event = BSH.12
+    #}
+#}	
+#BSH_ribolyudi = {
+	      #cost = 50
+		    #visible = {
+			    #has_completed_focus = BSH_osnovat_degradachTV
+			#}
+
+		  #days_remove = 14
+		  		 #fire_only_once = yes
+            #remove_effect = {
+		  	 #add_days_mission_timeout = {
+			#mission = BSH_kukich_fate_mission
+			#days = 50
+			#}
+			#country_event = BSH.11
+    #}
+#}	
+#BSH_perdyozhniy_duh = {
+	      #cost = 50
+		    #visible = {
+			    #has_completed_focus = BSH_osnovat_degradachTV
+			#}
+
+		  #days_remove = 14
+		  		 #fire_only_once = yes
+            #remove_effect = {
+		  	 #add_days_mission_timeout = {
+			#mission = BSH_kukich_fate_mission
+			#days = 50
+			#}
+			#country_event = BSH.9
+    #}
+#}
+  #####BSH_dont_eat_kukich = {
+	  ####    cost = 14
+		####    visible = {
+		####	    has_completed_focus = BSH_osnovat_degradachTV
+		####	}
+
+		####  days_remove = 14
+		####  		 fire_only_once = yes
+         ####   remove_effect = {
+		 #### 	 set_country_flag = dont_eat_kukich
+   ### }
+####}

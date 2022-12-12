@@ -519,6 +519,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SKT_prodolzhit_expansii
 		}
+		available = {
+		has_war = no 
+		OR = {
+		is_neighbor_of = ARK
+		is_neighbor_of = LAZ
+		 }
+		}
 		x = 21
 		y = 15
 			available = {
@@ -1290,10 +1297,13 @@ focus_tree = {
 		icon = GFX_focus_cht_slave_divisions
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_a_ya_v_armii_sluzhil
+			focus = SKT_pochetniy_karaul
 		}
-		x = 19
-		y = 14
+		prerequisite = {
+			focus = SKT_vse_dly_fronta
+		}
+		x = 18
+		y = 15
 			completion_reward = {
 					add_ideas = SKT_no_step_back
 				}
@@ -1503,12 +1513,16 @@ focus_tree = {
 		}
 		x = 7
 		y = 17
-			available = {
-					IZR = {
-							has_war_with = ARV
+			bypass = {
+					NOT = {
+							IZR = {
+									has_war_with = ARV
+								}
 						}
-					IZR = {
-							has_war_with = SIR
+					NOT = {
+							IZR = {
+									has_war_with = SIR
+								}
 						}
 				}
 			completion_reward = {
@@ -1659,7 +1673,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SKT_a_ya_v_armii_sluzhil
 		}
-		x = 17
+		x = 19
 		y = 14
 			completion_reward = {
 					add_ideas = SKT_pochetniy_karaul
@@ -1671,16 +1685,10 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_strelik_podgotovka
-		}
-		prerequisite = {
-			focus = SKT_no_step_back
-		}
-		prerequisite = {
-			focus = SKT_pochetniy_karaul
+			focus = SKT_exstrim_turism
 		}
 		x = 17
-		y = 15
+		y = 17
 			completion_reward = {
 					add_tech_bonus = {
 							name = infantry_artillery_bonus
@@ -1715,9 +1723,17 @@ focus_tree = {
 		x = 22
 		y = 16
 			available = {
-					NOT = {
-							country_exists = LAZ
+					OR = {
+					 NOT = {
+							 country_exists = LAZ 
+							 } 
+					NOT = {		
+					LAZ = {
+						has_government = vmestolev
+						          }
+					        }
 						}
+						
 				}
 			completion_reward = {
 					ARK = {
@@ -1911,5 +1927,60 @@ focus_tree = {
 						}
 				}
 
+	}
+	focus = {
+		id = SKT_vse_dly_fronta
+		icon = GFX_goal_truck_hleb
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_a_ya_v_armii_sluzhil
+		}
+		x = 17
+		y = 14
+        completion_reward = {
+			add_ideas = SKT_vse_dly_fronta
+		}         
+	}
+	focus = {
+		id = SKT_peremalivanie_protivnika
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_strelik_podgotovka
+		}
+		prerequisite = {
+			focus = SKT_vse_dly_fronta
+		}
+		x = 16
+		y = 15
+        completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1.0
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}             
+	}
+	focus = {
+		id = SKT_exstrim_turism
+		icon = GFX_focus_cht_naemniki
+		cost = 5,00
+		prerequisite = {
+			focus = SKT_no_step_back
+		}
+		prerequisite = {
+			focus = SKT_peremalivanie_protivnika
+		}
+		x = 17
+		y = 16
+        completion_reward = {
+			add_ideas = SKT_exstrim_turism
+		}           
 	}
 }

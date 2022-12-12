@@ -27,10 +27,11 @@ country_event = {
 	
 	option = {
 	name = WHS.1.b
-	LAZ = {
-	create_wargoal = {
+	    LAZ = {
+	    create_wargoal = {
 		        target = WHS
 		        type = annex_everything
 			}	
-	}
+	    }
+    }
 }

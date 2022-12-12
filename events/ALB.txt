@@ -15,6 +15,11 @@ country_event = {
 	option = {
 	name = ALB.0.a
 	add_stability = -0.15
+	set_country_leader_portrait = {
+	ideology = marxismus
+	portrait = "gfx/leaders/ALB/Semen_2.dds"
+    }
+	DOT = {add_timed_idea = { idea = DOT_migratsiya_rakov days = 180 } }
 	}
 }
 	

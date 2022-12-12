@@ -411,36 +411,6 @@ DOT_nationalization_Russia = {
 			add_state_core = 824
 		}	
 	}
-	DOT_core_yugDV = { #Интеграция_Дальнего_Востока
-	
-		cost = 30
-
-		available = {
-			controls_state = 561
-			controls_state = 657
-			controls_state = 560
-			controls_state = 409
-			controls_state = 408
-			controls_state = 655
-            controls_state = 537
-		}
-		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			add_state_core = 561
-			add_state_core = 657
-			add_state_core = 560
-			add_state_core = 409
-			add_state_core = 408
-			add_state_core = 655
-            add_state_core = 537
-		}	
-	}
 	DOT_core_Amur = { 
 	
 		cost = 20
@@ -605,18 +575,12 @@ DOT_nationalization_Russia = {
 			add_state_core = 565
 		}	
 	}
-	DOT_core_sevDV = { #Интеграция_Дальнего_Востока
+	DOT_core_sevDV = { #Интеграция_Колымы
 	
 		cost = 30
 
 		available = {
-			controls_state = 574
-			controls_state = 876
-			controls_state = 877
-			controls_state = 874
-			controls_state = 875
-			controls_state = 644
-			controls_state = 562    			
+			controls_state = 644    			
 			controls_state = 822
 		}
 		
@@ -627,14 +591,50 @@ DOT_nationalization_Russia = {
         factor = 100
 		}
 		remove_effect = {
-		    add_state_core = 876
-			add_state_core = 877
-			add_state_core = 874
-			add_state_core = 875          
-			add_state_core = 574
 			add_state_core = 644
-			add_state_core = 562
 			add_state_core = 822
+		}	
+	}
+		DOT_core_sevDV = { #Интеграция_Магадана
+	
+		cost = 30
+
+		available = {
+			controls_state = 874
+			controls_state = 562
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 874
+			add_state_core = 562
+		}	
+	}
+	DOT_core_Yakutiya = { #Интеграция_Якутии
+	
+		cost = 30
+
+		available = {
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_state_core = 876
+			add_state_core = 877         
+			add_state_core = 574
 		}	
 	}
 }

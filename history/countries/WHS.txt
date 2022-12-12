@@ -14,10 +14,12 @@ set_technology = {
 add_ideas = {
 		WHS_rsepkie_lapy_Tupichka
 		WHS_zapad_bastion
-		WHS_nasledie_VeynshGV
 		limited_conscription
 	    partial_economic_mobilisation		
 }
+
+add_timed_idea = { idea = UNT_neudach_vostoch_pohod days = 547 }
+add_timed_idea = { idea = WHS_nasledie_VeynshGV days = 547 }
 
 set_popularities = {
 	anarhostalinism = 100

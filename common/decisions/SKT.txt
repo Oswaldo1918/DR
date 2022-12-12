@@ -231,7 +231,29 @@ SKT_ter_naz_yug_kau = {
 			fire_only_once = yes	 
 		}
 }
-SKT_ter_naz_cht = { 
+SKT_ter_naz_cht = {
+ SKT_war_CHT = { 
+	
+		cost = 30
+
+		available = {
+		 has_war = no 
+		 is_neighbor_of = CHT
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = CHT
+                   type = annex_everything
+            }
+		}	
+	}
  naz_samara = {
        cost = 50
  available = {
@@ -2395,11 +2417,10 @@ SKT_poisk_borodi = {
 		}
 		remove_effect = {
 			country_event = SKT.5
-			set_portraits = {
-                character = SKT_levoborod
-                army = { small ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
-                civilian = { large ="gfx/leaders/SKT/LevoBOROD_s_borodoy.dds" }
-            }
+		set_country_leader_portrait = {
+	        ideology = marxismus
+	        portrait = "gfx/leaders/SKT/LevoBOROD_s_borodoy.dds"
+        }
 		}	
 	}
  
