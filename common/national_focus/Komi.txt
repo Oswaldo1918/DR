@@ -1446,7 +1446,18 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = SKT_elementi_chuchhe
-					set_cosmetic_tag = SKT_chuche
+		
+					create_country_leader = {
+	        name = "Игорь Александров"
+	        desc = "POLITICS_THORVALD_STAUNING_DESC"
+	        picture = "LevoBOROD.dds"
+	        expire = "1999.1.1"
+	        ideology = stalinismus
+	        traits = {
+		                levoborod
+						
+	                }
+	    }
 				}
 
 	}
