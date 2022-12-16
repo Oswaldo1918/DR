@@ -157,6 +157,7 @@ characters={
             }
 			available = {
 				has_completed_focus = BSH_babay
+				NOT = { has_completed_focus = BSH_furrey_rezhut_stoya }
 			}
             traits = { prince_of_terror }
 	    }
@@ -313,4 +314,56 @@ characters={
 			}
 		}
     }
+	
+	BSH_loggame = {
+		name = "Комиссар Логгейм"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/.dds"
+			}
+		}
+    }
+	
+	BSH_Tito = {
+	name = "Тито"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_BSH_tito"	
+			}
+			army = {
+			    large = "gfx/leaders/BSH/Tito.dds"
+				small = "GFX_idea_BSH_Tito"
+			}
+		}
+		corps_commander = {
+	    traits = { war_hero  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+		legacy_id = -1
+		visible = {
+			has_government = memoism
+			has_completed_focus = BSH_babay
+			}
+        }
+		advisor={
+     		slot = army_chief
+			idea_token = BSH_Tito
+			allowed = {
+				original_tag = BSH
+			}
+			available = {		
+                has_government = memoism
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }
