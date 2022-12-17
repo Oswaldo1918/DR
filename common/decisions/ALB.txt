@@ -1,0 +1,376 @@
+ALB_literally_1914 = { 
+    ALB_razlozhenie_armii_YUG = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = YUG
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = YUG
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					YUG = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			YUG = {
+			    add_timed_idea = {
+					idea = ALB_razlozhenie_armii
+					days = 90
+				}
+			}	
+		}	
+	}
+    ALB_bratanie_s_YUG = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = YUG
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = YUG
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					YUG = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			YUG = {
+			    add_timed_idea = {
+					idea = ALB_bratanie
+					days = 90
+				}
+			}	
+		}	
+	}
+          	
+    ALB_razlozhenie_armii_PGR = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = PGR
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = PGR
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					PGR = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			PGR = {
+			    add_timed_idea = {
+					idea = ALB_razlozhenie_armii
+					days = 90
+				}
+			}	
+		}	
+	}
+    ALB_bratanie_s_PGR = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = PGR
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = PGR
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					PGR = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			PGR = {
+			    add_timed_idea = {
+					idea = ALB_bratanie
+					days = 90
+				}
+			}	
+		}	
+	}
+
+    ALB_razlozhenie_armii_HRV = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = HRV
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = HRV
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					HRV = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			HRV = {
+			    add_timed_idea = {
+					idea = ALB_razlozhenie_armii
+					days = 90
+				}
+			}	
+		}	
+	}
+    ALB_bratanie_s_HRV = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = HRV
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = HRV
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					HRV = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			HRV = {
+			    add_timed_idea = {
+					idea = ALB_bratanie
+					days = 90
+				}
+			}	
+		}	
+	}
+
+    ALB_razlozhenie_armii_TSG = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = TSG
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = TSG
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					TSG = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			TSG = {
+			    add_timed_idea = {
+					idea = ALB_razlozhenie_armii
+					days = 90
+				}
+			}	
+		}	
+	}
+    ALB_bratanie_s_TSG = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = TSG
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = TSG
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					TSG = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			TSG = {
+			    add_timed_idea = {
+					idea = ALB_bratanie
+					days = 90
+				}
+			}	
+		}	
+	}
+
+    ALB_razlozhenie_armii_BER = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = BER
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = BER
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					BER = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			BER = {
+			    add_timed_idea = {
+					idea = ALB_razlozhenie_armii
+					days = 90
+				}
+			}	
+		}	
+	}
+    ALB_bratanie_s_BER = { 
+	
+		cost = 55
+
+		available = {
+		has_completed_focus = ALB_literally_1914
+		    ALB = {
+				has_war_with = BER
+			}
+		}
+		
+		days_re_enable = 100
+		
+		available = {
+		is_neighbor_of = BER
+		}
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		bypass = {
+				OR = {
+					BER = {
+						exists = no
+					}
+				}
+		    }
+		remove_effect = {
+			BER = {
+			    add_timed_idea = {
+					idea = ALB_bratanie
+					days = 90
+				}
+			}	
+		}	
+	}      	
+}	

@@ -567,6 +567,46 @@ focus_tree = {
 							ideology = neutrality
 							popularity = 0.50
 						}
+					add_field_marshal_role = {
+						character = BSH_Tito
+						traits = { war_hero  }
+	                    skill = 1
+	                    attack_skill = 1
+	                    defense_skill = 2
+	                    planning_skill = 1
+	                    logistics_skill = 2
+		                legacy_id = -1
+					}
+					add_corps_commander_role = {
+						character = BSH_Brenya
+						traits = { war_hero trait_engineer }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 4
+		legacy_id = -1
+					}
+					add_corps_commander_role = {
+						character = BSH_loggame
+						traits = { war_hero  }
+	                    skill = 1
+	                    attack_skill = 1
+	                    defense_skill = 2
+	                    planning_skill = 1
+	                    logistics_skill = 2
+						legacy_id = -1
+					}
+                    add_corps_commander_role = {
+						character = BSH_Gruzin
+						traits = { war_hero  }
+	                    skill = 1
+	                    attack_skill = 1
+	                    defense_skill = 2
+	                    planning_skill = 1
+	                    logistics_skill = 2
+						legacy_id = -1
+					}      					
 				}
 			ai_will_do = {
 					factor = 25

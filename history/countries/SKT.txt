@@ -18,13 +18,14 @@ recruit_character = SKT_fomin
 recruit_character = SKT_filya
 recruit_character = SKT_cybergulag
 recruit_character = SKT_pechenka
-recruit_character = SKT_supa_syel
+recruit_character = SKT_Ershov
 recruit_character = SKT_unicorn
 recruit_character = SKT_zhofer
 recruit_character = SKT_animecom
 recruit_character = SKT_tovbard
 recruit_character = SKT_kosmov
 recruit_character = SKT_Aleksandr_Lebedev
+recruit_character = SKT_Artur_Liberhasse
 
 recruit_character = SKT_sovet_borodachey
 
@@ -45,3 +46,11 @@ set_politics = {
 
 set_convoys = 40
 
+create_operative_leader = {
+		name = "Артур Либерхассе"
+		portrait_path = "gfx/leaders/SKT/Artur_Liberhasse.dds"
+		traits = { operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SKT }
+}

@@ -156,19 +156,19 @@ characters={
 	    }
     }
 	
-	SKT_supa_syel = {
-		name = "Андрей Губин"
+	SKT_Ershov = {
+		name = "Святослав Ершов"
 		portraits = {
 			civilian = {
-				small = "GFX_idea_SKT_supa_syel"
+				small = "GFX_idea_SKT_Ershov"
 			}
 			army = {
-				large = "gfx/leaders/SKT/supa_syel_army.dds"
+				large = "gfx/leaders/SKT/Ershov.dds"
 			}
 		}
 		advisor={ 
 		    slot = high_command
-			idea_token = SKT_supa_syel
+			idea_token = SKT_Ershov
 			allowed = {
                 original_tag = SKT
 				
@@ -176,6 +176,31 @@ characters={
             traits = { army_chief_offensive_1 }
 	    }
     }
+	
+	SKT_Artur_Liberhasse = {
+		name = "Артур Либерхассе"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_Artur_Liberhasse"
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = SKT_Artur_Liberhasse
+			allowed = {
+				original_tag = SKT
+				
+			}			
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = { vperedsmotryazhiy }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
 	
 	SKT_unicorn = {
 		name = "Капитан Юникорн"

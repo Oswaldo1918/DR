@@ -2281,6 +2281,10 @@ SKT_poisk_borodi = {
         factor = 100
 		}
 		remove_effect = {
+		set_country_leader_portrait = {
+	        ideology = marxismus
+	        portrait = "gfx/leaders/SKT/LevoBOROD_22.dds"
+        }
 			swap_ideas = {
 				remove_idea = SKT_borod_bez_borodi_3
 				add_idea = SKT_borod_bez_borodi_4
@@ -2347,6 +2351,7 @@ SKT_poisk_borodi = {
         factor = 100
 		}
 		remove_effect = {
+			
 			swap_ideas = {
 				remove_idea = SKT_borod_bez_borodi_6
 				add_idea = SKT_borod_bez_borodi_7
@@ -2369,6 +2374,10 @@ SKT_poisk_borodi = {
         factor = 100
 		}
 		remove_effect = {
+			set_country_leader_portrait = {
+	        ideology = marxismus
+	        portrait = "gfx/leaders/SKT/LevoBOROD_s_borodoy.dds"
+        }
 			swap_ideas = {
 				remove_idea = SKT_borod_bez_borodi_7
 				add_idea = SKT_borod_bez_borodi_8
@@ -2395,10 +2404,7 @@ SKT_poisk_borodi = {
 				remove_idea = SKT_borod_bez_borodi_8
 				add_idea = SKT_borod_bez_borodi_9
 			}
-			set_country_leader_portrait = {
-	        ideology = vmestolev
-	        portrait = LevoBOROD_s_borodoy
-            }
+			
 		}	
 	}
     SKT_vopros_borodi = { 
@@ -2419,7 +2425,7 @@ SKT_poisk_borodi = {
 			country_event = SKT.5
 		set_country_leader_portrait = {
 	        ideology = marxismus
-	        portrait = "gfx/leaders/SKT/LevoBOROD_s_borodoy.dds"
+	        portrait = "gfx/leaders/SKT/LevoBOROD_4.dds"
         }
 		}	
 	}

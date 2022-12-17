@@ -434,7 +434,7 @@ focus_tree = {
 							legacy_id = -1
 						}
 					add_corps_commander_role = {
-							character = SKT_supa_syel
+							character = SKT_Ershov
 							traits = {
 
 }
@@ -1446,6 +1446,18 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = SKT_elementi_chuchhe
+		
+					create_country_leader = {
+	        name = "Игорь Александров"
+	        desc = "POLITICS_THORVALD_STAUNING_DESC"
+	        picture = "LevoBOROD.dds"
+	        expire = "1999.1.1"
+	        ideology = stalinismus
+	        traits = {
+		                levoborod
+						
+	                }
+	    }
 				}
 
 	}

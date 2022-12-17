@@ -117,15 +117,6 @@ characters={
 				small = "GFX_idea_africa_generic_2"
 			}
 		}
-        corps_commander = {
-	    traits = { trait_engineer }
-	    skill = 3
-	    attack_skill = 4
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 4
-		legacy_id = -1
-        }  
 		advisor={
      		slot = political_advisor
 			idea_token = BSH_Brenya
@@ -157,6 +148,7 @@ characters={
             }
 			available = {
 				has_completed_focus = BSH_babay
+				NOT = { has_completed_focus = BSH_furrey_rezhut_stoya }
 			}
             traits = { prince_of_terror }
 	    }
@@ -237,7 +229,7 @@ characters={
 		name = "Бебей Вещает"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -246,7 +238,7 @@ characters={
 		name = "Grisha Rak"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -255,7 +247,7 @@ characters={
 		name = "Андрей EbaLumba"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -264,7 +256,7 @@ characters={
 		name = "Бубсич"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -273,7 +265,7 @@ characters={
 		name = "Бебей Шутняра"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -282,7 +274,7 @@ characters={
 		name = "Юля Металкор"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -291,7 +283,7 @@ characters={
 		name = "Гоша Гачивар"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -300,7 +292,7 @@ characters={
 		name = "Котак-сан"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
@@ -309,8 +301,91 @@ characters={
 		name = "Владислав Дикун"
 		portraits = {
 			army = {
-				large = "gfx/leaders/SKT/.dds"
+				large = "gfx/leaders/BSH/.dds"
 			}
 		}
     }
+	
+	BSH_loggame = {
+		name = "Комиссар Логгейм"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/.dds"
+			}
+		}
+		advisor={
+     		slot = high_command
+			idea_token = BSH_loggame
+			allowed = {
+				original_tag = BSH
+			}
+			available = {		
+                has_government = memoism
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { army_regrouping_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	BSH_Gruzin = {
+		name = "Господин Грузин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/.dds"
+			}
+		}
+		advisor={
+     		slot = high_command
+			idea_token = BSH_Gruzin
+			allowed = {
+				original_tag = BSH
+			}
+			available = {		
+                has_government = memoism
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { army_chief_organizational_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	BSH_Tito = {
+	name = "Тито"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_BSH_tito"	
+			}
+			army = {
+			    large = "gfx/leaders/BSH/Tito.dds"
+				small = "GFX_idea_BSH_Tito"
+			}
+			
+		}
+		advisor={
+     		slot = army_chief
+			idea_token = BSH_Tito
+			allowed = {
+				original_tag = BSH
+			}
+			available = {		
+                has_government = memoism
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }
