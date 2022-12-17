@@ -74,6 +74,9 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
+			visible = {
+			NOT = { has_completed_focus = IRQ_ldpr }
+			}
 		}
 	}
 	
@@ -95,6 +98,9 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
+			visible = {
+			NOT = { has_completed_focus = IRQ_ldpr }
+			}
 		}
 	}
 	
@@ -116,6 +122,9 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
+			visible = {
+			NOT = { has_completed_focus = IRQ_baas }
+			}
 		}
 	}
 }

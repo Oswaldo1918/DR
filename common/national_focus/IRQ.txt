@@ -619,7 +619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = IRQ_bani
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_improve_the_administration
 		cost = 10,00
 		prerequisite = {
 			focus = IRQ_ldpr
@@ -630,7 +630,11 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-
+		
+		completion_reward = {
+					add_political_power = 150
+				}
+		
 	}
 	focus = {
 		id = IRQ_berem_vseh
@@ -641,6 +645,10 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
+		
+			completion_reward = {
+					add_ideas = scraping_the_barrel
+				}
 
 	}
 	focus = {
@@ -655,6 +663,19 @@ focus_tree = {
 		}
 		x = 23
 		y = 2
+		
+		completion_reward = {
+				set_politics = {
+                    ruling_party = fascism
+                   	last_election = "1933.3.5"
+                   	election_frequency = 48
+                  	elections_allowed = no
+                }
+                set_popularities = {
+                  	neutrality = 30
+                 	fascism = 70
+                }
+		}
 
 	}
 	focus = {
@@ -662,8 +683,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		cost = 10,00
 		prerequisite = {
-			focus = IRQ_ldpr
-			focus = IRQ_baas
+			focus = IRQ_izr_vopros
 		}
 		mutually_exclusive = {
 			focus = IRQ_bani
@@ -671,6 +691,10 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
+		
+			completion_reward = {
+					add_stability = 0.1
+				}
 
 	}
 	focus = {
@@ -682,11 +706,15 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
+		
+			completion_reward = {
+					add_political_power = 150
+				}
 
 	}
 	focus = {
 		id = IRQ_ubezhishe
-		icon = GFX_goal_unknown
+		icon = GFX_goal_saddam_hussein
 		cost = 10,00
 		prerequisite = {
 			focus = IRQ_baas
@@ -697,17 +725,25 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		
+			completion_reward = {
+					add_ideas = ALB_bunkervodstvo
+				}
 
 	}
 	focus = {
 		id = IRQ_fedaini_saddama
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rhineland
 		cost = 10,00
 		prerequisite = {
 			focus = IRQ_ubezhishe
 		}
 		x = 24
 		y = 4
+		
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
 
 	}
 	focus = {
