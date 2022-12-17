@@ -143,13 +143,12 @@ country_event = { #птичку жалко
 	
 	option = {
 	name = BSH.6.a
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	add_ideas = BSH_myaso_popugaya
+	add_political_power = -200
 	}
 	option = {
 	name = BSH.6.b
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	add_stability = 0.5
 	}
 }
 country_event = { #каловый барабашка строительство
@@ -166,8 +165,7 @@ country_event = { #каловый барабашка строительство
 	
 	option = {
 	name = BSH.7.a
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	add_ideas = BSH_kal_building
 	}
 }
 country_event = { #уриновый леприкон прорыв в медицине
@@ -184,13 +182,11 @@ country_event = { #уриновый леприкон прорыв в медиц�
 	
 	option = {
 	name = BSH.8.a
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	add_ideas = BSH_meditsina_mochi
 	}
 	option = {
 	name = BSH.8.b
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	add_ideas = BSH_prodavits_mochi
 	}
 }
 country_event = { #пердёжный дух
@@ -225,8 +221,7 @@ country_event = { #мышь
 	
 	option = {
 	name = BSH.10.a
-	add_ideas = BSH_kontrol_anomaliy
-	set_country_flag = 
+	set_country_flag = Bebs_mish
 	}
 	option = {
 	name = BSH.10.b
@@ -302,12 +297,15 @@ country_event = { #фазмид
 	
 	option = {
 	name = BSH.14.a
-	add_ideas = BSH_kontrol_anomaliy 
 	add_popularity = {
     ideology = memoism
     popularity = 0.05
     } 
 	add_political_power = 50
+	add_days_mission_timeout = {
+			mission = BSH_kukich_fate_mission
+			days = 7
+			}
 	}
 }
 country_event = { #огненная креветка кози
@@ -326,11 +324,13 @@ country_event = { #огненная креветка кози
 	name = BSH.15.a
 	add_ideas = BSH_kontrol_anomaliy 
 	country_event = BSH.16
+	add_manpower = -70
 	}
 	option = {
 	name = BSH.15.b
 	add_ideas = BSH_kontrol_anomaliy 
 	country_event = BSH.17
+	add_manpower = -70
 }
 }
 country_event = { #ликвидация кози
@@ -348,6 +348,7 @@ country_event = { #ликвидация кози
 	option = {
 	name = BSH.16.a 
 	add_political_power = 50
+	add_manpower = -26
 	}
 }
 country_event = { #польза креветки
@@ -370,5 +371,6 @@ country_event = { #польза креветки
     popularity = 0.05
     } 
 	add_political_power = 50
+	add_manpower = -156
 	}
 }

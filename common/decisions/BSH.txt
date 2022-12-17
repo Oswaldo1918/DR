@@ -1835,11 +1835,11 @@ BSH_urina_lepricon = {
 			country_event = BSH.8
     }
 }
-
 BSH_kaloviy_nekromant = {
 	      cost = 50
 		    visible = {
 			    has_completed_focus = BSH_osnovat_degradachTV
+				 has_country_flag = vsyo_v_relize
 			}
 
 		   days_remove = 14
@@ -1856,6 +1856,7 @@ BSH_kadr_barabashka = {
 	      cost = 50
 		    visible = {
 			    has_completed_focus = BSH_osnovat_degradachTV
+				 has_country_flag = vsyo_v_relize
 			}
 
 		 days_remove = 14
@@ -1873,6 +1874,7 @@ BSH_ribolyudi = {
 	      cost = 50
 		    visible = {
 			    has_completed_focus = BSH_osnovat_degradachTV
+				 has_country_flag = vsyo_v_relize
 			}
 
 		  days_remove = 14
@@ -1889,6 +1891,7 @@ BSH_perdyozhniy_duh = {
 	      cost = 50
 		    visible = {
 			    has_completed_focus = BSH_osnovat_degradachTV
+				 has_country_flag = vsyo_v_relize
 			}
 
 		 days_remove = 14
@@ -1905,6 +1908,7 @@ BSH_perdyozhniy_duh = {
 	      cost = 14
 		    visible = {
 			    has_completed_focus = BSH_osnovat_degradachTV
+				 has_country_flag = vsyo_v_relize
 			}
 
 		  days_remove = 14
@@ -2060,6 +2064,20 @@ remove_effect = {
 		  set_country_leader_portrait = {
 	        ideology = postironism
 	        portrait = "gfx/leaders/BSH/Stul.dds"
+        }  	 	 
+			
+    }
+}
+bebs_persons_mish = {
+cost = 10
+ visible = {
+			   has_completed_focus = BSH_hello_vsem_nashim
+			   has_country_flag = Bebs_mish
+			}
+remove_effect = {
+		  set_country_leader_portrait = {
+	        ideology = postironism
+	        portrait = "gfx/leaders/BSH/Mish.dds"
         }  	 	 
 			
     }
