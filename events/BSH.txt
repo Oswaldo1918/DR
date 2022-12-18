@@ -324,13 +324,31 @@ country_event = { #огненная креветка кози
 	name = BSH.15.a
 	add_ideas = BSH_kontrol_anomaliy 
 	country_event = BSH.16
-	add_manpower = -70
+	651 = {
+							add_resource = {
+									type = oil
+									amount = -10
+								}
+							}
+	add_manpower = -260
 	}
 	option = {
 	name = BSH.15.b
 	add_ideas = BSH_kontrol_anomaliy 
 	country_event = BSH.17
-	add_manpower = -70
+	651 = {
+							add_resource = {
+									type = oil
+									amount = -10
+								}
+							}
+	add_manpower = -260
+	652 = {
+							add_resource = {
+									type = steel
+									amount = -8
+								}
+							}
 }
 }
 country_event = { #ликвидация кози
@@ -347,8 +365,13 @@ country_event = { #ликвидация кози
 	
 	option = {
 	name = BSH.16.a 
+	add_popularity = {
+    ideology = memoism
+    popularity = 0.05
+    }
 	add_political_power = 50
 	add_manpower = -26
+	add_war_support = 0.05
 	}
 }
 country_event = { #польза креветки
@@ -369,8 +392,15 @@ country_event = { #польза креветки
 	add_popularity = {
     ideology = memoism
     popularity = 0.05
-    } 
+    }
+	651 = {
+							add_resource = {
+									type = oil
+									amount = -5
+								}
+							}
 	add_political_power = 50
-	add_manpower = -156
+	add_manpower = -270
+	add_ideas = par_energy_kozi
 	}
 }

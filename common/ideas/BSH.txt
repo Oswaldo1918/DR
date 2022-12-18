@@ -838,9 +838,20 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			   modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.25
 			    }
 		    }
+			
+			par_energy_kozi = {
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.01
+				industrial_capacity_factory = 0.1
+			    }
+		    }
+			
 	    }
 		
 		aircraft_manufacturer = { 
