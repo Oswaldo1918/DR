@@ -4,8 +4,14 @@ BTS_soprotivleniye_btsnikov = {
 
 		icon = ger_mefo_bills
 
-		days_mission_timeout = 200
+		days_mission_timeout = 250
 		fire_only_once = yes
+		
+		available = {
+			has_government = anarhostalinism
+			hidden_trigger = { always = no }
+			
+		}
 
 		cancel_trigger = {	
 			has_completed_focus = BTS_pobeda_nad_BTS_soprotivleniem

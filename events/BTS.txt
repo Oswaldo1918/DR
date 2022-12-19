@@ -15,12 +15,18 @@ country_event = { #выбор упора пятилетки
 	
 	option = {
 	name = BTS.1.a
-    add_ideas = BTS_voen_upor
+    	add_timed_idea = {
+	    	idea = BTS_voen_upor
+		    days = 1825
+		}
 	}
 	
 	option = {
 	name = BTS.1.b
-    add_ideas = BTS_legkoprom_upor   
+	add_timed_idea = {
+	    	idea = BTS_legkoprom_upor
+		    days = 1825
+		}
 	}
 }
 
