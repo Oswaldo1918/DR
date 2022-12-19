@@ -47,7 +47,7 @@ bookmarks = {
 				cht_loksists
 				cht_great_srach
 				cht_shue
-			}
+2			}
 			focuses = {
 				CHT_vibori
 				CHT_new_order
@@ -151,7 +151,7 @@ bookmarks = {
 		}	
 		"BTS"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
+			history = "BTS_GATHERING_STORM_DESC"
 			ideology = anarhostalinism
 			ideas = {
 				
@@ -183,7 +183,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-			
+		    	SKT_blizost_smerti
+		    	SKT_borodatie_vibory
+		    	SKT_left_boroda		
 			}
 		}
 		"PRM"={
@@ -194,7 +196,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-			
+			    PRM_show_must_go_on
+				PRM_syezd_Ros_part_vozrozhd
+				PRM_sotsizm_is_magic
 			}
 		}
 
