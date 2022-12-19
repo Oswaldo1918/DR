@@ -803,6 +803,55 @@ ideas = {
 				consumer_goods_factor = -0.05
 			    }
 		    }
+			
+			BSH_kal_building = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+			   	production_speed_buildings_factor = 0.05 
+			    }
+		    }
+			
+			BSH_myaso_popugaya = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				experience_loss_factor = 0.2
+				MONTHLY_POPULATION = 0.2
+			    }
+		    }
+			
+			BSH_meditsina_mochi = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				experience_loss_factor = 0.3
+				MONTHLY_POPULATION = 0.1
+			    }
+		    }
+			
+			BSH_prodavits_mochi = {
+
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				consumer_goods_factor = -0.25
+			    }
+		    }
+			
+			par_energy_kozi = {
+			picture = generic_morale_bonus
+			
+			   modifier = {
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.01
+				industrial_capacity_factory = 0.1
+			    }
+		    }
+			
 	    }
 		
 		aircraft_manufacturer = { 
