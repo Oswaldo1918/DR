@@ -818,7 +818,7 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			   modifier = {
-				experience_loss_factor = 0.2
+				experience_loss_factor = -0.2
 				MONTHLY_POPULATION = 0.2
 			    }
 		    }
@@ -828,7 +828,7 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			   modifier = {
-				experience_loss_factor = 0.3
+				experience_loss_factor = -0.3
 				MONTHLY_POPULATION = 0.1
 			    }
 		    }
