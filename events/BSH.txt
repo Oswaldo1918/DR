@@ -334,8 +334,11 @@ country_event = { #огненная креветка кози
 	}
 	option = {
 	name = BSH.15.b
-	add_ideas = BSH_kontrol_anomaliy 
-	country_event = BSH.17
+	add_ideas = BSH_kontrol_anomaliy
+	country_event = {
+			id = BSH.17
+			days = 100
+		}
 	651 = {
 							add_resource = {
 									type = oil
