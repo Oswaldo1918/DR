@@ -365,3 +365,59 @@ news_event = {
 	name = dk_news.16.a
 	}
 }
+news_event = {
+    id = dk_news.17
+	title = dk_news.17.t
+	desc = dk_news.17.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.17.a
+		trigger = {
+			original_tag = DOT
+		}
+	set_country_flag = DOT_reunite_russia_kostil
+	country_event = { days = 1 id = super.4}
+	}
+	
+	option = {
+	name = dk_news.17.b
+		trigger = { 
+			NOT = { original_tag = DOT }
+		}
+	set_country_flag = LAZ_reunite_russia_kostil
+	country_event = { days = 1 id = super.4}
+	}
+}
+news_event = {
+    id = dk_news.18
+	title = dk_news.18.t
+	desc = dk_news.18.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = dk_news.18.a
+		trigger = {
+			original_tag = SKT
+		}
+	set_country_flag = SKT_levoborod_reunite_russia_kostil
+	country_event = { days = 1 id = super.5}
+	}
+	
+	option = {
+	name = dk_news.18.b
+		trigger = { 
+			NOT = { original_tag = SKT }
+		}
+	set_country_flag = SKT_levoborod_reunite_russia_kostil
+	country_event = { days = 1 id = super.5}
+	}
+}

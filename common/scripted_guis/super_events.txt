@@ -70,6 +70,54 @@ scripted_gui = {
 		}
 	}
 	
+	sp_event_dot = {
+		window_name = "sp_event_nod_fedorov"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = NOD_Fedorov_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_LAZ_reunite_russia = {
+				has_global_flag = NOD_Fedorov_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_skt_levoborod = {
+		window_name = "sp_event_skt_levoborod"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = SKT_Levoborod_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_LAZ_reunite_russia = {
+				has_global_flag = SKT_Levoborod_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
 		sp_event_window = {
 		window_name = "sp_event_window"
 		context_type = player_context
