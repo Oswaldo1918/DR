@@ -57,7 +57,7 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_MGN_reunite_russia = {
+			Super_Event_NOD_Barkov_reunite_russia = {
 				has_global_flag = NOD_Barkov_reunite_russia
 			}
 		}
@@ -70,7 +70,7 @@ scripted_gui = {
 		}
 	}
 	
-	sp_event_dot = {
+	sp_event_nod_fedorov = {
 		window_name = "sp_event_nod_fedorov"
 		context_type = player_context
 
@@ -81,8 +81,32 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_LAZ_reunite_russia = {
+			Super_Event_NOD_Fedorov_reunite_russia = {
 				has_global_flag = NOD_Fedorov_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_dot = {
+		window_name = "sp_event_dot"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = DOT_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_DOT_reunite_russia = {
+				has_global_flag = DOT_reunite_russia
 			}
 		}
 
@@ -105,8 +129,104 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_LAZ_reunite_russia = {
+			Super_Event_SKT_Levoborod_reunite_russia = {
 				has_global_flag = SKT_Levoborod_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_nod_starikov = {
+		window_name = "sp_event_nod_starikov"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = NOD_Starikov_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_NOD_Starikov_reunite_russia = {
+				has_global_flag = NOD_Starikov_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_bsh_1 = {
+		window_name = "sp_event_bsh_bebey"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = BSH_1_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_BSH_1_reunite_russia = {
+				has_global_flag = BSH_1_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_bsh_2 = {
+		window_name = "sp_event_bsh_bebey"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = BSH_1_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_BSH_2_reunite_russia = {
+				has_global_flag = BSH_2_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_bsh_3 = {
+		window_name = "sp_event_bsh_bebey"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = BSH_3_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_BSH_3_reunite_russia = {
+				has_global_flag = BSH_3_reunite_russia
 			}
 		}
 
@@ -138,6 +258,54 @@ scripted_gui = {
 				has_global_flag = MGN_reunite_russia
 			}
 		}
+		
+		triggers = {
+			Super_Event_NOD_Barkov_reunite_russia = {
+				has_global_flag = NOD_Barkov_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_DOT_reunite_russia = {
+				has_global_flag = DOT_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_SKT_Levoborod_reunite_russia = {
+				has_global_flag = SKT_Levoborod_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_NOD_Fedorov_reunite_russia = {
+				has_global_flag = NOD_Fedorov_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_NOD_Starikov_reunite_russia = {
+				has_global_flag = NOD_Starikov_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_BSH_1_reunite_russia = {
+				has_global_flag = BSH_1_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_BSH_2_reunite_russia = {
+				has_global_flag = BSH_2_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_BSH_3_reunite_russia = {
+				has_global_flag = BSH_3_reunite_russia
+			}
+		}
 
 		effects = {
 			sp_event_close_button_click = {
@@ -164,6 +332,54 @@ scripted_gui = {
 					clr_global_flag = NOD_Barkov_reunite_russia
 				}
 				
+				if = {
+					limit = {
+						has_global_flag = DOT_reunite_russia
+					}
+					clr_global_flag = DOT_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = SKT_Levoborod_reunite_russia
+					}
+					clr_global_flag = SKT_Levoborod_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = NOD_Fedorov_reunite_russia
+					}
+					clr_global_flag = NOD_Fedorov_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = NOD_Starikov_reunite_russia
+					}
+					clr_global_flag = NOD_Starikov_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = BSH_1_reunite_russia
+					}
+					clr_global_flag = BSH_1_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = BSH_2_reunite_russia
+					}
+					clr_global_flag = BSH_2_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = BSH_3_reunite_russia
+					}
+					clr_global_flag = BSH_3_reunite_russia
+				}
 			}
 		}
 	}
