@@ -23,6 +23,55 @@ defined_text = {
         localization_key = "sp_event_NOD_Barkov_reunite_russia"
     }
 	
+	text = {
+        trigger = {
+            has_global_flag = DOT_reunite_russia
+        }
+        localization_key = "sp_event_DOT_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SKT_Levoborod_reunite_russia
+        }
+        localization_key = "sp_event_SKT_Levoborod_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Fedorov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Fedorov_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Starikov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Starikov_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_1_reunite_russia
+        }
+        localization_key = "sp_event_BSH_1_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_2_reunite_russia
+        }
+        localization_key = "sp_event_BSH_2_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_3_reunite_russia
+        }
+        localization_key = "sp_event_BSH_3_reunite_russia"
+    }
+	
 }
 defined_text = {
     name = get_super_event_remark
@@ -47,6 +96,55 @@ defined_text = {
         }
         localization_key = "sp_event_NOD_Barkov_reunite_russia_REMARK"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = DOT_reunite_russia
+        }
+        localization_key = "sp_event_DOT_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SKT_Levoborod_reunite_russia
+        }
+        localization_key = "sp_event_SKT_Levoborod_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Fedorov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Fedorov_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Starikov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Starikov_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_1_reunite_russia
+        }
+        localization_key = "sp_event_BSH_1_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_2_reunite_russia
+        }
+        localization_key = "sp_event_BSH_2_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_3_reunite_russia
+        }
+        localization_key = "sp_event_BSH_3_reunite_russia_REMARK"
+    }
 }
 defined_text = {
     name = get_super_event_quote
@@ -70,5 +168,54 @@ defined_text = {
             has_global_flag = NOD_Barkov_reunite_russia
         }
         localization_key = "sp_event_NOD_Barkov_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Fedorov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Fedorov_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = NOD_Starikov_reunite_russia
+        }
+        localization_key = "sp_event_NOD_Starikov_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = DOT_reunite_russia
+        }
+        localization_key = "sp_event_DOT_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SKT_Levoborod_reunite_russia
+        }
+        localization_key = "sp_event_SKT_Levoborod_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_1_reunite_russia
+        }
+        localization_key = "sp_event_BSH_1_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_2_reunite_russia
+        }
+        localization_key = "sp_event_BSH_2_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = BSH_3_reunite_russia
+        }
+        localization_key = "sp_event_BSH_3_reunite_russia_QUOTE"
     }
 }	

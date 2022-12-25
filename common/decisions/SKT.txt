@@ -2454,6 +2454,9 @@ SKT_poisk_borodi = {
 		}
 		remove_effect = {
 			set_cosmetic_tag = SKT_ussr
+			news_event = {
+							id = dk_news.18
+						}
 		}	
 	}	
 }
