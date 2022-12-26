@@ -107,6 +107,46 @@ characters={
             traits = { marxist_academic }
 	    }
     }
+	ALB_rauf = {
+		name = "Рауф Фаткуллин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_ALB_rauf"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_rauf
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { devoted_marxist }
+	    }
+    }
+	ALB_polyakov = {
+		name = "Иван Поляков"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_ALB_polyakov"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_polyakov
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = vmestolev
+			}
+            traits = { marxist_philosopher }
+	    }
+    }
 	ALB_hose = {
 		name = "Хосе Гонсалес-Лопес"
 		portraits = {
