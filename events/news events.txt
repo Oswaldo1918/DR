@@ -236,6 +236,8 @@ news_event = {
 		trigger = {
 			original_tag = NOD
 		}
+	set_country_flag = NOD_Starikov_reunite_russia_kostil
+	country_event = { days = 1 id = super.7}
 	}
 	
 	option = {
@@ -243,6 +245,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = NOD }
 		}
+	set_country_flag = NOD_Starikov_reunite_russia_kostil
+	country_event = { days = 1 id = super.7}
 	}
 }
 
@@ -261,6 +265,8 @@ news_event = {
 		trigger = {
 			original_tag = NOD
 		}
+		set_country_flag = NOD_Fedorov_reunite_russia_kostil
+	country_event = { days = 1 id = super.6}
 	}
 	
 	option = {
@@ -268,6 +274,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = NOD }
 		}
+		set_country_flag = NOD_Fedorov_reunite_russia_kostil
+	country_event = { days = 1 id = super.6}
 	}
 }
 
@@ -286,6 +294,8 @@ news_event = {
 		trigger = {
 			original_tag = NOD
 		}
+		set_country_flag = NOD_Barkov_reunite_russia_kostil
+	country_event = { days = 1 id = super.3}
 	}
 	
 	option = {
@@ -293,6 +303,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = NOD }
 		}
+		set_country_flag = NOD_Barkov_reunite_russia_kostil
+	country_event = { days = 1 id = super.3}
 	}
 }
 news_event = {

@@ -210,9 +210,16 @@ Ural_Israel = {
 
 		available = {
 		has_war = no 
+		OR = {
 		is_neighbor_of = CHT
+		is_neighbor_of = CDR
+		is_neighbor_of = DRC
+		is_neighbor_of = CCO
+		is_neighbor_of = DGC
+		is_neighbor_of = CVT
+		is_neighbor_of = VTC
+		 }
 		}
-		
 		fire_only_once = yes
 		
 		#days_remove = 30
@@ -222,6 +229,30 @@ Ural_Israel = {
 		remove_effect = {
 			create_wargoal = {
                    target = CHT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CDR
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DRC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CCO
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DGC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CVT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = VTC
                    type = annex_everything
             }
 		}	
@@ -327,6 +358,8 @@ Ural_Israel = {
 		}
 		remove_effect = {
 			set_cosmetic_tag = BSH_Ural_Israel
+			set_country_flag = BSH_1_reunite_russia_kostil
+	country_event = { days = 1 id = super.8}
 		}	
 	}      	
 }
@@ -640,15 +673,22 @@ Bashkir_hanstvo = {
             }
 		}	
 	}
-	BSH_war_CHT = { 
+	 BSH_war_CHT = { 
 	
 		cost = 30
 
 		available = {
 		has_war = no 
+		OR = {
 		is_neighbor_of = CHT
+		is_neighbor_of = CDR
+		is_neighbor_of = DRC
+		is_neighbor_of = CCO
+		is_neighbor_of = DGC
+		is_neighbor_of = CVT
+		is_neighbor_of = VTC
+		 }
 		}
-		
 		fire_only_once = yes
 		
 		#days_remove = 30
@@ -658,6 +698,30 @@ Bashkir_hanstvo = {
 		remove_effect = {
 			create_wargoal = {
                    target = CHT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CDR
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DRC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CCO
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DGC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CVT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = VTC
                    type = annex_everything
             }
 		}	
@@ -1048,6 +1112,8 @@ Bashkir_hanstvo = {
 		}
 		remove_effect = {
 			set_cosmetic_tag = BSH_Bashkir_hanstvo
+			set_country_flag = BSH_2_reunite_russia_kostil
+	country_event = { days = 1 id = super.9}
 		}	
 	}
 }
@@ -1229,6 +1295,28 @@ Sever_empire = {
             }
 		}	
 	}
+	BSH_war_OSV = { 
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = OSV
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = OSV
+                   type = annex_everything
+            }
+		}	
+	}
 	BSH_war_TUP = { 
 	
 		cost = 30
@@ -1251,15 +1339,22 @@ Sever_empire = {
             }
 		}	
 	}
-	BSH_war_CHT = { 
+	 BSH_war_CHT = { 
 	
 		cost = 30
 
 		available = {
 		has_war = no 
+		OR = {
 		is_neighbor_of = CHT
+		is_neighbor_of = CDR
+		is_neighbor_of = DRC
+		is_neighbor_of = CCO
+		is_neighbor_of = DGC
+		is_neighbor_of = CVT
+		is_neighbor_of = VTC
+		 }
 		}
-		
 		fire_only_once = yes
 		
 		#days_remove = 30
@@ -1269,6 +1364,30 @@ Sever_empire = {
 		remove_effect = {
 			create_wargoal = {
                    target = CHT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CDR
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DRC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CCO
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = DGC
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = CVT
+                   type = annex_everything
+            }
+			create_wargoal = {
+                   target = VTC
                    type = annex_everything
             }
 		}	
@@ -1704,6 +1823,8 @@ Sever_empire = {
 		}
 		remove_effect = {
 			set_cosmetic_tag = BSH_Sever_empire
+			set_country_flag = BSH_3_reunite_russia_kostil
+	country_event = { days = 1 id = super.10}
 		}	
 	}    	
 }
