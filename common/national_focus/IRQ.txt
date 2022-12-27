@@ -619,7 +619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = IRQ_bani
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_goal_bani_ldpr
 		cost = 10,00
 		prerequisite = {
 			focus = IRQ_ldpr
@@ -630,11 +630,10 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-		
-		completion_reward = {
+			completion_reward = {
 					add_political_power = 150
 				}
-		
+
 	}
 	focus = {
 		id = IRQ_berem_vseh
@@ -645,37 +644,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-		
 			completion_reward = {
 					add_ideas = scraping_the_barrel
 				}
-
-	}
-	focus = {
-		id = IRQ_baas
-		icon = GFX_goal_arab_baas
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_izr_vopros
-		}
-		mutually_exclusive = {
-			focus = IRQ_ldpr
-		}
-		x = 23
-		y = 2
-		
-		completion_reward = {
-				set_politics = {
-                    ruling_party = fascism
-                   	last_election = "1933.3.5"
-                   	election_frequency = 48
-                  	elections_allowed = no
-                }
-                set_popularities = {
-                  	neutrality = 30
-                 	fascism = 70
-                }
-		}
 
 	}
 	focus = {
@@ -691,7 +662,6 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
-		
 			completion_reward = {
 					add_stability = 0.1
 				}
@@ -706,9 +676,34 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
-		
 			completion_reward = {
 					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = IRQ_baas
+		icon = GFX_goal_arab_baas
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_izr_vopros
+		}
+		mutually_exclusive = {
+			focus = IRQ_ldpr
+		}
+		x = 23
+		y = 2
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							last_election = "1933.3.5"
+							election_frequency = 48
+							elections_allowed = no
+						}
+					set_popularities = {
+							neutrality = 30
+							fascism = 70
+						}
 				}
 
 	}
@@ -725,7 +720,6 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
-		
 			completion_reward = {
 					add_ideas = ALB_bunkervodstvo
 				}
@@ -740,10 +734,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
-		
-		completion_reward = {
-			add_ideas = paramilitarism_focus
-		}
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
 
 	}
 	focus = {
