@@ -1,0 +1,38 @@
+add_namespace = osv
+
+country_event = { #отнять_корки_лазарета_после_его_поражения
+
+	id = osv.1
+        title = osv.1.t
+        desc = osv.1.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = OSV
+		OSV = {
+			has_war = no
+		}
+		LAZ = {
+			      exists = no
+				}
+	}
+	
+	option = {
+		name = osv.1.a
+	
+	LAZ = {
+			every_state = {
+			limit = {
+				is_cored_by = LAZ
+			}
+			LAZ = {
+				remove_state_core = PREV
+			}
+		  }
+		  }
+
+	}
+	
+}

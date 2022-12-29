@@ -87,6 +87,7 @@ country_event = {
 	name = nod.3.a
 	add_stability = 0.05
 	add_political_power = -50
+	set_province_name = { id = 9432 name = "Путин-на-Волге"}
 	}
 }
 # Возвращение Патриарха
@@ -1767,16 +1768,16 @@ add_war_support = -0.02
 	name = nod.38.b
 add_war_support = 0.05
 add_political_power = 100
-set_capital = 219
 			 add_victory_points = { province = 301 value = -40 }
-
+set_capital = { state = 219 }
 	}
 	option = {
 	name = nod.38.c
+	set_capital = { state = 195 }
 add_political_power = -100
 add_war_support = 0.1
 add_stability = -0.05
-set_capital = 195
+set_province_name = { id = 3151 name = "Свято-Путинград"}
 
 	}
 }

@@ -273,7 +273,7 @@ country_event = { #Развал пакта
 					infantry = { x = 0 y = 2 }		
 					infantry = { x = 0 y = 3 }	
 					infantry = { x = 1 y = 0 }		
-					infantry = { x = 2 y = 0 }	
+					
 				}
 			}
 		 247 = {
@@ -319,10 +319,6 @@ country_event = { #Развал пакта
 				}
 				create_unit = {
 					division = "name = \" 11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
-					owner = OSV
-				}
-		        create_unit = {
-					division = "name = \" 12-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 			}
@@ -384,7 +380,7 @@ country_event = { #Развал пакта
 					infantry = { x = 0 y = 2 }		
 					infantry = { x = 0 y = 3 }	
 					infantry = { x = 1 y = 0 }		
-					infantry = { x = 2 y = 0 }	
+
 				}
 			}
 		 247 = {
@@ -432,10 +428,7 @@ country_event = { #Развал пакта
 					division = "name = \" 11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
-		        create_unit = {
-					division = "name = \" 12-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
-					owner = OSV
-				}
+
 			}
 		}
 		                248 = { set_demilitarized_zone = no }

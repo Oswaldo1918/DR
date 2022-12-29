@@ -1156,10 +1156,11 @@ DOT_war_Komi_Perm = { #
 
 		available = {
 		has_war = no 
+		OR = {
 		is_neighbor_of = PRM
 		is_neighbor_of = SKT
 		}
-		
+		}
 		fire_only_once = yes
 		
 		#days_remove = 30
