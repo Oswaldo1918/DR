@@ -21,6 +21,20 @@ ideas = {
 				conscription = -0.05
 			}
 		}
+		CHT_vostanovlenie_ot_gv = {
+	
+	        removal_cost = -1
+	
+	        picture = generic_disjointed_gov
+			
+			modifier = {
+			consumer_goods_factor = 0.1
+			conscription_factor = -0.3
+			stability_factor = -0.15
+			war_support_factor = -0.15
+			}
+	
+	    }
 		CHT_pasaran = {
 		
 		picture = CHT_lopati
@@ -1222,8 +1236,7 @@ ideas = {
 			min_export = 0.1
 			}
 	
-	}
-	
+	}	
    }
 	
    	tank_manufacturer = { 
