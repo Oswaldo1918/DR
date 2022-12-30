@@ -115,6 +115,7 @@ focus = {
 							id = cvt.18
 						}
 					add_manpower = -50
+					
 				}
 
 	}
@@ -189,7 +190,10 @@ focus = {
 					 remove_ideas = CHT_great_srach_1
 					 add_ideas = CHT_podavlen_partiz
 					 add_ideas = CHT_great_srach_2
-					 
+					 add_timed_idea = {
+					idea = CHT_vostanovlenie_ot_gv
+					days = 540
+				}
 					 complete_national_focus = CHT_cruseeders_new_era
 					 complete_national_focus = CHT_dobrovolec_army
 					 complete_national_focus = CHT_roylist_time

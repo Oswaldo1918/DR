@@ -182,7 +182,10 @@ completion_reward = {
 					 remove_ideas = CHT_partizanskie_otryady
 				     remove_ideas = CHT_partizanskie_otryady_1
 					 remove_ideas = CHT_people_war
-					 
+					 add_timed_idea = {
+					idea = CHT_vostanovlenie_ot_gv
+					days = 540
+				}
 					 complete_national_focus = CHT_sepc
 					 complete_national_focus = CHT_privlech_moderov
 					 complete_national_focus = CHT_combat_units_gebni
@@ -1332,7 +1335,10 @@ completion_reward = {
 					 remove_ideas = CHT_partizanskie_otryady
 				     remove_ideas = CHT_partizanskie_otryady_1
 					 remove_ideas = CHT_people_war
-					 
+					 add_timed_idea = {
+					idea = CHT_vostanovlenie_ot_gv
+					days = 540
+				}
 					 complete_national_focus = CHT_white_khmer
 					 complete_national_focus = CHT_rabochee_samoupravlenie
 					 complete_national_focus = CHT_guard_rabochego_class
