@@ -16,6 +16,7 @@ LAZ_military_annexation_kliki = {
 		remove_effect = {
 			ARK = {
 			country_event = ARK.1
+			set_country_flag = LAZ_AKR_int
 		    }
 	    }
 	}
@@ -64,6 +65,7 @@ LAZ_military_annexation_kliki = {
 			WHS = {
 			country_event = WHS.1
 		    }
+			set_country_flag = LAZ_WHS_int
 	    }
 	}
 	
@@ -111,6 +113,7 @@ LAZ_military_annexation_kliki = {
 			UNT = {
 			country_event = UNT.1
 		    }
+			set_country_flag = LAZ_UNT_int
 	    }
 	}
 	
@@ -154,6 +157,7 @@ LAZ_military_annexation_kliki = {
 			MAT = {
 			country_event = MAT.1
 		    }
+			set_country_flag = LAZ_MAT_int
 	    }
 	}	
 
@@ -198,6 +202,7 @@ LAZ_military_annexation_kliki = {
 			DON = {
 			country_event = don.2
 		    }
+			set_country_flag = LAZ_DON_int
 	    }
 	}	
 	
@@ -288,6 +293,7 @@ LAZ_integration_kliki = {
 			country_event = chat.228
 		    }
 		}
+		
     }
 
 LAZ_int_ARK = { #Интеграция_Архангельска
@@ -311,6 +317,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 				ARK = {
 			country_event = ARK.1
 		    }
+			set_country_flag = LAZ_ARK_int
 		}
 	}
 	
@@ -364,6 +371,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			WHS = {
 			country_event = WHS.1
 		    }
+			set_country_flag = LAZ_WHS_int
 		}
 	}
 	
@@ -413,6 +421,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			UNT = {
 			country_event = UNT.1
 		    }
+			set_country_flag = LAZ_UNT_int
 		}
 	}
 	
@@ -459,6 +468,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 				MAT = {
 			country_event = MAT.1
 		    }
+			set_country_flag = LAZ_MAT_int
 		}
 	}	
 
@@ -506,6 +516,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			DON = {
 			country_event = DON.1
 		    }
+			set_country_flag = LAZ_DON_int
 		}
 	}	
 	
@@ -2387,7 +2398,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+        
 				KUR = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2416,7 +2427,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+        
 				TUP = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2445,7 +2456,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+       
 				POK = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2474,7 +2485,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+       
 				LIM = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2503,7 +2514,6 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
 				TUB = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2533,7 +2543,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+        has_country_flag = LAZ_ARK_int
 				ARK = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2563,7 +2573,6 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
 				SKT = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2592,7 +2601,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+        has_country_flag = LAZ_WHS_int
 				WHS = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2621,7 +2630,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+      has_country_flag = LAZ_UNT_int
 				UNT = { 
 				 is_puppet_of = LAZ 
 				}
@@ -2650,7 +2659,7 @@ annex_country = {
 		fire_only_once = no
 		
 		available = {
-        is_ai = no
+		has_country_flag = LAZ_MAT_int
 				MAT = { 
 				 is_puppet_of = LAZ 
 				}
