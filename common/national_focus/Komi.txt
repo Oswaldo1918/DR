@@ -291,7 +291,7 @@ focus_tree = {
 		x = 23
 		y = 10
 			completion_reward = {
-					remove_ideas = SKT_sah_crisis
+					remove_ideas = SKT_sah_crisis_1
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -982,17 +982,17 @@ focus_tree = {
 							add_idea = SKT_narastit_neftedobichy
 						}
 					add_resource = {
-							type = steel
+							type = oil
 							amount = 10
 							state = 581
 						}
 					add_resource = {
-							type = steel
+							type = oil
 							amount = 10
 							state = 397
 						}
 					add_resource = {
-							type = steel
+							type = oil
 							amount = 10
 							state = 262
 						}
@@ -1077,7 +1077,7 @@ focus_tree = {
 			completion_reward = {
 					remove_ideas = SKT_narastit_neftedobichy
 					remove_ideas = SKT_SovOil_2
-					add_ideas = SKT_High_tech_High_life
+					add_ideas = SKT_SovOil_3
 					add_research_slot = 1
 				}
 
