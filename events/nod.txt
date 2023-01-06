@@ -651,10 +651,11 @@ country_event = {
 	option = {
 	name = nod.18.a
     
-	create_wargoal = {
+	declare_war_on  = {
 							type = annex_everything
 							target = CRI
 						}
+	load_oob = NOD_vezhlivie_ludi					
 						
 	}
 }

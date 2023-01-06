@@ -1505,7 +1505,7 @@ completion_reward = {
 			has_war = no
 		}
 		ai_will_do = {
-        factor = 100
+        factor = 70
 		}
 completion_reward = {
 CRI = {
@@ -1621,6 +1621,9 @@ create_wargoal = {
 		}
 		available = {
 			has_war = no
+		}
+		ai_will_do = {
+        factor = 100
 		}
 		x = 45
 		y = 4
@@ -2171,6 +2174,9 @@ create_wargoal = {
 		cost = 5
 		prerequisite = {
 			focus = NOD_prodolzhat_poiski
+		}
+		ai_will_do = {
+        factor = 100
 		}
 		x = 40
 		y = 2
