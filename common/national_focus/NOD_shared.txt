@@ -1509,7 +1509,7 @@ completion_reward = {
 			has_war = no
 		}
 		ai_will_do = {
-        factor = 70
+        factor = 100
 		}
 completion_reward = {
 CRI = {
@@ -1531,6 +1531,9 @@ CRI = {
 		y = 5
 		available = {
 			has_war = no
+		}
+		ai_will_do = {
+        factor = 100
 		}
 completion_reward = {
  if = {
@@ -1668,6 +1671,9 @@ completion_reward = {
 				
 		x = 42
 		y = 6
+		ai_will_do = {
+        factor = 100
+		}
 completion_reward = {
 create_wargoal = {
 							type = annex_everything
@@ -1797,6 +1803,9 @@ create_wargoal = {
 		
 		x = 41
 		y = 8
+		ai_will_do = {
+        factor = 100
+		}
 completion_reward = {
 			create_wargoal = {
 							type = annex_everything
@@ -1852,6 +1861,9 @@ completion_reward = {
 		
 		x = 41
 		y = 9
+		ai_will_do = {
+        factor = 100
+		}
 completion_reward = {
             create_wargoal = {
 							type = annex_everything
@@ -1983,7 +1995,9 @@ completion_reward = {
 		
 		x = 43
 		y = 7
-		
+		ai_will_do = {
+        factor = 100
+		}
 		completion_reward = {
 		create_wargoal = {
 							type = annex_everything
@@ -2096,6 +2110,9 @@ completion_reward = {
 		
 		x = 43
 		y = 8
+		ai_will_do = {
+        factor = 100
+		}
 completion_reward = {
 create_wargoal = {
 							type = annex_everything
@@ -2134,6 +2151,9 @@ create_wargoal = {
 		
 		x = 43
 		y = 9
+		ai_will_do = {
+        factor = 100
+		}
 			completion_reward = {
 create_wargoal = {
 							type = annex_everything
@@ -2244,6 +2264,9 @@ add_political_power = 200
 				}
 		x = 49
 		y = 4
+		ai_will_do = {
+        factor = 50
+		}
 completion_reward = {
 create_wargoal = {
 							type = annex_everything
@@ -2270,6 +2293,9 @@ create_wargoal = {
 				}
 		x = 49
 		y = 5
+		ai_will_do = {
+        factor = 50
+		}
 completion_reward = {
 create_wargoal = {
 							type = annex_everything
@@ -2296,6 +2322,9 @@ create_wargoal = {
 		available = {
 					has_war = no
 				}
+		ai_will_do = {
+        factor = 10
+		}
 		x = 47
 		y = 4
 completion_reward = {

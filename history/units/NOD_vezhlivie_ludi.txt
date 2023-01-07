@@ -12,12 +12,22 @@ division_template = {
         infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
     }
+	support = 	{
+		artillery = { x = 0 y = 0 }
+	        }
 priority = 1
 }
 units = {
 
 division = {
 #name = "1-я Вежливая дивизия"
+
+location = 9680
+division_template = "Вежливые люди"
+start_equipment_factor = 0.5
+}
+division = {
+#name = "3-я Вежливая дивизия"
 
 location = 9680
 division_template = "Вежливые люди"
