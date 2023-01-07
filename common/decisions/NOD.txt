@@ -1278,99 +1278,94 @@ naz_nod_magnitka = {
 	}
 	
 	ter_naz_prib_nod = {
-	 naz_nod_est = {
-       cost = 50
-      available = {
-             
-	   OR = { 
-		controls_state = 191
-		controls_state = 13
-		
-		}
-		
-          }
+	    naz_nod_est = {
+        cost = 50
+        available = {            
+	        OR = { 
+		    controls_state = 191
+		    controls_state = 13
+		    controls_state = 811
+		    controls_state = 812
+		    controls_state = 813
+		    }		
+        }
 
-		  days_remove = 100
-		  ai_will_do = {
+		days_remove = 100
+		ai_will_do = {
         factor = 100
 		}
-                 remove_effect = {
-				 add_state_core = 191
-				 add_state_core = 13
-			
-
-				 
-				 }
+        remove_effect = {
+			add_state_core = 191
+			add_state_core = 13
+			add_state_core = 811
+		    add_state_core = 812
+		    add_state_core = 813	 
+		}
 			fire_only_once = yes	 
 		}
-	 naz_nod_lat = {
-       cost = 50
-      available = {
-             
-	   OR = { 
-		controls_state = 190
-		controls_state = 12
-		
+	    naz_nod_lat = {
+        cost = 50
+        available = {            
+	        OR = { 
+		    controls_state = 190
+		    controls_state = 12
+		    controls_state = 808
+		    controls_state = 809
+		    controls_state = 810    
+		    }		
+        }
+		days_remove = 35
+		ai_will_do = {
+            factor = 100
 		}
-		
-          }
-
-		  days_remove = 35
-		  ai_will_do = {
-        factor = 100
+        remove_effect = {
+			add_state_core = 190
+			add_state_core = 12
+			add_state_core = 808
+		    add_state_core = 809
+		    add_state_core = 810 		 
 		}
-                 remove_effect = {
-				 add_state_core = 190
-				 add_state_core = 12
-			
-
-				 
-				 }
 			fire_only_once = yes	 
 		}
-	naz_nod_lit = {
-       cost = 50
-      available = {
-             
-	   OR = { 
-	    controls_state = 784
-		controls_state = 189
-		controls_state = 188
-		controls_state = 11
+	    naz_nod_lit = {
+            cost = 50
+            available = {            
+	            OR = { 
+	                controls_state = 784
+		            controls_state = 189
+		            controls_state = 188
+		            controls_state = 11
+                    controls_state = 814
+		            controls_state = 815     					
+		        }
 		
-		}
-		
-          }
-
-		  days_remove = 35
-		  ai_will_do = {
-        factor = 100
-		}
-                 remove_effect = {
-				 add_state_core = 784
-				 add_state_core = 189
-				 add_state_core = 188
-				 add_state_core = 11
-
-				 }
+            }
+		    days_remove = 35
+		    ai_will_do = {
+            factor = 100
+		    }
+            remove_effect = {
+				add_state_core = 784
+				add_state_core = 189
+				add_state_core = 188
+				add_state_core = 11
+				add_state_core = 814
+				add_state_core = 815
+			}
 			fire_only_once = yes	 
 		}
-	 naz_nod_klg = {
-       cost = 25
-      available = {
-             
-		controls_state = 763
-
-          }
-
-		  days_remove = 15
-		  ai_will_do = {
-        factor = 100
-		}
-                 remove_effect = {
-				 add_state_core = 763
-
-				 }
+	    naz_nod_klg = {
+            cost = 25
+            available = {             
+		        controls_state = 763
+            }
+		    days_remove = 15
+		    ai_will_do = {
+            factor = 100
+		    }
+            remove_effect = {
+				add_state_core = 763
+				}
 			fire_only_once = yes	 
 		}	
 	}
