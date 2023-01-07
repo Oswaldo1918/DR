@@ -427,4 +427,149 @@ focus_tree = {
 				}
 
 	}
+	focus = {
+		id = KLG_baltic_federation
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 3
+		prerequisite = {
+			focus = KLG_time_to_war
+		}
+		mutually_exclusive = {
+			focus = KLG_normal_Kaliningrad
+			focus = KLG_great_Kaliningrad
+		}
+		available = {
+			has_war = no
+		}
+		x = 8
+		y = 7
+		    completion_reward = {
+				hidden_effect = { 
+		    annex_country = {
+			target = VSB
+			transfer_troops = no
+		 }	
+		  annex_country = {
+			target = LUB
+			transfer_troops = no
+		 }
+
+		transfer_state = 63
+		transfer_state = 85
+		transfer_state = 807
+		transfer_state = 98
+		transfer_state = 5
+		transfer_state = 97
+		transfer_state = 188
+		transfer_state = 189
+		transfer_state = 190
+		transfer_state = 809
+		transfer_state = 815
+		transfer_state = 814
+		transfer_state = 784
+		transfer_state = 11
+		}
+		add_state_core = 63
+		add_state_core = 85
+		add_state_core = 807
+		add_state_core = 98
+		add_state_core = 5
+		add_state_core = 97
+		add_state_core = 188
+		add_state_core = 189
+		add_state_core = 190
+		add_state_core = 809
+		add_state_core = 815
+		add_state_core = 814
+		add_state_core = 784
+		add_state_core = 11
+				}
+
+	}
+	focus = {
+		id = KLG_normal_Kaliningrad
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 3
+		prerequisite = {
+			focus = KLG_time_to_war
+		}
+		mutually_exclusive = {
+			focus = KLG_baltic_federation
+			focus = KLG_great_Kaliningrad
+		}
+		available = {
+			has_war = no
+		}
+		x = 10
+		y = 7
+		    completion_reward = {
+			LUB = {
+		transfer_state = 63
+		transfer_state = 85
+		transfer_state = 807
+		transfer_state = 98
+		transfer_state = 5
+		transfer_state = 97
+		}
+		VSB = {
+		transfer_state = 188
+		transfer_state = 189
+		transfer_state = 190
+		transfer_state = 809
+		transfer_state = 815
+		transfer_state = 814
+		transfer_state = 784
+		transfer_state = 11
+		}
+		KLG = { puppet = LUB }
+		KLG = { puppet = VSB }
+				}
+
+	}
+	focus = {
+		id = KLG_great_Kaliningrad
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 3
+		prerequisite = {
+			focus = KLG_time_to_war
+		}
+		mutually_exclusive = {
+			focus = KLG_normal_Kaliningrad
+			focus = KLG_baltic_federation
+		}
+		available = {
+			has_war = no
+		}
+		x = 12
+		y = 7
+		    completion_reward = {
+			
+		LUB = {
+		transfer_state = 63
+		transfer_state = 807
+		transfer_state = 98
+		transfer_state = 97
+		}
+		VSB = {
+		transfer_state = 189
+		transfer_state = 190
+		transfer_state = 809
+		transfer_state = 815
+		transfer_state = 814
+		transfer_state = 784
+		transfer_state = 11
+		}
+		KLG = { puppet = LUB }
+		KLG = { puppet = VSB }	
+
+  		    transfer_state = 5
+			transfer_state = 85
+			transfer_state = 188
+			add_state_core = 5
+			add_state_core = 85
+			add_state_core = 188
+		
+				}
+
+	}
 }

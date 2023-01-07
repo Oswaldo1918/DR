@@ -1877,3 +1877,39 @@ country_event = {
 			
 		}	
 	}
+	#присоединение к ноду
+country_event = {
+	id = nod.42
+	title = nod.42.t
+	desc = nod.42.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = nod.42.a
+	ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10
+				is_in_faction_with = NOD
+			}
+			modifier = {
+				factor = 50
+				has_government = fascism
+			}
+			modifier = {
+				factor = 50
+				has_government = neutrality
+			}
+		}
+	NOD = {country_event = { id = nod.15 hours = 20 random_hours = 8 }}
+	}
+	option = {
+	name = don.1.b
+	ai_chance = {
+			base = 50	
+		}
+	NOD = {country_event = { id = nod.16 hours = 20 random_hours = 8 }}
+	}
+}
