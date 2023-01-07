@@ -2196,7 +2196,53 @@ SKT_war_UNT = {
                    type = annex_everything
             }
 		}	
-	}	
+	}
+	
+	SKT_war_WHS = { 
+	
+		cost = 30
+
+		available = {
+		 has_war = no 
+		 is_neighbor_of = WHS
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = WHS
+                   type = annex_everything
+            }
+		}	
+	}
+	
+	SKT_war_TUP = { 
+	
+		cost = 30
+
+		available = {
+		 has_war = no 
+		 is_neighbor_of = TUP
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+                   target = TUP
+                   type = annex_everything
+            }
+		}	
+	}
 }	
 
 SKT_poisk_borodi = {
