@@ -1,3 +1,54 @@
+SKT_peace_annex = { 
+ SKT_peace_annex_LAZ = { 
+ cost = 50
+
+		available = {
+			is_ai = no
+			has_government = vmestolev
+			has_war = no 
+		    is_neighbor_of = LAZ
+				LAZ = { 
+				    is_ai = yes
+					has_government = vmestolev
+					has_war = no
+				}
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 0
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			
+			LAZ = {
+   set_nationality = {
+   target_country = SKT
+   character = LAZ_mixan_teoretic
+    } 
+    set_nationality = {
+    target_country = SKT
+    character = LAZ_Plague_Doctor
+    } 
+  set_nationality = {
+   target_country = SKT
+   character = LAZ_Mazov
+   } 
+   set_nationality = {
+   target_country = SKT
+   character = LAZ_RAPER
+   } 
+   }
+			
+			annex_country = {
+			target = LAZ
+			transfer_troops = yes
+		}
+	
+}	
+  }
+ }
 SKT_ter_naz_donb = { 
  SKT_naz_done = {
        cost = 50

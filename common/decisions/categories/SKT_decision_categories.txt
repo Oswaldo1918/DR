@@ -143,6 +143,16 @@ SKT_ter_naz_dv_nod = {
 	}
 }
 
+SKT_peace_annex = {
+	icon = military_operation
+	allowed = {
+		original_tag = SKT	
+	}
+	visible = {
+	has_completed_focus = SKT_prodolzhit_expansii
+	}
+}
+
 SKT_ter_naz_bel_nod = {
 	icon = military_operation
 	allowed = {
