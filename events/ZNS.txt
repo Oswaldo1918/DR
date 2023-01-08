@@ -188,3 +188,67 @@ country_event = { #эксперимент_над_учениками
         add_ideas = ZNS_eksperimenti_nad_yspevaimostu	    
     }
 }
+
+country_event = { #Победа_фракции_Рудого
+	id = ZNS.10 
+	title = ZNS.10.t
+	desc = ZNS.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.10.a
+        add_popularity = {
+				ideology = vmestolev
+				popularity = -0.25
+			}
+		add_popularity = {
+				ideology = metacommy
+				popularity = -0.25
+		}
+        add_popularity = {
+				ideology = anarhostalinism
+				popularity = 0.25
+		}
+        set_country_flag = ZNS_Pobeda_SA    		
+    }
+}
+
+country_event = { #Победа_фракции_Новых_Красных
+	id = ZNS.11 
+	title = ZNS.11.t
+	desc = ZNS.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = ZNS
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	    name = ZNS.11.a
+        add_popularity = {
+				ideology = vmestolev
+				popularity = -0.25
+			}
+		add_popularity = {
+				ideology = metacommy
+				popularity = 0.25
+		}
+        add_popularity = {
+				ideology = anarhostalinism
+				popularity = -0.25
+		}
+		set_politics = {
+			ruling_party = metacommy
+			elections_allowed = no
+		}
+        set_country_flag = ZNS_Pobeda_NR     	    
+    }
+}

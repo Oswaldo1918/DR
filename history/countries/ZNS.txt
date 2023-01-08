@@ -42,11 +42,16 @@ recruit_character = ZNS_Sahnin
 
 activate_mission = antikrinzh_vosstanie_mission
 
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
+
 set_popularities = {
-	fascism = 15
-	neutrality = 20
+	fascism = 10
+	neutrality = 10
 	anarhostalinism = 25
-	metacommy = 10
+	metacommy = 25
 	democratic = 20
 	vmestolev = 10
 }
@@ -55,4 +60,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
