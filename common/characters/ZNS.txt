@@ -95,7 +95,12 @@ characters={
 				
             }
 			available = {
-				NOT = { has_country_leader = ZNS_Tereza }
+				NOT = {
+has_country_leader = {
+ruling_only = yes
+character = ZNS_Tereza
+}
+}
 			}
             traits = { marx_feminist }
 	    }
