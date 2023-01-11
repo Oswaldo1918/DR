@@ -1,0 +1,180 @@
+focus_tree = {
+	id = Mordor
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MRD
+		}
+	}
+	default = no
+	focus = {
+		id = MRD_morpehi_divisii_goblin
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10,00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = MRD_smert_saurona
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 3
+		y = 0
+
+	}
+	focus = {
+		id = MRD_krasnozvezdniye_nazguli
+		icon = GFX_goal_generic_air_fighter
+		cost = 10,00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = MRD_rashireniye_nornikelya
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = MRD_elizarov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_smert_saurona
+		}
+		mutually_exclusive = {
+			focus = MRD_rohanci_evrei_i_elfi
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = MRD_rohanci_evrei_i_elfi
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_smert_saurona
+		}
+		mutually_exclusive = {
+			focus = MRD_elizarov
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = MRD_rasprostranyat_istoriyu_tolkina
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_rohanci_evrei_i_elfi
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = MRD_tankovie_klinya
+		icon = GFX_goal_OBT
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_morpehi_divisii_goblin
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = MRD_kovrovie_bombometania
+		icon = GFX_goal_Linebacker
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_krasnozvezdniye_nazguli
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = MRD_grib_saurona
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_tankovie_klinya
+		}
+		prerequisite = {
+			focus = MRD_kovrovie_bombometania
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = MRD_ecologichnoye_proizvodstvo
+		icon = GFX_focus_generic_industry_1
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_rashireniye_nornikelya
+		}
+		mutually_exclusive = {
+			focus = MRD_massovoye_proizvodstvo
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = MRD_massovoye_proizvodstvo
+		icon = GFX_focus_generic_industry_3
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_rashireniye_nornikelya
+		}
+		mutually_exclusive = {
+			focus = MRD_ecologichnoye_proizvodstvo
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = MRD_oborudovaniye_iz_saranska
+		icon = GFX_goal_generic_production2
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_ecologichnoye_proizvodstvo
+			focus = MRD_massovoye_proizvodstvo
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = MRD_smasterit_supermegakoltso
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_oborudovaniye_iz_saranska
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = MRD_mi_bolshe_ne_orki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_rasprostranyat_istoriyu_tolkina
+		}
+		x = 6
+		y = 3
+
+	}
+}
