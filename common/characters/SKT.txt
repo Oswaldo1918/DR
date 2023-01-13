@@ -355,4 +355,58 @@ characters={
 			}
 		}
     }
+	
+	SKT_Snezhka = {
+		name = "Снежка Рябина"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_Snezhka"
+			}
+		}
+
+		advisor = {	
+	    	slot = air_chief
+			idea_token = SKT_Snezhka
+			allowed = {
+				original_tag = SKT
+			}
+			available = {		
+                has_government = vmestolev
+				has_completed_focus = SKT_left_boroda
+		    }
+			
+			traits = { air_chief_night_operations_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	SKT_Semetskiy = {
+		name = "Владислав Семецкий"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SKT_Semetskiy"
+			}
+		}
+
+		advisor = {	
+	    	slot = navy_chief
+	    	idea_token = SKT_Semetskiy
+			allowed = {
+				original_tag = SKT
+			}
+			available = {		
+                has_government = vmestolev
+				has_completed_focus = SKT_left_boroda
+		    }
+					
+			traits = { navy_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
 }

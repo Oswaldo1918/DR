@@ -453,26 +453,28 @@ ideas = {
 			}
 		    }
 			
-			SKT_SovOil = {
+			SKT_KB_SovOil = {
 			
-			allowed = {
-				original_tag = SKT
-			}
+			    allowed = {
+				    original_tag = SKT
+			    }
 			
-			available = {
-				has_completed_focus = SKT_SovOil
-			}
+			    available = {
+				    has_completed_focus = SKT_SovOil
+					has_government = vmestolev
+				    has_completed_focus = SKT_left_boroda
+			    }
 			
-			research_bonus = {
-				synth_resources = 0.2
-				industry = 0.05
-			}
+			    research_bonus = {
+				    synth_resources = 0.2
+				    industry = 0.05
+			    }
 			
-			traits = { refinery_concern }
+			    traits = { refinery_concern }
 			
-			ai_will_do = {
-				factor = 1
-			}
+			    ai_will_do = {
+				    factor = 2
+			    }
 		    }
 			
 			PRM_TrikolorTV = {
@@ -590,7 +592,7 @@ ideas = {
 		    }
 		}
 		
-			materiel_manufacturer = {
+	materiel_manufacturer = {
 		
 		designer = yes
 		
@@ -624,6 +626,29 @@ ideas = {
 			mot_rockets = {
 				build_cost_ic = -0.15 
 			}
+			}
+		}
+		
+		SKT_KB_Gamburga = {
+
+			
+			allowed = {
+				original_tag = SKT
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.25
+			}
+			
+			available = {		
+                has_government = vmestolev
+				has_completed_focus = SKT_left_boroda
+		    }
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
 			}
 		}
     }

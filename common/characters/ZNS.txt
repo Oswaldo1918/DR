@@ -47,6 +47,21 @@ characters={
 			logistics_skill = 3
 			legacy_id = 0
 		}
+		advisor = {	
+		   slot = army_chief
+		   idea_token = ZNS_Kon
+		    allowed = {
+				original_tag = ZNS
+		    }
+			
+	       available = {		   
+		   }
+		   traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+	    	}
+		}
 	}
 	
 	ZNS_Grey_shapka = {
@@ -67,6 +82,21 @@ characters={
 			logistics_skill = 2
 			legacy_id = 0  
 		}
+		advisor = {
+		    slot = high_command
+		
+			allowed = {
+			original_tag = ZNS
+			}
+			
+			idea_token = ZNS_Grey_shapka
+	        
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}
 
 	ZNS_Tereza = {
@@ -95,7 +125,12 @@ characters={
 				
             }
 			available = {
-				NOT = { has_country_leader = ZNS_Tereza }
+				NOT = {
+has_country_leader = {
+ruling_only = yes
+character = ZNS_Tereza
+}
+}
 			}
             traits = { marx_feminist }
 	    }
@@ -126,6 +161,24 @@ characters={
 				
             }
             traits = { ambitious_union_boss }
+	    }
+    }
+	
+	ZNS_Rustamov = {
+		name = "Эльмар Рустамов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_ZNS_Rustamov"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = ZNS_Rustamov
+			allowed = {
+                original_tag = ZNS
+				
+            }
+            traits = { peoples_commissar_for_posts_and_telegraphs }
 	    }
     }
 	
