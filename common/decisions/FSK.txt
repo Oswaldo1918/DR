@@ -1,0 +1,11 @@
+FSK_flags = {
+    Vibor_flaga = {
+	    cost = 1
+		fire_only_once = yes
+        remove_effect = {          
+			country_event = {
+				id = FSK.1
+			}
+		}
+	}	
+}	  
