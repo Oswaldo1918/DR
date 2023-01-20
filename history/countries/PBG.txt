@@ -15,7 +15,10 @@ recruit_character = PBG_Thomas_Shelby
 add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
+	CHE_criminal_volnica
 }
+
+add_timed_idea = { idea = BRS_posledstvie_brist_rezni days = 180 }
 
 set_popularities = {
 	neutrality = 100
@@ -25,4 +28,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
