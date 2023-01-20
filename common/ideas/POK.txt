@@ -392,7 +392,7 @@ ideas = {
 		POK_opit_nemetskih_osvoboditeley = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -404,9 +404,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			}
-			
-			equipment_bonus = {
 				army_armor_speed_factor = 0.05
 		        army_armor_attack_factor = 0.05
 		        army_armor_defence_factor = 0.05
@@ -415,7 +412,7 @@ ideas = {
 		POK_opit_nemetskih_osvoboditeley_1 = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -427,12 +424,12 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			}
-			
-			equipment_bonus = {
 			    army_armor_speed_factor = 0.1
 		        army_armor_attack_factor = 0.1
-		        army_armor_defence_factor = 0.1  
+		        army_armor_defence_factor = 0.1       
+			}
+			
+			equipment_bonus = {			  
 				armor = {
 					build_cost_ic = -0.15 instant = yes
 				}
@@ -441,7 +438,7 @@ ideas = {
 		POK_amerikanskiy_opit = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -453,9 +450,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			}
-			
-			equipment_bonus = {
 			    army_artillery_speed_factor = 0.05
 		        army_artillery_attack_factor = 0.05
 		        army_artillery_defence_factor = 0.05
@@ -464,7 +458,7 @@ ideas = {
 		POK_amerikanskiy_opit_1 = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -476,18 +470,18 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			}
-			
-			equipment_bonus = {
 			    army_artillery_speed_factor = 0.1
 		        army_artillery_attack_factor = 0.1
-		        army_artillery_defence_factor = 0.1   
+		        army_artillery_defence_factor = 0.1 
+			}
+			
+			equipment_bonus = {			       
 				artillery = {
 					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
-		full_contract_army = {
+		POK_full_contract_army = {
 			
 			allowed = {
 				always = no
@@ -501,8 +495,6 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-			}
 			modifier = {
 			    max_command_power = 30
 				conscription_factor = -0.15
@@ -510,7 +502,7 @@ ideas = {
 				army_org_factor = 0.03
 			}
 		}
-		full_contract_army_1 = {
+		POK_full_contract_army_1 = {
 			
 			allowed = {
 				always = no
@@ -524,8 +516,6 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-			}
 			modifier = {
 			    max_command_power = 30
 				conscription_factor = -0.15
@@ -588,7 +578,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -624,11 +614,11 @@ ideas = {
 		POK_pokazat_zlo_bolshevizma = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -659,19 +649,19 @@ ideas = {
 		    }
 			modifier = {
 				war_support_factor = 0.15
-				vmestolev_drift - -0.01
-				anarhostalinism_drift - -0.01
-				metacommy_drift - -0.01
+				vmestolev_drift = -0.01
+				anarhostalinism_drift = -0.01
+				metacommy_drift = -0.01
 			}
 		}
 		POK_kult_pokayaniya = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -702,21 +692,21 @@ ideas = {
 		    }
 			modifier = {
 				war_support_factor = 0.15
-				vmestolev_drift - -0.01
-				anarhostalinism_drift - -0.01
-				metacommy_drift - -0.01
-				stability_factor 0.05
+				vmestolev_drift = -0.01
+				anarhostalinism_drift = -0.01
+				metacommy_drift = -0.01
+				stability_factor = 0.05
 				resistance_decay = 0.05
 			}
 		}
 		POK_pay_and_repent = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -747,10 +737,10 @@ ideas = {
 		    }
 			modifier = {
 				war_support_factor = 0.15
-				vmestolev_drift - -0.01
-				anarhostalinism_drift - -0.01
-				metacommy_drift - -0.01
-				stability_factor 0.075
+				vmestolev_drift = -0.01
+				anarhostalinism_drift = -0.01
+				metacommy_drift = -0.01
+				stability_factor = 0.075
 				resistance_decay = 0.075
 				consumer_goods_factor = -0.05
 			}
@@ -758,11 +748,11 @@ ideas = {
 		POK_subsidii_war_industry = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -780,11 +770,11 @@ ideas = {
 		POK_not_help_buisness = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -801,11 +791,11 @@ ideas = {
 		POK_natsionalizat_rashodov = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -821,11 +811,11 @@ ideas = {
 		POK_regressive_nalog = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -842,11 +832,11 @@ ideas = {
 		POK_free_birja_truda = {
 			
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1

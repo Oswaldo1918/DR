@@ -2335,16 +2335,14 @@
 		y = 18
 			completion_reward = {
 					add_tech_bonus = {
-							name = bomber_bonus
-							bonus = 1.0
-							uses = 2
-							technology = strategic_bomber1
-							technology = strategic_bomber2
-							technology = strategic_bomber3
-							category = tactical_bomber
-						}
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			    }	
 					air_experience = 10
-				}
+			}
 
 	}
 	shared_focus = {
@@ -2362,12 +2360,12 @@
 		y = 18
 			completion_reward = {
 					add_tech_bonus = {
-							name = CAS_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = cas_bomber
-						}
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
 					air_experience = 10
 				}
 
@@ -2426,7 +2424,7 @@
 						}
 					swap_ideas = {
 							remove_idea = POK_amerikanskiy_opit
-							add_idea = POK_amerikanskiy_opit
+							add_idea = POK_amerikanskiy_opit_1
 						}
 					army_experience = 10
 				}
@@ -2591,10 +2589,6 @@
 					level = 2
 					instant_build = yes
 				}
-			}       
-			swap_ideas = {
-				remove_idea = POK_pokazat_zlo_bolshevizma
-				add_idea = POK_kult_pokayaniya
 			}
 		}       
 	}
