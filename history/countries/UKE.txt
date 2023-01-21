@@ -17,6 +17,8 @@ limited_conscription
 low_economic_mobilisation
 }
 
+add_timed_idea = { idea = BRS_posledstvie_brist_rezni days = 180 }
+
 set_popularities = {
 	democratic = 60
 	neutrality = 40

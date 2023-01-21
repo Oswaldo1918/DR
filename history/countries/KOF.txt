@@ -17,6 +17,8 @@ limited_conscription
 partial_economic_mobilisation
 }
 
+add_timed_idea = { idea = BRS_posledstvie_brist_rezni days = 180 }
+
 set_popularities = {
 	fascism = 80
     democratic = 20 	
@@ -26,4 +28,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200

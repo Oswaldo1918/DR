@@ -5,13 +5,13 @@ country_event = { #выбор флага Шотландии
 	id = FSK.1 
 	title = FSK.1.t
 	desc = FSK.1.d
-	picture = report_event_dkr_flags_FSK
+	picture = GFX_report_event_dkr_flags_FSK
 	
 	trigger = {
 		tag = FSK
 	}
 	
-	is_triggered_only = yes	
+	is_triggered_only = yes
 	
 	option = {
 	name = FSK.1.a
@@ -24,22 +24,49 @@ country_event = { #выбор флага Шотландии
 	}
 	
 	option = {
-	name = FSK.1.с
+	name = FSK.1.v
 	    set_cosmetic_tag = FSK_2      
 	}
 	
 	option = {
-	name = FSK.1.d
+	name = FSK.1.z
+	    country_event = {
+				id = FSK.2
+			}       
+	}
+}
+
+country_event = { #выбор флага Шотландии
+	id = FSK.2 
+	title = FSK.2.t
+	desc = FSK.2.d
+	picture = GFX_report_event_dkr_flags_FSK
+	
+	trigger = {
+		tag = FSK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = FSK.2.a
 	    set_cosmetic_tag = FSK_3      
 	}
 	
 	option = {
-	name = FSK.1.e
+	name = FSK.2.b
 	    set_cosmetic_tag = FSK_4      
 	}
 	
 	option = {
-	name = FSK.1.f
+	name = FSK.2.c
 	    set_cosmetic_tag = FSK_5      
+	}
+	
+	option = {
+	name = FSK.2.z
+	        country_event = {
+				id = FSK.1
+			} 
 	}
 }
