@@ -1,19 +1,19 @@
 ideas = {
-       country = {
+        country = {
 	        FSK_KSHR = {
-		    picture = idea_MEX_church_power_5
+		        picture = MEX_church_power_5
 			
-			allowed = {
-				always = no
-			}
+			    allowed = {
+				    always = no
+			    }
 
-			allowed_civil_war = {
-				always = yes
-			}
+			    allowed_civil_war = {
+				    always = yes
+			    }
 
-			removal_cost = -1
+			    removal_cost = -1
 			
-			modifier = {
+			    modifier = {
 				army_org_factor = -0.05
 				army_core_defence_factor = 0.1
                 army_morale_factor = 0.1
@@ -21,6 +21,6 @@ ideas = {
 				experience_loss_factor = 0.05    				
 			    }
 		    }
-	   }
+	    }
 		
 }
