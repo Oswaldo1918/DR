@@ -971,6 +971,7 @@ focus_tree = {
 		x = 8
 		y = 11
 		completion_reward = {
+		hidden_effect = {
 			if = {
 				limit = {
 					has_idea = DON_idea_five_year_plan_2
@@ -988,6 +989,8 @@ focus_tree = {
 				remove_ideas = DON_idea_vse_dlia_fronta
 				add_ideas = DON_novorosskoye_chudo_2
 			}
+		}
+		custom_effect_tooltip = DON_novorossroye_chudo_tt
 			random_owned_controlled_state = {		
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1178,7 +1181,7 @@ focus_tree = {
 		x = 15
 		y = 7
 		completion_reward = {
-			remove_ideas = DON_neprof_army
+			remove_ideas = DON_idea_neprof_army
 			add_to_variable = { DON_povishenie_gotovnosti = 1 }
 			custom_effect_tooltip = DON_povishenie_gotovnosti_tt		
 		}
@@ -1219,7 +1222,7 @@ focus_tree = {
 			always = no
 		}		
 		completion_reward = {
-		    create_faction = PLAN_B
+		    create_faction = PLAN_B_alliance
 			add_to_variable = { DON_povishenie_gotovnosti = 1 }
 			custom_effect_tooltip = DON_povishenie_gotovnosti_tt
 		}
@@ -1321,16 +1324,16 @@ focus_tree = {
 				name = "Дивизия ополчения" 	
 				division_names_group = DON_ARM_011
 				regiments = {
-					penal_battalion = { x = 0 y = 0 }
-					penal_battalion = { x = 0 y = 1 }
-					penal_battalion = { x = 0 y = 2 }
-					penal_battalion = { x = 0 y = 3 }
-					penal_battalion = { x = 0 y = 4 }
-					penal_battalion = { x = 1 y = 0 }
-					penal_battalion = { x = 1 y = 1 }
-					penal_battalion = { x = 1 y = 2 }
-					penal_battalion = { x = 1 y = 3 }
-					penal_battalion = { x = 1 y = 4 }
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+					militia = { x = 0 y = 4 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
+					militia = { x = 1 y = 4 }
 				}
 			}
 			227 = {

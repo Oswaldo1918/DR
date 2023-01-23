@@ -74,7 +74,7 @@ country_event = { #Донбасс_просит_помощь_Лазарета
 			cost_factor = 0
 		}
 		add_timed_idea = {
-		    idea = DON_poddershka_donbassa
+		    idea = DON_usilennaya_poddershka_donbassa
 		    days = 40
 		}
 		add_political_power = 50	
@@ -148,7 +148,7 @@ country_event = { #Донбасс_просит_расширить_помощь_�
 	is_triggered_only = yes
 	
 	option = {
-		name = donbass5.a #Лазарет_расширяет_помощь
+		name = donbass.5.a #Лазарет_расширяет_помощь
 		DON = {country_event = donbass.6 }
 		create_production_license = {
 		    target = DON
@@ -166,7 +166,7 @@ country_event = { #Донбасс_просит_расширить_помощь_�
 		add_political_power = 50
 	}
 	option = {
-		name = donbass.2.b #Лазарет_отказывается_расширять_помощь
+		name = donbass.5.b #Лазарет_отказывается_расширять_помощь
 		DON = {country_event = donbass.7 }
 		add_political_power = -50
 	}
@@ -251,16 +251,16 @@ country_event = { #Низкий_уровень_готовности_к_войн�
 			name = "Дивизия ополчения" 	
 			division_names_group = DON_ARM_011
 			regiments = {
-				penal_battalion = { x = 0 y = 0 }
-				penal_battalion = { x = 0 y = 1 }
-				penal_battalion = { x = 0 y = 2 }
-				penal_battalion = { x = 0 y = 3 }
-				penal_battalion = { x = 0 y = 4 }
-				penal_battalion = { x = 1 y = 0 }
-				penal_battalion = { x = 1 y = 1 }
-				penal_battalion = { x = 1 y = 2 }
-				penal_battalion = { x = 1 y = 3 }
-				penal_battalion = { x = 1 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
 			}
 		}
 		227 = {
@@ -290,16 +290,16 @@ country_event = { #Средний_уровень_готовности_к_вой�
 			name = "Дивизия ополчения" 	
 			division_names_group = DON_ARM_011
 			regiments = {
-				penal_battalion = { x = 0 y = 0 }
-				penal_battalion = { x = 0 y = 1 }
-				penal_battalion = { x = 0 y = 2 }
-				penal_battalion = { x = 0 y = 3 }
-				penal_battalion = { x = 0 y = 4 }
-				penal_battalion = { x = 1 y = 0 }
-				penal_battalion = { x = 1 y = 1 }
-				penal_battalion = { x = 1 y = 2 }
-				penal_battalion = { x = 1 y = 3 }
-				penal_battalion = { x = 1 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
 			}
 		}
 		227 = {
@@ -341,16 +341,16 @@ country_event = { #Высокий_уровень_готовности_к_вой�
 			name = "Дивизия ополчения" 	
 			division_names_group = DON_ARM_011
 			regiments = {
-				penal_battalion = { x = 0 y = 0 }
-				penal_battalion = { x = 0 y = 1 }
-				penal_battalion = { x = 0 y = 2 }
-				penal_battalion = { x = 0 y = 3 }
-				penal_battalion = { x = 0 y = 4 }
-				penal_battalion = { x = 1 y = 0 }
-				penal_battalion = { x = 1 y = 1 }
-				penal_battalion = { x = 1 y = 2 }
-				penal_battalion = { x = 1 y = 3 }
-				penal_battalion = { x = 1 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
 			}
 		}
 		227 = {
@@ -405,16 +405,16 @@ country_event = { #Максимальный_уровень_готовности_
 			name = "Дивизия ополчения" 	
 			division_names_group = DON_ARM_011
 			regiments = {
-				penal_battalion = { x = 0 y = 0 }
-				penal_battalion = { x = 0 y = 1 }
-				penal_battalion = { x = 0 y = 2 }
-				penal_battalion = { x = 0 y = 3 }
-				penal_battalion = { x = 0 y = 4 }
-				penal_battalion = { x = 1 y = 0 }
-				penal_battalion = { x = 1 y = 1 }
-				penal_battalion = { x = 1 y = 2 }
-				penal_battalion = { x = 1 y = 3 }
-				penal_battalion = { x = 1 y = 4 }
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
 			}
 		}
 			create_unit = {
