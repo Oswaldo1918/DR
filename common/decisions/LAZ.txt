@@ -15,7 +15,7 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			ARK = {
-			country_event = ARK.1
+			country_event = lazaret.29
 		    }
 			set_country_flag = LAZ_AKR_int
 	    }
@@ -63,7 +63,7 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			WHS = {
-			country_event = WHS.1
+			country_event = lazaret.27
 		    }
 			set_country_flag = LAZ_WHS_int
 	    }
@@ -111,7 +111,7 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			UNT = {
-			country_event = UNT.1
+			country_event = lazaret.26
 		    }
 			set_country_flag = LAZ_UNT_int
 	    }
@@ -155,7 +155,7 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			MAT = {
-			country_event = MAT.1
+			country_event = lazaret.25
 		    }
 			set_country_flag = LAZ_MAT_int
 	    }
@@ -200,7 +200,7 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			DON = {
-			country_event = don.2
+			country_event = lazaret.28
 		    }
 			set_country_flag = LAZ_DON_int
 	    }
@@ -264,7 +264,7 @@ visible = {
 }
 LAZ_integration_kliki = {
 
- LAZ_annex_ChAT = {
+ LAZ_annex_ChAT = { #Интеграция_ЧАТа
 	    
 		cost = 75
 		
@@ -315,13 +315,13 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}
         ARK = { leave_faction = Chumnoy_pakt }
 				ARK = {
-			country_event = ARK.1
+			country_event = lazaret.29
 		    }
 			set_country_flag = LAZ_ARK_int
 		}
 	}
 	
-	LAZ_cor_ARK = { #Интеграция_Архангельска
+	LAZ_cor_ARK = { #Национализация_Архангельска
 	
 		cost = 30
 
@@ -348,7 +348,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}	
 	}
 	
-	LAZ_int_WHS = { #_Вейшнории
+	LAZ_int_WHS = { #Интеграция_Вейшнории
 	
 		cost = 150
 		
@@ -369,13 +369,13 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}
         WHS = { leave_faction = Chumnoy_pakt }
 			WHS = {
-			country_event = WHS.1
+			country_event = lazaret.27
 		    }
 			set_country_flag = LAZ_WHS_int
 		}
 	}
 	
-	LAZ_cor_WHS = { #Интеграция_Вейшнории
+	LAZ_cor_WHS = { #Национализация_Вейшнории
 	
 		cost = 50
 
@@ -402,7 +402,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}	
 	}
 	
-	LAZ_int_UNT = { #_Воронежа
+	LAZ_int_UNT = { #Интеграция_Воронежа
 	
 		cost = 25
 		
@@ -419,13 +419,13 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}
         UNT = { leave_faction = Chumnoy_pakt }
 			UNT = {
-			country_event = UNT.1
+			country_event = lazaret.26
 		    }
 			set_country_flag = LAZ_UNT_int
 		}
 	}
 	
-	LAZ_cor_UNT = { #Интеграция_Воронежа
+	LAZ_cor_UNT = { #Национализация_Воронежа
 	
 		cost = 30
 
@@ -466,13 +466,13 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 		}
         MAT = { leave_faction = Chumnoy_pakt }
 				MAT = {
-			country_event = MAT.1
+			country_event = lazaret.25
 		    }
 			set_country_flag = LAZ_MAT_int
 		}
 	}	
 
-	LAZ_cor_MAT = { #Интеграция_Орла
+	LAZ_cor_MAT = { #Национализация_Орла
 	
 		cost = 40
 
@@ -496,31 +496,37 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 			add_state_core = 240
 		}	
 	}
-	LAZ_int_DON = { #Оккупация_Донбасса
+	LAZ_int_DON = { #Интеграция_Донбасса
 	
 		cost = 5
 		
-		available = {DON = { is_puppet_of = LAZ }
+		available = {
+			DON = {
+				is_puppet_of = LAZ 
+				has_completed_focus = DON_dolgaya_doroga_domoy 
+				has_government = metacommy
+			}
 		}
 	
 		fire_only_once = yes
 		days_remove = 14
-	ai_will_do = {
-        factor = 100
+
+		ai_will_do = {
+			factor = 100
 		}
-		 remove_effect = {
-		 LAZ = {
-			end_puppet = DON
-		}
-        DON = { leave_faction = Chumnoy_pakt }
+		remove_effect = {
+			LAZ = {
+				end_puppet = DON
+			}
+			DON = { leave_faction = Chumnoy_pakt }
 			DON = {
-			country_event = DON.1
+				country_event = lazaret.28
 		    }
 			set_country_flag = LAZ_DON_int
 		}
 	}	
 	
-	LAZ_cor_DON = { #Интеграция_Донбасса
+	LAZ_cor_DON = { #Национализация_Донбасса
 	
 		cost = 30
 
