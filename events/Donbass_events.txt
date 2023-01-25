@@ -1,0 +1,873 @@
+add_namespace = donbass
+
+country_event = { #По_традиции_первый_ивент_это_развернутый_лор
+
+	id = donbass.0 
+        title = donbass.0.t
+        desc = donbass.0.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.0.a
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	option = {
+		name = donbass.0.b
+		LAZ = { remove_mission = LAZ_razval_mission } #Лазарет_не_разваливается
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_event = { #Промышленное_планирование
+
+	id = donbass.1
+        title = donbass.1.t
+        desc = donbass.1.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.1.a #Переидти_к_аналогу_военного_коммунизма
+		swap_ideas = {
+		    remove_idea = DON_idea_sredstva_dlya_industrializatsii
+		    add_idea = DON_idea_war_communism
+		}
+	}
+	option = {
+		name = donbass.1.b #Внедрить_практику_долгосрочных_планов
+		swap_ideas = {
+		    remove_idea = DON_idea_sredstva_dlya_industrializatsii
+		    add_idea = DON_idea_five_year_plan
+		}
+	}
+}
+country_event = { #Донбасс_просит_помощь_Лазарета
+
+	id = donbass.2
+        title = donbass.2.t
+        desc = donbass.2.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.2.a #Неограниченная_поддержка
+		DON = {country_event = donbass.3 }
+		send_equipment = {
+		    equipment = infantry_equipment
+		    amount = 9000
+    		target = DON
+		}
+		create_production_license = {
+		    target = DON
+			equipment = {
+				type = infantry_equipment
+				version = 1
+				new_prioritised = no
+			}
+			cost_factor = 0
+		}
+		add_timed_idea = {
+		    idea = DON_usilennaya_poddershka_donbassa
+		    days = 40
+		}
+		add_political_power = 50	
+	}
+	option = {
+		name = donbass.2.b #Ограниченная_поддержка
+		DON = {country_event = donbass.4 }
+		send_equipment = {
+		    equipment = infantry_equipment
+		    amount = 9000
+    		target = DON
+		}
+		create_production_license = {
+		    target = DON
+			equipment = {
+				type = infantry_equipment
+				version = 1
+				new_prioritised = no
+			}
+			cost_factor = 0
+		}
+		add_political_power = 25
+	}
+}
+country_event = { #От_Лазарета_приходит_полноценная_помощь
+
+	id = donbass.3
+        title = donbass.3.t
+        desc = donbass.3.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.3.a
+		custom_effect_tooltip = DON_effect_polnocennaya_pomosh_tt
+		custom_effect_tooltip = DON_povishenie_gotovnosti_tt
+		add_political_power = 50
+		add_autonomy_score = {
+		    value = -350
+ 		    localization = AVT_DON_pomosh_lazareta
+		}
+	}
+}
+country_event = { #От_Лазарета_приходит_ограниченная_помощь
+
+	id = donbass.4
+        title = donbass.4.t
+        desc = donbass.4.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.4.a
+		custom_effect_tooltip = DON_effect_ogranichennaya_pomosh_tt
+		add_political_power = 25
+		add_autonomy_score = {
+		    value = -100
+ 		    localization = AVT_DON_pomosh_lazareta
+		}
+	}
+}
+country_event = { #Донбасс_просит_расширить_помощь_Лазарета
+
+	id = donbass.5
+        title = donbass.5.t
+        desc = donbass.5.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.5.a #Лазарет_расширяет_помощь
+		DON = {country_event = donbass.6 }
+		create_production_license = {
+		    target = DON
+			equipment = {
+				type = infantry_equipment
+				version = 1
+				new_prioritised = no
+			}
+			cost_factor = 0
+		}
+		add_timed_idea = {
+		    idea = DON_usilennaya_poddershka_donbassa
+		    days = 70
+		}
+		add_political_power = 50
+	}
+	option = {
+		name = donbass.5.b #Лазарет_отказывается_расширять_помощь
+		DON = {country_event = donbass.7 }
+		add_political_power = -50
+	}
+}
+country_event = { #Лазарет_расширяет_помощь
+
+	id = donbass.6
+        title = donbass.6.t
+        desc = donbass.6.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.6.a
+		custom_effect_tooltip = LAZ_effect_usilennaya_pomosh_tt
+		custom_effect_tooltip = DON_povishenie_gotovnosti_tt
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes	
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_political_power = -25
+		add_autonomy_score = {
+		    value = -500
+ 		    localization = AVT_DON_pomosh_lazareta
+		}
+	}
+}
+country_event = { #Лазарет_отказывается_расширять_помощь
+
+	id = donbass.7
+        title = donbass.7.t
+        desc = donbass.7.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.7.a
+		custom_effect_tooltip = LAZ_effect_ogranichennaya_pomosh_tt
+		add_political_power = -50
+	}
+}
+country_event = { #Низкий_уровень_готовности_к_войне
+
+	id = donbass.8
+        title = donbass.8.t
+        desc = donbass.8.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.8.a
+		division_template = {
+			name = "Дивизия ополчения" 	
+			division_names_group = DON_ARM_011
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
+			}
+		}
+		227 = {
+			create_unit = {
+				division = "name = \"1-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"2-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+		}
+	}
+}
+country_event = { #Средний_уровень_готовности_к_войне
+
+	id = donbass.9
+        title = donbass.9.t
+        desc = donbass.9.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.9.a
+		division_template = { 
+			name = "Дивизия ополчения" 	
+			division_names_group = DON_ARM_011
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
+			}
+		}
+		227 = {
+			create_unit = {
+				division = "name = \"1-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"2-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"3-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"4-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"5-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+		}
+	}
+}
+country_event = { #Высокий_уровень_готовности_к_войне
+
+	id = donbass.10
+        title = donbass.10.t
+        desc = donbass.10.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.10.a
+		division_template = { 
+			name = "Дивизия ополчения" 	
+			division_names_group = DON_ARM_011
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
+			}
+		}
+		227 = {
+			create_unit = {
+				division = "name = \"1-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"2-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"3-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"4-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"5-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"6-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"7-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"8-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+		}
+	}
+}
+country_event = { #Максимальный_уровень_готовности_к_войне_Новая_Русская_весна
+
+	id = donbass.11
+        title = donbass.11.t
+        desc = donbass.11.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.11.a
+		227 = {
+		division_template = { 
+			name = "Дивизия ополчения" 	
+			division_names_group = DON_ARM_011
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 0 y = 4 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+				militia = { x = 1 y = 4 }
+			}
+		}
+			create_unit = {
+				division = "name = \"1-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"2-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"3-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"4-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"5-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"6-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"7-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"8-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"9-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"10-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"11-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+			create_unit = {
+				division = "name = \"12-я дивизия народного ополчения\" division_template = \"Дивизия ополчения\" start_experience_factor = 0.25"  
+				owner = DON
+			}
+		}
+	}
+}
+country_event = { #Описание_Плана_А
+
+	id = donbass.12
+        title = donbass.12.t
+        desc = donbass.12.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.12.a
+		LAZ = {country_event = donbass.13 }
+	}
+}
+country_event = { #Предупреждение_для_Дока
+
+	id = donbass.13
+        title = donbass.13.t
+        desc = donbass.13.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.13.a
+	}
+}
+country_event = { #План_Б
+
+	id = donbass.14
+        title = donbass.14.t
+        desc = donbass.14.d
+	picture = GFX_report_event_ast_parliament_house
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = DON
+		is_in_faction = no
+		is_subject = no
+	    LAZ = {
+			has_country_flag = LAZ_bilo_vosstaniye
+			has_war_with = OSV
+		}
+	}
+
+	option = {
+		name = donbass.14.a
+		remove_ideas = DON_idea_Yg_bastion
+		complete_national_focus = DON_plan_B
+		activate_mission = DON_UKR_declare_war
+		UKR = { country_event = donbass.30 }
+	}
+}
+country_event = { #Казнь_Порошенко
+
+	id = donbass.15
+        title = donbass.15.t
+        desc = donbass.15.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.15.a
+	}
+}
+country_event = { #Пригласить_в_альянс_Унца
+	id = donbass.16
+        title = donbass.16.t
+        desc = donbass.16.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.16.a
+		DON = {country_event = donbass.17}
+	}
+	option = {
+		name = donbass.16.b
+		DON = {country_event = donbass.18}
+	}
+}
+country_event = { #Согласие_Унца
+	id = donbass.17
+        title = donbass.17.t
+        desc = donbass.17.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.17.a
+		DON = { add_to_faction = UNT }
+	}
+}
+country_event = { #Отказ_Унца
+	id = donbass.18
+        title = donbass.18.t
+        desc = donbass.18.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.18.a
+	}
+}
+country_event = { #Пригласить_в_альянс_Орлова
+	id = donbass.19
+        title = donbass.19.t
+        desc = donbass.19.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.19.a
+		DON = {country_event = donbass.20}
+		ai_will_do = { factor = 100 }
+	}
+	option = {
+		name = donbass.19.b
+		DON = {country_event = donbass.21}
+	}
+}
+country_event = { #Согласие_Орлова
+	id = donbass.20
+        title = donbass.20.t
+        desc = donbass.20.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.20.a
+		DON = { add_to_faction = MAT }
+		ai_will_do = { factor = 100 }
+	}
+}
+country_event = { #Отказ_Орлова
+	id = donbass.21
+        title = donbass.21.t
+        desc = donbass.21.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.21.a
+	}
+}
+country_event = { #Пригласить_в_альянс_Людвига_Яна
+	id = donbass.22
+        title = donbass.22.t
+        desc = donbass.22.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.22.a
+		DON = {country_event = donbass.23}
+	}
+	option = {
+		name = donbass.22.b
+		DON = {country_event = donbass.24}
+	}
+}
+country_event = { #Согласие_Людвига_Яна
+	id = donbass.23
+        title = donbass.23.t
+        desc = donbass.23.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.23.a
+		DON = { add_to_faction = ARK }
+	}
+}
+country_event = { #Отказ_Людвига_Яна
+	id = donbass.24
+        title = donbass.24.t
+        desc = donbass.24.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.24.a
+	}
+}
+country_event = { #Пригласить_в_альянс_Штазиста
+	id = donbass.25
+        title = donbass.25.t
+        desc = donbass.25.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.25.a
+		DON = {country_event = donbass.26}
+	}
+	option = {
+		name = donbass.25.b
+		DON = {country_event = donbass.27}
+	}
+}
+country_event = { #Согласие_Штазиста
+	id = donbass.26
+        title = donbass.26.t
+        desc = donbass.26.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.26.a
+		DON = { add_to_faction = CHT }
+	}
+}
+country_event = { #Отказ_Штазиста
+	id = donbass.27
+        title = donbass.27.t
+        desc = donbass.27.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.27.a
+	}
+}
+country_event = { #Пригласить_в_альянс_План_Б
+	id = donbass.28
+        title = donbass.28.t
+        desc = donbass.28.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.28.a
+		DON = {country_event = donbass.29}
+	}
+}
+country_event = { #Согласие_Плана_Б
+	id = donbass.29
+        title = donbass.29.t
+        desc = donbass.29.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.29.a
+		DON = { add_to_faction = UKR }
+	}
+}
+country_event = { ###Ивент_хохлов_(их_забыли_спросить)_о_развале_Чумного_Пакта###
+	id = donbass.30
+        title = donbass.30.t
+        desc = donbass.30.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.30.a
+	}
+}
+country_event = { #Перехват_инициативы
+	id = donbass.31
+        title = donbass.31.t
+        desc = donbass.31.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.31.a
+		add_timed_idea = {
+		    idea = DON_idea_initsiativa
+    		days = 50
+		}
+	}
+}
+
+country_event = { #Пограничный_конфликт_за_Закарпатье-победа_Донбасса
+
+	id = donbass.32
+        title = donbass.32.t
+        desc = donbass.32.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.32.a
+		trigger = {
+			original_tag = DON
+		}
+		transfer_state = 73
+	}
+	option = {
+		name = donbass.32.b
+		trigger = {
+			original_tag = HUN
+		}
+		army_experience = 50
+	}
+}
+
+country_event = { #Пограничный_конфликт_за_Закарпатье-победа_Венгрии
+
+	id = donbass.33
+        title = donbass.33.t
+        desc = donbass.33.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.33.a
+		trigger = {
+			original_tag = DON
+		}
+		army_experience = 50
+	}
+	option = {
+		name = donbass.33.b
+		trigger = {
+			original_tag = HUN
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = zakarpatye_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = { #Пограничный_конфликт_за_Закарпатье-статус_кво
+
+	id = donbass.34
+        title = donbass.34.t
+        desc = donbass.34.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.34.a
+		trigger = {
+			original_tag = DON
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = zakarpatye_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	option = {
+		name = donbass.34.b
+		trigger = {
+			original_tag = HUN
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = zakarpatye_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+#######################################################################################################################################################################
+#######################################################################################################################################################################
+#######################################################################################################################################################################
+
+country_event = { #Тестовый_Ивент
+
+	id = donbass.100
+        title = donbass.100.t
+        desc = donbass.100.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = donbass.100.a
+		add_to_variable = { DON_povishenie_gotovnosti = 3 }
+	}
+}

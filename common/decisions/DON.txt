@@ -2,7 +2,7 @@ DON_create_alliance_plan_b = {
 
 	DON_create_alliance_with_UNT = { #Пригласить_в_альянс_Унца
 	
-		cost = 25
+		cost = 10
 		
 		available = {
 			has_completed_focus = DON_plan_B
@@ -14,14 +14,14 @@ DON_create_alliance_plan_b = {
 		}
 		remove_effect = {
 			UNT = {
-				country_event = donbass.2
+				country_event = donbass.16
 		    }
 	    }
 	}
 	
 	DON_create_alliance_with_MAT = { #Пригласить_в_альянс_Орлова
 	
-		cost = 50
+		cost = 10
 		
 		available = {
 			has_completed_focus = DON_plan_B
@@ -33,14 +33,14 @@ DON_create_alliance_plan_b = {
 		}
 		remove_effect = {
 			MAT = {
-				country_event = donbass.5
+				country_event = donbass.19
 		    }
 	    }
 	}
 	
 	DON_create_alliance_with_ARK = { #Пригласить_в_альянс_Людвига_Яна
 	
-		cost = 50
+		cost = 10
 		
 		available = {
 			has_completed_focus = DON_plan_B
@@ -52,7 +52,7 @@ DON_create_alliance_plan_b = {
 		}
 		remove_effect = {
 			ARK = {
-				country_event = donbass.8
+				country_event = donbass.22
 		    }
 	    }
 	}
@@ -76,8 +76,382 @@ DON_create_alliance_plan_b = {
 		}
 		remove_effect = {
 			CHT = {
-				country_event = donbass.11
+				country_event = donbass.25
 		    }
+	    }
+	}
+	DON_create_alliance_with_UKR = { #Пригласить_в_альянс_План_Б
+	
+		cost = 25
+		
+		available = {
+			has_completed_focus = DON_plan_B
+			has_war = no 
+			UKR = {
+				has_war = no 
+				has_government = vmestolev
+				is_in_faction = no
+			}
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			UKR = {
+				country_event = donbass.28
+		    }
+	    }
+	}
+}
+
+#########БОЛЬШАЯ############
+########УКРАИНСКАЯ##########
+##########ВОЙНА#############
+
+DON_Great_Ukrainian_War = {
+
+	DON_UKR_declare_war = {
+
+		icon = border_war
+		
+		activation = {
+			has_completed_focus = DON_plan_B
+		}
+
+		available = {
+			has_completed_focus = DON_ukrainskaya_voyna
+		}
+
+		days_mission_timeout = 35
+		is_good = yes
+		fire_only_once = yes
+
+#		cancel_trigger = {
+#		}
+
+		complete_effect = {
+			country_event = donbass.31
+		}
+
+		timeout_effect = {
+			complete_national_focus = DON_ukrainskaya_voyna
+			UKR = { 
+				declare_war_on = {
+					target = DON
+					type = annex_everything
+				}
+				add_state_claim = 227 #Сталино
+				add_state_claim = 228 #Ворошиловград
+			}
+		}
+	}
+	DON_nachat_otzhym = { #Начать_отжим
+	
+		available = {
+			has_completed_focus = DON_ukrainskaya_voyna		
+			has_war = yes 
+		}
+		visible = {
+			has_completed_focus = DON_ukrainskaya_voyna	
+			has_war = yes
+			NOT = {
+				has_idea = DON_idea_otzhym
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			add_ideas = DON_idea_otzhym
+	    }
+	}
+	DON_precratit_otzhym = { #Прекратить_отжим
+		
+		available = {
+			has_idea = DON_idea_otzhym
+		}
+		visible = {
+			has_idea = DON_idea_otzhym
+		}
+		cost = 0
+	    ai_will_do = {
+            factor = 0
+		}
+		remove_effect = {
+			remove_ideas = DON_idea_otzhym
+	    }
+	}
+	DON_russkiye_vpered = { #Русские_вперед
+	
+		available = {
+			NOT = {
+				OR = {
+					has_idea = DON_idea_russkiye_vpered
+					has_idea = DON_idea_russkiye_nazad
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = DON_ukrainskaya_voyna		
+			has_war = yes 
+		}
+		cost = 40
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DON_idea_russkiye_vpered
+				days = 50
+			}
+	    }
+	}
+	DON_russkiye_nazad = { #Русские_назад
+		
+		available = {
+			NOT = {
+				OR = {
+					has_idea = DON_idea_russkiye_vpered
+					has_idea = DON_idea_russkiye_nazad
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = DON_ukrainskaya_voyna		
+			has_war = yes 
+		}
+		cost = 40
+	    ai_will_do = {
+            factor = 1
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DON_idea_russkiye_nazad
+				days = 50
+			}
+	    }
+	}
+	DON_reforma_armii = { #Реформа_армии
+		
+		available = {
+			has_idea = DON_idea_neprof_army
+		}
+		visible = {
+			NOT = {
+				has_completed_focus = DON_usilit_armiu 
+			}
+			has_idea = DON_idea_neprof_army
+		}
+        custom_cost_trigger = {
+            has_army_experience > 50
+        }
+		cost = 15
+	    ai_will_do = {
+            factor = 1
+		}
+		remove_effect = {
+			army_experience = -50
+			remove_ideas = DON_idea_neprof_army
+	    }
+	}
+
+###################НАЦИ##########################
+###################АНАЛ##########################
+##################ИЗАЦИЯ#########################
+
+	DON_integration_CHE = { #Национализация_CHE
+	
+		cost = 20
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			owns_state = 196
+			owns_state = 197
+			owns_state = 192
+			owns_state = 834
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_state_core = 196
+			add_state_core = 197
+			add_state_core = 192
+			add_state_core = 834
+	    }
+	}
+	
+	DON_integration_CRI = { #Национализация_CRI
+	
+		cost = 20
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			owns_state = 137
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_state_core = 137
+	    }
+	}
+	
+	DON_integration_KUR = { #Национализация_KUR
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			owns_state = 203
+			owns_state = 259
+			owns_state = 225
+			owns_state = 193
+			owns_state = 202
+			owns_state = 201
+			owns_state = 198
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_state_core = 203
+			add_state_core = 259
+			add_state_core = 225
+			add_state_core = 193
+			add_state_core = 202
+			add_state_core = 201
+			add_state_core = 198
+	    }
+	}
+	
+	DON_integration_ZHE = { #Национализация_ZHE
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			owns_state = 199
+			owns_state = 91
+			owns_state = 89
+			owns_state = 80
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_state_core = 199
+			add_state_core = 91
+			add_state_core = 89
+			add_state_core = 80
+	    }
+	}
+	
+	DON_integration_SIN = { #Национализация_SIN
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			owns_state = 93
+		}
+		fire_only_once = yes
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_state_core = 93
+	    }
+	}
+	
+	DON_pogrankonflict_HUN = { #Пограничный конфликт за возвращение Закарпатской Руси
+	
+		icon = border_war
+	
+		cost = 50
+		
+		available = {
+			has_completed_focus = DON_defashizatsiya
+			has_completed_focus = DON_zapadnaya_ukraina
+			is_neighbor_of = HUN
+			89 = {
+				OR = {
+					is_fully_controlled_by = ROOT
+					CONTROLLER = {
+						is_subject_of = ROOT
+					}
+					CONTROLLER = {
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			divisions_in_border_state = {
+				state = 89
+				border_state = 73
+				size > 0
+			}
+		}
+		
+		allowed = {
+			original_tag = DON
+		}
+		
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 89
+				state = 73
+			} 
+		}		
+		
+		fire_only_once = yes
+		
+	    ai_will_do = {
+            factor = 10
+		}
+		remove_effect = {
+			add_state_core = 73
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 89
+					num_provinces = 4
+			        on_win = donbass.32
+       				on_lose = donbass.33
+					on_cancel = donbass.34
+				}
+				defender = {
+					state = 73
+					num_provinces = 4
+			        on_win = donbass.32
+       				on_lose = donbass.33
+					on_cancel = donbass.34
+				}
+			}
+	    }
+	}
+}
+economy_decisions = {
+	DON_remove_OGAS = { #Свернуть_ОГАС
+		
+		available = {
+			has_idea = DON_idea_donetskiy_segment_OGAS
+		}
+		visible = {
+			has_idea = DON_idea_donetskiy_segment_OGAS
+			original_tag = DON
+		}
+		cost = 50
+	    ai_will_do = {
+            factor = 0
+		}
+		remove_effect = {
+			remove_ideas = DON_idea_donetskiy_segment_OGAS
 	    }
 	}
 }
