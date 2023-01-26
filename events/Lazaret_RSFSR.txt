@@ -579,6 +579,7 @@ country_event = { #3-я_реакция_на_стрим_по_нейропсихологии
 	
 	option = {
 		name = lazaret.18.a
+		MAT = { add_stability = -0.15 }
 	}
 }
 
@@ -593,7 +594,11 @@ country_event = { #4-я_реакция_на_стрим_по_нейропсихологии
 	
 	option = {
 		name = lazaret.19.a
-		MAT = { add_stability = -0.15 }
+		add_political_power = -25
+		add_days_mission_timeout = {
+			mission = LAZ_razval_mission
+			days = -25
+		}
 	}
 }
 
@@ -609,9 +614,10 @@ country_event = { #5-я_реакция_на_стрим_по_нейропсихологии
 	option = {
 		name = lazaret.20.a
 		add_political_power = -100
+		add_stability = -0.15
 		add_days_mission_timeout = {
 			mission = LAZ_razval_mission
-			days = -30
+			days = -50
 		}
 	}
 }
@@ -693,6 +699,202 @@ country_event = { #Вторжение_в_тупичок
 		            }
 		    }
 		}
+	}
+}
+
+country_event = { #После гражданки - Ультиматум Клике Орлова
+	id = lazaret.25
+	title = lazaret.25.t
+	desc = lazaret.25.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lazaret.25.a
+		ai_chance = {
+			base = 10
+		}
+		LAZ = {
+			annex_country = {
+				target = MAT
+				transfer_troops = yes
+			}
+		}
+		MAT = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+		}
+	}
+	
+	option = {
+		name = lazaret.25.b
+		ai_chance = {
+			base = 90
+		}
+	    LAZ = {
+	        create_wargoal = {
+		        target = MAT
+		        type = annex_everything
+		    }	
+	    }
+	}
+}
+country_event = { #После гражданки - Ультиматум клике Унца
+	id = lazaret.26
+	title = lazaret.26.t
+	desc = lazaret.26.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lazaret.26.a
+		ai_chance = {
+			base = 10
+		}
+		LAZ = {
+			annex_country = {
+				target = UNT
+				transfer_troops = yes
+			}
+		}
+		UNT = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+		}
+	}
+	
+	option = {
+		name = lazaret.26.b
+		ai_chance = {
+			base = 90
+		}
+	    LAZ = {
+	        create_wargoal = {
+		        target = UNT
+		        type = annex_everything
+		    }	
+	    }
+	}
+}
+country_event = { #После гражданки - Ультиматум клике Вейшнория
+	id = lazaret.27
+	title = lazaret.27.t
+	desc = lazaret.27.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lazaret.27.a
+		ai_chance = {
+			base = 10
+		}
+		LAZ = {
+			annex_country = {
+				target = WHS
+				transfer_troops = yes
+			}
+		}
+		WHS = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+		}
+	}
+	
+	option = {
+		name = lazaret.27.b
+		ai_chance = {
+			base = 90
+		}
+	    LAZ = {
+	        create_wargoal = {
+		        target = WHS
+		        type = annex_everything
+		    }	
+	    }
+	}
+}
+country_event = { #После гражданки - Ультиматум клике Донбасс
+	id = lazaret.28
+	title = lazaret.28.t
+	desc = lazaret.28.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lazaret.28.a
+		ai_chance = {
+			base = 10
+		}
+		LAZ = {
+			annex_country = {
+				target = DON
+				transfer_troops = yes
+			}
+		}
+		DON = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+		}
+	}
+	
+	option = {
+		name = lazaret.28.b
+		ai_chance = {
+			base = 90
+		}
+	    LAZ = {
+	        create_wargoal = {
+		        target = DON
+		        type = annex_everything
+		    }	
+	    }
+	}
+}
+country_event = { #После гражданки - Ультиматум Адмиралтейству Яна
+	id = lazaret.29
+	title = lazaret.29.t
+	desc = lazaret.29.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lazaret.29.a
+		ai_chance = {
+			base = 10
+		}
+		LAZ = {
+			annex_country = {
+				target = ARK
+				transfer_troops = yes
+			}
+		}
+		ARK = {
+			every_unit_leader = {
+				set_nationality = LAZ
+			}
+		}
+	}
+	
+	option = {
+		name = lazaret.29.b
+		ai_chance = {
+			base = 90
+		}
+	    LAZ = {
+	        create_wargoal = {
+		        target = ARK
+		        type = annex_everything
+		    }	
+	    }
 	}
 }
 
