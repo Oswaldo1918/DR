@@ -7,8 +7,39 @@ set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1  
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
 	basic_train = 1
 }
+
+recruit_character = YSK_Alexsandr_Barkashov
+
+recruit_character = YSK_Milchakov
+recruit_character = YSK_Tesak
+recruit_character = YSK_Alexsey_Zhuravlev
+recruit_character = YSK_Leonid_Reshetnikov
+
+recruit_character = YSK_Victor_Afanasev
+recruit_character = YSK_Svyatoslav_Andreev
+recruit_character = YSK_Petr_Barkashov
+recruit_character = YSK_Alexsandr_Grushin
 
 set_popularities = {
 	fascism = 100
@@ -18,7 +49,7 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 300
 
 create_country_leader = {
 	name = "Егор Просвирнин"

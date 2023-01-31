@@ -1,0 +1,175 @@
+characters={	
+	YSK_Milchakov = {
+		name = "Алексей Мильчаков"
+		portraits = {			
+			army = {
+				large = "gfx/leaders/YSK/Milchakov.dds"
+				small= "idea_CHK_Imran_Zahaev"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Tesak = {
+		name = "Максим «Тесак» Марцинкевич"
+		portraits = {		
+			army = {
+				large = "gfx/leaders/YSK/Tesak.dds"
+				small= "idea_CHK_Cha_La_Ev"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected media_personality }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Alexsey_Zhuravlev = {
+		name = "Алексей Журавлёв"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Alexsey_Zhuravlev.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected armor_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Leonid_Reshetnikov = {
+		name = "Леонид Решетников"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Leonid_Reshetnikov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Alexsandr_Barkashov = {
+		name = "Александр Баркашов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSK/Alexsandr_Barkashov.dds"
+			}
+			army = {
+				large = "gfx/leaders/YSK/Alexsandr_Barkashov.dds"
+				small= "idea_CHK_Ka_Dy_Rov"
+			}
+		}
+		field_marshal = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 2
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Petr_Barkashov = {
+		name = "Пётр Баркашов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Petr_Barkashov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Alexsandr_Grushin = {
+		name = "Александр Грушин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Alexsandr_Grushin.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Svyatoslav_Andreev = {
+		name = "Святослав Андреев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Svyatoslav_Andreev.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Victor_Afanasev = {
+		name = "Виктор Афанасьев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Victor_Afanasev.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+}
