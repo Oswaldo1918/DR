@@ -350,7 +350,7 @@ LAZ_int_ARK = { #Интеграция_Архангельска
 	
 	LAZ_int_WHS = { #Интеграция_Вейшнории
 	
-		cost = 150
+		cost = 75
 		
 		available = {
 	    WHS = { is_puppet_of = LAZ }
@@ -2042,13 +2042,12 @@ LAZ_war_SrAsia = { #
             }
 		}	
 	}
-LAZ_war_Komi_Perm = { #
+LAZ_war_Komi = { #
 	
 		cost = 30
 
 		available = {
 		has_war = no 
-		is_neighbor_of = PRM
 		is_neighbor_of = SKT
 		}
 		
@@ -2060,11 +2059,29 @@ LAZ_war_Komi_Perm = { #
 		}
 		remove_effect = {
 			create_wargoal = {
-                   target = PRM
+                   target = SKT
                    type = annex_everything
             }
+		}	
+	}	
+LAZ_war_Perm = { #
+	
+		cost = 30
+
+		available = {
+		has_war = no 
+		is_neighbor_of = PRM
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
 			create_wargoal = {
-                   target = SKT
+                   target = PRM
                    type = annex_everything
             }
 		}	
