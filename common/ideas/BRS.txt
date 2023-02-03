@@ -1,0 +1,57 @@
+ideas = {
+        country = {
+	        BRS_posledstvie_brist_rezni = {
+			    picture = anti_soviet_pact
+			
+			    allowed = {
+				    always = no
+			    }
+
+			    allowed_civil_war = {
+				    always = yes
+			    }
+
+			    removal_cost = -1
+			
+			    modifier = {
+			    war_support_factor = -0.15
+				stability_factor = -0.15
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.3
+				}
+		    }
+			BRS_strah_brist_rezni = {
+			    picture = anti_soviet_pact
+			
+			    allowed = {
+				    always = no
+			    }
+
+			    allowed_civil_war = {
+				    always = yes
+			    }
+
+			    removal_cost = -1
+			
+			    modifier = {
+			    war_support_factor = -0.05
+				stability_factor = -0.05
+				consumer_goods_factor = 0.03
+				conscription_factor = -0.1
+				}
+		    }
+			BRS_zona_otchuzhdeniya = {
+			
+			    picture = SOV_the_road_of_life
+	
+			    modifier = {
+					stability_factor = -0.25
+					war_support_factor = -0.25
+					consumer_goods_factor = -0.1
+					weekly_manpower = 350
+					encryption_factor = 0.5
+			    }
+		    }
+	    }
+		
+}
