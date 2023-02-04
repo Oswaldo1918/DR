@@ -7,8 +7,44 @@ set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1  
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	bicycle_infantry = 1
 	basic_train = 1
 }
+
+recruit_character = LIM_Edichka
+recruit_character = LIM_Dugin
+
+recruit_character = LIM_Nepomnyashchiy
+recruit_character = LIM_Volynets
+recruit_character = LIM_Verdiyan
+
+recruit_character = LIM_Averin
+recruit_character = LIM_Korovin
+recruit_character = LIM_Kanishcev
+recruit_character = LIM_Platonova
+
+recruit_character = LIM_Kolesnikov
+recruit_character = LIM_Linderman
+recruit_character = LIM_Oksenrayter
+recruit_character = LIM_Fomichenkov
 
 add_ideas = {
 limited_conscription
@@ -18,7 +54,8 @@ LIM_nepokornie_kozahi
 }
 
 set_popularities = {
-	metacommy = 100
+	metacommy = 70
+	fascism = 30
 }
 set_politics = {
 	ruling_party = metacommy
