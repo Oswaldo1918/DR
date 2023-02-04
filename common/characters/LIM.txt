@@ -1,0 +1,309 @@
+characters={
+	LIM_Edichka = {
+		name = "Эдуард Лимонов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIM/Limonov.dds"
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Limonov.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = nacbol
+		desc = "POLITICS_LIMONOV_DESC"
+	    traits = { 		
+	    }
+		id=-1
+	    }
+		field_marshal = {
+	    traits = { old_guard }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Dugin = {
+		name = "Александр Дугин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIM/Dugin.dds"
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Dugin.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = fascism_ideology 
+	    traits = { 
+	    }
+		id=-1
+	    }
+	    field_marshal = {
+	    traits = { old_guard }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }  
+    }
+	LIM_Kolesnikov = {
+		name = "Дмитрий Колесников"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Nepomnyashchiy = {
+		name = "Непомнящий"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Nepomnyashchiy	
+            allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = metacommy
+			}     			
+            traits = { musicant }
+	    }
+    }
+	LIM_Averin = {
+		name = "Александр Аверин"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Averin.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Averin
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = metacommy
+			}
+            traits = { war_industrialist }
+	    }
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Volynets = {
+		name = "Алексей Волынец"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Volynets
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = metacommy
+			}
+            traits = { silent_workhorse }
+	    }
+    }
+	LIM_Linderman = {
+		name = "Владимир Линдерман"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/LIM/Linderman.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Verdiyan = {
+		name = "Симон Вердиан"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Verdiyan
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = metacommy
+			}
+            traits = { propaganda_expert }
+	    }
+    }
+	LIM_Fomichenkov = {
+		name = "Сергей Фомиченков"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/LIM/Fomichenkov.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Korovin = {
+		name = "Валерий Коровин"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Korovin.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Korovin
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = fascism
+			}
+            traits = { silent_workhorse }
+	    }
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Kanishcev = {
+		name = "Павел Канищев"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Kanishcev.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Kanishcev
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = fascism
+			}
+            traits = { propaganda_expert }
+	    }
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Platonova = {
+		name = "Дарья Платонова"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Platonova.dds"
+			}
+		}
+		advisor={ 
+		    slot = political_advisor
+			idea_token = LIM_Platonova
+			allowed = {
+                original_tag = LIM				
+            }
+			available = {
+			    has_government = fascism
+			}
+            traits = { popular_figurehead }
+	    }
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	LIM_Oksenrayter = {
+		name = "Мануэль Оксенрайтер"
+		portraits = {
+			civilian = {
+				small = ""
+			}
+			army = {
+			    large = "gfx/leaders/LIM/Oksenrayter.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+}
