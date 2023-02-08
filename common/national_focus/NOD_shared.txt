@@ -1435,7 +1435,7 @@ completion_reward = {
 				load_focus_tree = NOD_putin
 				set_global_flag = NOD_putin_return
 				
-				else_if = {
+				else = {
 				limit = {
 				
 				check_variable = { putin_find < 4 }
