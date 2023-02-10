@@ -2594,7 +2594,7 @@
 	}
 	shared_focus = {
 		id = POK_new_flag_and_simbols
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_flag_and_simbols
 		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
@@ -2878,7 +2878,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_chaging_mentality
-		icon = GFX_goal_unknown
+		icon = GFX_POK_chaging_mentality
 		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
@@ -2903,7 +2903,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_proshay_nemitaya_rossiya
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_slaves_masses
 		cost = 5
 		prerequisite = {
 			focus = POK_full_separation
@@ -2915,9 +2915,10 @@ available = {
 		y = 19
 
 	}
+	
 	shared_focus = {
 		id = POK_no_need_chagnes
-		icon = GFX_goal_unknown
+		icon = GFX_POK_no_need_chagnes
 		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
@@ -2945,7 +2946,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_destroy_soviet_military
-		icon = GFX_goal_unknown
+		icon = GFX_POK_destroy_soviet_military
 		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
