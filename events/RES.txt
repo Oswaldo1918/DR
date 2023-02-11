@@ -1,0 +1,110 @@
+add_namespace = RES
+
+	
+#
+country_event = {
+	id = RES.1
+	title = RES.1.t
+	desc = RES.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+        date = 3.8.20
+    }
+	
+	option = {
+	        name = RES.1.a 
+                RES = {			
+		            declare_war_on = {
+		                target = VNR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = ETR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = NII
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = UGI
+		                type = annex_everything
+		            }
+				}
+				VNR = {			
+		            declare_war_on = {
+		                target = RES
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = ETR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = NII
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = UGI
+		                type = annex_everything
+		            }
+				}
+				ETR = {			
+		            declare_war_on = {
+		                target = RES
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = VNR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = NII
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = UGI
+		                type = annex_everything
+		            }
+				}
+				NII = {			
+		            declare_war_on = {
+		                target = RES
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = VNR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = ETR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = UGI
+		                type = annex_everything
+		            }
+				}
+				UGI = {			
+		            declare_war_on = {
+		                target = RES
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = VNR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = ETR
+		                type = annex_everything
+		            }
+					declare_war_on = {
+		                target = NII
+		                type = annex_everything
+		            }
+				}
+	}
+}

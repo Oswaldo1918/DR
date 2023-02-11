@@ -1,0 +1,26 @@
+add_namespace = YUG
+
+	
+#
+country_event = {
+	id = YUG.1
+	title = YUG.1.t
+	desc = YUG.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+        date = 5.5.20
+    }
+	
+	option = {
+	        name = YUG.1.a 
+                YUG = {			
+		            declare_war_on = {
+		                target = HRV
+		                type = annex_everything
+		            }
+				}
+	}
+}

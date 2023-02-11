@@ -1,0 +1,35 @@
+HRV_unification_of_Yugoslavia = {
+    HRV_Serbiya = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 105
+			controls_state = 107
+			controls_state = 108
+			controls_state = 106
+			controls_state = 802
+			controls_state = 803
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 105
+			add_state_core = 107
+			add_state_core = 108
+			add_state_core = 106
+			add_state_core = 802
+			add_state_core = 803     			
+		}	
+	}
+}

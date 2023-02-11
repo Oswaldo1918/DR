@@ -1,0 +1,33 @@
+add_namespace = TUN
+
+	
+#
+country_event = {
+	id = TUN.1
+	title = TUN.1.t
+	desc = TUN.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    SPE = {	
+            controls_state = 118
+			controls_state = 173
+			controls_state = 168
+		}	
+    }
+	
+	option = {
+	        name = IRQ.1.a
+            SPE = {			
+                white_peace = TUN
+                add_state_core = 118
+                add_state_core = 173       
+                add_state_core = 168
+                transfer_state = 118  
+                transfer_state = 173    
+			    transfer_state = 168
+			}	
+	}
+}

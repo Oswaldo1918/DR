@@ -1,0 +1,104 @@
+UGI_risorgimento = {
+    UGI_Salo = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 158
+			controls_state = 159
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 158
+			add_state_core = 159       			
+		}	
+	} 
+	UGI_Venetsiya = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 160
+			controls_state = 736
+			controls_state = 852
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 160
+			add_state_core = 736
+			add_state_core = 852        			
+		}	
+	}
+	UGI_Etrusiya = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 161
+			controls_state = 162
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 161
+			add_state_core = 162		
+		}	
+	}
+	UGI_Rome = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 2
+			controls_state = 157
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 2
+			add_state_core = 157     			
+		}	
+	}
+}
