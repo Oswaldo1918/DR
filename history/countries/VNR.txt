@@ -2,7 +2,7 @@ capital = 160
 
 oob = VNR_1936
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -10,7 +10,10 @@ set_technology = {
 	basic_train = 1
 }
 
-
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
 
 set_popularities = {
 	democratic = 50
