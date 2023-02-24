@@ -306,6 +306,33 @@ characters={
 		
 	}
 	
+	POK_uchitel = {
+		name = "Учитель"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/POK/.dds"				
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = POK_uchitel
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				soavtor_VNB 
+			}
+		}
+		
+	}
+	
 	POK_Iavlinskiy = {
 		name = "Григорий Явлинский"
 

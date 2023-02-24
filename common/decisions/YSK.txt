@@ -1,0 +1,146 @@
+YSK_vybor_storony = {
+    YSK_podderzhka_rusdem = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {	
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}      		
+		    add_to_variable = { rusdem_coup = 1 }
+			custom_effect_tooltip = YSK_help_rusdem_tt
+		}	
+	}
+	YSK_veshchat_o_dem_tradition_rusnaroda = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}    		
+		    add_to_variable = { rusdem_coup = 1 }
+			custom_effect_tooltip = YSK_help_rusdem_tt
+		}	
+	}
+	YSK_igra_protiv_ultrapravih = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}        
+            add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}   		
+		    add_to_variable = { rusdem_coup = 1 }
+			add_to_variable = { ultraprav_coup = -1 }
+			custom_effect_tooltip = YSK_help_rusdem_tt
+		}	
+	}
+	YSK_podderzhka_ultraprav = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}      		
+		    add_to_variable = { ultraprav_coup = 1 }
+			custom_effect_tooltip = YSK_help_ultraprav_tt
+		}	
+	}
+	YSK_form_ultraprav_paramilit = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            army_experience = 5
+            add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}       		
+		    add_to_variable = { ultraprav_coup = 1 }
+			custom_effect_tooltip = YSK_help_ultraprav_tt
+		}	
+	}
+	YSK_sratsya_s_rusdem = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+            add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}             		
+		    add_to_variable = { ultraprav_coup = 1 }
+			add_to_variable = { rusdem_coup = -1 }
+			custom_effect_tooltip = YSK_help_ultraprav_tt
+			custom_effect_tooltip = YSK_protiv_rusdem_tt
+		}	
+	}
+}
