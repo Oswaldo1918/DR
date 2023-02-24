@@ -1,0 +1,131 @@
+add_namespace = YSK
+
+	
+#Русский_Кукож
+country_event = {
+	id = YSK.1
+	title = YSK.1.t
+	desc = YSK.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.1.a
+            add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}      	             
+	}
+}
+
+#Тру_русские
+country_event = {
+	id = YSK.2
+	title = YSK.2.t
+	desc = YSK.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.2.a
+	    custom_effect_tooltip = YSK_dobrodiv
+		add_popularity = {
+				ideology = memoism
+				popularity = 0.075
+		}
+        hidden_effect = { 
+            add_load = YSK_rus_dobrovoltsy   
+        }       		
+	}
+}
+
+#шанс нацболам?
+country_event = {
+	id = YSK.3
+	title = YSK.3.t
+	desc = YSK.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.3.a
+		add_popularity = {
+				ideology = metacommy
+				popularity = 0.075
+		}      		
+	}
+	option = {
+	name = YSK.3.a
+		add_popularity = {
+				ideology = metacommy
+				popularity = -0.075
+		}      		
+	}
+}
+
+#события в Ельцинбурге
+country_event = {
+	id = YSK.4
+	title = YSK.4.t
+	desc = YSK.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.4.a
+		add_ideas = YSK_left_partizan      		
+	}
+}
+#закрепление нацдемов
+country_event = {
+	id = YSK.555
+	title = YSK.555.t
+	desc = YSK.555.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { rusdem_coup > 3 } }
+	YSK = { has_completed_focus = YSK_rus_vibory }
+    }
+	
+	option = {
+	name = YSK.555.a
+		set_country_flag = rusdem_win      		
+	}
+}
+#переворот ульраправых
+country_event = {
+	id = YSK.556
+	title = YSK.556.t
+	desc = YSK.556.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { ultraprav_coup > 3 } }
+	YSK = { has_completed_focus = YSK_rus_vibory }
+    }
+	
+	option = {
+	name = YSK.556.a
+		set_country_flag = ultraprav_win      		
+	}
+}

@@ -7,9 +7,6 @@ focus_tree = {
 			tag = ZNS
 		}
 	}
-	
-	continuous_focus_position = { x = 2 y = 2 }
-	
 	default = no
 	focus = {
 		id = ZNS_proryv_tsepey_OMONa
@@ -75,7 +72,7 @@ focus_tree = {
 			available = {
 					has_completed_focus = ZNS_total_depokayanizatsiya
 					has_country_flag = ZNS_Pobeda_SA
-			}
+				}
 			completion_reward = {
 
 }
@@ -132,14 +129,17 @@ focus_tree = {
 		}
 		x = 4
 		y = 9
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Stalin_ili_Trotskiy
-				add_idea = ZNS_Trotskiy
-			}
-			add_to_variable = { sous_anstalov = 1 }
-	        custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Stalin_ili_Trotskiy
+							add_idea = ZNS_Trotskiy
+						}
+					add_to_variable = {
+							sous_anstalov = 1
+						}
+					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_trudovyye_armii
@@ -193,18 +193,21 @@ focus_tree = {
 		}
 		x = 5
 		y = 10
-		completion_reward = {
-			add_popularity = {
-				ideology = vmestolev
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = -0.1
-			}
-			add_to_variable = { sous_anstalov = 1 }
-	        custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
-		}
+			completion_reward = {
+					add_popularity = {
+							ideology = vmestolev
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = -0.1
+						}
+					add_to_variable = {
+							sous_anstalov = 1
+						}
+					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_otklyuchit_tserkov_ot_finansirovaniya
@@ -335,14 +338,17 @@ focus_tree = {
 		}
 		x = 10
 		y = 9
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Stalin_ili_Trotskiy
-				add_idea = ZNS_Stalin
-			}
-			add_to_variable = { new_reds = 1 }
-	        custom_effect_tooltip = ZNS_new_reds_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Stalin_ili_Trotskiy
+							add_idea = ZNS_Stalin
+						}
+					add_to_variable = {
+							new_reds = 1
+						}
+					custom_effect_tooltip = ZNS_new_reds_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_vygnat_trotskistov
@@ -353,14 +359,17 @@ focus_tree = {
 		}
 		x = 9
 		y = 10
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Stalin
-				add_idea = ZNS_Stalin_1
-			}
-			add_to_variable = { new_reds = 1 }
-	        custom_effect_tooltip = ZNS_new_reds_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Stalin
+							add_idea = ZNS_Stalin_1
+						}
+					add_to_variable = {
+							new_reds = 1
+						}
+					custom_effect_tooltip = ZNS_new_reds_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_kult_lichnosti_s_nizu
@@ -371,14 +380,17 @@ focus_tree = {
 		}
 		x = 9
 		y = 11
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Stalin_1
-				add_idea = ZNS_Stalin_2
-			}
-			add_to_variable = { new_reds = 1 }
-	        custom_effect_tooltip = ZNS_new_reds_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Stalin_1
+							add_idea = ZNS_Stalin_2
+						}
+					add_to_variable = {
+							new_reds = 1
+						}
+					custom_effect_tooltip = ZNS_new_reds_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_kurs_na_sotsializm_v_odnoy_strane
@@ -389,11 +401,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 12
-		completion_reward = {
-			add_country_leader_trait = stalin_heart_of_steel
-			add_to_variable = { new_reds = 1 }
-	        custom_effect_tooltip = ZNS_new_reds_influence_up_tt
-		}
+			completion_reward = {
+					add_country_leader_trait = stalin_heart_of_steel
+					add_to_variable = {
+							new_reds = 1
+						}
+					custom_effect_tooltip = ZNS_new_reds_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_spravedlivost_ili_genotsid
@@ -499,21 +514,29 @@ focus_tree = {
 		}
 		x = 10
 		y = 13
-		completion_reward = {
-			add_ideas = ZNS_znamya_burzh_svobod
-			add_popularity = {
-				ideology = metacommy
-				popularity = 0.1
-			}
-			add_to_variable = { new_reds = 1 }
-	        custom_effect_tooltip = ZNS_new_reds_influence_up_tt
-			if = {
-				limit = {
-					check_variable = { new_reds > 4 }
+			completion_reward = {
+					add_ideas = ZNS_znamya_burzh_svobod
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.1
+						}
+					add_to_variable = {
+							new_reds = 1
+						}
+					custom_effect_tooltip = ZNS_new_reds_influence_up_tt
+					if = {
+							limit = {
+									check_variable = {
+											new_reds > 4
+										}
+								}
+							country_event = {
+									id = ZNS.11
+									days = 2
+								}
+						}
 				}
-				country_event = { id = ZNS.11 days = 2  }
-			}
-		}
+
 	}
 	focus = {
 		id = ZNS_front_s_levoliberalami
@@ -577,8 +600,8 @@ focus_tree = {
 		x = 19
 		y = 8
 			available = {
-				has_country_flag = ZNS_Pobeda_NR	
-			}
+					has_country_flag = ZNS_Pobeda_NR
+				}
 			completion_reward = {
 					add_building_construction = {
 							type = radar_station
@@ -865,7 +888,7 @@ focus_tree = {
 			available = {
 					has_completed_focus = ZNS_total_depokayanizatsiya
 					has_country_flag = ZNS_Pobeda_SA
-			}
+				}
 			completion_reward = {
 					add_political_power = 100
 					country_event = {
@@ -1151,7 +1174,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZNS_prizyv_aktivistov
 		}
-		x = 32
+		x = 31
 		y = 4
 			completion_reward = {
 					load_oob = ZNS_uchitely_1936
@@ -1189,6 +1212,50 @@ focus_tree = {
 					add_timed_idea = {
 							idea = ZNS_szhech_dolgi
 							days = 120
+						}
+				}
+
+	}
+	focus = {
+		id = ZNS_forsirovannaya_depokayanizatsiya
+		icon = GFX_focus_bsh_poryadok_v_strane
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_Krasnoyarsk_budet_krasnym
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+					add_political_power = 75
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = ZNS_osvobodit_politzaklyuchonnykh
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_forsirovannaya_depokayanizatsiya
+		}
+		x = 33
+		y = 4
+			completion_reward = {
+					add_political_power = -100
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = vmestolev
+							popularity = 0.1
 						}
 				}
 
@@ -1232,47 +1299,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_forsirovannaya_depokayanizatsiya
-		icon = GFX_focus_bsh_poryadok_v_strane
-		cost = 1,00
-		prerequisite = {
-			focus = ZNS_Krasnoyarsk_budet_krasnym
-		}
-		x = 34
-		y = 3
-			completion_reward = {
-					add_political_power = 75
-					add_popularity = {
-							ideology = democratic
-							popularity = -0.1
-						}
-				}
-
-	}
-	focus = {
-		id = ZNS_osvobodit_politzaklyuchonnykh
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 1,00
+		id = ZNS_new_korenization
+		icon = GFX_goal_unknown
+		cost = 2,00
 		prerequisite = {
 			focus = ZNS_forsirovannaya_depokayanizatsiya
 		}
-		x = 34
+		x = 35
 		y = 4
-			completion_reward = {
-					add_political_power = -100
-					add_popularity = {
-							ideology = anarhostalinism
-							popularity = 0.05
-						}
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = vmestolev
-							popularity = 0.1
-						}
-				}
 
 	}
 	focus = {
@@ -1322,48 +1356,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_prodvizheniye_svoikh
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 1,00
-		prerequisite = {
-			focus = ZNS_shirokiy_levyy_front
-		}
-		x = 36
-		y = 4
-			completion_reward = {
-					add_political_power = -75
-					add_popularity = {
-							ideology = anarhostalinism
-							popularity = 0.25
-						}
-					add_ideas = ZNS_prodvizheniye_svoikh
-				}
-
-	}
-	focus = {
-		id = ZNS_RevDrop
-		icon = GFX_focus_generic_join_comintern
-		cost = 1,00
-		prerequisite = {
-			focus = ZNS_prizyv_uchiteley
-		}
-		prerequisite = {
-			focus = ZNS_osvobodit_politzaklyuchonnykh
-		}
-		prerequisite = {
-			focus = ZNS_prodvizheniye_svoikh
-		}
-		x = 34
-		y = 5
-			completion_reward = {
-					add_timed_idea = {
-							idea = ZNS_RevDrop
-							days = 250
-						}
-				}
-
-	}
-	focus = {
 		id = ZNS_natsionalizirovat_Kraskon
 		icon = GFX_goal_unknown
 		cost = 5,00
@@ -1406,6 +1398,51 @@ focus_tree = {
 									level = 1
 									instant_build = yes
 								}
+						}
+				}
+
+	}
+	focus = {
+		id = ZNS_prodvizheniye_svoikh
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_shirokiy_levyy_front
+		}
+		x = 37
+		y = 4
+			completion_reward = {
+					add_political_power = -75
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = 0.25
+						}
+					add_ideas = ZNS_prodvizheniye_svoikh
+				}
+
+	}
+	focus = {
+		id = ZNS_RevDrop
+		icon = GFX_focus_generic_join_comintern
+		cost = 1,00
+		prerequisite = {
+			focus = ZNS_prizyv_uchiteley
+		}
+		prerequisite = {
+			focus = ZNS_osvobodit_politzaklyuchonnykh
+		}
+		prerequisite = {
+			focus = ZNS_prodvizheniye_svoikh
+		}
+		prerequisite = {
+			focus = ZNS_new_korenization
+		}
+		x = 34
+		y = 5
+			completion_reward = {
+					add_timed_idea = {
+							idea = ZNS_RevDrop
+							days = 250
 						}
 				}
 
@@ -3318,14 +3355,17 @@ focus_tree = {
 		}
 		x = 5
 		y = 11
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Trotskiy
-				add_idea = ZNS_Trotskiy_1
-			}
-			add_to_variable = { sous_anstalov = 1 }
-	        custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Trotskiy
+							add_idea = ZNS_Trotskiy_1
+						}
+					add_to_variable = {
+							sous_anstalov = 1
+						}
+					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_ZAGNIVAYUSHCHAYA_PRIBALTIKA
@@ -3443,14 +3483,17 @@ focus_tree = {
 		}
 		x = 5
 		y = 12
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ZNS_Trotskiy_1
-				add_idea = ZNS_Trotskiy_2
-			}
-			add_to_variable = { sous_anstalov = 1 }
-	        custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
-		}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ZNS_Trotskiy_1
+							add_idea = ZNS_Trotskiy_2
+						}
+					add_to_variable = {
+							sous_anstalov = 1
+						}
+					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_demon_revolyutsii
@@ -3464,17 +3507,25 @@ focus_tree = {
 		}
 		x = 4
 		y = 13
-		completion_reward = {
-			add_country_leader_trait = triumphant_revolutionary
-			add_to_variable = { sous_anstalov = 1 }
-	        custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
-			if = {
-				limit = {
-					check_variable = { sous_anstalov > 4 }
+			completion_reward = {
+					add_country_leader_trait = triumphant_revolutionary
+					add_to_variable = {
+							sous_anstalov = 1
+						}
+					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
+					if = {
+							limit = {
+									check_variable = {
+											sous_anstalov > 4
+										}
+								}
+							country_event = {
+									id = ZNS.10
+									days = 2
+								}
+						}
 				}
-				country_event = { id = ZNS.10 days = 2  }
-			}
-		}
+
 	}
 	focus = {
 		id = ZNS_New_USSR

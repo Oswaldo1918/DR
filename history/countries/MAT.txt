@@ -17,8 +17,6 @@ set_technology = {
 }
 
 add_ideas = {
-	MAT_red_neoshumirism
-	MAT_zablokorovano_hakerami
 	MAT_YgZapad_bastion
 	partial_economic_mobilisation
 	limited_conscription
@@ -27,13 +25,13 @@ add_ideas = {
 add_timed_idea = { idea = UNT_neudach_vostoch_pohod days = 547 }
 
 set_popularities = {
-	metacommy = 70
-	vmestolev = 10
+	metacommy = 40
+	vmestolev = 40
 	democratic = 10
 	fascism = 10
 }
 set_politics = {
-	ruling_party = metacommy
+	ruling_party = vmestolev
 	elections_allowed = no	
 }
 

@@ -1,0 +1,175 @@
+ideas = {
+        country = {
+			YSK_Barnaul_Altayskiy_kray = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.15
+				army_core_defence_factor = 0.075
+				surrender_limit = 0.025
+			    }
+		    }
+			YSK_rus_idut = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				army_attack_speed_factor = 0.15
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_boy_neosovku = {
+
+			    picture = spr_anti_fascist_crusade
+			    
+				targeted_modifier = {
+			    tag = MGN
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = OMS
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = GAL
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = ZNS
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = POK
+			    attack_bonus_against = 0.05
+		        }
+			    modifier = {
+				army_attack_speed_factor = 0.15
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_rus_bisass = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				consumer_goods_factor = -0.025
+				production_factory_efficiency_gain_factor = 0.025 
+				production_factory_max_efficiency_factor = 0.025 
+			    }
+		    }
+			YSK_rus_marchy = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			    }
+		    }
+			YSK_rus_vperde = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_rerussifikatsiya = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.075
+				war_support_factor = 0.1
+			    }
+		    }
+			YSK_rerussifikatsiya_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.075
+				war_support_factor = 0.15
+				drift_defence_factor = 0.1
+				anarhostalinism_drift = -0.01
+				vmestolev_drift = -0.01
+				metacommy_drift = -0.01
+			    }
+		    }
+			YSK_rerussifikatsiya_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				drift_defence_factor = 0.1
+				anarhostalinism_drift = -0.03
+				vmestolev_drift = -0.03
+				metacommy_drift = -0.03
+				consumer_goods_factor = -0.025
+			    }
+		    }
+			YSK_help_rus_capitalist = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				production_speed_buildings_factor = 0.15 
+				consumer_goods_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025 
+			    }
+		    }
+			YSK_left_partizan = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				anarhostalinism_drift = 0.05
+				vmestolev_drift = 0.05
+				metacommy_drift = 0.05
+				consumer_goods_factor = 0.1
+			    }
+		    }
+	    }		
+}
