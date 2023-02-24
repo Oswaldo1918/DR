@@ -52,15 +52,29 @@ units = {
 		start_experience_factor = 0.4
 	}
 
-      division = {
+    division = {
 		name = "2-я дивизия Сербских добровольцев"
 		location = 797
 		division_template = "Дивизия пехоты"
 		start_experience_factor = 0.4
 	}
 
-        division = {
+    division = {
 		name = "3-я дивизия Сербских добровольцев"
+		location = 9821
+		division_template = "Дивизия пехоты"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4-я дивизия Сербских добровольцев"
+		location = 797
+		division_template = "Дивизия пехоты"
+		start_experience_factor = 0.4
+	}
+
+    division = {
+		name = "5-я дивизия Сербских добровольцев"
 		location = 9821
 		division_template = "Дивизия пехоты"
 		start_experience_factor = 0.3

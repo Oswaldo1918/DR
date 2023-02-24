@@ -1596,6 +1596,7 @@ country_event = {
 		tag = NOD
 		has_completed_focus = NOD_vostanovit_suverenitet_Russia
 		NOT = { has_government = neutrality }
+		NOT = { has_global_flag = NOD_putin_return }
 	 }
 	
 	 option = {

@@ -1,0 +1,69 @@
+﻿division_template = {
+	name = "Пехота"
+
+	division_names_group = RES_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Кавалерия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = RES_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "1-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "2-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "3-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "4-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "5-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "6-й пехотная дивизия"
+		location = 3780
+		division_template = "Пехота"
+		start_experience_factor = 0.3
+	}   	
+}

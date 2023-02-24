@@ -1,20 +1,7 @@
 ﻿division_template = {
-	name = "Урки-ополченцы"
+	name = "Стрелковая дивизия"				
 
-	division_names_group = MRD_ARM_01
-
-	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "Регулярная дивизия"				# Militia units (lowest experience, oldest equipment)
-
-	division_names_group = MRD_GAR_01
+	division_names_group = MRD_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -28,53 +15,84 @@ division_template = {
 	}
 	priority = 2
 }
+division_template = {
+	name = "Гарнизонная дивизия"
+
+	division_names_group = MRD_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
 
 units = {
 	division = {
-		name = "1-я дивизия Урков-ополченцев"
-		location = 4859 
-		division_template = "Урки-ополченцы"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-		
-    division = {
-		name = "2-я дивизия Урков-ополченцев"
-		location = 4859
-		division_template = "Урки-ополченцы"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-	
-	division = {
-		name = "3-я дивизия Урков-ополченцев"
-		location = 4859
-		division_template = "Урки-ополченцы"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-	
-	division = {
-		name = "4-я дивизия Урков-ополченцев"
-		location = 4859
-		division_template = "Урки-ополченцы"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-	
-	division = {
-		name = "1-я дивизия пехотная дивизия"
+		name = "21-я стрелковая дивизия"
 		location = 13064
-		division_template = "Регулярная дивизия"
-		start_experience_factor = 0.3
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.4
 		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
 	}
 	division = {
-		name = "2-я дивизия пехотная дивизия"
+		name = "11-я стрелковая дивизия"
 		location = 13064
-		division_template = "Регулярная дивизия"
-		start_experience_factor = 0.3
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.4
 		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+	division = {
+		name = "5-я стрелковая дивизия"
+		location = 13064
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+	division = {
+		name = "78-я стрелковая дивизия"
+		location = 13064
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.4
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+	division = {
+		name = "1-я добровольная народная дружина им.Саурона"
+		location = 4859
+		division_template = "Гарнизонная дивизия"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
+	}
+	division = {
+		name = "2-я добровольно-принудительная народная дружина им.Сарумяна"
+		location = 4859
+		division_template = "Гарнизонная дивизия"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
+	}
+	division = {
+		name = "3-я исправительно-трудовая народная дружина им. Саши Белого"
+		location = 4859
+		division_template = "Гарнизонная дивизия"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
+	}
+	division = {
+		name = "4-я народная дружина пьяных лесников"
+		location = 4859
+		division_template = "Гарнизонная дивизия"
+		start_experience_factor = 0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
+	}
+	division = {
+		name = "Заградотряд Электродрели, батальон «Белые Колготки»"
+		location = 4859
+		division_template = "Гарнизонная дивизия"
+		start_experience_factor = 0.5
+		force_equipment_variants = { infantry_equipment_1 = { owner = "MRD" creator = "LAZ" } }
 	}
 }
 
@@ -85,8 +103,8 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "MRD"
 		}
-		requested_factories = 1
-		progress = 0.28
+		requested_factories = 2
+		progress = 0.30
 		efficiency = 100
 	}
 }

@@ -1,8 +1,8 @@
 capital = 162
 
-oob = 123_1936
+oob = ETR_1936
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -11,6 +11,8 @@ set_technology = {
 }
 
 add_ideas = {
+limited_conscription
+low_economic_mobilisation
 }
 
 set_popularities = {

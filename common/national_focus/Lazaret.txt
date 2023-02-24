@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	} 
 	
-	continuous_focus_position = { x = 2 y = 1200 }
+	continuous_focus_position = { x = 2 y = 1700 }
 	
 	default = no
 	
@@ -30,7 +30,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LAZ_KNOR_politica
+		id = LAZ_KNOR_politica #Внутренняя_политика
 		icon = GFX_LAZ_vopros_vnutr_2
 		cost = 5
 		prerequisite = {
@@ -63,10 +63,55 @@ focus_tree = {
 		
 		x = 7
 		y = 2
-			completion_reward = {
-
-}
-
+		completion_reward = {
+			custom_effect_tooltip = LAZ_effect_tt
+			swap_ideas = {
+				remove_idea = LAZ_kontra_0
+				add_idea = LAZ_kontra_1
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 1 }
+				}
+				add_manpower = -100
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.01
+                }
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.01
+                }
+			}
+			if = {
+				limit = { 
+					check_variable = { LAZ_specsluzhba = 2 }
+				}
+				add_manpower = -1000
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.02
+                }
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.02
+                }
+			}
+			if = {
+				limit = {
+					check_variable = { LAZ_specsluzhba = 3 }
+				}
+				add_manpower = -10000
+				add_popularity = {
+                    ideology = metacommy
+                    popularity = -0.05
+                }
+				add_popularity = {
+                    ideology = memoism
+                    popularity = -0.05
+                }
+			}
+		}
 	}
 	focus = {
 		id = LAZ_develop_science
@@ -78,9 +123,9 @@ focus_tree = {
 		
 		x = 5
 		y = 5
-			completion_reward = {
-add_research_slot = 1
-}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	
 	focus = {
@@ -94,7 +139,7 @@ add_research_slot = 1
 		x = 6
 		y = 4
 		completion_reward = {
-		 custom_effect_tooltip = LAZ_effect_tt
+			custom_effect_tooltip = LAZ_effect_tt
 			if = {
 				limit = {
 					check_variable = { LAZ_specsluzhba = 1 }
@@ -208,27 +253,31 @@ add_research_slot = 1
 		x = 8
 		y = 3
 		completion_reward = {
-		custom_effect_tooltip = LAZ_effect_tt
+			custom_effect_tooltip = LAZ_effect_tt
+			swap_ideas = {
+				remove_idea = LAZ_kontra_1
+				add_idea = LAZ_kontra_2
+			}
 			if = {
 				limit = {
 					check_variable = { LAZ_specsluzhba = 1 }
 				}
 				add_manpower = -100
-				add_war_support = 0.05
+				add_war_support = 0.01
 			}
 			if = {
 				limit = { 
 					check_variable = { LAZ_specsluzhba = 2 }
 				}
 				add_manpower = -1000
-				add_war_support = 0.15
+				add_war_support = 0.05
 			}
 			if = {
 				limit = {
 					check_variable = { LAZ_specsluzhba = 3 }
 				}
 				add_manpower = -10000
-				add_war_support = 0.25
+				add_war_support = 0.10
 			}
 		}
 	}
@@ -239,33 +288,37 @@ add_research_slot = 1
 		prerequisite = {
 			focus = LAZ_velikaya_chistka
 		}
-mutually_exclusive = {
+		mutually_exclusive = {
 			focus = LAZ_zagovor_v_armii
 		}
 		x = 6
 		y = 3
         completion_reward = {
-		custom_effect_tooltip = LAZ_effect_tt
+			custom_effect_tooltip = LAZ_effect_tt
+			swap_ideas = {
+				remove_idea = LAZ_kontra_1
+				add_idea = LAZ_kontra_2
+			}
 			if = {
 				limit = {
 					check_variable = { LAZ_specsluzhba = 1 }
 				}
 				add_manpower = -100
-				add_stability = 0.05
+				add_stability = 0.01
 			}
 			if = {
 				limit = { 
 					check_variable = { LAZ_specsluzhba = 2 }
 				}
 				add_manpower = -1000
-				add_stability = 0.5
+				add_stability = 0.05
 			}
 			if = {
 				limit = {
 					check_variable = { LAZ_specsluzhba = 3 }
 				}
 				add_manpower = -10000
-				add_stability = 0.15
+				add_stability = 0.10
 			}
 		}
 	}
@@ -327,11 +380,10 @@ mutually_exclusive = {
 		}
 		x = 2
 		y = 3
-			completion_reward = {
-add_stability = 0.05
-add_political_power = -50
-}
-
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+		}
 	}
 	focus = {
 		id = LAZ_spisok_pravih
@@ -342,14 +394,13 @@ add_political_power = -50
 		}
 		x = 4
 		y = 3
-			completion_reward = {
-add_war_support = 0.1
-add_political_power = -50
-}
-
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = -50
+		}
 	}
 	focus = {
-		id = LAZ_KNOR_voyenka
+		id = LAZ_KNOR_voyenka #Армейская_политика
 		icon = GFX_LAZ_vopros_army
 		cost = 5
 		prerequisite = {
@@ -357,11 +408,10 @@ add_political_power = -50
 		}
 		x = 16
 		y = 1
-			completion_reward = {
-					army_experience = 10
-					add_war_support = 0.05
-				}
-
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = LAZ_plan_lazaret_united_army
@@ -378,14 +428,12 @@ add_political_power = -50
 				}
 		x = 12
 		y = 2
-			completion_reward = {
-
-					swap_ideas = {
-							remove_idea = LAZ_razdutyy_apparat_moderov
-							add_idea = LAZ_plan_lazaret_united_army
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAZ_razdutyy_apparat_moderov
+				add_idea = LAZ_plan_lazaret_united_army
+			}
+		}
 	}
 	focus = {
 		id = LAZ_chistit_moderatorov
@@ -397,12 +445,10 @@ add_political_power = -50
 		
 		x = 11
 		y = 3
-			completion_reward = {
-					army_experience = 5
-							add_ideas = LAZ_chistka_moderatorov
-						
-				}
-
+		completion_reward = {
+			army_experience = 5
+			add_ideas = LAZ_chistka_moderatorov	
+		}
 	}
 	focus = {
 		id = LAZ_soktatit_polnomochia_moderatorov
@@ -411,16 +457,14 @@ add_political_power = -50
 		prerequisite = {
 			focus = LAZ_plan_lazaret_united_army
 		}
-		
 		x = 13
 		y = 3
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = LAZ_plan_lazaret_united_army
-							add_idea = LAZ_soktatit_polnomochia_moderatorov
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAZ_plan_lazaret_united_army
+				add_idea = LAZ_soktatit_polnomochia_moderatorov
+			}
+		}
 	}
 	focus = {
 		id = LAZ_dobrovolcheskiye_korpusa
@@ -431,14 +475,13 @@ add_political_power = -50
 		}
 		x = 13
 		y = 4
-			completion_reward = {
+		completion_reward = {
 			add_war_support = 0.05
-					swap_ideas = {
-							remove_idea = LAZ_soktatit_polnomochia_moderatorov
-							add_idea = LAZ_dobrovolcheskiye_korpusa
-						}
-				}
-
+			swap_ideas = {
+				remove_idea = LAZ_soktatit_polnomochia_moderatorov
+				add_idea = LAZ_dobrovolcheskiye_korpusa
+			}
+		}
 	}
 	focus = {
 		id = LAZ_noviy_sostav
@@ -537,20 +580,19 @@ add_political_power = -50
 		}
 		x = 15
 		y = 4
-			completion_reward = {
-add_tech_bonus = {
-			name = artillery_bonus
-			bonus = 0.7
-			uses = 2
-			technology = interwar_antiair
-			technology = antiair1
-			technology = antiair2
-			technology = antiair3
-			technology = antiair4
-			technology = antiair5
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.7
+				uses = 2
+				technology = interwar_antiair
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+			}
 		}
-}
-
 	}
 	focus = {
 		id = LAZ_razvitiye_PTO
@@ -561,20 +603,19 @@ add_tech_bonus = {
 		}
 		x = 17
 		y = 4
-			completion_reward = {
-add_tech_bonus = {
-			name = artillery_bonus
-			bonus = 0.7
-			uses = 2
-			technology = interwar_antitank
-			technology = antitank1
-			technology = antitank2
-			technology = antitank3
-			technology = antitank4
-			technology = antitank5
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.7
+				uses = 2
+				technology = interwar_antitank
+				technology = antitank1
+				technology = antitank2
+				technology = antitank3
+				technology = antitank4
+				technology = antitank5
+			}
 		}
-}
-
 	}
 	focus = {
 		id = LAZ_bogi_voyni
@@ -586,16 +627,15 @@ add_tech_bonus = {
 		}
 		x = 16
 		y = 5
-			completion_reward = {
-add_tech_bonus = {
-				 name = artillery_bonus
-				 bonus = 1.0
-				 uses = 2
-				 category = artillery
-				 category = rocketry
-			    }
-}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+				category = rocketry
+			}
+		}
 	}
 	focus = {
 		id = LAZ_bronya_krepka
@@ -609,7 +649,7 @@ add_tech_bonus = {
 		}
 		x = 14
 		y = 6
-			completion_reward = {
+		completion_reward = {
 			add_ideas = LAZ_bronya_krepka
 					add_tech_bonus = {
 							name = armor_bonus
@@ -1648,7 +1688,7 @@ add_extra_state_shared_building_slots = 1
 	}
 	
 	focus = {
-		id = LAZ_KNOR_po_chatu
+		id = LAZ_KNOR_po_chatu #Внешняя_политика
 		icon = GFX_The_Tank_That_Haunts_The_World
 		cost = 5
 		prerequisite = {
@@ -1662,10 +1702,9 @@ add_extra_state_shared_building_slots = 1
 		}
 		x = 3
 		y = 6
-			completion_reward = {
-country_event = { id = lazaret.10  days = 1 }
-}
-
+		completion_reward = {
+			country_event = { id = lazaret.10  days = 1 }
+		}
 	}
 	focus = { #Полная_оккупация_чата
 		id = LAZ_plan_doka 
@@ -1680,40 +1719,37 @@ country_event = { id = lazaret.10  days = 1 }
 		}
 		x = 4
 		y = 7
-			completion_reward = {
-create_wargoal = {
-							type = annex_everything
-							target = CHT
-						}
-create_wargoal = {
-							type = annex_everything
-							target = CDR
-						}
-create_wargoal = {
-							type = annex_everything
-							target = DRC
-						}
-create_wargoal = {
-							type = annex_everything
-							target = DGC
-						}
-	create_wargoal = {
-							type = annex_everything
-							target = CCO
-						}
-create_wargoal = {
-							type = annex_everything
-							target = VTC
-						}
-	create_wargoal = {
-							type = annex_everything
-							target = CVT
-						}					
-}
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CDR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DRC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DGC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CCO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = VTC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CVT
+			}					
+		}
 	}
-	
-		
 	focus = {
 		id = LAZ_plan_shtazista #Поддержка_штазиста_интеграция_доступна_после_достижения_развитого_социализма
 		icon = GFX_LAZ_plan_shtazi
@@ -1728,85 +1764,84 @@ create_wargoal = {
 		x = 2
 		y = 7
 		available = {
-					OR = {
-					CHT = { has_government = vmestolev }
-					DRC = { has_government= vmestolev }
-					CDR = { has_government = vmestolev }
-					}
-				}
-			completion_reward = {
- if = {
-			limit = {
+			OR = {
 				CHT = { has_government = vmestolev }
-			}
-			LAZ = {
-		 add_to_faction = CHT
-		 declare_war_on = {
-		        target = CVT
-		        type = annex_everything}
-		  }
-		}
-	 else_if = {
-			limit = {
-				OR = {
 				DRC = { has_government= vmestolev }
 				CDR = { has_government = vmestolev }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					CHT = { has_government = vmestolev }
+				}
+				LAZ = {
+					add_to_faction = CHT
+					declare_war_on = {
+						target = CVT
+						type = annex_everything
+					}
 				}
 			}
-			LAZ = {
-		 		 add_to_faction = DRC
-				 add_to_faction = CDR
- declare_war_on = {
-		        target = VTC
-		        type = annex_everything
-				} 
-				declare_war_on = {
-		        target = CCO
-		        type = annex_everything
+			else_if = {
+				limit = {
+					OR = {
+						DRC = { has_government= vmestolev }
+						CDR = { has_government = vmestolev }
+					}
 				}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything
-				}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything
-				}
-		  }
-		}
-	else = {
-    create_wargoal = {
-							type = annex_everything
-							target = CHT
-						}
-create_wargoal = {
-							type = annex_everything
-							target = CDR
-						}
-create_wargoal = {
-							type = annex_everything
-							target = DRC
-						}
-create_wargoal = {
-							type = annex_everything
-							target = DGC
-						}
-	create_wargoal = {
-							type = annex_everything
-							target = CCO
-						}
-create_wargoal = {
-							type = annex_everything
+					LAZ = {
+						add_to_faction = DRC
+						add_to_faction = CDR
+						declare_war_on = {
 							target = VTC
-						}
-	create_wargoal = {
 							type = annex_everything
-							target = CVT
 						}
-}	
-	
-		
-}
+						declare_war_on = {
+							target = CCO
+							type = annex_everything
+						}
+					declare_war_on = {
+						target = DGC
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CHT
+						type = annex_everything
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = CHT
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CDR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = DRC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = DGC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CCO
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CVT
+				}
+			}	
+		}
 	}
 	focus = {
 		id = LAZ_rsfsr
@@ -1826,17 +1861,142 @@ create_wargoal = {
 				}
 		x = 3
 		y = 8
-			completion_reward = {
-                set_cosmetic_tag = LAZ_rsfsr
-				set_province_name = { id = 3529 name = "Сталинград" }
-				set_province_name = { id = 11523 name = "Энгельс" }
-				set_province_name = { id = 9432 name = "Маркс" }
-            }
-
+		completion_reward = {
+            set_cosmetic_tag = LAZ_rsfsr
+			set_province_name = { id = 3529 name = "Сталинград" }
+			set_province_name = { id = 11523 name = "Энгельс" }
+			set_province_name = { id = 9432 name = "Маркс" }
+		}
+	}
+	focus = {
+		id = LAZ_massoviye_rasstreli_v_chate
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_plan_doka
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+            add_manpower = -10000
+			add_political_power = 160
+			if = {
+				limit = {
+					OR = {
+						CHT = {
+							is_subject_of = LAZ
+							has_government = vmestolev
+							exists = yes 
+						}
+					}
+				}
+				CDR = {
+					add_manpower = -10000 
+					add_political_power = 160
+				}
+				CHT = { 
+					add_manpower = -10000
+					add_political_power = 160
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						CDR = { exists = yes }
+						CHT = {
+							has_government = vmestolev
+							exists = yes 
+						}
+					}
+				}
+				CDR = { 
+					add_manpower = -10000 
+					add_political_power = 160
+				}
+				CHT = { 
+					add_manpower = -10000
+					add_political_power = 160
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAZ_ne_smet_buhtet
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_massoviye_rasstreli_v_chate
+		}
+		x = 5
+		y = 9
+		completion_reward = {
+			add_ideas = LAZ_idea_situatsia_stabilna
+			#country_event = lazaret.999
+		}
+	}
+	focus = {
+		id = LAZ_chitat_chat
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_plan_shtazista
+		}
+		available = {
+			OR = {
+				controls_state = 252
+				has_subject = CDR
+				has_subject = CHT
+			}
+		}
+		x = 1
+		y = 8
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = LAZ_noviye_olimpiyskiye_igri
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_chitat_chat
+		}
+		available = {
+			OR = {
+				controls_state = 252
+				has_subject = CDR
+				has_subject = CHT
+			}
+		}
+		x = 1
+		y = 9
+		completion_reward = {
+            custom_effect_tooltip = LAZ_noviye_olimpiyskiye_igri_tt
+			#news_event = lazaret.1
+		}
+	}
+	focus = {
+		id = LAZ_ignorirovat_chat
+		icon = GFX_LAZ_real_soviet_human1
+		cost = 3
+		prerequisite = {
+			focus = LAZ_chitat_chat
+		}
+		available = {
+			OR = {
+				controls_state = 252
+				has_subject = CDR
+				has_subject = CHT
+			}
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = LAZ_mirniy_atom
-		icon = GFX_focus_wonderweapons
+		icon = GFX_LAZ_atom
 		cost = 5
 		prerequisite = {
 			focus = LAZ_razvitiye_raketnikh_tehnologiy
@@ -1845,14 +2005,13 @@ create_wargoal = {
 		}
 		x = 29
 		y = 6
-			completion_reward = {
-                add_tech_bonus = {
-                    name = nuclear_bonus
-                    ahead_reduction = 2
-                    category = nuclear
-                }
-            }
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
 	}
 	
 	focus = {
@@ -1867,15 +2026,14 @@ create_wargoal = {
 		}
 		x = 18
 		y = 7
-			completion_reward = {
-add_doctrine_cost_reduction = {
-							name = land_doc_bonus
-							cost_reduction = 1.0
-							uses = 2
-							category = land_doctrine
-						}
-}
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = LAZ_narodnaya_planovaya_shkola
@@ -1886,10 +2044,9 @@ add_doctrine_cost_reduction = {
 		}
 		x = 11
 		y = 6
-			completion_reward = {
-add_ideas = LAZ_narodnaya_planovaya_shkola
-}
-
+		completion_reward = {
+			add_ideas = LAZ_narodnaya_planovaya_shkola
+		}
 	}
 	focus = {
 		id = LAZ_motorizovannaya_armia
@@ -1910,7 +2067,6 @@ add_ideas = LAZ_narodnaya_planovaya_shkola
 				technology = motorised_infantry
 			}
 		}
-
 	}
 	focus = {
 		id = LAZ_upravleniye_voennoy_infrastructuroi
@@ -2306,12 +2462,29 @@ add_ideas = LAZ_dalniye_poleti
 		}
 		x = 13
 		y = 10
-			completion_reward = {
- swap_ideas = {
-				            remove_idea = LAZ_obucheniye_drozdov
-							add_idea = LAZ_selektsiya_drozdov
-				}
-}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAZ_obucheniye_drozdov
+				add_idea = LAZ_selektsiya_drozdov
+			}
+		}
+	}
+	focus = {
+		id = LAZ_plan_Karbisha
+		icon = GFX_LAZ_plan_karbysh
+		cost = 3
+		prerequisite = {
+			focus = LAZ_KNOR_economica
+		}
+		mutually_exclusive = {
+			focus = LAZ_plan_Seregina
+			focus = LAZ_plan_Kurakova
+			focus = LAZ_plan_Morito
+		}
+		x = 40
+		y = 2
+		completion_reward = {
+			# country_event = lazaret.31
+		}
 	}
 }

@@ -1605,8 +1605,8 @@
 
 	}
 	shared_focus = {
-		id = POK_ostavit_Pokayana_v_pokoye
-		icon = GFX_goal_unknown
+		id = POK_puppet_president
+		icon = GFX_POK_puppet_president
 		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
@@ -1620,25 +1620,25 @@
 	}
 	shared_focus = {
 		id = POK_no_need_president
-		icon = GFX_goal_unknown
+		icon = GFX_POK_no_need_president
 		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
 		mutually_exclusive = {
-			focus = POK_ostavit_Pokayana_v_pokoye
+			focus = POK_puppet_president
 		}
 		x = 34
 		y = 16
 
 	}
 	shared_focus = {
-		id = POK_kanzler_Shulman
-		icon = GFX_goal_unknown
+		id = POK_kanzler
+		icon = GFX_POK_kanzler
 		cost = 5
 		prerequisite = {
 		    focus = POK_no_need_president
-			focus = POK_ostavit_Pokayana_v_pokoye
+			focus = POK_puppet_president
 		}
 		x = 33
 		y = 17
@@ -2594,7 +2594,7 @@
 	}
 	shared_focus = {
 		id = POK_new_flag_and_simbols
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_flag_and_simbols
 		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
@@ -2856,7 +2856,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_new_history
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_history
 		cost = 5
 		prerequisite = {
 			focus = POK_chaging_mentality
@@ -2867,7 +2867,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_private_police
-		icon = GFX_goal_unknown
+		icon = GFX_POK_private_police
 		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
@@ -2878,7 +2878,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_chaging_mentality
-		icon = GFX_goal_unknown
+		icon = GFX_POK_chaging_mentality
 		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
@@ -2903,7 +2903,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_proshay_nemitaya_rossiya
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cht_slaves_masses
 		cost = 5
 		prerequisite = {
 			focus = POK_full_separation
@@ -2915,9 +2915,10 @@ available = {
 		y = 19
 
 	}
+	
 	shared_focus = {
 		id = POK_no_need_chagnes
-		icon = GFX_goal_unknown
+		icon = GFX_POK_no_need_changes
 		cost = 5
 		prerequisite = {
 			focus = POK_law_of_Novodvorskava
@@ -2931,7 +2932,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_destroy_socrealism_art
-		icon = GFX_goal_unknown
+		icon = GFX_POK_destroy_socrealism_art
 		cost = 5
 		prerequisite = {
 			focus = POK_Burn_soviet_books
@@ -2945,7 +2946,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_destroy_soviet_military
-		icon = GFX_goal_unknown
+		icon = GFX_POK_destroy_soviet_military
 		cost = 5
 		prerequisite = {
 			focus = POK_end_militarism
@@ -2981,7 +2982,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_stop_teaching
-		icon = GFX_goal_unknown
+		icon = GFX_POK_stop_teaching
 		cost = 5
 		prerequisite = {
 			focus = POK_no_need_chagnes
@@ -2992,7 +2993,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_elini_i_morloki
-		icon = GFX_goal_unknown
+		icon = GFX_POK_elini_i_morloki
 		cost = 5
 		prerequisite = {
 			focus = POK_stop_teaching
@@ -3150,7 +3151,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_small_buisnes_nuka_and_rocet
-		icon = GFX_goal_unknown
+		icon = GFX_POK_small_buisnes_nuka_and_rocet
 		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness

@@ -176,6 +176,8 @@ ideas = {
 			modifier = {
 				#justify_war_goal_time = -0.25
 				vmestolev_drift = -0.1
+				anarhostalinism_drift = -0.1
+				metacommy_drift = -0.1
 			}
 		}
 
@@ -236,6 +238,26 @@ ideas = {
 			modifier = {
 				#justify_war_goal_time = -0.25
 				neutrality_drift = 0.1
+			}
+		}
+		
+		rinpor = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				#justify_war_goal_time = -0.25
+				democratic_drift = 0.1
 			}
 		}
 		
@@ -742,6 +764,32 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.02
+				neutrality_drift = -0.02
+			}
+		}
+		
+		memoism_ethos_focus = {
+			
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = vmestolev
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+				fascism_drift = -0.02
+				vmestolev_drift = -0.02
+				anarhostalinism_drift = -0.02
+				metacommy_drift = -0.02		
 			}
 		}
 	

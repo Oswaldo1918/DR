@@ -1,0 +1,41 @@
+add_namespace = mordor
+
+country_event = { #Предыстория_Мордора
+
+	id = mordor.0 
+        title = mordor.0.t
+        desc = mordor.0.d
+	picture = GFX_report_event_dkr_sauron_smeshnyavka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.0.a
+	}
+}
+country_event = { #Идеи_Саурона
+
+	id = mordor.1
+        title = mordor.1.t
+        desc = mordor.1.d
+	picture = GFX_report_event_dkr_oko_saurona
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.1.a
+	}
+}
+country_event = { #Идеи_Сарумяна
+
+	id = mordor.2
+        title = mordor.2.t
+        desc = mordor.2.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.2.a
+	}
+}
