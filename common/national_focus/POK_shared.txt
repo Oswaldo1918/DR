@@ -1605,8 +1605,8 @@
 
 	}
 	shared_focus = {
-		id = POK_ostavit_Pokayana_v_pokoye
-		icon = GFX_goal_unknown
+		id = POK_puppet_president
+		icon = GFX_POK_puppet_president
 		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
@@ -1620,25 +1620,25 @@
 	}
 	shared_focus = {
 		id = POK_no_need_president
-		icon = GFX_goal_unknown
+		icon = GFX_POK_no_need_president
 		cost = 5
 		prerequisite = {
 			focus = POK_new_elections
 		}
 		mutually_exclusive = {
-			focus = POK_ostavit_Pokayana_v_pokoye
+			focus = POK_puppet_president
 		}
 		x = 34
 		y = 16
 
 	}
 	shared_focus = {
-		id = POK_kanzler_Shulman
-		icon = GFX_goal_unknown
+		id = POK_kanzler
+		icon = GFX_POK_kanzler
 		cost = 5
 		prerequisite = {
 		    focus = POK_no_need_president
-			focus = POK_ostavit_Pokayana_v_pokoye
+			focus = POK_puppet_president
 		}
 		x = 33
 		y = 17
@@ -2856,7 +2856,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_new_history
-		icon = GFX_goal_unknown
+		icon = GFX_POK_new_history
 		cost = 5
 		prerequisite = {
 			focus = POK_chaging_mentality
@@ -2867,7 +2867,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_private_police
-		icon = GFX_goal_unknown
+		icon = GFX_POK_private_police
 		cost = 5
 		prerequisite = {
 			focus = POK_support_small_buisness
@@ -2982,7 +2982,7 @@ available = {
 	}
 	shared_focus = {
 		id = POK_stop_teaching
-		icon = GFX_goal_unknown
+		icon = GFX_POK_stop_teaching
 		cost = 5
 		prerequisite = {
 			focus = POK_no_need_chagnes
