@@ -3,7 +3,7 @@ characters={
 		name = "Алексей Мильчаков"
 		portraits = {			
 			army = {
-				large = "gfx/leaders/YSK/Milchakov.dds"
+				large = "gfx/leaders/YSK/Alexey_Milchakov.dds"
 				small= "idea_CHK_Imran_Zahaev"
 			}
 		}
@@ -169,6 +169,196 @@ characters={
 	    defense_skill = 1
 	    planning_skill = 1
 	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Boris_Voevodin = {
+		name = "Борис Воеводин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Boris_Voevodin.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Konstantin_Voevodin = {
+		name = "Константин Воеводин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Konstantin_Voevodin.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Igor_Mangushev = {
+		name = "Игорь Мангушев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Igor_Mangushev.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Roman_Telenkevich = {
+		name = "Роман Теленкевич"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Roman_Telenkevich.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Yan_Petrovskiy = {
+		name = "Ян Петровский"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Yan_Petrovskiy.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Nickolay_Skorodumov = {
+		name = "Николай Скородумов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Nickolay_Skorodumov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Yuriy_Bernikov = {
+		name = "Юрий Берников"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Yuriy_Bernikov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Gennadiy_Troshev = {
+		name = "Геннадий Трошев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Gennadiy_Troshev.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected combined_arms_expert }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Eduard_Ulman = {
+		name = "Эдуард Ульман"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Eduard_Ulman.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected commando }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Yuriy_Budanov = {
+		name = "Юрий Буданов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Yuriy_Budanov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected panzer_leader }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
 		legacy_id = -1
         }
     }

@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 	default = no
+	
+	continuous_focus_position = { x = 0 y = 0 }
 	#фокусы_гв
 	focus = { 
 		id = YSK_rus_kukozh
@@ -538,9 +540,13 @@ focus_tree = {
 		cost = 2,00
 		x = 31
 		y = 6
+		available = {
+			has_complete_focus = YSK_purified
+		}
         completion_reward = {
             add_stability = 0.1
-            add_political_power = 100     			
+            add_political_power = 100
+            set_country_flag = YSK_rus_pobeda      			
         }     
 	}
 	#
@@ -575,7 +581,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_slavic_empire
 		}
-		x = 79
+		x = 83
 		y = 15
 
 	}
@@ -586,7 +592,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_rusoslavic_confederate
 		}
-		x = 83
+		x = 87
 		y = 15
 
 	}
@@ -625,6 +631,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 7
+			available = {
+					has_country_flag = rusdem_win
+				}
 
 	}
 	focus = {
@@ -908,17 +917,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_rus_konservatism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_president
-		}
-		x = 28
-		y = 12
-
-	}
-	focus = {
 		id = YSK_russian_monarchy
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -1098,6 +1096,9 @@ focus_tree = {
 		}
 		x = 50
 		y = 7
+			available = {
+					has_country_flag = monarhist_win
+				}
 
 	}
 	focus = {
@@ -1241,6 +1242,9 @@ focus_tree = {
 		}
 		x = 65
 		y = 7
+			available = {
+					has_country_flag = ultraprav_win
+				}
 
 	}
 	focus = {
@@ -1446,6 +1450,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = YSK_letaushchie_hrami
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ortodox_batuts
+		}
+		x = 68
+		y = 17
+
+	}
+	focus = {
 		id = YSK_osvyatit_rakety
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -1457,13 +1472,24 @@ focus_tree = {
 
 	}
 	focus = {
+		id = YSK_dvigately_na_svyat_duhe
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otrit_new_NII
+		}
+		x = 69
+		y = 16
+
+	}
+	focus = {
 		id = YSK_NNP
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 72
+		x = 75
 		y = 10
 
 	}
@@ -1474,7 +1500,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_NNP
 		}
-		x = 72
+		x = 75
 		y = 11
 
 	}
@@ -1488,7 +1514,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 71
+		x = 74
 		y = 12
 
 	}
@@ -1499,7 +1525,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 		}
-		x = 69
+		x = 72
 		y = 13
 
 	}
@@ -1513,7 +1539,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 		}
-		x = 73
+		x = 76
 		y = 12
 
 	}
@@ -1525,7 +1551,7 @@ focus_tree = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 73
+		x = 76
 		y = 13
 
 	}
@@ -1536,7 +1562,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 75
+		x = 78
 		y = 13
 
 	}
@@ -1547,7 +1573,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 81
+		x = 85
 		y = 10
 
 	}
@@ -1558,7 +1584,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rusich
 		}
-		x = 78
+		x = 82
 		y = 11
 
 	}
@@ -1569,7 +1595,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_yazycheskiy_988
 		}
-		x = 77
+		x = 81
 		y = 12
 
 	}
@@ -1580,7 +1606,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_yazycheskiy_988
 		}
-		x = 78
+		x = 82
 		y = 14
 
 	}
@@ -1591,7 +1617,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_yazycheskiy_988
 		}
-		x = 79
+		x = 83
 		y = 12
 
 	}
@@ -1602,7 +1628,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_yazycheskiy_988
 		}
-		x = 79
+		x = 83
 		y = 13
 
 	}
@@ -1613,7 +1639,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rusich
 		}
-		x = 80
+		x = 84
 		y = 11
 
 	}
@@ -1624,7 +1650,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rusich
 		}
-		x = 82
+		x = 86
 		y = 11
 
 	}
@@ -1638,7 +1664,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Druzhina_Rusich
 		}
-		x = 81
+		x = 85
 		y = 12
 
 	}
@@ -1649,7 +1675,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_borotsya_s_ukrobolshevismom_vo_vsem_mire
 		}
-		x = 81
+		x = 85
 		y = 13
 
 	}
@@ -1660,7 +1686,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_otbor_po_vere
 		}
-		x = 80
+		x = 84
 		y = 14
 
 	}
@@ -1671,7 +1697,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_otbor_po_vere
 		}
-		x = 82
+		x = 86
 		y = 14
 
 	}
@@ -1682,7 +1708,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rusich
 		}
-		x = 84
+		x = 88
 		y = 11
 
 	}
@@ -1693,7 +1719,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_opyt_donbassa
 		}
-		x = 83
+		x = 87
 		y = 12
 
 	}
@@ -1704,7 +1730,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_opyt_donbassa
 		}
-		x = 83
+		x = 87
 		y = 13
 
 	}
@@ -1715,7 +1741,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_opyt_donbassa
 		}
-		x = 84
+		x = 88
 		y = 14
 
 	}
@@ -1726,7 +1752,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_opyt_donbassa
 		}
-		x = 85
+		x = 89
 		y = 12
 
 	}
@@ -1737,7 +1763,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_opyt_donbassa
 		}
-		x = 85
+		x = 89
 		y = 13
 
 	}
@@ -1748,7 +1774,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_my_hotim_ybivat
 		}
-		x = 86
+		x = 90
 		y = 14
 
 	}
@@ -1759,7 +1785,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 91
+		x = 98
 		y = 10
 
 	}
@@ -1770,7 +1796,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_RNE
 		}
-		x = 91
+		x = 98
 		y = 11
 
 	}
@@ -1781,7 +1807,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
-		x = 88
+		x = 95
 		y = 12
 
 	}
@@ -1792,7 +1818,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_vozradit_rus_nation
 		}
-		x = 87
+		x = 94
 		y = 13
 
 	}
@@ -1803,7 +1829,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_razovetsya_gordo_rus_styag
 		}
-		x = 89
+		x = 96
 		y = 13
 
 	}
@@ -1814,7 +1840,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
-		x = 91
+		x = 98
 		y = 12
 
 	}
@@ -1825,7 +1851,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_vozvysit_IPTs
 		}
-		x = 91
+		x = 98
 		y = 13
 
 	}
@@ -1836,7 +1862,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_splav_hrist_i_yaziych
 		}
-		x = 91
+		x = 98
 		y = 14
 
 	}
@@ -1847,7 +1873,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_nasledniki_velikih
 		}
-		x = 91
+		x = 98
 		y = 15
 
 	}
@@ -1858,7 +1884,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Russian_God
 		}
-		x = 90
+		x = 97
 		y = 16
 
 	}
@@ -1869,7 +1895,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Russian_God
 		}
-		x = 92
+		x = 99
 		y = 16
 
 	}
@@ -1880,7 +1906,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
-		x = 94
+		x = 101
 		y = 12
 
 	}
@@ -1891,7 +1917,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rus_unitarism
 		}
-		x = 93
+		x = 100
 		y = 13
 
 	}
@@ -1902,7 +1928,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Rus_unitarism
 		}
-		x = 95
+		x = 102
 		y = 13
 
 	}
@@ -1916,7 +1942,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_borba_s_world_evrey_agovor
 		}
-		x = 94
+		x = 101
 		y = 14
 
 	}
@@ -1927,7 +1953,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chernorubashechniki
 		}
-		x = 94
+		x = 101
 		y = 15
 
 	}
@@ -1938,7 +1964,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_vozvodit_soslovie_kazakov
 		}
-		x = 94
+		x = 101
 		y = 16
 
 	}
@@ -1949,7 +1975,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 103
+		x = 111
 		y = 10
 
 	}
@@ -1960,7 +1986,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_NPF_Memory
 		}
-		x = 99
+		x = 107
 		y = 11
 
 	}
@@ -1971,7 +1997,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_God
 		}
-		x = 98
+		x = 106
 		y = 12
 
 	}
@@ -1982,7 +2008,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_united_duh_disciplines
 		}
-		x = 97
+		x = 105
 		y = 13
 
 	}
@@ -1993,7 +2019,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_God
 		}
-		x = 100
+		x = 108
 		y = 12
 
 	}
@@ -2007,7 +2033,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_doctina_fundament_pravoslaviya
 		}
-		x = 99
+		x = 107
 		y = 13
 
 	}
@@ -2018,7 +2044,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_antisionism
 		}
-		x = 99
+		x = 107
 		y = 14
 
 	}
@@ -2029,7 +2055,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebirth_duha
 		}
-		x = 97
+		x = 105
 		y = 14
 
 	}
@@ -2040,7 +2066,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_NPF_Memory
 		}
-		x = 103
+		x = 111
 		y = 11
 
 	}
@@ -2051,7 +2077,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 102
+		x = 110
 		y = 12
 
 	}
@@ -2065,7 +2091,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_bozh_zemskaya_ierarhiya
 		}
-		x = 101
+		x = 109
 		y = 13
 
 	}
@@ -2076,7 +2102,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 104
+		x = 112
 		y = 12
 
 	}
@@ -2090,7 +2116,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
-		x = 103
+		x = 111
 		y = 13
 
 	}
@@ -2101,7 +2127,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_neofeodalism
 		}
-		x = 103
+		x = 111
 		y = 14
 
 	}
@@ -2112,7 +2138,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_new_ZemSobor
 		}
-		x = 101
+		x = 109
 		y = 14
 
 	}
@@ -2129,7 +2155,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Restoration_monastres_and_consults
 		}
-		x = 99
+		x = 107
 		y = 15
 
 	}
@@ -2140,7 +2166,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_NPF_Memory
 		}
-		x = 107
+		x = 115
 		y = 11
 
 	}
@@ -2151,7 +2177,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Nation
 		}
-		x = 106
+		x = 114
 		y = 12
 
 	}
@@ -2165,7 +2191,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
-		x = 105
+		x = 113
 		y = 13
 
 	}
@@ -2176,7 +2202,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Nation
 		}
-		x = 108
+		x = 116
 		y = 12
 
 	}
@@ -2190,7 +2216,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zakony_bozhi
 		}
-		x = 107
+		x = 115
 		y = 13
 
 	}
@@ -2201,7 +2227,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_krutoy_povorot_k_traditsiyam
 		}
-		x = 107
+		x = 115
 		y = 14
 
 	}
@@ -2212,7 +2238,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_new_sosloviya
 		}
-		x = 105
+		x = 113
 		y = 14
 
 	}
@@ -2229,7 +2255,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
 		}
-		x = 103
+		x = 111
 		y = 15
 
 	}
@@ -2837,7 +2863,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_idealizatsiya_dorev_proshlogo
 		}
-		x = 107
+		x = 115
 		y = 15
 
 	}
@@ -2851,7 +2877,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_the_struggle_of_good_with_evil
 		}
-		x = 101
+		x = 109
 		y = 16
 
 	}
@@ -2865,7 +2891,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_gordoe_plemya_na_bitvy_vstavay
 		}
-		x = 105
+		x = 113
 		y = 16
 
 	}
@@ -2879,7 +2905,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_i_mechom
 		}
-		x = 103
+		x = 111
 		y = 17
 
 	}
@@ -2899,19 +2925,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zhestkaya_distsiplina
 		}
-		x = 91
+		x = 98
 		y = 17
-
-	}
-	focus = {
-		id = YSK_dvigately_na_svyat_duhe
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otrit_new_NII
-		}
-		x = 69
-		y = 16
 
 	}
 	focus = {
@@ -2950,7 +2965,7 @@ focus_tree = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 71
+		x = 74
 		y = 13
 
 	}
@@ -2964,7 +2979,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ns_chvk
 		}
-		x = 72
+		x = 75
 		y = 14
 
 	}
@@ -2975,7 +2990,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
-		x = 72
+		x = 75
 		y = 15
 
 	}
@@ -2986,7 +3001,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ogon_po_churkam
 		}
-		x = 75
+		x = 78
 		y = 17
 
 	}
@@ -2997,7 +3012,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_white_edinstvo
 		}
-		x = 74
+		x = 77
 		y = 16
 
 	}
@@ -3008,7 +3023,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
-		x = 74
+		x = 77
 		y = 15
 
 	}
@@ -3019,7 +3034,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_shkola_race_prosveshceniya
 		}
-		x = 70
+		x = 73
 		y = 18
 
 	}
@@ -3030,19 +3045,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_skinhad_patrul
 		}
-		x = 72
+		x = 75
 		y = 16
-
-	}
-	focus = {
-		id = YSK_letaushchie_hrami
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ortodox_batuts
-		}
-		x = 69
-		y = 17
 
 	}
 	focus = {
@@ -3063,7 +3067,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
-		x = 70
+		x = 73
 		y = 15
 
 	}
@@ -3074,7 +3078,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_shkola_race_prosveshceniya
 		}
-		x = 68
+		x = 71
 		y = 18
 
 	}
@@ -3085,7 +3089,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_okkupay_pedofilyay
 		}
-		x = 70
+		x = 73
 		y = 16
 
 	}
@@ -3096,7 +3100,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_white_business
 		}
-		x = 76
+		x = 79
 		y = 18
 
 	}
@@ -3110,7 +3114,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_gosvo_vam_nichevo_ne_dolzhno
 		}
-		x = 75
+		x = 78
 		y = 19
 
 	}
@@ -3121,7 +3125,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_white_business
 		}
-		x = 74
+		x = 77
 		y = 18
 
 	}
@@ -3132,7 +3136,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sluzhba_white_rase
 		}
-		x = 73
+		x = 76
 		y = 17
 
 	}
@@ -3143,7 +3147,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sluzhba_white_rase
 		}
-		x = 71
+		x = 74
 		y = 17
 
 	}
@@ -3157,7 +3161,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_social_tutovism
 		}
-		x = 72
+		x = 75
 		y = 18
 
 	}
@@ -3168,7 +3172,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ostanovit_razlozheniya_sosaity
 		}
-		x = 69
+		x = 72
 		y = 17
 
 	}
@@ -3182,7 +3186,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_kult_sily
 		}
-		x = 69
+		x = 72
 		y = 19
 
 	}
@@ -3265,7 +3269,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_yazycheskiy_988
 		}
-		x = 77
+		x = 81
 		y = 13
 
 	}
@@ -3276,7 +3280,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_religion_silnih
 		}
-		x = 76
+		x = 80
 		y = 14
 
 	}
@@ -3287,7 +3291,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_tverzhe_duh_boytsovskiy
 		}
-		x = 88
+		x = 95
 		y = 14
 
 	}
@@ -3298,7 +3302,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_edinstvo_nasha_sila
 		}
-		x = 89
+		x = 96
 		y = 15
 
 	}
@@ -3309,7 +3313,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_golos_nashego_vozhdya
 		}
-		x = 87
+		x = 94
 		y = 15
 
 	}
@@ -3320,7 +3324,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_na_bitvy_Slavnuyu_za_Rus_idya
 		}
-		x = 88
+		x = 95
 		y = 16
 
 	}
@@ -3331,7 +3335,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zakony_bozhi
 		}
-		x = 109
+		x = 117
 		y = 13
 
 	}
@@ -3342,7 +3346,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_cult_Dmotriya_Vasileva
 		}
-		x = 109
+		x = 117
 		y = 14
 
 	}

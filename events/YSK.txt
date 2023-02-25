@@ -89,24 +89,53 @@ country_event = {
 		add_ideas = YSK_left_partizan      		
 	}
 }
+
 #закрепление нацдемов
+country_event = {
+	id = YSK.5
+	title = YSK.5.t
+	desc = YSK.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.5.a
+		set_country_flag = rusdem_win      		
+	}
+}
+
+#переворот ульраправых
+country_event = {
+	id = YSK.6
+	title = YSK.6.t
+	desc = YSK.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	
+	option = {
+	name = YSK.6.a
+		set_country_flag = ultraprav_win        		
+	}
+}
+
+#
 country_event = {
 	id = YSK.555
 	title = YSK.555.t
 	desc = YSK.555.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
-	is_triggered_only = yes	
 	
 	trigger = {
     tag = YSK
     YSK = { check_variable = { rusdem_coup > 3 } }
-	YSK = { has_completed_focus = YSK_rus_vibory }
+	has_country_flag = YSK_rus_pobeda   
     }
 	
 	option = {
 	name = YSK.555.a
-		set_country_flag = rusdem_win      		
+		country_event = YSK.5     		
 	}
 }
 #переворот ульраправых
@@ -121,11 +150,11 @@ country_event = {
 	trigger = {
     tag = YSK
     YSK = { check_variable = { ultraprav_coup > 3 } }
-	YSK = { has_completed_focus = YSK_rus_vibory }
+	has_country_flag = YSK_rus_pobeda 
     }
 	
 	option = {
 	name = YSK.556.a
-		set_country_flag = ultraprav_win      		
+		country_event = YSK.6       		
 	}
 }
