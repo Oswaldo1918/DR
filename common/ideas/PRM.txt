@@ -2,7 +2,7 @@ ideas = {
        country = {
 	        PRM_ural_karapuz = {
 
-			picture = generic_morale_bonus
+			picture = Uralskiy_karapuz
 			
 			   modifier = {
 			    army_core_defence_factor = 0.05
@@ -15,7 +15,7 @@ ideas = {
 			
 			 PRM_ural_karapuz_1 = {
 
-			picture = generic_morale_bonus
+			picture = Uralskiy_karapuz
 			
 			   modifier = {
 			    army_core_defence_factor = 0.05
@@ -92,19 +92,7 @@ ideas = {
 				army_morale_factor = 0.03
 				political_power_cost = -0.1
 			    }
-		    }
-			
-			SKT_hui_ded_Maksim = {
-
-			picture = generic_intel_bonus
-			
-			   modifier = {
-			    breakthrough_factor = 0.15
-				army_attack_factor = 0.15
-			    monthly_population = 3
-				consumer_goods_factor = -0.1
-			    }
-		    }
+		    }			
 	    }
 		
 		aircraft_manufacturer = { 

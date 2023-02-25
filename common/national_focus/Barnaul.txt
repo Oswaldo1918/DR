@@ -540,7 +540,8 @@ focus_tree = {
 		y = 6
         completion_reward = {
             add_stability = 0.1
-            add_political_power = 100     			
+            add_political_power = 100
+            set_country_flag = YSK_rus_pobeda      			
         }     
 	}
 	#
@@ -622,6 +623,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_sozvat_zemsobor
 			focus = YSK_vot_praviy_povorot
+		}
+		available = {
+			has_country_flag = rusdem_win
 		}
 		x = 12
 		y = 7
@@ -1096,6 +1100,9 @@ focus_tree = {
 			focus = YSK_moderate_rusnat
 			focus = YSK_vot_praviy_povorot
 		}
+		available = {
+			has_country_flag = monarhist_win
+		}
 		x = 50
 		y = 7
 
@@ -1238,6 +1245,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_moderate_rusnat
 			focus = YSK_sozvat_zemsobor
+		}
+		available = {
+			has_country_flag = ultraprav_win
 		}
 		x = 65
 		y = 7
