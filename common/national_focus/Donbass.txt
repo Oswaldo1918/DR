@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_pervaia_pyaitiletka #Продвинутый_экономический_план
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_raskonservatsiya_shaht
@@ -454,7 +454,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_prodolzhit_promishlenniy_plan
-		icon = GFX_focus_cht_socialist_chudo
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -510,7 +510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_shahta_im_lavkrafta #Расширение_добывающей_промышленности
-		icon = GFX_focus_generic_steel
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_prodolzhit_promishlenniy_plan
@@ -556,7 +556,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_narabotki_po_ogasy
-		icon = GFX_Computer_2
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = DON_iskra
@@ -621,7 +621,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_sevastopolskiye_verfi
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_rekonstruktsiya_dneproges
@@ -722,7 +722,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_konstruktorskie_buro
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_avtomobili
@@ -773,7 +773,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_rezinka
-		icon = GFX_focus_generic_rubber
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_himprom
@@ -810,7 +810,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_NPZ
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_himprom
@@ -834,7 +834,7 @@ focus_tree = {
 				bonus = 0.50
 				uses = 2
 				category = synth_resources
-			}
+			}		
 			random_owned_controlled_state = {		
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1046,7 +1046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_dopolnitelniy_nazhim
-		icon = GFX_cht_kluch_strelki
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_mobilizovat_rezervistov
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_plan_A
@@ -1163,7 +1163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_usilit_armiu
-		icon = GFX_focus_cht_klonirovanie
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_propagandiskaya_kampaniya
@@ -1229,7 +1229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_vskrit_sladi_s_oruzhiyem
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = DON_plan_B
@@ -1307,7 +1307,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_mobilizovat_opolcheniye
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_unknown
 		cost = 1,00
 		prerequisite = {
 			focus = DON_kustarnoye_proizvodstvo
@@ -1350,7 +1350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_kustarnoye_proizvodstvo
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_unknown
 		cost = 1,00
 		prerequisite = {
 			focus = DON_plan_B
@@ -1557,7 +1557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_zahvat_flota
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_odessa
@@ -1590,7 +1590,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_modernizatsiya_flota
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = DON_krimnash
