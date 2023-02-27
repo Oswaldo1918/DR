@@ -5,7 +5,7 @@ country_event = {
     id = chat.1
 	title = chat.1.t
 	desc = chat.1.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_communists_cheer
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -447,261 +447,9 @@ country_event = {
 		}
 	}
 	option = {
-	name = chat.3.e
-	hidden_effect = {
-	CHT = {
-	remove_ideas =  CHT_loksists
-	remove_ideas = CHT_great_srach 
-    add_ideas = CHT_great_srach_1
-	leave_faction = Chumnoy_pakt
+		name = chat.3.e
+		country_event = chat.26
 	}
-	LAZ = {
-			end_puppet = CHT
-		}
-	set_global_flag = chat_civil_war
-             CDR = {transfer_state = 399 
-		       transfer_state = 256
-			   transfer_state = 249
-			   transfer_state = 833
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-			   declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}
-				load_oob = CDR_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				}
-		CCO = {transfer_state = 255
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-                declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}     
-				load_oob = CCO_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				} 
-		VTC	= {transfer_state = 250 
-		       transfer_state = 251
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-                declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}
-                load_oob = VTC_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				}				
-		DGC = {transfer_state = 400 
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255 
-               add_state_core = 833
-			    declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}    	
-		        load_oob = DGC_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				} 
-                VTC = { change_tag_from = CHT }	
-			CHT_ivan = { set_nationality = CDR }
-			CHT_zaytsev = { set_nationality = CDR }
-			CHT_Nikolas = { set_nationality = CDR }
-			CHT_ivanov = { set_nationality = CDR }				
-		}
-	}	
-	option = {
-	name = chat.3.f
-	hidden_effect = {
-	CHT = {
-	remove_ideas =  CHT_loksists
-	remove_ideas = CHT_great_srach 
-    add_ideas = CHT_great_srach_1
-	leave_faction = Chumnoy_pakt
-	}
-	LAZ = {
-			end_puppet = CHT
-		}
-	set_global_flag = chat_civil_war
-              CDR = {transfer_state = 399 
-		       transfer_state = 256
-			   transfer_state = 249
-			   transfer_state = 833
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-			   declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}
-				load_oob = CDR_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				}
-		CCO = {transfer_state = 255
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-                declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}     
-				load_oob = CCO_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				} 
-		VTC	= {transfer_state = 250 
-		       transfer_state = 251
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255
-			   add_state_core = 833
-                declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = DGC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}
-                load_oob = VTC_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				}				
-		DGC = {transfer_state = 400 
-               add_state_core = 399
-               add_state_core = 256
-               add_state_core = 249
-               add_state_core = 400
-               add_state_core = 252
-               add_state_core = 250
-			   add_state_core = 251
-               add_state_core = 255 
-               add_state_core = 833
-			    declare_war_on = {
-		        target = CDR
-		        type = annex_everything}
-				declare_war_on = {
-		        target = VTC
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CCO
-		        type = annex_everything}
-				declare_war_on = {
-		        target = CHT
-		        type = annex_everything}    	
-		        load_oob = DGC_1936
-				add_ideas = CHT_great_srach_1
-	            add_ideas = CHT_shue
-				} 
-                DGC = { change_tag_from = CHT }
-			CHT_ivan = { set_nationality = CDR }
-			CHT_zaytsev = { set_nationality = CDR }
-			CHT_Nikolas = { set_nationality = CDR }
-			CHT_ivanov = { set_nationality = CDR }
-			}	
-	}	
 }	
 # Съезд Совета
 country_event = {
@@ -1638,7 +1386,7 @@ country_event = {
     id = chat.14
 	title = chat.14.t
 	desc = chat.14.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_spr_carlists
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1674,7 +1422,7 @@ country_event = {
     id = chat.15
 	title = chat.15.t
 	desc = chat.15.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_spr_carlists2
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1694,7 +1442,7 @@ country_event = {
     id = chat.16
 	title = chat.16.t
 	desc = chat.16.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_soviet_in_riga
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1735,7 +1483,7 @@ country_event = {
     id = chat.17
 	title = chat.17.t
 	desc = chat.17.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_tur_political_rally
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1774,7 +1522,7 @@ country_event = {
      id = chat.18
 	 title = chat.18.t
 	 desc = chat.18.d
-	 picture = GFX_news_event_eng_imperial_conference
+	 picture = GFX_report_event_tur_political_rally
 	
 	 fire_only_once = yes
 	 is_triggered_only = yes
@@ -1798,7 +1546,7 @@ country_event = {
     id = chat.19
 	title = chat.19.t
 	desc = chat.19.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_eng_royal_family
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1820,7 +1568,7 @@ country_event = {
     id = chat.20
 	title = chat.20.t
 	desc = chat.20.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_eng_royal_family
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1847,7 +1595,7 @@ country_event = {
     id = chat.21
 	title = chat.21.t
 	desc = chat.21.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_eng_edward_and_wallis
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1866,7 +1614,7 @@ country_event = {
     id = chat.22
 	title = chat.22.t
 	desc = chat.22.d
-	picture = GFX_news_event_eng_imperial_conference
+	picture = GFX_report_event_german_volunteers
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1883,174 +1631,432 @@ country_event = {
 	
  }
   country_event = {
-    id = chat.23
-	title = chat.23.t
-	desc = chat.23.d
-	picture = GFX_report_event_tur_writing_desk
+		id = chat.23
+		title = chat.23.t
+		desc = chat.23.d
+		picture = GFX_report_event_german_volunteers
 	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
 	
-	option = {
-	name = chat.23.a
-	add_ideas = CHT_sila
-	}
-	option = {
-	name = chat.23.b
-	add_ideas = CHT_uspeh
-	}
-	option = {
-	name = chat.23.c
-	add_ideas = CHT_friendship
-	}
- }
- country_event = {
-    id = chat.24
-	title = chat.24.t
-	desc = chat.24.d
-	picture = GFX_report_event_tur_writing_desk
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
-	
-	option = {
-	name = chat.24.a
-    add_political_power = 100
-	}  
-	}
-	 country_event = {
-    id = chat.25
-	title = chat.25.t
-	desc = chat.25.d
-	picture = GFX_report_event_tur_writing_desk
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
-	
-	option = {
-	name = chat.25.a
-    add_political_power = 50
-	}  
-	}
- country_event = {
-    id = chat.999
-	title = chat.999.t
-	desc = chat.999.d
-	picture = GFX_news_event_eng_imperial_conference
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
-	
-	option = {
-	name = chat.999.a
-	hidden_effect = {
-	set_country_flag = bimba_bimba
-	}
-	
- }
- }
- country_event = {
-    id = chat.998
-	title = chat.998.t
-	desc = chat.998.d
-	picture = GFX_news_event_eng_imperial_conference
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
-	
-	option = {
-	name = chat.998.a
-add_tech_bonus = {
-			name = nuclear_bonus
-			bonus = 8
-			uses = 3
-			category = nuclear
-		}	
-			
-	}  
+		option = {
+			name = chat.23.a
+			add_ideas = CHT_sila
+		}
+		option = {
+			name = chat.23.b
+			add_ideas = CHT_uspeh
+		}
+		option = {
+			name = chat.23.c
+			add_ideas = CHT_friendship
+		}
 	}
 	country_event = {
-    id = chat.997
-	title = chat.997.t
-	desc = chat.997.d
-	picture = GFX_news_event_eng_imperial_conference
+		id = chat.24
+		title = chat.24.t
+		desc = chat.24.d
+		picture = GFX_report_event_german_volunteers
 	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
+	
+		option = {
+			name = chat.24.a
+			add_political_power = 100
+		}  
+	}
+	country_event = {
+		id = chat.25
+		title = chat.25.t
+		desc = chat.25.d
+		picture = GFX_report_event_mussolini_hotel
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
+	
+		option = {
+			name = chat.25.a
+			add_political_power = 50
+		}  
 	}
 	
+	country_event = { # Гражданка через Штурм - остальные варианты
+		id = chat.26
+		title = chat.26.t
+		desc = chat.26.d
+		picture = GFX_report_event_spain_civil_war_volunteers_01
+
 	option = {
-	name = chat.997.a
-    add_political_power = 50
-	add_ideas = CHT_alcog
-	}  
-	}
-	 country_event = {
-    id = chat.1000
-	title = chat.1000.t
-	desc = chat.1000.d
-	picture = GFX_event_pictures_report_event_tur_machine_gunners
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		tag = CHT
-	}
-	
-	option = {
-	name = chat.1000.a
+	name = chat.26.a
 	hidden_effect = {
-	set_country_flag = mercen_mercen
-	}
-	
- }
- }
- country_event = {
-	id = chat.228
-	title = chat.228.t
-	desc = chat.228.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	is_triggered_only = yes	
-	
-	option = {
-	name = chat.228.a
-	LAZ = {
-	      annex_country = {
-			target = CHT
-			transfer_troops = yes
-		}
-		}
 	CHT = {
-			every_unit_leader = {
-				set_nationality = LAZ
-			}
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
 	}
-	}
-	
-	option = {
-	name = chat.228.b
 	LAZ = {
-	create_wargoal = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+             CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+			   transfer_state = 833
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
 		        target = CHT
-		        type = annex_everything
-			}	
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+               add_state_core = 833
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                VTC = { change_tag_from = CHT }	
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }				
+		}
+	}	
+	option = {
+	name = chat.26.b
+	hidden_effect = {
+	CHT = {
+	remove_ideas =  CHT_loksists
+	remove_ideas = CHT_great_srach 
+    add_ideas = CHT_great_srach_1
+	leave_faction = Chumnoy_pakt
 	}
-}
+	LAZ = {
+			end_puppet = CHT
+		}
+	set_global_flag = chat_civil_war
+              CDR = {transfer_state = 399 
+		       transfer_state = 256
+			   transfer_state = 249
+			   transfer_state = 833
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+			   declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+				load_oob = CDR_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}
+		CCO = {transfer_state = 255
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}     
+				load_oob = CCO_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+		VTC	= {transfer_state = 250 
+		       transfer_state = 251
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255
+			   add_state_core = 833
+                declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = DGC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}
+                load_oob = VTC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				}				
+		DGC = {transfer_state = 400 
+               add_state_core = 399
+               add_state_core = 256
+               add_state_core = 249
+               add_state_core = 400
+               add_state_core = 252
+               add_state_core = 250
+			   add_state_core = 251
+               add_state_core = 255 
+               add_state_core = 833
+			    declare_war_on = {
+		        target = CDR
+		        type = annex_everything}
+				declare_war_on = {
+		        target = VTC
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CCO
+		        type = annex_everything}
+				declare_war_on = {
+		        target = CHT
+		        type = annex_everything}    	
+		        load_oob = DGC_1936
+				add_ideas = CHT_great_srach_1
+	            add_ideas = CHT_shue
+				} 
+                DGC = { change_tag_from = CHT }
+			CHT_ivan = { set_nationality = CDR }
+			CHT_zaytsev = { set_nationality = CDR }
+			CHT_Nikolas = { set_nationality = CDR }
+			CHT_ivanov = { set_nationality = CDR }
+			}	
+		}		
+		option = {
+			name = chat.26.c
+			country_event = chat.3
+		}
+	}
+	country_event = {
+		id = chat.997
+		title = chat.997.t
+		desc = chat.997.d
+		picture = GFX_report_event_SOV_atomic_program_caught
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = { tag = CHT }
+		option = {
+		name = chat.997.a
+			add_political_power = 50
+			add_ideas = CHT_alcog
+		}  
+	}
+	country_event = {
+		id = chat.998
+		title = chat.998.t
+		desc = chat.998.d
+		picture = GFX_report_event_SOV_atomic_program_caught
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
+		option = {
+		name = chat.998.a
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 8
+				uses = 3
+				category = nuclear
+			}
+		}  
+	}
+	country_event = {
+		id = chat.999
+		title = chat.999.t
+		desc = chat.999.d
+		picture = GFX_report_event_SOV_atomic_program_caught
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
+		option = {
+			name = chat.999.a
+			hidden_effect = {
+				set_country_flag = bimba_bimba
+			}
+		}
+	}
+	country_event = {
+		id = chat.1000
+		title = chat.1000.t
+		desc = chat.1000.d
+		picture = GFX_event_pictures_report_event_tur_machine_gunners
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		trigger = {
+			tag = CHT
+		}
+	
+		option = {
+			name = chat.1000.a
+			hidden_effect = {
+				set_country_flag = mercen_mercen
+			}	
+		}
+	}
+	country_event = {
+		id = chat.228
+		title = chat.228.t
+		desc = chat.228.d
+		picture = GFX_report_event_SOV_cossack_cavalry
+	
+		is_triggered_only = yes	
+		
+		option = {
+			name = chat.228.a
+			LAZ = {
+				annex_country = {
+					target = CHT
+					transfer_troops = yes
+				}
+			}
+			CHT = {
+				every_unit_leader = {
+					set_nationality = LAZ
+				}
+			}
+		}
+		option = {
+			name = chat.228.b
+			LAZ = {
+				create_wargoal = {
+					target = CHT
+					type = annex_everything
+				}
+			}
+		}
+	}
