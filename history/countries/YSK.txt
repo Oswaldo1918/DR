@@ -2,7 +2,7 @@ capital = 40
 
 oob = 123_1936
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -33,6 +33,10 @@ recruit_character = YSK_Alexsandr_Barkashov
 recruit_character = YSK_Milchakov
 recruit_character = YSK_Tesak
 recruit_character = YSK_Nickolay_Skorodumov
+recruit_character = YSK_Egor_Prosvirnin
+recruit_character = YSK_Dmitriy_Rogozin
+
+recruit_character = YSK_rus_sobranie
 
 recruit_character = YSK_Alexsey_Zhuravlev
 recruit_character = YSK_Leonid_Reshetnikov
@@ -62,26 +66,15 @@ recruit_character = YSK_Yuriy_Budanov
 set_popularities = {
     anarhostalinism = 22
     vmestolev = 21
-    metacommy = 12
+    metacommy = 21
     democratic = 5
 	fascism = 4
 	memoism = 22
 	neutrality = 5
 }
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	elections_allowed = no	
 }
 
 set_convoys = 300
-
-create_country_leader = {
-	name = "Егор Просвирнин"
-	desc = "POLITICS_PROSVERLEN_DESC"
-	picture = "Pogrom.dds"
-	expire = "1999.1.1"
-	ideology = fascism_ideology
-	traits = {
-		Purer
-	}
-}

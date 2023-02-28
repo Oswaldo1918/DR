@@ -119,6 +119,175 @@ country_event = {
 	}
 }
 
+#мотор ревёт
+country_event = {
+	id = YSK.7
+	title = YSK.7.t
+	desc = YSK.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	
+	option = {
+	name = YSK.7.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_stability = -0.1
+        kill_country_leader = yes
+        add_country_leader_role = {
+            character = YSK_rus_sobranie
+            promote_leader = yes
+            country_leader = {
+                ideology = conservatism
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }		
+	}
+}
+
+#выбор ультраправых
+country_event = {
+	id = YSK.8
+	title = YSK.8.t
+	desc = YSK.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	
+	option = {
+	    name = YSK.8.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Dmitriy_Rogozin
+            promote_leader = yes
+            country_leader = {
+                ideology = cybernetics
+                expire = "1965.1.1.1"
+                traits = { war_industrialist }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_ultright_visionary_party_long
+            name = YSK_fascism_ultright_visionary_party
+        }
+        set_cosmetic_tag = YSK_RUS_Ragozin  
+        set_politics = {
+	        ruling_party = fascism
+        }
+        complete_national_focus = YSK_ultraright_visionary    		
+	}
+	option = {
+	    name = YSK.8.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Tesak
+            promote_leader = yes
+            country_leader = {
+                ideology = white_nationalist_ancap
+                expire = "1965.1.1.1"
+                traits = { national_socialist_paramilitarist nationalist_symbol }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_white_nationalist_ancap_party_long
+            name = YSK_fascism_white_nationalist_ancap
+        }
+        set_cosmetic_tag = YSK_RUS_NNP 
+        set_politics = {
+	        ruling_party = fascism
+        }
+        add_ideas = YSK_ns_besporyadki
+        complete_national_focus = YSK_NNP        		
+	}
+	option = {
+	    name = YSK.8.c
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Milchakov
+            promote_leader = yes
+            country_leader = {
+                ideology = right_neoyazych
+                expire = "1965.1.1.1"
+                traits = { national_socialist_paramilitarist }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_right_neoyazych_party_long
+            name = YSK_fascism_right_neoyazych_ancap
+        }
+        set_cosmetic_tag = YSK_RUS_Rusich 
+        set_politics = {
+	        ruling_party = fascism
+        }
+        complete_national_focus = YSK_Rusich         		
+	}
+	option = {
+	    name = YSK.8.d
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Alexsandr_Barkashov
+            promote_leader = yes
+            country_leader = {
+                ideology = religious_fascism
+                expire = "1965.1.1.1"
+                traits = { national_socialist_paramilitarist }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_nazism_long
+            name = YSK_fascism_nazism
+        }
+        set_cosmetic_tag = YSK_RUS_RNE
+        set_politics = {
+	        ruling_party = fascism
+        }
+        complete_national_focus = YSK_RNE         		
+	}	
+	option = {
+	    name = YSK.8.e
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Nickolay_Skorodumov
+            promote_leader = yes
+            country_leader = {
+                ideology = ultright_monarchy
+                expire = "1965.1.1.1"
+                traits = { crown_regent  }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_ultright_monarchy_long
+            name = YSK_fascism_ultright_monarchy
+        }
+        set_cosmetic_tag = YSK_RUS_NPF_Memory
+        set_politics = {
+	        ruling_party = fascism
+        }
+        complete_national_focus = YSK_NPF_Memorys       		
+	}
+}
+
 #
 country_event = {
 	id = YSK.555

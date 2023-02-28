@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 0 y = 0 }
+	continuous_focus_position =  { x = 50 y = 100 }
 	#фокусы_гв
 	focus = { 
 		id = YSK_rus_kukozh
@@ -549,7 +549,402 @@ focus_tree = {
             set_country_flag = YSK_rus_pobeda      			
         }     
 	}
-	#
+	#Ультраправые
+	focus = {
+		id = YSK_vot_praviy_povorot
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_vibory
+		}
+		mutually_exclusive = {
+			focus = YSK_moderate_rusnat
+			focus = YSK_sozvat_zemsobor
+		}
+		x = 85
+		y = 7
+		available = {
+			has_country_flag = ultraprav_win
+		}
+        completion_reward = {
+            add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+            add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+            add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}     			
+        }       
+	}
+	focus = {
+		id = YSK_i_motor_revet
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_vot_praviy_povorot
+		}
+		x = 85
+		y = 8
+        completion_reward = {
+            country_event = YSK.7    			
+        }         
+	}
+	focus = {
+		id = YSK_chto_on_nam_neset
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_i_motor_revet
+		}
+		x = 85
+		y = 9
+        completion_reward = {
+            country_event = YSK.8    			
+        }       
+	}
+	#Тесак
+	focus = {
+		id = YSK_NNP
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_chto_on_nam_neset
+		}
+		x = 75
+		y = 10
+        completion_reward = {
+            add_political_power = 75
+            add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		    }    			
+        }       
+	}
+	focus = {
+		id = YSK_zakonchit_s_besporyadkami
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_NNP
+		}
+		x = 75
+		y = 11
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = YSK_ns_besporyadki
+				add_idea = YSK_ns_besporyadki_1
+			}   			
+        }      
+	}
+	focus = {
+		id = YSK_sosaity_ulicnogo_nasiliya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_zakonchit_s_besporyadkami
+		}
+		mutually_exclusive = {
+			focus = YSK_skiny_navedut_poryadok
+		}
+		x = 74
+		y = 12
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = YSK_ns_besporyadki_1
+				add_idea = YSK_ns_besporyadki_2
+			}   			
+        }       
+	}
+	focus = {
+		id = YSK_anarhy_party_ne_nuzhna
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sosaity_ulicnogo_nasiliya
+		}
+		x = 72
+		y = 13
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = YSK_ns_besporyadki_2
+				add_idea = YSK_ns_besporyadki_3
+			}   			
+        }      
+	}
+	focus = {
+		id = YSK_skiny_navedut_poryadok
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_zakonchit_s_besporyadkami
+		}
+		mutually_exclusive = {
+			focus = YSK_sosaity_ulicnogo_nasiliya
+		}
+		x = 76
+		y = 12
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = YSK_ns_besporyadki_1
+				add_idea = YSK_ns_besporyadki_4
+			}   			
+        }    
+	}
+	focus = {
+		id = YSK_ns_chvk
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sosaity_ulicnogo_nasiliya
+			focus = YSK_skiny_navedut_poryadok
+		}
+		x = 76
+		y = 13
+
+	}
+	focus = {
+		id = YSK_obespech_vypolnenie_zakonov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_skiny_navedut_poryadok
+		}
+		x = 78
+		y = 13
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = YSK_ns_besporyadki_4
+				add_idea = YSK_ns_besporyadki_5
+			}   			
+        }    
+	}
+	focus = {
+		id = YSK_white_power
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sosaity_ulicnogo_nasiliya
+			focus = YSK_skiny_navedut_poryadok
+		}
+		x = 74
+		y = 13
+
+	}
+	focus = {
+		id = YSK_ozhivit_skinhad_dvizh
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_power
+		}
+		prerequisite = {
+			focus = YSK_ns_chvk
+		}
+		x = 75
+		y = 14
+
+	}
+	focus = {
+		id = YSK_skinhad_patrul
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ozhivit_skinhad_dvizh
+		}
+		x = 75
+		y = 15
+
+	}
+	focus = {
+		id = YSK_white_business
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ogon_po_churkam
+		}
+		x = 78
+		y = 17
+
+	}
+	focus = {
+		id = YSK_ogon_po_churkam
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_edinstvo
+		}
+		x = 77
+		y = 16
+
+	}
+	focus = {
+		id = YSK_white_edinstvo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ozhivit_skinhad_dvizh
+		}
+		x = 77
+		y = 15
+
+	}
+	focus = {
+		id = YSK_kult_sily
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_shkola_race_prosveshceniya
+		}
+		x = 73
+		y = 18
+
+	}
+	focus = {
+		id = YSK_sluzhba_white_rase
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_skinhad_patrul
+		}
+		x = 75
+		y = 16
+
+	}
+	focus = {
+		id = YSK_okkupay_pedofilyay
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ozhivit_skinhad_dvizh
+		}
+		x = 73
+		y = 15
+
+	}
+	focus = {
+		id = YSK_zdorovie_semi
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_shkola_race_prosveshceniya
+		}
+		x = 71
+		y = 18
+
+	}
+	focus = {
+		id = YSK_ostanovit_razlozheniya_sosaity
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_okkupay_pedofilyay
+		}
+		x = 73
+		y = 16
+
+	}
+	focus = {
+		id = YSK_gosvo_vam_nichevo_ne_dolzhno
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_business
+		}
+		x = 79
+		y = 18
+
+	}
+	focus = {
+		id = YSK_freedom_i_deregulyatsiya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otmena_tk
+		}
+		prerequisite = {
+			focus = YSK_gosvo_vam_nichevo_ne_dolzhno
+		}
+		x = 78
+		y = 19
+
+	}
+	focus = {
+		id = YSK_otmena_tk
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_business
+		}
+		x = 77
+		y = 18
+
+	}
+	focus = {
+		id = YSK_eternal_race_war
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sluzhba_white_rase
+		}
+		x = 76
+		y = 17
+
+	}
+	focus = {
+		id = YSK_social_tutovism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sluzhba_white_rase
+		}
+		x = 74
+		y = 17
+
+	}
+	focus = {
+		id = YSK_prazdniki_shtangentsirkulya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_eternal_race_war
+		}
+		prerequisite = {
+			focus = YSK_social_tutovism
+		}
+		x = 75
+		y = 18
+
+	}
+	focus = {
+		id = YSK_shkola_race_prosveshceniya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ostanovit_razlozheniya_sosaity
+		}
+		x = 72
+		y = 17
+
+	}
+	focus = {
+		id = YSK_white_gospodstvo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_zdorovie_semi
+		}
+		prerequisite = {
+			focus = YSK_kult_sily
+		}
+		x = 72
+		y = 19
+
+	}
 	focus = {
 		id = YSK_red_tsar
 		icon = GFX_goal_unknown
@@ -1230,46 +1625,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_vot_praviy_povorot
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_vibory
-		}
-		mutually_exclusive = {
-			focus = YSK_moderate_rusnat
-			focus = YSK_sozvat_zemsobor
-		}
-		x = 65
-		y = 7
-			available = {
-					has_country_flag = ultraprav_win
-				}
-
-	}
-	focus = {
-		id = YSK_i_motor_revet
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vot_praviy_povorot
-		}
-		x = 65
-		y = 8
-
-	}
-	focus = {
-		id = YSK_chto_on_nam_neset
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_i_motor_revet
-		}
-		x = 65
-		y = 9
-
-	}
-	focus = {
 		id = YSK_ultraright_visionary
 		icon = GFX_goal_unknown
 		cost = 1,00
@@ -1480,90 +1835,6 @@ focus_tree = {
 		}
 		x = 69
 		y = 16
-
-	}
-	focus = {
-		id = YSK_NNP
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chto_on_nam_neset
-		}
-		x = 75
-		y = 10
-
-	}
-	focus = {
-		id = YSK_zakonchit_s_besporyadkami
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_NNP
-		}
-		x = 75
-		y = 11
-
-	}
-	focus = {
-		id = YSK_sosaity_ulicnogo_nasiliya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakonchit_s_besporyadkami
-		}
-		mutually_exclusive = {
-			focus = YSK_skiny_navedut_poryadok
-		}
-		x = 74
-		y = 12
-
-	}
-	focus = {
-		id = YSK_anarhy_party_ne_nuzhna
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sosaity_ulicnogo_nasiliya
-		}
-		x = 72
-		y = 13
-
-	}
-	focus = {
-		id = YSK_skiny_navedut_poryadok
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakonchit_s_besporyadkami
-		}
-		mutually_exclusive = {
-			focus = YSK_sosaity_ulicnogo_nasiliya
-		}
-		x = 76
-		y = 12
-
-	}
-	focus = {
-		id = YSK_ns_chvk
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sosaity_ulicnogo_nasiliya
-			focus = YSK_skiny_navedut_poryadok
-		}
-		x = 76
-		y = 13
-
-	}
-	focus = {
-		id = YSK_obespech_vypolnenie_zakonov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_skiny_navedut_poryadok
-		}
-		x = 78
-		y = 13
 
 	}
 	focus = {
@@ -2958,98 +3229,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_white_power
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sosaity_ulicnogo_nasiliya
-			focus = YSK_skiny_navedut_poryadok
-		}
-		x = 74
-		y = 13
-
-	}
-	focus = {
-		id = YSK_ozhivit_skinhad_dvizh
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_power
-		}
-		prerequisite = {
-			focus = YSK_ns_chvk
-		}
-		x = 75
-		y = 14
-
-	}
-	focus = {
-		id = YSK_skinhad_patrul
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ozhivit_skinhad_dvizh
-		}
-		x = 75
-		y = 15
-
-	}
-	focus = {
-		id = YSK_white_business
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ogon_po_churkam
-		}
-		x = 78
-		y = 17
-
-	}
-	focus = {
-		id = YSK_ogon_po_churkam
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_edinstvo
-		}
-		x = 77
-		y = 16
-
-	}
-	focus = {
-		id = YSK_white_edinstvo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ozhivit_skinhad_dvizh
-		}
-		x = 77
-		y = 15
-
-	}
-	focus = {
-		id = YSK_kult_sily
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_shkola_race_prosveshceniya
-		}
-		x = 73
-		y = 18
-
-	}
-	focus = {
-		id = YSK_sluzhba_white_rase
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_skinhad_patrul
-		}
-		x = 75
-		y = 16
-
-	}
-	focus = {
 		id = YSK_modern_katya_two
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -3058,136 +3237,6 @@ focus_tree = {
 		}
 		x = 47
 		y = 11
-
-	}
-	focus = {
-		id = YSK_okkupay_pedofilyay
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ozhivit_skinhad_dvizh
-		}
-		x = 73
-		y = 15
-
-	}
-	focus = {
-		id = YSK_zdorovie_semi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_shkola_race_prosveshceniya
-		}
-		x = 71
-		y = 18
-
-	}
-	focus = {
-		id = YSK_ostanovit_razlozheniya_sosaity
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_okkupay_pedofilyay
-		}
-		x = 73
-		y = 16
-
-	}
-	focus = {
-		id = YSK_gosvo_vam_nichevo_ne_dolzhno
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_business
-		}
-		x = 79
-		y = 18
-
-	}
-	focus = {
-		id = YSK_freedom_i_deregulyatsiya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otmena_tk
-		}
-		prerequisite = {
-			focus = YSK_gosvo_vam_nichevo_ne_dolzhno
-		}
-		x = 78
-		y = 19
-
-	}
-	focus = {
-		id = YSK_otmena_tk
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_business
-		}
-		x = 77
-		y = 18
-
-	}
-	focus = {
-		id = YSK_eternal_race_war
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sluzhba_white_rase
-		}
-		x = 76
-		y = 17
-
-	}
-	focus = {
-		id = YSK_social_tutovism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sluzhba_white_rase
-		}
-		x = 74
-		y = 17
-
-	}
-	focus = {
-		id = YSK_prazdniki_shtangentsirkulya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_eternal_race_war
-		}
-		prerequisite = {
-			focus = YSK_social_tutovism
-		}
-		x = 75
-		y = 18
-
-	}
-	focus = {
-		id = YSK_shkola_race_prosveshceniya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ostanovit_razlozheniya_sosaity
-		}
-		x = 72
-		y = 17
-
-	}
-	focus = {
-		id = YSK_white_gospodstvo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zdorovie_semi
-		}
-		prerequisite = {
-			focus = YSK_kult_sily
-		}
-		x = 72
-		y = 19
 
 	}
 	focus = {
