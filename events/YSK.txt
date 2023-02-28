@@ -112,6 +112,7 @@ country_event = {
 	desc = YSK.6.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	is_triggered_only = yes	
 	
 	option = {
 	name = YSK.6.a
@@ -126,6 +127,7 @@ country_event = {
 	desc = YSK.7.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	is_triggered_only = yes	
 	
 	option = {
 	name = YSK.7.a
@@ -154,6 +156,7 @@ country_event = {
 	desc = YSK.8.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	is_triggered_only = yes	
 	
 	option = {
 	    name = YSK.8.a
@@ -235,7 +238,7 @@ country_event = {
         complete_national_focus = YSK_Rusich         		
 	}
 	option = {
-	    name = YSK.8.d
+	    name = YSK.8.e
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
@@ -261,7 +264,7 @@ country_event = {
         complete_national_focus = YSK_RNE         		
 	}	
 	option = {
-	    name = YSK.8.e
+	    name = YSK.8.f
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
@@ -295,6 +298,7 @@ country_event = {
 	desc = YSK.555.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
+	is_triggered_only = yes	
 	
 	trigger = {
     tag = YSK
