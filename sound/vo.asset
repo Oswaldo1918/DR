@@ -1,0 +1,201 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	MRD_infantry_idle
+	MRD_infantry_neutral_combat
+	MRD_infantry_positive_combat
+	MRD_infantry_retreat
+	MRD_infantry_move_out
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## GER
+
+soundeffect = 
+{
+    name = "MRD_infantry_idle"
+    sounds = {
+		sound = atas
+        sound = broneboynimi_zaryazhai
+        sound = urki_moi_vernye
+        sound = slavyanskiy_shkaf
+		sound =	seyte_razumnoye
+		sound =	ya_yzhe_primorilsya
+		sound =	psikhicheskyu_ataku
+		sound =	poneslas_mocha_po_trubam
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "MRD_infantry_neutral_combat"
+    sounds = {
+        sound = nachinayte_mochit_kozlov
+	    sound = mochi_kozlov
+        sound = mochi_kozlov_2
+        sound = mochi_kozlov_3
+        sound = mochi_kozlov_4
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "MRD_infantry_positive_combat"
+    sounds = {
+		sound = kto_ne_popal_loh
+        sound = mochi_kozlov
+        sound = mochi_kozlov_2
+        sound = mochi_kozlov_3
+        sound = mochi_kozlov_4
+
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "MRD_infantry_retreat"
+    sounds = {
+        sound = uzhin
+        sound = pora_bi_pouzhinat
+		sound = nado_valit
+        sound = ni_shagu_nazad
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "MRD_infantry_move_out"
+    sounds = {
+        sound = ni_shagu_nazad
+        sound = uzhin
+        sound = pora_bi_pouzhinat
+		sound = nado_valit
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+############## AUDIO ASSETS
+
+################# MRD
+sound = 
+{
+	name = "atas"
+	file = "mrd/atas.wav"
+}
+sound = 
+{
+	name = "broneboynimi_zaryazhai"
+	file = "mrd/broneboynimi_zaryazhai.wav"
+}
+sound = 
+{
+	name = "urki_moi_vernye"
+	file = "mrd/urki_moi_vernye.wav"
+}
+sound = 
+{
+	name = "slavyanskiy_shkaf"
+	file = "mrd/slavyanskiy_shkaf.wav" 
+}
+sound = 
+{
+	name = "seyte_razumnoye"
+	file = "mrd/seyte_razumnoye.wav"
+}
+sound = 
+{
+	name = "ya_yzhe_primorilsya"
+	file = "mrd/ya_yzhe_primorilsya.wav" 
+}
+sound = 
+{
+	name = "psikhicheskyu_ataku"
+	file = "mrd/psikhicheskyu_ataku.wav"
+}
+sound = 
+{
+	name = "poneslas_mocha_po_trubam"
+	file = "mrd/poneslas_mocha_po_trubam.wav"
+}
+sound = 
+{
+	name = "nachinayte_mochit_kozlov"
+	file = "mrd/nachinayte_mochit_kozlov.wav"
+}
+sound = 
+{
+	name = "kto_ne_popal_loh"
+	file = "mrd/kto_ne_popal_loh.wav"
+}
+sound = 
+{
+	name = "mochi_kozlov"
+	file = "mrd/mochi_kozlov.wav"
+}
+sound = 
+{
+	name = "mochi_kozlov_2"
+	file = "mrd/mochi_kozlov_2.wav"
+}
+sound = 
+{
+	name = "mochi_kozlov_3"
+	file = "mrd/mochi_kozlov_3.wav"
+}
+sound = 
+{
+	name = "mochi_kozlov_4"
+	file = "mrd/mochi_kozlov_4.wav"
+}
+sound = 
+{
+	name = "uzhin"
+	file = "mrd/uzhin.wav"
+}
+sound = 
+{
+	name = "pora_bi_pouzhinat"
+	file = "mrd/pora_bi_pouzhinat.wav"
+}
+sound = 
+{
+	name = "nado_valit"
+	file = "mrd/nado_valit.wav"
+}
+sound = 
+{
+	name = "ni_shagu_nazad"
+	file = "mrd/ni_shagu_nazad.wav"
+}
