@@ -1695,21 +1695,27 @@ country_event = {
 		title = chat.26.t
 		desc = chat.26.d
 		picture = GFX_report_event_spain_civil_war_volunteers_01
-
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = CHT
+	}
+	
 	option = {
 	name = chat.26.a
-	hidden_effect = {
-	CHT = {
-	remove_ideas =  CHT_loksists
-	remove_ideas = CHT_great_srach 
-    add_ideas = CHT_great_srach_1
-	leave_faction = Chumnoy_pakt
-	}
-	LAZ = {
-			end_puppet = CHT
-		}
-	set_global_flag = chat_civil_war
-             CDR = {transfer_state = 399 
+		hidden_effect = {
+			CHT = {
+				remove_ideas =  CHT_loksists
+				remove_ideas = CHT_great_srach 
+				add_ideas = CHT_great_srach_1
+				leave_faction = Chumnoy_pakt
+			}
+			LAZ = {
+				end_puppet = CHT
+			}
+			set_global_flag = chat_civil_war
+            CDR = {transfer_state = 399 
 		       transfer_state = 256
 			   transfer_state = 249
 			   transfer_state = 833
@@ -1737,7 +1743,7 @@ country_event = {
 				load_oob = CDR_1936
 				add_ideas = CHT_great_srach_1
 	            add_ideas = CHT_shue
-				}
+			}
 		CCO = {transfer_state = 255
                add_state_core = 399
                add_state_core = 256
