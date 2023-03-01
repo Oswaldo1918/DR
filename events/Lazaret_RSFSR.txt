@@ -234,6 +234,7 @@ country_event = { #Развал пакта
 			end_puppet = BSH
 		}
 		set_country_flag = LAZ_bilo_vosstaniye
+		set_global_flag = Razval_ChP
 		leave_faction = Chumnoy_pakt
 		MAT = {leave_faction = Chumnoy_pakt}
 		DON = {leave_faction = Chumnoy_pakt}
@@ -341,6 +342,7 @@ country_event = { #Развал пакта
 			end_puppet = BSH
 		}
 		set_country_flag = LAZ_bilo_vosstaniye
+		set_global_flag = Razval_ChP
 		leave_faction = Chumnoy_pakt
 		MAT = {leave_faction = Chumnoy_pakt}
 		DON = {leave_faction = Chumnoy_pakt}

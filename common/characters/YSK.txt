@@ -7,7 +7,7 @@ characters={
 				small= "idea_CHK_Imran_Zahaev"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 	    traits = { politically_connected }
 	    skill = 1
 	    attack_skill = 2
@@ -18,6 +18,47 @@ characters={
         }
     }
 	
+	YSK_Egor_Prosvirnin = {
+		name = "Егор Просвирнин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YSK/Pogrom.dds"
+			}
+		}
+
+		country_leader = {
+			traits = {  }
+			desc = "POLITICS_PROSVERLEN_DESC"
+			ideology = liberalism
+			expire = "3000.1.1"
+			id = -1
+		}
+	}
+	
+	YSK_rus_sobranie = {
+		name = "Русское собрание"
+		portraits = {			
+			army = {
+				large = "gfx/leaders/YSK/rus_sobranie.dds"
+				small= "idea_"
+			}
+		}
+    }
+	
+	YSK_Dmitriy_Rogozin = {
+		name = "Дмитрий Рогозин"
+		portraits = {
+            civilian= {
+				large = "gfx/leaders/YSK/Dmitriy_Rogozin.dds"
+				small= "idea_"
+			}   		
+			army = {
+				large = "gfx/leaders/YSK/Dmitriy_Rogozin_army.dds"
+				small= "idea_"
+			}
+		}
+    }
+	
 	YSK_Tesak = {
 		name = "Максим «Тесак» Марцинкевич"
 		portraits = {		
@@ -26,7 +67,7 @@ characters={
 				small= "idea_CHK_Cha_La_Ev"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 	    traits = { politically_connected media_personality }
 	    skill = 1
 	    attack_skill = 2
@@ -276,7 +317,7 @@ characters={
 				small= "idea_CHK_Yts_Mi_Gov"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 	    traits = { politically_connected }
 	    skill = 1
 	    attack_skill = 2
