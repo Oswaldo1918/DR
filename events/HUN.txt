@@ -1,0 +1,57 @@
+add_namespace = HUN
+
+	
+#
+country_event = {
+	id = HUN.1
+	title = HUN.1.t
+	desc = HUN.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    }
+	
+	option = {
+	    name = HUN.1.a 
+        SLM = {			
+		    declare_war_on = {
+		        target = HUN
+		        type = annex_everything
+		    }
+		}
+		SLM = {
+			transfer_state = 70
+            transfer_state = 71     			
+		}
+		SLM = {
+			add_state_core = 70
+            add_state_core = 71   
+            add_state_core = 664     			
+		}
+		SLM = {
+		    load_oob = SLM_war_for_independence
+		}
+		WRO = {			
+		    declare_war_on = {
+		        target = HUN
+		        type = annex_everything
+		    }
+		}
+		WRO = {
+			transfer_state = 84
+            transfer_state = 82
+            transfer_state = 83                    			
+		}
+		WRO = {
+			add_state_core = 84
+            add_state_core = 82   
+            add_state_core = 76
+            add_state_core = 83       			
+		}
+		WRO = {
+		    load_oob = WRO_war_for_independence
+		}
+	}
+}
