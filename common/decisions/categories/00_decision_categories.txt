@@ -143,6 +143,7 @@ demobilization = {
 	priority = 100
 	
 	visible = {
+		NOT = { original_tag = MRD }
 		has_war = no
 	}
 }

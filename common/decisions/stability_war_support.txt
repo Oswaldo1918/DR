@@ -484,11 +484,13 @@ demobilization = {
 		available = {
 			has_unsupported_economic_law = yes
 			has_war = no
+			NOT = { original_tag = MRD }
 		}
 
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
+			NOT = { original_tag = MRD }
 		}
 		cost = 50
 
@@ -551,11 +553,13 @@ demobilization = {
 				has_unsupported_economic_law = no
 				has_war = yes
 			}
+			NOT = { original_tag = MRD }
 		}
 
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
+			NOT = { original_tag = MRD }
 		}
 		icon = revolt
 		is_good = no
@@ -673,10 +677,12 @@ demobilization = {
 		available = {
 			has_unsupported_manpower_law = yes
 			has_war = no
+			NOT = { original_tag = MRD }
 		}
 
 		allowed = {
 			always = yes
+			NOT = { original_tag = MRD }
 		}
 
 		cost = 50
@@ -726,10 +732,12 @@ demobilization = {
 				has_unsupported_manpower_law = no
 				has_war = yes
 			}
+			NOT = { original_tag = MRD }
 		}
 		activation = {
 			has_unsupported_manpower_law = yes
 			has_war = no
+			NOT = { original_tag = MRD }
 		}
 		timeout_effect = {
 			if = {

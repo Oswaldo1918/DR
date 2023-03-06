@@ -24,7 +24,7 @@ category =
 
 soundeffect = 
 {
-    name = "MRD_infantry_idle"
+    name = "MRD_infantry_idle"		#Это_когда_юниты_выбираешь
     sounds = {
 		sound = atas
         sound = broneboynimi_zaryazhai
@@ -34,6 +34,10 @@ soundeffect =
 		sound =	ya_yzhe_primorilsya
 		sound =	psikhicheskyu_ataku
 		sound =	poneslas_mocha_po_trubam
+		sound =	bratva_interesuyetsa
+		sound =	skuchno_bez_vodki
+		sound =	v_turme_seichas_uzhin
+		sound = v_zhivote_pizdec
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -43,13 +47,18 @@ soundeffect =
 }
 soundeffect = 
 {
-    name = "MRD_infantry_neutral_combat"
+    name = "MRD_infantry_neutral_combat"		#Это_когда_юниты_в_бою
     sounds = {
         sound = nachinayte_mochit_kozlov
 	    sound = mochi_kozlov
         sound = mochi_kozlov_2
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
+		sound = kozlyata_1
+		sound = kozlyata_2
+		sound = kozlyata_3
+		sound =	v_turme_seichas_uzhin
+		sound = v_zhivote_pizdec
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -59,14 +68,15 @@ soundeffect =
 }
 soundeffect = 
 {
-    name = "MRD_infantry_positive_combat"
+    name = "MRD_infantry_positive_combat"		#Это_когда_юниты_в_победном_бою
     sounds = {
 		sound = kto_ne_popal_loh
         sound = mochi_kozlov
         sound = mochi_kozlov_2
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
-
+		sound =	v_turme_seichas_uzhin
+		sound = v_zhivote_pizdec
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -76,12 +86,16 @@ soundeffect =
 }
 soundeffect = 
 {
-    name = "MRD_infantry_retreat"
+    name = "MRD_infantry_retreat"		#Это_когда_юниты_отступают
     sounds = {
         sound = uzhin
         sound = pora_bi_pouzhinat
+        sound = pora_bi_pouzhinat
 		sound = nado_valit
         sound = ni_shagu_nazad
+		sound = kozlyata_1
+		sound =	v_turme_seichas_uzhin
+		sound = v_zhivote_pizdec
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -91,12 +105,17 @@ soundeffect =
 }
 soundeffect = 
 {
-    name = "MRD_infantry_move_out"
+    name = "MRD_infantry_move_out"		#Это_когда_юниты_отправляешь_куда-то
     sounds = {
+		sound = kto_ne_popal_loh
         sound = ni_shagu_nazad
-        sound = uzhin
-        sound = pora_bi_pouzhinat
-		sound = nado_valit
+		sound =	bratva_interesuyetsa
+        sound = mochi_kozlov
+        sound = mochi_kozlov_2
+        sound = mochi_kozlov_3
+        sound = mochi_kozlov_4
+		sound =	v_turme_seichas_uzhin
+		sound = v_zhivote_pizdec
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -115,43 +134,28 @@ sound =
 }
 sound = 
 {
+	name = "bratva_interesuyetsa"
+	file = "mrd/bratva_interesuyetsa.wav"
+}
+sound = 
+{
 	name = "broneboynimi_zaryazhai"
 	file = "mrd/broneboynimi_zaryazhai.wav"
 }
 sound = 
 {
-	name = "urki_moi_vernye"
-	file = "mrd/urki_moi_vernye.wav"
+	name = "kozlyata_1"
+	file = "mrd/kozlyata_1.wav"
 }
 sound = 
 {
-	name = "slavyanskiy_shkaf"
-	file = "mrd/slavyanskiy_shkaf.wav" 
+	name = "kozlyata_2"
+	file = "mrd/kozlyata_2.wav"
 }
 sound = 
 {
-	name = "seyte_razumnoye"
-	file = "mrd/seyte_razumnoye.wav"
-}
-sound = 
-{
-	name = "ya_yzhe_primorilsya"
-	file = "mrd/ya_yzhe_primorilsya.wav" 
-}
-sound = 
-{
-	name = "psikhicheskyu_ataku"
-	file = "mrd/psikhicheskyu_ataku.wav"
-}
-sound = 
-{
-	name = "poneslas_mocha_po_trubam"
-	file = "mrd/poneslas_mocha_po_trubam.wav"
-}
-sound = 
-{
-	name = "nachinayte_mochit_kozlov"
-	file = "mrd/nachinayte_mochit_kozlov.wav"
+	name = "kozlyata_3"
+	file = "mrd/kozlyata_3.wav"
 }
 sound = 
 {
@@ -180,13 +184,8 @@ sound =
 }
 sound = 
 {
-	name = "uzhin"
-	file = "mrd/uzhin.wav"
-}
-sound = 
-{
-	name = "pora_bi_pouzhinat"
-	file = "mrd/pora_bi_pouzhinat.wav"
+	name = "nachinayte_mochit_kozlov"
+	file = "mrd/nachinayte_mochit_kozlov.wav"
 }
 sound = 
 {
@@ -198,3 +197,61 @@ sound =
 	name = "ni_shagu_nazad"
 	file = "mrd/ni_shagu_nazad.wav"
 }
+sound = 
+{
+	name = "poneslas_mocha_po_trubam"
+	file = "mrd/poneslas_mocha_po_trubam.wav"
+}
+sound = 
+{
+	name = "pora_bi_pouzhinat"
+	file = "mrd/pora_bi_pouzhinat.wav"
+}
+sound = 
+{
+	name = "psikhicheskyu_ataku"
+	file = "mrd/psikhicheskyu_ataku.wav"
+}
+sound = 
+{
+	name = "seyte_razumnoye"
+	file = "mrd/seyte_razumnoye.wav"
+}
+sound = 
+{
+	name = "skuchno_bez_vodki"
+	file = "mrd/skuchno_bez_vodki.wav"
+}
+sound = 
+{
+	name = "slavyanskiy_shkaf"
+	file = "mrd/slavyanskiy_shkaf.wav" 
+}
+sound = 
+{
+	name = "urki_moi_vernye"
+	file = "mrd/urki_moi_vernye.wav"
+}
+sound = 
+{
+	name = "uzhin"
+	file = "mrd/uzhin.wav"
+}
+sound = 
+{
+	name = "v_turme_seichas_uzhin"
+	file = "mrd/v_turme_seichas_uzhin.wav" 
+}
+sound = 
+{
+	name = "v_zhivote_pizdec"
+	file = "mrd/v_zhivote_pizdec.wav" 
+}
+sound = 
+{
+	name = "ya_yzhe_primorilsya"
+	file = "mrd/ya_yzhe_primorilsya.wav" 
+}
+
+
+
