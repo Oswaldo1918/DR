@@ -15,6 +15,31 @@ ideas = {
 			}
 		}
 		
+	    NOD_plan_Yug = {
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			    targeted_modifier = {
+			    tag = CHK
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = GEO
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = ARM
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = AZR
+			    attack_bonus_against = 0.1
+		        }
+			modifier = {
+			  war_support_factor = 0.15
+			}
+		}
 	   
 		NOD_bez_putina = {
 		
@@ -30,7 +55,7 @@ ideas = {
 		
 	NOD_chuvstvo_ranga = {
 		
-		 picture = generic_manpower_bonus
+		 picture = Chuvstvo_ranga
 			
 			removal_cost = -1
 			
@@ -108,7 +133,7 @@ ideas = {
 	}
 	NOD_electronic_Elbrus = {
 	
-	picture = generic_worker
+	picture = NOD_electronic_Elbrus
 			
 			removal_cost = -1
 			

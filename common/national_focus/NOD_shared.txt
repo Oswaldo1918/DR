@@ -1639,6 +1639,7 @@ create_wargoal = {
 		x = 45
 		y = 4
 completion_reward = {
+        add_timed_idea = { idea = NOD_plan_Yug days = 90 }         
     create_wargoal = {
 							type = annex_everything
 							target = GEO
@@ -2357,10 +2358,7 @@ create_wargoal = {
 			
 			focus = NOD_help_KZ
 		}
-		available = {
-		KAZ = {
-					exists = no
-					}
+		available = {		
 			has_war = no			
 				}
 		x = 47
