@@ -277,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_pomosh_lazaret
-		icon = GFX_goal_laz_donbass2
+		icon = GFX_goal_laz_donbass
 		cost = 2,00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
@@ -432,7 +432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_rasshirit_pomosh_lazaret #Усовершенствованный_экономический_план
-		icon = GFX_goal_laz_donbass
+		icon = GFX_goal_laz_donbass2
 		cost = 2,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -1249,7 +1249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_snyat_tanki_s_postamentov
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tanks_on_postaments
 		cost = 1,00
 		prerequisite = {
 			focus = DON_vskrit_sladi_s_oruzhiyem
