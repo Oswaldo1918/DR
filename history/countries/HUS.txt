@@ -1,8 +1,8 @@
 capital = 293
 
-oob = 123_1936
+oob = HUS_1936
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -16,8 +16,9 @@ add_ideas = {
 limited_conscription
 low_economic_mobilisation
 HUS_shiit_revolution
-HUS_razrushenniy_Yemen
 }
+
+add_timed_idea = { idea = HUS_razrushenniy_Yemen days = 180 }
 
 set_popularities = {
 	fascism = 100

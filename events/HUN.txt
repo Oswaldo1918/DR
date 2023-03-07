@@ -8,19 +8,19 @@ country_event = {
 	desc = HUN.1.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
-	is_triggered_only = yes	
+	fire_only_once = yes
 	
 	trigger = {
+        date = 4.5.12
     }
 	
 	option = {
-	    name = HUN.1.a 
-        SLM = {			
-		    declare_war_on = {
-		        target = HUN
-		        type = annex_everything
-		    }
-		}
+	    name = HUN.1.a
+        70 = { set_demilitarized_zone = no }
+		71 = { set_demilitarized_zone = no }
+		84 = { set_demilitarized_zone = no }
+		82 = { set_demilitarized_zone = no }
+		83 = { set_demilitarized_zone = no }  		
 		SLM = {
 			transfer_state = 70
             transfer_state = 71     			
@@ -33,12 +33,12 @@ country_event = {
 		SLM = {
 		    load_oob = SLM_war_for_independence
 		}
-		WRO = {			
+		SLM = {			
 		    declare_war_on = {
 		        target = HUN
 		        type = annex_everything
 		    }
-		}
+		}		
 		WRO = {
 			transfer_state = 84
             transfer_state = 82
@@ -53,5 +53,76 @@ country_event = {
 		WRO = {
 		    load_oob = WRO_war_for_independence
 		}
+		WRO = {			
+		    declare_war_on = {
+		        target = HUN
+		        type = annex_everything
+		    }
+		}
+	}
+}
+country_event = {
+	id = HUN.4
+	title = HUN.4.t
+	desc = HUN.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+        date = 4.5.1
+    }
+	
+	option = {
+	    name = HUN.4.a         
+		70 = { set_demilitarized_zone = yes }
+		71 = { set_demilitarized_zone = yes }
+		84 = { set_demilitarized_zone = yes }
+		82 = { set_demilitarized_zone = yes }
+		83 = { set_demilitarized_zone = yes }
+	}
+}
+country_event = {
+	id = HUN.2
+	title = HUN.2.t
+	desc = HUN.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    SLM = {
+			controls_state = 664
+		}	
+    }
+	
+	option = {
+	        name = HUN.2.a
+            SLM = {			
+                white_peace = HUN    
+			    transfer_state = 664
+			}	
+	}
+}
+country_event = {
+	id = HUN.3
+	title = HUN.3.t
+	desc = HUN.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    WRO = {
+			controls_state = 76
+		}	
+    }
+	
+	option = {
+	        name = HUN.3.a
+            WRO = {			
+                white_peace = HUN    
+			    transfer_state = 76
+			}	
 	}
 }

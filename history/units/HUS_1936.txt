@@ -1,0 +1,126 @@
+﻿division_template = {
+name = "Горная пехота"
+
+    division_names_group = HUS_INF_01     
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Стрелковая пехота"
+
+	division_names_group = HUS_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+name = "Ополчение"
+
+	division_names_group = HUS_INF_03
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Верблюды"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = HUS_CAV_01
+
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Кавалерия"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = HUS_CAV_02
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+units = {
+    division = {
+        #name = "1ya gornopehotnaya"
+        location = 10840
+        division_template = "Горная пехота"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "2ya gornopehotnaya"
+        location = 10840
+        division_template = "Горная пехота"
+        start_experience_factor = 0.5
+    }
+	
+    division = {
+        #name = "1ya pehotnaya"
+        location = 10840
+        division_template = "Стрелковая пехота"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "2ya pehotnaya"
+        location = 10840
+        division_template = "Ополчение"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "1ya pehotnaya"
+        location = 10840
+        division_template = "Верблюды"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "2ya camal"
+        location = 10840
+        division_template = "Верблюды"
+        start_experience_factor = 0.5
+    }
+
+    division = {
+        #name = "3ya camal"
+        location = 10840
+        division_template = "Верблюды"
+        start_experience_factor = 0.5
+    }
+}
+
