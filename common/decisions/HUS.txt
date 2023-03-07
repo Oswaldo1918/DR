@@ -1,0 +1,151 @@
+HUS_nationalisation = {
+	HUS_pustyni = { 
+	
+		cost = 1
+
+		available = {
+			controls_state = 858
+			controls_state = 678
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 858
+			add_state_core = 678        			
+		}	
+	}
+	HUS_hidjaz = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 856
+			controls_state = 855
+			controls_state = 679
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 856
+			add_state_core = 855
+            add_state_core = 679    			
+		}	
+	}
+	HUS_oman = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 294
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 15
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 294   			
+		}	
+	}
+	HUS_nedzhd = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 292
+			controls_state = 859
+			controls_state = 857
+			controls_state = 854
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 292
+			add_state_core = 859
+            add_state_core = 857
+            add_state_core = 854      			
+		}	
+	}
+	HUS_dvach_emirat = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 765
+			controls_state = 658
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 765
+			add_state_core = 658 			
+		}	
+	}
+	HUS_form_Aravia = { 
+	
+		cost = 5
+		
+		available = {
+            controls_state = 658
+			controls_state = 293
+	        controls_state = 292		
+        }
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			set_cosmetic_tag = HUS_Aravia
+		}	
+	}
+}

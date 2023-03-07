@@ -1,0 +1,54 @@
+HAL_nationalisation = {
+	HAL_Yemen = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 293
+			controls_state = 659
+			controls_state = 906
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 293
+			add_state_core = 659
+			add_state_core = 906        			
+		}	
+	}
+	HAL_dvach_emirat = { 
+	
+		cost = 50
+
+		available = {
+			controls_state = 765
+			controls_state = 658
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 70
+		ai_will_do = {
+        factor = 100
+		}
+		modifier = {
+		    stability_weekly = -0.005
+            political_power_gain = -0.015	
+            consumer_goods_factor = 0.05      			
+		}
+		remove_effect = {
+            add_state_core = 765
+			add_state_core = 658 			
+		}	
+	}
+}
