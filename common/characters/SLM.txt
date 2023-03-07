@@ -1,0 +1,30 @@
+characters={
+	SLM_Mountain_General = {
+		name = "Mountain General"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLM/Mountain_General.dds"
+			}
+			army = {
+				large = "gfx/leaders/SLM/Mountain_General.dds"
+			}
+		}
+		country_leader = {
+		    ideology = military_administration
+			traits = {
+		    freedom_fighter    
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { trait_mountaineer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+}

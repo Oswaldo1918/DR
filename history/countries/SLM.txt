@@ -1,0 +1,38 @@
+capital = 70
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.75
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+    marines	= 1
+	tech_support = 1
+	basic_train = 1
+}
+
+recruit_character = SLM_Mountain_General
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
+
+set_popularities = {
+	neutrality = 20
+	memoism = 10
+	anarhostalinism = 10
+	vmestolev = 28
+	metacommy = 10
+	democratic = 11
+	fascism = 11
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 250
