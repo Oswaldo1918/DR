@@ -1144,7 +1144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_propagandiskaya_kampaniya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 1,00
 		prerequisite = {
 			focus = DON_plan_A
@@ -1188,7 +1188,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_voyenniy_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occypy_states_ongoing_war
 		cost = 5,00
 		prerequisite = {
 			focus = DON_dopolnitelniy_nazhim
@@ -1522,7 +1522,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_odessa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_russian_odessa
 		cost = 3,00
 		prerequisite = {
 			focus = DON_defashizatsiya
@@ -1541,7 +1541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_krimnash
-		icon = GFX_goal_unknown
+		icon = GFX_goal_crimea_nash
 		cost = 2,00
 		prerequisite = {
 			focus = DON_odessa
