@@ -790,7 +790,7 @@
 		icon = GFX_POK_GAZPROM
 		cost = 5
 		prerequisite = {
-			focus = POK_podnyat_level_of_corruption
+			focus = POK_under_neutral_flag
 		}
 		x = 10
 		y = 20
@@ -1421,7 +1421,7 @@
 
 	}
 	shared_focus = {
-		id = POK_nologe_for_common_peaple
+		id = POK_nologe
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -1678,14 +1678,14 @@
 
 	}
 	shared_focus = {
-		id = POK_state_for_friends
+		id = POK_inter_dogovor
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
 			focus = POK_razvodyashiy
 		}
 		prerequisite = {
-			focus = POK_nologe_for_common_peaple
+			focus = POK_nologe
 		}
 		x = 11
 		y = 18
@@ -1827,40 +1827,40 @@
 
 	}
 	shared_focus = {
-		id = POK_liberalism_patriotism
+		id = POK_reform_army
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_state_for_friends
+			focus = POK_inter_dogovor
 		}
 		x = 12
 		y = 19
 
 	}
 	shared_focus = {
-		id = POK_good_tsar_bad_boyars
+		id = POK_go_bunker
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_liberalism_patriotism
+			focus = POK_reform_army
 		}
 		x = 12
 		y = 20
 
 	}
 	shared_focus = {
-		id = POK_podnyat_level_of_corruption
+		id = POK_under_neutral_flag
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_state_for_friends
+			focus = POK_inter_dogovor
 		}
 		x = 10
 		y = 19
 
 	}
 	shared_focus = {
-		id = POK_zadobrit_silovikov
+		id = POK_podnyat_level_of_corruption
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -1893,11 +1893,11 @@
 
 	}
 	shared_focus = {
-		id = POK_promise_social_garantii
+		id = POK_liberalism_patriotism
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_good_tsar_bad_boyars
+			focus = POK_go_bunker
 		}
 		x = 12
 		y = 21
@@ -1934,10 +1934,10 @@
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
 		prerequisite = {
-			focus = POK_zadobrit_silovikov
+			focus = POK_podnyat_level_of_corruption
 		}
 		prerequisite = {
-			focus = POK_promise_social_garantii
+			focus = POK_liberalism_patriotism
 		}
 		x = 11
 		y = 22
