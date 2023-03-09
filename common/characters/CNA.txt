@@ -1,0 +1,29 @@
+characters={
+	CNA_Tsing_Shi_Tao = {
+		name = "Цин Ши Тао"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CNA/Tsing_Shi_Tao.dds"
+			}
+			army = {
+				large = "gfx/leaders/CNA/Tsing_Shi_Tao.dds"
+			}
+		}
+		country_leader = {
+		    ideology = military_administration
+			traits = {		        
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+}
