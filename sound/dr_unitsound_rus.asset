@@ -38,6 +38,7 @@ soundeffect =
 		sound =	skuchno_bez_vodki
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
+		sound = noviye_krossovki
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -70,6 +71,7 @@ soundeffect =
 {
     name = "MRD_infantry_positive_combat"		#Это_когда_юниты_в_победном_бою
     sounds = {
+		sound = urramengaskey
 		sound = kto_ne_popal_loh
         sound = mochi_kozlov
         sound = mochi_kozlov_2
@@ -96,6 +98,7 @@ soundeffect =
 		sound = kozlyata_1
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
+		sound = bestolku_shashkoi_mahat
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -116,6 +119,7 @@ soundeffect =
         sound = mochi_kozlov_4
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
+		sound = komanda_begom
     }
 	max_audible = 1
 	max_audible_behaviour = fail
@@ -134,6 +138,11 @@ sound =
 }
 sound = 
 {
+	name = "bestolku_shashkoi_mahat"
+	file = "mrd/bestolku_shashkoi_mahat.wav"
+}
+sound = 
+{
 	name = "bratva_interesuyetsa"
 	file = "mrd/bratva_interesuyetsa.wav"
 }
@@ -141,6 +150,11 @@ sound =
 {
 	name = "broneboynimi_zaryazhai"
 	file = "mrd/broneboynimi_zaryazhai.wav"
+}
+sound = 
+{
+	name = "komanda_begom"
+	file = "mrd/komanda_begom.wav"
 }
 sound = 
 {
@@ -199,6 +213,11 @@ sound =
 }
 sound = 
 {
+	name = "noviye_krossovki"
+	file = "mrd/noviye_krossovki.wav"
+}
+sound = 
+{
 	name = "poneslas_mocha_po_trubam"
 	file = "mrd/poneslas_mocha_po_trubam.wav"
 }
@@ -230,7 +249,12 @@ sound =
 sound = 
 {
 	name = "urki_moi_vernye"
-	file = "mrd/urki_moi_vernye.wav"
+	file = "mrd/urki_moi_vernye.wav" 
+}
+sound = 
+{
+	name = "urramengaskey"
+	file = "mrd/urramengaskey.wav"
 }
 sound = 
 {
