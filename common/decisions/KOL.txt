@@ -1,0 +1,23 @@
+KOL_Vzaimodeysviya_s_armiey = {
+    KOL_vorovskie_prikoly = { 
+	
+		cost = 20
+
+		available = {
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = MAG_tapki_iz_bulok
+				days = 20
+			}	
+		}	
+	}
+}

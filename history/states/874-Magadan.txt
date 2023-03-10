@@ -7,7 +7,7 @@ state = {
 	
 	history = {
 		victory_points = { 
-			12683 1 
+			12683 3 
 		}
 
 		owner = MAG
@@ -15,6 +15,9 @@ state = {
 			infrastructure = 1
 			arms_factory = 1
 			dockyard = 1
+			12683 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = MAG
 		add_claim_by = DOT
