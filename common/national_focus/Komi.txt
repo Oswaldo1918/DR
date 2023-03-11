@@ -519,15 +519,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SKT_prodolzhit_expansii
 		}
-		available = {
-		has_war = no 
-		OR = {
-		is_neighbor_of = ARK
-		is_neighbor_of = LAZ
-		 }
-		}
 		x = 21
 		y = 15
+			available = {
+					has_war = no
+					OR = {
+							is_neighbor_of = ARK
+							is_neighbor_of = LAZ
+						}
+				}
 			available = {
 					has_country = LAZ
 				}
@@ -1446,18 +1446,14 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = SKT_elementi_chuchhe
-		
 					create_country_leader = {
-	        name = "Игорь Александров"
-	        desc = "POLITICS_THORVALD_STAUNING_DESC"
-	        picture = "LevoBOROD.dds"
-	        expire = "1999.1.1"
-	        ideology = stalinismus
-	        traits = {
-		                levoborod
-						
-	                }
-	    }
+							name = "Игорь Александров"
+							desc = "POLITICS_THORVALD_STAUNING_DESC"
+							picture = "LevoBOROD.dds"
+							expire = "1999.1.1"
+							ideology = stalinismus
+							traits = { levoborod }
+						}
 				}
 
 	}
@@ -1507,7 +1503,7 @@ focus_tree = {
 			focus = SKT_araaaabskiy_vostok
 		}
 		x = 6
-		y = 16
+		y = 17
 			completion_reward = {
 					add_ideas = SKT_KSKR
 				}
@@ -1518,12 +1514,12 @@ focus_tree = {
 		icon = GFX_goal_syria_ally
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_KSKR
+			focus = SKT_araaaabskiy_vostok
 		}
 		prerequisite = {
-			focus = SKT_priznat_Veshnoriu_1
+			focus = SKT_priznat_Veshnoriu
 		}
-		x = 7
+		x = 8
 		y = 17
 			bypass = {
 					NOT = {
@@ -1561,6 +1557,9 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = SKT_help_arabam
+		}
+		prerequisite = {
+			focus = SKT_KSKR
 		}
 		x = 7
 		y = 18
@@ -1617,9 +1616,10 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		cost = 5,00
 		prerequisite = {
+			focus = SKT_araaaabskiy_vostok
 			focus = SKT_golos_stepey
 		}
-		x = 13
+		x = 10
 		y = 16
 			completion_reward = {
 					add_opinion_modifier = {
@@ -1633,6 +1633,9 @@ focus_tree = {
 		id = SKT_kommunist_agora
 		icon = GFX_focus_generic_soviet_politics
 		cost = 5,00
+		prerequisite = {
+			focus = SKT_golos_stepey
+		}
 		prerequisite = {
 			focus = SKT_priznat_Veshnoriu
 		}
@@ -1648,7 +1651,7 @@ focus_tree = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 5,00
 		prerequisite = {
-			focus = SKT_priznat_Veshnoriu
+			focus = SKT_golos_stepey
 		}
 		x = 14
 		y = 17
@@ -1736,16 +1739,15 @@ focus_tree = {
 		y = 16
 			available = {
 					OR = {
-					 NOT = {
-							 country_exists = LAZ 
-							 } 
-					NOT = {		
-					LAZ = {
-						has_government = vmestolev
-						          }
-					        }
+							NOT = {
+									country_exists = LAZ
+								}
+							NOT = {
+									LAZ = {
+											has_government = vmestolev
+										}
+								}
 						}
-						
 				}
 			completion_reward = {
 					ARK = {
@@ -1924,23 +1926,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SKT_priznat_Veshnoriu_1
-		icon = GFX_goal_generic_major_alliance
-		cost = 5,00
-		prerequisite = {
-			focus = SKT_araaaabskiy_vostok
-		}
-		x = 8
-		y = 16
-			completion_reward = {
-					add_opinion_modifier = {
-							target = WHS
-							modifier = backed_our_cause
-						}
-				}
-
-	}
-	focus = {
 		id = SKT_vse_dly_fronta
 		icon = GFX_goal_truck_hleb
 		cost = 5,00
@@ -1949,9 +1934,10 @@ focus_tree = {
 		}
 		x = 17
 		y = 14
-        completion_reward = {
-			add_ideas = SKT_vse_dly_fronta
-		}         
+			completion_reward = {
+					add_ideas = SKT_vse_dly_fronta
+				}
+
 	}
 	focus = {
 		id = SKT_peremalivanie_protivnika
@@ -1965,19 +1951,20 @@ focus_tree = {
 		}
 		x = 16
 		y = 15
-        completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 1.0
-				uses = 2
-				category = cat_superior_firepower
-			}
-		}             
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+					add_doctrine_cost_reduction = {
+							cost_reduction = 1.0
+							uses = 2
+							category = cat_superior_firepower
+						}
+				}
+
 	}
 	focus = {
 		id = SKT_exstrim_turism
@@ -1991,8 +1978,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 16
-        completion_reward = {
-			add_ideas = SKT_exstrim_turism
-		}           
+			completion_reward = {
+					add_ideas = SKT_exstrim_turism
+				}
+
 	}
 }
