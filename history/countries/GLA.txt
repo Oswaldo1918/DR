@@ -1,17 +1,31 @@
 capital = 227
 
-oob = 123_1936
+oob = GLA_1936
 
-set_research_slots = 1
+set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
 set_technology = {
 	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+    marines	= 1
+	tech_support = 1
 	basic_train = 1
 }
 
+recruit_character = GLA_Traks
+recruit_character = GLA_Prince_Kassad
+recruit_character = GLA_Rodal_Jaziz
+recruit_character = GLA_Mohmar
+
 add_ideas = {
  ZCH_vroraya_warlord_era
+}
+
+declare_war_on = {
+	target = CNA
+	type = annex_everything
 }
 
 set_popularities = {

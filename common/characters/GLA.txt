@@ -1,16 +1,16 @@
 characters={
-	CNA_Tsing_Shi_Tao = {
-		name = "Цин Ши Тао"
+	GLA_Traks = {
+		name = "Доктор Тракс"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/CNA/Tsing_Shi_Tao.dds"
+				large = "gfx/leaders/GLA/Traks.dds"
 			}
 			army = {
-				large = "gfx/leaders/CNA/Tsing_Shi_Tao.dds"
+				large = "gfx/leaders/GLA/Traks.dds"
 			}
 		}
 		country_leader = {
-		    ideology = military_administration
+		    ideology = theocracy
 			traits = {		        
 	        }
 	        expire = "1999.1.1"
@@ -26,15 +26,15 @@ characters={
 		legacy_id = -1
         }
     }
-	CNA_Ta_Hung_Kwai = {
-		name = "Та Хун Квай"
+	GLA_Prince_Kassad = {
+		name = "Принц Кассад"
 		portraits = {
 			army = {
-				large = "gfx/leaders/CNA/Ta_Hung_Kwai.dds"
+				large = "gfx/leaders/GLA/Prince_Kassad.dds"
 			}
 		}
 		corps_commander = {
-	    traits = { armor_officer }
+	    traits = { commando }
 	    skill = 2
 	    attack_skill = 3
 	    defense_skill = 2
@@ -43,15 +43,15 @@ characters={
 		legacy_id = -1
         }
     }
-	CNA_Shin_Fay = {
-		name = "Шин Фай"
+	GLA_Rodal_Jaziz = {
+		name = "Родалл «Динамит» Джазиз"
 		portraits = {
 			army = {
-				large = "gfx/leaders/CNA/Shin_Fay.dds"
+				large = "gfx/leaders/GLA/Rodal_Jaziz.dds"
 			}
 		}
 		corps_commander = {
-	    traits = { infantry_officer }
+	    traits = { bearer_of_artillery }
 	    skill = 2
 	    attack_skill = 3
 	    defense_skill = 2
@@ -60,11 +60,11 @@ characters={
 		legacy_id = -1
         }
     }
-	CNA_Tigress_Ling = {
-		name = "Линг «Тигрица»"
+	GLA_Mohmar = {
+		name = "Мохмар «Смертельный удар» А.К.А."
 		portraits = {
 			army = {
-				large = "gfx/leaders/CNA/Tigress_Ling.dds"
+				large = "gfx/leaders/GLA/Mohmar.dds"
 			}
 		}
 		corps_commander = {
@@ -77,21 +77,4 @@ characters={
 		legacy_id = -1
         }
     }
-    CNA_Huang_Lin_Bao = {
-		name = "Хуан Линь Бао"
-		portraits = {
-			army = {
-				large = "gfx/leaders/CNA/Huang_Lin_Bao.dds"
-			}
-		}
-		corps_commander = {
-	    traits = { bearer_of_artillery }
-	    skill = 2
-	    attack_skill = 3
-	    defense_skill = 2
-	    planning_skill = 4
-	    logistics_skill = 2
-		legacy_id = -1
-        }
-    }  	
 }

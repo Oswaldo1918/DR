@@ -1,0 +1,29 @@
+GLA_annex_looser = { 
+
+	GLA_annex_CNA = {
+
+		available = {
+		GLA = {
+	   has_war_with = GLA
+	   }
+	   GLA = {
+              controls_state = 616
+	          controls_state = 754
+	          controls_state = 755
+	   }
+		}
+
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = GLA
+			transfer_troops = no
+		}	
+		}
+    }
+}

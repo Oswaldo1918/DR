@@ -1,6 +1,6 @@
 capital = 754
 
-oob = 123_1936
+oob = CNA_1936
 
 set_research_slots = 3
 set_stability = 0.6
@@ -15,11 +15,20 @@ set_technology = {
 }
 
 recruit_character = CNA_Tsing_Shi_Tao
+recruit_character = CNA_Ta_Hung_Kwai
+recruit_character = CNA_Shin_Fay
+recruit_character = CNA_Tigress_Ling
+recruit_character = CNA_Huang_Lin_Bao
 
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
 ZCH_vroraya_warlord_era
+}
+
+declare_war_on = {
+	target = GLA
+	type = annex_everything
 }
 
 set_popularities = {
