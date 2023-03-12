@@ -1,0 +1,23 @@
+YAK_Vzaimodeysviya_s_armiey = {
+    YAK_pomozh_shamanov = { 
+	
+		cost = 20
+
+		available = {
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = YAK_shamanskie_focusy
+				days = 20
+			}	
+		}	
+	}
+}

@@ -26,4 +26,72 @@ characters={
 		legacy_id = -1
         }
     }
+	CNA_Ta_Hung_Kwai = {
+		name = "Та Хун Квай"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CNA/Ta_Hung_Kwai.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { armor_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	CNA_Shin_Fay = {
+		name = "Шин Фай"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CNA/Shin_Fay.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { infantry_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	CNA_Tigress_Ling = {
+		name = "Линг «Тигрица»"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CNA/Tigress_Ling.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+    CNA_Huang_Lin_Bao = {
+		name = "Хуан Линь Бао"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CNA/Huang_Lin_Bao.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { bearer_of_artillery }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 4
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }  	
 }

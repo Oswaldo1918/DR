@@ -360,6 +360,36 @@ ideas = {
 				monthly_population = 1
 			    }
 		    }
+			DOT_bystrye_soldaty = {
+
+			   picture = chi_incompetent_officers
+			
+			   modifier = {
+			   army_speed_factor = 0.75
+			   army_attack_factor = 0.05
+			   army_fuel_consumption_factor = 0.3
+			   }
+		    }
+			DOT_soldaty_v_sapogah = {
+
+			   picture = chi_incompetent_officers
+			
+			   modifier = {
+			   army_speed_factor = 0.75
+			   army_attack_factor = 0.05
+			   consumer_goods_factor = 0.1
+			   }
+		    }
+			DOT_soldatskie_100_gramm = {
+
+			   picture = chi_incompetent_officers
+			
+			   modifier = {
+			   army_attack_factor = 0.15
+			   experience_loss_factor = 0.05
+			   consumer_goods_factor = 0.01
+			   }
+		    }
 	    }
 		
 		industrial_concern = {

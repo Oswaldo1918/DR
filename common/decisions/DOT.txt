@@ -1,3 +1,73 @@
+DOT_Vzaimodeysviya_s_armiey = {
+    DOT_vydat_soldatam_rocet_toplivo = { 
+	
+		cost = 20
+
+		available = {
+		    has_war = yes   
+		    OR = { 
+	            has_completed_focus = DOT_soldatskaya_massa 
+	            has_completed_focus = DOT_odna_semya
+	        }        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_bystrye_soldaty
+				days = 20
+			}	
+		}	
+	}
+	DOT_vydat_soldatam_doter_sapogi = { 
+	
+		cost = 20
+
+		available = {
+		    has_war = yes 
+		    has_completed_focus = DOT_ochistit_huntu_ot_rakov        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_soldaty_v_sapogah
+				days = 20
+			}	
+		}	
+	}
+	DOT_vydat_soldatskie_100_gramm = { 
+	
+		cost = 20
+
+		available = {
+            has_war = yes      		
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_soldatskie_100_gramm
+				days = 20
+			}	
+		}	
+	}
+}
 DOT_nationalization_Russia = {
 
     DOT_cor_LAZ = {
