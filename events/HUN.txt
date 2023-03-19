@@ -59,6 +59,9 @@ country_event = {
 		        type = annex_everything
 		    }
 		}
+		ZHE = {
+			transfer_state = 73                    			
+		}
 	}
 }
 country_event = {
@@ -91,9 +94,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    SLM = {
-			controls_state = 664
-		}	
+	    tag = HUN
+		surrender_progress > 0.5	
     }
 	
 	option = {
@@ -101,28 +103,10 @@ country_event = {
             SLM = {			
                 white_peace = HUN    
 			    transfer_state = 664
-			}	
-	}
-}
-country_event = {
-	id = HUN.3
-	title = HUN.3.t
-	desc = HUN.3.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	fire_only_once = yes
-	
-	trigger = {
-	    WRO = {
-			controls_state = 76
-		}	
-    }
-	
-	option = {
-	        name = HUN.3.a
+			}
             WRO = {			
                 white_peace = HUN    
 			    transfer_state = 76
-			}	
+			}    			
 	}
 }

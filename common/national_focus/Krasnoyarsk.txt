@@ -8,9 +8,12 @@ focus_tree = {
 		}
 	}
 	default = no
+	
+	continuous_focus_position = { x = 1500 y = 100 }
+	
 	focus = {
 		id = ZNS_proryv_tsepey_OMONa
-		icon = GFX_focus_spr_masters_of_our_own_fate
+		icon = ZNS_proryv_tsepey_OMONa
 		cost = 1,00
 		x = 34
 		y = 1
@@ -211,7 +214,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZNS_otklyuchit_tserkov_ot_finansirovaniya
-		icon = GFX_focus_cze_german_puppet
+		icon = focus_ZNS_otklyuchit_tserkov
 		cost = 5,00
 		prerequisite = {
 			focus = ZNS_Stalin_ili_Trotskiy
