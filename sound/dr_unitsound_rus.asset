@@ -26,6 +26,8 @@ soundeffect =
 {
     name = "MRD_infantry_idle"		#Это_когда_юниты_выбираешь
     sounds = {
+		sound = zacuson
+		sound = skilki_ya_zarezav
 		sound = atas
         sound = broneboynimi_zaryazhai
         sound = urki_moi_vernye
@@ -50,11 +52,16 @@ soundeffect =
 {
     name = "MRD_infantry_neutral_combat"		#Это_когда_юниты_в_бою
     sounds = {
+		sound = patronov_ne_zhalet
+		sound = mochite_vseh
+        sound = igraem_ot_oboroni
+		sound = bey_gorodskih
         sound = nachinayte_mochit_kozlov
 	    sound = mochi_kozlov
         sound = mochi_kozlov_2
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
+        sound = mochi_kozlov_5
 		sound = kozlyata_1
 		sound = kozlyata_2
 		sound = kozlyata_3
@@ -71,12 +78,16 @@ soundeffect =
 {
     name = "MRD_infantry_positive_combat"		#Это_когда_юниты_в_победном_бою
     sounds = {
+		sound = patronov_ne_zhalet
+		sound = mochite_vseh
+		sound = bey_gorodskih
 		sound = urramengaskey
 		sound = kto_ne_popal_loh
         sound = mochi_kozlov
         sound = mochi_kozlov_2
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
+        sound = mochi_kozlov_5
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
     }
@@ -90,6 +101,7 @@ soundeffect =
 {
     name = "MRD_infantry_retreat"		#Это_когда_юниты_отступают
     sounds = {
+        sound = igraem_ot_oboroni
         sound = uzhin
         sound = pora_bi_pouzhinat
         sound = pora_bi_pouzhinat
@@ -110,6 +122,7 @@ soundeffect =
 {
     name = "MRD_infantry_move_out"		#Это_когда_юниты_отправляешь_куда-то
     sounds = {
+		sound = bey_gorodskih
 		sound = kto_ne_popal_loh
         sound = ni_shagu_nazad
 		sound =	bratva_interesuyetsa
@@ -117,6 +130,7 @@ soundeffect =
         sound = mochi_kozlov_2
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
+        sound = mochi_kozlov_5
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
 		sound = komanda_begom
@@ -143,6 +157,11 @@ sound =
 }
 sound = 
 {
+	name = "bey_gorodskih"
+	file = "mrd/bey_gorodskih.wav"
+}
+sound = 
+{
 	name = "bratva_interesuyetsa"
 	file = "mrd/bratva_interesuyetsa.wav"
 }
@@ -150,6 +169,11 @@ sound =
 {
 	name = "broneboynimi_zaryazhai"
 	file = "mrd/broneboynimi_zaryazhai.wav"
+}
+sound = 
+{
+	name = "igraem_ot_oboroni"
+	file = "mrd/igraem_ot_oboroni.wav"
 }
 sound = 
 {
@@ -198,6 +222,16 @@ sound =
 }
 sound = 
 {
+	name = "mochi_kozlov_5"
+	file = "mrd/mochi_kozlov_5.wav"
+}
+sound = 
+{
+	name = "mochite_vseh"
+	file = "mrd/mochite_vseh.wav"
+}
+sound = 
+{
 	name = "nachinayte_mochit_kozlov"
 	file = "mrd/nachinayte_mochit_kozlov.wav"
 }
@@ -218,6 +252,11 @@ sound =
 }
 sound = 
 {
+	name = "patronov_ne_zhalet"
+	file = "mrd/patronov_ne_zhalet.wav"
+}
+sound = 
+{
 	name = "poneslas_mocha_po_trubam"
 	file = "mrd/poneslas_mocha_po_trubam.wav"
 }
@@ -235,6 +274,11 @@ sound =
 {
 	name = "seyte_razumnoye"
 	file = "mrd/seyte_razumnoye.wav"
+}
+sound = 
+{
+	name = "skilki_ya_zarezav"
+	file = "mrd/skilki_ya_zarezav.wav"
 }
 sound = 
 {
@@ -276,6 +320,8 @@ sound =
 	name = "ya_yzhe_primorilsya"
 	file = "mrd/ya_yzhe_primorilsya.wav" 
 }
-
-
-
+sound = 
+{
+	name = "zacuson"
+	file = "mrd/zacuson.wav" 
+}
