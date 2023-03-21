@@ -1,0 +1,70 @@
+ideas = {
+        country = {
+	        RMS_new_Rodina = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				    political_power_gain = 0.1				    	
+                    stability_factor = 0.1
+                    war_support_factor = 0.1 					
+                    consumer_goods_factor = -0.025
+					monthly_population = 0.125
+					weekly_manpower = 350 
+		        }
+	        }
+	        RMS_narko_nub = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				consumer_goods_factor = -0.1				    	
+                stability_factor = -0.05	
+				production_factory_max_efficiency_factor = 0.5
+			    }
+		    }
+			RMS_problema_osedlosti = {
+
+			    picture = Tibetskie_traditsii
+			
+			    modifier = {				               
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1 							
+			    }
+		    }
+			
+			RMS_vrazhda_s_mestnimi = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				conscription_factor = -0.3
+				stability_factor = -0.1
+				political_power_gain = -0.05
+			    }
+		    }
+			
+			RMS_religioznnaya_napryazhennost = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.1
+				political_power_gain = -0.075
+			    }
+		    }
+			
+			NAK_bangladesh_separatism = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				conscription_factor = -0.3
+				stability_factor = -0.1
+				political_power_gain = -0.05
+			    }
+		    }
+	   }
+		
+}

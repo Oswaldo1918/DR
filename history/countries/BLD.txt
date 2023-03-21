@@ -1,0 +1,42 @@
+чcapital = 429
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+	early_ship_hull_light = 1
+	basic_battery = 1
+	basic_depth_charges = 1
+	gw_artillery = 1
+}
+
+recruit_character = 
+
+add_ideas = {
+free_trade
+}
+
+set_popularities = {
+	democratic = 100
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 250
+
+create_country_leader = {
+	name = "Кодури Срисаила Шри Раджамули"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "RRR.dds"
+	expire = "1999.1.1"
+	ideology = ancap
+	traits = {
+		
+	}
+}

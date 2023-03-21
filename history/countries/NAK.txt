@@ -1,0 +1,41 @@
+capital = 431
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.7
+set_technology = {
+	infantry_weapons = 1
+	gwtank_chassis = 1
+	motorised_infantry = 1
+	basic_train = 1
+}
+
+add_ideas = {
+limited_conscription
+    partial_economic_mobilisation
+NAK_bangladesh_separatism
+}
+
+set_popularities = {
+	metacommy = 80
+	anarhostalinism = 20
+}
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_convoys = 400
+
+create_country_leader = {
+	name = "ЦК КПИ(м)"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "TSK.dds"
+	expire = "1999.1.1"
+	ideology = nacbol
+	traits = {
+		
+	}
+}

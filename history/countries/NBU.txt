@@ -1,0 +1,43 @@
+﻿capital = 324
+
+oob = "123_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
+	basic_train = 1
+}
+
+recruit_character = 
+
+set_convoys = 400
+
+add_ideas = {
+	limited_conscription
+    low_economic_mobilisation
+}
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Джигме Кхесар Намгьял Вангчук"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Vangchuk.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

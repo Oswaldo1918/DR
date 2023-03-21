@@ -1,0 +1,38 @@
+capital = 422
+
+oob = 123_1936
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	basic_train = 1
+}
+
+add_ideas = {
+		limited_conscription
+	    partial_economic_mobilisation		
+}
+
+set_popularities = {
+	anarhostalinism = 100
+}
+set_politics = {
+	ruling_party = anarhostalinism
+	elections_allowed = no	
+}
+
+set_convoys = 400
+
+create_country_leader = {
+	name = "Джозеф Сталин"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Stalin.dds"
+	expire = "1999.1.1"
+	ideology = ortodox_anstal
+	traits = {
+		left_trade_unionist
+	}
+}
