@@ -2,40 +2,40 @@ ideas = {
         country = {
 	        RMS_new_Rodina = {
 
-			    picture = cht_shizofrenia
+			    picture = Novaya_Rodina
 			
 			    modifier = {
 				    political_power_gain = 0.1				    	
                     stability_factor = 0.1
                     war_support_factor = 0.1 					
                     consumer_goods_factor = -0.025
-					monthly_population = 0.125
+					monthly_population = 1.25
 					weekly_manpower = 350 
 		        }
 	        }
 	        RMS_narko_nub = {
 
-			    picture = cht_shizofrenia
+			    picture = NarkoKhab
 			
 			    modifier = {
 				consumer_goods_factor = -0.1				    	
                 stability_factor = -0.05	
-				production_factory_max_efficiency_factor = 0.5
+				production_factory_max_efficiency_factor = 0.05
 			    }
 		    }
 			RMS_problema_osedlosti = {
 
-			    picture = Tibetskie_traditsii
+			    picture = Problema_osedlosti
 			
 			    modifier = {				               
 				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = 0.1 							
+				production_speed_buildings_factor = -0.1 							
 			    }
 		    }
 			
 			RMS_vrazhda_s_mestnimi = {
 
-			    picture = cht_shizofrenia
+			    picture = Konflikty_s_mestnymi
 			
 			    modifier = {
 				conscription_factor = -0.3
@@ -46,11 +46,11 @@ ideas = {
 			
 			RMS_religioznnaya_napryazhennost = {
 
-			    picture = cht_shizofrenia
+			    picture = Religioznaya_napryazhyonnost
 			
 			    modifier = {
-				stability_factor = -0.5
-				war_support_factor = -0.1
+				stability_factor = -0.3
+				war_support_factor = -0.3
 				political_power_gain = -0.075
 			    }
 		    }
