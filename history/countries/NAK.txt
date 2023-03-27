@@ -13,14 +13,22 @@ set_technology = {
 }
 
 add_ideas = {
-limited_conscription
+    limited_conscription
     partial_economic_mobilisation
-NAK_bangladesh_separatism
+    NAK_bangladesh_separatism
+	NAK_nachalo_otkaza_ot_kast
+	NAK_form_new_indian_peolpe
+	NAK_rad_culture_revolution
 }
 
 set_popularities = {
-	metacommy = 80
-	anarhostalinism = 20
+	metacommy = 30
+	anarhostalinism = 15
+	vmestolev = 15
+	democratic = 10
+	memoism = 10
+	fascism = 10
+	neutrality = 10
 }
 set_politics = {
 	ruling_party = metacommy
@@ -30,9 +38,9 @@ set_politics = {
 set_convoys = 400
 
 create_country_leader = {
-	name = "ЦК КПИ(м)"
+	name = "Иммануил Валлерстайн"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "TSK.dds"
+	picture = "Vallerstein.dds"
 	expire = "1999.1.1"
 	ideology = nacbol
 	traits = {

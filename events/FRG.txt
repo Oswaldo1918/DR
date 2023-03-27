@@ -1,0 +1,121 @@
+add_namespace = FRG
+
+	
+#
+country_event = {
+	id = FRG.1
+	title = FRG.1.t
+	desc = FRG.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = FRG      
+        date = 4.4.12
+    }
+	
+	option = {
+	    name = FRG.1.a
+        add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+        remove_ideas = FRG_polit_borba       		
+	}
+	option = {
+	    name = FRG.1.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+        add_country_leader_role = {
+            character = FRG_Navalniy
+            promote_leader = yes
+            country_leader = {
+                ideology = nazism
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+        remove_ideas = FRG_polit_borba          		
+	}
+	option = {
+	    name = FRG.1.c
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+        add_country_leader_role = {
+            character = FRG_Sholts
+            promote_leader = yes
+            country_leader = {
+                ideology = cybernetics
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+		remove_ideas = FRG_polit_borba
+	}
+	option = {
+	    name = FRG.1.d
+		country_event = FRG.2		
+	}
+}
+
+#
+country_event = {
+	id = FRG.2
+	title = FRG.2.t
+	desc = FRG.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = FRG
+    }
+	
+	option = {
+	    name = FRG.2.a
+		set_politics = {
+	        ruling_party = democratic
+        }
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+	    }
+        add_country_leader_role = {
+            character = FRG_GorbII
+            promote_leader = yes
+            country_leader = {
+                ideology = socdem_hunta
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+        remove_ideas = FRG_polit_borba
+	}
+	option = {
+	    name = FRG.2.b
+		set_politics = {
+	        ruling_party = metacommy
+        }
+        add_popularity = {
+				ideology = metacommy
+				popularity = 0.2
+		}
+		remove_ideas = FRG_polit_borba
+	}	
+	option = {
+	    name = FRG.2.c
+		set_politics = {
+	        ruling_party = neutrality
+        }
+        add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+		}
+		remove_ideas = FRG_polit_borba
+	    }
+}	

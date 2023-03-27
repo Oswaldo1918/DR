@@ -11,6 +11,64 @@ characters={
 	        ideology = ecofascism
 			traits = { hranitel_parkov }
 		    id=-1
-	   }
+	    }
+    }
+	FRG_GorbII = {
+		name = "Михаил Горбачёв"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/GorbII.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = socdem_hunta
+			traits = {  }
+		    id=-1
+	    }
+    }
+	FRG_Navalniy = {
+		name = "Лекс Навальнер"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/Navalniy.dds"
+			}
+		}
+    }
+    FRG_Sholts = {
+		name = "Олаф Шольц"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/Sholts.dds"
+			}
+		}
+    }
+	FRG_Lindenmann = {
+		name = "Тилль Линдеманн"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/Lindenmann.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = nacbol
+			traits = {  }
+		    id=-1
+	    }
+    }
+	FRG_Genrih = {
+		name = "Генрих XIII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRG/Genrih.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = despotism
+			traits = {  }
+		    id=-1
+	    }
     }
 }
