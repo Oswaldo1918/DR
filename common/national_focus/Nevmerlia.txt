@@ -240,7 +240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_azovets
-		icon = GFX_goal_unknown
+		icon = GFX_goal_azovets
 		cost = 10,00
 		prerequisite = {
 			focus = UKR_shushpanzeri
@@ -321,7 +321,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_oplot
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_oplot
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_shushpanzeri
@@ -1039,8 +1039,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_opyt_UPA
-		icon = GFX_goal_unknown
+		id = UKR_zal_UPA
+		icon = GFX_goal_zal_upa
 		cost = 2,00
 		prerequisite = {
 			focus = UKR_nazbati_v_VSU
@@ -1117,10 +1117,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_voini_lesu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_upa
 		cost = 10,00
 		prerequisite = {
-			focus = UKR_opyt_UPA
+			focus = UKR_zal_UPA
 		}
 		mutually_exclusive = {
 			focus = UKR_ukrainskie_fronti_UPA
@@ -1131,10 +1131,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_ukrainskie_fronti_UPA
-		icon = GFX_goal_unknown
+		icon = GFX_goal_front_upa
 		cost = 10,00
 		prerequisite = {
-			focus = UKR_opyt_UPA
+			focus = UKR_zal_UPA
 		}
 		mutually_exclusive = {
 			focus = UKR_voini_lesu
