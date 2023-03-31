@@ -1,0 +1,28 @@
+EUF_core_MRH = {
+
+	EUF_cor_MRH = {
+	
+		cost = 100
+
+		available = {
+		    NOT = { country_exists = MRH }
+			controls_state = 6
+			controls_state = 7
+			controls_state = 35
+			controls_state = 36
+		}
+		
+		fire_only_once = yes
+		
+		#days_remove = 30
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 36
+		}	
+	}
+}

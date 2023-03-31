@@ -1,0 +1,29 @@
+ideas = {
+        country = {
+		
+	    }
+		
+		industrial_concern = {
+		
+		    OSM_Dahir_Inshaat = {
+			
+			    allowed = {
+				   original_tag = OSM
+			    }
+			
+			    modifier = {
+			        production_factory_max_efficiency_factor = 0.075
+                    fascism_drift = 0.05  					
+			    }
+			
+			    research_bonus = {
+				    industry = 0.15				
+			    }
+			    ai_will_do = {
+				    factor = 2
+			    }
+			
+			    traits = { industrial_concern }
+		    }
+		}
+}

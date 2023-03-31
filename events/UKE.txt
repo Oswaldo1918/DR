@@ -1,0 +1,166 @@
+add_namespace = UKE
+
+	
+#Шотландцы против Кельтов
+country_event = {
+	id = UKE.1
+	title = UKE.1.t
+	desc = UKE.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = UKE
+        date = 4.6.1
+    }
+	
+	option = {
+	    name = UKE.1.a 
+        FSK = {			
+		    declare_war_on = {
+		        target = KOF
+		        type = annex_everything
+		    }
+		}
+	}
+}
+#Кельты против Коммунистов
+country_event = {
+	id = UKE.2
+	title = UKE.2.t
+	desc = UKE.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = UKE
+        date = 4.6.20
+    }
+	
+	option = {
+	    name = UKE.2.a 
+        KOF = {			
+		    declare_war_on = {
+		        target = UBR
+		        type = annex_everything
+		    }
+			add_state_claim = 130
+			add_state_claim = 131
+			add_state_claim = 132
+		}
+		UBR = {
+			add_state_claim = 121
+			add_state_claim = 133
+			add_state_claim = 122
+			add_state_claim = 123
+		}
+	}
+}
+#Меган против Коммунистов
+country_event = {
+	id = UKE.3
+	title = UKE.3.t
+	desc = UKE.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = UKE
+        date = 4.7.10
+    }
+	
+	option = {
+	    name = UKE.3.a 
+        UKE = {			
+		    declare_war_on = {
+		        target = UBR
+		        type = annex_everything
+		    }
+			add_state_claim = 130
+			add_state_claim = 131
+			add_state_claim = 132
+		}
+		UBR = {
+			add_state_claim = 129
+			add_state_claim = 125
+			add_state_claim = 126
+			add_state_claim = 127
+		}
+	}
+}
+#Кельты против Меган
+country_event = {
+	id = UKE.4
+	title = UKE.4.t
+	desc = UKE.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = UKE
+        date = 4.7.20
+    }
+	
+	option = {
+	    name = UKE.4.a 
+        KOF = {			
+		    declare_war_on = {
+		        target = UKE
+		        type = annex_everything
+		    }
+			add_state_claim = 129
+			add_state_claim = 125
+			add_state_claim = 126
+			add_state_claim = 127
+		}
+		UKE = {
+			add_state_claim = 121
+			add_state_claim = 133
+			add_state_claim = 122
+			add_state_claim = 123
+		}
+	}
+}
+#Меган,Коммунисты и Кельты против Бирмингема
+country_event = {
+	id = UKE.5
+	title = UKE.5.t
+	desc = UKE.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = UKE
+        date = 4.7.30
+    }
+	
+	option = {
+	    name = UKE.5.a 
+        UKE = {			
+		    declare_war_on = {
+		        target = PBG
+		        type = annex_everything
+		    }
+			add_state_claim = 128
+		}
+		UBR = {			
+		    declare_war_on = {
+		        target = PBG
+		        type = annex_everything
+		    }
+			add_state_claim = 128
+		}
+		KOF = {			
+		    declare_war_on = {
+		        target = PBG
+		        type = annex_everything
+		    }
+			add_state_claim = 128
+		}
+	}
+}

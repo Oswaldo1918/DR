@@ -1,0 +1,53 @@
+ideas = {
+        country = {	        
+			NAK_bangladesh_separatism = {
+
+			    picture = Bengalskiy_natsionalizm
+			
+			    modifier = {
+				conscription_factor = -0.3
+				stability_factor = -0.1
+				political_power_gain = -0.05
+			    }
+		    }
+			NAK_nachalo_otkaza_ot_kast = {
+
+			    picture = Nachalo_otkaza_ot_kast
+			
+			    modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.05
+				neutrality_drift = 0.025
+				fascism_drift = 0.025
+			    }
+		    }
+			NAK_form_new_indian_peolpe = {
+
+			    picture = Formirovanie_novogo_cheloveka
+			
+			    modifier = {
+				army_org_factor = 0.05
+				metacommy_drift = 0.025
+				consumer_goods_factor = 0.05
+			    }
+		    }
+			NAK_rad_culture_revolution = {
+
+			    picture = Radikalnaya_kulturnaya_revolyutsia
+			
+			    modifier = {
+				conscription_factor = -0.05
+				stability_factor = -0.15
+				political_power_gain = -0.15
+				neutrality_drift = -0.025
+				fascism_drift = -0.025
+				memoism_drift = -0.025
+				metacommy_drift = 0.025
+				democratic_drift = -0.025
+				vmestolev_drift = 0.01
+				anarhostalinism_drift = 0.01
+			    }
+		    }
+	    }
+		
+}
