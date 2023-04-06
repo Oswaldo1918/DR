@@ -36,12 +36,20 @@ recruit_character = DOT_Miposhka
 recruit_character = DOT_DM
 recruit_character = DOT_Collapse
 
-	add_ideas = {
-		closed_economy
-	    limited_conscription 
-	    partial_economic_mobilisation
-	}
+add_ideas = {
+	closed_economy
+	limited_conscription 
+	partial_economic_mobilisation
+}
 
+declare_war_on = {
+	target = KOL
+	type = annex_everything
+}
+declare_war_on = {
+	target = MAG
+	type = annex_everything
+}
 set_popularities = {
 	neutrality = 33
     anarhostalinism = 40
