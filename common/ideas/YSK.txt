@@ -1,0 +1,607 @@
+ideas = {
+        country = {
+			YSK_Barnaul_Altayskiy_kray = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.15
+				army_core_defence_factor = 0.075
+				surrender_limit = 0.025
+			    }
+		    }
+			YSK_rus_idut = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				army_attack_speed_factor = 0.15
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_boy_neosovku = {
+
+			    picture = spr_anti_fascist_crusade
+			    
+				targeted_modifier = {
+			    tag = MGN
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = OMS
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = GAL
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = ZNS
+			    attack_bonus_against = 0.05
+		        }
+				targeted_modifier = {
+				tag = POK
+			    attack_bonus_against = 0.05
+		        }
+			    modifier = {
+				army_attack_speed_factor = 0.15
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_rus_bisass = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				consumer_goods_factor = -0.025
+				production_factory_efficiency_gain_factor = 0.025 
+				production_factory_max_efficiency_factor = 0.025 
+			    }
+		    }
+			YSK_rus_marchy = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			    }
+		    }
+			YSK_rus_vperde = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_rerussifikatsiya = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.075
+				war_support_factor = 0.1
+			    }
+		    }
+			YSK_rerussifikatsiya_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.075
+				war_support_factor = 0.15
+				drift_defence_factor = 0.1
+				anarhostalinism_drift = -0.01
+				vmestolev_drift = -0.01
+				metacommy_drift = -0.01
+			    }
+		    }
+			YSK_rerussifikatsiya_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				drift_defence_factor = 0.1
+				anarhostalinism_drift = -0.03
+				vmestolev_drift = -0.03
+				metacommy_drift = -0.03
+				consumer_goods_factor = -0.025
+			    }
+		    }
+			YSK_help_rus_capitalist = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				production_speed_buildings_factor = 0.15 
+				consumer_goods_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025 
+			    }
+		    }
+			YSK_left_partizan = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				anarhostalinism_drift = 0.05
+				vmestolev_drift = 0.05
+				metacommy_drift = 0.05
+				consumer_goods_factor = 0.1
+			    }
+		    }
+			YSK_ns_besporyadki = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				fascism_drift = 0.05
+				consumer_goods_factor = 0.1
+			    }
+		    }
+			YSK_ns_besporyadki_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = -0.075
+				stability_factor = -0.125
+				war_support_factor = -0.125
+				fascism_drift = 0.05
+				consumer_goods_factor = 0.075
+			    }
+		    }
+			YSK_ns_besporyadki_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				fascism_drift = 0.05
+				consumer_goods_factor = -0.05
+				training_time_factor = -0.1
+				army_org_factor = -0.05
+			    }
+		    }
+			YSK_ns_besporyadki_3 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				consumer_goods_factor = -0.075
+				training_time_factor = -0.1
+				army_org_factor = -0.075
+				
+			    }
+		    }
+			YSK_ns_besporyadki_4 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.075
+				stability_factor = 0.075
+				fascism_drift = 0.05
+				consumer_goods_factor = 0.025
+				army_org_factor = 0.05
+				max_command_power = 25
+			    }
+		    }
+			YSK_ns_besporyadki_4 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				fascism_drift = 0.05
+				consumer_goods_factor = 0.025
+				army_org_factor = 0.05
+				max_command_power = 25
+				party_popularity_stability_factor = 0.1
+			    }
+		    }
+			YSK_ns_chvk = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				conscription = 0.01
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.01
+				army_org_factor = 0.05
+				max_command_power = 25
+				army_attack_factor = 0.075
+				send_volunteer_factor = 0.02
+			    }
+		    }
+			YSK_vosrozhdenniy_skin_dvizh = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				army_morale_factor = 0.025
+			    }
+		    }
+			YSK_vosrozhdenniy_skin_dvizh_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.075
+				war_support_factor = 0.075
+				army_morale_factor = 0.03
+				resistance_target = -0.025
+				resistance_damage_to_garrison = -0.025
+				resistance_growth = -0.025
+				resistance_target = -0.025
+			    }
+		    }
+			YSK_vosrozhdenniy_skin_dvizh_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				army_morale_factor = 0.05
+				resistance_target = -0.025
+				resistance_damage_to_garrison = -0.025
+				resistance_growth = -0.025
+				resistance_target = -0.025
+				conscription = 0.03
+			    }
+		    }
+			YSK_vosrozhdenniy_skin_dvizh_3 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.125
+				war_support_factor = 0.125
+				army_morale_factor = 0.05
+				resistance_target = -0.025
+				resistance_damage_to_garrison = -0.025
+				resistance_growth = -0.025
+				resistance_target = -0.025
+				conscription = 0.04
+				justify_war_goal_time = -0.1
+			    }
+		    }
+			YSK_vosrozhdenniy_skin_dvizh_4 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.15
+				war_support_factor = 0.15
+				army_morale_factor = 0.075
+				resistance_target = -0.05
+				resistance_damage_to_garrison = -0.05
+				resistance_growth = -0.05
+				resistance_target = -0.05
+				conscription = 0.05
+				conscription_factor = -0.1
+				justify_war_goal_time = -0.125
+			    }
+		    }
+			YSK_social_tutovism = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.075
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.1
+				army_attack_factor = 0.025
+				industrial_capacity_factory = -0.025
+				production_factory_max_efficiency_factor = -0.025 
+				production_factory_efficiency_gain_factor = -0.025
+				monthly_population = -0.15
+			    }
+		    }
+			YSK_white_edinstvo = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.075
+				drift_defence_factor = 0.1
+			    }
+		    }
+			YSK_white_edinstvo_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				weekly_manpower = -27
+				monthly_population = -0.1
+				stability_factor = 0.05
+				conscription_factor = 0.075
+				drift_defence_factor = 0.1
+				consumer_goods_factor = -0.01
+			    }
+		    }
+			YSK_white_business = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05 
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05 
+			    }
+		    }
+			YSK_white_business_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05 
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.025
+                production_speed_buildings_factor = 0.1       				
+			    }
+		    }
+			YSK_white_business_2 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				industrial_capacity_factory = 0.075
+				production_factory_max_efficiency_factor = 0.075 
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.025
+                production_speed_buildings_factor = 0.1 
+                stability_factor = -0.1
+                consumer_goods_factor = -0.075       				
+			    }
+		    }
+			YSK_gosvo_vam_nichevo_ne_dolzhno = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.1
+                consumer_goods_factor = -0.075 
+                production_factory_max_efficiency_factor = 0.025      				
+			    }
+		    }
+			YSK_okkupay_pedofilyay = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = 0.05
+                drift_defence_factor = 0.05
+                party_popularity_stability_factor = 0.05     				
+			    }
+		    }
+			YSK_ostanovit_razlozheniya_sosaity = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.1
+			    }
+		    }
+			YSK_ostanovit_razlozheniya_sosaity_1 = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.1
+				fascism_drift = 0.01
+				drift_defence_factor = 0.05
+                party_popularity_stability_factor = 0.05 
+			    }
+		    }
+			YSK_ostanovit_razlozheniya_sosaity_2 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.1
+				fascism_drift = 0.01
+				drift_defence_factor = 0.05
+                party_popularity_stability_factor = 0.05 
+				training_time_factor = -0.1
+			    }
+		    }
+			YSK_ostanovit_razlozheniya_sosaity_3 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    stability_factor = -0.075
+				consumer_goods_factor = -0.075
+				conscription_factor = 0.125
+				fascism_drift = 0.03
+				drift_defence_factor = 0.075
+                party_popularity_stability_factor = 0.075 
+				training_time_factor = -0.125
+				justify_war_goal_time = -0.1
+				
+			    }
+		    }
+			YSK_zdorovie_semi = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    MONTHLY_POPULATION = 0.75
+				consumer_goods_factor = 0.05
+			    }
+		    }
+	    }		
+}
