@@ -1,0 +1,28 @@
+focus_tree = {
+	id = POK
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = POK
+		}
+	}
+
+	shared_focus = POK_strana_svobodnih_lyudey
+	shared_focus = POK_end_civil_conflict
+
+}
+focus_tree = {
+	id = POK_Toples_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POK
+		}
+	}
+
+	shared_focus = POK_strana_svobodnih_lyudey
+	shared_focus = POK_nauchpoperi
+	shared_focus = POK_end_civil_conflict
+}
