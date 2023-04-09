@@ -69,7 +69,58 @@ DOT_Vzaimodeysviya_s_armiey = {
 	}
 }
 DOT_nationalization_Russia = {
+    
+    DOT_annex_KOL = {
 
+		available = {
+		KOL = {
+	    has_war_with = DOT
+	    }
+	    DOT = {
+      	      controls_state = 644
+			  controls_state = 822
+		}
+        }
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = KOL
+			transfer_troops = no
+		    }	
+		}
+        
+    }
+    DOT_annex_MAG = {
+
+		available = {
+		MAG = {
+	    has_war_with = DOT
+	    }
+	    DOT = {
+      	      controls_state = 562
+			  controls_state = 874
+		}
+        }
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = MAG
+			transfer_troops = no
+		    }	
+		}
+        
+    }     	
+	
     DOT_cor_LAZ = {
        cost = 100
         available = {
