@@ -1,0 +1,313 @@
+ideas = {
+       country = {
+	        GAL_barini_hozyaini = {
+	
+			   modifier = {
+			    consumer_goods_factor = 0.05
+				min_export = 0.1
+				stability_factor = -0.05
+			    }
+		    }
+			
+			GAL_mentovshina = {
+	
+			   modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			    }
+		    }
+			
+			GAL_biznes = {
+	
+			   modifier = {
+				consumer_goods_factor = -0.1
+				min_export = 0.1
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			    }
+		    }
+			
+			GAL_kult_lichnosti_Kalinina_i = {
+	
+			   modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			    }
+		    }
+			
+			GAL_marakumba_1 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = -0.5
+		    	stability_factor = -0.3
+			    }
+		    }
+			
+			GAL_marakumba_2 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = -0.4
+		    	stability_factor = -0.25
+			    }
+		    }
+			
+			GAL_marakumba_3 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = -0.3
+		    	stability_factor = -0.2
+			    }
+		    }
+			
+			GAL_marakumba_4 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = -0.2
+		    	stability_factor = -0.1
+			    }
+		    }
+			
+			GAL_marakumba_5 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = 0.05
+		    	stability_factor = 0.05
+			    }
+		    }
+			
+			GAL_marakumba_6 = {
+	
+			   modifier = {
+				MONTHLY_POPULATION = 0.1
+		    	stability_factor = 0.1
+			    }
+		    }
+		    
+		    GAL_marakumba_import_0 = {
+	
+			   modifier = {
+
+			    }
+		    }
+			
+			GAL_marakumba_import_1 = {
+	
+			   modifier = {
+				consumer_goods_factor = 0.1
+			    }
+		    }
+			
+			GAL_marakumba_import_2 = {
+	
+			   modifier = {
+				consumer_goods_factor = 0.3
+			    }
+		    }
+			
+			GAL_marakumba_import_3 = {
+	
+			   modifier = {
+				consumer_goods_factor = 0.5
+			    }
+		    }			
+			
+			GAL_goskomcen_i = {
+	
+			   modifier = {
+			    consumer_goods_factor = 0.05
+		    	stability_factor = 0.05
+			    }
+		    }
+			
+			GAL_gosbank_i = {
+	
+			   modifier = {
+			    consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_goskomtrud_i = {
+	
+			   modifier = {
+		    	stability_factor = 0.05
+			    }
+		    }
+			
+			GAL_gosplan_i = {
+	
+			   modifier = {
+		    	industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.12
+			    }
+		    }
+			
+			GAL_gossnab_i = {
+	
+			   modifier = {
+		    	industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			    }
+		    }
+			
+			GAL_gosstat_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.01
+			    }
+		    }
+			
+			GAL_minvneshtorg_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_PBK_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_ed_budget_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_rossnab_i = {
+	
+			   modifier = {
+		    	stability_factor = 0.1
+			    }
+		    }
+			
+			GAL_SovMin_i = {
+	
+			   modifier = {
+		    	political_power_factor = 0.05
+			    }
+		    }
+			
+			GAL_kosmoleti_i = {
+	
+			   modifier = {
+		    	air_maximum_speed_factor = 0.1
+				air_range_factor = 0.1
+			    }
+		    }
+			
+			GAL_speznaz_i = {
+	
+			   modifier = {
+		    	army_leader_start_level = 2
+				special_forces_attack_factor = 0.1
+	        	special_forces_defence_factor = 0.1
+			    }
+		    }
+			
+			GAL_nar_op_i = {
+	
+			   modifier = {
+		    	conscription = 0.05
+			    }
+		    }
+			
+			GAL_genii_v_NII_i = {
+	
+			   modifier = {
+		    	research_speed_factor = 0.1
+			    }
+		    }
+			
+			GAL_vodochnaya_monopoliya_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.05
+			    }
+		    }
+			
+			GAL_tabachnaya_monopoliya_i = {
+	
+			   modifier = {
+		    	consumer_goods_factor = -0.01
+			    }
+		    }
+			
+			GAL_chastnaya_torgovlya_i = {
+	
+			   modifier = {
+				consumer_goods_factor = -0.01
+		    	stability_factor = -0.05
+			    }
+		    }
+			
+			GAL_naz_torgovci_i = {
+	
+			   modifier = {
+				political_power_gain = 0.05
+		    	stability_factor = -0.1
+			    }
+		    }
+			
+			GAL_OBSV = {
+	
+			   modifier = {
+				political_power_gain = 0.2
+		    	stability_factor = 0.3
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.1
+			    }
+		    }
+	   }
+	   
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		GAL_TZ_im_Lukina = {
+			
+			allowed = {
+                original_tag = GAL			
+			}
+			
+		   available = {		
+           has_completed_focus = GAL_tanki_na_tractornom_zavode
+		   }
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+	
+		GAL_sovhoz_gigant = {
+
+			allowed = {
+                original_tag = GAL			
+			}
+			
+		   available = {		
+           has_completed_focus = GAL_sovhozi
+		   controls_state = 238
+		   }
+			
+			cost = 150
+			removal_cost = 10
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}	
+		}
+		
+	}
+}
