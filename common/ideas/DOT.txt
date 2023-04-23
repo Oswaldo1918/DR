@@ -2,7 +2,7 @@ ideas = {
         country = {
 		    DOT_vlast_steel_kleshnya = {
 
-			   picture = air_war_plans_division_focus
+			   picture = Vlast_stalnoy_kleshni
 			
 			   modifier = {
 			   conscription = 0.02
@@ -76,7 +76,7 @@ ideas = {
 			
 			   modifier = {
 			   local_resources_factor = 0.05
-			   experience_gain_army = -0.05
+			   experience_gain_army_factor = -0.05
 			   production_speed_buildings_factor = 0.15 
 			   }
 		    }
@@ -240,7 +240,7 @@ ideas = {
 		    }
 			DOT_umniye_teammeiti = {
 
-			   picture = chi_incompetent_officers
+			   picture = Umnye_timmeyty
 			
 			   modifier = {
                 army_org_factor = 0.025
@@ -343,7 +343,7 @@ ideas = {
 		    }
 			DOT_boyevei_psi = {
 
-			   picture = chi_incompetent_officers
+			   picture = Boevye_psy_Vovan
 			
 			   modifier = {
 			   army_speed_factor = 0.1
@@ -372,7 +372,7 @@ ideas = {
 		    }
 			DOT_soldaty_v_sapogah = {
 
-			   picture = chi_incompetent_officers
+			   picture = Soldaty_v_skorostnykh_sapogakh
 			
 			   modifier = {
 			   army_speed_factor = 0.75
@@ -382,7 +382,7 @@ ideas = {
 		    }
 			DOT_soldatskie_100_gramm = {
 
-			   picture = chi_incompetent_officers
+			   picture = Soldatskie_100_gramm
 			
 			   modifier = {
 			   army_attack_factor = 0.15
