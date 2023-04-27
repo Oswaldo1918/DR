@@ -185,3 +185,40 @@ country_event = {
 	}
 	}
 }
+country_event = {
+	id = POK.6
+	title = POK.6.t
+	desc = POK.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+		NOT = { has_completed_focus = POK_ohrana_uchastkov }
+		focus_progress = {
+			focus = POK_vibori
+			progress > 0.7
+		}
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.6.a
+	    add_manpower = -25
+		add_political_power = -50
+		add_stability = -0.05
+		add_popularity = { ideology = metacommy popularity = 0.01 }
+		add_popularity = { ideology = vmestolev popularity = 0.01 }
+		add_popularity = { ideology = anarhostalinism popularity = 0.01 }
+		568 = {
+			limit = {
+				industrial_complex > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1.0
+			}
+		}
+	}
+	
+}
