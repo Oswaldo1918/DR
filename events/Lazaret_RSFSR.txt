@@ -224,6 +224,7 @@ country_event = { #Развал пакта
 	
 	option = { #сторона Керба и Чумака
 		name = lazaret.9.a
+		
 		LAZ = {
 			end_puppet = CHT
 			end_puppet = MAT
@@ -243,6 +244,7 @@ country_event = { #Развал пакта
 		ARK = {leave_faction = Chumnoy_pakt}
 		BSH = {leave_faction = Chumnoy_pakt}
 		CHT = {leave_faction = Chumnoy_pakt}
+		hidden_effect = {
 		OSV = {
 		        
 				LAZ = {
@@ -323,12 +325,16 @@ country_event = { #Развал пакта
 					owner = OSV
 				}
 			}
-			OSV = { change_tag_from = LAZ }
+			
 		}
+		}
+		OSV = { change_tag_from = LAZ }
+		hidden_effect = {
 		                248 = { set_demilitarized_zone = no }
 			            247 = { set_demilitarized_zone = no }
 						246 = { set_demilitarized_zone = no }
 			            253 = { set_demilitarized_zone = no }
+						}
 	}
 	option = { #сторона Лазарета
 		name = lazaret.9.b
@@ -344,6 +350,7 @@ country_event = { #Развал пакта
 		set_country_flag = LAZ_bilo_vosstaniye
 		set_global_flag = Razval_ChP
 		leave_faction = Chumnoy_pakt
+		hidden_effect = {
 		MAT = {leave_faction = Chumnoy_pakt}
 		DON = {leave_faction = Chumnoy_pakt}
 		WHS = {leave_faction = Chumnoy_pakt}
@@ -351,6 +358,8 @@ country_event = { #Развал пакта
 		ARK = {leave_faction = Chumnoy_pakt}
 		BSH = {leave_faction = Chumnoy_pakt}
 		CHT = {leave_faction = Chumnoy_pakt}
+		}
+		hidden_effect = {
 		OSV = {
 		       
 				LAZ = {
@@ -433,11 +442,15 @@ country_event = { #Развал пакта
 
 			}
 		}
+	}
+	hidden_effect = {
 		                248 = { set_demilitarized_zone = no }
 			            247 = { set_demilitarized_zone = no }
 						246 = { set_demilitarized_zone = no }
 			            253 = { set_demilitarized_zone = no }
-		} 
+						}
+		}
+		
 	}
 	
 country_event = { #Доступ_к_экспансии_после_чисток
