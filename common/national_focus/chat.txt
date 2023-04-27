@@ -4403,9 +4403,17 @@ completion_reward = {
 		}
 		x = 13
 		y = 10
-available = {
-					has_war = no
-				}
+        available = {
+			controls_state = 400
+			controls_state = 399
+			controls_state = 252
+			controls_state = 256
+			controls_state = 833
+			controls_state = 249
+			controls_state = 255
+			controls_state = 250
+			controls_state = 251
+		}
 completion_reward = {
 army_experience = 50
 add_doctrine_cost_reduction = {
