@@ -63,63 +63,93 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nek_grup1 = {
-			
-			picture = idea_UKR_nek_grup
-			
+			UKR_nahruk_level1 = {
+		
 			    modifier = {
-				    conscription = -0.01
-					stability_factor = -0.05
-					army_org_factor = -0.03
-					political_power_factor = -0.05
+	       			war_support_factor = 0.01
+                    army_org_factor = 0.01
+					political_power_factor = 0.01
 		        }
 	        }
 			
-			UKR_nek_grup2 = {
-			
-			picture = idea_UKR_nek_grup
-			
+			UKR_nahruk_level2 = {
+		
 			    modifier = {
-				    conscription = -0.03
-					stability_factor = -0.08
-					army_org_factor = -0.05
-					political_power_factor = -0.08
+	       			war_support_factor = 0.03
+                    army_org_factor = 0.03
+					political_power_factor = 0.03
 		        }
 	        }
 			
-			UKR_nek_grup3 = {
-			
-			picture = idea_UKR_nek_grup
+			UKR_nahruk_level3 = {
 			
 			    modifier = {
-				    conscription = -0.05
-					stability_factor = -0.1
-					army_org_factor = -0.1
-					political_power_factor = -0.1
+				 	war_support_factor = 0.05
+                    army_org_factor = 0.05
+					political_power_factor = 0.05
 		        }
 	        }
 			
-			UKR_nek_grup4 = {
-			
-			picture = idea_UKR_nek_grup
+			UKR_nahruk_level4 = {		
 			
 			    modifier = {
-				    conscription = -0.1
-					stability_factor = -0.15
-					army_org_factor = -0.15
-					political_power_factor = -0.15
+	       			war_support_factor = 0.07
+                    army_org_factor = 0.07
+					political_power_factor = 0.07
 		        }
 	        }
 			
-			UKR_nek_grup5 = {
-			
-			picture = idea_UKR_nek_grup
+			UKR_nahruk_level5 = {
 			
 			    modifier = {
-				    conscription = -0.2
-					stability_factor = -0.2
-					army_org_factor = -0.2
-					political_power_factor = -0.2
+				    war_support_factor = 0.1
+                    army_org_factor = 0.1
+					political_power_factor = 0.1
+		        }
+	        }
+			
+			UKR_nahruk_level6 = {
+			
+			    modifier = {
+				   	war_support_factor = 0.12
+                    army_org_factor = 0.12
+					political_power_factor = 0.12
+		        }
+	        }
+			
+			UKR_nahruk_level7 = {
+			
+			    modifier = {
+				    war_support_factor = 0.15
+                    army_org_factor = 0.15
+					political_power_factor = 0.15
+		        }
+	        }
+			
+		    UKR_nahruk_level8 = {
+			
+			    modifier = {
+				    war_support_factor = 0.18
+                    army_org_factor = 0.18
+					political_power_factor = 0.18
+		        }
+	        }
+			
+			UKR_nahruk_level9 = {
+			
+			    modifier = {
+	       			war_support_factor = 0.2
+                    army_org_factor = 0.2
+					political_power_factor = 0.2
+		        }
+	        }
+			
+			UKR_nahruk_level10 = {
+			
+			    modifier = {
+	       			war_support_factor = 0.25
+                    army_org_factor = 0.25
+					political_power_factor = 0.25
 		        }
 	        }
 			
