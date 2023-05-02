@@ -1550,7 +1550,7 @@
 	}
 	shared_focus = {
 		id = POK_new_buildings_in_EKB
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_POK_new_buildings_in_EKB
 		cost = 5
 		prerequisite = {
 			focus = POK_land_of_the_strong
@@ -1764,7 +1764,7 @@
 	}
 	shared_focus = {
 		id = POK_support_russian_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_POK_support_russian_nationalism
 		cost = 5
 		prerequisite = {
 			focus = POK_patriotic_song
@@ -1813,7 +1813,7 @@
 	}
 	shared_focus = {
 		id = POK_purge_of_unloyal
-		icon = GFX_goal_unknown
+		icon = GFX_POK_purge_of_unloyal
 		cost = 5
 		prerequisite = {
 			focus = POK_Eltsin_death_brigades
