@@ -1116,6 +1116,64 @@ ideas = {
 				political_power_factor = 0.01
 			}
 		}
+		POK_decentralization_of_nologe = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.1
+                production_speed_industrial_complex_factor = -0.05    				
+				political_power_gain = -0.03
+			}
+		}
+		POK_kioski = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+                supply_factor = -0.03       				
+			}
+		}
+		POK_narastit_dobychu = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				local_resources_factor = 0.1       				
+			}
+		}
     }
 	
 	tank_manufacturer = { 

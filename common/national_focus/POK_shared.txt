@@ -794,10 +794,37 @@
 		}
 		x = 10
 		y = 20
-			completion_reward = {
-
-}
-
+		completion_reward = {
+		    add_ideas = POK_narastit_dobychu
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 580
+            }   
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 577
+            }
+            add_resource = {
+                type = oil
+                amount = 10
+                state = 579
+            }   
+            add_resource = {
+                type = oil
+                amount = 10
+                state = 824
+            }      			
+            40 = {						
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}            
+        }
 	}
 	shared_focus = {
 		id = POK_law_of_Novodvorskava
@@ -1557,7 +1584,11 @@
 		}
 		x = 8
 		y = 19
-
+        completion_reward = {
+            653 = {
+                add_extra_state_shared_building_slots = 3             
+			}
+        }     
 	}
 	shared_focus = {
 		id = POK_razvodyashiy
@@ -1664,7 +1695,9 @@
 		}
 		x = 8
 		y = 20
-
+        completion_reward = {
+            add_ideas = POK_kioski
+        }    
 	}
 	shared_focus = {
 		id = POK_patriotic_song
@@ -1824,7 +1857,11 @@
 		}
 		x = 7
 		y = 21
-
+        completion_reward = {
+			add_manpower = -50000
+			add_stability = 0.1
+			add_political_power = -100
+		}      
 	}
 	shared_focus = {
 		id = POK_reform_army
@@ -2045,7 +2082,10 @@
 		}
 		x = 5
 		y = 21
-
+        completion_reward = {
+			add_war_support = -0.1
+			add_political_power = 100
+		}    
 	}
 	shared_focus = {
 		id = POK_remember_Novgorod
@@ -2829,7 +2869,9 @@ available = {
 		}
 		x = 46
 		y = 18
-
+        completion_reward = {
+            add_ideas = POK_decentralization_of_nologe       
+        }    
 	}
 	shared_focus = {
 		id = POK_end_militarism
