@@ -1012,7 +1012,108 @@ ideas = {
 			}
 			modifier = {
 				army_artillery_attack_factor = 0.1
-				army_artillery_defence_factor = 0,1
+				army_artillery_defence_factor = 0.1
+			}
+		}
+		
+		POK_opening_secret_archives = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				democratic_drift = 0.03
+				encryption = -20
+			}
+		}
+		POK_go_bunker = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				max_dig_in = 20
+				sickness_chance = -0.5
+				wounded_chance_factor = -0.5
+			}
+		}
+		POK_small_buisnes_nuka_and_rocet = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				encryption_factor = -0.1
+				monthly_population = -0.05
+				production_speed_rocket_site_factor = -0.15 
+				production_speed_nuclear_reactor_factor = -0.15 
+			}
+		}
+		POK_platit_nazmenam = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+				stability_factor = 0.1
+				political_power_factor = -0.01
+			}
+		}
+		POK_no_posobiyam = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.01
 			}
 		}
     }
