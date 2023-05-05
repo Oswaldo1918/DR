@@ -1174,6 +1174,100 @@ ideas = {
 				local_resources_factor = 0.1       				
 			}
 		}
+		POK_Eltsin_death_brigades = {
+
+			picture = Fraykor
+			
+			    modifier = {
+			    political_power_gain = -0.1
+				army_org_factor = -0.05
+				compliance_growth = 0.05
+				conscription = 0.01
+			    }
+		}
+		POK_high_level_of_corruption = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    political_power_factor = 0.1
+                political_power_gain = 0.1				
+				consumer_goods_factor = 0.1
+                stability_factor = -0.1
+				war_support_factor = -0.1
+                political_advisor_cost_factor = -0.1      				
+			}
+		}
+		POK_land_of_the_vozhd = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    army_core_defence_factor = 0.1
+				resistance_target = -0.05
+                non_core_manpower = 0.05      				
+			}
+		}
+		POK_land_of_the_strong = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    conscription = 0.015
+                monthly_population = -0.15
+                army_attack_factor = 0.025     				
+			}
+		}
+		POK_alcoholism_or_death = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+                monthly_population = -0.15
+                army_attack_factor = 0.025
+                army_morale_factor = 0.075     				
+			}
+		}
     }
 	
 	tank_manufacturer = { 

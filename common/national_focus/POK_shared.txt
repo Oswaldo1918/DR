@@ -900,10 +900,19 @@
 		}
 		x = 6
 		y = 20
-			completion_reward = {
-
-}
-
+		completion_reward = {
+		    add_ideas = POK_Eltsin_death_brigades
+            add_corps_commander_role = {
+			character = POK_Tesak
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }   			
+        }
 	}
 	shared_focus = {
 		id = POK_ot_Volgi_do_Eniseya
@@ -1467,7 +1476,9 @@
 		}
 		x = 7
 		y = 18
-
+        completion_reward = {
+		    add_ideas = POK_land_of_the_strong
+		}       
 	}
 	shared_focus = {
 		id = POK_otkaz_ot_chrezvich_polnomochiy
@@ -1599,7 +1610,9 @@
 		}
 		x = 10
 		y = 17
-
+        completion_reward = {
+		    add_country_leader_trait = razvodyashiy
+		}     
 	}
 	shared_focus = {
 		id = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
@@ -1684,7 +1697,10 @@
 		}
 		x = 6
 		y = 19
-
+        completion_reward = {
+		    add_ideas = POK_alcoholism_or_death
+			add_manpower = -50000
+		}         
 	}
 	shared_focus = {
 		id = POK_kioski
@@ -1708,7 +1724,9 @@
 		}
 		x = 5
 		y = 18
-
+        completion_reward = {
+            add_
+        }   
 	}
 	shared_focus = {
 		id = POK_inter_dogovor
@@ -1793,7 +1811,9 @@
 		}
 		x = 3
 		y = 21
-
+        completion_reward = {
+		    add_ideas = POK_land_of_the_vozhd
+		}       
 	}
 	shared_focus = {
 		id = POK_support_russian_nationalism
@@ -1927,7 +1947,9 @@
 		}
 		x = 10
 		y = 21
-
+        completion_reward = {
+		    add_ideas = POK_high_level_of_corruption
+		}      
 	}
 	shared_focus = {
 		id = POK_vertical_vlasti
