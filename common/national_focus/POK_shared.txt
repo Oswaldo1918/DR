@@ -875,6 +875,20 @@
 
 	}
 	shared_focus = {
+		id = POK_Ya_prihozhu
+		icon = GFX_POK_Ya_prihozhu
+		cost = 5
+		prerequisite = {
+			focus = POK_proyect_EVA
+		}
+		mutually_exclusive = {
+			focus = POK_lunar_Putin
+		}
+		x = 7
+		y = 16
+
+	}
+	shared_focus = {
 		id = POK_lunar_Putin
 		icon = GFX_goal_unknown
 		cost = 5
@@ -891,29 +905,132 @@
 }
 
 	}
+	
 	shared_focus = {
-		id = POK_Eltsin_death_brigades
-		icon = GFX_POK_Eltsin_death_brigades
+		id = POK_razvodyashiy
+		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = POK_alcoholism_or_death
+			focus = POK_lunar_Putin
 		}
-		x = 6
-		y = 20
-		completion_reward = {
-		    add_ideas = POK_Eltsin_death_brigades
-            add_corps_commander_role = {
-			character = POK_Tesak
-			traits = { politically_connected media_personality }
-	        skill = 1
-	        attack_skill = 2
-	        defense_skill = 1
-	        planning_skill = 1
-	        logistics_skill = 1
-		    legacy_id = -1
-            }   			
-        }
+		x = 10
+		y = 17
+        completion_reward = {
+		    add_country_leader_trait = razvodyashiy
+		}     
 	}
+	
+	shared_focus = {
+		id = POK_nologe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_lunar_Putin
+		}
+		x = 12
+		y = 17
+
+	}
+	
+	shared_focus = {
+		id = POK_inter_dogovor
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_razvodyashiy
+		}
+		prerequisite = {
+			focus = POK_nologe
+		}
+		x = 11
+		y = 18
+
+	}
+	
+	shared_focus = {
+		id = POK_reform_army
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_inter_dogovor
+		}
+		x = 12
+		y = 19
+        completion_reward = {
+			add_ideas = volunteer_only
+		}      
+	}
+	
+	shared_focus = {
+		id = POK_go_bunker
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_reform_army
+		}
+		x = 12
+		y = 20
+        completion_reward = {
+			add_ideas = POK_go_bunker
+			add_building_construction = {
+                type = bunker
+                level = 10
+                instant_build = yes
+                province = 1821
+            }
+			add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+                province = 1821
+            }
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_grand_battle_plan
+			}
+		}    
+	}
+	
+	shared_focus = {
+		id = POK_liberalism_patriotism
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_go_bunker
+		}
+		x = 12
+		y = 21
+
+	}
+	
+	shared_focus = {
+		id = POK_under_neutral_flag
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_inter_dogovor
+		}
+		x = 10
+		y = 19
+
+	}
+	
+	shared_focus = {
+		id = POK_podnyat_level_of_corruption
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_GAZPROM
+		}
+		x = 10
+		y = 21
+        completion_reward = {
+		    add_ideas = POK_high_level_of_corruption
+		}      
+	}
+	
 	shared_focus = {
 		id = POK_ot_Volgi_do_Eniseya
 		icon = GFX_POK_ot_Volgi_do_Eniseya
@@ -1457,17 +1574,6 @@
 
 	}
 	shared_focus = {
-		id = POK_nologe
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_lunar_Putin
-		}
-		x = 12
-		y = 17
-
-	}
-	shared_focus = {
 		id = POK_land_of_the_strong
 		icon = GFX_POK_land_of_the_strong
 		cost = 5
@@ -1479,6 +1585,21 @@
         completion_reward = {
 		    add_ideas = POK_land_of_the_strong
 		}       
+	}
+	shared_focus = {
+		id = POK_new_buildings_in_EKB
+		icon = GFX_POK_new_buildings_in_EKB
+		cost = 5
+		prerequisite = {
+			focus = POK_land_of_the_strong
+		}
+		x = 8
+		y = 19
+        completion_reward = {
+            653 = {
+                add_extra_state_shared_building_slots = 3             
+			}
+        }     
 	}
 	shared_focus = {
 		id = POK_otkaz_ot_chrezvich_polnomochiy
@@ -1586,34 +1707,7 @@
 		y = 16
 
 	}
-	shared_focus = {
-		id = POK_new_buildings_in_EKB
-		icon = GFX_POK_new_buildings_in_EKB
-		cost = 5
-		prerequisite = {
-			focus = POK_land_of_the_strong
-		}
-		x = 8
-		y = 19
-        completion_reward = {
-            653 = {
-                add_extra_state_shared_building_slots = 3             
-			}
-        }     
-	}
-	shared_focus = {
-		id = POK_razvodyashiy
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_lunar_Putin
-		}
-		x = 10
-		y = 17
-        completion_reward = {
-		    add_country_leader_trait = razvodyashiy
-		}     
-	}
+	
 	shared_focus = {
 		id = POK_nikakih_prav_cheloveka_vragam_prav_cheloveka
 		icon = GFX_POK_udar_po_partizanam
@@ -1660,6 +1754,9 @@
 		}
 		x = 32
 		y = 16
+		completion_reward = {
+					
+				}
 
 	}
 	shared_focus = {
@@ -1674,7 +1771,9 @@
 		}
 		x = 34
 		y = 16
-
+completion_reward = {
+					
+				}
 	}
 	shared_focus = {
 		id = POK_kanzler
@@ -1703,6 +1802,29 @@
 		}         
 	}
 	shared_focus = {
+		id = POK_Eltsin_death_brigades
+		icon = GFX_POK_Eltsin_death_brigades
+		cost = 5
+		prerequisite = {
+			focus = POK_alcoholism_or_death
+		}
+		x = 6
+		y = 20
+		completion_reward = {
+		    add_ideas = POK_Eltsin_death_brigades
+            add_corps_commander_role = {
+			character = POK_Tesak
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }   			
+        }
+	}
+	shared_focus = {
 		id = POK_kioski
 		icon = GFX_POK_kioski
 		cost = 5
@@ -1715,33 +1837,7 @@
             add_ideas = POK_kioski
         }    
 	}
-	shared_focus = {
-		id = POK_patriotic_song
-		icon = GFX_POK_patriotic_song
-		cost = 5
-		prerequisite = {
-			focus = POK_Running_in_the_90s
-		}
-		x = 5
-		y = 18
-        completion_reward = {
-            add_
-        }   
-	}
-	shared_focus = {
-		id = POK_inter_dogovor
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_razvodyashiy
-		}
-		prerequisite = {
-			focus = POK_nologe
-		}
-		x = 11
-		y = 18
-
-	}
+	
 	shared_focus = {
 		id = POK_first_and_eternal
 		icon = GFX_POK_first_and_eternal
@@ -1771,19 +1867,31 @@
 
 	}
 	shared_focus = {
-		id = POK_Ya_prihozhu
-		icon = GFX_POK_Ya_prihozhu
+		id = POK_patriotic_song
+		icon = GFX_POK_patriotic_song
 		cost = 5
 		prerequisite = {
-			focus = POK_proyect_EVA
+			focus = POK_Running_in_the_90s
 		}
-		mutually_exclusive = {
-			focus = POK_lunar_Putin
+		x = 5
+		y = 18
+        completion_reward = {
+            
+        }   
+	}
+	
+	shared_focus = {
+		id = POK_support_russian_nationalism
+		icon = GFX_POK_support_russian_nationalism
+		cost = 5
+		prerequisite = {
+			focus = POK_patriotic_song
 		}
-		x = 7
-		y = 16
+		x = 4
+		y = 19
 
 	}
+	
 	shared_focus = {
 		id = POK_new_federative_pact
 		icon = GFX_POK_komitet_spaseniya
@@ -1815,17 +1923,7 @@
 		    add_ideas = POK_land_of_the_vozhd
 		}       
 	}
-	shared_focus = {
-		id = POK_support_russian_nationalism
-		icon = GFX_POK_support_russian_nationalism
-		cost = 5
-		prerequisite = {
-			focus = POK_patriotic_song
-		}
-		x = 4
-		y = 19
 
-	}
 	shared_focus = {
 		id = POK_kult_pokayaniya
 		icon = GFX_POK_kult_pokayaniya
@@ -1883,74 +1981,7 @@
 			add_political_power = -100
 		}      
 	}
-	shared_focus = {
-		id = POK_reform_army
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_inter_dogovor
-		}
-		x = 12
-		y = 19
-        completion_reward = {
-			add_ideas = volunteer_only
-		}      
-	}
-	shared_focus = {
-		id = POK_go_bunker
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_reform_army
-		}
-		x = 12
-		y = 20
-        completion_reward = {
-			add_ideas = POK_go_bunker
-			add_building_construction = {
-                type = bunker
-                level = 10
-                instant_build = yes
-                province = 1821
-            }
-			add_building_construction = {
-                type = radar_station
-                level = 2
-                instant_build = yes
-                province = 1821
-            }
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 3
-				category = cat_grand_battle_plan
-			}
-		}    
-	}
-	shared_focus = {
-		id = POK_under_neutral_flag
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_inter_dogovor
-		}
-		x = 10
-		y = 19
-
-	}
-	shared_focus = {
-		id = POK_podnyat_level_of_corruption
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_GAZPROM
-		}
-		x = 10
-		y = 21
-        completion_reward = {
-		    add_ideas = POK_high_level_of_corruption
-		}      
-	}
+	
 	shared_focus = {
 		id = POK_vertical_vlasti
 		icon = GFX_POK_vertical_vlasti
@@ -1962,6 +1993,7 @@
 		y = 20
 
 	}
+	
 	shared_focus = {
 		id = POK_usilit_administr_presidenta
 		icon = GFX_focus_generic_self_management
@@ -1973,17 +2005,7 @@
 		y = 18
 
 	}
-	shared_focus = {
-		id = POK_liberalism_patriotism
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_go_bunker
-		}
-		x = 12
-		y = 21
-
-	}
+	
 	shared_focus = {
 		id = POK_privatiz_dohodov
 		icon = GFX_POK_burg2
@@ -3271,38 +3293,5 @@ available = {
         }        
 	}
 	
-	shared_focus = {
-		id = POK_opening_secret_archives
-		icon = GFX_POK_opening_secret_archives
-		cost = 5
-		prerequisite = {
-			focus = POK_
-		}
-		available = {
-			controls_state = 219
-			controls_state = 195
-			controls_state = 653
-		}
-		x = 100
-		y = 1
-        completion_reward = {
-             add_ideas = POK_opening_secret_archives        
-        }        
-	}
-	shared_focus = {
-		id = POK_start_new_nuremberg
-		icon = GFX_POK_start_new_nuremberg
-		cost = 5
-		prerequisite = {
-			focus = POK_
-		}
-		x = 100
-		y = 2
-		available = {
-			controls_state = 219
-		}
-        completion_reward = {
-                   
-        }      
-	}
+	
 
