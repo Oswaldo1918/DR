@@ -1268,6 +1268,329 @@ ideas = {
                 army_morale_factor = 0.075     				
 			}
 		}
+		POK_imushestv_cenz = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {			
+				consumer_goods_factor = -0.025
+                stability_factor = -0.075
+				war_support_factor = -0.075     				
+			}
+		}
+		POK_anti_totalitarian_cenz = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    anarhostalinism_drift = -0.01
+			    vmestolev_drift = -0.01
+			    metacommy_drift = -0.01
+                neutrality_drift = -0.01			
+				fascism_drift = -0.01
+                stability_factor = -0.05     				
+			}
+		}
+		POK_support_buisenes = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    consumer_goods_factor = 0.05    				
+			}
+		}
+		POK_more_transportniki = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			}
+			
+			equipment_bonus = {
+				transport_plane = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		POK_strong_hand_of_market = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    drift_defence_factor = 0.05
+                war_support_factor = 0.05
+                max_command_power = 20  				
+			}
+		}	
+		POK_strong_hand_of_liberalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    drift_defence_factor = 0.05
+                stability_factor = 0.05  				
+			}
+		}
+		POK_kachat_zagranitsu = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    min_export = 0.075
+                consumer_goods_factor = -0.015       				
+			}
+		}
+		POK_ChP_v_stolitse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    army_attack_factor = -0.15      				
+			}
+		}
+		POK_new_state_duma_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    stability_factor = 0.05
+                political_power_gain = 0.05    				
+			}
+		}
+		POK_kult_of_Nepolzhivov_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    stability_factor = 0.1
+                war_support_factor = 0.1    				
+			}
+		}
+		POK_pererashod_bumagi = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    consumer_goods_factor = -0.02    				
+			}
+		}
+		POK_administr_presidenta = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    consumer_goods_factor = 0.05
+                political_power_gain = 0.02
+                party_popularity_stability_factor = 0.05
+                production_factory_efficiency_gain_factor = -0.025      				
+			}
+		}
+		POK_otdel_lobburovaniya = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    war_support_factor = -0.075     
+			    political_advisor_cost_factor = -0.15
+				tank_manufacturer_cost_factor = -0.15
+                naval_manufacturer_cost_factor = -0.15
+                aircraft_manufacturer_cost_factor = -0.15     
+                materiel_manufacturer_cost_factor = -0.15     
+                industrial_concern_cost_factor = -0.15   				
+			}
+		}
+		POK_vertical_vlasti = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    local_resources_factor = 0.05    
+			    production_speed_infrastructure_factor = 0.075 
+				stability_factor = 0.05
+                compliance_growth_on_our_occupied_states = 0.05  				
+			}
+		}
+		POK_support_russian_nationalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    drift_defence_factor = 0.05    
+			    war_support_factor = 0.15 
+				democratic_drift = 0.05
+                fascism_drift = 0.05  				
+			}
+		}
+		POK_patriotic_song = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+			    stability_factor = 0.05    
+			    war_support_factor = 0.05 
+				army_morale_factor = 0.075  				
+			}
+		}
     }
 	
 	tank_manufacturer = { 

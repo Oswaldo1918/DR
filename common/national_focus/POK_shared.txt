@@ -112,10 +112,9 @@
 		}
 		x = 15
 		y = 4
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_ideas = POK_anti_totalitarian_cenz                           
+        }
 	}
 	shared_focus = {
 		id = POK_smi
@@ -129,11 +128,14 @@
 		}
 		x = 19
 		y = 2
-			completion_reward = {
-					add_political_power = 150
-					add_stability = 0.05
-				}
-
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+		}
 	}
 	shared_focus = {
 		id = POK_registr_partiy
@@ -246,10 +248,14 @@
 		}
 		x = 19
 		y = 5
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }
+            add_stability = 0.075
+            add_war_support  = 0.075  			
+        }
 	}
 	shared_focus = {
 		id = POK_under_one_umbrella
@@ -732,7 +738,6 @@
 			completion_reward = {
 					army_experience = 5
 				}
-
 	}
 	shared_focus = {
 		id = POK_imushestv_cenz
@@ -744,10 +749,9 @@
 		}
 		x = 13
 		y = 4
-			completion_reward = {
-
-}
-
+	    completion_reward = {
+            add_ideas = POK_imushestv_cenz                           
+        }
 	}
 	shared_focus = {
 		id = POK_vibori_vibori
@@ -780,10 +784,28 @@
 		}
 		x = 19
 		y = 6
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_timed_idea = {
+                idea = POK_support_buisenes
+                days = 90
+            }
+            random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		    }
+            random_owned_controlled_state = {
+            add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes 
+			}
+			add_extra_state_shared_building_slots = 1		
+		    }    			
+        }
 	}
 	shared_focus = {
 		id = POK_GAZPROM
@@ -1092,10 +1114,19 @@
 		}
 		x = 16
 		y = 9
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_political_power = 25
+            create_field_marshal = {
+			character = POK_Slovolzhicen
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }   			
+        }
 	}
 	shared_focus = {
 		id = POK_komitet_spaseniya
@@ -1123,10 +1154,11 @@
 		}
 		x = 6
 		y = 11
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_manpower = -5000
+            add_stability = 0.05
+            add_ideas = POK_strong_hand_of_liberalism   			
+        }
 	}
 	shared_focus = {
 		id = POK_strong_hand_of_market
@@ -1137,10 +1169,17 @@
 		}
 		x = 10
 		y = 11
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_ideas = POK_strong_hand_of_market
+            add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+            add_command_power = 25
+            add_war_support = 0.05     			
+        }
 	}
 	shared_focus = {
 		id = POK_war_industry
@@ -1295,7 +1334,14 @@
 		}
 		x = 3
 		y = 17
-
+        completion_reward = {
+			add_timed_idea = {
+                idea = POK_pererashod_bumagi
+                days = 30
+            }
+			add_stability = 0.1
+			add_political_power = -50
+		}     
 	}
 	shared_focus = {
 		id = POK_russkiy_Pinochet
@@ -1306,7 +1352,17 @@
 		}
 		x = 8
 		y = 10
-
+        completion_reward = {
+			add_political_power = 150
+			#портрет
+			add_ideas = POK_more_transportniki
+			add_equipment_to_stockpile = {
+                type = transport_plane_equipment
+                amount = 50
+                producer = POK
+            }
+			add_country_leader_trait = russkiy_Pinochet
+		}    
 	}
 	shared_focus = {
 		id = POK_fight_for_free_people
@@ -1571,7 +1627,27 @@
 		}
 		x = 8
 		y = 11
-
+        completion_reward = {
+			random_owned_controlled_state = {
+		        add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+                army_experience = 5
+                add_tech_bonus = {
+					name = infantry_bonus
+					bonus = 0.25
+					uses = 1
+					category = infantry_weapons
+				}
+                add_manpower = -1000
+                add_ideas = extensive_conscription
+                #Денисоивент про комендантский час нацдух нацгвардия      				
+			}
+		}    
 	}
 	shared_focus = {
 		id = POK_land_of_the_strong
@@ -1614,6 +1690,20 @@
         available = {
 			has_war = no
 		}
+		completion_reward = {
+            remove_country_leader_trait = russkiy_Pinochet
+			remove_field_marshal = {
+			character = POK_Slovolzhicen
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
+			#Ивент на выбор пути между Словолжициным или Ельцинои и Путином
+        }
 	}
 	shared_focus = {
 		id = POK_work_with_old_parlament
@@ -1627,7 +1717,10 @@
 		}
 		x = 5
 		y = 12
-
+        completion_reward = {
+            add_stability = 0.075
+            add_political_power = -50    			
+        }      
 	}
 	shared_focus = {
 		id = POK_new_state_duma
@@ -1638,7 +1731,13 @@
 		}
 		x = 7
 		y = 13
-
+        completion_reward = {
+            add_ideas = POK_new_state_duma_1
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }      			
+        }     
 	}
 	shared_focus = {
 		id = POK_rospusk_parlamenta
@@ -1652,7 +1751,13 @@
 		}
 		x = 7
 		y = 12
-
+        completion_reward = {
+            add_stability = -0.15
+            add_timed_idea = {
+                idea = POK_ChP_v_stolitse
+                days = 30
+            }    			
+        }     		
 	}
 	shared_focus = {
 		id = POK_old_svyazi
@@ -1663,7 +1768,11 @@
 		}
 		x = 5
 		y = 13
-
+        completion_reward = {
+            add_stability = 0.075
+			add_war_support = -0.025
+            add_political_power = -50    			
+        }    
 	}
 	shared_focus = {
 		id = POK_gazoprovodi
@@ -1677,7 +1786,57 @@
 		}
 		x = 9
 		y = 12
-
+        completion_reward = {
+            add_ideas = POK_kachat_zagranitsu
+			579 = {
+				add_resource = {
+				type = oil
+				amount = 5
+				}
+			}
+            824 = {
+				add_resource = {
+				type = oil
+				amount = 5
+				}
+			}
+            580 = {
+				add_resource = {
+				type = oil
+				amount = 5
+				}
+			}
+            577 = {
+				add_resource = {
+				type = oil
+				amount = 5
+				}
+			}     			
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+        }      
 	}
 	shared_focus = {
 		id = POK_France_expirience
@@ -1876,7 +2035,9 @@ completion_reward = {
 		x = 5
 		y = 18
         completion_reward = {
-            
+            add_stability = 0.075
+            add_war_support = 0.075
+            add_ideas = POK_patriotic_song			
         }   
 	}
 	
@@ -1889,7 +2050,17 @@ completion_reward = {
 		}
 		x = 4
 		y = 19
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = fascism
+                popularity = 0.075
+            }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }
+			add_ideas = POK_support_russian_nationalism
+		}   
 	}
 	
 	shared_focus = {
@@ -1949,7 +2120,10 @@ completion_reward = {
 		}
 		x = 8
 		y = 14
-
+        completion_reward = {
+            add_ideas =  POK_kult_of_Nepolzhivov_1
+            #открывает цепочку решений и фокусов,открыть ПокаянЦентр,каждый регион застраивать памятниками + к расширение рекрутирования  			
+        }       
 	}
 	shared_focus = {
 		id = POK_Burn_soviet_books
@@ -1991,9 +2165,11 @@ completion_reward = {
 		}
 		x = 2
 		y = 20
-
-	}
-	
+        completion_reward = {
+		    add_political_power = -100 
+			add_ideas = POK_vertical_vlasti
+		}     
+	}	
 	shared_focus = {
 		id = POK_usilit_administr_presidenta
 		icon = GFX_focus_generic_self_management
@@ -2003,7 +2179,9 @@ completion_reward = {
 		}
 		x = 3
 		y = 18
-
+        completion_reward = {
+			add_ideas = POK_administr_presidenta
+		}      
 	}
 	
 	shared_focus = {
@@ -2094,7 +2272,9 @@ completion_reward = {
 		}
 		x = 2
 		y = 19
-
+        completion_reward = {
+			add_ideas = POK_otdel_lobburovaniya
+		}     
 	}
 	shared_focus = {
 		id = POK_free_market_fundamentalism
