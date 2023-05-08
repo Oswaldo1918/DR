@@ -1,5 +1,5 @@
 LORE_3000 = {
-    LORE_3000_lazaret = { 
+    LORE_3000_1 = { 
 	
 		fire_only_once = yes
 	
@@ -10,7 +10,7 @@ LORE_3000 = {
 			country_event = lore.1
 		}	
 	}
-    LORE_3000_nod = { 
+    LORE_3000_2 = { 
 	
 		fire_only_once = yes
 	
@@ -21,7 +21,7 @@ LORE_3000 = {
 			country_event = lore.2
 		}	
 	}
-    LORE_3000_pokoyaniya = { 
+    LORE_3000_3 = { 
 	
 		fire_only_once = yes
 	
@@ -32,7 +32,7 @@ LORE_3000 = {
 			country_event = lore.3
 		}	
 	}
-    LORE_3000_tupichok = { 
+    LORE_3000_4 = { 
 	
 		fire_only_once = yes
 	
@@ -43,7 +43,7 @@ LORE_3000 = {
 			country_event = lore.4
 		}	
 	}
-    LORE_3000_kurginyaniya = { 
+    LORE_3000_5 = { 
 	
 		fire_only_once = yes
 	
@@ -54,48 +54,4 @@ LORE_3000 = {
 			country_event = lore.5
 		}	
 	}
-    LORE_3000_vovaaan = { 
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 0
-		}
-		remove_effect = {
-			country_event = lore.6
-		}	
-	}
-    LORE_3000_bashkiriya = { 
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 0
-		}
-		remove_effect = {
-			country_event = lore.7
-		}	
-	}
-    LORE_3000_komi = { 
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 0
-		}
-		remove_effect = {
-			country_event = lore.8
-		}	
-	}
-    LORE_3000_donbass = { 
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 0
-		}
-		remove_effect = {
-			country_event = lore.9
-		}	
-	} 
-}
+   
