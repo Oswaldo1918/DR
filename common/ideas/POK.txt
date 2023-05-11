@@ -1721,6 +1721,27 @@ ideas = {
                 faction_trade_opinion_factor = 0.15     				
 			}
 		}
+		POK_parlament_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+			}
+			modifier = {
+			    mobilization_speed = -0.15
+                conscription = 0.015     				
+			}
+		}
     }
 	
 	tank_manufacturer = { 
