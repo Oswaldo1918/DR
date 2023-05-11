@@ -1061,6 +1061,24 @@
 	}
 	
 	shared_focus = {
+<<<<<<< HEAD
+id = POK_face_of_state
+icon = GFX_focus_spa_caudillo_of_spain
+cost = 5
+prerequisite = {
+focus = POK_podnyat_level_of_corruption
+}
+prerequisite = {
+focus = POK_liberalism_patriotism
+}
+x = 11
+y = 22
+completion_reward = {
+add_country_leader_trait = lunar_putin_1
+remove_country_leader_trait = razvodyashiy
+}
+}
+=======
 		id = POK_face_of_state
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
@@ -1077,6 +1095,7 @@
 			remove_country_leader_trait = razvodyashiy  			
 		}    
 	}
+>>>>>>> b78e07179081b35938e3864c32220a609c47e750
 	
 	shared_focus = {
 		id = POK_under_neutral_flag
@@ -1194,10 +1213,10 @@
 		}
 		x = 22
 		y = 9
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_political_power = 150
+            add_stability = 0.05     			
+        }
 	}
 	shared_focus = {
 		id = POK_strong_hand_of_liberalism
@@ -1749,10 +1768,27 @@
 		prerequisite = {
 			focus = POK_remember_Novgorod
 		}
+		available = {
+		    OR = {      
+		        has_completed_focus = POK_ruined_hope_of_peacefull_democratisatsiya
+				has_completed_focus = POK_remember_fevral_1917
+		    } 
+		}
 		x = 32
 		y = 11
         completion_reward = {
-			add_ideas = POK_parlament_army
+			if = {
+                limit = {
+                    has_completed_focus = POK_ruined_hope_of_peacefull_democratisatsiya
+                }
+                add_ideas = POK_parlament_army 
+            }
+            else_if = {
+                limit = {
+                    has_completed_focus = POK_remember_fevral_1917
+                }
+                add_ideas = POK_parlament_army_1 
+            }     			
 		}      
 	}
 	shared_focus = {
@@ -2470,7 +2506,13 @@ completion_reward = {
 		}
 		x = 28
 		y = 10
-
+        completion_reward = {
+			add_ideas = POK_remember_Novgorod
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }
+		}     
 	}
 	shared_focus = {
 		id = POK_remember_fevral_1917
