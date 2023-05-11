@@ -19,17 +19,6 @@ characters={
 			id = -1
 		}	
 	}
-	
-	POK_Slovolzhicen = {
-		name = "Александр Словолжицин"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_georgy_zhukov"
-				large = "gfx/leaders/POK/Slovolzhicen.dds"
-			}
-		}	
-	}
 
 	POK_bukin = {
 		name = "Геннадий Букин"
@@ -648,5 +637,45 @@ characters={
 				small= "idea_CHK_Cha_La_Ev"
 			}
 		}
+	}
+    POK_Slovolzhicen = {
+		name = "Александр Словолжицин"
+
+		portraits = {
+			army = {				
+				large = "gfx/leaders/POK/Slovolzhicen.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
 	}	
+	POK_Zolotov = {
+		name = "Виктор Золотов"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/POK/Zolotov.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}	
+	POK_Grachev = {
+		name = "Павел «Мерседес» Грачёв"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/POK/Grachev.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}	
+	POK_Eltsin = {
+		name = "Борис Ельцин"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/POK/ebn_general.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}      	
 }

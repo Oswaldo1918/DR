@@ -908,7 +908,14 @@
 		}
 		x = 7
 		y = 16
-
+        completion_reward = {
+            add_political_power = 75
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            load_oob = two_polka_vdv    			
+        }       
 	}
 	shared_focus = {
 		id = POK_lunar_Putin
@@ -922,10 +929,24 @@
 		}
 		x = 11
 		y = 16
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_political_power = 75
+            add_ideas = POK_pod_dlanyu_Luny
+            add_corps_commander_role = {
+			character = POK_Zolotov
+			traits = { politically_connected}
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }       			
+        }
 	}
 	
 	shared_focus = {
@@ -951,8 +972,10 @@
 		}
 		x = 12
 		y = 17
-
-	}
+        completion_reward = {
+		    add_ideas = POK_aktsizm_na_vse
+		}       
+	} 
 	
 	shared_focus = {
 		id = POK_inter_dogovor
@@ -966,7 +989,9 @@
 		}
 		x = 11
 		y = 18
-
+        completion_reward = {
+		    add_ideas = POK_inter_dogovor
+		}   
 	}
 	
 	shared_focus = {
@@ -1026,7 +1051,13 @@
 		}
 		x = 12
 		y = 21
-
+        completion_reward = {
+		    add_stability = 0.1
+			add_popularity = {
+                ideology = democratic
+                popularity = -0.075
+            }
+		}        
 	}
 	
 	shared_focus = {
@@ -1041,7 +1072,10 @@
 		}
 		x = 11
 		y = 22
-
+        completion_reward = {
+			remove_country_leader_trait = razvodyashiy
+            add_country_leader_trait = lunar_putin_1     			
+		}    
 	}
 	
 	shared_focus = {
@@ -1053,7 +1087,10 @@
 		}
 		x = 10
 		y = 19
-
+        completion_reward = {
+		    add_political_power = -15
+			add_ideas = POK_under_neutral_flag
+		}     
 	}
 	
 	shared_focus = {
@@ -1133,7 +1170,7 @@
 		y = 9
 		completion_reward = {
             add_political_power = 25
-            create_field_marshal = {
+            add_field_marshal_role = {
 			character = POK_Slovolzhicen
 			traits = { politically_connected media_personality }
 	        skill = 1
@@ -1229,7 +1266,13 @@
             add_timed_idea = {
                 idea = POK_ChP_v_stolitse
                 days = 30
-            }    			
+            }
+            add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}     			
         }     		
 	}
 	shared_focus = {
@@ -1350,7 +1393,7 @@
 		}
 		completion_reward = {
             remove_country_leader_trait = russkiy_Pinochet
-			remove_field_marshal = {
+			remove_field_marshal_role = {
 			character = POK_Slovolzhicen
 			traits = { politically_connected media_personality }
 	        skill = 1
@@ -1360,6 +1403,7 @@
 	        logistics_skill = 1
 		    legacy_id = -1
             }
+			add_stability = 0.1
         }
 	}
 	
@@ -1572,6 +1616,7 @@
                 producer = POK
             }
 			add_country_leader_trait = russkiy_Pinochet
+			add_stability = -0.1
 		}    
 	}
 	shared_focus = {
@@ -1876,7 +1921,7 @@
 				}
                 add_manpower = -1000
                 add_ideas = extensive_conscription
-                				
+                add_ideas = POK_natsgvardiya				
 			}
 		}    
 	
@@ -2003,7 +2048,8 @@ completion_reward = {
 	        planning_skill = 1
 	        logistics_skill = 1
 		    legacy_id = -1
-            }   			
+            }
+            load_oob = Eltsin_death_brigade       			
         }
 	}
 	shared_focus = {
@@ -2035,7 +2081,19 @@ completion_reward = {
 		}
 		x = 7
 		y = 22
-
+        completion_reward = {
+            add_field_marshal_role = {
+			character = POK_Eltsin
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
+			add_country_leader_trait = first_and_eternal
+        }      
 	}
 	shared_focus = {
 		id = POK_Running_in_the_90s
@@ -2046,7 +2104,64 @@ completion_reward = {
 		}
 		x = 7
 		y = 17
-
+        completion_reward = {
+            add_ideas = POK_Running_in_the_90s
+			add_corps_commander_role = {
+			character = POK_Zolotov
+			traits = { politically_connected}
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
+			add_corps_commander_role = {
+			character = POK_Grachev
+			traits = { politically_connected}
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
+			random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = -1
+			instant_build = yes 
+			}		
+		    }
+			random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = -1
+			instant_build = yes 
+			}		
+		    }
+			random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = -1
+			instant_build = yes 
+			}		
+		    }
+			random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = -1
+			instant_build = yes 
+			}		
+		    }
+			random_owned_controlled_state = {
+            add_building_construction = {
+			type = industrial_complex
+			level = -1
+			instant_build = yes 
+			}		
+		    }
+        }      
 	}
 	shared_focus = {
 		id = POK_patriotic_song

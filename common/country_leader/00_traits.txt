@@ -3,10 +3,33 @@
 @tier3 = 10
 
 leader_traits = {
-
-    razvodyashiy = {
+	
+	first_and_eternal = {
+		random = no
+		political_power_factor = 0.1
+		justify_war_goal_time = -0.25
+		research_speed_factor = 0.05
+		party_popularity_stability_factor = 0.15
+		offensive_war_stability_factor = 0.4
+		political_advisor_cost_factor = -0.25
+	}
+	
+	russkiy_Pinochet = {
 		random = no
 		sprite = 15
+		army_org_factor = 0.05
+		war_support_factor = 0.1
+	}
+	
+	lunar_putin_1 = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.175
+		political_advisor_cost_factor = -0.15
+	}
+	
+    razvodyashiy = {
+		random = no
 		political_power_gain = 0.05
 		stability_factor = 0.1
 	}   
@@ -26,7 +49,7 @@ leader_traits = {
 		agency_upgrade_time = -0.15
 		decryption_power = 15
 	}         
-  
+	
     nyash_myash = {
 		sprite = 13
 		stability_factor = 0.05

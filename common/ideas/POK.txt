@@ -1591,6 +1591,136 @@ ideas = {
 				army_morale_factor = 0.075  				
 			}
 		}
+		POK_natsgvardiya = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {   
+			    war_support_factor = 0.05
+                conscription = 0.01
+                compliance_growth_on_our_occupied_states = -0.05 				
+			}
+		}
+		POK_pod_dlanyu_Luny = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {   
+			    war_support_factor = 0.05
+                land_night_attack = 0.075
+                naval_night_attack = 0.075
+                night_spotting_chance = 0.075
+                air_carrier_night_penalty_reduction_factor = 0.075
+                carrier_night_traffic = 0.075
+                air_night_penalty = -0.075
+                air_strategic_bomber_night_penalty = -0.075        				
+			}
+		}
+		POK_Running_in_the_90s = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {   
+			    monthly_population = -0.25
+                consumer_goods_factor = -0.075
+                production_factory_max_efficiency_factor = -0.05     				
+			}
+		}
+		POK_inter_dogovor = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {   
+			    stability_factor = 0.15
+                war_support_factor = -0.25     				
+			}
+		}
+		POK_aktsizm_na_vse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+			}
+			modifier = {
+			    consumer_goods_factor = -0.03
+                stability_factor = -0.01
+                production_factory_efficiency_gain_factor = 0.01             
+                production_factory_start_efficiency_factor = -0.15
+                production_speed_buildings_factor = 0.1       				
+			}
+		}
+		POK_under_neutral_flag = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+			}
+			modifier = {
+			    improve_relations_maintain_cost_factor = -0.15
+                opinion_gain_monthly_factor = 0.15
+                faction_trade_opinion_factor = 0.15     				
+			}
+		}
     }
 	
 	tank_manufacturer = { 
