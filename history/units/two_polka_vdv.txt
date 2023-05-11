@@ -1,0 +1,21 @@
+﻿division_template = {
+	name = "Дивизия ВДВ"
+
+	division_names_group = POK_INF_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+    division = {
+        #name = "1-я дивизия ВДВ"
+        location = 1821
+        division_template = "Дивизия ВДВ"
+        start_experience_factor = 0.5
+    }
+}
+
