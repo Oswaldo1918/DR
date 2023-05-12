@@ -3,18 +3,45 @@ name = "Зеки"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	priority = 1
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "1-й отряд зеков"
 		location = 10540
 		division_template = "Зеки"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2-й отряд зеков"
+		location = 12683
+		division_template = "Зеки"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-й отряд зеков"
+		location = 11607
+		division_template = "Зеки"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-й отряд зеков"
+		location = 12518
+		division_template = "Зеки"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-й отряд зеков"
+		location = 4810
+		division_template = "Зеки"
+		start_experience_factor = 0.3
+	}
 }
 

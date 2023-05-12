@@ -16,6 +16,27 @@ low_economic_mobilisation
 YAK_war_against_devils
 }
 
+declare_war_on = {
+	target = MAG
+	type = annex_everything
+}
+declare_war_on = {
+	target = KOL
+	type = annex_everything
+}
+declare_war_on = {
+	target = DOT
+	type = annex_everything
+}
+declare_war_on = {
+	target = YWO
+	type = annex_everything
+}
+declare_war_on = {
+	target = TUB
+	type = annex_everything
+}
+
 set_popularities = {
 	fascism = 100
 }

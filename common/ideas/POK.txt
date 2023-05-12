@@ -1671,8 +1671,9 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {   
-			    stability_factor = 0.15
-                war_support_factor = -0.25     				
+			    stability_factor = 0.25
+                war_support_factor = -0.5
+                ai_focus_defense_factor = 0.5  				
 			}
 		}
 		POK_aktsizm_na_vse = {

@@ -3,18 +3,44 @@ name = "Невинные заключенные"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	priority = 1
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "1-й отряд невинных зеков"
 		location = 4744
 		division_template = "Невинные заключенные"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2-й отряд невинных зеков"
+		location = 13063
+		division_template = "Невинные заключенные"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-й отряд невинных зеков"
+		location = 1819
+		division_template = "Невинные заключенные"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-й отряд невинных зеков"
+		location = 13061
+		division_template = "Невинные заключенные"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-й отряд невинных зеков"
+		location = 12592
+		division_template = "Невинные заключенные"
+		start_experience_factor = 0.3
+	}
 }
-
