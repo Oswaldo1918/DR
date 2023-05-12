@@ -31,6 +31,23 @@ ideas = {
 			   consumer_goods_factor = 0.1
 			   }
 		    }
+			MAG_sezd_vorov_DV = {
+
+			   picture = Sezd_vorov_Dalnego_Vostoka
+			
+			   modifier = {
+			   weekly_manpower = 1500
+			   }
+		    }
+			KOL_help_ot_Pok = {
+
+			   picture = Podderzhka_ot_Pokayanii
+			
+			   modifier = {
+			   weekly_manpower = 1500
+			   production_speed_buildings_factor = 0.1 
+			   }
+		    }
 	   }
 		
 }

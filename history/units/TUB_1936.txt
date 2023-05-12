@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "пехотные дивизии"				# Militia units (lowest experience, oldest equipment)
+	name = "Пехотные дивизии"				# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = TUB_GAR_01
 
@@ -9,68 +9,51 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	priority = 1
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
-		name = "1-я дивизия"
+		name = "1-я краснознамённая дивизия"
 		location = 957
-		division_template = "пехотные дивизии"
+		division_template = "Пехотные дивизии"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	
     division = {
-		name = "2-я дивизия "
-		location = 957
-		division_template = "пехотные дивизии"
+		name = "2-я краснознамённая дивизия"
+		location = 12189
+		division_template = "Пехотные дивизии"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	
 	division = {
-		name = "3-я дивизия"
-		location = 957
-		division_template = "пехотные дивизии"
+		name = "3-я краснознамённая дивизия"
+		location = 855
+		division_template = "Пехотные дивизии"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	
     division = {
-		name = "4-я дивизия "
-		location = 957
-		division_template = "пехотные дивизии"
+		name = "4-я краснознамённая дивизия"
+		location = 12136
+		division_template = "Пехотные дивизии"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	
 	division = {
-		name = "5-я дивизия "
-		location = 957
-		division_template = "пехотные дивизии"
+		name = "5-я краснознамённая дивизия"
+		location = 9604
+		division_template = "Пехотные дивизии"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "6-я дивизия "
-		location = 957
-		division_template = "пехотные дивизии"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-	
-	division = {
-		name = "7-я дивизия "
-		location = 957
-		division_template = "пехотные дивизии"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-
 }
 
 ### Starting Equipment ###

@@ -991,6 +991,8 @@
 		y = 18
         completion_reward = {
 		    add_ideas = POK_inter_dogovor
+			add_ideas = civilian_economy
+			add_ideas = neutrality_idea
 		}   
 	}
 	
@@ -1059,27 +1061,7 @@
             }
 		}        
 	}
-	
-	shared_focus = {
-<<<<<<< HEAD
-id = POK_face_of_state
-icon = GFX_focus_spa_caudillo_of_spain
-cost = 5
-prerequisite = {
-focus = POK_podnyat_level_of_corruption
-}
-prerequisite = {
-focus = POK_liberalism_patriotism
-}
-x = 11
-y = 22
-completion_reward = {
-add_country_leader_trait = lunar_putin_1
-remove_country_leader_trait = razvodyashiy
-}
-}
-=======
-		id = POK_face_of_state
+		id = POK_face_of_state = {
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
 		prerequisite = {
@@ -1092,11 +1074,9 @@ remove_country_leader_trait = razvodyashiy
 		y = 22
         completion_reward = {
 	    	add_country_leader_trait = lunar_putin_1   
-			remove_country_leader_trait = razvodyashiy  			
+			remove_country_leader_trait = razvodyashiy                  			
 		}    
-	}
->>>>>>> b78e07179081b35938e3864c32220a609c47e750
-	
+	}	
 	shared_focus = {
 		id = POK_under_neutral_flag
 		icon = GFX_goal_unknown

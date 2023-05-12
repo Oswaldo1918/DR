@@ -8,21 +8,46 @@ name = "Дивизия"
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	priority = 1
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "1-я дивизия волков"
 		location = 7763
 		division_template = "Дивизия"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2-я дивизия волков"
+		location = 4805
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я дивизия волков"
+		location = 1845
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-я дивизия волков"
+		location = 1772
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-я дивизия волков"
+		location = 10571
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6-я дивизия волков"
+		location = 12263
+		division_template = "Дивизия"
+		start_experience_factor = 0.3
+	}
 }
 

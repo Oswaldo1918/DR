@@ -16,6 +16,27 @@ TUB_iditki_mashinistki
 TUB_new_nkvd
 }
 
+declare_war_on = {
+	target = MAG
+	type = annex_everything
+}
+declare_war_on = {
+	target = KOL
+	type = annex_everything
+}
+declare_war_on = {
+	target = DOT
+	type = annex_everything
+}
+declare_war_on = {
+	target = YWO
+	type = annex_everything
+}
+declare_war_on = {
+	target = YAK
+	type = annex_everything
+}
+
 set_popularities = {
 	vmestolev = 100
 }

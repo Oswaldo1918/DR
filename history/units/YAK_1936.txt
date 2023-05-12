@@ -1,5 +1,5 @@
 ﻿division_template = {
-name = "Дивизия"
+name = "Дивизия боевых шаманов"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -13,13 +13,35 @@ name = "Дивизия"
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "1-я дивизия шаманов"
 		location = 10641
-		division_template = "Дивизия"
+		division_template = "Дивизия боевых шаманов"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2-я дивизия шаманов"
+		location = 7844
+		division_template = "Дивизия боевых шаманов"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я дивизия шаманов"
+		location = 12634
+		division_template = "Дивизия боевых шаманов"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-я дивизия шаманов"
+		location = 6085
+		division_template = "Дивизия боевых шаманов"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-я дивизия шаманов"
+		location = 12549
+		division_template = "Дивизия боевых шаманов"
+		start_experience_factor = 0.3
+	}
 }
 

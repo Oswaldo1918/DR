@@ -17,6 +17,29 @@ MAG_petushinnoe_podpole
 MAG_vory_v_gosudarstve
 }
 
+add_timed_idea = { idea = MAG_sezd_vorov_DV days = 210 }
+
+declare_war_on = {
+	target = KOL
+	type = annex_everything
+}
+declare_war_on = {
+	target = DOT
+	type = annex_everything
+}
+declare_war_on = {
+	target = YAK
+	type = annex_everything
+}
+declare_war_on = {
+	target = YWO
+	type = annex_everything
+}
+declare_war_on = {
+	target = TUB
+	type = annex_everything
+}
+
 set_popularities = {
 	fascism = 70
 	vmestolev = 30

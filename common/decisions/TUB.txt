@@ -1,35 +1,12 @@
-YWO_Vzaimodeysviya_s_armiey = {
-    YWO_patsanskie_prikoly = { 
-	
-		cost = 20
-
-		available = {
-		    has_war = yes        			
-		}
-		
-		days_re_enable = 30
-		
-		#days_remove = 3
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			add_timed_idea = {
-				idea = YWO_valim_bokom
-				days = 20
-			}	
-		}	
-	}
-}
-YWO_voyna_na_DV = {
+TUB_voyna_na_DV = {
     
-    YWO_annex_DOT = {
+    TUB_annex_DOT = {
 
 		available = {
 		DOT = {
-	    has_war_with = YWO
+	    has_war_with = TUB
 	    }
-	    YWO = {
+	    TUB = {
       	      controls_state = 637
 			  controls_state = 555
 			  controls_state = 875
@@ -48,7 +25,7 @@ YWO_voyna_na_DV = {
 		    }	
 		}       
     }
-	YWO_core_DOT = {
+	TUB_core_DOT = {
         cost = 100
         available = {
             OR = { 
@@ -68,13 +45,13 @@ YWO_voyna_na_DV = {
 		}
 		fire_only_once = yes	 
 	}
-    YWO_annex_KOL = {
+    TUB_annex_KOL = {
 
 		available = {
 		KOL = {
-	    has_war_with = YWO
+	    has_war_with = TUB
 	    }
-	    YWO = {
+	    TUB = {
       	      controls_state = 644
 			  controls_state = 877
 		}
@@ -92,7 +69,7 @@ YWO_voyna_na_DV = {
 		    }	
 		}        
     }
-	YWO_core_KOL = {
+	TUB_core_KOL = {
         cost = 100
         available = {
             OR = { 
@@ -110,61 +87,13 @@ YWO_voyna_na_DV = {
 		}
 		fire_only_once = yes	 
 	}
-	YWO_annex_TUB = {
-
-		available = {
-		TUB = {
-	    has_war_with = YWO
-	    }
-	    YWO = {
-      	      controls_state = 408
-			  controls_state = 409
-			  controls_state = 655
-			  controls_state = 537
-		}
-        }
-		fire_only_once = yes
-		
-		#days_remove = 10
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			annex_country = {
-			target = TUB
-			transfer_troops = no
-		    }	
-		}       
-    }
-	YWO_core_TUB = {
-        cost = 100
-        available = {
-            OR = { 
-	            controls_state = 408
-			  controls_state = 409
-			  controls_state = 655
-			  controls_state = 537
-		    }
-        }
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-        remove_effect = {
-			add_state_core = 408
-			add_state_core = 409
-            add_state_core = 655
-            add_state_core = 537     			
-		}
-		fire_only_once = yes	 
-	}
-	YWO_annex_YAK = {
+	TUB_annex_YAK = {
 
 		available = {
 		YAK = {
-	    has_war_with = YWO
+	    has_war_with = TUB
 	    }
-	    YWO = {
+	    TUB = {
       	      controls_state = 574
 			  controls_state = 876
 			  controls_state = 877
@@ -183,7 +112,7 @@ YWO_voyna_na_DV = {
 		    }	
 		}       
     }
-	YWO_core_YAK = {
+	TUB_core_YAK = {
         cost = 100
         available = {
             OR = { 
@@ -203,13 +132,58 @@ YWO_voyna_na_DV = {
 		}
 		fire_only_once = yes	 
 	}
-	YWO_annex_MAG = {
+	TUB_annex_YWO = {
+
+		available = {
+		YWO = {
+	    has_war_with = TUB
+	    }
+	    TUB = {
+      	      controls_state = 560
+			  controls_state = 561
+			  controls_state = 657
+		}
+        }
+		fire_only_once = yes
+		
+		#days_remove = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			annex_country = {
+			target = YWO
+			transfer_troops = no
+		    }	
+		}       
+    }
+	TUB_core_YWO = {
+        cost = 100
+        available = {
+            OR = { 
+	            controls_state = 560
+			  controls_state = 561
+			  controls_state = 657
+		    }
+        }
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+        remove_effect = {
+			add_state_core = 560
+			add_state_core = 561
+            add_state_core = 657    			
+		}
+		fire_only_once = yes	 
+	}
+	TUB_annex_MAG = {
 
 		available = {
 		MAG = {
-	    has_war_with = YWO
+	    has_war_with = TUB
 	    }
-	    YWO = {
+	    TUB = {
       	      controls_state = 562
 			  controls_state = 874
 		}
@@ -227,7 +201,7 @@ YWO_voyna_na_DV = {
 		    }	
 		}        
     }
-	YWO_core_MAG = {
+	TUB_core_MAG = {
         cost = 100
         available = {
             OR = { 

@@ -18,6 +18,27 @@ add_ideas = {
 		YWO_svyashechennoe_pisanie_patsanskikh_tsitat
 	}
 
+declare_war_on = {
+	target = MAG
+	type = annex_everything
+}
+declare_war_on = {
+	target = KOL
+	type = annex_everything
+}
+declare_war_on = {
+	target = DOT
+	type = annex_everything
+}
+declare_war_on = {
+	target = YAK
+	type = annex_everything
+}
+declare_war_on = {
+	target = TUB
+	type = annex_everything
+}
+
 set_popularities = {
 	memoism = 100
 }
