@@ -1,139 +1,141 @@
 UKR_nahruk_level_up = {
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level9 }
+    custom_effect_tooltip = UKR_nahruk_level_up_tt
+	if = {
+		limit = { has_idea = UKR_nahruk_level_9 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level9
-			add_idea = UKR_nahruk_level10
+			remove_idea = UKR_nahruk_level_9
+			add_idea = UKR_nahruk_level_10
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level8 }
+		limit = { has_idea = UKR_nahruk_level_8 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level8
-			add_idea = UKR_nahruk_level9
+			remove_idea = UKR_nahruk_level_8
+			add_idea = UKR_nahruk_level_9
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level7 }
+		limit = { has_idea = UKR_nahruk_level_7 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level7
-			add_idea = UKR_nahruk_level8
+			remove_idea = UKR_nahruk_level_7
+			add_idea = UKR_nahruk_level_8
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level6 }
+		limit = { has_idea = UKR_nahruk_level_6 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level6
-			add_idea = UKR_nahruk_level7
+			remove_idea = UKR_nahruk_level_6
+			add_idea = UKR_nahruk_level_7
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level5 }
+		limit = { has_idea = UKR_nahruk_level_5 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level5
-			add_idea = UKR_nahruk_level6
+			remove_idea = UKR_nahruk_level_5
+			add_idea = UKR_nahruk_level_6
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level4 }
+		limit = { has_idea = UKR_nahruk_level_4 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level4
-			add_idea = UKR_nahruk_level5
+			remove_idea = UKR_nahruk_level_4
+			add_idea = UKR_nahruk_level_5
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level3 }
+		limit = { has_idea = UKR_nahruk_level_3 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level3
-			add_idea = UKR_nahruk_level4
+			remove_idea = UKR_nahruk_level_3
+			add_idea = UKR_nahruk_level_4
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level2 }
+		limit = { has_idea = UKR_nahruk_level_2 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level2
-			add_idea = UKR_nahruk_level3
+			remove_idea = UKR_nahruk_level_2
+			add_idea = UKR_nahruk_level_3
 		}		
 	}
 	else_if = {
-		limit = { has_idea = UKR_nahruk_level1 }
+		limit = { has_idea = UKR_nahruk_level_1 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level1
-			add_idea = UKR_nahruk_level2
+			remove_idea = UKR_nahruk_level_1
+			add_idea = UKR_nahruk_level_2
 		}		
 	}
 	else_if = {
-		limit = { NOT = { has_idea = UKR_nahruk_level1 } }
-		add_ideas = UKR_nahruk_level1
+		limit = { NOT = { has_idea = UKR_nahruk_level_1 } }
+		add_ideas = UKR_nahruk_level_1
 	}
 }
 
 UKR_nahruk_level_down = {
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level10 }
+    custom_effect_tooltip = UKR_nahruk_level_down_tt
+	if = {
+		limit = { has_idea = UKR_nahruk_level_10 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level10
-			add_idea = UKR_nahruk_level9
+			remove_idea = UKR_nahruk_level_10
+			add_idea = UKR_nahruk_level_9
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level9 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_9 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level9
-			add_idea = UKR_nahruk_level8
+			remove_idea = UKR_nahruk_level_9
+			add_idea = UKR_nahruk_level_8
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level8 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_8 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level8
-			add_idea = UKR_nahruk_level7
+			remove_idea = UKR_nahruk_level_8
+			add_idea = UKR_nahruk_level_7
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level7 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_7 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level7
-			add_idea = UKR_nahruk_level6
+			remove_idea = UKR_nahruk_level_7
+			add_idea = UKR_nahruk_level_6
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level6 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_6 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level6
-			add_idea = UKR_nahruk_level5
+			remove_idea = UKR_nahruk_level_6
+			add_idea = UKR_nahruk_level_5
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level5 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_5 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level5
-			add_idea = UKR_nahruk_level4
+			remove_idea = UKR_nahruk_level_5
+			add_idea = UKR_nahruk_level_4
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level4 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_4 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level4
-			add_idea = UKR_nahruk_level3
+			remove_idea = UKR_nahruk_level_4
+			add_idea = UKR_nahruk_level_3
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level3 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_3 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level3
-			add_idea = UKR_nahruk_level2
+			remove_idea = UKR_nahruk_level_3
+			add_idea = UKR_nahruk_level_2
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level2 }
+	if = {
+		limit = { has_idea = UKR_nahruk_level_2 }
 		swap_ideas = {
-			remove_idea = UKR_nahruk_level2
-			add_idea = UKR_nahruk_level1
+			remove_idea = UKR_nahruk_level_2
+			add_idea = UKR_nahruk_level_1
 		}		
 	}
-	else_if = {
-		limit = { has_idea = UKR_nahruk_level1 } 
-		remove_idea = UKR_nahruk_level1
+	if = {
+		limit = { has_idea = UKR_nahruk_level_1 } 
+		remove_idea = UKR_nahruk_level_1
 	}
 }

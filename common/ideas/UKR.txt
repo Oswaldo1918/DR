@@ -1,10 +1,5 @@
 ideas = {
-    country = {
-	        UKR_shumilova = {
-			
-			    traits = { popular_figurehead }
-	        }
-			
+    country = {	
 			UKR_nazbati_MVD = {
 			
 		    	picture = GAL_mentovshina
@@ -27,6 +22,13 @@ ideas = {
 			
 			    modifier = {
 					stability_factor = -0.3
+		        }
+	        }
+			
+			UKR_investicii = {
+			
+			    modifier = {
+					consumer_goods_factor = 0.1
 		        }
 	        }
 			
@@ -63,7 +65,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level1 = {
+			UKR_nahruk_level_1 = {
 		
 			    modifier = {
 	       			war_support_factor = 0.01
@@ -72,7 +74,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level2 = {
+			UKR_nahruk_level_2 = {
 		
 			    modifier = {
 	       			war_support_factor = 0.03
@@ -81,7 +83,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level3 = {
+			UKR_nahruk_level_3 = {
 			
 			    modifier = {
 				 	war_support_factor = 0.05
@@ -90,7 +92,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level4 = {		
+			UKR_nahruk_level_4 = {		
 			
 			    modifier = {
 	       			war_support_factor = 0.07
@@ -99,7 +101,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level5 = {
+			UKR_nahruk_level_5 = {
 			
 			    modifier = {
 				    war_support_factor = 0.1
@@ -108,7 +110,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level6 = {
+			UKR_nahruk_level_6 = {
 			
 			    modifier = {
 				   	war_support_factor = 0.12
@@ -117,7 +119,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level7 = {
+			UKR_nahruk_level_7 = {
 			
 			    modifier = {
 				    war_support_factor = 0.15
@@ -126,7 +128,7 @@ ideas = {
 		        }
 	        }
 			
-		    UKR_nahruk_level8 = {
+		    UKR_nahruk_level_8 = {
 			
 			    modifier = {
 				    war_support_factor = 0.18
@@ -135,7 +137,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level9 = {
+			UKR_nahruk_level_9 = {
 			
 			    modifier = {
 	       			war_support_factor = 0.2
@@ -144,7 +146,7 @@ ideas = {
 		        }
 	        }
 			
-			UKR_nahruk_level10 = {
+			UKR_nahruk_level_10 = {
 			
 			    modifier = {
 	       			war_support_factor = 0.25
