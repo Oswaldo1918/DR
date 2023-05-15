@@ -397,7 +397,7 @@ attak_sykt = {
 						}
 				 }
 			}
-    naz_sykt = {
+    naz_sykt_1 = {
        cost = 30
  available = {
               controls_state = 397
@@ -432,7 +432,7 @@ attak_prm = {
 						}
 				 }
 			}
- naz_perm = {
+ naz_perm_1 = {
        cost = 50          
 		available = {
                controls_state = 398
@@ -467,28 +467,27 @@ attak_sever = {
 naz_sever = {
        cost = 50          
 		available = {
-		       add_state_core = 213
-               controls_state = 214
-			   controls_state = 262
-			   controls_state = 351			   
-			   controls_state = 879
-			   controls_state = 880
-          }
-
-		  days_remove = 50	
-		  ai_will_do = {
+		    controls_state = 213
+            controls_state = 214
+			controls_state = 262
+			controls_state = 351			   
+			controls_state = 879
+			controls_state = 880
+        }
+		days_remove = 50	
+		ai_will_do = {
         factor = 100
 		}
-		  fire_only_once = yes
-		  remove_effect = {
+		fire_only_once = yes
+		remove_effect = {
 		  add_state_core = 213
 		  add_state_core = 214
 		  add_state_core = 262
 		  add_state_core = 351
 		  add_state_core = 879
 		  add_state_core = 880
-		  }
-			}
+		}
+}
 attak_voronez = {
        cost = 15
  available = {
@@ -869,7 +868,7 @@ territorii_natsionaliz = {
 		  add_state_core = 398
 		  }
 				 }
- naz_bash = {
+ naz_bash_1 = {
       cost = 50           
 			available = {
                
@@ -887,7 +886,7 @@ territorii_natsionaliz = {
 			add_state_core = 652
 			}
 				 } 
- naz_nod = {
+ naz_nod_1 = {
        cost = 50          
 			available = {
                
@@ -1074,29 +1073,29 @@ CHT_cummissariats = {
 			    transfer_state = 80
 				transfer_state = 78
 			    transfer_state = 89
-				set_capital = 202
 				add_state_core = 202
 			    add_state_core = 201
 			    add_state_core = 91
 			    add_state_core = 199
-			    			    add_state_core = 198
-							    add_state_core = 192
-			    			    add_state_core = 199
-			    			    add_state_core = 203
-			   			        add_state_core = 197
-			    			    add_state_core = 766
-							    add_state_core = 196
-			    			    add_state_core = 193
-			    			    add_state_core = 226
-			    			    add_state_core = 200
-			    			    add_state_core = 259
-							    add_state_core = 225
-			    			    add_state_core = 221
-			    			    add_state_core = 228
-			    			    add_state_core = 227
-			    			    add_state_core = 80
-							    add_state_core = 78
-			    			    add_state_core = 89
+			    add_state_core = 198
+				add_state_core = 192
+			    add_state_core = 199
+			    add_state_core = 203
+			   	add_state_core = 197
+			    add_state_core = 766
+				add_state_core = 196
+			    add_state_core = 193
+			    add_state_core = 226
+			    add_state_core = 200
+			    add_state_core = 259
+				add_state_core = 225
+			    add_state_core = 221
+			    add_state_core = 228
+			    add_state_core = 227
+			    add_state_core = 80
+				add_state_core = 78
+			    add_state_core = 89
+				set_capital = 202				
 			}
 			set_autonomy = { target = SIN autonomy_state = autonomy_integrated_puppet }
 		}
@@ -1184,92 +1183,21 @@ CHT_cummissariats = {
 		}
 	}
 }
-
-	cht_directive_228 = {
-		
-		icon = generic_scorched_earth
-		
-		available = {
-			has_war = yes			
-		}
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-        factor = 100
-		}
-		visible = {
-			has_war = yes
-			OR = {
-				controls_state = 225
-				controls_state = 220
-				controls_state = 260				
-			}			
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -14
-			}
-			if = {
-				limit = {
-					controls_state = 225
-				}
-				225 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 220
-				}
-				220 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 260
-				}
-				260 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 100
-				surrender_progress > 0.1
-			}	
-		}	
-	}
- 
 find_resourc = {
-     plata_po_schetam = {
-           available = {
-               has_country_flag = mercen_mercen
-          }
-          cost = 50
-		  ai_will_do = {
-        factor = 100
+    plata_po_schetam = {
+        available = {
+            has_country_flag = mercen_mercen
+        }
+        cost = 50
+		ai_will_do = {
+            factor = 100
 		}
-          complete_effect = {
-               add_manpower = -120
-			   remove_ideas = CHT_plata
-		      delete_unit_template_and_units = {
-	          division_template = "Chvkashniki"
-						}
-          }
-          
-     } 
-	}
+        complete_effect = {
+            add_manpower = -120
+			remove_ideas = CHT_plata
+		    delete_unit_template_and_units = {
+	            division_template = "Chvkashniki"
+			}
+        }          
+    } 
+}

@@ -529,8 +529,7 @@ characters = {
 		    }
 			
 	       available = { 
-		   NOT = { country_exists = MAT }
-		   has_completed_decision = LAZ_core_MAT		   
+		   NOT = { country_exists = MAT }		   
 		   }
 		   traits = { army_chief_defensive_2 }
 			
@@ -556,8 +555,7 @@ characters = {
 			}
 			
 			available = { 
-			NOT = { country_exists = DON }
-			has_completed_decision = LAZ_core_DON		   
+			NOT = { country_exists = DON }		   
 			}
 			traits = { army_chief_offensive_2 }
 			
@@ -585,7 +583,6 @@ characters = {
 	        available = { 
 			NOT = { country_exists = ARK }
             NOT = { has_idea = Yan1 }
-			has_completed_decision = LAZ_core_ARK
 			}
 			traits = { navy_chief_commerce_raiding_1 }
 			
@@ -599,7 +596,6 @@ characters = {
 			available = { 
 				NOT = { country_exists = ARK }
 				NOT = { has_idea = Yan2 }
-				has_completed_decision = LAZ_core_ARK
 			}
 			idea_token = Yan1
 			
@@ -634,7 +630,6 @@ characters = {
 	        available = { 
 				NOT = { country_exists = WHS }
 				NOT = { has_idea = Denis_Seregin1 }
-				has_completed_decision = LAZ_core_WHS
 			}
 			
 			traits = { guerilla_warfare_expert }
@@ -650,7 +645,6 @@ characters = {
 			available = { 
 				NOT = { country_exists = WHS }
 				NOT = { has_idea = Denis_Seregin2 }
-				has_completed_decision = LAZ_core_WHS
 			}
 			
 			allowed = {
@@ -685,7 +679,6 @@ characters = {
 	        available = {
 				NOT = { country_exists = MAT }
 				NOT = { has_idea = Anton_Orlov1 }
-				has_completed_decision = LAZ_core_MAT
 			}
 		   
 			traits = { army_armored_3 }
@@ -701,7 +694,6 @@ characters = {
 			available = { 
 				NOT = { country_exists = MAT }
 				NOT = { has_idea = Anton_Orlov2 }
-				has_completed_decision = LAZ_core_MAT
 		   }
 			
 			allowed = {

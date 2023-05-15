@@ -145,7 +145,7 @@ characters = {
 		country_leader = {
 			traits = {  }
 			desc = "POLITICS_AHORA_DESC"
-			ideology = fascism_idealogy
+			ideology = fascism_ideology
 			expire = "3000.1.1"
 			id = -1
 		}
@@ -175,7 +175,6 @@ characters = {
 				NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
 				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
 			}
 	    
 			traits = { army_chief_offensive_2 }
@@ -194,7 +193,6 @@ characters = {
 			    NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
 				NOT = { has_government = anarhostalinism }
-				NOT = { has_government = milo }
 				NOT = { has_government = metacommy }
 			}
             traits = { anti_levak }
@@ -814,7 +812,6 @@ characters = {
 				NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
 				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
 			}
 	    
 			traits = { army_chief_maneuver_2 }
@@ -843,7 +840,6 @@ characters = {
 				NOT = { has_government = memoism }
 				NOT = { has_government = vmestolev }
 				NOT = { has_government = metacommy }
-				NOT = { has_government = milo }
 			}
 	       
 			traits = { army_chief_drill_1 }

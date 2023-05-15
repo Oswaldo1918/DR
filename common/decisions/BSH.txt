@@ -651,29 +651,7 @@ Bashkir_hanstvo = {
             }
 		}	
 	}
-	BSH_war_STR = { 
-	
-		cost = 30
-
-		available = {
-		has_war = no 
-		is_neighbor_of = STR
-		}
-		
-		fire_only_once = yes
-		
-		#days_remove = 30
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			create_wargoal = {
-                   target = STR
-                   type = annex_everything
-            }
-		}	
-	}
-	 BSH_war_CHT = { 
+	 BSH_war_CHT_1 = { 
 	
 		cost = 30
 
@@ -1339,7 +1317,7 @@ Sever_empire = {
             }
 		}	
 	}
-	 BSH_war_CHT = { 
+	 BSH_war_CHT_2 = { 
 	
 		cost = 30
 
@@ -1682,7 +1660,7 @@ Sever_empire = {
 			add_state_core = 874
 		}	
 	}
-	BSH_core_MAG = { #Интеграция_Камчатки
+	BSH_core_DOT = { #Интеграция_Камчатки
 	
 		cost = 30
 
