@@ -1,5 +1,5 @@
 characters={
-    	SIR_Bashar = {
+    SIR_Bashar = {
 		name = "Башар аль-Ассад"
 
 		portraits = {
@@ -20,10 +20,105 @@ characters={
 		
 		field_marshal = {
     		traits = { old_guard infantry_officer war_hero  }
-        	skill = 3
-        	attack_skill = 4
+        	skill = 1
+        	attack_skill = 3
+        	defense_skill = 1
+        	planning_skill = 2
+        	logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	SIR_Ali_Abdulla_Ayub = {
+		name = "Али Абдулла Айюб"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/Ali_Abdulla_Ayub.dds"
+			}
+		}			
+		field_marshal = {
+    		traits = { old_guard war_hero }
+        	skill = 2
+        	attack_skill = 3
         	defense_skill = 2
-        	planning_skill = 3
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIR_Fahed_Jasem_Al_Freij = {
+		name = "Фахед Джасем аль-Фредж"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/Fahed_Jasem_Al_Freij.dds"
+			}
+		}			
+		field_marshal = {
+    		traits = { old_guard war_hero combined_arms_expert}
+        	skill = 2
+        	attack_skill = 3
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIR_Issam_Zahreddin = {
+		name = "Иссам Захреддин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/Issam_Zahreddin.dds"
+			}
+		}			
+		corps_commander = {
+    		traits = { old_guard war_hero panzer_expert}
+        	skill = 2
+        	attack_skill = 3
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIR_Suhel_al_hasan = {
+		name = "Сухель Аль-Хасан"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/Suhel_al_hasan.dds"
+			}
+		}			
+		corps_commander = {
+    		traits = { old_guard war_hero trait_cautious harsh_leader}
+        	skill = 2
+        	attack_skill = 3
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIR_MAHER_AL_ASAD = {
+		name = "Махер аль-Асад"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SIR/MAHER_AL_ASAD.dds"
+			}
+		}			
+		corps_commander = {
+    		traits = { old_guard war_hero panzer_expert harsh_leader}
+        	skill = 2
+        	attack_skill = 3
+        	defense_skill = 2
+        	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
 		}
