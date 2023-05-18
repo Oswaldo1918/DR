@@ -28,31 +28,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UKR_stavka_na_natsbaty
-		icon = GFX_goal_nazbati
-		cost = 2,00
-		mutually_exclusive = {
-			focus = UKR_stavka_na_VSU
-		}
-		x = 12
-		y = 3
-
-	}
-	focus = {
-		id = UKR_nazbati_v_MVD
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5,00
-		prerequisite = {
-			focus = UKR_stavka_na_natsbaty
-		}
-		x = 12
-		y = 4
-			completion_reward = {
-					add_ideas = UKR_nazbati_MVD
-				}
-
-	}
-	focus = {
 		id = UKR_project_antirussia
 		icon = GFX_goal_antirussia
 		cost = 2,00
@@ -191,6 +166,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_stavka_na_natsbaty
+		icon = GFX_goal_nazbati
+		cost = 2,00
+		prerequisite = {
+			focus = UKR_armiya
+		}
+		mutually_exclusive = {
+			focus = UKR_stavka_na_VSU
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
 		id = UKR_stavka_na_VSU
 		icon = GFX_goal_vsu
 		cost = 2,00
@@ -220,28 +209,6 @@ focus_tree = {
 							bonus = 0.5
 							uses = 2
 							category = armor
-						}
-				}
-
-	}
-	focus = {
-		id = UKR_azovets
-		icon = GFX_goal_azovets
-		cost = 10,00
-		prerequisite = {
-			focus = UKR_shushpanzeri
-		}
-		prerequisite = {
-			focus = UKR_nazbati_v_MVD
-		}
-		x = 13
-		y = 5
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							ahead_reduction = 2
-							uses = 1
-							category = motorized_equipment
 						}
 				}
 
@@ -808,6 +775,42 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
+
+	}
+	focus = {
+		id = UKR_nazbati_v_MVD
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5,00
+		prerequisite = {
+			focus = UKR_stavka_na_natsbaty
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					add_ideas = UKR_nazbati_MVD
+				}
+
+	}
+	focus = {
+		id = UKR_azovets
+		icon = GFX_goal_azovets
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_shushpanzeri
+		}
+		prerequisite = {
+			focus = UKR_nazbati_v_MVD
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
 
 	}
 	focus = {
