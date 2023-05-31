@@ -61,11 +61,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_LAZ_tutaev_motor_plant.dds" 
 	}	
 	
-	spriteType = {
-		name = "GFX_idea_LAZ_gusenichniy_zavod"
-		texturefile = "gfx/interface/ideas/idea_LAZ_Zavod_GUSENITs.dds" 
-	}	
-	
 	###CHT###
 	
 	spriteType = {
@@ -520,9 +515,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/BSH_OrStan.dds" 
 	}
 	
+	spriteType = {
+		name = "GFX_idea_BSH_degradachTV"
+		texturefile = "gfx/interface/ideas/BSH_degradachTV.dds" 
+	}
 	###OSM###
 	spriteType = {
 		name = "GFX_idea_OSM_Dahir_Inshaat"
 		texturefile = "gfx/interface/ideas/OSM_Dahir_Inshaat.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Lobaev_Arms"
+		texturefile = "gfx/interface/ideas/Lobaev_Arms.dds" 
 	}
 }

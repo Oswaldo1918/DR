@@ -23,7 +23,7 @@ ideas = {
 			
 			BSH_aferist_economika = {
 
-			picture = cht_shizofrenia
+			picture = BSH_aferist_economika
 			
 			   modifier = {
 			    production_factory_start_efficiency_factor = 0.1 
@@ -48,7 +48,7 @@ ideas = {
 			
 			BSH_prinuditelniy_trud = {
 		
-			    picture = chi_incompetent_officers 
+			    picture = BSH_prinuditelniy_trud 
 			
 			    removal_cost = -1 
 				
@@ -63,7 +63,7 @@ ideas = {
 			
 			BSH_yahont = {
 		
-			    picture = chi_incompetent_officers 
+			    picture = BSH_yahont 
 			
 			    removal_cost = -1 
 				
@@ -78,7 +78,7 @@ ideas = {
 			
 			BSH_chernogolovku = {
 		
-			    picture = chi_incompetent_officers 
+			    picture = BSH_chernogolovku 
 			
 			    removal_cost = -1 
 				
@@ -236,7 +236,7 @@ ideas = {
 			
 			BSH_imbu = {
 		
-			    picture = chi_incompetent_officers 
+			    picture = BSH_imbu 
 			
 			    removal_cost = -1 
 				
@@ -794,7 +794,7 @@ ideas = {
 			
 			BSH_photozhabi_iskusstvo = {
 
-			picture = generic_morale_bonus
+			picture = BSH_photozhabi_iskusstvo
 			
 			   modifier = {
 			   	stability_weekly = -0.001
@@ -806,7 +806,7 @@ ideas = {
 			
 			BSH_kal_building = {
 
-			picture = generic_morale_bonus
+			picture = BSH_kal_building
 			
 			   modifier = {
 			   	production_speed_buildings_factor = 0.05 
@@ -815,7 +815,7 @@ ideas = {
 			
 			BSH_myaso_popugaya = {
 
-			picture = generic_morale_bonus
+			picture = BSH_myaso_popugaya
 			
 			   modifier = {
 				experience_loss_factor = -0.2
@@ -835,7 +835,7 @@ ideas = {
 			
 			BSH_prodavits_mochi = {
 
-			picture = generic_morale_bonus
+			picture = BSH_prodavits_mochi
 			
 			   modifier = {
 				consumer_goods_factor = -0.25
@@ -901,7 +901,7 @@ ideas = {
 		
 		industrial_concern = {
 		
-		    PRM_degradachTV = {
+		    BSH_degradachTV = {
 			
 			allowed = {
 				original_tag = PRM
