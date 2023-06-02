@@ -10,8 +10,8 @@ ideas = {
 	        }
 			
 			BTS_migraciya_btsnikov = {
-	
-			   modifier = {
+	            picture = BTS_migraciya_btsnikov       
+			    modifier = {
 					weekly_manpower = 1000				
 			    }
 		    }
@@ -55,7 +55,7 @@ ideas = {
 			
 			BTS_cosmetica = {
 
-			    picture = cht_shizofrenia
+			    picture = BTS_cosmetica
 			
 			    modifier = {
 					army_morale_factor = 0.1
@@ -73,7 +73,7 @@ ideas = {
 			
 			BTS_ortodox_sopr = {
 
-			    picture = cht_shizofrenia
+			    picture = BTS_ortodox_sopr
 			
 			    modifier = {
 				army_org_factor = -0.05
@@ -85,7 +85,7 @@ ideas = {
 			
 			BTS_sabotazh_i = {
 
-			    picture = cht_shizofrenia
+			    picture = BTS_sabotazh_i
 			
 			    modifier = {
 				stability_factor = -0.05
@@ -95,7 +95,7 @@ ideas = {
 			
 			BTS_provocacii_i = {
 
-			    picture = cht_shizofrenia
+			    picture = BTS_provocacii_i
 			
 			    modifier = {
 				army_org_factor = -0.1
@@ -104,22 +104,22 @@ ideas = {
 	        }
 			
 			BTS_myatezhniki = {
-	
-			   modifier = {
+	            picture = BTS_myatezhniki  
+			    modifier = {
 			        memoism_drift  = 0.1
 			    }
 		    }
 			
 			BTS_svoi_p = {
-	
-			   modifier = {
+	            picture = BTS_svoi_p   
+			    modifier = {
 			        political_power_gain = 0.1
 			    }
 		    }
 			
 			BTS_svoi_a = {
-	
-			   modifier = {
+	            picture = BTS_svoi_a     
+			    modifier = {
 					army_org_factor = 0.05
 			    }
 		    }
