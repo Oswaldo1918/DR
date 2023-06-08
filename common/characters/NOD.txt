@@ -188,6 +188,42 @@ characters = {
 		legacy_id = -1
         }
 	}
+	NOD_Vitaly_Milonov = {
+	name = "Виталий Милонов"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/Vitaly_Milonov.dds"
+				small = "GFX_idea_NOD_ohlabistin"
+			}
+		}
+		corps_commander = {
+	    traits = { }
+	    skill = 1	
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
+	NOD_Nikita_Dzhigurda = {
+	name = "Никита Джигурда"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/NOD/Nikita_Dzhigurda.dds"
+				small = "GFX_idea_NOD_ohlabistin"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1	
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+	}
 	
 	NOD_patr_feodor = {
 		name = "Патриарх Феодор"

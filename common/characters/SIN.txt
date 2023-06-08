@@ -1,0 +1,97 @@
+characters={
+	SIN_Alexander_Syrsky = {
+		name = "Александр Сырский"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Alexander_Syrsky.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIN_Igor_Lunev = {
+		name = "Игорь Лунев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Igor_Lunev.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIN_Mikhail_Zabrodsky = {
+		name = "Михаил Забродский"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Mikhail_Zabrodsky.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIN_Sergey_Popko = {
+		name = "Сергей Попко"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Sergey_Popko.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { combined_arms_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	SIN_Sergey_Shaptala = {
+		name = "Сергей Шаптала"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Sergey_Shaptala.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		field_marshal = {
+			traits = { combined_arms_expert skilled_staffer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+}
