@@ -54,4 +54,16 @@ LORE_3000 = {
 			country_event = lore.5
 		}	
 	}
+    LORE_3000_6 = { 
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			country_event = lore.6
+		}	
+	}
+}
    
