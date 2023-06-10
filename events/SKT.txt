@@ -1,6 +1,24 @@
 add_namespace = SKT
 
 	
+country_event = { #лор
+	id = SKT.6 
+	title = SKT.6.t
+	desc = SKT.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = SKT
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = SKT.0.a
+   
+	}
+}
+
 country_event = { #выбор 
 	id = SKT.1 
 	title = SKT.1.t
