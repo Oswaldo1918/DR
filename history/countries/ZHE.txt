@@ -10,6 +10,23 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = ZHE_Zelenskye
+recruit_character = ZHE_Valery_Zaluzhny
+recruit_character = ZHE_Victor_Muzhenko
+recruit_character = ZHE_Sergey_Naev
+recruit_character = ZHE_Sergey_Korniychuk
+recruit_character = ZHE_Ruslan_Khomchak
+recruit_character = ZHE_Nikolay_Balan
+recruit_character = ZHE_Maxim_Mirgorodsky
+recruit_character = ZHE_Gregory_Galagan
+recruit_character = ZHE_Evgeny_Moisyuk
+recruit_character = ZHE_Hadji_Murad_Zumso
+recruit_character = ZHE_Konstantin_Nemichev
+recruit_character = ZHE_Sergey_Velichko
+recruit_character = ZHE_Redis
+recruit_character = ZHE_Kalina
+recruit_character = ZHE_Volina
+
 add_ideas = {
     ZHE_first_onlyfans_front
 	limited_conscription
@@ -25,14 +42,3 @@ set_politics = {
 }
 
 set_convoys = 400
-
-create_country_leader = {
-	name = "Владимир Зеленский"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Zelenskye.dds"
-	expire = "1999.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}

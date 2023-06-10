@@ -73,3 +73,15 @@ country_event = {
 		name = lore.5.a
 	}
 }
+country_event = {
+	id = lore.6
+	title = lore.6.t
+	desc = lore.6.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = lore.6.a
+	}
+}

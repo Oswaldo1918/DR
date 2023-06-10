@@ -1,0 +1,21 @@
+characters={
+	ZWN_Denis_Prokhorov = {
+		name = "Денис Прохоров"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZWN/Denis_Prokhorov.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+}
