@@ -1,4 +1,6 @@
+###Фокусы_МОРДОВИИ
 focus_tree = {
+
 	id = Mordor-Velikaya_Mordoviya
 	country = {
 		factor = 0
@@ -7,6 +9,9 @@ focus_tree = {
 			tag = MRD
 		}
 	}
+		
+	continuous_focus_position = { x = 1500 y = 100 }
+	
 	default = no
 	focus = {
 		id = MRD_logovo_saurona
@@ -38,22 +43,6 @@ focus_tree = {
 		cost = 10,00
 		x = 38
 		y = 14
-
-	}
-	focus = {
-		id = MRD_electrortkhnika
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 21
-		y = 14
-
-	}
-	focus = {
-		id = MRD_byro_veskera
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 4
-		y = 15
 
 	}
 	focus = {
@@ -1019,12 +1008,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = MRD_electrortkhnika
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_razvitiye_stroitelnoy_otrasli
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
 		id = MRD_mordovskaya_electronica
 		icon = GFX_Computer_2
 		cost = 10,00
-		prerequisite = {
-			focus = MRD_electrortkhnika
-		}
 		prerequisite = {
 			focus = MRD_modernizatsiya_TES
 		}
@@ -1072,9 +1069,6 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = MRD_agregati_mashin
-		}
-		prerequisite = {
-			focus = MRD_electrortkhnika
 		}
 		prerequisite = {
 			focus = MRD_lesa_sibiri
@@ -1241,6 +1235,17 @@ focus_tree = {
 		}
 		x = 4
 		y = 14
+
+	}
+	focus = {
+		id = MRD_byro_veskera
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_tyomniye_dela_saurona
+		}
+		x = 45
+		y = 12
 
 	}
 	focus = {

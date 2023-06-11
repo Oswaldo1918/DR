@@ -20,7 +20,16 @@ characters={
 			visible = {
 			NOT = { has_completed_focus = UKR_socialism_s_chelovecheskim_licom }
 			}
-		}	
+		}
+        field_marshal = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}   		
 	}
 	UKR_snake = {
 		name = "Павел Снейк"
@@ -150,6 +159,330 @@ characters={
 			traits = {
 				poter_net 
 			}
+		}	
+	}
+	UKR_Dmitriy_Yarosh = {
+		name = "Дмитрий Ярош"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Dmitriy_Yarosh.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    field_marshal = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}	
+	}
+	UKR_Geletey_Illovayskiy = {
+		name = "Валерий Гелетей"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Geletey_Illovayskiy.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    field_marshal = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}	
+	}
+	UKR_Koval_Zelenopolskiy = {
+		name = "Михаил Коваль"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Koval_Zelenopolskiy.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected commando trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}	
+	}
+	UKR_Poltorak_Debaltsevskiy = {
+		name = "Степан Полторак"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Poltorak_Debaltsevskiy.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    field_marshal = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}	
+	}
+	UKR_Tenuh_Krimskiy = {
+		name = "Игорь Тенюх"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Tenuh_Krimskiy.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}	
+	}
+	UKR_Adam_Osmaev = {
+		name = "Адам Осмаев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Adam_Osmaev.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Alexander_Polishchuk = {
+		name = "Александр Полищук"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Alexander_Polishchuk.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Andrey_Cherven_Gergert = {
+		name = "Андрей Герберт"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Andrey_Cherven_Gergert.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Andrey_Stempitsky = {
+		name = "Андрей Стемпицкий"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Andrey_Stempitsky.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Evgeny_Ptashnik = {
+		name = "Евгений Пташник"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Evgeny_Ptashnik.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Isa_Akaev = {
+		name = "Иса Акаев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Isa_Akaev.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Isa_Munaev = {
+		name = "Иса Мунаев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Isa_Munaev.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Muslim_Cheberloevsky = {
+		name = "Муслим Черберлоевский"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Muslim_Cheberloevsky.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Muslim_Maliev = {
+		name = "Муслим Малиев"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Muslim_Maliev.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Semyon_Semenchenko = {
+		name = "Семён Семенченко"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Semyon_Semenchenko.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Sergey_Ilnitskiy = {
+		name = "Сергей Ильницкий"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Sergey_Ilnitskiy.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Sergey_Melnichuk = {
+		name = "Сергей Мельничук"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Sergey_Melnichuk.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	UKR_Vladislav_Cherny_Litvin = {
+		name = "Владислав Литвин"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Vladislav_Cherny_Litvin.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected militias_officer scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
 		}	
 	}
 	

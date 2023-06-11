@@ -1,0 +1,21 @@
+characters={
+	GEO_Mamulashvili_Mamuka = {
+		name = "Мамука Мамумашвили"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GEO/Mamulashvili_Mamuka.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+}
