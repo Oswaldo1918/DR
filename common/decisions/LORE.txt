@@ -1,7 +1,7 @@
 LORE_3000 = {
     LORE_3000_1 = { 
 	
-		fire_only_once = yes
+		fire_only_once = no
 	
 		ai_will_do = {
 			factor = 0
@@ -12,7 +12,7 @@ LORE_3000 = {
 	}
     LORE_3000_2 = { 
 	
-		fire_only_once = yes
+		fire_only_once = no
 	
 		ai_will_do = {
 			factor = 0
@@ -23,7 +23,7 @@ LORE_3000 = {
 	}
     LORE_3000_3 = { 
 	
-		fire_only_once = yes
+		fire_only_once = no
 	
 		ai_will_do = {
 			factor = 0
@@ -34,7 +34,7 @@ LORE_3000 = {
 	}
     LORE_3000_4 = { 
 	
-		fire_only_once = yes
+		fire_only_once = no
 	
 		ai_will_do = {
 			factor = 0
@@ -45,7 +45,7 @@ LORE_3000 = {
 	}
     LORE_3000_5 = { 
 	
-		fire_only_once = yes
+		fire_only_once = no
 	
 		ai_will_do = {
 			factor = 0
@@ -54,16 +54,6 @@ LORE_3000 = {
 			country_event = lore.5
 		}	
 	}
-    LORE_3000_6 = { 
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 0
-		}
-		remove_effect = {
-			country_event = lore.6
-		}	
-	}
+
 }
    
