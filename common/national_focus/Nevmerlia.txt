@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_agrarnaya_sverhderzhava
-		icon = GFX_goal_proizvodstvo_combaynov
+		icon = GFX_goal_hohli_sh
 		cost = 5,00
 		x = 42
 		y = 0
@@ -574,6 +574,17 @@ focus_tree = {
 								}
 						}
 				}
+
+	}
+	focus = {
+		id = UKR_zapadniye_instructori
+		icon = GFX_goal_nato
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_zagranica_nam_pomozhet
+		}
+		x = 30
+		y = 5
 
 	}
 	focus = {
