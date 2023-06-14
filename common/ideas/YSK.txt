@@ -707,6 +707,269 @@ ideas = {
 				conscription_factor = 0.15
 				army_org_factor = -0.02				
 			    }
-		    }      			
+		    }
+			YSK_decadans_rus_nation = {
+			    picture = cht_shizofrenia			
+			    modifier = {
+			    war_support_factor = -0.2
+                stability_factor = -0.2
+                conscription_factor = -0.2     				
+			    }
+		    }
+			YSK_soprotivlenie_RPTS = {
+			    picture = cht_shizofrenia			
+			    modifier = {
+                stability_factor = -0.1
+                political_power_factor = -0.15                 				
+			    }
+		    }
+			YSK_sabotazh_iudo_sionistov = {
+			    picture = cht_shizofrenia			
+			    modifier = {
+                consumer_goods_factor = 0.1
+                political_power_factor = -0.05
+                production_factory_max_efficiency_factor = -0.1   				
+			    }
+		    }
+            YSK_new_rus_nation = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    war_support_factor = 0.025			
+			    }
+		    }
+            YSK_new_rus_nation_1 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    war_support_factor = 0.075
+                stability_factor = 0.025   				
+			    }
+		    }
+            YSK_new_rus_nation_2 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+			    war_support_factor = 0.075
+                stability_factor = 0.025
+                army_morale_factor = 0.05
+                army_org_factor = 0.025				
+			    }
+		    }
+            YSK_new_rus_nation_3 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_factor = 0.1
+			    war_support_factor = 0.1
+                stability_factor = 0.05
+                army_morale_factor = 0.05
+                army_org_factor = 0.025				
+			    }
+		    }
+      		YSK_new_rus_nation_4 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_factor = 0.1
+			    war_support_factor = 0.1
+                stability_factor = 0.05
+                army_morale_factor = 0.05
+                army_org_factor = 0.025
+                army_attack_factor = 0.05
+                conscription = 0.01   				
+			    }
+		    }
+            YSK_new_rus_nation_5 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_factor = 0.1
+			    war_support_factor = 0.125
+				party_popularity_stability_factor = 0.1
+                stability_factor = 0.1
+                army_morale_factor = 0.05
+                army_org_factor = 0.025
+                army_attack_factor = 0.05
+                conscription = 0.01   				
+			    }
+		    }
+            YSK_new_rus_nation_6 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_factor = 0.1
+			    war_support_factor = 0.125
+				party_popularity_stability_factor = 0.1
+                stability_factor = 0.1
+                army_morale_factor = 0.05
+                army_org_factor = 0.025
+                army_attack_factor = 0.075
+                conscription = 0.01
+   				army_speed_factor = 0.05
+			    }
+		    }
+			YSK_IPTs = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+                stability_factor = 0.025
+			    }
+		    }
+			YSK_IPTs_1 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+                stability_factor = -0.025
+				war_support_factor = 0.05
+				drift_defence_factor = -0.025
+                max_command_power = 20  				
+			    }
+		    }
+			YSK_IPTs_2 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+                stability_factor = -0.025
+				war_support_factor = 0.075
+				drift_defence_factor = -0.025
+                max_command_power = 20
+                conscription_factor = 0.075  
+				justify_war_goal_time = -0.05
+			    }
+		    }
+			YSK_IPTs_3 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+                stability_factor = 0.025
+				war_support_factor = 0.1
+				drift_defence_factor = -0.025
+                max_command_power = 20
+                conscription_factor = 0.075  
+				justify_war_goal_time = -0.05
+				army_morale_factor = 0.025
+			    }
+		    }
+			YSK_IPTs_4 = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+                stability_factor = 0.025
+				war_support_factor = 0.15
+				drift_defence_factor = -0.025
+                max_command_power = 35
+                conscription_factor = 0.15  
+				justify_war_goal_time = -0.1
+				army_morale_factor = 0.075
+				army_attack_against_minor_factor = 0.05
+				terrain_penalty_reduction = 0.025
+			    }
+		    }
+			YSK_war_monahi = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				special_forces_cap = 0.05
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				conscription = 0.015
+			    }
+		    }
+			YSK_perestroyka_gos_machine = {
+
+			    picture = cht_shizofrenia
+			
+			    modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				global_building_slots_factor = 0.1
+			    }
+		    }
+			YSK_perestroyka_gos_machine_1 = {
+
+			    picture = cht_shizofrenia
+			
+			    targeted_modifier = {
+			    tag = IZR
+			    attack_bonus_against = 0.1
+		        }
+				targeted_modifier = {
+				tag = HAZ
+			    attack_bonus_against = 0.1
+		        }
+                targeted_modifier = {
+				tag = TUN
+			    attack_bonus_against = 0.1
+		        }     				
+			    modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				global_building_slots_factor = 0.1
+				opinion_gain_monthly_factor = -0.1
+				justify_war_goal_time = -0.1
+				trade_opinion_factor = -0.1
+			    }
+		    }
+			YSK_militarizirovat_molodezh = {
+			    picture = cht_shizofrenia
+			    modifier = {
+				conscription = 0.02
+			    }
+		    }
+			YSK_militarizatsiya_obzhestva = {
+			    picture = cht_shizofrenia
+			    modifier = {
+				conscription = 0.03
+				political_power_gain = -0.1
+				army_org_factor = -0.05
+				compliance_growth = 0.05
+			    }
+		    }
+			YSK_militarizatsiya_obzhestva_1 = {
+			    picture = cht_shizofrenia
+			    modifier = {
+				conscription = 0.03
+				political_power_gain = -0.1
+				army_org_factor = 0.025
+				compliance_growth = 0.075
+				cavalry_attack_factor = 0.075
+			    }
+		    }
+			YSK_militarizatsiya_obzhestva_2 = {
+			    picture = cht_shizofrenia
+			    modifier = {
+				conscription = 0.03
+				political_power_gain = -0.1
+				army_org_factor = 0.075
+				compliance_growth = 0.075
+				cavalry_attack_factor = 0.075
+				drift_defence_factor = 0.1
+				dig_in_speed_factor = 0.05
+				recon_factor_while_entrenched = 0.05
+			    }
+		    }
+			YSK_The_New_Russian_Order = {
+			    picture = cht_shizofrenia
+			    modifier = {
+				war_support_factor = 0.25
+				stability_factor = 0.25
+				army_attack_factor = 0.1				
+			    }
+		    }
 	    }		
 }
