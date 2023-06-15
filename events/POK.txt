@@ -222,3 +222,70 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = POK.7
+	title = POK.7.t
+	desc = POK.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.7.a
+	}
+}
+
+country_event = {
+	id = POK.8
+	title = POK.8.t
+	desc = POK.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.8.a
+	}
+} 
+
+country_event = {
+	id = POK.9
+	title = POK.9.t
+	desc = POK.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.9.a
+	}
+}
+country_event = {
+	id = POK.10
+	title = POK.10.t
+	desc = POK.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.10.a
+	}
+}

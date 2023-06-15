@@ -1,10 +1,11 @@
 	shared_focus = {
 		id = POK_strana_svobodnih_lyudey
 		icon = GFX_goal_support_democracy
-		cost = 5
+		cost = 1
 		x = 19
 		y = 0
 			completion_reward = {
+country_event = { id = POK.7 }
 
 }
 
@@ -44,7 +45,8 @@
 		x = 19
 		y = 1
 			completion_reward = {
-
+country_event = { id = POK.9 }
+country_event = { id = POK.8 }
 }
 
 	}
@@ -135,6 +137,7 @@
                 ideology = democratic
                 popularity = 0.05
             }
+			country_event = { id = POK.10 }
 		}
 	}
 	shared_focus = {
