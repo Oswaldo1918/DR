@@ -265,14 +265,22 @@ country_event = {
 	
 	trigger = {
 		tag = POK
+		NOT = { has_completed_focus = POK_prepare_first_free_elections }
+		focus_progress = {
+			focus = POK_prepare_first_free_elections
+			progress > 0.1
+		}
 	}
 	
-	is_triggered_only = yes	
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 	name = POK.9.a
 	}
 }
+
 country_event = {
 	id = POK.10
 	title = POK.10.t
@@ -287,5 +295,22 @@ country_event = {
 	
 	option = {
 	name = POK.10.a
+	}
+}
+
+country_event = {
+	id = POK.11
+	title = POK.11.t
+	desc = POK.11.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.11.a
 	}
 }
