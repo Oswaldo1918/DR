@@ -10,6 +10,11 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = KRR_Dibrov
+recruit_character = KRR_Alexander_Vlasov
+recruit_character = KRR_Nikolai_Doluda
+recruit_character = KRR_Nikolai_Kozitsyn
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
@@ -23,27 +28,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Дмитрий Дибров"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Dibrov.dds"
-	expire = "1999.1.1"
-	ideology = despotism
-	traits = {
-		prince_of_terror
-	}
-}	
-create_field_marshal = {
-	name = "Дмитрий Дибров"
-	id = 514105
-	picture = "Dibrov.dds"
-	traits = { old_guard cavalry_expert harsh_leader }
-	skill = 1
-
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 5
-}
+set_convoys = 200
