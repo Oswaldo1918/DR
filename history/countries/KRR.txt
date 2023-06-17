@@ -3,14 +3,15 @@ capital = 218
 oob = KRR_1936
 
 set_research_slots = 2
-set_stability = 0.4
-set_war_support = 0.3
+set_stability = 0.5
+set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
 }
 
 recruit_character = KRR_Dibrov
+recruit_character = KRR_Peskov
 recruit_character = KRR_Alexander_Vlasov
 recruit_character = KRR_Nikolai_Doluda
 recruit_character = KRR_Nikolai_Kozitsyn
@@ -18,10 +19,13 @@ recruit_character = KRR_Nikolai_Kozitsyn
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
+KRR_okazachivanie
+KRR_kazachya_army
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 70
+	fascism = 30
 }
 set_politics = {
 	ruling_party = neutrality
