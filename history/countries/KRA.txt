@@ -1,4 +1,4 @@
-capital = 800
+capital = 354
 
 oob = 123_1936
 
@@ -10,7 +10,12 @@ set_technology = {
 	basic_train = 1
 }
 
-
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+KRA_ochishcheniye_strany_ot_turok
+KRA_armyano_kurdskiy_front
+}
 
 set_popularities = {
 	democratic = 100
@@ -20,7 +25,7 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
 
 create_country_leader = {
 	name = "Ким Кардашьян"

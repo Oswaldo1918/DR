@@ -1,0 +1,109 @@
+characters={
+	KRR_Dibrov = {
+		name = "Дмитрий Дибров"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRR/Dibrov.dds"
+			}
+			army = {
+				large = "gfx/leaders/KRR/Dibrov.dds"
+			}
+		}
+		country_leader = {
+		    ideology = despotism
+			traits = {
+		        prince_of_terror
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { old_guard cavalry_expert harsh_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 5
+		legacy_id = -1
+        }
+    }
+	KRR_Peskov = {
+		name = "Дмитрий Песков"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRR/Peskov.dds"
+			}
+			army = {
+				large = "gfx/leaders/KRR/Peskov.dds"
+			}
+		}
+		country_leader = {
+		    ideology = fascism_ideology
+			traits = {
+		        
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { old_guard harsh_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 5
+		legacy_id = -1
+        }
+    }
+	KRR_Alexander_Vlasov = {
+		name = "Александр Власов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KRR/Alexander_Vlasov.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { cavalry_expert }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	KRR_Nikolai_Doluda = {
+		name = "Николай Долуда"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KRR/Nikolai_Doluda.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { cavalry_expert }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	KRR_Nikolai_Kozitsyn = {
+		name = "Николай Козицин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KRR/Nikolai_Kozitsyn.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { cavalry_expert }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+}

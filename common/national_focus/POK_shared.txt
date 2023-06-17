@@ -35,17 +35,16 @@ country_event = { id = POK.7 }
 }
 
 	}
-	shared_focus = {
+	shared_focus = { 
 		id = POK_prepare_first_free_elections
 		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = POK_strana_svobodnih_lyudey
 		}
 		x = 19
 		y = 1
 			completion_reward = {
-country_event = { id = POK.9 }
 country_event = { id = POK.8 }
 }
 
@@ -1893,6 +1892,7 @@ country_event = { id = POK.8 }
 							add_idea = POK_Gore_Pobeditelam_1
 						}
 					army_experience = 10
+					country_event = { id = POK.11 }
 				}
 
 	}
