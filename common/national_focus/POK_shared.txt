@@ -66,6 +66,7 @@ country_event = { id = POK.8 }
 							producer = POK
 						}
 					add_command_power = 5
+					country_event = { id = POK.6 }
 				}
 
 	}
@@ -149,7 +150,7 @@ country_event = { id = POK.8 }
 		x = 24
 		y = 2
 			completion_reward = {
-
+country_event = { id = POK.17 }
 }
 
 	}
@@ -166,7 +167,11 @@ country_event = { id = POK.8 }
 		x = 18
 		y = 3
 			completion_reward = {
-
+ add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }			
+add_political_power = 25
 }
 
 	}
@@ -180,7 +185,7 @@ country_event = { id = POK.8 }
 		x = 17
 		y = 4
 			completion_reward = {
-
+country_event = { id = POK.13 }
 }
 
 	}
@@ -197,7 +202,20 @@ country_event = { id = POK.8 }
 		x = 20
 		y = 3
 			completion_reward = {
-
+add_popularity = {
+				ideology = neutrality
+                popularity = -0.075
+            }
+add_popularity = {
+                ideology = memoism
+                popularity = -0.075
+            }		
+add_popularity = {
+				ideology = democratic
+                popularity = -0.04
+            }		
+add_stability = -0.05
+add_political_power = 40
 }
 
 	}
@@ -213,6 +231,7 @@ country_event = { id = POK.8 }
 		y = 4
 			completion_reward = {
 					add_political_power = -50
+					country_event = { id = POK.15 }
 				}
 
 	}
@@ -230,6 +249,7 @@ country_event = { id = POK.8 }
       idea = POK_support_itelligentsiya
       days = 120 
          }
+		 country_event = { id = POK.16 }
 }
 
 	}
