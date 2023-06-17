@@ -159,8 +159,6 @@ country_event = { id = POK.8 }
 		cost = 5
 		prerequisite = {
 			focus = POK_smi
-			focus = POK_ohrana_uchastkov
-			focus = POK_registr_partiy
 		}
 		mutually_exclusive = {
 			focus = POK_vote_mind
@@ -192,8 +190,6 @@ country_event = { id = POK.8 }
 		cost = 5
 		prerequisite = {
 			focus = POK_smi
-			focus = POK_registr_partiy
-			focus = POK_ohrana_uchastkov
 		}
 		mutually_exclusive = {
 			focus = POK_vote_heart
