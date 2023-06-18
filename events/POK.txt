@@ -193,11 +193,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_ohrana_uchastkov }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.7
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -295,6 +290,12 @@ country_event = {
 	
 	option = {
 	name = POK.10.a
+	country_event = { id = POK.12 }
+	}
+	
+	option = {
+	name = POK.10.b
+	country_event = { id = POK.12 }
 	}
 }
 
@@ -312,5 +313,118 @@ country_event = {
 	
 	option = {
 	name = POK.11.a
+	}
+}
+
+country_event = {
+	id = POK.12
+	title = POK.12.t
+	desc = POK.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.12.a
+	}
+}
+country_event = {
+	id = POK.13
+	title = POK.13.t
+	desc = POK.13.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.13.a
+	}
+}
+country_event = {
+	id = POK.14
+	title = POK.14.t
+	desc = POK.14.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+		NOT = { has_completed_focus = POK_registr_partiy }
+		focus_progress = {
+			focus = POK_registr_partiy
+			progress > 0.4
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	
+	option = {
+	name = POK.14.a
+	}
+}
+country_event = {
+	id = POK.15
+	title = POK.15.t
+	desc = POK.15.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.15.a
+	}
+	option = {
+	name = POK.15.b
+	}
+	option = {
+	name = POK.15.c
+	}
+	option = {
+	name = POK.15.d
+	}
+}
+country_event = {
+	id = POK.16
+	title = POK.16.t
+	desc = POK.16.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.16.a
+	}
+}
+country_event = {
+	id = POK.17
+	title = POK.17.t
+	desc = POK.17.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.17.a
 	}
 }
