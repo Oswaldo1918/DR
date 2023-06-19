@@ -1,5 +1,5 @@
-TUP_war_Tupichok = {
-	TUP_pogrankonflict_SUO = { #Пограничный конфликт за возвращение Выборга
+MHL_war_Karelia = {
+	MHL_pogrankonflict_SUO = { #Пограничный конфликт за возвращение Выборга
 	
 		icon = border_war
 	
@@ -7,7 +7,7 @@ TUP_war_Tupichok = {
 		
 		available = {
 			is_neighbor_of = SUO
-			195 = {
+			216 = {
 				OR = {
 					is_fully_controlled_by = ROOT
 					CONTROLLER = {
@@ -19,19 +19,19 @@ TUP_war_Tupichok = {
 				}
 			}
 			divisions_in_border_state = {
-				state = 195
+				state = 216
 				border_state = 146
 				size > 0
 			}
 		}
 		
 		allowed = {
-			original_tag = TUP
+			original_tag = MHL
 		}
 		
 		highlight_states = {
 	 		highlight_state_targets = {
-				state = 195
+				state = 216
 				state = 146
 			} 
 		}		
@@ -46,30 +46,28 @@ TUP_war_Tupichok = {
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
-					state = 195
+					state = 216
 					num_provinces = 4
-			        on_win = tupichok.50
-       				on_lose = tupichok.51
-					on_cancel = tupichok.52
+			        on_win = karelia.50
+       				on_lose = karelia.51
+					on_cancel = karelia.52
 				}
 				defender = {
 					state = 146
 					num_provinces = 4
-			        on_win = tupichok.50
-       				on_lose = tupichok.51
-					on_cancel = tupichok.52
+			        on_win = karelia.50
+       				on_lose = karelia.51
+					on_cancel = karelia.52
 				}
 			}
 	    }
 	}
-	TUP_war_s_EBN = { 
+	MHL_war_s_EBN = { 
 	
 		cost = 1
 
 		available = {
 			date > 4.1.1.12
-			controls_state = 216
-			controls_state = 215
 		}
 		
 		fire_only_once = yes
@@ -85,7 +83,7 @@ TUP_war_Tupichok = {
 		    }      
 		}	
 	}
-	TUP_core_EBN = {
+	MHL_core_EBN = {
 	
 		cost = 30
 
@@ -106,14 +104,13 @@ TUP_war_Tupichok = {
 			add_state_core = 722
 		}	
 	}
-	TUP_war_s_MHL = { 
+	MHL_war_s_TUP = { 
 	
 		cost = 1
 
 		available = {
 			date > 4.1.1.12
-			controls_state = 812
-			controls_state = 808
+			controls_state = 213
 		}
 		
 		fire_only_once = yes
@@ -124,18 +121,23 @@ TUP_war_Tupichok = {
 		}
 		remove_effect = {		
 		    declare_war_on = {
-		        target = MHL
+		        target = TUP
 		        type = annex_everything
 		    }      
 		}	
 	}
-	TUP_core_MHL = {
+	MHL_core_TUP = {
 	
 		cost = 30
 
 		available = {
-			controls_state = 215
-			controls_state = 216
+			controls_state = 195
+			controls_state = 208
+			controls_state = 244
+			controls_state = 264
+			controls_state = 209
+			controls_state = 263
+			controls_state = 210
 		}
 		
 		fire_only_once = yes
@@ -146,16 +148,22 @@ TUP_war_Tupichok = {
 		}
 		
 		remove_effect = {
-			add_state_core = 215
-			add_state_core = 216
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 244
+			add_state_core = 264
+			add_state_core = 209
+			add_state_core = 263
+			add_state_core = 210
 		}	
 	}
-	TUP_war_s_SPL = { 
+	MHL_war_s_SPL = { 
 	
 		cost = 1
 
 		available = {
 			date > 4.1.1.12
+			controls_state = 195
 		}
 		
 		fire_only_once = yes
@@ -171,7 +179,7 @@ TUP_war_Tupichok = {
 		    }      
 		}	
 	}
-	TUP_core_SPL = { 
+	MHL_core_SPL = { 
 	
 		cost = 30
 
