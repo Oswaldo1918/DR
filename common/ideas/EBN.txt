@@ -1,0 +1,38 @@
+ideas = {
+    country = {
+	    EBN_Kolskaya_magnitnaya_anomaliya  = {
+		    picture = 			
+		    allowed = {
+				always = no
+			}
+		    removal_cost = -1			
+		    modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.15
+                monthly_population = -0.5
+				weekly_manpower = -1250 
+                encryption_factor = 0.1
+                compliance_growth_on_our_occupied_states = -0.25
+                resistance_damage_to_garrison_on_our_occupied_states = 0.25
+                resistance_decay_on_our_occupied_states = -0.25 
+                resistance_growth_on_our_occupied_states = 0.25
+                resistance_target_on_our_occupied_states = 0.25     				
+			}
+		}
+		EBR_problema_demografii_smorcov  = {
+		    picture = 			
+		    allowed = {
+				always = no
+			}
+		    removal_cost = -1			
+		    modifier = {
+			    consumer_goods_factor = 0.1
+				stability_factor = -0.15
+				war_support_factor = 0.25
+				political_power_factor = -0.075
+                monthly_population = 0.5
+				weekly_manpower = 1250
+			}
+		}
+	}		
+}

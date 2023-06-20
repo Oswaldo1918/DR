@@ -1,0 +1,96 @@
+add_namespace = karelia
+
+	
+#
+country_event = { #Пограничный_конфликт_за_Закарпатье-победа_Донбасса
+
+	id = karelia.50
+        title = karelia.50.t
+        desc = karelia.50.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karelia.50.a
+		trigger = {
+			original_tag = MHL
+		}
+		transfer_state = 146
+	}
+	option = {
+		name = karelia.50.b
+		trigger = {
+			original_tag = SUO
+		}
+		army_experience = 50
+	}
+}
+
+country_event = { #Пограничный_конфликт_за_Закарпатье-победа_Венгрии
+
+	id = karelia.51
+        title = karelia.51.t
+        desc = karelia.51.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karelia.51.a
+		trigger = {
+			original_tag = MHL
+		}
+		army_experience = 50
+	}
+	option = {
+		name = karelia.51.b
+		trigger = {
+			original_tag = SUO
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = karelia_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = { #Пограничный_конфликт_за_Закарпатье-статус_кво
+
+	id = karelia.52
+        title = karelia.52.t
+        desc = karelia.52.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karelia.52.a
+		trigger = {
+			original_tag = MHL
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = karelia_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	option = {
+		name = karelia.52.b
+		trigger = {
+			original_tag = SUO
+		}
+		army_experience = 50
+		add_doctrine_cost_reduction = {
+			name = karelia_border_conflict_won
+			cost_reduction = 0.35
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
