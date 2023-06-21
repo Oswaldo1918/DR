@@ -175,24 +175,84 @@ news_event = {
 		}
 	}
 }
-# "Самокарантин"
-country_event = {
+#Залупа_Иваныча
+news_event = {
     id = dk_news.8
 	title = dk_news.8.t
 	desc = dk_news.8.d
+	picture = GFX_news_event_zalupa_ivanicha
 	
 	major = yes
-	
-	is_triggered_only = yes
-	
 	trigger = {
-		date < 3.2.16
+		date = 3.6.17
 	}
-	
-	option = {
-	name = dk_news.8.a
+	fire_only_once = yes
+	option = { #ЭТО_ШЕДЕВР
+		name = dk_news.8.a
+		trigger = {
+			OR = {	
+				has_government = neutrality
+				has_government = democratic	
+			}
+			add_stability = 0.05
+		}
+	}
+	option = { #ЭТО_РУСОФОБСКАЯ_ПРОПАГАНДА
+		name = dk_news.8.b
+		trigger = {
+			OR = {
+				has_government = neutrality	
+				has_government = fascism
+			}
+			add_political_power = 25
+		}
+	}
+	option = { #ТУПОЕ_ГОВНО_ТУПОГО_ГОВНА
+		name = dk_news.8.c
+		trigger = {
+			OR = {
+				has_government = metacommy
+				has_government = anarhostalinism
+			}
+			add_political_power = 25
+		}
+	}
+	option = { #ОЧЕРЕДНАЯ_АНТИСОВЕТЧИНА
+		name = dk_news.8.e
+		trigger = {
+			OR = {
+				has_government = anarhostalinism
+				has_government = metacommy
+				has_government = vmestolev
+			}
+			add_political_power = 25
+		}
+	}
+	option = { #Начинаем_форс
+		name = dk_news.8.f
+		trigger = {
+			NOT = { tag = ZZZ }
+			OR = {
+				has_government = memoism
+			}
+			add_popularity = {
+				ideology = memoism
+				popularity = 0.05
+			}
+		}
+	}
+	option = { #Для_ГЭГЭЛЯ
+		name = dk_news.8.j
+		add_named_threat = {
+			threat = 5
+			name = ZZZ_zlupa_ivanycha_cringe
+		}
+		trigger = {
+			tag = ZZZ
+		}
 	}
 }
+
 # НОД в Москве
 news_event = {
     id = dk_news.9
@@ -328,12 +388,12 @@ news_event = {
 	}
 	
 	option = {
-	name = dk_news.13.b
-		trigger = { 
-			NOT = { original_tag = LAZ }
-		}
-	set_country_flag = LAZ_reunite_russia_kostil
-	country_event = { days = 1 id = super.1}
+		name = dk_news.13.b
+			trigger = { 
+				NOT = { original_tag = LAZ }
+			}
+		set_country_flag = LAZ_reunite_russia_kostil
+		country_event = { days = 1 id = super.1}
 	}
 }
 news_event = {
@@ -347,7 +407,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = dk_news.14.a
+		name = dk_news.14.a
 	}
 }
 news_event = {
@@ -421,16 +481,16 @@ news_event = {
 		trigger = {
 			original_tag = SKT
 		}
-	set_country_flag = SKT_levoborod_reunite_russia_kostil
-	country_event = { days = 1 id = super.5}
+		set_country_flag = SKT_levoborod_reunite_russia_kostil
+		country_event = { days = 1 id = super.5}
 	}
 	
 	option = {
-	name = dk_news.18.b
+		name = dk_news.18.b
 		trigger = { 
 			NOT = { original_tag = SKT }
 		}
-	set_country_flag = SKT_levoborod_reunite_russia_kostil
-	country_event = { days = 1 id = super.5}
+		set_country_flag = SKT_levoborod_reunite_russia_kostil
+		country_event = { days = 1 id = super.5}
 	}
 }
