@@ -1,0 +1,114 @@
+characters={
+	EBN_Happy_Wolf = {
+		name = "Happy Wolf"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EBN/Fat_Happy_Wolf.dds"
+			}
+			army = {
+				large = "gfx/leaders/EBN/Fat_Happy_Wolf.dds"
+			}
+		}
+		country_leader = {
+		    ideology = oligarchism
+			traits = {
+		        capitan
+	        }
+	        expire = "1999.1.1"
+		    id=-1
+	    }
+		field_marshal = {
+	    traits = { harsh_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	EBN_Inspector_Zheleshko = {
+		name = "Инспектор Желешко"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_EBN_Inspector_Zheleshko"
+			}
+			army = {
+				large = "gfx/leaders/EBN/Inspector_Zheleshko.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor	
+			idea_token = EBN_Inspector_Zheleshko
+			allowed = {
+				original_tag = EBN				
+			}			
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+	EBN_Inspector_Skelet = {
+		name = "Инспектор Скелет"
+		portraits = {
+			army = {
+				large = "gfx/leaders/EBN/Inspector_Skelet.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	EBN_Mexican = {
+		name = "Мексиканец"
+		portraits = {
+			army = {
+				large = "gfx/leaders/EBN/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+    }
+	EBN_Kerim_Kumbasar = {
+		name = "Карим Кумбасар"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor	
+			idea_token = EBN_Kerim_Kumbasar
+			allowed = {
+				original_tag = EBN				
+			}			
+			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+    }
+}
