@@ -81,7 +81,9 @@ MHL_war_Karelia = {
 		    declare_war_on = {
 		        target = EBN
 		        type = annex_everything
-		    }      
+		    }
+            add_state_claim = 213
+            add_state_claim = 722     			
 		}	
 	}
 	MHL_core_EBN = {
@@ -124,7 +126,14 @@ MHL_war_Karelia = {
 		    declare_war_on = {
 		        target = TUP
 		        type = annex_everything
-		    }      
+		    }
+		    add_state_claim = 195
+			add_state_claim = 208
+			add_state_claim = 244
+			add_state_claim = 264
+			add_state_claim = 209
+			add_state_claim = 263
+			add_state_claim = 210     	
 		}	
 	}
 	MHL_core_TUP = {
@@ -177,7 +186,14 @@ MHL_war_Karelia = {
 		    declare_war_on = {
 		        target = SPL
 		        type = annex_everything
-		    }      
+		    }
+            add_state_claim = 811
+			add_state_claim = 812
+			add_state_claim = 13
+			add_state_claim = 12
+			add_state_claim = 813
+			add_state_claim = 191
+			add_state_claim = 810       			
 		}	
 	}
 	MHL_core_SPL = { 

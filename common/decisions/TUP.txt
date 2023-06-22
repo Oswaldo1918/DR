@@ -82,7 +82,9 @@ TUP_war_Tupichok = {
 		    declare_war_on = {
 		        target = EBN
 		        type = annex_everything
-		    }      
+		    }
+            add_state_claim = 213
+            add_state_claim = 722    			
 		}	
 	}
 	TUP_core_EBN = {
@@ -126,7 +128,9 @@ TUP_war_Tupichok = {
 		    declare_war_on = {
 		        target = MHL
 		        type = annex_everything
-		    }      
+		    }
+            add_state_claim = 215
+            add_state_claim = 216       			
 		}	
 	}
 	TUP_core_MHL = {
@@ -169,7 +173,14 @@ TUP_war_Tupichok = {
 		    declare_war_on = {
 		        target = SPL
 		        type = annex_everything
-		    }      
+		    }
+            add_state_claim = 811
+			add_state_claim = 812
+			add_state_claim = 13
+			add_state_claim = 12
+			add_state_claim = 813
+			add_state_claim = 191
+			add_state_claim = 810    			
 		}	
 	}
 	TUP_core_SPL = { 
