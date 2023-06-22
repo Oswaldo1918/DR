@@ -10,18 +10,120 @@ set_technology = {
 	infantry_weapons1 = 1
 	motorised_infantry = 1
 	basic_light_tank_chassis = 1
-	basic_heavy_tank_chassis = 1
 	tech_support = 1
 	mobile_warfare = 1
 	basic_train = 1
 }
 
 add_ideas = {
-	MAT_YgZapad_bastion
+	MAT_idea_YgZapad_bastion
+	MAT_idea_Dvoevlastiye
 	partial_economic_mobilisation
 	limited_conscription
 }
+# Starting tech
+set_technology = { 
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
 
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			aircraft_construction = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+IF = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_power_balance = {
+		id = MAT_hui_znaet_balance
+		
+		left_side = MAT_czukanov_side
+
+		right_side = MAT_orlov_side
+
+		set_value = 0
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "T-26"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_SOV_basic_light_tank_medium"
+	}
+}
 add_timed_idea = { idea = UNT_neudach_vostoch_pohod days = 547 }
 
 set_popularities = {
@@ -77,8 +179,6 @@ create_country_leader = {
 
 	}
 }
-
-
 create_field_marshal = {
 	name = "Антон Орлов"
 	id = 11111
@@ -103,22 +203,3 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 2 
 }
-
-create_equipment_variant = {
-		name = "Shumer-1"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "gfx/interface/technologies/MGN_T26_model38.dds"
-	}

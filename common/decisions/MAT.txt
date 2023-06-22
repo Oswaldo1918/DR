@@ -1,0 +1,429 @@
+############################
+  ### SHUMERIA_FOREVER ###
+############################
+
+MAT_hui_znaet_balance_of_power_category = {
+	###Услиление_влияния_Цуканова
+	MAT_bop_increase_czukanov_influence = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+		
+		}
+		visible = {
+
+		}	
+		days_remove = 90
+		fire_only_once = no
+		cost = 25
+		modifier = {
+			stability_weekly = -0.01
+			political_power_factor = -0.1
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.2
+			}		
+		}
+	}
+	MAT_bop_rasshirit_teroboronu = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			add_manpower = 10000
+			load_oob = "MAT_teroborona"
+		}
+	}
+	MAT_bop_mobilizovat_chukchei = { ###Дивизии_бронечухонцев
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.5
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.1
+			}
+			add_manpower = 5000
+		}
+	}
+	MAT_bop_mobilizovat_kitayskih_otpusknikov = { ###Дивизии_бронечухонцев
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.5
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			add_manpower = 10000
+		}
+	}
+	MAT_bop_diviziii_segurimi = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.25
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			load_oob = "MAT_sigurimi"
+		}
+	}
+	MAT_bop_kazarmi_dlya_pehoti = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.35
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	MAT_bop_zapret_mat = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.7
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			stability_factor = 0.2
+		}
+	}
+	MAT_bop_kartochnaya_sistema = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.7
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			add_ideas = MAT_kartochnaya_sistema
+		}
+	}
+	###Услиление_влияния_Орлова
+	MAT_bop_increase_orlov_influence = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+
+		}
+		visible = {
+
+		}	
+		days_remove = 90
+		fire_only_once = no
+		cost = 25
+		modifier = {
+			stability_weekly = -0.01
+			political_power_factor = -0.1
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.15
+			}		
+		}
+	}
+	MAT_bop_likerovodochnaya_otrasl = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	MAT_bop_boebribasi_tankistam = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 100
+				variant_name = "T-26"
+			}
+		}
+	}
+	MAT_bop_toplivo_dlya_tankistov = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			add_fuel = 400
+			ai_will_do = {
+				base = 100
+			}
+		}
+	}
+	MAT_bop_tankoviy_chempionat = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			#country_event = MAT.20
+			ai_will_do = {
+				base = 100
+			}
+		}
+	}
+	MAT_bop_religioznaya_propaganda = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.15
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = vmestolev
+				popularity = 0.05
+			}
+			stability_factor = -0.05
+			ai_will_do = {
+				base = 100
+			}
+		}
+	}
+	MAT_bop_tanki_na_shakhti= {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 90 
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 210
+			}
+			ai_will_do = {
+				base = 100
+			}
+			add_ideas = MAT_idea_tanki_na_shakhti
+			
+		}
+		remove_effect = {
+			remove_ideas = MAT_idea_tanki_na_shakhti
+			add_resource = {
+				type = steel
+				amount = -8
+				state = 210
+			}
+		}
+	}
+	MAT_bop_uchilishe_tuhacha = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.2
+			}
+		}
+		visible = {
+			tag = MAT
+		}	
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+			army_experience = 10
+			country_event = MAT.1
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

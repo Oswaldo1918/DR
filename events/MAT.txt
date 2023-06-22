@@ -1,45 +1,244 @@
 add_namespace = MAT
 
-	
-#Конец гражданки
+#Фанфик_Шумера_Это_вам_не_Вагнер.
 country_event = {
 	id = MAT.1
 	title = MAT.1.t
 	desc = MAT.1.d
 	picture = GFX_report_event_japanese_soldiers_02
-	
 	is_triggered_only = yes	
 	
 	option = {
-	name = MAT.1.a
-	ai_chance = {
-			base = 10
-			
-		}
-	LAZ = {
-	      annex_country = {
-			target = MAT
-			transfer_troops = yes
-		}
-		}
-	MAT = {
-			every_unit_leader = {
-				set_nationality = LAZ
-			}
+		name = MAT.1.a
 	}
-	}
+}
+country_event = {
+	id = MAT.2
+	title = MAT.2.t
+	desc = MAT.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
 	
 	option = {
-	name = MAT.1.b
-	ai_chance = {
-			base = 90
-			
+		name = MAT.2.a
+	}
+}
+country_event = {
+	id = MAT.3
+	title = MAT.3.t
+	desc = MAT.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.3.a
+	}
+}
+country_event = {
+	id = MAT.4
+	title = MAT.4.t
+	desc = MAT.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.4.a
+	}
+}
+country_event = {
+	id = MAT.5
+	title = MAT.5.t
+	desc = MAT.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.5.a
+	}
+}
+country_event = {
+	id = MAT.6
+	title = MAT.6.t
+	desc = MAT.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.6.a
+	}
+}
+country_event = {
+	id = MAT.7
+	title = MAT.7.t
+	desc = MAT.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.7.a
+	}
+}
+country_event = {
+	id = MAT.8
+	title = MAT.8.t
+	desc = MAT.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.8.a
+	}
+}
+country_event = {
+	id = MAT.9
+	title = MAT.9.t
+	desc = MAT.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.9.a
+	}
+}
+country_event = {
+	id = MAT.10
+	title = MAT.10.t
+	desc = MAT.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.10.a
+	}
+}
+country_event = {
+	id = MAT.11
+	title = MAT.11.t
+	desc = MAT.11.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.11.a
+	}
+}
+country_event = {
+	id = MAT.12
+	title = MAT.12.t
+	desc = MAT.12.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.12.a
+	}
+}
+country_event = {
+	id = MAT.13
+	title = MAT.13.t
+	desc = MAT.13.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.13.a
+	}
+}
+country_event = {
+	id = MAT.14
+	title = MAT.14.t
+	desc = MAT.14.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.14.a
+	}
+}
+country_event = {
+	id = MAT.15
+	title = MAT.15.t
+	desc = MAT.15.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.15.a
+	}
+}
+country_event = { #Госпереворот_Шумера
+	id = MAT.16
+	title = MAT.16.t
+	desc = MAT.16.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.16.a
+		country_event = { hours = 5 id = MAT.17 }
+	}
+}
+country_event = {
+	id = MAT.17
+	title = MAT.17.t
+	desc = MAT.17.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.17.a
+		country_event = { hours = 5 id = MAT.18 }
+	}
+}
+country_event = {
+	id = MAT.18
+	title = MAT.18.t
+	desc = MAT.18.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.18.a
+		remove_ideas = MAT_idea_Dvoevlastiye
+		add_ideas = MAT_idea_krasniy_shumirism
+		set_politics = {
+			ruling_party = metacommy
+			elections_allowed = no
 		}
-	    LAZ = {
-	        create_wargoal = {
-		        target = MAT
-		        type = annex_everything
-		    }	
-	    }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = metacommy
+			popularity = 0.5
+		}
+		news_event = { hours = 6 id = dk_news.19 }
+	}
+}
+country_event = { #Госпереворот_Цуканова
+	id = MAT.19
+	title = MAT.19.t
+	desc = MAT.19.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes	
+	
+	option = {
+		name = MAT.19.a
+		remove_ideas = MAT_idea_Dvoevlastiye
+		add_ideas = MAT_idea_naslediye_Hodzhi
+		set_politics = {
+			ruling_party = vmestolev
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = vmestolev
+			popularity = 0.1
+		}
+		news_event = { hours = 6 id = dk_news.20 }
 	}
 }
