@@ -313,7 +313,31 @@ country_event = {
 	
 	option = {
 	name = POK.11.a
+	add_corps_commander_role = {
+		character = POK_Katz
+		traits = {
+            urban_assault_specialist   
+        }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+		legacy_id = -1
 	}
+	add_corps_commander_role = {
+		character = POK_Panin
+		traits = {
+            adaptable expert_improviser_short      
+        }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 1
+		legacy_id = -1
+	}
+	add_manpower = 2500
 }
 
 country_event = {
