@@ -1,0 +1,269 @@
+############################
+  ### SHUMERIA_FOREVER ###
+############################
+
+MAT_hui_znaet_balance = {
+	initial_value = 0
+	left_side = MAT_czukanov_side
+	right_side = MAT_orlov_side
+	decision_category = MAT_hui_znaet_balance_of_power_category
+
+	### The "middle ground"
+	range = {
+		id = MAT_balance_range
+		min = -0.15
+		max = 0.15
+		modifier = {	
+			stability_factor = 0
+			offensive_war_stability_factor = 0
+			defensive_war_stability_factor = 0
+			war_support_factor = 0
+			weekly_bombing_war_support = 0.006
+			min_export = 0
+			autonomy_gain = 0
+			consumer_goods_factor = 0
+			weekly_manpower = 0
+			air_superiority_efficiency = 0
+			max_command_power_mult = 0
+			production_speed_bunker_factor = 0
+			production_speed_coastal_bunker_factor = 0
+			production_speed_anti_air_building_factor = 0
+			custom_modifier_tooltip = MAT_balance_range_tt
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+		
+		}
+	}
+
+	### Czukanov_clique
+	side = {
+		id = MAT_czukanov_side
+		icon = GFX_bop_ETH_anarchist_side
+		range = {
+			id = MAT_czukanov_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				stability_factor = -0.2
+				offensive_war_stability_factor = 0.5
+				defensive_war_stability_factor = -0.5
+				war_support_factor = -0.2
+				weekly_bombing_war_support = 0.01
+				min_export = -0.2
+				autonomy_gain = -0.1
+				consumer_goods_factor = 0.05
+				weekly_manpower = 1000
+				air_superiority_efficiency = -0.1
+				max_command_power_mult = -0.2
+				production_speed_bunker_factor = 0.5
+				production_speed_coastal_bunker_factor = 0.5
+				production_speed_anti_air_building_factor = 0.5
+			}
+			on_activate = {
+				country_event = MAT.19
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_czukanov_dominant_range
+			min = -0.9
+			max = -0.65
+			modifier = {
+				stability_factor = -0.15
+				offensive_war_stability_factor = 0.25
+				defensive_war_stability_factor = -0.25
+				war_support_factor = -0.1
+				weekly_bombing_war_support = 0.005
+				min_export = -0.15
+				autonomy_gain = -0.075
+				consumer_goods_factor = 0.025
+				weekly_manpower = 500
+				air_superiority_efficiency = -0.05
+				max_command_power_mult = -0.05
+				production_speed_bunker_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_czukanov_power_range
+			min = -0.65
+			max = -0.35
+			modifier = {
+				stability_factor = -0.10
+				offensive_war_stability_factor = 0.15
+				defensive_war_stability_factor = -0.15
+				war_support_factor = -0.05
+				weekly_bombing_war_support = 0.003
+				min_export = -0.10
+				autonomy_gain = -0.050
+				consumer_goods_factor = 0.015
+				weekly_manpower = 250
+				air_superiority_efficiency = -0.025
+				max_command_power_mult = -0.025
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_anti_air_building_factor = 0.15
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_czukanov_influence_range
+			min = -0.35
+			max = -0.15
+			modifier = {
+				stability_factor = -0.05
+				offensive_war_stability_factor = 0.10
+				defensive_war_stability_factor = -0.10
+				war_support_factor = -0.025
+				weekly_bombing_war_support = 0.001
+				min_export = -0.05
+				autonomy_gain = -0.025
+				consumer_goods_factor = 0.001
+				weekly_manpower = 100
+				air_superiority_efficiency = -0.010
+				max_command_power_mult = -0.010
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_anti_air_building_factor = 0.05
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+
+			}
+
+		}
+	}
+	### Orlov_clique
+	side = {
+		id = MAT_orlov_side	
+		icon = GFX_bop_ETH_communist_side
+		range = {
+			id = MAT_orlov_influence_range
+			min = 0.15
+			max = 0.35
+			modifier = {
+				stability_factor = 0.05
+				offensive_war_stability_factor = -0.10
+				defensive_war_stability_factor = 0.10
+				war_support_factor = 0.025
+				weekly_bombing_war_support = -0.001
+				min_export = 0.05
+				autonomy_gain = 0.025
+				consumer_goods_factor = -0.001
+				weekly_manpower = -100
+				air_superiority_efficiency = 0.010
+				max_command_power_mult = 0.010
+				production_speed_bunker_factor = -0.05
+				production_speed_coastal_bunker_factor = -0.05
+				production_speed_anti_air_building_factor = -0.05
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_orlov_power_range
+			min = 0.35
+			max = 0.65
+			modifier = {
+				stability_factor = 0.10
+				offensive_war_stability_factor = -0.15
+				defensive_war_stability_factor = 0.15
+				war_support_factor = 0.05
+				weekly_bombing_war_support = 0.003
+				min_export = 0.10
+				autonomy_gain = -0.050
+				consumer_goods_factor = -0.015
+				weekly_manpower = -250
+				air_superiority_efficiency = 0.025
+				max_command_power_mult = 0.025
+				production_speed_bunker_factor = -0.15
+				production_speed_coastal_bunker_factor = -0.15
+				production_speed_anti_air_building_factor = -0.15
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_orlov_dominant_range
+			min = 0.65
+			max = 0.9
+			modifier = {
+				stability_factor = 0.15
+				offensive_war_stability_factor = -0.25
+				defensive_war_stability_factor = 0.25
+				war_support_factor = 0.1
+				weekly_bombing_war_support = -0.005
+				min_export = 0.15
+				autonomy_gain = 0.075
+				consumer_goods_factor = -0.025
+				weekly_manpower = -500
+				air_superiority_efficiency = 0.05
+				max_command_power_mult = 0.05
+				production_speed_bunker_factor = -0.25
+				production_speed_coastal_bunker_factor = -0.25
+				production_speed_anti_air_building_factor = -0.25
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+
+			}
+		}
+		range = {
+			id = MAT_orlov_total_control_range
+			min = 0.9
+			max = 1
+			modifier = {
+				stability_factor = 0.2
+				offensive_war_stability_factor = -0.5
+				defensive_war_stability_factor = 0.5
+				war_support_factor = 0.2
+				weekly_bombing_war_support = -0.01
+				min_export = 0.2
+				autonomy_gain = 0.1
+				consumer_goods_factor = -0.05
+				weekly_manpower = -1000
+				air_superiority_efficiency = 0.1
+				max_command_power_mult = 0.2
+				production_speed_bunker_factor = -0.5
+				production_speed_coastal_bunker_factor = -0.5
+				production_speed_anti_air_building_factor = -0.5
+			}
+			on_activate = {
+				country_event = MAT.16
+			}
+			on_deactivate = {
+				# deactivation effect
+			}
+		}
+	}
+}
+

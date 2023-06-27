@@ -287,8 +287,7 @@ characters={
 				small = "GFX_idea_POK_gaydar"
 				large = "gfx/leaders/GAL/Rosov.dds"				
 			}
-		}
-
+		}            
         advisor={
 			slot = political_advisor
 			idea_token = POK_gaydar
@@ -299,6 +298,9 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {		
+			has_completed_focus = POK_Ya_prihozhu
+		    }
 			traits = {
 				captain_of_industry 
 			}
@@ -445,9 +447,13 @@ characters={
 		name = "Владимир Потанин"
 
 		portraits = {
+		    civilian = {
+				small = "GFX_idea_POK_potanin"
+				large = "gfx/leaders/POK/Potanin.dds"				
+			}      
 			army = {
 				small = "GFX_idea_POK_potanin"
-				large = "gfx/leaders/GAL/Rosov.dds"				
+				large = "gfx/leaders/POK/Potanin.dds"				
 			}
 		}
 
@@ -516,7 +522,7 @@ characters={
 				factor = 10
 			}
 			traits = {
-				freedom_fighter
+				civilian_poet
 			}
 		}
 		
@@ -677,5 +683,115 @@ characters={
 				small = "GFX_idea_georgy_zhukov"
 			}
 		}	
-	}      	
+	}
+    POK_Hodorkovskiy = {
+		name = "Михаил Ходорковский"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POK/Hodorkovskiy.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}	
+	POK_Shulman = {
+		name = "Екатерина Шульман"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POK/Shulman.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}
+    POK_Latynina = {
+		name = "Юлия Латынина"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POK/Latynina.dds"
+				small = "GFX_idea_POK_Latynina"
+			}
+			army = {
+				large = "gfx/leaders/POK/Latynina.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Latynina
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				
+			}
+		}
+        corps_commander = {
+			traits = { harsh_leader }
+        	skill = 1
+         	attack_skill = 1
+        	defense_skill = 1
+        	planning_skill = 1
+        	logistics_skill = 1
+			legacy_id = 0
+		}        		
+	}
+	POK_Eydelman = {
+		name = "Тамара Эйдельман"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Eydelman"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Eydelman
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				
+			}
+		}       		
+	}
+    POK_Katz = {
+		name = "Максим Кац"
+
+		portraits = {
+		    civilian = {
+				large = "gfx/leaders/POK/Katz.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}     
+			army = {
+				large = "gfx/leaders/POK/Katz_general.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}	
+	POK_Panin = {
+		name = "Алексей Панин"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/POK/Panin.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}     	
 }

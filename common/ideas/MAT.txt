@@ -1,55 +1,6 @@
 ideas = {
     country = {
-	    MAT_red_neoshumirism = {
-			picture = generic_pp_unity_bonus
-			
-			removal_cost = -1
-			
-			allowed = { always = no }
-			
-			
-			modifier = {
-			stability_factor = -0.05
-			war_support_factor = 0.10
-			metacommy_drift = 0.01
-			political_power_factor = 0.10
-			}
-		}
-		MAT_KiberElektrichking = {
-			picture = generic_fascism_drift_bonus
-			
-			removal_cost = -1
-			
-			allowed = { always = no }
-			
-			
-			modifier = {
-			stability_factor  = -0.1
-			fascism_drift = 0.03
-			democratic_drift = 0.03
-			political_power_factor = -0.3
-			conscription_factor = -0.15
-			research_speed_factor = -0.05
-			}
-		}
-		MAT_Krasnaya_brigada_Tsukanova = {
-			picture = generic_communism_drift_bonus
-			
-			removal_cost = -1
-			
-			allowed = { always = no }
-			
-			
-			modifier = {
-			stability_factor  = -0.1
-			vmestolev_drift = 0.03
-			political_power_factor = -0.3
-			conscription = -0.02
-			conscription_factor = -0.15
-			}
-		}
-		
-		MAT_YgZapad_bastion = {
+		MAT_idea_YgZapad_bastion = {
 			picture = FRA_fortification_focus
 			
 			allowed = {
@@ -64,50 +15,68 @@ ideas = {
 			
 			modifier = {
 			    war_support_factor = 0.1
-				}
-				targeted_modifier = {
+			}
+			targeted_modifier = {
 				tag = UKR
 				defense_bonus_against = 0.1
-			    }
-			     targeted_modifier = {
+			}
+			targeted_modifier = {
 				tag = KUR
 				defense_bonus_against = 0.1
-			    }
+			}
 		}
-		
-	}
-	
-	political_advisor = {
-
-        Anton_Dolzhansky = {
-        picture = idea_Anton_Dolzhansky
-            allowed = {
-                original_tag = MAT 
-				
-            }
-			available = {}
-            traits = { smooth_talking_charmer }
-        }
-	}
-	industrial_concern = {
-	    MAT_zablokorovano_hakerami = {
-		
+		MAT_idea_Dvoevlastiye = {
+			picture = generic_communism_drift_bonus
 			
-			allowed = {
-				original_tag = MAT
-			}
+			removal_cost = -1
 			
-
-			
-			research_bonus = {
-				industry = -0.15
-				electronics = -0.15
-			}
-			
-			traits = { zablokorovano_hakerami }
+			allowed = { always = no }
 			
 			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05				
+				vmestolev_drift = 0.05
+				metacommy_drift = 0.05
+			}			
+		}
+	    MAT_idea_krasniy_shumirism = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				metacommy_drift = 0.05
+				political_power_factor = 0.10
+				stability_factor = -0.05
+				war_support_factor = 0.15
+			}
+		}
+		MAT_idea_naslediye_Hodzhi = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				vmestolev_drift = 0.05
+				stability_factor = 0.05
+				conscription_factor = 0.15
+			}
+		}
+		MAT_idea_tanki_na_shakhti = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_org_factor = -0.08
+				army_morale_factor = -0.08
 			}
 		}
 	}
-}	
+}

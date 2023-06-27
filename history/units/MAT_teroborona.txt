@@ -1,0 +1,38 @@
+﻿
+division_template = {
+	name = "Дивизия территориальной обороны"				
+
+	division_names_group = MAT_GAR_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+	units = {
+        division = {
+			name = "1-ya divisiya teroboroni"
+
+			location = 9355
+			division_template = "Дивизия территориальной обороны"
+			start_experience_factor = 0
+			start_equipment_factor = 0.3
+        }
+		division = {
+			name = "2-ya divisiya teroboroni"
+
+			location = 9355
+			division_template = "Дивизия территориальной обороны"
+			start_experience_factor = 0
+			start_equipment_factor = 0.3
+        }
+	}

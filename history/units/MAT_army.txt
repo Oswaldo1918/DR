@@ -1,8 +1,8 @@
 ﻿
 division_template = {
-	name = "Шумеры"				
+	name = "Стрелковая дивизия"				
 
-	division_names_group = MAT_GAR_01
+	division_names_group = MAT_RFL_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,13 +17,12 @@ division_template = {
 		infantry = { x = 2 y = 1 }
         infantry = { x = 2 y = 2 }
 
-}
-priority = 1
+	}
 }
 division_template = {
-	name = "Шумерские танки"
+	name = "Лугальская танковая дивизия"
 
-	division_names_group = MAT_Arm_01
+	division_names_group = MAT_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -35,9 +34,9 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Шумерские колесницы" 	
+	name = "Лугальская мотострелковая дивизия" 	
 	
-	division_names_group = MAT_MOT_02
+	division_names_group = MAT_MOT_01
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -51,64 +50,80 @@ division_template = {
 	}
 }
 
-units = {
+	units = {
         division = {
-        name = "1я шумерская пехотная дивизия"
+			name = "1-ya strelkovaya divisiya"
 
-        location = 9355
-        division_template = "Шумеры"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Стрелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "2я шумерская пехотная дивизия"
+			name = "2-ya strelkovaya divisiya"
 
-        location = 9355
-        division_template = "Шумеры"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Стрелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
+        }
+        division = {
+			name = "3-ya strelkovaya divisiya"
+
+			location = 9355
+			division_template = "Стрелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "1я шумерская танковая дивизия"
+			name = "4-ya strelkovaya divisiya"
 
-        location = 9355
-        division_template = "Шумерские танки"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Стрелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "2я шумерская танковая дивизия"
+			name = "1-ya tankovaya divisiya"
 
-        location = 9355
-        division_template = "Шумерские танки"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Лугальская танковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "1я шумерская мотоколесница"
+			name = "2-ya tankovaya divisiya"
 
-        location = 9355
-        division_template = "Шумерские колесницы"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Лугальская танковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "2я шумерская мотоколесница"
+			name = "1-ya motostrelkovaya divisiya"
 
-        location = 9355
-        division_template = "Шумерские колесницы"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Лугальская мотострелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
 		division = {
-        name = "3я шумерская мотоколесница"
+			name = "1-ya motostrelkovaya divisiya"
 
-        location = 9355
-        division_template = "Шумерские колесницы"
-        start_equipment_factor = 1
-		start_equipment_factor = 0.5
+			location = 9355
+			division_template = "Лугальская мотострелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
         }
-}
+		division = {
+			name = "1-ya motostrelkovaya divisiya"
+
+			location = 9355
+			division_template = "Лугальская мотострелковая дивизия"
+			start_experience_factor = 0.4
+			start_equipment_factor = 1.0
+        }
+	}
 
 ### Starting Equipment ###
 instant_effect = {

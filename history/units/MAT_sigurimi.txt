@@ -1,0 +1,54 @@
+﻿
+division_template = {
+	name = "Дивизия Сигурими"					# Дивизия Сигурими копия НКВД из ванилы
+	division_names_group = MAT_GAR_01
+												# РЕЗЕРВОВ НЕТ ТАНКИ СГОРЕЛИ
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+	units = {
+        division = {
+			name = "1-ya divisiya sigurimi"
+
+			location = 9355
+			division_template = "Дивизия Сигурими"
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.5
+        }
+		division = {
+			name = "2-ya divisiya sigurimi""
+
+			location = 9355
+			division_template = "Дивизия Сигурими"
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.5
+        }
+        division = {
+			name = "3-ya divisiya sigurimi"
+
+			location = 9355
+			division_template = "Дивизия Сигурими"
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.5
+        }
+		division = {
+			name = "4-ya divisiya sigurimi""
+
+			location = 9355
+			division_template = "Дивизия Сигурими"
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.5
+        }
+	}
