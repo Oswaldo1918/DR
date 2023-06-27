@@ -421,6 +421,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_bat_sheyh_mansura
+		icon = GFX_goal_ochkeriyci
+		cost = 10,00
+		prerequisite = {
+			focus = UKR_TsIPSO
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
 		id = UKR_decommunisatsiya
 		icon = GFX_goal_antilenin
 		cost = 5,00
