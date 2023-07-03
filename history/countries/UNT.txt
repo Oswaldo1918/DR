@@ -11,6 +11,13 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = UNT_Unts
+recruit_character = UNT_Nazarikov
+recruit_character = UNT_Dream
+recruit_character = UNT_Inozemtsev
+recruit_character = UNT_Karandash
+recruit_character = UNT_FarLight
+
 add_ideas = {
 	UNT_indust_po_Untsu
 	UNT_YgVostok_bastion
@@ -28,15 +35,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Унц"
-	desc = "POLITICS_UNTS_DESC"
-	picture = "Unts.dds"
-	expire = "1999.1.1"
-	ideology = marxismus
-	traits = {
-		#
-	}
-}
+set_convoys = 200
