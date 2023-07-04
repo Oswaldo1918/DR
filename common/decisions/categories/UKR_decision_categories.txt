@@ -2,19 +2,19 @@
   ### UKR ###
 ################
 
-UKR_sopr_pb_cat = {
-	picture = generic_border_conflicts
-	icon = border_conflicts
+UKR_koleso_genotbi_balance_of_power_category = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
 	allowed = {
-		original_tag = UKR		
+		tag = UKR
 	}
+
+	priority = {
+		base = 10
+	}
+
 	visible = {
-	OR = {
-			has_idea = UKR_nek_grup1
-			has_idea = UKR_nek_grup2
-			has_idea = UKR_nek_grup3
-			has_idea = UKR_nek_grup4
-			has_idea = UKR_nek_grup5
-			}
+		# always = no 
 	}
 }

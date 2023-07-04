@@ -1,0 +1,142 @@
+characters={
+	UNT_Unts = {
+		name = "Унц"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UNT/Unts.dds"
+			}
+			army = {
+				large = "gfx/leaders/UNT/Unts.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = marxismus
+		desc = "POLITICS_UNTS_DESC"
+	    traits = { 		
+	    }
+		id=-1
+	    }
+		field_marshal = {
+    		traits = { old_guard war_hero  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+    }
+	UNT_Nazarikov = {
+		name = "Андрей Назариков"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UNT/Nazarikov.dds"
+			}
+			army = {
+				large = "gfx/leaders/UNT/Nazarikov.dds"
+			}
+		}
+		country_leader = {
+	    expire = "1999.1.1"
+	    ideology = postironism 
+	    traits = { 
+	    }
+		id=-1
+	    }
+		field_marshal = {
+    		traits = { old_guard war_hero  }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+    }
+	UNT_Dream = {
+		name = "Dreamwalker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UNT/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	UNT_Inozemtsev = {
+		name = "Юрий Иноземцев"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UNT/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	UNT_Karandash = {
+		name = "Карандаш"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UNT/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	UNT_FarLight = {
+		name = "FarLight"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UNT/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	UNT_FarLight = {
+		name = "FarLight"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UNT/.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+}

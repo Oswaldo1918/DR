@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Ополчение"				# Militia units (lowest experience, oldest equipment)
+	name = "Добробат"				# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = UKR_GAR_01
 
@@ -38,14 +38,14 @@ division_template = {
 units = {
 	division = {
 		name = "1-я пехотная дивизия"		
-		location = 11541
+		location = 486
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
 	division = {
 		name = "2-я пехотная дивизия"		
-		location = 9531
+		location = 11541
 		division_template = "Пехотная дивизия"
         start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -65,51 +65,51 @@ units = {
 		start_equipment_factor = 0.75
 	}
 	division = {
-		name = "1-я дивизия ополчения"		
-		location = 486
-		division_template = "Ополчение"
-        start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "2-я дивизия ополчения"		
-		location = 472
-		division_template = "Ополчение"
-        start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "3-я дивизия ополчения"		
-		location = 429
-		division_template = "Ополчение"
-        start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "4-я дивизия ополчения"		
+		name = "Азов"		
 		location = 9571
-		division_template = "Ополчение"
+		division_template = "Добробат"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "5-я дивизия ополчения"		
-		location = 11437
-		division_template = "Ополчение"
+		name = "Донбасс"		
+		location = 429
+		division_template = "Добробат"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "6-я дивизия ополчения"		
-		location = 11437
-		division_template = "Ополчение"
+		name = "Айдар"		
+		location = 11461
+		division_template = "Добробат"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "7-я дивизия ополчения"		
-		location = 11437
-		division_template = "Ополчение"
+		name = "Шахтерск"		
+		location = 472
+		division_template = "Добробат"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Торнадо"		
+		location = 9531
+		division_template = "Добробат"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1-я бригада терробороны"		
+		location = 3399
+		division_template = "Добробат"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2-я бригада терробороны"		
+		location = 11452
+		division_template = "Добробат"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}

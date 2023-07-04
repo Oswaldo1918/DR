@@ -8,7 +8,8 @@ country_event = {
 	desc = UKR.1.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
-	is_triggered_only = yes	
+	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 	name = UKR.1.a
@@ -20,3 +21,495 @@ country_event = {
 
 	}
 }
+#Donetsk has fallen
+country_event = {
+    id = UKR.2
+	title = UKR.2.t
+	desc = UKR.2.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+    	tag = UKR
+		227 = { is_owned_by = DON }
+		UKR = { 
+	    	has_war_with = DON
+            controls_province = 6474
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.2.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.2
+			}		
+	}
+}	
+
+#Mariupol has fallen
+country_event = {
+    id = UKR.3
+	title = UKR.3.t
+	desc = UKR.3.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		227 = { is_owned_by = DON }
+		UKR = { 
+	    	has_war_with = DON
+            controls_province = 6420
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.3.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.1
+			}		
+	}
+}	
+
+#Lugansk has fallen
+country_event = {
+    id = UKR.4
+	title = UKR.4.t
+	desc = UKR.4.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		228 = { is_owned_by = DON }
+		UKR = { 
+	    	has_war_with = DON
+            controls_province = 9461
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.4.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.1
+			}		
+	}
+}	
+
+#Lisichansk has fallen
+country_event = {
+    id = UKR.5
+	title = UKR.5.t
+	desc = UKR.5.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		228 = { is_owned_by = DON }
+		UKR = { 
+	    	has_war_with = DON
+            controls_province = 6519
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.5.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.05
+			}		
+	}
+}	
+
+#Slavansk has fallen
+country_event = {
+    id = UKR.6
+	title = UKR.6.t
+	desc = UKR.6.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		227 = { is_owned_by = DON }
+		UKR = { 
+	    	has_war_with = DON
+            controls_province = 502
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.5.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.05
+			}		
+	}
+}	
+
+#Perekop has fallen
+country_event = {
+    id = UKR.6
+	title = UKR.6.t
+	desc = UKR.6.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		137 = {
+	    	OR = { 
+	        	is_owned_by = CRI 
+	    		is_owned_by = NOD 
+	    	}	
+		}
+		UKR = { 
+	    	OR = { 
+	         	has_war_with = CRI 
+		    	has_war_with = NOD 
+	    	}	
+            controls_province = 3722
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.6.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.05
+			}		
+	}
+}
+
+#Sevastopol has fallen
+country_event = {
+    id = UKR.7
+	title = UKR.7.t
+	desc = UKR.7.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		137 = {
+	    	OR = { 
+	        	is_owned_by = CRI 
+	    		is_owned_by = NOD 
+	    	}	
+		}
+		UKR = { 
+	    	OR = { 
+	         	has_war_with = CRI 
+		    	has_war_with = NOD 
+	    	}	
+            controls_province = 3686
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.7.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.2
+			}		
+	}
+}
+
+#Kiev has fallen
+country_event = {
+    id = UKR.8
+	title = UKR.8.t
+	desc = UKR.8.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		202 = { is_owned_by = KUR }
+		UKR = { 
+	    	has_war_with = KUR
+            controls_province = 525
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.8.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.2
+			}		
+	}
+}	
+
+#Lvov has fallen
+country_event = {
+    id = UKR.9
+	title = UKR.9.t
+	desc = UKR.9.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		91 = { is_owned_by = ZHE }
+		UKR = { 
+	    	has_war_with = ZHE
+            controls_province = 11479
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.9.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.2
+			}		
+	}
+}
+
+#Harkov has fallen
+country_event = {
+    id = UKR.10
+	title = UKR.10.t
+	desc = UKR.10.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		221 = { is_owned_by = UKR }
+		NOT = { 
+	    	UKR = { controls_province = 9556 }
+	     	has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.10.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.2
+			}		
+	}
+}		
+
+#Dnepr has fallen
+country_event = {
+    id = UKR.11
+	title = UKR.11.t
+	desc = UKR.11.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		226 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 11437 }
+            has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.11.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.2
+			}		
+	}
+}		
+
+#Zaporozhye has fallen
+country_event = {
+    id = UKR.12
+	title = UKR.12.t
+	desc = UKR.12.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		200 = { is_owned_by = UKR }
+		NOT = { 
+	    	UKR = { controls_province = 11405 }
+            has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.12.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.2
+			}		
+	}
+}		
+
+#Izum has fallen
+country_event = {
+    id = UKR.13
+	title = UKR.13.t
+	desc = UKR.13.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		221 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 9531 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.13.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.1
+			}		
+	}
+}		
+
+#Krivoy Rog has fallen
+country_event = {
+    id = UKR.14
+	title = UKR.14.t
+	desc = UKR.14.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		226 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 11561 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.14.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.1
+			}		
+	}
+}		
+
+#Lozovaya has fallen
+country_event = {
+    id = UKR.15
+	title = UKR.15.t
+	desc = UKR.15.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		221 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 11461 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.15.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.05
+			}		
+	}
+}		
+
+#Pavlograd has fallen
+country_event = {
+    id = UKR.16
+	title = UKR.16.t
+	desc = UKR.16.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		226 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 11452 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.16.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.05
+			}		
+	}
+}		
+
+#Melitopol has fallen
+country_event = {
+    id = UKR.17
+	title = UKR.17.t
+	desc = UKR.17.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		200 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 6596 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.17.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.05
+			}		
+	}
+}		
+
+#Berdyansk has fallen
+country_event = {
+    id = UKR.18
+	title = UKR.18.t
+	desc = UKR.18.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+	    tag = UKR
+		200 = { is_owned_by = UKR }
+		NOT = {
+    		UKR = { controls_province = 9571 } 
+			has_idea = UKR_voini_lisu_i
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.18.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = -0.05
+			}		
+	}
+}		

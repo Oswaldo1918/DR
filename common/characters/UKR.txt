@@ -31,62 +31,6 @@ characters={
 			legacy_id = 0
 		}   		
 	}
-	UKR_snake = {
-		name = "Павел Снейк"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_UKR_shumilova_1"
-				large = "gfx/leaders/UKR/Snake.dds"
-			}
-		}
-
-	     country_leader = {
-    		desc = "POLITICS_THORVALD_STAUNING_DESC"
-			ideology = libertanian_chuchhe
-			traits = {
-	         	
-	        }
-			expire = "1999.3.1"
-			id = -1
-		}	
-	}
-	UKR_shumilova = {
-		name = "Ирина Шумилова"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_UKR_shumilova_1"
-				large = "gfx/leaders/UKR/Shumilova.dds"
-			}
-		}
-
-	     country_leader = {
-    		desc = "POLITICS_THORVALD_STAUNING_DESC"
-			ideology = white_polpotism
-			traits = {
-	         	
-	        }
-			expire = "1999.3.1"
-			id = -1
-			visible = {
-			NOT = { has_completed_focus = UKR_socialism_s_chelovecheskim_licom }
-			}
-		}	
-		
-		 country_leader = {
-    		desc = "POLITICS_THORVALD_STAUNING_DESC"
-			ideology = fascism_ideology
-			traits = {
-	         	
-	        }
-			expire = "1999.3.1"
-			id = -1
-			visible = {
-			has_completed_focus = UKR_socialism_s_chelovecheskim_licom
-			}
-		}	
-	}
 	UKR_benya = {
 		name = "Игорь Коломойский"
 
@@ -107,26 +51,6 @@ characters={
 			id = -1
 		}	
 	}
-	UKR_beliy = {
-		name = "Саша Белый"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_UKR_shumilova_1"
-				large = "gfx/leaders/UKR/Sasha_White.dds"
-			}
-		}
-
-	     country_leader = {
-    		desc = "POLITICS_THORVALD_STAUNING_DESC"
-			ideology = postironism
-			traits = {
-	         	
-	        }
-			expire = "1999.3.1"
-			id = -1
-		}	
-	}
 	UKR_poter_net = {
 		name = "Дмитрий Тымчук"
 
@@ -139,7 +63,7 @@ characters={
 
 	     corps_commander = {
 			traits = { }
-			skill = 4
+			skill = 2
 			attack_skill = 4
 			defense_skill = 2
 			planning_skill = 2
@@ -267,6 +191,9 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = UKR_bat_sheyh_mansura
+			}
 		}	
 	}
 	UKR_Alexander_Polishchuk = {
@@ -357,6 +284,9 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = UKR_bat_sheyh_mansura
+			}
 		}	
 	}
 	UKR_Isa_Munaev = {
@@ -375,6 +305,9 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = UKR_bat_sheyh_mansura
+			}
 		}	
 	}
 	UKR_Muslim_Cheberloevsky = {
@@ -393,6 +326,9 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = UKR_bat_sheyh_mansura
+			}
 		}	
 	}
 	UKR_Muslim_Maliev = {
@@ -411,6 +347,9 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = {
+			has_completed_focus = UKR_bat_sheyh_mansura
+			}
 		}	
 	}
 	UKR_Semyon_Semenchenko = {
@@ -423,7 +362,7 @@ characters={
 		}
 	    corps_commander = {
 			traits = { politically_connected militias_officer scavenger }
-			skill = 1
+			skill = 5
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1

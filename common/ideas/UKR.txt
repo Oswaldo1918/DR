@@ -9,22 +9,6 @@ ideas = {
 			    }
 		    }
 			
-			UKR_sabotazh = {
-			
-			    modifier = {
-					consumer_goods_factor = 0.75
-					industrial_capacity_factory = -0.3
-			    	industrial_capacity_dockyard = -0.3
-		        }
-	        }
-			
-			UKR_mafia = {
-			
-			    modifier = {
-					stability_factor = -0.3
-		        }
-	        }
-			
 			UKR_investicii = {
 			
 			    modifier = {
@@ -39,14 +23,6 @@ ideas = {
 		        }
 	        }
 			
-			UKR_fin_nez_a = {
-			
-			    modifier = {
-					consumer_goods_factor = -0.05
-					stability_factor = 0.1
-		        }
-	        }
-			
 			UKR_ch_a_metal = {
 			
 			    modifier = {
@@ -55,16 +31,13 @@ ideas = {
 		        }
 	        }
 			
-			UKR_commun_nas = {
+			UKR_voini_lisu_i = {
 			
 			    modifier = {
-				    conscription = 0.15
-					stability_factor = 0.1
-					army_org_factor = 0.1
-					political_power_factor = 0.1
+					
 		        }
 	        }
-			
+
 			UKR_nahruk_level_1 = {
 			
 			picture = UKR_nahruk

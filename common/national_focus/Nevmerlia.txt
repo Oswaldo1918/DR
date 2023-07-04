@@ -59,18 +59,18 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_armiya
 		}
-		x = 8
+		x = 9
 		y = 3
 
 	}
 	focus = {
-		id = UKR_poter_net
-		icon = GFX_focus_generic_manpower
+		id = UKR_oborona_v_kotlah
+		icon = GFX_militarism
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_kiborgi
 		}
-		x = 6
+		x = 8
 		y = 4
 
 	}
@@ -354,6 +354,11 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
+			available = {
+					NOT = {
+							has_idea = UKR_nahruk_level_10
+						}
+				}
 			completion_reward = {
 					UKR_nahruk_level_up = yes
 				}
@@ -368,6 +373,11 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
+			available = {
+					NOT = {
+							has_idea = UKR_nahruk_level_10
+						}
+				}
 			completion_reward = {
 					UKR_nahruk_level_up = yes
 				}
@@ -393,6 +403,11 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+			available = {
+					NOT = {
+							has_idea = UKR_nahruk_level_10
+						}
+				}
 			completion_reward = {
 					UKR_nahruk_level_up = yes
 				}
@@ -421,6 +436,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_bat_sheyh_mansura
+		icon = GFX_goal_ochkeriyci
+		cost = 3,00
+		prerequisite = {
+			focus = UKR_TsIPSO
+		}
+		x = 26
+		y = 5
+			completion_reward = {
+					add_manpower = 600
+				}
+
+	}
+	focus = {
 		id = UKR_decommunisatsiya
 		icon = GFX_goal_antilenin
 		cost = 5,00
@@ -429,6 +458,11 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
+			available = {
+					NOT = {
+							has_idea = UKR_nahruk_level_10
+						}
+				}
 			completion_reward = {
 					add_political_power = 150
 					UKR_nahruk_level_up = yes
@@ -579,7 +613,7 @@ focus_tree = {
 	focus = {
 		id = UKR_zapadniye_instructori
 		icon = GFX_goal_nato
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = UKR_zagranica_nam_pomozhet
 		}
@@ -596,6 +630,11 @@ focus_tree = {
 		}
 		x = 33
 		y = 2
+			available = {
+					NOT = {
+							has_idea = UKR_nahruk_level_10
+						}
+				}
 			completion_reward = {
 					UKR_nahruk_level_up = yes
 				}
@@ -604,7 +643,7 @@ focus_tree = {
 	focus = {
 		id = UKR_voini_lesu
 		icon = GFX_goal_upa
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_zal_UPA
 		}
@@ -618,7 +657,7 @@ focus_tree = {
 	focus = {
 		id = UKR_ukrainskie_fronti_UPA
 		icon = GFX_goal_front_upa
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_zal_UPA
 		}
@@ -827,7 +866,7 @@ focus_tree = {
 	focus = {
 		id = UKR_kartonnaya_bronya
 		icon = GFX_focus_NOD_tank
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_shushpanzeri
 		}
@@ -856,17 +895,6 @@ focus_tree = {
 								}
 						}
 				}
-
-	}
-	focus = {
-		id = UKR_oborona_v_kotlah
-		icon = GFX_militarism
-		cost = 10,00
-		prerequisite = {
-			focus = UKR_kiborgi
-		}
-		x = 8
-		y = 4
 
 	}
 }
