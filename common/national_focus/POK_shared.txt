@@ -2525,7 +2525,16 @@ completion_reward = {
 		}
 		x = 29
 		y = 11
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+			add_popularity = {
+                ideology = vmestolev
+                popularity = 0.05
+            }
+		}       
 	}
 	shared_focus = {
 		id = POK_subsidii_war_industry
@@ -2664,7 +2673,20 @@ completion_reward = {
 		}
 		x = 27
 		y = 11
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.075
+            }
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.075
+            }
+		}     
 	}
 	shared_focus = {
 		id = POK_not_help_buisness
@@ -3098,7 +3120,17 @@ completion_reward = {
 		}
 		x = 26
 		y = 12
-
+        completion_reward = {
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+			add_stability = 0.05
+		}      
 	}
 	shared_focus = {
 		id = POK_ally_evrosocdems
@@ -3112,7 +3144,17 @@ completion_reward = {
 		}
 		x = 30
 		y = 12
-
+        completion_reward = {
+			add_popularity = {
+                ideology = vmestolev
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+			add_stability = 0.05
+		}        
 	}
 	shared_focus = {
 		id = POK_libdem_purity
@@ -3128,7 +3170,24 @@ completion_reward = {
 		}
 		x = 28
 		y = 12
-
+        completion_reward = {
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.075
+            }
+			add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
+			add_popularity = {
+                ideology = neutrality
+                popularity = -0.05
+            }
+			add_popularity = {
+                ideology = vmestolev
+                popularity = -0.05
+            }
+		}      
 	}
 	shared_focus = {
 		id = POK_fem_batalion
@@ -3292,7 +3351,10 @@ available = {
 		}
 		x = 28
 		y = 13
-
+        completion_reward = {
+            add_political_power = 100
+            add_ideas = POK_garantii_svobodi    			
+        }   
 	}
 	shared_focus = {
 		id = POK_social_garantii
@@ -3314,7 +3376,9 @@ available = {
 		}
 		x = 26
 		y = 13
-
+        completion_reward = {
+			add_ideas = POK_garantii_loyalnosti_mon
+		}       
 	}
 	shared_focus = {
 		id = POK_new_history
