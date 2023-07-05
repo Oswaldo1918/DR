@@ -876,10 +876,9 @@ add_political_power = 40
 		}
 		x = 30
 		y = 16
-			completion_reward = {
-
-}
-
+		completion_reward = {
+            add_ideas = POK_law_of_Novodvorskava     
+        }
 	}
 	shared_focus = {
 		id = POK_sderzhki_i_protivovesi
@@ -1165,14 +1164,13 @@ add_political_power = 40
 		}
 		x = 19
 		y = 9
-			completion_reward = {
-					add_ideas = POK_protect_burjua
-					swap_ideas = {
-							remove_idea = POK_Metostazi_sovka
-							add_idea = POK_Metostazi_sovka_1
-						}
-				}
-
+		completion_reward = {
+			add_ideas = POK_protect_burjua
+			swap_ideas = {
+				remove_idea = POK_Metostazi_sovka
+				add_idea = POK_Metostazi_sovka_1
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_chrezvichaniye_p
@@ -2021,10 +2019,9 @@ add_political_power = 40
 		}
 		x = 32
 		y = 16
-		completion_reward = {
-					
-				}
-
+		completion_reward = {   
+			add_ideas = POK_Slovolzhicen_puppet_president
+		}
 	}
 	shared_focus = {
 		id = POK_no_need_president
@@ -2038,9 +2035,10 @@ add_political_power = 40
 		}
 		x = 34
 		y = 16
-completion_reward = {
-					
-				}
+        completion_reward = {   
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 	shared_focus = {
 		id = POK_kanzler
@@ -2312,7 +2310,29 @@ completion_reward = {
 		}
 		x = 26
 		y = 16
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = vmestolev
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.075
+            }
+			add_stability = -0.1   
+			swap_ideas = {
+				remove_idea = POK_radical_decommunisation
+				add_idea = POK_radical_decommunisation_1
+			}
+		}       
 	}
 	shared_focus = {
 		id = POK_purge_of_unloyal
@@ -2532,7 +2552,7 @@ completion_reward = {
                 popularity = 0.15
             }
 			add_popularity = {
-                ideology = vmestolev
+                ideology = anarhostalinism
                 popularity = 0.05
             }
 		}       
@@ -2660,7 +2680,9 @@ completion_reward = {
 		}
 		x = 29
 		y = 14
-
+        completion_reward = {
+		    add_ideas = POK_liberalism_uber_alles
+		}       
 	}
 	shared_focus = {
 		id = POK_ruined_hope_of_peacefull_democratisatsiya
@@ -3096,7 +3118,22 @@ completion_reward = {
 		}
 		x = 27
 		y = 15
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = vmestolev
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.075
+            }
+			add_stability = -0.1
+			add_ideas = POK_radical_decommunisation
+		}    
 	}
 	shared_focus = {
 		id = POK_destroy_sov_buildings
@@ -3107,7 +3144,39 @@ completion_reward = {
 		}
 		x = 28
 		y = 16
-
+        completion_reward = {
+		    every_owned_state = { 
+			    damage_building = {
+                    type = infrastructure
+                    damage = 1
+                }
+			}
+			every_owned_state = { 
+			    damage_building = {
+                    type = industrial_complex
+                    damage = 1
+                }
+			}
+			every_owned_state = { 
+			    damage_building = {
+                    type = arms_factory
+                    damage = 1
+                }
+			}
+			add_popularity = {
+                ideology = vmestolev
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.075
+            }
+			add_stability = -0.1
+		}        
 	}
 	shared_focus = {
 		id = POK_ally_loyal_monarchists
@@ -3147,7 +3216,7 @@ completion_reward = {
 		y = 12
         completion_reward = {
 			add_popularity = {
-                ideology = vmestolev
+                ideology = anarhostalinism
                 popularity = 0.05
             }
 			add_popularity = {
@@ -3185,7 +3254,7 @@ completion_reward = {
                 popularity = -0.05
             }
 			add_popularity = {
-                ideology = vmestolev
+                ideology = anarhostalinism
                 popularity = -0.05
             }
 		}      
@@ -3240,7 +3309,17 @@ available = {
 		}
 		x = 45
 		y = 17
-
+		available = {
+			OR = {      
+		        has_stability > 0.4
+				has_political_power > 280
+				has_completed_focus = POK_the_viborshiki
+		    }
+		}
+        completion_reward = {
+			add_ideas = POK_united_states_of_russia
+			set_cosmetic_tag = POK_USP
+		}    
 	}
 	shared_focus = {
 		id = POK_full_separation
@@ -3288,7 +3367,9 @@ available = {
 		}
 		x = 44
 		y = 18
-
+        completion_reward = {
+			add_ideas = POK_vibornost_vsego
+		}          
 	}
 	shared_focus = {
 		id = POK_sherifs
@@ -3302,7 +3383,9 @@ available = {
 		}
 		x = 45
 		y = 19
-
+        completion_reward = {
+			add_ideas = POK_sherifs
+		}    
 	}
 	shared_focus = {
 		id = POK_new_elections
@@ -3341,7 +3424,9 @@ available = {
 		}
 		x = 30
 		y = 18
-
+        completion_reward = {
+            add_ideas = POK_end_militarism       
+        }       
 	}
 	shared_focus = {
 		id = POK_garantii_svobodi
@@ -3366,7 +3451,16 @@ available = {
 		}
 		x = 30
 		y = 13
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = 0.1
+            }
+		}       
 	}
 	shared_focus = {
 		id = POK_garantii_loyalnosti
@@ -3390,7 +3484,12 @@ available = {
 		}
 		x = 28
 		y = 18
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava_1
+				add_idea = POK_law_of_Novodvorskava_2
+			}
+		}     
 	}
 	shared_focus = {
 		id = POK_private_police
@@ -3401,7 +3500,9 @@ available = {
 		}
 		x = 35
 		y = 17
-
+        completion_reward = {
+			add_ideas = POK_private_police
+		}     
 	}
 	shared_focus = {
 		id = POK_chaging_mentality
@@ -3415,7 +3516,12 @@ available = {
 		}
 		x = 29
 		y = 17
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava
+				add_idea = POK_law_of_Novodvorskava_1
+			}
+		}    
 	}
 	shared_focus = {
 		id = POK_exploit_rusosovki
@@ -3426,7 +3532,10 @@ available = {
 		}
 		x = 26
 		y = 18
-
+        completion_reward = {
+            add_stability = -0.1  		
+			add_ideas = POK_exploit_rusosovkov
+		}   
 	}
 	shared_focus = {
 		id = POK_proshay_nemitaya_rossiya
@@ -3455,7 +3564,12 @@ available = {
 		}
 		x = 31
 		y = 17
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava
+				add_idea = POK_law_of_Novodvorskava_4
+			}
+		}      
 	}
 	shared_focus = {
 		id = POK_destroy_socrealism_art
@@ -3469,7 +3583,25 @@ available = {
 		}
 		x = 27
 		y = 17
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = vmestolev
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.075
+            }
+			add_stability = -0.1   
+			swap_ideas = {
+				remove_idea = POK_radical_decommunisation_1
+				add_idea = POK_radical_decommunisation_2
+			}
+		}   
 	}
 	shared_focus = {
 		id = POK_destroy_soviet_military
@@ -3483,7 +3615,26 @@ available = {
 		}
 		x = 27
 		y = 19
-
+        completion_reward = {
+		    add_popularity = {
+                ideology = vmestolev
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = anarhostalinism
+                popularity = -0.075
+            }
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.075
+            }
+			add_stability = 0.15
+            add_war_support = -0.15     			
+			swap_ideas = {
+				remove_idea = POK_radical_decommunisation_2
+				add_idea = POK_radical_decommunisation_3
+			}
+		}    
 	}
 	shared_focus = {
 		id = POK_support_small_buisness
@@ -3494,7 +3645,9 @@ available = {
 		}
 		x = 36
 		y = 16
-
+        completion_reward = {
+            add_ideas = POK_support_small_buisness       
+        }     
 	}
 	shared_focus = {
 		id = POK_small_buisnes_submarines
@@ -3505,7 +3658,9 @@ available = {
 		}
 		x = 37
 		y = 17
-
+        completion_reward = {
+            add_ideas = POK_small_buisnes_submarines       
+        }   
 	}
 	shared_focus = {
 		id = POK_stop_teaching
@@ -3516,7 +3671,12 @@ available = {
 		}
 		x = 32
 		y = 18
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava_4
+				add_idea = POK_law_of_Novodvorskava_5
+			}
+		}     
 	}
 	shared_focus = {
 		id = POK_elini_i_morloki
@@ -3527,7 +3687,12 @@ available = {
 		}
 		x = 31
 		y = 19
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava_5
+				add_idea = POK_law_of_Novodvorskava_6
+			}
+		}      
 	}
 	shared_focus = {
 		id = POK_new_new_russian
@@ -3538,7 +3703,12 @@ available = {
 		}
 		x = 29
 		y = 19
-
+        completion_reward = {   
+			swap_ideas = {
+				remove_idea = POK_law_of_Novodvorskava_2
+				add_idea = POK_law_of_Novodvorskava_3
+			}
+		}    
 	}
 	shared_focus = {
 		id = POK_k_USA_cherez_vostok
@@ -3625,28 +3795,27 @@ available = {
 		}
 		x = 16
 		y = 20
-			completion_reward = {
-					army_experience = 10
-					if = {
-							limit = {
-									has_idea = full_contract_army
-								}
-							swap_ideas = {
-									remove_idea = full_contract_army
-									add_idea = full_contract_army_1
-								}
-						}
-					if = {
-							limit = {
-									has_idea = POK_freedom_folkshturm
-								}
-							swap_ideas = {
-									remove_idea = POK_freedom_folkshturm
-									add_idea = POK_freedom_folkshturm_1
-								}
-						}
+		completion_reward = {
+			army_experience = 10
+			if = {
+				limit = {
+					has_idea = full_contract_army
 				}
-
+				swap_ideas = {
+					remove_idea = full_contract_army
+					add_idea = full_contract_army_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = POK_freedom_folkshturm
+				}
+				swap_ideas = {
+					remove_idea = POK_freedom_folkshturm
+					add_idea = POK_freedom_folkshturm_1
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_platit_nazmenam
