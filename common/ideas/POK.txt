@@ -1794,6 +1794,556 @@ ideas = {
                 stability_factor = 0.03 				
 			}
 		}
+		POK_garantii_loyalnosti_mon = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = -0.1
+				conscription_factor = 0.05
+                war_support_factor = 0.05
+                stability_factor = 0.05 				
+			}
+		}
+		POK_garantii_svobodi = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.1
+				consumer_goods_factor = 0.01
+                war_support_factor = -0.05
+                stability_factor = 0.1 				
+			}
+		}
+		POK_liberalism_uber_alles = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.05
+				consumer_goods_factor = -0.02
+                war_support_factor = 0.025
+                stability_factor = 0.025
+                monthly_population = -0.15                    				
+			}
+		}
+		POK_radical_decommunisation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.05
+				consumer_goods_factor = 0.02
+                war_support_factor = 0.025
+                stability_factor = -0.1
+                vmestolev_drift = -0.01
+                anarhostalinism_drift = -0.01
+                metacommy_drift	 = -0.01
+                anarhostalinism_acceptance = -50  
+                vmestolev_acceptance = -50      
+                metacommy_acceptance = -50   
+			}
+		}
+		POK_radical_decommunisation_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.075
+				research_speed_factor = -0.05
+				consumer_goods_factor = 0.01
+                war_support_factor = 0.075
+                stability_factor = -0.125
+                vmestolev_drift = -0.03
+                anarhostalinism_drift = -0.03
+                metacommy_drift	 = -0.03
+				drift_defence_factor = 0.15
+                anarhostalinism_acceptance = -50  
+                vmestolev_acceptance = -50      
+                metacommy_acceptance = -50   
+			}
+		}
+		POK_radical_decommunisation_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.1
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.01
+                war_support_factor = 0.1
+                stability_factor = -0.15
+                vmestolev_drift = -0.05
+                anarhostalinism_drift = -0.05
+                metacommy_drift	 = -0.05
+				drift_defence_factor = 0.3
+                anarhostalinism_acceptance = -50  
+                vmestolev_acceptance = -50      
+                metacommy_acceptance = -50   
+			}
+		}
+		POK_radical_decommunisation_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.1
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.01
+                war_support_factor = 0.1
+                stability_factor = -0.15
+                vmestolev_drift = -0.05
+                anarhostalinism_drift = -0.05
+                metacommy_drift	 = -0.05
+				drift_defence_factor = 0.3
+                anarhostalinism_acceptance = -50  
+                vmestolev_acceptance = -50      
+                metacommy_acceptance = -50
+                conscription_factor = -0.1
+                training_time_factor = 0.1
+                army_org_factor = -0.1
+                production_speed_industrial_complex_factor = 0.25
+                production_speed_infrastructure_factor = 0.25 
+                production_speed_arms_factory_factor = -0.25  				
+			}
+		}
+		POK_exploit_rusosovkov = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = -0.05
+				consumer_goods_factor = -0.1
+                stability_factor = -0.075
+                monthly_population = -0.5
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.15
+                industry_free_repair_factor = 0.15    				
+			}
+		}
+		POK_law_of_Novodvorskava = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.05
+				consumer_goods_factor = -0.1
+                stability_factor = -0.5
+				war_support_factor = -0.5
+                research_speed_factor = -0.025
+                drift_defence_factor = 0.15 
+  			    conscription_factor = -0.5         	
+			}
+		}
+		POK_law_of_Novodvorskava_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.05
+				consumer_goods_factor = -0.075
+                stability_factor = -0.4
+				war_support_factor = -0.5
+                research_speed_factor = -0.015
+                drift_defence_factor = 0.2 
+  			    conscription_factor = -0.45         	
+			}
+		}
+		POK_law_of_Novodvorskava_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.075
+				consumer_goods_factor = -0.05
+                stability_factor = -0.3
+				war_support_factor = -0.55
+                research_speed_factor = 0.015
+                drift_defence_factor = 0.25 
+  			    conscription_factor = -0.35         	
+			}
+		}
+		POK_law_of_Novodvorskava_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.1
+				consumer_goods_factor = -0.025
+                stability_factor = -0.25
+				war_support_factor = -0.6
+                research_speed_factor = 0.05
+                drift_defence_factor = 0.3 
+  			    conscription_factor = -0.15         	
+			}
+		}
+		POK_law_of_Novodvorskava_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.025
+				consumer_goods_factor = -0.125
+                stability_factor = -0.55
+				war_support_factor = -0.4
+                research_speed_factor = -0.025
+                drift_defence_factor = 0.25 
+  			    conscription_factor = -0.55
+                conscription = 0.02
+                army_attack_factor = 0.05     				
+			}
+		}
+		POK_law_of_Novodvorskava_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.025
+				consumer_goods_factor = -0.125
+                stability_factor = -0.55
+				war_support_factor = -0.35
+                research_speed_factor = -0.075
+                drift_defence_factor = 0.5 
+  			    conscription_factor = -0.6
+                conscription = 0.03
+                army_attack_factor = 0.05       				
+			}
+		}
+		POK_law_of_Novodvorskava_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+			    political_power_gain = 0.025
+				consumer_goods_factor = -0.15
+                stability_factor = -0.65
+				war_support_factor = -0.35
+                research_speed_factor = -0.1
+                drift_defence_factor = 0.6 
+  			    conscription_factor = -0.65
+                conscription = 0.05
+                army_attack_factor = 0.075
+                production_speed_buildings_factor = 0.075
+                industrial_capacity_factory = 0.075
+                industry_free_repair_factor = 0.075  				
+			}
+		}
+		POK_end_militarism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				encryption_factor = -0.4
+				decryption_factor = -0.4
+				agency_upgrade_time = 0.15
+			}
+		}
+		POK_support_small_buisness = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.025
+				production_speed_buildings_factor = -0.1
+				line_change_production_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+                production_factory_max_efficiency_factor = 0.025 
+                production_factory_start_efficiency_factor = -0.1
+                production_lack_of_resource_penalty_factor = -0.025       				
+			}
+		}
+		POK_small_buisnes_submarines = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_efficiency_gain_factor = 0.05       				
+			}
+		}
+		POK_private_police = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.075
+				resistance_damage_to_garrison = -0.15                    				
+			}
+		}
+		POK_Slovolzhicen_puppet_president = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.075                  				
+			}
+		}
+		POK_sherifs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				resistance_damage_to_garrison = -0.15                  				
+			}
+		}
+		POK_vibornost_vsego = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = -0.025
+				political_power_factor = 0.05
+                war_support_factor = 0.05
+                political_advisor_cost_factor = 0.15     				
+			}
+		}
+		POK_united_states_of_russia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = 0.05
+				compliance_growth = 0.05
+                non_core_manpower = 0.15    				
+			}
+		}
     }
 	
 	tank_manufacturer = { 
