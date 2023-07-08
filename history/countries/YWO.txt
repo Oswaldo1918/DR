@@ -11,12 +11,14 @@ set_technology = {
 }
 
 add_ideas = {
-		closed_economy
-	    limited_conscription 
-	    partial_economic_mobilisation
-		YWO_wolf_society
-		YWO_svyashechennoe_pisanie_patsanskikh_tsitat
-	}
+	closed_economy
+	limited_conscription 
+	partial_economic_mobilisation
+	YWO_wolf_society
+	YWO_svyashechennoe_pisanie_patsanskikh_tsitat
+}
+
+add_timed_idea = { idea = MAG_war_za_DV days = 730 }
 
 declare_war_on = {
 	target = MAG

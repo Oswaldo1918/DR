@@ -42,6 +42,8 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+add_timed_idea = { idea = MAG_war_za_DV days = 730 }
+
 declare_war_on = {
 	target = KOL
 	type = annex_everything
