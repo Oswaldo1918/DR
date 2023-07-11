@@ -16,6 +16,8 @@ low_economic_mobilisation
 YAK_war_against_devils
 }
 
+add_timed_idea = { idea = MAG_war_za_DV days = 730 }
+
 declare_war_on = {
 	target = MAG
 	type = annex_everything

@@ -48,6 +48,16 @@ ideas = {
 			   production_speed_buildings_factor = 0.1 
 			   }
 		    }
+			MAG_war_za_DV = {
+
+			    picture = chi_incompetent_officers
+			
+			    modifier = {
+			    weekly_manpower = 250
+			    army_speed_factor = 0.5
+                acclimatization_cold_climate_gain_factor = 0.5       			   
+			    }
+		    }
 	   }
 		
 }
