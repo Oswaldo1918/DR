@@ -433,6 +433,10 @@ focus_tree = {
 		}
 		x = 26
 		y = 3
+		
+		completion_reward = {
+					add_ideas = UKR_tsipso_i
+				}
 
 	}
 	focus = {
@@ -446,6 +450,7 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_manpower = 600
+					CHK = { add_opinion_modifier = { target = UKR modifier = sanctions } }
 				}
 
 	}
@@ -459,14 +464,15 @@ focus_tree = {
 		x = 28
 		y = 1
 			available = {
-					NOT = {
-							has_idea = UKR_nahruk_level_10
-						}
+				NOT = {
+					has_idea = UKR_nahruk_level_10
 				}
+			}
+			
 			completion_reward = {
-					add_political_power = 150
-					UKR_nahruk_level_up = yes
-				}
+				add_political_power = 150
+				UKR_nahruk_level_up = yes
+			}
 
 	}
 	focus = {
@@ -476,8 +482,21 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_decommunisatsiya
 		}
+		available = {
+	        NOT = {
+				has_idea = UKR_nahruk_level_10
+			}
+			country_exists = EUF
+				EUF = {
+					has_war = no
+				}
+			}
 		x = 28
 		y = 2
+			completion_reward = {
+					add_political_power = 150
+					UKR_nahruk_level_up = yes
+				}
 
 	}
 	focus = {
@@ -488,7 +507,18 @@ focus_tree = {
 			focus = UKR_Ukraine_tse_Europe
 		}
 		x = 28
-		y = 3
+		y = 3	
+		available = {
+				NOT = {
+					has_idea = UKR_nahruk_level_10
+				}
+			}
+		
+		completion_reward = {
+					add_stability = -0.05
+					add_war_support = 0.075
+					UKR_nahruk_level_up = yes
+				}
 
 	}
 	focus = {
@@ -512,8 +542,19 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_Ukraine_tse_Europe
 		}
+		available = {
+					country_exists = EUF
+							EUF = {
+									has_war = no
+								}
+				}
 		x = 30
 		y = 3
+		
+		completion_reward = {
+					EUF = { add_opinion_modifier = { target = UKR modifier = tripartite_pact_opinion } }
+					UKR = { add_opinion_modifier = { target = EUF modifier = tripartite_pact_opinion } }
+				}
 
 	}
 	focus = {
@@ -619,6 +660,18 @@ focus_tree = {
 		}
 		x = 30
 		y = 5
+		available = {
+					country_exists = EUF
+							EUF = {
+									has_war = no
+								}
+				}
+		completion_reward = {
+					army_experience = 15
+					air_experience = 15
+					navy_experience = 15
+					add_command_power = 20
+				}
 
 	}
 	focus = {
@@ -652,6 +705,10 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
+		
+		completion_reward = {
+					add_ideas = UKR_voini_lisu_i
+				}
 
 	}
 	focus = {
@@ -690,6 +747,10 @@ focus_tree = {
 		}
 		x = 35
 		y = 1
+		
+		completion_reward = {
+					add_country_leader_trait = dictator
+				}
 
 	}
 	focus = {
@@ -704,6 +765,10 @@ focus_tree = {
 		}
 		x = 37
 		y = 1
+		
+		completion_reward = {
+					add_country_leader_trait = uvazhaemiy_partner
+				}
 
 	}
 	focus = {
@@ -716,9 +781,15 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_uvazhaemiy_partner
 		}
+		available = {
+					country_exists = GEO
+				}
 		x = 36
 		y = 2
-
+            completion_reward = {
+					GEO = { add_opinion_modifier = { target = UKR modifier = tripartite_pact_opinion } }
+					UKR = { add_opinion_modifier = { target = GEO modifier = tripartite_pact_opinion } }
+				}
 	}
 	focus = {
 		id = UKR_sanitarniy_kordon
@@ -727,9 +798,14 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_uluchshit_otnoshenye_s_guziyey
 		}
+		available = {
+					country_exists = GEO
+				}
 		x = 36
 		y = 3
-
+            completion_reward = {
+					create_faction = Sanitar_Kordon
+				}
 	}
 	focus = {
 		id = UKR_ATO
@@ -825,6 +901,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
+		
+		completion_reward = {
+            add_resource = { type = steel amount = 25 state = 226 }                                
+        }
 
 	}
 	focus = {

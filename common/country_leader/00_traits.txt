@@ -11,7 +11,12 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 	}
 	
-	 poroshenko_title = {
+	uvazhaemiy_partner = {
+		random = no
+		opinion_gain_monthly_factor = 0.5
+	} 
+	
+	poroshenko_title = {
 		random = no
 		stability_factor = -0.1
 		war_support_factor = 0.05
