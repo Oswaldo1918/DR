@@ -522,3 +522,59 @@ news_event = { #Цуканов_совершает_госпереворот
 		name = dk_news.20.a
 	}
 }
+news_event = { #компрамат_на_покаяна
+    id = dk_news.21
+	title = dk_news.21.t
+	desc = dk_news.21.d
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.21.a
+	}
+}
+news_event = { #компрамат_на_либералов
+    id = dk_news.22
+	title = dk_news.22.t
+	desc = dk_news.22.d
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.22.a
+	}
+}
+news_event = { #компрамат_на_наци
+    id = dk_news.23
+	title = dk_news.23.t
+	desc = dk_news.23.d
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.23.a
+	}
+}
+news_event = { #компрамат_на_Пушного
+    id = dk_news.24
+	title = dk_news.24.t
+	desc = dk_news.24.d
+	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.24.a
+	}
+}

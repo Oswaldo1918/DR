@@ -371,6 +371,13 @@ country_event = {
 	
 	option = {
 	name = POK.13.a
+	add_popularity = {
+                ideology = democratic
+                popularity = 0.01
+            }
+	add_political_power = 20
+	add_to_variable = { barkov_coup = -1 }
+    custom_effect_tooltip = POK_1_aprove_tt	
 	}
 }
 country_event = {
@@ -394,6 +401,14 @@ country_event = {
 	
 	option = {
 	name = POK.14.a
+	add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+	add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }		
 	}
 }
 country_event = {
@@ -410,15 +425,54 @@ country_event = {
 	
 	option = {
 	name = POK.15.a
+	trigger = {
+		 has_completed_focus = POK_Pokayan_interview
+	}
+	news_event = {
+							id = dk_news.21
+						}
+	add_stability = -0.05
+	 add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
 	}
 	option = {
 	name = POK.15.b
+	news_event = {
+							id = dk_news.22
+						}
+	add_stability = -0.05
+	 add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
 	}
 	option = {
 	name = POK.15.c
+	news_event = {
+							id = dk_news.23
+						}
+	add_stability = -0.05
+	 add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
 	}
 	option = {
-	name = POK.15.d
+	name = POK.15.e
+	trigger = {
+		 has_completed_focus = POK_support_itelligentsiya
+	}
+	news_event = {
+							id = dk_news.24
+						}
+	add_stability = -0.05
+	remove_ideas = POK_support_itelligentsiya
+	add_popularity = {
+                ideology = memoism
+                popularity = -0.05
+            }
 	}
 }
 country_event = {
@@ -451,6 +505,9 @@ country_event = {
 	
 	option = {
 	name = POK.17.a
+	}
+	option = {
+	name = POK.17.b
 	}
 }
 
