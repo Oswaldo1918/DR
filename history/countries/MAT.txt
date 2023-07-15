@@ -87,10 +87,7 @@ if = {
 		}
 	}
 }
-IF = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
+
 	set_power_balance = {
 		id = MAT_hui_znaet_balance
 		
@@ -100,7 +97,7 @@ IF = {
 
 		set_value = 0
 	}
-}
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
