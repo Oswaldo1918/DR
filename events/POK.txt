@@ -214,6 +214,10 @@ country_event = {
 				damage = 1.0
 			}
 		}
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.05
+}
 	}
 	
 }
@@ -290,12 +294,56 @@ country_event = {
 	
 	option = {
 	name = POK.10.a
+	hidden_effect = {
 	country_event = { id = POK.12 }
+	}
+	add_popularity = {
+                ideology = democracy
+                popularity = 0.03
+            }
+	add_popularity = {
+                ideology = memoism
+                popularity = 0.03
+            }		
+	add_popularity = {
+                ideology = fascism
+                popularity = 0.03
+            }
+	add_popularity = {
+                ideology = neutrality
+                popularity = 0.03
+            }		
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.05
+}
 	}
 	
 	option = {
 	name = POK.10.b
+	hidden_effect = {
 	country_event = { id = POK.12 }
+	}
+	add_popularity = {
+                ideology = democracy
+                popularity = 0.03
+            }
+	add_popularity = {
+                ideology = vmestolev
+                popularity = 0.03
+            }	
+	add_popularity = {
+                ideology = anarhostalinism
+                popularity = 0.03
+            }
+	add_popularity = {
+                ideology = metacommy
+                popularity = 0.03
+            }		
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.05
+}
 	}
 }
 
@@ -376,8 +424,6 @@ country_event = {
                 popularity = 0.01
             }
 	add_political_power = 20
-	add_to_variable = { barkov_coup = -1 }
-    custom_effect_tooltip = POK_1_aprove_tt	
 	}
 }
 country_event = {
@@ -436,6 +482,10 @@ country_event = {
                 ideology = democratic
                 popularity = -0.05
             }
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.05
+}
 	}
 	option = {
 	name = POK.15.b
@@ -447,6 +497,10 @@ country_event = {
                 ideology = democratic
                 popularity = -0.05
             }
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.05
+}	
 	}
 	option = {
 	name = POK.15.c
@@ -473,6 +527,10 @@ country_event = {
                 ideology = memoism
                 popularity = -0.05
             }
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.01
+}	
 	}
 }
 country_event = {
@@ -489,6 +547,10 @@ country_event = {
 	
 	option = {
 	name = POK.16.a
+	add_popularity = {
+                ideology = memoism
+                popularity = 0.03
+            }
 	}
 }
 country_event = {
@@ -505,9 +567,25 @@ country_event = {
 	
 	option = {
 	name = POK.17.a
+	add_popularity = {
+                ideology = democracy
+                popularity = 0.03
+            }
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.05
+}
 	}
 	option = {
 	name = POK.17.b
+	add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.05
+}
 	}
 }
 
@@ -525,6 +603,15 @@ country_event = {
 	
 	option = {
 	name = POK.18.a
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.1
+}
+add_popularity = {
+                ideology = fascism
+                popularity = 0.12
+            }
+			add_manpower = 10000
 	}
 }
 
@@ -542,5 +629,46 @@ country_event = {
 	
 	option = {
 	name = POK.19.a
+	add_popularity = { 
+	ideology = vmestolev 
+	popularity = 0.1 
+	}
+	add_named_threat = { threat = 2 name = POK_1 }
+	}
+}
+country_event = {
+	id = POK.20
+	title = POK.20.t
+	desc = POK.20.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.20.a
+	add_popularity = { 
+	ideology = memoism 
+	popularity = 0.1 
+	}
+	}
+}
+country_event = {
+	id = POK.21
+	title = POK.21.t
+	desc = POK.21.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.21.a
 	}
 }
