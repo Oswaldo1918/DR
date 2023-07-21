@@ -677,3 +677,23 @@ country_event = {
 	name = POK.21.a
 	}
 }
+country_event = {
+	id = POK.21
+	title = POK.21.t
+	desc = POK.21.d
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.21.a
+	add_popularity = { 
+	ideology = metacommy 
+	popularity = 0.1 
+	}
+	}
+}
