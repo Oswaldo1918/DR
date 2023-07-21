@@ -253,10 +253,6 @@ country_event = {
 	
 	option = {
 	name = POK.8.a
-	add_power_balance_value = {
-    id = POK_prepar_balance 
-    value = -0.1
-}
 	}
 } 
 
@@ -678,9 +674,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = POK.21
-	title = POK.21.t
-	desc = POK.21.d
+	id = POK.22
+	title = POK.22.t
+	desc = POK.22.d
 	picture = GFX_report_event_japanese_soldiers_01
 	
 	trigger = {
@@ -690,7 +686,7 @@ country_event = {
 	is_triggered_only = yes	
 	
 	option = {
-	name = POK.21.a
+	name = POK.22.a
 	add_popularity = { 
 	ideology = metacommy 
 	popularity = 0.1 
