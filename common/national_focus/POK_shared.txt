@@ -801,6 +801,10 @@ country_event = { id = POK.18 }
 			completion_reward = {
 					army_experience = 5
 					country_event = { id = POK.19 }
+				add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.1
+}	
 				}
 	}
 	shared_focus = {
@@ -1294,7 +1298,11 @@ country_event = { id = POK.21 }
 		y = 12
         completion_reward = {
             add_stability = 0.075
-            add_political_power = -50    			
+            add_political_power = -50   
+ 			add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.1
+}
         }      
 	}
 	shared_focus = {
@@ -1337,7 +1345,11 @@ country_event = { id = POK.21 }
 				bonus = 0.25
 				uses = 1
 				category = armor
-			}     			
+			} 
+			add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.1
+}
         }     		
 	}
 	shared_focus = {
@@ -2070,6 +2082,10 @@ country_event = { id = POK.21 }
 		y = 16
 		completion_reward = {   
 			add_ideas = POK_Slovolzhicen_puppet_president
+			add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.05
+}
 		}
 	}
 	shared_focus = {
@@ -2087,6 +2103,10 @@ country_event = { id = POK.21 }
         completion_reward = {   
 			add_stability = 0.05
 			add_political_power = 100
+			add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = 0.1
+}
 		}
 	}
 	shared_focus = {

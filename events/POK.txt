@@ -202,9 +202,9 @@ country_event = {
 	    add_manpower = -25
 		add_political_power = -50
 		add_stability = -0.05
-		add_popularity = { ideology = metacommy popularity = 0.01 }
-		add_popularity = { ideology = vmestolev popularity = 0.01 }
-		add_popularity = { ideology = anarhostalinism popularity = 0.01 }
+		add_popularity = { ideology = metacommy popularity = 0.05 }
+		add_popularity = { ideology = vmestolev popularity = 0.05 }
+		add_popularity = { ideology = anarhostalinism popularity = 0.10 }
 		568 = {
 			limit = {
 				industrial_complex > 0
@@ -253,6 +253,10 @@ country_event = {
 	
 	option = {
 	name = POK.8.a
+	add_power_balance_value = {
+    id = POK_prepar_balance 
+    value = -0.1
+}
 	}
 } 
 
