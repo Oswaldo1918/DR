@@ -330,7 +330,6 @@ POK_srednyaya_asia = {
 		available = {
 		    OR = {      
 		        has_country_flag = pre_max_win
-				has_country_flag = par_win
 		    }      
 			controls_state = 583
 			controls_state = 590
@@ -578,6 +577,7 @@ POK_panoramnoye_okno_v_Evropu = {
 		        type = annex_everything    	
 		}	
 	}
+	}
 	POK_core_SKT = {
 	
 		cost = 30
@@ -807,6 +807,27 @@ POK_panoramnoye_okno_v_Evropu = {
 		remove_effect = {		
 		    declare_war_on = {
 		        target = LAZ
+		        type = annex_everything
+		    }       			
+		}	
+	}
+		POK_war_s_OSV = { 
+	
+		cost = 1
+		
+		fire_only_once = yes
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 100
+		}
+		visible = {
+			oSV = { exists = yes }
+			is_neighbor_of = OSV
+		}
+		remove_effect = {		
+		    declare_war_on = {
+		        target = OSV
 		        type = annex_everything
 		    }       			
 		}	

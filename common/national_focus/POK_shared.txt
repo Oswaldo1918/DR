@@ -833,7 +833,7 @@ country_event = { id = POK.18 }
 		x = 19
 		y = 8
 			completion_reward = {
-country_event = { id = POK.21 }
+country_event = { id = POK.23 }
 }
 
 	}
@@ -873,7 +873,10 @@ country_event = { id = POK.21 }
 			instant_build = yes 
 			}
 			add_extra_state_shared_building_slots = 1		
-		    }    			
+		    }
+			hidden_effect = {
+			country_event = { id = POK.21 }
+			}
         }
 	}
 	shared_focus = {
@@ -1129,6 +1132,22 @@ country_event = { id = POK.21 }
             }
 		}        
 	}
+	
+	shared_focus = {
+		id = POK_podnyat_level_of_corruption
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = POK_GAZPROM
+		}
+		x = 10
+		y = 21
+        completion_reward = {
+		    add_ideas = POK_high_level_of_corruption
+		}      
+	}
+	
+	shared_focus = {
 		id = POK_face_of_state = {
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
@@ -1145,6 +1164,8 @@ country_event = { id = POK.21 }
 			remove_country_leader_trait = razvodyashiy                  			
 		}    
 	}	
+	}
+	
 	shared_focus = {
 		id = POK_under_neutral_flag
 		icon = GFX_goal_unknown
@@ -1158,20 +1179,6 @@ country_event = { id = POK.21 }
 		    add_political_power = -15
 			add_ideas = POK_under_neutral_flag
 		}     
-	}
-	
-	shared_focus = {
-		id = POK_podnyat_level_of_corruption
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = POK_GAZPROM
-		}
-		x = 10
-		y = 21
-        completion_reward = {
-		    add_ideas = POK_high_level_of_corruption
-		}      
 	}
 	
 	shared_focus = {

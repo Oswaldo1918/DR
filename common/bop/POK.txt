@@ -113,9 +113,11 @@ POK_prepar_balance = {
 			}
 			on_activate = {
 					set_country_flag = pre_max_win
+					set_country_flag = pre_win
 				}
 		    on_deactivate = {
 					remove_country_flag = pre_win
+					remove_country_flag = pre_max_win
 				}
 		}
 		range = {

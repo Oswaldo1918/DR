@@ -9,11 +9,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_vibori }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.7
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -46,11 +41,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_vibori }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.6
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -83,11 +73,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_vibori }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.5
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -120,11 +105,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_vibori }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.25
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -157,11 +137,6 @@ country_event = {
 	
 	trigger = {
 		tag = POK
-		NOT = { has_completed_focus = POK_vibori }
-		focus_progress = {
-			focus = POK_vibori
-			progress > 0.4
-		}
 	}
 	
 	is_triggered_only = yes	
@@ -671,6 +646,14 @@ country_event = {
 	
 	option = {
 	name = POK.21.a
+	add_stability = -0.2
+	add_war_support = -0.2
+	add_political_power = -100
+	country_event = { id = POK.1 days = 18}
+	country_event = { id = POK.2 days = 16}
+	country_event = { id = POK.3 days = 19}
+	country_event = { id = POK.4 days = 15}
+	country_event = { id = POK.5 days = 17}
 	}
 }
 country_event = {
@@ -691,5 +674,22 @@ country_event = {
 	ideology = metacommy 
 	popularity = 0.1 
 	}
+	}
+}
+country_event = {
+	id = POK.23
+	title = POK.23.t
+	desc = POK.23.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.23.a
+	add_manpower = -1200
 	}
 }
