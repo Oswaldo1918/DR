@@ -1094,6 +1094,22 @@ ideas = {
 				research_speed_factor = 0.05
 			    }
 			}
+			ZNS_new_korenization = {
+		
+			    picture = chi_incompetent_officers 
+			
+			    removal_cost = -1 
+				
+			    allowed = { always = no } 
+
+
+			    modifier = {
+				political_power_gain = -0.05
+				stability_factor = 0.025
+			    non_core_manpower = 0.15
+				conscription_factor = 0.05
+			    }
+			}
 	   }
 		
 }

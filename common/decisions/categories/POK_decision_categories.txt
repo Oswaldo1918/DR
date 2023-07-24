@@ -2,6 +2,13 @@
   ### CHAT ###
 ################
 
+POK_srednyaya_asia = { 
+ icon = generic_prospect_for_resources
+	visible = {
+		original_tag = POK
+		has_completed_focus = POK_srednyaya_asia
+	}
+}
 
 zahvat_terri = { 
  icon = generic_prospect_for_resources

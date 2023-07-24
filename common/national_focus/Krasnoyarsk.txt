@@ -1310,7 +1310,27 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
-
+        completion_reward = {
+			add_ideas = ZNS_new_korenization
+			if = {
+                limit = {
+                    controls_state = 329
+                }
+                add_manpower = 2000
+            }
+			if = {
+                limit = {
+                    controls_state = 569
+                }
+                add_manpower = 2000
+            }
+			if = {
+                limit = {
+                    controls_state = 654
+                }
+                add_manpower = 2000
+            }
+        }     			
 	}
 	focus = {
 		id = ZNS_razgrom_Pogroma

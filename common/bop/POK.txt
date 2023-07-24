@@ -112,7 +112,7 @@ POK_prepar_balance = {
 				party_popularity_stability_factor = 0.2
 			}
 			on_activate = {
-					set_country_flag = pre_win
+					set_country_flag = pre_max_win
 				}
 		    on_deactivate = {
 					remove_country_flag = pre_win
