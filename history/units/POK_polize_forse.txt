@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "Police Task force"
+
+	division_names_group = POK_ARM_01
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+        light_tank_recon = { x = 0 y = 2 }		
+	}
+	priority = 3
+}
+
+units = {
+	division = {
+		name = "Сводный спецотряд ''Ельцбург''"
+		location = 1821
+		division_template = "Police Task force"
+		start_experience_factor = 1
+	}
+}
