@@ -736,7 +736,22 @@ ideas = {
                     reliability = 0.1	instant = yes
 				}
 			}
-		}		
+		}
+        LAZ_pereguzhonnost_genshtaba = {
+			
+		 picture = 
+			
+			removal_cost = -1
+
+			modifier = {
+			    max_command_power = -20
+				max_planning = -0.2
+				planning_speed = -0.2
+                army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.075				
+			}
+		}    		
 	}
 	
 	tank_manufacturer = { 
