@@ -46,7 +46,13 @@ zahvat_terri = {
 		}
 	}
 }
-
+GST_cat = { 
+ icon = generic_prospect_for_resources
+	visible = {
+		original_tag = GAL
+		has_country_flag = GST_stroyka_country_flag
+	}
+}
 GAL_sssr = { 
  icon = generic_prospect_for_resources
     visible = {
@@ -59,14 +65,6 @@ import_marakumbi = {
     visible = {
 		original_tag = GAL
 		has_country_flag = GAL_marakumba_cf
-	}
-}
-
-GST_cat = { 
- icon = generic_prospect_for_resources
-	visible = {
-		original_tag = GAL
-		has_country_flag = GST_stroyka_country_flag
 	}
 }
 
