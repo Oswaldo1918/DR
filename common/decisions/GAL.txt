@@ -53,7 +53,11 @@ GAL_sssr = {
             controls_state = 329
 			controls_state = 567
 			controls_state = 575
-            controls_state = 824			
+            controls_state = 824
+            controls_state = 579
+			controls_state = 580
+			controls_state = 516
+			controls_state = 878  			
 		}
 		ai_will_do = {
         factor = 100
@@ -76,52 +80,15 @@ GAL_sssr = {
 			add_state_core = 567
 			add_state_core = 575
 			add_state_core = 824
+			add_state_core = 579
+			add_state_core = 580
+			add_state_core = 516
+			add_state_core = 878
+			set_cosmetic_tag = GAL_SibRevSovDep
 		}	
 	}
 
 }
-
-import_marakumbi = {
-
-    up_import_marakumbi = {
-        icon = decision_category_generic_economy
-		days_re_enable = 0
-
-        ai_will_do = {
-			factor = 4
-		}
-        visible = {
-	      	has_country_flag = GAL_marakumba_cf
-			NOT = {has_idea = GAL_marakumba_import_3}
-			NOT = {has_idea = GAL_marakumba_6}
-        }
-		
-		complete_effect = {
-            GAL_marakumba_torg_level_up
-		}
-
-    }
-	
-	down_import_marakumbi = {
-        icon = decision_category_generic_economy
-		days_re_enable = 0
-
-        ai_will_do = {
-			factor = 4
-		}
-        visible = {
-            has_country_flag = GAL_marakumba_cf
-			NOT = {has_idea = GAL_marakumba_import_0}
-        }
-		
-		complete_effect = {
-        	GAL_marakumba_torg_level_down
-		}
-
-    }
-	
-}
-
 GST_cat = {
 
  GST_stroyka = {
@@ -192,4 +159,44 @@ GST_cat = {
 
     }
 
+}
+import_marakumbi = {
+
+    up_import_marakumbi = {
+        icon = decision_category_generic_economy
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+        visible = {
+	      	has_country_flag = GAL_marakumba_cf
+			NOT = {has_idea = GAL_marakumba_import_3}
+			NOT = {has_idea = GAL_marakumba_6}
+        }
+		
+		complete_effect = {
+            GAL_marakumba_torg_level_up
+		}
+
+    }
+	
+	down_import_marakumbi = {
+        icon = decision_category_generic_economy
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+        visible = {
+            has_country_flag = GAL_marakumba_cf
+			NOT = {has_idea = GAL_marakumba_import_0}
+        }
+		
+		complete_effect = {
+        	GAL_marakumba_torg_level_down
+		}
+
+    }
+	
 }
