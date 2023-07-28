@@ -29,6 +29,7 @@ country_event = { id = POK.7 }
 		y = 20
 		available = {
 			has_war = no
+			has_country_flag = civil_war_end
 		}
 			completion_reward = {
 
@@ -1526,6 +1527,9 @@ country_event = { id = POK.23 }
 		}
 		x = 19
 		y = 10
+		available = {
+			has_war = yes
+		}
 			completion_reward = {
 					random_owned_controlled_state = {
 							limit = {

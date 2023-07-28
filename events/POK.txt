@@ -646,6 +646,18 @@ country_event = {
 	
 	option = {
 	name = POK.21.a
+	kill_country_leader = yes
+					add_country_leader_role = {
+							character = POK_Slovolzhicen
+							promote_leader = yes
+							country_leader = {
+									ideology = liberalism
+									expire = "1965.1.1.1"
+									traits = {
+
+}
+								}
+						}
 	add_stability = -0.2
 	add_war_support = -0.2
 	add_political_power = -100
