@@ -30,8 +30,8 @@ ideologies = {
 		
 		color = { 255 43 43 }
 		
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
+		war_impact_on_world_tension = 1.0			
+		faction_impact_on_world_tension = 1.0
 		
 		ai_anarhostalinism = yes 
 		
@@ -93,8 +93,8 @@ ideologies = {
 		
 		color = { 255 0 0 }
 		
-		war_impact_on_world_tension = 0.75		
-		faction_impact_on_world_tension = 0.5
+		war_impact_on_world_tension = 1.0			
+		faction_impact_on_world_tension = 1.0
 		
 		ai_anarhostalinism = yes 
 		
@@ -166,8 +166,8 @@ ideologies = {
 		
 		color = { 146 0 10 }
 		
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
+		war_impact_on_world_tension = 1.0			
+		faction_impact_on_world_tension = 1.0
 		
 		ai_metacommy = yes 
 		
@@ -233,21 +233,18 @@ ideologies = {
 		
 		color = { 0 0 255 }
 		
-		rules = {
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = no
+rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
 			can_create_factions = no
 			can_join_factions = no
 			can_join_factions_not_allowed_diplomacy = no
 			can_join_opposite_factions = no
+			can_guarantee_other_ideologies = no
 		}
-		
-		modifiers = {
+
+modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
 			hidden_modifiers = {
@@ -261,8 +258,8 @@ ideologies = {
 		
 		can_host_government_in_exile = yes
 		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
+		war_impact_on_world_tension = 1.0			
+		faction_impact_on_world_tension = 1.0
 
 		ai_democratic = yes 
 		
@@ -298,8 +295,8 @@ ideologies = {
 		
 		color = { 83 26 80 }
 		
-		war_impact_on_world_tension = 0.25			
-		faction_impact_on_world_tension = 0.1
+		war_impact_on_world_tension = 2.0			
+		faction_impact_on_world_tension = 2.0
 		
 		rules = {
 			can_force_government = no
@@ -378,7 +375,7 @@ modifiers = {
 		
 		color = { 150 75 0 }
 		
-		war_impact_on_world_tension = 1.0			#evil!
+		war_impact_on_world_tension = 1.0			
 		faction_impact_on_world_tension = 1.0
 		
 		rules = {
@@ -439,21 +436,21 @@ modifiers = {
 		color = { 124 124 124 }
 		
 		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
+		war_impact_on_world_tension = 1.0		
+		faction_impact_on_world_tension = 1.0
 		
 		rules = {
 			can_force_government = no
+			can_send_volunteers = yes
 			can_puppet = yes
-			can_send_volunteers = no
 			can_create_factions = no
 			can_join_factions = no
 			can_join_factions_not_allowed_diplomacy = no
 			can_join_opposite_factions = no
 			can_guarantee_other_ideologies = no
 		}
-		
-		modifiers = {
+
+modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
 			hidden_modifiers = {
