@@ -33,7 +33,6 @@ ideas = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
-					has_completed_focus = USA_limited_intervention
 				}
 			}
 			
@@ -65,8 +64,7 @@ ideas = {
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
-					has_war = yes
-					has_completed_focus = USA_limited_intervention					
+					has_war = yes		
 				}
 			}
 			
@@ -222,8 +220,6 @@ ideas = {
 			available = {
 				has_war_support > 0.5
 				OR = {
-					has_government = fascism
-					has_government = vmestolev
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes
@@ -607,19 +603,10 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				OR = { 
-					has_government = fascism
-					has_government = vmestolev
-				}
 				OR = {
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
 				}
-				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
-				}
-
 				if = {
 					limit = {
 						original_tag = CHI
