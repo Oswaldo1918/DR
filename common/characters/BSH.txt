@@ -111,10 +111,10 @@ characters={
 		portraits = {
 		    army = {
 			    large = "gfx/leaders/BSH/Brenya.dds"
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Brenya"
 			}
 			civilian = {     
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Brenya"
 			}
 		}
 		advisor={
@@ -135,7 +135,7 @@ characters={
 		name = "Андрюха"
 		portraits = {
 			civilian = {     
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Andruha"
 			}
 		}
 
@@ -158,7 +158,7 @@ characters={
 		name = "Настя"
 		portraits = {
 			civilian = {     
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Nastya"
 			}
 		}
 
@@ -181,7 +181,7 @@ characters={
 		portraits = {
 			civilian = { 
                 large = "gfx/leaders/BSH/Oleg.dds" 			
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Oleg"
 			}
 		}
         country_leader = {
@@ -211,7 +211,7 @@ characters={
 		portraits = {
 			civilian = { 
                 large = "gfx/leaders/BSH/Tolyan.dds" 			
-				small = "GFX_idea_africa_generic_2"
+				small = "GFX_idea_BSH_Tolyan"
 			}
 		} 
 		advisor={
@@ -238,7 +238,7 @@ characters={
 		name = "Grisha Rak"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
+				large = "gfx/leaders/BSH/grisha_rak.dds"
 			}
 		}
     }
@@ -283,7 +283,7 @@ characters={
 		name = "Гоша Гачивар"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
+				large = "gfx/leaders/BSH/gosha_gachivar.dds"
 			}
 		}
     }
@@ -301,7 +301,7 @@ characters={
 		name = "Владислав Дикун"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
+				large = "gfx/leaders/BSH/vladislave_dikun.dds"
 			}
 		}
     }
@@ -310,7 +310,8 @@ characters={
 		name = "Комиссар Логгейм"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
+				large = "gfx/leaders/BSH/loggame.dds"
+				small = "GFX_idea_BSH_loggame"
 			}
 		}
 		advisor={
@@ -336,7 +337,8 @@ characters={
 		name = "Господин Грузин"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
+				large = "gfx/leaders/BSH/Gruzin.dds"
+				small = "GFX_idea_BSH_Gruzin"
 			}
 		}
 		advisor={
