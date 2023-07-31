@@ -88,20 +88,6 @@ country_event = { #фотожабы
         }
     }
     }
-	add_advisor_role = {
-    character = BSH_vladislave_dikun
-    advisor = {
-        slot = political_advisor
-        cost = 50
-        idea_token = BSH_vladislave_dikun
-        traits = {
-            photozhaber
-        }
-        allowed = {
-            always = yes
-        }
-    }
-    }
 	add_ideas = BSH_photozhabi_iskusstvo
 	}
 	

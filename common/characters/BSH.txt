@@ -293,6 +293,7 @@ characters={
 		portraits = {
 			army = {
 				large = "gfx/leaders/BSH/.dds"
+				small = ".dds"
 			}
 		}
     }
@@ -302,8 +303,21 @@ characters={
 		portraits = {
 			army = {
 				large = "gfx/leaders/BSH/vladislave_dikun.dds"
+				small = "GFX_idea_BSH_vladislave_dikun"
 			}
 		}
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_vladislave_dikun
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { editor_degradach }
+	    }
     }
 	
 	BSH_loggame = {
