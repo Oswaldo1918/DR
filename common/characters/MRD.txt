@@ -1,0 +1,73 @@
+characters = {
+	MRD_Sauron_the_Great = {
+		name = "Саурон Великий"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MRD/Sauron.dds"
+			}
+			army = {
+				large = "gfx/leaders/MRD/Sauron.dds"
+				small = GFX_portrait_Sauron_small
+			}
+		}
+		country_leader = {
+			ideology = sauronism
+			expire = "1999.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {war_hero}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+        }
+	}
+	
+	#####ПОЛИТСОВЕТНИКИ#####
+	
+	MRD_Sarumyan = {
+		name = "Сарумян"
+		portraits = {
+			civilian = {
+				small="GFX_idea_MRD_Sarumyan"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_Sarumyan
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	MRD_madam_Marchiano = {
+		name = "Мадам Марчиано"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MRD_madam_Marchiano"
+			}
+		}
+		gender = female		###Вот_тут_хуй_знает_насамом_деле
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_madam_Marchiano
+			available = {
+				has_country_leader = {
+					character  = MRD_Sauron_the_Great
+				}
+			}
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				first_lady 
+			}
+		}
+	}
+}

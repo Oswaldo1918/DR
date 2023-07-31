@@ -1,0 +1,42 @@
+﻿division_template = {
+	name = "Стрелковая дивизия"				
+
+	division_names_group = MRD_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "7-я стрелковая дивизия"
+		location = 10607
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+	division = {
+		name = "3-я стрелковая дивизия"
+		location = 10607
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+	division = {
+		name = "49-я стрелковая дивизия"
+		location = 10607
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
+	}
+}

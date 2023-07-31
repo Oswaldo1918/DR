@@ -1,0 +1,66 @@
+MRD_poddaniy_dynamic_modifier = { #Мечты_об_идеальном_подданом-->Мегапроект
+	
+	enable = { always = yes }
+	icon = tur_etatism_bonus
+	
+	political_power_factor = MRD_mechti_ob_poddanom_political_power_factor
+	consumer_goods_factor = MRD_mechti_ob_poddanom_consumer_goods_factor
+	monthly_population = MRD_mechti_ob_poddanom_monthly_population
+	conscription_factor = MRD_mechti_ob_poddanom_conscription_factor
+	stability_factor = MRD_mechti_ob_poddanom_stability_factor
+	war_support_factor = MRD_mechti_ob_poddanom_war_support_factor
+	offensive_war_stability_factor = MRD_mechti_ob_poddanom_offensive_war_stability_factor
+	weekly_manpower = MRD_mechti_ob_poddanom_weekly_manpower
+}
+MRD_arbeiten_dynamic_modifier = { #Мрачный_север-->Арбайтен_по_стахановски
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_third_five_year_plan_military
+
+	production_factory_efficiency_gain_factor = MRD_arbeiten_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = MRD_arbeiten_production_factory_max_efficiency_factor
+	local_resources_factor = MRD_arbeiten_local_resources_factor
+	production_factory_start_efficiency_factor = MRD_arbeiten_production_factory_start_efficiency_factor
+	production_speed_buildings_factor = MRD_arbeiten_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = MRD_arbeiten_production_speed_industrial_complex_factor
+	conversion_cost_civ_to_mil_factor = MRD_arbeiten_conversion_cost_civ_to_mil_factor
+	conversion_cost_mil_to_civ_factor = MRD_arbeiten_conversion_cost_mil_to_civ_factor
+	industrial_capacity_dockyard = MRD_arbeiten_industrial_capacity_dockyard
+	industrial_capacity_factory = MRD_arbeiten_industrial_capacity_factory
+	global_building_slots_factor = MRD_arbeiten_global_building_slots_factor
+	production_oil_factor = MRD_arbeiten_production_oil_factor
+	line_change_production_efficiency_factor = MRD_arbeiten_line_change_production_efficiency_factor
+	production_lack_of_resource_penalty_factor = MRD_arbeiten_production_lack_of_resource_penalty_factor
+}
+MRD_legacy_of_army_dynamic_modifier = {	#Преобразование_армии_из_советской_в_мордовскую
+	
+	enable = { always = yes }
+	icon = SOV_war_heroes
+	
+	air_superiority_bonus_in_combat = MRD_legacy_of_army_air_superiority_bonus_in_combat
+	army_org_factor = MRD_legacy_of_army_org_factor
+	army_org_regain = MRD_legacy_of_army_org_regain
+	cas_damage_reduction = MRD_legacy_of_army_cas_damage_reduction
+	dig_in_speed_factor = MRD_legacy_of_army_dig_in_speed_factor
+	org_loss_when_moving = MRD_legacy_of_army_org_loss_when_moving
+	army_attack_factor = MRD_legacy_of_army_army_attack_factor
+	land_night_attack = MRD_legacy_of_army_land_night_attack
+	army_defence_factor = MRD_legacy_of_army_defence_factor
+	
+}
+MRD_mordor_army_dynamic_modifier = { #Мордовская_армия(стоит ли делать отдельно?)
+	
+	enable = { always = yes }
+	icon = SOV_war_heroes
+
+	air_superiority_bonus_in_combat = MRD_mordor_army_air_superiority_bonus_in_combat
+	army_org_factor = MRD_mordor_army_
+	army_org_regain = MRD_mordor_army_army_org_regain
+	cas_damage_reduction = MRD_mordor_army_cas_damage_reduction
+	dig_in_speed_factor = MRD_mordor_army_dig_in_speed_factor
+	org_loss_when_moving = MRD_mordor_army_org_loss_when_moving
+	army_attack_factor = MRD_mordor_army_army_attack_factor
+	land_night_attack = MRD_mordor_army_land_night_attack
+	army_defence_factor = MRD_mordor_army_defence_factor
+
+}

@@ -12,38 +12,18 @@ focus_tree = {
 		
 	continuous_focus_position = { x = 1500 y = 100 }
 	
-	default = no
+	default = no 
+	#Подготовка_к_гражданской_войне_в_Покаянии
 	focus = {
 		id = MRD_logovo_saurona
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 7
 		y = 0
-
-	}
-	focus = {
-		id = MRD_nabrat_dobrovoltsev_v_armii
-		icon = GFX_focus_cht_slave_divisions
-		cost = 5,00
-		x = 9
-		y = 1
-
-	}
-	focus = {
-		id = MRD_poneslas_mocha_po_trubam
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 9
-		y = 6
-
-	}
-	focus = {
-		id = MRD_burzhyi_mochi_kozlov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 38
-		y = 14
-
+		completion_reward = {
+			country_event = mordor.1
+			add_political_power = 70
+		}
 	}
 	focus = {
 		id = MRD_prodvinut_nazgulov
@@ -54,7 +34,10 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-
+		completion_reward = {
+			add_ideas = MRD_idea_nazgul
+			country_event = mordor.8
+		}
 	}
 	focus = {
 		id = MRD_zapustit_nornikel
@@ -65,8 +48,33 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
-
+		completion_reward = {
+			country_event = mordor.2
+			516 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}			
+		}
 	}
+	focus = {
+		id = MRD_nabrat_dobrovoltsev_v_armii
+		icon = GFX_focus_cht_slave_divisions
+		prerequisite = {
+			focus = MRD_logovo_saurona
+		}
+		cost = 5,00
+		x = 9
+		y = 1
+		completion_reward = {
+			add_manpower = -500
+			country_event = mordor.9
+		}
+	}
+
 	focus = {
 		id = MRD_raztat_megaklinki
 		icon = GFX_DOT_custom_weapons
@@ -79,30 +87,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
-
-	}
-	focus = {
-		id = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
-		icon = GFX_focus_POL_warsaw_main_station
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_poneslas_mocha_po_trubam
+		completion_reward = {
+			add_ideas = MRD_beast_weapon
+			every_army_leader = {
+				add_unit_leader_trait = trait_MRD_megaklinok
+			}
 		}
-		x = 7
-		y = 7
-
 	}
-	focus = {
-		id = MRD_v_gorodakh_vino_i_babi
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
-		}
-		x = 6
-		y = 8
 
-	}
 	focus = {
 		id = MRD_razrabotat_megastvoli
 		icon = GFX_focus_ETH_freedom_at_gunpoint
@@ -115,29 +107,13 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
-	}
-	focus = {
-		id = MRD_dopolnitelniye_harchi
-		icon = GFX_focus_cht_zhitnica_evropy
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
 		}
-		x = 8
-		y = 8
-
-	}
-	focus = {
-		id = MRD_sredstvva_svyazi
-		icon = GFX_goal_generic_radar
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_poneslas_mocha_po_trubam
-		}
-		x = 10
-		y = 7
-
 	}
 	focus = {
 		id = MRD_nachinaem_s_dachnikov
@@ -147,8 +123,10 @@ focus_tree = {
 			focus = MRD_logovo_saurona
 		}
 		x = 12
-		y = 1
-
+		y = 1 
+		completion_reward = {
+			country_event = mordor.3
+		}
 	}
 	focus = {
 		id = MRD_porabotit_bezhentsev
@@ -159,7 +137,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = MRD_sistema_trudovikh_lagerei
@@ -176,17 +156,6 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
-	}
-	focus = {
-		id = MRD_rasshireniye_vornproma
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_sistema_trudovikh_lagerei
-		}
-		x = 5
-		y = 4
 
 	}
 	focus = {
@@ -215,6 +184,17 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+
+	}
+	focus = {
+		id = MRD_rasshireniye_vornproma
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_sistema_trudovikh_lagerei
+		}
+		x = 5
+		y = 4
 
 	}
 	focus = {
@@ -247,17 +227,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MRD_mordovsraya_taktika
-		icon = GFX_focus_prc_infiltration
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_poneslas_mocha_po_trubam
-		}
-		x = 12
-		y = 7
-
-	}
-	focus = {
 		id = MRD_armiya_dostoynaya_velikoi_mordovii
 		icon = GFX_ot_baldi
 		cost = 10,00
@@ -274,6 +243,72 @@ focus_tree = {
 		y = 5
 
 	}
+	focus = { #Интервенция_в_гражданскую_войну
+		id = MRD_poneslas_mocha_po_trubam
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 9
+		y = 6
+		available = {
+			always = no
+		}	
+
+	}
+	focus = {
+		id = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_poneslas_mocha_po_trubam
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = MRD_dopolnitelniye_harchi
+		icon = GFX_focus_cht_zhitnica_evropy
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = MRD_v_gorodakh_vino_i_babi
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = MRD_sredstvva_svyazi
+		icon = GFX_goal_generic_radar
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_poneslas_mocha_po_trubam
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = MRD_mordovsraya_taktika
+		icon = GFX_focus_prc_infiltration
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_poneslas_mocha_po_trubam
+		}
+		x = 12
+		y = 7
+
+	}
 	focus = {
 		id = MRD_svazyatsa_s_vladom_makarovim
 		icon = GFX_goal_unknown
@@ -286,7 +321,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 8
-
+		completion_reward = {
+			add_oob = MRD_partizani
+			recruit_character = MRD_Vlad_Makarov
+		}
 	}
 	focus = {
 		id = MRD_seite_razumnoye_dobroye_vechnoye
@@ -305,10 +343,10 @@ focus_tree = {
 		y = 9
 
 	}
-	focus = {
+	focus = { #Победа_в_гражданской_войне
 		id = MRD_perdviy_platsdarm_vzyat
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = MRD_seite_razumnoye_dobroye_vechnoye
 		}
@@ -813,6 +851,14 @@ focus_tree = {
 			focus = MRD_vas_provetstvuyet_chastniy_kapital
 		}
 		x = 36
+		y = 14
+
+	}
+	focus = {
+		id = MRD_burzhyi_mochi_kozlov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 38
 		y = 14
 
 	}

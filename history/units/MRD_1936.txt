@@ -73,27 +73,6 @@ units = {
 		start_experience_factor = 0
 		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
 	}
-	division = {
-		name = "3-я исправительно-трудовая народная дружина им. Саши Белого"
-		location = 4859
-		division_template = "Гарнизонная дивизия"
-		start_experience_factor = 0
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-	division = {
-		name = "4-я народная дружина пьяных лесников"
-		location = 4859
-		division_template = "Гарнизонная дивизия"
-		start_experience_factor = 0
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
-	}
-	division = {
-		name = "Заградотряд Электродрели, батальон «Белые Колготки»"
-		location = 4859
-		division_template = "Гарнизонная дивизия"
-		start_experience_factor = 0.5
-		force_equipment_variants = { infantry_equipment_1 = { owner = "MRD" creator = "LAZ" } }
-	}
 }
 
 ### Starting Equipment ###

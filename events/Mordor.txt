@@ -39,3 +39,117 @@ country_event = { #Идеи_Сарумяна
 		name = mordor.2.a
 	}
 }
+country_event = { #Начинаем_с_дачников
+
+	id = mordor.3
+        title = mordor.3.t
+        desc = mordor.3.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.3.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 516
+				num_provinces = 3
+				on_win = mordor.4
+       			on_lose = mordor.5
+			}
+			defender = {
+				state = 576
+				num_provinces = 3
+				on_win = mordor.6
+       			on_lose = mordor.7
+			}
+		}
+	}
+	option = {
+		name = mordor.3.b
+	}
+}
+country_event = { #Победа_Мордовии_Саурон
+
+	id = mordor.4
+        title = mordor.4.t
+        desc = mordor.4.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.4.a
+		
+	}
+}
+country_event = { #Победа_Мордовии_Покаян
+
+	id = mordor.5
+        title = mordor.5.t
+        desc = mordor.5.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.5.a
+		
+	}
+}
+country_event = { #Победа_Покаянии_Саурон
+
+	id = mordor.6
+        title = mordor.6.t
+        desc = mordor.6.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.6.a
+		
+	}
+}
+country_event = { #Победа_Покаянии_Покаян
+
+	id = mordor.7
+        title = mordor.7.t
+        desc = mordor.7.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.7.a
+		
+	}
+}
+country_event = { #Проблема_назгулов
+
+	id = mordor.8
+        title = mordor.8.t
+        desc = mordor.8.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.8.a
+		
+	}
+}
+country_event = { #Первый_блин
+
+	id = mordor.9
+        title = mordor.9.t
+        desc = mordor.9.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.9.a	
+	}
+}

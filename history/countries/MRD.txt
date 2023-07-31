@@ -2,49 +2,96 @@ capital = 575
 
 oob = MRD_1936
 
+create_intelligence_agency = yes
+country_event = {
+    id = mordor.0
+    days = 10
+}
+
 set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
+set_convoys = 40
+
+set_popularities = {
+	metacommy = 100
+}
+
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
 }
 
 add_ideas = {
-scraping_the_barrel
-tot_economic_mobilisation
-closed_economy
-MRD_mracniy_sever
-MRD_legacy_of_army
-MRD_mechti_ob_poddanom
+	scraping_the_barrel
+	tot_economic_mobilisation
+	closed_economy
+	MRD_mracniy_sever
 }
 
-set_popularities = {
-	metacommy = 100
-}
-set_politics = {
-	ruling_party = metacommy
-	elections_allowed = no	
-}
+#Государственные_руководители
+recruit_character = MRD_Sauron_the_Great
 
-set_convoys = 40
+#Политсоветники
+recruit_character = MRD_Sarumyan
+recruit_character = MRD_madam_Marchiano
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-}
+#Теоретики
 
-create_country_leader = {
-	name = "Саурон"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Sauron.dds"
-	expire = "1999.1.1"
-	ideology = sauronism
-	traits = {
-		mad
-	}
-}
+#Генералы
+
+#Адмиралы
+
+#Авиаторы
+
+#ГЕНШТАБ
+
+
+#МЕГАПРОЕКТ
+set_variable = { MRD_mechti_ob_poddanom_political_power_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_consumer_goods_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_monthly_population = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_conscription_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_stability_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_war_support_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_offensive_war_stability_factor = 0.1  }
+set_variable = { MRD_mechti_ob_poddanom_weekly_manpower = -5 }
+
+add_dynamic_modifier = { modifier = MRD_poddaniy_dynamic_modifier }
+
+#АРБАЙТЕН_ПО-СТАХАНОВСКИ
+set_variable = { MRD_arbeiten_production_factory_efficiency_gain_factor = 0.1  } #-> Сюда надо бы дописать чё какой фокус даёт
+set_variable = { MRD_arbeiten_production_factory_max_efficiency_factor = 0.1  }
+set_variable = { MRD_arbeiten_local_resources_factor = 0.1  }
+set_variable = { MRD_arbeiten_production_factory_start_efficiency_factor = 0.1  }
+set_variable = { MRD_arbeiten_production_speed_buildings_factor = 0.1  }
+set_variable = { MRD_arbeiten_production_speed_industrial_complex_factor = 0.1  }
+set_variable = { MRD_arbeiten_conversion_cost_civ_to_mil_factor = 0.1  }
+set_variable = { MRD_arbeiten_conversion_cost_mil_to_civ_factor = 0.1  }
+set_variable = { MRD_arbeiten_industrial_capacity_dockyard = 0.1  }
+set_variable = { MRD_arbeiten_industrial_capacity_factory = 0.1  }
+set_variable = { MRD_arbeiten_global_building_slots_factor = 0.1  }
+set_variable = { MRD_arbeiten_production_oil_factor = 0.1  }
+set_variable = { MRD_arbeiten_line_change_production_efficiency_factor = 0.1  }
+set_variable = { MRD_arbeiten_production_lack_of_resource_penalty_factor = 0.1  }
+
+add_dynamic_modifier = { modifier = MRD_arbeiten_dynamic_modifier }
+
+#МОРДОВСКАЯ_АРМИЯ
+
+set_variable = { MRD_legacy_of_army_air_superiority_bonus_in_combat = 0.1 }
+set_variable = { MRD_legacy_of_army_org_factor = 0.1 }
+set_variable = { MRD_legacy_of_army_org_regain = 0.1 }
+set_variable = { MRD_legacy_of_army_cas_damage_reduction = 0.1 }
+set_variable = { MRD_legacy_of_army_dig_in_speed_factor = 0.1 }
+set_variable = { MRD_legacy_of_army_org_loss_when_moving = 0.1 }
+set_variable = { MRD_legacy_of_army_army_attack_factor = 0.1 }
+set_variable = { MRD_legacy_of_army_land_night_attack = 0.1 }
+set_variable = { MRD_legacy_of_army_defence_factor = 0.1 }
+
+add_dynamic_modifier = { modifier = MRD_legacy_of_army_dynamic_modifier }

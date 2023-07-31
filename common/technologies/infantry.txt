@@ -2062,23 +2062,7 @@ technologies = {
 		}		
 	}
 	
-	bhammer = {
-		
-		allow = {
-			always = no
-		}
 
-		research_cost = 1
-		start_year = 3
-		
-		enable_equipments = {
-			bhammer_equipment_1
-		}
-
-		enable_subunits = {
-			bhaminf
-		}
-	}
 
 	######### FROM SOVIET FOCUS ##########
 	penal_infantry = {
@@ -2142,6 +2126,40 @@ technologies = {
 		irregular_infantry = {
 			max_organisation = 10
 			maximum_speed = 1.25 #TODO_TA for testing only, remove
+		}
+	}
+
+	### ДОКРЕЙХОВСКИЕ ТЕХНОЛОГИИ
+	
+	bhammer = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 3
+		
+		enable_equipments = {
+			bhammer_equipment_1
+		}
+
+		enable_subunits = {
+			bhaminf
+		}
+	}
+
+	MRD_uruk-hai_battalion_tech = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 3
+
+		enable_subunits = {
+			urki
 		}
 	}
 }
