@@ -324,8 +324,8 @@ focus_tree = {
 		x = 20
 		y = 3
 			completion_reward = {
-
-}
+            add_war_support = 0.075
+            }
 
 	}
 	focus = {
@@ -338,6 +338,7 @@ focus_tree = {
 		x = 20
 		y = 4
 			completion_reward = {
+			        add_stability = 0.05
 					UKR_nahruk_level_down = yes
 				}
 
@@ -422,6 +423,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
+			available = {
+				NOT = {
+					has_idea = UKR_nahruk_level_10
+				}
+			}
+			
+			completion_reward = {
+				add_political_power = 150
+				UKR_nahruk_level_up = yes
+			}
 
 	}
 	focus = {
@@ -533,6 +544,13 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
+		
+		completion_reward = {
+     		swap_ideas = {
+	    		remove_idea = UKR_tsipso_i
+	    		add_idea = UKR_tsipso2_i
+	           	}		
+			}
 
 	}
 	focus = {
@@ -943,17 +961,7 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = UKR_kartonnaya_bronya
-		icon = GFX_focus_NOD_tank
-		cost = 5,00
-		prerequisite = {
-			focus = UKR_shushpanzeri
-		}
-		x = 14
-		y = 6
 
-	}
 	focus = {
 		id = UKR_chushk_or_metal
 		icon = GFX_focus_generic_steel
