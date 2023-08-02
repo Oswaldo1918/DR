@@ -70,4 +70,114 @@ characters = {
 			}
 		}
 	}
+	
+	#####НАЗГУЛ#####
+	
+	MRD_korol_charodey = {
+		name = "Король-чародей Ангмара"
+		portraits = {
+			army = {
+				small = "GFX_idea_korol_charodey"
+				large = "gfx/leaders/MRD/king_charodey.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+			allowed = {
+				original_tag = MRD
+			}
+			traits = {
+				blitzkrieg_theorist army_chief_maneuver_2
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist armor_officer winter_specialist career_officer  offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	MRD_pendalf = {
+		name = "Глеб Егорович Пендальф"
+		portraits = {
+			army = {
+				small = "GFX_idea_pendalf"
+				large = "gfx/leaders/MRD/Pendalf.dds"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist media_personality  war_hero infantry_officer winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_pendalf
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				army_infantry_2 
+			}
+		}
+	} 
+	MRD_goliy = {
+		name = "Шмыга «Голый»"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MRD_goliy"
+			}
+		}
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_goliy
+			available = {
+				has_country_leader = {
+					character  = MRD_Sauron_the_Great
+				}
+			}
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				first_lady 
+			}
+		}
+	}
+	MRD_Vlad_Makarov = {
+		name = "Влад Макаров"
+		portraits = {
+			army = {
+				small = "GFX_idea_Vlad_Makarov"
+				large = GFX_portrait_MRD_Vlad_Makarov
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist media_personality  war_hero infantry_officer winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_pendalf
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				army_infantry_2 
+			}
+		}
+	}
 }

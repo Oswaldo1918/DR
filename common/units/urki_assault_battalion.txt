@@ -1,0 +1,48 @@
+sub_units = {
+	urki_assault_battalion = {
+		abbreviation = "URK"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 100
+		ai_priority = 100
+		active = no
+		affects_speed = no
+		can_be_parachuted = yes
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			#category_support_battalions #To prevent Integrated Support doctrines making them extremely good
+			category_army
+		}
+
+	
+		combat_width = 1.6
+	
+		#Size Definitions
+		max_strength = 35 #Inf is 25
+		max_organisation = 80 #Inf is 60
+		default_morale = 5 #Inf is 30
+		manpower = 800
+		training_time = 75 #Same as other support battalions
+
+		#Misc Abilities
+		suppression = 0.5
+		weight = 0.2 #Inf is 0.5
+		supply_consumption = 0.01
+		
+		# Important Ability
+		soft_attack = 0.2 #Same as Mechanized
+		breakthrough = 0.4 #Same as Marines/Mountaineers
+				
+		need = {
+			infantry_equipment = 80 #Same as Inf
+			support_equipment = 10 #Same as bicycles
+		}
+
+	}
+}

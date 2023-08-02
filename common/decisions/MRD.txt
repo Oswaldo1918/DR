@@ -1,0 +1,35 @@
+###################
+  ### MORDOR ###
+###################
+MRD_mordovskava_armiya_decisions_category = { 
+	MRD_raise_urki_units = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_arrest
+
+		allowed = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+		}
+		days_mission_timeout = 90
+		fire_only_once = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = MRD_perdviy_platsdarm_vzyat
+				num_divisions > 20
+			}
+		}
+		remove_effect = {
+			MRD_spawn_urki_divisions_effect = yes
+		}
+	}
+}
+economy_decisions = {
+}

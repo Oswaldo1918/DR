@@ -1,59 +1,24 @@
 ideas = {
 	country = {
-		MRD_mracniy_sever_0 = {
-		
-			picture = SOV_the_road_of_life
-			
-			modifier = {
-				stability_factor = -0.25
-				war_support_factor = -0.25
-				encryption_factor = 0.4
-				acclimatization_cold_climate_gain_factor = 0.5
-				production_lack_of_resource_penalty_factor = 0.4
-			}
-		}
-		MRD_mracniy_sever_1 = {
-		
-			picture = SOV_the_road_of_life
-			
-			modifier = {
-				stability_factor = -0.2
-				encryption_factor = 0.2
-				acclimatization_cold_climate_gain_factor = 0.5
-				production_lack_of_resource_penalty_factor = 0.25
-			}
-		}
-		MRD_legacy_of_army = {
-		
-			picture = SOV_war_heroes
-			
-			modifier = {
-				consumer_goods_factor = 0.05
-				army_org_factor = 0.05
-				 = 0.5
-				experience_gain_army = 0.005
-				stability_factor = -0.1
-				war_support_factor = -0.1
-				army_morale_factor = -0.1
-				conscription_factor = -0.1
-			}
-		}
-		MRD_mechti_ob_poddanom = {
-		
-			picture = tur_etatism_bonus
-	
-			modifier = {
-				weekly_manpower = -5
-				consumer_goods_factor = 0.1
-			}
-		}
 		MRD_idea_nazgul = {
 		
-			picture = tur_etatism_bonus
+			picture = GFX_idea_tur_etatism_bonus
 	
 			modifier = {
 				operative_slot = 3
 				agency_upgrade_time = -0.8
+			}
+		}
+		MRD_idea_beast_weapon = {
+		
+			picture = GFX_idea_tur_etatism_bonus
+	
+			modifier = {
+				infantry_equipment = {
+					soft_attack_factor = 0.05
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
 	}

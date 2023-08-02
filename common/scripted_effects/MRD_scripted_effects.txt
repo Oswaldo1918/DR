@@ -1,0 +1,12 @@
+MRD_spawn_urki_divisions_effect = {
+	hidden_effect = {
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"Дивизия урок\" start_experience_factor = 0 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 5
+			}
+		}
+		add_manpower = 4000
+	}
+}

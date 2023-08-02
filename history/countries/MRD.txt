@@ -24,6 +24,9 @@ set_politics = {
 
 set_technology = {
 	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
 	basic_train = 1
 }
 
@@ -51,47 +54,46 @@ recruit_character = MRD_madam_Marchiano
 
 #ГЕНШТАБ
 
-
-#МЕГАПРОЕКТ
-set_variable = { MRD_mechti_ob_poddanom_political_power_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_consumer_goods_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_monthly_population = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_conscription_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_stability_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_war_support_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_offensive_war_stability_factor = 0.1  }
-set_variable = { MRD_mechti_ob_poddanom_weekly_manpower = -5 }
+#ПОДДАНЫЙ
+set_variable = { MRD_political_power_factor = 0.1  } #-> Прирост политической власти
+set_variable = { MRD_consumer_goods_factor = 0.2  } #-> Фабрики ТНП
+set_variable = { MRD_monthly_population = 0  } #-> Ежемесечное население
+set_variable = { MRD_conscription_factor = 0  } #-> Фактор призыва
+set_variable = { MRD_stability_factor = -0.25  } #-> Стабильность
+set_variable = { MRD_war_support_factor = -0.25  } #-> Военная поддержка
+set_variable = { MRD_offensive_war_stability_factor = 0  } #-> Модификатор стабильности от наступательной войны
+set_variable = { MRD_weekly_manpower = -100 } #-> Еженедельные людские ресурсы
 
 add_dynamic_modifier = { modifier = MRD_poddaniy_dynamic_modifier }
 
-#АРБАЙТЕН_ПО-СТАХАНОВСКИ
-set_variable = { MRD_arbeiten_production_factory_efficiency_gain_factor = 0.1  } #-> Сюда надо бы дописать чё какой фокус даёт
-set_variable = { MRD_arbeiten_production_factory_max_efficiency_factor = 0.1  }
-set_variable = { MRD_arbeiten_local_resources_factor = 0.1  }
-set_variable = { MRD_arbeiten_production_factory_start_efficiency_factor = 0.1  }
-set_variable = { MRD_arbeiten_production_speed_buildings_factor = 0.1  }
-set_variable = { MRD_arbeiten_production_speed_industrial_complex_factor = 0.1  }
-set_variable = { MRD_arbeiten_conversion_cost_civ_to_mil_factor = 0.1  }
-set_variable = { MRD_arbeiten_conversion_cost_mil_to_civ_factor = 0.1  }
-set_variable = { MRD_arbeiten_industrial_capacity_dockyard = 0.1  }
-set_variable = { MRD_arbeiten_industrial_capacity_factory = 0.1  }
-set_variable = { MRD_arbeiten_global_building_slots_factor = 0.1  }
-set_variable = { MRD_arbeiten_production_oil_factor = 0.1  }
-set_variable = { MRD_arbeiten_line_change_production_efficiency_factor = 0.1  }
-set_variable = { MRD_arbeiten_production_lack_of_resource_penalty_factor = 0.1  }
+#СЕВЕР
+set_variable = { MRD_production_factory_efficiency_gain_factor = 0  } #-> Прирост эффективности производства
+set_variable = { MRD_production_factory_max_efficiency_factor = 0  } #-> Максимальная эффективность производства
+set_variable = { MRD_local_resources_factor = -0.2 } #-> Эффективность увеличения ресурсов (добыча полезных ископаемых) 
+set_variable = { MRD_production_factory_start_efficiency_factor = 0 } #-> Базовая эффективность производства
+set_variable = { MRD_production_speed_buildings_factor = -0.5  } #-> Скорость строительства
+set_variable = { MRD_conversion_cost_civ_to_mil_factor = 0  } #-> Конверсия гражданского в военный завод
+set_variable = { MRD_conversion_cost_mil_to_civ_factor = 0  } #-> Конверсия военного в гражданский завод
+set_variable = { MRD_industrial_capacity_dockyard = 0  } #-> Производительность верфи
+set_variable = { MRD_industrial_capacity_factory = -0.25  } #-> Объём заводского производства
+set_variable = { MRD_global_building_slots_factor = 0  } #-> Максимум фабрик в провинции
+set_variable = { MRD_production_oil_factor = 0  } #-> Производство синтетического топлива
+set_variable = { MRD_line_change_production_efficiency_factor = 0.2  } #-> Сохранение эффективности производства
+set_variable = { MRD_production_lack_of_resource_penalty_factor = -0.8  } #-> Штраф за нехватку ресурсов
+set_variable = { MRD_encryption_factor = 0.5 } #-> Фактор шифрования
+set_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.05 } #-> Фактор акклиматизации к холоду
 
-add_dynamic_modifier = { modifier = MRD_arbeiten_dynamic_modifier }
+add_dynamic_modifier = { modifier = MRD_sever_dynamic_modifier }
 
-#МОРДОВСКАЯ_АРМИЯ
-
-set_variable = { MRD_legacy_of_army_air_superiority_bonus_in_combat = 0.1 }
-set_variable = { MRD_legacy_of_army_org_factor = 0.1 }
-set_variable = { MRD_legacy_of_army_org_regain = 0.1 }
-set_variable = { MRD_legacy_of_army_cas_damage_reduction = 0.1 }
-set_variable = { MRD_legacy_of_army_dig_in_speed_factor = 0.1 }
-set_variable = { MRD_legacy_of_army_org_loss_when_moving = 0.1 }
-set_variable = { MRD_legacy_of_army_army_attack_factor = 0.1 }
-set_variable = { MRD_legacy_of_army_land_night_attack = 0.1 }
-set_variable = { MRD_legacy_of_army_defence_factor = 0.1 }
+#НАСЛЕДИЕ_АРМИИ
+set_variable = { MRD_mordor_army_air_superiority_bonus_in_combat = 0 } #-> Бонус за превосходство в воздухе
+set_variable = { MRD_mordor_army_org_factor = 0.05 } #-> Организация дивизии
+set_variable = { MRD_mordor_army_org_regain = 0 } #-> Скорость восстановления организации
+set_variable = { MRD_mordor_army_cas_damage_reduction = 0.1 } #-> Снижение урона от штурмовиков
+set_variable = { MRD_mordor_army_dig_in_speed_factor = 0 } #-> Скорость окапывания
+set_variable = { MRD_mordor_army_org_loss_when_moving = 0.1 } #-> Потеря организации при движении
+set_variable = { MRD_mordor_army_attack_factor = 0 } #-> Атака дивизии
+set_variable = { MRD_mordor_army_land_night_attack = 0 } #-> Ночная атака
+set_variable = { MRD_mordor_army_defence_factor = 0.05 } #-> Оборона дивизии
 
 add_dynamic_modifier = { modifier = MRD_legacy_of_army_dynamic_modifier }

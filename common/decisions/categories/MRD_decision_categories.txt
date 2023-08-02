@@ -1,0 +1,13 @@
+###################
+  ### MORDOR ###
+###################
+
+MRD_mordovskava_armiya_decisions_category = {
+	icon = military_operation
+	allowed = {
+		tag = MRD
+	}
+	visible = { 
+		has_completed_focus = MRD_armiya_dostoynaya_velikoi_mordovii
+	}
+}

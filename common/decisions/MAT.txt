@@ -4,7 +4,7 @@
 
 MAT_hui_znaet_balance_of_power_category = {
 	###Услиление_влияния_Цуканова
-	MAT_bop_increase_czukanov_influence = {
+	MAT_bop_increase_czukanov_influence = { ###Увеличить_влияние_Цуканова
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -20,6 +20,9 @@ MAT_hui_znaet_balance_of_power_category = {
 			stability_weekly = -0.01
 			political_power_factor = -0.1
 		}
+		ai_will_do = {
+			base = 100
+		}
 		complete_effect = {
 			add_power_balance_value = {
 				id = MAT_hui_znaet_balance
@@ -27,7 +30,7 @@ MAT_hui_znaet_balance_of_power_category = {
 			}		
 		}
 	}
-	MAT_bop_rasshirit_teroboronu = {
+	MAT_bop_rasshirit_teroboronu = { ###Расширить_тероборону
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -48,6 +51,9 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			add_manpower = 10000
 			load_oob = "MAT_teroborona"
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	MAT_bop_mobilizovat_chukchei = { ###Дивизии_бронечухонцев
@@ -71,8 +77,11 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			add_manpower = 5000
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	MAT_bop_mobilizovat_kitayskih_otpusknikov = { ###Дивизии_бронечухонцев
+	MAT_bop_mobilizovat_kitayskih_otpusknikov = { ###Дивизии_китайских_отпускников
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -93,8 +102,11 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			add_manpower = 10000
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	MAT_bop_diviziii_segurimi = {
+	MAT_bop_diviziii_segurimi = { ###Дивизии_Сигурими
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -115,8 +127,11 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			load_oob = "MAT_sigurimi"
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	MAT_bop_kazarmi_dlya_pehoti = {
+	MAT_bop_kazarmi_dlya_pehoti = { ###Пехотные_казармы
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -146,8 +161,11 @@ MAT_hui_znaet_balance_of_power_category = {
 				}
 			}			
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	MAT_bop_zapret_mat = {
+	MAT_bop_zapret_mat = { ###Запретить_мат
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -168,8 +186,11 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			stability_factor = 0.2
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
-	MAT_bop_kartochnaya_sistema = {
+	MAT_bop_kartochnaya_sistema = { ###Карточная_система
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -190,9 +211,12 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			add_ideas = MAT_kartochnaya_sistema
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	###Услиление_влияния_Орлова
-	MAT_bop_increase_orlov_influence = {
+	MAT_bop_increase_orlov_influence = { ###Увеличить_влияние_Орлова
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -214,8 +238,11 @@ MAT_hui_znaet_balance_of_power_category = {
 				value = 0.15
 			}		
 		}
+		ai_will_do = {
+			base = 0
+		}
 	}
-	MAT_bop_likerovodochnaya_otrasl = {
+	MAT_bop_likerovodochnaya_otrasl = { ###Ликёроводочная_отрасль
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -250,8 +277,11 @@ MAT_hui_znaet_balance_of_power_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+		}
 	}
-	MAT_bop_boebribasi_tankistam = {
+	MAT_bop_boebribasi_tankistam = { ###Боеприпасы_танкистам
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -276,8 +306,11 @@ MAT_hui_znaet_balance_of_power_category = {
 				variant_name = "T-26"
 			}
 		}
+		ai_will_do = {
+			base = 0
+		}
 	}
-	MAT_bop_toplivo_dlya_tankistov = {
+	MAT_bop_toplivo_dlya_tankistov = { ###Топливо_для_танкистов
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -297,12 +330,9 @@ MAT_hui_znaet_balance_of_power_category = {
 				value = 0.05
 			}
 			add_fuel = 400
-			ai_will_do = {
-				base = 100
-			}
 		}
 	}
-	MAT_bop_tankoviy_chempionat = {
+	MAT_bop_tankoviy_chempionat = { ###Танковый_чемпионат
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -322,12 +352,12 @@ MAT_hui_znaet_balance_of_power_category = {
 				value = 0.05
 			}
 			#country_event = MAT.20
-			ai_will_do = {
-				base = 100
-			}
+		}
+		ai_will_do = {
+			base = 0
 		}
 	}
-	MAT_bop_religioznaya_propaganda = {
+	MAT_bop_religioznaya_propaganda = { ###Религиозная_пропаганда
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -355,12 +385,12 @@ MAT_hui_znaet_balance_of_power_category = {
 				popularity = 0.05
 			}
 			stability_factor = -0.05
-			ai_will_do = {
-				base = 100
-			}
+		}
+		ai_will_do = {
+			base = 0
 		}
 	}
-	MAT_bop_tanki_na_shakhti= {
+	MAT_bop_tanki_na_shakhti= { ###Отправить_танки_на_рудники
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
@@ -383,24 +413,23 @@ MAT_hui_znaet_balance_of_power_category = {
 			add_resource = {
 				type = steel
 				amount = 8
-				state = 210
+				state = 224
 			}
-			ai_will_do = {
-				base = 100
-			}
-			add_ideas = MAT_idea_tanki_na_shakhti
-			
+			add_ideas = MAT_idea_tanki_na_shakhti	
 		}
 		remove_effect = {
 			remove_ideas = MAT_idea_tanki_na_shakhti
 			add_resource = {
 				type = steel
 				amount = -8
-				state = 210
+				state = 224
 			}
 		}
+		ai_will_do = {
+			base = 0
+		}
 	}
-	MAT_bop_uchilishe_tuhacha = {
+	MAT_bop_uchilishe_tuhacha = { ###ВКУ_им_Тухачевского
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {

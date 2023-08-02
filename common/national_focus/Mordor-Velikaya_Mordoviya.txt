@@ -71,6 +71,10 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_manpower = -500
+			hidden_effect = {
+				add_to_variable = { MRD_monthly_population = -0.05 }	
+			}
+			custom_effect_tooltip = MRD_1_h_monthly_population_tt
 			country_event = mordor.9
 		}
 	}
@@ -78,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = MRD_raztat_megaklinki
 		icon = GFX_DOT_custom_weapons
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_prodvinut_nazgulov
 		}
@@ -88,9 +92,9 @@ focus_tree = {
 		x = 4
 		y = 2
 		completion_reward = {
-			add_ideas = MRD_beast_weapon
 			every_army_leader = {
 				add_unit_leader_trait = trait_MRD_megaklinok
+				add_attack = 1
 			}
 		}
 	}
@@ -98,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = MRD_razrabotat_megastvoli
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_zapustit_nornikel
 		}
@@ -108,9 +112,10 @@ focus_tree = {
 		x = 7
 		y = 2
 		completion_reward = {
+			add_ideas = MRD_idea_beast_weapon
 			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
+				bonus = 0.25
+				uses = 4
 				category = infantry_tech
 			}
 		}
@@ -138,13 +143,23 @@ focus_tree = {
 		x = 12
 		y = 2
 		completion_reward = {
-			
+			add_political_power = -25
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = 0.25 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.10 }
+				add_to_variable = { MRD_monthly_population = -0.10 }
+			}
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+			custom_effect_tooltip = MRD_2_monthly_population_tt					
 		}
 	}
 	focus = {
 		id = MRD_sistema_trudovikh_lagerei
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_raztat_megaklinki
 		}
@@ -156,12 +171,31 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
+		completion_reward = {
+			516 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
+				add_to_variable = { MRD_global_building_slots_factor = 0.1 }
+				add_to_variable = { MRD_stability_factor = 0.1 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+			custom_effect_tooltip = MRD_2_monthly_population_tt	
+		}
 	}
 	focus = {
 		id = MRD_rabotat_za_kharchi
 		icon = GFX_POK_no_posobiyam
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_porabotit_bezhentsev
 		}
@@ -170,12 +204,21 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.1 }
+				add_to_variable = { MRD_stability_factor = -0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_stability_factor_tt
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_start_efficiency_factor_tt
+		}
 	}
 	focus = {
 		id = MRD_povisit_rascenki
 		icon = GFX_goal_hozraschet
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_porabotit_bezhentsev
 		}
@@ -184,37 +227,68 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_stability_factor = 0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+				add_to_variable = {	MRD_production_factory_max_efficiency_factor = 0.1  }
+				add_to_variable = { MRD_production_factory_efficiency_gain_factor = 0.1 }
+			}
+			custom_effect_tooltip = MRD_1_stability_factor_tt
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_max_efficiency_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_efficiency_gain_factor_tt			
+		}
 	}
 	focus = {
 		id = MRD_rasshireniye_vornproma
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_sistema_trudovikh_lagerei
 		}
 		x = 5
 		y = 4
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}	
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_industrial_capacity_factory = -0.25 }
+			}
+			custom_effect_tooltip = MRD_3_h_industrial_capacity_factory
+		}
 	}
 	focus = {
 		id = MRD_tisyacheletniy_plan
 		icon = GFX_goal_pyatiketka2
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_rabotat_za_kharchi
-		}
-		prerequisite = {
 			focus = MRD_povisit_rascenki
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_political_power_factor = -0.3 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.2 }
+				add_to_variable = { MRD_local_resources_factor = 0.05 }
+				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
+				add_to_variable = { MRD_stability_factor = 0.1}
+			}
+			custom_effect_tooltip = MRD_3_h_industrial_capacity_factory			
+		}
 	}
 	focus = {
 		id = MRD_rasshireniye_logistiki
 		icon = GFX_focus_generic_railroad
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_rabotat_za_kharchi
 			focus = MRD_povisit_rascenki
@@ -224,12 +298,48 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-
+		completion_reward = {
+			#Дудинка-Туруханск-Тура
+			build_railway = {
+				path = { 4859 10607 12643 }
+			}
+			build_railway = {
+				path = {10607 12687}
+			}
+			#Норильск-Удачный
+			build_railway = {
+				path = { 13064 2923 13065 9224}
+			}
+			516 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 10607
+					instant_build = yes
+				}
+			}
+			878 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 12687
+					instant_build = yes
+				}
+			}
+			878 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9224
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = MRD_armiya_dostoynaya_velikoi_mordovii
 		icon = GFX_ot_baldi
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_tisyacheletniy_plan
 		}
@@ -241,78 +351,115 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
+		completion_reward = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			custom_effect_tooltip = MRD_3_mordor_army_army_attack_factor		
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_army_attack_factor = 0.2 }
+				add_to_variable = { MRD_mordor_army_land_night_attack = 0.2 }
+				add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.2 }
+				set_technology = { penal_infantry = 1 popup = no }
 
+				division_template = {
+					name = "Дивизия урок"
+					division_names_group = SOV_PEN_01
+					is_locked = yes
+
+					regiments = {
+						urki_assault_battalion = { x = 0 y = 0 }
+						urki_assault_battalion = { x = 0 y = 1 }
+						urki_assault_battalion = { x = 0 y = 2 }
+						urki_assault_battalion = { x = 1 y = 0 }
+						urki_assault_battalion = { x = 1 y = 1 }
+						urki_assault_battalion = { x = 1 y = 2 }
+						urki_assault_battalion = { x = 2 y = 0 }
+						urki_assault_battalion = { x = 2 y = 1 }
+						urki_assault_battalion = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				MRD_spawn_urki_divisions_effect = yes
+			}	
+		}
 	}
 	focus = { #Интервенция_в_гражданскую_войну
 		id = MRD_poneslas_mocha_po_trubam
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		x = 9
 		y = 6
 		available = {
 			always = no
 		}	
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
 		icon = GFX_focus_POL_warsaw_main_station
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
 		}
 		x = 7
 		y = 7
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_dopolnitelniye_harchi
 		icon = GFX_focus_cht_zhitnica_evropy
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
 		}
 		x = 8
 		y = 8
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_v_gorodakh_vino_i_babi
 		icon = GFX_focus_SOV_organization_centralization_discipline
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_sozdat_edinoye_zheleznodorozhnoye_upravleniye
 		}
 		x = 6
 		y = 8
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_sredstvva_svyazi
 		icon = GFX_goal_generic_radar
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
 		}
 		x = 10
 		y = 7
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_mordovsraya_taktika
 		icon = GFX_focus_prc_infiltration
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
 		}
 		x = 12
 		y = 7
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = MRD_svazyatsa_s_vladom_makarovim
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_sredstvva_svyazi
 		}
@@ -322,14 +469,14 @@ focus_tree = {
 		x = 11
 		y = 8
 		completion_reward = {
-			add_oob = MRD_partizani
+			l_oob = MRD_partizani
 			recruit_character = MRD_Vlad_Makarov
 		}
 	}
 	focus = {
 		id = MRD_seite_razumnoye_dobroye_vechnoye
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_svazyatsa_s_vladom_makarovim
 		}
@@ -860,7 +1007,9 @@ focus_tree = {
 		cost = 10,00
 		x = 38
 		y = 14
-
+		prerequisite = {
+			focus = MRD_vas_provetstvuyet_chastniy_kapital
+		}
 	}
 	focus = {
 		id = MRD_kontrolirovat_fonansoviye_potoki
@@ -896,6 +1045,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = MRD_finansoviye_istochniki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
 		id = MRD_vas_provetstvuyet_chastniy_kapital
 		icon = GFX_goal_unknown
 		cost = 10,00
@@ -907,17 +1067,6 @@ focus_tree = {
 		}
 		x = 38
 		y = 13
-
-	}
-	focus = {
-		id = MRD_finansoviye_istochniki
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 36
-		y = 12
 
 	}
 	focus = {
