@@ -325,6 +325,18 @@ ideas = {
 				army_org_regain = -0.25
 			}	
 		}
+		DON_idea_mini_i_protivotankoviye_kusti = {  #Мины_и_противотанковые_кусты
+		
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_defence_factor = 0.1
+			}	
+		}
 		
 		DON_idea_kustarnoye_proizvodstvo = {
 		

@@ -256,6 +256,29 @@ DON_Great_Ukrainian_War = {
 			remove_ideas = DON_idea_neprof_army
 	    }
 	}
+	DON_mini_i_protivotankoviye_kusti = { #Мины_и_противотанковые_кусты
+		
+		available = {
+			NOT = { has_idea = DON_idea_mini_i_protivotankoviye_kusti }
+			has_equipment = {
+				support_equipment > 100
+			}
+		}
+		visible = {
+			has_completed_focus = DON_ukrainskaya_voyna		
+			has_war = yes 
+		}
+		cost = 25
+	    ai_will_do = {
+            factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DON_idea_mini_i_protivotankoviye_kusti
+				days = 90
+			}
+	    }
+	}
 
 ###################НАЦИ##########################
 ###################АНАЛ##########################
