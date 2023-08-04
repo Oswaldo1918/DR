@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+	    POL_nats_crizis = {
+			picture = great_depression			
+			modifier = {
+			    political_power_gain = -0.25
+			    conscription_factor = -0.5
+			    consumer_goods_factor = 0.25
+			    stability_factor = -0.3
+			    war_support_factor = -0.3
+			}
+		}
+		POL_shakal_europy = {
+			picture = FRA_scw_intervention_nationalists_focus			
+			modifier = {
+			    political_power_gain = 0.05
+			    opinion_gain_monthly_factor = -0.3
+			    war_support_factor = 0.1
+			}
+		}
+	}		
+}

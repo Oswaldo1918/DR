@@ -1,4 +1,4 @@
-capital = 10
+capital = 66
 
 oob = 123_1936
 
@@ -11,8 +11,6 @@ set_technology = {
 }
 
 add_ideas = {
-POL_nats_crizis
-POL_shakal_europy
 }
 
 set_popularities = {
@@ -26,11 +24,11 @@ set_politics = {
 set_convoys = 40
 
 create_country_leader = {
-	name = "Анджей Сапковский"
+	name = "Анджей Дупа"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Sapkovskyi.dds"
+	picture = "Dupa.dds"
 	expire = "1999.1.1"
-	ideology = despotism 
+	ideology = oligarchism 
 	traits = {
 		#
 	}
