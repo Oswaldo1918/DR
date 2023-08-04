@@ -1,0 +1,69 @@
+MRD_peration_usilit_partizan = {
+	icon = GFX_murder_trotsky
+	map_icon = GFX_murder_trotsky_map
+	name = murder_trotsky
+	desc = murder_trotsky_desc
+	days = 25
+
+	priority = 10
+
+	allowed = {
+		original_tag = MRD
+	}
+	available = {
+
+	}
+	visible = {
+		has_completed_focus = MRD_nachinaem_s_dachnikov
+		has_country_flag = MRD_uspeshniy_reid
+		NOT = { has_completed_focus = MRD_poneslas_mocha_po_trubam }
+	}
+
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	on_start = {  # SCOPE_OPERATION
+	}
+
+	outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
+	cost_modifiers = { operation_cost operation_infiltrate_cost }
+	risk_modifiers = { operation_risk operation_infiltrate_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = murder_trotsky_outcome_tt
+	}
+	risk_chance = 0.25
+	experience = 5
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = { set_country_flag = SOV_trotskys_assassination_attempt_flag } # This operation can only be done once
+		ROOT = { news_event = { id = news.37 } }  #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
+	}
+	
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration 
+		murder_trotsky_infiltration = { base = 100 }
+	}
+	phases = { 
+		murder_trotsky_attack = { base = 100 }
+	}
+	phases = { 
+		exfiltration_border = { base = 40 }
+		exfiltration_go_to_ground = { base = 30 }
+		exfiltration_submarine_pickup = { base = 20 }
+		exfiltration_air_pickup = { 
+			base = 10
+			modifier = {
+				ROOT = { 
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0 #less likely if we have no transports
+			}
+		}
+	}
+}

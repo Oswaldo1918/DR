@@ -256,12 +256,12 @@ focus_tree = {
 					type = arms_factory
 					level = 3
 					instant_build = yes
-				}	
+				}
 			}
 			hidden_effect = {
 				add_to_variable = { MRD_industrial_capacity_factory = -0.25 }
 			}
-			custom_effect_tooltip = MRD_3_h_industrial_capacity_factory
+			custom_effect_tooltip = MRD_3_h_industrial_capacity_factory_tt
 		}
 	}
 	focus = {
@@ -282,7 +282,11 @@ focus_tree = {
 				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
 				add_to_variable = { MRD_stability_factor = 0.1}
 			}
-			custom_effect_tooltip = MRD_3_h_industrial_capacity_factory			
+			custom_effect_tooltip = MRD_3_h_political_power_factor_tt
+			custom_effect_tooltip = MRD_3_industrial_capacity_factory_tt
+			custom_effect_tooltip = MRD_1_local_resources_factor_tt
+			custom_effect_tooltip = MRD_2_production_speed_buildings_factor_tt
+			custom_effect_tooltip = MRD_2_stability_factor_tt			
 		}
 	}
 	focus = {
@@ -353,17 +357,17 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			custom_effect_tooltip = MRD_3_mordor_army_army_attack_factor		
+			custom_effect_tooltip = MRD_3_mordor_army_attack_factor_tt
 			hidden_effect = {
-				add_to_variable = { MRD_mordor_army_army_attack_factor = 0.2 }
+				add_to_variable = { MRD_mordor_army_attack_factor = 0.2 }
 				add_to_variable = { MRD_mordor_army_land_night_attack = 0.2 }
 				add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.2 }
-				set_technology = { penal_infantry = 1 popup = no }
+				set_technology = { urki_assault_battalion = 1 popup = no }
 
 				division_template = {
 					name = "Дивизия урок"
-					division_names_group = SOV_PEN_01
-					is_locked = yes
+					division_names_group = MRD_URK_01
+					#is_locked = yes
 
 					regiments = {
 						urki_assault_battalion = { x = 0 y = 0 }
@@ -381,7 +385,7 @@ focus_tree = {
 					}
 				}
 				MRD_spawn_urki_divisions_effect = yes
-			}	
+			}
 		}
 	}
 	focus = { #Интервенция_в_гражданскую_войну

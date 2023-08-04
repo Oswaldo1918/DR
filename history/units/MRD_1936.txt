@@ -29,6 +29,18 @@ division_template = {
 	priority = 0
 }
 
+division_template = {
+	name = "Тяжелотанковая дивизия"
+	division_names_group = SOV_ARM_04
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }			
+		heavy_armor = { x = 1 y = 0 }	
+		heavy_armor = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
 
 units = {
 	division = {
@@ -53,13 +65,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
 	}
 	division = {
-		name = "78-я стрелковая дивизия"
-		location = 13064
-		division_template = "Стрелковая дивизия"
-		start_experience_factor = 0.4
-		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
-	}
-	division = {
 		name = "1-я добровольная народная дружина им.Саурона"
 		location = 4859
 		division_template = "Гарнизонная дивизия"
@@ -72,6 +77,13 @@ units = {
 		division_template = "Гарнизонная дивизия"
 		start_experience_factor = 0
 		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "POK" } }
+	}
+	division = {
+		name = "7-я тяжелотанковая дивизия"
+		location = 4859
+		division_template = "Тяжелотанковая дивизия"
+		start_experience_factor = 0.2
+		force_equipment_variants = { heavy_tank_chassis_0 = { owner = "MRD" creator = "MRD" version_name = "T-35" } }
 	}
 }
 

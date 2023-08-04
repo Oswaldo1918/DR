@@ -57,6 +57,7 @@ country_event = { #Начинаем_с_дачников
 	is_triggered_only = yes
 	
 	option = {
+		add_manpower = 5000
 		name = mordor.3.a
 		start_border_war = {
 			change_state_after_war = no
@@ -207,5 +208,31 @@ country_event = { #Оповещение_о_погранконфликте_для
 	
 	option = {
 		name = mordor.11.a
+	}
+}
+country_event = { #Финальные_приготовления
+
+	id = mordor.12
+        title = mordor.12.t
+        desc = mordor.12.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.12.a
+	}
+}
+country_event = { #Оповещение_о_развале_Покаянии
+
+	id = mordor.13
+        title = mordor.13.t
+        desc = mordor.13.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.13.a
 	}
 }
