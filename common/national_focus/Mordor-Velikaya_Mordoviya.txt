@@ -356,36 +356,8 @@ focus_tree = {
 		x = 9
 		y = 5
 		completion_reward = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			custom_effect_tooltip = MRD_3_mordor_army_attack_factor_tt
-			hidden_effect = {
-				add_to_variable = { MRD_mordor_army_attack_factor = 0.2 }
-				add_to_variable = { MRD_mordor_army_land_night_attack = 0.2 }
-				add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.2 }
-				set_technology = { urki_assault_battalion = 1 popup = no }
-
-				division_template = {
-					name = "Дивизия урок"
-					division_names_group = MRD_URK_01
-					#is_locked = yes
-
-					regiments = {
-						urki_assault_battalion = { x = 0 y = 0 }
-						urki_assault_battalion = { x = 0 y = 1 }
-						urki_assault_battalion = { x = 0 y = 2 }
-						urki_assault_battalion = { x = 1 y = 0 }
-						urki_assault_battalion = { x = 1 y = 1 }
-						urki_assault_battalion = { x = 1 y = 2 }
-						urki_assault_battalion = { x = 2 y = 0 }
-						urki_assault_battalion = { x = 2 y = 1 }
-						urki_assault_battalion = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-				MRD_spawn_urki_divisions_effect = yes
-			}
+			country_event = mordor.12
+			custom_effect_tooltip = MRD_ozhidaniye_razvala_tt
 		}
 	}
 	focus = { #Интервенция_в_гражданскую_войну
@@ -398,6 +370,7 @@ focus_tree = {
 			always = no
 		}	
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {

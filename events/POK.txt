@@ -662,7 +662,7 @@ country_event = {
 		add_war_support = -0.2
 		add_political_power = -100
 		MRD = {country_event = { id = mordor.13 days = 19 } }
-		country_event = { id = POK.24 days = 30}
+		country_event = { id = POK.24 days = 45}
 		country_event = { id = POK.1 days = 18}
 		country_event = { id = POK.2 days = 16}
 		country_event = { id = POK.3 days = 19}
@@ -723,6 +723,7 @@ country_event = { ###Начало гражданской войны в Пока�
 	option = {
 		name = POK.24.a
 		hidden_effect = {
+			MRD = { country_event = mordor.14 }
 			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до вступления_Мордора
 				target = MGN
 				type = annex_everything

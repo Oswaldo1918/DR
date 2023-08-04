@@ -24,16 +24,20 @@ POK_panoramnoye_okno_v_Evropu = {
 	}
 }
 
-zahvat_terri = { 
- icon = generic_prospect_for_resources
+GV_v_pokayanii_podgotovka = { 
+	icon = generic_prospect_for_resources
     allowed = {
-	OR = {
-		original_tag = OMS
-		original_tag = ZNS
-		original_tag = YSK
-		original_tag = GAL
-		original_tag = MGN
-		}
+		OR = {
+			original_tag = OMS
+			original_tag = ZNS
+			original_tag = YSK
+			original_tag = GAL
+			original_tag = MGN
+				AND = {
+					original_tag = MRD
+					has_country_flag = MRD_podgotovka_k_interventsii_country_flag
+				}
+			}
 	}
 	visible = {
 	POK = {NOT = {has_war = yes}}
@@ -43,6 +47,10 @@ zahvat_terri = {
 		original_tag = YSK
 		original_tag = GAL
 		original_tag = MGN
+				AND = {
+					original_tag = MRD
+					has_country_flag = MRD_podgotovka_k_interventsii_country_flag
+				}
 		}
 	}
 }
