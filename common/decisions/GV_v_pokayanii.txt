@@ -1,6 +1,6 @@
 GV_v_pokayanii_podgotovka = {
 
-    zahvat_329 = {
+    GV_POK_zahvat_329 = { #Тува
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -49,7 +49,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_578 = {
+	GV_POK_zahvat_578 = { #Гномск
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -98,7 +98,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_569 = {
+	GV_POK_zahvat_569 = { #Хакасия
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -147,7 +147,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_577 = {
+	GV_POK_zahvat_577 = { #Сургут
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -196,7 +196,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_576 = {
+	GV_POK_zahvat_576 = { #Енисейск
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -245,7 +245,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-		zahvat_575 = {
+	GV_POK_zahvat_575 = { #Киренск
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -294,7 +294,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_567 = {
+	GV_POK_zahvat_567 = { #Братск
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -343,7 +343,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_654 = {
+	GV_POK_zahvat_654 = { #Ойротский_край
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -392,7 +392,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_824 = {
+	GV_POK_zahvat_824 = { #Ямал
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -441,7 +441,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_403 = {
+	GV_POK_zahvat_403 = { #Тюмень
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -467,6 +467,7 @@ GV_v_pokayanii_podgotovka = {
         }
 		
 		complete_effect = {
+			LAZ = { country_event = osv.999 }
         	clr_country_flag = stop_deystviya
 	     	if = {
 				limit = {
@@ -490,7 +491,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_572 = {
+	GV_POK_zahvat_572 = { #Челябинск
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -539,7 +540,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	zahvat_573 = {
+	GV_POK_zahvat_573 = { #Златоуст
         icon = decision_category_border_conflicts
 		days_remove = 20
 		days_re_enable = 0
@@ -600,7 +601,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	add_vintovki = {
+	add_vintovki = { #Винтовки
         icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
@@ -639,7 +640,7 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 	
-	add_vintovki_2 = {
+	add_vintovki_2 = { #Винтовок_много_не_бывает
         icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
@@ -673,6 +674,82 @@ GV_v_pokayanii_podgotovka = {
 		  add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 500
+				producer = ROOT
+			}
+		}
+    }
+	add_artillery = { #Арта
+        icon = decision_generic_prepare_civil_war
+		days_remove = 20
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+        visible = {
+			NOT = { has_country_flag = dva_deystviya }
+        }
+		
+		complete_effect = {
+      clr_country_flag = stop_deystviya
+	     	if = {
+				limit = {
+					NOT = { has_country_flag = one_deystviye }
+				}
+				set_country_flag = one_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = one_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = dva_deystviya
+			}
+		}
+
+		remove_effect = {
+		  add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 120
+				producer = ROOT
+			}
+		}
+    }
+	add_support_equpment = { #Допоснащение
+        icon = decision_generic_prepare_civil_war
+		days_remove = 20
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 4
+		}
+        visible = {
+			NOT = { has_country_flag = dva_deystviya }
+        }
+		
+		complete_effect = {
+      clr_country_flag = stop_deystviya
+	     	if = {
+				limit = {
+					NOT = { has_country_flag = one_deystviye }
+				}
+				set_country_flag = one_deystviye
+				set_country_flag = stop_deystviya				
+			}
+			if = {
+		 		limit = {
+					has_country_flag = one_deystviye
+					NOT = { has_country_flag = stop_deystviya }
+				}
+				set_country_flag = dva_deystviya
+			}
+		}
+
+		remove_effect = {
+		  add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 100
 				producer = ROOT
 			}
 		}

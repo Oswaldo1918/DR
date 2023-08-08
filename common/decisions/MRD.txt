@@ -2,11 +2,11 @@
   ### MORDOR ###
 ###################
 MRD_mordovskava_armiya_decisions_category = { 
-	MRD_raise_urki_units = { ###Размещение дивизий только во время гражданской войны в Покаянии
+	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
 
-		icon = GFX_decision_generic_arrest
+		icon = GFX_decision_generic_disband_irregulars #Красноярск
 
-		allowed = {
+		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
 			original_tag = MRD
 			OR = {
@@ -17,17 +17,203 @@ MRD_mordovskava_armiya_decisions_category = {
 				has_war_with = GAL
 				has_war_with = ZNS
 			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
 		}
-		days_mission_timeout = 90
-		fire_only_once = no
-		cancel_trigger = {
-			OR = {
-				has_completed_focus = MRD_perdviy_platsdarm_vzyat
-				num_divisions > 20
+		
+		available = {
+			controls_state = 568
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
 			}
 		}
+	}
+
+	MRD_raise_urki_units_40 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Барнаул_Алтайский_край
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			controls_state = 40
+		}
+		
+		fire_only_once = yes
+		
 		remove_effect = {
-			MRD_spawn_urki_divisions_effect = yes
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_570 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Новосибирск
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			controls_state = 570
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+	MRD_raise_urki_units_571 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Омск
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			controls_state = 571
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_582 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Магнитогорск
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			controls_state = 582
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_653 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Ельцинбург
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			original_tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = has_completed_focus = MRD_perdviy_platsdarm_vzyat
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			controls_state = 653
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
 		}
 	}
 }

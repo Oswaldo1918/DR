@@ -36,3 +36,17 @@ country_event = { #отнять_корки_лазарета_после_его_п
 	}
 	
 }
+country_event = { #полёт_москита
+
+	id = osv.999
+        title = osv.999.t
+        desc = osv.999.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = osv.999.a
+	}
+	
+}
