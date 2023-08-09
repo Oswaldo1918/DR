@@ -15,7 +15,7 @@ focus_tree = {
 	
 	focus = {
 		id = DON_nam_nuzhen_plan #Начальный_экономический_план
-		icon = GFX_focus_generic_treaty
+		icon = GFX_dock_clique_nam_nuzhen_plan
 		cost = 1,00
 		x = 7
 		y = 0
@@ -26,7 +26,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_sredstva_dlya_industrializatsii
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_dock_clique_sredstva_dlya_industrializatsii
 		cost = 1,00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_kollektivizatsiya
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_dock_clique_kollektivizatsiya
 		cost = 2,00
 		prerequisite = {
 			focus = DON_sredstva_dlya_industrializatsii
@@ -55,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_reformirovat_admonistratsiu
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_dock_clique_reformirovat_administratsiu
 		cost = 1,00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_razvedka_tayniov
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_dock_clique_razvedka_taynikov
 		cost = 2,00
 		prerequisite = {
 			focus = DON_reformirovat_admonistratsiu
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_pogotovit_nash_bazis
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_dock_clique_podgotovit_nash_bazis
 		cost = 1,00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
@@ -99,14 +99,6 @@ focus_tree = {
 		x = 9
 		y = 1
 		completion_reward = {
-			227 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			228 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -119,7 +111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_raskonservatsiya_shaht
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_dock_clique_raskonservatsiya_shaht
 		cost = 2,00
 		prerequisite = {
 			focus = DON_pogotovit_nash_bazis
@@ -137,7 +129,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_pervaia_pyaitiletka #Продвинутый_экономический_план
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_dock_clique_pervaya_pyatiletka
 		cost = 5,00
 		prerequisite = {
 			focus = DON_raskonservatsiya_shaht
@@ -156,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_socialist_obrazovaniye
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_dock_clique_socialist_obrazovaniye
 		cost = 5,00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
@@ -169,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_novoye_pokoleniye
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_dock_clique_novoye_pokoleniye
 		cost = 15,00
 		prerequisite = {
 			focus = DON_socialist_obrazovaniye
@@ -179,10 +171,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = DON_idea_next_generation
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -191,8 +183,7 @@ focus_tree = {
 	
 	focus = {
 		id = DON_leviy_povorot_v_tserkvi
-		text = DON_Leviy_povorot_v_tserkvi
-		icon = GFX_focus_eng_liberate_the_home_of_marx
+		icon = GFX_dock_clique_leviy_povorot_v_tserkvi
 		cost = 10,00
 		prerequisite = {
 			focus = DON_novoye_pokoleniye
@@ -206,7 +197,7 @@ focus_tree = {
 	
 	focus = {
 		id = DON_legkoprom
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_dock_clique_legkoprom
 		cost = 5,00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
@@ -237,10 +228,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -248,7 +239,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_himprom
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_dock_clique_himprom
 		cost = 5,00
 		prerequisite = {
 			focus = DON_legkoprom
@@ -277,7 +268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_pomosh_lazaret
-		icon = GFX_goal_laz_donbass
+		icon = GFX_goal_laz_donbass #GFX_goal_laz_mat GFX_goal_laz_unt GFX_goal_laz_whs GFX_goal_laz_ark
 		cost = 2,00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
@@ -296,7 +287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_voyenniye_zavodi
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_dock_clique_voyenniye_zavodi
 		cost = 5,00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
@@ -312,10 +303,10 @@ focus_tree = {
 			add_to_variable = { DON_povishenie_gotovnosti = 1 }
 			custom_effect_tooltip = DON_povishenie_gotovnosti_tt
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -323,7 +314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_tyazholoye_mashinostroyeniye
-		icon = GFX_goal_generic_production2
+		icon = GFX_dock_clique_tyazholoye_mashinostroyeniye
 		cost = 5,00
 		prerequisite = {
 			focus = DON_voyenniye_zavodi
@@ -349,10 +340,10 @@ focus_tree = {
 			custom_effect_tooltip = DON_povishenie_gotovnosti_tt
 			add_political_power = -50
 			228 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -360,7 +351,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_tankovaye_zavodi
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_dock_clique_tankoviye_zavodi
 		cost = 5,00
 		prerequisite = {
 			focus = DON_voyenniye_zavodi
@@ -377,10 +368,10 @@ focus_tree = {
 				category = armor
 			}		
 			227 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -419,7 +410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_restavratsiya_institutov
-		icon = GFX_focus_generic_socialist_science
+		icon = GFX_dock_clique_restavratsiya_institutov
 		cost = 5,00
 		prerequisite = {
 			focus = DON_socialist_obrazovaniye
@@ -432,7 +423,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_rasshirit_pomosh_lazaret #Усовершенствованный_экономический_план
-		icon = GFX_goal_laz_donbass2
+		icon = GFX_goal_laz_donbass2 #GFX_goal_laz_mat2 GFX_goal_laz_unt2 GFX_goal_laz_whs2 GFX_goal_laz_ark2
 		cost = 2,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -454,7 +445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_prodolzhit_promishlenniy_plan
-		icon = GFX_focus_cht_socialist_chudo
+		icon = GFX_dock_clique_prodolzhit_promishlenniy_plan
 		cost = 10,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -741,7 +732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_neftekhran #Расширение_нефтеперерабатывающей_промышленности
-		icon = GFX_goal_unknown
+		icon = GFX_Sistema_neftekhranilisch_kliki_Doka
 		cost = 5,00
 		prerequisite = {
 			focus = DON_himprom
@@ -773,7 +764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_rezinka
-		icon = GFX_focus_generic_rubber
+		icon = GFX_Sinteticheskaya_rezina_kliki_Doka
 		cost = 5,00
 		prerequisite = {
 			focus = DON_himprom
@@ -810,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_NPZ
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_dock_clique_NPZ
 		cost = 5,00
 		prerequisite = {
 			focus = DON_himprom
@@ -847,7 +838,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_sinteticheskaya_neft
-		icon = GFX_focus_SOV_the_road_of_life
+		icon = GFX_Sinteticheskaya_neft_kliki_Doka
 		cost = 10,00
 		prerequisite = {
 			focus = DON_NPZ
@@ -883,7 +874,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_avtakriya #Выбор_основной_экономической_политики
-		icon = GFX_focus_SOV_the_road_of_life
+		icon = GFX_Avtarkia_kliki_Doka
 		cost = 5,00
 		prerequisite = {
 			focus = DON_NPZ
@@ -915,7 +906,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_razvitiye_eksporta
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_Rasshirit_export_kliki_Doka
 		cost = 5,00
 		prerequisite = {
 			focus = DON_NPZ

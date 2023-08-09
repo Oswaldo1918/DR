@@ -29,6 +29,58 @@ ideas = {
 				}
 			}
 		}
+		MRD_idea_rasshireniye_zhd_seti = {
+
+			allowed = {
+				original_tag = MRD
+			}
+
+			picture = Kavaleryiskaya_zonderkomanda_SS_Nazgul
+	
+			modifier = {
+				production_speed_rail_way_factor = 0.05
+				production_speed_supply_node_factor = 0.05
+			}
+		}
+		MRD_idea_dopolnitelniye_harchi = {
+
+			allowed = {
+				original_tag = MRD
+			}
+
+			picture = Kavaleryiskaya_zonderkomanda_SS_Nazgul
+	
+			modifier = {
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		MRD_idea_vino_i_babi = {
+
+			allowed = {
+				original_tag = MRD
+			}
+
+			picture = Kavaleryiskaya_zonderkomanda_SS_Nazgul
+	
+			modifier = {
+				army_attack_factor = 0.2
+			}
+		}
+		MRD_idea_posledniy_ryvok = {
+
+			allowed = {
+				original_tag = MRD
+			}
+
+			picture = Kavaleryiskaya_zonderkomanda_SS_Nazgul
+	
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
 	}
 	
 	tank_manufacturer = { 
