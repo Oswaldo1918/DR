@@ -1,6 +1,6 @@
-################
-  ### CHAT ###
-################
+###########################
+  ### PAY_AND_REPENT ###
+###########################
 
 POK_srednyaya_asia = { 
  icon = generic_prospect_for_resources
@@ -24,7 +24,7 @@ POK_panoramnoye_okno_v_Evropu = {
 	}
 }
 
-GV_v_pokayanii_podgotovka = { 
+GV_v_pokayanii_podgotovka = {
 	icon = generic_prospect_for_resources
     allowed = {
 		OR = {
@@ -33,24 +33,19 @@ GV_v_pokayanii_podgotovka = {
 			original_tag = YSK
 			original_tag = GAL
 			original_tag = MGN
-				AND = {
-					original_tag = MRD
-					has_country_flag = MRD_podgotovka_k_interventsii_country_flag
-				}
-			}
+			original_tag = MRD
+		}
 	}
 	visible = {
-	POK = {NOT = {has_war = yes}}
-	OR = {
-		original_tag = OMS
-		original_tag = ZNS
-		original_tag = YSK
-		original_tag = GAL
-		original_tag = MGN
-				AND = {
-					original_tag = MRD
-					has_country_flag = MRD_podgotovka_k_interventsii_country_flag
-				}
+		POK = {NOT = {has_war = yes}}
+			OR = {
+				original_tag = OMS
+				original_tag = ZNS
+				original_tag = YSK
+				original_tag = GAL
+				original_tag = MGN
+				has_country_flag = MRD_podgotovka_k_interventsii_country_flag
+			}
 		}
 	}
 }

@@ -154,7 +154,7 @@ country_event = { #Проблема_назгулов
 		}
 		create_operative_leader = {
 			name = "Король-чародей Ангмара"
-			GFX = GFX_portrait_MRD_korol_charodey
+			GFX = "gfx/leaders/MRD/king_charodey.dds"
 			traits = { operative_commando operative_infiltrator }
 			bypass_recruitment = no
 			available_to_spy_master = no
@@ -175,12 +175,12 @@ country_event = { #Первый_блин
 		name = mordor.9.a
 		hidden_effect = {
 			add_to_variable = { MRD_conscription_factor = 0.25 }
-			add_to_variable = { MRD_offensive_war_stability_factor = 0.25 }
+			add_to_variable = { MRD_offensive_war_stability_factor = 0.10 }
 			add_to_variable = { MRD_weekly_manpower = -5 }
 		}
-		custom_effect_tooltip = MRD_1_conscription_factor_tt
+		custom_effect_tooltip = MRD_3_conscription_factor_tt
 		custom_effect_tooltip = MRD_2_offensive_war_stability_factor_tt
-		custom_effect_tooltip = MRD_3_weekly_manpower_tt
+		custom_effect_tooltip = MRD_1_h_weekly_manpower_tt
 	}
 }
 country_event = { #Пендальфа_завербовали
@@ -304,5 +304,40 @@ country_event = { #Интервенция_в_гражданскую_войну
 			target = ZNS
 			type = annex_everything
 		}
+	}
+}
+country_event = { #На_случай_если_война_затягивается
+
+	id = mordor.15
+        title = mordor.15.t
+        desc = mordor.15.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = MRD
+		MRD = {
+			has_war = yes
+		}
+		has_completed_focus = MRD_seite_razumnoye_dobroye_vechnoye
+		NOT = { 
+			has_completed_focus = MRD_perdviy_platsdarm_vzyat
+			has_idea = MRD_idea_posledniy_ryvok
+		}
+	}
+	
+	option = {
+		name = mordor.15.a
+		hidden_effect = {
+			add_to_variable = { MRD_mordor_army_attack_factor = -0.15 }
+			add_to_variable = { MRD_mordor_army_defence_factor = -0.15 }
+			add_to_variable = { MRD_mordor_army_org_regain = -0.15 }
+			add_to_variable = { MRD_mordor_army_org_factor = -0.15 }		
+		}
+		custom_effect_tooltip = MRD_3_h_mordor_army_attack_factor_tt
+		custom_effect_tooltip = MRD_3_h_mordor_army_defence_factor_tt
+		custom_effect_tooltip = MRD_3_h_mordor_army_org_regain_tt
+		custom_effect_tooltip = MRD_3_h_army_org_factor_tt
 	}
 }
