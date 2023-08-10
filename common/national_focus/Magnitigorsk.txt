@@ -130,6 +130,20 @@ focus_tree = {
 		}
 		x = 12
 		y = 5
+		
+		available = {
+	    	NOT = {
+		    	OR = {
+		    		has_war_with = POK
+		     		has_war_with = OMS
+		    		has_war_with = ZNS
+		    		has_war_with = YSK
+		    		has_war_with = GAL
+		    		has_war_with = MRD
+		    	}	
+			}	
+		}
+				
 			completion_reward = {
 				remove_ideas = MGN_voen_communism
 				add_ideas = MGN_neefect_com_ec
@@ -230,6 +244,19 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
+		
+		available = {
+	    	NOT = {
+		    	OR = {
+		    		has_war_with = POK
+		     		has_war_with = OMS
+		    		has_war_with = ZNS
+		    		has_war_with = YSK
+		    		has_war_with = GAL
+		    		has_war_with = MRD
+		    	}	
+			}	
+		}
 			completion_reward = {
 					add_political_power = 150
 				}
@@ -339,6 +366,20 @@ focus_tree = {
 		}
 		x = 23
 		y = 5
+		
+		available = {
+	    	NOT = {
+		    	OR = {
+		    		has_war_with = POK
+		     		has_war_with = OMS
+		    		has_war_with = ZNS
+		    		has_war_with = YSK
+		    		has_war_with = GAL
+		    		has_war_with = MRD
+		    	}	
+			}	
+		}
+		
 			completion_reward = {
 					load_oob = MGN_shtraf_1936
 				}
@@ -561,6 +602,20 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
+		
+		available = {
+	    	NOT = {
+		    	OR = {
+		    		has_war_with = POK
+		     		has_war_with = OMS
+		    		has_war_with = ZNS
+		    		has_war_with = YSK
+		    		has_war_with = GAL
+		    		has_war_with = MRD
+		    	}	
+			}	
+		}
+		
 			completion_reward = {
 					custom_effect_tooltip = MGN_new_resheniya_effect_tt
 				}

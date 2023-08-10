@@ -180,6 +180,18 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
+		available = {
+	    	NOT = {
+		    	OR = {
+		    		has_war_with = POK
+		     		has_war_with = OMS
+		    		has_war_with = ZNS
+		    		has_war_with = YSK
+		    		has_war_with = MGN
+		    		has_war_with = MRD
+		    	}	
+			}	
+		}
 			completion_reward = {
 					remove_ideas = GAL_barini_hozyaini
 					remove_ideas = GAL_biznes
