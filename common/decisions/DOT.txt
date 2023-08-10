@@ -693,6 +693,22 @@ DOT_nationalization_Russia = {
 			add_state_core = 408
 		}	
 	}
+	DOT_perenos_stolitsi = { 
+	
+		cost = 20
+
+		visible = {
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			set_capital = {state = 408}
+		}	
+	}
 	DOT_core_Sahalin = { 
 	
 		cost = 20
@@ -845,6 +861,25 @@ DOT_nationalization_Russia = {
 		    add_state_core = 876
 			add_state_core = 877         
 			add_state_core = 574
+		}	
+	}
+	
+	DOT_obedinenie_DV = { 	
+		cost = 30
+		visible = {
+			controls_state = 574
+			controls_state = 657
+			controls_state = 408
+			controls_state = 644
+			controls_state = 874
+			controls_state = 637
+		}		
+		fire_only_once = yes
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    swap_ruler_traits = { remove = pretindent_na_DV add = obedinitel_DV }
 		}	
 	}
 	
