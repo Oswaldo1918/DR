@@ -662,7 +662,6 @@ country_event = {
 		add_war_support = -0.2
 		add_political_power = -100
 		MRD = {country_event = { id = mordor.13 days = 19 } }
-		country_event = { id = POK.24 days = 45}
 		country_event = { id = POK.1 days = 18}
 		country_event = { id = POK.2 days = 16}
 		country_event = { id = POK.3 days = 19}
@@ -704,7 +703,7 @@ country_event = {
 	
 	option = {
 	name = POK.23.a
-	add_manpower = -1200
+	add_manpower = -2000
 	load_oob = POK_polize_forse
 	}
 }
@@ -722,6 +721,95 @@ country_event = { ###Начало гражданской войны в Пока�
 	
 	option = {
 		name = POK.24.a
+		add_manpower = -1200
+		hidden_effect = {
+			MRD = { country_event = mordor.14 }
+			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до вступления_Мордора
+				target = MGN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OMS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YSK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ZNS
+				type = annex_everything
+			}
+			MGN = {
+			    declare_war_on = {
+					target = OMS
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = GAL
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = YSK
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = ZNS
+					type = annex_everything
+				}
+			}
+			OMS = {
+			    declare_war_on = {
+					target = GAL
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = YSK
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = ZNS
+					type = annex_everything
+				}				
+			}
+			GAL = {
+			    declare_war_on = {
+					target = YSK
+					type = annex_everything
+				}
+			    declare_war_on = {
+					target = ZNS
+					type = annex_everything
+				}				
+			}
+			ZNS = {
+			    declare_war_on = {
+					target = YSK
+					type = annex_everything
+				}					
+			}
+		}
+	}
+}
+country_event = { ###Начало гражданской войны в Покаянии
+	id = POK.25
+	title = POK.25.t
+	desc = POK.25.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = POK.25.a
+		add_manpower = -1200
 		hidden_effect = {
 			MRD = { country_event = mordor.14 }
 			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до вступления_Мордора

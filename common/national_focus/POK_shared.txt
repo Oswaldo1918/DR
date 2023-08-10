@@ -1253,7 +1253,8 @@ country_event = { id = POK.23 }
 	        planning_skill = 1
 	        logistics_skill = 1
 		    legacy_id = -1
-            }   			
+            }  
+ 			country_event = { id = POK.24 }
         }
 	}
 	shared_focus = {
@@ -1269,6 +1270,7 @@ country_event = { id = POK.23 }
 		x = 22
 		y = 9
 		completion_reward = {
+		country_event = { id = POK.25 }
             add_political_power = 150
             add_stability = 0.05     			
         }
