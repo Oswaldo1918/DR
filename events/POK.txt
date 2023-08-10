@@ -890,4 +890,44 @@ country_event = { ###Начало гражданской войны в Пока�
 		}
 	}
 }	
+country_event = {
+	id = POK.26
+	title = POK.26.t
+	desc = POK.26.d
+	picture = GFX_report_event_dkr_pok_police
 	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.26.a
+	add_country_leader_role = {
+			character = POK_Shulman
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+	option = {
+	name = POK.26.b
+	add_country_leader_role = {
+			character = POK_Hodorkovskiy
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+}
