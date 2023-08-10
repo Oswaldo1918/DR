@@ -1,4 +1,20 @@
 ﻿division_template = {
+	name = "Терроборона"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = UKR_GAR_01
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+	support = {
+
+	}
+	priority = 0
+}
+division_template = {
 	name = "Добробат"				# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = UKR_GAR_01
@@ -102,14 +118,14 @@ units = {
 	division = {
 		name = "1-я бригада терробороны"		
 		location = 3399
-		division_template = "Добробат"
+		division_template = "Терроборона"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "2-я бригада терробороны"		
 		location = 11452
-		division_template = "Добробат"
+		division_template = "Терроборона"
         start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}

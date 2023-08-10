@@ -56,6 +56,24 @@ ideas = {
 	    			resistance_damage_to_garrison = -0.05
 	    		}
 	    	}
+			
+			UKR_upor_na_nazbati = {
+
+	    		modifier = {
+	    			root_out_resistance_effectiveness_factor = 0.1
+	    			resistance_damage_to_garrison = -0.1
+					militia_attack_factor = 0.5
+					militia_defence_factor = 0.5
+	    		}
+	    	}
+			
+			UKR_upor_na_vsu = {
+
+	    		modifier = {
+	    			army_attack_factor = 0.15
+					army_defence_factor = 0.15
+	    		}
+	    	}
 
 			UKR_nahruk_level_1 = {
 			
