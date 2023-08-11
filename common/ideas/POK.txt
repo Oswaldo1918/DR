@@ -849,7 +849,7 @@ ideas = {
 			    consumer_goods_factor = 0.04
                 stability_factor = -0.075
                 production_factory_efficiency_gain_factor = 0.075             
-                production_factory_start_efficiency_factor = -0.1     							
+                production_factory_start_efficiency_factor = -0.025     							
 			}
 		}
 		POK_otmenit_trudovoy_codex = {
@@ -872,7 +872,7 @@ ideas = {
 			    consumer_goods_factor = -0.03
                 stability_factor = -0.01
                 production_factory_efficiency_gain_factor = 0.01             
-                production_factory_start_efficiency_factor = -0.15
+                production_factory_start_efficiency_factor = -0.05
                 production_speed_buildings_factor = 0.1       				
 			}
 		}
@@ -985,7 +985,7 @@ ideas = {
 				min_export = 0.15
                 research_speed_factor = 0.05 
 				production_factory_efficiency_gain_factor = 0.01             
-                production_factory_start_efficiency_factor = -0.15
+                production_factory_start_efficiency_factor = -0.5
                 production_speed_buildings_factor = 0.1 
                 production_factory_max_efficiency_factor = 0.05
                 monthly_population = 0.25       				
@@ -2220,7 +2220,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.025
 				production_factory_efficiency_gain_factor = 0.025
                 production_factory_max_efficiency_factor = 0.025 
-                production_factory_start_efficiency_factor = -0.1
+                production_factory_start_efficiency_factor = -0.05
                 production_lack_of_resource_penalty_factor = -0.025       				
 			}
 		}
