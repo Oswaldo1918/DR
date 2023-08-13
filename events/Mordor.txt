@@ -91,7 +91,14 @@ country_event = { #Победа_Мордовии_Саурон
 	
 	option = {
 		name = mordor.4.a
-		
+		custom_effect_tooltip = MRD_uspeshniy_reid_tt
+		hidden_effect = {
+			add_to_variable = { MRD_monthly_population = 0.05 }
+			add_to_variable = { MRD_weekly_manpower = 150 }
+		}
+		custom_effect_tooltip = MRD_1_monthly_population_tt
+		custom_effect_tooltip = MRD_3_weekly_manpower_tt
+		set_country_flag = MRD_uspeshniy_reid_country_flag
 	}
 }
 country_event = { #Победа_Покаянии_Саурон
@@ -105,7 +112,6 @@ country_event = { #Победа_Покаянии_Саурон
 	
 	option = {
 		name = mordor.5.a
-		
 	}
 }
 country_event = { #Победа_Покаянии_Покаян
@@ -339,5 +345,29 @@ country_event = { #На_случай_если_война_затягиваетс�
 		custom_effect_tooltip = MRD_3_h_mordor_army_defence_factor_tt
 		custom_effect_tooltip = MRD_3_h_mordor_army_org_regain_tt
 		custom_effect_tooltip = MRD_3_h_army_org_factor_tt
+	}
+}
+country_event = { #Победа_в_гражданской_войне
+
+	id = mordor.16
+        title = mordor.16.t
+        desc = mordor.16.d
+	picture = GFX_report_event_dkr_sarumyan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.16.a
+		hidden_effect = {
+			remove_dynamic_modifier = { modifier =  MRD_poddaniy_dynamic_modifier }
+			add_dynamic_modifier = { modifier = MRD_totalitarism_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = MRD_sever_dynamic_modifier }
+			add_dynamic_modifier = { modifier = MRD_arbeiten_dynamic_modifier }
+			remove_dynamic_modifier = { modifier = MRD_legacy_of_army_dynamic_modifier }
+			add_dynamic_modifier = { modifier = MRD_mordor_army_dynamic_modifier }
+			set_variable = { MRD_encryption_factor = 0 }
+		}
+		custom_effect_tooltip = MRD_pobeda_tt
+		custom_effect_tooltip = MRD_encryption_factor_udalit_bonus_tt
 	}
 }

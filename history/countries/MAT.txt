@@ -28,16 +28,9 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
 	motorised_infantry = 1
-	paratroopers = 1
 	gw_artillery = 1
-	interwar_antiair = 1
-	mass_assault = 1
-	fleet_in_being = 1
 	fuel_silos = 1
-	fuel_refining = 1
 	basic_train = 1
 }
 
@@ -57,7 +50,6 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
 		engine_tech_2 = 1
 	}
@@ -147,26 +139,6 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Киа Рио"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Kia_Rio.dds"
-	expire = "1999.1.1"
-	ideology = liberalism
-	traits = {
-
-	}
-}
-create_country_leader = {
-	name = "Киа Рио"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Kia_Rio.dds"
-	expire = "1999.1.1"
-	ideology = cybernetics
-	traits = {
-
-	}
-}
-create_country_leader = {
 	name = "Данил Цуканов"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Danil_Tsukanov.dds"
@@ -199,4 +171,17 @@ create_field_marshal = {
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 2 
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Оперативник Мамаев"
+		GFX = "gfx/leaders/MAT/Operativnik_Mamayev.dds"
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { MAT JPE }
+	}
 }

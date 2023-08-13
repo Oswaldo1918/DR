@@ -1,0 +1,68 @@
+MAT_operation_poisk_hinamidzavi = {
+	icon = GFX_operations_boost_resistance
+	map_icon = GFX_boost_resistance_map
+	name = MAT_operation_poisk_hinamidzavi
+	desc = MAT_operation_poisk_hinamidzavi_desc
+	days = 36
+
+	priority = 10
+
+	allowed = {
+		original_tag = MAT
+	}
+	available = {
+		power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value > 0.2
+		}
+		network_strength = {
+			target = JPE
+			state = 532
+			value > 25
+		}
+	}
+	cost_multiplier = 0
+	visible = {
+		FROM = {
+			controls_state = 532 #ХИНАМИДЗАВА
+		}		
+	}
+	equipment = {
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	on_start = {  # SCOPE_OPERATION
+	}
+
+	#outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
+	#cost_modifiers = { operation_cost operation_infiltrate_cost }
+	#risk_modifiers = { operation_risk operation_infiltrate_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = MRD_devochek_vivezli_nachalo_tt
+	}
+	risk_chance = 0.1
+	experience = 5
+	outcome_execute = { # SCOPE_OPERATION
+		custom_effect_tooltip = MAT_devochek_vivezli_konest_tt
+	}
+
+	phases = { #infiltration
+		MAT_faza_1_pribytiye = { 
+			base = 100 
+		}
+	}
+	phases = { #resistance support
+		MAT_faza_2_razvedat_hinamidzavsk = { 
+			base = 100 
+		}
+	}
+	phases = { #exfiltration
+		MAT_faza_3_perezhit_vatanagashi = { 
+			base = 100 
+		}
+	}
+}
