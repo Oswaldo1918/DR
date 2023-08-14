@@ -35,7 +35,8 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			add_ideas = MRD_idea_nazgul
+			create_intelligence_agency = yes
+			#add_ideas = MRD_idea_nazgul
 			country_event = mordor.8
 		}
 	}
@@ -203,7 +204,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_sistema_trudovikh_lagerei
 		}
-		x = 7
+		x = 6
 		y = 4
 		completion_reward = {
 			878 = {
@@ -274,7 +275,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_zapustit_nornikel
 		}
-		x = 5
+		x = 4
 		y = 4
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -327,7 +328,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_sistema_trudovikh_lagerei
 		}
-		x = 9
+		x = 10
 		y = 4
 		completion_reward = {
 			#Дудинка-Туруханск-Тура
@@ -380,7 +381,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_rasshireniye_vornproma
 		}
-		x = 9
+		x = 8
 		y = 5
 		completion_reward = {
 			country_event = mordor.12
@@ -430,7 +431,7 @@ focus_tree = {
 		x = 7
 		y = 7
 		completion_reward = {
-			add_timed_idea {
+			add_timed_idea = {
 				idea = MRD_idea_rasshireniye_zhd_seti
 				days = 180
 			}
@@ -446,7 +447,7 @@ focus_tree = {
 		x = 8
 		y = 8
 		completion_reward = {
-			add_timed_idea {
+			add_timed_idea = {
 				idea = MRD_idea_dopolnitelniye_harchi
 				days = 180
 			}
@@ -462,7 +463,7 @@ focus_tree = {
 		x = 6
 		y = 8
 		completion_reward = {
-			add_timed_idea {
+			add_timed_idea = {
 				idea = MRD_idea_vino_i_babi
 				days = 180
 			}
@@ -495,6 +496,11 @@ focus_tree = {
 		x = 12
 		y = 7
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			hidden_effect = {
 				add_to_variable = { MRD_mordor_army_land_night_attack = 0.05}
 				add_to_variable = { MRD_mordor_army_org_loss_when_moving = -0.1}
@@ -534,6 +540,7 @@ focus_tree = {
 				}
 			}
 			516 = {
+				#has_country_flag = MRD_usilit_partizan_flag
 				create_unit = {
 					division = "name = \"88-я стрелковая дивизия\" 
 					division_template = \"Дивизия партизан\" 
@@ -541,12 +548,30 @@ focus_tree = {
 					owner = MRD
 				}
 				create_unit = {
-					division = "name = \"956-я стрелковая дивизия\" 
+					division = "name = \"96-я стрелковая дивизия\" 
 					division_template = \"Дивизия партизан\" 
 					start_experience_factor = 0.25"  
 					owner = MRD
 				}
-			}	
+				create_unit = {
+					division = "name = \"61-я стрелковая дивизия\" 
+					division_template = \"Дивизия партизан\" 
+					start_experience_factor = 0.25"  
+					owner = MRD
+				}
+				create_unit = {
+					division = "name = \"158-я стрелковая дивизия\" 
+					division_template = \"Дивизия партизан\" 
+					start_experience_factor = 0.25"  
+					owner = MRD
+				}
+				create_unit = {
+					division = "name = \"165-я стрелковая дивизия\" 
+					division_template = \"Дивизия партизан\" 
+					start_experience_factor = 0.25"  
+					owner = MRD
+				}				
+			}
 		}
 	}
 	focus = {
@@ -566,7 +591,7 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			add_manpower = 10000
-			add_timed_idea {
+			add_timed_idea = {
 				idea = MRD_idea_posledniy_ryvok
 				days = 90
 			}			
@@ -604,6 +629,7 @@ focus_tree = {
 		x = 9
 		y = 10
 		completion_reward = {
+			set_major = yes
 			country_event = mordor.16
 			set_cosmetic_tag = MRD_sibir
 			add_state_core = 577
