@@ -3,6 +3,18 @@
 @tier3 = 10
 
 leader_traits = {
+	son_vozhd = {
+		sprite = 10
+		random = not
+		political_power_factor = 0.05
+		war_support_factor = 0.1
+		stability_factor = -0.05
+		experience_gain_army = 0.005 
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
 	
 	pretindent_na_DV = {
 		sprite = 10

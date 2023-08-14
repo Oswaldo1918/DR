@@ -1,9 +1,9 @@
 MRD_operation_usilit_partizan = {
-	icon = GFX_murder_trotsky
-	map_icon = GFX_murder_trotsky_map
-	name = murder_trotsky
-	desc = murder_trotsky_desc
-	days = 25
+	icon = GFX_operations_boost_resistance
+	map_icon = GFX_boost_resistance_map
+	name = MRD_operation_usilit_partizan
+	desc = MRD_operation_usilit_partizan_desc
+	days = 36
 
 	priority = 10
 
@@ -11,14 +11,23 @@ MRD_operation_usilit_partizan = {
 		original_tag = MRD
 	}
 	available = {
-
+		network_strength = {
+			target = POK
+			state = 653
+			value > 25
+		}
 	}
+	cost_multiplier = 0
 	visible = {
 		has_completed_focus = MRD_nachinaem_s_dachnikov
-		has_country_flag = MRD_uspeshniy_reid
+		has_country_flag = MRD_uspeshniy_reid_country_flag
 		NOT = { has_completed_focus = MRD_poneslas_mocha_po_trubam }
+		FROM = {
+			controls_state = 653 #ЕЛЬЦОБУРГ
+		}		
 	}
-
+	equipment = {
+	}
 	operatives = 1
 
 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
@@ -27,43 +36,40 @@ MRD_operation_usilit_partizan = {
 	on_start = {  # SCOPE_OPERATION
 	}
 
-	outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
-	cost_modifiers = { operation_cost operation_infiltrate_cost }
-	risk_modifiers = { operation_risk operation_infiltrate_risk }
+	#outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
+	#cost_modifiers = { operation_cost operation_infiltrate_cost }
+	#risk_modifiers = { operation_risk operation_infiltrate_risk }
 
 	outcome_potential = {
-		custom_effect_tooltip = murder_trotsky_outcome_tt
+		custom_effect_tooltip = MRD_usilit_partizan_nachalo_flag_tt
 	}
-	risk_chance = 0.25
+	risk_chance = 0.1
 	experience = 5
-	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
-		ROOT = { set_country_flag = SOV_trotskys_assassination_attempt_flag } # This operation can only be done once
-		ROOT = { news_event = { id = news.37 } }  #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
+		ROOT = { set_country_flag = MRD_usilit_partizan_flag }
+		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag }
+		custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt
 	}
-	
-	# This is where all the separate phases are defined
-	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
-	phases = { #infiltration 
-		murder_trotsky_infiltration = { base = 100 }
-	}
-	phases = { 
-		murder_trotsky_attack = { base = 100 }
-	}
-	phases = { 
-		exfiltration_border = { base = 40 }
-		exfiltration_go_to_ground = { base = 30 }
-		exfiltration_submarine_pickup = { base = 20 }
-		exfiltration_air_pickup = { 
-			base = 10
+
+	phases = { #infiltration
+		infiltration_border = { base = 75 }
+		infiltration_paradrop = { 
+			base = 25 
 			modifier = {
 				ROOT = { 
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0 #less likely if we have no transports
+				factor = 0
 			}
 		}
+	}
+	phases = { #resistance support
+		MRD_usilit_partizan_faza_2 = { base = 100 }
+	}
+	phases = { #exfiltration
+		exfiltration_border = { base = 50 }
+		exfiltration_go_to_ground = { base = 50 }
 	}
 }

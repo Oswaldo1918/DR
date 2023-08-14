@@ -153,7 +153,7 @@ focus_tree = {
 			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
 			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
 			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
-			custom_effect_tooltip = MRD_2_monthly_population_tt					
+			custom_effect_tooltip = MRD_2_h_monthly_population_tt					
 		}
 	}
 	focus = {
@@ -398,6 +398,26 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_political_power = 50
+			add_state_claim  = 577
+			add_state_claim  = 571
+			add_state_claim  = 570
+			add_state_claim  = 578
+			add_state_claim  = 569
+			add_state_claim  = 576
+			add_state_claim  = 568
+			add_state_claim  = 40
+			add_state_claim  = 654
+			add_state_claim  = 329
+			add_state_claim  = 567
+			add_state_claim  = 575
+			add_state_claim  = 824
+			add_state_claim  = 579
+			add_state_claim  = 580
+			add_state_claim  = 403
+			add_state_claim  = 653
+			add_state_claim  = 572
+			add_state_claim  = 573
+			add_state_claim  = 582
 		}
 	}
 	focus = {
@@ -573,10 +593,18 @@ focus_tree = {
 			owns_state  = 567
 			owns_state  = 575
 			owns_state  = 824
+			owns_state  = 579
+			owns_state  = 580
+			owns_state  = 403
+			owns_state  = 653
+			owns_state  = 572
+			owns_state  = 573
+			owns_state  = 582
 		}	
 		x = 9
 		y = 10
 		completion_reward = {
+			country_event = mordor.16
 			set_cosmetic_tag = MRD_sibir
 			add_state_core = 577
 			add_state_core = 571
@@ -591,6 +619,13 @@ focus_tree = {
 			add_state_core = 567
 			add_state_core = 575
 			add_state_core = 824
+			add_state_core  = 579
+			add_state_core  = 580
+			add_state_core  = 403
+			add_state_core  = 653
+			add_state_core  = 572
+			add_state_core  = 573
+			add_state_core  = 582
 		}	
 	}
 	focus = {
