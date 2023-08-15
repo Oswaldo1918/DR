@@ -1464,16 +1464,26 @@ completion_reward = {
 			has_war = no
 		}
         ai_will_do = {
-        factor = 100
+			base = 10
+			modifier = {
+				if = {
+					limit = {
+						date > 4.5.5
+					}
+					factor = 0
+				}
+				else = {
+					factor = 5
+				}
+			}
 		}
-completion_reward = {
- KRR = {
-         country_event = {
-							id = krr.1
-						    }
-						}
-}
-
+		completion_reward = {
+			KRR = {
+				country_event = {
+					id = krr.1
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = NOD_Donbass_nash

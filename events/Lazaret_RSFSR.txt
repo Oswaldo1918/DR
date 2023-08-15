@@ -126,6 +126,7 @@ country_event = { #Ильгиз_вываливается_из_Чумного_Пакта
 	
 	option = {
 		name = lazaret.4.a
+		BSH = { country_event = BSH.0 }
 		remove_from_faction = BSH
 		end_puppet = BSH
 	}

@@ -131,6 +131,27 @@ characters={
 	    }
 	}
 	
+	BSH_boykisser = {
+		name = "Бойкиссер"
+		portraits = {
+			civilian = {     
+				small = "GFX_idea_BSH_boykisser"
+			}
+		}
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_boykisser
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = {son_vozhd}
+	    }
+	}
+	
 	BSH_Andruha = {
 		name = "Андрюха"
 		portraits = {

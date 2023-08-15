@@ -1503,6 +1503,10 @@ country_event = { id = POK.23 }
 		}
 		x = 4
 		y = 16
+		
+		completion_reward = {
+					load_oob = POK_vdv
+				}
 
 	}
 	shared_focus = {
@@ -1517,6 +1521,10 @@ country_event = { id = POK.23 }
 		}
 		x = 2
 		y = 16
+		
+		completion_reward = {
+					load_oob = POK_marine
+				}
 
 	}
 	

@@ -1,6 +1,6 @@
 MRD_operation_usilit_partizan = {
-	icon = GFX_operations_boost_resistance
-	map_icon = GFX_boost_resistance_map
+	icon = GFX_MRD_usilit_partizan_faza_2
+	map_icon = GFX_MRD_usilit_partizan_faza_2_map
 	name = MRD_operation_usilit_partizan
 	desc = MRD_operation_usilit_partizan_desc
 	days = 36
@@ -46,7 +46,7 @@ MRD_operation_usilit_partizan = {
 	risk_chance = 0.1
 	experience = 5
 	outcome_execute = { # SCOPE_OPERATION
-		ROOT = { set_country_flag = MRD_usilit_partizan_flag }
+		MRD = { set_country_flag = MRD_usilit_partizan_flag }
 		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag }
 		custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt
 	}

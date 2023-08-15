@@ -1,6 +1,22 @@
 add_namespace = BSH
 
 	
+country_event = { #Ильгиз_вываливается_из_Чумного_Пакта
+	id = BSH.0 
+	title = BSH.0.t
+	desc = BSH.0.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = BSH.0.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+	}
+}	
 country_event = { #марщ на Уфу
 	id = BSH.1 
 	title = BSH.1.t
