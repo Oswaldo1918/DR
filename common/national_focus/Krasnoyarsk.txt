@@ -686,10 +686,21 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
-			completion_reward = {
-					load_oob = ZNS_FF_1936
-				}
-
+		completion_reward = {
+			load_oob = ZNS_FF_1936
+			add_corps_commander_role = {
+				character = ZNS_Marina_FF
+				traits = {
+                    bearer_of_artillery         
+                }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				legacy_id = -1
+			}
+		}
 	}
 	focus = {
 		id = ZNS_zhenshchiny_v_armii
