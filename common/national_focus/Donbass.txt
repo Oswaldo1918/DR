@@ -1251,26 +1251,82 @@ focus_tree = {
 		x = 20
 		y = 7
 		completion_reward = {
+		set_technology = { advanced_heavy_tank_chassis = 1 }
+		set_technology = { improved_medium_tank_chassis = 1 }
+		set_technology = { advanced_light_tank_chassis = 1 }
 			create_equipment_variant = {
-				name = "Т-10М"
+				name = "ИС-3"
 				type = heavy_tank_chassis_3
 				parent_version = 0
 				modules = {
-					main_armament_slot = tank_heavy_cannon_2
-					turret_type_slot = tank_heavy_three_man_tank_turret
-					suspension_type_slot = tank_torsion_bar_suspension
-					armor_type_slot = tank_welded_armor
-					engine_type_slot = tank_diesel_engine
-					special_type_slot_1 = tank_radio_1
-					special_type_slot_2 = sloped_armor
-					special_type_slot_3 = smoke_launchers
+			    	main_armament_slot = tank_heavy_cannon_2
+			    	turret_type_slot = tank_heavy_three_man_tank_turret
+			    	suspension_type_slot = tank_torsion_bar_suspension
+			    	armor_type_slot = tank_welded_armor
+			     	engine_type_slot = tank_diesel_engine
+			    	special_type_slot_1 = tank_radio_1
+			    	special_type_slot_2 = sloped_armor
 				}
 				upgrades = {
 					tank_nsb_engine_upgrade = 8
-					tank_nsb_armor_upgrade = 6
+					tank_nsb_armor_upgrade = 7
 				}
-				icon = "GFX_SOV_advanced_heavy_tank_medium"
+				icon = "gfx/interface/technologies/DON_IS-3.dds"
 			}
+			create_equipment_variant = {
+	        	name = "T-34"
+        		type = medium_tank_chassis_2
+	        	parent_version = 0
+	        	modules = {
+	    	    	main_armament_slot = tank_medium_cannon
+	            	turret_type_slot = tank_medium_two_man_tank_turret
+	         		suspension_type_slot = tank_christie_suspension
+	     	     	armor_type_slot = tank_welded_armor
+	    	    	engine_type_slot = tank_diesel_engine
+	      	    	special_type_slot_1 = sloped_armor
+	        	}
+	         	upgrades = {
+	         		tank_nsb_engine_upgrade = 10
+		        	tank_nsb_armor_upgrade = 7
+	         	}
+	         	icon = "GFX_SOV_improved_medium_tank_medium"
+	        }
+			create_equipment_variant = {
+	           	name = "T-34-85"
+	           	type = medium_tank_chassis_2
+	        	parent_version = 1
+	        	modules = {
+	        		main_armament_slot = tank_medium_cannon_2
+	         		turret_type_slot = tank_medium_three_man_tank_turret
+	          		suspension_type_slot = tank_christie_suspension
+	          		armor_type_slot = tank_welded_armor
+	        		engine_type_slot = tank_diesel_engine
+		        	special_type_slot_1 = sloped_armor
+	         	}
+	           	upgrades = {
+	        		tank_nsb_armor_upgrade = 10
+	          		tank_nsb_engine_upgrade = 7
+	           	}
+        		icon = "gfx/interface/technologies/DON_T-34-85.dds"
+          	}
+            create_equipment_variant = {
+	         	name = "T-70"
+        		type = light_tank_chassis_3
+	        	parent_version = 0
+	        	modules = {
+	        		main_armament_slot = tank_small_cannon_2
+	          		turret_type_slot = tank_light_one_man_tank_turret
+	           		suspension_type_slot = tank_torsion_bar_suspension
+		        	armor_type_slot = tank_welded_armor
+		         	engine_type_slot = tank_gasoline_engine
+		        	special_type_slot_1 = sloped_armor
+	        	}
+	        	upgrades = {
+	         		tank_nsb_engine_upgrade = 6
+	        		tank_nsb_armor_upgrade = 6
+	        	}
+	         	icon = "gfx/interface/technologies/DON_T-70.dds"
+         	}			
 			division_template = {
 				name = "Танковая дивизия"
 
