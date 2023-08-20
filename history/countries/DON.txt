@@ -9,7 +9,6 @@ set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 	gwtank_chassis = 1
-	early_fighter = 1
 	basic_train = 1
 }
 
@@ -50,10 +49,6 @@ set_convoys = 40
 ### VARIANTS ###
 # 1936 Start #
 
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
 	create_equipment_variant = {
 		name = "I-15" #
 		type = small_plane_airframe_0
@@ -107,87 +102,6 @@ if = {
 		}
 		icon = "GFX_SOV_tactical_bomber1_medium"
 	}
-}
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "BT-7"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_christie_suspension
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 10
-			tank_nsb_armor_upgrade = 2
-		}
-		icon = "GFX_SOV_improved_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "T-28"
-		type = medium_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_medium_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = secondary_turret_hmg
-			special_type_slot_3 = secondary_turret_hmg
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			tank_nsb_engine_upgrade = 10
-		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "T-35"
-		type = heavy_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_medium_three_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = secondary_turret_hmg
-			special_type_slot_3 = secondary_turret_hmg
-			special_type_slot_4 = secondary_turret_small_cannon
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 3
-			tank_nsb_engine_upgrade = 10
-		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Корабль охранения типа Гриф"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Корабль охранения типа Гриф"				
@@ -204,4 +118,3 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-}

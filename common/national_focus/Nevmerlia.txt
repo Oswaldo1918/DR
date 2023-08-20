@@ -212,13 +212,8 @@ focus_tree = {
 		x = 14
 		y = 4
 			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 0.5
-							uses = 2
-							category = armor
-						}
-				}
+				country_event = UKR.50
+			}
 
 	}
 	focus = {
@@ -455,6 +450,7 @@ focus_tree = {
 		
 		completion_reward = {
 					add_ideas = UKR_tsipso_i
+					create_intelligence_agency = yes
 				}
 
 	}
@@ -929,7 +925,7 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-            add_resource = { type = steel amount = 25 state = 226 }                                
+            add_resource = { type = oil amount = 25 state = 226 }                                
         }
 
 	}

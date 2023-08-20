@@ -1,5 +1,14 @@
 ideas = {
     country = {	
+	        UKR_mastera = {
+			
+					equipment_bonus = {
+	            		armor = {
+	             			armor_value = 0.05 reliability = 0.05
+	             		}
+	            	}
+	        }
+	
 			UKR_nazbati_MVD = {
 			
 		    	picture = GAL_mentovshina
@@ -62,8 +71,8 @@ ideas = {
 	    		modifier = {
 	    			root_out_resistance_effectiveness_factor = 0.1
 	    			resistance_damage_to_garrison = -0.1
-					militia_attack_factor = 0.5
-					militia_defence_factor = 0.5
+					modifier_army_sub_unit_militia_attack_factor = 0.5
+					modifier_army_sub_unit_militia_defence_factor = 0.5
 	    		}
 	    	}
 			
