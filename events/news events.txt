@@ -183,10 +183,13 @@ news_event = {
 	picture = GFX_news_event_zalupa_ivanicha
 	
 	major = yes
+	
 	trigger = {
-		date = 3.6.17
+        date = 4.5.5
 	}
-	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
 	option = { #ЭТО_ШЕДЕВР
 		name = dk_news.8.a
 		trigger = {

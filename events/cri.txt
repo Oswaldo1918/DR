@@ -12,18 +12,17 @@ country_event = {
 	
 	option = {
 	name = cri.1.a
-		ai_chance = {
-			base = 70
-			
+        ai_will_do = {
+			base = 1
 		}
-	NOD = {country_event = { id = nod.17 hours = 20 random_hours = 8 }}
+		NOD = {country_event = { id = nod.17 hours = 20 random_hours = 8 }}
 	}
 	option = {
-	name = cri.1.b
-		ai_chance = {
-			base = 30
+		name = cri.1.b
+        ai_will_do = {
+			base = 0
 		}
-	NOD = {country_event = { id = nod.18 hours = 20 random_hours = 8 }}
+		NOD = {country_event = { id = nod.18 hours = 20 random_hours = 8 }}
 	}
 }
  
