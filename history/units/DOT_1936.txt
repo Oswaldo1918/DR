@@ -1,24 +1,4 @@
 ﻿division_template = {
-	name = "Вовааанпехи"				
-
-	division_names_group = DOT_GAR_01
-
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 0 y = 2 }
-		
-		marine = { x = 1 y = 0 }
-       	marine = { x = 1 y = 1 }
-     	marine = { x = 1 y = 2 }
-
-        marine = { x = 2 y = 0 }
-        marine = { x = 2 y = 1 }  
-		marine = { x = 2 y = 2 } 
-	}
-	priority = 3
-}
-division_template = {
 	name = "Ракопехи"				
 
 	division_names_group = DOT_GAR_01
@@ -38,6 +18,27 @@ division_template = {
 	}
 	priority = 3
 }
+division_template = {
+	name = "Вовааанпехи"				
+
+	division_names_group = DOT_GAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		
+		marine = { x = 1 y = 0 }
+       	marine = { x = 1 y = 1 }
+     	marine = { x = 1 y = 2 }
+
+        marine = { x = 2 y = 0 }
+        marine = { x = 2 y = 1 }  
+		marine = { x = 2 y = 2 } 
+	}
+	priority = 3
+}
+
 
 units = {
 	division = {
@@ -45,24 +46,28 @@ units = {
 		location = 1823
 		division_template = "Вовааанпехи"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}	
     division = {
 		name = "2-я дивизия Вовааанпехов"
 		location = 7878
 		division_template = "Вовааанпехи"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "3-я дивизия Вовааанпехов"
 		location = 7878
 		division_template = "Вовааанпехи"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "1-я дивизия ракопехов"
 		location = 1823
 		division_template = "Ракопехи"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	
     division = {
@@ -70,6 +75,7 @@ units = {
 		location = 7878
 		division_template = "Ракопехи"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 }
 
@@ -81,8 +87,7 @@ instant_effect = {
 			creator = "DOT"
 		}
 		requested_factories = 1
-		progress = 0.28
+		progress = 0.35
 		efficiency = 100
 	}
-	
 }

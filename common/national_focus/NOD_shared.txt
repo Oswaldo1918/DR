@@ -1616,9 +1616,6 @@ create_wargoal = {
 		available = {
 			has_war = no
 		}
-		ai_will_do = {
-        factor = 100
-		}
 		x = 46
 		y = 3
 completion_reward = {
@@ -1643,8 +1640,19 @@ create_wargoal = {
 		available = {
 			has_war = no
 		}
-		ai_will_do = {
-        factor = 100
+        ai_will_do = {
+			base = 10
+			modifier = {
+				if = {
+					limit = {
+						date > 4.5.5
+					}
+					factor = 0
+				}
+				else = {
+					factor = 5
+				}
+			}
 		}
 		x = 45
 		y = 4
@@ -2219,12 +2227,12 @@ create_wargoal = {
 		}
 		x = 40
 		y = 2
-completion_reward = {
-add_political_power = 1
-country_event = {
-							id = nod.11
-						    }
-}
+		completion_reward = {
+			add_political_power = 75
+			country_event = {
+				id = nod.11
+			}
+		}
 	}
 	shared_focus = {
 		id = NOD_vnesnie_operatsii
@@ -2236,15 +2244,28 @@ country_event = {
 		prerequisite = {
 			focus = NOD_nats_iskluchitelnost
 		}
+        ai_will_do = {
+			base = 5
+			modifier = {
+				if = {
+					limit = {
+						controls_state = 219
+						controls_state = 195
+					}
+					factor = 2
+				}
+				else = {
+					factor = 0
+				}
+			}
+		}
 		x = 48
 		y = 3
-completion_reward = {
-add_political_power = 200
-
-}
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
-	
-	
+
 	shared_focus = {
 		id = NOD_bel
 		icon = GFX_goal_generic_dangerous_deal
