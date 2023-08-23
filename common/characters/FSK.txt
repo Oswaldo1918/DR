@@ -38,4 +38,21 @@ characters={
         	logistics_skill = 2
         }
     }
+	FSK_Niels_Olaf = {
+		name = "Нильс Олаф III"
+		portraits = {
+			army = {
+				small = "GFX_idea_FSK_Shon_Konneri"
+				large = "gfx/leaders/FSK/Niels_Olaf.dds"
+			}
+		}
+		corps_commander = {
+        	traits = { politically_connected naval_invader }
+         	skill = 1
+          	attack_skill = 1
+          	defense_skill = 1
+          	planning_skill = 1
+        	logistics_skill = 1
+        }
+    }
 }
