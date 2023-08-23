@@ -577,6 +577,7 @@ characters={
 			}
 			traits = {
 				economy_reformer
+				kadet
 			}
 		}
 		
@@ -631,6 +632,7 @@ characters={
 			}
 			traits = {
 				the_statist
+				a_chto
 			}
 		}
 		
@@ -752,6 +754,9 @@ characters={
         	planning_skill = 1
         	logistics_skill = 1
 			legacy_id = 0
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
 		}        		
 	}
 	POK_Eydelman = {
@@ -778,6 +783,150 @@ characters={
 			traits = {
 				
 			}
+		}       		
+	}
+	POK_Saprikina = {
+		name = "Хатима Сапрыкина"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Saprikina"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Saprikina
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				
+			}
+		}       		
+	}
+	POK_Yavlinskiy = {
+		name = "Григорий Явлинский"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Yavlinskiy"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Yavlinskiy
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				political_trup
+				old_socdem
+			}
+		}       		
+	}
+	POK_Serebryannikov = {
+		name = "Кирилл Серебрянников"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Serebryannikov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Serebryannikov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				min_kult
+			}
+		}       		
+	}
+	POK_Ahedjakova = {
+		name = "Лия Ахеджакова"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Ahedjakova"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Ahedjakova
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				
+			}
+		}       		
+	}
+	POK_Hamatova = {
+		name = "Чулпан Хаматова"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Hamatova"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Hamatova
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
+			traits = {
+				
+			}
+		}   
+
+        corps_commander = {
+			traits = { }
+        	skill = 1
+         	attack_skill = 1
+        	defense_skill = 1
+        	planning_skill = 1
+        	logistics_skill = 1
+			legacy_id = 0
+			visible = {		
+			has_completed_focus = POK_komitet_spaseniya
+		    }
 		}       		
 	}
     POK_Katz = {
