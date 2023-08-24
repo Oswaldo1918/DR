@@ -3,6 +3,18 @@
 @tier3 = 10
 
 leader_traits = {
+    baron_sibir = {
+		sprite = 10
+		random = not
+		stability_factor = -0.05
+		trade_opinion_factor = 0.1
+		opinion_gain_monthly_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
     a_chto = {
 		sprite = 10
 		random = not
