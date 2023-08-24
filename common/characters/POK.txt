@@ -261,17 +261,20 @@ characters={
 				large = "gfx/leaders/GAL/Rosov.dds"				
 			}
 		}
-
+            
         advisor={
 			slot = political_advisor
 			idea_token = POK_chubays
-
+             
 			allowed = {
 				original_tag = POK
 			}
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {		
+			has_completed_focus = POK_chrezvichaniye_p
+		    } 
 			traits = {
 				nanotoliy
 			}
@@ -299,7 +302,7 @@ characters={
 				factor = 10
 			}
 			visible = {		
-			has_completed_focus = POK_Ya_prihozhu
+			has_completed_focus = POK_Running_in_the_90s
 		    }
 			traits = {
 				captain_of_industry 
@@ -328,35 +331,11 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {   			
+			    has_completed_focus = POK_sderzhki_i_protivovesi       
+		    }			
 			traits = {
 				soavtor_VNB 
-			}
-		}
-		
-	}
-	
-	POK_Iavlinskiy = {
-		name = "Григорий Явлинский"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_POK_Iavlinskiy"
-				large = "gfx/leaders/GAL/Rosov.dds"				
-			}
-		}
-
-        advisor={
-			slot = political_advisor
-			idea_token = POK_Iavlinskiy
-
-			allowed = {
-				original_tag = POK
-			}
-			ai_will_do = {
-				factor = 10
-			}
-			traits = {
-				liberal_democratic_paragon 
 			}
 		}
 		
@@ -409,6 +388,12 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+                OR = {      			
+			        has_completed_focus = POK_sderzhki_i_protivovesi
+					has_completed_focus = POK_lunar_Putin
+			    }        
+		    } 
 			traits = {
 				gazoviy_gigant 
 			}
@@ -436,6 +421,13 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+                OR = {      			
+			        has_completed_focus = POK_sderzhki_i_protivovesi
+					has_completed_focus = POK_lunar_Putin
+					has_completed_focus = POK_komitet_spaseniya
+			    }        
+		    }
 			traits = {
 				pokrovitel_alcogolnoy_promki 
 			}
@@ -467,6 +459,13 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+                OR = {      			
+			        has_completed_focus = POK_sderzhki_i_protivovesi
+					has_completed_focus = POK_lunar_Putin
+					has_completed_focus = POK_komitet_spaseniya
+			    }        
+		    }
 			traits = {
 				borec_za_ecologiyu 
 			}
@@ -494,6 +493,9 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+				has_completed_focus = POK_lunar_Putin       
+		    }
 			traits = {
 				toplivniy_baron 
 			}
@@ -521,6 +523,9 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+				has_completed_focus = POK_komitet_spaseniya       
+		    }
 			traits = {
 				civilian_poet
 			}
@@ -548,6 +553,9 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+				has_completed_focus = POK_komitet_spaseniya       
+		    }
 			traits = {
 				economist
 			}
@@ -575,8 +583,14 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+                OR = {      			
+			        has_completed_focus = POK_sderzhki_i_protivovesi
+					has_completed_focus = POK_Ya_prihozhu
+			    }        
+		    }
 			traits = {
-				economy_reformer
+				economic_reformer
 				kadet
 			}
 		}
@@ -630,6 +644,9 @@ characters={
 			ai_will_do = {
 				factor = 10
 			}
+			visible = {
+				has_completed_focus = POK_lunar_Putin       
+		    }
 			traits = {
 				the_statist
 				a_chto
@@ -897,6 +914,10 @@ characters={
 			civilian = {
 				small = "GFX_idea_POK_Hamatova"
 			}
+			army = {
+				large = "gfx/leaders/POK/Hamatova.dds"
+				small = "GFX_idea_POK_Hamatova"
+			}
 		}
 		advisor={
 			slot = political_advisor
@@ -952,5 +973,57 @@ characters={
 				small = "GFX_idea_georgy_zhukov"
 			}
 		}	
-	}     	
+	}
+    POK_Tatyana_Yumasheva = {
+		name = "Татьяна Юмашева"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+        advisor={
+			slot = political_advisor
+			idea_token = POK_Tatyana_Yumasheva
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_Ya_prihozhu
+		    }
+			traits = {
+				propaganda_expert
+			}
+		}       		
+	}
+    POK_Valentin_Yumashev = {
+		name = "Валентин Юмашев"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+        advisor={
+			slot = political_advisor
+			idea_token = POK_Valentin_Yumashev
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_Ya_prihozhu
+		    }
+			traits = {
+				prince_of_terror
+			}
+		}     		
+	}         	
 }

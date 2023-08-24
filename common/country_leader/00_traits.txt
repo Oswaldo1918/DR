@@ -3,6 +3,20 @@
 @tier3 = 10
 
 leader_traits = {
+    a_chto = {
+		sprite = 10
+		random = not
+		political_power_factor = -0.03
+		civilian_intel_to_others = -5
+        airforce_intel_to_others = -5  
+        navy_intel_to_others = -5		
+        army_intel_to_others = -5
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
+
 	son_vozhd = {
 		sprite = 10
 		random = not

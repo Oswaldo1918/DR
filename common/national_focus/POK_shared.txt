@@ -1841,14 +1841,13 @@ country_event = { id = POK.23 }
 		}
 		x = 18
 		y = 14
-			completion_reward = {
-					army_experience = 10
-					swap_ideas = {
-							remove_idea = POK_Gore_Pobeditelam_1
-							add_idea = POK_Gore_Pobeditelam_3
-						}
-				}
-
+		completion_reward = {
+			army_experience = 10
+			swap_ideas = {
+				remove_idea = POK_Gore_Pobeditelam_1
+				add_idea = POK_Gore_Pobeditelam_3
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_remember_ROA
