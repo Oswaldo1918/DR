@@ -16,7 +16,7 @@ focus_tree = {
 	#Подготовка_к_гражданской_войне_в_Покаянии
 	focus = {
 		id = MRD_logovo_saurona
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_logovo_saurona
 		cost = 5,00
 		x = 7
 		y = 0
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_prodvinut_nazgulov
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_probudit_nazgulov
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_logovo_saurona
@@ -159,7 +159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_sistema_trudovikh_lagerei
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_sistema_trudovykh_lagerey
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_raztat_megaklinki
@@ -195,7 +195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_zapasi_goruchego
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_zapzsi_goruchego
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_rabotat_za_kharchi
@@ -390,7 +390,7 @@ focus_tree = {
 	}
 	focus = { #Интервенция_в_гражданскую_войну
 		id = MRD_poneslas_mocha_po_trubam
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_poneslas_mocha_po_trubam
 		cost = 5,00
 		x = 9
 		y = 6
@@ -423,7 +423,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_svyazat_sever_s_yugom
-		icon = GFX_focus_POL_warsaw_main_station
+		icon = GFX_MRD_goal_svyazat_sever_s_yugom
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
@@ -439,7 +439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_dopolnitelniye_harchi
-		icon = GFX_focus_cht_zhitnica_evropy
+		icon = GFX_MRD_goal_dopolnitelnye_kharchi
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_svyazat_sever_s_yugom
@@ -455,7 +455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_v_gorodakh_vino_i_babi
-		icon = GFX_focus_SOV_organization_centralization_discipline
+		icon = GFX_MRD_goal_v_gorodakh_vino_i_baby
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_svyazat_sever_s_yugom
@@ -471,7 +471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_sredstvva_svyazi
-		icon = GFX_goal_generic_radar
+		icon = GFX_MRD_goal_sredstva_svyazi
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
@@ -488,7 +488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_mordovsraya_taktika
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_MRD_goal_mordorskaya_taktika
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_poneslas_mocha_po_trubam
@@ -511,7 +511,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_svazyatsa_s_vladom_makarovim
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_svazyatsa_s_vladom_makarovim
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_sredstvva_svyazi
@@ -523,60 +523,96 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			recruit_character = MRD_Vlad_Makarov
-			division_template = {
-				name = "Дивизия партизан" 	
-				division_names_group = MRD_MIL_02
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
-					infantry = { x = 1 y = 4 }
+			if = {
+				limit - {
+					has_country_flag = MRD_usilit_partizan_flag
 				}
-			}
-			516 = {
-				#has_country_flag = MRD_usilit_partizan_flag
-				create_unit = {
-					division = "name = \"88-я стрелковая дивизия\" 
-					division_template = \"Дивизия партизан\" 
-					start_experience_factor = 0.25"  
-					owner = MRD
+				division_template = {
+					name = "Дивизия партизан" 	
+					division_names_group = MRD_MIL_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+					}
 				}
-				create_unit = {
-					division = "name = \"96-я стрелковая дивизия\" 
-					division_template = \"Дивизия партизан\" 
-					start_experience_factor = 0.25"  
-					owner = MRD
+				578 = {
+					create_unit = {
+						division = "name = \"88-я стрелковая дивизия\" 
+						division_template = \"Дивизия партизан\" 
+						start_experience_factor = 0.25"  
+						owner = MRD
+					}
+					create_unit = {
+						division = "name = \"96-я стрелковая дивизия\" 
+						division_template = \"Дивизия партизан\" 
+						start_experience_factor = 0.25"  
+						owner = MRD
+					}
+					create_unit = {
+						division = "name = \"61-я стрелковая дивизия\" 
+						division_template = \"Дивизия партизан\" 
+						start_experience_factor = 0.25"  
+						owner = MRD
+					}
+					create_unit = {
+						division = "name = \"158-я стрелковая дивизия\" 
+						division_template = \"Дивизия партизан\" 
+						start_experience_factor = 0.25"  
+						owner = MRD
+					}
+					create_unit = {
+						division = "name = \"165-я стрелковая дивизия\" 
+						division_template = \"Дивизия партизан\" 
+						start_experience_factor = 0.25"  
+						owner = MRD
+					}				
 				}
-				create_unit = {
-					division = "name = \"61-я стрелковая дивизия\" 
-					division_template = \"Дивизия партизан\" 
-					start_experience_factor = 0.25"  
-					owner = MRD
+				else = {
+					578 = {
+						division_template = {
+							name = "Дивизия партизан" 	
+							division_names_group = MRD_MIL_02
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+							}
+						}
+						create_unit = {
+							division = "name = \"88-я стрелковая дивизия\" 
+							division_template = \"Дивизия партизан\" 
+							start_experience_factor = 0.25"  
+							owner = MRD
+						}
+						create_unit = {
+							division = "name = \"96-я стрелковая дивизия\" 
+							division_template = \"Дивизия партизан\" 
+							start_experience_factor = 0.25"  
+							owner = MRD
+						}
+					}
 				}
-				create_unit = {
-					division = "name = \"158-я стрелковая дивизия\" 
-					division_template = \"Дивизия партизан\" 
-					start_experience_factor = 0.25"  
-					owner = MRD
-				}
-				create_unit = {
-					division = "name = \"165-я стрелковая дивизия\" 
-					division_template = \"Дивизия партизан\" 
-					start_experience_factor = 0.25"  
-					owner = MRD
-				}				
 			}
 		}
 	}
 	focus = {
 		id = MRD_seite_razumnoye_dobroye_vechnoye
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_seyte_razumnoe_dobroe_vechnoe
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_svazyatsa_s_vladom_makarovim
@@ -599,7 +635,7 @@ focus_tree = {
 	}
 	focus = { #Победа_в_гражданской_войне
 		id = MRD_perdviy_platsdarm_vzyat
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_I_eto_tolko_nachalo
 		cost = 1,00
 		prerequisite = {
 			focus = MRD_seite_razumnoye_dobroye_vechnoye
@@ -654,6 +690,7 @@ focus_tree = {
 			add_state_core  = 582
 		}	
 	}
+	#Военная_ветка
 	focus = {
 		id = MRD_armeyskayа_reforma
 		icon = GFX_sovarmy1
@@ -696,7 +733,6 @@ focus_tree = {
 		}
 		x = 6
 		y = 12
-
 	}
 	focus = {
 		id = MRD_krasnogvardeyskiye_soedineniya
@@ -710,6 +746,20 @@ focus_tree = {
 		}
 		x = 5
 		y = 13
+
+	}
+	focus = {
+		id = MRD_traditsii_otryada_731
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_himprom
+		}
+		prerequisite = {
+			focus = MRD_modern_doktrina
+		}
+		x = 4
+		y = 14
 
 	}
 	focus = {
@@ -779,6 +829,7 @@ focus_tree = {
 		y = 17
 
 	}
+	###Экономические фокусы
 	focus = {
 		id = MRD_prodolzhit_tisyacheletniy_plan
 		icon = GFX_goal_unknown
@@ -788,6 +839,90 @@ focus_tree = {
 		}
 		x = 14
 		y = 11
+
+	}
+	focus = {
+		id = MRD_razvitiye_metallurgii
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = MRD_oruzheyka
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_razvitiye_stroitelnoy_otrasli
+		}
+		prerequisite = {
+			focus = MRD_razvitiye_metallurgii
+		}
+		prerequisite = {
+			focus = MRD_upor_na_tyazhprom
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = MRD_himprom
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_razvitiye_metallurgii
+		}
+		prerequisite = {
+			focus = MRD_razvitiye_stroitelnoy_otrasli
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = MRD_razvitiye_stroitelnoy_otrasli
+		icon = GFX_goal_generic_construction
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = MRD_mashinostroyeniye
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_razvitiye_stroitelnoy_otrasli
+		}
+		prerequisite = {
+			focus = MRD_upor_na_tyazhprom
+		}
+		prerequisite = {
+			focus = MRD_razvitiye_metallurgii
+		}
+		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = MRD_mordovskaya_electronica
+		icon = GFX_Computer_2
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_modernizatsiya_TES
+		}
+		prerequisite = {
+			focus = MRD_modennizatsiya_energosetei
+		}
+		x = 22
+		y = 16
 
 	}
 	focus = {
@@ -843,23 +978,7 @@ focus_tree = {
 		y = 14
 
 	}
-	focus = {
-		id = MRD_oruzheyka
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		prerequisite = {
-			focus = MRD_razvitiye_metallurgii
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 15
-		y = 13
 
-	}
 	focus = {
 		id = MRD_upor_na_tyazhprom
 		icon = GFX_goal_unknown
@@ -868,17 +987,6 @@ focus_tree = {
 			focus = MRD_prodolzhit_tisyacheletniy_plan
 		}
 		x = 27
-		y = 12
-
-	}
-	focus = {
-		id = MRD_razvitiye_metallurgii
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 10
 		y = 12
 
 	}
@@ -1119,17 +1227,7 @@ focus_tree = {
 		y = 18
 
 	}
-	focus = {
-		id = MRD_korovani_yiga
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_vneshiye_istochniki_prodovolstviya
-		}
-		x = 37
-		y = 16
 
-	}
 	focus = {
 		id = MRD_exspluatatsiya_mongolii
 		icon = GFX_goal_unknown
@@ -1139,39 +1237,6 @@ focus_tree = {
 			focus = MRD_totalnoye_importozamesheniye
 		}
 		x = 39
-		y = 16
-
-	}
-	focus = {
-		id = MRD_finansoviy_rezerv
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_totalnaya_expropriatsiya
-			focus = MRD_vas_provetstvuyet_chastniy_kapital
-		}
-		x = 36
-		y = 14
-
-	}
-	focus = {
-		id = MRD_burzhyi_mochi_kozlov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 38
-		y = 14
-		prerequisite = {
-			focus = MRD_vas_provetstvuyet_chastniy_kapital
-		}
-	}
-	focus = {
-		id = MRD_kontrolirovat_fonansoviye_potoki
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_totalnoye_importozamesheniye
-		}
-		x = 35
 		y = 16
 
 	}
@@ -1195,111 +1260,6 @@ focus_tree = {
 		}
 		x = 47
 		y = 12
-
-	}
-	focus = {
-		id = MRD_finansoviye_istochniki
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 36
-		y = 12
-
-	}
-	focus = {
-		id = MRD_vas_provetstvuyet_chastniy_kapital
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_finansoviye_istochniki
-		}
-		mutually_exclusive = {
-			focus = MRD_totalnaya_expropriatsiya
-		}
-		x = 38
-		y = 13
-
-	}
-	focus = {
-		id = MRD_totalnaya_expropriatsiya
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_finansoviye_istochniki
-		}
-		mutually_exclusive = {
-			focus = MRD_vas_provetstvuyet_chastniy_kapital
-		}
-		x = 34
-		y = 13
-
-	}
-	focus = {
-		id = MRD_komand_adm_sist_i_tsiganstvo
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_totalnaya_expropriatsiya
-		}
-		x = 34
-		y = 14
-
-	}
-	focus = {
-		id = MRD_totalnoye_importozamesheniye
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_komand_adm_sist_i_tsiganstvo
-			focus = MRD_burzhyi_mochi_kozlov
-		}
-		mutually_exclusive = {
-			focus = MRD_vneshiye_istochniki_prodovolstviya
-		}
-		x = 34
-		y = 15
-
-	}
-	focus = {
-		id = MRD_vneshiye_istochniki_prodovolstviya
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_burzhyi_mochi_kozlov
-			focus = MRD_komand_adm_sist_i_tsiganstvo
-		}
-		mutually_exclusive = {
-			focus = MRD_totalnoye_importozamesheniye
-		}
-		x = 38
-		y = 15
-
-	}
-	focus = {
-		id = MRD_razvitiye_stroitelnoy_otrasli
-		icon = GFX_goal_generic_construction
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 20
-		y = 12
-
-	}
-	focus = {
-		id = MRD_himprom
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_metallurgii
-		}
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		x = 11
-		y = 13
 
 	}
 	focus = {
@@ -1364,20 +1324,6 @@ focus_tree = {
 		}
 		x = 21
 		y = 13
-
-	}
-	focus = {
-		id = MRD_mordovskaya_electronica
-		icon = GFX_Computer_2
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_modernizatsiya_TES
-		}
-		prerequisite = {
-			focus = MRD_modennizatsiya_energosetei
-		}
-		x = 22
-		y = 16
 
 	}
 	focus = {
@@ -1451,18 +1397,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MRD_garantii_importa
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_kontrolirovat_fonansoviye_potoki
-			focus = MRD_korovani_yiga
-		}
-		x = 36
-		y = 17
-
-	}
-	focus = {
 		id = MRD_inzhenerniy_progress
 		icon = GFX_goal_unknown
 		cost = 10,00
@@ -1490,23 +1424,7 @@ focus_tree = {
 		y = 20
 
 	}
-	focus = {
-		id = MRD_mashinostroyeniye
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		prerequisite = {
-			focus = MRD_razvitiye_metallurgii
-		}
-		x = 18
-		y = 13
 
-	}
 	focus = {
 		id = MRD_mordovskaya_bronya
 		icon = GFX_goal_unknown
@@ -1572,20 +1490,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MRD_traditsii_otryada_731
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_himprom
-		}
-		prerequisite = {
-			focus = MRD_modern_doktrina
-		}
-		x = 4
-		y = 14
-
-	}
-	focus = {
 		id = MRD_byro_veskera
 		icon = GFX_goal_unknown
 		cost = 10,00
@@ -1611,6 +1515,143 @@ focus_tree = {
 		}
 		x = 42
 		y = 14
+
+	}
+##Источники_индустриализации
+	focus = {
+		id = MRD_finansoviye_istochniki
+		icon = GFX_MRD_goal_finansoviye_istochniki
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = MRD_totalnaya_expropriatsiya
+		icon = GFX_MRD_goal_totalnaya_expropriatsiya
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_finansoviye_istochniki
+		}
+		mutually_exclusive = {
+			focus = MRD_vas_provetstvuyet_chastniy_kapital
+		}
+		x = 34
+		y = 13
+
+	}
+	focus = {
+		id = MRD_komand_adm_sist_i_tsiganstvo
+		icon = GFX_MRD_goal_komand_adm_sist_i_tsiganstvo
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_totalnaya_expropriatsiya
+		}
+		x = 34
+		y = 14
+
+	}
+	focus = {
+		id = MRD_vas_privetstvuyet_chastniy_kapital
+		icon = GFX_MRD_goal_vas_provetstvuyet_chastniy_kapital
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_finansoviye_istochniki
+		}
+		mutually_exclusive = {
+			focus = MRD_totalnaya_expropriatsiya
+		}
+		x = 38
+		y = 13
+
+	}
+	focus = {
+		id = MRD_burzhyi_mochi_kozlov
+		icon = GFX_MRD_goal_burzhyi_mochi_kozlov
+		cost = 10,00
+		x = 38
+		y = 14
+		prerequisite = {
+			focus = MRD_vas_privetstvuyet_chastniy_kapital
+		}
+	}
+	focus = {
+		id = MRD_finansoviy_rezerv
+		icon = GFX_MRD_goal_finansoviy_rezerv
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_totalnaya_expropriatsiya
+			focus = MRD_vas_privetstvuyet_chastniy_kapital
+		}
+		x = 36
+		y = 14
+
+	}
+	focus = {
+		id = MRD_totalnoye_importozamesheniye
+		icon = GFX_MRD_goal_totalnoye_importozamesheniye
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_komand_adm_sist_i_tsiganstvo
+			focus = MRD_burzhyi_mochi_kozlov
+		}
+		mutually_exclusive = {
+			focus = MRD_vneshiye_istochniki_prodovolstviya
+		}
+		x = 34
+		y = 15
+
+	}
+	focus = {
+		id = MRD_vneshiye_istochniki_prodovolstviya
+		icon = GFX_MRD_goal_vneshiye_istochniki_prodovolstviya
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_burzhyi_mochi_kozlov
+			focus = MRD_komand_adm_sist_i_tsiganstvo
+		}
+		mutually_exclusive = {
+			focus = MRD_totalnoye_importozamesheniye
+		}
+		x = 38
+		y = 15
+
+	}
+	focus = {
+		id = MRD_kontrolirovat_finansoviye_potoki
+		icon = GFX_MRD_goal_kontrolirovat_fonansoviye_potoki
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_totalnoye_importozamesheniye
+		}
+		x = 35
+		y = 16
+
+	}
+	focus = {
+		id = MRD_korovani_yiga
+		icon = GFX_MRD_goal_korovani_yiga
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_vneshiye_istochniki_prodovolstviya
+		}
+		x = 37
+		y = 16
+
+	}
+	focus = {
+		id = MRD_garantii_importa
+		icon = GFX_MRD_goal_garantii_importa
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_kontrolirovat_finansoviye_potoki
+			focus = MRD_korovani_yiga
+		}
+		x = 36
+		y = 17
 
 	}
 }

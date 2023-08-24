@@ -2245,14 +2245,14 @@ create_wargoal = {
 			focus = NOD_nats_iskluchitelnost
 		}
         ai_will_do = {
-			base = 5
+			base = 10
 			modifier = {
 				if = {
 					limit = {
 						controls_state = 219
 						controls_state = 195
 					}
-					factor = 2
+					factor = 1
 				}
 				else = {
 					factor = 0

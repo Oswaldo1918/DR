@@ -52,7 +52,7 @@ country_event = { #Начинаем_с_дачников
 	id = mordor.3
         title = mordor.3.t
         desc = mordor.3.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	is_triggered_only = yes
 	
@@ -95,7 +95,7 @@ country_event = { #Победа_Мордовии_Саурон
 	id = mordor.4
         title = mordor.4.t
         desc = mordor.4.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sarumyan_s_avtomatom
 
 	is_triggered_only = yes
 	
@@ -104,11 +104,13 @@ country_event = { #Победа_Мордовии_Саурон
 		custom_effect_tooltip = MRD_uspeshniy_reid_tt
 		hidden_effect = {
 			add_to_variable = { MRD_monthly_population = 0.05 }
-			add_to_variable = { MRD_weekly_manpower = 150 }
+			add_to_variable = { MRD_weekly_manpower = 50 }
 		}
 		custom_effect_tooltip = MRD_1_monthly_population_tt
-		custom_effect_tooltip = MRD_3_weekly_manpower_tt
-		set_country_flag = MRD_uspeshniy_reid_country_flag
+		custom_effect_tooltip = MRD_1_weekly_manpower_tt
+		set_country_flag = MRD_uspeshniy_reid_country_flag_1
+		set_country_flag = MRD_uspeshniy_reid_country_flag_2
+		set_country_flag = MRD_uspeshniy_reid_country_flag_3
 	}
 }
 country_event = { #Победа_Покаянии_Саурон
@@ -116,7 +118,7 @@ country_event = { #Победа_Покаянии_Саурон
 	id = mordor.5
         title = mordor.5.t
         desc = mordor.5.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sarumyan_s_avtomatom
 
 	is_triggered_only = yes
 	
@@ -129,7 +131,7 @@ country_event = { #Победа_Покаянии_Покаян
 	id = mordor.6
         title = mordor.6.t
         desc = mordor.6.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sarumyan_s_avtomatom
 
 	is_triggered_only = yes
 	
@@ -143,7 +145,7 @@ country_event = { #Победа_Мордовии_Покаян
 	id = mordor.7
         title = mordor.7.t
         desc = mordor.7.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sarumyan_s_avtomatom
 
 	is_triggered_only = yes
 	
@@ -157,7 +159,7 @@ country_event = { #Проблема_назгулов
 	id = mordor.8
         title = mordor.8.t
         desc = mordor.8.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_best_boss
 
 	is_triggered_only = yes
 	
@@ -183,7 +185,7 @@ country_event = { #Первый_блин
 	id = mordor.9
         title = mordor.9.t
         desc = mordor.9.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_urki
 
 	is_triggered_only = yes
 	
@@ -204,7 +206,7 @@ country_event = { #Пендальфа_завербовали
 	id = mordor.10
         title = mordor.10.t
         desc = mordor.10.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_pendalf_s_trubkoi
 
 	is_triggered_only = yes
 	
@@ -218,7 +220,7 @@ country_event = { #Оповещение_о_погранконфликте_для
 	id = mordor.11
         title = mordor.11.t
         desc = mordor.11.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sarumyan_s_avtomatom
 
 	is_triggered_only = yes
 	
@@ -231,7 +233,7 @@ country_event = { #Финальные_приготовления
 	id = mordor.12
 	title = mordor.12.t
 	desc = mordor.12.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	is_triggered_only = yes
 	
@@ -274,7 +276,7 @@ country_event = { #Оповещение_о_развале_Покаянии
 	id = mordor.13
         title = mordor.13.t
         desc = mordor.13.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	is_triggered_only = yes
 	
@@ -288,7 +290,7 @@ country_event = { #Интервенция_в_гражданскую_войну
 	id = mordor.14
         title = mordor.14.t
         desc = mordor.14.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	is_triggered_only = yes
 	
@@ -327,7 +329,7 @@ country_event = { #На_случай_если_война_затягиваетс�
 	id = mordor.15
         title = mordor.15.t
         desc = mordor.15.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	fire_only_once = yes
 	
@@ -362,7 +364,7 @@ country_event = { #Победа_в_гражданской_войне
 	id = mordor.16
         title = mordor.16.t
         desc = mordor.16.d
-	picture = GFX_report_event_dkr_sarumyan
+	picture = GFX_report_event_dkr_sauron_hvatka
 
 	is_triggered_only = yes
 	

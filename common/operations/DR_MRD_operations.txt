@@ -20,7 +20,7 @@ MRD_operation_usilit_partizan = {
 	cost_multiplier = 0
 	visible = {
 		has_completed_focus = MRD_nachinaem_s_dachnikov
-		has_country_flag = MRD_uspeshniy_reid_country_flag
+		has_country_flag = MRD_uspeshniy_reid_country_flag_1
 		NOT = { has_completed_focus = MRD_poneslas_mocha_po_trubam }
 		FROM = {
 			controls_state = 653 #ЕЛЬЦОБУРГ
@@ -47,7 +47,7 @@ MRD_operation_usilit_partizan = {
 	experience = 5
 	outcome_execute = { # SCOPE_OPERATION
 		MRD = { set_country_flag = MRD_usilit_partizan_flag }
-		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag }
+		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_1 }
 		custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt
 	}
 
@@ -67,6 +67,170 @@ MRD_operation_usilit_partizan = {
 	}
 	phases = { #resistance support
 		MRD_usilit_partizan_faza_2 = { base = 100 }
+	}
+	phases = { #exfiltration
+		exfiltration_border = { base = 50 }
+		exfiltration_go_to_ground = { base = 50 }
+	}
+}
+MRD_operation_koridor_dlya_bezhentsev = {
+	icon = GFX_MRD_koridor_dlya_bezhentsev
+	map_icon = GFX_MRD_koridor_dlya_bezhentsev_map
+	name = MRD_operation_koridor_dlya_bezhentsev
+	desc = MRD_operation_koridor_dlya_bezhentsev_desc
+	days = 36
+
+	priority = 10
+
+	allowed = {
+		original_tag = MRD
+	}
+	available = {
+		network_strength = {
+			target = POK
+			state = 653
+			value > 25
+		}
+	}
+	cost_multiplier = 0
+	visible = {
+		has_completed_focus = MRD_nachinaem_s_dachnikov
+		has_country_flag = MRD_uspeshniy_reid_country_flag_2
+		NOT = { has_completed_focus = MRD_poneslas_mocha_po_trubam }
+		FROM = {
+			controls_state = 653 #ЕЛЬЦОБУРГ
+		}		
+	}
+	equipment = {
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	on_start = {  # SCOPE_OPERATION
+	}
+
+	#outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
+	#cost_modifiers = { operation_cost operation_infiltrate_cost }
+	#risk_modifiers = { operation_risk operation_infiltrate_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = MRD_koridor_dlya_bezhentsev_nachalo_flag_tt
+	}
+	risk_chance = 0.1
+	experience = 5
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_2 }
+		custom_effect_tooltip =  MRD_koridor_dlya_bezhentsev_conec_flag_tt
+		MRD = {
+			hidden_effect = {
+				add_to_variable = { MRD_monthly_population = 0.05 }
+				add_to_variable = { MRD_weekly_manpower = 50 }
+			}
+		}
+		custom_effect_tooltip = MRD_1_monthly_population_tt
+		custom_effect_tooltip = MRD_1_weekly_manpower_tt
+	}
+
+	phases = { #infiltration
+		infiltration_border = { base = 75 }
+		infiltration_paradrop = { 
+			base = 25 
+			modifier = {
+				ROOT = { 
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = { #resistance support
+		MRD_koridor_dlya_bezhentsev_faza_2 = { base = 100 }
+	}
+	phases = { #exfiltration
+		exfiltration_border = { base = 50 }
+		exfiltration_go_to_ground = { base = 50 }
+	}
+}
+MRD_operation_cherniy_rinok = {
+	icon = GFX_MRD_cherniy_rinok
+	map_icon = GFX_MRD_cherniy_rinok_map
+	name = MRD_operation_cherniy_rinok
+	desc = MRD_operation_cherniy_rinok_desc
+	days = 36
+
+	priority = 10
+
+	allowed = {
+		original_tag = MRD
+	}
+	available = {
+		network_strength = {
+			target = POK
+			state = 653
+			value > 25
+		}
+	}
+	cost_multiplier = 0
+	visible = {
+		has_completed_focus = MRD_nachinaem_s_dachnikov
+		has_country_flag = MRD_uspeshniy_reid_country_flag_3
+		NOT = { has_completed_focus = MRD_poneslas_mocha_po_trubam }
+		FROM = {
+			controls_state = 653 #ЕЛЬЦОБУРГ
+		}		
+	}
+	equipment = {
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	on_start = {  # SCOPE_OPERATION
+	}
+
+	#outcome_modifiers = { operation_outcome operation_infiltrate_outcome }
+	#cost_modifiers = { operation_cost operation_infiltrate_cost }
+	#risk_modifiers = { operation_risk operation_infiltrate_risk }
+
+	outcome_potential = {
+		custom_effect_tooltip = MRD_cherniy_rinok_nachalo_flag_tt
+	}
+	risk_chance = 0.1
+	experience = 5
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_3 }
+		custom_effect_tooltip =  MRD_cherniy_rinok_conec_flag_tt
+		MRD = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+			}
+		}
+		custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+		custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+	}
+
+	phases = { #infiltration
+		infiltration_border = { base = 75 }
+		infiltration_paradrop = { 
+			base = 25 
+			modifier = {
+				ROOT = { 
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = { #resistance support
+		MRD_cherniy_rinok_faza_2 = { base = 100 }
 	}
 	phases = { #exfiltration
 		exfiltration_border = { base = 50 }

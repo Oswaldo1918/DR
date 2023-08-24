@@ -1,3 +1,5 @@
+###Усилить_партизан
+
 MRD_usilit_partizan_faza_2 = { 
 	name = MRD_usilit_partizan_faza_2
 	desc = MRD_usilit_partizan_faza_2_desc
@@ -11,5 +13,33 @@ MRD_usilit_partizan_faza_2 = {
 		infantry_equipment = 300
 	}
 }
+###Коридор_для_беженцев
 
+MRD_koridor_dlya_bezhentsev_faza_2 = { 
+	name = MRD_koridor_dlya_bezhentsev_faza_2
+	desc = MRD_koridor_dlya_bezhentsev_faza_2_desc
+	outcome = MRD_koridor_dlya_bezhentsev_faza_2_outcome
+	picture = "GFX_MRD_koridor_dlya_bezhentsev_faza_2"
+	icon = "GFX_MRD_koridor_dlya_bezhentsev_small"
+	
+	requirements = {  }
 
+	equipment = {
+		support_equipment = 80
+	}
+}
+###Черный_рынок
+
+MRD_cherniy_rinok_faza_2 = { 
+	name = MRD_cherniy_rinok_faza_2
+	desc = MRD_cherniy_rinok_faza_2_desc
+	outcome = MRD_cherniy_rinok_faza_2_outcome
+	picture = "GFX_MRD_cherniy_rinok_faza_2"
+	icon = "GFX_MRD_cherniy_rinok_small"
+	
+	requirements = {  }
+
+	equipment = {
+		support_equipment = 50
+	}
+}

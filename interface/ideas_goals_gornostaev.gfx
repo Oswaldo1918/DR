@@ -1,18 +1,6 @@
 spriteTypes = {			
-	
-	#советники 
-	
-	spriteType = {
-		name = "GFX_idea_"
-		texturefile = "gfx/interface/ideas/.dds"
-	}
-	
-	#Нацдухи
-    	
-	spriteType = {
-		name = "GFX_idea_"
-		texturefile = "gfx/interface/ideas/.dds"
-	}
+
+	#Национальные_духи
 	
 	spriteType = {
 		name = "GFX_idea_Pervy_onlifansny_front"
@@ -1019,17 +1007,42 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Problema_demografii_smorchey.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_idea_"
-		texturefile = "gfx/interface/ideas/.dds"
+	SpriteType = {
+		name = "GFX_idea_MRD_kavaleryiskaya_zonderkomanda_SS_Nazgul"
+		texturefile = "gfx/interface/ideas/idea_MRD_kavaleryiskaya_zonderkomanda_SS_Nazgul.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_idea_MRD_chudovischnoe_oruzhie"
+		texturefile = "gfx/interface/ideas/idea_MRD_chudovischnoe_oruzhie.dds"	
 	}
 	
-	spriteType = {
-		name = "GFX_idea_"
-		texturefile = "gfx/interface/ideas/.dds"
+    SpriteType = {
+		name = "GFX_idea_MRD_rasshirenie_zheleznodorozhnoy_seti"
+		texturefile = "gfx/interface/ideas/idea_MRD_rasshirenie_zheleznodorozhnoy_seti.dds"	
+	}	
+	
+    SpriteType = {
+		name = "GFX_idea_MRD_v_gorodakh_vino_i_baby"
+		texturefile = "gfx/interface/ideas/idea_MRD_v_gorodakh_vino_i_baby.dds"	
 	}
 	
-	#фокусы  
+    SpriteType = {
+		name = "GFX_idea_MRD_dopolnitelnye_kharchi"
+		texturefile = "gfx/interface/ideas/idea_MRD_dopolnitelnye_kharchi.dds"	
+	}	
+	
+    SpriteType = {
+		name = "GFX_idea_MRD_posledniy_ryvok"
+		texturefile = "gfx/interface/ideas/idea_MRD_posledniy_ryvok.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_idea_MRD_vosstanovlenie_posle_grazhdanskoy_voyny"
+		texturefile = "gfx/interface/ideas/idea_MRD_vosstanovlenie_posle_grazhdanskoy_voyny.dds"	
+	}
+	
+	#Национальные_фокусы 
 	
 	SpriteType = {
 		name = "GFX_ZNS_proryv_tsepey_OMONa"
@@ -2030,41 +2043,6 @@ spriteTypes = {
 		name = "GFX_SKT_vot_i_pomer_ded_Maksim"
 		texturefile = "gfx/interface/goals/SKT_vot_i_pomer_ded_Maksim.dds"	
 	}
-	
-	SpriteType = {
-		name = "GFX_MRD_burzhyi_mochi_kozlov"
-		texturefile = "gfx/interface/goals/MRD_burzhyi_mochi_kozlov.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_MRD_exspluatatsiya_mongolii"
-		texturefile = "gfx/interface/goals/MRD_exspluatatsiya_mongolii.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_MRD_finansoviy_rezerv"
-		texturefile = "gfx/interface/goals/MRD_finansoviy_rezerv.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_MRD_finansoviye_istochniki"
-		texturefile = "gfx/interface/goals/MRD_finansoviye_istochniki.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_MRD_garantii_importa"
-		texturefile = "gfx/interface/goals/MRD_garantii_importa.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_MRD_komand_adm_sist_i_tsiganstvo"
-		texturefile = "gfx/interface/goals/MRD_komand_adm_sist_i_tsiganstvo.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_MRD_kontrolirovat_fonansoviye_potoki"
-		texturefile = "gfx/interface/goals/MRD_kontrolirovat_fonansoviye_potoki.dds"	
-	}
 
     SpriteType = {
 		name = "GFX_MRD_korovani_yiga"
@@ -2221,523 +2199,139 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Avtarkia_kliki_Doka.dds"	
 	}
 	
-	SpriteType = {
-		name = "GFX_idea_Kavaleryiskaya_zonderkomanda_SS_Nazgul"
-		texturefile = "gfx/interface/ideas/Kavaleryiskaya_zonderkomanda_SS_Nazgul.dds"	
+    SpriteType = {
+		name = "GFX_MRD_goal_burzhyi_mochi_kozlov"
+		texturefile = "gfx/interface/goals/MRD_goal_burzhyi_mochi_kozlov.dds"	
 	}
 
     SpriteType = {
-		name = "GFX_idea_Chudovischnoe_oruzhie"
-		texturefile = "gfx/interface/ideas/Chudovischnoe_oruzhie.dds"	
+		name = "GFX_MRD_goal_dopolnitelnye_kharchi"
+		texturefile = "gfx/interface/goals/MRD_goal_dopolnitelnye_kharchi.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_exspluatatsiya_mongolii"
+		texturefile = "gfx/interface/goals/MRD_goal_exspluatatsiya_mongolii.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_finansoviy_rezerv"
+		texturefile = "gfx/interface/goals/MRD_goal_finansoviy_rezerv.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_finansoviye_istochniki"
+		texturefile = "gfx/interface/goals/MRD_goal_finansoviye_istochniki.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_MRD_goal_garantii_importa"
+		texturefile = "gfx/interface/goals/MRD_goal_garantii_importa.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_I_eto_tolko_nachalo"
+		texturefile = "gfx/interface/goals/MRD_goal_I_eto_tolko_nachalo.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_komand_adm_sist_i_tsiganstvo"
+		texturefile = "gfx/interface/goals/MRD_goal_komand_adm_sist_i_tsiganstvo.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_kontrolirovat_fonansoviye_potoki"
+		texturefile = "gfx/interface/goals/MRD_goal_kontrolirovat_fonansoviye_potoki.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_MRD_goal_korovani_yiga"
+		texturefile = "gfx/interface/goals/MRD_goal_korovani_yiga.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_logovo_saurona"
+		texturefile = "gfx/interface/goals/MRD_goal_logovo_saurona.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_mordorskaya_taktika"
+		texturefile = "gfx/interface/goals/MRD_goal_mordorskaya_taktika.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_poneslas_mocha_po_trubam"
+		texturefile = "gfx/interface/goals/MRD_goal_poneslas_mocha_po_trubam.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_MRD_goal_probudit_nazgulov"
+		texturefile = "gfx/interface/goals/MRD_goal_probudit_nazgulov.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_seyte_razumnoe_dobroe_vechnoe"
+		texturefile = "gfx/interface/goals/MRD_goal_seyte_razumnoe_dobroe_vechnoe.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_sistema_trudovykh_lagerey"
+		texturefile = "gfx/interface/goals/MRD_goal_sistema_trudovykh_lagerey.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_sredstva_svyazi"
+		texturefile = "gfx/interface/goals/MRD_goal_sredstva_svyazi.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_MRD_goal_svyazat_sever_s_yugom"
+		texturefile = "gfx/interface/goals/MRD_goal_svyazat_sever_s_yugom.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_totalnaya_expropriatsiya"
+		texturefile = "gfx/interface/goals/MRD_goal_totalnaya_expropriatsiya.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_totalnoye_importozamesheniye"
+		texturefile = "gfx/interface/goals/MRD_goal_totalnoye_importozamesheniye.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_upor_na_tyazhprom"
+		texturefile = "gfx/interface/goals/MRD_goal_upor_na_tyazhprom.dds"	
+	}
+
+    SpriteType = {
+		name = "GFX_MRD_goal_v_gorodakh_vino_i_baby"
+		texturefile = "gfx/interface/goals/MRD_goal_v_gorodakh_vino_i_baby.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_vas_provetstvuyet_chastniy_kapital"
+		texturefile = "gfx/interface/goals/MRD_goal_vas_provetstvuyet_chastniy_kapital.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_vneshiye_istochniki_prodovolstviya"
+		texturefile = "gfx/interface/goals/MRD_goal_vneshiye_istochniki_prodovolstviya.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_svazyatsa_s_vladom_makarovim"
+		texturefile = "gfx/interface/goals/MRD_goal_svazyatsa_s_vladom_makarovim.dds"	
+	}
+	
+    SpriteType = {
+		name = "GFX_MRD_goal_zapzsi_goruchego"
+		texturefile = "gfx/interface/goals/MRD_goal_zapzsi_goruchego.dds"	
 	}
 	
 	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
+		name = "GFX_MRD_goal_supermegakoltso"
+		texturefile = "gfx/interface/goals/MRD_goal_supermegakoltso.dds"	
 	}
 	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-	
-	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
-
-    SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
-	}
 }

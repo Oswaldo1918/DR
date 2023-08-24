@@ -2,27 +2,63 @@ spriteTypes = {
 	#####DOKREIKH#####
 	
 	### Operation types
+	
+	spriteType = {
+		name = "GFX_MRD_koridor_dlya_bezhentsev"
+		texturefile = "gfx/interface/operations/MRD_koridor_dlya_bezhentsev.dds"
+	}	
 	spriteType = {
 		name = "GFX_MRD_usilit_partizan_faza_2"
 		texturefile = "gfx/interface/operations/MRD_usilit_partizan_faza_2.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_MRD_cherniy_rinok"
+		texturefile = "gfx/interface/operations/MRD_cherniy_rinok.dds"
+	}
 	
 	### Operation types - map icons
+	
 	spriteType = {
 		name = "GFX_MRD_usilit_partizan_faza_2_map"
-		texturefile = "gfx/interface/operations/map/MRD_usilit_partizan_faza_2.dds"
+		texturefile = "gfx/interface/operations/map/MRD_usilit_partizan_faza_2_map.dds"
 	}	
+	spriteType = {
+		name = "GFX_MRD_koridor_dlya_bezhentsev_map"
+		texturefile = "gfx/interface/operations/map/MRD_koridor_dlya_bezhentsev_map.dds"
+	}
+	spriteType = {
+		name = "GFX_MRD_cherniy_rinok_map"
+		texturefile = "gfx/interface/operations/map/MRD_cherniy_rinok_map.dds"
+	}
 	
 	### Phase Pictures
+	
 	spriteType = { 
 		name = "GFX_phase_raid_MRD_usilit_partizan_faza_2"
 		texturefile = "gfx/interface/operations/images/phase_raid_MRD_usilit_partizan_faza_2.dds"
 	}
+	spriteType = {
+		name = "GFX_MRD_koridor_dlya_bezhentsev_faza_2"
+		texturefile = "gfx/interface/operations/images/MRD_koridor_dlya_bezhentsev_faza_2.dds"
+	}
+	spriteType = { 
+		name = "GFX_MRD_cherniy_rinok_faza_2"
+		texturefile = "gfx/interface/operations/images/MRD_cherniy_rinok_faza_2.dds"
+	}
 	
 	###Small Phase pictures
+	
 	spriteType = { 
 		name = "GFX_phase_MRD_usilit_partizan_faza_2_small"
 		texturefile = "gfx/interface/operations/phases_small/MRD_usilit_partizan_faza_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_MRD_koridor_dlya_bezhentsev_small"
+		texturefile = "gfx/interface/operations/phases_small/MRD_koridor_dlya_bezhentsev_small.dds"
+	}
+	spriteType = { 
+		name = "GFX_MRD_cherniy_rinok_small"
+		texturefile = "gfx/interface/operations/phases_small/MRD_cherniy_rinok_small.dds"
 	}
 }
 
