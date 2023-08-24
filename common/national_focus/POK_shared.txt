@@ -931,7 +931,8 @@ country_event = { id = POK.23 }
 		x = 30
 		y = 16
 		completion_reward = {
-            add_ideas = POK_law_of_Novodvorskava     
+            add_ideas = POK_law_of_Novodvorskava 	
+			country_event = { id = POK.28 }
         }
 	}
 	shared_focus = {
@@ -949,7 +950,73 @@ country_event = { id = POK.23 }
 			completion_reward = {
 
 }
-
+	}
+	shared_focus = {
+		id = POK_kult_of_Nepolzhivov
+		icon = GFX_POK_kult_of_Nepolzhivov
+		cost = 5
+		prerequisite = {
+			focus = POK_night_sentinels
+		}
+		x = 8
+		y = 14
+        completion_reward = {
+            add_ideas =  POK_kult_of_Nepolzhivov_1
+             			
+        }       
+	}
+	shared_focus = {
+		id = POK_new_religion
+		icon = GFX_POK_new_new_russian
+		cost = 5
+		available = {    
+		  has_completed_focus = POK_pay_and_repent
+	      has_completed_focus = POK_kult_of_Nepolzhivov
+		}
+		prerequisite = {
+		focus = POK_sderzhki_i_protivovesi
+		}
+		x = 1
+		y = 17
+        completion_reward = {   
+			
+		}    
+	}
+	shared_focus = {
+		id = POK_keepers_of_anomalies
+		icon = GFX_POK_new_new_russian
+		cost = 5
+		available = {    
+		  has_completed_focus = POK_pay_and_repent
+		}
+		prerequisite = {
+		focus = POK_new_religion
+		}
+		x = 1
+		y = 18
+        completion_reward = {   
+			
+		}    
+	}
+	shared_focus = {
+		id = POK_pokayansky_equilibrium
+		icon = GFX_POK_new_new_russian
+		cost = 5
+		available = {    
+		  has_completed_focus = POK_pay_and_repent
+	
+		}
+		prerequisite = {
+		focus = POK_usilit_administr_presidenta
+		}
+		prerequisite = {
+		focus = POK_keepers_of_anomalies
+		}
+		x = 1
+		y = 19
+        completion_reward = {   
+			
+		}    
 	}
 	shared_focus = {
 		id = POK_proyect_EVA
@@ -1149,7 +1216,7 @@ country_event = { id = POK.23 }
 	}
 	
 	shared_focus = {
-		id = POK_face_of_state = {
+		id = POK_face_of_state 
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 5
 		prerequisite = {
@@ -1163,8 +1230,7 @@ country_event = { id = POK.23 }
         completion_reward = {
 	    	add_country_leader_trait = lunar_putin_1   
 			remove_country_leader_trait = razvodyashiy                  			
-		}    
-	}	
+		}    	
 	}
 	
 	shared_focus = {
@@ -1775,14 +1841,13 @@ country_event = { id = POK.23 }
 		}
 		x = 18
 		y = 14
-			completion_reward = {
-					army_experience = 10
-					swap_ideas = {
-							remove_idea = POK_Gore_Pobeditelam_1
-							add_idea = POK_Gore_Pobeditelam_3
-						}
-				}
-
+		completion_reward = {
+			army_experience = 10
+			swap_ideas = {
+				remove_idea = POK_Gore_Pobeditelam_1
+				add_idea = POK_Gore_Pobeditelam_3
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_remember_ROA
@@ -2315,7 +2380,7 @@ country_event = { id = POK.23 }
 			focus = POK_patriotic_song
 		}
 		x = 4
-		y = 19
+		y = 20
         completion_reward = {
 		    add_popularity = {
                 ideology = fascism
@@ -2377,20 +2442,7 @@ country_event = { id = POK.23 }
 			}
 		}      
 	}
-	shared_focus = {
-		id = POK_kult_of_Nepolzhivov
-		icon = GFX_POK_kult_of_Nepolzhivov
-		cost = 5
-		prerequisite = {
-			focus = POK_night_sentinels
-		}
-		x = 8
-		y = 14
-        completion_reward = {
-            add_ideas =  POK_kult_of_Nepolzhivov_1
-             			
-        }       
-	}
+	
 	shared_focus = {
 		id = POK_Burn_soviet_books
 		icon = GFX_POK_Burn_soviet_books
@@ -2566,7 +2618,7 @@ country_event = { id = POK.23 }
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
 		}
-		x = 2
+		x = 3
 		y = 19
         completion_reward = {
 			add_ideas = POK_otdel_lobburovaniya
@@ -2622,6 +2674,7 @@ country_event = { id = POK.23 }
                 ideology = democratic
                 popularity = 0.075
             }
+			country_event = { id = POK.26 }
 		}     
 	}
 	shared_focus = {

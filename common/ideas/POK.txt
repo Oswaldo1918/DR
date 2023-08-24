@@ -1131,9 +1131,9 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				production_speed_infrastructure_factor = -0.1
-                production_speed_industrial_complex_factor = -0.05    				
-				political_power_gain = -0.03
+				production_speed_infrastructure_factor = 0.1
+                production_speed_industrial_complex_factor = 0.05    				
+				political_power_gain = -0.02
 			}
 		}
 		POK_kioski = {
@@ -1786,6 +1786,18 @@ ideas = {
 			}
 			targeted_modifier = {
 			    tag = LAZ
+			    attack_bonus_against = 0.1
+		    }
+			targeted_modifier = {
+			    tag = NOD
+			    attack_bonus_against = 0.1
+		    }
+			targeted_modifier = {
+			    tag = TUP
+			    attack_bonus_against = 0.1
+		    }
+			targeted_modifier = {
+			    tag = KUR
 			    attack_bonus_against = 0.1
 		    }
 			modifier = {

@@ -33,9 +33,11 @@ POK_prepar_balance = {
 		}
 		on_activate = {
 					set_country_flag = par_win
+					clr_country_flag = pre_win
 				}
 		on_deactivate = {
-					remove_country_flag = par_win
+					clr_country_flag = par_win
+					clr_country_flag = pre_win
 				}
 		}
 		range = {
@@ -44,17 +46,17 @@ POK_prepar_balance = {
 			max = 0.65
 			modifier = {
 			    political_power_gain = -0.1
-				fascism_acceptance = 5
-				neutrality_acceptance = 5
 				stability_factor = 0.01
 				opinion_gain_monthly_same_ideology_factor = 0.1
 				party_popularity_stability_factor = -0.1
 			}
 			on_activate = {
 					set_country_flag = par_win
+					clr_country_flag = pre_win
 				}
 		    on_deactivate = {
-					remove_country_flag = par_win
+					clr_country_flag = par_win
+					clr_country_flag = pre_win
 				}
 		}
 		range = {
@@ -63,8 +65,6 @@ POK_prepar_balance = {
 			max = 0.9
 			modifier = {
 			    political_power_gain = -0.05
-	            fascism_acceptance = 10
-				neutrality_acceptance = 10
 				stability_factor = 0.05
 				opinion_gain_monthly_same_ideology_factor = 0.15
 				party_popularity_stability_factor = -0.15
@@ -73,7 +73,7 @@ POK_prepar_balance = {
 					set_country_flag = par_win
 				}
 		    on_deactivate = {
-					remove_country_flag = par_win
+					clr_country_flag = par_win
 				}
 		}
 		range = {
@@ -82,8 +82,6 @@ POK_prepar_balance = {
 			max = 1
 			modifier = {
 			    political_power_gain = -0.5
-				fascism_acceptance = 20
-				neutrality_acceptance = 20
 				stability_factor = 0.1
 				opinion_gain_monthly_same_ideology_factor = 0.2
 				party_popularity_stability_factor = -0.2
@@ -92,7 +90,7 @@ POK_prepar_balance = {
 					set_country_flag = par_win
 				}
 		    on_deactivate = {
-					remove_country_flag = par_win
+					clr_country_flag = par_win
 				}
 		}
 	}
@@ -106,8 +104,6 @@ POK_prepar_balance = {
 			max = -0.9
 			modifier = {
 			    political_power_gain = -0.5
-			    fascism_acceptance = 20
-				neutrality_acceptance = 20
 				stability_factor = 0.1
 				party_popularity_stability_factor = 0.2
 			}
@@ -116,8 +112,8 @@ POK_prepar_balance = {
 					set_country_flag = pre_win
 				}
 		    on_deactivate = {
-					remove_country_flag = pre_win
-					remove_country_flag = pre_max_win
+					clr_country_flag = pre_win
+					clr_country_flag = pre_max_win
 				}
 		}
 		range = {
@@ -126,8 +122,6 @@ POK_prepar_balance = {
 			max = -0.65
 			modifier = {
 			    political_power_gain = -0.05
-			    fascism_acceptance = 10
-				neutrality_acceptance = 10
 				stability_factor = 0.05
 				party_popularity_stability_factor = 0.15
 			}
@@ -135,7 +129,7 @@ POK_prepar_balance = {
 					set_country_flag = pre_win
 				}
 		on_deactivate = {
-					remove_country_flag = pre_win
+					clr_country_flag = pre_win
 				}			
 		}
 		range = {
@@ -143,17 +137,17 @@ POK_prepar_balance = {
 			min = -0.65
 			max = -0.35
 			modifier = {
-			    fascism_acceptance = 5
-				neutrality_acceptance = 5
 				stability_factor = 0.01
 				party_popularity_stability_factor = 0.1
 				political_power_gain = -0.1
 			}
 		on_activate = {
 					set_country_flag = pre_win
+					clr_country_flag = par_win
 				}
 		on_deactivate = {
 					remove_country_flag = pre_win
+					clr_country_flag = par_win
 				}
 		}
 		range = {
@@ -166,9 +160,11 @@ POK_prepar_balance = {
 			}
         on_activate = {
 					set_country_flag = pre_win
+					clr_country_flag = par_win
 				}
 		on_deactivate = {
-					remove_country_flag = pre_win
+					clr_country_flag = pre_win
+					clr_country_flag = par_win
 				}
 		}
 	}
