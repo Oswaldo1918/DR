@@ -2372,21 +2372,21 @@ ideas = {
 		}
     }
 	
-	tank_manufacturer = { 
+	tank_manufacturer = {
 		
 		designer = yes
 		
 		POK_UVZ = {
 
-			
 			allowed = {
-			    OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2399,23 +2399,19 @@ ideas = {
 			}
 			
 			traits = { medium_tank_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
 		
 		POK_OKMO = {
-
-			
+		
 			allowed = {
-			    OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2428,12 +2424,7 @@ ideas = {
 			}
 			
 			traits = { heavy_tank_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
 		}
-		
 	}
 	
 	naval_manufacturer = { 
@@ -2441,16 +2432,16 @@ ideas = {
 		designer = yes
 		
 		POK_salehardskiye_verfi = {
-
 			
 			allowed = {
-			    OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2467,7 +2458,6 @@ ideas = {
 			equipment_bonus = {
 				
 			}
-			
 		}	
 	}
 	
@@ -2477,19 +2467,18 @@ ideas = {
 
 		POK_Irkut = { 
 
-			
 			allowed = {
-				OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
-						
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2499,69 +2488,6 @@ ideas = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-				
-	}
-	
-	industrial_concern = {
-		
-		POK_UMZ = {
-			
-			allowed = {
-				OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
-				}
-			}
-			
-			research_bonus = {
-				industry = 0.15
-				
-			}
-			ai_will_do = {
-				factor = 2
-			}
-			
-			available = {
-				controls_state = 653
-			}
-			
-			traits = { industrial_concern }
-		}
-
-		GAL_NGU = {
-
-			allowed = {
-                OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
-				}
-			}
-			
-		   available = {		
-		   controls_state = 570
-		   }
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
 		}
 	}
 	
@@ -2572,13 +2498,14 @@ ideas = {
 		POK_zavod9 = {
 			
 			allowed = {
-				OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2599,15 +2526,15 @@ ideas = {
 		
 		POK_BMTBP = {
 
-			
 			allowed = {
-				OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2620,22 +2547,19 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }
-			
-			ai_will_do = {
-				factor = 2
-			}
 		}				
 		
 		POK_ural = {
 			
 			allowed = {
-				OR = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = OMS
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
 				}
 			}
 			
@@ -2648,6 +2572,93 @@ ideas = {
 			}
 			
 			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	industrial_concern = {
+		
+		POK_UMZ = {
+			
+			allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
+				}
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			cost = 150
+			
+			available = {
+				controls_state = 653
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		GAL_NGU = {
+
+			allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+				}
+			}
+			
+			available = {		
+				controls_state = 570
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+		
+		MRD_norilskiy_nikel = {
+			
+			allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
+				}
+			}
+			
+			available = {		
+				controls_state = 516
+			}
+			
+			cost = 150	
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			traits = { industrial_concern }
+			
 		}
 	}
 }
