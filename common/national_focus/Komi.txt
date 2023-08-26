@@ -507,10 +507,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 15
-			completion_reward = {
-					add_war_support = 0.1
-				}
-
+		completion_reward = {
+			add_war_support = 0.1
+			set_country_flag = DR_start_reunite_Russia_cf
+		}
 	}
 	focus = {
 		id = SKT_join_ChumPact

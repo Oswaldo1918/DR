@@ -549,30 +549,35 @@ focus_tree = {
 						division_template = \"Дивизия партизан\" 
 						start_experience_factor = 0.25"  
 						owner = MRD
+						location = 4681
 					}
 					create_unit = {
 						division = "name = \"96-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
 						start_experience_factor = 0.25"  
 						owner = MRD
+						location = 10673
 					}
 					create_unit = {
 						division = "name = \"61-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
 						start_experience_factor = 0.25"  
 						owner = MRD
+						location = 7849
 					}
 					create_unit = {
 						division = "name = \"158-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
 						start_experience_factor = 0.25"  
 						owner = MRD
+						location = 12174
 					}
 					create_unit = {
 						division = "name = \"165-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
 						start_experience_factor = 0.25"  
 						owner = MRD
+						location = 1718
 					}				
 				}
 				else = {
@@ -598,12 +603,14 @@ focus_tree = {
 							division_template = \"Дивизия партизан\" 
 							start_experience_factor = 0.25"  
 							owner = MRD
+							location = 12174
 						}
 						create_unit = {
 							division = "name = \"96-я стрелковая дивизия\" 
 							division_template = \"Дивизия партизан\" 
 							start_experience_factor = 0.25"  
 							owner = MRD
+							location = 1718
 						}
 					}
 				}
@@ -668,6 +675,8 @@ focus_tree = {
 			set_major = yes
 			country_event = mordor.16
 			set_cosmetic_tag = MRD_sibir
+			has_country_flag = pokoyanskaya_civil_war_end_cf
+			has_global_flag = pokoyanskaya_civil_war_end_gf		
 			add_state_core = 577
 			add_state_core = 571
 			add_state_core = 570

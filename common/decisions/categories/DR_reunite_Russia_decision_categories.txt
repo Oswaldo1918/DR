@@ -1,0 +1,48 @@
+###############################
+  ### REUNITE_RUSSIA/USSR ###
+###############################
+
+DR_reunite_russia_decisions_category = {
+	icon = military_operation
+	allowed = {
+		is_puppet = no
+		is_subject = no
+		OR = {
+			tag = LAZ		
+			tag = STR
+			tag = SKT
+			tag = BSH
+			tag = POK
+			tag = GAL
+			tag = YSK
+			tag = OMS
+			tag = MRD
+			tag = DOT
+		}
+	}
+	visible = {
+		has_country_flag = DR_start_reunite_Russia_cf	
+	}
+}
+DR_core_russian_territories_decisions_category = {
+	icon = military_operation
+	allowed = {
+		is_puppet = no
+		is_subject = no
+		OR = {
+			tag = LAZ		
+			tag = STR
+			tag = SKT
+			tag = BSH
+			tag = POK
+			tag = GAL
+			tag = YSK
+			tag = OMS
+			tag = MRD
+			tag = DOT
+		}
+	}
+	visible = {
+		has_country_flag = DR_start_reunite_Russia_cf			
+	}
+}

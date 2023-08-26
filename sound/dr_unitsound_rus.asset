@@ -26,6 +26,8 @@ soundeffect =
 {
     name = "MRD_infantry_idle"		#Это_когда_юниты_выбираешь
     sounds = {
+        sound = ebalo_zakroi
+		sound =	filtrui_bazar
         sound = urki_moi_vernye
 		sound =	v_turme_seichas_uzhin
 		sound = v_zhivote_pizdec
@@ -121,16 +123,13 @@ soundeffect =
     name = "MRD_infantry_move_out"		#Это_когда_юниты_отправляешь_куда-то
     sounds = {
 		sound =	seyte_razumnoye
-		sound = bey_gorodskih
-        sound = ni_shagu_nazad
+		sound = shire_shag
+        sound = zmi_zaletniye
 		sound =	bratva_interesuyetsa
-        sound = mochi_kozlov
-        sound = mochi_kozlov_2
+        sound = prival_v_morge
         sound = mochi_kozlov_3
         sound = mochi_kozlov_4
         sound = mochi_kozlov_5
-		sound =	v_turme_seichas_uzhin
-		sound = v_zhivote_pizdec
 		sound = komanda_begom
     }
 	max_audible = 1
@@ -322,4 +321,29 @@ sound =
 {
 	name = "zacuson"
 	file = "mrd/zacuson.wav" 
+}
+sound = 
+{
+	name = "prival_v_morge"
+	file = "mrd/prival_v_morge.wav" 
+}
+sound = 
+{
+	name = "zmi_zaletniye"
+	file = "mrd/zmi_zaletniye.wav" 
+}
+sound = 
+{
+	name = "shire_shag"
+	file = "mrd/shire_shag.wav" 
+}
+sound = 
+{
+	name = "ebalo_zakroi"
+	file = "mrd/ebalo_zakroi.wav" 
+}
+sound = 
+{
+	name = "filtrui_bazar"
+	file = "mrd/filtrui_bazar.wav" 
 }

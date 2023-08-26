@@ -21,6 +21,7 @@ country_event = { id = POK.7 }
 }
 
 	}
+	
 	shared_focus = {
 		id = POK_end_civil_conflict
 		icon = GFX_goal_unknown
@@ -29,13 +30,14 @@ country_event = { id = POK.7 }
 		y = 20
 		available = {
 			has_war = no
-			has_country_flag = civil_war_end
+			has_country_flag = pokoyanskaya_civil_war_end_cf
+			has_global_flag = pokoyanskaya_civil_war_end_gf
 		}
-			completion_reward = {
-
-}
-
+		completion_reward = {
+			set_country_flag = DR_start_reunite_Russia_cf
+		}
 	}
+	
 	shared_focus = { 
 		id = POK_prepare_first_free_elections
 		icon = GFX_focus_generic_strike_at_democracy2
