@@ -979,7 +979,7 @@ country_event = { id = POK.23 }
 		x = 1
 		y = 17
         completion_reward = {   
-			
+			add_ideas =  POK_new_religion
 		}    
 	}
 	shared_focus = {
@@ -995,7 +995,10 @@ country_event = { id = POK.23 }
 		x = 1
 		y = 18
         completion_reward = {   
-			
+			swap_ideas = {
+				remove_idea = POK_new_religion
+				add_idea = POK_keepers_of_anomalies
+			}
 		}    
 	}
 	shared_focus = {
@@ -1015,7 +1018,10 @@ country_event = { id = POK.23 }
 		x = 1
 		y = 19
         completion_reward = {   
-			
+			swap_ideas = {
+				remove_idea = POK_keepers_of_anomalies
+				add_idea = POK_pokayansky_equilibrium
+			}
 		}    
 	}
 	shared_focus = {

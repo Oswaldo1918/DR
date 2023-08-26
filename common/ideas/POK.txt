@@ -2370,6 +2370,72 @@ ideas = {
 				production_speed_buildings_factor = -0.1 
 			}
 		}
+		
+		POK_new_religion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = 0.05
+   				political_power_gain = 0.05
+			}
+		}
+		POK_keepers_of_anomalies = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = 0.075
+   				political_power_gain = 0.075
+				army_attack_factor = 0.05
+				research_speed_factor = 0.025
+			}
+		}
+		POK_pokayansky_equilibrium = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				stability_factor = 0.1
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				war_stability_factor = 0.1
+   				political_power_gain = 0.075
+				army_attack_factor = 0.05
+				research_speed_factor = 0.025
+			}
+		}
     }
 	
 	tank_manufacturer = {

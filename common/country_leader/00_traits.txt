@@ -3,6 +3,57 @@
 @tier3 = 10
 
 leader_traits = {
+    kadet = {
+		sprite = 10
+		random = not
+		stability_factor = 0.07
+		political_power_factor = 0.02
+		democratic_drift = 0.01
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    old_socdem = {
+		sprite = 10
+		random = not
+		stability_factor = 0.07
+		political_power_factor = 0.07
+		democratic_drift = 0.01
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}  
+    political_trup = {
+		sprite = 10
+		random = not
+		stability_factor = -0.05
+		political_power_factor = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    min_kult = {
+		sprite = 10
+		random = not
+		stability_factor = 0.05
+		political_power_factor = 0.03
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
+    min_obr = {
+		sprite = 10
+		random = not
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
     baron_sibir = {
 		sprite = 10
 		random = not
