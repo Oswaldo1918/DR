@@ -242,6 +242,10 @@ characters={
                 original_tag = BSH 
 				
             }
+			available = {
+			    has_completed_focus = BSH_babay
+				NOT = { has_completed_focus = BSH_rasprava_nad_oppozitsiey }
+			}
             traits = { popular_figurehead }
 	    }
 	}
@@ -309,12 +313,12 @@ characters={
 		}
     }
 	
-	BSH_kotak = {
-		name = "Котак-сан"
+	BSH_krylov = {
+		name = "Матвей Крылов"
 		portraits = {
 			army = {
 				large = "gfx/leaders/BSH/.dds"
-				small = ".dds"
+				small = "GFX_idea_BSH_krylov"
 			}
 		}
     }
