@@ -191,7 +191,7 @@ country_event = { #Статус_модераторов
 		name = lazaret.7.b
 		add_days_mission_timeout = {
 			mission = LAZ_razval_mission
-			days = -10
+			days = -35
 		}
 		add_stability = 0.1
 		add_war_support = 0.25
@@ -468,10 +468,9 @@ country_event = { #Доступ_к_экспансии_после_чисток
 	}
 	
 	option = {
-	name = lazaret.10.a
-	 add_political_power = 50
-	 custom_effect_tooltip = LAZ_open_reunific_tt
-	  if = {
+		name = lazaret.10.a
+		add_political_power = 50
+		if = {
 			limit = {
 				has_country_flag = LAZ_bilo_vosstaniye
 			}
@@ -495,7 +494,7 @@ country_event = { #КНОР_по_Экономике
 	}
 	
 	option = {
-	name = lazaret.11.a
+		name = lazaret.11.a
 	}
 }
 
@@ -929,81 +928,5 @@ country_event = { #Док устал
 			idea = LAZ_pereguzhonnost_genshtaba
 			days = 100
 		}						        
-	}
-}
-
-#claims to NOD when at war
-country_event = {
-	id = lazaret.99
-	title = lazaret.99.t
-	desc = lazaret.99.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	is_triggered_only = no
-	fire_only_once = yes
-	
-	trigger = {
-		tag = LAZ
-		has_war_with = NOD
-	}
-	
-	option = {
-	name = lazaret.99.a
-		
-	 if = {
-			limit = {
-				country_exists = NOD
-			}
-			NOD = {
-			every_state = {
-			limit = {
-				is_owned_by = NOD
-			}
-			LAZ = {
-				add_state_claim = PREV
-			}
-		  }
-		  }
-		}
-		
-		
-	}
-}
-
-#claims to KUR when at war
-country_event = {
-	id = lazaret.98
-	title = lazaret.98.t
-	desc = lazaret.98.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	is_triggered_only = no
-	fire_only_once = yes
-	
-	trigger = {
-		tag = LAZ
-		has_war_with = KUR
-	}
-	
-	option = {
-	name = lazaret.98.a
-		
-	 if = {
-			limit = {
-				country_exists = KUR
-			}
-			KUR = {
-			every_state = {
-			limit = {
-				is_owned_by = KUR
-			}
-			LAZ = {
-				add_state_claim = PREV
-			}
-		  }
-		  }
-		}
-		
-		
 	}
 }

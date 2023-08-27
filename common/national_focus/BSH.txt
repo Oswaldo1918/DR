@@ -1394,9 +1394,13 @@ focus_tree = {
 			visible = {
 					has_completed_focus = BSH_new_formats
 				}
-			completion_reward = {
-					add_ideas = BSH_evrey
-				}
+		completion_reward = {
+			add_ideas = BSH_evrey
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}			
+		}
 
 	}
 	focus = {
@@ -1482,16 +1486,19 @@ focus_tree = {
 		}
 		x = 42
 		y = 9
-		    		    available = {
-                has_government = memoism 
-            }     
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
-			completion_reward = {
-					add_ideas = BSH_ottsovskaya_liniya
-				}
-
+		available = {
+			has_government = memoism 
+        }     
+		visible = {
+			has_completed_focus = BSH_new_formats
+		}
+		completion_reward = {
+			add_ideas = BSH_ottsovskaya_liniya
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}
 	}
 	focus = {
 		id = BSH_sila_stepey
@@ -1576,16 +1583,19 @@ focus_tree = {
 		}
 		x = 46
 		y = 9
-				    available = {
-                has_government = memoism 
-            }
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
-			completion_reward = {
-					add_ideas = BSH_materinskaya_liniya
-				}
-
+		available = {
+			has_government = memoism 
+		}
+		visible = {
+			has_completed_focus = BSH_new_formats
+		}
+		completion_reward = {
+			add_ideas = BSH_materinskaya_liniya'
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}
 	}
 	focus = {
 		id = BSH_sev_stoykost

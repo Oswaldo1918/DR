@@ -1767,8 +1767,26 @@ opposition_Oleg = {
 			set_capital = {state = 652}		
 			}		
 	}
-}		
+}
+		
 proect_Nasti = {
+    BSH_decision_otpravit_bebeya_pomitsya = {
+		cost = 40
+		visible = {
+			has_idea = BSH_Nastya
+		} 
+		available = {
+			NOT = {
+				has_idea = BSH_idea_svezhiy_bebey
+			}
+		}
+		remove_effect = { 			
+			add_timed_idea = {
+				idea = BSH_idea_svezhiy_bebey
+				days = 14
+			}
+		}
+	}
     new_flag = {
 	      cost = 150
             visible = {
@@ -1806,9 +1824,6 @@ proect_Nasti = {
 	}	
 }
 
-bebs_test_category = {
-
-	}
 	bebs_kriptid_category = {
 	BSH_kukich_fate_mission = {
 

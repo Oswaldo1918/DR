@@ -267,25 +267,24 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
-			available = {
-					has_idea = DOT_military_lives_matter_1
-				}
-			completion_reward = {
-					add_popularity = {
-							ideology = neutrality
-							popularity = 0.15
-						}
-					army_experience = 10
-					swap_ideas = {
-							remove_idea = DOT_military_lives_matter_1
-							add_idea = DOT_military_lives_matter_8
-						}
-					set_politics = {
-							ruling_party = neutrality
-							elections_allowed = no
-						}
-				}
-
+		available = {
+			has_idea = DOT_military_lives_matter_1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			army_experience = 10
+			swap_ideas = {
+				remove_idea = DOT_military_lives_matter_1
+				add_idea = DOT_military_lives_matter_8
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
 	}
 	focus = {
 		id = DOT_military_is_gender
@@ -1194,12 +1193,15 @@ focus_tree = {
 		}
 		x = 8
 		y = 7
-			completion_reward = {
-					add_stability = 0.1
-					add_war_support = 0.05
-					add_political_power = 300
-				}
-
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_political_power = 300
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}
 	}
 	focus = {
 		id = DOT_dopolnitelnoye_voennove_stroitelstvo

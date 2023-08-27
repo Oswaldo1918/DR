@@ -1704,6 +1704,10 @@ add_extra_state_shared_building_slots = 1
 		y = 6
 		completion_reward = {
 			country_event = { id = lazaret.10  days = 1 }
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
 		}
 	}
 	focus = { #Полная_оккупация_чата

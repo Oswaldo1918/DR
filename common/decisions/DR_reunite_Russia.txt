@@ -14,6 +14,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = EBN
 		}
 		
+		visible = {
+			country_exists = EBN
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -40,6 +44,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = MHL
+		}
+		
+		visible = {
+			country_exists = MHL
 		}
 		
 		fire_only_once = yes
@@ -70,6 +78,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = ARK
 		}
 		
+		visible = {
+			country_exists = ARK
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -96,6 +108,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = TUP
+		}
+		
+		visible = {
+			country_exists = TUP
 		}
 		
 		fire_only_once = yes
@@ -128,6 +144,42 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = LAZ
 		}
 		
+		visible = {
+			country_exists = LAZ
+		}
+				
+		fire_only_once = yes
+		
+		days_remove = 7
+		
+		ai_will_do = {
+			base = 10.5
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				target = LAZ
+				type = annex_everything
+            }
+		}			
+	}
+	
+	DR_REU_RUS_WAR_WITH_OSV = {
+	
+		cost = 50
+
+		available = {
+			NOT = {
+				original_tag = OSV
+			}
+			has_war = no 
+			is_neighbor_of = OSV
+		}
+		
+		visible = {
+			country_exists = OSV
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -156,6 +208,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = MAT
 		}
 		
+		visible = {
+			country_exists = MAT
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -182,6 +238,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = UNT
+		}
+		
+		visible = {
+			country_exists = UNT
 		}
 		
 		fire_only_once = yes
@@ -219,13 +279,27 @@ DR_reunite_russia_decisions_category = {
 					original_tag = VTC
 				}
 			}
-			is_neighbor_of = CHT
-			is_neighbor_of = CDR
-			is_neighbor_of = DRC
-			is_neighbor_of = CCO
-			is_neighbor_of = DGC
-			is_neighbor_of = CVT
-			is_neighbor_of = VTC
+			OR = {
+				is_neighbor_of = CHT
+				is_neighbor_of = CDR
+				is_neighbor_of = DRC
+				is_neighbor_of = CCO
+				is_neighbor_of = DGC
+				is_neighbor_of = CVT
+				is_neighbor_of = VTC
+			}
+		}
+		
+		visible = {
+			OR = {
+				country_exists = CHT
+				country_exists = CDR
+				country_exists = DRC
+				country_exists = CCO
+				country_exists = DGC
+				country_exists = CVT
+				country_exists = VTC
+			}
 		}
 		
 		fire_only_once = yes
@@ -239,12 +313,14 @@ DR_reunite_russia_decisions_category = {
 		remove_effect = {
 			if = {
 				limit = {
-					country_exists = CDR
-					country_exists = DRC
-					country_exists = CCO
-					country_exists = DGC
-					country_exists = CVT
-					country_exists = VTC
+					OR = {
+						country_exists = CDR
+						country_exists = DRC
+						country_exists = CCO
+						country_exists = DGC
+						country_exists = CVT
+						country_exists = VTC
+					}
 				}
 				create_wargoal = {
 					target = CHT
@@ -297,7 +373,11 @@ DR_reunite_russia_decisions_category = {
 			has_war = no 
 			is_neighbor_of = NOD
 		}
-		
+
+		visible = {
+			country_exists = NOD
+		}
+
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -324,6 +404,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = KRR
+		}
+
+		visible = {
+			country_exists = KRR
 		}
 		
 		fire_only_once = yes
@@ -353,6 +437,10 @@ DR_reunite_russia_decisions_category = {
 			has_war = no 
 			is_neighbor_of = STR
 		}
+
+		visible = {
+			country_exists = STR
+		}
 		
 		fire_only_once = yes
 		
@@ -380,6 +468,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = HAZ
+		}
+
+		visible = {
+			country_exists = HAZ
 		}
 		
 		fire_only_once = yes
@@ -411,6 +503,10 @@ DR_reunite_russia_decisions_category = {
 			has_war = no 
 			is_neighbor_of = SKT
 		}
+
+		visible = {
+			country_exists = SKT
+		}
 		
 		fire_only_once = yes
 		
@@ -439,6 +535,10 @@ DR_reunite_russia_decisions_category = {
 			has_war = no 
 			is_neighbor_of = PRM
 		}
+
+		visible = {
+			country_exists = PRM
+		}
 		
 		fire_only_once = yes
 		
@@ -466,6 +566,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = BSH
+		}
+
+		visible = {
+			country_exists = BSH
 		}
 		
 		fire_only_once = yes
@@ -513,6 +617,15 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			OR = {
+				country_exists = POK
+				country_exists = MGN
+				country_exists = OMS
+				country_exists = GAL
+				country_exists = YSK
+				country_exists = ZNS
+				country_exists = MRD			
+			}
 			NOT = {
 				has_global_flag = pokoyanskaya_civil_war_end_gf
 			}
@@ -572,9 +685,8 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
-			OR = {
-				has_global_flag = pokoyanskaya_civil_war_end_gf
-			}
+			country_exists = POK
+			has_global_flag = pokoyanskaya_civil_war_end_gf
 		}
 		
 		fire_only_once = yes
@@ -606,9 +718,8 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
-			OR = {
-				has_global_flag = pokoyanskaya_civil_war_end_gf
-			}
+			has_global_flag = pokoyanskaya_civil_war_end_gf
+			country_exists = MGN
 		}
 
 		fire_only_once = yes
@@ -640,9 +751,8 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
-			OR = {
-				has_global_flag = pokoyanskaya_civil_war_end_gf
-			}
+			has_global_flag = pokoyanskaya_civil_war_end_gf
+			country_exists = OMS
 		}
 		
 		fire_only_once = yes
@@ -674,9 +784,8 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
-			OR = {
-				has_global_flag = pokoyanskaya_civil_war_end_gf
-			}
+			has_global_flag = pokoyanskaya_civil_war_end_gf
+			country_exists = YSK
 		}
 		
 		fire_only_once = yes
@@ -709,6 +818,7 @@ DR_reunite_russia_decisions_category = {
 		
 		visible = {
 			has_global_flag = pokoyanskaya_civil_war_end_gf
+			country_exists = ZNS
 		}
 		
 		fire_only_once = yes
@@ -741,6 +851,7 @@ DR_reunite_russia_decisions_category = {
 		
 		visible = {
 			has_global_flag = pokoyanskaya_civil_war_end_gf
+			country_exists = MRD
 		}
 		
 		fire_only_once = yes
@@ -773,6 +884,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = BRT
 		}
 		
+		visible = {	
+			country_exists = BRT
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -799,6 +914,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = YAK
+		}
+		
+		visible = {	
+			country_exists = YAK
 		}
 		
 		fire_only_once = yes
@@ -829,6 +948,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = YWO
 		}
 		
+		visible = {	
+			country_exists = YWO
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -855,6 +978,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = TUB
+		}
+		
+		visible = {	
+			country_exists = TUB
 		}
 		
 		fire_only_once = yes
@@ -885,6 +1012,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = MAG
 		}
 		
+		visible = {	
+			country_exists = MAG
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -913,6 +1044,10 @@ DR_reunite_russia_decisions_category = {
 			is_neighbor_of = KOL
 		}
 		
+		visible = {	
+			country_exists = KOL
+		}
+		
 		fire_only_once = yes
 		
 		days_remove = 7
@@ -939,6 +1074,10 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = DOT
+		}
+		
+		visible = {	
+			country_exists = DOT
 		}
 		
 		fire_only_once = yes
@@ -973,9 +1112,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = LOM
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1008,9 +1150,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = KAZ
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1043,9 +1188,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = TAJ
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1078,9 +1226,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = KYR
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1113,9 +1264,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = TMS
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1150,9 +1304,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = CHK
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1185,9 +1342,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = AZR
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1220,9 +1380,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = GEO
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1255,9 +1418,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = ARM
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1292,9 +1458,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = CRI
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1327,9 +1496,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = DON
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1364,9 +1536,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = UKR
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1399,9 +1574,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = CHE
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1434,9 +1612,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = KUR
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1469,9 +1650,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = SIN
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1504,9 +1688,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = ZHE
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1541,9 +1728,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = MLD
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1578,9 +1768,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = WHS
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1613,9 +1806,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = ZWN
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1650,9 +1846,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = SPL
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1685,9 +1884,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = VSB
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -1722,9 +1924,12 @@ DR_reunite_russia_decisions_category = {
 		}
 		
 		visible = {
+			country_exists = KLG
 			NOT = {
-				original_tag = DOT				
-				original_tag = BSH
+				OR = {
+					original_tag = DOT
+					original_tag = BSH
+				}
 			}
 		}
 		
@@ -2045,7 +2250,7 @@ DR_core_russian_territories_decisions_category = {
 		}
 	}
 	
-	DR_REU_RUS_CORE_KRR = {
+	DR_REU_RUS_CORE_STR = {
 	
 		cost = 50
 
@@ -2811,7 +3016,7 @@ DR_core_russian_territories_decisions_category = {
 		}
 	}
 	
-	DR_REU_RUS_CORE_ = {
+	DR_REU_RUS_CORE_CHE = {
 	
 		cost = 50
 
@@ -2946,7 +3151,7 @@ DR_core_russian_territories_decisions_category = {
 		}
 	}
 	
-	DR_REU_RUS_CORE_ = {
+	DR_REU_RUS_CORE_WHS = {
 	
 		cost = 50
 

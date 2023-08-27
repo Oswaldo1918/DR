@@ -11,8 +11,20 @@ opposition_Oleg = {
 	    has_completed_focus = BSH_oppazitsiya_Olega
 	}
 }
+bebs_persons_category = {
+    icon = generic_prospect_for_resources
+	picture = GFX_decision_category_bebs_person_picture
+    allowed = {
+		original_tag = BSH
+		has_government = memoism
+	}
+	visible = {
+	    has_completed_focus = BSH_hello_vsem_nashim
+	}
+}
 proect_Nasti = {
     icon = generic_prospect_for_resources
+	picture = GFX_decision_category_proyekti_nasti_picture
     allowed = {
 		original_tag = BSH
 		has_government = memoism
@@ -21,6 +33,18 @@ proect_Nasti = {
 	    has_idea_token = BSH_Nastya
 	}
 }
+bebs_kriptid_category = {
+    icon = generic_prospect_for_resources 
+	picture = GFX_decision_category_kriptidi_picture_alt
+    allowed = {
+		original_tag = BSH
+		has_government = memoism
+	}
+	visible = {
+	    has_completed_focus = BSH_hello_vsem_nashim
+	}
+}
+
 Ural_Israel = {
     icon = generic_prospect_for_resources
     allowed = {
@@ -49,38 +73,5 @@ Sever_empire = {
 	}
 	visible = {
 	    has_completed_focus = BSH_materinskaya_liniya
-	}
-}
-bebs_test_category = {
-    icon = generic_prospect_for_resources
-    allowed = {
-		original_tag = BSH
-		has_government = memoism
-	}
-	visible = {
-	    has_completed_focus = BSH_hello_vsem_nashim
-		has_country_flag = kukich_cryptid
-	}
-}
-bebs_kriptid_category = {
-    icon = generic_prospect_for_resources 
-	picture = GFX_decision_cat_kriptidi_picture
-    allowed = {
-		original_tag = BSH
-		has_government = memoism
-	}
-	visible = {
-	    has_completed_focus = BSH_hello_vsem_nashim
- 
-	}
-}
-bebs_persons_category = {
-    icon = generic_prospect_for_resources
-    allowed = {
-		original_tag = BSH
-		has_government = memoism
-	}
-	visible = {
-	    has_completed_focus = BSH_hello_vsem_nashim
 	}
 }
