@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_zapustit_nornikel
-		icon = GFX_industrialization
+		icon = GFX_MRD_goal_zapustit_nornikel
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_logovo_saurona
@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_nabrat_dobrovoltsev_v_armii
-		icon = GFX_focus_cht_slave_divisions
+		icon = GFX_MRD_goal_nabrat_dobrovoltsev_v_armii
 		prerequisite = {
 			focus = MRD_logovo_saurona
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 
 	focus = {
 		id = MRD_raztat_megaklinki
-		icon = GFX_DOT_custom_weapons
+		icon = GFX_MRD_goal_raztat_megaklinki
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_prodvinut_nazgulov
@@ -102,7 +102,7 @@ focus_tree = {
 
 	focus = {
 		id = MRD_razrabotat_megastvoli
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_MRD_goal_razrabotat_megastvoli
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_zapustit_nornikel
@@ -123,7 +123,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_nachinaem_s_dachnikov
-		icon = GFX_focus_usa_guarantee_the_american_dream
+		icon = GFX_MRD_goal_nachinaem_s_dachnikov
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_logovo_saurona
@@ -136,7 +136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_porabotit_bezhentsev
-		icon = GFX_focus_cht_slaves_masses
+		icon = GFX_MRD_goal_poirabotit_bezhentsev
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_nachinaem_s_dachnikov
@@ -219,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_rabotat_za_kharchi
-		icon = GFX_POK_no_posobiyam
+		icon = GFX_MRD_goal_rabotat_za_harchi
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_porabotit_bezhentsev
@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_povisit_rascenki
-		icon = GFX_goal_hozraschet
+		icon = GFX_MRD_goal_povisit_rascenki
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_porabotit_bezhentsev
@@ -267,7 +267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_rasshireniye_vornproma
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_MRD_goal_rasshireniye_vornproma
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_sistema_trudovikh_lagerei
@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_tisyacheletniy_plan
-		icon = GFX_goal_pyatiketka2
+		icon = GFX_MRD_goal_tisyacheletniy_plan
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_rabotat_za_kharchi
@@ -319,7 +319,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_rasshireniye_logistiki
-		icon = GFX_focus_generic_railroad
+		icon = GFX_MRD_goal_rasshireniye_logistiki
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_rabotat_za_kharchi
@@ -370,7 +370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_armiya_dostoynaya_velikoi_mordovii
-		icon = GFX_ot_baldi
+		icon = GFX_MRD_goal_armiya_dostoynaya_velikoi_mordovii
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_tisyacheletniy_plan
@@ -1236,19 +1236,6 @@ focus_tree = {
 		y = 18
 
 	}
-
-	focus = {
-		id = MRD_exspluatatsiya_mongolii
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_vneshiye_istochniki_prodovolstviya
-			focus = MRD_totalnoye_importozamesheniye
-		}
-		x = 39
-		y = 16
-
-	}
 	focus = {
 		id = MRD_besplatnaya_razdacha_kolets_idiotam
 		icon = GFX_goal_unknown
@@ -1546,7 +1533,7 @@ focus_tree = {
 			focus = MRD_finansoviye_istochniki
 		}
 		mutually_exclusive = {
-			focus = MRD_vas_provetstvuyet_chastniy_kapital
+			focus = MRD_vas_privetstvuyet_chastniy_kapital
 		}
 		x = 34
 		y = 13
@@ -1661,6 +1648,18 @@ focus_tree = {
 		}
 		x = 36
 		y = 17
+
+	}
+	focus = {
+		id = MRD_exspluatatsiya_mongolii
+		icon = GFX_MRD_goal_exspluatatsiya_mongolii
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_vneshiye_istochniki_prodovolstviya
+			focus = MRD_totalnoye_importozamesheniye
+		}
+		x = 39
+		y = 16
 
 	}
 }
