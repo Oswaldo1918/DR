@@ -2716,7 +2716,8 @@ ideas = {
 			cost = 150	
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.10
+				local_resources_factor = 0.1
 			}
 			
 			ai_will_do = {

@@ -1,0 +1,78 @@
+characters = {
+
+	MAT_Anton_Orlov = {
+		name = "Антон Орлов"
+		desc = "POLITICS_ORLOV_DESC"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAT/Anton_Orlov.dds"
+			}
+			army = {
+				large = "gfx/leaders/MAT/Anton_Orlov.dds"
+			}
+		}
+		country_leader = {
+			ideology = left_shumerism
+			expire = "1999.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { war_hero armor_officer aggressive_assaulter }
+			
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+        }
+	}
+	
+	MAT_Danil_Csukanov = {
+		name = "Данил Цуканов"
+		desc = "POLITICS_THORVALD_STAUNING_DESC"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAT/Danil_Tsukanov.dds"
+			}
+			army = {
+				large = "gfx/leaders/MAT/Danil_Tsukanov.dds"
+			}
+		}
+
+		country_leader = {
+			expire = "1999.1.1"
+			ideology = marxismus
+			id = -1
+		}
+		field_marshal = {
+			traits = { war_hero infantry_officer }
+			
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2 
+			legacy_id = -1
+        }
+	}
+	
+	MAT_Nikolay_Kuznetsov = {
+		name = "Николай Кузнецов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MAT_Nikolay_Kuznetsov"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAT_idea_Nikolay_Kuznetsov
+			allowed  = {
+				original_tag = MAT
+			}
+			traits  = {
+				rabochaya_koshechka
+			}
+		}
+	}
+}

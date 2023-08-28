@@ -3,17 +3,32 @@ capital = 222
 oob = MAT_army
 
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.3
 set_war_support = 0.5
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	motorised_infantry = 1
-	basic_light_tank_chassis = 1
-	tech_support = 1
-	mobile_warfare = 1
-	basic_train = 1
+
+set_popularities = {
+	metacommy = 47
+	vmestolev = 43
+	democratic = 5
+	fascism = 5
 }
+
+set_politics = {
+	ruling_party = metacommy
+	elections_allowed = no	
+}
+
+set_power_balance = {
+	id = MAT_hui_znaet_balance
+	
+	left_side = MAT_czukanov_side
+
+	right_side = MAT_orlov_side
+
+	set_value = 0
+}
+
+set_convoys = 40
 
 add_ideas = {
 	MAT_idea_YgZapad_bastion
@@ -21,7 +36,28 @@ add_ideas = {
 	partial_economic_mobilisation
 	limited_conscription
 }
-# Starting tech
+
+add_timed_idea = { idea = UNT_neudach_vostoch_pohod days = 547 }
+
+#Государственные_руководители
+recruit_character = MAT_Anton_Orlov
+recruit_character = MAT_Danil_Csukanov
+
+#Политсоветники
+recruit_character = MAT_Nikolay_Kuznetsov
+
+
+#Теоретики
+
+#Генералы
+
+#Адмиралы
+
+#Авиаторы
+
+#ГЕНШТАБ
+
+#Starting tech
 set_technology = { 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -33,7 +69,6 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -80,16 +115,6 @@ if = {
 	}
 }
 
-	set_power_balance = {
-		id = MAT_hui_znaet_balance
-		
-		left_side = MAT_czukanov_side
-
-		right_side = MAT_orlov_side
-
-		set_value = 0
-	}
-
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -113,65 +138,7 @@ if = {
 		icon = "GFX_SOV_basic_light_tank_medium"
 	}
 }
-add_timed_idea = { idea = UNT_neudach_vostoch_pohod days = 547 }
 
-set_popularities = {
-	metacommy = 47
-	vmestolev = 43
-	democratic = 5
-	fascism = 5
-}
-set_politics = {
-	ruling_party = metacommy
-	elections_allowed = no	
-}
-
-set_convoys = 40
-
-create_country_leader = {
-	name = "Антон Орлов"
-	desc = "POLITICS_ORLOV_DESC"
-	picture = "Anton_Orlov.dds"
-	expire = "1999.1.1"
-	ideology = left_shumerism
-	traits = {
-		Lugal Shiz_na_tanke
-	}
-}
-create_country_leader = {
-	name = "Данил Цуканов"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Danil_Tsukanov.dds"
-	expire = "1999.1.1"
-	ideology = marxismus
-	traits = {
-
-	}
-}
-create_field_marshal = {
-	name = "Антон Орлов"
-	id = 11111
-	picture = "Anton_Orlov.dds"
-	traits = { armor_officer aggressive_assaulter panzer_leader panzer_expert combined_arms_expert_short  }
-	skill = 3
-
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Данил Цуканов"
-	id = 11112
-	portrait_path = ""
-	traits = {  infantry_officer }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 2 
-}
 if = {
 	limit = {
 		has_dlc = "La Resistance"

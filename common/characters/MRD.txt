@@ -7,7 +7,6 @@ characters = {
 			}
 			army = {
 				large = "gfx/leaders/MRD/Sauron.dds"
-				small = GFX_portrait_Sauron_small
 			}
 		}
 		country_leader = {
@@ -32,7 +31,7 @@ characters = {
 		name = "Сарумян"
 		portraits = {
 			civilian = {
-				small="GFX_idea_MRD_Sarumyan"
+				small = "GFX_idea_MRD_Sarumyan"
 			}
 		}
 		advisor = {
@@ -48,6 +47,7 @@ characters = {
 	}
 	MRD_madam_Marchiano = {
 		name = "Мадам Марчиано"
+		desc = MRD_madam_Marchiano_desc
 		portraits = {
 			civilian = {
 				small = "GFX_idea_MRD_madam_Marchiano"
@@ -66,7 +66,7 @@ characters = {
 				original_tag = MRD
 			}
 			traits  = {
-				first_lady 
+				top_vaifu 
 			}
 		}
 	}
@@ -90,7 +90,8 @@ characters = {
 				original_tag = MRD
 			}
 			traits = {
-				blitzkrieg_theorist army_chief_maneuver_2
+				blitzkrieg_theorist 
+				army_chief_maneuver_2
 			}
 		}
 		corps_commander = {
