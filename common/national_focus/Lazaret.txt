@@ -1681,10 +1681,9 @@ add_extra_state_shared_building_slots = 1
 		}
 		x = 25
 		y = 8
-			completion_reward = {
+		completion_reward = {
             add_ideas = LAZ_razvitiye_torgovogo_flota
-}
-
+		}
 	}
 	
 	focus = {
@@ -1703,7 +1702,7 @@ add_extra_state_shared_building_slots = 1
 		x = 3
 		y = 6
 		completion_reward = {
-			country_event = { id = lazaret.10  days = 1 }
+			country_event = lazaret.10 
 			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
 			hidden_effect = {
 				set_country_flag = DR_start_reunite_Russia_cf
@@ -2141,33 +2140,32 @@ add_ideas = LAZ_upravleniye_voennoy_infrastructuroi
 		}
 		x = 36
 		y = 4
-			completion_reward = {
-                    random_list = {
-                       55 = {
-                       add_political_power = -50
-                       }
-                       15 = {
-                            add_tech_bonus = {
-                            name = industrial_bonus
-                            bonus = 1.0
-                            uses = 1
-                            category = industry
-                            }
-                       }
-                       15 = {
-                            add_tech_bonus = {
-                            name = secret_bonus
-                            bonus = 1.0
-                            uses = 1
-                            category = electronics
-                            }
-                       }
-                       15 = {
-                       add_political_power = 150
-                       }
-                    }  
-            }
-
+		completion_reward = {
+			random_list = {
+				55 = {
+					add_political_power = -50
+				}
+				15 = {
+					add_tech_bonus = {
+						name = industrial_bonus
+						bonus = 1.0
+						uses = 1
+						category = industry
+					}
+				}
+				15 = {
+					add_tech_bonus = {
+						name = secret_bonus
+						bonus = 1.0
+						uses = 1
+						category = electronics
+					}
+				}
+				15 = {
+					add_political_power = 150
+				}
+			}  
+		}
 	}
 	focus = {
 		id = LAZ_prioritet_himproma
@@ -2234,10 +2232,9 @@ add_ideas = LAZ_upravleniye_voennoy_infrastructuroi
 		}
 		x = 35
 		y = 6
-			completion_reward = {
-                        add_ideas = free_trade
-            }
-
+		completion_reward = {
+			add_ideas = free_trade
+		}
 	}
 	focus = {
 		id = LAZ_stroitelstvo_verfei
@@ -2355,16 +2352,15 @@ add_ideas = LAZ_upravleniye_voennoy_infrastructuroi
 		}
 		x = 15
 		y = 8
-			completion_reward = {
-			country_event = { id = lazaret.24 }
-add_doctrine_cost_reduction = {
-			name = air_doc_bonus
-			cost_reduction = 1.0
-			uses = 1
-			category = air_doctrine
+		completion_reward = {
+			country_event = lazaret.24	
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 1.0
+				uses = 1
+				category = air_doctrine
+			}
 		}
-}
-
 	}
 	focus = {
 		id = LAZ_obucheniye_drozdov

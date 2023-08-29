@@ -3870,7 +3870,12 @@ available = {
 		}
 		x = 21
 		y = 21
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = POK_idea_panoramnoye_okno_v_Evropu
+				days = 900
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_srednyaya_asia
@@ -3881,7 +3886,9 @@ available = {
 		}
 		x = 19
 		y = 21
-
+		completion_reward = {
+			
+		}
 	}
 	shared_focus = {
 		id = POK_panoramnoye_okno_v_Evropu
@@ -3892,7 +3899,12 @@ available = {
 		}
 		x = 17
 		y = 21
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = POK_idea_k_USA_cherez_vostok
+				days = 365
+			}
+		}
 	}
 	shared_focus = {
 		id = POK_help_republics

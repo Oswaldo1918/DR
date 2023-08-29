@@ -2436,6 +2436,48 @@ ideas = {
 				research_speed_factor = 0.025
 			}
 		}
+		POK_idea_panoramnoye_okno_v_Evropu = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+				conscription_factor = 0.3
+				army_org_factor = 0.15
+				army_attack_factor = 0.10
+				max_planning_factor = 0.10
+			}
+		}
+		POK_idea_k_USA_cherez_vostok = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+				org_loss_when_moving = -0.10
+				out_of_supply_factor = -0.20
+				winter_attrition_factor = 0.10
+				supply_node_range = 0.25
+			}
+		}
     }
 	
 	tank_manufacturer = {
