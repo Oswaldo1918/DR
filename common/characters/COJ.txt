@@ -1,0 +1,55 @@
+characters = {
+	COJ_Mana_Futakuchi = {
+		name = "Мана Футакучи"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COJ/Mana_Futakuchi.dds"
+			}
+			army = {
+			    large = "gfx/leaders/COJ/Mana_Futakuchi_general.dds"
+			}
+		}
+
+		country_leader = {
+			traits = {  }
+			ideology = marxismus
+			expire = "3000.1.1"
+			id = -1
+		}
+		field_marshal = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = 666
+        }
+	}		
+	COJ_Sumire_Uesaka = {
+	name = "Сумирэ Уэсака"
+		portraits = {
+			civilian = {
+			    large = "gfx/leaders/COJ/Sumire_Uesaka.dds"
+			}
+			army = {
+			    large = "gfx/leaders/COJ/Sumire_Uesaka_general.dds"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = nacbol
+			expire = "3000.1.1"
+			id = -1
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+}

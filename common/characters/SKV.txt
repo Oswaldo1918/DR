@@ -1,0 +1,28 @@
+characters={
+	SKV_Omaru_Polka = {
+		name = "Омару Полька"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKV/Omaru_Polka.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = oligarchism
+		    id=-1
+	   }
+    }
+	SKV_Kson = {
+		name = "Ксон"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKV/Kson.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = cybernetics
+		    id=-1
+	   }
+    }
+}

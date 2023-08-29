@@ -1,0 +1,38 @@
+capital = 532
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_military_police = 1
+	tech_support = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	early_fighter = 1
+	basic_train = 1
+}
+
+recruit_character = SKV_Omaru_Polka
+recruit_character = SKV_Kson
+
+set_popularities = {
+	neutrality = 50
+	fascism = 50
+}
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no	
+}
+
+set_convoys = 200
+
+add_ideas = {
+	partial_economic_mobilisation
+	limited_conscription
+	SKV_risk_of_famine
+}

@@ -1,0 +1,36 @@
+capital = 282
+
+oob = 123_1936
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_military_police = 1
+	tech_support = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	early_fighter = 1
+	basic_train = 1
+}
+
+recruit_character = PRJ_Shinzo_Abe
+
+add_ideas = {
+limited_conscription
+low_economic_mobilisation
+}
+
+set_popularities = {
+	democratic = 66
+	fascism = 34
+}
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = no	
+}
+
+set_convoys = 200
