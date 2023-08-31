@@ -3,6 +3,17 @@
 @tier3 = 10
 
 leader_traits = {
+    isekay = {
+		sprite = 10
+		random = not
+		war_support_factor = 0.07
+		stability_factor = 0.07
+		political_power_factor = 0.02
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
     kadet = {
 		sprite = 10
 		random = not
