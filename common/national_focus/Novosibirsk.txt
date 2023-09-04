@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = GAL_koalicionnoye_pravitelstvo
 		icon = GFX_focus_generic_military_academy
-		cost = 5
+		cost = 5,00
 		x = 28
 		y = 0
 			completion_reward = {
@@ -20,9 +20,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GAL_nado_radovatsya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		x = 40
+		y = 7
+
+	}
+	focus = {
 		id = GAL_cowboyi
 		icon = GFX_goal_lukin_cowboy
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_koalicionnoye_pravitelstvo
 		}
@@ -39,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = GAL_lukinistskaya_revolutsiya
 		icon = GFX_goal_generic_support_metacommy
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_cowboyi
 		}
@@ -63,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = GAL_vopros_o_staline
 		icon = GFX_goal_vopros_o_staline
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
@@ -79,7 +87,7 @@ focus_tree = {
 	focus = {
 		id = GAL_antilenin
 		icon = GFX_goal_antilenin
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
@@ -93,7 +101,7 @@ focus_tree = {
 	focus = {
 		id = GAL_rasprostraneniye_knig_kupcova
 		icon = GFX_goal_generic_propaganda
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_vopros_o_staline
 			focus = GAL_antilenin
@@ -108,7 +116,7 @@ focus_tree = {
 	focus = {
 		id = GAL_kult_lichnosti_kalinina
 		icon = GFX_GAL_kalinin
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_antilenin
 			focus = GAL_vopros_o_staline
@@ -123,7 +131,7 @@ focus_tree = {
 	focus = {
 		id = GAL_nosorog_revolutsii
 		icon = GFX_focus_generic_soviet_politics
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
@@ -137,7 +145,7 @@ focus_tree = {
 	focus = {
 		id = GAL_dat_svobodu_biznesu
 		icon = GFX_focus_generic_the_giant_wakes
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_lukinistskaya_revolutsiya
 		}
@@ -165,7 +173,7 @@ focus_tree = {
 	focus = {
 		id = GAL_unichtozhit_barinov-hozyainov
 		icon = GFX_goal_unichtozhit_barinov-hozyainov
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_rasprostraneniye_knig_kupcova
 		}
@@ -180,18 +188,18 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-		available = {
-	    	NOT = {
-		    	OR = {
-		    		has_war_with = POK
-		     		has_war_with = OMS
-		    		has_war_with = ZNS
-		    		has_war_with = YSK
-		    		has_war_with = MGN
-		    		has_war_with = MRD
-		    	}	
-			}	
-		}
+			available = {
+					NOT = {
+							OR = {
+									has_war_with = POK
+									has_war_with = OMS
+									has_war_with = ZNS
+									has_war_with = YSK
+									has_war_with = MGN
+									has_war_with = MRD
+								}
+						}
+				}
 			completion_reward = {
 					remove_ideas = GAL_barini_hozyaini
 					remove_ideas = GAL_biznes
@@ -201,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = GAL_unichtozheniye_starih_pravitelstvennih_struktur
 		icon = GFX_focus_eng_crush_the_dream
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_unichtozhit_barinov-hozyainov
 		}
@@ -271,7 +279,7 @@ focus_tree = {
 	focus = {
 		id = GAL_narodnoye_opolcheniye
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_SovMin
 		}
@@ -341,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = GAL_genii_v_NII
 		icon = GFX_goal_continuous_research
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_goskomtrud
 		}
@@ -368,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = GAL_focus_na_radari
 		icon = GFX_goal_generic_radar
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_genii_v_NII
 		}
@@ -388,7 +396,7 @@ focus_tree = {
 	focus = {
 		id = GAL_bomba
 		icon = GFX_focus_wonderweapons
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_focus_na_radari
 		}
@@ -407,7 +415,7 @@ focus_tree = {
 	focus = {
 		id = GAL_Stroyka_kosmoporta
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_genii_v_NII
 		}
@@ -427,7 +435,7 @@ focus_tree = {
 	focus = {
 		id = GAL_kosmoleti
 		icon = GFX_goal_Cosmoleti
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_Stroyka_kosmoporta
 		}
@@ -441,7 +449,7 @@ focus_tree = {
 	focus = {
 		id = GAL_proekt_velikikogo_kosmicheskogo_tambova
 		icon = GFX_goal_great_space_tambov
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_kosmoleti
 		}
@@ -455,7 +463,7 @@ focus_tree = {
 	focus = {
 		id = GAL_proizvodstvo_combainov
 		icon = GFX_goal_proizvodstvo_combaynov
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_gosplan
 		}
@@ -489,7 +497,7 @@ focus_tree = {
 	focus = {
 		id = GAL_proizvodstvo_tractorov
 		icon = GFX_goal_proizvodstvo_tractorov
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_gosplan
 		}
@@ -523,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = GAL_tanki_na_tractornom_zavode
 		icon = GFX_goal_generic_army_tanks
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_proizvodstvo_combainov
 		}
@@ -547,7 +555,7 @@ focus_tree = {
 	focus = {
 		id = GAL_sovhozi
 		icon = GFX_focus_prc_agrarian_socialism
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_tanki_na_tractornom_zavode
 		}
@@ -632,11 +640,10 @@ focus_tree = {
 		}
 		x = 28
 		y = 2
-		
-		available = {
-				country_exists = POK
+			available = {
+					country_exists = POK
 				}
-		completion_reward = {
+			completion_reward = {
 					add_ideas = war_economy
 				}
 
@@ -648,12 +655,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_Voennoye_polozheniye
 		}
-		x = 27
+		x = 26
 		y = 3
-		available = {
-				country_exists = POK
+			available = {
+					country_exists = POK
 				}
-		completion_reward = {
+			completion_reward = {
 					add_ideas = extensive_conscription
 				}
 
@@ -665,12 +672,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_Voennoye_polozheniye
 		}
-		x = 29
+		x = 28
 		y = 3
-		available = {
-				country_exists = POK
+			available = {
+					country_exists = POK
 				}
-		completion_reward = {
+			completion_reward = {
 					570 = {
 							add_building_construction = {
 									type = bunker
@@ -678,7 +685,7 @@ focus_tree = {
 									instant_build = yes
 									province = 7274
 								}
-						}		
+						}
 				}
 
 	}
@@ -689,10 +696,10 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_ukrepit_novosib
 		}
-		x = 29
+		x = 28
 		y = 4
-		available = {
-				country_exists = POK
+			available = {
+					country_exists = POK
 				}
 			completion_reward = {
 					570 = {
@@ -702,8 +709,430 @@ focus_tree = {
 									instant_build = yes
 									province = 4734
 								}
-						}		
+						}
 				}
+
+	}
+	focus = {
+		id = GAL_ey_uhnem
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_nado_radovatsya
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = GAL_rashirit_NII
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = GAL_narastit_aviareysy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		x = 34
+		y = 11
+
+	}
+	focus = {
+		id = GAL_stroyki_za_dolgi
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		mutually_exclusive = {
+			focus = GAL_stroyki_za_premiyu
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = GAL_zapolyar_ZhD
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = GAL_rashirit_TransSib
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = GAL_okonch_vosstanovlenie_strany
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_zapolyar_ZhD
+		}
+		prerequisite = {
+			focus = GAL_narastit_aviareysy
+		}
+		prerequisite = {
+			focus = GAL_rashirit_NII
+		}
+		prerequisite = {
+			focus = GAL_rashirit_TransSib
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = GAL_mobilizaciya_nauchnih_sotrudnikov
+		icon = GFX_focus_bg_red_wreath_sold
+		cost = 5,00
+		prerequisite = {
+			focus = GAL_koalicionnoye_pravitelstvo
+		}
+		mutually_exclusive = {
+			focus = GAL_cowboyi
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = GAL_tehnat_pravitelstvo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_mobilizaciya_nauchnih_sotrudnikov
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = GAL_krisis_manager
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_tehnat_pravitelstvo
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = GAL_peregovor_komision
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_krisis_manager
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = GAL_delo_Lukina
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_peregovor_komision
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = GAL_Panki_Hoy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_peregovor_komision
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = GAL_experimenty
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_krisis_manager
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = GAL_nayka_pobezhdat
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_krisis_manager
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = GAL_voen_praktika
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_nayka_pobezhdat
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = GAL_tsel_vyzhit
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_nayka_pobezhdat
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = GAL_zadacha_oborona
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_tsel_vyzhit
+		}
+		mutually_exclusive = {
+			focus = GAL_zadacha_proryv
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = GAL_zadacha_osvobod_nauki
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_nado_radovatsya
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = GAL_zadacha_proryv
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_tsel_vyzhit
+		}
+		mutually_exclusive = {
+			focus = GAL_zadacha_oborona
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = GAL_otkaz_ot_radikalisma
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_zadacha_osvobod_nauki
+		}
+		mutually_exclusive = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_pisma_Saveleva
+		}
+		x = 47
+		y = 9
+
+	}
+	focus = {
+		id = GAL_pisma_Saveleva
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_zadacha_osvobod_nauki
+		}
+		mutually_exclusive = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_otkaz_ot_radikalisma
+		}
+		x = 49
+		y = 9
+
+	}
+	focus = {
+		id = GAL_perepisat_aktivi_na_chlenov_prav
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_otkaz_ot_radikalisma
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_natsionalisirovat_uch_zavedeniya
+		}
+		x = 44
+		y = 10
+
+	}
+	focus = {
+		id = GAL_kredit_kanikuly
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_perepisat_aktivi_na_chlenov_prav
+		}
+		x = 44
+		y = 11
+
+	}
+	focus = {
+		id = GAL_voenspetsi
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_nayka_pobezhdat
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = GAL_pochemy_socialism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_zadacha_osvobod_nauki
+		}
+		mutually_exclusive = {
+			focus = GAL_otkaz_ot_radikalisma
+			focus = GAL_pisma_Saveleva
+		}
+		x = 45
+		y = 9
+
+	}
+	focus = {
+		id = GAL_natsionalisirovat_uch_zavedeniya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_otkaz_ot_radikalisma
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_perepisat_aktivi_na_chlenov_prav
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = GAL_natsionalisirovat_ubytochnie_predpriyatiya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_natsionalisirovat_uch_zavedeniya
+		}
+		mutually_exclusive = {
+			focus = GAL_natsionalisirovat_pribylnye_predpriyatiy
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = GAL_natsionalisirovat_pribylnye_predpriyatiy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_natsionalisirovat_uch_zavedeniya
+		}
+		mutually_exclusive = {
+			focus = GAL_natsionalisirovat_ubytochnie_predpriyatiya
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = GAL_soldat_ucheniy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_oficer_ucheniy
+		}
+		x = 47
+		y = 10
+
+	}
+	focus = {
+		id = GAL_oficer_ucheniy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_soldat_ucheniy
+		}
+		x = 49
+		y = 10
+
+	}
+	focus = {
+		id = GAL_videnie_Pushnogo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_pisma_Saveleva
+		}
+		x = 52
+		y = 10
+
+	}
+	focus = {
+		id = GAL_popytka_pochinit_mir
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		mutually_exclusive = {
+			focus = GAL_ne_trogat_to_chto_rabotaet
+		}
+		x = 51
+		y = 11
 
 	}
 	focus = {
@@ -737,7 +1166,7 @@ focus_tree = {
 	focus = {
 		id = GAL_speznaz
 		icon = GFX_goal_generic_special_forces
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_SovMin
 		}
@@ -768,7 +1197,7 @@ focus_tree = {
 	focus = {
 		id = GAL_vtorzheniye_na_celenu
 		icon = GFX_goal_generic_position_armies
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_export_lukinizma
 		}
@@ -785,7 +1214,7 @@ focus_tree = {
 	focus = {
 		id = GAL_centralnaya_rossiya
 		icon = GFX_goal_generic_major_war
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_vtorzheniye_na_celenu
 		}
@@ -817,7 +1246,7 @@ focus_tree = {
 	focus = {
 		id = GAL_marakumbniye_regioni_rossii
 		icon = GFX_LAZ_focus_kolhoz
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_centralnaya_rossiya
 		}
@@ -854,7 +1283,7 @@ focus_tree = {
 	focus = {
 		id = GAL_import_marakumbi
 		icon = GFX_goal_import_marakumbi
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_minvneshtorg
 		}
@@ -869,7 +1298,7 @@ focus_tree = {
 	focus = {
 		id = GAL_samoobespecheniye_marakumboy
 		icon = GFX_focus_generic_soviet_politics
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_proekt_velikikogo_kosmicheskogo_tambova
 		}
@@ -963,7 +1392,7 @@ focus_tree = {
 	focus = {
 		id = GAL_ediniy_budget
 		icon = GFX_goal_ediniy_budzhet
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_gosbank
 		}
@@ -983,7 +1412,7 @@ focus_tree = {
 	focus = {
 		id = GAL_obshestvo_bezsmertnih_strannikov_vselennoy
 		icon = GFX_goal_obshestvo_bezsmertnih_strannikov_nselennoy
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_samoobespecheniye_marakumboy
 		}
@@ -997,7 +1426,7 @@ focus_tree = {
 	focus = {
 		id = GAL_bashkiriya
 		icon = GFX_goal_attak_bash
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_export_lukinizma
 		}
@@ -1014,7 +1443,7 @@ focus_tree = {
 	focus = {
 		id = GAL_DV
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_vtorzheniye_na_celenu
 		}
@@ -1062,7 +1491,7 @@ focus_tree = {
 	focus = {
 		id = GAL_sever
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_centralnaya_rossiya
 		}
@@ -1099,7 +1528,7 @@ focus_tree = {
 	focus = {
 		id = GAL_bivshie_respupliki
 		icon = GFX_goal_generic_political_pressure
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_marakumbniye_regioni_rossii
 		}
@@ -1187,7 +1616,7 @@ focus_tree = {
 	focus = {
 		id = GAL_vodochnaya_monopoliya
 		icon = GFX_focus_research2
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_ediniy_budget
 		}
@@ -1201,7 +1630,7 @@ focus_tree = {
 	focus = {
 		id = GAL_tabachnaya_monopoliya
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_ediniy_budget
 		}
@@ -1215,7 +1644,7 @@ focus_tree = {
 	focus = {
 		id = GAL_chastnaya_torgovlya
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_tabachnaya_monopoliya
 		}
@@ -1232,7 +1661,7 @@ focus_tree = {
 	focus = {
 		id = GAL_naz_torgovci
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_chastnaya_torgovlya
 		}
@@ -1246,7 +1675,7 @@ focus_tree = {
 	focus = {
 		id = GAL_reforma_pensii
 		icon = GFX_focus_cht_new_nalogooblazhenie
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_tabachnaya_monopoliya
 		}
@@ -1261,23 +1690,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_mobilizaciya_nauchnih_sotrudnikov
-		icon = GFX_focus_bg_red_wreath_sold
-		cost = 5
-		prerequisite = {
-			focus = GAL_koalicionnoye_pravitelstvo
-		}
-		mutually_exclusive = {
-			focus = GAL_cowboyi
-		}
-		x = 40
-		y = 1
-
-	}
-	focus = {
 		id = GAL_legalizaciya
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = GAL_reforma_pensii
 		}
@@ -1286,6 +1701,45 @@ focus_tree = {
 			completion_reward = {
 					add_stability = 0.05
 				}
+
+	}
+	focus = {
+		id = GAL_liberalism_golovnogo_mozga
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_peregovor_komision
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = GAL_stroyki_za_premiyu
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_ey_uhnem
+		}
+		mutually_exclusive = {
+			focus = GAL_stroyki_za_dolgi
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = GAL_ne_trogat_to_chto_rabotaet
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		mutually_exclusive = {
+			focus = GAL_popytka_pochinit_mir
+		}
+		x = 53
+		y = 11
 
 	}
 }
