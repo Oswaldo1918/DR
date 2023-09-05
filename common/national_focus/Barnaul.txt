@@ -34,6 +34,7 @@ focus_tree = {
 			add_stability = 0.075
 			add_war_support = 0.075
 			add_ideas = YSK_Barnaul_Altayskiy_kray
+			country_event = YSK.9
 		}             
 	}
 	focus = {
@@ -1677,20 +1678,290 @@ focus_tree = {
 			add_ideas = YSK_The_New_Russian_Order
 		}     
 	}
+	#Рогозин
 	focus = {
-		id = YSK_red_tsar
+		id = YSK_ultraright_visionary
+		icon = GFX_goal_unknown
+		cost = 1,00
+		prerequisite = {
+			focus = YSK_chto_on_nam_neset
+		}
+		x = 65
+		y = 10
+
+	}
+	focus = {
+		id = YSK_glory_vreredmolyashchiy
 		icon = GFX_goal_unknown
 		cost = 2,00
-		x = 57
+		prerequisite = {
+			focus = YSK_ultraright_visionary
+		}
+		x = 65
+		y = 11
+
+	}
+	focus = {
+		id = YSK_vipolnenie_obeshchyaniy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_glory_vreredmolyashchiy
+		}
+		x = 65
+		y = 12
+
+	}
+	focus = {
+		id = YSK_God_and_space
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_vipolnenie_obeshchyaniy
+		}
+		x = 64
 		y = 13
 
 	}
 	focus = {
-		id = YSK_mother_perevorot
+		id = YSK_souz_s_Great_Russia
 		icon = GFX_goal_unknown
 		cost = 2,00
-		x = 55
+		prerequisite = {
+			focus = YSK_vipolnenie_obeshchyaniy
+		}
+		x = 66
 		y = 13
+
+	}
+	focus = {
+		id = YSK_sacred_mission_RPTs
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 62
+		y = 14
+
+	}
+	focus = {
+		id = YSK_osvyatit_weapon
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sacred_mission_RPTs
+		}
+		x = 61
+		y = 16
+
+	}
+	focus = {
+		id = YSK_kanonizirovat_Gagarina
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sacred_mission_RPTs
+		}
+		x = 63
+		y = 15
+
+	}
+	focus = {
+		id = YSK_iskorenenie_oligarhov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 66
+		y = 14
+
+	}
+	focus = {
+		id = YSK_new_energy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 65
+		y = 16
+
+	}
+	focus = {
+		id = YSK_obyazatelnaya_norma_molitv
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_new_energy
+		}
+		x = 66
+		y = 17
+
+	}
+	focus = {
+		id = YSK_Mars_nash
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_POEHALI
+		}
+		x = 66
+		y = 19
+
+	}
+	focus = {
+		id = YSK_otrit_new_NII
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 68
+		y = 14
+
+	}
+	focus = {
+		id = YSK_toplivo_iz_svyat_vody
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otrit_new_NII
+		}
+		x = 67
+		y = 15
+
+	}
+	focus = {
+		id = YSK_ortodox_batuts
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 67
+		y = 16
+
+	}
+	focus = {
+		id = YSK_letaushchie_hrami
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ortodox_batuts
+		}
+		x = 68
+		y = 17
+
+	}
+	focus = {
+		id = YSK_osvyatit_rakety
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ortodox_batuts
+		}
+		x = 68
+		y = 18
+
+	}
+	focus = {
+		id = YSK_dvigately_na_svyat_duhe
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otrit_new_NII
+		}
+		x = 69
+		y = 16
+
+	}
+	focus = {
+		id = YSK_nato_weapon
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_kosmovoyska
+		}
+		x = 62
+		y = 18
+
+	}
+	focus = {
+		id = YSK_kosmovoyska
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 63
+		y = 16
+
+	}
+	focus = {
+		id = YSK_lunohody
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_kosmovoyska
+		}
+		x = 61
+		y = 17
+
+	}
+	focus = {
+		id = YSK_need_more_churchs
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_new_energy
+		}
+		x = 64
+		y = 17
+
+	}
+	focus = {
+		id = YSK_Venera_rus_planeta
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_POEHALI
+		}
+		x = 64
+		y = 19
+
+	}
+	focus = {
+		id = YSK_and_Lunu_ty_nam_otdash
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Venera_rus_planeta
+		}
+		prerequisite = {
+			focus = YSK_Mars_nash
+		}
+		x = 65
+		y = 20
 
 	}
 	focus = {
@@ -1702,27 +1973,407 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_Tessa
+		id = YSK_razbyrokrachivanie
 		icon = GFX_goal_unknown
 		cost = 2,00
-		mutually_exclusive = {
-			focus = YSK_Vindzor
+		prerequisite = {
+			focus = YSK_God_and_space
 		}
-		x = 41
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 64
+		y = 14
+
+	}
+	focus = {
+		id = YSK_sobiranie_nation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_razbyrokrachivanie
+		}
+		prerequisite = {
+			focus = YSK_iskorenenie_oligarhov
+		}
+		x = 65
+		y = 15
+
+	}
+	#НПФ Память
+	focus = {
+		id = YSK_NPF_Memory
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_chto_on_nam_neset
+		}
+		x = 111
+		y = 10
+
+	}
+	focus = {
+		id = YSK_God
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_NPF_Memory
+		}
+		x = 107
+		y = 11
+
+	}
+	focus = {
+		id = YSK_united_duh_disciplines
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God
+		}
+		x = 106
+		y = 12
+
+	}
+	focus = {
+		id = YSK_rebirth_duha
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_united_duh_disciplines
+		}
+		x = 105
+		y = 13
+
+	}
+	focus = {
+		id = YSK_doctina_fundament_pravoslaviya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God
+		}
+		x = 108
+		y = 12
+
+	}
+	focus = {
+		id = YSK_antisionism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_united_duh_disciplines
+		}
+		prerequisite = {
+			focus = YSK_doctina_fundament_pravoslaviya
+		}
+		x = 107
+		y = 13
+
+	}
+	focus = {
+		id = YSK_veshat_zhidov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_antisionism
+		}
+		x = 107
+		y = 14
+
+	}
+	focus = {
+		id = YSK_soldaty_voinstva_hristova
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rebirth_duha
+		}
+		x = 105
+		y = 14
+
+	}
+	focus = {
+		id = YSK_Tsar
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_NPF_Memory
+		}
+		x = 111
+		y = 11
+
+	}
+	focus = {
+		id = YSK_bozh_zemskaya_ierarhiya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Tsar
+		}
+		x = 110
+		y = 12
+
+	}
+	focus = {
+		id = YSK_new_ZemSobor
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_doctina_fundament_pravoslaviya
+		}
+		prerequisite = {
+			focus = YSK_bozh_zemskaya_ierarhiya
+		}
+		x = 109
+		y = 13
+
+	}
+	focus = {
+		id = YSK_ochishchenie_puti_k_prestolu
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Tsar
+		}
+		x = 112
+		y = 12
+
+	}
+	focus = {
+		id = YSK_neofeodalism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_bozh_zemskaya_ierarhiya
+		}
+		prerequisite = {
+			focus = YSK_ochishchenie_puti_k_prestolu
+		}
+		x = 111
+		y = 13
+
+	}
+	focus = {
+		id = YSK_true_ispilzovanie_recursov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_neofeodalism
+		}
+		x = 111
+		y = 14
+
+	}
+	focus = {
+		id = YSK_Restoration_monastres_and_consults
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_new_ZemSobor
+		}
+		x = 109
+		y = 14
+
+	}
+	focus = {
+		id = YSK_the_struggle_of_good_with_evil
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_soldaty_voinstva_hristova
+		}
+		prerequisite = {
+			focus = YSK_veshat_zhidov
+		}
+		prerequisite = {
+			focus = YSK_Restoration_monastres_and_consults
+		}
+		x = 107
+		y = 15
+
+	}
+	focus = {
+		id = YSK_Nation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_NPF_Memory
+		}
+		x = 115
+		y = 11
+
+	}
+	focus = {
+		id = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Nation
+		}
+		x = 114
+		y = 12
+
+	}
+	focus = {
+		id = YSK_new_sosloviya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ochishchenie_puti_k_prestolu
+		}
+		prerequisite = {
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		}
+		x = 113
+		y = 13
+
+	}
+	focus = {
+		id = YSK_zakony_bozhi
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Nation
+		}
+		x = 116
+		y = 12
+
+	}
+	focus = {
+		id = YSK_krutoy_povorot_k_traditsiyam
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		}
+		prerequisite = {
+			focus = YSK_zakony_bozhi
+		}
+		x = 115
+		y = 13
+
+	}
+	focus = {
+		id = YSK_form_chernorubashecnikov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_krutoy_povorot_k_traditsiyam
+		}
+		x = 115
+		y = 14
+
+	}
+	focus = {
+		id = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_new_sosloviya
+		}
+		x = 113
+		y = 14
+
+	}
+	focus = {
+		id = YSK_rus_terror
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Restoration_monastres_and_consults
+		}
+		prerequisite = {
+			focus = YSK_true_ispilzovanie_recursov
+		}
+		prerequisite = {
+			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
+		}
+		x = 111
+		y = 15
+
+	}
+	focus = {
+		id = YSK_gordoe_plemya_na_bitvy_vstavay
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
+		}
+		prerequisite = {
+			focus = YSK_form_chernorubashecnikov
+		}
+		prerequisite = {
+			focus = YSK_idealizatsiya_dorev_proshlogo
+		}
+		x = 115
+		y = 15
+
+	}
+	focus = {
+		id = YSK_krestom
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_terror
+		}
+		prerequisite = {
+			focus = YSK_the_struggle_of_good_with_evil
+		}
+		x = 109
 		y = 16
 
 	}
 	focus = {
-		id = YSK_Tessa
+		id = YSK_i_mechom
 		icon = GFX_goal_unknown
 		cost = 2,00
-		mutually_exclusive = {
-			focus = YSK_Vindzor
+		prerequisite = {
+			focus = YSK_rus_terror
 		}
-		x = 41
+		prerequisite = {
+			focus = YSK_gordoe_plemya_na_bitvy_vstavay
+		}
+		x = 113
 		y = 16
 
 	}
+	focus = {
+		id = YSK_save_Russia
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_krestom
+		}
+		prerequisite = {
+			focus = YSK_i_mechom
+		}
+		x = 111
+		y = 17
+
+	}
+	focus = {
+		id = YSK_cult_Dmotriya_Vasileva
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_zakony_bozhi
+		}
+		x = 117
+		y = 13
+
+	}
+	focus = {
+		id = YSK_idealizatsiya_dorev_proshlogo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_cult_Dmotriya_Vasileva
+		}
+		x = 117
+		y = 14
+
+	}
+	#
 	focus = {
 		id = YSK_moderate_rusnat
 		icon = GFX_goal_unknown
@@ -1741,6 +2392,7 @@ focus_tree = {
 				}
 
 	}
+	#Юнеман
 	focus = {
 		id = YSK_Yuneman
 		icon = GFX_goal_unknown
@@ -1978,6 +2630,46 @@ focus_tree = {
 		}
 		x = 13
 		y = 15
+
+	}
+	#
+	#
+	focus = {
+		id = YSK_red_tsar
+		icon = GFX_goal_unknown
+		cost = 2,00
+		x = 57
+		y = 13
+
+	}
+	focus = {
+		id = YSK_mother_perevorot
+		icon = GFX_goal_unknown
+		cost = 2,00
+		x = 55
+		y = 13
+
+	}
+	focus = {
+		id = YSK_Tessa
+		icon = GFX_goal_unknown
+		cost = 2,00
+		mutually_exclusive = {
+			focus = YSK_Vindzor
+		}
+		x = 41
+		y = 16
+
+	}
+	focus = {
+		id = YSK_Tessa
+		icon = GFX_goal_unknown
+		cost = 2,00
+		mutually_exclusive = {
+			focus = YSK_Vindzor
+		}
+		x = 41
+		y = 16
 
 	}
 	focus = {
@@ -2335,219 +3027,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_ultraright_visionary
-		icon = GFX_goal_unknown
-		cost = 1,00
-		prerequisite = {
-			focus = YSK_chto_on_nam_neset
-		}
-		x = 65
-		y = 10
-
-	}
-	focus = {
-		id = YSK_glory_vreredmolyashchiy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ultraright_visionary
-		}
-		x = 65
-		y = 11
-
-	}
-	focus = {
-		id = YSK_vipolnenie_obeshchyaniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_glory_vreredmolyashchiy
-		}
-		x = 65
-		y = 12
-
-	}
-	focus = {
-		id = YSK_God_and_space
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vipolnenie_obeshchyaniy
-		}
-		x = 64
-		y = 13
-
-	}
-	focus = {
-		id = YSK_souz_s_Great_Russia
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vipolnenie_obeshchyaniy
-		}
-		x = 66
-		y = 13
-
-	}
-	focus = {
-		id = YSK_sacred_mission_RPTs
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 62
-		y = 14
-
-	}
-	focus = {
-		id = YSK_osvyatit_weapon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sacred_mission_RPTs
-		}
-		x = 61
-		y = 16
-
-	}
-	focus = {
-		id = YSK_kanonizirovat_Gagarina
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sacred_mission_RPTs
-		}
-		x = 63
-		y = 15
-
-	}
-	focus = {
-		id = YSK_iskorenenie_oligarhov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 66
-		y = 14
-
-	}
-	focus = {
-		id = YSK_new_energy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 65
-		y = 16
-
-	}
-	focus = {
-		id = YSK_obyazatelnaya_norma_molitv
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_energy
-		}
-		x = 66
-		y = 17
-
-	}
-	focus = {
-		id = YSK_Mars_nash
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_POEHALI
-		}
-		x = 66
-		y = 19
-
-	}
-	focus = {
-		id = YSK_otrit_new_NII
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 68
-		y = 14
-
-	}
-	focus = {
-		id = YSK_toplivo_iz_svyat_vody
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otrit_new_NII
-		}
-		x = 67
-		y = 15
-
-	}
-	focus = {
-		id = YSK_ortodox_batuts
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 67
-		y = 16
-
-	}
-	focus = {
-		id = YSK_letaushchie_hrami
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ortodox_batuts
-		}
-		x = 68
-		y = 17
-
-	}
-	focus = {
-		id = YSK_osvyatit_rakety
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ortodox_batuts
-		}
-		x = 68
-		y = 18
-
-	}
-	focus = {
-		id = YSK_dvigately_na_svyat_duhe
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otrit_new_NII
-		}
-		x = 69
-		y = 16
-
-	}
-	focus = {
 		id = YSK_opyt_donbassa
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -2622,297 +3101,6 @@ focus_tree = {
 		}
 		x = 90
 		y = 14
-
-	}
-	focus = {
-		id = YSK_NPF_Memory
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chto_on_nam_neset
-		}
-		x = 111
-		y = 10
-
-	}
-	focus = {
-		id = YSK_God
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_NPF_Memory
-		}
-		x = 107
-		y = 11
-
-	}
-	focus = {
-		id = YSK_united_duh_disciplines
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God
-		}
-		x = 106
-		y = 12
-
-	}
-	focus = {
-		id = YSK_rebirth_duha
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = YSK_united_duh_disciplines
-		}
-		x = 105
-		y = 13
-
-	}
-	focus = {
-		id = YSK_doctina_fundament_pravoslaviya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God
-		}
-		x = 108
-		y = 12
-
-	}
-	focus = {
-		id = YSK_antisionism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_united_duh_disciplines
-		}
-		prerequisite = {
-			focus = YSK_doctina_fundament_pravoslaviya
-		}
-		x = 107
-		y = 13
-
-	}
-	focus = {
-		id = YSK_veshat_zhidov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = YSK_antisionism
-		}
-		x = 107
-		y = 14
-
-	}
-	focus = {
-		id = YSK_soldaty_voinstva_hristova
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rebirth_duha
-		}
-		x = 105
-		y = 14
-
-	}
-	focus = {
-		id = YSK_Tsar
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_NPF_Memory
-		}
-		x = 111
-		y = 11
-
-	}
-	focus = {
-		id = YSK_bozh_zemskaya_ierarhiya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Tsar
-		}
-		x = 110
-		y = 12
-
-	}
-	focus = {
-		id = YSK_new_ZemSobor
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_doctina_fundament_pravoslaviya
-		}
-		prerequisite = {
-			focus = YSK_bozh_zemskaya_ierarhiya
-		}
-		x = 109
-		y = 13
-
-	}
-	focus = {
-		id = YSK_ochishchenie_puti_k_prestolu
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Tsar
-		}
-		x = 112
-		y = 12
-
-	}
-	focus = {
-		id = YSK_neofeodalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_bozh_zemskaya_ierarhiya
-		}
-		prerequisite = {
-			focus = YSK_ochishchenie_puti_k_prestolu
-		}
-		x = 111
-		y = 13
-
-	}
-	focus = {
-		id = YSK_true_ispilzovanie_recursov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_neofeodalism
-		}
-		x = 111
-		y = 14
-
-	}
-	focus = {
-		id = YSK_Restoration_monastres_and_consults
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_ZemSobor
-		}
-		x = 109
-		y = 14
-
-	}
-	focus = {
-		id = YSK_the_struggle_of_good_with_evil
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_soldaty_voinstva_hristova
-		}
-		prerequisite = {
-			focus = YSK_veshat_zhidov
-		}
-		prerequisite = {
-			focus = YSK_Restoration_monastres_and_consults
-		}
-		x = 107
-		y = 15
-
-	}
-	focus = {
-		id = YSK_Nation
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_NPF_Memory
-		}
-		x = 115
-		y = 11
-
-	}
-	focus = {
-		id = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Nation
-		}
-		x = 114
-		y = 12
-
-	}
-	focus = {
-		id = YSK_new_sosloviya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ochishchenie_puti_k_prestolu
-		}
-		prerequisite = {
-			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		}
-		x = 113
-		y = 13
-
-	}
-	focus = {
-		id = YSK_zakony_bozhi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Nation
-		}
-		x = 116
-		y = 12
-
-	}
-	focus = {
-		id = YSK_krutoy_povorot_k_traditsiyam
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		}
-		prerequisite = {
-			focus = YSK_zakony_bozhi
-		}
-		x = 115
-		y = 13
-
-	}
-	focus = {
-		id = YSK_form_chernorubashecnikov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_krutoy_povorot_k_traditsiyam
-		}
-		x = 115
-		y = 14
-
-	}
-	focus = {
-		id = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_sosloviya
-		}
-		x = 113
-		y = 14
-
-	}
-	focus = {
-		id = YSK_rus_terror
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Restoration_monastres_and_consults
-		}
-		prerequisite = {
-			focus = YSK_true_ispilzovanie_recursov
-		}
-		prerequisite = {
-			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		}
-		x = 111
-		y = 15
 
 	}
 	focus = {
@@ -3507,93 +3695,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_gordoe_plemya_na_bitvy_vstavay
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		}
-		prerequisite = {
-			focus = YSK_form_chernorubashecnikov
-		}
-		prerequisite = {
-			focus = YSK_idealizatsiya_dorev_proshlogo
-		}
-		x = 115
-		y = 15
-
-	}
-	focus = {
-		id = YSK_krestom
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_terror
-		}
-		prerequisite = {
-			focus = YSK_the_struggle_of_good_with_evil
-		}
-		x = 109
-		y = 16
-
-	}
-	focus = {
-		id = YSK_i_mechom
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_terror
-		}
-		prerequisite = {
-			focus = YSK_gordoe_plemya_na_bitvy_vstavay
-		}
-		x = 113
-		y = 16
-
-	}
-	focus = {
-		id = YSK_save_Russia
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_krestom
-		}
-		prerequisite = {
-			focus = YSK_i_mechom
-		}
-		x = 111
-		y = 17
-
-	}
-	focus = {
-		id = YSK_razbyrokrachivanie
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 64
-		y = 14
-
-	}
-	focus = {
-		id = YSK_sobiranie_nation
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_razbyrokrachivanie
-		}
-		prerequisite = {
-			focus = YSK_iskorenenie_oligarhov
-		}
-		x = 65
-		y = 15
-
-	}
-	focus = {
 		id = YSK_modern_katya_two
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -3602,100 +3703,6 @@ focus_tree = {
 		}
 		x = 47
 		y = 11
-
-	}
-	focus = {
-		id = YSK_nato_weapon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_kosmovoyska
-		}
-		x = 62
-		y = 18
-
-	}
-	focus = {
-		id = YSK_kosmovoyska
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 63
-		y = 16
-
-	}
-	focus = {
-		id = YSK_lunohody
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_kosmovoyska
-		}
-		x = 61
-		y = 17
-
-	}
-	focus = {
-		id = YSK_need_more_churchs
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_energy
-		}
-		x = 64
-		y = 17
-
-	}
-	focus = {
-		id = YSK_Venera_rus_planeta
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_POEHALI
-		}
-		x = 64
-		y = 19
-
-	}
-	focus = {
-		id = YSK_and_Lunu_ty_nam_otdash
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Venera_rus_planeta
-		}
-		prerequisite = {
-			focus = YSK_Mars_nash
-		}
-		x = 65
-		y = 20
-
-	}
-	focus = {
-		id = YSK_cult_Dmotriya_Vasileva
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakony_bozhi
-		}
-		x = 117
-		y = 13
-
-	}
-	focus = {
-		id = YSK_idealizatsiya_dorev_proshlogo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_cult_Dmotriya_Vasileva
-		}
-		x = 117
-		y = 14
 
 	}
 	focus = {

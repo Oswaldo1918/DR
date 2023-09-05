@@ -733,7 +733,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 9
-
+        completion_reward = {
+			add_research_slot = 1
+		}             
 	}
 	focus = {
 		id = GAL_narastit_aviareysy
@@ -744,7 +746,71 @@ focus_tree = {
 		}
 		x = 34
 		y = 11
-
+        completion_reward = {			
+			653 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			573 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			403 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			571 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			570 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			40 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			569 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			568 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}    
 	}
 	focus = {
 		id = GAL_stroyki_za_dolgi
@@ -769,7 +835,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 11
-
+        completion_reward = {
+			
+		}     
 	}
 	focus = {
 		id = GAL_rashirit_TransSib
@@ -977,8 +1045,8 @@ focus_tree = {
 			focus = GAL_zadacha_osvobod_nauki
 		}
 		mutually_exclusive = {
-			focus = GAL_pochemy_socialism
 			focus = GAL_otkaz_ot_radikalisma
+			focus = GAL_pochemy_socialism
 		}
 		x = 49
 		y = 9
@@ -1081,35 +1149,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_soldat_ucheniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_pochemy_socialism
-			focus = GAL_pisma_Saveleva
-		}
-		mutually_exclusive = {
-			focus = GAL_oficer_ucheniy
-		}
-		x = 47
-		y = 10
-
-	}
-	focus = {
-		id = GAL_oficer_ucheniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_pisma_Saveleva
-		}
-		mutually_exclusive = {
-			focus = GAL_soldat_ucheniy
-		}
-		x = 49
-		y = 10
-
-	}
-	focus = {
 		id = GAL_videnie_Pushnogo
 		icon = GFX_goal_unknown
 		cost = 2,00
@@ -1117,7 +1156,7 @@ focus_tree = {
 			focus = GAL_pochemy_socialism
 			focus = GAL_pisma_Saveleva
 		}
-		x = 52
+		x = 47
 		y = 10
 
 	}
@@ -1131,8 +1170,150 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GAL_ne_trogat_to_chto_rabotaet
 		}
-		x = 51
+		x = 46
 		y = 11
+
+	}
+	focus = {
+		id = GAL_issledovanie_noosfery
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		x = 43
+		y = 12
+
+	}
+	focus = {
+		id = GAL_i_povolok_brevno
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_issledovanie_noosfery
+		}
+		x = 44
+		y = 13
+
+	}
+	focus = {
+		id = GAL_rok_kotserty
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		x = 47
+		y = 12
+
+	}
+	focus = {
+		id = GAL_zvuk_oruzhie
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_rok_kotserty
+		}
+		x = 46
+		y = 13
+
+	}
+	focus = {
+		id = GAL_osoznanie
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_rok_kotserty
+		}
+		x = 47
+		y = 14
+
+	}
+	focus = {
+		id = GAL_ne_trogat_to_chto_rabotaet
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		mutually_exclusive = {
+			focus = GAL_popytka_pochinit_mir
+		}
+		x = 48
+		y = 11
+
+	}
+	focus = {
+		id = GAL_nauka_i_iskusstvo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_rok_kotserty
+		}
+		x = 48
+		y = 13
+
+	}
+	focus = {
+		id = GAL_soldat_ucheniy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pochemy_socialism
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_oficer_ucheniy
+		}
+		x = 50
+		y = 10
+
+	}
+	focus = {
+		id = GAL_genetika_nauka
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_videnie_Pushnogo
+		}
+		x = 51
+		y = 12
+
+	}
+	focus = {
+		id = GAL_konstruirovanie_kast
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_genetika_nauka
+		}
+		x = 50
+		y = 13
+
+	}
+	focus = {
+		id = GAL_ozhivit_akadem_goroda
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_genetika_nauka
+		}
+		x = 51
+		y = 14
+
+	}
+	focus = {
+		id = GAL_oficer_ucheniy
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_pisma_Saveleva
+		}
+		mutually_exclusive = {
+			focus = GAL_soldat_ucheniy
+		}
+		x = 52
+		y = 10
 
 	}
 	focus = {
@@ -1729,17 +1910,36 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_ne_trogat_to_chto_rabotaet
+		id = GAL_krasniy_svet
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = GAL_videnie_Pushnogo
+			focus = GAL_issledovanie_noosfery
 		}
-		mutually_exclusive = {
-			focus = GAL_popytka_pochinit_mir
+		x = 42
+		y = 13
+
+	}
+	focus = {
+		id = GAL_vse_idet_po_planu
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_issledovanie_noosfery
 		}
-		x = 53
-		y = 11
+		x = 43
+		y = 14
+
+	}
+	focus = {
+		id = GAL_ierarhiya_tehnokratii
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = GAL_genetika_nauka
+		}
+		x = 52
+		y = 13
 
 	}
 }
