@@ -1,0 +1,1721 @@
+###Фокусы_Шумерии
+focus_tree = {
+	id = Shumer_warlord
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAT
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 1500 y = 100 }
+	
+	focus = {
+		id = MAT_nam_nuzhen_plan
+		icon = GFX_dock_clique_nam_nuzhen_plan
+		cost = 1,00
+		x = 7
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = MAT_sredstva_dlya_industrializatsii
+		icon = GFX_dock_clique_sredstva_dlya_industrializatsii
+		cost = 1,00
+		prerequisite = {
+			focus = MAT_nam_nuzhen_plan
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = DON_idea_sredstva_dlya_industrializatsii
+				days = 1875
+			}
+		}
+	}
+	focus = {
+		id = MAT_kollektivizatsiya
+		icon = GFX_dock_clique_kollektivizatsiya
+		cost = 2,00
+		prerequisite = {
+			focus = MAT_sredstva_dlya_industrializatsii
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			add_ideas = kolhozi
+		}
+	}
+	focus = {
+		id = MAT_reformirovat_admonistratsiu
+		icon = GFX_dock_clique_reformirovat_administratsiu
+		cost = 1,00
+		prerequisite = {
+			focus = MAT_nam_nuzhen_plan
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = Orel.29 #Срачи_вайфу
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = MAT_razvedka_tayniov
+		icon = GFX_dock_clique_razvedka_taynikov
+		cost = 2,00
+		prerequisite = {
+			focus = MAT_reformirovat_admonistratsiu
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+				producer = MAT
+			}
+		}
+	}
+	focus = {
+		id = MAT_pogotovit_nash_bazis
+		icon = GFX_dock_clique_podgotovit_nash_bazis
+		cost = 1,00
+		prerequisite = {
+			focus = MAT_nam_nuzhen_plan
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_raskonservatsiya_shaht
+		icon = GFX_dock_clique_raskonservatsiya_shaht
+		cost = 2,00
+		prerequisite = {
+			focus = MAT_pogotovit_nash_bazis
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			222 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_pervaia_pyaitiletka
+		icon = GFX_dock_clique_pervaya_pyatiletka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_raskonservatsiya_shaht
+		}
+		prerequisite = {
+			focus = MAT_kollektivizatsiya
+		}
+		prerequisite = {
+			focus = MAT_razvedka_tayniov
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			country_event = Orel.27
+		}
+	}
+	focus = {
+		id = MAT_socialist_obrazovaniye
+		icon = GFX_dock_clique_socialist_obrazovaniye
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_pervaia_pyaitiletka
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = MAT_novoye_pokoleniye
+		icon = GFX_dock_clique_novoye_pokoleniye
+		cost = 15,00
+		prerequisite = {
+			focus = MAT_socialist_obrazovaniye
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+			add_ideas = MAT_idea_next_generation
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_legkoprom
+		icon = GFX_dock_clique_legkoprom
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_pervaia_pyaitiletka
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_himprom
+		icon = GFX_dock_clique_himprom
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_legkoprom
+		}
+		prerequisite = {
+			focus = MAT_socialist_obrazovaniye
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = MAT_voyenniye_zavodi
+		icon = GFX_dock_clique_voyenniye_zavodi
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_pervaia_pyaitiletka
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_pomosh_lazaret
+		icon = GFX_goal_laz_mat
+		cost = 2,00
+		prerequisite = {
+			focus = MAT_pervaia_pyaitiletka
+		}
+		x = 7
+		y = 4
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			LAZ = { country_event = Orel.20 }
+		}
+	}
+	focus = {
+		id = MAT_tyazholoye_mashinostroyeniye
+		icon = GFX_dock_clique_tyazholoye_mashinostroyeniye
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_voyenniye_zavodi
+		}
+		prerequisite = {
+			focus = MAT_pomosh_lazaret
+		}
+		x = 9
+		y = 5
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_political_power = -50
+			222 = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_tankovaye_zavodi
+		icon = GFX_dock_clique_tankoviye_zavodi
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_voyenniye_zavodi
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			222 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_create_heavy_tank
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tankovaye_zavodi
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			country_event = Orel.8
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				create_equipment_variant = {
+					name = "T-35"
+					type = heavy_tank_chassis_0
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_close_support_gun
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = secondary_turret_hmg
+						special_type_slot_2 = secondary_turret_hmg
+						special_type_slot_3 = secondary_turret_small_cannon
+						special_type_slot_4 = secondary_turret_small_cannon
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = 5
+						tank_nsb_engine_upgrade = 7
+					}
+					icon = "GFX_SOV_basic_heavy_tank_medium"
+				}
+				create_equipment_variant = {
+					name = "T-28"
+					type = medium_tank_chassis_0
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_close_support_gun
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = secondary_turret_hmg
+						special_type_slot_3 = secondary_turret_hmg
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = 4
+						tank_nsb_engine_upgrade = 9
+					}
+					icon = "GFX_SOV_basic_heavy_tank_medium" #Closer to T-35
+					#model = "SOV_heavy_armor_0" #Closer to T-35 but dependant on Soviet Tanks DLC
+				}
+			}
+			else = {
+				set_technology = {
+					basic_heavy_tank = 1    # Should be available in 1936 (T-35)
+					basic_medium_tank = 1 	# Should be available in 1936 (T-28)
+				}		
+			}
+		}
+	}
+	focus = {
+		id = MAT_leviy_povorot_v_tserkvi
+		icon = GFX_dock_clique_leviy_povorot_v_tserkvi
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_novoye_pokoleniye
+		}
+		x = 1
+		y = 7
+		completion_reward = {
+			country_event = Orel.28
+		}
+	}
+	focus = {
+		id = MAT_restavratsiya_institutov
+		icon = GFX_dock_clique_restavratsiya_institutov
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_socialist_obrazovaniye
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = MAT_rasshirit_pomosh_lazaret
+		icon = GFX_goal_laz_mat2
+		cost = 2,00
+		prerequisite = {
+			focus = MAT_tyazholoye_mashinostroyeniye
+		}
+		prerequisite = {
+			focus = MAT_pomosh_lazaret
+		}
+		x = 7
+		y = 6
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			LAZ = { country_event = Orel.20 }
+		}
+	}
+	focus = {
+		id = MAT_neftekhran
+		icon = GFX_Sistema_neftekhranilisch_kliki_Doka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_himprom
+		}
+		prerequisite = {
+			focus = MAT_rasshirit_pomosh_lazaret
+		}
+		prerequisite = {
+			focus = MAT_restavratsiya_institutov
+		}
+		x = 5
+		y = 8
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = MAT_rezinka
+		icon = GFX_Sinteticheskaya_rezina_kliki_Doka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_himprom
+		}
+		prerequisite = {
+			focus = MAT_rasshirit_pomosh_lazaret
+		}
+		prerequisite = {
+			focus = MAT_restavratsiya_institutov
+		}
+		x = 3
+		y = 8
+			available = {
+					OR = {
+							is_subject_of = LAZ
+							is_in_faction_with = LAZ
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.50
+							uses = 2
+							category = synth_resources
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAT_NPZ
+		icon = GFX_dock_clique_NPZ
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_himprom
+		}
+		prerequisite = {
+			focus = MAT_rasshirit_pomosh_lazaret
+		}
+		prerequisite = {
+			focus = MAT_restavratsiya_institutov
+		}
+		x = 4
+		y = 7
+			available = {
+					OR = {
+							is_subject_of = LAZ
+							is_in_faction_with = LAZ
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.50
+							uses = 2
+							category = synth_resources
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAT_sinteticheskaya_neft
+		icon = GFX_Sinteticheskaya_neft_kliki_Doka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_NPZ
+		}
+		x = 4
+		y = 9
+			available = {
+					OR = {
+							is_subject_of = LAZ
+							is_in_faction_with = LAZ
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.50
+							uses = 2
+							category = synth_resources
+						}
+					modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 2
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MAT_avtakriya
+		icon = GFX_Avtarkia_kliki_Doka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_sinteticheskaya_neft
+		}
+		prerequisite = {
+			focus = MAT_neftekhran
+		}
+		mutually_exclusive = {
+			focus = MAT_razvitiye_eksporta
+		}
+		x = 5
+		y = 10
+			available = {
+					OR = {
+							is_subject_of = LAZ
+							is_in_faction_with = LAZ
+						}
+				}
+			completion_reward = {
+					add_ideas = war_economy
+					add_ideas = closed_economy
+				}
+
+	}
+	focus = {
+		id = MAT_razvitiye_eksporta
+		icon = GFX_Rasshirit_export_kliki_Doka
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_rezinka
+		}
+		prerequisite = {
+			focus = MAT_sinteticheskaya_neft
+		}
+		mutually_exclusive = {
+			focus = MAT_avtakriya
+		}
+		x = 3
+		y = 10
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = export_focus
+		}
+	}
+	focus = {
+		id = MAT_prodolzhit_promishlenniy_plan
+		icon = GFX_dock_clique_prodolzhit_promishlenniy_plan
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tyazholoye_mashinostroyeniye
+		}
+		prerequisite = {
+			focus = MAT_rasshirit_pomosh_lazaret
+		}
+		x = 8
+		y = 7
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = DON_idea_war_communism
+				}
+				swap_ideas = {
+					remove_idea = DON_idea_war_communism
+					add_idea = DON_idea_war_communism_2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DON_idea_five_year_plan
+				}
+				swap_ideas = {
+					remove_idea = DON_idea_five_year_plan
+					add_idea = DON_idea_five_year_plan_2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_razvitiye_selskogo_hozyaistva
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_prodolzhit_promishlenniy_plan
+		}
+		x = 10
+		y = 8
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			add_ideas = MAT_idea_selhoz_1
+		}
+	}
+	focus = {
+		id = MAT_razvitiye_stroitalnoy_otrasli
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_prodolzhit_promishlenniy_plan
+		}
+		prerequisite = {
+			focus = MAT_rasshirit_pomosh_lazaret
+		}
+		x = 7
+		y = 8
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		completion_reward = {
+			add_ideas = MAT_idea_stroit_otrasl
+		}
+	}
+	focus = {
+		id = MAT_reconstruktsiya_KMA
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_neftekhran
+		}
+		prerequisite = {
+			focus = MAT_razvitiye_stroitalnoy_otrasli
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+			220 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+			240 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_rasshirit_NPO_Lavochkina
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_razvitiye_stroitalnoy_otrasli
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
+		}
+	}
+	focus = {
+		id = MAT_obespechit_narod
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_razvitiye_selskogo_hozyaistva
+		}
+		x = 10
+		y = 10
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MAT_idea_selhoz_1
+				add_idea = MAT_idea_selhoz_2
+			}
+		}
+	}
+	focus = {
+		id = MAT_svoya_metallurgiya
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_reconstruktsiya_KMA
+		}
+		prerequisite = {
+			focus = MAT_razvitiye_stroitalnoy_otrasli
+		}
+		x = 7
+		y = 10
+		completion_reward = {
+			240 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}			
+		}
+	}
+	focus = {
+		id = MAT_formirovaniye_strategicheskogo_rezerva
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_obespechit_narod
+		}
+		prerequisite = {
+			focus = MAT_avtakriya
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MAT_idea_selhoz_2
+				add_idea = MAT_idea_exportoorientirovannaya_ekonomika	
+			}
+		}
+	}
+	focus = {
+		id = MAT_metallurgiya_na_export
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_svoya_metallurgiya
+		}
+		prerequisite = {
+			focus = MAT_razvitiye_eksporta
+		}
+		x = 6
+		y = 11
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MAT_idea_stroit_otrasl
+				add_idea = MAT_idea_exportoorientirovannaya_ekonomika	
+			}	
+		}
+	}
+	focus = {
+		id = MAT_reforma_GKO
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_pervaia_pyaitiletka
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			country_event = Orel.26
+		}
+	}
+	focus = {
+		id = MAT_agressivnaya_starategiya
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_reforma_GKO
+		}
+		mutually_exclusive = {
+			focus = MAT_oboronitelnava_strategiya
+		}
+		available = {
+			has_idea = MAT_idea_adressivnaya_strategiya_0
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			add_ideas = MAT_idea_adressivnaya_strategiya_1
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = MAT_oboronitelnava_strategiya
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_reforma_GKO
+		}
+		mutually_exclusive = {
+			focus = MAT_agressivnaya_starategiya
+		}
+		x = 18
+		y = 5
+		available = {
+			has_idea = MAT_idea_oboronitelnaya_strategiya_0
+		}
+		completion_reward = {
+			add_ideas = MAT_idea_oboronitelnaya_strategiya_1
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			224 = { #Брянск
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3335
+				}
+			}
+			222 = { #Орел
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9355
+				}
+			}
+			220 = { #Курск
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3580
+				}
+			}
+			240 = { #Белгород
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9449
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_podgotovit_dorogi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_agressivnaya_starategiya
+			focus = MAT_oboronitelnava_strategiya
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	focus = {
+		id = MAT_tankoviye_patruli
+		icon = GFX_focus_generic_tankette
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_create_heavy_tank
+		}
+		prerequisite = {
+			focus = MAT_agressivnaya_starategiya
+		}
+		prerequisite = {
+			focus = MAT_podgotovit_dorogi
+		}
+		mutually_exclusive = {
+			focus = MAT_stroitelstvo_bunkerov
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			add_ideas = MAT_idea_adressivnaya_strategiya_2
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = 0.05
+			}		
+		}
+	}
+	focus = {
+		id = MAT_stroitelstvo_bunkerov
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_oboronitelnava_strategiya
+		}
+		prerequisite = {
+			focus = MAT_podgotovit_dorogi
+		}
+		mutually_exclusive = {
+			focus = MAT_tankoviye_patruli
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			add_ideas = MAT_idea_oboronitelnaya_strategiya_2
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
+			224 = { #Брянск
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11229
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 343
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 315
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 288
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6330
+				}
+			}
+			220 = { #Курск
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6254
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9542
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11526
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6543
+				}
+			}
+			240 = { #Белгород
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6481
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9449
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6517
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11439
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6432
+				}
+			}			
+		}
+	}
+	focus = {
+		id = MAT_probniye_reydi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tankoviye_patruli
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 220
+					num_provinces = 3
+			        on_win = Orel.32
+       				on_lose = Orel.33
+					on_cancel = Orel.34
+				}
+				defender = {
+					state = 225
+					num_provinces = 3
+			        on_win = Orel.32
+       				on_lose = Orel.33
+					on_cancel = Orel.34
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_krigovaya_oborona
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_stroitelstvo_bunkerov
+		}
+		prerequisite = {
+			focus = MAT_vostochniy_rubezh
+		}
+		x = 19
+		y = 8
+		completion_reward = {
+			224 = { #Брянск
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 371
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 398
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6305
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3226
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3335
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6411
+				}
+			}
+			240 = { #Орел
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9384
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9411
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11368
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11214
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 384
+				}
+			}			
+		}
+	}
+	focus = {
+		id = MAT_sozdat_rls
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tankoviye_patruli
+			focus = MAT_stroitelstvo_bunkerov
+		}
+		x = 17
+		y = 8
+		avalible = {
+			has_tech = radio_detection
+		}
+		completion_reward = {
+			240 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_peresmotr_doktrini
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tankoviye_patruli
+			focus = MAT_stroitelstvo_bunkerov
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MAT_usilit_priziv
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_sozdat_rls
+		}
+		prerequisite = {
+			focus = MAT_peresmotr_doktrini
+		}
+		x = 16
+		y = 9
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = MAT_prevoshodstvo_na_zemle
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_stroitelstvo_bunkerov
+		}
+		x = 18
+		y = 9
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_prefoshodstvo_v_nebe
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_tankoviye_patruli
+		}
+		x = 14
+		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}			
+				create_equipment_variant = {
+					name = "ЛаГГ-1 упр." #Упрощенный ЛаГГ-1
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = empty
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = empty
+					}
+				}
+				set_technology = {
+					iw_small_airframe = 1
+					aa_lmg = 1
+					early_bombs = 1
+					engines_1 = 1
+					engines_2 = 1
+					basic_small_airframe = 1
+					aircraft_construction = 1
+				}
+			}
+			else = {
+				set_technology = {
+					early_fighter = 1
+					fighter1 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_reshayushiy_udar
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_prefoshodstvo_v_nebe
+		}
+		prerequisite = {
+			focus = MAT_usilit_priziv
+		}
+		mutually_exclusive = {
+			focus = MAT_zakrit_granitsu
+		}
+		x = 15
+		y = 10
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 220
+					num_provinces = 3
+			        on_win = Orel.30
+       				on_lose = Orel.33
+					on_cancel = Orel.34
+				}
+				defender = {
+					state = 225
+					num_provinces = 3
+			        on_win = Orel.32
+       				on_lose = Orel.33
+					on_cancel = Orel.34
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_zakrit_granitsu
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_prevoshodstvo_na_zemle
+		}
+		prerequisite = {
+			focus = MAT_usilit_priziv
+		}
+		mutually_exclusive = {
+			focus = MAT_reshayushiy_udar
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+			remove_idea = MAT_reydi_s_Ukraini
+			224 = { #Брянск
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11229
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 343
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 315
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 288
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6330
+				}
+			}
+			222 = { #Орел
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 384
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 328
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 302
+				}
+			}
+			220 = { #Курск
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6254
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9542
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11526
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6543
+				}
+			}
+			240 = { #Белгород
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6481
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9449
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6517
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11439
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6432
+				}
+			}			
+		}
+	}
+	focus = {
+		id = MAT_integratsiya_v_lazaret
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_avtakriya
+			focus = MAT_razvitiye_eksporta
+		}
+		prerequisite = {
+			focus = MAT_zakrit_granitsu
+		}
+		x = 12
+		y = 11
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.2
+			if = {
+				limit = {
+					NOT = {
+						is_subject_of = LAZ
+						is_puppet_of = LAZ
+					}
+				}
+				LAZ = {
+					puppet = {
+						target = MAT
+						end_wars = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MAT_pristupit_k_vipolneniyu_plana
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_reshayushiy_udar
+		}
+		prerequisite = {
+			focus = MAT_proriv_k_stavropolu
+		}
+		x = 21
+		y = 12
+		completion_reward = {
+			custom_effect_tooltip = DON_noviye_fokusi_tt
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}
+	}
+	focus = {
+		id = MAT_chezvichayniye_meri
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_reforma_GKO
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = MAT_atakovat_Untsa
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_chezvichayniye_meri
+		}
+		mutually_exclusive = {
+			focus = MAT_vostochniy_rubezh
+		}
+		x = 23
+		y = 6
+		completion_reward = {
+			country_event = Orel.11
+			create_wargoal  = {
+				target = UNT
+				type = annex_everything
+			}		
+		}
+	}
+	focus = {
+		id = MAT_proriv_k_stavropolu
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_atakovat_Untsa
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			country_event = Orel.15
+			if = {
+				limit = {
+					country_exist = STR
+				}
+				give_guarantee = STR
+			}
+			create_wargoal  = {
+				target = NOD
+				type = annex_everything
+			}
+			create_wargoal  = {
+				target = KRR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = MAT_vostochniy_rubezh
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MAT_chezvichayniye_meri
+		}
+		mutually_exclusive = {
+			focus = MAT_atakovat_Untsa
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+			222 = { #Орел
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 384
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 328
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 302
+				}
+			}
+			220 = { #Курск
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3554
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9579
+				}
+			}
+			240 = { #Белгород
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 534
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9484
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 473
+				}
+			}		
+		}
+	}
+}

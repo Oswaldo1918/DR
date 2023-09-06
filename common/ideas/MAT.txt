@@ -78,5 +78,175 @@ ideas = {
 				army_morale_factor = -0.08
 			}
 		}
+		MAT_idea_religiya_1 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				vmestolev_drift = 0.05
+				stability_factor = -0.1
+				research_speed_factor = 0.2
+			}
+		}
+		MAT_idea_religiya_2 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				defensive_war_stability_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		MAT_idea_religiya_3 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				metacommy_drift = 0.05
+				weekly_casualties_war_support = 0.005
+				encryption_factor = 0.2
+			}
+		}
+		MAT_idea_stroit_otrasl = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		MAT_idea_exportoorientirovannaya_ekonomika = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				min_export = 0.1
+				consumer_goods_factor = -0.05				
+			}
+		}
+		MAT_idea_selhoz_1 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			    monthly_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		MAT_idea_selhoz_2 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			    monthly_population = 0.25
+				consumer_goods_factor = 0.03
+			}
+		}
+		MAT_idea_strategicheskiy_rezerv = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+			    monthly_population = 0.25
+				consumer_goods_factor = 0.03
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		MAT_idea_adressivnaya_strategiya_0 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				
+			}			
+		}
+		MAT_idea_adressivnaya_strategiya_1 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_regain = 0.05
+			}			
+		}
+		MAT_idea_adressivnaya_strategiya_2 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_regain = 0.1
+				org_loss_when_moving = -0.05
+			}			
+		}
+		MAT_idea_oboronitelnaya_strategiya_0 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				
+			}			
+		}
+		MAT_idea_oboronitelnaya_strategiya_1 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}			
+		}
+		MAT_idea_oboronitelnaya_strategiya_2 = {
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+			}			
+		}
 	}
 }

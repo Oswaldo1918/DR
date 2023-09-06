@@ -56,7 +56,28 @@ characters = {
 			legacy_id = -1
         }
 	}
-	
+	MAT_Agromem = {
+		name = "Ставропольский Агроном"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STR/Agronom.dds"
+				small = "GFX_idea_MAT_Agromem"
+			}
+			army = {
+				large = "gfx/leaders/STR/Agronom.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero armor_officer }
+			
+			skill = 3
+			attack_skill = 7
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+        }
+	}	
 	MAT_Nikolay_Kuznetsov = {
 		name = "Николай Кузнецов"
 		portraits = {
@@ -67,6 +88,78 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = MAT_idea_Nikolay_Kuznetsov
+			allowed  = {
+				original_tag = MAT
+			}
+			traits  = {
+				rabochaya_koshechka
+			}
+		}
+	}
+	MAT_Gleb_Myuller = {
+		name = "Глеб Мюллер"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MAT_Gleb_Myuller"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAT_idea_Gleb_Myuller
+			allowed  = {
+				original_tag = MAT
+			}
+			traits  = {
+				specifichniy_prosvititel
+			}
+		}
+	}
+	MAT_Sonodzaki = {
+		name = "«Сонодзаки»"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MAT_Sonodzaki"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAT_idea_Sonodzaki
+			allowed  = {
+				original_tag = MAT
+			}
+			traits  = {
+				komissar_po_ideoligii_metacommy
+			}
+		}
+	}
+	MAT_Adam_Abadiyev = {
+		name = "Адам Абадиев"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MAT_Adam_Abadiyev"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MAT_idea_Adam_Abadiyev
+			allowed  = {
+				original_tag = MAT
+			}
+			traits  = {
+				army_logistics_1
+			}
+		}
+	}
+	MAT_Pavel_Ryzhkov = {
+		name = "Павел Рыжков"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MAT_Pavel_Ryzhkov"
+			}
+		}
+		advisor = {
+			slot = captain_of_industry
+			idea_token = MAT_idea_Pavel_Ryzhkov
 			allowed  = {
 				original_tag = MAT
 			}
