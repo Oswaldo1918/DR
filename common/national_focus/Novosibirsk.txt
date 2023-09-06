@@ -54,6 +54,39 @@ focus_tree = {
 		x = 16
 		y = 2
 			completion_reward = {
+			    add_corps_commander_role = {
+				character = GAL_Romanov
+				traits = {
+                }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+				legacy_id = -1
+			    }
+				add_corps_commander_role = {
+				character = GAL_Manshova
+				traits = {
+                }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+				legacy_id = -1
+			    }
+				add_corps_commander_role = {
+				character = GAL_Chigur
+				traits = {
+                }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+				legacy_id = -1
+			    }
 					set_popularities = {
 							fascism = 5
 							metacommy = 95
