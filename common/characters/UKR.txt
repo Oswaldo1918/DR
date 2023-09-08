@@ -424,5 +424,22 @@ characters={
 			legacy_id = 0
 		}	
 	}
-	
+	UKR_Ivangay= {
+		name = "Иван «Ивангай» Рудской"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/UKR/Ivangay.dds"    
+				small = "GFX_idea_UKR_poter_net"				
+			}
+		}
+	    corps_commander = {
+			traits = { politically_connected substance_addict }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
 }

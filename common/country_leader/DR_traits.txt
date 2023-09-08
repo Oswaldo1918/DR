@@ -3,6 +3,17 @@
 @tier3 = 10
 
 leader_traits = {
+    praktikuyuzhiy_memoist = {
+		sprite = 10
+		random = not
+		metacommy_drift = 0.01
+		decryption_factor = 0.1
+		encryption_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
     isekay = {
 		sprite = 10
 		random = not

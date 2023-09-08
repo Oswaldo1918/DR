@@ -313,5 +313,30 @@ characters={
 			logistics_skill = 1
 			legacy_id = 0
 		}
+	}
+    ZHE_bit_ili = {
+		name = "Быть или"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_ZHE_bit_ili"
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = ZHE_bit_ili
+
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+		
 	} 	
 }
