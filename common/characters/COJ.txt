@@ -52,4 +52,21 @@ characters = {
 		legacy_id = -1
         }
 	}
+	COJ_Kaneko = {
+	name = "Канэко"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/COJ/Kaneko.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
 }

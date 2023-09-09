@@ -1,0 +1,53 @@
+characters = {
+	MAG_Piston = {
+		name = "Пистон"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAG/Piston.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MAG/Piston.dds"
+			}
+		}
+		country_leader = {
+			traits = { pretindent_na_DV }
+			ideology = fascism_ideology
+			expire = "3000.1.1"
+			id = -1
+		}
+	}		
+	MAG_Maysner = {
+	name = "Реми Майснер"
+		portraits = {
+			civilian = {
+			    large = "gfx/leaders/MAG/Maysner.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MAG/Maysner.dds"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = stalinismus
+			expire = "3000.1.1"
+			id = -1
+		}
+	}
+	MAG_Harchok = {
+	name = "Славян Харчок"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/MAG/Harchok.dds"
+			}
+		}
+		corps_commander = {
+	    traits = {  }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+	}
+}
