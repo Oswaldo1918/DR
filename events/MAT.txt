@@ -264,20 +264,11 @@ country_event = { #Орел_просит_помощь_Лазарета
 		MAT = {country_event = Orel.21 }
 		send_equipment = {
 		    equipment = infantry_equipment
-		    amount = 9000
-    		target = DON
-		}
-		create_production_license = {
-		    target = DON
-			equipment = {
-				type = infantry_equipment
-				version = 1
-				new_prioritised = no
-			}
-			cost_factor = 0
+		    amount = 1000
+    		target = MAT
 		}
 		add_timed_idea = {
-		    idea = DON_usilennaya_poddershka_Orela
+		    idea = LAZ_usilennaya_poddershka_Orla
 		    days = 40
 		}
 		add_political_power = 50	
@@ -287,17 +278,8 @@ country_event = { #Орел_просит_помощь_Лазарета
 		MAT = {country_event = Orel.22 }
 		send_equipment = {
 		    equipment = infantry_equipment
-		    amount = 9000
-    		target = DON
-		}
-		create_production_license = {
-		    target = DON
-			equipment = {
-				type = infantry_equipment
-				version = 1
-				new_prioritised = no
-			}
-			cost_factor = 0
+		    amount = 500
+    		target = MAT
 		}
 		add_political_power = 25
 	}
@@ -315,9 +297,13 @@ country_event = { #От_Лазарета_приходит_полноценная
 		name = Orel.21.a
 		custom_effect_tooltip = DON_effect_polnocennaya_pomosh_tt
 		add_political_power = 50
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = -0.05
+		}
 		add_autonomy_score = {
 		    value = -350
- 		    localization = AVT_MAT_pomosh_lazareta
+ 		    localization = AVT_DON_pomosh_lazareta
 		}
 	}
 }
@@ -334,6 +320,10 @@ country_event = { #От_Лазарета_приходит_ограниченна
 		name = Orel.22.a
 		custom_effect_tooltip = DON_effect_ogranichennaya_pomosh_tt
 		add_political_power = 25
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = 0.05
+		}
 		add_autonomy_score = {
 		    value = -100
  		    localization = AVT_DON_pomosh_lazareta
@@ -384,8 +374,11 @@ country_event = { #Лазарет_расширяет_помощь
 	
 	option = {
 		name = Orel.24.a
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = -0.05
+		}
 		custom_effect_tooltip = LAZ_effect_usilennaya_pomosh_tt
-		custom_effect_tooltip = MAT_povishenie_gotovnosti_tt
 		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
@@ -434,6 +427,10 @@ country_event = { #Лазарет_отказывается_расширять_п
 	
 	option = {
 		name = Orel.25.a
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = 0.05
+		}
 		custom_effect_tooltip = LAZ_effect_ogranichennaya_pomosh_tt
 		add_political_power = -50
 	}
@@ -548,13 +545,12 @@ country_event = { #Чрезвычайные_меры
         desc = Orel.30.d
 	picture = GFX_report_event_ast_parliament_house
 
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 	    tag = MAT
-		is_subject = no
+		MAT = { is_subject = no }
 	    LAZ = {
-			has_country_flag = LAZ_bilo_vosstaniye
 			has_war_with = OSV
 		}
 	}
@@ -562,6 +558,10 @@ country_event = { #Чрезвычайные_меры
 	option = {
 		name = Orel.30.a
 		complete_national_focus = MAT_chezvichayniye_meri
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = 0.2
+		}
 	}
 }
 country_event = { #Вторжение_в_Кургинянию?
@@ -666,7 +666,7 @@ country_event = { #Пограничный_конфликт_статус_кво
 	option = {
 		name = Orel.34.a
 		trigger = {
-			original_tag = KUR
+			original_tag = MAT
 		}
 		army_experience = 10
 		random_owned_controlled_state = {
@@ -692,18 +692,18 @@ country_event = { #Пограничный_конфликт_статус_кво
 }
 country_event = { #Телеграмма_в_Ставрополь
 
-	id = Orel.31
-        title = Orel.31.t
-        desc = Orel.31.d
+	id = Orel.35
+        title = Orel.35.t
+        desc = Orel.35.d
 	picture = GFX_report_event_ast_parliament_house
 
 	is_triggered_only = yes
 	
 	option = {
-		name = Orel.31.a
+		name = Orel.35.a
 	}
 	option = {
-		name = Orel.31.b
+		name = Orel.35.b
 		ai_will_do = {
 			base = 10
 		}
@@ -711,15 +711,15 @@ country_event = { #Телеграмма_в_Ставрополь
 }
 country_event = { #Телеграмма_в_Ставрополь_отказ
 
-	id = Orel.32
-        title = Orel.32.t
-        desc = Orel.32.d
+	id = Orel.36
+        title = Orel.36.t
+        desc = Orel.36.d
 	picture = GFX_report_event_ast_parliament_house
 
 	is_triggered_only = yes
 	
 	option = {
-		name = Orel.32.a
+		name = Orel.36.a
 		declare_war_on = {
 			target = STR
 			type = annex_everything
@@ -728,18 +728,15 @@ country_event = { #Телеграмма_в_Ставрополь_отказ
 }
 country_event = { #Телеграмма_в_Ставрополь_согласие
 
-	id = Orel.31
-        title = Orel.31.t
-        desc = Orel.31.d
+	id = Orel.37
+        title = Orel.37.t
+        desc = Orel.37.d
 	picture = GFX_report_event_ast_parliament_house
 
 	is_triggered_only = yes
 	
 	option = {
-		name = Orel.31.a
-	}
-	option = {
-		name = Orel.31.b
+		name = Orel.37.a
 		recruit_character = MAT_Agromem
 		annex_country = {
 			target = STR

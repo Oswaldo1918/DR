@@ -289,6 +289,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAZ = { country_event = Orel.20 }
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.05
+			}
 		}
 	}
 	focus = {
@@ -907,6 +911,10 @@ focus_tree = {
 		}
 		available = {
 			has_idea = MAT_idea_adressivnaya_strategiya_0
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.10
+			}
 		}
 		x = 14
 		y = 5
@@ -928,11 +936,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MAT_agressivnaya_starategiya
 		}
-		x = 18
-		y = 5
 		available = {
 			has_idea = MAT_idea_oboronitelnaya_strategiya_0
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.10
+			}
 		}
+		x = 18
+		y = 5
 		completion_reward = {
 			add_ideas = MAT_idea_oboronitelnaya_strategiya_1
 			add_power_balance_value = {
@@ -1169,7 +1181,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MAT_krigovaya_oborona
+		id = MAT_krugovaya_oborona
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
