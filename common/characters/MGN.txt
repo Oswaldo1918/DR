@@ -16,6 +16,15 @@ characters = {
         	}
 			id = -1
 		}
+		field_marshal = {
+	    traits = { infantry_officer war_hero harsh_leader }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 4
+		legacy_id = -1
+        }
 	}
 	MGN_Madyanov = {
 	name = "Роман Мадянов"
@@ -29,7 +38,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-	    traits = { infantry_officer war_hero inspirational_leader trait_engineer }
+	    traits = { infantry_officer war_hero inspirational_leader trait_engineer harsh_leader }
 	    skill = 3
 	    attack_skill = 3
 	    defense_skill = 3
@@ -63,7 +72,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-	    traits = { politically_connected  }
+	    traits = { politically_connected harsh_leader }
 	    skill = 3
 	    attack_skill = 4
 	    defense_skill = 2
@@ -99,7 +108,29 @@ characters = {
 			}
 		}
 		corps_commander = {
-	    traits = { politically_connected }
+	    traits = { politically_connected harsh_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+		legacy_id = -1
+        }
+		
+	}
+
+    MGN_Ivan_Steriotip = {
+	name = "Иван Стериотипов"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGN/Ivan_Steriotip.dds"
+			}
+			army = {
+			    large = "gfx/leaders/MGN/Ivan_Steriotip.dds"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected harsh_leader }
 	    skill = 2
 	    attack_skill = 2
 	    defense_skill = 2
