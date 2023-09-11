@@ -971,5 +971,126 @@ ideas = {
 				army_attack_factor = 0.1				
 			    }
 		    }
+			YSK_rus_federalism = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				political_power_gain = -0.02
+				stability_factor = 0.05
+				non_core_manpower = 0.075
+			    }
+		    }
+            YSK_rus_federalism_1 = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				political_power_gain = 0.03
+				stability_factor = 0.075
+				non_core_manpower = 0.025
+			    }
+		    }
+			YSK_rus_federalism_2 = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.025
+				non_core_manpower = 0.025
+				local_resources_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			    }
+		    }
+            YSK_economic_irridenta = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				stability_factor = 0.025
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+			    }
+		    }
+            YSK_economic_irridenta_1 = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.075
+				consumer_goods_factor = 0.035
+				industrial_capacity_factory = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				production_speed_arms_factory_factor = -0.05
+				production_speed_infrastructure_factor = 0.075 
+			    }
+		    }
+            YSK_myagkaya_sila = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				political_power_gain = 0.03
+				consumer_goods_factor = 0.05
+				army_attack_factor = -0.05
+				stability_factor = 0.025
+				war_support_factor = -0.075
+			    opinion_gain_monthly_factor = 0.1
+				operative_slot = 2
+				agency_upgrade_time = -0.15
+				boost_ideology_mission_factor = 0.1
+				boost_diplomatic_pressure_mission_factor = 0.1
+				boost_propaganda_mission_factor = 0.1
+				boost_control_trade_mission_factor = 0.1
+			    }
+		    }
+            YSK_programma_repatriatsii = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.025
+				stability_factor = -0.075
+				monthly_population = 0.3
+				weekly_manpower = 30
+			    }
+		    }
+            YSK_svetskaya_strana = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				consumer_goods_factor = -0.025
+				stability_factor = 0.015
+				research_speed_factor = 0.025
+			    }
+		    }
+            YSK_apologey_evrocultury = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				army_defence_factor = 0.05
+				war_support_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				drift_defence_factor = 0.1
+			    }
+		    }
+            YSK_rus_grazhdanskiy_nationalism = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				non_core_manpower = 0.075
+				conscription_factor = 0.1
+				political_power_factor = 0.05
+			    }
+		    }     			
 	    }		
 }

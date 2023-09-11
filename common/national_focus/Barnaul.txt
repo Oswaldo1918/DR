@@ -2484,7 +2484,17 @@ focus_tree = {
 		}
 		x = 5
 		y = 9
-
+        completion_reward = {
+			add_country_leader_role = {
+            character = YSK_Yuneman
+            promote_leader = yes
+                country_leader = {
+                    ideology = liberalism
+                    expire = "1965.1.1.1"
+                    traits = {  }
+                }
+            }
+		}      
 	}
 	focus = {
 		id = YSK_Sosaiti_Futury
@@ -2495,7 +2505,14 @@ focus_tree = {
 		}
 		x = 5
 		y = 10
-
+        completion_reward = {
+			add_political_power = 50
+			add_stability = 0.025			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}      
 	}
 	focus = {
 		id = YSK_rus_federalism
@@ -2506,7 +2523,27 @@ focus_tree = {
 		}
 		x = 2
 		y = 11
-
+        completion_reward = {
+			add_ideas = YSK_rus_federalism
+		}      
+	}
+	focus = {
+		id = YSK_pokonchit_s_nats_resp
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_federalism
+		}
+		x = 2
+		y = 12
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_rus_federalism
+			add_idea = YSK_rus_federalism_1
+		    }
+			add_stability = -0.075
+			add_political_power = -25
+		}       
 	}
 	focus = {
 		id = YSK_economic_irridenta
@@ -2517,7 +2554,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 11
-
+        completion_reward = {
+			add_ideas = YSK_economic_irridenta
+		}     
 	}
 	focus = {
 		id = YSK_proecty_po_urbanistike
@@ -2528,7 +2567,84 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
-
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_economic_irridenta
+			add_idea = YSK_economic_irridenta_1
+		    }
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {					
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}       
 	}
 	focus = {
 		id = YSK_myagkaya_sila
@@ -2539,7 +2655,10 @@ focus_tree = {
 		}
 		x = 6
 		y = 11
-
+        completion_reward = {
+			add_ideas = YSK_myagkaya_sila
+			add_political_power = 50
+		}  
 	}
 	focus = {
 		id = YSK_programma_repatriatsii
@@ -2550,7 +2669,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 12
-
+        completion_reward = {
+			add_ideas = YSK_programma_repatriatsii
+		}     
 	}
 	focus = {
 		id = YSK_svetskaya_strana
@@ -2564,7 +2685,10 @@ focus_tree = {
 		}
 		x = 5
 		y = 13
-
+        completion_reward = {
+			add_ideas = YSK_svetskaya_strana
+			add_research_slot = 1
+		}      
 	}
 	focus = {
 		id = YSK_otstranenie_radikalov
@@ -2575,29 +2699,52 @@ focus_tree = {
 		}
 		x = 7
 		y = 13
-
+        completion_reward = {
+		    add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		    add_popularity = {
+				ideology = anarhostalinism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = vmestolev
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+		}      
 	}
 	focus = {
-		id = YSK_rus_grazhdanskiy_nationalism
+		id = YSK_peredacha_vlasti_munitsipalitetam
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_Sosaiti_Futury
+			focus = YSK_pokonchit_s_nats_resp
 		}
-		x = 8
-		y = 11
-
-	}
-	focus = {
-		id = YSK_kompromis_s_liberalami
-		icon = GFX_goal_unknown
-		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_grazhdanskiy_nationalism
+			focus = YSK_proecty_po_urbanistike
 		}
-		x = 8
-		y = 12
-
+		x = 3
+		y = 13
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_rus_federalism_1
+			add_idea = YSK_rus_federalism_2
+		    }
+			add_political_power = 100
+		}    
 	}
 	focus = {
 		id = YSK_apologey_evrocultury
@@ -2614,32 +2761,41 @@ focus_tree = {
 		}
 		x = 5
 		y = 14
-
+        completion_reward = {
+			add_ideas = YSK_apologey_evrocultury
+		}   
 	}
 	focus = {
-		id = YSK_peredacha_vlasti_munitsipalitetam
+		id = YSK_rus_grazhdanskiy_nationalism
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_pokonchit_s_nats_resp
+			focus = YSK_Sosaiti_Futury
 		}
-		prerequisite = {
-			focus = YSK_proecty_po_urbanistike
-		}
-		x = 3
-		y = 13
-
+		x = 8
+		y = 11
+        completion_reward = {
+			add_ideas = YSK_rus_grazhdanskiy_nationalism
+		}  
 	}
 	focus = {
-		id = YSK_pokonchit_s_nats_resp
+		id = YSK_kompromis_s_liberalami
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_federalism
+			focus = YSK_rus_grazhdanskiy_nationalism
 		}
-		x = 2
+		x = 8
 		y = 12
-
+        completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_political_power = -75
+			add_stability = -0.05
+			add_war_support = -0.075
+		}  
 	}
 	#Общая ветка Юнемана и Райта
 	focus = {
