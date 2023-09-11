@@ -1,0 +1,44 @@
+characters={
+    TUB_Tubus = {
+		name = "Егор Иванов"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/TUB/Tubus.dds"
+			}
+		}
+        country_leader = {
+			ideology = marxismus
+			expire = "1999.3.1.1"
+			traits = { pretindent_na_DV }
+			id = -1
+		}
+        field_marshal = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}     		
+	}	
+	TUB_Chekist = {
+		name = "Чекист Вопреки"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/TUP/Chekist.dds"
+			}
+		}
+        corps_commander = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}		
+	}
+}

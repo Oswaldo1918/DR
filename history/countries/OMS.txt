@@ -2,7 +2,7 @@ capital = 571
 
 oob = OMS_1936
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
@@ -29,6 +29,13 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = OMS_Letov
+recruit_character = OMS_Yanka
+recruit_character = OMS_Fedor_Letov
+recruit_character = OMS_Ryabinov
+recruit_character = OMS_Sergey_Letov
+recruit_character = OMS_Kurehin
+
 add_ideas = {
 		closed_economy
 	    limited_conscription 
@@ -49,15 +56,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Егор Летов"
-	desc = "POLITICS_LETOV_DESC"
-	picture = "Letov.dds"
-	expire = "1999.1.1"
-	ideology = nacbol
-	traits = {
-		#
-	}
-}
+set_convoys = 200

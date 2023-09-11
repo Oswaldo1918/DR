@@ -226,7 +226,7 @@ characters = {
 	}
 	
 	LAZ_artur = {
-		name = "Артур Олейников"
+		name = "Артур «Габар» Олейников"
 		portraits = {
 			army = {
 			    large = "gfx/leaders/LAZ/Artur.dds"
@@ -235,14 +235,25 @@ characters = {
 		}
 
 		corps_commander = {
-	    traits = {  }
-	    skill = 1
-	    attack_skill = 1
-	    defense_skill = 1
-	    planning_skill = 1
-	    logistics_skill = 1
+	    traits = { bearer_of_artillery old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = LAZ_artur
+
+			allowed = {
+				original_tag = LAZ
+			}
+			traits = {
+				army_artillery_2
+			}
+		}
 	}
 	
 	LAZ_Darker_Loony = {

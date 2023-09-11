@@ -30,7 +30,16 @@ characters={
 			ideology = lukinism
 			expire = "1999.3.1.1"
 			id = -1
-		}	
+		}
+	    corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}  	
 	}
 	
 	GAL_andrey_kupcov = {
@@ -54,30 +63,113 @@ characters={
 		}
 	}
 	
-	GAL_Rosov = {
-		name = "Николай Росов"
+	GAL_sndk = {
+		name = "Дмитрий Сыендук"
 
 		portraits = {
 			army = {
-				small = "GFX_idea_GAL_rosov"
-				large = "gfx/leaders/GAL/Rosov.dds"				
+				small = "GFX_idea_GAL_sndk"
+				large = "gfx/leaders/GAL/sndk.dds"				
 			}
-		}
+		}		
+	}
+	
+	GAL_Boyarshinov = {
+		name = "Борис Боярышников"
 
-        advisor={
-			slot = political_advisor
-			idea_token = GAL_Rosov
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Boyarshinov"
+				large = "gfx/leaders/GAL/Boyarshinov.dds"				
+			}
+		}		
+	}
+	
+	GAL_Deb = {
+		name = "Андрей «Дэб» Гайдулян"
 
-			allowed = {
-				original_tag = GAL
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Deb"
+				large = "gfx/leaders/GAL/Deb.dds"				
 			}
-			ai_will_do = {
-				factor = 10
+		}		
+	}
+	
+	GAL_Savvateev = {
+		name = "Алексей Савватеев"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Savvateev"
+				large = "gfx/leaders/GAL/Savvateev.dds"				
 			}
-			traits = {
-				propaganda_expert 
+		}		
+	}
+	
+	GAL_Sokolov = {
+		name = "Александр Соколов"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Sokolov"
+				large = "gfx/leaders/GAL/Sokolov.dds"				
 			}
-		}
-		
+		}		
+	}
+	
+	GAL_Toples = {
+		name = "Ян Топлес"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_toples"
+				large = "gfx/leaders/GAL/toples.dds"				
+			}
+		}		
+	}
+	
+	GAL_Panchin = {
+		name = "Александр Панчин"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Panchin"
+				large = "gfx/leaders/GAL/Panchin.dds"				
+			}
+		}		
+	}
+	
+	GAL_Romanov = {
+		name = "Товарищ Борис Жидко"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Romanov"
+				large = "gfx/leaders/GAL/Romanov.dds"				
+			}
+		}		
+	}
+	
+	GAL_Manshova = {
+		name = "Валерия Маншова"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Manshova"
+				large = "gfx/leaders/GAL/Manshova.dds"				
+			}
+		}		
+	}
+	
+	GAL_Chigur = {
+		name = "Антон Чигур"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Chigur"
+				large = "gfx/leaders/GAL/Chigur.dds"				
+			}
+		}		
 	}
 }

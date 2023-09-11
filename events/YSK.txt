@@ -293,6 +293,34 @@ country_event = {
 
 #
 country_event = {
+	id = YSK.9
+	title = YSK.9.t
+	desc = YSK.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.9.a      	             
+	}
+}
+
+#
+country_event = {
+	id = YSK.10
+	title = YSK.10.t
+	desc = YSK.10.d
+	picture = GFX_report_event_dkr_business_tesak
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.10.a      	             
+	}
+}
+
+#
+country_event = {
 	id = YSK.555
 	title = YSK.555.t
 	desc = YSK.555.d

@@ -76,4 +76,76 @@ characters={
         	logistics_skill = 1
         }
 	}
+	KUR_Klyukva = {
+		name = "Генерал Клюква"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/Klyukva.dds"
+			}
+		}
+        field_marshal = {
+			traits = { old_guard war_hero harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}     		
+	}
+	KUR_Persey = {
+		name = "Персей"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/Persey.dds"
+			}
+		}
+        corps_commander = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}     		
+	}
+	KUR_Michail_Shendakov = {
+		name = "Михаил Шендаков"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/Michail_Shendakov.dds"
+			}
+		}
+        corps_commander = {
+			traits = { harsh_leader engineer_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}     		
+	}
+	KUR_vladimirkvachkov = {
+		name = "Владимир Квачков"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/KUR/vladimirkvachkov.dds"
+			}
+		}
+        field_marshal = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}     		
+	}
 }

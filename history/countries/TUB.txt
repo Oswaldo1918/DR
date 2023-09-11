@@ -11,6 +11,9 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = TUB_Tubus
+recruit_character = TUB_Chekist
+
 add_ideas = {
 TUB_iditki_mashinistki
 TUB_new_nkvd
@@ -47,13 +50,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Егор Иванов"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Tubus.dds"
-	expire = "1999.1.1"
-	ideology = marxismus
-	traits = { pretindent_na_DV }
-}
+set_convoys = 200

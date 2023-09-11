@@ -10,6 +10,10 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = MAG_Piston
+recruit_character = MAG_Maysner
+recruit_character = MAG_Harchok
+
 add_ideas = {
 limited_conscription
 low_economic_mobilisation
@@ -50,23 +54,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
-
-create_country_leader = {
-	name = "Пистон"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Piston.dds"
-	expire = "1999.1.1"
-	ideology = fascism_ideology
-	traits = { pretindent_na_DV }
-}
-create_country_leader = {
-	name = "Реми Майснер"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Maysner.dds"
-	expire = "1999.1.1"
-	ideology = stalinismus
-	traits = {
-		#
-	}
-}
+set_convoys = 200
