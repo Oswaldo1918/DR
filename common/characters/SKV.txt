@@ -13,7 +13,7 @@ characters={
 	   }
     }
 	SKV_Kson = {
-		name = "Ксон"
+		name = "Ксон Казума"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SKV/Kson.dds"
@@ -22,6 +22,9 @@ characters={
 		country_leader = {
 	        expire = "1999.1.1"
 	        ideology = cybernetics
+			traits = {
+		        tokio_dragon
+	        }
 		    id=-1
 	   }
     }
