@@ -3,6 +3,17 @@
 @tier3 = 10
 
 leader_traits = {
+    tokio_dragon = {
+		sprite = 10
+		random = not
+		war_support_factor = 0.07
+		political_power_factor = 0.02
+		conscription = 0.005
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
     praktikuyuzhiy_memoist = {
 		sprite = 10
 		random = not
