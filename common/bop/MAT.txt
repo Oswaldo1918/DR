@@ -63,7 +63,7 @@ MAT_hui_znaet_balance = {
 				production_speed_anti_air_building_factor = 0.5
 			}
 			on_activate = {
-				country_event = MAT.19
+				country_event = Orel.19
 			}
 			on_deactivate = {
 
@@ -250,7 +250,7 @@ MAT_hui_znaet_balance = {
 				min_export = 0.2
 				autonomy_gain = 0.1
 				consumer_goods_factor = -0.05
-				weekly_manpower = -1000
+				weekly_manpower = -500
 				air_superiority_efficiency = 0.1
 				max_command_power_mult = 0.2
 				production_speed_bunker_factor = -0.5
@@ -258,7 +258,7 @@ MAT_hui_znaet_balance = {
 				production_speed_anti_air_building_factor = -0.5
 			}
 			on_activate = {
-				country_event = MAT.16
+				country_event = Orel.16
 			}
 			on_deactivate = {
 				# deactivation effect

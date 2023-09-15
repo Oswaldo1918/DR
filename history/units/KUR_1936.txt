@@ -1,98 +1,175 @@
 ﻿division_template = {
-	name = "Метафизики"
-
-	division_names_group = AFG_ARM_01
+	name = "Метафизическая гвардия"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery = { x = 2 y = 2 }
+		artillery = { x = 2 y = 2 }
 	}
 	priority = 2
 }
 division_template = {
-	name = "Грибники"				# Militia units (lowest experience, oldest equipment)
-
-	division_names_group = AFG_GAR_01
+	name = "Стрелковая дивизия"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
-	priority = 1
+	priority = 3
 }
 
 units = {
 	division = {
 		name = "Боевые метафизики"
 		location = 525
-		division_template = "Метафизики"
-		start_experience_factor = 0.3
+		division_template = "Метафизическая гвардия"
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 	}
 		
     division = {
 		name = "Православные метафизики"
 		location = 525
-		division_template = "Метафизики"
-		start_experience_factor = 0.3
+		division_template = "Метафизическая гвардия"
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 	}
 	
-	division = {
-		name = "Метафизичные метафизики"
+    division = {
+		name = "1-я стрелковая дивизия"
 		location = 525
-		division_template = "Метафизики"
-		start_experience_factor = 0.3
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "Грибные воины"
+    division = {
+		name = "2-я стрелковая дивизия"
 		location = 525
-		division_template = "Грибники"
-		start_experience_factor = 0.3
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "Грибники-лесорубы"
-		location = 6605
-		division_template = "Грибники"
-		start_experience_factor = 0.3
+    division = {
+		name = "3-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "4-х этажные грибники"
-		location = 9466
-		division_template = "Грибники"
-		start_experience_factor = 0.3
+    division = {
+		name = "4-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "Антиблеваческие грибники"
-		location = 3520
-		division_template = "Грибники"
-		start_experience_factor = 0.3
+    division = {
+		name = "5-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-	
-	division = {
-		name = "Православные грибники"
-		location = 489
-		division_template = "Грибники"
-		start_experience_factor = 0.3
+    division = {
+		name = "6-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "7-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "8-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "9-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "10-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "11-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "12-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "13-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "14-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "15-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "16-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "17-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+    division = {
+		name = "18-я стрелковая дивизия"
+		location = 525
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 }

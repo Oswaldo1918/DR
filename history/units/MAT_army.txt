@@ -34,7 +34,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Лугальская мотострелковая дивизия" 	
+	name = "Мотопротивная дивизия" 	
 	
 	division_names_group = MAT_MOT_01
 
@@ -57,7 +57,7 @@ division_template = {
 			location = 9355
 			division_template = "Стрелковая дивизия"
 			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_equipment_factor = 0.5
         }
 		division = {
 			name = "2-ya strelkovaya divisiya"
@@ -65,7 +65,7 @@ division_template = {
 			location = 9355
 			division_template = "Стрелковая дивизия"
 			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_equipment_factor = 0.5
         }
         division = {
 			name = "3-ya strelkovaya divisiya"
@@ -73,7 +73,7 @@ division_template = {
 			location = 9355
 			division_template = "Стрелковая дивизия"
 			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_equipment_factor = 0.5
         }
 		division = {
 			name = "4-ya strelkovaya divisiya"
@@ -81,47 +81,47 @@ division_template = {
 			location = 9355
 			division_template = "Стрелковая дивизия"
 			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_equipment_factor = 0.5
         }
 		division = {
 			name = "1-ya tankovaya divisiya"
 
 			location = 9355
 			division_template = "Лугальская танковая дивизия"
-			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
         }
 		division = {
 			name = "2-ya tankovaya divisiya"
 
 			location = 9355
 			division_template = "Лугальская танковая дивизия"
-			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
         }
 		division = {
 			name = "1-ya motostrelkovaya divisiya"
 
 			location = 9355
-			division_template = "Лугальская мотострелковая дивизия"
-			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			division_template = "Мотопротивная дивизия"
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
         }
 		division = {
-			name = "1-ya motostrelkovaya divisiya"
+			name = "2-ya motostrelkovaya divisiya"
 
 			location = 9355
-			division_template = "Лугальская мотострелковая дивизия"
-			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			division_template = "Мотопротивная дивизия"
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
         }
 		division = {
-			name = "1-ya motostrelkovaya divisiya"
+			name = "3-ya motostrelkovaya divisiya"
 
 			location = 9355
-			division_template = "Лугальская мотострелковая дивизия"
-			start_experience_factor = 0.4
-			start_equipment_factor = 1.0
+			division_template = "Мотопротивная дивизия"
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
         }
 	}
 
@@ -131,12 +131,6 @@ instant_effect = {
 		equipment = {
 			type = infantry_equipment_0
 			creator = "MAT"
-		}
-	}	
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "MAT" 
 		}
 	}
 }

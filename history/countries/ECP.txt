@@ -14,21 +14,21 @@ add_ideas = {
 }
 
 set_popularities = {
-	neutrality = 100
+	democratic = 100
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
 
 create_country_leader = {
-	name = "Анджей Дупа"
+	name = "Дональд Туск"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Dupa.dds"
+	picture = "Tusk.dds"
 	expire = "1999.1.1"
-	ideology = oligarchism 
+	ideology = liberalism 
 	traits = {
 		#
 	}

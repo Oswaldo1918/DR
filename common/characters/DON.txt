@@ -288,6 +288,32 @@ characters={
 		
 	}
 	
+	DON_vladimir_grubnik = {
+		name = "Владимир Грубник"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_DON_vladimir_grubnik"
+			}
+		}
+
+        advisor={
+			slot = political_advisor
+			idea_token = DON_vladimir_grubnik
+
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				prince_of_terror head_of_intelligence 
+			}
+		}
+		
+	}
+	
 	DON_aleksandr_zhuchkovsky = {
 		name = "Александр Жучковский"
 

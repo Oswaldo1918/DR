@@ -34,10 +34,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.1
-			}
 		}
 		visible = {
 			tag = MAT
@@ -56,14 +52,42 @@ MAT_hui_znaet_balance_of_power_category = {
 			base = 100
 		}
 	}
+	MAT_bop_zacupit_generatori = { ###Закупка_генераторов_у_Сёмина
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			ALB = {
+				has_government = vmestolev
+				has_opinion = {
+					target = MAT
+					value > 50
+				}
+			}
+		}
+		visible = {
+			tag = MAT
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			add_power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value = -0.1
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = ALB
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	MAT_bop_mobilizovat_chukchei = { ###Дивизии_бронечухонцев
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.5
-			}
 		}
 		visible = {
 			tag = MAT
@@ -85,10 +109,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.5
-			}
 		}
 		visible = {
 			tag = MAT
@@ -110,10 +130,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.25
-			}
 		}
 		visible = {
 			tag = MAT
@@ -135,10 +151,7 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.35
-			}
+
 		}
 		visible = {
 			tag = MAT
@@ -148,7 +161,7 @@ MAT_hui_znaet_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = MAT_hui_znaet_balance
-				value = 0.05
+				value = -0.05
 			}
 			every_owned_state = {
 				limit = {
@@ -169,10 +182,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value < -0.7
-			}
 		}
 		visible = {
 			tag = MAT
@@ -246,10 +255,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -285,10 +290,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -314,10 +315,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -336,10 +333,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -361,10 +354,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -394,10 +383,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -433,10 +418,6 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-			power_balance_value = {
-				id = MAT_hui_znaet_balance
-				value > 0.2
-			}
 		}
 		visible = {
 			tag = MAT
@@ -449,10 +430,87 @@ MAT_hui_znaet_balance_of_power_category = {
 				value = 0.05
 			}
 			army_experience = 10
-			country_event = MAT.1
+			country_event = Orel.1
 		}
 		ai_will_do = {
 			base = 0
+		}
+	}
+}
+operations = {
+	MAT_decision_sferi_vliyaniya = {
+		allowed = { original_tag = MAT }
+		available = {
+			OR = {
+				owns_state = 200
+				owns_state = 221
+				owns_state = 226
+			}			
+		}
+		visible = {
+			NOT = { has_war_with = DON }
+			is_in_faction_with = DON
+		}	
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			leave_faction = yes
+			if = {
+				limit = {
+					owns_state = 200
+				}
+				200 = { 
+					transfer_state_to  = DON
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 221
+				}
+				221 = { 
+					transfer_state_to  = DON
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 226
+				}
+				226 = { 
+					transfer_state_to  = DON
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	MAT_decision_pismo_agronomy = {
+		icon = GFX_decision_SOV_secure_the_administration  
+		allowed = { original_tag = MAT }
+		available = {
+			OR = {
+				is_neighbor_of = STR
+				owns_state = 235
+			}
+		}
+		visible = {
+			tag = MAT
+		}	
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			if = {
+				limit = {
+					country_exist = STR
+				}
+				STR = { country_event = Orel.35 }
+			}
+			else = {
+				country_event = Orel.37
+			}
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 }

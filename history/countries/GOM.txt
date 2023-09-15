@@ -15,21 +15,21 @@ add_ideas = {
 }
 
 set_popularities = {
-	neutrality = 100
+	democratic = 100
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
 
 create_country_leader = {
-	name = "Санбой"
+	name = "Лай Пиньюй"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Sanboy.dds"
+	picture = "Penyuy.dds"
 	expire = "1999.1.1"
-	ideology = centrism
+	ideology = socialism
 	traits = {
 		#
 	}

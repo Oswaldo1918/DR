@@ -1,0 +1,123 @@
+characters={
+    OMS_Letov = {
+		name = "Егор Летов"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/OMS/Letov.dds"
+			}
+		}
+        country_leader = {
+    		desc = "POLITICS_LETOV_DESC"
+			ideology = nacbol			
+			traits = {
+	         	
+	        }
+			expire = "1999.3.1"
+			id = -1
+		}
+        field_marshal = {
+			traits = { guerilla_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}   		
+	}
+	OMS_Yanka = {
+		name = "Янка Дягилева"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/OMS/Yanka.dds"
+			}
+		}
+        corps_commander = {
+			traits = { guerilla_fighter politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	OMS_Fedor_Letov = {
+		name = "Фёдор Летов"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/UKR/Fedor_Letov.dds"
+			}
+		}
+	    corps_commander = {
+			traits = { old_guard infantry_officer infantry_leader politically_connected }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}	
+	}
+	OMS_Ryabinov = {
+		name = "Константин «Кузя УО» Рябинов"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/OMS/Ryabinov.dds"
+			}
+		}
+        corps_commander = {
+			traits = { guerilla_fighter politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	OMS_Sergey_Letov = {
+		name = "Сергей Летов"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/OMS/Sergey_Letov.dds"
+			}
+		}
+        corps_commander = {
+			traits = { guerilla_fighter politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}	
+	}
+	OMS_Kurehin = {
+		name = "Сергей Курёхин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_OMS_Kurehin"
+			}
+		}
+        advisor={
+			slot = political_advisor
+			idea_token = OMS_Kurehin
+
+			allowed = {
+				original_tag = DON
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				praktikuyuzhiy_memoist
+			}
+		}		
+	}
+}

@@ -1,0 +1,1121 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+    praktikuyuzhiy_memoist = {
+		sprite = 10
+		random = not
+		metacommy_drift = 0.01
+		decryption_factor = 0.1
+		encryption_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    isekay = {
+		sprite = 10
+		random = not
+		war_support_factor = 0.07
+		stability_factor = 0.07
+		political_power_factor = 0.02
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
+    kadet = {
+		sprite = 10
+		random = not
+		stability_factor = 0.07
+		political_power_factor = 0.02
+		democratic_drift = 0.01
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    old_socdem = {
+		sprite = 10
+		random = not
+		stability_factor = 0.07
+		political_power_factor = 0.07
+		democratic_drift = 0.01
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}  
+    political_trup = {
+		sprite = 10
+		random = not
+		stability_factor = -0.05
+		political_power_factor = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    min_kult = {
+		sprite = 10
+		random = not
+		stability_factor = 0.05
+		political_power_factor = 0.03
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
+    min_obr = {
+		sprite = 10
+		random = not
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+    baron_sibir = {
+		sprite = 10
+		random = not
+		stability_factor = -0.05
+		trade_opinion_factor = 0.1
+		opinion_gain_monthly_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+    a_chto = {
+		sprite = 10
+		random = not
+		political_power_factor = -0.03
+		civilian_intel_to_others = -5
+        airforce_intel_to_others = -5  
+        navy_intel_to_others = -5		
+        army_intel_to_others = -5
+		
+		ai_will_do = {
+			factor = 2
+		}
+	} 
+	son_vozhd = {
+		sprite = 10
+		random = not
+		political_power_factor = 0.05
+		war_support_factor = 0.1
+		stability_factor = -0.05
+		experience_gain_army = 0.005 
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	pretindent_na_DV = {
+		sprite = 10
+		random = not
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		army_attack_factor = 0.05
+		ai_focus_aggressive_factor = 0.5 
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+    obedinitel_DV = {
+		sprite = 10
+		random = not
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+		stability_factor = 0.1
+		army_attack_factor = 0.05
+		ai_focus_aggressive_factor = 0.75 
+
+		ai_will_do = {
+			factor = 2
+		}
+	}    	
+	
+	editor_degradach = {
+		sprite = 10
+		random = yes
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		weekly_manpower = 100
+		army_org_factor = 0.05
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	civilian_poet = { 
+		random = no
+		stability_factor = 0.25
+		war_support_factor = 0.15
+		army_core_defence_factor = 0.1
+	}
+	
+	uvazhaemiy_partner = {
+		random = no
+		opinion_gain_monthly_factor = 0.5
+	} 
+	
+	poroshenko_title = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.05
+	} 
+	
+	capitan = {
+		random = no
+		political_power_factor = 0.25
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	first_and_eternal = {
+		random = no
+		political_power_factor = 0.1
+		justify_war_goal_time = -0.25
+		research_speed_factor = 0.05
+		party_popularity_stability_factor = 0.15
+		offensive_war_stability_factor = 0.4
+		political_advisor_cost_factor = -0.25
+	}
+	
+	russkiy_Pinochet = {
+		random = no
+		sprite = 15
+		army_org_factor = 0.05
+		war_support_factor = 0.1
+		mobilization_speed = 0.15
+	}
+	
+	lunar_putin_1 = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.175
+		political_advisor_cost_factor = -0.15
+	}
+	
+    razvodyashiy = {
+		random = no
+		political_power_gain = 0.05
+		stability_factor = 0.1
+	}   
+
+    soavtor_VNB = {
+		random = no
+		sprite = 15
+		war_support_factor = 0.1
+		stability_factor = -0.075
+		research_speed_factor = 0.05
+	}
+
+    vperedsmotryazhiy = {
+		random = no
+		sprite = 15
+		operative_slot = 1
+		agency_upgrade_time = -0.15
+		decryption_power = 15
+	}         
+	
+    nyash_myash = {
+		sprite = 13
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    photozaluper = {
+		sprite = 13
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    photozhaber = {
+		sprite = 13
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    uzhas_severa = {
+		sprite = 13
+		resistance_damage_to_garrison = -0.3 
+		foreign_subversive_activites = -0.35
+		non_core_manpower = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+
+    second_moisey = {
+		random = no
+		sprite = 13
+		stability_factor = 0.075
+		war_support_factor = 0.075
+	} 
+
+    nanotoliy = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		research_speed_factor = 0.02
+	} 
+	
+	rocket_dviglo_aircraft_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			rocketry = {
+			    air_agility = 0.1    
+				reliability = 0.1
+			}		
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}  
+
+    dviglo_aircraft_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			rocketry = {
+			    air_agility = 0.1    
+				reliability = 0.1
+			}
+			CAS_equipment = {
+				air_agility = 0.1 
+				reliability = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}         
+
+    hardliner_stalinist = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.02
+		war_support_factor = 0.075
+		vmestolev_drift = 0.02
+	}
+
+    levoborod = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.02
+		stability_factor = 0.05
+		vmestolev_drift = 0.02
+	}     
+
+    memodel = {
+		random = no
+		sprite = 13
+
+		party_popularity_stability_factor = 0.15
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.02
+	}
+
+    musicant = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.02
+		war_support_factor = 0.075
+	}
+
+    komissar_travli = {
+		random = no
+		sprite = 13
+
+		war_support_factor = 0.05
+		resistance_damage_to_garrison = -0.25 
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+	}
+
+    zhofer = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.2
+	}
+
+    storonnik_kimovstva = {
+		random = no
+		sprite = 13
+
+		war_support_factor = 0.05
+		conscription_factor = 0.1
+	}
+	
+	pragmatic = {
+		random = no
+		sprite = 13
+
+        political_power_factor = 0.05   
+		trade_laws_cost_factor = -0.15
+		mobilization_laws_cost_factor = -0.15
+		economy_cost_factor = -0.15
+	}
+
+    top_vaifu = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.02
+		stability_factor = 0.05
+	}
+
+    hudozhnik = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+	}
+
+    genialniy_tankoviy_konstructor = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+	the_only_man = {
+		random = no
+		stability_factor = -0.05
+	}
+	
+	pod_kayfom = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.1
+	}
+	
+	microfurer = {
+		random = no
+		political_power_factor = 0.05
+	}
+	
+	prodavets_govna = {
+		random = no
+		consumer_goods_factor = -0.05
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	
+	new_heydrich = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.1
+		political_power_factor = -0.1
+		consumer_goods_factor = -0.05
+		monthly_population = -0.75
+		conscription_factor = -0.1
+	}
+	
+	rusofob_paranoya = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		political_power_factor = 0.05
+		opinion_gain_monthly_factor = -0.05
+		subjects_autonomy_gain = -0.1
+	}
+	
+	karlan_of_terror = {
+		sprite = 13
+		resistance_damage_to_garrison = -0.25 
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hranitel_parkov = {
+		random = no
+		sprite = 13
+
+		consumer_goods_factor = 0.05
+		stability_factor = 0.1
+	}
+	
+	vozhdya = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.25
+	}
+	
+    poter_net = {
+		random = no
+		sprite = 5
+
+		experience_loss_factor = -0.15
+	}
+	
+	edinstvenniy_politik= {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+	}
+	
+	Zhivee_vseh_zhivih = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		defensive = 0.03
+	}
+	
+	Popadanets = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		offence = 0.03
+	}
+	
+	Ubludok = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.1
+		political_power_factor = -0.1
+	}
+	
+	marx_feminist = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		conscription = 0.02
+	}
+	
+	Nakachal_nogi = {
+    	army_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    Slabie_nogi_silnie_ruki = {
+    	army_speed_factor = -0.2
+		offence = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Slabie_nogi = {
+    	army_speed_factor = -0.1
+		offence = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gazoviy_gigant = {
+    	sprite = 6
+		consumer_goods_factor = -0.02
+		stability_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    toplivniy_baron = {
+    	sprite = 6
+		fuel_gain_factor_from_states = 0.1
+		max_fuel_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    borec_za_ecologiyu = {
+		stability_factor = 0.02
+		MONTHLY_POPULATION = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    pokrovitel_alcogolnoy_promki = {
+	    sprite = 10
+		consumer_goods_factor = -0.03
+		stability_factor = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	crovaviy_agronom = {
+		weekly_manpower = -10
+		consumer_goods_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    crovaviy_culinar = {
+		sprite = 13
+		weekly_manpower = -10
+		consumer_goods_factor = -0.01
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    crovaviy_schetovod = {
+		sprite = 10
+		weekly_manpower = -10
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.1		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    chestniy_ment = {
+		sprite = 13
+		political_power_factor = 0.03
+		resistance_damage_to_garrison = -0.25 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Vodoley = {
+        political_power_factor = -0.05
+        command_power_gain = -0.05
+
+
+         random = no
+      }
+    
+	Psychologist = {
+		political_power_factor = 0.05
+		consumer_goods_factor = 0.05
+		stability_factor = 0.07
+		month_population = 0.25
+		
+
+		random = no
+	}
+
+    school_of_psychology = {
+		army_org_factor = 0.1
+		army_morale_factor = 0.1
+
+		random = no
+	}
+
+    backroom_sponsor_rezhima = {
+		sprite = 13
+		political_power_factor = 0.05
+		drift_defence_factor = 0.15
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    economist_chtrasserist = {
+		random = no
+		production_factory_start_efficiency_factor = 0.05
+		conversion_cost_civ_to_mil_factor = -0.2
+		production_speed_synthetic_refinery_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    ministr_defitsita = { 
+		sprite = 1
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+    vliyatelniy_kupets = { 
+		sprite = 1
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	anti_levak = {
+		random = no
+		vmestolev_acceptance = -50
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    economist_anarhii = { 
+		sprite = 1
+		mobilization_speed = 0.1
+		industrial_capacity_factory = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+    dobrovolno_prinuditelniy_collectivizator = { 
+		sprite = 1
+		political_power_factor = 0.05
+		local_resources_factor = 0.15
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+    stalin_sokol = { 
+		sprite = 1
+		air_ace_generation_chance_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+    voenniy_kustar = {
+		random = no 
+		equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					instant = yes
+				}
+				support_tech = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					instant = yes
+				}
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Master_PVO = {
+		random = no
+		production_speed_anti_air_building_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Pribrezhniy_fortificator = {
+		random = no
+		production_speed_coastal_bunker_factor = 0.15 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Partisan_vozhd = {
+		random = no
+		political_power_factor = 0.05
+		training_time_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Organizator_geril = {
+		random = no
+		army_org_factor = -0.02
+		conscription = 0.01
+		training_time_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Materialist_krestonostets = {
+		random = no		
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		mobilization_laws_cost_factor = -0.05
+		justify_war_goal_time = -0.15
+		vmestolev_drift = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Urbanist = {
+		random = no		
+		production_speed_infrastructure_factor = 0.1
+		production_speed_industrial_complex_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ 
+    Nasledie_porazheniya = {
+		random = no		
+		stability_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Gospodin_one_protsent = {
+		random = no
+		political_power_factor = 0.01
+		war_support_factor = 0.01
+		army_org_factor = 0.01
+		consumer_goods_factor = -0.01
+		research_speed_factor = 0.01
+		opinion_gain_monthly_factor = 0.01
+		special_forces_attack_factor = 0.01
+		special_forces_defence_factor = 0.01
+		stability_factor = 0.01
+		cavalry_attack_factor = 0.01
+		cavalry_defence_factor = 0.01
+		justify_war_goal_time = -0.01
+		trade_laws_cost_factor = -0.01
+		mobilization_laws_cost_factor = -0.01
+		economy_cost_factor = -0.01
+		production_speed_air_base_factor = 0.01
+		production_speed_naval_base_factor = 0.01
+		production_speed_rocket_site_factor = 0.01
+		production_speed_radar_station_factor = 0.01
+		production_speed_nuclear_reactor_factor = 0.01
+		production_speed_industrial_complex_factor = 0.01
+		production_speed_infrastructure_factor = 0.01
+		production_speed_synthetic_refinery_factor = 0.01
+		production_speed_arms_factory_factor = 0.01
+		production_speed_dockyard_factor = 0.01		
+		production_speed_fuel_silo_factor = 0.01
+		production_speed_bunker_factor = 0.01
+		production_speed_coastal_bunker_factor = 0.01
+		production_speed_anti_air_building_factor = 0.01
+		foreign_subversive_activites = -0.01
+		non_core_manpower = 0.01
+		resistance_damage_to_garrison = -0.01
+		high_command_cost_factor = -0.01
+		war_support_weekly = 0.001
+		production_speed_arms_factory_factor = 0.01
+		political_power_gain = 0.01
+		high_command_cost_factor = -0.01
+		air_chief_cost_factor = -0.01
+		army_chief_cost_factor = -0.01
+		navy_chief_cost_factor = -0.01
+		planning_speed = 0.01
+		max_planning = 0.01
+		army_core_attack_factor = 0.01
+		army_core_defence_factor = 0.01
+		mobilization_speed = 0.01
+		industrial_capacity_factory = 0.01
+		resistance_growth_on_our_occupied_states = 0.01
+		conscription = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    patr_kir = {
+			random = no
+			political_power_factor = 0.05
+			stability_factor = 0.05
+			targeted_modifier = {
+				tag = CHE
+				attack_bonus_against = 0.2
+			}
+			
+	    ai_will_do = {
+			factor = 1
+	    }
+    }
+
+    Dozh = {
+		random = no
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Syn_Peruna = {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Duche = {
+		random = no
+		political_power_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	coordinator = {
+		random = no
+		political_power_factor = 0.1
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Shah_tehnokrat = {
+		random = no
+		research_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Glav_heyter_internet = {
+		random = no
+		opinion_gain_monthly_factor = -0.15
+		min_export = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Glava_CHBK = {
+		random = no
+		political_power_factor = 0.25
+		special_forces_attack_factor = 0.05
+		special_forces_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    Sraniy_kovboy = {
+		random = no
+		cavalry_attack_factor = 0.05		
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Vne_politkategoriy = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+	Spetsific_prosvetitel = {
+		random = no
+		research_speed_factor = 0.07
+		MONTHLY_POPULATION = -0.05
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Great_vozhd_revolution = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Otec_russkoy_democracy = {
+		random = no
+		stability_factor = 0.15
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Purer = {
+		random = no
+		war_support_factor = 0.15
+		army_core_attack_factor = 0.1
+	    army_core_defence_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    Ne_typoy = {
+		random = no
+		research_speed_factor = 0.1
+		stability_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Ciganskiy_baron = {
+		random = no	
+		cavalry_attack_factor = 0,1
+		cavalry_defence_factor = 0,1
+		war_support_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Ljesharanskiy = {
+		random = no
+		stability_factor = -0.10
+		political_power_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	###OREL###
+	
+    Lugal = {
+		random = no
+		political_power_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Shiz_na_tanke = {
+		random = no
+		army_armor_speed_factor = 0.1
+		army_armor_attack_factor = 0.05
+		army_armor_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rabochaya_koshechka = {
+		sprite = 10
+		random = not
+		political_power_factor = 0.15
+		war_support_factor = 0.1
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	specifichniy_prosvititel = {
+		sprite = 10
+		random = not
+		research_speed_factor = 0.2
+		nuclear_production_factor = 0.2
+		weekly_manpower = -10
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	komissar_po_ideoligii_metacommy = {
+		sprite = 10
+		random = not
+		army_org_factor = 0.05
+		metacommy_drift = 0.005
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
