@@ -1977,7 +1977,12 @@ focus_tree = {
 		}
 		x = 65
 		y = 11
-
+        completion_reward = {			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}       
 	}
 	focus = {
 		id = YSK_vipolnenie_obeshchyaniy
@@ -1988,7 +1993,13 @@ focus_tree = {
 		}
 		x = 65
 		y = 12
-
+        completion_reward = {			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_political_power = 50
+		}  
 	}
 	focus = {
 		id = YSK_God_and_space
@@ -1999,7 +2010,12 @@ focus_tree = {
 		}
 		x = 64
 		y = 13
-
+        completion_reward = {			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}    
 	}
 	focus = {
 		id = YSK_souz_s_Great_Russia
@@ -2010,7 +2026,13 @@ focus_tree = {
 		}
 		x = 66
 		y = 13
-
+        completion_reward = {			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			add_political_power = 50
+		}      
 	}
 	focus = {
 		id = YSK_sacred_mission_RPTs
@@ -2024,7 +2046,9 @@ focus_tree = {
 		}
 		x = 62
 		y = 14
-
+        completion_reward = {
+		    add_ideas = YSK_sacred_mission_RPTs			
+	    }   
 	}
 	focus = {
 		id = YSK_osvyatit_weapon
@@ -2035,7 +2059,9 @@ focus_tree = {
 		}
 		x = 61
 		y = 16
-
+        completion_reward = {
+		    add_ideas = YSK_osvyatit_weapon_1 
+		} 
 	}
 	focus = {
 		id = YSK_kanonizirovat_Gagarina
@@ -2046,7 +2072,12 @@ focus_tree = {
 		}
 		x = 63
 		y = 15
-
+		completion_reward = {
+            swap_ideas = {
+			remove_idea = YSK_sacred_mission_RPTs
+			add_idea = YSK_new_svyatie
+		    }
+		}	
 	}
 	focus = {
 		id = YSK_iskorenenie_oligarhov
@@ -2060,7 +2091,222 @@ focus_tree = {
 		}
 		x = 66
 		y = 14
-
+        completion_reward = {
+            add_timed_idea = {
+				idea = YSK_peredacha_sobstvennosti_gosvu
+				days = 184
+			}    		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+											size > 0
+											include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}      
 	}
 	focus = {
 		id = YSK_new_energy
@@ -2080,7 +2326,8 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = industry
-			}    
+			}
+            add_ideas = YSK_new_energy			
 	    }      
 	}
 	focus = {
@@ -2092,7 +2339,12 @@ focus_tree = {
 		}
 		x = 66
 		y = 17
-
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_new_energy
+			add_idea = YSK_new_energy_1
+		    }
+		}          
 	}
 	focus = {
 		id = YSK_Mars_nash
@@ -2130,7 +2382,37 @@ focus_tree = {
 		}
 		x = 67
 		y = 15
-
+		completion_reward = {
+		    add_ideas = YSK_toplivo_iz_svyat_vody
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = YSK_oil_in_sibir
+    			bonus = 1
+   				uses = 1
+    			category = synth_resources
+			}
+			add_tech_bonus = {
+				name = YSK_industria_sintetic
+				bonus = 1
+				uses = 1
+				category = cat_synth_oil
+			}
+		}		
 	}
 	focus = {
 		id = YSK_ortodox_batuts
@@ -2144,7 +2426,9 @@ focus_tree = {
 		}
 		x = 67
 		y = 16
-
+        completion_reward = {
+			add_ideas = YSK_ortodox_batuts
+		} 
 	}
 	focus = {
 		id = YSK_letaushchie_hrami
@@ -2155,7 +2439,17 @@ focus_tree = {
 		}
 		x = 68
 		y = 17
-
+        completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}  
 	}
 	focus = {
 		id = YSK_osvyatit_rakety
@@ -2166,7 +2460,16 @@ focus_tree = {
 		}
 		x = 68
 		y = 18
-
+        completion_reward = {
+		    add_ideas = YSK_osvyatit_rakety_1     
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		} 
 	}
 	focus = {
 		id = YSK_dvigately_na_svyat_duhe
@@ -2175,9 +2478,17 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
+		available = {
+			has_idea = YSK_toplivo_iz_svyat_vody
+		}
 		x = 69
 		y = 16
-
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_toplivo_iz_svyat_vody
+			add_idea = YSK_dvigately_na_svyat_duhe_1
+		    }
+		}      
 	}
 	focus = {
 		id = YSK_nato_weapon
@@ -2261,6 +2572,31 @@ focus_tree = {
 		x = 64
 		y = 17
         completion_reward = {
+		    add_ideas = YSK_need_more_churchs
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }  
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }      
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            }  
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1      
+            } 
 	    }
 	}
 	focus = {
@@ -2292,6 +2628,14 @@ focus_tree = {
 		id = YSK_POEHALI
 		icon = GFX_goal_unknown
 		cost = 2,00
+		available = {
+			has_complete_focus = YSK_toplivo_iz_svyat_vody
+			has_complete_focus = YSK_dvigately_na_svyat_duhe
+			has_complete_focus = YSK_ortodox_batuts
+			has_complete_focus = YSK_osvyatit_rakety
+			has_complete_focus = YSK_new_energy
+			has_complete_focus = YSK_kanonizirovat_Gagarina
+		}
 		x = 65
 		y = 18
 
@@ -2308,7 +2652,10 @@ focus_tree = {
 		}
 		x = 64
 		y = 14
-
+        completion_reward = {
+		    add_stability = 0.075
+            add_political_power = -100 			
+	    }  
 	}
 	focus = {
 		id = YSK_sobiranie_nation
@@ -2322,7 +2669,9 @@ focus_tree = {
 		}
 		x = 65
 		y = 15
-
+        completion_reward = {
+		    add_ideas = YSK_sobiranie_nation			
+	    }    
 	}
 	#НПФ Память
 	focus = {

@@ -1106,6 +1106,144 @@ ideas = {
 				conscription_factor = 0.1
 				political_power_factor = 0.05
 			    }
-		    }     			
+		    }
+            YSK_peredacha_sobstvennosti_gosvu = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+			    }
+		    }
+            YSK_sobiranie_nation = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				war_support_factor = 0.05
+				conscription = 0.02
+				army_attack_factor = 0.025
+				org_loss_when_moving = -0.05
+				justify_war_goal_time = -0.15 
+			    }
+		    }
+            YSK_sacred_mission_RPTs = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.025
+				consumer_goods_factor = 0.01
+			    }
+		    }
+            YSK_new_svyatie = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				party_popularity_stability_factor = 0.10
+				consumer_goods_factor = 0.025
+			    }
+		    }
+            YSK_osvyatit_weapon_1 = {		
+		        picture = spr_anti_fascist_crusade			
+			    removal_cost = -1			
+			    equipment_bonus = {
+				    infantry_equipment = {
+					    reliability  = 0.05
+						breakthrough  = 0.05
+					    instant = yes
+				    }
+			    }
+			    modifier = {				
+			    }
+		    }
+            YSK_toplivo_iz_svyat_vody = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				    production_oil_factor = 0.1
+				    fuel_gain_factor_from_states = 0.1
+				    consumer_goods_factor = -0.025
+			    }
+		    }
+            YSK_dvigately_na_svyat_duhe_1 = {
+			    picture = spr_anti_fascist_crusade
+                equipment_bonus = {
+				    cas = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					fighter = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					interceptor = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					tactical_bomber = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					strategic_bomber = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					missile = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+					naval_bomber = {
+					    reliability  = 0.05
+					    instant = yes
+				    }
+			    }				
+			    modifier = {
+				    production_oil_factor = 0.1
+				    fuel_gain_factor_from_states = 0.1
+				    consumer_goods_factor = -0.025
+					air_range_factor = 0.1
+					air_agility_factor = 0.05
+			    }
+		    }
+            YSK_osvyatit_rakety_1 = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				rocket_attack_factor = 0.1
+			    }
+		    }
+            YSK_ortodox_batuts = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				consumer_goods_factor = 0.035
+				production_speed_air_base_factor = 0.15
+		        production_speed_rocket_site_factor = 0.15
+			    }
+		    }
+            YSK_new_energy = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				consumer_goods_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.05
+		        production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			    }
+		    }
+            YSK_new_energy_1 = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.075
+		        production_factory_max_efficiency_factor = 0.075
+				production_factory_start_efficiency_factor = 0.075
+				industrial_capacity_factory = 0.075
+			    }
+		    }
+            YSK_need_more_churchs = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				stability_factor = -0.075
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.075 
+			    }
+		    }      			
 	    }		
 }
