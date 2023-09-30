@@ -2683,7 +2683,12 @@ focus_tree = {
 		}
 		x = 111
 		y = 10
-
+        completion_reward = {			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}    
 	}
 	focus = {
 		id = YSK_God
@@ -2694,7 +2699,21 @@ focus_tree = {
 		}
 		x = 107
 		y = 11
-
+        completion_reward = { 
+			set_variable = { YSK_pamyat_god_stability_factor = 0.0 }
+            set_variable = { YSK_pamyat_god_war_support_factor = 0.0 }
+            set_variable = { YSK_pamyat_god_army_morale_factor = 0.0 }
+			set_variable = { YSK_pamyat_god_conscription_factor = 0.0 } 
+			set_variable = { YSK_pamyat_god_conscription = 0.0 } 
+			set_variable = { YSK_pamyat_god_army_attack_factor = 0.0 } 
+			set_variable = { YSK_pamyat_god_consumer_goods_factor = 0.0 }
+			set_variable = { YSK_pamyat_god_compliance_gain = 0.0 }
+			add_dynamic_modifier = { modifier = YSK_god_dynamic_modifier }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+  		}          
 	}
 	focus = {
 		id = YSK_united_duh_disciplines
@@ -2705,7 +2724,11 @@ focus_tree = {
 		}
 		x = 106
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_god_stability_factor = 0.025 }
+			}
+		} 
 	}
 	focus = {
 		id = YSK_rebirth_duha
@@ -2716,7 +2739,11 @@ focus_tree = {
 		}
 		x = 105
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_army_morale_factor = 0.025 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_doctina_fundament_pravoslaviya
@@ -2727,7 +2754,12 @@ focus_tree = {
 		}
 		x = 108
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_stability_factor = -0.05 }
+				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.05 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_antisionism
@@ -2741,7 +2773,12 @@ focus_tree = {
 		}
 		x = 107
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_stability_factor = -0.025 }
+				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.025 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_veshat_zhidov
@@ -2752,10 +2789,15 @@ focus_tree = {
 		}
 		x = 107
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_conscription_factor = -0.025 }
+				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.025 }
+			}
+		}      
 	}
 	focus = {
-		id = YSK_soldaty_voinstva_hristova
+		id = YSK_soldaty_voinstva_hristova 
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
@@ -2763,7 +2805,11 @@ focus_tree = {
 		}
 		x = 105
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_conscription = 0.025 }
+			}
+		}
 	}
 	focus = {
 		id = YSK_Tsar
@@ -2774,7 +2820,22 @@ focus_tree = {
 		}
 		x = 111
 		y = 11
-
+        completion_reward = { 
+			set_variable = { YSK_pamyat_tsar_stability_factor = 0.0 }
+			set_variable = { YSK_pamyat_tsar_party_popularity_stability_factor = 0.0 }
+			set_variable = { YSK_pamyat_tsar_political_power_gain = 0.0 } 
+			set_variable = { YSK_pamyat_tsar_consumer_goods_factor = 0.0 }
+			set_variable = { YSK_pamyat_tsar_local_building_slots_factor = 0.0 }
+			set_variable = { YSK_pamyat_tsar_local_resources_factor = 0.0 }
+			set_variable = { YSK_pamyat_tsar_resistance_damage_to_garrison = 0.0 } 
+			set_variable = { YSK_pamyat_tsar_foreign_subversive_activites = 0.0 }
+			set_variable = { YSK_pamyat_tsar_non_core_manpower = 0.0 }
+			add_dynamic_modifier = { modifier = YSK_tsar_dynamic_modifier }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+  		}     
 	}
 	focus = {
 		id = YSK_bozh_zemskaya_ierarhiya
@@ -2785,7 +2846,13 @@ focus_tree = {
 		}
 		x = 110
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_tsar_party_popularity_stability_factor = 0.05 }
+				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
+			}
+		}       
 	}
 	focus = {
 		id = YSK_new_ZemSobor
@@ -2799,7 +2866,12 @@ focus_tree = {
 		}
 		x = 109
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_stability_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
+			}
+		}   
 	}
 	focus = {
 		id = YSK_ochishchenie_puti_k_prestolu
@@ -2810,7 +2882,11 @@ focus_tree = {
 		}
 		x = 112
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.01 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_neofeodalism
@@ -2824,7 +2900,14 @@ focus_tree = {
 		}
 		x = 111
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_stability_factor = -0.075 }
+				add_to_variable = { YSK_pamyat_tsar_consumer_goods_factor = -0.1 }
+				add_to_variable = { YSK_pamyat_tsar_local_building_slots_factor = -0.5 }
+			}
+			add_political_power = -100
+		}      
 	}
 	focus = {
 		id = YSK_true_ispilzovanie_recursov
@@ -2835,7 +2918,11 @@ focus_tree = {
 		}
 		x = 111
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_local_resources_factor = 0.1 }
+			}
+		}       
 	}
 	focus = {
 		id = YSK_Restoration_monastres_and_consults
@@ -2846,7 +2933,12 @@ focus_tree = {
 		}
 		x = 109
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_god_consumer_goods_factor = 0.025 }
+			}
+		}     
 	}
 	focus = {
 		id = YSK_the_struggle_of_good_with_evil
@@ -2863,7 +2955,11 @@ focus_tree = {
 		}
 		x = 107
 		y = 15
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_god_army_attack_factor = 0.05 }
+			}
+		}       
 	}
 	focus = {
 		id = YSK_Nation
@@ -2874,7 +2970,20 @@ focus_tree = {
 		}
 		x = 115
 		y = 11
-
+        completion_reward = {
+			set_variable = { YSK_pamyat_nation_war_support_factor = 0.0 }
+			set_variable = { YSK_pamyat_nation_stability_factor = 0.0 }
+			set_variable = { YSK_pamyat_nation_political_power_factor = 0.0 }
+			set_variable = { YSK_pamyat_nation_party_popularity_stability_factor = 0.0 }
+			set_variable = { YSK_pamyat_nation_conscription = 0.0 }
+			set_variable = { YSK_pamyat_nation_consumer_goods_factor = 0.0 }
+			set_variable = { YSK_pamyat_nation_army_attack_factor = 0.0 }
+			add_dynamic_modifier = { modifier = YSK_nation_dynamic_modifier }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+  		}    
 	}
 	focus = {
 		id = YSK_prizuv_k_splachivaniyu_rus_patriotov
@@ -2885,7 +2994,12 @@ focus_tree = {
 		}
 		x = 114
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_nation_war_support_factor = 0.05 }
+				add_to_variable = { YSK_pamyat_nation_conscription_factor = 0.075 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_new_sosloviya
@@ -2899,7 +3013,13 @@ focus_tree = {
 		}
 		x = 113
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
+				add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_nation_conscription_factor = -0.5 }
+			}
+		}   
 	}
 	focus = {
 		id = YSK_zakony_bozhi
@@ -2910,7 +3030,12 @@ focus_tree = {
 		}
 		x = 116
 		y = 12
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_nation_stability_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_nation_political_power_factor = 0.025 }
+			}
+		}   
 	}
 	focus = {
 		id = YSK_krutoy_povorot_k_traditsiyam
@@ -2924,7 +3049,12 @@ focus_tree = {
 		}
 		x = 115
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_nation_stability_factor = -0.075 }
+				add_to_variable = { YSK_pamyat_nation_party_popularity_stability_factor = 0.075 }
+			}
+		}     
 	}
 	focus = {
 		id = YSK_form_chernorubashecnikov
@@ -2935,7 +3065,12 @@ focus_tree = {
 		}
 		x = 115
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_nation_conscription = 0.01 }
+				add_to_variable = { YSK_pamyat_nation_conscription_factor = 0.1 }
+			}
+		}   
 	}
 	focus = {
 		id = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
@@ -2946,7 +3081,13 @@ focus_tree = {
 		}
 		x = 113
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.015 }
+				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
+				add_to_variable = { YSK_pamyat_nation_consumer_goods_factor = 0.01 }
+			}
+		}      
 	}
 	focus = {
 		id = YSK_rus_terror
@@ -2963,7 +3104,13 @@ focus_tree = {
 		}
 		x = 111
 		y = 15
-
+        completion_reward = {
+			hidden_effect = {
+                add_to_variable = { YSK_pamyat_tsar_resistance_damage_to_garrison = -0.25 }
+				add_to_variable = { YSK_pamyat_tsar_foreign_subversive_activites = -0.3 }
+				add_to_variable = { YSK_pamyat_tsar_non_core_manpower = 0.02 }
+			}
+		}     
 	}
 	focus = {
 		id = YSK_gordoe_plemya_na_bitvy_vstavay
@@ -2994,7 +3141,12 @@ focus_tree = {
 		}
 		x = 109
 		y = 16
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_god_compliance_gain = 0.02 }
+				add_to_variable = { YSK_pamyat_god_stability_factor = 0.05 }
+			}
+		}     
 	}
 	focus = {
 		id = YSK_i_mechom
@@ -3008,7 +3160,12 @@ focus_tree = {
 		}
 		x = 113
 		y = 16
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_nation_army_attack_factor = 0.025 }
+				add_to_variable = { YSK_pamyat_nation_war_support_factor = 0.05 }
+			}
+		}    
 	}
 	focus = {
 		id = YSK_save_Russia
@@ -3022,7 +3179,9 @@ focus_tree = {
 		}
 		x = 111
 		y = 17
-
+        completion_reward = {
+			add_ideas = YSK_save_Russia
+		}     
 	}
 	focus = {
 		id = YSK_cult_Dmotriya_Vasileva
@@ -3033,7 +3192,12 @@ focus_tree = {
 		}
 		x = 117
 		y = 13
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
+				add_to_variable = { YSK_pamyat_nation_stability_factor = 0.01 }
+			}
+		}    
 	}
 	focus = {
 		id = YSK_idealizatsiya_dorev_proshlogo
@@ -3044,7 +3208,12 @@ focus_tree = {
 		}
 		x = 117
 		y = 14
-
+        completion_reward = {
+			hidden_effect = {
+				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
+				add_to_variable = { YSK_pamyat_nation_stability_factor = 0.01 }
+			}
+		}     
 	}
 	#
 	focus = {

@@ -1244,6 +1244,15 @@ ideas = {
 				consumer_goods_factor = 0.05
 				production_speed_buildings_factor = 0.075 
 			    }
-		    }      			
+		    }
+            YSK_save_Russia = {
+			    picture = spr_anti_fascist_crusade			
+			    modifier = {
+				war_support_factor = 0.075
+				army_attack_factor = 0.05
+				conscription_factor = 0.15
+                org_loss_when_moving = -0.1  				
+			    }
+		    } 			
 	    }		
 }
