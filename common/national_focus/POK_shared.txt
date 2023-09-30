@@ -1140,6 +1140,7 @@ country_event = { id = POK.23 }
 		    add_ideas = POK_inter_dogovor
 			add_ideas = civilian_economy
 			add_ideas = neutrality_idea
+			set_cosmetic_tag = POK_NEUTRAL_1
 		}   
 	}
 	
@@ -1253,6 +1254,7 @@ country_event = { id = POK.23 }
         completion_reward = {
 		    add_political_power = -15
 			add_ideas = POK_under_neutral_flag
+			set_cosmetic_tag = POK_NEUTRAL_2
 		}     
 	}
 	
