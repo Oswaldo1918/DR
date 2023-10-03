@@ -967,3 +967,128 @@ country_event = {
 	name = POK.28.a
 	}
 }
+country_event = {
+	id = POK.29
+	title = POK.29.t
+	desc = POK.29.d
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.29.a
+	add_political_power = -100
+	add_war_support = -0.1
+	set_cosmetic_tag = POK_bsb
+	custom_effect_tooltip = POK_bsb_tt
+	}
+	option = {
+	name = POK.29.b
+	add_political_power = -150
+	set_cosmetic_tag = POK_KOM
+	custom_effect_tooltip = POK_tnoid_tt
+	}
+	option = {
+	name = POK.29.c
+	add_stability = -0.1
+	}
+}
+country_event = {
+	id = POK.30
+	title = POK.30.t
+	desc = POK.30.d
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.30.a
+
+	}
+	option = {
+	name = POK.30.b
+
+	}
+}
+country_event = {
+	id = POK.31
+	title = POK.31.t
+	desc = POK.31.d
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.31.a
+	kill_country_leader = yes
+		add_country_leader_role = {
+			character = POK_Putin
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_PUTIN_DESC"     
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = POK.32
+	title = POK.32.t
+	desc = POK.32.d
+	picture = GFX_report_event_dkr_fasepalm_gaydar
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.32.a
+	kill_country_leader = yes
+		add_country_leader_role = {
+			character = POK_Eltsin
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_ELTSIN_DESC"     
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = POK.33
+	title = POK.33.t
+	desc = POK.33.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.33.a
+	}
+}
