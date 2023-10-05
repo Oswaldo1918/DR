@@ -1055,6 +1055,9 @@ country_event = POK.30
 		}
 		x = 7
 		y = 16
+		available = {
+			has_country_flag = eltsin_option
+		}
         completion_reward = {
             add_political_power = 75
             add_popularity = {
@@ -1077,6 +1080,9 @@ country_event = POK.30
 		}
 		x = 11
 		y = 16
+		available = {
+			has_country_flag = lunar_option
+		}
 		completion_reward = {
             add_political_power = 75
             add_ideas = POK_pod_dlanyu_Luny
@@ -1095,6 +1101,9 @@ country_event = POK.30
                 popularity = 0.15
             } 
 			country_event = POK.31
+			hidden_effect = {
+			NOD = {country_event = NOD.31}
+			}
         }
 	}
 	

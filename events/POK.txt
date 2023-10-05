@@ -1011,11 +1011,11 @@ country_event = {
 	
 	option = {
 	name = POK.30.a
-
+    set_country_flag = lunar_option
 	}
 	option = {
 	name = POK.30.b
-
+    set_country_flag = eltsin_option
 	}
 }
 country_event = {
@@ -1090,5 +1090,21 @@ country_event = {
 	
 	option = {
 	name = POK.33.a
+	}
+}
+country_event = {
+	id = POK.34
+	title = POK.34.t
+	desc = POK.34.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.34.a
 	}
 }
