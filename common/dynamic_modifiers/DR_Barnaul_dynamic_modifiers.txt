@@ -29,20 +29,50 @@ YSK_militarization_of_society_dynamic_modifier = { #милитаризация_�
     conscription = YSK_Rusich_mil_conscription
 	conscription_factor = YSK_Rusich_mil_conscription_factor		
 }
-MRD_legacy_of_army_dynamic_modifier = {	#Наследие 4-й общевойсковой армии
+YSK_god_dynamic_modifier = {	
 	
 	enable = { always = yes }
 	icon = GFX_idea_SOV_war_heroes
 	
-	air_superiority_bonus_in_combat = MRD_mordor_army_air_superiority_bonus_in_combat
-	army_org_factor = MRD_mordor_army_org_factor
-	army_org_regain = MRD_mordor_army_org_regain
-	cas_damage_reduction = MRD_mordor_army_cas_damage_reduction
-	dig_in_speed_factor = MRD_mordor_army_dig_in_speed_factor
-	org_loss_when_moving = MRD_mordor_army_org_loss_when_moving
-	army_attack_factor = MRD_mordor_army_attack_factor
-	land_night_attack = MRD_mordor_army_land_night_attack
-	army_defence_factor = MRD_mordor_army_defence_factor
+	stability_factor = YSK_pamyat_god_stability_factor
+	war_support_factor = YSK_pamyat_god_war_support_factor
+	army_morale_factor = YSK_pamyat_god_army_morale_factor
+	conscription_factor = YSK_pamyat_god_conscription_factor
+	conscription = YSK_pamyat_god_conscription
+	army_attack_factor = YSK_pamyat_god_army_attack_factor
+	consumer_goods_factor = YSK_pamyat_god_consumer_goods_factor
+	compliance_gain = YSK_pamyat_god_compliance_gain
+	
+}
+YSK_tsar_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	stability_factor = YSK_pamyat_tsar_stability_factor
+	party_popularity_stability_factor = YSK_pamyat_tsar_party_popularity_stability_factor
+	political_power_gain = YSK_pamyat_tsar_political_power_gain
+	consumer_goods_factor  = YSK_pamyat_tsar_consumer_goods_factor 
+	local_building_slots_factor = YSK_pamyat_tsar_local_building_slots_factor
+	local_resources_factor = YSK_pamyat_tsar_local_resources_factor
+	resistance_damage_to_garrison = YSK_pamyat_tsar_resistance_damage_to_garrison
+	foreign_subversive_activites = YSK_pamyat_tsar_foreign_subversive_activites
+	non_core_manpower = YSK_pamyat_tsar_non_core_manpower	
+	
+}
+YSK_nation_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	war_support_factor = YSK_pamyat_nation_war_support_factor
+	conscription_factor = YSK_pamyat_nation_conscription_factor
+	stability_factor = YSK_pamyat_nation_stability_factor
+	political_power_factor = YSK_pamyat_nation_political_power_factor
+	party_popularity_stability_factor = YSK_pamyat_nation_party_popularity_stability_factor
+	conscription = YSK_pamyat_nation_conscription
+	consumer_goods_factor = YSK_pamyat_nation_consumer_goods_factor
+	army_attack_factor = YSK_pamyat_nation_army_attack_factor
 	
 }
 

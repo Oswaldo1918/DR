@@ -950,7 +950,7 @@ country_event = { id = POK.23 }
 		x = 3
 		y = 15
 			completion_reward = {
-
+country_event = POK.34
 }
 	}
 	shared_focus = {
@@ -969,7 +969,7 @@ country_event = { id = POK.23 }
 	}
 	shared_focus = {
 		id = POK_new_religion
-		icon = GFX_POK_new_new_russian
+		icon = GFX_POK_new_religion
 		cost = 5
 		available = {    
 		  has_completed_focus = POK_pay_and_repent
@@ -986,7 +986,7 @@ country_event = { id = POK.23 }
 	}
 	shared_focus = {
 		id = POK_keepers_of_anomalies
-		icon = GFX_POK_new_new_russian
+		icon = GFX_POK_keepers_of_anomalies
 		cost = 5
 		available = {    
 		  has_completed_focus = POK_pay_and_repent
@@ -1005,7 +1005,7 @@ country_event = { id = POK.23 }
 	}
 	shared_focus = {
 		id = POK_pokayansky_equilibrium
-		icon = GFX_POK_new_new_russian
+		icon = GFX_POK_pokayansky_equilibrium
 		cost = 5
 		available = {    
 		  has_completed_focus = POK_pay_and_repent
@@ -1039,7 +1039,7 @@ country_event = { id = POK.23 }
 		x = 9
 		y = 15
 			completion_reward = {
-
+country_event = POK.30
 }
 
 	}
@@ -1055,13 +1055,17 @@ country_event = { id = POK.23 }
 		}
 		x = 7
 		y = 16
+		available = {
+			has_country_flag = eltsin_option
+		}
         completion_reward = {
             add_political_power = 75
             add_popularity = {
                 ideology = fascism
                 popularity = 0.15
             }
-            load_oob = two_polka_vdv    			
+            load_oob = two_polka_vdv 
+   			country_event = POK.32
         }       
 	}
 	shared_focus = {
@@ -1076,6 +1080,9 @@ country_event = { id = POK.23 }
 		}
 		x = 11
 		y = 16
+		available = {
+			has_country_flag = lunar_option
+		}
 		completion_reward = {
             add_political_power = 75
             add_ideas = POK_pod_dlanyu_Luny
@@ -1092,7 +1099,11 @@ country_event = { id = POK.23 }
             add_popularity = {
                 ideology = democratic
                 popularity = 0.15
-            }       			
+            } 
+			country_event = POK.31
+			hidden_effect = {
+			NOD = {country_event = NOD.31}
+			}
         }
 	}
 	
@@ -1140,6 +1151,7 @@ country_event = { id = POK.23 }
 		    add_ideas = POK_inter_dogovor
 			add_ideas = civilian_economy
 			add_ideas = neutrality_idea
+			set_cosmetic_tag = POK_NEUTRAL_1
 		}   
 	}
 	
@@ -1253,6 +1265,7 @@ country_event = { id = POK.23 }
         completion_reward = {
 		    add_political_power = -15
 			add_ideas = POK_under_neutral_flag
+			set_cosmetic_tag = POK_NEUTRAL_2
 		}     
 	}
 	
@@ -1562,6 +1575,7 @@ country_event = { id = POK.23 }
 		    legacy_id = -1
             }
 			add_stability = 0.1
+			country_event = POK.33
         }
 	}
 	
@@ -3258,7 +3272,9 @@ country_event = { id = POK.23 }
 		}
 		x = 34
 		y = 19
-
+completion_reward = {
+		    country_event = { id = POK.29 }
+		} 
 	}
 	shared_focus = {
 		id = POK_radical_decommunisation

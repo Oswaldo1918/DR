@@ -198,4 +198,60 @@ characters={
 			}
         }
     }
+	ALB_Igroman = {
+		name = "Владислав «Красный Игроман» Коршунов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ALB/Igroman.dds"
+			}
+		}		
+		field_marshal = {
+	        traits = { swamp_fox }
+	        skill = 2
+	        attack_skill = 2
+	        defense_skill = 2
+	        planning_skill = 2
+	        logistics_skill = 2
+		    legacy_id = -1
+		    visible = {
+			    has_government = anarhostalinism
+			}
+        }
+    }
+	ALB_Kelesh = {
+		name = "Андрей Келеш"
+		portraits = {
+			army = {
+			    small = "GFX_idea_ALB_Kelesh"
+				large = "gfx/leaders/ALB/Kelesh.dds"
+			}
+			civilian = {
+				small = "GFX_idea_ALB_Kelesh"
+			}
+		}
+        advisor={ 
+		    slot = political_advisor
+			idea_token = ALB_Kelesh
+			allowed = {
+                original_tag = ALB
+				
+            }
+			available = {
+			    has_government = anarhostalinism
+			}
+            traits = { part_org }
+	    }       		
+		corps_commander = {
+	        traits = {  }
+	        skill = 2
+	        attack_skill = 2
+	        defense_skill = 2
+	        planning_skill = 2
+	        logistics_skill = 2
+		    legacy_id = -1
+		    visible = {
+			    has_government = anarhostalinism
+			}
+        }
+    }
 }

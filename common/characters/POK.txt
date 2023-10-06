@@ -19,7 +19,16 @@ characters={
 			id = -1
 		}	
 	}
+    POK_Putin = {
+		name = "Владимир Путин"
 
+		portraits = {
+			army = {				
+				large = "gfx/leaders/POK/Lunar_Pu.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}
 	POK_bukin = {
 		name = "Геннадий Букин"
 
@@ -673,7 +682,8 @@ characters={
 				small = "GFX_idea_georgy_zhukov"
 			}
 		}	
-	}	
+	}
+	
 	POK_Zolotov = {
 		name = "Виктор Золотов"
 
@@ -1007,7 +1017,7 @@ characters={
         	logistics_skill = 1
 			legacy_id = 0
 			visible = {		
-			has_completed_focus = POK_radical_decommunisation
+			has_completed_focus = POK_ally_loyal_monarchists
 		    }
 		}       		
 	}
