@@ -514,12 +514,10 @@ ideas = {
 			removal_cost = -1
 			
             modifier = {
-			encryption_factor = 0.05
-			decryption_factor = 0.1
-			enemy_operative_detection_chance = 10
-			
+				encryption_factor = 0.05
+				decryption_factor = 0.1
+				enemy_operative_detection_chance = 0.05
 			}
-			
 		}
    }
    
