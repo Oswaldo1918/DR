@@ -1134,6 +1134,11 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 2 y = 11 }
 		}
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -1 y = 11 }
+		}
 		
 		desc = "JET_ENGINES_SPECIAL"
 
@@ -1196,7 +1201,45 @@ technologies = {
 			nuclear
 		}
 		
-
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					if = {
+						limit = {
+							check_variable = { global.atomic_research_race < 3 }
+						}
+						add_to_variable = { global.atomic_research_race = 1 }
+						if = {
+							limit = {
+								original_tag = ITA
+								NOT = { has_country_flag = ITA_pioneer_in_atomic_research_flag }
+							}
+							set_country_flag = ITA_pioneer_in_atomic_research_flag
+						}
+						else_if = {
+							limit = {
+								check_variable = { global.atomic_research_race = 3 }
+								NOT = {
+									any_country = {
+										original_tag = ITA
+										has_country_flag = ITA_pioneer_in_atomic_research_flag
+									}
+								}
+							}
+							random_country = {
+								limit = {
+									original_tag = ITA
+								}
+								set_country_flag = ITA_late_to_the_atomic_party_flag
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	nuclear_reactor = {
