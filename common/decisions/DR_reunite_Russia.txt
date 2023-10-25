@@ -5,7 +5,7 @@ DR_form_russian_state_decisions_category = {
 
 		visible = {
 			has_government = vmestolev
-			original_tag = LAZ
+			tag = LAZ
 		}
 		
 		available = {
@@ -41,7 +41,7 @@ DR_form_russian_state_decisions_category = {
 		
 		visible = {
 			has_government = vmestolev
-			original_tag = SKT
+			tag = SKT
 		}
 		
 		available = {
@@ -76,7 +76,7 @@ DR_form_russian_state_decisions_category = {
 		cost = 25
 		
 		allowed = {
-			original_tag = BSH
+			tag = BSH
 			BSH = { 
 				has_government = memoism 
 			}
@@ -114,7 +114,7 @@ DR_form_russian_state_decisions_category = {
 		cost = 25
 		
 		allowed = {
-			original_tag = BSH
+			tag = BSH
 			BSH = { 
 				has_government = memoism 
 			}
@@ -151,7 +151,7 @@ DR_form_russian_state_decisions_category = {
 		cost = 25
 		
 		allowed = {
-			original_tag = BSH
+			tag = BSH
 			BSH = { 
 				has_government = memoism 
 			}
@@ -186,7 +186,7 @@ DR_form_russian_state_decisions_category = {
 		cost = 25
 			
 		allowed = {
-			original_tag = NOD
+			tag = NOD
 			NOD = {
 				has_government = fascism 
 			}
@@ -230,7 +230,7 @@ DR_form_russian_state_decisions_category = {
         icon = decision_eng_install_government		
 		cost = 25
 		allowed = {
-			original_tag = NOD
+			tag = NOD
 			NOD = {
 				has_government = fascism 
 			}
@@ -268,7 +268,7 @@ DR_form_russian_state_decisions_category = {
         icon = decision_eng_install_government		
 		cost = 25
 		allowed = {
-			original_tag = NOD
+			tag = NOD
 		}
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia	
@@ -302,7 +302,7 @@ DR_form_russian_state_decisions_category = {
 		cost = 30
 		
 		allowed = {
-			original_tag = DOT
+			tag = DOT
 		}
 		
 		available = {
@@ -332,7 +332,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		allowed = {
-			original_tag = ZNS
+			tag = ZNS
 		}
 		
 		visible = {
@@ -405,7 +405,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = EBN
+				tag = EBN
 			}
 			has_war = no 
 			is_neighbor_of = EBN
@@ -437,7 +437,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MHL
+				tag = MHL
 			}
 			has_war = no 
 			is_neighbor_of = MHL
@@ -469,7 +469,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = ARK
+				tag = ARK
 			}
 			has_war = no 
 			is_neighbor_of = ARK
@@ -501,7 +501,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = TUP
+				tag = TUP
 			}
 			has_war = no 
 			is_neighbor_of = TUP
@@ -535,7 +535,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = LAZ
+				tag = LAZ
 			}
 			has_war = no 
 			is_neighbor_of = LAZ
@@ -567,7 +567,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = OSV
+				tag = OSV
 			}
 			has_war = no 
 			is_neighbor_of = OSV
@@ -599,7 +599,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MAT
+				tag = MAT
 			}
 			has_war = no 
 			is_neighbor_of = MAT
@@ -631,7 +631,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = UNT
+				tag = UNT
 			}
 			has_war = no 
 			is_neighbor_of = UNT
@@ -667,13 +667,13 @@ DR_reunite_russia_decisions_category = {
 			has_war = no 
 			NOT = {
 				OR = {
-					original_tag = CHT
-					original_tag = CDR
-					original_tag = DRC
-					original_tag = CCO
-					original_tag = DGC
-					original_tag = CVT
-					original_tag = VTC
+					tag = CHT
+					tag = CDR
+					tag = DRC
+					tag = CCO
+					tag = DGC
+					tag = CVT
+					tag = VTC
 				}
 			}
 			OR = {
@@ -765,7 +765,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = NOD
+				tag = NOD
 			}
 			has_war = no 
 			is_neighbor_of = NOD
@@ -797,7 +797,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KRR
+				tag = KRR
 			}
 			has_war = no 
 			is_neighbor_of = KRR
@@ -829,7 +829,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = STR
+				tag = STR
 			}
 			has_war = no 
 			is_neighbor_of = STR
@@ -861,7 +861,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = HAZ
+				tag = HAZ
 			}
 			has_war = no 
 			is_neighbor_of = HAZ
@@ -895,7 +895,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = SKT
+				tag = SKT
 			}
 			has_war = no 
 			is_neighbor_of = SKT
@@ -927,7 +927,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = PRM
+				tag = PRM
 			}
 			has_war = no 
 			is_neighbor_of = PRM
@@ -959,7 +959,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = BSH
+				tag = BSH
 			}
 			has_war = no 
 			is_neighbor_of = BSH
@@ -993,13 +993,13 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = POK
-				original_tag = MGN
-				original_tag = OMS
-				original_tag = GAL
-				original_tag = YSK
-				original_tag = ZNS
-				original_tag = MRD
+				tag = POK
+				tag = MGN
+				tag = OMS
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
 			}
 			has_war = no 
 			OR = {
@@ -1075,7 +1075,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = POK
+				tag = POK
 			}
 			has_war = no 
 			is_neighbor_of = POK
@@ -1108,7 +1108,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MGN
+				tag = MGN
 			}
 			has_war = no 
 			is_neighbor_of = MGN
@@ -1141,7 +1141,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = OMS
+				tag = OMS
 			}
 			has_war = no 
 			is_neighbor_of = OMS
@@ -1174,7 +1174,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = YSK
+				tag = YSK
 			}
 			has_war = no 
 			is_neighbor_of = YSK
@@ -1207,7 +1207,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = ZNS
+				tag = ZNS
 			}
 			has_war = no 
 			is_neighbor_of = ZNS
@@ -1240,7 +1240,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MRD
+				tag = MRD
 			}
 			has_war = no 
 			is_neighbor_of = MRD
@@ -1275,7 +1275,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = BRT
+				tag = BRT
 			}
 			has_war = no 
 			is_neighbor_of = BRT
@@ -1307,7 +1307,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = YAK
+				tag = YAK
 			}
 			has_war = no 
 			is_neighbor_of = YAK
@@ -1339,7 +1339,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = YWO
+				tag = YWO
 			}
 			has_war = no 
 			is_neighbor_of = YWO
@@ -1371,7 +1371,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = TUB
+				tag = TUB
 			}
 			has_war = no 
 			is_neighbor_of = TUB
@@ -1403,7 +1403,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MAG
+				tag = MAG
 			}
 			has_war = no 
 			is_neighbor_of = MAG
@@ -1435,7 +1435,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KOL
+				tag = KOL
 			}
 			has_war = no 
 			is_neighbor_of = KOL
@@ -1467,7 +1467,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = DOT
+				tag = DOT
 			}
 			has_war = no 
 			is_neighbor_of = DOT
@@ -1502,7 +1502,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = LIM
+				tag = LIM
 			}
 			has_war = no 
 			is_neighbor_of = LIM
@@ -1512,8 +1512,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = LOM
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1540,7 +1540,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KAZ
+				tag = KAZ
 			}
 			has_war = no 
 			is_neighbor_of = KAZ
@@ -1550,8 +1550,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = KAZ
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1578,7 +1578,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = TAJ
+				tag = TAJ
 			}
 			has_war = no 
 			is_neighbor_of = TAJ
@@ -1588,8 +1588,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = TAJ
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1616,7 +1616,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KYR
+				tag = KYR
 			}
 			has_war = no 
 			is_neighbor_of = KYR
@@ -1626,8 +1626,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = KYR
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1654,7 +1654,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = TMS
+				tag = TMS
 			}
 			has_war = no 
 			is_neighbor_of = TMS
@@ -1664,8 +1664,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = TMS
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1694,7 +1694,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = CHK
+				tag = CHK
 			}
 			has_war = no 
 			is_neighbor_of = CHK
@@ -1704,8 +1704,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = CHK
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1732,7 +1732,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = AZR
+				tag = AZR
 			}
 			has_war = no 
 			is_neighbor_of = AZR
@@ -1742,8 +1742,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = AZR
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1770,7 +1770,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = GEO
+				tag = GEO
 			}
 			has_war = no 
 			is_neighbor_of = GEO
@@ -1780,8 +1780,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = GEO
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1808,7 +1808,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = ARM
+				tag = ARM
 			}
 			has_war = no 
 			is_neighbor_of = ARM
@@ -1818,8 +1818,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = ARM
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1848,7 +1848,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = CRI
+				tag = CRI
 			}
 			has_war = no 
 			is_neighbor_of = CRI
@@ -1858,8 +1858,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = CRI
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1886,7 +1886,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = DON
+				tag = DON
 			}
 			has_war = no 
 			is_neighbor_of = DON
@@ -1896,8 +1896,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = DON
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1926,7 +1926,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = UKR
+				tag = UKR
 			}
 			has_war = no 
 			is_neighbor_of = UKR
@@ -1936,8 +1936,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = UKR
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -1964,7 +1964,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = CHE
+				tag = CHE
 			}
 			has_war = no 
 			is_neighbor_of = CHE
@@ -1974,8 +1974,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = CHE
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2002,7 +2002,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KUR
+				tag = KUR
 			}
 			has_war = no 
 			is_neighbor_of = KUR
@@ -2012,8 +2012,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = KUR
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2040,7 +2040,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = SIN
+				tag = SIN
 			}
 			has_war = no 
 			is_neighbor_of = SIN
@@ -2050,8 +2050,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = SIN
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2078,7 +2078,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = ZHE
+				tag = ZHE
 			}
 			has_war = no 
 			is_neighbor_of = ZHE
@@ -2088,8 +2088,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = ZHE
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2118,7 +2118,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = MLD
+				tag = MLD
 			}
 			has_war = no 
 			is_neighbor_of = MLD
@@ -2128,8 +2128,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = MLD
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2158,7 +2158,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = WHS
+				tag = WHS
 			}
 			has_war = no 
 			is_neighbor_of = WHS
@@ -2168,8 +2168,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = WHS
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2196,7 +2196,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = ZWN
+				tag = ZWN
 			}
 			has_war = no 
 			is_neighbor_of = ZWN
@@ -2206,8 +2206,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = ZWN
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2236,7 +2236,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = SPL
+				tag = SPL
 			}
 			has_war = no 
 			is_neighbor_of = SPL
@@ -2246,8 +2246,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = SPL
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2274,7 +2274,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = VSB
+				tag = VSB
 			}
 			has_war = no 
 			is_neighbor_of = VSB
@@ -2284,8 +2284,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = VSB
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2314,7 +2314,7 @@ DR_reunite_russia_decisions_category = {
 
 		available = {
 			NOT = {
-				original_tag = KLG
+				tag = KLG
 			}
 			has_war = no 
 			is_neighbor_of = KLG
@@ -2324,8 +2324,8 @@ DR_reunite_russia_decisions_category = {
 			country_exists = KLG
 			NOT = {
 				OR = {
-					original_tag = DOT
-					original_tag = BSH
+					tag = DOT
+					tag = BSH
 				}
 			}
 		}
@@ -2360,7 +2360,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = EBN
+				tag = EBN
 			}
 		}
 		
@@ -2389,7 +2389,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = MHL
+				tag = MHL
 			}
 		}
 		
@@ -2418,7 +2418,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = ARK
+				tag = ARK
 			}
 		}
 		
@@ -2453,7 +2453,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = TUP
+				tag = TUP
 			}
 		}
 		
@@ -2493,8 +2493,8 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = LAZ
-				original_tag = OSV
+				tag = LAZ
+				tag = OSV
 			}
 		}
 		
@@ -2539,7 +2539,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = MAT
+				tag = MAT
 			}
 		}
 		
@@ -2572,7 +2572,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = UNT
+				tag = UNT
 			}
 		}
 		
@@ -2603,7 +2603,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = CHT
+				tag = CHT
 			}
 		}
 		
@@ -2646,7 +2646,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = NOD
+				tag = NOD
 			}
 		}
 		
@@ -2677,12 +2677,12 @@ DR_core_russian_territories_decisions_category = {
 			if = {
 				limit = {
 					OR = {
-						original_tag = LAZ
-						original_tag = MAT
-						original_tag = SKT
-						original_tag = MGN
-						original_tag = MRD
-						original_tag = ZNS						
+						tag = LAZ
+						tag = MAT
+						tag = SKT
+						tag = MGN
+						tag = MRD
+						tag = ZNS						
 					}
 				}
 				set_province_name = { id = 3529 name = "Сталинград" }
@@ -2698,7 +2698,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = KRR
+				tag = KRR
 			}
 		}
 		
@@ -2729,7 +2729,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = STR
+				tag = STR
 			}
 		}
 		
@@ -2756,7 +2756,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = HAZ
+				tag = HAZ
 			}
 		}
 		
@@ -2785,7 +2785,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = SKT
+				tag = SKT
 			}
 		}
 		
@@ -2816,7 +2816,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = PRM
+				tag = PRM
 			}
 		}
 		
@@ -2843,7 +2843,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = BSH
+				tag = BSH
 			}
 		}
 		
@@ -2873,13 +2873,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -2913,13 +2913,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -2950,13 +2950,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -2989,13 +2989,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -3026,13 +3026,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -3065,13 +3065,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -3104,13 +3104,13 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				OR = {
-					original_tag = POK
-					original_tag = MGN
-					original_tag = OMS
-					original_tag = GAL
-					original_tag = YSK
-					original_tag = ZNS
-					original_tag = MRD
+					tag = POK
+					tag = MGN
+					tag = OMS
+					tag = GAL
+					tag = YSK
+					tag = ZNS
+					tag = MRD
 				}
 			}
 		}
@@ -3148,7 +3148,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = BUR
+				tag = BUR
 			}
 		}
 		
@@ -3181,7 +3181,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = YWO
+				tag = YWO
 			}
 		}
 	
@@ -3212,7 +3212,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = YAK
+				tag = YAK
 			}
 		}
 	
@@ -3243,7 +3243,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = TUB
+				tag = TUB
 			}
 		}
 	
@@ -3276,7 +3276,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = MAG
+				tag = MAG
 			}
 		}
 	
@@ -3305,7 +3305,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = KOL
+				tag = KOL
 			}
 		}
 	
@@ -3334,7 +3334,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = DOT
+				tag = DOT
 			}
 		}
 	
@@ -3365,7 +3365,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = LIM
+				tag = LIM
 			}
 		}
 	
@@ -3398,7 +3398,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = KAZ
+				tag = KAZ
 			}
 		}
 	
@@ -3437,7 +3437,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = KYR
+				tag = KYR
 			}
 		}
 		
@@ -3464,7 +3464,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = TAJ
+				tag = TAJ
 			}
 		}
 
@@ -3501,7 +3501,7 @@ DR_core_russian_territories_decisions_category = {
 	
 		visible = {
 			NOT = {
-				original_tag = TAJ
+				tag = TAJ
 			}
 		}
 	
@@ -3530,7 +3530,7 @@ DR_core_russian_territories_decisions_category = {
 	
 		visible = {
 			NOT = {
-				original_tag = CHK
+				tag = CHK
 			}
 		}
 		
@@ -3561,7 +3561,7 @@ DR_core_russian_territories_decisions_category = {
 
 		visible = {
 			NOT = {
-				original_tag = AZR
+				tag = AZR
 			}
 		}
 		
@@ -3588,7 +3588,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = ARM
+				tag = ARM
 			}
 		}
 		
@@ -3615,7 +3615,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = GEO
+				tag = GEO
 			}
 		}
 		
@@ -3650,7 +3650,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = DON
+				tag = DON
 			}
 		}
 		
@@ -3679,7 +3679,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = UKR
+				tag = UKR
 			}
 		}
 		
@@ -3710,7 +3710,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = CRI
+				tag = CRI
 			}
 		}
 		
@@ -3737,7 +3737,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = CHE
+				tag = CHE
 			}
 		}
 		
@@ -3770,7 +3770,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = MOL
+				tag = MOL
 			}
 		}
 		
@@ -3802,7 +3802,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = KUR
+				tag = KUR
 			}
 		}
 		
@@ -3841,7 +3841,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = ZHE
+				tag = ZHE
 			}
 		}
 		
@@ -3875,7 +3875,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = SIN
+				tag = SIN
 			}
 		}
 		
@@ -3902,7 +3902,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = WHS
+				tag = WHS
 			}
 		}
 		
@@ -3937,7 +3937,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = ZWN
+				tag = ZWN
 			}
 		}
 		
@@ -3968,7 +3968,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = SPL
+				tag = SPL
 			}
 		}
 		
@@ -4009,7 +4009,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = VSB
+				tag = VSB
 			}
 		}
 		
@@ -4050,7 +4050,7 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
-				original_tag = KAL
+				tag = KAL
 			}
 		}
 		
