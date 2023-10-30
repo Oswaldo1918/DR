@@ -24,7 +24,6 @@ replace_path="common/peace_conference/categories"
 replace_path="common/peace_conference/cost_modifiers"
 replace_path="events"
 replace_path="gfx/loadingscreens"
-
 replace_path="map"
 replace_path="map/strategicregions"
 name="Docreich: Ural's Karapuzi"
