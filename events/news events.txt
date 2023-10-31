@@ -184,63 +184,65 @@ news_event = {
 	
 	major = yes
 	
+	fire_only_once = yes
+	
 	trigger = {
         date = 4.5.5
 	}
 	
-	is_triggered_only = yes
-	
 	option = { #ЭТО_ШЕДЕВР
 		name = dk_news.8.a
+		add_stability = 0.05
 		trigger = {
 			OR = {	
 				has_government = neutrality
 				has_government = democratic	
 			}
-			add_stability = 0.05
 		}
 	}
 	option = { #ЭТО_РУСОФОБСКАЯ_ПРОПАГАНДА
 		name = dk_news.8.b
+		add_political_power = 25
 		trigger = {
+			NOT = { tag = ZZZ }
 			OR = {
 				has_government = neutrality	
 				has_government = fascism
 			}
-			add_political_power = 25
 		}
 	}
 	option = { #ТУПОЕ_ГОВНО_ТУПОГО_ГОВНА
 		name = dk_news.8.c
+		add_political_power = 25
 		trigger = {
 			OR = {
 				has_government = metacommy
 				has_government = anarhostalinism
+				has_government = memoism
 			}
-			add_political_power = 25
 		}
 	}
 	option = { #ОЧЕРЕДНАЯ_АНТИСОВЕТЧИНА
 		name = dk_news.8.e
+		add_political_power = 25
 		trigger = {
 			OR = {
 				has_government = anarhostalinism
 				has_government = metacommy
 				has_government = vmestolev
 			}
-			add_political_power = 25
 		}
 	}
 	option = { #Начинаем_форс
 		name = dk_news.8.f
+		add_popularity = {
+			ideology = memoism
+			popularity = 0.05
+		}
 		trigger = {
 			NOT = { tag = ZZZ }
 			OR = {
 				has_government = memoism
-			}
-			add_popularity = {
-				ideology = memoism
-				popularity = 0.05
 			}
 		}
 	}
@@ -309,8 +311,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = NOD }
 		}
-	set_country_flag = NOD_Starikov_reunite_russia_kostil
-	country_event = { days = 1 id = super.7}
+		set_country_flag = NOD_Starikov_reunite_russia_kostil
+		country_event = { days = 1 id = super.7}
 	}
 }
 
@@ -424,7 +426,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = dk_news.15.a
+		name = dk_news.15.a
 	}
 }
 news_event = {
@@ -438,7 +440,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = dk_news.16.a
+		name = dk_news.16.a
 	}
 }
 news_event = {
@@ -465,8 +467,8 @@ news_event = {
 		trigger = { 
 			NOT = { original_tag = DOT }
 		}
-	set_country_flag = LAZ_reunite_russia_kostil
-	country_event = { days = 1 id = super.4}
+		set_country_flag = LAZ_reunite_russia_kostil
+		country_event = { days = 1 id = super.4}
 	}
 }
 news_event = {
@@ -669,7 +671,7 @@ news_event = { #война_на_ближнем_востоке
     id = dk_news.31
 	title = dk_news.31.t
 	desc = dk_news.31.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_042
 	
 	major = yes
 	
@@ -691,5 +693,123 @@ news_event = { #война_за_дом_советов
 	
 	option = {
 		name = dk_news.32.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_ВЛМ
+    id = dk_news.33
+	title = dk_news.33.t
+	desc = dk_news.33.d
+	picture = GFX_news_event_DKR_FEW_DOT_AS_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.33.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_ДВО
+    id = dk_news.34
+	title = dk_news.34.t
+	desc = dk_news.34.d
+	picture = GFX_news_event_DKR_FEW_DOT_DVO_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.34.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_Воваааана
+    id = dk_news.35
+	title = dk_news.35.t
+	desc = dk_news.35.d
+	picture = GFX_news_event_DKR_FEW_DOT_Vovaaan_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.35.a
+	}
+	option = {
+		name = dk_news.35.b
+		trigger = {
+			tag = LAZ
+		}
+	}
+}
+news_event = { #Дальневосточная_война_победа_Дудя
+    id = dk_news.36
+	title = dk_news.36.t
+	desc = dk_news.36.d
+	picture = GFX_news_event_DKR_FEW_KOL_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.36.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_Магадана
+    id = dk_news.37
+	title = dk_news.37.t
+	desc = dk_news.37.d
+	picture = GFX_news_event_DKR_FEW_MAG_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.37.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_Тубуса
+    id = dk_news.38
+	title = dk_news.38.t
+	desc = dk_news.38.d
+	picture = GFX_news_event_DKR_FEW_TUB_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.38.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_Якутии
+    id = dk_news.39
+	title = dk_news.39.t
+	desc = dk_news.39.d
+	picture = GFX_news_event_DKR_FEW_YAK_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.39.a
+	}
+}
+news_event = { #Дальневосточная_война_победа_Ауфов
+    id = dk_news.40
+	title = dk_news.40.t
+	desc = dk_news.40.d
+	picture = GFX_news_event_DKR_FEW_YWO_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.40.a
 	}
 }

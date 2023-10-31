@@ -1,0 +1,1431 @@
+DR_form_russian_far_east_state_decisions_category = {
+
+	###Объединение_Российского_Дальнего_Востока
+
+	DR_FEW_obyedinenie_DV = {
+		available = {
+			controls_state = 637
+			controls_state = 555
+			controls_state = 875
+			controls_state = 644
+			controls_state = 822
+			controls_state = 874
+		    controls_state = 562
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+			controls_state = 560
+			controls_state = 561
+			controls_state = 657
+			controls_state = 408
+			controls_state = 409
+			controls_state = 655
+			controls_state = 537
+			controls_state = 566
+			controls_state = 564
+			controls_state = 563
+			controls_state = 565
+			if = {
+				limit = {
+					tag = DOT
+				}
+				NOT = {
+					country_exists = KOL
+					country_exists = MAG
+					country_exists = YAK
+					country_exists = YWO
+					country_exists = TUB
+				}
+			}
+			else_if = {
+				limit = {
+					tag = KOL 
+				}
+				NOT = {
+					country_exists = DOT
+					country_exists = MAG
+					country_exists = YAK
+					country_exists = YWO
+					country_exists = TUB
+				}
+			}
+			else_if = {
+				limit = {
+					tag = MAG 
+				}
+				NOT = {
+					country_exists = DOT
+					country_exists = KOL
+					country_exists = YAK
+					country_exists = YWO
+					country_exists = TUB
+				}
+			}
+			else_if = {
+				limit = {
+					tag = YAK 
+				}
+				NOT = {
+					country_exists = DOT
+					country_exists = KOL
+					country_exists = MAG
+					country_exists = YWO
+					country_exists = TUB
+				}
+			}
+			else_if = {
+				limit = {
+					tag = YWO 
+				}
+				NOT = {
+					country_exists = DOT
+					country_exists = KOL
+					country_exists = MAG
+					country_exists = YAK
+					country_exists = TUB
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TUB 
+				}
+				NOT = {
+					country_exists = DOT
+					country_exists = KOL
+					country_exists = MAG
+					country_exists = YAK
+					country_exists = YWO
+				}
+			}
+			else = { 
+				###АШИБКА_СТОП_НОЛЬ_НОЛЬ_НОЛЬ_НОЛЬ_НОЛЬ_НОЛЬ
+			}
+		}
+		cost = 0
+		OR = {
+			tag = DOT
+			tag = KOL
+			tag = MAG
+			tag = YAK
+			tag = YWO
+			tag = TUB
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			add_political_power = 200
+		    swap_ruler_traits = { remove = pretindent_na_DV add = obedinitel_DV }
+			set_country_flag = DR_DF_unider_cf
+			if = {
+				limit = {
+					tag = DOT
+					has_government = anarhostalinism
+				}
+				news_event = {
+					id = dk_news.33
+				}
+			}
+			else_if = {
+				limit = {
+					tag = DOT
+					has_government = neutrality
+				}
+				news_event = {
+					id = dk_news.34
+				}
+			}
+			else_if = {
+				limit = {
+					tag = DOT
+					has_government = memoism
+				}
+				news_event = {
+					id = dk_news.35
+				}
+			}
+			else_if = {
+				limit = {
+					tag = KOL
+				}
+				news_event = {
+					id = dk_news.36
+				}
+			}
+			else_if = {
+				limit = {
+					tag = MAG
+				}
+				news_event = {
+					id = dk_news.37
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TUB
+				}
+				news_event = {
+					id = dk_news.38
+				}
+			}
+			else_if = {
+				limit = {
+					tag = YAK
+				}
+				news_event = {
+					id = dk_news.39
+				}
+			}
+			else_if = {
+				limit = {
+					tag = YWO
+				}
+				news_event = {
+					id = dk_news.40
+				}
+			}
+			else = {
+				###Ну_это_просто_постная_хуйня_какая-то
+			}
+		}
+	}
+
+	DR_FEW_declare_war_BRT = {
+	
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		available = {
+		    has_war = no
+			controls_state = 637
+			controls_state = 555
+			controls_state = 875
+			controls_state = 644
+			controls_state = 822
+			controls_state = 874
+		    controls_state = 562
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+			controls_state = 560
+			controls_state = 561
+			controls_state = 657
+			controls_state = 408
+			controls_state = 409
+			controls_state = 655
+			controls_state = 537
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			create_wargoal = {
+				target = BRT
+				type = annex_everything
+            }
+		}
+	}
+	
+	###Взаимодействие_с_армией_миром_и_обществом
+	
+	DR_FEW_pooshreniye_immigratsii = {
+	
+		cost = 50
+		days_re_enable = 100
+		days_remove = 35
+
+		available = {
+		    has_war = yes
+			NOT = {
+				OR = {
+					has_idea = MAG_sezd_vorov_DV
+					has_idea = KOL_help_ot_Pok
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = 2500
+			stability_weekly = 0.0025
+		}
+	}
+	
+	DR_FEW_create_guard_reigments = {
+	
+		cost = 25
+		days_re_enable = 365
+		days_remove = 14
+
+		available = {
+		    has_war = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = 100
+		}
+		remove_effect = {
+			division_template = {
+				name = "Гвардейская стрелковая дивизия"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					artillery_brigade = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+				}
+				priority = 1
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Гвардейская стрелковая дивизия\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+					count = 1
+				}
+			}
+		}
+	}
+	
+	DR_podgotovit_desantniye_suda = {
+	
+		cost = 15
+		days_remove = 7
+		fire_only_once = yes
+		available = {
+			date < 4.01.01
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = -10	
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					mtg_transport = 1
+				}
+				else = {
+					set_technology = {
+						transport = 1
+					}
+				}
+			}
+		}
+	}
+	
+	###Рожание_флота
+	
+	DR_FEW_conversiya_grazhdanskih_sudov = {
+		cost = 50
+		days_remove = 7
+		fire_only_once = yes
+		available = {
+			date < 4.01.01
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			stability_weekly = -0.0025	
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag }
+					}			
+					set_country_flag = refit_to_destroyer_flag
+	
+					create_equipment_variant = {	
+						name = "Перевооруженный эсминец" 		
+						type = ship_hull_light_1
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = empty
+						}
+						obsolete = yes
+					}
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Перевооруженный эсминец"
+					creator = ROOT
+					name = "Защеканец"
+				}
+			}
+			#NO MTG
+			else = {
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag }
+					}			
+					set_country_flag = refit_to_destroyer_flag
+
+					create_equipment_variant = {
+						name = "Перевооруженный эсминец"
+						type = destroyer_1
+						upgrades = {
+							ship_torpedo_upgrade = 0
+							destroyer_engine_upgrade = 0
+							ship_ASW_upgrade = 0
+							ship_anti_air_upgrade = 0
+						}
+						obsolete = yes
+					}
+				}
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Перевооруженный эсминец"
+					creator = ROOT
+					name = "Защеканец"
+				}		
+			}
+		}
+	}
+	
+	#Морские_вторжения
+	
+	DR_ustroit_morskoye_vtorzheniye_na_sever = {
+	
+		cost = 15
+		days_remove = 35
+		fire_only_once = yes
+		
+		available = {
+			date > 4.12.01
+			controls_state = 560
+			controls_state = 561
+			controls_state = 657
+			controls_state = 408
+			controls_state = 409
+			controls_state = 655
+			controls_state = 537
+			NOT = {
+				controls_state = 637
+				controls_state = 555
+				controls_state = 875
+				controls_state = 644
+				controls_state = 822
+				controls_state = 874
+				controls_state = 562
+				controls_state = 574
+				controls_state = 876
+				controls_state = 877
+			}
+		}
+		visible = {
+			OR = {
+				tag = YAK
+				tag = TUB
+				tag = YWO
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			load_oob = DR_FEW_invasion_on_north
+		}
+	}
+	DR_ustroit_morskoye_vtorzheniye_na_yug = {
+	
+		cost = 15
+		days_remove = 35
+		fire_only_once = yes
+		
+		available = {
+			date > 4.06.01
+			controls_state = 637
+			controls_state = 555
+			controls_state = 875
+			controls_state = 644
+			controls_state = 822
+			controls_state = 874
+		    controls_state = 562
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+			NOT = {
+				controls_state = 560
+				controls_state = 561
+				controls_state = 657
+				controls_state = 408
+				controls_state = 409
+				controls_state = 655
+				controls_state = 537
+			}
+		}
+		visible = {
+			OR = {
+				tag = YAK
+				tag = MAG
+				tag = KOL
+				tag = DOT
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			load_oob = DR_FEW_invasion_on_south
+		}
+	}
+	
+	###Железные_дороги
+	
+	DR_FEW_railroad_building_Yakutsk_Magadan = {
+		
+		cost = 100
+		days_remove = 50
+		fire_only_once = yes
+		
+		available = {
+		    has_war = yes
+			controls_state = 574
+			controls_state = 562
+			controls_state = 874
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = -10
+			stability_weekly = -0.0025
+			political_power_gain = -0.005	
+		}
+		remove_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = no
+				path = { 10641 10701 12623 1714 12518 12551 12683 }
+			}
+		}
+	}
+	DR_FEW_railroad_building_Magadan_Severokolymsk = {
+		
+		cost = 100
+		days_remove = 50
+		fire_only_once = yes
+		
+		available = {
+		    has_war = yes
+			controls_state = 574
+			controls_state = 877
+			controls_state = 644
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = -10
+			stability_weekly = -0.0025
+			political_power_gain = -0.005	
+		}
+		remove_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = no
+				path = { 12683 1865 12592 1819 }
+			}
+		}
+	}
+	DR_FEW_railroad_building_Yakutsk_Severokolymsk = {
+		
+		cost = 200
+		days_remove = 50
+		fire_only_once = yes
+		
+		available = {
+		    has_war = yes
+			controls_state = 644
+			controls_state = 874
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = -10
+			stability_weekly = -0.0025
+			political_power_gain = -0.005	
+		}
+		remove_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = no
+				path = { 10641 4878 1745 2877 12549 4006 1819 }
+			}
+		}
+	}
+	DR_FEW_railroad_building_Petropavlovsk_Severokolymsk = {
+		
+		cost = 200
+		days_remove = 50
+		fire_only_once = yes
+		
+		available = {
+		    has_war = yes
+			controls_state = 637
+			controls_state = 822
+			controls_state = 644
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			weekly_manpower = -10
+			stability_weekly = -0.0025
+			political_power_gain = -0.005	
+		}
+		remove_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = no
+				path = { 1819 13062 4744 1823 1839 7878 }
+			}
+		}
+	}
+	
+	###Уникальные_Хунтерские
+	
+    DR_FEW_DOT_svyaz_s_moskvoi = {
+	
+		cost = 25
+		
+		visible = {
+			tag = DOT
+		}
+		
+		available = {
+		    has_war = yes   
+			has_completed_focus = DOT_ochistit_huntu_ot_rakov
+			has_tech = radio
+			LAZ = {
+				exists = yes
+				has_government = vmestolev
+				has_war = no
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 7
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			LAZ = { country_event = Kamchatka.2 } 
+		}	
+	}
+    DR_FEW_DOT_vydat_soldatam_rocet_toplivo = { 
+	
+		cost = 25
+		
+		visible = {
+			tag = DOT
+		}
+		
+		available = {
+		    has_war = yes   
+		    OR = { 
+	            has_completed_focus = DOT_soldatskaya_massa 
+	            has_completed_focus = DOT_odna_semya
+	        }
+		}
+		
+		days_re_enable = 30
+		days_remove = 7
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_bystrye_soldaty
+				days = 20
+			}	
+		}	
+	}
+	DR_FEW_DOT_vydat_soldatam_doter_sapogi = { 
+	
+		cost = 20
+		
+		visible = {
+			tag = DOT
+		}
+		
+		available = {
+		    has_war = yes 
+		    has_completed_focus = DOT_ochistit_huntu_ot_rakov        			
+		}
+		
+		days_re_enable = 30
+		days_remove = 7
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_soldaty_v_sapogah
+				days = 20
+			}	
+		}	
+	}
+	DR_FEW_DOT_vydat_soldatskie_100_gramm = { 
+	
+		cost = 20
+		
+		visible = {
+			tag = DOT
+		}
+		
+		available = {
+            has_war = yes      		
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = DOT_soldatskie_100_gramm
+				days = 20
+			}	
+		}	
+	}
+	
+	###Уникальные_Дудевские
+	
+    DR_FEW_KOL_pokayanskiy_lend_liz = { 
+	
+		cost = 100
+		
+		visible = {
+			tag = KOL
+		}
+		
+		available = {
+			tag = KOL
+		    has_war = yes
+			POK = { has_war = no }
+		}
+		
+		days_re_enable = 180
+		days_remove = 25
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ЗЩЛ
+			}
+		}	
+	}	
+	
+	###Уникальные_Воровские
+	
+    DR_FEW_MAG_raskidiyaniye_myla = { 
+	
+		cost = 20
+
+		visible = {
+			tag = MAG
+		}
+
+		available = {
+			tag = MAG
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 90
+		days_remove = 30
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			army_defence_factor = 0.15
+			dig_in_speed_factor = 0.2
+		}
+	}
+
+    DR_FEW_MAG_kustarniye_podelki = { 
+	
+		cost = 20
+
+		visible = {
+			tag = MAG
+		}
+
+		available = {
+			tag = MAG
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			production_lack_of_resource_penalty_factor = -1
+		}
+	}
+	
+    DR_FEW_MAG_vorovskie_prikoly = { 
+	
+		cost = 20
+
+		visible = {
+			tag = MAG
+		}
+
+		available = {
+			tag = MAG
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 70
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			army_speed_factor = 0.50
+			army_attack_factor = 0.25
+			consumer_goods_factor = 0.05
+		}
+	}
+
+	###Уникальные_Шаманские
+	
+    DR_FEW_YAK_pomozh_shamanov = { 
+	
+		cost = 20
+
+		visible = {
+			tag = YAK
+		}
+
+		available = {
+			tag = YAK
+		    has_war = yes        			
+		}
+		
+		days_re_enable = 30
+		
+		#days_remove = 3
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_timed_idea = {
+				idea = YAK_shamanskie_focusy
+				days = 20
+			}	
+		}	
+	}
+	
+	###Уникальные_Ауфные
+	
+    DR_FEW_YWO_umeret_na_nogah = {
+	
+		cost = 20
+
+		visible = {
+			tag = YWO
+		}
+
+		available = {
+			tag = YWO
+		    has_war = yes
+		}
+		
+		days_re_enable = 30
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			surrender_limit = 0.1
+			army_defence_factor = 0.15
+		}	
+	}
+	
+    DR_FEW_YWO_patsanskaya_lubov = {
+	
+		cost = 20
+
+		visible = {
+			tag = YWO
+		}
+
+		available = {
+			tag = YWO
+		    has_war = yes
+		}
+		
+		days_re_enable = 30
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			monthly_population = 1
+			weekly_manpower = 100
+		}	
+	}
+	
+	DR_FEW_YWO_valim = {
+	
+		cost = 20
+
+		visible = {
+			tag = YWO
+		}
+
+		available = {
+			tag = YWO
+		    has_war = yes
+		}
+		
+		days_re_enable = 30
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			army_speed_factor = 0.75
+			army_attack_factor = 0.05
+		}	
+	}
+	
+	###Уникальные_Тубусовские
+	
+    DR_FEW_TUB_ne_grustit = {
+	
+		cost = 20
+
+		visible = {
+			tag = YWO
+		}
+
+		available = {
+			tag = YWO
+		    has_war = yes
+		}
+		
+		days_re_enable = 30
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			army_org_regain = 0.25
+		}	
+	}
+	
+	###Национализация
+	
+	DR_FEW_core_Kamchatka = { 	#Камчатка
+		
+		visible = {
+			NOT = {
+				tag = DOT
+			}
+		}
+		
+        available = {
+            OR = {
+	            controls_state = 637
+			    controls_state = 555
+			    controls_state = 875
+		    }
+        }
+		
+		on_map_area = {
+			state = 637 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+        remove_effect = {
+			add_state_core = 637
+			add_state_core = 555
+			add_state_core = 875				 
+		}
+	}
+	
+	DR_FEW_core_Kolima = { 	#Колыма
+		
+		visible = {
+			NOT = {
+				tag = KOL
+			}
+		}
+		
+        available = {
+			controls_state = 644
+			controls_state = 822
+        }
+		
+		on_map_area = {
+			state = 644 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 644
+			add_state_core = 822
+		}	
+	}
+	DR_FEW_core_Magadan = { 	#Магадан
+		
+		visible = {
+			NOT = {
+				tag = MAG
+			}
+		}
+		
+        available = {
+			controls_state = 874
+		    controls_state = 562
+        }
+		
+		on_map_area = {
+			state = 874 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 874
+			add_state_core = 562
+		}	
+	}
+	DR_FEW_core_Yakutiya = { 	#Якутия
+		
+		visible = {
+			NOT = {
+				tag = YAK
+			}
+		}
+		
+        available = {
+			controls_state = 574
+			controls_state = 876
+			controls_state = 877
+        }
+		
+		on_map_area = {
+			state = 574 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 574
+			add_state_core = 876
+			add_state_core = 877
+		}	
+	}
+	DR_FEW_core_Birobodzhan = {		#Биробиджан
+		
+		visible = {
+			NOT = {
+				tag = YWO
+			}
+		}
+		
+        available = {
+			controls_state = 560
+			controls_state = 561
+			controls_state = 657
+        }
+		
+		on_map_area = {
+			state = 657 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 560
+			add_state_core = 561
+			add_state_core = 657
+		}	
+	}
+	DR_FEW_core_Primorye = { #Приморье
+		
+		visible = {
+			NOT = {
+				tag = TUB
+			}
+		}
+		
+        available = {
+			controls_state = 408
+			controls_state = 409
+			controls_state = 655
+			controls_state = 537
+        }
+		
+		on_map_area = {
+			state = 408 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 408
+			add_state_core = 409
+			add_state_core = 655
+			add_state_core = 537
+		}				
+	}
+	DR_FEW_core_Zabaykalye = {		#Забайкалье
+		
+		visible = {
+			NOT = {
+				tag = BRT
+			}
+		}
+		
+        available = {
+			controls_state = 566
+			controls_state = 564
+			controls_state = 563
+			controls_state = 565
+        }
+		
+		on_map_area = {
+			state = 564 
+		}
+		
+        cost = 45
+		fire_only_once = yes
+		days_remove = 35
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+		}
+		
+		remove_effect = {
+			add_state_core = 566
+			add_state_core = 564
+			add_state_core = 563
+			add_state_core = 565
+		}	
+	}
+	
+	###Аннексия_костыльная
+	
+    DR_FEW_annex_DOT = {	#Камчатская_Хунта
+		
+		visible = {
+			NOT { 
+				tag = DOT
+			}
+		}
+		available = {
+			has_war_with = DOT
+			OR = {
+				controls_state = 637
+			}
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = DOT
+				transfer_troops = no
+			}
+		}
+	}
+    DR_FEW_annex_KOL = {	#Родина_нашего_страха
+
+		visible = {
+			NOT { 
+				tag = KOL
+			}
+		}
+		
+		available = {
+			has_war_with = KOL
+			KOL = { 
+				has_capitulated = yes
+			}
+			controls_state = 644
+			controls_state = 822
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = KOL
+				transfer_troops = no
+			}
+		}
+	}
+    DR_FEW_annex_MAG = {	#Арестантское_государство_Магадан
+	
+		visible = {
+			NOT { 
+				tag = MAG
+			}
+		}
+		
+		available = {
+			has_war_with = MAG
+			MAG = { 
+				has_capitulated = yes
+			}
+			controls_state = 874
+			controls_state = 562
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = MAG
+				transfer_troops = no
+			}
+		}
+	}
+    DR_FEW_annex_YAK = {	#Шаманство_Якутия
+	
+		visible = {
+			NOT { 
+				tag = YAK
+			}
+		}
+		
+		available = {
+			has_war_with = YAK
+			YAK = { 
+				has_capitulated = yes
+			}
+			OR = {
+				controls_state = 574
+				controls_state = 876
+				controls_state = 877
+			}
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = YAK
+				transfer_troops = no
+			}
+		}
+	}
+    DR_FEW_annex_YWO = {	#Разорители_цирков
+	
+		visible = {
+			NOT { 
+				tag = YWO
+			}
+		}
+		
+		available = {
+			has_war_with = YWO
+			YWO = { 
+				has_capitulated = yes
+			}
+			OR = {
+				controls_state = 560
+				controls_state = 561
+				controls_state = 657
+			}
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = YWO
+				transfer_troops = no
+			}
+		}
+	}
+    DR_FEW_annex_TUB = {	#Дальневосточная_республика
+	
+		visible = {
+			NOT { 
+				tag = TUB
+			}
+		}
+		
+		available = {
+			has_war_with = TUB
+			TUB = { 
+				has_capitulated = yes
+			}
+			controls_state = 408
+			controls_state = 409
+			controls_state = 655
+			controls_state = 537
+        }
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			annex_country = {
+				target = TUB
+				transfer_troops = no
+			}
+		}
+	}
+}

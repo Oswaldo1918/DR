@@ -14,15 +14,14 @@ focus_tree = {
 		cost = 1,00
 		x = 8
 		y = 0
-			completion_reward = {
-					add_political_power = 150
-					add_ideas = DOT_military_lives_matter
-					add_popularity = {
-							ideology = anarhostalinism
-							popularity = 0.4
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = DOT_military_lives_matter
+			add_popularity = {
+				ideology = anarhostalinism
+				popularity = 0.4
+			}
+		}
 	}
 	focus = {
 		id = DOT_srochnik_lives_matter
@@ -143,12 +142,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-			completion_reward = {
-					country_event = {
-							id = DOT.1
-						}
-				}
-
+		completion_reward = {
+			country_event = Kamchatka.1
+		}
 	}
 	focus = {
 		id = DOT_umniye_teammeiti
@@ -231,12 +227,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DOT_obyazatelnaya_sluzhba_v_doterskih_voiskah
 		}
+		available = {
+			has_war = no
+		}
 		x = 7
 		y = 6
-			completion_reward = {
-					add_ideas = volunteer_only
-				}
-
+		completion_reward = {
+			add_ideas = volunteer_only
+		}
 	}
 	focus = {
 		id = DOT_plata_za_cluzhbu
@@ -392,12 +390,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DOT_volontier_sluzba
 		}
+		available = {
+			has_war = no
+		}
 		x = 9
 		y = 6
-			completion_reward = {
-					add_ideas = extensive_conscription
-				}
-
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
 	}
 	focus = {
 		id = DOT_mobilizatsya_resursov

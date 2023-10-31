@@ -1,18 +1,44 @@
 capital = 637
 
 oob = DOT_1936
+if = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+	set_naval_oob = "DOT_naval_mtg"
+	else = {
+		set_naval_oob = "DOT_naval_legacy"
+	}
+}
 
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.9
+
 set_technology = {
+	#Сухопутные
+	infantry_weapons1 = 1
 	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-    marines = 1
-	tech_support = 1
 	basic_train = 1
+	fuel_silos = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+    marines = 1
+	paratroopers = 1
+	tech_support = 1
+	tech_recon = 1	
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	#Морские
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_torpedo = 1
 }
+starting_train_buffer = 3.0
+set_convoys = 40
 
 recruit_character = DOT_vovan
 recruit_character = DOT_soldatskiy_komitet
@@ -60,10 +86,6 @@ declare_war_on = {
 	target = YWO
 	type = annex_everything
 }
-declare_war_on = {
-	target = TUB
-	type = annex_everything
-}
 set_popularities = {
 	neutrality = 33
     anarhostalinism = 40
@@ -75,4 +97,33 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Malyutka"
+		type = ship_hull_submarine_2
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Barzha Yebanaya"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+}

@@ -1,0 +1,22 @@
+###############################
+  ### THE FAR EASTERN WAR ###
+###############################
+DR_form_russian_far_east_state_decisions_category = {
+	icon = military_operation
+	picture = GFX_decision_category_russian_far_east_picture
+	allowed = {
+		is_puppet = no
+		is_subject = no
+	}
+	visible = {
+		NOT = { has_country_flag = DR_DF_unider_cf }
+		OR = {
+			tag = DOT
+			tag = KOL
+			tag = MAG
+			tag = YAK
+			tag = YWO
+			tag = TUB
+		}	
+	}
+}

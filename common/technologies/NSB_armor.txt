@@ -2,8 +2,7 @@ technologies = {
 
 
 	@1 = 0
-	@1934 = 2
-	@1935 = 3
+	@2 = 2
 	@3 = 4
 	@4 = 5
 	@5 = 5
@@ -201,7 +200,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 2
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -1 y = 2 }
@@ -823,7 +822,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 2
 
 		folder = {
 			name = nsb_armour_folder
@@ -1074,7 +1073,7 @@ technologies = {
 		start_year = 3
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1935 }
+			position = { x = 3 y = @2 }
 		}
 
 		ai_will_do = {
@@ -1289,10 +1288,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1934
+		start_year = 2
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1935 }
+			position = { x = 2 y = @2 }
 		}
 
 		ai_will_do = {
