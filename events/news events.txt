@@ -1,7 +1,6 @@
 add_namespace = dk_news
 
-# Начало ГВ через выборы
-news_event = {
+news_event = { # Начало ГВ через выборы
     id = dk_news.1
 	title = dk_news.1.t
 	desc = dk_news.1.d
@@ -25,8 +24,7 @@ news_event = {
 	}
 
 }	
-# Начало ГВ через ВП
-news_event = {
+news_event = { # Начало ГВ через ВП
     id = dk_news.2
 	title = dk_news.2.t
 	desc = dk_news.2.d
@@ -50,8 +48,7 @@ news_event = {
 		}
 	}		
 }	
-# Победа Штазиста "оригинал" 
-news_event = {
+news_event = { # Победа Штазиста "оригинал" 
     id = dk_news.3
 	title = dk_news.3.t
 	desc = dk_news.3.d
@@ -75,8 +72,7 @@ news_event = {
 		}
 	}
 }
-# Победа Де Локсли 
-news_event = {
+news_event = { # Победа Де Локсли 
     id = dk_news.4
 	title = dk_news.4.t
 	desc = dk_news.4.d
@@ -100,8 +96,7 @@ news_event = {
 		}
 	}
 }
-# Победа Свидетеля
-news_event = {
+news_event = { # Победа Тележного
     id = dk_news.5
 	title = dk_news.5.t
 	desc = dk_news.5.d
@@ -125,8 +120,7 @@ news_event = {
 		}
 	}
 }
-# Победа Тележного
-news_event = {
+news_event = { # Победа Тележного
     id = dk_news.6
 	title = dk_news.6.t
 	desc = dk_news.6.d
@@ -150,8 +144,7 @@ news_event = {
 		}
 	}
 }
-# Победа Месяца	
-news_event = {
+news_event = { # Победа Месяца	
     id = dk_news.7
 	title = dk_news.7.t
 	desc = dk_news.7.d
@@ -175,8 +168,7 @@ news_event = {
 		}
 	}
 }
-#Залупа_Иваныча
-news_event = {
+news_event = { #Залупа_Иваныча
     id = dk_news.8
 	title = dk_news.8.t
 	desc = dk_news.8.d
@@ -257,13 +249,11 @@ news_event = {
 		}
 	}
 }
-
-# НОД в Москве
-news_event = {
+news_event = { # НОД в Москве
     id = dk_news.9
 	title = dk_news.9.t
 	desc = dk_news.9.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_NOD_fedorov
 	
 	major = yes
 	trigger = {
@@ -286,12 +276,11 @@ news_event = {
 		}
 	}
 }
-
-news_event = {
+news_event = { # Стариков объединяет Россию
     id = dk_news.10
 	title = dk_news.10.t
 	desc = dk_news.10.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_NOD_starikov
 	
 	major = yes
 	
@@ -315,8 +304,7 @@ news_event = {
 		country_event = { days = 1 id = super.7}
 	}
 }
-
-news_event = {
+news_event = { # Фёдоров возвращает Путина
     id = dk_news.11
 	title = dk_news.11.t
 	desc = dk_news.11.d
@@ -344,12 +332,11 @@ news_event = {
 	country_event = { days = 1 id = super.6}
 	}
 }
-
-news_event = {
+news_event = { # Барков объединяет Россию
     id = dk_news.12
 	title = dk_news.12.t
 	desc = dk_news.12.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_NOD_barkov
 	
 	major = yes
 	
@@ -373,11 +360,11 @@ news_event = {
 	country_event = { days = 1 id = super.3}
 	}
 }
-news_event = {
+news_event = { #Лазарет объединяет Россию
     id = dk_news.13
 	title = dk_news.13.t
 	desc = dk_news.13.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_LAZ_doktor
 	
 	major = yes
 	
@@ -401,11 +388,11 @@ news_event = {
 		country_event = { days = 1 id = super.1}
 	}
 }
-news_event = {
+news_event = { #Гражданская война в Албании
     id = dk_news.14
 	title = dk_news.14.t
 	desc = dk_news.14.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_ALB_kozli
 	
 	major = yes
 	
@@ -415,11 +402,11 @@ news_event = {
 		name = dk_news.14.a
 	}
 }
-news_event = {
+news_event = { #Козлы берут власть в Албании
     id = dk_news.15
 	title = dk_news.15.t
 	desc = dk_news.15.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_ALB_kozli
 	
 	major = yes
 	
@@ -429,11 +416,11 @@ news_event = {
 		name = dk_news.15.a
 	}
 }
-news_event = {
+news_event = { #Операция «Zрада»
     id = dk_news.16
 	title = dk_news.16.t
 	desc = dk_news.16.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_ukrainskaya_voyna
 	
 	major = yes
 	
@@ -443,11 +430,11 @@ news_event = {
 		name = dk_news.16.a
 	}
 }
-news_event = {
+news_event = { #Камчатка объединяет Россию
     id = dk_news.17
 	title = dk_news.17.t
 	desc = dk_news.17.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_DOT_v_moskve
 	
 	major = yes
 	
@@ -471,11 +458,11 @@ news_event = {
 		country_event = { days = 1 id = super.4}
 	}
 }
-news_event = {
+news_event = { #Сыктывкар объединяет Россию
     id = dk_news.18
 	title = dk_news.18.t
 	desc = dk_news.18.d
-	picture = GFX_news_event_034
+	picture = GFX_news_event_DKR_SKT_borod_bendus
 	
 	major = yes
 	
@@ -587,7 +574,7 @@ news_event = { #распад_Чумного_пакта
     id = dk_news.25
 	title = dk_news.25.t
 	desc = dk_news.25.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_raspad_pakta
 	
 	major = yes
 	
@@ -601,7 +588,7 @@ news_event = { #гражданская_война_в_Покаянии
     id = dk_news.26
 	title = dk_news.26.t
 	desc = dk_news.26.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_DKR_GV_v_pokayanii
 	
 	major = yes
 	
@@ -615,7 +602,7 @@ news_event = { #интервенция_Мордора
     id = dk_news.27
 	title = dk_news.27.t
 	desc = dk_news.27.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_mordor_interventsiya
 	
 	major = yes
 	
@@ -629,7 +616,7 @@ news_event = { #начало_войны_на_украине
     id = dk_news.28
 	title = dk_news.28.t
 	desc = dk_news.28.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_ukrainskaya_voyna
 	
 	major = yes
 	
@@ -643,7 +630,7 @@ news_event = { #победа_бебея_на_выборах_в_башкирии
     id = dk_news.29
 	title = dk_news.29.t
 	desc = dk_news.29.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_BSH_bebey
 	
 	major = yes
 	
@@ -657,7 +644,7 @@ news_event = { #война_в_италии
     id = dk_news.30
 	title = dk_news.30.t
 	desc = dk_news.30.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_DKR_voyna_v_italii
 	
 	major = yes
 	
@@ -685,7 +672,7 @@ news_event = { #война_за_дом_советов
     id = dk_news.32
 	title = dk_news.32.t
 	desc = dk_news.32.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_DKR_KLG_dom_sovetov
 	
 	major = yes
 	
