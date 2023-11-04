@@ -1,15 +1,61 @@
-# Scripted AI desire for peace actions.
-# See documentation.info file for more detailed scripting information.
-
 peace_ai_desires = {
-    # Warlords want to expand their territory in China, not create puppets- So take states even if not cores, they _can_ be in the future, right. This goes for MAN as well
-    warlords_want_to_conquer_china = {
+    warlords_want_to_conquer_russia = {
         peace_action_type = { take_states }
         enable = {
             FROM.FROM.FROM = {
                 OR = {
-                    is_core_of = PRC
-                    is_core_of = CHI
+					is_core_of = LAZ
+					is_core_of = MAT
+					is_core_of = SKT
+					is_core_of = BSH
+					is_core_of = KLG
+					is_core_of = POK
+					is_core_of = GAL
+					is_core_of = YSK
+					is_core_of = OMS
+					is_core_of = MRD
+					is_core_of = DOT
+					is_core_of = WHS
+					is_core_of = CHK
+					is_core_of = DON
+					is_core_of = CHT
+					is_core_of = CHE
+					is_core_of = MOL
+					is_core_of = NOD
+					is_core_of = ZWN
+					is_core_of = TUP
+					is_core_of = UNT
+					is_core_of = KUR
+					is_core_of = EBN
+					is_core_of = MGN
+					is_core_of = KAZ
+					is_core_of = LIM
+					is_core_of = BRT
+					is_core_of = POK
+					is_core_of = MRD
+					is_core_of = KRR
+					is_core_of = VSB
+					is_core_of = LUB
+					is_core_of = SPL
+					is_core_of = UKR
+					is_core_of = MAG
+					is_core_of = CRI
+					is_core_of = ARK
+					is_core_of = STR
+					is_core_of = TUB
+					is_core_of = ZHE
+					is_core_of = SIN
+					is_core_of = AZR
+					is_core_of = ARM
+					is_core_of = GEO
+					is_core_of = KYR
+					is_core_of = TAJ
+					is_core_of = TMS
+					is_core_of = UZB
+					is_core_of = PRM
+					is_core_of = YAK
+					is_core_of = YWO
+					is_core_of = BUR
                 }
                 any_neighbor_state = {
                     OR = {
@@ -23,62 +69,61 @@ peace_ai_desires = {
             }
             ROOT = {
                 OR = {
-                    WTT_is_chinese_warlord = yes
-                    tag = MAN
+					is_core_of = LAZ
+					is_core_of = MAT
+					is_core_of = SKT
+					is_core_of = BSH
+					is_core_of = KLG
+					is_core_of = POK
+					is_core_of = GAL
+					is_core_of = YSK
+					is_core_of = OMS
+					is_core_of = MRD
+					is_core_of = DOT
+					is_core_of = WHS
+					is_core_of = CHK
+					is_core_of = DON
+					is_core_of = CHT
+					is_core_of = CHE
+					is_core_of = MOL
+					is_core_of = NOD
+					is_core_of = ZWN
+					is_core_of = TUP
+					is_core_of = UNT
+					is_core_of = KUR
+					is_core_of = EBN
+					is_core_of = MGN
+					is_core_of = KAZ
+					is_core_of = LIM
+					is_core_of = BRT
+					is_core_of = POK
+					is_core_of = MRD
+					is_core_of = KRR
+					is_core_of = VSB
+					is_core_of = LUB
+					is_core_of = SPL
+					is_core_of = UKR
+					is_core_of = MAG
+					is_core_of = CRI
+					is_core_of = ARK
+					is_core_of = STR
+					is_core_of = TUB
+					is_core_of = ZHE
+					is_core_of = SIN
+					is_core_of = AZR
+					is_core_of = ARM
+					is_core_of = GEO
+					is_core_of = KYR
+					is_core_of = TAJ
+					is_core_of = TMS
+					is_core_of = UZB
+					is_core_of = PRM
+					is_core_of = YAK
+					is_core_of = YWO
+					is_core_of = BUR
                 }
             }
         }
         ai_desire = 150
-    }
-    warlords_want_to_conquer_china_carefully = {
-        peace_action_type = { take_states }
-        enable = {
-            FROM.FROM.FROM = {
-                OR = {
-                    is_core_of = PRC
-                    is_core_of = CHI
-                }
-                NOT = {
-                    any_neighbor_state = {
-                        OR = {
-                            is_owned_by = ROOT
-                            pc_is_state_claimed_by = ROOT.FROM
-                        }
-                    }
-                }
-            }
-            FROM = {
-                tag = ROOT
-            }
-            ROOT = {
-                OR = {
-                    WTT_is_chinese_warlord = yes
-                    tag = MAN
-                    tag = PRC
-                    tag = CHI
-                }
-            }
-        }
-        ai_desire = -75
-    }
-    warlords_dont_puppet_or_liberate_china = {
-        peace_action_type = { puppet force_government liberate }
-        enable = {
-            FROM.FROM.FROM = {
-                OR = {
-                    is_core_of = PRC
-                    is_core_of = CHI
-                }
-            }
-            ROOT = {
-                OR = {
-                    WTT_is_chinese_warlord = yes
-                    tag = PRC
-                    tag = CHI
-                    tag = MAN
-                }
-            }
-        }
-        ai_desire = -200
     }
 }

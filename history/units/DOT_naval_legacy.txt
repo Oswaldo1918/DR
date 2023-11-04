@@ -1,0 +1,25 @@
+﻿
+units= {
+	### Тихоокеанский флот -- Владивосток
+	fleet = {
+		name = "Северная флотилия Тихоокеанского флота"
+		naval_base = 12207 # Владивосток
+		task_force = {				
+			name = "Надводный флот"
+			location = 12207 # Владивосток
+			ship = { name = "Barzha" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOT } } }
+			ship = { name = "Tanker" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOT } } }
+		}	
+		task_force = {	
+			name = "Подводный флот
+			location = 12207 # Владивосток
+			ship = { name = "M-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }			
+			ship = { name = "M-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOT } } }				
+		}		
+	}
+}

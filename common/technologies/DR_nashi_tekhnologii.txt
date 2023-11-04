@@ -1,0 +1,77 @@
+technologies = {
+	
+	@1 = 0
+	@3 = 2
+	@5 = 4
+	@6 = 6
+	@7 = 8
+	@8 = 10
+	@9 = 12
+	@10 = 14
+	@11 = 16
+	@12 = 18
+	@13 = 20
+
+	###_ДОКРЕЙХОВСКИЕ_ТЕХНОЛОГИИ
+
+	bhammer = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 3
+
+		enable_equipments = {
+			bhammer_equipment_1
+		}
+
+		enable_subunits = {
+			bhaminf
+		}
+	}
+
+	MRD_urukhai_battalion_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 3
+
+		enable_subunits = {
+			urki_assault_battalion
+		}
+	}
+	
+	drozd = {
+
+		enable_equipments = {
+			drozd_equipment
+		}
+
+		research_cost = 2
+		start_year = 2
+
+
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		allow = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+}

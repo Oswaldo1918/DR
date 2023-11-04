@@ -1,39 +1,99 @@
-add_namespace = DOT
+add_namespace = Kamchatka
 
-	
-country_event = {
-	id = DOT.1 
-	title = DOT.1.t
-	desc = DOT.1.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	trigger = {
-		tag = DOT
-	}
+country_event = { 
+	id = Kamchatka.0
+	title = Kamchatka.0.t
+	desc = Kamchatka.0.d
+	picture = GFX_report_event_SOV_purge_young_officers
 	
 	is_triggered_only = yes	
 	
 	option = {
-	name = DOT.1.a
+		name = Kamchatka.0.a
+	}
+}
+
+country_event = { 
+	id = Kamchatka.1 
+	title = Kamchatka.1.t
+	desc = Kamchatka.1.d
+	picture = GFX_report_event_gre_city_siege
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = Kamchatka.1.a
 		trigger = {
-			DOT = {has_completed_focus = DOT_soldatskaya_massa}
+			DOT = { has_completed_focus = DOT_soldatskaya_massa}
 		}
 	}
 	option = {
-	name = DOT.1.b
+		name = Kamchatka.1.b
 		trigger = {
 			DOT = {has_completed_focus = DOT_ochistit_huntu_ot_rakov}
 		}
 		add_ideas = DOT_vlast_steel_kleshnya
 		set_politics = {
-     	ruling_party = memoism
-       	elections_allowed = no	
+			ruling_party = memoism
+			elections_allowed = no	
         }
 	}
 }
 
-
-
-
-
-
+country_event = {
+	id = Kamchatka.2
+	title = Kamchatka.2.t
+	desc = Kamchatka.2.d
+	picture = GFX_report_event_gre_city_siege
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = Kamchatka.2.a
+		add_manpower = -1000
+		add_opinion_modifier = {
+			target = DOT
+			modifier = FIN_support_for_east_karealian_independence_big
+		}
+		DOT = { country_event = Kamchatka.3 }
+	}
+	option = {
+		name = Kamchatka.2.b
+		DOT = { country_event = Kamchatka.4 }
+	}
+}
+country_event = {
+	id = Kamchatka.3
+	title = Kamchatka.3.t
+	desc = Kamchatka.3.d
+	picture = GFX_report_event_dkr_kiberyuling
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = Kamchatka.3.a
+		add_stability = 0.2
+		add_opinion_modifier = {
+			target = LAZ
+			modifier = FIN_support_for_east_karealian_independence_big
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1000
+			producer = ROOT
+		}
+		add_manpower = 1000
+	}
+}
+country_event = {
+	id = Kamchatka.4
+	title = Kamchatka.4.t
+	desc = Kamchatka.4.d
+	picture = GFX_report_event_dkr_kiberyuling
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = Kamchatka.4.a
+	}
+}

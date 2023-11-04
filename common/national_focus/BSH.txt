@@ -283,23 +283,19 @@ focus_tree = {
 		cost = 7
 		x = 29
 		y = 0
-			available = {
-					BSH = {
-							NOT = {
-									is_subject_of = LAZ
-								}
-						}
-					CHT = {
-							has_war = yes
-						}
+		available = {
+			BSH = {
+				NOT = {
+					is_subject_of = LAZ
 				}
-			completion_reward = {
-					add_political_power = 50
-				}
-			ai_will_do = {
-					factor = 100
-				}
-
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	focus = {
 		id = BSH_vspomnit_o_starih_znakomih
@@ -1156,16 +1152,15 @@ focus_tree = {
 		}
 		x = 31
 		y = 9
-					available = {
-                has_government = memoism 
-            }
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
-			completion_reward = {
-					load_oob = BSH_forward_1936
-				}
-
+		available = {
+			has_government = memoism 
+		}
+		visible = {
+			has_completed_focus = BSH_new_formats
+		}
+		completion_reward = {
+			load_oob = BSH_forward_1936
+		}
 	}
 	focus = {
 		id = BSH_furrey_rezhut_stoya

@@ -1,10 +1,10 @@
 ideas = {
-       country = {
-	        YWO_wolf_society = {
-
+	country = {
+		YWO_wolf_society = {
+		
 			picture = Auf_sosaiti
-			
-			   modifier = {
+		
+			modifier = {
 				consumer_goods_factor = -0.1
 				MONTHLY_POPULATION = 0.3
 				research_speed_factor = -0.05
@@ -12,35 +12,23 @@ ideas = {
 				war_support_factor = 0.15
 				conscription = 0.01
 				industrial_capacity_factory = -0.1
-		        production_factory_efficiency_gain_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				line_change_production_efficiency_factor = -0.1
-		        production_factory_efficiency_gain_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
 				production_speed_buildings_factor = -0.1
-			    }
-		    }
-			
-			YWO_svyashechennoe_pisanie_patsanskikh_tsitat = {
+			}
+		}	
+		YWO_svyashechennoe_pisanie_patsanskikh_tsitat = {
 
-			    picture = Svyaschennoe_pisanie_patsanskikh_tsitat
-			
-			    modifier = {
+			picture = Svyaschennoe_pisanie_patsanskikh_tsitat
+
+			modifier = {
 				political_power_factor = 0.1
 				justify_war_goal_time = -0.15
 				war_support_factor = 0.05
 		        mobilization_laws_cost_factor = -0.05
-			    }
-		    }
-			YWO_valim_bokom = {
-
-			   picture = chi_incompetent_officers
-			
-			   modifier = {
-			   army_speed_factor = 0.75
-			   army_attack_factor = 0.05
-			   consumer_goods_factor = 0.1
-			   }
-		    }
-	   }
-		
+			}
+		}
+	}	
 }
