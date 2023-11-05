@@ -357,7 +357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_create_heavy_tank
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_sozdat_tyazhyoliy_tank
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_tankovaye_zavodi
@@ -766,7 +766,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_reconstruktsiya_KMA
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_rekonstruktsia_KMA
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_neftekhran
@@ -793,7 +793,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_rasshirit_NPO_Lavochkina
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_rasshirit_NPO_imeni_Lavochkina
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_razvitiye_stroitalnoy_otrasli
@@ -1014,7 +1014,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_tankoviye_patruli
-		icon = GFX_focus_generic_tankette
+		icon = GFX_MAT_goal_tankovye_patruli
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_create_heavy_tank
@@ -1182,7 +1182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_krugovaya_oborona
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_krugovaya_oborona
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_stroitelstvo_bunkerov
@@ -1325,7 +1325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_prevoshodstvo_na_zemle
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_prevoskhodstvo_na_zemle
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_stroitelstvo_bunkerov
@@ -1344,7 +1344,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_prefoshodstvo_v_nebe
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_prevoskhodstvo_v_nebe
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_tankoviye_patruli
@@ -1582,7 +1582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_pristupit_k_vipolneniyu_plana
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_shumer_army
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_reshayushiy_udar
@@ -1604,6 +1604,9 @@ focus_tree = {
 		id = MAT_chezvichayniye_meri
 		icon = GFX_goal_unknown
 		cost = 5,00
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = MAT_reforma_GKO
 		}
@@ -1618,6 +1621,12 @@ focus_tree = {
 		id = MAT_atakovat_Untsa
 		icon = GFX_goal_unknown
 		cost = 5,00
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.15
+			}
+		}
 		prerequisite = {
 			focus = MAT_chezvichayniye_meri
 		}
@@ -1663,8 +1672,14 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_vostochniy_rubezh
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_vostochny_rubezh
 		cost = 5,00
+		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.15
+			}
+		}
 		prerequisite = {
 			focus = MAT_chezvichayniye_meri
 		}

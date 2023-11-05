@@ -1,51 +1,48 @@
 opposition_Oleg = {
     rally_Olegovtsy = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_oppazitsiya_Olega 
-			}
-
-		  days_remove = 30
-		  		 fire_only_once = yes
+			cost = 50
+			days_remove = 30
+			fire_only_once = yes
+			
             remove_effect = {
-		  	    add_popularity = {
-                ideology = metacommy
-                popularity = 0.1
+				add_popularity = {
+					ideology = metacommy
+					popularity = 0.1
                 } 
                 add_popularity = {
-                ideology = memoism
-                popularity = -0.1
+					ideology = memoism
+					popularity = -0.1
                 } 				
             }
     }
 	pokusheniye_na_Brenyu = {
-	      cost = 150
-		    visible = {
-			    has_completed_focus = BSH_oppazitsiya_Olega 
-			}
+		cost = 75
+	    visible = {
+		    has_completed_focus = BSH_oppazitsiya_Olega 
+		}
 
-		  days_remove = 30
-		  		 fire_only_once = yes
-			remove_effect = {	 
-            random_list = {
-		  	    50 = { 
-			        add_popularity = {
-                    ideology = metacommy
-                    popularity = 0.1
-                    } 
-                    add_popularity = {
-                    ideology = memoism
-                    popularity = -0.1
-                    }
-                    deactivate_advisor = BSH_Brenya
-                    add_corps_commander_role = {
-                    Character = BSH_Brenya
-                    } 					
-                }
-                50 = {
-                }  				
-            }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {	 
+			random_list = {
+				50 = { 
+					add_popularity = {
+						ideology = metacommy
+						popularity = 0.1
+					} 
+					add_popularity = {
+						ideology = memoism
+						popularity = -0.1
+					}
+					deactivate_advisor = BSH_Brenya
+					add_corps_commander_role = {
+						Character = BSH_Brenya
+					} 					
+				}
+				50 = {
+				}  				
 			}
+		}
     }
 	sabotage_arms_factory = {
 	      cost = 75
@@ -185,31 +182,30 @@ proect_Nasti = {
 			}
 	}
 	dip_s_Zhir = {
-	      cost = 150
-            visible = {
-	        has_idea = BSH_Nastya
-	        } 
-			fire_only_once = yes
-            remove_effect = {  			
-		    add_opinion_modifier = {
-            target = IRQ
-            modifier = offered_support
-            }
+		cost = 150
+		visible = {
+			has_idea = BSH_Nastya
+		} 
+		fire_only_once = yes
+		remove_effect = {  			
+			add_opinion_modifier = {
+				target = IRQ
+				modifier = offered_support
 			}
+		}
 	}	
 }
 
-	bebs_kriptid_category = {
+bebs_kriptid_category = {
 	BSH_kukich_fate_mission = {
-
-		allowed = {
-		 always = yes
+		activation = {
+			has_completed_focus = BSH_osnovat_degradachTV
 		}
 
-icon = ger_mefo_bills
+		icon = ger_mefo_bills
 
 		available = {
-		hidden_trigger = { always = no }
+			hidden_trigger = { always = no }
 		}
 
 		days_mission_timeout = 28
@@ -217,7 +213,7 @@ icon = ger_mefo_bills
 		fire_only_once = yes                         
 
         cancel_trigger = {	
-			 has_country_flag = dont_eat_kukich
+			has_country_flag = dont_eat_kukich
 		}
 
 		remove_effect = {
@@ -232,343 +228,331 @@ icon = ger_mefo_bills
 			country_event = BSH.6
 	    }
     }
-BSH_kaloviy_barabashka = {
-	      cost = 50
-		   
-		  allowed = { 
-		   has_goverment = memoism
-		   has_completed_focus = BSH_osnovat_degradachTV
-		   }
-		    visible = {
-			   has_completed_focus = BSH_osnovat_degradachTV
-			}
+	BSH_kaloviy_barabashka = {
+		cost = 50
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
 			country_event = BSH.7
-    }
-}	
-BSH_kozi = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 OR = {      
-				 has_completed_focus = BSH_otstanennost_gosva
-				 has_completed_focus = BSH_goshelp_obshinam
-			  }
+		}
+	}	
+	BSH_kozi = {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+			OR = {      
+				has_completed_focus = BSH_otstanennost_gosva
+				has_completed_focus = BSH_goshelp_obshinam
 			}
+		}
 
-		   days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.15
-    }
-   }
-BSH_phasmid= {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				has_completed_focus = BSH_lager_Nizhuganovo
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
-
-		   days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+		}
+	}
+	BSH_phasmid= {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+			has_completed_focus = BSH_lager_Nizhuganovo
+		}
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.14
-    }
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
+			}
+		}
    }
 
-BSH_sterlitamakskaya_mish = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-			}
+	BSH_sterlitamakskaya_mish = {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+		}
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.10
-    }
-}
-
-BSH_urina_lepricon = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
+		}
+	}
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+	BSH_urina_lepricon = {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+		}
+
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.8
-    }
-}
-BSH_kaloviy_nekromant = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 has_country_flag = vsyo_v_relize
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
+			}
+		}
+	}
+	BSH_kaloviy_nekromant = {
+		cost = 50
+			visible = {
+				has_completed_focus = BSH_osnovat_degradachTV
+				has_country_flag = vsyo_v_relize
 			}
 
-		   days_remove = 14
-		  		 ire_only_once = yes
-            remove_effect = {
-		  	 add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
+			days_remove = 14
+			fire_only_once = yes
+			
+			remove_effect = {
+				country_event = BSH.13
+				add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
-			country_event = BSH.13
-    }
-   }
-BSH_kadr_barabashka = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 has_country_flag = vsyo_v_relize
-			}
+		}
+	}
+	BSH_kadr_barabashka = {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+			has_country_flag = vsyo_v_relize
+		}
 
-		 days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
+		days_remove = 14
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
-			country_event = BSH.12
-			 
-    }
-}	
-BSH_ribolyudi = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 has_country_flag = vsyo_v_relize
-			}
+		}
+	}	
+	BSH_ribolyudi = {
+		cost = 50
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+			has_country_flag = vsyo_v_relize
+		}
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.11
-    }
-}	
-BSH_perdyozhniy_duh = {
-	      cost = 50
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 has_country_flag = vsyo_v_relize
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
+		}
+	}
+	BSH_perdyozhniy_duh = {
+		cost = 50
+		visible = {
+		    has_completed_focus = BSH_osnovat_degradachTV
+			 has_country_flag = vsyo_v_relize
+		}
 
-		 days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		  	add_days_mission_timeout = {
-			mission = BSH_kukich_fate_mission
-			days = 50
-			}
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
 			country_event = BSH.9
-    }
-}
-  BSH_dont_eat_kukich = {
-	      cost = 14
-		    visible = {
-			    has_completed_focus = BSH_osnovat_degradachTV
-				 has_country_flag = vsyo_v_relize
+			add_days_mission_timeout = {
+				mission = BSH_kukich_fate_mission
+				days = 50
 			}
+		}
+	}
+	BSH_dont_eat_kukich = {
+		cost = 14
+		visible = {
+			has_completed_focus = BSH_osnovat_degradachTV
+			has_country_flag = vsyo_v_relize
+		}
 
-		  days_remove = 14
-		  		 fire_only_once = yes
-            remove_effect = {
-		 	 set_country_flag = dont_eat_kukich
- }
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = dont_eat_kukich
+		}
+	}
 }
-}
+
 bebs_persons_category = {
-bebs_persons_osnova = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
+	bebs_persons_osnova = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/babaynefas.dds"
+			}		
+		}
+	}
+	bebs_persons_Zheka = {
+		cost = 10
+
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Zheka_Zhidko.dds"
+			}	 	
+		}
+	}
+	bebs_persons_clown = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {	 
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Clown_Bebs.dds"
+			}	
+		}
+	}
+	bebs_persons_fedor_gennadievich = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Fedor_Genadevich.dds"
+			} 
+		}
+	}
+	bebs_persons_mikola_tyan = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Mikola_tyan.dds"
+			} 	
+		}
+	}
+	bebs_persons_tabu = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Bebs_tabu.dds"
+			} 	 	
+		}
+	}
+	bebs_persons_razumist = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+				set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Razumist.dds"
+			} 	
+		}
+	}
+	bebs_persons_polpot = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Bebs_polpot.dds"
+			}	
+		}
+	}
+	bebs_persons_berdyayev = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Bebsdyaev.dds"
 			}
-remove_effect = {
-		  	 set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/babaynefas.dds"
-        }		
-    }
-}
-bebs_persons_Zheka = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
+		}
+	}
+	bebs_persons_marx = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+				set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Karl_Bebs.dds"
+			}	 	
+		}
+	}
+	bebs_persons_yebok = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Yebok.dds"
+			}	
+		}
+	}
+	bebs_persons_stul = {
+		cost = 10
+		visible = {
+			tag = BSH
+		}
+		remove_effect = {
+			set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Stul.dds"
 			}
-remove_effect = {
-		  set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Zheka_Zhidko.dds"
-        }	 	
-    }
-}
-bebs_persons_clown = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {	 
-		 set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Clown_Bebs.dds"
-        }	
-    }
-}
-bebs_persons_fedor_gennadievich = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  	set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Fedor_Genadevich.dds"
-        } 
-    }
-}
-bebs_persons_mikola_tyan = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  	 set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Mikola_tyan.dds"
-        } 	
-    }
-}
-bebs_persons_tabu = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  	set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Bebs_tabu.dds"
-        } 	 	
-    }
-}
-bebs_persons_razumist = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  	set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Razumist.dds"
-        } 	
-    }
-}
-bebs_persons_polpot = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Bebs_polpot.dds"
-        }	 
-			
-    }
-}
-bebs_persons_berdyayev = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		   set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Bebsdyaev.dds"
-        }	 	 
-			
-    }
-}
-bebs_persons_marx = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  	set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Karl_Bebs.dds"
-        }	 
-			
-    }
-}
-bebs_persons_yebok = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Yebok.dds"
-        }  	 
-			
-    }
-}
-bebs_persons_stul = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			}
-remove_effect = {
-		  set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Stul.dds"
-        }  	 	 
-			
-    }
-}
-bebs_persons_mish = {
-cost = 10
- visible = {
-			   has_completed_focus = BSH_hello_vsem_nashim
-			   has_country_flag = Bebs_mish
-			}
-remove_effect = {
-		  set_country_leader_portrait = {
-	        ideology = postironism
-	        portrait = "gfx/leaders/BSH/Mish.dds"
-        }  	 	 
-			
-    }
-}
+		}
+	}
+	bebs_persons_mish = {
+		cost = 10
+		visible = {
+			tag = BSH
+			has_country_flag = Bebs_mish
+		}
+		remove_effect = {
+				set_country_leader_portrait = {
+				ideology = postironism
+				portrait = "gfx/leaders/BSH/Mish.dds"
+			}	
+		}
+	}
 }

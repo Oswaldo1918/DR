@@ -1,28 +1,103 @@
 ﻿division_template = {
-name = "Дивизия"
-
+	name = "Стрелковая дивизия"
+	priority = 1
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
 	}
-	priority = 1
+}
+division_template = {
+	name = "Конно-механизированный корпус"
+	division_names_group = SOV_ARM_04
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }			
+		cavalry = { x = 2 y = 0 }		
+		cavalry = { x = 2 y = 1 }	
+	}
 }
 
 units = {
-	#Royal Afghani Army
 	division = {
-		name = "1-я дивизия"
+		name = "Уфимский конно-механизированный корпус"
 		location = 1278
-		division_template = "Дивизия"
+		division_template = "Конно-механизированный корпус"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = { 
+			light_tank_chassis_1 = { 
+				owner = "BSH" 
+				creator = "LAZ"
+				version_name = "T-8" 
+			}
+		}
+	}
+	division = {
+		name = "1-я пограничная дивизия"
+		location = 12130
+		division_template = "Стрелковая дивизия"
 		start_experience_factor = 0.3
 	}
-	
+	division = {
+		name = "2-я пограничная дивизия"
+		location = 12117
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-я пограничная дивизия"
+		location = 10142
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4-я пограничная дивизия"
+		location = 1258
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5-я пограничная дивизия"
+		location = 7300
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6-я пограничная дивизия"
+		location = 1378
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7-я пограничная дивизия"
+		location = 1210
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8-я пограничная дивизия"
+		location = 1254
+		division_template = "Стрелковая дивизия"
+		start_experience_factor = 0.3
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BSH"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
 }
 

@@ -258,8 +258,6 @@ news_event = { # НОД в Москве
 	major = yes
 	trigger = {
 		219 = { is_controlled_by = NOD }
-		219 = { is_owned_by = LAZ }
-		NOD = { has_war_with = LAZ }
 	}
 	fire_only_once = yes
 	option = {
@@ -445,8 +443,8 @@ news_event = { #Камчатка объединяет Россию
 		trigger = {
 			original_tag = DOT
 		}
-	set_country_flag = DOT_reunite_russia_kostil
-	country_event = { days = 1 id = super.4}
+		set_country_flag = DOT_reunite_russia_kostil
+		country_event = { days = 1 id = super.4}
 	}
 	
 	option = {
@@ -471,7 +469,7 @@ news_event = { #Сыктывкар объединяет Россию
 	option = {
 	name = dk_news.18.a
 		trigger = {
-			original_tag = SKT
+			tag = SKT
 		}
 		set_country_flag = SKT_levoborod_reunite_russia_kostil
 		country_event = { days = 1 id = super.5}
@@ -480,7 +478,7 @@ news_event = { #Сыктывкар объединяет Россию
 	option = {
 		name = dk_news.18.b
 		trigger = { 
-			NOT = { original_tag = SKT }
+			NOT = { tag = SKT }
 		}
 		set_country_flag = SKT_levoborod_reunite_russia_kostil
 		country_event = { days = 1 id = super.5}
@@ -518,7 +516,7 @@ news_event = { #компрамат_на_покаяна
     id = dk_news.21
 	title = dk_news.21.t
 	desc = dk_news.21.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_antidocpact
 	
 	major = yes
 	
@@ -526,13 +524,30 @@ news_event = { #компрамат_на_покаяна
 	
 	option = {
 		name = dk_news.21.a
+		trigger = { 
+			OR = {
+				tag = POK
+				tag = KOL
+			}
+		}
+	}
+	option = {
+		name = dk_news.21.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = POK
+					tag = KOL
+				}
+			}
+		}
 	}
 }
 news_event = { #компрамат_на_либералов
     id = dk_news.22
 	title = dk_news.22.t
 	desc = dk_news.22.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_antidocpact
 	
 	major = yes
 	
@@ -540,13 +555,30 @@ news_event = { #компрамат_на_либералов
 	
 	option = {
 		name = dk_news.22.a
+		trigger = { 
+			OR = {
+				tag = POK
+				tag = KOL
+			}
+		}
+	}
+	option = {
+		name = dk_news.22.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = POK
+					tag = KOL
+				}
+			}
+		}
 	}
 }
 news_event = { #компрамат_на_наци
     id = dk_news.23
 	title = dk_news.23.t
 	desc = dk_news.23.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_antidocpact
 	
 	major = yes
 	
@@ -554,13 +586,30 @@ news_event = { #компрамат_на_наци
 	
 	option = {
 		name = dk_news.23.a
+		trigger = { 
+			OR = {
+				tag = POK
+				tag = KOL
+			}
+		}
+	}
+	option = {
+		name = dk_news.23.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = POK
+					tag = KOL
+				}
+			}
+		}
 	}
 }
 news_event = { #компрамат_на_Пушного
     id = dk_news.24
 	title = dk_news.24.t
 	desc = dk_news.24.d
-	picture = GFX_news_event_SOV_supreme_soviet_bukharin
+	picture = GFX_news_event_antidocpact
 	
 	major = yes
 	
@@ -568,6 +617,23 @@ news_event = { #компрамат_на_Пушного
 	
 	option = {
 		name = dk_news.24.a
+		trigger = { 
+			OR = {
+				tag = POK
+				tag = KOL
+			}
+		}
+	}
+	option = {
+		name = dk_news.24.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = POK
+					tag = KOL
+				}
+			}
+		}
 	}
 }
 news_event = { #распад_Чумного_пакта
@@ -798,5 +864,103 @@ news_event = { #Дальневосточная_война_победа_Ауфо�
 	
 	option = {
 		name = dk_news.40.a
+	}
+}
+news_event = { #Смерть_деда_Максима
+    id = dk_news.41
+	title = dk_news.41.t
+	desc = dk_news.41.d
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.41.a
+	}
+}
+news_event = { #Жириновский_атакует_ковбоев
+    id = dk_news.42
+	title = dk_news.42.t
+	desc = dk_news.42.d
+	picture = GFX_news_event_zhirinivskiy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.42.a
+	}
+}
+news_event = { #Суперивент_Бэбэя-Северная_Империя
+    id = dk_news.43
+	title = dk_news.43.t
+	desc = dk_news.43.d
+	picture = GFX_news_event_BSH_bebey
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.43.a
+	}
+}
+news_event = { #Суперивент_Бэбэя-}{анство
+    id = dk_news.44
+	title = dk_news.44.t
+	desc = dk_news.44.d
+	picture = GFX_news_event_BSH_bebey
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.44.a
+	}
+}
+news_event = { #Суперивент_Бэбэя-Урал-Израиль
+    id = dk_news.45
+	title = dk_news.45.t
+	desc = dk_news.45.d
+	picture = GFX_news_event_BSH_bebey
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.45.a
+	}
+}
+news_event = { #Скандинавская_война
+    id = dk_news.46
+	title = dk_news.46.t
+	desc = dk_news.46.d
+	picture = GFX_news_event_SWE_pajala_bombing
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.46.a
+	}
+}
+news_event = { #Карельская_война
+    id = dk_news.47
+	title = dk_news.47.t
+	desc = dk_news.47.d
+	picture = GFX_news_event_FIN_karelian_forest_guerillas
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.47.a
 	}
 }

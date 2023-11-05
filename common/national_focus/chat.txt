@@ -1537,20 +1537,21 @@ focus_tree = {
 					country_event = {
 							id = chat.22
 						}
-						hidden_effect = {
-					news_event = {
+					hidden_effect = {
+						news_event = {
 							id = dk_news.5
 						}
-						CDR = {remove_state_core = 399
-               remove_state_core = 256
-               remove_state_core = 249
-               remove_state_core = 400
-               remove_state_core = 252
-               remove_state_core = 250
-			   remove_state_core = 251
-               remove_state_core = 255 
-			   remove_state_core = 833
-				} 
+							CDR = {
+							remove_state_core = 399
+							remove_state_core = 256
+							remove_state_core = 249
+							remove_state_core = 400
+							remove_state_core = 252
+							remove_state_core = 250
+							remove_state_core = 251
+							remove_state_core = 255 
+							remove_state_core = 833
+						} 
 		VTC	= {remove_state_core = 399
                remove_state_core = 256
                remove_state_core = 249
@@ -3671,9 +3672,9 @@ completion_reward = {
 			available = {
 					has_goverment = vmestolev
 				}
-completion_reward = {
-    add_ideas = CHT_plan
-    }	
+		completion_reward = {
+			add_ideas = CHT_plan
+			}	
 	}
 	focus = {
 		id = CHT_collectivisation

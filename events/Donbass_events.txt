@@ -502,17 +502,7 @@ country_event = { #План_Б
         desc = donbass.14.d
 	picture = GFX_report_event_ast_parliament_house
 
-	fire_only_once = yes
-	
-	trigger = {
-	    tag = DON
-		is_in_faction = no
-		is_subject = no
-	    LAZ = {
-			has_country_flag = LAZ_bilo_vosstaniye
-			has_war_with = OSV
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = donbass.14.a

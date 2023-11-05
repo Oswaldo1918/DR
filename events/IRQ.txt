@@ -16,12 +16,13 @@ country_event = {
     }
 	
 	option = {
-	        name = IRQ.1.a 
-                IRQ = {			
-		        declare_war_on = {
-		            target = KUW
-		            type = annex_everything
-		        }
-				}
+		name = IRQ.1.a 
+		news_event = dk_news.42
+		IRQ = {			
+			declare_war_on = {
+				target = KUW
+				type = annex_everything
+			}
+		}
 	}
 }
