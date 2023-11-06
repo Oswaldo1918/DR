@@ -378,11 +378,37 @@ country_event = { #Победа_в_гражданской_войне
 			add_dynamic_modifier = { modifier = MRD_arbeiten_dynamic_modifier }
 			remove_dynamic_modifier = { modifier = MRD_legacy_of_army_dynamic_modifier }
 			add_dynamic_modifier = { modifier = MRD_mordor_army_dynamic_modifier }
+			add_to_variable = { MRD_local_resources_factor = -0.15 }
+			add_to_variable = { MRD_global_building_slots_factor = -0.15 }
+			add_to_variable = { MRD_line_change_production_efficiency_factor = -0.20 }
+			add_to_variable = { MRD_production_speed_buildings_factor = -0.15 }
+			add_to_variable = { MRD_production_factory_max_efficiency_factor = -0.15 }
+			add_to_variable = { MRD_production_factory_efficiency_gain_factor = -0.15 }
+			add_to_variable = { MRD_production_factory_start_efficiency_factor = -0.15 }
+			add_to_variable = { MRD_conversion_cost_civ_to_mil_factor = -0.10 }
+			add_to_variable = { MRD_conversion_cost_mil_to_civ_factor = 0.10 }
+			add_to_variable = { MRD_industrial_capacity_dockyard = -0.50 }
+			add_to_variable = { MRD_industrial_capacity_factory = -0.15 }
+			add_to_variable = { MRD_production_oil_factor = -0.10 }
+			add_to_variable = { MRD_production_lack_of_resource_penalty_factor = 0.3 }
+			add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = -0.20 }
 			set_variable = { MRD_encryption_factor = 0 }
 		}
 		add_research_slot = 1
-		custom_effect_tooltip = MRD_pobeda_tt
-		custom_effect_tooltip = MRD_encryption_factor_udalit_bonus_tt
+		custom_effect_tooltip = MRD_2_h_local_resources_factor_tt
+		custom_effect_tooltip = MRD_2_h_global_building_slots_factor_tt
+		custom_effect_tooltip = MRD_3_h_line_change_production_efficiency_factor_tt
+		custom_effect_tooltip = MRD_2_h_production_speed_buildings_factor_tt
+		custom_effect_tooltip = MRD_2_h_production_factory_max_efficiency_factor_tt
+		custom_effect_tooltip = MRD_2_h_production_factory_efficiency_gain_factor_tt
+		custom_effect_tooltip = MRD_2_h_production_factory_start_efficiency_factor_tt
+		custom_effect_tooltip = MRD_2_h_conversion_cost_civ_to_mil_factor_tt
+		custom_effect_tooltip = MRD_2_h_conversion_cost_mil_to_civ_factor_tt
+		custom_effect_tooltip = MRD_2_h_industrial_capacity_dockyard_tt
+		custom_effect_tooltip = MRD_2_h_industrial_capacity_factory_tt
+		custom_effect_tooltip = MRD_2_h_production_oil_factor_tt
+		custom_effect_tooltip = MRD_2_h_production_lack_of_resource_penalty_factor_tt
+		custom_effect_tooltip = MRD_2_h_acclimatization_cold_climate_gain_factor_tt
 		add_ideas = {
 			civilian_economy
 			limited_conscription

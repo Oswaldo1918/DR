@@ -28,12 +28,12 @@ focus_tree = {
 		cost = 1,00
 		x = 35
 		y = 4
-			available = {
-					has_completed_focus = SKT_vot_i_pomer_ded_Maksim
-				}
-			completion_reward = {
-					add_stability = -0.05
-				}
+		available = {
+			has_completed_focus = SKT_vot_i_pomer_ded_Maksim
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
 
 	}
 	focus = {
@@ -1216,21 +1216,19 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
-			completion_reward = {
-					kill_country_leader = yes
-					add_country_leader_role = {
-							character = SKT_sovet_borodachey
-							promote_leader = yes
-							country_leader = {
-									ideology = gachi
-									expire = "1965.1.1.1"
-									traits = {
-
-}
-								}
-						}
+		completion_reward = {
+			news_event = dk_news.41
+			kill_country_leader = yes
+			add_country_leader_role = {
+				character = SKT_sovet_borodachey
+				promote_leader = yes
+				country_leader = {
+					ideology = gachi
+					expire = "1965.1.1.1"
+					traits = {	}
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = SKT_tsentrist_boroda

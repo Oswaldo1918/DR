@@ -843,7 +843,11 @@ GV_v_pokayanii_podgotovka = {
         icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
-		
+
+        visible = {
+			NOT = { has_country_flag = dva_deystviya }
+        }
+
 		complete_effect = {
 			clr_country_flag = stop_deystviya
 	     	if = {

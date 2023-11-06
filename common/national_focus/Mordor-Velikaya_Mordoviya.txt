@@ -20,6 +20,9 @@ focus_tree = {
 		cost = 5,00
 		x = 7
 		y = 0
+		select_effect = {
+			country_event = mordor.0
+		}
 		completion_reward = {
 			country_event = mordor.1
 			add_political_power = 70
@@ -534,7 +537,7 @@ focus_tree = {
 		completion_reward = {
 			recruit_character = MRD_Vlad_Makarov
 			if = {
-				limit - {
+				limit = {
 					has_country_flag = MRD_usilit_partizan_flag
 				}
 				division_template = {
@@ -557,21 +560,21 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"88-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25"  
+						start_experience_factor = 0.25 
 						owner = MRD
 						location = 4681
 					}
 					create_unit = {
 						division = "name = \"96-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25"  
+						start_experience_factor = 0.25
 						owner = MRD
 						location = 10673
 					}
 					create_unit = {
 						division = "name = \"61-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25"  
+						start_experience_factor = 0.25  
 						owner = MRD
 						location = 7849
 					}
@@ -585,40 +588,40 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"165-я стрелковая дивизия\" 
 						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25"  
+						start_experience_factor = 0.25 
 						owner = MRD
 						location = 1718
 					}				
 				}
 				else = {
-					578 = {
-						division_template = {
-							name = "Дивизия партизан" 	
-							division_names_group = MRD_MIL_02
-							regiments = {
-								infantry = { x = 0 y = 0 }
-								infantry = { x = 0 y = 1 }
-								infantry = { x = 0 y = 2 }
-								infantry = { x = 0 y = 3 }
-								infantry = { x = 0 y = 4 }
-								infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-								infantry = { x = 1 y = 3 }
-								infantry = { x = 1 y = 4 }
-							}
+					division_template = {
+						name = "Дивизия партизан" 	
+						division_names_group = MRD_MIL_02
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 1 y = 4 }
 						}
+					}
+					578 = {
 						create_unit = {
 							division = "name = \"88-я стрелковая дивизия\" 
 							division_template = \"Дивизия партизан\" 
-							start_experience_factor = 0.25"  
+							start_experience_factor = 0.25
 							owner = MRD
 							location = 12174
 						}
 						create_unit = {
 							division = "name = \"96-я стрелковая дивизия\" 
 							division_template = \"Дивизия партизан\" 
-							start_experience_factor = 0.25"  
+							start_experience_factor = 0.25
 							owner = MRD
 							location = 1718
 						}
@@ -700,13 +703,13 @@ focus_tree = {
 			add_state_core = 567
 			add_state_core = 575
 			add_state_core = 824
-			add_state_core  = 579
-			add_state_core  = 580
-			add_state_core  = 403
-			add_state_core  = 653
-			add_state_core  = 572
-			add_state_core  = 573
-			add_state_core  = 582
+			add_state_core = 579
+			add_state_core = 580
+			add_state_core = 403
+			add_state_core = 653
+			add_state_core = 572
+			add_state_core = 573
+			add_state_core = 582
 		}	
 	}
 	#Военная_ветка
@@ -719,7 +722,20 @@ focus_tree = {
 		}
 		x = 4
 		y = 11
-
+		completion_reward = {
+			country_event = mordor.17
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_org_regain = 0.05 }
+				add_to_variable = { MRD_mordor_army_defence_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_org_regain_tt
+			custom_effect_tooltip = MRD_1_mordor_army_defence_factor_tt
+		}
 	}
 	focus = {
 		id = MRD_morpekhi_na_zebrah
@@ -730,7 +746,29 @@ focus_tree = {
 		}
 		x = 1
 		y = 12
-
+		completion_reward = {
+			set_technology = {
+				marines = 1
+			}
+			division_template = {
+				name = "Морпехи на зебрах" 	
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+				}
+			}
+			create_unit = {
+				division = "name = \"1-я дивизия морской кавалерии\" 
+				division_template = \"Морпехи на зебрах\" 
+				start_experience_factor = 0.25  
+				owner = MRD
+				location = 12174
+			}
+		}
 	}
 	focus = {
 		id = MRD_zastavit_urok_derzhat_udar_na_solntse
@@ -741,7 +779,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_sovetskoye_naslediye
@@ -752,6 +792,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 12
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_krasnogvardeyskiye_soedineniya
@@ -765,7 +808,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_traditsii_otryada_731
@@ -779,7 +824,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_modern_doktrina
@@ -790,7 +837,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_tankoviye_klinya
@@ -804,7 +853,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_opit_lufdvaffe
@@ -818,7 +869,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_kovroviye_bombardirovki
@@ -832,7 +885,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_proyekt_grib_saurona
@@ -846,7 +901,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	###Экономические фокусы
 	focus = {
@@ -858,7 +915,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 11
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_razvitiye_metallurgii
@@ -869,7 +928,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_oruzheyka
@@ -886,7 +947,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_himprom
@@ -900,7 +963,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_razvitiye_stroitelnoy_otrasli
@@ -911,7 +976,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mashinostroyeniye
@@ -928,7 +995,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mordovskaya_electronica
@@ -942,7 +1011,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_novaya_hata
@@ -956,7 +1027,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_avaprom
@@ -967,7 +1040,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_vzrintnoyae_delo
@@ -984,7 +1059,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_dop_osnascheniye
@@ -995,9 +1072,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
-
 	focus = {
 		id = MRD_upor_na_tyazhprom
 		icon = GFX_goal_unknown
@@ -1007,7 +1085,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_globalnaya_industrializatsiya
@@ -1021,7 +1101,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_upor_na_kachestvo
@@ -1038,7 +1120,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_artzavod
@@ -1052,7 +1136,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_upor_na_kolichestvo
@@ -1069,7 +1155,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_noviye_rabi
@@ -1083,7 +1171,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_kvalific_rabotniki
@@ -1097,7 +1187,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_vseobshee_obrazovaniye
@@ -1108,7 +1200,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mordovskie_turmi
@@ -1119,7 +1213,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mordovskoye_krepostnoye_pravo
@@ -1133,7 +1229,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mordovskiy_institut_upravleniya
@@ -1150,7 +1248,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 18
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_tekhnicheskiye_instituti
@@ -1171,7 +1271,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 18
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_metallokonttruktsii
@@ -1185,7 +1287,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_baza_fundament
@@ -1196,7 +1300,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_betonniye_konstruktsii
@@ -1210,7 +1316,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_mechi_na_orala
@@ -1221,7 +1329,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 18
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_betonomeshalka_meshaet_beton
@@ -1232,7 +1342,9 @@ focus_tree = {
 		}
 		x = 33
 		y = 18
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_organizatsiye_steklozavodov
@@ -1244,7 +1356,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 18
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_besplatnaya_razdacha_kolets_idiotam
@@ -1255,7 +1369,9 @@ focus_tree = {
 		}
 		x = 48
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_proyekt_megakoltso
@@ -1266,7 +1382,9 @@ focus_tree = {
 		}
 		x = 47
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_vopros_electroenergii
@@ -1277,7 +1395,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_lesa_sibiri
@@ -1291,7 +1411,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_ugol_kuzbassa
@@ -1305,7 +1427,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_gryazeviye_yami
@@ -1319,7 +1443,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_electrortkhnika
@@ -1330,7 +1456,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_agregati_mashin
@@ -1347,7 +1475,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_modennizatsiya_energosetei
@@ -1361,7 +1491,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_modernizatsiya_TES
@@ -1378,7 +1510,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_giga_projector
@@ -1389,7 +1523,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 19
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_stroitelnaya_burokratiya
@@ -1400,7 +1536,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 19
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_inzhenerniy_progress
@@ -1411,7 +1549,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 19
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_visoko_sizhu_daleko_glyazhu
@@ -1428,9 +1568,10 @@ focus_tree = {
 		}
 		x = 30
 		y = 20
-
+		completion_reward = {
+		
+		}
 	}
-
 	focus = {
 		id = MRD_mordovskaya_bronya
 		icon = GFX_goal_unknown
@@ -1443,7 +1584,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_tyomniye_dela_saurona
@@ -1454,7 +1597,9 @@ focus_tree = {
 		}
 		x = 44
 		y = 11
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_masshtabniye_diversii
@@ -1465,7 +1610,9 @@ focus_tree = {
 		}
 		x = 46
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_sponsorstvo_Ren_TV
@@ -1476,7 +1623,9 @@ focus_tree = {
 		}
 		x = 42
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_operatsiya_lohotron
@@ -1493,7 +1642,9 @@ focus_tree = {
 		}
 		x = 45
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_byro_veskera
@@ -1504,7 +1655,9 @@ focus_tree = {
 		}
 		x = 45
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_dostavat_Doka
@@ -1521,7 +1674,9 @@ focus_tree = {
 		}
 		x = 42
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 ##Источники_индустриализации
 	focus = {
@@ -1533,7 +1688,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_totalnaya_expropriatsiya
@@ -1547,7 +1704,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_komand_adm_sist_i_tsiganstvo
@@ -1558,7 +1717,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_vas_privetstvuyet_chastniy_kapital
@@ -1572,7 +1733,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 13
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_burzhyi_mochi_kozlov
@@ -1582,6 +1745,9 @@ focus_tree = {
 		y = 14
 		prerequisite = {
 			focus = MRD_vas_privetstvuyet_chastniy_kapital
+		}
+		completion_reward = {
+		
 		}
 	}
 	focus = {
@@ -1594,7 +1760,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 14
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_totalnoye_importozamesheniye
@@ -1609,7 +1777,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_vneshiye_istochniki_prodovolstviya
@@ -1624,7 +1794,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 15
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_kontrolirovat_finansoviye_potoki
@@ -1635,7 +1807,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_korovani_yiga
@@ -1646,7 +1820,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_garantii_importa
@@ -1658,7 +1834,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 17
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = MRD_exspluatatsiya_mongolii
@@ -1670,6 +1848,8 @@ focus_tree = {
 		}
 		x = 39
 		y = 16
-
+		completion_reward = {
+		
+		}
 	}
 }
