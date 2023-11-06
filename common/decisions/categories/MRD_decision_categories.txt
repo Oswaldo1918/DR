@@ -4,10 +4,19 @@
 
 MRD_mordovskava_armiya_decisions_category = {
 	icon = military_operation
-	allowed = {
+	visible = {
 		tag = MRD
-	}
-	visible = { 
 		has_completed_focus = MRD_armiya_dostoynaya_velikoi_mordovii
+	}
+}
+MRD_infiltratsiya_decisions_category = {
+	icon = infiltration
+	visible = {
+		tag = MRD
+		NOT = {
+			has_dlc = "La Resistance"
+		}
+		has_completed_focus = MRD_nachinaem_s_dachnikov
+		has_country_flag = MRD_uspeshniy_reid_country_flag
 	}
 }

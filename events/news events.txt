@@ -964,3 +964,203 @@ news_event = { #Карельская_война
 		name = dk_news.47.a
 	}
 }
+news_event = { #Покаяния_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.48
+	title = dk_news.48.t
+	desc = dk_news.48.d
+	picture = GFX_news_event_antidocpact
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.48.a
+		trigger = {
+			tag = POK
+		}
+	}
+	option = {
+		name = dk_news.48.b
+		trigger = {
+			NOT = {
+				tag = POK
+			}
+		}
+	}
+}
+news_event = { #Магнитогорск_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.49
+	title = dk_news.49.t
+	desc = dk_news.49.d
+	picture = GFX_news_event_sovietskiye_soldati 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.49.a
+		trigger = {
+			tag = MGN
+		}
+	}
+	option = {
+		name = dk_news.49.b
+		trigger = {
+			NOT = {
+				tag = MGN
+			}
+		}
+	}
+}
+news_event = { #Омск_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.50
+	title = dk_news.50.t
+	desc = dk_news.50.d
+	picture = GFX_news_event_spr_spanish_civil_war3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.50.a
+		trigger = {
+			tag = OMS
+		}
+	}
+	option = {
+		name = dk_news.50.b
+		trigger = {
+			NOT = {
+				tag = OMS
+			}
+		}
+	}
+}
+news_event = { #Новосибирск_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.51
+	title = dk_news.51.t
+	desc = dk_news.51.d
+	picture = GFX_news_event_pushnoy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.51.a
+		trigger = {
+			tag = GAL
+		}
+	}
+	option = {
+		name = dk_news.51.b
+		trigger = {
+			NOT = {
+				tag = GAL
+			}
+		}
+	}
+}
+news_event = { #Новосибирск_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.52
+	title = dk_news.52.t
+	desc = dk_news.52.d
+	picture = GFX_news_event_DKR_Lukin_winner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.52.a
+		trigger = {
+			tag = GAL
+		}
+	}
+	option = {
+		name = dk_news.52.b
+		trigger = {
+			NOT = {
+				tag = GAL
+			}
+		}
+	}
+}
+news_event = { #Барнаул_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.53
+	title = dk_news.53.t
+	desc = dk_news.53.d
+	picture = GFX_news_event_bulgarian_partisans
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.53.a
+		trigger = {
+			tag = YSK
+		}
+	}
+	option = {
+		name = dk_news.53.b
+		trigger = {
+			NOT = {
+				tag = YSK
+			}
+		}
+	}
+}
+news_event = { #Красноярск_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.54
+	title = dk_news.54.t
+	desc = dk_news.54.d
+	picture = GFX_news_event_rudoy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.54.a
+		trigger = {
+			tag = ZNS
+		}
+	}
+	option = {
+		name = dk_news.54.b
+		trigger = {
+			NOT = {
+				tag = ZNS
+			}
+		}
+	}
+}
+news_event = { #Мордор_побеждает_в_покаянской_гражданской_войне
+    id = dk_news.55
+	title = dk_news.55.t
+	desc = dk_news.55.d
+	picture = GFX_news_event_mordor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.55.a
+		trigger = {
+			tag = MRD
+		}
+	}
+	option = {
+		name = dk_news.55.b
+		trigger = {
+			NOT = {
+				tag = MRD
+			}
+		}
+	}
+}

@@ -35,7 +35,17 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			create_intelligence_agency = yes
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				
+				create_intelligence_agency = yes
+				
+				else = {
+					add_ideas = MRD_idea_legacy_SMEH
+				}
+			}
 			#add_ideas = MRD_idea_nazgul
 			country_event = mordor.8
 		}

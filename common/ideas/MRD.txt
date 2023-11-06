@@ -3,7 +3,7 @@ ideas = {
 		MRD_idea_nazgul = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_kavaleryiskaya_zonderkomanda_SS_Nazgul
@@ -13,10 +13,24 @@ ideas = {
 				agency_upgrade_time = -0.8
 			}
 		}
+		MRD_idea_legacy_SMEH = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = MRD_kavaleryiskaya_zonderkomanda_SS_Nazgul
+	
+			modifier = {
+				research_speed_factor = 0.05
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+			}
+		}
 		MRD_idea_beast_weapon = {
 		
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 		
 			picture = MRD_chudovischnoe_oruzhie
@@ -32,7 +46,7 @@ ideas = {
 		MRD_idea_rasshireniye_zhd_seti = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_rasshirenie_zheleznodorozhnoy_seti
@@ -45,7 +59,7 @@ ideas = {
 		MRD_idea_dopolnitelniye_harchi = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_dopolnitelnye_kharchi
@@ -58,7 +72,7 @@ ideas = {
 		MRD_idea_vino_i_babi = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_v_gorodakh_vino_i_baby
@@ -70,7 +84,7 @@ ideas = {
 		MRD_idea_posledniy_ryvok = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_posledniy_ryvok
@@ -84,7 +98,7 @@ ideas = {
 		MRD_idea_pogranconflict = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = kostyl
@@ -96,7 +110,7 @@ ideas = {
 		MRD_idea_vosstanovleniye_posle_GV = {
 
 			allowed = {
-				original_tag = MRD
+				tag = MRD
 			}
 
 			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
