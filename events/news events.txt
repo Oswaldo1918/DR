@@ -908,7 +908,7 @@ news_event = { #Суперивент_Бэбэя-Северная_Империя
 		name = dk_news.43.a
 	}
 }
-news_event = { #Суперивент_Бэбэя-}{анство
+news_event = { #Суперивент_Бэбэя_Ханство
     id = dk_news.44
 	title = dk_news.44.t
 	desc = dk_news.44.d
@@ -1162,5 +1162,61 @@ news_event = { #Мордор_побеждает_в_покаянской_граж
 				tag = MRD
 			}
 		}
+	}
+}
+news_event = { #Аравийская_война
+    id = dk_news.56
+	title = dk_news.56.t
+	desc = dk_news.56.d
+	picture = GFX_news_event_mordor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.56.a
+	}
+}
+news_event = { #Война_в_тёмном_альбионе_война
+    id = dk_news.57
+	title = dk_news.57.t
+	desc = dk_news.57.d
+	picture = GFX_news_event_mordor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.57.a
+	}
+}
+news_event = { #Иберийская_война
+    id = dk_news.58
+	title = dk_news.58.t
+	desc = dk_news.58.d
+	picture = GFX_news_event_mordor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.58.a
+	}
+}
+news_event = { #Поход_шария_во_Францию
+    id = dk_news.59
+	title = dk_news.59.t
+	desc = dk_news.59.d
+	picture = GFX_news_event_mordor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.59.a
 	}
 }

@@ -93,6 +93,8 @@ set_variable = { MRD_mordor_army_org_loss_when_moving = 0.1 } #-> Потеря �
 set_variable = { MRD_mordor_army_attack_factor = 0 } #-> Атака дивизии
 set_variable = { MRD_mordor_army_land_night_attack = 0 } #-> Ночная атака
 set_variable = { MRD_mordor_army_defence_factor = 0.05 } #-> Оборона дивизии
+#set_variable = { MRD_mordor_army_urki_assault_battalion_attack_factor = -0.15 } #-> Атака дивизии урок
+#set_variable = { MRD_mordor_army_urki_assault_battalion_defence_factor = -0.15 } #-> Оборона дивизии урок
 
 add_dynamic_modifier = { modifier = MRD_legacy_of_army_dynamic_modifier }
 

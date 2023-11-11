@@ -2,7 +2,7 @@
  ### BASHKIRIYA ###
 ######################
 opposition_Oleg = {
-    icon = generic_prospect_for_resources
+    icon = GFX_decision_category_bebs_buldiga
 	visible = {
 		tag = BSH
 		has_government = memoism
@@ -10,7 +10,7 @@ opposition_Oleg = {
 	}
 }
 bebs_persons_category = {
-    icon = generic_prospect_for_resources
+    icon = GFX_decision_category_bebs_buldiga
 	picture = GFX_decision_category_bebs_person_picture
 	visible = {
 		tag = BSH
@@ -19,7 +19,7 @@ bebs_persons_category = {
 	}
 }
 proect_Nasti = {
-    icon = generic_prospect_for_resources
+    icon = GFX_decision_category_bebs_buldiga
 	picture = GFX_decision_category_proyekti_nasti_picture
 	visible = {
 		tag = BSH
@@ -29,7 +29,7 @@ proect_Nasti = {
 	}
 }
 bebs_kriptid_category = {
-    icon = generic_prospect_for_resources 
+    icon = GFX_decision_category_bebs_buldiga 
 	picture = GFX_decision_category_kriptidi_picture_alt
     allowed = {
 		tag = BSH

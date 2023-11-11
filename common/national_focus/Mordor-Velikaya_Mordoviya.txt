@@ -541,8 +541,7 @@ focus_tree = {
 					has_country_flag = MRD_usilit_partizan_flag
 				}
 				division_template = {
-					name = "Дивизия партизан" 	
-					division_names_group = MRD_MIL_02
+					name = "Дивизия партизан"
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -558,45 +557,39 @@ focus_tree = {
 				}
 				578 = {
 					create_unit = {
-						division = "name = \"88-я стрелковая дивизия\" 
-						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25 
+						division = "name = \"88-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 4681"
 						owner = MRD
-						location = 4681
+						allow_spawning_on_enemy_provs = yes
+						count = 1
 					}
 					create_unit = {
-						division = "name = \"96-я стрелковая дивизия\" 
-						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25
+						division = "name = \"96-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 10673"
 						owner = MRD
-						location = 10673
+						allow_spawning_on_enemy_provs = yes
+						count = 1
 					}
 					create_unit = {
-						division = "name = \"61-я стрелковая дивизия\" 
-						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25  
+						division = "name = \"61-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 7849"
 						owner = MRD
-						location = 7849
+						allow_spawning_on_enemy_provs = yes
+						count = 1
 					}
 					create_unit = {
-						division = "name = \"158-я стрелковая дивизия\" 
-						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25"  
+						division = "name = \"158-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 12174"
 						owner = MRD
-						location = 12174
+						allow_spawning_on_enemy_provs = yes
+						count = 1
 					}
 					create_unit = {
-						division = "name = \"165-я стрелковая дивизия\" 
-						division_template = \"Дивизия партизан\" 
-						start_experience_factor = 0.25 
+						division = "name = \"165-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 1718"
 						owner = MRD
-						location = 1718
-					}				
+						allow_spawning_on_enemy_provs = yes
+						count = 1
+					}			
 				}
 				else = {
 					division_template = {
-						name = "Дивизия партизан" 	
-						division_names_group = MRD_MIL_02
+						name = "Дивизия партизан"
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -612,18 +605,16 @@ focus_tree = {
 					}
 					578 = {
 						create_unit = {
-							division = "name = \"88-я стрелковая дивизия\" 
-							division_template = \"Дивизия партизан\" 
-							start_experience_factor = 0.25
+							division = "name = \"158-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 12174"
 							owner = MRD
-							location = 12174
+							allow_spawning_on_enemy_provs = yes
+							count = 1
 						}
 						create_unit = {
-							division = "name = \"96-я стрелковая дивизия\" 
-							division_template = \"Дивизия партизан\" 
-							start_experience_factor = 0.25
+							division = "name = \"165-я стрелковая дивизия\" division_template = \"Дивизия партизан\" start_experience_factor = 1.0 start_equipment_factor = 0.75 start_manpower_factor = 0.75 location = 1718"
 							owner = MRD
-							location = 1718
+							allow_spawning_on_enemy_provs = yes
+							count = 1
 						}
 					}
 				}
@@ -747,6 +738,12 @@ focus_tree = {
 		x = 1
 		y = 12
 		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_org_factor = 0.15 }
+				add_to_variable = { MRD_mordor_army_org_loss_when_moving = 0.20 }
+			}
+			custom_effect_tooltip = MRD_2_mordor_army_org_factor_tt
+			custom_effect_tooltip = MRD_3_mordor_army_org_loss_when_moving_tt
 			set_technology = {
 				marines = 1
 			}
@@ -761,12 +758,13 @@ focus_tree = {
 					cavalry = { x = 1 y = 2 }
 				}
 			}
-			create_unit = {
-				division = "name = \"1-я дивизия морской кавалерии\" 
-				division_template = \"Морпехи на зебрах\" 
-				start_experience_factor = 0.25  
-				owner = MRD
-				location = 12174
+			578 = {
+				create_unit = {
+					division = "name = \"1-я дивизия полосатой кавалерии\" division_template = \"Морпехи на зебрах\" start_experience_factor = 0.4 start_equipment_factor = 1 start_manpower_factor = 1 location = 4681"
+					owner = MRD
+					allow_spawning_on_enemy_provs = yes
+					count = 1
+				}
 			}
 		}
 	}
@@ -780,7 +778,16 @@ focus_tree = {
 		x = 4
 		y = 12
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_land_night_attack = 0.10 }
+				add_to_variable = { MRD_mordor_army_attack_factor = 0.10 }
+				add_to_variable = { MRD_mordor_army_defence_factor = 0.10 }
+				add_to_variable = { MRD_mordor_army_org_regain = 0.10 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_land_night_attack_tt
+			custom_effect_tooltip = MRD_1_mordor_army_attack_factor_tt
+			custom_effect_tooltip = MRD_1_mordor_army_defence_factor_tt
+			custom_effect_tooltip = MRD_1_mordor_army_org_regain_tt
 		}
 	}
 	focus = {
@@ -793,7 +800,11 @@ focus_tree = {
 		x = 6
 		y = 12
 		completion_reward = {
-		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -809,7 +820,16 @@ focus_tree = {
 		x = 5
 		y = 13
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = vmestolev
+				popularity = 0.15
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_org_regain = 0.10 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_org_regain_tt
+			add_manpower = 10000
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -825,7 +845,25 @@ focus_tree = {
 		x = 4
 		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_attack_factor = 0.15 }
+				add_to_variable = { MRD_weekly_manpower = -100 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_attack_factor_tt
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+		}
+	}
+	focus = {
+		id = MRD_voennaya_akademiya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_traditsii_otryada_731
+		}
+		x = 4
+		y = 15
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -838,7 +876,11 @@ focus_tree = {
 		x = 2
 		y = 13
 		completion_reward = {
-		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -854,7 +896,11 @@ focus_tree = {
 		x = 3
 		y = 16
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 3
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -870,7 +916,24 @@ focus_tree = {
 		x = 7
 		y = 15
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.45
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = MRD_peresadit_nazgulov_na_reaktivy
+		icon = 
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_avaprom
+		}
+		x = 9
+		y = 16
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -886,7 +949,11 @@ focus_tree = {
 		x = 6
 		y = 16
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = heavy_air
+			}	
 		}
 	}
 	focus = {
@@ -902,7 +969,38 @@ focus_tree = {
 		x = 4
 		y = 17
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = MRD_razrabotka_raket
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = MRD_kovroviye_bombardirovki
+		}
+		prerequisite = {
+			focus = MRD_peresadit_nazgulov_na_reaktivy
+		}
+		x = 8
+		y = 17
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 4
+				category = rocketry
+			}
 		}
 	}
 	###Экономические фокусы

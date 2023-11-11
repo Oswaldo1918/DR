@@ -180,3 +180,17 @@ country_event = {
         add_manpower = 1		
 	}
 }
+
+country_event = {
+	id = ALB.6
+	title = ALB.6.t
+	desc = ALB.6.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = ALB.6.a
+	}
+}
