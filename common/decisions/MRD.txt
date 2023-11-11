@@ -1,6 +1,94 @@
 ###################
   ### MORDOR ###
 ###################
+MRD_infiltratsiya_decisions_category = { 
+	MRD_decision_usilit_partizan = { #Усилить_партизан
+		
+		cost = 40
+		days_remove = 35
+		
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_1
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			MRD = { set_country_flag = MRD_usilit_partizan_flag }
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_1 }
+			custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt	
+		}
+	}
+	MRD_decision_koridor_dlya_bezhentsev = { #Коридор_для_беженцев
+	
+		cost = 40
+		days_remove = 35
+		
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_2 }
+			custom_effect_tooltip =  MRD_koridor_dlya_bezhentsev_conec_flag_tt
+			MRD = {
+				hidden_effect = {
+					add_to_variable = { MRD_monthly_population = 0.05 }
+					add_to_variable = { MRD_weekly_manpower = 50 }
+				}
+			}
+			custom_effect_tooltip = MRD_1_monthly_population_tt
+			custom_effect_tooltip = MRD_1_weekly_manpower_tt
+		}
+	}
+	MRD_decision_cherniy_rinok = { #Черный_рынок
+
+		cost = 40
+		days_remove = 35
+
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_3
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_3 }
+			custom_effect_tooltip =  MRD_cherniy_rinok_conec_flag_tt
+			MRD = {
+				hidden_effect = {
+					add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+					add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+				}
+			}
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt			
+		}
+	}
+}
 MRD_mordovskava_armiya_decisions_category = { 
 	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
 
@@ -8,7 +96,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -25,7 +113,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		fire_only_once = yes
@@ -44,7 +132,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -57,7 +145,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		available = {
@@ -80,7 +168,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -93,7 +181,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		available = {
@@ -115,7 +203,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -128,7 +216,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		available = {
@@ -151,7 +239,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -164,7 +252,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		available = {
@@ -187,7 +275,7 @@ MRD_mordovskava_armiya_decisions_category = {
 
 		visible = {
 			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			original_tag = MRD
+			tag = MRD
 			OR = {
 				has_war_with = POK
 				has_war_with = MGN
@@ -200,7 +288,7 @@ MRD_mordovskava_armiya_decisions_category = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 100
 		}
 		
 		available = {

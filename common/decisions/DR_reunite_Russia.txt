@@ -102,6 +102,7 @@ DR_form_russian_state_decisions_category = {
 			factor = 100
 		}
 		remove_effect = {
+			news_event = dk_news.43
 			set_cosmetic_tag = BSH_Sever_empire
 			set_country_flag = BSH_3_reunite_russia_kostil
 			country_event = { days = 1 id = super.10}
@@ -140,6 +141,7 @@ DR_form_russian_state_decisions_category = {
 			factor = 100
 		}
 		remove_effect = {
+			news_event = dk_news.44
 			set_cosmetic_tag = BSH_Bashkir_hanstvo
 			set_country_flag = BSH_2_reunite_russia_kostil
 			country_event = { days = 1 id = super.9}
@@ -175,6 +177,7 @@ DR_form_russian_state_decisions_category = {
 			factor = 100
 		}
 		remove_effect = {
+			news_event = dk_news.45
 			set_cosmetic_tag = BSH_Ural_Israel
 			set_country_flag = BSH_1_reunite_russia_kostil
 			country_event = { days = 1 id = super.8}

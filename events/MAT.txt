@@ -447,10 +447,18 @@ country_event = { #Выбор_стратегии
 	option = {
 		name = Orel.26.a
 		add_ideas = MAT_idea_adressivnaya_strategiya_0
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = 0.11
+		}
 	}
 	option = {
 		name = Orel.26.b
 		add_ideas = MAT_idea_oboronitelnaya_strategiya_0
+		add_power_balance_value = {
+			id = MAT_hui_znaet_balance
+			value = -0.11
+		}
 	}
 }
 country_event = { #Промышленное_планирование
@@ -544,7 +552,7 @@ country_event = { #Чрезвычайные_меры
         title = Orel.30.t
         desc = Orel.30.d
 	picture = GFX_report_event_ast_parliament_house
-
+	
 	is_triggered_only = yes
 	
 	trigger = {

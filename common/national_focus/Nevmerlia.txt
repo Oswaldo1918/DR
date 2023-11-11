@@ -799,19 +799,17 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_kult_lichnosti
-		}
-		prerequisite = {
 			focus = UKR_uvazhaemiy_partner
 		}
 		available = {
-					country_exists = GEO
-				}
+			country_exists = GEO
+		}
 		x = 36
 		y = 2
-            completion_reward = {
-					GEO = { add_opinion_modifier = { target = UKR modifier = tripartite_pact_opinion } }
-					UKR = { add_opinion_modifier = { target = GEO modifier = tripartite_pact_opinion } }
-				}
+		completion_reward = {
+			GEO = { add_opinion_modifier = { target = UKR modifier = tripartite_pact_opinion } }
+			UKR = { add_opinion_modifier = { target = GEO modifier = tripartite_pact_opinion } }
+		}
 	}
 	focus = {
 		id = UKR_sanitarniy_kordon
@@ -838,13 +836,13 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = DON
-						}
-				}
-
+		completion_reward = {
+			news_event = dk_news.28
+			declare_war_on  = {
+				type = annex_everything
+				target = DON
+			}
+		}
 	}
 	focus = {
 		id = UKR_vernut_zavod_roshen

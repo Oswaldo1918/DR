@@ -8,7 +8,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-		
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 
@@ -34,6 +37,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -56,6 +63,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 			ALB = {
 				has_government = vmestolev
 				has_opinion = {
@@ -88,6 +99,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -109,6 +124,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -130,6 +149,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -151,7 +174,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -182,6 +208,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value < -0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -205,7 +235,7 @@ MAT_hui_znaet_balance_of_power_category = {
 		available = {
 			power_balance_value = {
 				id = MAT_hui_znaet_balance
-				value < -0.7
+				value < -0.1
 			}
 		}
 		visible = {
@@ -229,7 +259,10 @@ MAT_hui_znaet_balance_of_power_category = {
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
-
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 
@@ -248,13 +281,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			}		
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 	MAT_bop_likerovodochnaya_otrasl = { ###Ликёроводочная_отрасль
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -283,13 +320,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 	MAT_bop_boebribasi_tankistam = { ###Боеприпасы_танкистам
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -308,13 +349,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 	MAT_bop_toplivo_dlya_tankistov = { ###Топливо_для_танкистов
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -328,11 +373,18 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 			add_fuel = 400
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	MAT_bop_tankoviy_chempionat = { ###Танковый_чемпионат
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -347,13 +399,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			#country_event = MAT.20
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 	MAT_bop_religioznaya_propaganda = { ###Религиозная_пропаганда
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -376,13 +432,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			stability_factor = -0.05
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
-	MAT_bop_tanki_na_shakhti= { ###Отправить_танки_на_рудники
+	MAT_bop_tanki_na_shakhti = { ###Отправить_танки_на_рудники
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -411,13 +471,17 @@ MAT_hui_znaet_balance_of_power_category = {
 			}
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 	MAT_bop_uchilishe_tuhacha = { ###ВКУ_им_Тухачевского
 		icon = GFX_decision_SOV_secure_the_administration  
 		allowed = { original_tag = MAT }
 		available = {
+			power_balance_value = {
+				id = MAT_hui_znaet_balance
+				value > 0.1
+			}
 		}
 		visible = {
 			tag = MAT
@@ -433,7 +497,7 @@ MAT_hui_znaet_balance_of_power_category = {
 			country_event = Orel.1
 		}
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 }

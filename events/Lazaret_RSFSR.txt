@@ -225,7 +225,42 @@ country_event = { #Развал пакта
 	
 	option = { #сторона Керба и Чумака
 		name = lazaret.9.a
-		
+		news_event = dk_news.25
+		ARK = { 
+			country_event = { 
+				id = 
+				days = 2
+				random_hours = 12
+			}
+		}
+		WHS = { 
+			country_event = { 
+				id = 
+				days = 2
+				random_hours = 12
+			}
+		}
+		UNT = { 
+			country_event = { 
+				id = 
+				days = 2
+				random_hours = 12
+			}
+		}
+		MAT  = { 
+			country_event = { 
+				id = Orel.30
+				days = 2
+				random_hours = 12
+			}
+		}
+		DON = { 
+			country_event = { 
+				id = donbass.14
+				days = 2
+				random_hours = 12
+			}
+		}
 		LAZ = {
 			end_puppet = CHT
 			end_puppet = MAT
@@ -339,6 +374,42 @@ country_event = { #Развал пакта
 	}
 	option = { #сторона Лазарета
 		name = lazaret.9.b
+		news_event = dk_news.25
+		#ARK = { 
+		#	country_event = { 
+		#		id = 
+		#		days = 2
+		#		random_hours = 12
+		#	}
+		#}
+		#WHS = { 
+		#	country_event = { 
+		#		id = 
+		#		days = 2
+		#		random_hours = 12
+		#	}
+		#}
+		#UNT = { 
+		#	country_event = { 
+		#		id = 
+		#		days = 2
+		#		random_hours = 12
+		#	}
+		#}
+		MAT  = { 
+			country_event = { 
+				id = Orel.30
+				days = 2
+				random_hours = 12
+			}
+		}
+		DON = { 
+			country_event = { 
+				id = donbass.14
+				days = 2
+				random_hours = 12
+			}
+		}
 		LAZ = {
 			end_puppet = CHT
 			end_puppet = MAT

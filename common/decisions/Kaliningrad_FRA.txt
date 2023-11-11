@@ -20,6 +20,7 @@ KLG_vrag_y_vorot = { #Враг у ворот
 		}
 
 		timeout_effect = {
+			news_event = dk_news.32
 			VSB = {
 			    add_state_core = 763
 			    declare_war_on = {

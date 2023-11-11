@@ -6,6 +6,28 @@ TUP_war_Tupichok = {
 		cost = 50
 		
 		available = {
+			OR = {
+				AND = {
+					date > 3.09.15
+					date < 3.12.01
+				}
+				AND = {
+					date > 4.09.15
+					date < 4.12.01
+				}
+				AND = {
+					date > 5.09.15
+					date < 5.12.01
+				}
+				AND = {
+					date > 6.09.15
+					date < 6.12.01
+				}
+				AND = {
+					date > 7.09.15
+					date < 7.12.01
+				}
+			}
 			is_neighbor_of = SUO
 			195 = {
 				OR = {
