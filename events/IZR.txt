@@ -17,7 +17,19 @@ country_event = {
 	
 	option = {
 		news_event = dk_news.31
-	        name = IZR.1.a 			            
+	        name = IZR.1.a 
+			kill_country_leader = yes
+			add_country_leader_role = {
+				character = IZR_Makarevich
+				promote_leader = yes
+				country_leader = {    
+					ideology = despotism
+					expire = "2023.1.1.1"
+					traits = {
+						
+					}
+				}
+			}			
 			hidden_effect = {
 			    swap_ideas = {
 					remove_idea = IZR_volneniya_sredi_arabov

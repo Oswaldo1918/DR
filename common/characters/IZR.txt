@@ -14,4 +14,17 @@ characters={
         	traits = { popular_figurehead }
 		}	
 	}
+    IZR_Makarevich = {
+		name = "Андрей Макаревич"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Makarevich.dds"
+			}
+			army = {				
+				large = "gfx/leaders/ISR/Makarevich.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}	
+	}
 }
