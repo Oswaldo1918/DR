@@ -165,7 +165,6 @@ focus_tree = {
 		x = 1
 		y = 5
 		completion_reward = {
-			add_ideas = MAT_idea_next_generation
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -687,45 +686,19 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = DON_idea_war_communism
-				}
-				swap_ideas = {
-					remove_idea = DON_idea_war_communism
-					add_idea = DON_idea_war_communism_2
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_idea = DON_idea_five_year_plan
-				}
-				swap_ideas = {
-					remove_idea = DON_idea_five_year_plan
-					add_idea = DON_idea_five_year_plan_2
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
 	}
 	focus = {
 		id = MAT_razvitiye_selskogo_hozyaistva
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_razvitie_selskogo_khozyaystva
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_prodolzhit_promishlenniy_plan
@@ -744,7 +717,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_razvitiye_stroitalnoy_otrasli
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_razvitie_stroitelnoy_otrasli
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_prodolzhit_promishlenniy_plan
@@ -813,7 +786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_obespechit_narod
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_obespechit_narod
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_razvitiye_selskogo_hozyaistva
@@ -829,7 +802,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_svoya_metallurgiya
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_svoya_metallurgia
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_reconstruktsiya_KMA
@@ -850,7 +823,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_formirovaniye_strategicheskogo_rezerva
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_formirovanie_strategicheskogo_rezerva
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_obespechit_narod
@@ -869,7 +842,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_metallurgiya_na_export
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_metallurgia_na_export
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_svoya_metallurgiya
@@ -888,7 +861,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_reforma_GKO
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_reforma_GKO
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_pervaia_pyaitiletka
@@ -901,7 +874,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_agressivnaya_starategiya
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_agressivnaya_strategia
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_reforma_GKO
@@ -928,7 +901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_oboronitelnava_strategiya
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_oboronitelnaya_strategia
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_reforma_GKO
@@ -987,7 +960,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_podgotovit_dorogi
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_podgotovit_infrastrukturu
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_agressivnaya_starategiya
@@ -1040,7 +1013,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_stroitelstvo_bunkerov
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_stroitelstvo_bunkerov
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_oboronitelnava_strategiya
@@ -1153,7 +1126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_probniye_reydi
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_probnye_reydy
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_tankoviye_patruli
@@ -1267,7 +1240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_sozdat_rls
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_sozdat_RLS
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_tankoviye_patruli
@@ -1290,7 +1263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_peresmotr_doktrini
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_peresmotr_doktriny
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_tankoviye_patruli
@@ -1309,7 +1282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_usilit_priziv
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_usilit_prizyv
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_sozdat_rls
@@ -1386,7 +1359,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_reshayushiy_udar
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_reshayushiy_udar
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_prefoshodstvo_v_nebe
@@ -1421,7 +1394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_zakrit_granitsu
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_zakrit_granitsu
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_prevoshodstvo_na_zemle
@@ -1550,7 +1523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_integratsiya_v_lazaret
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_podgotovitsya_k_integratsii_v_Lazaret
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_avtakriya
@@ -1602,7 +1575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_chezvichayniye_meri
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_chrezvychaynye_mery
 		cost = 5,00
 		available = {
 			always = no
@@ -1619,7 +1592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_atakovat_Untsa
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_atakovat_voronezhskuyu_kliku
 		cost = 5,00
 		available = {
 			power_balance_value = {
@@ -1645,7 +1618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MAT_proriv_k_stavropolu
-		icon = GFX_goal_unknown
+		icon = GFX_MAT_goal_proryv_k_Stavropolyu
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_atakovat_Untsa
