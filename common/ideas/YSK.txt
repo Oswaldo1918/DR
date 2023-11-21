@@ -1387,6 +1387,42 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05				
 			    }
-		    }			
+		    }
+            YSK_strong_socialka = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.075
+				party_popularity_stability_factor = 0.075
+				consumer_goods_factor = 0.1				
+			    }
+		    }
+            YSK_zapret_voenkomatov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.035
+                conscription_factor = -0.5				
+			    }
+		    }
+            YSK_contract_army = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.05
+				war_support_factor = -0.075
+				consumer_goods_factor = -0.025
+                conscription_factor = -0.25
+                army_org_factor = 0.05    				
+			    }
+		    }   			
 	    }		
 }

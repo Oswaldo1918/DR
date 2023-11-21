@@ -3572,7 +3572,34 @@ focus_tree = {
 		}
 		x = 11
 		y = 11
-
+        completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_political_power = -75
+			add_stability = 0.05
+			add_war_support = 0.075
+			653 = { add_manpower = -50000}
+			572 = { add_manpower = -50000}
+			573 = { add_manpower = -50000}
+			582 = { add_manpower = -50000}
+			403 = { add_manpower = -50000}
+			571 = { add_manpower = -50000}
+			570 = { add_manpower = -50000}
+			40 = { add_manpower = -50000}
+			578 = { add_manpower = -50000}
+			579 = { add_manpower = -50000}
+			568 = { add_manpower = -50000}
+			KAZ = { add_manpower = 100000}
+			TMS = { add_manpower = 100000}
+			KYR = { add_manpower = 175000}
+			TAJ = { add_manpower = 125000}
+		}      
 	}
 	focus = {
 		id = YSK_strong_socialka
@@ -3583,7 +3610,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 12
-
+        completion_reward = {
+			add_ideas = YSK_strong_socialka
+		}         
 	}
 	focus = {
 		id = YSK_zapret_voenkomatov
@@ -3595,7 +3624,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 11
-
+        completion_reward = {
+			add_ideas = YSK_zapret_voenkomatov
+		}     
 	}
 	focus = {
 		id = YSK_contract_army
@@ -3606,18 +3637,35 @@ focus_tree = {
 		}
 		x = 16
 		y = 12
-
+        completion_reward = {
+			swap_ideas = {
+			remove_idea = YSK_zapret_voenkomatov
+			add_idea = YSK_contract_army
+		    }
+		}      
 	}
 	focus = {
 		id = YSK_slezt_s_neft_igly
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
+			focus = YSK_zakreplenie_RusDemokraty
 			focus = YSK_Sosaiti_Futury
 		}
 		x = 13
 		y = 11
-
+        completion_reward = {
+			set_variable = { YSK_natslib_ecopol_stability_factor = 0.0  }
+            set_variable = { YSK_natslib_ecopol_political_power_factor = 0.0  }
+            set_variable = { YSK_natslib_ecopol_production_oil_factor  = -0.025  }
+			set_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.0 } 
+			set_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.0 }
+			set_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.0 } 
+			set_variable = { YSK_natslib_ecopol_production_factory_max_efficiency_factor = 0.0 }
+			set_variable = { YSK_natslib_ecopol_production_factory_start_efficiency_factor = 0.0 } 
+			set_variable = { YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.0 }
+			add_dynamic_modifier = { modifier = YSK_new_natslib_economic_polilika }
+		}        
 	}
 	focus = {
 		id = YSK_privatizatsiya
@@ -3628,7 +3676,179 @@ focus_tree = {
 		}
 		x = 12
 		y = 12
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.05 }
+		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = -0.01 }
+			add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 }
+			random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = industrial_complex
+									level = 1
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = industrial_complex
+									level = 1
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = industrial_complex
+									level = 1
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							remove_building  = {
+									type = industrial_complex
+									level = 1
+								}
+						}	
+		}     
 	}
 	focus = {
 		id = YSK_total_deregulyatsiya
@@ -3639,7 +3859,11 @@ focus_tree = {
 		}
 		x = 11
 		y = 13
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
+		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = -0.01 }
+			add_to_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.025 }
+        }			
 	}
 	focus = {
 		id = YSK_garantii_prav_sobsvennosti
@@ -3650,7 +3874,11 @@ focus_tree = {
 		}
 		x = 14
 		y = 12
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
+		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.01 }
+			add_to_variable = { YSK_natslib_ecopol_political_power_gain = 0.025 }
+        }       
 	}
 	focus = {
 		id = YSK_invest_v_infrastruktury
@@ -3664,7 +3892,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 13
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
+			add_to_variable = { YSK_natslib_ecopol_production_speed_infrastructure_factor  = 0.075 }
+        }   
 	}
 	focus = {
 		id = YSK_demonopolozation_rynkov
@@ -3678,7 +3909,11 @@ focus_tree = {
 		}
 		x = 12
 		y = 14
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
+			add_to_variable = { YSK_natslib_ecopol_production_factory_start_efficiency_factor  = -0.05 } 
+            add_to_variable = { YSK_natslib_ecopol_production_factory_max_efficiency_factor  = 0.05 }      			
+        }     
 	}
 	focus = {
 		id = YSK_debureaucratization
@@ -3689,7 +3924,11 @@ focus_tree = {
 		}
 		x = 15
 		y = 13
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
+			add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 } 
+            add_to_variable = { YSK_natslib_ecopol_political_power_gain = 0.025 }      			
+        }       
 	}
 	focus = {
 		id = YSK_povysh_effect_gosrashodov
@@ -3703,7 +3942,11 @@ focus_tree = {
 		}
 		x = 14
 		y = 14
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
+			add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.025 } 
+            add_to_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.025 }      			
+        }      
 	}
 	focus = {
 		id = YSK_gos_stimulirovanie_rosta
@@ -3717,7 +3960,11 @@ focus_tree = {
 		}
 		x = 13
 		y = 15
-
+        completion_reward = {
+			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
+			add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.01 } 
+            add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 }      			
+        }     
 	}
 	#Роберт Райт
 	focus = {
