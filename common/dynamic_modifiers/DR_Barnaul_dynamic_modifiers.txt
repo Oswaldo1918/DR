@@ -32,7 +32,7 @@ YSK_militarization_of_society_dynamic_modifier = { #милитаризация_�
 YSK_god_dynamic_modifier = {	
 	
 	enable = { always = yes }
-	icon = GFX_idea_SOV_war_heroes
+	icon = GFX_idea_YSK_god_dynamic_modifier
 	
 	stability_factor = YSK_pamyat_god_stability_factor
 	war_support_factor = YSK_pamyat_god_war_support_factor
@@ -47,7 +47,7 @@ YSK_god_dynamic_modifier = {
 YSK_tsar_dynamic_modifier = {	
 	
 	enable = { always = yes }
-	icon = GFX_idea_SOV_war_heroes
+	icon = GFX_idea_YSK_tsar_dynamic_modifier
 	
 	stability_factor = YSK_pamyat_tsar_stability_factor
 	party_popularity_stability_factor = YSK_pamyat_tsar_party_popularity_stability_factor
@@ -63,7 +63,7 @@ YSK_tsar_dynamic_modifier = {
 YSK_nation_dynamic_modifier = {	
 	
 	enable = { always = yes }
-	icon = GFX_idea_SOV_war_heroes
+	icon = GFX_idea_YSK_nation_dynamic_modifier
 	
 	war_support_factor = YSK_pamyat_nation_war_support_factor
 	conscription_factor = YSK_pamyat_nation_conscription_factor

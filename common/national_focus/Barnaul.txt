@@ -1673,7 +1673,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_razovetsya_gordo_rus_styag
+			focus = YSK_vozradit_rus_nation
+		}
+		available = {
+		    has_complete_focus = YSK_razovetsya_gordo_rus_styag  
 		}
 		x = 96
 		y = 13
@@ -1688,6 +1691,9 @@ focus_tree = {
 		id = YSK_golos_nashego_vozhdya
 		icon = GFX_goal_unknown
 		cost = 2,00
+		prerequisite = {
+			focus = YSK_razovetsya_gordo_rus_styag
+		}
 		prerequisite = {
 			focus = YSK_tverzhe_duh_boytsovskiy
 		}
@@ -1705,7 +1711,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_edinstvo_nasha_sila
+			focus = YSK_golos_nashego_vozhdya
+		}
+		available = {
+		    has_complete_focus = YSK_edinstvo_nasha_sila  
 		}
 		x = 96
 		y = 15
@@ -1736,6 +1745,9 @@ focus_tree = {
 		id = YSK_vperde_vperde_slavyani
 		icon = GFX_goal_unknown
 		cost = 2,00
+		prerequisite = {
+			focus = YSK_edinstvo_nasha_sila
+		}
 		prerequisite = {
 			focus = YSK_na_bitvy_Slavnuyu_za_Rus_idya
 		}
@@ -2628,17 +2640,16 @@ focus_tree = {
 		id = YSK_POEHALI
 		icon = GFX_goal_unknown
 		cost = 2,00
-		available = {
+		x = 65
+		y = 18
+        available = {
 			has_complete_focus = YSK_toplivo_iz_svyat_vody
 			has_complete_focus = YSK_dvigately_na_svyat_duhe
 			has_complete_focus = YSK_ortodox_batuts
 			has_complete_focus = YSK_osvyatit_rakety
 			has_complete_focus = YSK_new_energy
 			has_complete_focus = YSK_kanonizirovat_Gagarina
-		}
-		x = 65
-		y = 18
-
+		} 
 	}
 	focus = {
 		id = YSK_razbyrokrachivanie
