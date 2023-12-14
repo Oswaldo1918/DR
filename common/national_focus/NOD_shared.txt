@@ -1385,17 +1385,24 @@ if = {
 			focus = NOD_prodolzhat_poiski
 		}
 		ai_will_do = {
-        factor = 100
+			factor = 100
 		}
 		x = 48
 		y = 2
 		available = {
-					has_country_flag = NOD_net_zagovora
-				}
+			has_country_flag = NOD_net_zagovora
+		}
 		completion_reward = {
-add_popularity = { ideology = fascism popularity = 0.05 }	
-add_war_support = 0.1	
-	  }
+			add_popularity = { 
+				ideology = fascism 
+				popularity = 0.05
+			}	
+			add_war_support = 0.1	
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}	
 	}
 	
 	shared_focus = {
@@ -1464,17 +1471,10 @@ completion_reward = {
 			has_war = no
 		}
         ai_will_do = {
-			base = 10
+			base = 5
 			modifier = {
-				if = {
-					limit = {
-						date > 4.5.5
-					}
-					factor = 0
-				}
-				else = {
-					factor = 5
-				}
+				NOT = { has_completed_focus = NOD_hazari }
+				factor = 0
 			}
 		}
 		completion_reward = {
@@ -1613,19 +1613,26 @@ create_wargoal = {
 		prerequisite = {
 			focus = NOD_nats_iskluchitelnost
 		}
+        ai_will_do = {
+			base = 5
+			modifier = {
+				date < 4.01.01
+				factor = 0
+			}
+		}
 		available = {
 			has_war = no
 		}
 		x = 46
 		y = 3
-completion_reward = {
-add_state_claim = 236
-add_state_claim = 237
-create_wargoal = {
-							type = annex_everything
-							target = HAZ
-						}
-}
+		completion_reward = {
+			add_state_claim = 236
+			add_state_claim = 237
+			create_wargoal = {
+				type = annex_everything
+				target = HAZ
+			}
+		}
 	}
 	shared_focus = {
 		id = NOD_kavkaz_vopros
@@ -1641,40 +1648,33 @@ create_wargoal = {
 			has_war = no
 		}
         ai_will_do = {
-			base = 10
+			base = 5
 			modifier = {
-				if = {
-					limit = {
-						date > 4.5.5
-					}
-					factor = 0
-				}
-				else = {
-					factor = 5
-				}
+				date < 5.01.01
+				factor = 0
 			}
 		}
 		x = 45
 		y = 4
-completion_reward = {
-        add_timed_idea = { idea = NOD_plan_Yug days = 90 }         
-    create_wargoal = {
-							type = annex_everything
-							target = GEO
-						}
-    create_wargoal = {
-							type = annex_everything
-							target = CHK
-						}
-	create_wargoal = {
-							type = annex_everything
-							target = ARM
-						}	
-	create_wargoal = {
-							type = annex_everything
-							target = AZR
-						}			
-}
+		completion_reward = {
+			add_timed_idea = { idea = NOD_plan_Yug days = 90 }         
+			create_wargoal = {
+				type = annex_everything
+				target = GEO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CHK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ARM
+			}	
+			create_wargoal = {
+				type = annex_everything
+				target = AZR
+			}			
+		}
 	}
 	shared_focus = {
 		id = NOD_chat
@@ -2234,6 +2234,7 @@ create_wargoal = {
 			}
 		}
 	}
+	###БЛИЖНЕЕ_ЗАРУБЕЖЬЕ
 	shared_focus = {
 		id = NOD_vnesnie_operatsii
 		icon = GFX_goal_generic_improve_relations
@@ -2245,11 +2246,17 @@ create_wargoal = {
 			focus = NOD_nats_iskluchitelnost
 		}
         ai_will_do = {
-			base = 10
+			base = 5
 			modifier = {
-				NOT = {
+				AND = {
 					controls_state = 219
 					controls_state = 195
+				}
+				factor = 0
+			}
+			modifier = {
+				AND = {
+					date < 7.01.01
 				}
 				factor = 0
 			}

@@ -6,7 +6,7 @@ DR_form_russian_state_decisions_category = {
 	visible = {
 		is_puppet = no
 		is_subject = no
-		has_country_flag = DR_start_reunite_Russia_cf	
+		has_country_flag = DR_start_reunite_Russia_cf
 	}
 }
 DR_reunite_russia_decisions_category = {
@@ -17,6 +17,7 @@ DR_reunite_russia_decisions_category = {
 		is_puppet = no
 		is_subject = no
 		has_country_flag = DR_start_reunite_Russia_cf	
+		NOT = { tag = NOD}
 	}
 }
 DR_core_russian_territories_decisions_category = {
