@@ -1246,7 +1246,7 @@ ideas = {
 			    }
 		    }
             YSK_save_Russia = {
-			    picture = spr_anti_fascist_crusade			
+			    picture = YSK_save_Russia			
 			    modifier = {
 				war_support_factor = 0.075
 				army_attack_factor = 0.05
@@ -1387,6 +1387,501 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05				
 			    }
-		    }			
+		    }
+            YSK_strong_socialka = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.075
+				party_popularity_stability_factor = 0.075
+				consumer_goods_factor = 0.1				
+			    }
+		    }
+            YSK_zapret_voenkomatov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.035
+                conscription_factor = -0.5				
+			    }
+		    }
+            YSK_contract_army = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.05
+				war_support_factor = -0.075
+				consumer_goods_factor = -0.025
+                conscription_factor = -0.25
+                army_org_factor = 0.05    				
+			    }
+		    }
+            YSK_rus_respublikanism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.02
+				party_popularity_stability_factor = 0.02
+    			democratic_drift = 0.01	
+			    }
+		    }
+            YSK_rus_respublikanism_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.05
+    			democratic_drift = 0.02	
+			    }
+		    }  
+ 			YSK_rus_respublikanism_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.075
+				stability_factor = 0.075
+				party_popularity_stability_factor = 0.075
+    			democratic_drift = 0.03
+                metacommy_drift = -0.03
+                anarhostalinism_drift = -0.03     
+                vmestolev_drift = -0.03    				
+			    }
+		    }
+			YSK_rev_nationalism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				conscription = 0.02
+				war_support_factor = 0.075
+				army_attack_factor = 0.01
+    			fascism_drift = 0.03    				
+			    }
+		    }
+			YSK_aristocratic_nationalism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				conscription = 0.03
+				conscription_factor = -0.3
+				war_support_factor = 0.075
+				stability_factor = -0.1
+				army_attack_factor = 0.05
+    			neutrality_drift = 0.03    				
+			    }
+		    }
+			YSK_new_tabel_o_rangah = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = -0.025
+                party_popularity_stability_factor = 0.05
+               	political_advisor_cost_factor = 0.05
+ 				drift_defence_factor = 0.05
+			    }
+		    }
+			YSK_new_tabel_o_rangah_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = -0.05
+                party_popularity_stability_factor = 0.075
+               	political_advisor_cost_factor = 0.075
+ 				drift_defence_factor = 0.1
+				consumer_goods_factor = -0.01
+			    }
+		    }
+			YSK_new_tabel_o_rangah_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.035
+				stability_factor = -0.075
+                party_popularity_stability_factor = 0.1
+               	political_advisor_cost_factor = 0.075
+ 				drift_defence_factor = 0.15
+				consumer_goods_factor = -0.03
+			    }
+		    }
+			YSK_new_dvoryanstvo = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = -0.05
+                party_popularity_stability_factor = 0.075
+               	conscription_factor = -0.1
+			    }
+		    }
+			YSK_new_dvoryanstvo_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = -0.075
+                party_popularity_stability_factor = 0.1
+               	conscription_factor = -0.1
+				conscription = 0.05
+			    }
+		    }
+			YSK_kirilovich = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.01
+				stability_factor = 0.035
+                war_support_factor = 0.035
+			    }
+		    }
+			YSK_kirilovich_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.01
+				stability_factor = 0.075
+                war_support_factor = 0.035
+				consumer_goods_factor = 0.02
+				monthly_population = 0.05
+			    }
+		    }
+			YSK_Vindzor = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.05
+                army_org_factor = 0.02
+			    }
+		    }
+			YSK_Vindzor_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.05
+                army_org_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.05
+			    }
+		    }
+			YSK_Tessa = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.03
+				war_support_factor = 0.035
+                army_attack_factor = 0.02
+			    }
+		    }
+			YSK_Tessa_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.03
+				war_support_factor = 0.07
+                army_attack_factor = 0.03
+				conscription_factor = 0.1
+			    }
+		    }
+			YSK_grazhdanskiy_nationalism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.07
+                non_core_manpower = 0.1
+				conscription_factor = 0.1
+			    }
+		    }
+			YSK_etnich_nationalism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = -0.05
+				war_support_factor = 0.07
+                non_core_manpower = -0.15
+				conscription = 0.02
+				conscription_factor = -0.15
+			    }
+		    }
+			YSK_sekulyarnost = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.07
+                consumer_goods_factor = -0.03
+			    }
+		    }
+			YSK_povysit_status_tserkvi = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = -0.02
+				war_support_factor = 0.07
+                consumer_goods_factor = 0.05
+				party_popularity_stability_factor = 0.1
+			    }
+		    }
+			YSK_russkost = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.02
+                conscription_factor = 0.01
+			    }
+		    }
+			YSK_russkost_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.03
+				stability_factor = -0.03
+                conscription_factor = 0.01
+				consumer_goods_factor = -0.02
+			    }
+		    }
+			YSK_russkost_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+                conscription_factor = 0.02
+				consumer_goods_factor = -0.02
+				army_attack_factor = 0.03
+				army_org_factor = -0.05
+			    }
+		    }
+			YSK_russkost_3 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+                conscription_factor = 0.02
+				consumer_goods_factor = -0.02
+				army_attack_factor = 0.03
+				army_org_factor = -0.05
+				army_core_defence_factor = 0.03
+				production_speed_bunker_factor = 0.075
+			    }
+		    }
+			YSK_na_zlo_sovkam = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.075
+				monthly_population = -0.05
+			    }
+		    }
+			YSK_na_zlo_sovkam_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = -0.025
+				party_popularity_stability_factor = 0.075
+				monthly_population = -0.05
+			    }
+		    }
+			YSK_na_zlo_sovkam_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.085
+				weekly_manpower = -100
+				party_popularity_stability_factor = 0.075
+				monthly_population = -0.25
+				supply_consumption_factor = -0.05
+			    }
+		    }
+			YSK_na_zlo_sovkam_3 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.1
+				weekly_manpower = -100
+				party_popularity_stability_factor = 0.075
+				monthly_population = 0.25
+				supply_consumption_factor = -0.05
+			    }
+		    }
+			YSK_den_otmshcheniya = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.03
+				war_support_factor = 0.075
+				weekly_manpower = -25
+			    }
+		    }
+			YSK_den_otmshcheniya_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = -0.05
+				weekly_manpower = -25
+				conscription_factor = 0.075
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+			    }
+		    }
+			YSK_den_otmshcheniya_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = 0.03
+				weekly_manpower = -125
+				conscription_factor = 0.075
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+				anarhostalinism_drift = -0.02
+				metacommy_drift = -0.02
+				vmestolev_drift = -0.02
+				drift_defence_factor = 0.2
+			    }
+		    }
+			YSK_den_otmshcheniya_3 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.075
+				war_support_factor = 0.1
+				stability_factor = -0.02
+				weekly_manpower = -250
+				conscription_factor = 0.075
+				army_morale_factor = 0.05
+				army_org_factor = 0.02
+				anarhostalinism_drift = -0.02
+				metacommy_drift = -0.02
+				vmestolev_drift = -0.02
+				drift_defence_factor = 0.2
+				supply_consumption_factor = -0.025
+			    }
+		    }
+			YSK_unitarnost = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.025
+				global_building_slots_factor = 0.025
+			    }
+		    }
+			YSK_unitarnost_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.025
+				global_building_slots_factor = 0.03
+				conscription_factor = -0.05
+				
+			    }
+		    }
+			YSK_davit_gender_menshinstv = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.025
+				war_support_factor = 0.05
+				conscription_factor = -0.025				
+			    }
+		    }
+			YSK_davit_gender_menshinstv_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.075
+				conscription_factor = -0.025
+                consumer_goods_factor = 0.01
+                monthly_population = 0.25
+                weekly_manpower	= 25			
+			    }
+		    }
+			YSK_razreshit_netrad_braki = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = -0.025
+				stability_factor = -0.025
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+ 				weekly_manpower	= 25
+			    }
+		    }
+			YSK_cult_nats_gomoerotic = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = -0.075
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+ 				weekly_manpower	= 25
+				consumer_goods_factor = -0.01
+			    }
+		    }
 	    }		
 }
