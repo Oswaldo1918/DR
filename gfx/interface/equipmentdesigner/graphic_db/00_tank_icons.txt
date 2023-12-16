@@ -13,7 +13,6 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAB_camo.dds" 
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC.dds"
 #				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_AAC_camo.dds"
-                "gfx/interface/technologies/Shushpanzer4.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABA.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABA_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_ABB.dds" 
@@ -1381,8 +1380,7 @@ MGN = {
     light_tank_chassis_0 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/MGN_t-18.dds"
-				"gfx/interface/technologies/MGN_t-27.dds"
+				
 			}
 		}
 	}
@@ -1390,13 +1388,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_basic_light_tank.dds" 
-				"gfx/interface/technologies/MGN_t-26.dds" 
-				"gfx/interface/technologies/MGN_t-26e.dds" 
-				"gfx/interface/technologies/MGN_ht-26.dds" 
-				"gfx/interface/technologies/MGN_ht-130.dds" 
-				"gfx/interface/technologies/MGN_ht-133.dds" 
-				"gfx/interface/technologies/MGN_T26_model38.dds" 
-				"gfx/interface/technologies/MGN_BT-5.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_AAC.dds"
@@ -1421,7 +1412,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_imp_light_tank.dds" 
-				"gfx/interface/technologies/MGN_BT-SV.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_BAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_BAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_BAC.dds"
@@ -1446,8 +1436,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_adv_light_tank.dds" 
-				"gfx/interface/technologies/MGN_T-70.dds" 
-				"gfx/interface/technologies/MGN_t-50.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_CAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_CAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_light_CAC.dds"
@@ -1470,7 +1458,7 @@ MGN = {
 	medium_tank_chassis_0 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/MGN_t-24.dds" 		
+				
 			}
 		}
 	}
@@ -1478,8 +1466,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_basic_main_tank.dds" 
-				"gfx/interface/technologies/MGN_t-28.dds" 
-				"gfx/interface/technologies/MGN_t-34_L11.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_AAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_AAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_AAC.dds"
@@ -1504,11 +1490,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_imp_main_tank.dds" 
-				"gfx/interface/technologies/MGN_t-34_F34.dds" 
-				"gfx/interface/technologies/MGN_t-34_STZ.dds" 
-				"gfx/interface/technologies/MGN_t-34-76e.dds" 
-				"gfx/interface/technologies/MGN_t-34_43.dds" 
-				"gfx/interface/technologies/MGN_ot-34-76.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_BAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_BAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_BAC.dds"
@@ -1533,9 +1514,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_adv_main_tank.dds" 
-				"gfx/interface/technologies/MGN_t-34_D5T.dds" 
-				"gfx/interface/technologies/MGN_t-34_ZISS53.dds" 
-				"gfx/interface/technologies/MGN_t-34-85e.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_CAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_CAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_medium_CAC.dds"
@@ -1558,7 +1536,6 @@ MGN = {
 	heavy_tank_chassis_0 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/MGN_mkV.dds" 
 			}
 		}
 	}
@@ -1566,8 +1543,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_basic_heavy_tank.dds" 
-				"gfx/interface/technologies/MGN_t-35.dds" 
-				"gfx/interface/technologies/MGN_t-35_37.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_AAC.dds"
@@ -1592,7 +1567,6 @@ MGN = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SOV_imp_heavy_tank.dds" 
-				"gfx/interface/technologies/MGN_KV-1_L11.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_BAB.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_BAB_camo.dds" 
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/SOV_heavy_BAC.dds"
