@@ -2413,6 +2413,7 @@ country_event = POK.30
                 popularity = 0.075
             }
 			add_ideas = POK_support_russian_nationalism
+			set_cosmetic_tag = POK_elts
 		}   
 	}
 	
@@ -2429,6 +2430,9 @@ country_event = POK.30
 		}
 		x = 1
 		y = 21
+  completion_reward = {
+set_cosmetic_tag = POK_fed
+}
 
 	}
 	shared_focus = {
