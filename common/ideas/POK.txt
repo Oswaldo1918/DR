@@ -1136,6 +1136,38 @@ ideas = {
 				political_power_gain = -0.02
 			}
 		}
+		POK_ally_loyal_monarchists = {
+
+			    picture = spr_anti_fascist_crusade
+			
+				targeted_modifier = {
+			    tag = YSK
+			    attack_bonus_against = 0.05
+		        }
+
+		    }
+		POK_ally_evrosocdems = {
+
+			    picture = spr_anti_fascist_crusade
+				
+				targeted_modifier = {
+				tag = ZNS
+			    attack_bonus_against = 0.05
+		        }
+				
+		    }
+			
+		POK_libdem_purity = {
+
+			    picture = spr_anti_fascist_crusade
+			    
+				targeted_modifier = {
+			    tag = MRD
+			    attack_bonus_against = 0.05
+		        }
+		    }
+			
+			
 		POK_kioski = {
 			
 			allowed = {

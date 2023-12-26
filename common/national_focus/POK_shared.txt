@@ -3371,6 +3371,7 @@ completion_reward = {
                 popularity = 0.05
             }
 			add_stability = 0.05
+			add_ideas = POK_ally_loyal_monarchists
 		}      
 	}
 	shared_focus = {
@@ -3395,6 +3396,7 @@ completion_reward = {
                 popularity = 0.05
             }
 			add_stability = 0.05
+			add_ideas = POK_ally_evrosocdems
 		}        
 	}
 	shared_focus = {
@@ -3428,6 +3430,7 @@ completion_reward = {
                 ideology = anarhostalinism
                 popularity = -0.05
             }
+			add_ideas = POK_libdem_purity
 		}      
 	}
 	shared_focus = {
@@ -3720,7 +3723,9 @@ available = {
 		}
 		x = 38
 		y = 19
-
+    completion_reward = {
+           custom_effect_tooltip = POK_proshay_nemitaya_rossiya_tt
+		}
 	}
 	
 	shared_focus = {
