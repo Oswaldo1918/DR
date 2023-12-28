@@ -1,6 +1,14 @@
 ideas = {
     country = {	
-	        UKR_mastera = {
+	        UKR_ukraine_ne_oboytis_bez_uglya_donbassa = {
+			
+				modifier = {
+					consumer_goods_factor = 0.1
+			    	industrial_capacity_factory = -0.2
+			    }
+	        }
+			
+			UKR_mastera = {
 			
 					equipment_bonus = {
 	            		armor = {
