@@ -1220,3 +1220,17 @@ news_event = { #Поход_шария_во_Францию
 		name = dk_news.59.a
 	}
 }
+news_event = { #Падение_калиниграда
+    id = dk_news.60
+	title = dk_news.60.t
+	desc = dk_news.60.d
+	picture = GFX_news_event_DKR_KLG_padeniye_kalinilgrada
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.60.a
+	}
+}

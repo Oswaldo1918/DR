@@ -1,0 +1,35 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_news_event_BSH_bebey"
+		texturefile = "gfx/animated_textures/bebey_pobeda_na_viborah.dds"
+		noOfFrames = 38
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_news_event_DKR_KLG_dom_sovetov"
+		texturefile = "gfx/animated_textures/oborona_kaliningrada.dds"
+		noOfFrames = 39
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_news_event_DKR_KLG_padeniye_kalinilgrada"
+		texturefile = "gfx/animated_textures/padeniye_kaliningrada.dds"
+		noOfFrames = 23
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

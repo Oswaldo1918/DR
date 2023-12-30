@@ -146,7 +146,7 @@ characters={
 		}
 
 	    corps_commander = {
-			traits = { infantry_officer }
+			traits = { }
         	skill = 1
          	attack_skill = 2
         	defense_skill = 2
@@ -167,7 +167,7 @@ characters={
 		}
 
 	    corps_commander = {
-			traits = { infantry_officer }
+			traits = { }
         	skill = 2
          	attack_skill = 3
         	defense_skill = 1
@@ -628,8 +628,9 @@ characters={
 				factor = 10
 			}
 			traits = {
-				the_academic
+				liberal_professor
 			}
+			the_academic
 		}
 		
 	}
@@ -1046,7 +1047,121 @@ characters={
 				baron_sibir
 			}
 		}
-	}	
+	}
+	POK_Krilov = {
+		name = "Константин Крылов"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Krilov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Krilov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_ally_loyal_monarchists
+		    }
+			traits = {
+				DEN_rightwing_populist
+			}
+		}
+	}
+
+POK_Sharanskiy = {
+		name = "Лев Щаранский"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Sharanskiy"
+			}
+			army = {
+				large = "gfx/leaders/POK/Sharansky.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Sharanskiy
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_libdem_purity
+		    }
+			traits = {
+				Ljesharanskiy
+			}
+		}
+		corps_commander = {
+			traits = { }
+        	skill = 8
+         	attack_skill = 1
+        	defense_skill = 1
+        	planning_skill = 1
+        	logistics_skill = 1
+			legacy_id = 0
+			visible = {		
+			has_completed_focus = POK_ally_evrosocdems
+		    }
+		}
+	}
+	
+POK_Ponomaryov = {
+		name = "Илья Пономарёв"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Ponomaryov"
+			}
+			army = {
+				large = "gfx/leaders/POK/Ponomaryov_general.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Ponomaryov
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_ally_evrosocdems
+		    }
+			traits = {
+			disarmament_proponent
+			prince_of_terror
+			}
+		}
+		corps_commander = {
+			traits = { }
+        	skill = 1
+         	attack_skill = 1
+        	defense_skill = 1
+        	planning_skill = 1
+        	logistics_skill = 1
+			legacy_id = 0
+			visible = {		
+			has_completed_focus = POK_ally_evrosocdems
+		    }
+		}
+	}
+	
     POK_Katz = {
 		name = "Максим Кац"
 
