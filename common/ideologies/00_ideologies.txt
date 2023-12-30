@@ -49,17 +49,16 @@ ideologies = {
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
+			
 		}
 		
 		faction_modifiers = {
@@ -116,17 +115,15 @@ ideologies = {
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		faction_modifiers = {
@@ -197,17 +194,15 @@ ideologies = {
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		faction_modifiers = {
@@ -249,7 +244,7 @@ ideologies = {
 		
 		color = { 0 0 255 }
 		
-rules = {
+		rules = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
@@ -260,20 +255,18 @@ rules = {
 			can_guarantee_other_ideologies = no
 		}
 
-modifiers = {
+		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		can_host_government_in_exile = yes
@@ -329,20 +322,18 @@ modifiers = {
 			can_guarantee_other_ideologies = no
 		}
 
-modifiers = {
+		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
 		}
 
 		ai_memoism = yes 
@@ -416,20 +407,18 @@ modifiers = {
 			can_guarantee_other_ideologies = no
 		}
 
-modifiers = {
+		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 100
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
 		}
 
 		can_host_government_in_exile = yes
@@ -481,20 +470,19 @@ modifiers = {
 			can_guarantee_other_ideologies = no
 		}
 
-modifiers = {
+		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			send_volunteer_divisions_required = -0.25
-			hidden_modifiers = {
 			join_faction_tension = 1 
 			take_states_cost_factor = -1
 			annex_cost_factor = -0.9
 			puppet_cost_factor = 1
 			guarantee_tension = 1
-			civilian_intel_to_others = 0.1
-			army_intel_to_others = 0.1
-			airforce_intel_to_others = 0.1
-			navy_intel_to_others = 0.1
-			}
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 5.0
+			airforce_intel_to_others = 10.0
+			
 		}
 		
 		faction_modifiers = {
