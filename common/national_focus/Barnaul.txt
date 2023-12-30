@@ -534,6 +534,377 @@ focus_tree = {
             remove_ideas = YSK_left_partizan          		
         }  		
 	}
+	#общая ветка
+	focus = {
+		id = YSK_rus_irredentism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		x = 40
+		y = 0
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_anime_konservatism_1
+							add_idea = YSK_anime_konservatism_2
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_true_ispilzovanie_recursov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_irredentism
+		}
+		x = 38
+		y = 1
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_local_resources_factor = 0.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_Restoration_monastres_and_consults
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_true_ispilzovanie_recursov
+		}
+		x = 37
+		y = 2
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_god_consumer_goods_factor = 0.025
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_Lobayev_arms
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Restoration_monastres_and_consults
+		}
+		x = 37
+		y = 3
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = infantry_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_new_rus_nation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_Lobayev_arms
+		}
+		mutually_exclusive = {
+			focus = YSK_idealizatsiya_dorev_proshlogo
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = YSK_idealizatsiya_dorev_proshlogo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Lobayev_arms
+		}
+		mutually_exclusive = {
+			focus = YSK_new_rus_nation
+		}
+		x = 38
+		y = 4
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_nation_political_power_gain = 0.015
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_stability_factor = 0.01
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_help_farmers
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_true_ispilzovanie_recursov
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = YSK_2_souznika
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_rus_irredentism
+		}
+		x = 42
+		y = 1
+			completion_reward = {
+					army_experience = 10
+					navy_experience = 10
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 1
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_legacy_white_guardian
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_2_souznika
+		}
+		x = 41
+		y = 2
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = YSK_vozvodit_soslovie_kazakov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_legacy_white_guardian
+		}
+		prerequisite = {
+			focus = YSK_help_farmers
+		}
+		x = 40
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_militarizatsiya_obzhestva
+							add_idea = YSK_militarizatsiya_obzhestva_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_psihicheskaya_atacka
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_legacy_white_guardian
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = YSK_tsar_tank
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_psihicheskaya_atacka
+			focus = YSK_vozvodit_soslovie_kazakov
+		}
+		x = 42
+		y = 4
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_tsar_pushka
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_vozvodit_soslovie_kazakov
+			focus = YSK_psihicheskaya_atacka
+		}
+		x = 40
+		y = 4
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_submarine_Kolchak
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_2_souznika
+		}
+		mutually_exclusive = {
+			focus = YSK_Linkor_anastasiya
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = YSK_Linkor_anastasiya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_2_souznika
+		}
+		mutually_exclusive = {
+			focus = YSK_submarine_Kolchak
+			focus = YSK_aeronosts_Nicolay_2
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = YSK_aeronosts_Nicolay_2
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_2_souznika
+		}
+		mutually_exclusive = {
+			focus = YSK_Linkor_anastasiya
+		}
+		x = 47
+		y = 2
+			completion_reward = {
+					navy_experience = 50
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = bc_tech
+							category = bb_tech
+							category = cv_tech
+						}
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = dd_tech
+						}
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_Ilya_muromets
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_submarine_Kolchak
+			focus = YSK_Linkor_anastasiya
+			focus = YSK_aeronosts_Nicolay_2
+		}
+		mutually_exclusive = {
+			focus = YSK_sky_taran
+		}
+		x = 44
+		y = 3
+			completion_reward = {
+					air_experience = 15
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_sky_taran
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_aeronosts_Nicolay_2
+			focus = YSK_Linkor_anastasiya
+			focus = YSK_submarine_Kolchak
+		}
+		mutually_exclusive = {
+			focus = YSK_Ilya_muromets
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = YSK_tsar_bimba
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Ilya_muromets
+			focus = YSK_sky_taran
+		}
+		x = 45
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 1.0
+							uses = 2
+							category = nuclear
+						}
+				}
+
+	}
 	#выбор пути
 	focus = {
 		id = YSK_rus_vibory
@@ -562,25 +933,26 @@ focus_tree = {
 			focus = YSK_moderate_rusnat
 			focus = YSK_sozvat_zemsobor
 		}
-		x = 85
+		x = 67
 		y = 7
-		available = {
-			has_country_flag = ultraprav_win
-		}
-        completion_reward = {
-            add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-            add_popularity = {
-				ideology = neutrality
-				popularity = -0.1
-			}
-            add_popularity = {
-				ideology = democratic
-				popularity = -0.1
-			}     			
-        }       
+			available = {
+					has_country_flag = ultraprav_win
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.15
+						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_i_motor_revet
@@ -589,11 +961,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_vot_praviy_povorot
 		}
-		x = 85
+		x = 67
 		y = 8
-        completion_reward = {
-            country_event = YSK.7    			
-        }         
+			completion_reward = {
+					country_event = YSK.7
+				}
+
 	}
 	focus = {
 		id = YSK_chto_on_nam_neset
@@ -602,11 +975,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_i_motor_revet
 		}
-		x = 85
+		x = 67
 		y = 9
-        completion_reward = {
-            country_event = YSK.8    			
-        }       
+			completion_reward = {
+					country_event = YSK.8
+				}
+
 	}
 	#Тесак
 	focus = {
@@ -616,15 +990,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 75
+		x = 63
 		y = 10
-        completion_reward = {
-            add_political_power = 75
-            add_popularity = {
-			ideology = fascism
-			popularity = 0.1
-		    }    			
-        }       
+			completion_reward = {
+					add_political_power = 75
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_zakonchit_s_besporyadkami
@@ -633,14 +1008,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_NNP
 		}
-		x = 75
+		x = 63
 		y = 11
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ns_besporyadki
-				add_idea = YSK_ns_besporyadki_1
-			}   			
-        }      
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ns_besporyadki
+							add_idea = YSK_ns_besporyadki_1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_sosaity_ulicnogo_nasiliya
@@ -652,14 +1028,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 74
+		x = 62
 		y = 12
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ns_besporyadki_1
-				add_idea = YSK_ns_besporyadki_2
-			}   			
-        }       
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ns_besporyadki_1
+							add_idea = YSK_ns_besporyadki_2
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_anarhy_party_ne_nuzhna
@@ -668,14 +1045,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 		}
-		x = 72
+		x = 60
 		y = 13
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ns_besporyadki_2
-				add_idea = YSK_ns_besporyadki_3
-			}   			
-        }      
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ns_besporyadki_2
+							add_idea = YSK_ns_besporyadki_3
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_skiny_navedut_poryadok
@@ -687,14 +1065,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 		}
-		x = 76
+		x = 64
 		y = 12
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ns_besporyadki_1
-				add_idea = YSK_ns_besporyadki_4
-			}   			
-        }    
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ns_besporyadki_1
+							add_idea = YSK_ns_besporyadki_4
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_ns_chvk
@@ -704,11 +1083,12 @@ focus_tree = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 76
+		x = 64
 		y = 13
-        completion_reward = {
-            add_ideas = YSK_ns_chvk			
-        }     
+			completion_reward = {
+					add_ideas = YSK_ns_chvk
+				}
+
 	}
 	focus = {
 		id = YSK_obespech_vypolnenie_zakonov
@@ -717,14 +1097,15 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 78
+		x = 66
 		y = 13
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ns_besporyadki_4
-				add_idea = YSK_ns_besporyadki_5
-			}   			
-        }    
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ns_besporyadki_4
+							add_idea = YSK_ns_besporyadki_5
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_white_power
@@ -734,16 +1115,17 @@ focus_tree = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 			focus = YSK_skiny_navedut_poryadok
 		}
-		x = 74
+		x = 62
 		y = 13
-        completion_reward = {
-            add_political_power = 75
-            add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			} 
-            add_war_support = 0.05  			
-        }        
+			completion_reward = {
+					add_political_power = 75
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+					add_war_support = 0.05
+				}
+
 	}
 	focus = {
 		id = YSK_ozhivit_skinhad_dvizh
@@ -755,192 +1137,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ns_chvk
 		}
-		x = 75
+		x = 63
 		y = 14
-        completion_reward = {
-            add_ideas = YSK_vosrozhdenniy_skin_dvizh  			
-        }    
-	}
-	focus = {
-		id = YSK_skinhad_patrul
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ozhivit_skinhad_dvizh
-		}
-		x = 75
-		y = 15
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_vosrozhdenniy_skin_dvizh
-				add_idea = YSK_vosrozhdenniy_skin_dvizh_1
-			}  			
-        }    
-	}
-	focus = {
-		id = YSK_white_business
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ogon_po_churkam
-		}
-		x = 78
-		y = 17
-        completion_reward = {
-		    country_event = YSK.10
-            add_ideas = YSK_white_business
-            random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
+			completion_reward = {
+					add_ideas = YSK_vosrozhdenniy_skin_dvizh
 				}
-			}
-            random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-			}
-            random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-			}    			
-        }    
-	}
-	focus = {
-		id = YSK_ogon_po_churkam
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_edinstvo
-		}
-		x = 77
-		y = 16
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_white_edinstvo
-				add_idea = YSK_white_edinstvo_1
-			}  			
-        }        
-	}
-	focus = {
-		id = YSK_white_edinstvo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ozhivit_skinhad_dvizh
-		}
-		x = 77
-		y = 15
-        completion_reward = {
-            add_ideas = YSK_white_edinstvo  			
-        }       
-	}
-	focus = {
-		id = YSK_kult_sily
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_shkola_race_prosveshceniya
-		}
-		x = 73
-		y = 18
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ostanovit_razlozheniya_sosaity_1
-				add_idea = YSK_ostanovit_razlozheniya_sosaity_2
-			}  			
-        }   
-	}
-	focus = {
-		id = YSK_sluzhba_white_rase
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_skinhad_patrul
-		}
-		x = 75
-		y = 16
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_vosrozhdenniy_skin_dvizh_1
-				add_idea = YSK_vosrozhdenniy_skin_dvizh_2
-			}  			
-        }      
+
 	}
 	focus = {
 		id = YSK_okkupay_pedofilyay
@@ -949,24 +1151,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
-		x = 73
+		x = 61
 		y = 15
-        completion_reward = {
-            add_ideas = YSK_okkupay_pedofilyay			
-        }      
-	}
-	focus = {
-		id = YSK_zdorovie_semi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_shkola_race_prosveshceniya
-		}
-		x = 71
-		y = 18
-        completion_reward = {
-            add_ideas = YSK_zdorovie_semi 			
-        }      
+			completion_reward = {
+					add_ideas = YSK_okkupay_pedofilyay
+				}
+
 	}
 	focus = {
 		id = YSK_ostanovit_razlozheniya_sosaity
@@ -975,108 +1165,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_okkupay_pedofilyay
 		}
-		x = 73
+		x = 61
 		y = 16
-        completion_reward = {
-            add_ideas = YSK_ostanovit_razlozheniya_sosaity 			
-        }     
-	}
-	focus = {
-		id = YSK_gosvo_vam_nichevo_ne_dolzhno
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_business
-		}
-		x = 79
-		y = 18
-        completion_reward = {
-            add_ideas = YSK_gosvo_vam_nichevo_ne_dolzhno 			
-        }         
-	}
-	focus = {
-		id = YSK_freedom_i_deregulyatsiya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otmena_tk
-		}
-		prerequisite = {
-			focus = YSK_gosvo_vam_nichevo_ne_dolzhno
-		}
-		x = 78
-		y = 19
-        completion_reward = {
-            remove_ideas_ideas = YSK_gosvo_vam_nichevo_ne_dolzhno 
-            swap_ideas = {
-				remove_idea = YSK_white_business_1
-				add_idea = YSK_white_business_2
-			}			
-        }     
-	}
-	focus = {
-		id = YSK_otmena_tk
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_white_business
-		}
-		x = 77
-		y = 18
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_white_business
-				add_idea = YSK_white_business_1
-			}  			
-        }       
-	}
-	focus = {
-		id = YSK_eternal_race_war
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sluzhba_white_rase
-		}
-		x = 76
-		y = 17
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_vosrozhdenniy_skin_dvizh_2
-				add_idea = YSK_vosrozhdenniy_skin_dvizh_3
-			}  			
-        }   
-	}
-	focus = {
-		id = YSK_social_tutovism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sluzhba_white_rase
-		}
-		x = 74
-		y = 17
-        completion_reward = {
-            add_ideas = YSK_social_tutovism  			
-        }    
-	}
-	focus = {
-		id = YSK_prazdniki_shtangentsirkulya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_eternal_race_war
-		}
-		prerequisite = {
-			focus = YSK_social_tutovism
-		}
-		x = 75
-		y = 18
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_vosrozhdenniy_skin_dvizh_3
-				add_idea = YSK_vosrozhdenniy_skin_dvizh_4
-			}  			
-        }      
+			completion_reward = {
+					add_ideas = YSK_ostanovit_razlozheniya_sosaity
+				}
+
 	}
 	focus = {
 		id = YSK_shkola_race_prosveshceniya
@@ -1085,14 +1179,46 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ostanovit_razlozheniya_sosaity
 		}
-		x = 72
+		x = 60
 		y = 17
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ostanovit_razlozheniya_sosaity
-				add_idea = YSK_ostanovit_razlozheniya_sosaity_1
-			}  			
-        }     
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ostanovit_razlozheniya_sosaity
+							add_idea = YSK_ostanovit_razlozheniya_sosaity_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_zdorovie_semi
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_shkola_race_prosveshceniya
+		}
+		x = 59
+		y = 18
+			completion_reward = {
+					add_ideas = YSK_zdorovie_semi
+				}
+
+	}
+	focus = {
+		id = YSK_kult_sily
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_shkola_race_prosveshceniya
+		}
+		x = 61
+		y = 18
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ostanovit_razlozheniya_sosaity_1
+							add_idea = YSK_ostanovit_razlozheniya_sosaity_2
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_white_gospodstvo
@@ -1104,869 +1230,288 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_kult_sily
 		}
-		x = 72
+		x = 60
 		y = 19
-        completion_reward = {
-            swap_ideas = {
-				remove_idea = YSK_ostanovit_razlozheniya_sosaity_2
-				add_idea = YSK_ostanovit_razlozheniya_sosaity_3
-			}  			
-        }    
-	}
-	#Русич
-	focus = {
-		id = YSK_Rusich
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chto_on_nam_neset
-		}
-		x = 85
-		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism 
-				popularity = 0.15
-			}
-			set_variable = { YSK_Rusich_stability_factor = -0.7  }
-            set_variable = { YSK_Rusich_war_support_factor = -0.7  }
-            set_variable = { YSK_Rusich_consumer_goods_factor = 0.1  }
-            set_variable = { YSK_Rusich_fascism_drift = -0.05  }
-			set_variable = { YSK_Rusich_drift_defence_factor_factor = -0.15  }
-			set_variable = { YSK_Rusich_political_power_factor = -0.15  }
-			set_variable = { YSK_Rusich_party_popularity_stability_factor = -0.15 }
-			set_variable = { YSK_Rusich_research_speed_factor = -0.02 }
-			add_dynamic_modifier = { modifier = YSK_borba_s_hrisianstvom_dynamic_modifier }
-		}      
-	}
-	focus = {
-		id = YSK_yazycheskiy_988
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Rusich
-		}
-		x = 82
-		y = 11
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.05 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.05 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}       
-	}
-	focus = {
-		id = YSK_razobratsya_s_ortodox
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_yazycheskiy_988
-		}
-		x = 81
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.1 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.15 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_drift_defence_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_political_power_factor = 0.025  }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-				add_to_variable = { YSK_Rusich_party_popularity_stability_factor = 0.05  }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}         
-	}
-	focus = {
-		id = YSK_vedat_pravdu
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_yazycheskiy_988
-		}
-		x = 82
-		y = 14
-        completion_reward = {
-		    hidden_effect = {
-				add_to_variable = { YSK_Rusich_research_speed_factor = 0.03 }
-			}        
-            add_research_slot = 1      
-        }     		
-	}
-	focus = {
-		id = YSK_molitsya_kolesy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_yazycheskiy_988
-		}
-		x = 83
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.15 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.15 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_drift_defence_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_political_power_factor = 0.025  }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-				add_to_variable = { YSK_Rusich_party_popularity_stability_factor = 0.05  }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}     
-	}
-	focus = {
-		id = YSK_davay_vebi_black_sun_na_fon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_yazycheskiy_988
-		}
-		x = 83
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.15 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.15 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_drift_defence_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_political_power_factor = 0.025  }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-				add_to_variable = { YSK_Rusich_party_popularity_stability_factor = 0.05  }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}   
-	}
-	focus = {
-		id = YSK_religion_silnih
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_yazycheskiy_988
-		}
-		x = 81
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.1 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.15 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_drift_defence_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_political_power_factor = 0.025  }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-				add_to_variable = { YSK_Rusich_party_popularity_stability_factor = 0.05  }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}   
-	}
-	focus = {
-		id = YSK_obyavit_zhidomor
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_religion_silnih
-		}
-		x = 80
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_Rusich_stability_factor = 0.1 }
-                add_to_variable = { YSK_Rusich_war_support_factor = 0.15 }
-				add_to_variable = { YSK_Rusich_consumer_goods_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_drift_defence_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_political_power_factor = 0.025  }
-				add_to_variable = { YSK_Rusich_fascism_drift = 0.01 }
-				add_to_variable = { YSK_Rusich_party_popularity_stability_factor = 0.025  }
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}  
-	}
-	focus = {
-		id = YSK_ChVK_ENOT
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Rusich
-		}
-		available = {
-			has_completed_focus = YSK_obyavit_zhidomor
-			has_completed_focus = YSK_razobratsya_s_ortodox
-			has_completed_focus = YSK_vedat_pravdu
-			has_completed_focus = YSK_davay_vebi_black_sun_na_fon
-			has_completed_focus = YSK_molitsya_kolesy
-		}
-		x = 84
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_ChVK_ENOT
-		}        
-	}
-	focus = {
-		id = YSK_Druzhina_Rusich
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Rusich
-		}
-		available = {
-			has_completed_focus = YSK_obyavit_zhidomor
-			has_completed_focus = YSK_razobratsya_s_ortodox
-			has_completed_focus = YSK_vedat_pravdu
-			has_completed_focus = YSK_davay_vebi_black_sun_na_fon
-			has_completed_focus = YSK_molitsya_kolesy
-		}
-		x = 86
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_Druzhina_Rusich
-		}          
-	}
-	focus = {
-		id = YSK_borotsya_s_ukrobolshevismom_vo_vsem_mire
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_ChVK_ENOT
-		}
-		prerequisite = {
-			focus = YSK_Druzhina_Rusich
-		}
-		x = 85
-		y = 12
-		completion_reward = {
-            swap_ideas = {
-			    remove_idea = YSK_Druzhina_Rusich
-				add_idea = YSK_Druzhina_Rusich_1
-			}
-			remove_ideas = YSK_ChVK_ENOT
-		}	
-	}
-	focus = {
-		id = YSK_otbor_po_vere
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_borotsya_s_ukrobolshevismom_vo_vsem_mire
-		}
-		x = 85
-		y = 13
-		completion_reward = {
-            swap_ideas = {
-			remove_idea = YSK_Druzhina_Rusich_1
-			add_idea = YSK_Druzhina_Rusich_2
-		    }
-		}	
-	}
-	focus = {
-		id = YSK_true_elita
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otbor_po_vere
-		}
-		x = 84
-		y = 14
-		completion_reward = {
-            swap_ideas = {
-			remove_idea = YSK_Druzhina_Rusich_2
-			add_idea = YSK_true_elita_Rusicha
-		    }
-        }   			
-	}
-	focus = {
-		id = YSK_rasshirit_druzhinu
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otbor_po_vere
-		}
-		available = {
-			has_idea = YSK_true_elita_Rusicha
-		}
-		x = 86
-		y = 14
-        completion_reward = {
-            swap_ideas = {
-			remove_idea = YSK_true_elita_Rusicha
-			add_idea = YSK_true_elita_Rusicha_1
-		    }       
-  		}  
-	}
-	focus = {
-		id = YSK_rusoslavic_confederate
-		icon = GFX_goal_unknown
-		cost = 2,00
-		mutually_exclusive = {
-			focus = YSK_slavic_empire
-		}
-		available = {
-			has_completed_focus = YSK_true_elita
-		}
-		x = 83
-		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_ostanovit_razlozheniya_sosaity_2
+							add_idea = YSK_ostanovit_razlozheniya_sosaity_3
+						}
+				}
 
 	}
 	focus = {
-		id = YSK_slavic_empire
+		id = YSK_skinhad_patrul
 		icon = GFX_goal_unknown
 		cost = 2,00
-		mutually_exclusive = {
-			focus = YSK_rusoslavic_confederate
+		prerequisite = {
+			focus = YSK_ozhivit_skinhad_dvizh
 		}
-		available = {
-			has_completed_focus = YSK_true_elita
-		}
-		x = 87
+		x = 63
 		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_vosrozhdenniy_skin_dvizh
+							add_idea = YSK_vosrozhdenniy_skin_dvizh_1
+						}
+				}
 
 	}
 	focus = {
-		id = YSK_opyt_donbassa
+		id = YSK_sluzhba_white_rase
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_Rusich
+			focus = YSK_skinhad_patrul
 		}
-		available = {
-			has_completed_focus = YSK_obyavit_zhidomor
-			has_completed_focus = YSK_razobratsya_s_ortodox
-			has_completed_focus = YSK_vedat_pravdu
-			has_completed_focus = YSK_davay_vebi_black_sun_na_fon
-			has_completed_focus = YSK_molitsya_kolesy
-		}
-		x = 88
-		y = 11
-        completion_reward = {
-            army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
-			set_variable = { YSK_Rusich_mil_war_support_factor = 0.05  }
-            set_variable = { YSK_Rusich_mil_stability_factor = 0.0  }
-            set_variable = { YSK_Rusich_mil_army_attack_factor = 0.0  }
-            set_variable = { YSK_Rusich_mil_army_org_factor = 0.025  }
-			set_variable = { YSK_Rusich_mil_army_org_regain = 0.0  }
-			set_variable = { YSK_Rusich_mil_training_time_factor = 0.0  }
-			set_variable = { YSK_Rusich_mil_experience_gain_army_factor = 0.02 }
-			set_variable = { YSK_Rusich_mil_conscription = 0.0 }
-			set_variable = { YSK_Rusich_mil_conscription_factor = 0.0 }
-			add_dynamic_modifier = { modifier = YSK_militarization_of_society_dynamic_modifier }
-  		}     
-	}
-	focus = {
-		id = YSK_uchitsya_y_AZOVa
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_opyt_donbassa
-		}
-		x = 87
-		y = 12
-        completion_reward = {
-		    add_stability = -0.075
-            add_war_support = -0.075
-			add_political_power = -50 
-            army_experience = 25
-            add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
-            hidden_effect = {
-			    add_to_variable = { YSK_Rusich_mil_stability_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_mil_experience_gain_army_factor = 0.01 }
-				add_to_variable = { YSK_Rusich_mil_army_org_factor = 0.005 }
-				add_to_variable = { YSK_Rusich_mil_army_org_regain = 0.01 }
-				add_to_variable = { YSK_Rusich_mil_training_time_factor = -0.05 }
-			}      			
-  		}   
-	}
-	focus = {
-		id = YSK_7_protsentov_passionariev
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_opyt_donbassa
-		}
-		x = 87
-		y = 13
-        completion_reward = {
-            army_experience = 15
-            add_manpower = 15000
-            hidden_effect = {
-				add_to_variable = { YSK_Rusich_mil_conscription = 0.07 }
-				add_to_variable = { YSK_Rusich_mil_conscription_factor = -0.1 }
-				add_to_variable = { YSK_Rusich_mil_war_support_factor = 0.05 }
-			}       			
-  		}  
-	}
-	focus = {
-		id = YSK_ne_brat_plenih
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_opyt_donbassa
-		}
-		x = 88
-		y = 14
-        completion_reward = {
-            add_stability = -0.075
-            add_war_support = 0.075
-            hidden_effect = {
-				add_to_variable = { YSK_Rusich_mil_army_attack_factor = 0.05 }
-				add_to_variable = { YSK_Rusich_mil_war_support_factor = 0.05 }
-				add_to_variable = { YSK_Rusich_mil_stability_factor = -0.05 }
-			}      			
-  		}  
-	}
-	focus = {
-		id = YSK_detskie_voen_lagerya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_opyt_donbassa
-		}
-		x = 89
-		y = 12
-        completion_reward = {
-            army_experience = 10
-            add_manpower = 7500
-            hidden_effect = {
-				add_to_variable = { YSK_Rusich_mil_conscription_factor = 0.05 }
-				add_to_variable = { YSK_Rusich_mil_training_time_factor = -0.025 }
-				add_to_variable = { YSK_Rusich_mil_war_support_factor = 0.025 }
-			}     			
-  		}     
-	}
-	focus = {
-		id = YSK_my_hotim_ybivat
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_opyt_donbassa
-		}
-		x = 89
-		y = 13
-        completion_reward = {
-            add_stability = -0.075
-            add_war_support = 0.075        			 		
-            hidden_effect = {
-				add_to_variable = { YSK_Rusich_mil_army_attack_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_mil_war_support_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_mil_stability_factor = -0.025 }
-			}
-     	}	
-	}
-	focus = {
-		id = YSK_cultura_death_i_war
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_my_hotim_ybivat
-		}
-		x = 90
-		y = 14
-        completion_reward = {
-            add_stability = -0.075
-            add_war_support = 0.075
-            add_political_power = 50 
-            hidden_effect = {
-				add_to_variable = { YSK_Rusich_mil_army_attack_factor = 0.025 }
-				add_to_variable = { YSK_Rusich_mil_army_org_regain = 0.025 }
-				add_to_variable = { YSK_Rusich_mil_war_support_factor = 0.05 }
-			}       			
-  		}    
-	}
-	#РНЕ
-		focus = {
-		id = YSK_RNE
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chto_on_nam_neset
-		}
-		x = 98
-		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_ideas = YSK_decadans_rus_nation
-			add_ideas = YSK_soprotivlenie_RPTS
-			add_ideas = YSK_sabotazh_iudo_sionistov
-		}        
-	}
-	focus = {
-		id = YSK_rebrending_svastika
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_RNE
-		}
-		x = 98
-		y = 11
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_political_power = 50
-		}    
-	}
-	focus = {
-		id = YSK_vozradit_rus_nation
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rebrending_svastika
-		}
-		x = 95
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_new_rus_nation
-		}     
-	}
-	focus = {
-		id = YSK_razovetsya_gordo_rus_styag
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vozradit_rus_nation
-		}
-		x = 94
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation
-			add_idea = YSK_new_rus_nation_1
-		    }
-		}   
-	}
-	focus = {
-		id = YSK_tverzhe_duh_boytsovskiy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vozradit_rus_nation
-		}
-		available = {
-		    has_complete_focus = YSK_razovetsya_gordo_rus_styag  
-		}
-		x = 96
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation_1
-			add_idea = YSK_new_rus_nation_2
-		    }
-		}      
-	}
-	focus = {
-		id = YSK_golos_nashego_vozhdya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_razovetsya_gordo_rus_styag
-		}
-		prerequisite = {
-			focus = YSK_tverzhe_duh_boytsovskiy
-		}
-		x = 95
-		y = 14
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation_2
-			add_idea = YSK_new_rus_nation_3
-		    }
-		}    
-	}
-	focus = {
-		id = YSK_na_bitvy_Slavnuyu_za_Rus_idya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_golos_nashego_vozhdya
-		}
-		available = {
-		    has_complete_focus = YSK_edinstvo_nasha_sila  
-		}
-		x = 96
-		y = 15
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation_4
-			add_idea = YSK_new_rus_nation_5
-		    }
-		}         
-	}
-	focus = {
-		id = YSK_edinstvo_nasha_sila
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_golos_nashego_vozhdya
-		}
-		x = 94
-		y = 15
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation_3
-			add_idea = YSK_new_rus_nation_4
-		    }
-		}     
-	}
-	focus = {
-		id = YSK_vperde_vperde_slavyani
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_edinstvo_nasha_sila
-		}
-		prerequisite = {
-			focus = YSK_na_bitvy_Slavnuyu_za_Rus_idya
-		}
-		x = 95
+		x = 63
 		y = 16
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_rus_nation_5
-			add_idea = YSK_new_rus_nation_6
-		    }
-			remove_ideas = YSK_decadans_rus_nation
-		}   
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_vosrozhdenniy_skin_dvizh_1
+							add_idea = YSK_vosrozhdenniy_skin_dvizh_2
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_vozvysit_IPTs
+		id = YSK_eternal_race_war
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rebrending_svastika
+			focus = YSK_sluzhba_white_rase
 		}
-		x = 98
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_IPTs
-		}     
-	}
-	focus = {
-		id = YSK_splav_hrist_i_yaziych
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vozvysit_IPTs
-		}
-		x = 98
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_IPTs
-			add_idea = YSK_IPTs_1
-		    }
-		}        
-	}
-	focus = {
-		id = YSK_nasledniki_velikih
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_splav_hrist_i_yaziych
-		}
-		x = 98
-		y = 14
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_IPTs_1
-			add_idea = YSK_IPTs_2
-		    }
-		}    
-	}
-	focus = {
-		id = YSK_Russian_God
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_nasledniki_velikih
-		}
-		x = 98
-		y = 15
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_IPTs_2
-			add_idea = YSK_IPTs_3
-		    }
-		}       
-	}
-	focus = {
-		id = YSK_war_monahi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Russian_God
-		}
-		x = 97
-		y = 16
-        completion_reward = {
-			add_ideas = YSK_war_monahi
-		}       
-	}
-	focus = {
-		id = YSK_voiny_hristovy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Russian_God
-		}
-		x = 99
-		y = 16
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_IPTs_3
-			add_idea = YSK_IPTs_4
-		    }
-			remove_ideas = YSK_soprotivlenie_RPTS
-		}      
-	}
-	focus = {
-		id = YSK_Rus_unitarism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rebrending_svastika
-		}
-		x = 101
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_perestroyka_gos_machine
-		}      
-	}
-	focus = {
-		id = YSK_militarizirovat_molodezh
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Rus_unitarism
-		}
-		x = 100
-		y = 13
-        completion_reward = {
-			add_ideas = YSK_militarizirovat_molodezh
-		}       
-	}
-	focus = {
-		id = YSK_borba_s_world_evrey_agovor
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Rus_unitarism
-		}
-		x = 102
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_perestroyka_gos_machine
-			add_idea = YSK_perestroyka_gos_machine_1
-		    }
-		}    
-	}
-	focus = {
-		id = YSK_chernorubashechniki
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_militarizirovat_molodezh
-		}
-		prerequisite = {
-			focus = YSK_borba_s_world_evrey_agovor
-		}
-		x = 101
-		y = 14
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_militarizirovat_molodezh
-			add_idea = YSK_militarizatsiya_obzhestva
-		    }
-		}    
-	}
-	focus = {
-		id = YSK_vozvodit_soslovie_kazakov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chernorubashechniki
-		}
-		x = 101
-		y = 15
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_militarizatsiya_obzhestva
-			add_idea = YSK_militarizatsiya_obzhestva_1
-		    }
-		}    
-	}
-	focus = {
-		id = YSK_zhestkaya_distsiplina
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vozvodit_soslovie_kazakov
-		}
-		x = 101
-		y = 16
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_militarizatsiya_obzhestva_1
-			add_idea = YSK_militarizatsiya_obzhestva_2
-		    }
-			remove_ideas = YSK_sabotazh_iudo_sionistov
-		}   
-	}
-	focus = {
-		id = YSK_The_Russian_Order
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vperde_vperde_slavyani
-		}
-		prerequisite = {
-			focus = YSK_war_monahi
-		}
-		prerequisite = {
-			focus = YSK_voiny_hristovy
-		}
-		prerequisite = {
-			focus = YSK_zhestkaya_distsiplina
-		}
-		x = 98
+		x = 64
 		y = 17
-        completion_reward = {
-			add_ideas = YSK_The_New_Russian_Order
-		}     
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_vosrozhdenniy_skin_dvizh_2
+							add_idea = YSK_vosrozhdenniy_skin_dvizh_3
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_social_tutovism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sluzhba_white_rase
+		}
+		x = 62
+		y = 17
+			completion_reward = {
+					add_ideas = YSK_social_tutovism
+				}
+
+	}
+	focus = {
+		id = YSK_prazdniki_shtangentsirkulya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_eternal_race_war
+		}
+		prerequisite = {
+			focus = YSK_social_tutovism
+		}
+		x = 63
+		y = 18
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_vosrozhdenniy_skin_dvizh_3
+							add_idea = YSK_vosrozhdenniy_skin_dvizh_4
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_white_edinstvo
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ozhivit_skinhad_dvizh
+		}
+		x = 65
+		y = 15
+			completion_reward = {
+					add_ideas = YSK_white_edinstvo
+				}
+
+	}
+	focus = {
+		id = YSK_ogon_po_churkam
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_edinstvo
+		}
+		x = 65
+		y = 16
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_white_edinstvo
+							add_idea = YSK_white_edinstvo_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_white_business
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ogon_po_churkam
+		}
+		x = 66
+		y = 17
+			completion_reward = {
+					country_event = YSK.10
+					add_ideas = YSK_white_business
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_gosvo_vam_nichevo_ne_dolzhno
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_business
+		}
+		x = 67
+		y = 18
+			completion_reward = {
+					add_ideas = YSK_gosvo_vam_nichevo_ne_dolzhno
+				}
+
+	}
+	focus = {
+		id = YSK_freedom_i_deregulyatsiya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otmena_tk
+		}
+		prerequisite = {
+			focus = YSK_gosvo_vam_nichevo_ne_dolzhno
+		}
+		x = 66
+		y = 19
+			completion_reward = {
+					remove_ideas_ideas = YSK_gosvo_vam_nichevo_ne_dolzhno
+					swap_ideas = {
+							remove_idea = YSK_white_business_1
+							add_idea = YSK_white_business_2
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_otmena_tk
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_white_business
+		}
+		x = 65
+		y = 18
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_white_business
+							add_idea = YSK_white_business_1
+						}
+				}
+
 	}
 	#Рогозин
 	focus = {
@@ -1976,7 +1521,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 65
+		x = 54
 		y = 10
 
 	}
@@ -1987,67 +1532,53 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ultraright_visionary
 		}
-		x = 65
+		x = 54
 		y = 11
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-		}       
-	}
-	focus = {
-		id = YSK_vipolnenie_obeshchyaniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_glory_vreredmolyashchiy
-		}
-		x = 65
-		y = 12
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_political_power = 50
-		}  
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_God_and_space
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_vipolnenie_obeshchyaniy
+			focus = YSK_glory_vreredmolyashchiy
 		}
-		x = 64
-		y = 13
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}    
+		x = 53
+		y = 12
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_souz_s_Great_Russia
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_vipolnenie_obeshchyaniy
+			focus = YSK_glory_vreredmolyashchiy
 		}
-		x = 66
-		y = 13
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_political_power = 50
-		}      
+		x = 55
+		y = 12
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.15
+						}
+					add_political_power = 50
+				}
+
 	}
 	focus = {
-		id = YSK_sacred_mission_RPTs
+		id = YSK_razbyrokrachivanie
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
@@ -2056,40 +1587,30 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 62
+		x = 53
+		y = 13
+			completion_reward = {
+					add_stability = 0.075
+					add_political_power = -100
+				}
+
+	}
+	focus = {
+		id = YSK_sobiranie_nation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_razbyrokrachivanie
+		}
+		prerequisite = {
+			focus = YSK_iskorenenie_oligarhov
+		}
+		x = 54
 		y = 14
-        completion_reward = {
-		    add_ideas = YSK_sacred_mission_RPTs			
-	    }   
-	}
-	focus = {
-		id = YSK_osvyatit_weapon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sacred_mission_RPTs
-		}
-		x = 61
-		y = 16
-        completion_reward = {
-		    add_ideas = YSK_osvyatit_weapon_1 
-		} 
-	}
-	focus = {
-		id = YSK_kanonizirovat_Gagarina
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_sacred_mission_RPTs
-		}
-		x = 63
-		y = 15
-		completion_reward = {
-            swap_ideas = {
-			remove_idea = YSK_sacred_mission_RPTs
-			add_idea = YSK_new_svyatie
-		    }
-		}	
+			completion_reward = {
+					add_ideas = YSK_sobiranie_nation
+				}
+
 	}
 	focus = {
 		id = YSK_iskorenenie_oligarhov
@@ -2101,224 +1622,348 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 66
+		x = 55
+		y = 13
+			completion_reward = {
+					add_timed_idea = {
+							idea = YSK_peredacha_sobstvennosti_gosvu
+							days = 184
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_sacred_mission_RPTs
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 51
+		y = 13
+			completion_reward = {
+					add_ideas = YSK_sacred_mission_RPTs
+				}
+
+	}
+	focus = {
+		id = YSK_osvyatit_weapon
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sacred_mission_RPTs
+		}
+		x = 50
+		y = 15
+			completion_reward = {
+					add_ideas = YSK_osvyatit_weapon_1
+				}
+
+	}
+	focus = {
+		id = YSK_kanonizirovat_Gagarina
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_sacred_mission_RPTs
+		}
+		x = 52
 		y = 14
-        completion_reward = {
-            add_timed_idea = {
-				idea = YSK_peredacha_sobstvennosti_gosvu
-				days = 184
-			}    		
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_sacred_mission_RPTs
+							add_idea = YSK_new_svyatie
 						}
-					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+
+	}
+	focus = {
+		id = YSK_nato_weapon
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_kosmovoyska
+		}
+		x = 51
+		y = 17
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = infantry_weapons
 						}
-					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+
+	}
+	focus = {
+		id = YSK_kosmovoyska
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_God_and_space
+		}
+		prerequisite = {
+			focus = YSK_souz_s_Great_Russia
+		}
+		x = 52
+		y = 15
+			completion_reward = {
+					army_experience = 25
+					air_experience = 25
+					add_doctrine_cost_reduction = {
+							name = land_doc_bonus
+							cost_reduction = 0.5
+							uses = 1
+							category = land_doctrine
 						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
 						}
-					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+
+	}
+	focus = {
+		id = YSK_lunohody
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_kosmovoyska
+		}
+		x = 50
+		y = 16
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
 						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
 						}
-					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-											size > 0
-											include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}      
+
 	}
 	focus = {
 		id = YSK_new_energy
@@ -2330,17 +1975,18 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 65
-		y = 16
-        completion_reward = {
-		    add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-            add_ideas = YSK_new_energy			
-	    }      
+		x = 54
+		y = 15
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
+						}
+					add_ideas = YSK_new_energy
+				}
+
 	}
 	focus = {
 		id = YSK_obyazatelnaya_norma_molitv
@@ -2349,24 +1995,52 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_new_energy
 		}
-		x = 66
-		y = 17
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_new_energy
-			add_idea = YSK_new_energy_1
-		    }
-		}          
+		x = 55
+		y = 16
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_energy
+							add_idea = YSK_new_energy_1
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_Mars_nash
+		id = YSK_need_more_churchs
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_POEHALI
+			focus = YSK_new_energy
 		}
-		x = 66
-		y = 19
+		x = 53
+		y = 16
+			completion_reward = {
+					add_ideas = YSK_need_more_churchs
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+						}
+				}
 
 	}
 	focus = {
@@ -2379,11 +2053,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 68
-		y = 14
-        completion_reward = {
-		    add_research_slot = 1    
-	    }    
+		x = 57
+		y = 13
+			completion_reward = {
+					add_research_slot = 1
+				}
+
 	}
 	focus = {
 		id = YSK_toplivo_iz_svyat_vody
@@ -2392,39 +2067,60 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
-		x = 67
+		x = 56
+		y = 14
+			completion_reward = {
+					add_ideas = YSK_toplivo_iz_svyat_vody
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = fuel_silo
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = YSK_oil_in_sibir
+							bonus = 1
+							uses = 1
+							category = synth_resources
+						}
+					add_tech_bonus = {
+							name = YSK_industria_sintetic
+							bonus = 1
+							uses = 1
+							category = cat_synth_oil
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_dvigately_na_svyat_duhe
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_otrit_new_NII
+		}
+		x = 58
 		y = 15
-		completion_reward = {
-		    add_ideas = YSK_toplivo_iz_svyat_vody
-            random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = fuel_silo
-					level = 1
-					instant_build = yes
+			available = {
+					has_idea = YSK_toplivo_iz_svyat_vody
 				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_toplivo_iz_svyat_vody
+							add_idea = YSK_dvigately_na_svyat_duhe_1
+						}
 				}
-			}
-			add_tech_bonus = {
-				name = YSK_oil_in_sibir
-    			bonus = 1
-   				uses = 1
-    			category = synth_resources
-			}
-			add_tech_bonus = {
-				name = YSK_industria_sintetic
-				bonus = 1
-				uses = 1
-				category = cat_synth_oil
-			}
-		}		
+
 	}
 	focus = {
 		id = YSK_ortodox_batuts
@@ -2436,11 +2132,12 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 67
-		y = 16
-        completion_reward = {
-			add_ideas = YSK_ortodox_batuts
-		} 
+		x = 56
+		y = 15
+			completion_reward = {
+					add_ideas = YSK_ortodox_batuts
+				}
+
 	}
 	focus = {
 		id = YSK_letaushchie_hrami
@@ -2449,19 +2146,20 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
-		x = 69
+		x = 58
 		y = 16
-        completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
-			}
-		}  
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_osvyatit_rakety
@@ -2470,261 +2168,432 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
-		x = 68
-		y = 18
-        completion_reward = {
-		    add_ideas = YSK_osvyatit_rakety_1     
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 2
-				uses = 2
-				category = rocketry
-				category = jet_technology
-			}
-		} 
-	}
-	focus = {
-		id = YSK_dvigately_na_svyat_duhe
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_otrit_new_NII
-		}
-		available = {
-			has_idea = YSK_toplivo_iz_svyat_vody
-		}
-		x = 69
-		y = 16
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_toplivo_iz_svyat_vody
-			add_idea = YSK_dvigately_na_svyat_duhe_1
-		    }
-		}      
-	}
-	focus = {
-		id = YSK_nato_weapon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_kosmovoyska
-		}
-		x = 62
-		y = 18
-        completion_reward = {
-		    add_tech_bonus = {
-				name = infantry_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-			}  
-	    }    
-	}
-	focus = {
-		id = YSK_kosmovoyska
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 63
-		y = 16
-        completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-			}
-		}        
-	}
-	focus = {
-		id = YSK_lunohody
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_kosmovoyska
-		}
-		x = 61
+		x = 57
 		y = 17
-        completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
-	    }      
-	}
-	focus = {
-		id = YSK_need_more_churchs
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_energy
-		}
-		x = 64
-		y = 17
-        completion_reward = {
-		    add_ideas = YSK_need_more_churchs
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }  
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }      
-            random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            }  
-			random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 1      
-            } 
-	    }
-	}
-	focus = {
-		id = YSK_Venera_rus_planeta
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_POEHALI
-		}
-		x = 64
-		y = 19
-
-	}
-	focus = {
-		id = YSK_and_Lunu_ty_nam_otdash
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Venera_rus_planeta
-		}
-		prerequisite = {
-			focus = YSK_Mars_nash
-		}
-		x = 65
-		y = 20
+			completion_reward = {
+					add_ideas = YSK_osvyatit_rakety_1
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
 
 	}
 	focus = {
 		id = YSK_POEHALI
 		icon = GFX_goal_unknown
 		cost = 2,00
-		x = 65
+		x = 54
+		y = 17
+			available = {
+					has_complete_focus = YSK_toplivo_iz_svyat_vody
+					has_complete_focus = YSK_dvigately_na_svyat_duhe
+					has_complete_focus = YSK_ortodox_batuts
+					has_complete_focus = YSK_osvyatit_rakety
+					has_complete_focus = YSK_new_energy
+					has_complete_focus = YSK_kanonizirovat_Gagarina
+				}
+
+	}
+	focus = {
+		id = YSK_Luna_rus_sputnik
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_POEHALI
+		}
+		x = 53
 		y = 18
-        available = {
-			has_complete_focus = YSK_toplivo_iz_svyat_vody
-			has_complete_focus = YSK_dvigately_na_svyat_duhe
-			has_complete_focus = YSK_ortodox_batuts
-			has_complete_focus = YSK_osvyatit_rakety
-			has_complete_focus = YSK_new_energy
-			has_complete_focus = YSK_kanonizirovat_Gagarina
-		} 
+
 	}
 	focus = {
-		id = YSK_razbyrokrachivanie
+		id = YSK_Mars_nash
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_God_and_space
+			focus = YSK_POEHALI
 		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
-		}
-		x = 64
-		y = 14
-        completion_reward = {
-		    add_stability = 0.075
-            add_political_power = -100 			
-	    }  
+		x = 55
+		y = 18
+
 	}
 	focus = {
-		id = YSK_sobiranie_nation
+		id = YSK_i_Veneru_ti_nam_otdash
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_razbyrokrachivanie
+			focus = YSK_Luna_rus_sputnik
 		}
 		prerequisite = {
-			focus = YSK_iskorenenie_oligarhov
+			focus = YSK_Mars_nash
 		}
-		x = 65
-		y = 15
-        completion_reward = {
-		    add_ideas = YSK_sobiranie_nation			
-	    }    
+		x = 54
+		y = 19
+
 	}
-	#НПФ Память
+	#РНЕ НПФ Память
 	focus = {
-		id = YSK_NPF_Memory
+		id = YSK_RNR_NPF_Memory
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
-		x = 111
+		x = 77
 		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-		}    
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.15
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_RNR_NPF_Memory
+		}
+		x = 77
+		y = 11
+
+	}
+	focus = {
+		id = YSK_fraktsiya_RNE
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		}
+		x = 71
+		y = 12
+
+	}
+	focus = {
+		id = YSK_vozradit_rus_nation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_fraktsiya_RNE
+		}
+		x = 70
+		y = 13
+			completion_reward = {
+					add_ideas = YSK_new_rus_nation
+				}
+
+	}
+	focus = {
+		id = YSK_edinstvo_nasha_sila
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_vozradit_rus_nation
+		}
+		x = 69
+		y = 14
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_rus_nation_3
+							add_idea = YSK_new_rus_nation_4
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_rebrending_svastika
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_fraktsiya_RNE
+		}
+		x = 72
+		y = 13
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = YSK_Russian_God
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rebrending_svastika
+		}
+		x = 73
+		y = 14
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_IPTs_2
+							add_idea = YSK_IPTs_3
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_razovetsya_gordo_rus_styag
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_splav_hrist_i_yaziych
+		}
+		x = 71
+		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_rus_nation
+							add_idea = YSK_new_rus_nation_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_splav_hrist_i_yaziych
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_vozradit_rus_nation
+		}
+		prerequisite = {
+			focus = YSK_rebrending_svastika
+		}
+		x = 71
+		y = 14
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_IPTs
+							add_idea = YSK_IPTs_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_Nation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
+		}
+		x = 76
+		y = 12
+			completion_reward = {
+					set_variable = {
+							YSK_pamyat_nation_war_support_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_political_power_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_party_popularity_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_conscription = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_consumer_goods_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_nation_army_attack_factor = 0.0
+						}
+					add_dynamic_modifier = {
+							modifier = YSK_nation_dynamic_modifier
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_golos_nashego_vozhdya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Nation
+		}
+		x = 74
+		y = 13
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_rus_nation_2
+							add_idea = YSK_new_rus_nation_3
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_nasledniki_velikih
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_golos_nashego_vozhdya
+		}
+		x = 73
+		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_IPTs_1
+							add_idea = YSK_IPTs_2
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_zhestkaya_distsiplina
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_golos_nashego_vozhdya
+		}
+		x = 75
+		y = 15
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_militarizatsiya_obzhestva_1
+							add_idea = YSK_militarizatsiya_obzhestva_2
+						}
+					remove_ideas = YSK_sabotazh_iudo_sionistov
+				}
+
+	}
+	focus = {
+		id = YSK_form_chernorubashecnikov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Nation
+		}
+		x = 76
+		y = 13
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_nation_conscription = 0.01
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_conscription_factor = 0.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_militarizirovat_molodezh
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_form_chernorubashecnikov
+		}
+		x = 75
+		y = 14
+			completion_reward = {
+					add_ideas = YSK_militarizirovat_molodezh
+				}
+
+	}
+	focus = {
+		id = YSK_antisionism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_Nation
+			focus = YSK_God
+		}
+		x = 77
+		y = 14
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = -0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_god_war_support_factor = 0.025
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_rus_terror
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_antisionism
+		}
+		x = 77
+		y = 15
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_resistance_damage_to_garrison = -0.25
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_foreign_subversive_activites = -0.3
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_non_core_manpower = 0.02
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_God
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_NPF_Memory
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
-		x = 107
-		y = 11
-        completion_reward = { 
-			set_variable = { YSK_pamyat_god_stability_factor = 0.0 }
-            set_variable = { YSK_pamyat_god_war_support_factor = 0.0 }
-            set_variable = { YSK_pamyat_god_army_morale_factor = 0.0 }
-			set_variable = { YSK_pamyat_god_conscription_factor = 0.0 } 
-			set_variable = { YSK_pamyat_god_conscription = 0.0 } 
-			set_variable = { YSK_pamyat_god_army_attack_factor = 0.0 } 
-			set_variable = { YSK_pamyat_god_consumer_goods_factor = 0.0 }
-			set_variable = { YSK_pamyat_god_compliance_gain = 0.0 }
-			add_dynamic_modifier = { modifier = YSK_god_dynamic_modifier }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-  		}          
+		x = 78
+		y = 12
+			completion_reward = {
+					set_variable = {
+							YSK_pamyat_god_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_war_support_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_army_morale_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_conscription_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_conscription = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_army_attack_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_consumer_goods_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_god_compliance_gain = 0.0
+						}
+					add_dynamic_modifier = {
+							modifier = YSK_god_dynamic_modifier
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_united_duh_disciplines
@@ -2733,13 +2602,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_God
 		}
-		x = 106
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_god_stability_factor = 0.025 }
-			}
-		} 
+		x = 78
+		y = 13
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = 0.025
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_rebirth_duha
@@ -2748,13 +2620,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_united_duh_disciplines
 		}
-		x = 105
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_army_morale_factor = 0.025 }
-			}
-		}      
+		x = 79
+		y = 14
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_army_morale_factor = 0.025
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_doctina_fundament_pravoslaviya
@@ -2763,90 +2638,101 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_God
 		}
-		x = 108
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_stability_factor = -0.05 }
-				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.05 }
-			}
-		}      
+		x = 80
+		y = 13
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = -0.05
+								}
+							add_to_variable = {
+									YSK_pamyat_god_war_support_factor = 0.05
+								}
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_antisionism
+		id = YSK_war_monahi
 		icon = GFX_goal_unknown
 		cost = 2,00
-		prerequisite = {
-			focus = YSK_united_duh_disciplines
-		}
 		prerequisite = {
 			focus = YSK_doctina_fundament_pravoslaviya
 		}
-		x = 107
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_stability_factor = -0.025 }
-				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.025 }
-			}
-		}      
+		x = 79
+		y = 15
+			completion_reward = {
+					add_ideas = YSK_war_monahi
+				}
+
 	}
 	focus = {
-		id = YSK_veshat_zhidov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = YSK_antisionism
-		}
-		x = 107
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_conscription_factor = -0.025 }
-				add_to_variable = { YSK_pamyat_god_war_support_factor = 0.025 }
-			}
-		}      
-	}
-	focus = {
-		id = YSK_soldaty_voinstva_hristova 
+		id = YSK_zakony_bozhi
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rebirth_duha
+			focus = YSK_doctina_fundament_pravoslaviya
 		}
-		x = 105
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_conscription = 0.025 }
-			}
-		}
+		x = 81
+		y = 15
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_nation_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_political_power_factor = 0.025
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_Tsar
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_NPF_Memory
+			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
-		x = 111
-		y = 11
-        completion_reward = { 
-			set_variable = { YSK_pamyat_tsar_stability_factor = 0.0 }
-			set_variable = { YSK_pamyat_tsar_party_popularity_stability_factor = 0.0 }
-			set_variable = { YSK_pamyat_tsar_political_power_gain = 0.0 } 
-			set_variable = { YSK_pamyat_tsar_consumer_goods_factor = 0.0 }
-			set_variable = { YSK_pamyat_tsar_local_building_slots_factor = 0.0 }
-			set_variable = { YSK_pamyat_tsar_local_resources_factor = 0.0 }
-			set_variable = { YSK_pamyat_tsar_resistance_damage_to_garrison = 0.0 } 
-			set_variable = { YSK_pamyat_tsar_foreign_subversive_activites = 0.0 }
-			set_variable = { YSK_pamyat_tsar_non_core_manpower = 0.0 }
-			add_dynamic_modifier = { modifier = YSK_tsar_dynamic_modifier }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-  		}     
+		x = 83
+		y = 12
+			completion_reward = {
+					set_variable = {
+							YSK_pamyat_tsar_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_party_popularity_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_political_power_gain = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_consumer_goods_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_local_building_slots_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_local_resources_factor = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_resistance_damage_to_garrison = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_foreign_subversive_activites = 0.0
+						}
+					set_variable = {
+							YSK_pamyat_tsar_non_core_manpower = 0.0
+						}
+					add_dynamic_modifier = {
+							modifier = YSK_tsar_dynamic_modifier
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_bozh_zemskaya_ierarhiya
@@ -2855,34 +2741,43 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 110
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_tsar_party_popularity_stability_factor = 0.05 }
-				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
-			}
-		}       
+		x = 82
+		y = 13
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_party_popularity_stability_factor = 0.05
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_political_power_gain = 0.025
+								}
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_new_ZemSobor
+		id = YSK_cult_Dmotriya_Vasileva
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_doctina_fundament_pravoslaviya
-		}
-		prerequisite = {
 			focus = YSK_bozh_zemskaya_ierarhiya
 		}
-		x = 109
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_stability_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
-			}
-		}   
+		x = 81
+		y = 14
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_nation_political_power_gain = 0.015
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_stability_factor = 0.01
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_ochishchenie_puti_k_prestolu
@@ -2891,13 +2786,16 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 112
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.01 }
-			}
-		}      
+		x = 84
+		y = 13
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_political_power_gain = 0.01
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_neofeodalism
@@ -2909,108 +2807,23 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
-		x = 111
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_stability_factor = -0.075 }
-				add_to_variable = { YSK_pamyat_tsar_consumer_goods_factor = -0.1 }
-				add_to_variable = { YSK_pamyat_tsar_local_building_slots_factor = -0.5 }
-			}
-			add_political_power = -100
-		}      
-	}
-	focus = {
-		id = YSK_true_ispilzovanie_recursov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_neofeodalism
-		}
-		x = 111
+		x = 83
 		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_local_resources_factor = 0.1 }
-			}
-		}       
-	}
-	focus = {
-		id = YSK_Restoration_monastres_and_consults
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_ZemSobor
-		}
-		x = 109
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_god_consumer_goods_factor = 0.025 }
-			}
-		}     
-	}
-	focus = {
-		id = YSK_the_struggle_of_good_with_evil
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_soldaty_voinstva_hristova
-		}
-		prerequisite = {
-			focus = YSK_veshat_zhidov
-		}
-		prerequisite = {
-			focus = YSK_Restoration_monastres_and_consults
-		}
-		x = 107
-		y = 15
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_god_army_attack_factor = 0.05 }
-			}
-		}       
-	}
-	focus = {
-		id = YSK_Nation
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_NPF_Memory
-		}
-		x = 115
-		y = 11
-        completion_reward = {
-			set_variable = { YSK_pamyat_nation_war_support_factor = 0.0 }
-			set_variable = { YSK_pamyat_nation_stability_factor = 0.0 }
-			set_variable = { YSK_pamyat_nation_political_power_factor = 0.0 }
-			set_variable = { YSK_pamyat_nation_party_popularity_stability_factor = 0.0 }
-			set_variable = { YSK_pamyat_nation_conscription = 0.0 }
-			set_variable = { YSK_pamyat_nation_consumer_goods_factor = 0.0 }
-			set_variable = { YSK_pamyat_nation_army_attack_factor = 0.0 }
-			add_dynamic_modifier = { modifier = YSK_nation_dynamic_modifier }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-  		}    
-	}
-	focus = {
-		id = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Nation
-		}
-		x = 114
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_nation_war_support_factor = 0.05 }
-				add_to_variable = { YSK_pamyat_nation_conscription_factor = 0.075 }
-			}
-		}      
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_stability_factor = -0.075
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_consumer_goods_factor = -0.1
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_local_building_slots_factor = -0.5
+								}
+						}
+					add_political_power = -100
+				}
+
 	}
 	focus = {
 		id = YSK_new_sosloviya
@@ -3019,214 +2832,127 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
-		prerequisite = {
-			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		}
-		x = 113
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.025 }
-				add_to_variable = { YSK_pamyat_tsar_stability_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_nation_conscription_factor = -0.5 }
-			}
-		}   
-	}
-	focus = {
-		id = YSK_zakony_bozhi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Nation
-		}
-		x = 116
-		y = 12
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_nation_stability_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_nation_political_power_factor = 0.025 }
-			}
-		}   
-	}
-	focus = {
-		id = YSK_krutoy_povorot_k_traditsiyam
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
-		}
-		prerequisite = {
-			focus = YSK_zakony_bozhi
-		}
-		x = 115
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_nation_stability_factor = -0.075 }
-				add_to_variable = { YSK_pamyat_nation_party_popularity_stability_factor = 0.075 }
-			}
-		}     
-	}
-	focus = {
-		id = YSK_form_chernorubashecnikov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_krutoy_povorot_k_traditsiyam
-		}
-		x = 115
+		x = 85
 		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_nation_conscription = 0.01 }
-				add_to_variable = { YSK_pamyat_nation_conscription_factor = 0.1 }
-			}
-		}   
-	}
-	focus = {
-		id = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_sosloviya
-		}
-		x = 113
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_political_power_gain = 0.015 }
-				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
-				add_to_variable = { YSK_pamyat_nation_consumer_goods_factor = 0.01 }
-			}
-		}      
-	}
-	focus = {
-		id = YSK_rus_terror
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Restoration_monastres_and_consults
-		}
-		prerequisite = {
-			focus = YSK_true_ispilzovanie_recursov
-		}
-		prerequisite = {
-			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		}
-		x = 111
-		y = 15
-        completion_reward = {
-			hidden_effect = {
-                add_to_variable = { YSK_pamyat_tsar_resistance_damage_to_garrison = -0.25 }
-				add_to_variable = { YSK_pamyat_tsar_foreign_subversive_activites = -0.3 }
-				add_to_variable = { YSK_pamyat_tsar_non_core_manpower = 0.02 }
-			}
-		}     
-	}
-	focus = {
-		id = YSK_gordoe_plemya_na_bitvy_vstavay
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rasshirenie_gazety_i_radio_Fatherland_Memory_and_You
-		}
-		prerequisite = {
-			focus = YSK_form_chernorubashecnikov
-		}
-		prerequisite = {
-			focus = YSK_idealizatsiya_dorev_proshlogo
-		}
-		x = 115
-		y = 15
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_tsar_political_power_gain = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_conscription_factor = -0.5
+								}
+						}
+				}
 
 	}
 	focus = {
-		id = YSK_krestom
+		id = YSK_new_ZemSobor
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_neofeodalism
+		}
+		prerequisite = {
+			focus = YSK_new_sosloviya
+		}
+		x = 83
+		y = 15
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_tsar_political_power_gain = 0.025
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_the_struggle_of_good_with_evil
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_rus_terror
 		}
 		prerequisite = {
-			focus = YSK_the_struggle_of_good_with_evil
+			focus = YSK_zakony_bozhi
 		}
-		x = 109
+		prerequisite = {
+			focus = YSK_nasledniki_velikih
+		}
+		prerequisite = {
+			focus = YSK_zhestkaya_distsiplina
+		}
+		prerequisite = {
+			focus = YSK_war_monahi
+		}
+		x = 77
 		y = 16
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_god_compliance_gain = 0.02 }
-				add_to_variable = { YSK_pamyat_god_stability_factor = 0.05 }
-			}
-		}     
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_army_attack_factor = 0.05
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_i_mechom
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_terror
+			focus = YSK_the_struggle_of_good_with_evil
 		}
+		x = 74
+		y = 17
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_nation_army_attack_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_war_support_factor = 0.05
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_krestom
+		icon = GFX_goal_unknown
+		cost = 10,00
 		prerequisite = {
-			focus = YSK_gordoe_plemya_na_bitvy_vstavay
+			focus = YSK_the_struggle_of_good_with_evil
 		}
-		x = 113
-		y = 16
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_nation_army_attack_factor = 0.025 }
-				add_to_variable = { YSK_pamyat_nation_war_support_factor = 0.05 }
-			}
-		}    
+		x = 80
+		y = 17
+
 	}
 	focus = {
 		id = YSK_save_Russia
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_krestom
-		}
-		prerequisite = {
 			focus = YSK_i_mechom
 		}
-		x = 111
-		y = 17
-        completion_reward = {
-			add_ideas = YSK_save_Russia
-		}     
-	}
-	focus = {
-		id = YSK_cult_Dmotriya_Vasileva
-		icon = GFX_goal_unknown
-		cost = 2,00
 		prerequisite = {
-			focus = YSK_zakony_bozhi
+			focus = YSK_krestom
 		}
-		x = 117
-		y = 13
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
-				add_to_variable = { YSK_pamyat_nation_stability_factor = 0.01 }
-			}
-		}    
+		x = 77
+		y = 18
+			completion_reward = {
+					add_ideas = YSK_save_Russia
+				}
+
 	}
-	focus = {
-		id = YSK_idealizatsiya_dorev_proshlogo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_cult_Dmotriya_Vasileva
-		}
-		x = 117
-		y = 14
-        completion_reward = {
-			hidden_effect = {
-				add_to_variable = { YSK_pamyat_nation_political_power_gain = 0.015 }
-				add_to_variable = { YSK_pamyat_nation_stability_factor = 0.01 }
-			}
-		}     
-	}
-	#
+	#Нацдемы
 	focus = {
 		id = YSK_moderate_rusnat
 		icon = GFX_goal_unknown
@@ -3235,1036 +2961,559 @@ focus_tree = {
 			focus = YSK_rus_vibory
 		}
 		mutually_exclusive = {
-			focus = YSK_sozvat_zemsobor
 			focus = YSK_vot_praviy_povorot
+			focus = YSK_sozvat_zemsobor
 		}
-		x = 12
+		x = 16
 		y = 7
-		available = {
-			has_country_flag = rusdem_win
-		}
+			available = {
+					has_country_flag = rusdem_win
+				}
 
 	}
-	#Юнеман
 	focus = {
-		id = YSK_Yuneman
+		id = YSK_gubernii
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_moderate_rusnat
 		}
-		mutually_exclusive = {
-			focus = YSK_Robert_Wright
-			focus = YSK_Sputnick_i_Pogrom
-		}
-		x = 5
-		y = 9
-        completion_reward = {
-			add_country_leader_role = {
-            character = YSK_Yuneman
-            promote_leader = yes
-                country_leader = {
-                    ideology = liberalism
-                    expire = "1965.1.1.1"
-                    traits = {  }
-                }
-            }
-		}      
-	}
-	focus = {
-		id = YSK_Sosaiti_Futury
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Yuneman
-		}
-		x = 5
-		y = 10
-        completion_reward = {
-			add_political_power = 50
-			add_stability = 0.025			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-		}      
-	}
-	focus = {
-		id = YSK_rus_federalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 2
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_rus_federalism
-		}      
-	}
-	focus = {
-		id = YSK_pokonchit_s_nats_resp
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_federalism
-		}
-		x = 2
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_rus_federalism
-			add_idea = YSK_rus_federalism_1
-		    }
-			add_stability = -0.075
-			add_political_power = -25
-		}       
-	}
-	focus = {
-		id = YSK_economic_irridenta
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 4
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_economic_irridenta
-		}     
-	}
-	focus = {
-		id = YSK_proecty_po_urbanistike
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_economic_irridenta
-		}
-		x = 4
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_economic_irridenta
-			add_idea = YSK_economic_irridenta_1
-		    }
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+		x = 14
+		y = 8
+			completion_reward = {
+					add_ideas = YSK_vostanov_mal_i_istor_gorodov
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
 				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}       
-	}
-	focus = {
-		id = YSK_myagkaya_sila
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 6
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_myagkaya_sila
-			add_political_power = 50
-		}  
-	}
-	focus = {
-		id = YSK_programma_repatriatsii
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_myagkaya_sila
-		}
-		x = 6
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_programma_repatriatsii
-		}     
-	}
-	focus = {
-		id = YSK_svetskaya_strana
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_proecty_po_urbanistike
-		}
-		prerequisite = {
-			focus = YSK_programma_repatriatsii
-		}
-		x = 5
-		y = 13
-        completion_reward = {
-			add_ideas = YSK_svetskaya_strana
-			add_research_slot = 1
-		}      
-	}
-	focus = {
-		id = YSK_otstranenie_radikalov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_programma_repatriatsii
-		}
-		x = 7
-		y = 13
-        completion_reward = {
-		    add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-		    add_popularity = {
-				ideology = anarhostalinism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = vmestolev
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.1
-			}
-		}      
-	}
-	focus = {
-		id = YSK_peredacha_vlasti_munitsipalitetam
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_pokonchit_s_nats_resp
-		}
-		prerequisite = {
-			focus = YSK_proecty_po_urbanistike
-		}
-		x = 3
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_rus_federalism_1
-			add_idea = YSK_rus_federalism_2
-		    }
-			add_political_power = 100
-		}    
-	}
-	focus = {
-		id = YSK_apologey_evrocultury
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_peredacha_vlasti_munitsipalitetam
-		}
-		prerequisite = {
-			focus = YSK_svetskaya_strana
-		}
-		prerequisite = {
-			focus = YSK_otstranenie_radikalov
-		}
-		x = 5
-		y = 14
-        completion_reward = {
-			add_ideas = YSK_apologey_evrocultury
-		}   
-	}
-	focus = {
-		id = YSK_rus_grazhdanskiy_nationalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 8
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_rus_grazhdanskiy_nationalism
-		}  
+
 	}
 	focus = {
 		id = YSK_kompromis_s_liberalami
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_grazhdanskiy_nationalism
+			focus = YSK_moderate_rusnat
 		}
-		x = 8
-		y = 12
-        completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			add_political_power = -75
-			add_stability = -0.05
-			add_war_support = -0.075
-		}  
+		x = 16
+		y = 8
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+					add_political_power = -75
+					add_stability = -0.05
+					add_war_support = -0.075
+				}
+
 	}
-	#Общая ветка Юнемана и Райта
+	focus = {
+		id = YSK_peredacha_vlasti_munitsipalitetam
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_gubernii
+		}
+		prerequisite = {
+			focus = YSK_kompromis_s_liberalami
+		}
+		x = 15
+		y = 9
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_rus_federalism_1
+							add_idea = YSK_rus_federalism_2
+						}
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = YSK_rus_federalism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_gubernii
+		}
+		prerequisite = {
+			focus = YSK_kompromis_s_liberalami
+		}
+		x = 13
+		y = 9
+			completion_reward = {
+					add_ideas = YSK_rus_federalism
+				}
+
+	}
+	focus = {
+		id = YSK_agent_KNB
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_federalism
+		}
+		x = 11
+		y = 10
+			completion_reward = {
+					add_ideas = YSK_programma_repatriatsii
+				}
+
+	}
+	focus = {
+		id = YSK_deurbanisation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_agent_KNB
+		}
+		x = 11
+		y = 11
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_rus_unitarism
+							add_idea = YSK_rus_unitarism_1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_dongat_Litvu
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_federalism
+		}
+		x = 13
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_economic_irridenta
+							add_idea = YSK_economic_irridenta_1
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_repatriation
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_dongat_Litvu
+		}
+		x = 13
+		y = 11
+			completion_reward = {
+					add_ideas = YSK_myagkaya_sila
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = YSK_rus_grazhdanskiy_nationalism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_moderate_rusnat
+		}
+		x = 18
+		y = 8
+			completion_reward = {
+					add_ideas = YSK_rus_grazhdanskiy_nationalism
+				}
+
+	}
 	focus = {
 		id = YSK_borba_s_migrantami
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_Sosaiti_Futury
-			focus = YSK_zakreplenie_RusDemokraty
+			focus = YSK_rus_grazhdanskiy_nationalism
 		}
-		x = 11
-		y = 11
-        completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-			add_political_power = -75
-			add_stability = 0.05
-			add_war_support = 0.075
-			653 = { add_manpower = -50000}
-			572 = { add_manpower = -50000}
-			573 = { add_manpower = -50000}
-			582 = { add_manpower = -50000}
-			403 = { add_manpower = -50000}
-			571 = { add_manpower = -50000}
-			570 = { add_manpower = -50000}
-			40 = { add_manpower = -50000}
-			578 = { add_manpower = -50000}
-			579 = { add_manpower = -50000}
-			568 = { add_manpower = -50000}
-			KAZ = { add_manpower = 100000}
-			TMS = { add_manpower = 100000}
-			KYR = { add_manpower = 175000}
-			TAJ = { add_manpower = 125000}
-		}      
+		prerequisite = {
+			focus = YSK_kompromis_s_liberalami
+		}
+		prerequisite = {
+			focus = YSK_gubernii
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+					add_political_power = -75
+					add_stability = 0.05
+					add_war_support = 0.075
+					653 = {
+							add_manpower = -50000
+						}
+					572 = {
+							add_manpower = -50000
+						}
+					573 = {
+							add_manpower = -50000
+						}
+					582 = {
+							add_manpower = -50000
+						}
+					403 = {
+							add_manpower = -50000
+						}
+					571 = {
+							add_manpower = -50000
+						}
+					570 = {
+							add_manpower = -50000
+						}
+					40 = {
+							add_manpower = -50000
+						}
+					578 = {
+							add_manpower = -50000
+						}
+					579 = {
+							add_manpower = -50000
+						}
+					568 = {
+							add_manpower = -50000
+						}
+					KAZ = {
+							add_manpower = 100000
+						}
+					TMS = {
+							add_manpower = 100000
+						}
+					KYR = {
+							add_manpower = 175000
+						}
+					TAJ = {
+							add_manpower = 125000
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_strong_socialka
+		id = YSK_svetskaya_strana
 		icon = GFX_goal_unknown
 		cost = 2,00
+		prerequisite = {
+			focus = YSK_peredacha_vlasti_munitsipalitetam
+		}
 		prerequisite = {
 			focus = YSK_borba_s_migrantami
 		}
-		x = 10
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_strong_socialka
-		}         
-	}
-	focus = {
-		id = YSK_zapret_voenkomatov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakreplenie_RusDemokraty
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 15
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_zapret_voenkomatov
-		}     
-	}
-	focus = {
-		id = YSK_contract_army
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zapret_voenkomatov
-		}
 		x = 16
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			remove_idea = YSK_zapret_voenkomatov
-			add_idea = YSK_contract_army
-		    }
-		}      
-	}
-	focus = {
-		id = YSK_slezt_s_neft_igly
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakreplenie_RusDemokraty
-			focus = YSK_Sosaiti_Futury
-		}
-		x = 13
-		y = 11
-        completion_reward = {
-			set_variable = { YSK_natslib_ecopol_stability_factor = 0.0  }
-            set_variable = { YSK_natslib_ecopol_political_power_factor = 0.0  }
-            set_variable = { YSK_natslib_ecopol_production_oil_factor  = -0.025  }
-			set_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.0 } 
-			set_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.0 }
-			set_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.0 } 
-			set_variable = { YSK_natslib_ecopol_production_factory_max_efficiency_factor = 0.0 }
-			set_variable = { YSK_natslib_ecopol_production_factory_start_efficiency_factor = 0.0 } 
-			set_variable = { YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.0 }
-			add_dynamic_modifier = { modifier = YSK_new_natslib_economic_polilika }
-		}        
-	}
-	focus = {
-		id = YSK_privatizatsiya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_slezt_s_neft_igly
-		}
-		x = 12
-		y = 12
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.05 }
-		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = -0.01 }
-			add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 }
-			random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = arms_factory
-									level = 1
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = industrial_complex
-									level = 1
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = industrial_complex
-									level = 1
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = arms_factory
-									level = 1
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = industrial_complex
-									level = 1
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							remove_building  = {
-									type = industrial_complex
-									level = 1
-								}
-						}	
-		}     
-	}
-	focus = {
-		id = YSK_total_deregulyatsiya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_privatizatsiya
-		}
-		x = 11
-		y = 13
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
-		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = -0.01 }
-			add_to_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.025 }
-        }			
-	}
-	focus = {
-		id = YSK_garantii_prav_sobsvennosti
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_slezt_s_neft_igly
-		}
-		x = 14
-		y = 12
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
-		    add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.01 }
-			add_to_variable = { YSK_natslib_ecopol_political_power_gain = 0.025 }
-        }       
+		y = 10
+			completion_reward = {
+					add_ideas = YSK_svetskaya_strana
+					add_research_slot = 1
+				}
+
 	}
 	focus = {
 		id = YSK_invest_v_infrastruktury
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_privatizatsiya
+			focus = YSK_svetskaya_strana
 		}
-		prerequisite = {
-			focus = YSK_garantii_prav_sobsvennosti
-		}
-		x = 13
-		y = 13
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
-			add_to_variable = { YSK_natslib_ecopol_production_speed_infrastructure_factor  = 0.075 }
-        }   
+		x = 15
+		y = 11
+			completion_reward = {
+					add_to_variable = {
+							YSK_natslib_ecopol_stability_factor = 0.025
+						}
+					add_to_variable = {
+							YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.075
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_demonopolozation_rynkov
+		id = YSK_total_deregulyatsiya
 		icon = GFX_goal_unknown
 		cost = 2,00
+		prerequisite = {
+			focus = YSK_svetskaya_strana
+		}
+		x = 17
+		y = 11
+			completion_reward = {
+					add_to_variable = {
+							YSK_natslib_ecopol_stability_factor = -0.025
+						}
+					add_to_variable = {
+							YSK_natslib_ecopol_consumer_goods_factor = -0.01
+						}
+					add_to_variable = {
+							YSK_natslib_ecopol_industrial_capacity_factory = 0.025
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_slezt_s_neft_igly
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_invest_v_infrastruktury
+		}
 		prerequisite = {
 			focus = YSK_total_deregulyatsiya
 		}
-		prerequisite = {
-			focus = YSK_invest_v_infrastruktury
-		}
-		x = 12
-		y = 14
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
-			add_to_variable = { YSK_natslib_ecopol_production_factory_start_efficiency_factor  = -0.05 } 
-            add_to_variable = { YSK_natslib_ecopol_production_factory_max_efficiency_factor  = 0.05 }      			
-        }     
+		x = 16
+		y = 12
+			completion_reward = {
+					set_variable = {
+							YSK_natslib_ecopol_stability_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_political_power_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_production_oil_factor = -0.025
+						}
+					set_variable = {
+							YSK_natslib_ecopol_consumer_goods_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_industrial_capacity_factory = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_production_factory_max_efficiency_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_production_factory_start_efficiency_factor = 0.0
+						}
+					set_variable = {
+							YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.0
+						}
+					add_dynamic_modifier = {
+							modifier = YSK_new_natslib_economic_polilika
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_debureaucratization
+		id = YSK_rus_unitarism_1
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_garantii_prav_sobsvennosti
-		}
-		x = 15
-		y = 13
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = -0.025 }
-			add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 } 
-            add_to_variable = { YSK_natslib_ecopol_political_power_gain = 0.025 }      			
-        }       
-	}
-	focus = {
-		id = YSK_povysh_effect_gosrashodov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_debureaucratization
+			focus = YSK_rus_grazhdanskiy_nationalism
 		}
 		prerequisite = {
-			focus = YSK_invest_v_infrastruktury
-		}
-		x = 14
-		y = 14
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
-			add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.025 } 
-            add_to_variable = { YSK_natslib_ecopol_industrial_capacity_factory = 0.025 }      			
-        }      
-	}
-	focus = {
-		id = YSK_gos_stimulirovanie_rosta
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_demonopolozation_rynkov
-		}
-		prerequisite = {
-			focus = YSK_povysh_effect_gosrashodov
-		}
-		x = 13
-		y = 15
-        completion_reward = {
-			add_to_variable = { YSK_natslib_ecopol_stability_factor = 0.025 }
-			add_to_variable = { YSK_natslib_ecopol_consumer_goods_factor = 0.01 } 
-            add_to_variable = { YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.025 }      			
-        }     
-	}
-	#Роберт Райт
-	focus = {
-		id = YSK_Robert_Wright
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_moderate_rusnat
-		}
-		mutually_exclusive = {
-			focus = YSK_Yuneman
-			focus = YSK_Sputnick_i_Pogrom
-		}
-		x = 21
-		y = 9
-        completion_reward = {
-			add_country_leader_role = {
-                character = YSK_Robert_Wright
-                promote_leader = yes
-                country_leader = {
-                    ideology = conservatism
-                    expire = "1965.1.1.1"
-                    traits = {  }
-                }
-            }
-		}      
-	}
-	focus = {
-		id = YSK_zakreplenie_RusDemokraty
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Robert_Wright
-		}
-		x = 21
-		y = 10
-        completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.05
-			}
-			add_political_power = 75
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = YSK_rus_unitarism_1 
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakreplenie_RusDemokraty
+			focus = YSK_kompromis_s_liberalami
 		}
 		x = 19
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_rus_unitarism
-		}     
-	}
-	focus = {
-		id = YSK_vyravnivanie_yrovnya_razvitiya_regionov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_unitarism_1
-		}
-		x = 18
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_rus_unitarism
-				add_idea = YSK_rus_unitarism_1
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+		y = 9
+			completion_reward = {
+					add_ideas = YSK_rus_unitarism
 				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		} 
-	}
-	focus = {
-		id = YSK_legalizovat_RusKukozh
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_zakreplenie_RusDemokraty
-		}
-		x = 23
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_RusKukozh
-		}     
-	}
-	focus = {
-		id = YSK_bremya_last_evropeytsa
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_legalizovat_RusKukozh
-		}
-		x = 24
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_RusKukozh
-				add_idea = YSK_RusKukozh_1
-			}
-		}     
-	}
-	focus = {
-		id = YSK_vostanov_mal_i_istor_gorodov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_unitarism_1
-		}
-		prerequisite = {
-			focus = YSK_anime_konservatism
-		}
-		x = 20
-		y = 12
-        completion_reward = {
-			add_ideas = YSK_vostanov_mal_i_istor_gorodov
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {					
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}   
-	}
-	focus = {
-		id = YSK_new_rus_nation
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_obespechit_rab_zhenshchin_norm_dengami
-		}
-		prerequisite = {
-			focus = YSK_rus_irredentism
-		}
-		prerequisite = {
-			focus = YSK_kooperatsiya_s_VShE_i_RYDN
-		}
-		x = 21
-		y = 14
-        completion_reward = {
-			add_ideas = YSK_new_rus_nation
-		}       
+
 	}
 	focus = {
 		id = YSK_anime_konservatism
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_zakreplenie_RusDemokraty
+			focus = YSK_rus_unitarism_1
 		}
-		x = 21
-		y = 11
-        completion_reward = {
-			add_ideas = YSK_anime_konservatism
-		}      
-	}
-	focus = {
-		id = YSK_rus_irredentism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_podderzhat_trapogvardeytsev
-		}
-		prerequisite = {
-			focus = YSK_vostanov_mal_i_istor_gorodov
-		}
-		x = 21
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_anime_konservatism_1
-				add_idea = YSK_anime_konservatism_2
-			}
-		}     
+		x = 19
+		y = 10
+			completion_reward = {
+					add_ideas = YSK_anime_konservatism
+				}
+
 	}
 	focus = {
 		id = YSK_podderzhat_trapogvardeytsev
@@ -4273,47 +3522,63 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_anime_konservatism
 		}
-		x = 22
-		y = 12
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_anime_konservatism
-				add_idea = YSK_anime_konservatism_1
-			}
-		}
-	}
-	focus = {
-		id = YSK_kooperatsiya_s_VShE_i_RYDN
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_bremya_last_evropeytsa
-		}
-		x = 23
-		y = 13
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_RusKukozh_1
-				add_idea = YSK_RusKukozh_2
-			}
-			add_research_slot = 1
-		}      
-	}
-	focus = {
-		id = YSK_obespechit_rab_zhenshchin_norm_dengami
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vyravnivanie_yrovnya_razvitiya_regionov
-		}
 		x = 19
+		y = 11
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_anime_konservatism
+							add_idea = YSK_anime_konservatism_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_zapret_voenkomatov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_contract_army
+		}
+		x = 21
+		y = 11
+			completion_reward = {
+					add_ideas = YSK_zapret_voenkomatov
+				}
+
+	}
+	focus = {
+		id = YSK_contract_army
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_rus_unitarism_1
+		}
+		x = 21
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_zapret_voenkomatov
+							add_idea = YSK_contract_army
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_bremya_last_evropeytsa
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_slezt_s_neft_igly
+		}
+		x = 16
 		y = 13
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_rus_unitarism_1
-				add_idea = YSK_rus_unitarism_2
-			}
-		}      
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_RusKukozh
+							add_idea = YSK_RusKukozh_1
+						}
+				}
+
 	}
 	#Погром
 	focus = {
@@ -4321,559 +3586,91 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_moderate_rusnat
+			focus = YSK_rus_vibory
 		}
-		mutually_exclusive = {
-			focus = YSK_Yuneman
-			focus = YSK_Robert_Wright
-		}
-		x = 31
-		y = 9
-        completion_reward = {
-			add_political_power = 75
-			add_stability = 0.075
-			add_war_support = 0.075			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}    
-	}
-	focus = {
-		id = YSK_russian_dem
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sputnick_i_Pogrom
-		}
-		mutually_exclusive = {
-			focus = YSK_russian_dictatura
-			focus = YSK_russian_monarchy
-		}
-		x = 29
-		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
-		}       
+		x = 26
+		y = 7
+			completion_reward = {
+					add_political_power = 75
+					add_stability = 0.075
+					add_war_support = 0.075
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_rus_president
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_russian_dem
-		}
-		x = 28
-		y = 11
-        completion_reward = {
-        	add_country_leader_trait = rus_president	
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-		}      
-	}
-	focus = {
-		id = YSK_russian_monarchy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
 			focus = YSK_Sputnick_i_Pogrom
 		}
 		mutually_exclusive = {
-			focus = YSK_russian_dem
-			focus = YSK_russian_dictatura
+			focus = YSK_rus_vozhd
 		}
-		x = 33
-		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.15
-			}
-			add_country_leader_role = {
-            character = YSK_Egor_Prosvirnin
-            promote_leader = yes
-            country_leader = {
-                ideology = despotism
-                expire = "1965.1.1.1"
-                traits = {  }
-            }
-        }
-        set_party_name = {
-            ideology = neutrality
-            long_name = YSK_neutrality_sputnik_i_pogrom_party_long
-            name = YSK_neutrality_sputnik_i_pogrom_party
-        }
-		}
-        set_politics = {
-	        ruling_party = neutrality
-        }     		
+		x = 24
+		y = 8
+			completion_reward = {
+					add_country_leader_trait = rus_president
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_rus_regent
+		id = YSK_democraty_bez_levih
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
-			focus = YSK_russian_monarchy
-		}
-		x = 34
-		y = 11
-        completion_reward = {
-        	add_country_leader_trait = rus_regent	
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}   
-	}
-	focus = {
-		id = YSK_aristocratic_nationalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_regent
-		}
-		x = 34
-		y = 12
-        completion_reward = {
-        	add_ideas = YSK_aristocratic_nationalism
-		}     
-	}
-	focus = {
-		id = YSK_new_tabel_o_rangah
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_regent
-		}
-		x = 37
-		y = 12
-        completion_reward = {
-        	add_ideas = YSK_new_tabel_o_rangah
-		}    
-	}
-	focus = {
-		id = YSK_boyare_i_chern
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_tabel_o_rangah
-		}
-		x = 36
-		y = 13
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_new_tabel_o_rangah
-				add_idea = YSK_new_tabel_o_rangah_1
-			}
-		}     
-	}
-	focus = {
-		id = YSK_neokulaki
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_boyare_i_chern
-		}
-		x = 36
-		y = 14
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_new_tabel_o_rangah_1
-				add_idea = YSK_new_tabel_o_rangah_2
-			}
-		}    
-	}
-	focus = {
-		id = YSK_new_dvoryanstvo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_tabel_o_rangah
-		}
-		x = 38
-		y = 13
-        completion_reward = {
-        	add_ideas = YSK_new_dvoryanstvo
-		}    
-	}
-	focus = {
-		id = YSK_5_protsentov_true_russkih
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_new_dvoryanstvo
-		}
-		x = 38
-		y = 14
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_new_dvoryanstvo
-				add_idea = YSK_new_dvoryanstvo_1
-			}
-		}    
-	}
-	focus = {
-		id = YSK_priglasit_kirilovichey_na_tron
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_aristocratic_nationalism
+			focus = YSK_rus_president
 		}
 		mutually_exclusive = {
-			focus = YSK_poisk_bolee_luchshego_kandidata
+			focus = YSK_rev_nationalism
 		}
-		x = 36
-		y = 15
-        completion_reward = {
-        	add_ideas = YSK_kirilovich
-		}    
-	}
-	focus = {
-		id = YSK_rasshirit_blagotvoritelnost
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_priglasit_kirilovichey_na_tron
-		}
-		x = 36
-		y = 16
-        completion_reward = {
-			swap_ideas = {
-			    remove_idea = YSK_kirilovich
-				add_idea = YSK_kirilovich_1
-			}
-		}     
-	}
-	focus = {
-		id = YSK_russian_imperskiy_femenism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Tessa
-		}
-		x = 38
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_Tessa
-				add_idea = YSK_Tessa_1
-			}
-		}    
-	}
-	focus = {
-		id = YSK_poisk_bolee_luchshego_kandidata
-		icon = GFX_goal_unknown
-		cost = 1,00
-		prerequisite = {
-			focus = YSK_aristocratic_nationalism
-		}
-		mutually_exclusive = {
-			focus = YSK_priglasit_kirilovichey_na_tron
-		}
-		x = 39
-		y = 15
-        completion_reward = {
-        	add_political_power = -50
-		}      
-	}
-	focus = {
-		id = YSK_Vindzor
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_poisk_bolee_luchshego_kandidata
-		}
-		mutually_exclusive = {
-			focus = YSK_Tessa
-		}
-		x = 40
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_Vindzor
-		}
-	}
-	focus = {
-		id = YSK_priuytit_eng_spetsov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Vindzor
-		}
-		x = 40
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_Vindzor
-				add_idea = YSK_Vindzor_1
-			}
-		}   
-	}
-	focus = {
-		id = YSK_Tessa
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_poisk_bolee_luchshego_kandidata
-		}
-		mutually_exclusive = {
-			focus = YSK_Vindzor
-		}
-		x = 38
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_Tessa
-		}    
-	}
-	focus = {
-		id = YSK_russian_dictatura
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_Sputnick_i_Pogrom
-		}
-		mutually_exclusive = {
-			focus = YSK_russian_dem
-			focus = YSK_russian_monarchy
-		}
-		x = 31
-		y = 10
-        completion_reward = {			
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_country_leader_role = {
-            character = YSK_Egor_Prosvirnin
-            promote_leader = yes
-            country_leader = {
-                ideology = fascism_ideology
-                expire = "1965.1.1.1"
-                traits = {  }
-            }
-        }
-        set_party_name = {
-            ideology = fascism
-            long_name = YSK_fascism_sputnik_i_pogrom_party_long
-            name = YSK_fascism_sputnik_i_pogrom_party
-        }
-		set_politics = {
-	        ruling_party = fascism
-        }
-		}       
+		x = 24
+		y = 9
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_rus_respublikanism_1
+							add_idea = YSK_rus_respublikanism_2
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_rus_vozhd
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_russian_dictatura
-		}
-		x = 31
-		y = 11
-        completion_reward = {
-            add_country_leader_trait = rus_vozhd  		
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}			
-		}     
-	}
-	focus = {
-		id = YSK_reparatsii_s_sovkom_pensionerov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_president
-			focus = YSK_rus_vozhd
-			focus = YSK_rus_regent
-		}
-		x = 27
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_na_zlo_sovkam
-			add_stability = -0.1
-			add_popularity = {
-				ideology = anarhostalinism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = vmestolev
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = -0.1
-			}
-		}    
-	}
-	focus = {
-		id = YSK_true_russian_pivo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_reparatsii_s_sovkom_pensionerov
-		}
-		x = 27
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_na_zlo_sovkam
-				add_idea = YSK_na_zlo_sovkam_1
-			}
-		}   
-	}
-	focus = {
-		id = YSK_eto_ne_kannibalism_esli_on_levak
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_true_russian_pivo
-		}
-		x = 27
-		y = 18
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_na_zlo_sovkam_1
-				add_idea = YSK_na_zlo_sovkam_2
-			}
-			add_stability = -0.1
-		}    
-	}
-	focus = {
-		id = YSK_ploditsya_bystree_chem_umirat
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_eto_ne_kannibalism_esli_on_levak
-		}
-		x = 27
-		y = 19
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_na_zlo_sovkam_2
-				add_idea = YSK_na_zlo_sovkam_3
-			}
-		}  
-	}
-	focus = {
-		id = YSK_grazhdanskiy_nationalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_respublikanism
-			focus = YSK_rev_nationalism
+			focus = YSK_Sputnick_i_Pogrom
 		}
 		mutually_exclusive = {
-			focus = YSK_etnich_nationalism
-		}
-		x = 28
-		y = 14
-        completion_reward = {
-        	add_ideas = YSK_grazhdanskiy_nationalism
-		}  
-	}
-	focus = {
-		id = YSK_den_otmshcheniya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_president
-			focus = YSK_rus_vozhd
 			focus = YSK_rus_regent
+			focus = YSK_rus_president
 		}
-		x = 29
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_den_otmshcheniya
-			add_popularity = {
-				ideology = anarhostalinism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = vmestolev
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = -0.1
-			}
-		}   
-	}
-	focus = {
-		id = YSK_reabilitatsiya_ROA_i_kollabortsianistov
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_den_otmshcheniya
-		}
-		x = 29
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_den_otmshcheniya
-				add_idea = YSK_den_otmshcheniya_1
-			}
-			add_manpower = 25000
-		}  
-	}
-	focus = {
-		id = YSK_chistki_po_prinadlezhnosti_k_levim
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_reabilitatsiya_ROA_i_kollabortsianistov
-		}
-		x = 29
-		y = 18
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_den_otmshcheniya_1
-				add_idea = YSK_den_otmshcheniya_2
-			}
-			add_manpower = -50000
-			add_popularity = {
-				ideology = anarhostalinism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = vmestolev
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = -0.1
-			}
-		}     
-	}
-	focus = {
-		id = YSK_uchitsya_y_Dirlenwangera
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_chistki_po_prinadlezhnosti_k_levim
-		}
-		x = 29
-		y = 19
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_den_otmshcheniya_2
-				add_idea = YSK_den_otmshcheniya_3
-			}
-			army_experience = 15
-		}      
+		x = 26
+		y = 8
+			completion_reward = {
+					add_country_leader_trait = rus_vozhd
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.15
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_rev_nationalism
@@ -4882,528 +3679,350 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rus_vozhd
 		}
-		x = 31
-		y = 12
-        completion_reward = {			
-			add_ideas = YSK_rev_nationalism
-		}      
-	}
-	focus = {
-		id = YSK_etnich_nationalism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rev_nationalism
+		mutually_exclusive = {
 			focus = YSK_aristocratic_nationalism
+			focus = YSK_democraty_bez_levih
 		}
-		mutually_exclusive = {
-			focus = YSK_grazhdanskiy_nationalism
-		}
-		x = 30
-		y = 14
-        completion_reward = {
-        	add_ideas = YSK_etnich_nationalism
-		}   
-	}
-	focus = {
-		id = YSK_sekulyarnost
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_respublikanism
-			focus = YSK_rev_nationalism
-		}
-		mutually_exclusive = {
-			focus = YSK_povysit_status_tserkvi
-		}
-		x = 32
-		y = 14
-        completion_reward = {
-        	add_ideas = YSK_sekulyarnost
-		}      
-	}
-	focus = {
-		id = YSK_united_rus_narod
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_respublikanism
-			focus = YSK_rev_nationalism
-		}
-		mutually_exclusive = {
-			focus = YSK_restavratsiya_RI
-		}
-		x = 32
-		y = 15
+		x = 26
+		y = 9
+			completion_reward = {
+					add_ideas = YSK_rev_nationalism
+				}
 
 	}
 	focus = {
-		id = YSK_rus_army
+		id = YSK_rus_regent
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_respublikanism
-			focus = YSK_rev_nationalism
-			focus = YSK_aristocratic_nationalism
-			focus = YSK_2_souznika
-		}
-		x = 43
-		y = 18
-        completion_reward = {
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}    
-	}
-	focus = {
-		id = YSK_tsar_weapon
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_army
-		}
-		x = 44
-		y = 19
-        completion_reward = {
-		    army_experience = 15 
-		    add_tech_bonus = {
-				name = infantry_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-			}  
-	    }   
-	}
-	focus = {
-		id = YSK_vdv
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_army
-		}
-		x = 42
-		y = 19
-        completion_reward = {
-		    army_experience = 15
-			air_experience = 5
-		    add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-			}  
-	    }    
-	}
-	focus = {
-		id = YSK_tsar_arta
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vdv
-			focus = YSK_tsar_weapon
-		}
-		x = 44
-		y = 20
-        completion_reward = {
-		    army_experience = 15 
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}      
-	}
-	focus = {
-		id = YSK_pOgromniy_bombar
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_vdv
-			focus = YSK_tsar_weapon
-		}
-		x = 42
-		y = 20
-        completion_reward = {
-		    air_experience = 15
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
-			    category = tactical_bomber
-			}
-		} 
-	} 
-	focus = {
-		id = YSK_tsar_tank
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_pOgromniy_bombar
-			focus = YSK_tsar_arta
-		}
-		x = 44
-		y = 21
-        completion_reward = {
-		    army_experience = 15
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}  
-	}
-	focus = {
-		id = YSK_povysit_status_tserkvi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rev_nationalism
-			focus = YSK_aristocratic_nationalism
+			focus = YSK_Sputnick_i_Pogrom
 		}
 		mutually_exclusive = {
-			focus = YSK_sekulyarnost
-		}
-		x = 34
-		y = 14
-        completion_reward = {
-        	add_ideas = YSK_povysit_status_tserkvi
-		}    
-	}
-	focus = {
-		id = YSK_restavratsiya_RI
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rev_nationalism
-			focus = YSK_aristocratic_nationalism
-		}
-		mutually_exclusive = {
-			focus = YSK_united_rus_narod
-		}
-		x = 34
-		y = 15
-
-	}
-	focus = {
-		id = YSK_russkost
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_rus_president
 			focus = YSK_rus_vozhd
+		}
+		x = 28
+		y = 8
+			completion_reward = {
+					add_country_leader_trait = rus_regent
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_aristocratic_nationalism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
 			focus = YSK_rus_regent
 		}
-		x = 31
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_russkost
-		}   
-	}
-	focus = {
-		id = YSK_nakog_na_russkost
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_russkost
+		mutually_exclusive = {
+			focus = YSK_rev_nationalism
 		}
-		x = 31
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_russkost
-				add_idea = YSK_russkost_1
-			}
-		}   
+		x = 28
+		y = 9
+			completion_reward = {
+					add_ideas = YSK_aristocratic_nationalism
+				}
+
 	}
 	focus = {
 		id = YSK_svinhade
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_nakog_na_russkost
+			focus = YSK_democraty_bez_levih
 		}
-		x = 31
-		y = 18
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_russkost_1
-				add_idea = YSK_russkost_2
-			}
-		}    
+		prerequisite = {
+			focus = YSK_rev_nationalism
+		}
+		prerequisite = {
+			focus = YSK_aristocratic_nationalism
+		}
+		x = 26
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_russkost_1
+							add_idea = YSK_russkost_2
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_zakrut_granitsy_s_Kavkazom_i_SA
+		id = YSK_nalog_na_russkost
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_svinhade
 		}
-		x = 31
-		y = 19
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_russkost_2
-				add_idea = YSK_russkost_3
-			}
-		}    
+		x = 24
+		y = 11
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_russkost
+							add_idea = YSK_russkost_1
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_unitarnost
+		id = YSK_5_protsentov_true_russkih
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_president
-			focus = YSK_rus_vozhd
-			focus = YSK_rus_regent
+			focus = YSK_nalog_na_russkost
 		}
-		x = 34
-		y = 16
-        completion_reward = {
-        	add_ideas = YSK_unitarnost
-		}     
-	}
-	focus = {
-		id = YSK_podavlenie_natsmenshinstv
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_unitarnost
-		}
-		x = 34
-		y = 17
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_unitarnost
-				add_idea = YSK_unitarnost_1
-			}
-		}    
-	}
-	focus = {
-		id = YSK_davit_gender_menshinstv
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_podavlenie_natsmenshinstv
-		}
-		mutually_exclusive = {
-			focus = YSK_razreshit_netrad_braki
-		}
-		x = 33
-		y = 18
-        completion_reward = {
-        	add_ideas = YSK_davit_gender_menshinstv
-		}  
-	}
-	focus = {
-		id = YSK_razreshit_netrad_braki
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_podavlenie_natsmenshinstv
-		}
-		mutually_exclusive = {
-			focus = YSK_davit_gender_menshinstv
-		}
-		x = 35
-		y = 18
-        completion_reward = {
-        	add_ideas = YSK_razreshit_netrad_braki
-		}   
-	}
-	focus = {
-		id = YSK_cult_nats_gomoerotic
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_razreshit_netrad_braki
-		}
-		x = 35
-		y = 19
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_razreshit_netrad_braki
-				add_idea = YSK_cult_nats_gomoerotic
-			}
-		}   
-	}
-	focus = {
-		id = YSK_tsar_bimba
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_pOgromniy_bombar
-			focus = YSK_tsar_arta
-		}
-		x = 42
-		y = 21
-        completion_reward = {
-		    add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 2
-				category = nuclear
-			}
-		}     
-	}
-	focus = {
-		id = YSK_rus_respublikanism
-		icon = GFX_goal_unknown
-		cost = 3,00
-		prerequisite = {
-			focus = YSK_rus_president
-		}
-		x = 28
+		x = 22
 		y = 12
-        completion_reward = {
-        	add_ideas = YSK_rus_respublikanism
-		}  
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_dvoryanstvo
+							add_idea = YSK_new_dvoryanstvo_1
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_razvit_rus_obzhinnuy_democraty
+		id = YSK_cult_homoerotic
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 2,00
 		prerequisite = {
-			focus = YSK_rus_respublikanism
+			focus = YSK_pogromy_budut
 		}
-		x = 26
+		x = 24
+		y = 12
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_razreshit_netrad_braki
+							add_idea = YSK_cult_nats_gomoerotic
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_armyanskaya_kuhnya
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_cult_homoerotic
+		}
+		x = 24
 		y = 13
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_rus_respublikanism
-				add_idea = YSK_rus_respublikanism_1
-			}
-		}    
-	}
-	focus = {
-		id = YSK_democraty_bez_levih
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_razvit_rus_obzhinnuy_democraty
-		}
-		x = 26
-		y = 14     
-		completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_rus_respublikanism_1
-				add_idea = YSK_rus_respublikanism_2
-			}
-		}	
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_na_zlo_sovkam
+							add_idea = YSK_na_zlo_sovkam_1
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_pogromy_budut
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_rev_nationalism
-			focus = YSK_aristocratic_nationalism
-			focus = YSK_rus_respublikanism
-		}	
-		x = 31
-		y = 13
-        completion_reward = {
-        	every_owned_state = { add_manpower = -10000 }
-			add_political_power = -75
-			add_stability = 0.075
-			add_war_support = 0.075			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.075
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.075
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.075
-			}
-		}    
-	}
-	focus = {
-		id = YSK_tsar_korabl
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = YSK_tsar_bimba
-			focus = YSK_tsar_tank
+			focus = YSK_svinhade
 		}
-		x = 44
-		y = 22
-        completion_reward = {
-			navy_experience = 50
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}      
+		x = 26
+		y = 11
+			completion_reward = {
+					every_owned_state = {
+							add_manpower = -10000
+						}
+					add_political_power = -75
+					add_stability = 0.075
+					add_war_support = 0.075
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.075
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.075
+						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.075
+						}
+				}
+
 	}
 	focus = {
 		id = YSK_zdorovaya_rus_family
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_davit_gender_menshinstv
+			focus = YSK_pogromy_budut
 		}
-		x = 33
-		y = 19
-        completion_reward = {
-        	swap_ideas = {
-			    remove_idea = YSK_davit_gender_menshinstv
-				add_idea = YSK_davit_gender_menshinstv_1
-			}
-		}    
+		x = 26
+		y = 12
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_davit_gender_menshinstv
+							add_idea = YSK_davit_gender_menshinstv_1
+						}
+				}
+
 	}
 	focus = {
-		id = YSK_soversh_weapon_neupravlyaemaya_raketa
+		id = YSK_ploditsya_bystree_chem_umirat
 		icon = GFX_goal_unknown
 		cost = 2,00
 		prerequisite = {
-			focus = YSK_tsar_bimba
-			focus = YSK_tsar_tank
+			focus = YSK_zdorovaya_rus_family
 		}
-		x = 42
-		y = 22
-        completion_reward = {
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 2
-				uses = 2
-				category = rocketry
-				category = jet_technology
-			}
-		}   
+		x = 26
+		y = 13
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_na_zlo_sovkam_2
+							add_idea = YSK_na_zlo_sovkam_3
+						}
+				}
+
 	}
+	focus = {
+		id = YSK_reparatsii_s_pensionerov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_svinhade
+		}
+		x = 28
+		y = 11
+			completion_reward = {
+					add_ideas = YSK_na_zlo_sovkam
+					add_stability = -0.1
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = vmestolev
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_eat_levakov
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_pogromy_budut
+		}
+		prerequisite = {
+			focus = YSK_reparatsii_s_pensionerov
+		}
+		x = 28
+		y = 12
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_na_zlo_sovkam_1
+							add_idea = YSK_na_zlo_sovkam_2
+						}
+					add_stability = -0.1
+				}
+
+	}
+	focus = {
+		id = YSK_great_russian_wall
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_eat_levakov
+		}
+		x = 28
+		y = 13
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_russkost_2
+							add_idea = YSK_russkost_3
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_den_otmshcheniya_41
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_reparatsii_s_pensionerov
+		}
+		x = 30
+		y = 12
+			completion_reward = {
+					add_ideas = YSK_den_otmshcheniya
+					add_popularity = {
+							ideology = anarhostalinism
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = vmestolev
+							popularity = -0.1
+						}
+					add_popularity = {
+							ideology = metacommy
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_silver_bullet
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_armyanskaya_kuhnya
+			focus = YSK_ploditsya_bystree_chem_umirat
+			focus = YSK_great_russian_wall
+		}
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = YSK_soversh_weapon
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_armyanskaya_kuhnya
+			focus = YSK_ploditsya_bystree_chem_umirat
+			focus = YSK_great_russian_wall
+		}
+		x = 26
+		y = 14
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_neupr_rocket
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_great_russian_wall
+			focus = YSK_ploditsya_bystree_chem_umirat
+			focus = YSK_armyanskaya_kuhnya
+		}
+		x = 28
+		y = 14
+
+	}	
 	#монархисты_обычные
 	focus = {
 		id = YSK_sozvat_zemsobor
@@ -5413,10 +4032,10 @@ focus_tree = {
 			focus = YSK_rus_vibory
 		}
 		mutually_exclusive = {
-			focus = YSK_vot_praviy_povorot
 			focus = YSK_moderate_rusnat
+			focus = YSK_vot_praviy_povorot
 		}
-		x = 50
+		x = 41
 		y = 7
 			available = {
 					has_country_flag = monarhist_win
@@ -5430,7 +4049,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sozvat_zemsobor
 		}
-		x = 50
+		x = 41
 		y = 8
 
 	}
@@ -5442,15 +4061,14 @@ focus_tree = {
 			focus = YSK_raskol_v_dome
 		}
 		mutually_exclusive = {
-			focus = YSK_nepisannaya_konstitutsiya
-			focus = YSK_kodifitsirovannaya_konstitutsiya
+			focus = YSK_constit
 		}
-		x = 48
+		x = 42
 		y = 9
 
 	}
 	focus = {
-		id = YSK_nepisannaya_konstitutsiya
+		id = YSK_constit
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
@@ -5458,77 +4076,96 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = YSK_samoderzhavie
-			focus = YSK_kodifitsirovannaya_konstitutsiya
 		}
-		x = 50
+		x = 40
 		y = 9
 
 	}
 	focus = {
-		id = YSK_kodifitsirovannaya_konstitutsiya
+		id = YSK_ozhivlenie_derevni
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_raskol_v_dome
-		}
-		mutually_exclusive = {
-			focus = YSK_nepisannaya_konstitutsiya
+			focus = YSK_constit
 			focus = YSK_samoderzhavie
 		}
-		x = 52
-		y = 9
-
-	}
-	focus = {
-		id = YSK_borba_za_avtoritet
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_samoderzhavie
-			focus = YSK_nepisannaya_konstitutsiya
-			focus = YSK_kodifitsirovannaya_konstitutsiya
-		}
-		x = 45
+		x = 34
 		y = 10
 
 	}
 	focus = {
-		id = YSK_dorev_yazik
+		id = YSK_neokulaki
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_ozhivlenie_derevni
+		}
+		mutually_exclusive = {
+			focus = YSK_dvoryanstvo
+		}
+		x = 33
+		y = 11
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_tabel_o_rangah_1
+							add_idea = YSK_new_tabel_o_rangah_2
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_zemskoe_samoupravlenie
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_borba_za_avtoritet
+			focus = YSK_neokulaki
 		}
-		x = 42
+		x = 33
+		y = 12
+
+	}
+	focus = {
+		id = YSK_dvoryanstvo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_ozhivlenie_derevni
+		}
+		mutually_exclusive = {
+			focus = YSK_neokulaki
+		}
+		x = 35
 		y = 11
 
 	}
 	focus = {
-		id = YSK_tsigan_ampir
+		id = YSK_old_good_times_do_1861
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_dorev_yazik
+			focus = YSK_dvoryanstvo
 		}
-		mutually_exclusive = {
-			focus = YSK_tsigan_barokko
-		}
-		x = 41
+		x = 35
 		y = 12
 
 	}
 	focus = {
-		id = YSK_tsigan_barokko
+		id = YSK_boyare_i_chern
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 2,00
 		prerequisite = {
-			focus = YSK_dorev_yazik
+			focus = YSK_zemskoe_samoupravlenie
+			focus = YSK_old_good_times_do_1861
+			focus = YSK_zemskoe_samoupravlenie
 		}
-		mutually_exclusive = {
-			focus = YSK_tsigan_ampir
-		}
-		x = 43
-		y = 12
+		x = 34
+		y = 13
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_new_tabel_o_rangah
+							add_idea = YSK_new_tabel_o_rangah_1
+						}
+				}
 
 	}
 	focus = {
@@ -5536,24 +4173,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_borba_za_avtoritet
+			focus = YSK_constit
+			focus = YSK_samoderzhavie
+			focus = YSK_constit
+			focus = YSK_samoderzhavie
 		}
-		x = 46
-		y = 11
-
-	}
-	focus = {
-		id = YSK_cherta_osedlosti
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_RPTS
-		}
-		mutually_exclusive = {
-			focus = YSK_privlech_desheviy_trud
-		}
-		x = 47
-		y = 13
+		x = 38
+		y = 10
 
 	}
 	focus = {
@@ -5563,8 +4189,8 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_RPTS
 		}
-		x = 45
-		y = 12
+		x = 38
+		y = 11
 
 	}
 	focus = {
@@ -5574,7 +4200,42 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zapret_abortov
 		}
-		x = 45
+		mutually_exclusive = {
+			focus = YSK_russian_imperskiy_femenism
+		}
+		x = 39
+		y = 12
+
+	}
+	focus = {
+		id = YSK_russian_imperskiy_femenism
+		icon = GFX_goal_unknown
+		cost = 2,00
+		prerequisite = {
+			focus = YSK_zapret_abortov
+		}
+		mutually_exclusive = {
+			focus = YSK_kontr_emasipatsiya
+		}
+		x = 37
+		y = 12
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = YSK_Tessa
+							add_idea = YSK_Tessa_1
+						}
+				}
+
+	}
+	focus = {
+		id = YSK_dorev_yazik
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_russian_imperskiy_femenism
+			focus = YSK_kontr_emasipatsiya
+		}
+		x = 38
 		y = 13
 
 	}
@@ -5583,11 +4244,11 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
+			focus = YSK_constit
 			focus = YSK_samoderzhavie
-			focus = YSK_nepisannaya_konstitutsiya
-			focus = YSK_kodifitsirovannaya_konstitutsiya
+			focus = YSK_constit
 		}
-		x = 49
+		x = 42
 		y = 10
 
 	}
@@ -5598,7 +4259,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_razdat_tituli
 		}
-		x = 49
+		x = 42
 		y = 11
 
 	}
@@ -5610,157 +4271,45 @@ focus_tree = {
 			focus = YSK_kompensantsiya_ograblennogo
 		}
 		mutually_exclusive = {
-			focus = YSK_dvoryane_kapitalisti
+			focus = YSK_new_dvoryanstvo
 		}
-		x = 48
+		x = 41
 		y = 12
 
 	}
 	focus = {
-		id = YSK_dvoryane_kapitalisti
+		id = YSK_new_dvoryanstvo
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 2,00
 		prerequisite = {
 			focus = YSK_kompensantsiya_ograblennogo
 		}
 		mutually_exclusive = {
 			focus = YSK_tradition_kupechestva
 		}
-		x = 50
+		x = 43
 		y = 12
+			completion_reward = {
+					add_ideas = YSK_new_dvoryanstvo
+				}
 
 	}
 	focus = {
-		id = YSK_privlech_desheviy_trud
+		id = YSK_new_tabel_o_rangah
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 2,00
 		prerequisite = {
+			focus = YSK_new_dvoryanstvo
 			focus = YSK_tradition_kupechestva
-			focus = YSK_dvoryane_kapitalisti
-		}
-		mutually_exclusive = {
-			focus = YSK_cherta_osedlosti
-			focus = YSK_old_good_times_do_1861
-		}
-		x = 49
-		y = 13
-
-	}
-	focus = {
-		id = YSK_ozhivlenie_derevni
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_razdat_tituli
-		}
-		x = 53
-		y = 11
-
-	}
-	focus = {
-		id = YSK_new_feodali
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_ozhivlenie_derevni
-		}
-		mutually_exclusive = {
-			focus = YSK_poozhrenie_kulachesva
-		}
-		x = 52
-		y = 12
-
-	}
-	focus = {
-		id = YSK_old_good_times_do_1861
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_new_feodali
-		}
-		mutually_exclusive = {
-			focus = YSK_privlech_desheviy_trud
-		}
-		x = 52
-		y = 13
-
-	}
-	focus = {
-		id = YSK_poozhrenie_kulachesva
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_ozhivlenie_derevni
-		}
-		mutually_exclusive = {
-			focus = YSK_new_feodali
-		}
-		x = 54
-		y = 12
-
-	}
-	focus = {
-		id = YSK_zemskoe_samoupravlenie
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_poozhrenie_kulachesva
-		}
-		x = 54
-		y = 13
-
-	}
-	focus = {
-		id = YSK_derzhat_i_ne_puzhat
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_kodifitsirovannaya_konstitutsiya
-			focus = YSK_nepisannaya_konstitutsiya
-			focus = YSK_samoderzhavie
-		}
-		x = 57
-		y = 10
-
-	}
-	focus = {
-		id = YSK_2_souznika
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_derzhat_i_ne_puzhat
-		}
-		x = 59
-		y = 11
-        completion_reward = {
-		    army_experience = 10
-			navy_experience = 10
-			add_doctrine_cost_reduction = { 
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-			add_doctrine_cost_reduction = { 
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = naval_doctrine
-			}
-		}       
-	}
-	focus = {
-		id = YSK_tabel_o_rangah
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_2_souznika
 		}
 		mutually_exclusive = {
 			focus = YSK_manidest_o_volnosti_dvoryan
 		}
-		x = 58
-		y = 12
+		x = 43
+		y = 13
+			completion_reward = {
+					add_ideas = YSK_new_tabel_o_rangah
+				}
 
 	}
 	focus = {
@@ -5768,108 +4317,33 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_2_souznika
+			focus = YSK_tradition_kupechestva
+			focus = YSK_new_dvoryanstvo
 		}
 		mutually_exclusive = {
-			focus = YSK_tabel_o_rangah
+			focus = YSK_new_tabel_o_rangah
 		}
-		x = 56
-		y = 12
-
-	}
-	focus = {
-		id = YSK_legacy_white_guardian
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_2_souznika
-		}
-		x = 59
+		x = 41
 		y = 13
-        completion_reward = {
-		}				
-	}
-	focus = {
-		id = YSK_uroki_neudach_popitki
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_legacy_white_guardian
-		}
-		x = 58
-		y = 14
-        completion_reward = {
-			army_experience = 10
-			add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}    
-	}
-	focus = {
-		id = YSK_flot_morskoy_I_vozdushniy
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_2_souznika
-		}
-		x = 60
-		y = 12
-        completion_reward = {
-		    air_experience = 25
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-			add_doctrine_cost_reduction = { 
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = naval_doctrine
-			}
-		}   
-	}
-	focus = {
-		id = YSK_Pobeda_im_Nicolay_2
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_legacy_white_guardian
-		}
-		x = 60
-		y = 14
-        completion_reward = {
-			army_experience = 10
-			add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}  
+
 	}
 	focus = {
 		id = YSK_new_empire
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_zemskoe_samoupravlenie
+			focus = YSK_new_tabel_o_rangah
 		}
 		prerequisite = {
-			focus = YSK_privlech_desheviy_trud
+			focus = YSK_dorev_yazik
 		}
 		prerequisite = {
-			focus = YSK_tabel_o_rangah
+			focus = YSK_boyare_i_chern
 		}
 		mutually_exclusive = {
 			focus = YSK_gold_vek_dvoryanstva
 		}
-		x = 49
+		x = 44
 		y = 14
 
 	}
@@ -5878,10 +4352,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_dvoryane_kapitalisti
+			focus = YSK_boyare_i_chern
 		}
 		prerequisite = {
-			focus = YSK_old_good_times_do_1861
+			focus = YSK_dorev_yazik
 		}
 		prerequisite = {
 			focus = YSK_manidest_o_volnosti_dvoryan
@@ -5889,8 +4363,94 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_new_empire
 		}
-		x = 51
+		x = 40
 		y = 14
+
+	}
+	focus = {
+		id = YSK_derzhat_i_ne_puzhat
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_samoderzhavie
+			focus = YSK_constit
+		}
+		x = 46
+		y = 10
+
+	}
+	focus = {
+		id = YSK_blagotvor
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_derzhat_i_ne_puzhat
+		}
+		x = 45
+		y = 11
+
+	}
+	focus = {
+		id = YSK_privlech_desheviy_trud
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_blagotvor
+		}
+		x = 45
+		y = 12
+
+	}
+	focus = {
+		id = YSK_yunker_shcools
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_derzhat_i_ne_puzhat
+		}
+		x = 47
+		y = 11
+
+	}
+	focus = {
+		id = YSK_evropean_connections
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = YSK_yunker_shcools
+		}
+		x = 47
+		y = 12
+
+	}
+	focus = {
+		id = YSK_tsigan_ampir
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_evropean_connections
+			focus = YSK_privlech_desheviy_trud
+		}
+		mutually_exclusive = {
+			focus = YSK_tsigan_barokko
+		}
+		x = 45
+		y = 13
+
+	}
+	focus = {
+		id = YSK_tsigan_barokko
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_privlech_desheviy_trud
+			focus = YSK_evropean_connections
+		}
+		mutually_exclusive = {
+			focus = YSK_tsigan_ampir
+		}
+		x = 47
+		y = 13
 
 	}
 	focus = {
@@ -5903,7 +4463,7 @@ focus_tree = {
 			focus = YSK_tsigan_ampir
 			focus = YSK_tsigan_barokko
 		}
-		x = 50
+		x = 42
 		y = 15
 
 	}
@@ -5914,7 +4474,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_big_imperator_bal
 		}
-		x = 49
+		x = 41
 		y = 16
 
 	}
@@ -5925,7 +4485,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_big_imperator_bal
 		}
-		x = 51
+		x = 43
 		y = 16
 
 	}
@@ -5939,7 +4499,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_hrust_frantsuskoy_bulki
 		}
-		x = 50
+		x = 42
 		y = 17
 
 	}
@@ -5948,7 +4508,7 @@ focus_tree = {
 		id = YSK_red_day_kalendar
 		icon = GFX_goal_unknown
 		cost = 5,00
-		x = 52
+		x = 42
 		y = 19
 
 	}
@@ -5959,7 +4519,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_red_day_kalendar
 		}
-		x = 52
+		x = 42
 		y = 20
 
 	}
@@ -5970,7 +4530,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_nichevo_lichnogo
 		}
-		x = 52
+		x = 42
 		y = 21
 
 	}
@@ -5981,7 +4541,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sobor_sovetov
 		}
-		x = 53
+		x = 43
 		y = 22
 
 	}
@@ -5992,7 +4552,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_sobor_sovetov
 		}
-		x = 51
+		x = 41
 		y = 22
 
 	}
@@ -6009,7 +4569,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_vsya_vlast_tsary
 		}
-		x = 53
+		x = 43
 		y = 23
 
 	}
@@ -6026,7 +4586,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_kollectiv_samoderzhavie
 		}
-		x = 51
+		x = 41
 		y = 23
 
 	}
@@ -6038,7 +4598,7 @@ focus_tree = {
 			focus = YSK_vsya_vlast_tsary
 			focus = YSK_kollectiv_samoderzhavie
 		}
-		x = 48
+		x = 38
 		y = 24
 
 	}
@@ -6049,7 +4609,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zemhozi_i_tsarhozi
 		}
-		x = 48
+		x = 38
 		y = 25
 
 	}
@@ -6060,7 +4620,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zemhozi_i_tsarhozi
 		}
-		x = 46
+		x = 36
 		y = 25
 
 	}
@@ -6072,7 +4632,7 @@ focus_tree = {
 			focus = YSK_kollectiv_samoderzhavie
 			focus = YSK_vsya_vlast_tsary
 		}
-		x = 50
+		x = 40
 		y = 24
 
 	}
@@ -6083,7 +4643,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_tsar_indusrializatsiya
 		}
-		x = 50
+		x = 40
 		y = 25
 
 	}
@@ -6100,7 +4660,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_zakreplenie_ludey_za_partiytsami
 		}
-		x = 49
+		x = 39
 		y = 26
 
 	}
@@ -6112,19 +4672,7 @@ focus_tree = {
 			focus = YSK_kollectiv_samoderzhavie
 			focus = YSK_vsya_vlast_tsary
 		}
-		x = 54
-		y = 24
-
-	}
-	focus = {
-		id = YSK_red_rpts
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_kollectiv_samoderzhavie
-			focus = YSK_vsya_vlast_tsary
-		}
-		x = 52
+		x = 44
 		y = 24
 
 	}
@@ -6135,8 +4683,20 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rev_strazha
 		}
-		x = 54
+		x = 44
 		y = 25
+
+	}
+	focus = {
+		id = YSK_red_rpts
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_kollectiv_samoderzhavie
+			focus = YSK_vsya_vlast_tsary
+		}
+		x = 42
+		y = 24
 
 	}
 	focus = {
@@ -6149,30 +4709,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rev_strazha
 		}
-		x = 52
-		y = 25
-
-	}
-	focus = {
-		id = YSK_social_monarhy
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_kollectiv_samoderzhavie
-			focus = YSK_vsya_vlast_tsary
-		}
-		x = 56
-		y = 24
-
-	}
-	focus = {
-		id = YSK_tituli_za_trud
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_social_monarhy
-		}
-		x = 56
+		x = 42
 		y = 25
 
 	}
@@ -6186,8 +4723,31 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_day_chekista
 		}
-		x = 53
+		x = 43
 		y = 26
+
+	}
+	focus = {
+		id = YSK_social_monarhy
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_kollectiv_samoderzhavie
+			focus = YSK_vsya_vlast_tsary
+		}
+		x = 46
+		y = 24
+
+	}
+	focus = {
+		id = YSK_tituli_za_trud
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_social_monarhy
+		}
+		x = 46
+		y = 25
 
 	}
 	focus = {
@@ -6200,7 +4760,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_day_chekista
 		}
-		x = 55
+		x = 45
 		y = 26
 
 	}
@@ -6217,7 +4777,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_iskuplenie_cherez_trud
 		}
-		x = 52
+		x = 42
 		y = 27
 
 	}
@@ -6231,7 +4791,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_rus_left_nationalism
 		}
-		x = 51
+		x = 41
 		y = 28
 
 	}
@@ -6245,7 +4805,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_empire_noviop
 		}
-		x = 53
+		x = 43
 		y = 28
 
 	}
@@ -6257,7 +4817,7 @@ focus_tree = {
 			focus = YSK_empire_noviop
 			focus = YSK_rus_left_nationalism
 		}
-		x = 52
+		x = 42
 		y = 29
 
 	}
