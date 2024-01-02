@@ -42,7 +42,10 @@ YSK_god_dynamic_modifier = {
 	army_attack_factor = YSK_pamyat_god_army_attack_factor
 	consumer_goods_factor = YSK_pamyat_god_consumer_goods_factor
 	compliance_gain = YSK_pamyat_god_compliance_gain
-	
+	foreign_subversive_activites = YSK_pamyat_god_foreign_subversive_activites
+	non_core_manpower = YSK_pamyat_god_non_core_manpower
+	special_forces_cap = YSK_pamyat_god_special_forces_cap
+	political_power_factor = YSK_pamyat_god_political_power_factor
 }
 YSK_tsar_dynamic_modifier = {	
 	
@@ -57,7 +60,8 @@ YSK_tsar_dynamic_modifier = {
 	local_resources_factor = YSK_pamyat_tsar_local_resources_factor
 	resistance_damage_to_garrison = YSK_pamyat_tsar_resistance_damage_to_garrison
 	foreign_subversive_activites = YSK_pamyat_tsar_foreign_subversive_activites
-	non_core_manpower = YSK_pamyat_tsar_non_core_manpower	
+	non_core_manpower = YSK_pamyat_tsar_non_core_manpower
+    conscription_factor = YSK_pamyat_tsar_conscription_factor	
 	
 }
 YSK_nation_dynamic_modifier = {	
@@ -73,7 +77,28 @@ YSK_nation_dynamic_modifier = {
 	conscription = YSK_pamyat_nation_conscription
 	consumer_goods_factor = YSK_pamyat_nation_consumer_goods_factor
 	army_attack_factor = YSK_pamyat_nation_army_attack_factor
+	justify_war_goal_time = YSK_pamyat_nation_justify_war_goal_time
+	army_org_factor = YSK_pamyat_nation_army_org_factor
+	drift_defence_factor = YSK_pamyat_nation_drift_defence_factor
+	dig_in_speed_factor = YSK_pamyat_nation_dig_in_speed_factor
+	recon_factor_while_entrenched = YSK_pamyat_nation_recon_factor_while_entrenched
+	training_time_factor = YSK_pamyat_nation_training_time_factor
+	resistance_damage_to_garrison = YSK_pamyat_nation_resistance_damage_to_garrison
 	
+}
+YSK_RNE_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_YSK_nation_dynamic_modifier
+	
+	war_support_factor = YSK_RNE_war_support_factor
+	stability_factor = YSK_RNE_stability_factor
+	political_power_factor = YSK_RNE_political_power_factor
+	army_attack_factor = YSK_RNE_army_attack_factor
+	conscription = YSK_RNE_conscription
+	fascism_drift = YSK_RNE_fascism_drift
+	army_morale_factor = YSK_RNE_army_morale_factor
+	drift_defence_factor = YSK_RNE_drift_defence_factor
 }
 YSK_new_natslib_economic_polilika = {	
 	

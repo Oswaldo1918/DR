@@ -1,0 +1,46 @@
+add_namespace = OMS
+
+country_event = {
+    id = OMS.1
+	title = OMS.1.t
+	desc = OMS.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = OMS
+		has_war = no
+		POK = { exists = no }
+		GAL = { exists = no }
+		YSK = { exists = no }
+		ZNS = { exists = no }
+		MGN = { exists = no }
+		MRD = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	} 
+	
+	option = {
+	name = OMS.1.a
+		ai_chance = { factor = 100 }
+		LIM = {
+			annex_country = {
+				target = OMS
+			}
+		}
+	}
+	option = {
+	name = OMS.1.b
+		ai_chance = { factor = 0 }
+		set_cosmetic_tag = OMS_nezavisimost
+		LIM = {
+			add_opinion_modifier = {
+				target = OMS
+				modifier = TUR_traitors_of_the_revolution
+			}
+		}
+	}	
+}	
