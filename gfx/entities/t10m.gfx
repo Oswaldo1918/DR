@@ -1,0 +1,11 @@
+objectTypes = {	
+	pdxmesh = {
+		name = "t10m_mesh"
+		file = "gfx/models/units/tanks/t10m.mesh"
+		scale = 0.75
+		
+		animation = { id = "idle"			type = "t10m_idle_animation" }
+		animation = { id = "move"			type = "t10m_move_animation" }
+		animation = { id = "attack"			type = "t10m_attack_animation" }
+	}
+}
