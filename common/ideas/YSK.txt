@@ -1883,5 +1883,92 @@ ideas = {
 				consumer_goods_factor = -0.01
 			    }
 		    }
+			YSK_TNO_0 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				resistance_damage_to_garrison = 0.05
+				memoism_drift = -0.05
+				wounded_chance_factor = -0.05
+				party_popularity_stability_factor = 0.05
+			    }
+		    }
+			YSK_TNO_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.02
+				war_support_factor = -0.02
+				political_power_gain = -0.02
+				resistance_damage_to_garrison = 0.02
+				memoism_drift = 0.02
+				wounded_chance_factor = 0.02
+				party_popularity_stability_factor = -0.02
+			    }
+		    }
+			YSK_TNO_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_gain = -0.05
+				resistance_damage_to_garrison = 0.05
+				memoism_drift = 0.05
+				wounded_chance_factor = 0.05
+				party_popularity_stability_factor = -0.05
+			    }
+		    }
+			YSK_TNO_3 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.075
+				war_support_factor = -0.075
+				political_power_gain = -0.075
+				resistance_damage_to_garrison = 0.075
+				memoism_drift = 0.075
+				wounded_chance_factor = 0.075
+				party_popularity_stability_factor = -0.075
+			    }
+		    }
+			YSK_TNO_4 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.1
+				resistance_damage_to_garrison = 0.1
+				memoism_drift = 0.1
+				wounded_chance_factor = 0.1
+				party_popularity_stability_factor = -0.1
+			    }
+		    }
+			YSK_destroy_vertolets = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				research_speed_factor = -0.02
+			    }
+		    }
+			YSK_uprastit_panel_uprav = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			    }
+		    }
 	    }		
 }

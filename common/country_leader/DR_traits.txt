@@ -3,6 +3,16 @@
 @tier3 = 10
 
 leader_traits = {
+    Ne_v_soznanii = {
+		sprite = 10
+		random = not		
+		political_power_gain = -0.1
+		command_power_gain = -0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}    
     rus_regent = {
 		sprite = 10
 		random = not

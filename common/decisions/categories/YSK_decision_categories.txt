@@ -11,3 +11,12 @@ YSK_vybor_storony = {
 		has_completed_focus = YSK_rus_victory
 	}
 }
+YSK_tnoidi = {
+	icon = military_operation
+	allowed = {
+		tag = YSK		
+	}
+	visible = {			
+		has_country_flag = YSK_borba_s_TNO
+	}
+}

@@ -2265,6 +2265,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.05
 			}
+			country_event = YSK.18
 		}    
 	}
 	focus = {
@@ -2274,6 +2275,11 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
+		available = { 
+		    NOT = { 
+			    has_country_flag = YSK_NPF
+			}
+		}	
 		x = 71
 		y = 12
         completion_reward = {
@@ -2864,6 +2870,11 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
+		available = { 
+		    NOT = { 
+			    has_country_flag = YSK_RNE
+			}
+		}
 		x = 83
 		y = 12
 		completion_reward = {
@@ -2904,6 +2915,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.1
 			}
+			country_event = YSK.11
 		}
 	}
 	focus = {
@@ -3051,6 +3063,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = YSK_1_pamyat_tsar_stability_factor_tt
 			custom_effect_tooltip = YSK_1_pamyat_tsar_political_power_gain_tt
+			country_event = YSK.12
 		}
 
 	}

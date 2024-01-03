@@ -212,30 +212,30 @@ country_event = {
         complete_national_focus = YSK_NNP        		
 	}
 	option = {
-	    name = YSK.8.c
+	    name = YSK.8.с
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
 		}
         add_country_leader_role = {
-            character = YSK_Milchakov
+            character = YSK_Nickolay_Skorodumov
             promote_leader = yes
             country_leader = {
-                ideology = right_neoyazych
+                ideology = ultright_monarchy
                 expire = "1965.1.1.1"
-                traits = { national_socialist_paramilitarist }
+                traits = { crown_regent  }
             }
         }
         set_party_name = {
             ideology = fascism
-            long_name = YSK_fascism_right_neoyazych_party_long
-            name = YSK_fascism_right_neoyazych_ancap
+            long_name = YSK_fascism_ultright_monarchy_long
+            name = YSK_fascism_ultright_monarchy
         }
-        set_cosmetic_tag = YSK_RUS_Rusich 
+        set_cosmetic_tag = YSK_RUS_NPF_Memory
         set_politics = {
 	        ruling_party = fascism
         }
-        complete_national_focus = YSK_Rusich         		
+        complete_national_focus = YSK_NPF_Memorys       		
 	}
 	option = {
 	    name = YSK.8.e
@@ -264,7 +264,7 @@ country_event = {
         complete_national_focus = YSK_RNE         		
 	}	
 	option = {
-	    name = YSK.8.f
+	    name = YSK.8.с
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
@@ -317,6 +317,220 @@ country_event = {
 	option = {
 	name = YSK.10.a      	             
 	}
+}
+
+#тноиды-начало
+country_event = {
+	id = YSK.11
+	title = YSK.11.t
+	desc = YSK.11.d
+	picture = GFX_report_event_dkr_business_tesak
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.11.a
+    add_ideas = YSK_TNO_1       	
+	}
+}
+
+#тноиды-теракт
+country_event = {
+	id = YSK.12
+	title = YSK.12.t
+	desc = YSK.12.d
+	picture = GFX_report_event_dkr_business_tesak
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.12.a
+	    add_manpower = -1000
+		40 = {
+            damage_building = {
+                type = infrastructure
+                damage = 3
+            } 
+    	}
+		add_country_leader_trait = Ne_v_soznanii
+ 	    swap_ideas = {
+			remove_idea = YSK_TNO_1
+			add_idea = YSK_TNO_2
+	    }
+		add_popularity = {
+			ideology = memoism
+			popularity = 0.075
+		}
+		hidden_effect = {
+		    country_event = {
+                id = YSK.13
+                days = 30
+            }
+		}	
+	}
+}
+
+#тноиды-Скородумов пришёл в себя
+country_event = {
+	id = YSK.13
+	title = YSK.13.t
+	desc = YSK.13.d
+	picture = GFX_report_event_dkr_business_tesak
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.13.a
+    remove_country_leader_trait = Ne_v_soznanii
+    set_country_flag = YSK_borba_s_TNO
+    activate_mission = YSK_tno_raspr_mission	
+	}
+}
+
+#Усть-сысольская речь
+country_event = {
+	id = YSK.14
+	title = YSK.14.t
+	desc = YSK.14.d
+	picture = GFX_report_event_dkr_business_tesak
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.14.a 
+        add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		}     		
+	}
+}
+
+#Царь
+country_event = {
+	id = YSK.15
+	title = YSK.15.t
+	desc = YSK.15.d
+	picture = GFX_report_event_dkr_business_tesak
+	
+	is_triggered_only = yes	
+	option = {
+	name = YSK.15.a      	             
+	}
+}
+
+#Критическая ситуация
+country_event = {
+	id = YSK.16
+	title = YSK.16.t
+	desc = YSK.16.d
+	picture = GFX_report_event_dkr_business_tesak
+	trigger = {
+    	tag = YSK     
+		has_idea = YSK_TNO_4
+	}
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.16.a      	             
+	}
+}
+
+#Пиши-сокращай
+country_event = {
+	id = YSK.17
+	title = YSK.17.t
+	desc = YSK.17.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.17.a
+	    add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		}
+		add_political_power = -100
+		add_command_power = -50
+            if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			}   	
+	}
+}
+
+#Выбор фракции РНЕ-НПФ
+country_event = {
+	id = YSK.18
+	title = YSK.18.t
+	desc = YSK.18.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.18.a
+	    add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+        add_country_leader_role = {
+            character = YSK_Alexsandr_Barkashov
+            promote_leader = yes
+            country_leader = {
+                ideology = religious_fascism
+                expire = "1965.1.1.1"
+                traits = { national_socialist_paramilitarist }
+            }
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = YSK_fascism_nazism_long
+            name = YSK_fascism_nazism
+        }
+        set_cosmetic_tag = YSK_RUS_RNE
+        set_politics = {
+	        ruling_party = fascism
+        }
+        complete_national_focus = YSK_fraktsiya_RNE
+        set_country_flag = YSK_RNE  		
+	}
+    option = {
+	    name = YSK.18.a
+	    add_stability = 0.1
+        set_country_flag = YSK_NPF   		
+	}      	
 }
 
 #

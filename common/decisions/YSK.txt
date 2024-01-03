@@ -188,3 +188,732 @@ YSK_vybor_storony = {
 		}	
 	}
 }
+YSK_tnoidi = {
+    YSK_tno_raspr_mission = {
+
+		allowed = { always = no }
+        activation = {
+            has_country_flag = YSK_borba_s_TNO
+        }   
+		available = {
+		    always = no
+		}
+        cancel_trigger = {
+            has_country_flag = YSK_Tsar_Nikolay
+        }      
+		days_mission_timeout = 60	                         
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		    add_popularity = {
+				ideology = memoism
+				popularity = 0.075
+			}       
+			if = {
+				limit = {
+					has_idea = YSK_TNO_0
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_0
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_4
+				}
+			}
+	    }
+    }
+	YSK_rasstrel_tnoids = { 
+	
+		cost = 50
+		custom_cost_text = decision_cost_MP_50_pp_50
+		days_re_enable = 50
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_manpower = -100
+            add_days_mission_timeout = {
+                mission = YSK_tno_raspr_mission
+                days = 15
+            }		
+            if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			}
+		}	
+	}
+	YSK_pishi_sokrashay = { 
+	
+		cost = 10
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_destroy_vertolet = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+			add_ideas = YSK_destroy_vertolets
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_zapret_Loliti = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_vtorshenie_v_Tibet = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_zapret_chulkov = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_stability = -0.1
+			add_war_support = -0.1
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_zapret_warlord = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_political_power = -50
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_komendant_chas = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_manpower = -15000
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_cshech_SKT = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    397 = { add_manpower = -100000 }
+			397 = {
+			    damage_building = {
+                type = infrastructure
+                damage = 3
+                }
+			}	
+			397 = { set_state_category = pastoral }
+			397 = {
+                add_victory_points = {
+	            province = 108
+	            value = -9
+                }
+       		}	
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.15
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_cshech_Omsk = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    571 = { add_manpower = -1000000 }
+			571 = {
+			    damage_building = {
+                type = infrastructure
+                damage = 3
+                }
+			}	
+			571 = { set_state_category = rural }
+			571 = {
+                add_victory_points = {
+	            province = 10696
+	            value = -2
+                }
+       		}	
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.15
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_VHS = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    
+			add_popularity = {
+			ideology = memoism
+			popularity = -0.05
+		    }
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+	YSK_panel_uprav = { 
+	
+		cost = 10
+		
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_ideas = YSK_uprastit_panel_uprav
+		    if = {
+				limit = {
+					has_idea = YSK_TNO_4
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_4
+					add_idea = YSK_TNO_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_3
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_3
+					add_idea = YSK_TNO_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_2
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_2
+					add_idea = YSK_TNO_1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YSK_TNO_1
+				}
+				swap_ideas = {
+					remove_idea = YSK_TNO_1
+					add_idea = YSK_TNO_0
+				}
+			} 
+		}	
+	}
+    YSK_Syktyvkar = { 
+	
+		cost = 20
+
+		available = {
+            controls_state = 397    		
+		}
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {	
+            country_event = YSK.14
+		}	
+	}
+	YSK_Moskva = { 
+	
+		cost = 20
+
+		available = {
+            controls_state = 219
+            OR = {      
+			has_idea = YSK_TNO_0
+			has_idea = YSK_TNO_1
+		    }         		
+		}
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {	
+            country_event = YSK.15
+		}	
+	}
+}
