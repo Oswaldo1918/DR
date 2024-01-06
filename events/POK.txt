@@ -1115,3 +1115,23 @@ country_event = {
 	name = POK.34.a
 	}
 }
+###конпр
+country_event = {
+	id = POK.35
+	title = POK.35.t
+	desc = POK.35.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.35.a
+	}
+	option = {
+	name = POK.35.b
+	}
+}
