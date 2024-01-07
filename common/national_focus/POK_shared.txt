@@ -1296,7 +1296,7 @@ country_event = POK.30
 		x = 42
 		y = 16
 			completion_reward = {
-
+country_event = { id = POK.36 }
 }
 
 	}
@@ -3533,6 +3533,7 @@ available = {
 		
 		completion_reward = {
 		 country_event = { id = POK.35 }
+			add_political_power = 105
 		}
 
 	}
@@ -3888,6 +3889,12 @@ available = {
 				remove_idea = POK_law_of_Novodvorskava_2
 				add_idea = POK_law_of_Novodvorskava_3
 			}
+			hidden_effect = {
+			set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+				}
+                custom_effect_tooltip = kamikaze_focus_tooltip
 		}    
 	}
 	shared_focus = {
@@ -3901,8 +3908,8 @@ available = {
 		y = 21
 		completion_reward = {
 			add_timed_idea = {
-				idea = POK_idea_panoramnoye_okno_v_Evropu
-				days = 900
+				idea = POK_idea_k_USA_cherez_vostok
+				days = 365
 			}
 		}
 	}
@@ -3930,8 +3937,8 @@ available = {
 		y = 21
 		completion_reward = {
 			add_timed_idea = {
-				idea = POK_idea_k_USA_cherez_vostok
-				days = 365
+				idea = POK_idea_panoramnoye_okno_v_Evropu
+				days = 900
 			}
 		}
 	}

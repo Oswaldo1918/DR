@@ -115,6 +115,10 @@ DR_form_russian_far_east_state_decisions_category = {
 			base = 100
 		}
 		remove_effect = {
+		    custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
 			add_political_power = 200
 		    swap_ruler_traits = { remove = pretindent_na_DV add = obedinitel_DV }
 			set_country_flag = DR_DF_unider_cf
