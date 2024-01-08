@@ -3,6 +3,17 @@
 @tier3 = 10
 
 leader_traits = {
+    Povelitel_vremeni = {
+		sprite = 10
+		random = not		
+		army_speed_factor = 0.1
+		org_loss_when_moving = -0.1
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}        
     Ne_v_soznanii = {
 		sprite = 10
 		random = not		

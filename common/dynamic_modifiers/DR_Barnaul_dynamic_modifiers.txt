@@ -61,7 +61,9 @@ YSK_tsar_dynamic_modifier = {
 	resistance_damage_to_garrison = YSK_pamyat_tsar_resistance_damage_to_garrison
 	foreign_subversive_activites = YSK_pamyat_tsar_foreign_subversive_activites
 	non_core_manpower = YSK_pamyat_tsar_non_core_manpower
-    conscription_factor = YSK_pamyat_tsar_conscription_factor	
+    conscription_factor = YSK_pamyat_tsar_conscription_factor
+    army_morale_factor = YSK_pamyat_tsar_army_morale_factor	
+	army_attack_factor = YSK_pamyat_tsar_army_attack_factor
 	
 }
 YSK_nation_dynamic_modifier = {	
@@ -84,6 +86,8 @@ YSK_nation_dynamic_modifier = {
 	recon_factor_while_entrenched = YSK_pamyat_nation_recon_factor_while_entrenched
 	training_time_factor = YSK_pamyat_nation_training_time_factor
 	resistance_damage_to_garrison = YSK_pamyat_nation_resistance_damage_to_garrison
+	combat_width_factor = YSK_pamyat_nation_combat_width_factor
+	offensive_war_stability_factor = YSK_pamyat_nation_offensive_war_stability_factor
 	
 }
 YSK_RNE_dynamic_modifier = {	
