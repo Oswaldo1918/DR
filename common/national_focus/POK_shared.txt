@@ -1594,7 +1594,21 @@ country_event = { id = POK.36 }
 		y = 16
 		
 		completion_reward = {
-					load_oob = POK_vdv
+		add_war_support = 0.05
+		custom_effect_tooltip = POK_France_expirience_tt
+					hidden_effect = {
+					if = {
+                limit = {
+                    has_completed_focus = POK_european_standart
+                }
+                load_oob = POK_vdv 
+            }
+            else_if = {
+                add_political_power = 50
+				air_experience = 5
+				army_experience = 5
+            }
+					}
 				}
 
 	}
@@ -1612,7 +1626,22 @@ country_event = { id = POK.36 }
 		y = 16
 		
 		completion_reward = {
-					load_oob = POK_marine
+		add_stability = 0.05
+		custom_effect_tooltip = POK_USA_expirience_tt
+					hidden_effect = {
+					if = {
+                limit = {
+                    has_completed_focus = POK_the_viborshiki
+                }
+                load_oob = POK_marine 
+            }
+            else_if = {
+                add_political_power = 50 
+				navy_experience = 5
+				army_experience = 5
+            }
+					}
+					
 				}
 
 	}
@@ -4019,6 +4048,7 @@ completion_reward = {
 		y = 20
 		completion_reward = {
 			army_experience = 10
+			custom_effect_tooltip = POK_elites_of_elites_tt
 			if = {
 				limit = {
 					has_idea = full_contract_army
