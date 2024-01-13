@@ -14,13 +14,13 @@ focus_tree = {
 		cost = 2,00
 		x = 17
 		y = 0
-			completion_reward = {
-					add_political_power = 75
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.1
-						}
-				}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.1
+			}
+		}
 
 	}
 	focus = {
@@ -32,14 +32,10 @@ focus_tree = {
 		}
 		x = 17
 		y = 1
-			completion_reward = {
-					add_political_power = 50
-					add_popularity = {
-							ideology = anarhostalinism
-							popularity = 0.1
-						}
-				}
-
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = OMS_sozhrat_burzhuev
@@ -50,17 +46,21 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-			completion_reward = {
-					571 = {
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			571 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+						instant_build = yes
 				}
-
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = OMS_kustarnoe_proizvodstvo
@@ -71,10 +71,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 3
-			completion_reward = {
-					add_ideas = OMS_kustarnoe_proizvodstvo
-				}
-
+		completion_reward = {
+			add_ideas = OMS_kustarnoe_proizvodstvo
+		}
 	}
 	focus = {
 		id = OMS_psihodel_v_army
@@ -85,13 +84,12 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-			completion_reward = {
-					add_ideas = OMS_psihodel_v_army
-				}
-
+		completion_reward = {
+			add_timed_idea = { idea = OMS_psihodel_v_army days = 50}
+		}
 	}
 	focus = {
-		id = OMS_partizan_army
+		id = OMS_pravednyi_klich
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		cost = 2,00
 		prerequisite = {
@@ -99,41 +97,35 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-			completion_reward = {
-					add_ideas = OMS_partizan_army
-				}
-
+		completion_reward = {
+			add_manpower = 10000
+		}
 	}
 	focus = {
 		id = OMS_gor_geriliya
 		icon = GFX_focus_cht_mesyats_doctrine
 		cost = 2,00
 		prerequisite = {
-			focus = OMS_partizan_army
+			focus = OMS_pravednyi_klich
 		}
 		x = 16
 		y = 3
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = OMS_partizan_army
-							add_idea = OMS_partizan_army_1
-						}
-				}
-
+		completion_reward = {
+			load_oob = "OMS_DRdobrovoltsi"
+		}
 	}
 	focus = {
 		id = OMS_prizvat_hristyan
 		icon = GFX_focus_por_concordat
 		cost = 2,00
 		prerequisite = {
-			focus = OMS_partizan_army
+			focus = OMS_pravednyi_klich
 		}
 		x = 18
 		y = 3
-			completion_reward = {
-					add_oob = OMS_hristian
-				}
-
+		completion_reward = {
+			load_oob = "OMS_hristian"
+		}
 	}
 	focus = {
 		id = OMS_pomozh_iz_DrygoyRussia
@@ -147,19 +139,11 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-			completion_reward = {
-					add_oob = OMS_DRdobrovoltsi
-					add_timed_idea = {
-							idea = OMS_pomozh_iz_DrygoyRussia
-							days = 240
-						}
-					LIM = {
-							add_timed_idea = {
-									idea = OMS_pomozh_iz_DrygoyRussia
-									days = 240
-								}
-						}
-				}
+		completion_reward = {
+			add_timed_idea = { idea = OMS_pomozh_iz_DrygoyRussia days = 100 }
+			LIM = { add_timed_idea = { idea = OMS_pomozh_iz_DrygoyRussia days = 100 }
+			}
+		}
 
 	}
 	focus = {
@@ -171,10 +155,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-			completion_reward = {
-					add_ideas = OMS_radio_omsk
-				}
-
+		completion_reward = {
+			add_ideas = OMS_radio_omsk
+		}
 	}
 	focus = {
 		id = OMS_propaganda_voyni
@@ -185,10 +168,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-			completion_reward = {
-					add_war_support = 0.2
-				}
-
+		completion_reward = {
+			add_war_support = 0.2
+		}
 	}
 	focus = {
 		id = OMS_nacbol_otechesvo_v_opasnosti
@@ -205,13 +187,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 5
-			completion_reward = {
-					add_timed_idea = {
-							idea = OMS_nacbol_otechesvo_v_opasnosti
-							days = 240
-						}
-				}
-
+		completion_reward = {
+			add_timed_idea = { idea = OMS_nacbol_otechesvo_v_opasnosti days = 100 }
+		}
 	}
 	focus = {
 		id = OMS_vdohnovlyauzhiy_obraz_sov_geroev
@@ -222,12 +200,12 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = OMS_radio_omsk
-							add_idea = OMS_radio_omsk_1
-						}
-				}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OMS_radio_omsk
+				add_idea = OMS_radio_omsk_1
+			}
+		}
 
 	}
 }

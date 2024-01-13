@@ -1,5 +1,5 @@
 ﻿division_template = {
-name = "Другороссийские добровольцы"
+name = "Гражданская оборона"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,29 +10,28 @@ name = "Другороссийские добровольцы"
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	priority = 1
 }
 
 support = 	{
-	}
+}
 	
 priority = 2
 }
 
 units = {
 	division = {
-		name = "1-я добровольческая дивизия"
+		name = "Омская гражданская оборона"
 		location = 10696
-		division_template = "Другороссийские добровольцы"
+		division_template = "Гражданская оборона"
 		start_experience_factor = 1
 	}
 	
 	division = {
-		name = "2-я добровольческая дивизия"
+		name = "Омская гражданская оборона"
 		location = 10696
-		division_template = "Другороссийские добровольцы"
+		division_template = "Гражданская оборона"
 		start_experience_factor = 1
 	}
 	
