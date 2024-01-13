@@ -1166,6 +1166,7 @@ country_event = POK.30
 		y = 19
         completion_reward = {
 			add_ideas = volunteer_only
+			country_event = { id = POK.37 }
 		}      
 	}
 	
@@ -1815,8 +1816,11 @@ country_event = { id = POK.36 }
 		x = 32
 		y = 12
         completion_reward = {
-			
-		}      
+			add_timed_idea = {
+                idea = POK_fight_for_free_people
+                days = 130
+            }
+		}     
 	}
 	shared_focus = {
 		id = POK_bulochka_i_tramvaychik
@@ -1943,6 +1947,7 @@ country_event = { id = POK.36 }
 		x = 32
 		y = 11
         completion_reward = {
+		custom_effect_tooltip = POK_parlament_army_tt
 			if = {
                 limit = {
                     has_completed_focus = POK_ruined_hope_of_peacefull_democratisatsiya
@@ -2582,6 +2587,7 @@ set_cosmetic_tag = POK_fed
 		y = 16
         completion_reward = {
 		    add_ideas = POK_privatiz_dohodov
+			custom_effect_tooltip = POK_privatiz_dohodov_tt
 		}        
 	}
 	shared_focus = {
@@ -2595,6 +2601,7 @@ set_cosmetic_tag = POK_fed
 		y = 16
         completion_reward = {
 			add_ideas = POK_natsionalizat_rashodov
+			custom_effect_tooltip = POK_natsionalizat_rashodov_tt
 		}    
 	}
 	
@@ -3362,6 +3369,7 @@ completion_reward = {
 		x = 26
 		y = 12
         completion_reward = {
+		custom_effect_tooltip = POK_ally_loyal_monarchists_tt
 			add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -3387,6 +3395,7 @@ completion_reward = {
 		x = 30
 		y = 12
         completion_reward = {
+		custom_effect_tooltip = POK_ally_evrosocdems_tt
 			add_popularity = {
                 ideology = anarhostalinism
                 popularity = 0.05
@@ -3414,6 +3423,7 @@ completion_reward = {
 		x = 28
 		y = 12
         completion_reward = {
+		custom_effect_tooltip = POK_libdem_purity_tt
 			add_popularity = {
                 ideology = democratic
                 popularity = 0.075
@@ -3442,7 +3452,10 @@ completion_reward = {
 		}
 		x = 32
 		y = 13
-
+		completion_reward = {
+		custom_effect_tooltip = POK_fem_batalion_tt
+		add_ideas = POK_fem_batalion
+		}
 	}
 	shared_focus = {
 		id = POK_monarch_referendum
@@ -3455,6 +3468,9 @@ completion_reward = {
 		y = 14
 available = {
 			has_war = no
+		}
+		completion_reward = {
+		
 		}
 	}
 	shared_focus = {
@@ -3469,7 +3485,9 @@ available = {
 		}
 		x = 40
 		y = 18
-
+completion_reward = {
+		
+		}
 	}
 	shared_focus = {
 		id = POK_united_states_of_russia
@@ -3507,7 +3525,9 @@ available = {
 		}
 		x = 38
 		y = 18
-
+completion_reward = {
+		
+		}
 	}
 	shared_focus = {
 		id = POK_russian_prometey
@@ -3519,7 +3539,9 @@ available = {
 		}
 		x = 39
 		y = 20
-
+completion_reward = {
+		
+		}
 	}
 	shared_focus = {
 		id = POK_new_KONR
@@ -3639,6 +3661,7 @@ available = {
                 ideology = anarhostalinism
                 popularity = 0.1
             }
+			add_stability = 0.05
 		}       
 	}
 	shared_focus = {

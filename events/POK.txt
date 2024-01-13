@@ -1151,3 +1151,20 @@ country_event = {
 	name = POK.36.a
 	}
 }
+#табуретка
+country_event = {
+	id = POK.37
+	title = POK.37.t
+	desc = POK.37.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.37.a
+	}
+}

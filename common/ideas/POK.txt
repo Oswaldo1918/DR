@@ -934,7 +934,9 @@ ideas = {
 			    consumer_goods_factor = 0.02
 				min_export = 0.05
                 research_speed_factor = 0.05
-                monthly_population = 0.25      				
+                monthly_population = 0.25 
+				opinion_gain_monthly_same_ideology_factor = 0.3
+				license_purchase_cost_factor = 0.5
 			}
 		}
 		POK_open_for_investitsii = {
@@ -958,7 +960,8 @@ ideas = {
 				min_export = 0.075
                 research_speed_factor = 0.05 
                 production_factory_max_efficiency_factor = 0.05
-                monthly_population = 0.25       				
+                monthly_population = 0.25 
+				request_lease_tension = -0.3
 			}
 		}
 		POK_to_world_market = {
@@ -985,7 +988,10 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.01             
                 production_speed_buildings_factor = 0.1 
                 production_factory_max_efficiency_factor = 0.05
-                monthly_population = 0.25       				
+                monthly_population = 0.25 
+				opinion_gain_monthly_same_ideology_factor = 0.5
+				license_purchase_cost_factor = 0.5
+				request_lease_tension = -0.5
 			}
 		}
 		
@@ -1794,6 +1800,47 @@ ideas = {
                 conscription = 0.015
                 army_morale_factor = 0.05 
 				planning_speed = 0.1 
+			}
+		}
+	    POK_fight_for_free_people = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+			}
+			modifier = {
+                army_morale_factor = 0.1 
+                army_speed_factor = 0.1 
+			}
+		}
+		POK_fem_batalion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			research_bonus = {
+			}
+			modifier = {
+                conscription = 0.02    				
 			}
 		}
 		POK_remember_Novgorod = {
