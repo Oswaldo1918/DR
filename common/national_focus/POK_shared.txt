@@ -3802,11 +3802,16 @@ completion_reward = {
 		prerequisite = {
 			focus = POK_Burn_soviet_books
 		}
+		prerequisite = {
+			focus = POK_chaging_mentality
+			focus = POK_no_need_chagnes
+		}
 		x = 26
 		y = 18
         completion_reward = {
             add_stability = -0.1  		
 			add_ideas = POK_exploit_rusosovkov
+			custom_effect_tooltip = POK_exploit_rusosovki_tt
 		}   
 	}
 	shared_focus = {
