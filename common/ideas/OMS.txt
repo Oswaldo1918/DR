@@ -91,7 +91,7 @@ ideas = {
 		        picture = CHT_lopati
 			
 			    modifier = {
-			    political_advisor_cost_factor = 0.05
+			    political_power_gain = 0.1
 			    }
 		    }
 			
@@ -99,9 +99,8 @@ ideas = {
 		        picture = CHT_lopati
 			
 			    modifier = {
-				political_advisor_cost_factor = 0.05
-			    conscription = 0.005
-				war_support_factor = 0.2
+				political_power_gain = 0.1
+			    conscription = 0.01
 			    }
 		    }
 			
