@@ -1282,8 +1282,15 @@ country_event = POK.30
 		}
 		x = 36
 		y = 19
+		available = {
+			OR = {      
+		        has_stability > 0.2
+				has_political_power > 150
+				has_completed_focus = POK_european_standart
+		    }
+		}
 			completion_reward = {
-
+add_political_power = -100
 }
 
 	}
@@ -1599,14 +1606,26 @@ country_event = { id = POK.36 }
 					hidden_effect = {
 					if = {
                 limit = {
-                    has_completed_focus = POK_european_standart
+                    has_completed_focus = POK_european_standart 
                 }
                 load_oob = POK_vdv 
+				add_doctrine_cost_reduction = {
+                name = POK_vdv
+                cost_reduction = 0.6
+                uses = 1
+                category = cat_paratroopers_doctrine
+                }
             }
             else_if = {
                 add_political_power = 50
 				air_experience = 5
 				army_experience = 5
+				add_doctrine_cost_reduction = {
+                name = POK_spetsnaz_doctrines
+                cost_reduction = 0.5
+                uses = 1
+                category = special_forces_doctrine
+             }
             }
 					}
 				}
@@ -1634,11 +1653,23 @@ country_event = { id = POK.36 }
                     has_completed_focus = POK_the_viborshiki
                 }
                 load_oob = POK_marine 
+				add_doctrine_cost_reduction = {
+                name = POK_marine
+                cost_reduction = 0.6
+                uses = 1
+                category = cat_marines_doctrine
+}
             }
             else_if = {
                 add_political_power = 50 
 				navy_experience = 5
 				army_experience = 5
+				add_doctrine_cost_reduction = {
+                name = POK_spetsnaz_doctrines
+                cost_reduction = 0.5
+                uses = 1
+                category = special_forces_doctrine
+             }
             }
 					}
 					
@@ -1916,6 +1947,7 @@ country_event = { id = POK.36 }
 		y = 15
 			completion_reward = {
 					army_experience = 10
+					custom_effect_tooltip = POK_remember_ROA_tt
 					if = {
 							limit = {
 									has_idea = POK_Gore_Pobeditelam_2
@@ -3514,8 +3546,15 @@ available = {
 		}
 		x = 40
 		y = 18
+		available = {
+			OR = {      
+		        has_stability > 0.3
+				has_political_power > 180
+				has_completed_focus = POK_european_standart
+		    }
+		}
 completion_reward = {
-		
+		add_political_power = -100
 		}
 	}
 	shared_focus = {
@@ -3538,6 +3577,7 @@ completion_reward = {
 		    }
 		}
         completion_reward = {
+		    add_political_power = -280
 			add_ideas = POK_united_states_of_russia
 			set_cosmetic_tag = POK_USP
 		}    
@@ -3655,7 +3695,8 @@ completion_reward = {
 		x = 30
 		y = 18
         completion_reward = {
-            add_ideas = POK_end_militarism       
+            add_ideas = POK_end_militarism 
+            country_event = POK.38			
         }       
 	}
 	shared_focus = {
@@ -3782,6 +3823,7 @@ completion_reward = {
 		y = 19
     completion_reward = {
            custom_effect_tooltip = POK_proshay_nemitaya_rossiya_tt
+		   country_event = POK.40
 		}
 	}
 	
@@ -4049,6 +4091,7 @@ completion_reward = {
 		completion_reward = {
 			army_experience = 10
 			custom_effect_tooltip = POK_elites_of_elites_tt
+			hidden_effect = {
 			if = {
 				limit = {
 					has_idea = full_contract_army
@@ -4066,6 +4109,7 @@ completion_reward = {
 					remove_idea = POK_freedom_folkshturm
 					add_idea = POK_freedom_folkshturm_1
 				}
+			}
 			}
 		}
 	}

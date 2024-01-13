@@ -1168,3 +1168,52 @@ country_event = {
 	name = POK.37.a
 	}
 }
+#кто написал 4 миллиона доносов
+country_event = {
+	id = POK.38
+	title = POK.38.t
+	desc = POK.38.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.38.a
+	add_political_power = 100
+	add_stability = 0.05
+	}
+	option = {
+	name = POK.38.b
+	remove_ideas = POK_end_militarism
+	add_manpower = -300
+	add_political_power = -150
+	add_stability = -0.05
+	}
+}
+#Конец Покаянгелиона
+country_event = {
+	id = POK.40
+	title = POK.40.t
+	desc = POK.40.d
+	picture = GFX_report_event_dkr_pok_police
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.40.a
+	if = {
+				limit = {
+					 has_completed_focus = POK_private_armies
+				}
+				custom_effect_tooltip = POK_BAZIM_KAZ_tt
+			}
+	}
+}
