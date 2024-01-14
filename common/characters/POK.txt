@@ -11,7 +11,7 @@ characters={
 
         country_leader = {
     		desc = "POLITICS_POKAYAN_DESC"
-			ideology = liberalism
+			ideology = democratura
 			traits = {
 	         	Otec_russkoy_democracy
 	        }
@@ -684,6 +684,28 @@ characters={
 		}	
 	}
 	
+	POK_Teresa = {
+		name = "Мария Тереза"
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZNS/Tereza.dds"
+				small= "GFX_idea_ZNS_Tereza"
+			}
+			civilian = {
+				small = "GFX_idea_ZNS_Tereza"
+			}
+		}
+	}
+	POK_Marin_FF = {
+		name = "Марина Шрапнель"
+
+		portraits = {
+			 army = {
+				large = "gfx/leaders/ZNS/Marina_Shrapnel.dds"
+			}
+		}	
+	}
 	POK_Zolotov = {
 		name = "Виктор Золотов"
 
