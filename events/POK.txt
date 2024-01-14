@@ -360,8 +360,37 @@ country_event = {
 		logistics_skill = 1
 		legacy_id = -1
 	}
-	add_manpower = 9000
-	load_oob = CHVK_Katz
+	add_manpower = 10000
+	division_template = {
+					name = "ЧВК"
+					division_names_group = POK_PMC_01
+					template_counter = 10
+
+		regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }		
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }
+        light_tank_recon = { x = 0 y = 2 }
+        signal_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4 }      		
+	}
+				}
+
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
     }
 }
 
@@ -707,7 +736,29 @@ country_event = {
 	option = {
 	name = POK.23.a
 	add_manpower = -2000
-	load_oob = POK_polize_forse
+	division_template = {
+					name = "Police Task force"
+					division_names_group = POK_PTF_01
+					template_counter = 11
+
+		regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+        light_tank_recon = { x = 0 y = 2 }		
+	}
+				}
+
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"Сводный спецотряд ''Ельцбург''''\" division_template = \"Police Task force\" start_experience_factor = 0.7 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
 	}
 }
 country_event = { ###Начало гражданской войны в Покаянии

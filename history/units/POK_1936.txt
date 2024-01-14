@@ -36,6 +36,21 @@ division_template = {
 	priority = 1
 }
 
+division_template = {
+	name = "Кони"				
+
+	division_names_group = POK_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
 units = {
 	#Royal Afghani Army
 	division = {
@@ -71,11 +86,11 @@ units = {
 	}
 	
 	division = {
-		name = "Покаевшиеся дивизия"
+		name = "Кавалерийский эксадрон Невзорова"
 		location = 1771
-		division_template = "РуSSкие"
+		division_template = "Кони"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	
 	division = {
