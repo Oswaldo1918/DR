@@ -2277,6 +2277,16 @@ country_event = { id = POK.36 }
 		x = 7
 		y = 18
         completion_reward = {
+		add_field_marshal_role = {
+			character = POK_Eltsin
+			traits = { politically_connected media_personality }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
 		    add_ideas = POK_land_of_the_strong
 		}       
 	}
@@ -2457,16 +2467,6 @@ country_event = { id = POK.36 }
 		x = 7
 		y = 22
         completion_reward = {
-            add_field_marshal_role = {
-			character = POK_Eltsin
-			traits = { politically_connected media_personality }
-	        skill = 1
-	        attack_skill = 2
-	        defense_skill = 1
-	        planning_skill = 1
-	        logistics_skill = 1
-		    legacy_id = -1
-            }
 			add_country_leader_trait = first_and_eternal
         }      
 	}
@@ -3618,10 +3618,19 @@ completion_reward = {
 		hidden_effect = {
 				if = {
                 limit = {
-                    has_completed_focus = POK_ally_loyal_monarchists
+                    has_completed_focus = POK_garantii_loyalnosti
 					NOT = { country_exists = YSK }
                 }
-               
+            add_corps_commander_role = {
+			character = POK_Elias_Wise 
+			traits = { }
+	        skill = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 2
+		    legacy_id = -1
+            }
 				division_template = {
 					name = "Женственный батальон"
 					division_names_group = POK_JBT_01
@@ -3651,10 +3660,11 @@ completion_reward = {
             }
 			if = {
                 limit = {
-                    has_completed_focus = POK_libdem_purity
+                    has_completed_focus = POK_garantii_svobodi
 					NOT = { country_exists = MGN }
                 }
-               
+              ZNS_Tereza = { set_nationality = POK }
+			  ZNS_Marina_FF = { set_nationality = POK }
 				division_template = {
 					name = "Диверсанты"
 					division_names_group = POK_PTK_01
@@ -3678,7 +3688,7 @@ completion_reward = {
             }
 			if = {
                 limit = {
-                    has_completed_focus = POK_ally_evrosocdems
+                    has_completed_focus = POK_social_garantii
 					NOT = { country_exists = ZNS }
                 }
                

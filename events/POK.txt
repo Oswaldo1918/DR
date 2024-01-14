@@ -1217,6 +1217,16 @@ country_event = {
 	
 	option = {
 	name = POK.37.a
+	add_corps_commander_role = {
+			character = POK_Taburetka
+			traits = { politically_connected media_personality }
+	        skill = 3
+	        attack_skill = 3
+	        defense_skill = 4
+	        planning_skill = 3
+	        logistics_skill = 3
+		    legacy_id = -1
+            }
 	}
 }
 #кто написал 4 миллиона доносов
