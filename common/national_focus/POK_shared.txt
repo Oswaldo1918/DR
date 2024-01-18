@@ -34,6 +34,8 @@ country_event = { id = POK.7 }
 		}
 		completion_reward = {
 			set_country_flag = DR_start_reunite_Russia_cf
+			add_state_core = 516
+		    add_state_core = 878
 		}
 	}
 	
@@ -3667,7 +3669,21 @@ completion_reward = {
                     has_completed_focus = POK_garantii_svobodi
 					NOT = { country_exists = MGN }
                 }
-           
+           add_equipment_to_stockpile = {
+                type = transport_plane_equipment
+                amount = 30
+                producer = POK
+            }
+			add_corps_commander_role = {
+			character = POK_Sharanskiy 
+			traits = { }
+	        skill = 8
+	        attack_skill = 1
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1
+		    legacy_id = -1
+            }
 				division_template = {
 					name = "Диверсанты"
 					division_names_group = POK_PTK_01
@@ -3773,6 +3789,7 @@ available = {
 		}
 completion_reward = {
 		add_political_power = -100
+		
 		}
 	}
 	shared_focus = {

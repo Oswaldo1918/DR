@@ -69,7 +69,7 @@ country_event = {
 	id = POK.3
 	title = POK.3.t
 	desc = POK.3.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
 	
 	trigger = {
 		tag = POK
@@ -201,7 +201,7 @@ country_event = {
 	id = POK.7
 	title = POK.7.t
 	desc = POK.7.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -218,7 +218,7 @@ country_event = {
 	id = POK.8
 	title = POK.8.t
 	desc = POK.8.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -235,7 +235,7 @@ country_event = {
 	id = POK.9
 	title = POK.9.t
 	desc = POK.9.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -259,7 +259,7 @@ country_event = {
 	id = POK.10
 	title = POK.10.t
 	desc = POK.10.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -300,7 +300,7 @@ country_event = {
 	country_event = { id = POK.12 }
 	}
 	add_popularity = {
-                ideology = democracy
+                ideology = democratic
                 popularity = 0.03
             }
 	add_popularity = {
@@ -326,7 +326,7 @@ country_event = {
 	id = POK.11
 	title = POK.11.t
 	desc = POK.11.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -364,7 +364,7 @@ country_event = {
 	division_template = {
 					name = "ЧВК"
 					division_names_group = POK_PMC_01
-					template_counter = 10
+					template_counter = 30
 
 		regiments = {
 		infantry = { x = 0 y = 0 }
@@ -388,7 +388,7 @@ country_event = {
 
 				capital_scope = {
 					create_unit = { 
-						division = "name = \"ЧВК Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
 					}
 				}
     }
@@ -398,7 +398,7 @@ country_event = {
 	id = POK.12
 	title = POK.12.t
 	desc = POK.12.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -414,7 +414,7 @@ country_event = {
 	id = POK.13
 	title = POK.13.t
 	desc = POK.13.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -466,7 +466,7 @@ country_event = {
 	id = POK.15
 	title = POK.15.t
 	desc = POK.15.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -562,7 +562,7 @@ country_event = {
 	id = POK.17
 	title = POK.17.t
 	desc = POK.17.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -573,7 +573,7 @@ country_event = {
 	option = {
 	name = POK.17.a
 	add_popularity = {
-                ideology = democracy
+                ideology = democratic
                 popularity = 0.03
             }
 	add_power_balance_value = {
@@ -598,7 +598,7 @@ country_event = {
 	id = POK.18
 	title = POK.18.t
 	desc = POK.18.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -665,7 +665,7 @@ country_event = {
 	id = POK.21
 	title = POK.21.t
 	desc = POK.21.d
-	picture = GFX_report_event_japanese_soldiers_01
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -953,7 +953,7 @@ country_event = {
 	id = POK.26
 	title = POK.26.t
 	desc = POK.26.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -1138,7 +1138,7 @@ country_event = {
 	id = POK.33
 	title = POK.33.t
 	desc = POK.33.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -1154,7 +1154,7 @@ country_event = {
 	id = POK.34
 	title = POK.34.t
 	desc = POK.34.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -1190,7 +1190,7 @@ country_event = {
 	id = POK.36
 	title = POK.36.t
 	desc = POK.36.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -1207,7 +1207,7 @@ country_event = {
 	id = POK.37
 	title = POK.37.t
 	desc = POK.37.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
@@ -1255,12 +1255,38 @@ country_event = {
 	add_stability = -0.05
 	}
 }
+#Конец гражданки
+country_event = {
+	id = POK.39
+	title = POK.39.t
+	desc = POK.39.d
+	picture = GFX_report_event_dkr_solzh_golova
+	
+	trigger = {
+	tag = POK
+	NOT = { country_exists = MRD }
+	NOT = { country_exists = ZNS }
+	NOT = { country_exists = YSK }
+	NOT = { country_exists = MGN }
+	NOT = { country_exists = OMS }
+	NOT = { country_exists = GAL }
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes	
+	
+	option = {
+	name = POK.39.a
+	set_country_flag = pokoyanskaya_civil_war_end_cf
+	set_global_flag = pokoyanskaya_civil_war_end_gf
+	}
+}
 #Конец Покаянгелиона
 country_event = {
 	id = POK.40
 	title = POK.40.t
 	desc = POK.40.d
-	picture = GFX_report_event_dkr_pok_police
+	picture = GFX_report_event_dkr_solzh_golova
 	
 	trigger = {
 		tag = POK
