@@ -984,7 +984,7 @@ country_event = {
 				ideology = liberalism
 				expire = "1965.1.1.1"
 				traits = {
-					
+				backroom_backstabber	
 				}
 			}
 		}
@@ -1264,12 +1264,16 @@ country_event = {
 	
 	trigger = {
 	tag = POK
-	NOT = { country_exists = MRD }
-	NOT = { country_exists = ZNS }
-	NOT = { country_exists = YSK }
-	NOT = { country_exists = MGN }
-	NOT = { country_exists = OMS }
-	NOT = { country_exists = GAL }
+	GAL = { exists = no }
+	MRD = { exists = no }
+	ZNS = { exists = no }
+	YSK = { exists = no }
+	OMS = { exists = no }
+	MGN = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	is_triggered_only = yes

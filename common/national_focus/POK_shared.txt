@@ -3904,7 +3904,10 @@ completion_reward = {
 		available = {
 			has_war = no
 		}
-
+completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}    
 	}
 	shared_focus = {
 		id = POK_decentralization_of_nologe
