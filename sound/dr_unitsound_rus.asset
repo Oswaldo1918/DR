@@ -139,6 +139,22 @@ soundeffect =
 	playbackrate_random_offset = { 0.0 -0.15}
 }
 
+########## MRD
+
+soundeffect = 
+{
+    name = "KLG_infantry_idle"		#Это_когда_юниты_выбираешь
+    sounds = {
+        sound = klg_idle_002
+		sound =	klg_idle_001
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.25
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
 ############## AUDIO ASSETS
 
 ################# MRD
@@ -346,4 +362,18 @@ sound =
 {
 	name = "filtrui_bazar"
 	file = "mrd/filtrui_bazar.wav" 
+}
+
+################# KLG
+
+sound = 
+{
+	name = "klg_idle_001"
+	file = "klg/klg_idle_001.wav" 
+}
+
+sound = 
+{
+	name = "klg_idle_002"
+	file = "klg/klg_idle_002.wav" 
 }
