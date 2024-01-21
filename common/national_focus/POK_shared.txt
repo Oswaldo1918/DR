@@ -27,6 +27,9 @@ country_event = { id = POK.7 }
 		cost = 5
 		x = 19
 		y = 20
+		ai_will_do = {
+        factor = 100
+		}
 		available = {
 			has_war = no
 			has_country_flag = pokoyanskaya_civil_war_end_cf
