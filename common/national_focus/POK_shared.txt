@@ -1764,7 +1764,8 @@ country_event = { id = POK.36 }
 		available = {
 			OR = {
 			has_war = yes
-			has_country_flag = civil_war_end
+			has_country_flag = pokoyanskaya_civil_war_end_cf
+			has_global_flag = pokoyanskaya_civil_war_end_gf
 			}
 		}
 			completion_reward = {
