@@ -36,6 +36,7 @@ country_event = { id = POK.7 }
 			has_global_flag = pokoyanskaya_civil_war_end_gf
 		}
 		completion_reward = {
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
 			set_country_flag = DR_start_reunite_Russia_cf
 			add_state_core = 516
 		    add_state_core = 878
