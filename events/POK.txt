@@ -1352,3 +1352,20 @@ country_event = {
 			}
 	}
 }
+#Кац Базит
+country_event = {
+	id = POK.41
+	title = POK.41.t
+	desc = POK.41.d
+	picture = GFX_report_event_dkr_solzh_golova
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.41.a
+	}
+}
