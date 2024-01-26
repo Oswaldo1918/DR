@@ -1006,14 +1006,13 @@ ideas = {
 				non_core_manpower = 0.025
 			    }
 		    }
-			YSK_rus_federalism_2 = {
+			YSK_peredacha_vlasti_munitsipalitetam = {
 
 			    picture = spr_anti_fascist_crusade
 			
 			    modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.02
 				stability_factor = 0.025
-				non_core_manpower = 0.025
 				local_resources_factor = 0.1
 				production_speed_buildings_factor = 0.05
 			    }
@@ -1038,6 +1037,18 @@ ideas = {
 			    modifier = {
 				stability_factor = 0.05
 				war_support_factor = -0.075
+				consumer_goods_factor = 0.035
+				industrial_capacity_factory = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				production_speed_arms_factory_factor = -0.05
+				production_speed_infrastructure_factor = 0.075 
+			    }
+		    }
+			YSK_economic_reform = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
 				consumer_goods_factor = 0.035
 				industrial_capacity_factory = 0.075
 				production_speed_industrial_complex_factor = 0.075
@@ -1086,6 +1097,58 @@ ideas = {
 				research_speed_factor = 0.025
 			    }
 		    }
+			YSK_invest_v_infrastruktury = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				stability_factor = 0.025
+				production_speed_infrastructure_factor = 0.075
+			    }
+		    }
+			YSK_total_deregulyatsiya = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				stability_factor = -0.025
+				consumer_goods_factor = -0.075
+				industrial_capacity_factory = 0.025		
+			    }
+		    }
+			YSK_slezt_s_neft_igly = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				stability_factor = -0.025
+				consumer_goods_factor = 0.025
+				production_oil_factor = -0.025		
+			    }
+		    }
+			YSK_bremya_last_evropeytsa = {
+
+			    picture = spr_anti_fascist_crusade
+			
+			    modifier = {
+				    political_power_factor = 0.025
+					political_power_gain = 0.025
+				    party_popularity_stability_factor = 0.05
+				    stability_factor = 0.075
+				    war_support_factor = 0.075
+				    drift_defence_factor = 0.1
+				    political_advisor_cost_factor = -0.025
+				    democratic_drift = 0.03
+					local_resources_factor = 0.1
+				    production_speed_buildings_factor = 0.05
+					consumer_goods_factor = -0.075
+					research_speed_factor = 0.05
+					production_speed_infrastructure_factor = 0.075
+					industrial_capacity_factory = 0.05
+					production_oil_factor = -0.025
+			    }
+		    }
+			
             YSK_apologey_evrocultury = {
 
 			    picture = spr_anti_fascist_crusade
@@ -1259,10 +1322,13 @@ ideas = {
 			    picture = YSK_perestroyka_gos_machine
 			
 			    modifier = {
-				political_power_factor = 0.025
-				stability_factor = 0.025
-				global_building_slots_factor = 0.025
-			    }
+				    political_power_factor = 0.025
+				    stability_factor = 0.075
+				    global_building_slots_factor = 0.025
+				    production_speed_buildings_factor = 0.025
+				    monthly_population = 0.05				
+				    consumer_goods_factor = 0.05
+				}
 		    }
             YSK_rus_unitarism_1 = {
 
@@ -1314,7 +1380,7 @@ ideas = {
 				political_advisor_cost_factor = -0.075
 				democratic_drift = 0.01
 			    }
-		    }
+		    }			
             YSK_RusKukozh_2 = {
 
 			    picture = YSK_perestroyka_gos_machine
@@ -1367,7 +1433,7 @@ ideas = {
 				justify_war_goal_time = -0.15
 			    }
 		    }
-            YSK_vostanov_mal_i_istor_gorodov = {
+            YSK_gubernii = {
 
 			    picture = YSK_perestroyka_gos_machine
 			
@@ -1376,6 +1442,32 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				political_power_factor = 0.025
 				stability_factor = 0.025
+			    }
+		    }
+			YSK_gubernii_unitarism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.075
+				global_building_slots_factor = 0.025
+				production_speed_buildings_factor = 0.05
+				monthly_population = 0.05				
+				consumer_goods_factor = 0.025
+			    }
+		    }
+			YSK_gubernii_federalism = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = 0.07
+				production_speed_buildings_factor = 0.05
+				political_power_factor = 0.025
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				non_core_manpower = 0.05
 			    }
 		    }
             YSK_new_rus_nation = {
@@ -1421,6 +1513,19 @@ ideas = {
 				war_support_factor = -0.075
 				consumer_goods_factor = -0.025
                 conscription_factor = -0.25
+                army_org_factor = 0.05    				
+			    }
+		    }
+			YSK_contract_army_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = -0.01
+				consumer_goods_factor = -0.035
+                conscription_factor = -0.35
                 army_org_factor = 0.05    				
 			    }
 		    }

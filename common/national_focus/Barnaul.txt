@@ -3478,7 +3478,7 @@ focus_tree = {
 		x = 14
 		y = 8
 			completion_reward = {
-					add_ideas = YSK_vostanov_mal_i_istor_gorodov
+					add_ideas = YSK_gubernii
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -3537,7 +3537,7 @@ focus_tree = {
 							popularity = 0.1
 						}
 					add_political_power = -75
-					add_stability = -0.05
+					add_stability = 0.05
 					add_war_support = -0.075
 				}
 
@@ -3555,10 +3555,7 @@ focus_tree = {
 		x = 15
 		y = 9
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_rus_federalism_1
-							add_idea = YSK_rus_federalism_2
-						}
+					add_ideas = YSK_peredacha_vlasti_munitsipalitetam
 					add_political_power = 100
 				}
 
@@ -3575,10 +3572,12 @@ focus_tree = {
 		}
 		x = 13
 		y = 9
-			completion_reward = {
-					add_ideas = YSK_rus_federalism
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_gubernii
+				add_idea = YSK_gubernii_federalism
+			}		
+		}
 	}
 	focus = {
 		id = YSK_agent_KNB
@@ -3589,10 +3588,8 @@ focus_tree = {
 		}
 		x = 11
 		y = 10
-			completion_reward = {
-					add_ideas = YSK_programma_repatriatsii
-				}
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = YSK_deurbanisation
@@ -3603,11 +3600,8 @@ focus_tree = {
 		}
 		x = 11
 		y = 11
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_rus_unitarism
-							add_idea = YSK_rus_unitarism_1
-						}
+		completion_reward = {
+			add_stability = 0.1
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
@@ -3680,8 +3674,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				}
-
+		}
 	}
 	focus = {
 		id = YSK_dongat_Litvu
@@ -3692,11 +3685,8 @@ focus_tree = {
 		}
 		x = 13
 		y = 10
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_economic_irridenta
-							add_idea = YSK_economic_irridenta_1
-						}
+		completion_reward = {
+			add_ideas = YSK_economic_reform			
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
@@ -3769,8 +3759,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				}
-
+		}
 	}
 	focus = {
 		id = YSK_repatriation
@@ -3781,11 +3770,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 11
-			completion_reward = {
-					add_ideas = YSK_myagkaya_sila
-					add_political_power = 50
-				}
-
+		completion_reward = {
+			add_ideas = YSK_programma_repatriatsii
+		}
 	}
 	focus = {
 		id = YSK_rus_grazhdanskiy_nationalism
@@ -3796,10 +3783,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
-			completion_reward = {
-					add_ideas = YSK_rus_grazhdanskiy_nationalism
-				}
-
+		completion_reward = {
+			add_ideas = YSK_rus_grazhdanskiy_nationalism
+		}
 	}
 	focus = {
 		id = YSK_borba_s_migrantami
@@ -3903,15 +3889,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 11
-			completion_reward = {
-					add_to_variable = {
-							YSK_natslib_ecopol_stability_factor = 0.025
-						}
-					add_to_variable = {
-							YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.075
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_invest_v_infrastruktury			
+		}
 	}
 	focus = {
 		id = YSK_total_deregulyatsiya
@@ -3922,18 +3902,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 11
-			completion_reward = {
-					add_to_variable = {
-							YSK_natslib_ecopol_stability_factor = -0.025
-						}
-					add_to_variable = {
-							YSK_natslib_ecopol_consumer_goods_factor = -0.01
-						}
-					add_to_variable = {
-							YSK_natslib_ecopol_industrial_capacity_factory = 0.025
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_total_deregulyatsiya			
+		}
 	}
 	focus = {
 		id = YSK_slezt_s_neft_igly
@@ -3947,39 +3918,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 12
-			completion_reward = {
-					set_variable = {
-							YSK_natslib_ecopol_stability_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_political_power_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_production_oil_factor = -0.025
-						}
-					set_variable = {
-							YSK_natslib_ecopol_consumer_goods_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_production_factory_efficiency_gain_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_industrial_capacity_factory = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_production_factory_max_efficiency_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_production_factory_start_efficiency_factor = 0.0
-						}
-					set_variable = {
-							YSK_natslib_ecopol_production_speed_infrastructure_factor = 0.0
-						}
-					add_dynamic_modifier = {
-							modifier = YSK_new_natslib_economic_polilika
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_slezt_s_neft_igly			
+		}
 	}
 	focus = {
 		id = YSK_rus_unitarism_1
@@ -3993,10 +3934,12 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
-			completion_reward = {
-					add_ideas = YSK_rus_unitarism
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_gubernii
+				add_idea = YSK_gubernii_unitarism
+			}
+		}
 	}
 	focus = {
 		id = YSK_anime_konservatism
@@ -4007,10 +3950,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 10
-			completion_reward = {
-					add_ideas = YSK_anime_konservatism
-				}
-
+		completion_reward = {
+			add_ideas = YSK_anime_konservatism
+		}
 	}
 	focus = {
 		id = YSK_podderzhat_trapogvardeytsev
@@ -4021,13 +3963,12 @@ focus_tree = {
 		}
 		x = 19
 		y = 11
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_anime_konservatism
-							add_idea = YSK_anime_konservatism_1
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_anime_konservatism
+				add_idea = YSK_anime_konservatism_1
+			}
+		}
 	}
 	focus = {
 		id = YSK_zapret_voenkomatov
@@ -4038,10 +3979,12 @@ focus_tree = {
 		}
 		x = 21
 		y = 11
-			completion_reward = {
-					add_ideas = YSK_zapret_voenkomatov
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_contract_army
+				add_idea = YSK_contract_army_1
+			}
+		}
 	}
 	focus = {
 		id = YSK_contract_army
@@ -4052,13 +3995,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 10
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_zapret_voenkomatov
-							add_idea = YSK_contract_army
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_contract_army
+		}
 	}
 	focus = {
 		id = YSK_bremya_last_evropeytsa
@@ -4069,13 +4008,17 @@ focus_tree = {
 		}
 		x = 16
 		y = 13
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_RusKukozh
-							add_idea = YSK_RusKukozh_1
-						}
-				}
-
+		completion_reward = {
+			hidden_effect= {
+                remove_ideas = YSK_peredacha_vlasti_munitsipalitetam
+                remove_ideas = YSK_svetskaya_strana
+				remove_ideas = YSK_invest_v_infrastruktury
+				remove_ideas = YSK_total_deregulyatsiya
+				remove_ideas = YSK_slezt_s_neft_igly
+				add_ideas = YSK_bremya_last_evropeytsa
+			}
+			custom_effect_tooltip = YSK_obedinenie_natsduhov 
+		}
 	}
 	#Погром
 	focus = {
