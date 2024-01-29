@@ -765,8 +765,8 @@ POK_refer_BRT= {
 	    }
 	}
 }
-POK_full_separationn = {
-POK_refer_SKT = { 
+POK_full_separation = {
+POK_refer1_SKT = { 
 	
 		cost = 15
 		
@@ -790,13 +790,14 @@ POK_refer_SKT = {
 		
 		remove_effect = {
 		SKT = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
 		transfer_state = 262
 		transfer_state = 397
 		transfer_state = 581
 		}
 	    }
 	}
-POK_refer_BRT= { 
+POK_refer1_BRT= { 
 	
 		cost = 15
 		
@@ -828,7 +829,7 @@ POK_refer_BRT= {
 		}
 	    }
 	}
-	POK_refer_YAK = { 
+	POK_refer1_YAK = { 
 	
 		cost = 15
 		
@@ -860,7 +861,7 @@ POK_refer_BRT= {
 		}
 	    }
 	}
-	POK_refer_KOL = { 
+	POK_refer1_KOL = { 
 	
 		cost = 15
 		
@@ -886,7 +887,7 @@ POK_refer_BRT= {
 		}
 	    }
 	}
-	POK_refer_HAZ = { 
+	POK_refer1_HAZ = { 
 	
 		cost = 15
 		
@@ -908,11 +909,12 @@ POK_refer_BRT= {
 		
 		remove_effect = {
 			HAZ = {
+			set_politics = { ruling_party = democratic elections_allowed = no }
 		    transfer_state = 237
 		}
 	    }
 	}
-	POK_refer_KAZ = { 
+	POK_refer1_KAZ = { 
 	
 		cost = 15
 		
@@ -958,7 +960,7 @@ POK_refer_BRT= {
 			transfer_state = 588
 	    }
 	}
-	POK_refer_KYR = { 
+	POK_refer1_KYR = { 
 	
 		cost = 15
 		
@@ -979,10 +981,11 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
 		transfer_state = 732
 	    }
 	}
-	POK_refer_TMS = { 
+	POK_refer1_TMS = { 
 	
 		cost = 15
 		
@@ -1004,11 +1007,12 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
 		transfer_state = 832
 		transfer_state = 584
 	    }
 	}
-	POK_refer_TAJ = { 
+	POK_refer1_TAJ = { 
 	
 		cost = 15
 		
@@ -1034,6 +1038,7 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
             transfer_state = 823
 			transfer_state = 832
 			transfer_state = 585
@@ -1042,7 +1047,7 @@ POK_refer_BRT= {
 			transfer_state = 742
 	    }
 	}
-		POK_refer_CHK = { 
+		POK_refer1_CHK = { 
 	
 		cost = 15
 		
@@ -1081,7 +1086,7 @@ POK_refer_BRT= {
 		 }
 	    }
 	}
-	POK_refer_GEO = { 
+	POK_refer1_GEO = { 
 	
 		cost = 15
 		
@@ -1110,7 +1115,7 @@ POK_refer_BRT= {
 		}
 	    }
 	}
-		POK_refer_AZR = { 
+		POK_refer1_AZR = { 
 	
 		cost = 15
 		
@@ -1137,7 +1142,7 @@ POK_refer_BRT= {
 			puppet = AZR
 	    }
 	}
-	POK_refer_ARM = { 
+	POK_refer1_ARM = { 
 	
 		cost = 15
 		
@@ -1163,7 +1168,7 @@ POK_refer_BRT= {
 		transfer_state = 230}
 	    }
 	}
-	POK_refer_ZHE = { 
+	POK_refer1_ZHE = { 
 	
 		cost = 15
 		
@@ -1254,7 +1259,7 @@ POK_refer_BRT= {
 		}
 	    }
 	}
-	POK_refer_ZWN = { 
+	POK_refer1_ZWN = { 
 	
 		cost = 15
 		
@@ -1294,7 +1299,7 @@ POK_refer_BRT= {
 			transfer_state = 194}
 	    }
 	}
-	POK_refer_MHL = { 
+	POK_refer1_MHL = { 
 	
 		cost = 15
 		
@@ -1330,7 +1335,7 @@ POK_refer_BRT= {
 			}
 	    }
 	}
-	POK_refer_IDU = { 
+	POK_refer1_IDU = { 
 	
 		cost = 15
 		
@@ -1366,7 +1371,7 @@ POK_refer_BRT= {
 			
 	    }
 	}
-	POK_refer_KHA= { 
+	POK_refer1_KHA= { 
 	
 		cost = 15
 		
@@ -1394,7 +1399,7 @@ POK_refer_BRT= {
 			
 	    }
 	}
-	POK_refer_ALT = { 
+	POK_refer1_ALT = { 
 	
 		cost = 15
 		
@@ -1422,7 +1427,7 @@ POK_refer_BRT= {
 			
 	    }
 	}
-	POK_refer_TAN = { 
+	POK_refer1_TAN = { 
 	
 		cost = 15
 		
@@ -1450,7 +1455,7 @@ POK_refer_BRT= {
 			
 	    }
 	}
-	POK_refer_NEN = { 
+	POK_refer1_NEN = { 
 	
 		cost = 15
 		
