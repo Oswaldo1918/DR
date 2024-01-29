@@ -1775,9 +1775,11 @@ ideas = {
 			
 			    modifier = {
 				political_power_factor = 0.03
-				stability_factor = -0.03
+				stability_factor = -0.055
                 conscription_factor = 0.01
+				party_popularity_stability_factor = 0.1
 				consumer_goods_factor = -0.02
+				conscription = 0.05
 			    }
 		    }
 			YSK_russkost_2 = {
@@ -1808,6 +1810,18 @@ ideas = {
 				production_speed_bunker_factor = 0.075
 			    }
 		    }
+			YSK_svinhade = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.02
+				stability_factor = -0.03
+                conscription_factor = 0.025
+				army_attack_factor = 0.03
+				army_org_factor = -0.05
+			    }
+		    }
 			YSK_na_zlo_sovkam = {
 
 			    picture = YSK_perestroyka_gos_machine
@@ -1826,7 +1840,8 @@ ideas = {
 				consumer_goods_factor = -0.03
 				stability_factor = -0.025
 				party_popularity_stability_factor = 0.075
-				monthly_population = -0.05
+				monthly_population = -0.25
+				weekly_manpower = -100
 			    }
 		    }
 			YSK_na_zlo_sovkam_2 = {
@@ -1834,12 +1849,13 @@ ideas = {
 			    picture = YSK_perestroyka_gos_machine
 			
 			    modifier = {
-				consumer_goods_factor = -0.05
-				stability_factor = -0.085
-				weekly_manpower = -100
+				consumer_goods_factor = -0.03
+				stability_factor = -0.025
 				party_popularity_stability_factor = 0.075
 				monthly_population = -0.25
-				supply_consumption_factor = -0.05
+				weekly_manpower = -100
+				army_core_defence_factor = 0.03
+				production_speed_bunker_factor = 0.075
 			    }
 		    }
 			YSK_na_zlo_sovkam_3 = {
@@ -1963,6 +1979,34 @@ ideas = {
                 weekly_manpower	= 25			
 			    }
 		    }
+			YSK_zdorovaya_rus_family = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.025
+				war_support_factor = 0.025
+                consumer_goods_factor = 0.01
+                monthly_population = 0.25
+                weekly_manpower	= 25			
+			    }
+		    }
+			YSK_zdorovaya_rus_family_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.015
+				war_support_factor = 0.025
+                consumer_goods_factor = -0.04
+                monthly_population = 0.5
+                weekly_manpower	= 25
+				supply_consumption_factor = -0.05
+				party_popularity_stability_factor = 0.075
+			    }
+		    }
 			YSK_razreshit_netrad_braki = {
 
 			    picture = YSK_perestroyka_gos_machine
@@ -2073,6 +2117,91 @@ ideas = {
 			    modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
+			    }
+		    }
+			YSK_true_ispilzovanie_recursov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.025
+			    }
+		    }
+			YSK_true_ispilzovanie_recursov_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.025
+				stability_factor = 0.05
+				industry_repair_factor = 0.05
+			    }
+		    }
+			YSK_new_rus_nation = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				war_support_factor = 0.075
+				justify_war_goal_time = -0.1
+				training_time_factor = -0.1
+				conscription_factor = 0.075
+			    }
+		    }
+			YSK_idealizatsiya_dorev_proshlogo = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				political_power_factor = 0.05
+				drift_defence_factor = 0.15
+			    }
+		    }
+			YSK_help_farmers = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.025
+				consumer_goods_factor = 0.05
+				monthly_population = 0.25
+				production_factory_max_efficiency_factor = 0.025
+			    }
+		    }
+			YSK_legacy_white_guardian = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.025
+				army_org_factor = 0.025
+				training_time_factor = -0.05
+			    }
+		    }
+			YSK_legacy_white_guardian_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.025
+				training_time_factor = -0.05
+				org_loss_when_moving = -0.05
+			    }
+		    }
+			YSK_soslovie_kazakov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				org_loss_when_moving = -0.075
 			    }
 		    }
 	    }		

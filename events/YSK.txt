@@ -528,9 +528,56 @@ country_event = {
         set_country_flag = YSK_RNE  		
 	}
     option = {
-	    name = YSK.18.a
+	    name = YSK.18.b
 	    add_stability = 0.1
         set_country_flag = YSK_NPF   		
+	}      	
+}
+
+#Выбор фракции Юнеман-Райт
+country_event = {
+	id = YSK.19
+	title = YSK.19.t
+	desc = YSK.19.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.19.a
+        add_country_leader_role = {
+            character = YSK_Yuneman
+            promote_leader = yes
+            country_leader = {
+                ideology = conservatism
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+        set_party_name = {
+            ideology = democratic
+            long_name = YSK_democratic_conservatism_long
+            name = YSK_democratic_conservatism
+        }
+        set_country_flag = YSK_Yuneman  		
+	}
+    option = {
+	    name = YSK.19.b       
+        add_country_leader_role = {
+            character = YSK_Robert_Wright
+            promote_leader = yes
+            country_leader = {
+                ideology = liberalism
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }
+		set_party_name = {
+            ideology = democratic
+            long_name = YSK_democratic_liberalism_long
+            name = YSK_democratic_liberalism
+        }
+		set_country_flag = YSK_Right
 	}      	
 }
 
