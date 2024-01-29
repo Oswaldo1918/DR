@@ -2119,5 +2119,90 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			    }
 		    }
+			YSK_true_ispilzovanie_recursov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.025
+			    }
+		    }
+			YSK_true_ispilzovanie_recursov_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.1
+				consumer_goods_factor = 0.025
+				stability_factor = 0.05
+				industry_repair_factor = 0.05
+			    }
+		    }
+			YSK_new_rus_nation = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				war_support_factor = 0.075
+				justify_war_goal_time = -0.1
+				training_time_factor = -0.1
+				conscription_factor = 0.075
+			    }
+		    }
+			YSK_idealizatsiya_dorev_proshlogo = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				political_power_factor = 0.05
+				drift_defence_factor = 0.15
+			    }
+		    }
+			YSK_help_farmers = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.025
+				consumer_goods_factor = 0.05
+				monthly_population = 0.25
+				production_factory_max_efficiency_factor = 0.025
+			    }
+		    }
+			YSK_legacy_white_guardian = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.025
+				army_org_factor = 0.025
+				training_time_factor = -0.05
+			    }
+		    }
+			YSK_legacy_white_guardian_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.025
+				training_time_factor = -0.05
+				org_loss_when_moving = -0.05
+			    }
+		    }
+			YSK_soslovie_kazakov = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				org_loss_when_moving = -0.075
+			    }
+		    }
 	    }		
 }

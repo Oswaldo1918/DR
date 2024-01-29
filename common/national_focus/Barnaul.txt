@@ -541,13 +541,11 @@ focus_tree = {
 		cost = 2,00
 		x = 40
 		y = 0
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_anime_konservatism_1
-							add_idea = YSK_anime_konservatism_2
-						}
-				}
-
+	    completion_reward = {
+		    add_war_support = 0.075     
+			set_country_flag = DR_start_reunite_Russia_cf
+			custom_effect_tooltip = YSK_irredentism_tt
+	    }
 	}
 	focus = {
 		id = YSK_true_ispilzovanie_recursov
@@ -558,14 +556,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 1
-			completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_tsar_local_resources_factor = 0.1
-								}
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_true_ispilzovanie_recursov
+		}
 	}
 	focus = {
 		id = YSK_Restoration_monastres_and_consults
@@ -576,17 +569,12 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
-			completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_tsar_stability_factor = 0.025
-								}
-							add_to_variable = {
-									YSK_pamyat_god_consumer_goods_factor = 0.025
-								}
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_true_ispilzovanie_recursov
+				add_idea = YSK_true_ispilzovanie_recursov_1
+			}
+		}
 	}
 	focus = {
 		id = YSK_Lobayev_arms
@@ -597,16 +585,45 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
-			completion_reward = {
-					army_experience = 15
-					add_tech_bonus = {
-							name = infantry_bonus
-							ahead_reduction = 2
-							uses = 1
-							category = infantry_weapons
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = infantry_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
 						}
+					}
 				}
-
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = YSK_new_rus_nation
@@ -620,7 +637,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
-
+        completion_reward = {
+			add_ideas = YSK_new_rus_nation
+		}   
 	}
 	focus = {
 		id = YSK_idealizatsiya_dorev_proshlogo
@@ -634,17 +653,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-			completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_nation_political_power_gain = 0.015
-								}
-							add_to_variable = {
-									YSK_pamyat_nation_stability_factor = 0.01
-								}
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_idealizatsiya_dorev_proshlogo
+		}
 	}
 	focus = {
 		id = YSK_help_farmers
@@ -655,7 +666,9 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
-
+        completion_reward = {
+			add_ideas = YSK_help_farmers
+		}   
 	}
 	focus = {
 		id = YSK_2_souznika
@@ -666,23 +679,22 @@ focus_tree = {
 		}
 		x = 42
 		y = 1
-			completion_reward = {
-					army_experience = 10
-					navy_experience = 10
-					add_doctrine_cost_reduction = {
-							name = land_doc_bonus
-							cost_reduction = 0.5
-							uses = 1
-							category = land_doctrine
-						}
-					add_doctrine_cost_reduction = {
-							name = land_doc_bonus
-							cost_reduction = 0.5
-							uses = 1
-							category = naval_doctrine
-						}
-				}
-
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = YSK_legacy_white_guardian
@@ -693,10 +705,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 2
-			completion_reward = {
-
-}
-
+		completion_reward = {
+		    add_ideas = YSK_legacy_white_guardian
+            army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+        }
 	}
 	focus = {
 		id = YSK_vozvodit_soslovie_kazakov
@@ -710,13 +728,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = YSK_militarizatsiya_obzhestva
-							add_idea = YSK_militarizatsiya_obzhestva_1
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YSK_soslovie_kazakov
+		}
 	}
 	focus = {
 		id = YSK_psihicheskaya_atacka
@@ -727,7 +741,12 @@ focus_tree = {
 		}
 		x = 42
 		y = 3
-
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = YSK_legacy_white_guardian
+				add_idea = YSK_legacy_white_guardian_1
+			}
+		}   
 	}
 	focus = {
 		id = YSK_tsar_tank
@@ -739,16 +758,15 @@ focus_tree = {
 		}
 		x = 42
 		y = 4
-			completion_reward = {
-					army_experience = 15
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.0
-							uses = 2
-							category = armor
-						}
-				}
-
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = YSK_tsar_pushka
@@ -760,16 +778,15 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
-			completion_reward = {
-					army_experience = 15
-					add_tech_bonus = {
-							name = artillery_bonus
-							bonus = 1.0
-							uses = 1
-							category = artillery
-						}
-				}
-
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+			    name = artillery_bonus
+				bonus = 1.0
+				uses = 1
+			    category = artillery
+			}
+		}
 	}
 	focus = {
 		id = YSK_submarine_Kolchak
@@ -783,7 +800,16 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
-
+        completion_reward = {
+		    navy_experience = 15 
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}      
 	}
 	focus = {
 		id = YSK_Linkor_anastasiya
@@ -798,7 +824,18 @@ focus_tree = {
 		}
 		x = 45
 		y = 2
-
+        completion_reward = {
+		    navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}         
 	}
 	focus = {
 		id = YSK_aeronosts_Nicolay_2
@@ -812,34 +849,33 @@ focus_tree = {
 		}
 		x = 47
 		y = 2
-			completion_reward = {
-					navy_experience = 50
-					add_tech_bonus = {
-							name = capital_ships_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = bc_tech
-							category = bb_tech
-							category = cv_tech
-						}
-					add_tech_bonus = {
-							name = dd_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = dd_tech
-						}
-					add_tech_bonus = {
-							name = cr_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = cl_tech
-							category = ca_tech
-						}
-				}
-
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
 	}
 	focus = {
 		id = YSK_Ilya_muromets
@@ -855,19 +891,18 @@ focus_tree = {
 		}
 		x = 44
 		y = 3
-			completion_reward = {
-					air_experience = 15
-					add_tech_bonus = {
-							name = bomber_bonus
-							bonus = 1.0
-							uses = 2
-							technology = strategic_bomber1
-							technology = strategic_bomber2
-							technology = strategic_bomber3
-							category = tactical_bomber
-						}
-				}
-
+		completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
 	}
 	focus = {
 		id = YSK_sky_taran
@@ -883,7 +918,22 @@ focus_tree = {
 		}
 		x = 46
 		y = 3
-
+        completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+			set_technology = { suicide_charge = 1 popup = no}
+		}    
 	}
 	focus = {
 		id = YSK_tsar_bimba
@@ -895,15 +945,14 @@ focus_tree = {
 		}
 		x = 45
 		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = secret_bonus
-							bonus = 1.0
-							uses = 2
-							category = nuclear
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+			}
+		}
 	}
 	#выбор пути
 	focus = {
@@ -4156,6 +4205,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			complete_national_focus = YSK_raskol_v_dome
+		}	
 	}
 	focus = {
 		id = YSK_aristocratic_nationalism
