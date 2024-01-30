@@ -83,6 +83,7 @@ POK_refer_SKT = {
 		transfer_state = 397
 		transfer_state = 581
 		}
+		puppet = SKT
 	    }
 	}
 POK_refer_BRT= { 
@@ -114,6 +115,7 @@ POK_refer_BRT= {
 		transfer_state = 563
 		transfer_state = 565
 		}
+		puppet = BRT
 	    }
 	}
 	POK_refer_YAK = { 
@@ -146,6 +148,7 @@ POK_refer_BRT= {
 			transfer_state = 877
 			transfer_state = 644
 		}
+		puppet = YAK
 	    }
 	}
 	POK_refer_KOL = { 
@@ -172,6 +175,7 @@ POK_refer_BRT= {
 			KOL = {
 		    transfer_state = 822
 		}
+		puppet = KOL
 	    }
 	}
 	POK_refer_HAZ = { 
@@ -198,6 +202,7 @@ POK_refer_BRT= {
 			HAZ = {
 		    transfer_state = 237
 		}
+		puppet = HAZ
 	    }
 	}
 	POK_refer_KAZ = { 
@@ -232,7 +237,8 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		transfer_state = 407
+         KAZ = {
+		    transfer_state = 407
 			transfer_state = 406
 			transfer_state = 402
 			transfer_state = 587
@@ -244,6 +250,8 @@ POK_refer_BRT= {
 			transfer_state = 590
 			transfer_state = 882
 			transfer_state = 588
+			}
+			puppet = KAZ
 	    }
 	}
 	POK_refer_KYR = { 
@@ -267,7 +275,10 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
+		KYR = {
 		transfer_state = 732
+		puppet = KYR
+		 }
 	    }
 	}
 	POK_refer_TMS = { 
@@ -292,8 +303,11 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
+		TMS = {
 		transfer_state = 832
 		transfer_state = 584
+		}
+		puppet = TMS
 	    }
 	}
 	POK_refer_TAJ = { 
@@ -322,12 +336,15 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-            transfer_state = 823
+            TAJ = {
+			transfer_state = 823
 			transfer_state = 832
 			transfer_state = 585
 			transfer_state = 830
 			transfer_state = 405
 			transfer_state = 742
+			}
+			puppet = TAJ
 	    }
 	}
 		POK_refer_CHK = { 
@@ -367,6 +384,7 @@ POK_refer_BRT= {
 			add_state_core = 827
 			add_state_core = 828
 		 }
+		 puppet = CHK
 	    }
 	}
 	POK_refer_GEO = { 
@@ -394,8 +412,8 @@ POK_refer_BRT= {
 			GEO = {
 			transfer_state = 826
 			transfer_state = 231
-			
 		}
+		puppet = GEO
 	    }
 	}
 		POK_refer_AZR = { 
@@ -421,7 +439,9 @@ POK_refer_BRT= {
 		
 		remove_effect = {
 		AZR = {
-		transfer_state = 229}
+		transfer_state = 229
+		}
+		puppet = AZR
 	    }
 	}
 	POK_refer_ARM = { 
@@ -447,7 +467,9 @@ POK_refer_BRT= {
 		
 		remove_effect = {
 		ARM = {
-		transfer_state = 230}
+		transfer_state = 230
+		}
+		puppet = ARM
 	    }
 	}
 	POK_refer_ZHE = { 
@@ -537,8 +559,8 @@ POK_refer_BRT= {
 			    add_state_core = 89
 				add_state_core = 834
 				set_capital = 202
-			
 		}
+		puppet = ZHE
 	    }
 	}
 	POK_refer_ZWN = { 
@@ -578,7 +600,9 @@ POK_refer_BRT= {
 			transfer_state = 206
 			transfer_state = 241
 			transfer_state = 204
-			transfer_state = 194}
+			transfer_state = 194
+			}
+			puppet = ZWN
 	    }
 	}
 	POK_refer_MHL = { 
@@ -602,7 +626,8 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-				MHL = { puppet = MHL
+				puppet = MHL
+				MHL = { 
 		transfer_state = 215
 		transfer_state = 216}
 		if = {
@@ -790,7 +815,10 @@ POK_refer1_SKT = {
 		
 		remove_effect = {
 		SKT = {
-		set_politics = { ruling_party = democratic elections_allowed = no }
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		transfer_state = 262
 		transfer_state = 397
 		transfer_state = 581
@@ -822,6 +850,10 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 			BRT = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		transfer_state = 564
 		transfer_state = 566
 		transfer_state = 563
@@ -854,6 +886,10 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 			YAK = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		    transfer_state = 574
 			transfer_state = 876
 			transfer_state = 877
@@ -1083,6 +1119,10 @@ POK_refer1_BRT= {
             add_state_core = 233
 			add_state_core = 827
 			add_state_core = 828
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		 }
 	    }
 	}
@@ -1138,8 +1178,13 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 		AZR = {
-		transfer_state = 229}
-			puppet = AZR
+		transfer_state = 229
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
+		
 	    }
 	}
 	POK_refer1_ARM = { 
@@ -1165,7 +1210,12 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 		ARM = {
-		transfer_state = 230}
+		transfer_state = 230
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
 	    }
 	}
 	POK_refer1_ZHE = { 
@@ -1323,6 +1373,10 @@ POK_refer1_BRT= {
 		MHL = {
 		transfer_state = 215
 		transfer_state = 216
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		}
 		if = {
 				limit = {
@@ -1367,6 +1421,10 @@ POK_refer1_BRT= {
 			transfer_state = 651
 			transfer_state = 249
 			transfer_state = 256
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			}
 			
 	    }
@@ -1395,6 +1453,10 @@ POK_refer1_BRT= {
 		
 		KHA = {
 			transfer_state = 569
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			}
 			
 	    }
@@ -1423,6 +1485,10 @@ POK_refer1_BRT= {
 		
 		ALT = {
 			transfer_state = 654
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			}
 			
 	    }
@@ -1451,6 +1517,10 @@ POK_refer1_BRT= {
 		
 		TAN = {
 			transfer_state = 329
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			}
 			
 	    }
@@ -1480,7 +1550,10 @@ POK_refer1_BRT= {
 		remove_effect = {
 		
 		NEN = {
-			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			transfer_state = 824
 			transfer_state = 825
 			transfer_state = 579
