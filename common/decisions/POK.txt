@@ -626,7 +626,6 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-				puppet = MHL
 				MHL = { 
 		transfer_state = 215
 		transfer_state = 216}
@@ -639,6 +638,7 @@ POK_refer_BRT= {
 				}
 				SUO = { transfer_state = 146}
 			}
+			puppet = MHL
 	    }
 	}
 	POK_refer_IDU = { 
@@ -666,7 +666,6 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		
 		IDU = {
 			transfer_state = 399
 			transfer_state = 833
@@ -674,6 +673,7 @@ POK_refer_BRT= {
 			transfer_state = 249
 			transfer_state = 256
 			}
+		puppet = IDU
 	    }
 	}
 	POK_refer_KHA= { 
@@ -697,10 +697,10 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		
 		KHA = {
 			transfer_state = 569
 			}
+			puppet = KHA
 	    }
 	}
 	POK_refer_ALT = { 
@@ -724,10 +724,10 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		
 		ALT = {
 			transfer_state = 654
 			}
+			puppet = ALT
 	    }
 	}
 	POK_refer_TAN = { 
@@ -751,10 +751,10 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		
 		TAN = {
 			transfer_state = 329
 			}
+			puppet = TAN
 	    }
 	}
 	POK_refer_NEN = { 
@@ -780,13 +780,12 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		
 		NEN = {
-			
 			transfer_state = 824
 			transfer_state = 825
 			transfer_state = 579
 			}
+			puppet = NEN
 	    }
 	}
 }
