@@ -174,6 +174,7 @@ POK_refer_BRT= {
 		remove_effect = {
 			KOL = {
 		    transfer_state = 822
+			set_cosmetic_tag = KOL_pok
 		}
 		puppet = KOL
 	    }
@@ -201,6 +202,7 @@ POK_refer_BRT= {
 		remove_effect = {
 			HAZ = {
 		    transfer_state = 237
+			set_cosmetic_tag = HAZ_kalmyk
 		}
 		puppet = HAZ
 	    }
@@ -383,6 +385,7 @@ POK_refer_BRT= {
             add_state_core = 233
 			add_state_core = 827
 			add_state_core = 828
+			set_cosmetic_tag = CHK_pok
 		 }
 		 puppet = CHK
 	    }
@@ -495,9 +498,13 @@ POK_refer_BRT= {
 			controls_state = 197
 			controls_state = 192
 			controls_state = 834
+			controls_state = 221
+			controls_state = 226
 			controls_state = 227
 			controls_state = 228
 			controls_state = 137
+			controls_state = 200
+			
 			}
 
 		}
@@ -528,16 +535,16 @@ POK_refer_BRT= {
 			transfer_state = 197
 			transfer_state = 192
 			transfer_state = 834
+			transfer_state = 221
+			transfer_state = 226
 			transfer_state = 227
 			transfer_state = 228
 			transfer_state = 137
-			transfer_state = 201
-			transfer_state = 206
 			transfer_state = 200
-			add_state_core = 202
-			add_state_core = 201
-			add_state_core = 91
-			add_state_core = 93
+			    add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 93
 			    add_state_core = 199
 			    add_state_core = 198
 				add_state_core = 192
@@ -559,6 +566,7 @@ POK_refer_BRT= {
 			    add_state_core = 89
 				add_state_core = 834
 				set_capital = 202
+			set_cosmetic_tag = ZHE_ukraina
 		}
 		puppet = ZHE
 	    }
@@ -666,14 +674,34 @@ POK_refer_BRT= {
 		}
 		
 		remove_effect = {
-		IDU = {
+		POK_Hamatova = {set_nationality = IDU}
+		IDU = { 
 			transfer_state = 399
 			transfer_state = 833
 			transfer_state = 651
 			transfer_state = 249
 			transfer_state = 256
+			add_state_core = 399
+			add_state_core = 833
+			add_state_core = 651
+			add_state_core = 249
+			add_state_core = 256
+			hidden_effect = { retire_country_leader = yes }
+			promote_character = POK_Hamatova
+			add_country_leader_role = {
+			character = POK_Hamatova
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
 			}
-		puppet = IDU
+		}
+		
+			}
+		puppet = IDU 
 	    }
 	}
 	POK_refer_KHA= { 
@@ -922,6 +950,7 @@ POK_refer1_BRT= {
 		remove_effect = {
 			KOL = {
 		    transfer_state = 822
+			set_cosmetic_tag = KOL_pok
 		}
 		POK = { add_to_faction = KOL }
 	    }
@@ -950,6 +979,7 @@ POK_refer1_BRT= {
 			HAZ = {
 			set_politics = { ruling_party = democratic elections_allowed = no }
 		    transfer_state = 237
+			set_cosmetic_tag = HAZ_kalmyk
 		}
 		POK = { add_to_faction = HAZ }
 	    }
@@ -1140,6 +1170,7 @@ POK_refer1_BRT= {
 				ruling_party = democratic
 				elections_allowed = no
 			}
+			set_cosmetic_tag = CHK_pok
 		 }
 		 POK = { add_to_faction = CHK }
 	    }
@@ -1167,6 +1198,10 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 			GEO = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 			transfer_state = 826
 			transfer_state = 231
 		}
@@ -1260,9 +1295,13 @@ POK_refer1_BRT= {
 			controls_state = 197
 			controls_state = 192
 			controls_state = 834
+			controls_state = 221
+			controls_state = 226
 			controls_state = 227
 			controls_state = 228
 			controls_state = 137
+			controls_state = 200
+			
 			}
 
 		}
@@ -1293,16 +1332,17 @@ POK_refer1_BRT= {
 			transfer_state = 197
 			transfer_state = 192
 			transfer_state = 834
+			transfer_state = 221
+			transfer_state = 226
 			transfer_state = 227
 			transfer_state = 228
 			transfer_state = 137
-			transfer_state = 201
-			transfer_state = 206
+			
 			transfer_state = 200
-			add_state_core = 202
-			add_state_core = 201
-			add_state_core = 91
-			add_state_core = 93
+			    add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 93
 			    add_state_core = 199
 			    add_state_core = 198
 				add_state_core = 192
@@ -1324,7 +1364,7 @@ POK_refer1_BRT= {
 			    add_state_core = 89
 				add_state_core = 834
 				set_capital = 202
-			
+			set_cosmetic_tag = ZHE_ukraina
 		}
 		POK = { add_to_faction = ZHE }
 	    }
@@ -1358,6 +1398,10 @@ POK_refer1_BRT= {
 		
 		remove_effect = {
 		ZWN = {
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
 		transfer_state = 96
 			transfer_state = 95
 			transfer_state = 94
@@ -1451,6 +1495,30 @@ POK_refer1_BRT= {
 				ruling_party = democratic
 				elections_allowed = no
 			}
+			recruit_character = POK_Hamatova
+			add_country_leader_role = {
+			character = POK_Hamatova
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+		add_corps_commander_role = {
+		character = POK_Katz
+		traits = {
+            urban_assault_specialist   
+        }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+		legacy_id = -1
+	}
 			}
 			POK = { add_to_faction = IDU }
 	    }
