@@ -2566,8 +2566,29 @@ ideas = {
 			modifier = {
 				org_loss_when_moving = -0.10
 				out_of_supply_factor = -0.20
-				winter_attrition_factor = 0.10
+				winter_attrition_factor = -0.10
 				supply_node_range = 0.25
+			}
+		}
+		POK_srednyaya_asia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+				org_loss_when_moving = -0.10
+				out_of_supply_factor = -0.10
+				heat_attrition_factor = -0.10
+				army_speed_factor = 0.1
 			}
 		}
     }
