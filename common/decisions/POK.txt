@@ -1442,6 +1442,11 @@ POK_refer1_BRT= {
 			transfer_state = 651
 			transfer_state = 249
 			transfer_state = 256
+			add_state_core = 399
+			add_state_core = 833
+			add_state_core = 651
+			add_state_core = 249
+			add_state_core = 256
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -1474,6 +1479,7 @@ POK_refer1_BRT= {
 		
 		KHA = {
 			transfer_state = 569
+			add_state_core = 569
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -1506,6 +1512,7 @@ POK_refer1_BRT= {
 		
 		ALT = {
 			transfer_state = 654
+			add_state_core = 654
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -1538,6 +1545,7 @@ POK_refer1_BRT= {
 		
 		TAN = {
 			transfer_state = 329
+			add_state_core = 329
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -1553,8 +1561,8 @@ POK_refer1_BRT= {
 		available = {
 			POK = {
 		    has_war = no	
-			transfer_state = 824
-			transfer_state = 825
+			controls_state = 824
+			controls_state = 825
 			controls_state = 579
 			}
 
@@ -1578,8 +1586,11 @@ POK_refer1_BRT= {
 			transfer_state = 824
 			transfer_state = 825
 			transfer_state = 579
+			add_state_core = 824
+			add_state_core = 825
+			add_state_core = 579
 			}
-		POK = { add_to_faction = NEN }
+		POK = { add_to_faction = NEN } 
 	    }
 	}
 }
