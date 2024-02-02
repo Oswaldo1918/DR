@@ -54,214 +54,1611 @@ POK_prepar_balance_of_power_category = {
 		}
 	}
 }
-POK_srednyaya_asia = {
-	POK_war_s_LIM = { 
+POK_russian_confederation = {
+POK_refer_SKT = { 
 	
-		cost = 1
+		cost = 15
 		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {		
-		    declare_war_on = {
-		        target = LIM
-		        type = annex_everything
-		    }     			
-		}	
-	}
-	POK_core_LIM = {
-	
-		cost = 30
-
 		available = {
-		    OR = {      
-		        has_country_flag = pre_max_win
-		    }      
-			controls_state = 583
-			controls_state = 590
-			controls_state = 588
-			controls_state = 882
+			POK = {
+		    has_war = no
+			owns_state = 262
+			owns_state = 397
+			owns_state = 581 
+			}
+
+		}
+		visible = {
+			
 		}
 		
 		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
+	    ai_will_do = {
+			factor = 100
 		}
 		
-		remove_effect = {			
-			if = {
-                limit = {
-                    has_country_flag = pre_max_win
-                }
-                add_state_core = 583
-			    add_state_core = 590
-			    add_state_core = 588
-			    add_state_core = 882
-            }
-            else_if = {
-                limit = {
-                    has_country_flag = par_win
-                }
-                583 = { transfer_state_to = KAZ }
-			    590 = { transfer_state_to = KAZ }
-			    588 = { transfer_state_to = KAZ }
-			    882 = { transfer_state_to = KAZ } 
-            }
-		}	
+		remove_effect = {
+		SKT = {
+		transfer_state = 262
+		transfer_state = 397
+		transfer_state = 581
+		}
+		puppet = SKT
+	    }
 	}
-	POK_vopr_s_LIM = {
+POK_refer_BRT= { 
 	
-		cost = 30
-
+		cost = 15
+		
 		available = {
-		    has_war = not
-		    OR = {
-		        LIM = {
-		        is_puppet_of = POK
-			    }     
-			    controls_state = 583
-			    controls_state = 590
-			    controls_state = 588
-			    controls_state = 882
-		    }   
-		}    		
+			POK = {
+		    has_war = no
+			owns_state = 563
+			owns_state = 564
+			owns_state = 565
+			owns_state = 566
+			}
+		}
+		visible = {
+			
+		}
+		
 		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
+	    ai_will_do = {
+			factor = 100
 		}
 		
-		remove_effect = {			
-			release_autonomy = {
-                target = LIM
-                autonomy_state = puppet
-                freedom_level = 0.5
-            }
-		}	
+		remove_effect = {
+			BRT = {
+		transfer_state = 564
+		transfer_state = 566
+		transfer_state = 563
+		transfer_state = 565
+		}
+		puppet = BRT
+	    }
 	}
-	POK_war_s_KAZ = { 
+	POK_refer_YAK = { 
 	
-		cost = 1
-
+		cost = 15
+		
 		available = {
-			KAZ = {
-                OR = {         			
-			    has_government = fascism
-				has_government = vmestolev
-				has_government = anarhostalinism
-				has_government = metacommy
-				has_government = neutrality
+			POK = {
+		    has_war = no
+			owns_state = 574
+			owns_state = 876
+			owns_state = 877
+			owns_state = 644
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			YAK = {
+		    transfer_state = 574
+			transfer_state = 876
+			transfer_state = 877
+			transfer_state = 644
+		}
+		puppet = YAK
+	    }
+	}
+	POK_refer_KOL = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 822
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			KOL = {
+		    transfer_state = 822
+			set_cosmetic_tag = KOL_pok
+		}
+		puppet = KOL
+	    }
+	}
+	POK_refer_HAZ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 237
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			HAZ = {
+		    transfer_state = 237
+			set_cosmetic_tag = HAZ_kalmyk
+		}
+		puppet = HAZ
+	    }
+	}
+	POK_refer_KAZ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 407
+			owns_state = 406
+			owns_state = 402
+			owns_state = 587
+			owns_state = 404
+			owns_state = 881
+			owns_state = 589
+			owns_state = 586
+			owns_state = 583
+			owns_state = 590
+			owns_state = 882
+			owns_state = 588
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+         KAZ = {
+		    transfer_state = 407
+			transfer_state = 406
+			transfer_state = 402
+			transfer_state = 587
+			transfer_state = 404
+			transfer_state = 881
+			transfer_state = 589
+			transfer_state = 586
+			transfer_state = 583
+			transfer_state = 590
+			transfer_state = 882
+			transfer_state = 588
+			}
+			puppet = KAZ
+	    }
+	}
+	POK_refer_KYR = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 732
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		KYR = {
+		transfer_state = 732
+		puppet = KYR
+		 }
+	    }
+	}
+	POK_refer_TMS = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 832
+			owns_state = 584
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		TMS = {
+		transfer_state = 832
+		transfer_state = 584
+		}
+		puppet = TMS
+	    }
+	}
+	POK_refer_TAJ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 823
+			owns_state = 832
+			owns_state = 585
+			owns_state = 830
+			owns_state = 405
+			owns_state = 742
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+            TAJ = {
+			transfer_state = 823
+			transfer_state = 832
+			transfer_state = 585
+			transfer_state = 830
+			transfer_state = 405
+			transfer_state = 742
+			}
+			puppet = TAJ
+	    }
+	}
+		POK_refer_CHK = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 821
+			owns_state = 232
+			owns_state = 233
+			owns_state = 827
+			owns_state = 828
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			CHK = {
+			transfer_state = 821
+			transfer_state = 232
+			transfer_state = 233
+			transfer_state = 827
+			transfer_state = 828
+            add_state_core = 821
+            add_state_core = 232
+            add_state_core = 233
+			add_state_core = 827
+			add_state_core = 828
+			set_cosmetic_tag = CHK_pok
+		 }
+		 puppet = CHK
+	    }
+	}
+	POK_refer_GEO = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 826
+			owns_state = 231
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			GEO = {
+			transfer_state = 826
+			transfer_state = 231
+		}
+		puppet = GEO
+	    }
+	}
+		POK_refer_AZR = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 229
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		AZR = {
+		transfer_state = 229
+		}
+		puppet = AZR
+	    }
+	}
+	POK_refer_ARM = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 230
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		ARM = {
+		transfer_state = 230
+		}
+		puppet = ARM
+	    }
+	}
+	POK_refer_ZHE = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 199
+			controls_state = 91
+			controls_state = 89
+			controls_state = 80
+			controls_state = 203
+			controls_state = 259
+			controls_state = 225
+			controls_state = 193
+			controls_state = 202
+			controls_state = 201
+			controls_state = 198
+			controls_state = 93
+			controls_state = 196
+			controls_state = 197
+			controls_state = 192
+			controls_state = 834
+			controls_state = 221
+			controls_state = 226
+			controls_state = 227
+			controls_state = 228
+			controls_state = 137
+			controls_state = 200
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			ZHE = {
+			transfer_state = 199
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 80
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 201
+			transfer_state = 198
+			transfer_state = 93
+			transfer_state = 196
+			transfer_state = 197
+			transfer_state = 192
+			transfer_state = 834
+			transfer_state = 221
+			transfer_state = 226
+			transfer_state = 227
+			transfer_state = 228
+			transfer_state = 137
+			transfer_state = 200
+			    add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 93
+			    add_state_core = 199
+			    add_state_core = 198
+				add_state_core = 192
+			    add_state_core = 199
+			    add_state_core = 203
+			   	add_state_core = 197
+			    add_state_core = 766
+				add_state_core = 196
+			    add_state_core = 193
+			    add_state_core = 226
+			    add_state_core = 200
+			    add_state_core = 259
+				add_state_core = 225
+			    add_state_core = 221
+			    add_state_core = 228
+			    add_state_core = 227
+			    add_state_core = 80
+				add_state_core = 78
+			    add_state_core = 89
+				add_state_core = 834
+				set_capital = 202
+			set_cosmetic_tag = ZHE_ukraina
+		}
+		puppet = ZHE
+	    }
+	}
+	POK_refer_ZWN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 207
+			controls_state = 206
+			controls_state = 241
+			controls_state = 204
+			controls_state = 194
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		
+		ZWN = {
+		transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 241
+			transfer_state = 204
+			transfer_state = 194
+			}
+			puppet = ZWN
+	    }
+	}
+	POK_refer_MHL = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 215 
+			controls_state = 216 
+			}
+
+		}
+		visible = {
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+				MHL = { 
+		transfer_state = 215
+		transfer_state = 216}
+		if = {
+				limit = {
+					SUO = exist
+					POK = {
+                    controls_state = 146
+					}
+				}
+				SUO = { transfer_state = 146}
+			}
+			puppet = MHL
+	    }
+	}
+	POK_refer_IDU = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 399
+			controls_state = 833
+			controls_state = 651
+			controls_state = 249
+			controls_state = 256
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		POK_Hamatova = {set_nationality = IDU}
+		IDU = { 
+			transfer_state = 399
+			transfer_state = 833
+			transfer_state = 651
+			transfer_state = 249
+			transfer_state = 256
+			add_state_core = 399
+			add_state_core = 833
+			add_state_core = 651
+			add_state_core = 249
+			add_state_core = 256
+			hidden_effect = { retire_country_leader = yes }
+			promote_character = POK_Hamatova
+			add_country_leader_role = {
+			character = POK_Hamatova
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
 				}
 			}
 		}
 		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {		
-		    declare_war_on = {
-		        target = KAZ
-		        type = puppet_wargoal_focus
-		    }    	
-		}	
+			}
+		puppet = IDU 
+	    }
 	}
-	POK_war_s_TMS = { 
+	POK_refer_KHA= { 
 	
-		cost = 1
-
+		cost = 15
+		
 		available = {
-			TMS = {
-			    is_neighbor_of = POK 
-                OR = {         			
-			    has_government = fascism
-				has_government = vmestolev
-				has_government = anarhostalinism
-				has_government = metacommy
-				has_government = neutrality
+			POK = {
+		    has_war = no		 
+			controls_state = 569
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		KHA = {
+			transfer_state = 569
+			}
+			puppet = KHA
+	    }
+	}
+	POK_refer_ALT = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 654
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		ALT = {
+			transfer_state = 654
+			}
+			puppet = ALT
+	    }
+	}
+	POK_refer_TAN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 329
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		TAN = {
+			transfer_state = 329
+			}
+			puppet = TAN
+	    }
+	}
+	POK_refer_NEN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no	
+			transfer_state = 824
+			transfer_state = 825
+			controls_state = 579
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		NEN = {
+			transfer_state = 824
+			transfer_state = 825
+			transfer_state = 579
+			}
+			puppet = NEN
+	    }
+	}
+}
+POK_full_separation = {
+POK_refer1_SKT = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 262
+			owns_state = 397
+			owns_state = 581 
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		SKT = {
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		transfer_state = 262
+		transfer_state = 397
+		transfer_state = 581
+		}
+		POK = { add_to_faction = SKT }
+	    }
+	}
+POK_refer1_BRT= { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 563
+			owns_state = 564
+			owns_state = 565
+			owns_state = 566
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			BRT = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		transfer_state = 564
+		transfer_state = 566
+		transfer_state = 563
+		transfer_state = 565
+		}
+		POK = { add_to_faction = BRT }
+	    }
+	}
+	POK_refer1_YAK = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 574
+			owns_state = 876
+			owns_state = 877
+			owns_state = 644
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			YAK = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		    transfer_state = 574
+			transfer_state = 876
+			transfer_state = 877
+			transfer_state = 644
+		}
+		POK = { add_to_faction = YAK }
+	    }
+	}
+	POK_refer1_KOL = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 822
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			KOL = {
+		    transfer_state = 822
+			set_cosmetic_tag = KOL_pok
+		}
+		POK = { add_to_faction = KOL }
+	    }
+	}
+	POK_refer1_HAZ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 237
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			HAZ = {
+			set_politics = { ruling_party = democratic elections_allowed = no }
+		    transfer_state = 237
+			set_cosmetic_tag = HAZ_kalmyk
+		}
+		POK = { add_to_faction = HAZ }
+	    }
+	}
+	POK_refer1_KAZ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 407
+			owns_state = 406
+			owns_state = 402
+			owns_state = 587
+			owns_state = 404
+			owns_state = 881
+			owns_state = 589
+			owns_state = 586
+			owns_state = 583
+			owns_state = 590
+			owns_state = 882
+			owns_state = 588
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		KAZ = { 
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		    transfer_state = 407
+			transfer_state = 406
+			transfer_state = 402
+			transfer_state = 587
+			transfer_state = 404
+			transfer_state = 881
+			transfer_state = 589
+			transfer_state = 586
+			transfer_state = 583
+			transfer_state = 590
+			transfer_state = 882
+			transfer_state = 588
+			}
+			POK = { add_to_faction = KAZ }
+	    }
+	}
+	POK_refer1_KYR = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 732
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		KYR = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		transfer_state = 732 
+		}
+		POK = { add_to_faction = KYR }
+	    }
+	}
+	POK_refer1_TMS = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 832
+			owns_state = 584
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		TMS = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		transfer_state = 832
+		transfer_state = 584
+		}
+		POK = { add_to_faction = KYR }
+	    }
+	}
+	POK_refer1_TAJ = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no
+			owns_state = 823
+			owns_state = 832
+			owns_state = 585
+			owns_state = 830
+			owns_state = 405
+			owns_state = 742
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		TAJ = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+            transfer_state = 823
+			transfer_state = 832
+			transfer_state = 585
+			transfer_state = 830
+			transfer_state = 405
+			transfer_state = 742
+			}
+			POK = { add_to_faction = TAJ }
+	    }
+	}
+		POK_refer1_CHK = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 821
+			owns_state = 232
+			owns_state = 233
+			owns_state = 827
+			owns_state = 828
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			CHK = {
+			transfer_state = 821
+			transfer_state = 232
+			transfer_state = 233
+			transfer_state = 827
+			transfer_state = 828
+            add_state_core = 821
+            add_state_core = 232
+            add_state_core = 233
+			add_state_core = 827
+			add_state_core = 828
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_cosmetic_tag = CHK_pok
+		 }
+		 POK = { add_to_faction = CHK }
+	    }
+	}
+	POK_refer1_GEO = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 826
+			owns_state = 231
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			GEO = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			transfer_state = 826
+			transfer_state = 231
+		}
+		POK = { add_to_faction = GEO }
+	    }
+	}
+		POK_refer1_AZR = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 229
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		AZR = {
+		transfer_state = 229
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
+		POK = { add_to_faction = AZR }
+	    }
+	}
+	POK_refer1_ARM = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			owns_state = 230
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		ARM = {
+		transfer_state = 230
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
+		 POK = { add_to_faction = ARM }
+	    }
+	}
+	POK_refer1_ZHE = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 199
+			controls_state = 91
+			controls_state = 89
+			controls_state = 80
+			controls_state = 203
+			controls_state = 259
+			controls_state = 225
+			controls_state = 193
+			controls_state = 202
+			controls_state = 201
+			controls_state = 198
+			controls_state = 93
+			controls_state = 196
+			controls_state = 197
+			controls_state = 192
+			controls_state = 834
+			controls_state = 221
+			controls_state = 226
+			controls_state = 227
+			controls_state = 228
+			controls_state = 137
+			controls_state = 200
+			
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+			ZHE = {
+			transfer_state = 199
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 80
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 201
+			transfer_state = 198
+			transfer_state = 93
+			transfer_state = 196
+			transfer_state = 197
+			transfer_state = 192
+			transfer_state = 834
+			transfer_state = 221
+			transfer_state = 226
+			transfer_state = 227
+			transfer_state = 228
+			transfer_state = 137
+			
+			transfer_state = 200
+			    add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 93
+			    add_state_core = 199
+			    add_state_core = 198
+				add_state_core = 192
+			    add_state_core = 199
+			    add_state_core = 203
+			   	add_state_core = 197
+			    add_state_core = 766
+				add_state_core = 196
+			    add_state_core = 193
+			    add_state_core = 226
+			    add_state_core = 200
+			    add_state_core = 259
+				add_state_core = 225
+			    add_state_core = 221
+			    add_state_core = 228
+			    add_state_core = 227
+			    add_state_core = 80
+				add_state_core = 78
+			    add_state_core = 89
+				add_state_core = 834
+				set_capital = 202
+			set_cosmetic_tag = ZHE_ukraina
+		}
+		POK = { add_to_faction = ZHE }
+	    }
+	}
+	POK_refer1_ZWN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 207
+			controls_state = 206
+			controls_state = 241
+			controls_state = 204
+			controls_state = 194
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		ZWN = {
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 241
+			transfer_state = 204
+			transfer_state = 194
+			}
+			POK = { add_to_faction = ZWN }
+	    }
+	}
+	POK_refer1_MHL = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 215 
+			controls_state = 216 
+			}
+
+		}
+		visible = {
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		MHL = {
+		transfer_state = 215
+		transfer_state = 216
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		if = {
+				limit = {
+					SUO = exist
+					POK = {
+                    controls_state = 146
+					}
+				}
+				SUO = { transfer_state = 146}
+			}
+			POK = { add_to_faction = MHL }
+	    }
+	}
+	POK_refer1_IDU = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 399
+			controls_state = 833
+			controls_state = 651
+			controls_state = 249
+			controls_state = 256
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		IDU = {
+			transfer_state = 399
+			transfer_state = 833
+			transfer_state = 651
+			transfer_state = 249
+			transfer_state = 256
+			add_state_core = 399
+			add_state_core = 833
+			add_state_core = 651
+			add_state_core = 249
+			add_state_core = 256
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			recruit_character = POK_Hamatova
+			add_country_leader_role = {
+			character = POK_Hamatova
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
 				}
 			}
 		}
-		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {		
-		    declare_war_on = {
-		        target = TMS
-		        type = puppet_wargoal_focus
-		    }    	
-		}	
+		add_corps_commander_role = {
+		character = POK_Katz
+		traits = {
+            urban_assault_specialist   
+        }
+		skill = 2
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+		legacy_id = -1
 	}
-	POK_war_s_TAJ = { 
-	
-		cost = 1
-
-		available = {
-			TAJ = {
-			    is_neighbor_of = POK 
-                OR = {         			
-			    has_government = fascism
-				has_government = vmestolev
-				has_government = anarhostalinism
-				has_government = metacommy
-				has_government = neutrality
-				}
 			}
-		}
-		
-		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {		
-		    declare_war_on = {
-		        target = TAJ
-		        type = puppet_wargoal_focus
-		    }    	
-		}	
+			POK = { add_to_faction = IDU }
+	    }
 	}
-	POK_war_s_KYR = { 
+	POK_refer1_KHA= { 
 	
-		cost = 1
-
+		cost = 15
+		
 		available = {
-			KYR = {
-			    is_neighbor_of = POK 
-                OR = {         			
-			    has_government = fascism
-				has_government = vmestolev
-				has_government = anarhostalinism
-				has_government = metacommy
-				has_government = neutrality
-				}
+			POK = {
+		    has_war = no		 
+			controls_state = 569
 			}
+
+		}
+		visible = {
+			
 		}
 		
 		fire_only_once = yes
-		
-		days_remove = 35
-		ai_will_do = {
-        factor = 100
+	    ai_will_do = {
+			factor = 100
 		}
-		remove_effect = {		
-		    declare_war_on = {
-		        target = KYR
-		        type = puppet_wargoal_focus
-		    }    	
-		}	
+		
+		remove_effect = {
+		
+		KHA = {
+			transfer_state = 569
+			add_state_core = 569
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			}
+			POK = { add_to_faction = KHA }
+	    }
+	}
+	POK_refer1_ALT = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 654
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		
+		ALT = {
+			transfer_state = 654
+			add_state_core = 654
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			}
+			POK = { add_to_faction = ALT }
+	    }
+	}
+	POK_refer1_TAN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no		 
+			controls_state = 329
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		
+		TAN = {
+			transfer_state = 329
+			add_state_core = 329
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			}
+		POK = { add_to_faction = TAN }	
+	    }
+	}
+	POK_refer1_NEN = { 
+	
+		cost = 15
+		
+		available = {
+			POK = {
+		    has_war = no	
+			controls_state = 824
+			controls_state = 825
+			controls_state = 579
+			}
+
+		}
+		visible = {
+			
+		}
+		
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		
+		remove_effect = {
+		
+		NEN = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			transfer_state = 824
+			transfer_state = 825
+			transfer_state = 579
+			add_state_core = 824
+			add_state_core = 825
+			add_state_core = 579
+			}
+		POK = { add_to_faction = NEN } 
+	    }
 	}
 }

@@ -55,9 +55,12 @@ characters={
 		name = "Лев Щаранский"
 
 		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_Sharanskiy"
+			}
 			army = {
-				small = "GFX_idea_georgy_zhukov"
 				large = "gfx/leaders/POK/Sharansky.dds"
+				small = "GFX_idea_georgy_zhukov"
 			}
 		}
 
@@ -70,6 +73,24 @@ characters={
 			expire = "1999.3.1"
 			id = -1
 		}	
+		
+		advisor={
+			slot = political_advisor
+			idea_token = POK_Sharanskiy
+
+			allowed = {
+				original_tag = POK
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			visible = {		
+			has_completed_focus = POK_libdem_purity
+		    }
+			traits = {
+				Ljesharanskiy
+			}
+		}
 	}
 	
 	POK_romanova = {
@@ -173,27 +194,6 @@ characters={
         	defense_skill = 1
         	planning_skill = 2
         	logistics_skill = 1
-			legacy_id = 0
-		}
-	}
-	
-	POK_babchenko = {
-		name = "Аркадий Бабченко"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_POK_babchenko"
-				large = "gfx/leaders/POK/babchenko.dds"
-			}
-		}
-
-	    corps_commander = {
-			traits = { armor_officer panzer_leader }
-        	skill = 2
-         	attack_skill = 2
-        	defense_skill = 1
-        	planning_skill = 1
-        	logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -1113,48 +1113,6 @@ characters={
 			traits = {
 				DEN_rightwing_populist
 			}
-		}
-	}
-    POK_Sharanskiy = {
-		name = "Лев Щаранский"
-
-		portraits = {
-			civilian = {
-				small = "GFX_idea_POK_Sharanskiy"
-			}
-			army = {
-				large = "gfx/leaders/POK/Sharansky.dds"
-				small = "GFX_idea_georgy_zhukov"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POK_Sharanskiy
-
-			allowed = {
-				original_tag = POK
-			}
-			ai_will_do = {
-				factor = 10
-			}
-			visible = {		
-			has_completed_focus = POK_libdem_purity
-		    }
-			traits = {
-				Ljesharanskiy
-			}
-		}
-		corps_commander = {
-			traits = { }
-        	skill = 8
-         	attack_skill = 1
-        	defense_skill = 1
-        	planning_skill = 1
-        	logistics_skill = 1
-			legacy_id = 0
-			visible = {		
-			has_completed_focus = POK_libdem_purity
-		    }
 		}
 	}
     POK_Ponomaryov = {

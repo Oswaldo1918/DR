@@ -18,25 +18,26 @@ POK_prepar_balance_of_power_category = {
 		# always = no 
 	}
 }
-POK_srednyaya_asia = { 
+POK_russian_confederation = { 
  icon = generic_prospect_for_resources
-	visible = {
+	 allowed = {
 		original_tag = POK
-		has_completed_focus = POK_srednyaya_asia
+		has_completed_focus = POK_russian_confederation 
+	}
+	visible = {
+	original_tag = POK
+	has_completed_focus = POK_russian_confederation 
 	}
 }
-POK_k_USA_cherez_vostok = { 
+POK_full_separation = { 
  icon = generic_prospect_for_resources
-	visible = {
+	 allowed = {
 		original_tag = POK
-		has_completed_focus = POK_k_USA_cherez_vostok
+		has_completed_focus = POK_full_separation
 	}
-}
-POK_panoramnoye_okno_v_Evropu = { 
- icon = generic_prospect_for_resources
 	visible = {
-		original_tag = POK
-		has_completed_focus = POK_panoramnoye_okno_v_Evropu
+	original_tag = POK
+	has_completed_focus = POK_full_separation
 	}
 }
 

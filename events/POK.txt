@@ -1181,9 +1181,30 @@ country_event = {
 	
 	option = {
 	name = POK.35.a
+	 create_faction = KONPR_alliance
+	 if = {
+				limit = {
+					 BRT = exists
+					
+				}
+				 BRT = {country_event = POK.42}
+			}
+	if = {
+				limit = {
+					 KAZ = exists
+				}
+				 KAZ = {country_event = POK.45}
+			}
+	if = {
+				limit = {
+					 KOL = exists
+				}
+				 KOL = {country_event = POK.48}
+			}		 
 	}
 	option = {
 	name = POK.35.b
+	 create_faction = KONPR_alliance
 	}
 }
 country_event = {
@@ -1282,7 +1303,52 @@ country_event = {
 	name = POK.39.a
 	set_country_flag = pokoyanskaya_civil_war_end_cf
 	set_global_flag = pokoyanskaya_civil_war_end_gf
-	
+	complete_national_focus = POK_end_civil_conflict
+			MRD = {
+				remove_state_core = 516
+				remove_state_core = 878
+			}
+			
+			every_state = {
+			limit = {
+				is_cored_by = MGN
+			}
+			MGN = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = YSK
+			}
+			YSK = {
+				remove_state_core = PREV
+			}
+		  }
+		  every_state = {
+			limit = {
+				is_cored_by = GAL
+			}
+			GAL = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = OMS
+			}
+			OMS = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = ZNS
+			}
+			ZNS = {
+				remove_state_core = PREV
+			}
+		  } 
 	}
 }
 #Конец Покаянгелиона
@@ -1306,5 +1372,203 @@ country_event = {
 				}
 				custom_effect_tooltip = POK_BAZIM_KAZ_tt
 			}
+	}
+}
+#Кац Базит
+country_event = {
+	id = POK.41
+	title = POK.41.t
+	desc = POK.41.d
+	picture = GFX_report_event_dkr_solzh_golova
+	
+	trigger = {
+		tag = POK
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = POK.41.a
+	}
+}
+#Пригласить_в_альянс_brt
+country_event = { 
+	id = POK.42
+        title = POK.42.t
+        desc = POK.42.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.42.a
+		ai_chance = {
+			base = 80
+		}
+		POK = {country_event = POK.43}
+	}
+	option = {
+		name = POK.42.b
+		ai_chance = {
+			base = 20
+		}
+		POK = {country_event = POK.44}
+	}
+}
+#Согласие
+country_event = { 
+	id = POK.43
+        title = POK.43.t
+        desc = POK.43.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.43.a
+		POK = { add_to_faction = BRT }
+	}
+}
+#Отказ
+country_event = { 
+	id = POK.44
+        title = POK.44.t
+        desc = POK.44.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.44.a
+		create_wargoal = {
+        type = annex_everything
+        target = BRT
+        }
+	}
+}
+#Пригласить_в_альянс_kaz
+country_event = { 
+	id = POK.45
+        title = POK.45.t
+        desc = POK.45.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.45.a
+		ai_chance = {
+			base = 70
+			modifier = {
+				factor = 10
+				has_government = fascism
+			}
+			modifier = {
+				factor = 50
+				has_government = neutrality
+			}
+		}
+		POK = {country_event = POK.46}
+	}
+	option = {
+		name = POK.45.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				factor = 70
+				has_government = fascism
+			}
+			modifier = {
+				factor = 50
+				has_government = neutrality
+			}
+		}
+		POK = {country_event = POK.47}
+	}
+}
+#Согласие
+country_event = { 
+	id = POK.46
+        title = POK.46.t
+        desc = POK.46.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.46.a
+		POK = { add_to_faction = KAZ }
+	}
+}
+#Отказ
+country_event = { 
+	id = POK.47
+        title = POK.47.t
+        desc = POK.47.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.47.a
+		create_wargoal = {
+        type = annex_everything
+        target = KAZ
+        }
+	}
+}
+#Пригласить_в_альянс_kol
+country_event = { 
+	id = POK.48
+        title = POK.48.t
+        desc = POK.48.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.48.a
+		ai_chance = {
+			base = 100
+		}
+		POK = {country_event = POK.49}
+	}
+	option = {
+		name = POK.48.b
+		ai_chance = {
+			base = 0
+		}
+		POK = {country_event = POK.50}
+	}
+}
+#Согласие
+country_event = { 
+	id = POK.49
+        title = POK.49.t
+        desc = POK.49.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.46.a
+		POK = { add_to_faction = KOL }
+	}
+}
+#Отказ
+country_event = { 
+	id = POK.50
+        title = POK.50.t
+        desc = POK.50.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.50.a
+		create_wargoal = {
+        type = annex_everything
+        target = KOL
+        }
 	}
 }

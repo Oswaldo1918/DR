@@ -651,6 +651,10 @@ ideas = {
 			    tag = GAL				
 			    attack_bonus_against = 0.1
 		    }
+			targeted_modifier = {
+			    tag = MRD
+			    attack_bonus_against = 0.1
+		    }
 			modifier = {
 				war_support_factor = 0.15
 				vmestolev_drift = -0.01
@@ -692,6 +696,10 @@ ideas = {
 		    }
 			targeted_modifier = {
 			    tag = GAL				
+			    attack_bonus_against = 0.1
+		    }
+			targeted_modifier = {
+			    tag = MRD
 			    attack_bonus_against = 0.1
 		    }
 			modifier = {
@@ -737,6 +745,10 @@ ideas = {
 		    }
 			targeted_modifier = {
 			    tag = GAL				
+			    attack_bonus_against = 0.1
+		    }
+			targeted_modifier = {
+			    tag = MRD
 			    attack_bonus_against = 0.1
 		    }
 			modifier = {
@@ -2053,7 +2065,7 @@ ideas = {
 				research_speed_factor = -0.05
 				consumer_goods_factor = -0.01
                 war_support_factor = 0.1
-                stability_factor = -0.15
+                stability_factor = -0.05
                 vmestolev_drift = -0.05
                 anarhostalinism_drift = -0.05
                 metacommy_drift	 = -0.05
@@ -2132,10 +2144,10 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
-			    political_power_gain = 0.05
+			    political_power_gain = 0.02
 				consumer_goods_factor = -0.075
                 stability_factor = -0.4
-				war_support_factor = -0.5
+				war_support_factor = -0.4
                 research_speed_factor = -0.015
                 drift_defence_factor = 0.2 
   			    conscription_factor = -0.45         	
@@ -2159,7 +2171,7 @@ ideas = {
 			    political_power_gain = 0.075
 				consumer_goods_factor = -0.05
                 stability_factor = -0.3
-				war_support_factor = -0.55
+				war_support_factor = -0.50
                 research_speed_factor = 0.015
                 drift_defence_factor = 0.25 
   			    conscription_factor = -0.35         	
@@ -2180,13 +2192,13 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
-			    political_power_gain = 0.1
-				consumer_goods_factor = -0.025
-                stability_factor = -0.25
-				war_support_factor = -0.6
+			    political_power_gain = 0.3
+				consumer_goods_factor = -0.03
+                stability_factor = 0.05
+				war_support_factor = -0.15
                 research_speed_factor = 0.05
                 drift_defence_factor = 0.3 
-  			    conscription_factor = -0.15         	
+  			    conscription_factor = -0.1         	
 			}
 		}
 		POK_law_of_Novodvorskava_4 = {
@@ -2206,7 +2218,7 @@ ideas = {
 			modifier = {
 			    political_power_gain = 0.025
 				consumer_goods_factor = -0.125
-                stability_factor = -0.55
+                stability_factor = -0.4
 				war_support_factor = -0.4
                 research_speed_factor = -0.025
                 drift_defence_factor = 0.25 
@@ -2230,10 +2242,10 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
-			    political_power_gain = 0.025
+			    political_power_gain = 0.02
 				consumer_goods_factor = -0.125
-                stability_factor = -0.55
-				war_support_factor = -0.35
+                stability_factor = -0.3
+				war_support_factor = -0.25
                 research_speed_factor = -0.075
                 drift_defence_factor = 0.5 
   			    conscription_factor = -0.6
@@ -2256,13 +2268,13 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
-			    political_power_gain = 0.025
+			    political_power_gain = 0.3
 				consumer_goods_factor = -0.15
-                stability_factor = -0.65
+                stability_factor = 0.2
 				war_support_factor = -0.35
                 research_speed_factor = -0.1
-                drift_defence_factor = 0.6 
-  			    conscription_factor = -0.65
+                drift_defence_factor = 0.9 
+  			    conscription_factor = -0.40
                 conscription = 0.05
                 army_attack_factor = 0.075
                 production_speed_buildings_factor = 0.075
@@ -2285,8 +2297,8 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
-				encryption_factor = -0.4
-				decryption_factor = -0.4
+				encryption_factor = -0.2
+				decryption_factor = -0.2
 				agency_upgrade_time = 0.15
 			}
 		}
@@ -2305,6 +2317,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
+			    stability_factor = 0.2
 				consumer_goods_factor = 0.02
 				industrial_capacity_factory = 0.025
 				production_speed_buildings_factor = -0.1
@@ -2350,6 +2363,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 
 			modifier = {
+			    stability_factor = 0.1
 				consumer_goods_factor = -0.05
 				political_power_gain = -0.075
 				resistance_damage_to_garrison = -0.15                    				
@@ -2552,8 +2566,29 @@ ideas = {
 			modifier = {
 				org_loss_when_moving = -0.10
 				out_of_supply_factor = -0.20
-				winter_attrition_factor = 0.10
+				winter_attrition_factor = -0.10
 				supply_node_range = 0.25
+			}
+		}
+		POK_srednyaya_asia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+				org_loss_when_moving = -0.10
+				out_of_supply_factor = -0.10
+				heat_attrition_factor = -0.10
+				army_speed_factor = 0.1
 			}
 		}
     }
