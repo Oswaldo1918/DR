@@ -247,7 +247,7 @@ country_event = { #Финальные_приготовления
 			add_to_variable = { MRD_mordor_army_attack_factor = 0.2 }
 			add_to_variable = { MRD_mordor_army_land_night_attack = 0.2 }
 			add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.2 }
-			set_technology = { urki_assault_battalion = 1 popup = no }
+			set_technology = { MRD_urukhai_battalion_tech = 1 popup = no }
 			division_template = {
 				name = "Дивизия урок"
 				division_names_group = MRD_URK_01

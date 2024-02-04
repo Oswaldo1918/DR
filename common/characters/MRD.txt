@@ -91,7 +91,6 @@ characters = {
 			}
 			traits = {
 				blitzkrieg_theorist 
-				army_chief_maneuver_2
 			}
 		}
 		corps_commander = {
@@ -162,6 +161,7 @@ characters = {
 				large = GFX_portrait_MRD_Vlad_Makarov
 			}
 		}
+
 		corps_commander = {
 			traits = { brilliant_strategist media_personality  war_hero infantry_officer winter_specialist }
 			skill = 5
@@ -171,13 +171,13 @@ characters = {
 			logistics_skill = 5
 		}
 		advisor = {
-			slot = political_advisor
-			idea_token = MRD_idea_pendalf
+			slot = army_chief
+			idea_token = MRD_idea_Makarov
 			allowed  = {
 				original_tag = MRD
 			}
-			traits  = {
-				army_infantry_2 
+			traits = {
+				army_chief_drill_1
 			}
 		}
 	}
