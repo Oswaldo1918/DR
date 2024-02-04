@@ -1,0 +1,11 @@
+sub_units = {
+	
+	drozd = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = cas
+		need = { drozd_equipment_arch = 1 }
+		land_air_wing_size = 100
+	}
+}
