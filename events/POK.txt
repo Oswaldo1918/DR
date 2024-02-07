@@ -1396,7 +1396,7 @@ country_event = {
 	id = POK.42
         title = POK.42.t
         desc = POK.42.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1420,7 +1420,7 @@ country_event = {
 	id = POK.43
         title = POK.43.t
         desc = POK.43.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1434,7 +1434,7 @@ country_event = {
 	id = POK.44
         title = POK.44.t
         desc = POK.44.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1451,7 +1451,7 @@ country_event = {
 	id = POK.45
         title = POK.45.t
         desc = POK.45.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1491,7 +1491,7 @@ country_event = {
 	id = POK.46
         title = POK.46.t
         desc = POK.46.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1505,7 +1505,7 @@ country_event = {
 	id = POK.47
         title = POK.47.t
         desc = POK.47.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1522,7 +1522,7 @@ country_event = {
 	id = POK.48
         title = POK.48.t
         desc = POK.48.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1546,7 +1546,7 @@ country_event = {
 	id = POK.49
         title = POK.49.t
         desc = POK.49.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1560,7 +1560,7 @@ country_event = {
 	id = POK.50
         title = POK.50.t
         desc = POK.50.d
-	picture = GFX_report_event_ast_parliament_house
+	picture = GFX_report_event_dkr_solzh_golova
 
 	is_triggered_only = yes
 	
@@ -1570,5 +1570,62 @@ country_event = {
         type = annex_everything
         target = KOL
         }
+	}
+}
+country_event = { 
+	id = POK.51
+        title = POK.51.t
+        desc = POK.51.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.51.a
+		add_country_leader_role = { 
+			character = POK_psihocossack
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_PSIHOCOSSAK_DESC"     
+				ideology = democratura
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+	option = {
+		name = POK.51.b
+		trigger = { has_completed_focus = POK_old_svyazi }
+		add_country_leader_role = { 
+			character = POK_sharanskiy 
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_SHARANSKIY_DESC"     
+				ideology = democratura
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+	}
+	option = {
+		name = POK.51.c
+		add_political_power = -100
+		add_stability = 0.1
+	}
+}
+country_event = { 
+	id = POK.52
+        title = POK.52.t
+        desc = POK.52.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.52.a
 	}
 }

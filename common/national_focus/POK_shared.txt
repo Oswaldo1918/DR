@@ -1051,6 +1051,7 @@ country_event = POK.34
                 ideology = democratic
                 popularity = 0.5
             }
+			country_event = { id = POK.52 }
 		}    
 	}
 	shared_focus = {
@@ -2780,6 +2781,9 @@ set_cosmetic_tag = POK_fed
 		prerequisite = {
 			focus = POK_usilit_administr_presidenta
 		}
+		prerequisite = {
+			focus = POK_pokayansky_equilibrium
+		}
 		x = 2
 		y = 20
         completion_reward = {
@@ -2840,7 +2844,9 @@ set_cosmetic_tag = POK_fed
 		}
 		x = 1
 		y = 22
-
+completion_reward = {
+					country_event = { id = POK.51 }
+				}
 	}
 	shared_focus = {
 		id = POK_parad_suverenitetov
