@@ -1639,6 +1639,20 @@ country_event = {
 	
 	option = {
 		name = POK.53.a
+		set_technology = { advanced_ship_hull_submarine = 1 }
+	    create_equipment_variant = {
+	    	name = "Китеж-Град"
+    		type = ship_hull_submarine_4
+    		name_group = GER_SS_HISTORICAL
+    		parent_version = 0
+    		modules = {
+    			fixed_ship_torpedo_slot = ship_torpedo_sub_4
+    			fixed_ship_engine_slot = sub_ship_engine_4
+    			rear_1_custom_slot = ship_torpedo_sub_4
+				mid_1_custom_slot = ship_radar_4
+				front_1_custom_slot = ship_torpedo_sub_4
+    		}
+    	}	
 	}
 }
 country_event = { 
