@@ -1307,6 +1307,7 @@ country_event = POK.30
                 ideology = democratic
                 popularity = 0.1
             }
+			country_event = { id = POK.54 }
 		}    	
 	}
 	
@@ -2381,8 +2382,30 @@ country_event = { id = POK.36 }
 		}
 		x = 32
 		y = 16
+		available = {
+			not = { has_completed_focus = POK_monarch_referendum }
+		}
 		completion_reward = {   
-			add_ideas = POK_Slovolzhicen_puppet_president
+		name = POK.57.a
+		if = {
+		limit = {
+					 has_completed_focus = POK_ally_evrosocdems
+				}
+				 add_ideas = POK_Iavlinskiy1
+		}
+		if = {
+		limit = {
+					 has_completed_focus = POK_libdem_purity
+				}
+				 add_ideas = POK_Slovolzhicen_puppet_president
+		}
+		if = {
+		limit = {
+					 has_completed_focus = POK_ally_loyal_monarchists
+				}
+				 add_ideas = POK_Krilov1
+		}
+	
 			add_power_balance_value = {
     id = POK_prepar_balance 
     value = -0.05
@@ -2526,6 +2549,7 @@ country_event = { id = POK.36 }
 		y = 22
         completion_reward = {
 			add_country_leader_trait = first_and_eternal
+			country_event = { id = POK.53 }
         }      
 	}
 	shared_focus = {
@@ -3825,9 +3849,11 @@ completion_reward = {
 		y = 14
 available = {
 			has_war = no
+			not = { has_completed_focus = POK_puppet_president }
 		}
 		completion_reward = {
-		
+		country_event = { id = POK.55 }
+				
 		}
 	}
 	shared_focus = {

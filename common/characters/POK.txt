@@ -830,7 +830,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				
+				prince_of_terror
 			}
 		}
         corps_commander = {
@@ -868,7 +868,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				
+				prince_of_terror
 			}
 		}       		
 	}
@@ -903,7 +903,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = "GFX_idea_POK_Yavlinskiy"
+				small = "GFX_idea_POK_Iavlinskiy"
 			}
 		}
 		advisor={
@@ -918,6 +918,7 @@ characters={
 			}
 			visible = {		
 			has_completed_focus = POK_ally_evrosocdems
+			not = { has_idea = POK_Iavlinskiy1 }
 		    }
 			traits = {
 				political_trup
@@ -973,7 +974,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				
+				prince_of_terror
 			}
 		}       		
 	}
@@ -1003,7 +1004,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				
+				prince_of_terror
 			}
 		}   
 
@@ -1083,6 +1084,7 @@ characters={
 			}
 			visible = {		
 			has_completed_focus = POK_ally_loyal_monarchists
+			not = { has_idea = POK_baron_sibirskiy }
 		    }
 			traits = {
 				baron_sibir
@@ -1109,6 +1111,7 @@ characters={
 			}
 			visible = {		
 			has_completed_focus = POK_ally_loyal_monarchists
+			not = { has_idea = POK_Krilov1 }
 		    }
 			traits = {
 				DEN_rightwing_populist

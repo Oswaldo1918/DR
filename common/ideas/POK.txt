@@ -2381,11 +2381,71 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_victors_of_ww1
+			picture = idea_POK_Slovolzhicen_puppet_president
 
 			modifier = {
 				stability_factor = 0.05
 				political_power_gain = 0.075                  				
+			}
+		}
+		POK_baron_sibirskiy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POK_Lebedev
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05 			
+			}
+		}
+		POK_Iavlinskiy1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_POK_Iavlinskiy
+
+			modifier = {
+				stability_factor = 0.02 	
+                army_morale_factor = 0.02
+		        political_power_factor = -0.08
+		        democratic_drift = 0.01 				
+			}
+		}
+		POK_Krilov1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_POK_Krilov
+
+			modifier = {
+		    party_popularity_stability_factor = 0.1
+		    war_support_factor = 0.05
+		    conscription = 0.015			
 			}
 		}
 		POK_sherifs = {
@@ -2589,6 +2649,62 @@ ideas = {
 				out_of_supply_factor = -0.10
 				heat_attrition_factor = -0.10
 				army_speed_factor = 0.1
+			}
+		}
+		
+		POK_brirus = {
+			
+			allowed = {
+				always = no
+				UKE = exist
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+			    local_resources_factor = 0.3
+                consumer_goods_factor = 0.02
+				min_export = 0.05
+                research_speed_factor = 0.01
+                monthly_population = 0.01
+				license_purchase_cost_factor = 0.5
+				experience_gain_navy_factor = 0.01
+				experience_gain_army_factor = 0.01
+				experience_gain_air_factor = 0.01
+			}
+		}
+		
+		POK_brirus1 = {
+			
+			allowed = {
+				always = no
+				POK = exist
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = Metastazy_sovka
+			
+			modifier = {
+                consumer_goods_factor = 0.05
+                research_speed_factor = 0.01
+                monthly_population = 0.01
+				send_volunteer_factor = 0.3
+				send_volunteer_size = 5
+				base_fuel_gain_factor = 0.5
+				experience_gain_navy_factor = 0.01
+				experience_gain_army_factor = 0.01
+				experience_gain_air_factor = 0.01
 			}
 		}
     }

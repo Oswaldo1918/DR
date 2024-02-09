@@ -1629,3 +1629,82 @@ country_event = {
 		name = POK.52.a
 	}
 }
+country_event = { 
+	id = POK.53
+        title = POK.53.t
+        desc = POK.53.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.53.a
+	}
+}
+country_event = { 
+	id = POK.54
+        title = POK.54.t
+        desc = POK.54.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.54.a
+	}
+}
+#Монархический референдум
+country_event = { 
+	id = POK.55
+        title = POK.55.t
+        desc = POK.55.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.55.a
+		add_ideas = POK_baron_sibirskiy
+	    set_cosmetic_tag = POK_mon
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		hidden_effect = {
+		if = {
+		limit = {
+					 ENG = exists
+					
+				}
+				 POK = {country_event = POK.56}
+		}
+		}
+	}
+	option = {
+		name = POK.55.b
+		add_popularity = { ideology = democratic popularity = 0.1 }
+	}
+}
+country_event = { 
+	id = POK.56
+        title = POK.56.t
+        desc = POK.56.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.56.a
+		add_equipment_to_stockpile = {
+        type = infantry_equipment_1
+        amount = 500
+		producer = ENG
+
+    }
+		if = {
+		limit = {
+					 ENG = exists
+					
+				}
+				add_ideas = POK_brirus
+				ENG = {add_ideas = POK_brirus1}
+		}
+	}
+}
