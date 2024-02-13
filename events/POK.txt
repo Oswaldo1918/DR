@@ -1582,6 +1582,241 @@ country_event = {
 				}
 				custom_effect_tooltip = POK_BAZIM_KAZ_tt
 			}
+			if = {
+				limit = {
+					NOT = { SKT = exists } 
+			POK = {
+			owns_state = 262
+			owns_state = 397
+			owns_state = 581 
+			}
+				}
+				SKT = {
+		    set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		transfer_state = 262
+		transfer_state = 397
+		transfer_state = 581
+		}
+			}
+		if = {
+				limit = {
+					NOT = { BRT = exists } 
+					POK = {
+			owns_state = 563
+			owns_state = 564
+			owns_state = 565
+			owns_state = 566
+			}
+				}
+				BRT = {
+		transfer_state = 564
+		transfer_state = 566
+		transfer_state = 563
+		transfer_state = 565
+		}
+			}
+if = {
+				limit = {
+					NOT = { YAK = exists } 
+					POK = {
+			owns_state = 574
+			owns_state = 876
+			owns_state = 877
+			owns_state = 644
+			}
+				}
+				YAK = {
+		    transfer_state = 574
+			transfer_state = 876
+			transfer_state = 877
+			transfer_state = 644
+		}
+			}
+if = {
+				limit = {
+					NOT = { KOL = exists } 
+					POK = {
+owns_state = 822
+			}
+				}
+				KOL = {
+		    transfer_state = 822
+		}
+			}
+if = {
+				limit = {
+					NOT = { HAZ = exists } 
+					POK = {
+owns_state = 237
+			}
+				}
+			HAZ = {
+			set_politics = { ruling_party = democratic elections_allowed = no }
+		    transfer_state = 237
+			set_cosmetic_tag = HAZ_kalmyk
+		}
+			}				
+if = {
+				limit = {
+					NOT = { KAZ = exists } 
+					POK = {
+owns_state = 407
+			owns_state = 406
+			owns_state = 402
+			owns_state = 587
+			owns_state = 404
+			owns_state = 881
+			owns_state = 589
+			owns_state = 586
+			owns_state = 583
+			owns_state = 590
+			owns_state = 882
+			owns_state = 588
+			}
+				}
+				KAZ = { 
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		    transfer_state = 407
+			transfer_state = 406
+			transfer_state = 402
+			transfer_state = 587
+			transfer_state = 404
+			transfer_state = 881
+			transfer_state = 589
+			transfer_state = 586
+			transfer_state = 583
+			transfer_state = 590
+			transfer_state = 882
+			transfer_state = 588
+			}
+			}
+if = {
+				limit = {
+					NOT = { KYR = exists } 
+					POK = {
+owns_state = 732 
+			}
+				}
+				KYR = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		transfer_state = 732 
+		}
+			}
+if = {
+				limit = {
+					NOT = { TMS = exists } 
+					POK = {
+owns_state = 832
+			owns_state = 584
+			}
+				}
+				TMS = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+		transfer_state = 832
+		transfer_state = 584
+		}
+			}
+if = {
+				limit = {
+					NOT = { TAJ = exists } 
+					POK = {
+owns_state = 823
+			owns_state = 832
+			owns_state = 585
+			owns_state = 830
+			owns_state = 405
+			owns_state = 742
+			}
+				}
+				TAJ = {
+		set_politics = { ruling_party = democratic elections_allowed = no }
+            transfer_state = 823
+			transfer_state = 832
+			transfer_state = 585
+			transfer_state = 830
+			transfer_state = 405
+			transfer_state = 742
+			}
+			}
+if = {
+				limit = {
+					NOT = { CHK = exists } 
+					POK = {
+owns_state = 821
+			owns_state = 232
+			owns_state = 233
+			owns_state = 827
+			owns_state = 828
+			}
+				}
+				CHK = {
+			transfer_state = 821
+			transfer_state = 232
+			transfer_state = 233
+			transfer_state = 827
+			transfer_state = 828
+            add_state_core = 821
+            add_state_core = 232
+            add_state_core = 233
+			add_state_core = 827
+			add_state_core = 828
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_cosmetic_tag = CHK_pok
+		 }
+			}
+if = {
+				limit = {
+					NOT = { GEO = exists } 
+					POK = {
+owns_state = 826
+			owns_state = 231
+			}
+				}
+				GEO = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			transfer_state = 826
+			transfer_state = 231
+		}
+			}
+if = {
+				limit = {
+					NOT = { ARM = exists } 
+					POK = {
+owns_state = 230
+			}
+				}
+				ARM = {
+		transfer_state = 230
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
+			}
+if = {
+				limit = {
+					NOT = { AZR = exists } 
+					POK = {
+owns_state = 229
+			}
+				}
+				AZR = {
+		transfer_state = 229
+		set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		 }
+			}			
 	}
 }
 #Кац Базит
