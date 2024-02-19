@@ -581,6 +581,115 @@ country_event = {
 	}      	
 }
 
+#Думы Гоги1
+country_event = {
+	id = YSK.20
+	title = YSK.20.t
+	desc = YSK.20.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.20.a
+        add_stability = 0.01		
+	}
+    option = {
+	    name = YSK.20.b       
+        hidden_effect = {
+		    country_event = {
+                id = YSK.21
+                days = 3
+            }
+		} 
+	}      	
+}
+
+#Думы Гоги2
+country_event = {
+	id = YSK.21
+	title = YSK.21.t
+	desc = YSK.21.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.21.a
+        		
+	}
+    option = {
+	    name = YSK.21.b       
+        hidden_effect = {
+		    country_event = {
+                id = YSK.22
+                days = 3
+            }
+		} 
+	}      	
+}
+
+#Думы Гоги3
+country_event = {
+	id = YSK.22
+	title = YSK.22.t
+	desc = YSK.22.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.22.a
+        add_stability = 0.01		
+	}
+    option = {
+	    name = YSK.22.b       
+        hidden_effect = {
+		    set_country_flag = Red_Goga
+		} 
+	}      	
+}
+#Выбор монарха
+country_event = {
+	id = YSK.23
+	title = YSK.23.t
+	desc = YSK.23.d
+	picture = GFX_report_event_dkr_business_tesak
+
+	is_triggered_only = yes	
+	
+	option = {
+	    name = YSK.23.a
+        add_country_leader_role = {
+            character = YSK_Maria_Romanova
+            promote_leader = yes
+            country_leader = {
+                ideology = oligarchism
+                expire = "1965.1.1.1"
+                traits = {  }
+            }
+        }		
+	}
+    option = {
+	    name = YSK.23.b
+		add_country_leader_role = {
+            character = YSK_Goga_Romanov
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+                expire = "1965.1.1.1"
+                traits = { lieutenant_of_industry }
+            }
+        }
+		hidden_effect = {
+		    country_event = {
+                id = YSK.20
+                days = 3
+            }
+		}
+	}      	
+}
+
 #
 country_event = {
 	id = YSK.555
