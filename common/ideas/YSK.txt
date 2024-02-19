@@ -2141,7 +2141,7 @@ ideas = {
 				industry_repair_factor = 0.05
 			    }
 		    }
-			YSK_new_rus_nation = {
+			YSK_new_rus_nation_c = {
 
 			    picture = YSK_perestroyka_gos_machine
 			
@@ -2202,6 +2202,299 @@ ideas = {
 				cavalry_attack_factor = 0.05
 				cavalry_defence_factor = 0.05
 				org_loss_when_moving = -0.075
+			    }
+		    }
+			YSK_kollectiv_samoderzhavie = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				war_support_factor = -0.025
+				party_popularity_stability_factor = 0.1
+				political_power_factor = -0.05
+				political_advisor_cost_factor = -0.15
+			    }
+		    }
+			YSK_vsya_vlast_tsary = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.025
+				war_support_factor = 0.075
+				party_popularity_stability_factor = -0.025
+				political_power_factor = 0.075
+				max_command_power = 25
+			    }
+		    }
+			YSK_zemhozi_i_tsarhozi = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.015
+				monthly_population = 0.05
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				production_speed_buildings_factor = 0.025
+			    }
+		    }
+			YSK_zemhozi_i_tsarhozi_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = -0.03
+				monthly_population = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				conscription_factor = -0.1
+				stability_factor = -0.05
+			    }
+		    }
+			YSK_zemhozi_i_tsarhozi_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			    equipment_bonus = {
+				    motorized_equipment = {
+					    build_cost_ic = -0.1				
+					    instant = yes
+				    }
+			    }     
+			    modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.015
+				production_factory_max_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+				production_speed_buildings_factor = 0.075
+				conscription_factor = -0.1
+				stability_factor = -0.05
+				army_attack_speed_factor = 0.05
+			    }
+		    }
+			YSK_vseobshee_prosvezhenie = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				consumer_goods_factor = 0.03
+				research_speed_factor = 0.075
+			    }
+		    }
+			YSK_rev_strazha = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.1
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				army_org_factor = 0.025
+			    }
+		    }
+			YSK_rev_strazha_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				operative_slot = 2
+				agency_upgrade_time = -0.15
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+				army_org_factor = 0.025
+				army_morale_factor = 0.025
+			    }
+		    }
+			YSK_red_rpts = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				consumer_goods_factor = 0.02
+				army_morale_factor = 0.075
+				political_power_gain = 0.05
+			    }
+		    }
+			YSK_red_rpts_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				war_support_factor = 0.075
+				consumer_goods_factor = 0.02
+				army_morale_factor = 0.075
+				political_power_gain = 0.05
+				army_attack_factor = 0.05
+				org_loss_when_moving = -0.15
+			    }
+		    }
+			YSK_pop_i_komissar = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				operative_slot = 3
+				agency_upgrade_time = -0.2
+				encryption_factor = 0.15
+				decryption_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = 0.04
+				army_morale_factor = 0.075
+				political_power_gain = 0.075
+				army_attack_factor = 0.075
+				org_loss_when_moving = -0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			    }
+		    }
+			YSK_social_monarhy = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.02
+				political_power_gain = 0.025
+				metacommy_drift = 0.01
+			    }
+		    }
+			YSK_social_monarhy_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.03
+				political_power_gain = 0.05
+				metacommy_drift = 0.02
+				production_factory_efficiency_gain_factor = 0.02
+				production_factory_start_efficiency_factor = 0.02
+				conscription_factor = 0.05
+			    }
+		    }
+			YSK_social_monarhy_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				consumer_goods_factor = 0.03
+				political_power_gain = 0.05
+				metacommy_drift = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				conscription_factor = 0.05
+			    }
+		    }
+			YSK_new_empire_people = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				war_support_factor = 0.075
+				army_attack_factor = 0.025
+				conscription_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+			    }
+		    }
+			YSK_new_empire_people_1 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				army_attack_factor = 0.025
+				conscription_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+				non_core_manpower = 0.05				
+			    }
+		    }
+			YSK_new_empire_people_2 = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				war_support_factor = 0.125
+				stability_factor = -0.05
+				army_attack_factor = 0.05
+				conscription_factor = 0.05
+				conscription = 0.02
+				production_factory_max_efficiency_factor = 0.025
+				non_core_manpower = -0.05
+			    }
+		    }
+			YSK_samoderzhavie = {
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.025
+				war_support_factor = 0.075
+				party_popularity_stability_factor = -0.025
+				political_power_factor = 0.075
+				max_command_power = 25
+			    }
+		    }
+			YSK_constit = { 
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.075
+				war_support_factor = -0.025
+				party_popularity_stability_factor = 0.1
+				political_power_factor = -0.05
+				political_advisor_cost_factor = -0.15
+			    }
+		    }
+			YSK_new_empire = { 
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.025
+				war_support_factor = 0.05
+				justify_war_goal_time = -0.075
+				army_attack_factor = 0.05
+				army_defence_factor = -0.075
+				army_org_factor = 0.025
+				army_morale_factor = 0.025
+				consumer_goods_factor = -0.03
+			    }
+		    }
+			YSK_gold_vek_dvoryanstva = { 
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = -0.025
+				war_support_factor = -0.075
+				enemy_justify_war_goal_time = 0.15 
+				army_org_factor = 0.025
+				army_core_defence_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.05
+			    }
+		    }
+			YSK_My_Empire = { 
+
+			    picture = YSK_perestroyka_gos_machine
+			
+			    modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.075
+				political_power_gain = 0.075
 			    }
 		    }
 	    }		
