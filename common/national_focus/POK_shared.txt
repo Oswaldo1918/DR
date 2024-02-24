@@ -1348,6 +1348,18 @@ country_event = POK.30
 		}
 			completion_reward = {
 add_political_power = -100
+		add_country_leader_role = { 
+			character = POK_NOVOD
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_NOVOD_DESC"     
+				ideology = democratura
+				expire = "1965.1.1.1"
+				traits = {
+					Otec_russkoy_democracy
+				}
+			}
+		}
 }
 
 	}
