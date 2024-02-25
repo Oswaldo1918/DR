@@ -954,6 +954,8 @@ country_event = { id = POK.23 }
 		completion_reward = {
             add_ideas = POK_law_of_Novodvorskava 	
 			country_event = { id = POK.28 }
+			add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
         }
 	}
 	shared_focus = {
@@ -1348,6 +1350,23 @@ country_event = POK.30
 		}
 			completion_reward = {
 add_political_power = -100
+if = {
+				limit = {
+					check_variable = { demshiza > 24 }
+				}
+add_country_leader_role = { 
+			character = POK_NOVOD
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_NOVOD_DESC"     
+				ideology = democratura
+				expire = "1965.1.1.1"
+				traits = {
+					Otec_russkoy_democracy
+				}
+			}
+		}
+			}
 		add_country_leader_role = { 
 			character = POK_NOVOD
 			promote_leader = yes
@@ -2735,25 +2754,27 @@ set_cosmetic_tag = POK_fed
         completion_reward = {
 		    add_popularity = {
                 ideology = vmestolev
-                popularity = -0.075
+                popularity = -0.1
             }
 			add_popularity = {
                 ideology = anarhostalinism
-                popularity = -0.075
+                popularity = -0.1
             }
 			add_popularity = {
                 ideology = metacommy
-                popularity = -0.075
+                popularity = -0.1
             }
 			add_popularity = {
                 ideology = fascism
-                popularity = 0.075
+                popularity = 0.1
             }
 			add_stability = -0.1   
 			swap_ideas = {
 				remove_idea = POK_radical_decommunisation
 				add_idea = POK_radical_decommunisation_1
 			}
+			add_to_variable = { demshiza = 2 }
+            custom_effect_tooltip = POK_demshiza2_tt
 		}       
 	}
 	shared_focus = {
@@ -3570,6 +3591,8 @@ completion_reward = {
 			retire_character = POK_Marin_FF
 			retire_character = POK_Teresa
 			}
+			add_to_variable = { demshiza = 1 }
+            custom_effect_tooltip = POK_demshiza1_tt
 		}    
 	}
 	shared_focus = {
@@ -3613,6 +3636,8 @@ completion_reward = {
                 popularity = -0.075
             }
 			add_stability = -0.1
+			add_to_variable = { demshiza = 3 }
+custom_effect_tooltip = POK_demshiza3_tt
 		}        
 	}
 	shared_focus = {
@@ -4227,7 +4252,9 @@ completion_reward = {
 				}
             }
 			}
-		}   
+			add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
+		}
 	}
 	shared_focus = {
 		id = POK_proshay_nemitaya_rossiya
@@ -4267,6 +4294,8 @@ completion_reward = {
 				remove_idea = POK_law_of_Novodvorskava
 				add_idea = POK_law_of_Novodvorskava_4
 			}
+			add_to_variable = { demshiza = 2 }
+custom_effect_tooltip = POK_demshiza2_tt
 		}      
 	}
 	shared_focus = {
@@ -4299,6 +4328,8 @@ completion_reward = {
 				remove_idea = POK_radical_decommunisation_1
 				add_idea = POK_radical_decommunisation_2
 			}
+			add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
 		}   
 	}
 	shared_focus = {
@@ -4332,6 +4363,8 @@ completion_reward = {
 				remove_idea = POK_radical_decommunisation_2
 				add_idea = POK_radical_decommunisation_3
 			}
+			add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
 		}    
 	}
 	shared_focus = {
@@ -4374,6 +4407,8 @@ completion_reward = {
 				remove_idea = POK_law_of_Novodvorskava_4
 				add_idea = POK_law_of_Novodvorskava_5
 			}
+			add_to_variable = { demshiza = 2 }
+custom_effect_tooltip = POK_demshiza2_tt
 		}     
 	}
 	shared_focus = {
@@ -4385,11 +4420,13 @@ completion_reward = {
 		}
 		x = 31
 		y = 19
-        completion_reward = {   
+        completion_reward = {		
 			swap_ideas = {
 				remove_idea = POK_law_of_Novodvorskava_5
 				add_idea = POK_law_of_Novodvorskava_6
 			}
+			add_to_variable = { demshiza = 2 }
+custom_effect_tooltip = POK_demshiza2_tt
 		}      
 	}
 	shared_focus = {
@@ -4412,6 +4449,8 @@ completion_reward = {
 				}
 				}
                 custom_effect_tooltip = kamikaze_focus_tooltip
+				add_to_variable = { demshiza = 2 }
+custom_effect_tooltip = POK_demshiza2_tt
 		}    
 	}
 	shared_focus = {

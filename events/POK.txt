@@ -1477,6 +1477,8 @@ country_event = {
 	name = POK.38.a
 	add_political_power = 100
 	add_stability = 0.05
+	add_to_variable = { demshiza = 3 }
+custom_effect_tooltip = POK_demshiza3_tt
 	}
 	option = {
 	name = POK.38.b
