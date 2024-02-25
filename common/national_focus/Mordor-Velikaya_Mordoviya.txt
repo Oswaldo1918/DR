@@ -13,7 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 1500 y = 100 }
 	
 	default = no 
-	#Подготовка_к_гражданской_войне_в_Покаянии
+	###Подготовка_к_гражданской_войне_в_Покаянии
 	focus = {
 		id = MRD_logovo_saurona
 		icon = GFX_MRD_goal_logovo_saurona
@@ -401,7 +401,8 @@ focus_tree = {
 			custom_effect_tooltip = MRD_ozhidaniye_razvala_tt
 		}
 	}
-	focus = { #Интервенция_в_гражданскую_войну
+	###Интервенция_в_гражданскую_войну
+	focus = {
 		id = MRD_poneslas_mocha_po_trubam
 		icon = GFX_MRD_goal_poneslas_mocha_po_trubam
 		cost = 5,00
@@ -644,7 +645,8 @@ focus_tree = {
 			}			
 		}
 	}
-	focus = { #Победа_в_гражданской_войне
+	###Победа_в_гражданской_войне
+	focus = { 
 		id = MRD_perdviy_platsdarm_vzyat
 		icon = GFX_MRD_goal_I_eto_tolko_nachalo
 		cost = 1,00
@@ -703,9 +705,9 @@ focus_tree = {
 			add_state_core = 582
 		}	
 	}
-	#Военная_ветка
+	###Военная_ветка
 	focus = {
-		id = MRD_armeyskayа_reforma
+		id = MRD_armeyskaya_reforma
 		icon = GFX_sovarmy1
 		cost = 5,00
 		prerequisite = {
@@ -717,7 +719,7 @@ focus_tree = {
 			country_event = mordor.17
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			hidden_effect = {
@@ -731,9 +733,9 @@ focus_tree = {
 	focus = {
 		id = MRD_morpekhi_na_zebrah
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_armeyskayа_reforma
+			focus = MRD_armeyskaya_reforma
 		}
 		x = 1
 		y = 12
@@ -771,9 +773,9 @@ focus_tree = {
 	focus = {
 		id = MRD_zastavit_urok_derzhat_udar_na_solntse
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_armeyskayа_reforma
+			focus = MRD_armeyskaya_reforma
 		}
 		x = 4
 		y = 12
@@ -793,9 +795,9 @@ focus_tree = {
 	focus = {
 		id = MRD_sovetskoye_naslediye
 		icon = GFX_sovmission
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_armeyskayа_reforma
+			focus = MRD_armeyskaya_reforma
 		}
 		x = 6
 		y = 12
@@ -810,7 +812,7 @@ focus_tree = {
 	focus = {
 		id = MRD_krasnogvardeyskiye_soedineniya
 		icon = GFX_focus_cht_rabochaya_guard
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_zastavit_urok_derzhat_udar_na_solntse
 		}
@@ -835,7 +837,7 @@ focus_tree = {
 	focus = {
 		id = MRD_traditsii_otryada_731
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_himprom
 		}
@@ -843,33 +845,23 @@ focus_tree = {
 			focus = MRD_modern_doktrina
 		}
 		x = 4
-		y = 14
+		y = 15
 		completion_reward = {
+			add_research_slot = 1
 			hidden_effect = {
 				add_to_variable = { MRD_mordor_army_attack_factor = 0.15 }
 				add_to_variable = { MRD_weekly_manpower = -100 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
 			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 			custom_effect_tooltip = MRD_1_mordor_army_attack_factor_tt
 			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
 		}
 	}
 	focus = {
-		id = MRD_voennaya_akademiya
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_traditsii_otryada_731
-		}
-		x = 4
-		y = 15
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
 		id = MRD_modern_doktrina
 		icon = GFX_focus_cht_razdacha_zemli
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_morpekhi_na_zebrah
 		}
@@ -886,7 +878,7 @@ focus_tree = {
 	focus = {
 		id = MRD_tankoviye_klinya
 		icon = GFX_goal_OBT
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_modern_doktrina
 		}
@@ -906,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = MRD_opit_lufdvaffe
 		icon = GFX_Stuka
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_sovetskoye_naslediye
 		}
@@ -924,22 +916,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MRD_peresadit_nazgulov_na_reaktivy
-		icon = 
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_avaprom
-		}
-		x = 9
-		y = 16
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = MRD_kovroviye_bombardirovki
 		icon = GFX_goal_Linebacker
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_krasnogvardeyskiye_soedineniya
 		}
@@ -951,7 +930,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.75
-				uses = 1
+				uses = 2
 				category = heavy_air
 			}	
 		}
@@ -959,7 +938,7 @@ focus_tree = {
 	focus = {
 		id = MRD_proyekt_grib_saurona
 		icon = GFX_focus_wonderweapons
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_tankoviye_klinya
 		}
@@ -969,6 +948,7 @@ focus_tree = {
 		x = 4
 		y = 17
 		completion_reward = {
+			country_event = mordor.19
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 1
@@ -983,9 +963,26 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = MRD_peresadit_nazgulov_na_reaktivy
+		icon = GFX_MRD_goal_peresadit_nazgulov_na_reaktivy
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_avaprom
+		}
+		x = 9
+		y = 16
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}			
+		}
+	}
+	focus = {
 		id = MRD_razrabotka_raket
-		icon = GFX_focus_wonderweapons
-		cost = 10,00
+		icon = GFX_focus_rocketry
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_kovroviye_bombardirovki
 		}
@@ -996,9 +993,8 @@ focus_tree = {
 		y = 17
 		completion_reward = {
 			add_tech_bonus = {
-				name = nuclear_bonus
 				bonus = 1.0
-				uses = 4
+				uses = 2
 				category = rocketry
 			}
 		}
@@ -1007,865 +1003,1195 @@ focus_tree = {
 	focus = {
 		id = MRD_prodolzhit_tisyacheletniy_plan
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_perdviy_platsdarm_vzyat
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
 		x = 14
 		y = 11
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_production_speed_buildings_factor = 0.2 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_3_production_speed_buildings_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
+	#Металлургия_и_химпром
 	focus = {
 		id = MRD_razvitiye_metallurgii
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
 		x = 10
 		y = 12
 		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_oruzheyka
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		prerequisite = {
-			focus = MRD_razvitiye_metallurgii
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 15
-		y = 13
-		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			569 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+			653 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
 		}
 	}
 	focus = {
 		id = MRD_himprom
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_ugol_kuzbassa
+		}
 		prerequisite = {
 			focus = MRD_razvitiye_metallurgii
 		}
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
+		available = {
+			has_tech = synth_oil_experiments
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
 		x = 11
-		y = 13
+		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_production_oil_factor = 0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_production_oil_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = MRD_razvitiye_stroitelnoy_otrasli
-		icon = GFX_goal_generic_construction
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 20
-		y = 12
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mashinostroyeniye
+		id = MRD_amluminiy
 		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_razvitiye_metallurgii
-		}
-		x = 18
-		y = 13
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mordovskaya_electronica
-		icon = GFX_Computer_2
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_modernizatsiya_TES
-		}
-		prerequisite = {
-			focus = MRD_modennizatsiya_energosetei
-		}
-		x = 22
-		y = 16
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_novaya_hata
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_finansoviy_rezerv
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 32
-		y = 15
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_avaprom
-		icon = GFX_focus_generic_aircraft_production
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_himprom
-		}
-		x = 8
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_vzrintnoyae_delo
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_dop_osnascheniye
-		}
-		prerequisite = {
-			focus = MRD_oruzheyka
-		}
-		prerequisite = {
-			focus = MRD_himprom
-		}
-		x = 13
-		y = 15
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_dop_osnascheniye
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_oruzheyka
-		}
-		x = 13
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_upor_na_tyazhprom
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_prodolzhit_tisyacheletniy_plan
-		}
-		x = 27
-		y = 12
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_globalnaya_industrializatsiya
-		icon = GFX_focus_SOV_merge_plants
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_vzrintnoyae_delo
-		}
-		prerequisite = {
-			focus = MRD_mordovskaya_bronya
-		}
-		x = 14
-		y = 16
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_upor_na_kachestvo
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_globalnaya_industrializatsiya
-		}
-		prerequisite = {
-			focus = MRD_oruzheyka
-		}
-		mutually_exclusive = {
-			focus = MRD_upor_na_kolichestvo
-		}
-		x = 20
-		y = 17
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_artzavod
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_oruzheyka
-		}
-		prerequisite = {
-			focus = MRD_mashinostroyeniye
-		}
-		x = 17
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_upor_na_kolichestvo
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_mordovskoye_krepostnoye_pravo
-		}
-		prerequisite = {
-			focus = MRD_artzavod
-		}
-		mutually_exclusive = {
-			focus = MRD_upor_na_kachestvo
-		}
-		x = 23
-		y = 17
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_noviye_rabi
-		icon = GFX_focus_cze_german_puppet
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 29
-		y = 13
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_kvalific_rabotniki
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_noviye_rabi
-		}
-		mutually_exclusive = {
-			focus = MRD_mordovskoye_krepostnoye_pravo
-		}
-		x = 30
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_vseobshee_obrazovaniye
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_kvalific_rabotniki
-		}
-		x = 30
-		y = 15
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mordovskie_turmi
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_mordovskoye_krepostnoye_pravo
-		}
-		x = 27
-		y = 17
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mordovskoye_krepostnoye_pravo
-		icon = GFX_focus_cht_zacryt_granyci
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_noviye_rabi
-		}
-		mutually_exclusive = {
-			focus = MRD_kvalific_rabotniki
-		}
-		x = 28
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mordovskiy_institut_upravleniya
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_upor_na_kolichestvo
-			focus = MRD_upor_na_kachestvo
-			focus = MRD_vseobshee_obrazovaniye
-			focus = MRD_mordovskie_turmi
-		}
-		mutually_exclusive = {
-			focus = MRD_tekhnicheskiye_instituti
-		}
-		x = 25
-		y = 18
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_tekhnicheskiye_instituti
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_upor_na_kachestvo
-			focus = MRD_upor_na_kolichestvo
-		}
-		prerequisite = {
-			focus = MRD_globalnaya_industrializatsiya
-		}
-		prerequisite = {
-			focus = MRD_mordovskaya_electronica
-		}
-		mutually_exclusive = {
-			focus = MRD_mordovskiy_institut_upravleniya
-		}
-		x = 18
-		y = 18
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_metallokonttruktsii
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_baza_fundament
-		}
-		mutually_exclusive = {
-			focus = MRD_betonniye_konstruktsii
-		}
-		x = 31
-		y = 17
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_baza_fundament
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_novaya_hata
-		}
-		x = 32
-		y = 16
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_betonniye_konstruktsii
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_baza_fundament
-		}
-		mutually_exclusive = {
-			focus = MRD_metallokonttruktsii
-		}
-		x = 33
-		y = 17
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_mechi_na_orala
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_metallokonttruktsii
-		}
-		x = 29
-		y = 18
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_betonomeshalka_meshaet_beton
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_betonniye_konstruktsii
-		}
-		x = 33
-		y = 18
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_organizatsiye_steklozavodov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_metallokonttruktsii
-			focus = MRD_betonniye_konstruktsii
-		}
-		x = 31
-		y = 18
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_besplatnaya_razdacha_kolets_idiotam
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_proyekt_megakoltso
-		}
-		x = 48
-		y = 13
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_proyekt_megakoltso
-		icon = GFX_goal_supermegakoltso
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_tyomniye_dela_saurona
-		}
-		x = 47
-		y = 12
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_vopros_electroenergii
-		icon = GFX_focus_generic_tes
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 24
-		y = 13
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_lesa_sibiri
-		icon = GFX_focus_generic_wood
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_noviye_rabi
 		}
 		prerequisite = {
 			focus = MRD_vopros_electroenergii
 		}
-		x = 26
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 9
+		y = 13
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			569 = {
+				add_resource = {
+					type = aluminium
+					amount = 15
+				}
+			}
+			568 = {
+				add_resource = {
+					type = aluminium
+					amount = 45
+				}
+			}
+			567 = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+
+			if = {
+				limit = {
+					owns_state = 566
+				}
+				custom_effect_tooltip = MRD_bratsk_alluminium_uspeh_tt
+				566 = {	
+					add_resource = {
+						type = aluminium
+						amount = 10
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = MRD_bratsk_alluminium_ne_uspeh_tt
+			}
+		}
+	}
+	focus = {
+		id = MRD_avaprom
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_amluminiy
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 8
 		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Энергетика
+	focus = {
+		id = MRD_vopros_electroenergii
+		icon = GFX_focus_generic_tes
+		cost = 5,00
+		x = 13
+		y = 12
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = MRD_ugol_kuzbassa
 		icon = GFX_focus_generic_coal
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_noviye_rabi
-		}
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_vopros_electroenergii
 		}
-		x = 23
-		y = 14
-		completion_reward = {
-		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
-	}
-	focus = {
-		id = MRD_gryazeviye_yami
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_mordovskoye_krepostnoye_pravo
-		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
-		}
-		x = 27
-		y = 15
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_electrortkhnika
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
-		}
-		x = 21
+		x = 12
 		y = 13
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_production_oil_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_production_oil_factor_tt
 		}
 	}
 	focus = {
-		id = MRD_agregati_mashin
-		icon = GFX_goal_unknown
-		cost = 10,00
+		id = MRD_lesa_sibiri
+		icon = GFX_focus_generic_wood
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_razvitiye_stroitelnoy_otrasli
+			focus = MRD_vopros_electroenergii
 		}
-		prerequisite = {
-			focus = MRD_upor_na_tyazhprom
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
-		prerequisite = {
-			focus = MRD_mashinostroyeniye
-		}
-		x = 19
-		y = 14
+		x = 14
+		y = 13
 		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_modennizatsiya_energosetei
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_agregati_mashin
-		}
-		prerequisite = {
-			focus = MRD_electrortkhnika
-		}
-		x = 20
-		y = 15
-		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			516 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			576 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			575 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = MRD_modernizatsiya_TES
 		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_agregati_mashin
-		}
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_lesa_sibiri
 		}
 		prerequisite = {
 			focus = MRD_ugol_kuzbassa
 		}
-		x = 24
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 13
+		y = 14
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_global_building_slots_factor = 0.1 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_2_global_building_slots_factor_tt
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRD_modennizatsiya_energosetei
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_modernizatsiya_TES
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 13
 		y = 15
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_global_building_slots_factor = 0.1 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_2_global_building_slots_factor_tt
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = MRD_giga_projector
+		id = MRD_electrortkhnika
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_mordovskaya_electronica
+			focus = MRD_himprom
 		}
-		x = 26
-		y = 19
+		prerequisite = {
+			focus = MRD_modernizatsiya_TES
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 10
+		y = 15
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = electronics
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_production_speed_buildings_factor_tt
+			custom_effect_tooltip = MRD_2_industrial_capacity_factory_tt
+		}
+	}
+	#Строительство_и_машиностроение
+	focus = {
+		id = MRD_razvitiye_stroitelnoy_otrasli
+		icon = GFX_goal_generic_construction
+		cost = 5,00
+		x = 15
+		y = 12
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_2_production_speed_buildings_factor_tt
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = MRD_stroitelnaya_burokratiya
+		id = MRD_upor_na_tyazhprom
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
+		x = 17
+		y = 12
 		prerequisite = {
-			focus = MRD_mordovskiy_institut_upravleniya
+			focus = MRD_prodolzhit_tisyacheletniy_plan
 		}
-		x = 32
-		y = 19
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = MRD_inzhenerniy_progress
+		id = MRD_mashinostroyeniye
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_tekhnicheskiye_instituti
+			focus = MRD_upor_na_tyazhprom
 		}
-		x = 29
-		y = 19
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 17
+		y = 13
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = MRD_visoko_sizhu_daleko_glyazhu
-		icon = GFX_goal_unknown
-		cost = 10,00
+		id = MRD_oruzheyka
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_stroitelnaya_burokratiya
+			focus = MRD_razvitiye_stroitelnoy_otrasli
 		}
 		prerequisite = {
-			focus = MRD_inzhenerniy_progress
+			focus = MRD_mashinostroyeniye
 		}
-		prerequisite = {
-			focus = MRD_giga_projector
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
 		}
-		x = 30
-		y = 20
+		x = 16
+		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = MRD_mordovskaya_bronya
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
-			focus = MRD_dop_osnascheniye
+			focus = MRD_mashinostroyeniye
 		}
 		prerequisite = {
-			focus = MRD_agregati_mashin
+			focus = MRD_oruzheyka
 		}
-		x = 16
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 17
 		y = 15
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = armor
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
+	#Рабочая_сила
 	focus = {
-		id = MRD_tyomniye_dela_saurona
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_perdviy_platsdarm_vzyat
-		}
-		x = 44
-		y = 11
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_masshtabniye_diversii
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_proyekt_megakoltso
-		}
-		x = 46
-		y = 13
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_sponsorstvo_Ren_TV
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_tyomniye_dela_saurona
-		}
-		x = 42
+		id = MRD_noviye_rabi
+		icon = GFX_focus_cze_german_puppet
+		cost = 5,00
+		x = 21
 		y = 12
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_operatsiya_lohotron
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_tyomniye_dela_saurona
-		}
-		prerequisite = {
-			focus = MRD_masshtabniye_diversii
-		}
-		prerequisite = {
-			focus = MRD_besplatnaya_razdacha_kolets_idiotam
-		}
-		x = 45
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_byro_veskera
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_tyomniye_dela_saurona
-		}
-		x = 45
-		y = 12
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_dostavat_Doka
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_sponsorstvo_Ren_TV
-		}
-		prerequisite = {
-			focus = MRD_masshtabniye_diversii
-		}
-		prerequisite = {
-			focus = MRD_tyomniye_dela_saurona
-		}
-		x = 42
-		y = 14
-		completion_reward = {
-		
-		}
-	}
-##Источники_индустриализации
-	focus = {
-		id = MRD_finansoviye_istochniki
-		icon = GFX_MRD_goal_finansoviye_istochniki
-		cost = 10,00
 		prerequisite = {
 			focus = MRD_prodolzhit_tisyacheletniy_plan
 		}
-		x = 36
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_conscription_factor = -0.05 }
+				add_to_variable = { MRD_weekly_manpower = -150 }
+				add_to_variable = { MRD_stability_factor = 0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_h_conscription_factor_tt
+			custom_effect_tooltip = MRD_2_h_weekly_manpower_tt
+			custom_effect_tooltip = MRD_1_stability_factor_tt
+			add_manpower = -1000000
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	focus = {
+		id = MRD_kvalific_rabotniki
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_noviye_rabi
+		}
+		mutually_exclusive = {
+			focus = MRD_mordovskoye_krepostnoye_pravo
+		}
+		x = 19
+		y = 13
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_conscription_factor = -0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_h_conscription_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_vseobshee_obrazovaniye
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_kvalific_rabotniki
+		}
+		x = 19
+		y = 15
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_efficiency_gain_factor = 0.15 }
+				add_to_variable = { MRD_line_change_production_efficiency_factor = 0.15 }
+				add_to_variable = { MRD_production_factory_max_efficiency_factor = 0.10 }
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+				add_to_variable = { MRD_conscription_factor = -0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_3_production_factory_efficiency_gain_factor_tt
+			custom_effect_tooltip = MRD_3_line_change_production_efficiency_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_max_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_h_conscription_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_mordovskoye_krepostnoye_pravo
+		icon = GFX_focus_cht_zacryt_granyci
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_noviye_rabi
+		}
+		x = 21
+		y = 13
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_stability_factor = 0.15 }
+				add_to_variable = { MRD_war_support_factor = 0.15 }
+				add_to_variable = { MRD_conscription_factor = -0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.10 }
+			}
+			custom_effect_tooltip = MRD_2_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_war_support_factor_tt
+			custom_effect_tooltip = MRD_1_stability_factor_tt
+			custom_effect_tooltip = MRD_2_h_conscription_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_gryazeviye_yami
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_mordovskoye_krepostnoye_pravo
+		}
+		x = 21
+		y = 15
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = 1000 }
+				add_to_variable = { MRD_consumer_goods_factor = -0.10 }
+			}
+			custom_effect_tooltip = MRD_3_weekly_manpower_tt
+			custom_effect_tooltip = MRD_2_h_consumer_goods_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_mordovskie_turmi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		x = 20
+		y = 14
+		prerequisite = {
+			focus = MRD_kvalific_rabotniki
+			focus = MRD_mordovskoye_krepostnoye_pravo
+		}
+		mutually_exclusive = {
+			focus = MRD_vosstaniye_na_zonah
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = -100 }
+			}
+			custom_effect_tooltip = MRD_2_h_weekly_manpower_tt
+		}
+	}
+	focus = {
+		id = MRD_vosstaniye_na_zonah
+		icon = GFX_No_way
+		cost = 5,00
+		x = 23
+		y = 14
+		available = {
+			always = no
+		}	
+		mutually_exclusive = {
+			focus = MRD_mordovskie_turmi
+		}
+		completion_reward = {
+			custom_effect_tooltip = DON_noviye_fokusi_tt
+		}
+	}
+	#Завершающие_экономические_фокусы
+	focus = {
+		id = MRD_upor_na_kolichestvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_mordovskie_turmi
+		}
+		prerequisite = {
+			focus = MRD_gryazeviye_yami
+		}
+		prerequisite = {
+			focus = MRD_mordovskaya_bronya
+		}
+		mutually_exclusive = {
+			focus = MRD_upor_na_kachestvo
+		}
+		x = 20
+		y = 16
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_efficiency_gain_factor = -0.10 }
+				add_to_variable = { MRD_line_change_production_efficiency_factor = 0.10 }
+				add_to_variable = { MRD_production_factory_max_efficiency_factor = -0.05 }
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.10 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_h_production_factory_efficiency_gain_factor_tt
+			custom_effect_tooltip = MRD_2_line_change_production_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_h_production_factory_max_efficiency_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_start_efficiency_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_upor_na_kachestvo
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_electrortkhnika
+		}
+		prerequisite = {
+			focus = MRD_modennizatsiya_energosetei
+		}
+		prerequisite = {
+			focus = MRD_mordovskaya_bronya
+		}
+		prerequisite = {
+			focus = MRD_vseobshee_obrazovaniye
+		}
+		mutually_exclusive = {
+			focus = MRD_upor_na_kolichestvo
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 12
+		y = 16
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_efficiency_gain_factor = 0.10 }
+				add_to_variable = { MRD_line_change_production_efficiency_factor = -0.10 }
+				add_to_variable = { MRD_production_factory_max_efficiency_factor = 0.05 }
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = -0.10 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_efficiency_gain_factor_tt
+			custom_effect_tooltip = MRD_2_h_line_change_production_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_production_factory_max_efficiency_factor_tt
+			custom_effect_tooltip = MRD_2_h_production_factory_start_efficiency_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_globalnaya_industrializatsiya
+		icon = GFX_focus_SOV_merge_plants
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_upor_na_kachestvo
+			focus = MRD_upor_na_kolichestvo
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = MRD_nagruzka_economiki_tt
+				check_variable = {
+					var = MRD_consumer_goods_factor
+					value = 0.4
+					compare = less_than
+				}
+			}
+		}
+		x = 16
+		y = 17
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_production_factory_efficiency_gain_factor = 0.15 }
+				add_to_variable = { MRD_line_change_production_efficiency_factor = 0.15 }
+				add_to_variable = { MRD_production_factory_max_efficiency_factor = 0.10 }
+				add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+				add_to_variable = { MRD_conscription_factor = -0.05 }
+				add_to_variable = { MRD_consumer_goods_factor = 0.1 }
+			}
+			custom_effect_tooltip = MRD_2_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_3_production_factory_efficiency_gain_factor_tt
+			custom_effect_tooltip = MRD_3_line_change_production_efficiency_factor_tt
+			custom_effect_tooltip = MRD_2_production_factory_max_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_h_conscription_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	###Финансовые_источники
+	focus = {
+		id = MRD_finansoviye_istochniki
+		icon = GFX_MRD_goal_finansoviye_istochniki
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_prodolzhit_tisyacheletniy_plan
+		}
+		x = 28
 		y = 12
 		completion_reward = {
-		
+			country_event = mordor.26
 		}
 	}
 	focus = {
 		id = MRD_totalnaya_expropriatsiya
 		icon = GFX_MRD_goal_totalnaya_expropriatsiya
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_finansoviye_istochniki
 		}
 		mutually_exclusive = {
 			focus = MRD_vas_privetstvuyet_chastniy_kapital
 		}
-		x = 34
+		x = 26
 		y = 13
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_2_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
 		id = MRD_komand_adm_sist_i_tsiganstvo
 		icon = GFX_MRD_goal_komand_adm_sist_i_tsiganstvo
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 34
+		x = 26
 		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
 		id = MRD_vas_privetstvuyet_chastniy_kapital
 		icon = GFX_MRD_goal_vas_provetstvuyet_chastniy_kapital
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_finansoviye_istochniki
 		}
 		mutually_exclusive = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 38
+		x = 30
 		y = 13
 		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_burzhyi_mochi_kozlov
-		icon = GFX_MRD_goal_burzhyi_mochi_kozlov
-		cost = 10,00
-		x = 38
-		y = 14
-		prerequisite = {
-			focus = MRD_vas_privetstvuyet_chastniy_kapital
-		}
-		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
 		id = MRD_finansoviy_rezerv
 		icon = GFX_MRD_goal_finansoviy_rezerv
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 			focus = MRD_vas_privetstvuyet_chastniy_kapital
 		}
-		x = 36
+		x = 28
 		y = 14
 		completion_reward = {
-		
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_burzhyi_mochi_kozlov
+		icon = GFX_MRD_goal_burzhyi_mochi_kozlov
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_vas_privetstvuyet_chastniy_kapital
+		}
+		x = 30
+		y = 14
+		completion_reward = {
+
 		}
 	}
 	focus = {
 		id = MRD_totalnoye_importozamesheniye
 		icon = GFX_MRD_goal_totalnoye_importozamesheniye
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_komand_adm_sist_i_tsiganstvo
 			focus = MRD_burzhyi_mochi_kozlov
@@ -1873,81 +2199,201 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MRD_vneshiye_istochniki_prodovolstviya
 		}
-		x = 34
+		x = 26
 		y = 15
 		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_vneshiye_istochniki_prodovolstviya
-		icon = GFX_MRD_goal_vneshiye_istochniki_prodovolstviya
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_burzhyi_mochi_kozlov
-			focus = MRD_komand_adm_sist_i_tsiganstvo
-		}
-		mutually_exclusive = {
-			focus = MRD_totalnoye_importozamesheniye
-		}
-		x = 38
-		y = 15
-		completion_reward = {
-		
+
 		}
 	}
 	focus = {
 		id = MRD_kontrolirovat_finansoviye_potoki
 		icon = GFX_MRD_goal_kontrolirovat_fonansoviye_potoki
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_totalnoye_importozamesheniye
 		}
-		x = 35
+		x = 27
 		y = 16
 		completion_reward = {
-		
+
+		}
+	}
+	focus = {
+		id = MRD_vneshiye_istochniki_prodovolstviya
+		icon = GFX_MRD_goal_vneshiye_istochniki_prodovolstviya
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_burzhyi_mochi_kozlov
+			focus = MRD_komand_adm_sist_i_tsiganstvo
+		}
+		mutually_exclusive = {
+			focus = MRD_totalnoye_importozamesheniye
+		}
+		x = 30
+		y = 15
+		completion_reward = {
+
 		}
 	}
 	focus = {
 		id = MRD_korovani_yiga
 		icon = GFX_MRD_goal_korovani_yiga
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_vneshiye_istochniki_prodovolstviya
 		}
-		x = 37
+		x = 29
 		y = 16
 		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = MRD_garantii_importa
-		icon = GFX_MRD_goal_garantii_importa
-		cost = 10,00
-		prerequisite = {
-			focus = MRD_kontrolirovat_finansoviye_potoki
-			focus = MRD_korovani_yiga
-		}
-		x = 36
-		y = 17
-		completion_reward = {
-		
+
 		}
 	}
 	focus = {
 		id = MRD_exspluatatsiya_mongolii
 		icon = GFX_MRD_goal_exspluatatsiya_mongolii
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = MRD_vneshiye_istochniki_prodovolstviya
 			focus = MRD_totalnoye_importozamesheniye
 		}
-		x = 39
+		x = 31
 		y = 16
 		completion_reward = {
-		
+
+		}
+	}
+	focus = {
+		id = MRD_garantii_importa
+		icon = GFX_MRD_goal_garantii_importa
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_kontrolirovat_finansoviye_potoki
+			focus = MRD_korovani_yiga
+		}
+		x = 28
+		y = 17
+		completion_reward = {
+
+		}
+	}
+	###Экспансия 
+	focus = {
+		id = MRD_tyomniye_dela_saurona
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_perdviy_platsdarm_vzyat
+		}
+		available = {
+			NOT = { has_idea = MRD_idea_vosstanovleniye_posle_GV }
+		}
+		x = 34
+		y = 11
+		completion_reward = {
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
+		}
+	}
+	focus = {
+		id = MRD_sponsorstvo_Ren_TV
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_tyomniye_dela_saurona
+		}
+		x = 32
+		y = 12
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_berau_veskera
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_tyomniye_dela_saurona
+		}
+		x = 35
+		y = 12
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_proyekt_megakoltso
+		icon = GFX_goal_supermegakoltso
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_tyomniye_dela_saurona
+		}
+		x = 37
+		y = 12
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_masshtabniye_diversii
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_proyekt_megakoltso
+		}
+		x = 36
+		y = 13
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_besplatnaya_razdacha_kolets_idiotam
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_proyekt_megakoltso
+		}
+		x = 38
+		y = 13
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_dostavat_Doka
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_sponsorstvo_Ren_TV
+		}
+		prerequisite = {
+			focus = MRD_berau_veskera
+		}
+		x = 33
+		y = 14
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRD_operatsiya_lohotron
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_masshtabniye_diversii
+		}
+		prerequisite = {
+			focus = MRD_berau_veskera
+		}
+		prerequisite = {
+			focus = MRD_besplatnaya_razdacha_kolets_idiotam
+		}
+		x = 37
+		y = 14
+		completion_reward = {
+
 		}
 	}
 }

@@ -9,6 +9,13 @@ MRD_mordovskava_armiya_decisions_category = {
 		has_completed_focus = MRD_armiya_dostoynaya_velikoi_mordovii
 	}
 }
+MRD_grib_saurona_decisions_category = {
+	icon = military_operation
+	visible = {
+		tag = MRD
+		has_completed_focus = MRD_proyekt_grib_saurona
+	}
+}
 MRD_infiltratsiya_decisions_category = {
 	icon = infiltration
 	visible = {
