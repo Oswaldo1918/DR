@@ -49,7 +49,6 @@ focus_tree = {
 					add_ideas = MRD_idea_legacy_SMEH
 				}
 			}
-			#add_ideas = MRD_idea_nazgul
 			country_event = mordor.8
 		}
 	}
@@ -682,27 +681,89 @@ focus_tree = {
 			country_event = mordor.16
 			set_cosmetic_tag = MRD_sibir
 			has_country_flag = pokoyanskaya_civil_war_end_cf
-			has_global_flag = pokoyanskaya_civil_war_end_gf		
-			add_state_core = 577
-			add_state_core = 571
-			add_state_core = 570
-			add_state_core = 578
-			add_state_core = 569
-			add_state_core = 576
-			add_state_core = 568
-			add_state_core = 40
-			add_state_core = 654
-			add_state_core = 329
-			add_state_core = 567
-			add_state_core = 575
-			add_state_core = 824
-			add_state_core = 579
-			add_state_core = 580
-			add_state_core = 403
-			add_state_core = 653
-			add_state_core = 572
-			add_state_core = 573
-			add_state_core = 582
+			has_global_flag = pokoyanskaya_civil_war_end_gf	
+			hidden_effect = {
+				add_state_core = 577
+				add_state_core = 571
+				add_state_core = 570
+				add_state_core = 578
+				add_state_core = 569
+				add_state_core = 576
+				add_state_core = 568
+				add_state_core = 40
+				add_state_core = 654
+				add_state_core = 329
+				add_state_core = 567
+				add_state_core = 575
+				add_state_core = 824
+				add_state_core = 579
+				add_state_core = 580
+				add_state_core = 403
+				add_state_core = 653
+				add_state_core = 572
+				add_state_core = 573
+				add_state_core = 582
+			}
+			custom_effect_tooltip = MRD_pobeda_cw_core_tt
+			hidden_effect = {
+				POK = {
+					every_state = {
+						limit = {
+							is_core_of = POK
+						}
+						POK = { remove_state_core = PREV }
+					}
+				}
+				MGN = {
+					every_state = {
+						limit = {
+							is_core_of = MGN
+						}
+						MGN = { remove_state_core = PREV }
+					}
+				}
+				POK = {
+					every_state = {
+						limit = {
+							is_core_of = POK
+						}
+						POK = { remove_state_core = PREV }
+					}
+				}
+				OMS = {
+					every_state = {
+						limit = {
+							is_core_of = OMS
+						}
+						OMS = { remove_state_core = PREV }
+					}
+				}
+				GAL = {
+					every_state = {
+						limit = {
+							is_core_of = GAL
+						}
+						GAL = { remove_state_core = PREV }
+					}
+				}
+				ZNS = {
+					every_state = {
+						limit = {
+							is_core_of = ZNS
+						}
+						ZNS = { remove_state_core = PREV }
+					}
+				}
+				YSK = {
+					every_state = {
+						limit = {
+							is_core_of = YSK
+						}
+						YSK = { remove_state_core = PREV }
+					}
+				}
+			}
+			custom_effect_tooltip = MRD_pobeda_cw_states_tt
 		}	
 	}
 	###Военная_ветка
@@ -2185,7 +2246,10 @@ focus_tree = {
 		x = 30
 		y = 14
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2202,7 +2266,10 @@ focus_tree = {
 		x = 26
 		y = 15
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2215,7 +2282,10 @@ focus_tree = {
 		x = 27
 		y = 16
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2232,7 +2302,10 @@ focus_tree = {
 		x = 30
 		y = 15
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2245,7 +2318,10 @@ focus_tree = {
 		x = 29
 		y = 16
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2259,7 +2335,10 @@ focus_tree = {
 		x = 31
 		y = 16
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	focus = {
@@ -2273,7 +2352,10 @@ focus_tree = {
 		x = 28
 		y = 17
 		completion_reward = {
-
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 		}
 	}
 	###Экспансия 
@@ -2294,6 +2376,13 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = DR_start_reunite_Russia_cf
 			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = MRD_idea_nazgul
+			}
+			country_event = mordor.18
 		}
 	}
 	focus = {
@@ -2306,7 +2395,20 @@ focus_tree = {
 		x = 32
 		y = 12
 		completion_reward = {
-
+			if = {
+				limit = {
+					HAZ = {
+						country_exist = yes
+					}
+				}
+				give_guarantee = HAZ
+				#HAZ = { ####ДОПИСАТЬ
+				#	country_event = mordor.
+				#}
+			}
+			else = {
+				add_ideas = MRD_idea_redaktsiya_RenTV
+			}
 		}
 	}
 	focus = {
@@ -2319,7 +2421,8 @@ focus_tree = {
 		x = 35
 		y = 12
 		completion_reward = {
-
+			add_political_power = 50
+			recruit_character = MRD_Albert_Wesker
 		}
 	}
 	focus = {
@@ -2332,7 +2435,8 @@ focus_tree = {
 		x = 37
 		y = 12
 		completion_reward = {
-
+			add_political_power = 50
+			country_event = mordor.
 		}
 	}
 	focus = {
@@ -2345,7 +2449,7 @@ focus_tree = {
 		x = 36
 		y = 13
 		completion_reward = {
-
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -2358,7 +2462,8 @@ focus_tree = {
 		x = 38
 		y = 13
 		completion_reward = {
-
+			add_political_power = 50
+			country_event = mordor.
 		}
 	}
 	focus = {
@@ -2374,7 +2479,9 @@ focus_tree = {
 		x = 33
 		y = 14
 		completion_reward = {
-
+			LAZ = {
+				country_event = mordor.
+			}
 		}
 	}
 	focus = {
@@ -2393,7 +2500,7 @@ focus_tree = {
 		x = 37
 		y = 14
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 }

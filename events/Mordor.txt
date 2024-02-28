@@ -493,10 +493,12 @@ country_event = {	###Проект_Гриб_Саурона_положительн
 	
 	option = {
 		name = mordor.21.a
-	}
-	
-	option = {
-		name = mordor.21.b
+		launch_nuke = {
+			province = 13064
+		}
+		goto_province = 13064
+		custom_effect_tooltip = DR_4_skorost_tt
+		scoped_sound_effect = "MRD_audio_1"
 	}
 }
 
