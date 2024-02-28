@@ -2,10 +2,7 @@ POK_prepar_balance_of_power_category = {
 	###pre
 	POK_bop_increase_pre_influence = {
 		icon = GFX_decision_category_generic
-		allowed = { original_tag = POK }
-		available = {
-		
-		}
+		avalible = { tag = POK }
 		visible = {
 
 		}	
@@ -29,10 +26,7 @@ POK_prepar_balance_of_power_category = {
 	###par
 	POK_bop_increase_par_influence = {
 		icon = GFX_decision_category_generic
-		allowed = { original_tag = POK }
-		available = {
-		
-		}
+		avalible = { tag = POK }
 		visible = {
 
 		}	
