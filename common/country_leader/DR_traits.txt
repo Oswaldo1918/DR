@@ -136,6 +136,22 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	demshiza_magic = {
+		sprite = 10
+		random = not
+		stability_factor = 0.5
+		political_power_factor = 0.2
+		democratic_drift = 0.1
+		production_speed_buildings_factor = -0.5 
+		ai_focus_aggressive_factor = 0.9
+		offence = 0.25
+		defence = 0.25
+		
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
     min_kult = {
 		sprite = 10
 		random = not

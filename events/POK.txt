@@ -988,11 +988,19 @@ country_event = { ###Начало гражданской войны в Пока�
 		add_manpower = -1200
 		hidden_effect = {
 			news_event = dk_news.26
+			add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }
 			MRD = {
 				country_event = {
 					id = mordor.14
 					days = 7
 				}
+				add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }
 			}
 			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до вступления_Мордора
 				target = MGN
@@ -1031,6 +1039,16 @@ country_event = { ###Начало гражданской войны в Пока�
 					target = ZNS
 					type = annex_everything
 				}
+				add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }
+			}
+			YSK = {
+			add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }
 			}
 			OMS = {
 			    declare_war_on = {
@@ -1044,7 +1062,11 @@ country_event = { ###Начало гражданской войны в Пока�
 			    declare_war_on = {
 					target = ZNS
 					type = annex_everything
-				}				
+				}
+add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }				
 			}
 			GAL = {
 			    declare_war_on = {
@@ -1054,13 +1076,21 @@ country_event = { ###Начало гражданской войны в Пока�
 			    declare_war_on = {
 					target = ZNS
 					type = annex_everything
-				}				
+				}
+add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }				
 			}
 			ZNS = {
 			    declare_war_on = {
 					target = YSK
 					type = annex_everything
-				}					
+				}
+add_timed_idea = {
+                idea = POK_idea_GV
+                days = 900
+            }				
 			}
 		}
 	}
@@ -2167,5 +2197,17 @@ country_event = {
 				add_ideas = POK_brirus
 				ENG = {add_ideas = POK_brirus1}
 		}
+	}
+}
+country_event = { 
+	id = POK.57
+        title = POK.57.t
+        desc = POK.57.d
+	picture = GFX_report_event_dkr_solzh_golova
+
+	is_triggered_only = yes
+	
+	option = {
+		name = POK.57.a
 	}
 }

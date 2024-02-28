@@ -2509,6 +2509,19 @@ ideas = {
 			}
 		}
 		
+		POK_idea_GV = {
+
+			allowed = {
+				original_tag = POK
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+	        ai_focus_aggressive_factor = 0.9
+			}
+		}
+		
 		POK_idea_vosstanovleniye_posle_GV = {
 
 			allowed = {
