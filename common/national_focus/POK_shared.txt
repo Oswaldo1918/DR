@@ -41,13 +41,13 @@ country_event = { id = POK.7 }
 			add_state_core = 516
 		    add_state_core = 878
 			MRD = {
-			every_state = {
-			limit = {
-				is_cored_by = MRD
+				every_state = {
+					limit = {
+						is_core_of = MRD
+					}
+					MRD = { remove_state_core = PREV }
+				}
 			}
-	      remove_state_core = PREV
-		  }
-		  }
 		}
 	}
 	
