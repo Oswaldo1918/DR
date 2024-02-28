@@ -3561,6 +3561,8 @@ completion_reward = {
 		y = 19
 completion_reward = {
 		    country_event = { id = POK.29 }
+			add_to_variable = { demshiza = 1 }
+            custom_effect_tooltip = POK_demshiza1_tt
 		} 
 	}
 	shared_focus = {
@@ -3999,6 +4001,8 @@ completion_reward = {
 		y = 18
         completion_reward = {
 			add_ideas = POK_vibornost_vsego
+			add_to_variable = { demshiza = 1 }
+            custom_effect_tooltip = POK_demshiza1_tt
 		}          
 	}
 	shared_focus = {
@@ -4129,6 +4133,8 @@ completion_reward = {
 				remove_idea = POK_law_of_Novodvorskava_1
 				add_idea = POK_law_of_Novodvorskava_2
 			}
+			add_to_variable = { demshiza = 1 }
+            custom_effect_tooltip = POK_demshiza1_tt
 		}     
 	}
 	shared_focus = {
@@ -4161,6 +4167,8 @@ completion_reward = {
 				remove_idea = POK_law_of_Novodvorskava
 				add_idea = POK_law_of_Novodvorskava_1
 			}
+			add_to_variable = { demshiza = 2 }
+            custom_effect_tooltip = POK_demshiza2_tt
 		}    
 	}
 	shared_focus = {
@@ -4252,8 +4260,8 @@ completion_reward = {
 				}
             }
 			}
-			add_to_variable = { demshiza = 1 }
-custom_effect_tooltip = POK_demshiza1_tt
+			add_to_variable = { demshiza = 3 }
+custom_effect_tooltip = POK_demshiza3_tt
 		}
 	}
 	shared_focus = {
@@ -4274,6 +4282,8 @@ custom_effect_tooltip = POK_demshiza1_tt
     completion_reward = {
            custom_effect_tooltip = POK_proshay_nemitaya_rossiya_tt
 		   country_event = POK.40
+		   			add_to_variable = { demshiza = 3 }
+            custom_effect_tooltip = POK_demshiza3_tt
 		}
 	}
 	
@@ -4294,8 +4304,8 @@ custom_effect_tooltip = POK_demshiza1_tt
 				remove_idea = POK_law_of_Novodvorskava
 				add_idea = POK_law_of_Novodvorskava_4
 			}
-			add_to_variable = { demshiza = 2 }
-custom_effect_tooltip = POK_demshiza2_tt
+add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
 		}      
 	}
 	shared_focus = {
@@ -4328,8 +4338,8 @@ custom_effect_tooltip = POK_demshiza2_tt
 				remove_idea = POK_radical_decommunisation_1
 				add_idea = POK_radical_decommunisation_2
 			}
-			add_to_variable = { demshiza = 1 }
-custom_effect_tooltip = POK_demshiza1_tt
+			add_to_variable = { demshiza = 2 }
+custom_effect_tooltip = POK_demshiza2_tt
 		}   
 	}
 	shared_focus = {
@@ -4363,8 +4373,8 @@ custom_effect_tooltip = POK_demshiza1_tt
 				remove_idea = POK_radical_decommunisation_2
 				add_idea = POK_radical_decommunisation_3
 			}
-			add_to_variable = { demshiza = 1 }
-custom_effect_tooltip = POK_demshiza1_tt
+			add_to_variable = { demshiza = 3 }
+custom_effect_tooltip = POK_demshiza3_tt
 		}    
 	}
 	shared_focus = {
@@ -4407,8 +4417,8 @@ custom_effect_tooltip = POK_demshiza1_tt
 				remove_idea = POK_law_of_Novodvorskava_4
 				add_idea = POK_law_of_Novodvorskava_5
 			}
-			add_to_variable = { demshiza = 2 }
-custom_effect_tooltip = POK_demshiza2_tt
+			add_to_variable = { demshiza = 1 }
+custom_effect_tooltip = POK_demshiza1_tt
 		}     
 	}
 	shared_focus = {
@@ -4425,8 +4435,8 @@ custom_effect_tooltip = POK_demshiza2_tt
 				remove_idea = POK_law_of_Novodvorskava_5
 				add_idea = POK_law_of_Novodvorskava_6
 			}
-			add_to_variable = { demshiza = 2 }
-custom_effect_tooltip = POK_demshiza2_tt
+			add_to_variable = { demshiza = 3 }
+custom_effect_tooltip = POK_demshiza3_tt
 		}      
 	}
 	shared_focus = {
