@@ -2,10 +2,7 @@ POK_prepar_balance_of_power_category = {
 	###pre
 	POK_bop_increase_pre_influence = {
 		icon = GFX_decision_category_generic
-		allowed = { original_tag = POK }
-		available = {
-		
-		}
+		avalible = { tag = POK }
 		visible = {
 
 		}	
@@ -29,10 +26,7 @@ POK_prepar_balance_of_power_category = {
 	###par
 	POK_bop_increase_par_influence = {
 		icon = GFX_decision_category_generic
-		allowed = { original_tag = POK }
-		available = {
-		
-		}
+		avalible = { tag = POK }
 		visible = {
 
 		}	
@@ -704,7 +698,7 @@ POK_refer_BRT= {
 		puppet = IDU 
 	    }
 	}
-	POK_refer_KHA= { 
+	POK_refer_KHA = { 
 	
 		cost = 15
 		
@@ -853,7 +847,7 @@ POK_refer1_SKT = {
 		POK = { add_to_faction = SKT }
 	    }
 	}
-POK_refer1_BRT= { 
+POK_refer1_BRT = { 
 	
 		cost = 15
 		
@@ -1622,7 +1616,7 @@ POK_refer1_BRT= {
 		POK = { add_to_faction = TAN }	
 	    }
 	}
-	POK_refer1_NEN = { 
+	POK_refer1_NEN = {  
 	
 		cost = 15
 		

@@ -638,7 +638,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ALB_polyakov.dds"
  	}
 	spriteType = {
-		name = "GFX_MRD_Sauron_the_Great"
-		texturefile = "gfx/interface/ideas/idea_MGN_garanin.dds"
- 	} 
+		name = "GFX_idea_MRD_Sauron_the_Great"
+		texturefile = "gfx/interface/ideas/idea_MRD_Sauron.dds"
+ 	}
+	spriteType = {
+		name = "GFX_idea_Vlad_Makarov"
+		texturefile = "gfx/interface/ideas/idea_MRD_Vlad_Makarov.dds"
+ 	}
+	spriteType = {
+		name = "GFX_idea_MRD_goliy"
+		texturefile = "gfx/interface/ideas/idea_MRD_goliy.dds"
+ 	}
+	#ВНИМАНИЕ-ПРИСУТСТВУЕТ-АНИМАЦИЯ
+	#spriteType = {
+	#	name = "GFX_POK_novodvorskaya_ap"
+	#	texturefile = "gfx/animated_textures/POK_novodvorskaya_animated_portrait.dds"
+ 	#} 
 }

@@ -661,4 +661,73 @@ focus_tree = {
 			add_ideas = export_focus
 		}
 	}
+	###Уникальная_экономическая_ветка
+	focus = {
+		id = UNT_forsirovannaya_kollektivizatsiya
+		icon = 
+		cost = 5,00
+
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UNT_dvoyniye_trududni
+		icon = 
+		cost = 5,00
+
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UNT_traktora_na_reaktivnoy_tyage
+		icon = 
+		cost = 5,00
+
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = UNT_rasshirit_GULAG
+		icon = 
+		cost = 5,00
+
+		available = {
+			OR = {
+				is_subject_of = LAZ
+				is_in_faction_with = LAZ
+			}
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+
+		}
+	}
 }

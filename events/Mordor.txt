@@ -394,6 +394,7 @@ country_event = { #Победа_в_гражданской_войне
 			add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = -0.20 }
 			set_variable = { MRD_encryption_factor = 0 }
 		}
+		custom_effect_tooltip = MRD_pobeda_tt
 		add_research_slot = 1
 		custom_effect_tooltip = MRD_2_h_local_resources_factor_tt
 		custom_effect_tooltip = MRD_2_h_global_building_slots_factor_tt
@@ -418,5 +419,159 @@ country_event = { #Победа_в_гражданской_войне
 			idea = MRD_idea_vosstanovleniye_posle_GV
 			days = 360
 		}
+	}
+}
+
+country_event = {	###Состояние_дел_в_армии
+
+	id = mordor.17
+        title = mordor.17.t
+        desc = mordor.17.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.17.a
+	}
+}
+
+country_event = {	###Тёмные_дела_Саурона
+
+	id = mordor.18
+        title = mordor.18.t
+        desc = mordor.18.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.18.a
+	}
+	
+	option = {
+		name = mordor.18.b
+	}
+}
+
+country_event = {	###Проект_Гриб_Саурона_вводная
+
+	id = mordor.19
+        title = mordor.19.t
+        desc = mordor.19.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.19.a
+	}
+}
+
+country_event = {	###Проект_Гриб_Саурона_приглашение
+
+	id = mordor.20
+        title = mordor.20.t
+        desc = mordor.20.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.20.a
+	}
+}
+
+country_event = {	###Проект_Гриб_Саурона_положительный_ответ_на_приглашение
+
+	id = mordor.21
+        title = mordor.21.t
+        desc = mordor.21.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.21.a
+		launch_nuke = {
+			province = 13064
+		}
+		goto_province = 13064
+		custom_effect_tooltip = DR_4_skorost_tt
+		scoped_sound_effect = "MRD_audio_1"
+	}
+}
+
+country_event = {	###Проект_Гриб_Саурона_отрицательный_ответ_на_приглашение
+
+	id = mordor.22
+        title = mordor.22.t
+        desc = mordor.22.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.22.a
+	}
+	
+	option = {
+		name = mordor.22.b
+	}
+}
+
+country_event = {	###Положительный_исход
+
+	id = mordor.23
+        title = mordor.23.t
+        desc = mordor.23.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.23.a
+	}
+}
+
+country_event = {	###Не_совсем_положительный_исход
+
+	id = mordor.24
+        title = mordor.24.t
+        desc = mordor.24.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.24.a
+	}
+}
+
+country_event = {	###Отрицательный_исход
+
+	id = mordor.25
+        title = mordor.25.t
+        desc = mordor.25.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.25.a
+	}
+}
+
+country_event = {	###Финансовые_источники
+
+	id = mordor.26
+        title = mordor.26.t
+        desc = mordor.26.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.26.a
 	}
 }

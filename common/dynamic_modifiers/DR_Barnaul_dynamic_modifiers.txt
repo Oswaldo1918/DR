@@ -119,3 +119,68 @@ YSK_new_natslib_economic_polilika = {
 	production_speed_infrastructure_factor = YSK_natslib_ecopol_production_speed_infrastructure_factor
 	production_oil_factor = YSK_natslib_ecopol_production_oil_factor
 }
+YSK_RusDerevnya_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	stability_factor = YSK_RusDerevnya_stability_factor
+	monthly_population = YSK_RusDerevnya_monthly_population
+	consumer_goods_factor = YSK_RusDerevnya_consumer_goods_factor
+	production_factory_efficiency_gain_factor = YSK_RusDerevnya_production_factory_efficiency_gain_factor
+	political_power_gain = YSK_RusDerevnya_political_power_gain
+	conscription_factor = YSK_RusDerevnya_conscription_factor
+	political_power_factor = YSK_RusDerevnya_political_power_factor
+	production_factory_start_efficiency_factor = YSK_RusDerevnya_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = YSK_RusDerevnya_production_factory_max_efficiency_factor	
+}
+YSK_RPTS_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	stability_factor = YSK_RPTS_stability_factor
+	monthly_population = YSK_RPTS_monthly_population
+	consumer_goods_factor = YSK_RPTS_consumer_goods_factor
+	production_factory_efficiency_gain_factor = YSK_RPTS_production_factory_efficiency_gain_factor
+	political_power_gain = YSK_RPTS_political_power_gain
+	conscription_factor = YSK_RPTS_conscription_factor
+	production_factory_start_efficiency_factor = YSK_RPTS_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = YSK_RPTS_production_factory_max_efficiency_factor	
+}
+YSK_pochetnoe_soslovie_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	stability_factor = YSK_pochetnoe_soslovie_stability_factor
+	consumer_goods_factor = YSK_pochetnoe_soslovie_consumer_goods_factor
+	political_power_factor = YSK_pochetnoe_soslovie_political_power_factor
+	conscription_factor = YSK_pochetnoe_soslovie_conscription_factor
+	conscription = YSK_pochetnoe_soslovie_conscription
+	production_factory_max_efficiency_factor = YSK_pochetnoe_soslovie_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = YSK_pochetnoe_soslovie_production_factory_efficiency_gain_factor
+	party_popularity_stability_factor = YSK_pochetnoe_soslovie_party_popularity_stability_factor
+    drift_defence_factor = YSK_pochetnoe_soslovie_drift_defence_factor
+    political_advisor_cost_factor = YSK_pochetnoe_soslovie_political_advisor_cost_factor
+    war_support_factor = YSK_pochetnoe_soslovie_war_support_factor	
+}
+YSK_blesk_RusKoroni_dynamic_modifier = {	
+	
+	enable = { always = yes }
+	icon = GFX_idea_SOV_war_heroes
+	
+	stability_factor = YSK_blesk_RusKoroni_stability_factor
+	consumer_goods_factor = YSK_blesk_RusKoroni_consumer_goods_factor
+	political_power_factor = YSK_blesk_RusKoroni_political_power_factor
+	monthly_population = YSK_blesk_RusKoroni_monthly_population
+	conscription = YSK_blesk_RusKoroni_conscription
+	production_factory_max_efficiency_factor = YSK_blesk_RusKoroni_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = YSK_blesk_RusKoroni_production_factory_efficiency_gain_factor
+	training_time_factor = YSK_blesk_RusKoroni_training_time_factor
+    army_org_factor = YSK_blesk_RusKoroni_army_org_factor
+    war_support_factor = YSK_blesk_RusKoroni_war_support_factor
+    trade_opinion_factor = YSK_blesk_RusKoroni_trade_opinion_factor
+    faction_trade_opinion_factor = YSK_blesk_RusKoroni_faction_trade_opinion_factor 
+    opinion_gain_monthly_factor = YSK_blesk_RusKoroni_opinion_gain_monthly_factor     
+}	

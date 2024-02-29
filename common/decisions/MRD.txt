@@ -89,6 +89,108 @@ MRD_infiltratsiya_decisions_category = {
 		}
 	}
 }
+MRD_grib_saurona_decisions_category = {
+	MRD_uskorit_rabotu_po_reaktoram = {
+
+		icon = GFX_decision_generic_disband_irregulars
+		days_remove = 180
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_vosstanovleniye_posle_GV
+				days = 180
+			}
+		}
+	}
+	MRD_uskorit_virabotku_materiala = {
+	
+		icon = GFX_decision_generic_disband_irregulars
+		days_remove = 160
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_vosstanovleniye_posle_GV
+				days = 180
+			}
+		}
+	}
+	MRD_podgotovka_k_ispitaniyam = {
+	
+		icon = GFX_decision_generic_disband_irregulars
+		days_remove = 160
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			country_event = mordor.19
+		}
+	}
+	MRD_provesti_konsert_ramshtaina = {
+	
+		icon = GFX_decision_generic_disband_irregulars
+		days_remove = 160
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			country_event = mordor.20
+		}
+	}
+}
 MRD_mordovskava_armiya_decisions_category = { 
 	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
 
