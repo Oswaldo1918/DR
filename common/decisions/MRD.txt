@@ -187,7 +187,20 @@ MRD_grib_saurona_decisions_category = {
 		}
 		
 		remove_effect = {
-			country_event = mordor.20
+			goto_province = 13064
+			launch_nuke = {
+				province = 13064
+			}
+			custom_effect_tooltip = DR_4_skorost_tt
+			scoped_sound_effect = "MRD_audio_1"
+			random_list = {
+				60 = {
+					country_event = mordor.23
+				}
+				40 = {
+					country_event = mordor.23
+				}
+			}
 		}
 	}
 }

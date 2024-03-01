@@ -974,6 +974,12 @@ focus_tree = {
 				uses = 1
 				category = light_air
 			}
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_air_superiority_bonus_in_combat = 0.05 }
+				add_to_variable = { MRD_mordor_army_cas_damage_reduction = -0.1 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_air_superiority_bonus_in_combat_tt
+			custom_effect_tooltip = MRD_2_h_mordor_army_cas_damage_reduction_tt
 		}
 	}
 	focus = {
@@ -989,6 +995,10 @@ focus_tree = {
 		x = 6
 		y = 16
 		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_air_superiority_bonus_in_combat = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_air_superiority_bonus_in_combat_tt
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 2
@@ -1033,6 +1043,10 @@ focus_tree = {
 		x = 9
 		y = 16
 		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_mordor_army_air_superiority_bonus_in_combat = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_mordor_army_air_superiority_bonus_in_combat_tt
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -1081,6 +1095,7 @@ focus_tree = {
 		x = 14
 		y = 11
 		completion_reward = {
+			country_event = mordor.27
 			hidden_effect = {
 				add_to_variable = { MRD_production_speed_buildings_factor = 0.2 }
 				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
@@ -2163,6 +2178,10 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			country_event = mordor.26
+			hidden_effect = {
+				add_to_variable = { MRD_stability_factor = -0.1 }
+			}
+			custom_effect_tooltip = MRD_2_h_stability_factor_tt		
 		}
 	}
 	focus = {
@@ -2178,10 +2197,14 @@ focus_tree = {
 		x = 26
 		y = 13
 		completion_reward = {
+			add_political_power = 75
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_stability_factor = 0.05 }
+				add_to_variable = { MRD_war_support_factor = 0.05 }
 			}
-			custom_effect_tooltip = MRD_2_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_war_support_factor_tt
 		}
 	}
 	focus = {
@@ -2196,8 +2219,10 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = -0.05 }
 			}
 			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
 		}
 	}
 	focus = {
@@ -2214,9 +2239,62 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			hidden_effect = {
+				add_to_variable = { MRD_war_support_factor = -0.05 }
+				add_to_variable = { MRD_offensive_war_stability_factor = -0.1  }
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
 			}
+			add_political_power = -50
+			custom_effect_tooltip = MRD_1_war_support_factor_tt
 			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRD_burzhyi_mochi_kozlov
+		icon = GFX_MRD_goal_burzhyi_mochi_kozlov
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_vas_privetstvuyet_chastniy_kapital
+		}
+		x = 30
+		y = 14
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_offensive_war_stability_factor = -0.1  }
+			}
+			custom_effect_tooltip = MRD_2_h_offensive_war_stability_factor_tt
+			add_political_power = -25
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -2234,22 +2312,16 @@ focus_tree = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
 			}
 			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
-		}
-	}
-	focus = {
-		id = MRD_burzhyi_mochi_kozlov
-		icon = GFX_MRD_goal_burzhyi_mochi_kozlov
-		cost = 5,00
-		prerequisite = {
-			focus = MRD_vas_privetstvuyet_chastniy_kapital
-		}
-		x = 30
-		y = 14
-		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+			if = {
+				limit = {
+					num_subjects < 2
+				}
+				custom_effect_tooltip = MRD_net_dve_marionetki_tt
+				add_stability = -0.15
 			}
-			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			else = {
+				custom_effect_tooltip = MRD_yest_dve_marionetki_tt
+			}
 		}
 	}
 	focus = {
@@ -2264,6 +2336,26 @@ focus_tree = {
 			focus = MRD_vneshiye_istochniki_prodovolstviya
 		}
 		x = 26
+		y = 15
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+			}
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt
+		}
+	}
+	focus = {
+		id = MRD_vneshiye_istochniki_prodovolstviya
+		icon = GFX_MRD_goal_vneshiye_istochniki_prodovolstviya
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_burzhyi_mochi_kozlov
+			focus = MRD_komand_adm_sist_i_tsiganstvo
+		}
+		mutually_exclusive = {
+			focus = MRD_totalnoye_importozamesheniye
+		}
+		x = 30
 		y = 15
 		completion_reward = {
 			hidden_effect = {
@@ -2289,26 +2381,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MRD_vneshiye_istochniki_prodovolstviya
-		icon = GFX_MRD_goal_vneshiye_istochniki_prodovolstviya
-		cost = 5,00
-		prerequisite = {
-			focus = MRD_burzhyi_mochi_kozlov
-			focus = MRD_komand_adm_sist_i_tsiganstvo
-		}
-		mutually_exclusive = {
-			focus = MRD_totalnoye_importozamesheniye
-		}
-		x = 30
-		y = 15
-		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
-			}
-			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
-		}
-	}
-	focus = {
 		id = MRD_korovani_yiga
 		icon = GFX_MRD_goal_korovani_yiga
 		cost = 5,00
@@ -2322,6 +2394,7 @@ focus_tree = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
 			}
 			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_grabit_korovani_tt
 		}
 	}
 	focus = {
@@ -2348,6 +2421,9 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_kontrolirovat_finansoviye_potoki
 			focus = MRD_korovani_yiga
+		}
+		available = {
+			num_subjects < 2
 		}
 		x = 28
 		y = 17
@@ -2397,14 +2473,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					HAZ = {
-						country_exist = yes
-					}
+					country_exists = HAZ
 				}
 				give_guarantee = HAZ
-				#HAZ = { ####ДОПИСАТЬ
-				#	country_event = mordor.
-				#}
+				HAZ = {
+					country_event = mordor.28
+				}
 			}
 			else = {
 				add_ideas = MRD_idea_redaktsiya_RenTV
@@ -2436,7 +2510,7 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			add_political_power = 50
-			country_event = mordor.
+			country_event = mordor.30
 		}
 	}
 	focus = {
@@ -2450,6 +2524,8 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			add_political_power = 75
+			custom_effect_tooltip = MRD_resheniya_i_operatsii_po_diversiyam_tt
+			custom_effect_tooltip = DR_la_tranzistor_dlc_tt
 		}
 	}
 	focus = {
@@ -2463,13 +2539,16 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			add_political_power = 50
-			country_event = mordor.
+			country_event = mordor.31
 		}
 	}
 	focus = {
 		id = MRD_dostavat_Doka
 		icon = GFX_goal_unknown
 		cost = 5,00
+		available = {
+			country_exists = LAZ
+		}
 		prerequisite = {
 			focus = MRD_sponsorstvo_Ren_TV
 		}
@@ -2480,7 +2559,7 @@ focus_tree = {
 		y = 14
 		completion_reward = {
 			LAZ = {
-				country_event = mordor.
+				country_event = mordor.32
 			}
 		}
 	}
@@ -2500,7 +2579,8 @@ focus_tree = {
 		x = 37
 		y = 14
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = -50
+			add_ideas = MRD_idea_Operatsiya_Lohotron			
 		}
 	}
 }

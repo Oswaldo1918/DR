@@ -2,11 +2,6 @@ capital = 516
 
 oob = MRD_1936
 
-country_event = {
-    id = mordor.0
-    days = 10
-}
-
 set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
@@ -27,6 +22,14 @@ set_technology = {
 	gw_artillery = 1
 	gwtank_chassis = 1
 	basic_train = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_medium_tank = 1 # Should be available in 1936 (T-28)
+	}
 }
 
 add_ideas = {
@@ -103,8 +106,8 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
-		name = "T-35"
-		type = heavy_tank_chassis_0
+		name = "T-28"
+		type = medium_tank_chassis_0
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_close_support_gun
@@ -112,15 +115,15 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_hmg
-			special_type_slot_3 = secondary_turret_small_cannon
-			special_type_slot_4 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_hmg
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
+		icon = "GFX_SOV_medium_gwtank_medium"
+		model = "SOV_medium_gw_armor_0_entity"
 	}
 }

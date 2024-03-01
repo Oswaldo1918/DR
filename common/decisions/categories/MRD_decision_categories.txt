@@ -10,7 +10,8 @@ MRD_mordovskava_armiya_decisions_category = {
 	}
 }
 MRD_grib_saurona_decisions_category = {
-	icon = military_operation
+	icon = military_operation 
+	picture = GFX_decision_category_grib_saurona_picture
 	visible = {
 		tag = MRD
 		has_completed_focus = MRD_proyekt_grib_saurona

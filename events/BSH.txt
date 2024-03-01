@@ -409,3 +409,26 @@ country_event = { #польза креветки
 	add_ideas = par_energy_kozi
 	}
 }
+
+country_event = { #тест_логгейм_переезжает_в_казахстан
+	id = BSH.999
+	title = BSH.999.t
+	desc = BSH.999.d
+	picture = GFX_report_event_dkr_degradach_kozi
+	
+	trigger = {
+		tag = BSH
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = BSH.999.a
+		BSH = {
+			set_nationality = {
+				target_country = KAZ
+				character = BSH_ilgizar
+			}
+		}
+	}
+}

@@ -493,12 +493,7 @@ country_event = {	###Проект_Гриб_Саурона_положительн
 	
 	option = {
 		name = mordor.21.a
-		launch_nuke = {
-			province = 13064
-		}
-		goto_province = 13064
-		custom_effect_tooltip = DR_4_skorost_tt
-		scoped_sound_effect = "MRD_audio_1"
+
 	}
 }
 
@@ -573,5 +568,102 @@ country_event = {	###Финансовые_источники
 	
 	option = {
 		name = mordor.26.a
+	}
+}
+
+country_event = {	###Суть_экономических_приколов
+
+	id = mordor.27
+        title = mordor.27.t
+        desc = mordor.27.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.27.a
+	}
+}
+
+country_event = {	###Письмо_мордора_о_поддержке_и_идеологически_диверсиях
+
+	id = mordor.28
+        title = mordor.28.t
+        desc = mordor.28.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.28.a
+		every_country = {
+			limit = {
+				NOT = {
+					AND = {
+						tag = MRD
+						tag = HAZ
+					}
+				}
+			}
+			country_event = mordor.29
+		}
+	}
+}
+
+country_event = {	###Идеологическая_диверсия
+
+	id = mordor.29
+        title = mordor.29.t
+        desc = mordor.29.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.29.a
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+country_event = {	###Вводная_по_мегакольцу
+
+	id = mordor.30
+        title = mordor.30.t
+        desc = mordor.30.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.30.a
+	}
+}
+
+country_event = {	###Вводная_по_раздаче_колец
+
+	id = mordor.31
+        title = mordor.31.t
+        desc = mordor.31.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.31.a
+	}
+}
+
+country_event = {	###Саурон_предлагает_сыграть_в_игру
+
+	id = mordor.32
+        title = mordor.32.t
+        desc = mordor.32.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.32.a
 	}
 }
