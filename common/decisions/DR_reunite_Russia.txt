@@ -364,10 +364,10 @@ DR_form_russian_state_decisions_category = {
 		}
     }
 	
-    MGN_soyuz_sionskih_socialnih_razrushiteley_baza = { #Формирование_Советского_Союза_Андеграунд
-        icon = decision_eng_install_government
+	MGN_soyuz_sionskih_socialnih_razrushiteley_baza = { #Формирование_Советского_Союза_Андеграунд
+		icon = decision_eng_install_government
 
-        ai_will_do = {
+		ai_will_do = {
 			factor = 100
 		}
 
@@ -399,6 +399,74 @@ DR_form_russian_state_decisions_category = {
 			}
 		}
     }
+	MRD_reunification_RUS = { #Объединение_России_за_Мордор
+        icon = decision_eng_install_government	
+		cost = 25
+
+		visible = {
+			has_government = metacommy
+			tag = MRD
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 590
+			controls_state = 202
+			controls_state = 564
+			controls_state = 408
+			controls_state = 206
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			set_cosmetic_tag = LAZ_ussr
+			news_event = {
+				id = dk_news.30
+			}
+		}
+	}
+	MRD_reunification_SOV = { #Провозглашение_СССР_за_Мордор
+        icon = decision_eng_install_government	
+		cost = 25
+
+		visible = {
+			has_government = metacommy
+			tag = MRD
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 590
+			controls_state = 202
+			controls_state = 564
+			controls_state = 408
+			controls_state = 206
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			set_cosmetic_tag = LAZ_ussr
+			news_event = {
+				id = dk_news.63
+			}
+		}
+	}
 }
 
 DR_reunite_russia_decisions_category = {

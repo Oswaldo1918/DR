@@ -448,10 +448,6 @@ country_event = {	###Тёмные_дела_Саурона
 	option = {
 		name = mordor.18.a
 	}
-	
-	option = {
-		name = mordor.18.b
-	}
 }
 
 country_event = {	###Проект_Гриб_Саурона_вводная
@@ -526,36 +522,48 @@ country_event = {	###Положительный_исход
 	
 	option = {
 		name = mordor.23.a
+		news_event = dk_news.61
 	}
 }
 
-country_event = {	###Не_совсем_положительный_исход
+#country_event = {	###Не_совсем_положительный_исход(НЕ_РАБОТАЕТ_КАК_ЗАДУМЫВАЛОСЬ)
+#
+#	id = mordor.24
+#       title = mordor.24.t
+#        desc = mordor.24.d
+#	picture = GFX_report_event_dkr_sauron_hvatka
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = mordor.24.a
+#		news_event = dk_news.62
+#		every_neighbor_country = {
+#			limit = {
+#				
+#			}
+#			country_event = mordor.25 
+#		}
+#	}
+#}
 
-	id = mordor.24
-        title = mordor.24.t
-        desc = mordor.24.d
-	picture = GFX_report_event_dkr_sauron_hvatka
-
-	is_triggered_only = yes
-	
-	option = {
-		name = mordor.24.a
-	}
-}
-
-country_event = {	###Отрицательный_исход
-
-	id = mordor.25
-        title = mordor.25.t
-        desc = mordor.25.d
-	picture = GFX_report_event_dkr_sauron_hvatka
-
-	is_triggered_only = yes
-	
-	option = {
-		name = mordor.25.a
-	}
-}
+#country_event = {	###Входящий_оповещающий_ивент_об_испытаниях_ЯО(НЕ_РАБОТАЕТ)
+#
+#	id = mordor.25
+#       title = mordor.25.t
+#        desc = mordor.25.d
+#	picture = GFX_report_event_dkr_sauron_hvatka
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = mordor.25.a
+#		declare_war_on = {
+#			target = MRD
+#			type = annex_everything
+#		}
+#	}
+#}
 
 country_event = {	###Финансовые_источники
 
@@ -596,15 +604,7 @@ country_event = {	###Письмо_мордора_о_поддержке_и_иде
 	
 	option = {
 		name = mordor.28.a
-		every_country = {
-			limit = {
-				NOT = {
-					AND = {
-						tag = MRD
-						tag = HAZ
-					}
-				}
-			}
+		every_other_country = {
 			country_event = mordor.29
 		}
 	}
@@ -624,6 +624,11 @@ country_event = {	###Идеологическая_диверсия
 		add_stability = -0.1
 		add_war_support = -0.1
 	}
+	option = {
+		name = mordor.29.b
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
 }
 
 country_event = {	###Вводная_по_мегакольцу
@@ -637,6 +642,7 @@ country_event = {	###Вводная_по_мегакольцу
 	
 	option = {
 		name = mordor.30.a
+		custom_effect_tooltip = DR_la_tranzistor_dlc_tt
 	}
 }
 
@@ -665,5 +671,75 @@ country_event = {	###Саурон_предлагает_сыграть_в_игр�
 	
 	option = {
 		name = mordor.32.a
+		add_ideas = MRD_LAZ_diversiya
+		MRD = {
+			country_event = mordor.33
+		}
+	}
+	option = {
+		name = mordor.32.b
+		add_ideas = MRD_LAZ_diversiya
+	}
+}
+country_event = {	###Лазарет_начинает_ответную_игру
+
+	id = mordor.33
+        title = mordor.33.t
+        desc = mordor.33.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.33.a
+	}
+	option = {
+		name = mordor.33.a
+	}
+	option = {
+		name = mordor.33.a
+		add_ideas = MRD_LAZ_diversiya
+	}
+}
+country_event = {	###Саурон_согласен
+
+	id = mordor.34
+        title = mordor.34.t
+        desc = mordor.34.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.34.a
+		add_ideas = MRD_LAZ_diversiya
+	}
+}
+country_event = {	###Саурон_уклоняется
+
+	id = mordor.35
+        title = mordor.35.t
+        desc = mordor.35.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.35.a
+		add_ideas = MRD_LAZ_diversiya
+	}
+}
+country_event = {	###Саурон_соглашается
+
+	id = mordor.36
+        title = mordor.36.t
+        desc = mordor.36.d
+	picture = GFX_report_event_dkr_sauron_hvatka
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.36.a
+		add_ideas = MRD_LAZ_diversiya
 	}
 }

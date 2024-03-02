@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 		
-	continuous_focus_position = { x = 1500 y = 100 }
+	continuous_focus_position = { x = 2000 y = 500 }
 	
 	default = no 
 	###Подготовка_к_гражданской_войне_в_Покаянии
@@ -678,10 +678,12 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			set_major = yes
+			custom_effect_tooltip = MRD_encryption_factor_udalit_bonus_tt
 			country_event = mordor.16
 			set_cosmetic_tag = MRD_sibir
 			has_country_flag = pokoyanskaya_civil_war_end_cf
-			has_global_flag = pokoyanskaya_civil_war_end_gf	
+			has_global_flag = pokoyanskaya_civil_war_end_gf
+			remove_ideas = POK_idea_GV
 			hidden_effect = {
 				add_state_core = 577
 				add_state_core = 571
@@ -1022,12 +1024,12 @@ focus_tree = {
 			country_event = mordor.19
 			add_tech_bonus = {
 				bonus = 0.75
-				uses = 1
+				uses = 2
 				category = nuclear
 			}
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 2
+				ahead_reduction = 3
 				uses = 1
 				category = nuclear
 			}
@@ -1095,7 +1097,7 @@ focus_tree = {
 		x = 14
 		y = 11
 		completion_reward = {
-			country_event = mordor.27
+			country_event = mordor.26
 			hidden_effect = {
 				add_to_variable = { MRD_production_speed_buildings_factor = 0.2 }
 				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
@@ -1584,6 +1586,7 @@ focus_tree = {
 				uses = 2
 				category = electronics
 			}
+			add_research_slot = 1
 			hidden_effect = {
 				add_to_variable = { MRD_production_speed_buildings_factor = 0.1 }
 				add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
@@ -1981,7 +1984,9 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_weekly_manpower = -100 }
+				add_to_variable = { MRD_global_building_slots_factor = 0.15 }
 			}
+			custom_effect_tooltip = MRD_2_global_building_slots_factor_tt
 			custom_effect_tooltip = MRD_2_h_weekly_manpower_tt
 		}
 	}
@@ -2166,7 +2171,66 @@ focus_tree = {
 			}
 		}
 	}
+	
+	###Судостроение
+	
+	focus = {
+		id = MRD_vozrodit_sudostroyeniye
+		icon = GFX_MRD_goal_komand_adm_sist_i_tsiganstvo
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_totalnaya_expropriatsiya
+		}
+		x = 26
+		y = 14
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_sev_mor_put
+		icon = GFX_MRD_goal_komand_adm_sist_i_tsiganstvo
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_totalnaya_expropriatsiya
+		}
+		x = 26
+		y = 14
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
+		}
+	}
+	focus = {
+		id = MRD_esmintsi_proekta_23
+		icon = GFX_MRD_goal_komand_adm_sist_i_tsiganstvo
+		cost = 5,00
+		prerequisite = {
+			focus = MRD_totalnaya_expropriatsiya
+		}
+		x = 26
+		y = 14
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
+				add_to_variable = { MRD_production_lack_of_resource_penalty_factor = -0.05 }
+			}
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_production_lack_of_resource_penalty_factor_tt
+		}
+	}	
+	
 	###Финансовые_источники
+	
 	focus = {
 		id = MRD_finansoviye_istochniki
 		icon = GFX_MRD_goal_finansoviye_istochniki
@@ -2177,7 +2241,7 @@ focus_tree = {
 		x = 28
 		y = 12
 		completion_reward = {
-			country_event = mordor.26
+			country_event = mordor.27
 			hidden_effect = {
 				add_to_variable = { MRD_stability_factor = -0.1 }
 			}
@@ -2203,7 +2267,7 @@ focus_tree = {
 				add_to_variable = { MRD_stability_factor = 0.05 }
 				add_to_variable = { MRD_war_support_factor = 0.05 }
 			}
-			custom_effect_tooltip = MRD_1_consumer_goods_factor_tt
+			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 			custom_effect_tooltip = MRD_1_war_support_factor_tt
 		}
 	}
@@ -2240,12 +2304,9 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_war_support_factor = -0.05 }
-				add_to_variable = { MRD_offensive_war_stability_factor = -0.1  }
-				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
 			}
 			add_political_power = -50
 			custom_effect_tooltip = MRD_1_war_support_factor_tt
-			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -2452,12 +2513,6 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = DR_start_reunite_Russia_cf
 			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_ideas = MRD_idea_nazgul
-			}
 			country_event = mordor.18
 		}
 	}
@@ -2525,7 +2580,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 75
 			custom_effect_tooltip = MRD_resheniya_i_operatsii_po_diversiyam_tt
-			custom_effect_tooltip = DR_la_tranzistor_dlc_tt
 		}
 	}
 	focus = {
@@ -2539,6 +2593,12 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 			add_political_power = 50
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = MRD_idea_nazgul
+			}
 			country_event = mordor.31
 		}
 	}
