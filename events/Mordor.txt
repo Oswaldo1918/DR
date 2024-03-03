@@ -523,6 +523,9 @@ country_event = {	###Положительный_исход
 	option = {
 		name = mordor.23.a
 		news_event = dk_news.61
+		set_technology = {
+			nukes = 1
+		}
 	}
 }
 

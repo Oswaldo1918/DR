@@ -144,5 +144,48 @@ ideas = {
 				political_power_gain = 0.05 
 			}
 		}
+		MRD_idea_uskorit_yaderniye_issledovaniya = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				political_power_gain = -0.1
+				research_speed_factor = -0.05
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+		}
+		MRD_idea_uskorit_rabotu_po_reaktoram = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				production_speed_buildings_factor = -0.1
+				production_speed_nuclear_reactor_factor = 0.35
+			}
+		}
+		MRD_idea_uskorit_virabotku_materiala = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				nuclear_production_factor = 0.1
+			}
+		}
 	}
 }

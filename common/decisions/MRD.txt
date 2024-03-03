@@ -90,7 +90,7 @@ MRD_infiltratsiya_decisions_category = {
 	}
 }
 MRD_grib_saurona_decisions_category = {
-	targeted_race_for_the_bomb = {
+	MRD_uskorit_yaderniye_issledovaniya = {
 
 		icon = generic_research
 
@@ -99,60 +99,64 @@ MRD_grib_saurona_decisions_category = {
 		}
 
 		available = {
-			#Target is FROM
 			has_tech = atomic_research
-			NOT = { has_global_flag = first_nuke_dropped }
-			NOT = { has_idea = race_for_the_bomb }
-		}
-
-		target_root_trigger = {
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-		}
-
-		#If this trigger matches a country.
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
+			NOT = {
+				has_idea = MRD_idea_uskorit_rabotu_po_reaktoram
 			}
 		}
 
 		visible = {
-            #Target is FROM
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-            FROM = {
-        		NOT = { is_in_faction_with = ROOT }
+            NOT = {
 				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
 			}
 		}
 
 		complete_effect = {
-			set_country_flag = racing_for_the_bomb
-			add_ideas = race_for_the_bomb
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_yaderniye_issledovaniya
+				days = 180
+			}
 		}
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				any_other_country = { has_tech = nukes }
-			}
 		}
 	}
 	MRD_uskorit_rabotu_po_reaktoram = {
 
-		icon = GFX_decision_generic_disband_irregulars
+		icon = generic_research
+		days_remove = 180
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+			NOT = {
+				has_idea = MRD_idea_uskorit_rabotu_po_reaktoram
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_rabotu_po_reaktoram
+				days = 180
+			}
+		}
+	}
+	MRD_uskorit_virabotku_materiala = {
+	
+		icon = generic_research
 		days_remove = 180
 		visible = {
 			has_completed_focus = MRD_proyekt_grib_saurona
@@ -163,52 +167,32 @@ MRD_grib_saurona_decisions_category = {
 		available = {
 			has_tech = nuclear_reactor
 			nuclear_reactor < 10
-		}
-		
-		ai_will_do = {
-			base = 10
-		}
-		
-		remove_effect = {
-			add_timed_idea = {			
-				idea = MRD_idea_vosstanovleniye_posle_GV
-				days = 180
+			NOT = {
+				has_idea = MRD_idea_uskorit_virabotku_materiala
 			}
 		}
-	}
-	MRD_uskorit_virabotku_materiala = {
-	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-			nuclear_reactor < 10
-		}
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor < 10
-		}
 		
 		ai_will_do = {
-			base = 100
+			factor = 1
 		}
 		
 		remove_effect = {
 			add_timed_idea = {			
-				idea = MRD_idea_vosstanovleniye_posle_GV
+				idea = MRD_idea_uskorit_virabotku_materiala
 				days = 180
 			}
 		}
 	}
 	MRD_podgotovka_k_ispitaniyam = {
 	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
+		icon = generic_research
+		days_remove = 20
 		visible = {
 			has_completed_focus = MRD_proyekt_grib_saurona
 			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
 		}
 		
 		fire_only_once = yes
@@ -228,11 +212,14 @@ MRD_grib_saurona_decisions_category = {
 	}
 	MRD_provesti_konsert_ramshtaina = {
 	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
+		icon = generic_research
+		days_remove = 7
 		visible = {
 			has_completed_focus = MRD_proyekt_grib_saurona
 			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
 		}
 		
 		fire_only_once = yes

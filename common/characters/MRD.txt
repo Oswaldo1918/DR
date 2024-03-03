@@ -119,7 +119,36 @@ characters = {
 				army_infantry_2 
 			}
 		}
-	} 
+	}
+	MRD_glashatai_saurona = {
+		name = "Глашатай Саурона"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_MRD_glashatai_saurona"
+			}
+			army = {
+				small = "GFX_idea_MRD_glashatai_saurona"
+				large = "gfx/leaders/MRD/Glashatai_Saurona.dds"
+			}
+		}
+		gender = male
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_glashatai_saurona
+			available = {
+				has_country_leader = {
+					character  = MRD_Sauron_the_Great
+				}
+			}
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				prince_of_terror
+				head_of_intelligence
+			}
+		}
+	}
 	MRD_goliy = {
 		name = "Шмыга «Голый»"
 		portraits = {
