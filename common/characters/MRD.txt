@@ -144,12 +144,30 @@ characters = {
 			}
 		}
 	}
+	MRD_Albert_Wesker = {
+		name = "Альберт Вескер"
+		portraits = {
+			army = {
+				small = "GFX_idea_Albert_Wesker"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MRD_idea_Albert_Wesker
+			allowed  = {
+				original_tag = MRD
+			}
+			traits = {
+				head_of_the_nkvd_beriya_initial
+			}
+		}
+	}
 	MRD_Vlad_Makarov = {
 		name = "Влад Макаров"
 		portraits = {
 			army = {
 				small = "GFX_idea_Vlad_Makarov"
-				large = GFX_portrait_MRD_Vlad_Makarov
+				large = "gfx/leaders/MRD/Vlad_Makarov.dds"
 			}
 		}
 

@@ -981,6 +981,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_moderate_rusnat
 			focus = YSK_sozvat_zemsobor
+			focus = YSK_Sputnick_i_Pogrom
 		}
 		x = 67
 		y = 7
@@ -3509,6 +3510,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_vot_praviy_povorot
 			focus = YSK_sozvat_zemsobor
+			focus = YSK_Sputnick_i_Pogrom
 		}
 		x = 16
 		y = 7
@@ -4085,6 +4087,11 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rus_vibory
 		}
+		mutually_exclusive = {
+			focus = YSK_vot_praviy_povorot
+			focus = YSK_sozvat_zemsobor
+			focus = YSK_moderate_rusnat
+		}
 		x = 26
 		y = 7
 			completion_reward = {
@@ -4115,6 +4122,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = YSK_rus_vozhd
+			focus = YSK_rus_regent
 		}
 		x = 24
 		y = 8
@@ -4195,6 +4203,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = YSK_rus_vozhd
+			focus = YSK_rus_president
 		}
 		x = 28
 		y = 8
@@ -4517,6 +4526,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YSK_moderate_rusnat
 			focus = YSK_vot_praviy_povorot
+			focus = YSK_Sputnick_i_Pogrom
 		}
 		x = 41
 		y = 7
@@ -4648,6 +4658,10 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RusDerevnya_monthly_population = 0.05
 			}
+			custom_effect_tooltip = YSK_1_RusDerevnya_stability_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_efficiency_gain_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_consumer_goods_factor 
+			custom_effect_tooltip = YSK_1_RusDerevnya_monthly_population
 		}
 	}
 	focus = {
@@ -4678,6 +4692,12 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RusDerevnya_conscription_factor = 0.05
 			}
+			custom_effect_tooltip = YSK_1_RusDerevnya_monthly_population
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_efficiency_gain_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_stability_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_political_power_gain
+			custom_effect_tooltip = YSK_1_RusDerevnya_conscription_factor
 		}   
 	}
 	focus = {
@@ -4711,6 +4731,12 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RusDerevnya_monthly_population = 0.1
 			}
+			custom_effect_tooltip = YSK_1_RusDerevnya_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_monthly_population
+			custom_effect_tooltip = YSK_2_RusDerevnya_stability_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_political_power_gain
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_start_efficiency_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_max_efficiency_factor
 		}     
 	}
 	focus = {
@@ -4744,6 +4770,13 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RusDerevnya_conscription_factor = -0.1
 			}
+			custom_effect_tooltip = YSK_1_RusDerevnya_consumer_goods_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_political_power_gain
+			custom_effect_tooltip = YSK_2_RusDerevnya_stability_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_start_efficiency_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_max_efficiency_factor			
+			custom_effect_tooltip = YSK_1_RusDerevnya_monthly_population
+			custom_effect_tooltip = YSK_2_RusDerevnya_conscription_factor
 		}      
 	}
 	focus = {
@@ -4767,6 +4800,9 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RusDerevnya_monthly_population = 0.05
 			}
+			custom_effect_tooltip = YSK_1_RusDerevnya_stability_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_political_power_gain
+			custom_effect_tooltip = YSK_1_RusDerevnya_monthly_population
 		}
 	}
 	focus = {
@@ -4838,6 +4874,10 @@ focus_tree = {
 			}
 			add_political_power = -25
 			add_stability = -0.05
+			custom_effect_tooltip = YSK_2_RusDerevnya_political_power_gain
+			custom_effect_tooltip = YSK_1_RPTS_stability_factor
+			custom_effect_tooltip = YSK_1_RPTS_monthly_population
+			custom_effect_tooltip = YSK_1_RPTS_consumer_goods_factor
 		}    
 	}
 	focus = {
@@ -4876,6 +4916,13 @@ focus_tree = {
 			}
 			add_political_power = -25
 			add_stability = -0.05
+			custom_effect_tooltip = YSK_2_RPTS_political_power_gain
+			custom_effect_tooltip = YSK_1_RPTS_stability_factor
+			custom_effect_tooltip = YSK_1_RPTS_monthly_population
+			custom_effect_tooltip = YSK_1_RPTS_consumer_goods_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_production_factory_start_efficiency_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_production_factory_max_efficiency_factor
+			custom_effect_tooltip = YSK_2_RusDerevnya_production_factory_efficiency_gain_factor
 		}      
 	}
 	focus = {
@@ -4900,7 +4947,7 @@ focus_tree = {
 			add_to_variable = {
 				YSK_RPTS_monthly_population = -0.05
 			}
-			set_variable = {
+			add_to_variable = {
 				YSK_RPTS_consumer_goods_factor = 0.03
 			}
 			add_to_variable = {
@@ -4918,6 +4965,14 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.075
 			add_war_support = -0.075
+			custom_effect_tooltip = YSK_1_RPTS_political_power_gain
+			custom_effect_tooltip = YSK_1_RPTS_stability_factor
+			custom_effect_tooltip = YSK_2_RPTS_monthly_population
+			custom_effect_tooltip = YSK_2_RPTS_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_start_efficiency_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_max_efficiency_factor
+			custom_effect_tooltip = YSK_1_RusDerevnya_production_factory_efficiency_gain_factor
+			custom_effect_tooltip = YSK_1_RPTS_conscription_factor
 		}
 	}
 	focus = {
@@ -4942,6 +4997,9 @@ focus_tree = {
 			}
 			add_political_power = -50
 			add_stability = -0.05
+			custom_effect_tooltip = YSK_1_RPTS_political_power_gain
+			custom_effect_tooltip = YSK_1_RPTS_stability_factor
+			custom_effect_tooltip = YSK_2_RPTS_consumer_goods_factor
 		}   
 	}
 	focus = {
@@ -5015,6 +5073,9 @@ focus_tree = {
 			}
 			add_political_power = 50
 			add_stability = 0.05
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_political_power_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_stability_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_consumer_goods_factor
 		}  
 	}
 	focus = {
@@ -5039,6 +5100,9 @@ focus_tree = {
 			add_to_variable = {
 				YSK_pochetnoe_soslovie_consumer_goods_factor = -0.02
 			}
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_production_factory_max_efficiency_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_production_factory_efficiency_gain_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_consumer_goods_factor
 		}    
 	}
 	focus = {
@@ -5069,6 +5133,11 @@ focus_tree = {
 			add_to_variable = {
 				YSK_pochetnoe_soslovie_stability_factor = 0.05
 			}
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_party_popularity_stability_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_conscription_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_conscription
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_political_power_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_stability_factor
 		}
 	}
 	focus = {
@@ -5100,6 +5169,11 @@ focus_tree = {
 			add_to_variable = {
 				YSK_pochetnoe_soslovie_stability_factor = -0.025
 			}
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_party_popularity_stability_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_drift_defence_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_political_advisor_cost_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_political_power_factor
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_stability_factor
 		}
 	}
 	focus = {
@@ -5137,6 +5211,13 @@ focus_tree = {
 			add_to_variable = {
 				YSK_pochetnoe_soslovie_consumer_goods_factor = 0.02
 			}
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_party_popularity_stability_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_conscription_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_conscription
+			custom_effect_tooltip = YSK_1_pochetnoe_soslovie_political_power_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_war_support_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_stability_factor
+			custom_effect_tooltip = YSK_2_pochetnoe_soslovie_consumer_goods_factor
 		}   
 	}
 	focus = {
@@ -5260,6 +5341,10 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_monthly_population = 0.01 
 			}
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_political_power_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_stability_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_monthly_population
 		}   
 	}
 	focus = {
@@ -5287,6 +5372,11 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_monthly_population = -0.005 
 			}
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_production_factory_max_efficiency_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_production_factory_max_efficiency_factor
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_stability_factor
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_monthly_population
 		}   
 	}
 	focus = {
@@ -5312,6 +5402,10 @@ focus_tree = {
 				YSK_blesk_RusKoroni_army_org_factor = 0.025
 			}
 			army_experience = 15
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_war_support_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_conscription
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_training_time_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_army_org_factor
 		}    
 	}
 	focus = {
@@ -5336,6 +5430,10 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_opinion_gain_monthly_factor = 0.15
 			}
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_trade_opinion_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_faction_trade_opinion_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_opinion_gain_monthly_factor
 		}     
 	}
 	focus = {
@@ -5358,6 +5456,8 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_political_power_factor = 0.05
 			}
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_political_power_factor
 		}     
 	}
 	focus = {
@@ -5380,6 +5480,8 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_stability_factor = 0.05
 			}
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_stability_factor
 		}    
 	}
 	focus = {
@@ -5404,6 +5506,9 @@ focus_tree = {
 			add_to_variable = {
 				YSK_blesk_RusKoroni_political_power_factor = 0.05
 			}
+			custom_effect_tooltip = YSK_2_blesk_RusKoroni_consumer_goods_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_stability_factor
+			custom_effect_tooltip = YSK_1_blesk_RusKoroni_political_power_factor
 		}     
 	}
 	focus = {
@@ -5491,7 +5596,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = -0.1
 			}
-			add_manpower = -1480
+			add_manpower = -1917
 		}     
 	}
 	focus = {

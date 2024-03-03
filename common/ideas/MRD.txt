@@ -132,5 +132,17 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
+		MRD_idea_Operatsiya_Lohotron = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+				political_power_gain = 0.05 
+			}
+		}
 	}
 }

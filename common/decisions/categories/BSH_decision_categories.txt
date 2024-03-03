@@ -31,11 +31,11 @@ proect_Nasti = {
 bebs_kriptid_category = {
     icon = GFX_decision_category_bebs_buldiga 
 	picture = GFX_decision_category_kriptidi_picture_alt
-    allowed = {
+    avalible = {
 		tag = BSH
 		has_government = memoism
 	}
 	visible = {
-	    has_completed_focus = BSH_hello_vsem_nashim
+	    has_completed_focus = BSH_osnovat_degradachTV
 	}
 }
