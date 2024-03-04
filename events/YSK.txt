@@ -39,7 +39,7 @@ country_event = {
 	
 	option = {
 	name = YSK.2.a
-	    custom_effect_tooltip = YSK_dobrodiv
+	    custom_effect_tooltip = YSK_dobrodiv_tt
 		add_popularity = {
 				ideology = memoism
 				popularity = 0.075
@@ -64,7 +64,8 @@ country_event = {
 		add_popularity = {
 				ideology = metacommy
 				popularity = 0.075
-		}      		
+		}
+		add_manpower = 10000
 	}
 	option = {
 	name = YSK.3.a
@@ -90,7 +91,7 @@ country_event = {
 	}
 }
 
-#закрепление нацдемов
+#Выбор
 country_event = {
 	id = YSK.5
 	title = YSK.5.t
@@ -102,6 +103,18 @@ country_event = {
 	option = {
 	name = YSK.5.a
 		set_country_flag = rusdem_win      		
+	}
+	option = {
+	name = YSK.5.b
+		set_country_flag = pogrom_win      		
+	}
+	option = {
+	name = YSK.5.c
+		set_country_flag = monarhist_win      		
+	}
+	option = {
+	name = YSK.5.c
+		set_country_flag = ultraprav_win      		
 	}
 }
 
@@ -559,7 +572,8 @@ country_event = {
             long_name = YSK_democratic_conservatism_long
             name = YSK_democratic_conservatism
         }
-        set_country_flag = YSK_Yuneman  		
+        set_country_flag = YSK_Yuneman
+  		set_cosmetic_tag = YSK_Yuneman_flag
 	}
     option = {
 	    name = YSK.19.b       
@@ -646,7 +660,17 @@ country_event = {
 	    name = YSK.22.b       
         hidden_effect = {
 		    set_country_flag = Red_Goga
-		} 
+		}
+		complete_national_focus = YSK_red_day_kalendar
+        add_country_leader_role = {
+            character = YSK_Goga_Romanov
+            promote_leader = yes
+            country_leader = {
+                ideology = monarho_socialism
+                expire = "1965.1.1.1"
+                traits = { lieutenant_of_industry }
+            }
+        }   		
 	}      	
 }
 #Выбор монарха
@@ -689,7 +713,34 @@ country_event = {
 		}
 	}      	
 }
-
+#переворот_монархистов
+country_event = {
+	id = YSK.24
+	title = YSK.24.t
+	desc = YSK.24.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.24.a
+		set_country_flag = monarhist_win        		
+	}
+}
+#Победа_Погрома
+country_event = {
+	id = YSK.25
+	title = YSK.25.t
+	desc = YSK.25.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.25.a
+		set_country_flag = pogrom_win        		
+	}
+}
 #
 country_event = {
 	id = YSK.555
@@ -702,7 +753,7 @@ country_event = {
 	trigger = {
     tag = YSK
     YSK = { check_variable = { rusdem_coup > 3 } }
-	has_country_flag = YSK_rus_pobeda   
+	has_country_flag = YSK_rus_vibor   
     }
 	
 	option = {
@@ -722,11 +773,51 @@ country_event = {
 	trigger = {
     tag = YSK
     YSK = { check_variable = { ultraprav_coup > 3 } }
-	has_country_flag = YSK_rus_pobeda 
+	has_country_flag = YSK_rus_vibor 
     }
 	
 	option = {
 	name = YSK.556.a
 		country_event = YSK.6       		
+	}
+}
+#переворот монархистов
+country_event = {
+	id = YSK.557
+	title = YSK.557.t
+	desc = YSK.557.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { monarhist_coup > 3 } }
+	has_country_flag = YSK_rus_vibor 
+    }
+	
+	option = {
+	name = YSK.557.a
+		country_event = YSK.24       		
+	}
+}
+#Укрепление_Погрома
+country_event = {
+	id = YSK.558
+	title = YSK.558.t
+	desc = YSK.558.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { pogrom_coup > 3 } }
+	has_country_flag = YSK_rus_vibor 
+    }
+	
+	option = {
+	name = YSK.558.a
+		country_event = YSK.25       		
 	}
 }

@@ -541,6 +541,9 @@ focus_tree = {
 		cost = 2,00
 		x = 40
 		y = 0
+		available = {
+			has_completed_focus = YSK_purified
+		}
 	    completion_reward = {
 		    add_war_support = 0.075     
 			set_country_flag = DR_start_reunite_Russia_cf
@@ -833,7 +836,6 @@ focus_tree = {
 				uses = 1
 				category = bc_tech
 				category = bb_tech
-				category = cv_tech
 			}
 		}         
 	}
@@ -856,8 +858,6 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = bc_tech
-				category = bb_tech
 				category = cv_tech
 			}
 			add_tech_bonus = {
@@ -962,12 +962,12 @@ focus_tree = {
 		x = 31
 		y = 6
 		available = {
-			has_complete_focus = YSK_purified
+			has_completed_focus = YSK_purified
 		}
         completion_reward = {
             add_stability = 0.1
             add_political_power = 100
-            set_country_flag = YSK_rus_pobeda      			
+            country_event = YSK.5     			
         }     
 	}
 	#Ультраправые
@@ -2239,12 +2239,12 @@ focus_tree = {
 		x = 54
 		y = 17
 			available = {
-					has_complete_focus = YSK_toplivo_iz_svyat_vody
-					has_complete_focus = YSK_dvigately_na_svyat_duhe
-					has_complete_focus = YSK_ortodox_batuts
-					has_complete_focus = YSK_osvyatit_rakety
-					has_complete_focus = YSK_new_energy
-					has_complete_focus = YSK_kanonizirovat_Gagarina
+					has_completed_focus = YSK_toplivo_iz_svyat_vody
+					has_completed_focus = YSK_dvigately_na_svyat_duhe
+					has_completed_focus = YSK_ortodox_batuts
+					has_completed_focus = YSK_osvyatit_rakety
+					has_completed_focus = YSK_new_energy
+					has_completed_focus = YSK_kanonizirovat_Gagarina
 				}
 
 	}
@@ -4094,6 +4094,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
+		available = {
+			has_country_flag = pogrom_win
+		}
 			completion_reward = {
 					add_political_power = 75
 					add_stability = 0.075
@@ -4533,7 +4536,6 @@ focus_tree = {
 		available = {
 					has_country_flag = monarhist_win
 				}
-
 	}
 	focus = {
 		id = YSK_raskol_v_dome
@@ -5565,6 +5567,12 @@ focus_tree = {
 			has_country_flag = Red_Goga
 		}
         completion_reward = {
+		    set_party_name = {
+            ideology = metacommy
+            long_name = YSK_metacommy_monarho_socialism_long
+            name = YSK_metacommy_monarho_socialism
+            }
+            set_cosmetic_tag = YSK_Red_Gogastan  
 		    set_politics = {
 	            ruling_party = metacommy
             }   
