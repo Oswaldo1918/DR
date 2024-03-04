@@ -24,12 +24,12 @@ bookmarks = {
 			history = "KUR_GATHERING_STORM_DESC"
 			ideology = metacommy
 			ideas = {
-				
-			}
-			focuses = {
 				KUR_polit_neodnoznach
 				KUR_nedobit_bander
-				KUR_razruha_v_umah
+				KUR_razruha_v_umah	
+			}
+			focuses = {
+
 			}
 		}
 		"NOD"={
@@ -71,6 +71,17 @@ bookmarks = {
 				LAZ_KNOR_voyenka
 				LAZ_KNOR_economica
 			}
+		}
+		"TUP"={
+			history = "TUP_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				TUP_dikiy_sevzapad
+				TUP_home_of_revolution
+			}
+			focuses = {
+			
+			}			
 		}
 		"DOT"={
 			history = "DOT_GATHERING_STORM_DESC"

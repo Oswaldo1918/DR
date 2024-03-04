@@ -459,6 +459,224 @@ MRD_mordovskava_armiya_decisions_category = {
 			}
 		}
 	}
+
+	MRD_postavit_proizvodstvo_urok_na_potok = { ###Снятие_лимита
+
+		icon = GFX_decision_generic_disband_irregulars 
+
+		days_remove = 180
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+		}
+		
+		available = {
+			has_completed_focus = MRD_traditsii_otryada_731
+			NOT = { has_idea = MRD_idea_zaplanirovanniye_trati }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 180
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = -250 }
+			}
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+		}
+		timeout_effect = {
+			set_division_template_lock = {
+				division_template = "Дивизия урок"
+				is_locked = no
+			}
+		}
+	}
+	
+	MRD_dopyacheika = { ###Допячейка_исследований
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+		}
+		
+		available = {
+			has_completed_focus = MRD_traditsii_otryada_731
+			NOT = { has_idea = MRD_idea_zaplanirovanniye_trati }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 90
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = -250 }
+			}
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+		}
+		timeout_effect = {
+			add_research_slot = 1
+		}
+	}	
+}
+MRD_poisk_koltsa_decisions_category = {
+	MRD_proverit_ravshana_1 = { ###Проверить_Равшана_1
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_shevtsova = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_Fillipa_Tsenina = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_Bebeya = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_idti_k_kirkorovu = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_poisk_koltsa_1
+			has_country_flag = MRD_poisk_koltsa_2
+			has_country_flag = MRD_poisk_koltsa_3
+			has_country_flag = MRD_poisk_koltsa_4
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
 }
 economy_decisions = {
 }

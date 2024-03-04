@@ -6,7 +6,6 @@ sub_units = {
 		
 		priority = 100
 		ai_priority = 100
-		special_forces = yes
 		active = no
 
 		group = infantry
@@ -25,20 +24,21 @@ sub_units = {
 		combat_width = 1.6
 	
 		#Size Definitions
-		max_strength = 35 #Inf is 25
-		max_organisation = 80 #Inf is 60
-		default_morale = 5 #Inf is 30
-		manpower = 800
-		training_time = 75 #Same as other support battalions
+		max_strength = 20 #У_пехоты 25
+		max_organisation = 50 #У_пехоты 60
+		default_morale = 0.5 #У_пехоты 0.3
+		manpower = 1000 #У_пехоты 1000
+		equipment_capture_factor = 0.02 #У_пехоты 0.3
+		
+		training_time = 80 #У_пехоты 90
+		suppression = 1.5 #Как_у_пехоты
+		weight = 0.5 #Как_у_пехоты
 
-		#Misc Abilities
-		suppression = 0.5
-		weight = 0.2 #Inf is 0.5
-		supply_consumption = 0.01
+		supply_consumption = 0.05 #У_пехоты 0.06
 				
 		need = {
-			infantry_equipment = 80 #Same as Inf
-			support_equipment = 10 #Same as bicycles
+			infantry_equipment = 100 #Как_у_пехоты
+			support_equipment = 5 #Типа_водяря_с_зеленкой
 		}
 	}
 }

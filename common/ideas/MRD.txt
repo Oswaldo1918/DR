@@ -187,5 +187,18 @@ ideas = {
 				nuclear_production_factor = 0.1
 			}
 		}
+		MRD_idea_zaplanirovanniye_trati = {
+
+			allowed = {
+				tag = MRD
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
 	}
 }

@@ -913,7 +913,7 @@ focus_tree = {
 			add_research_slot = 1
 			hidden_effect = {
 				add_to_variable = { MRD_mordor_army_attack_factor = 0.15 }
-				add_to_variable = { MRD_weekly_manpower = -100 }
+				add_to_variable = { MRD_weekly_manpower = -250 }
 				add_to_variable = { MRD_consumer_goods_factor = 0.05 }
 			}
 			custom_effect_tooltip = MRD_1_h_consumer_goods_factor_tt
@@ -2181,8 +2181,8 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 26
-		y = 14
+		x = 10
+		y = 32
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
@@ -2199,8 +2199,8 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 26
-		y = 14
+		x = 10
+		y = 32
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
@@ -2217,8 +2217,8 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 26
-		y = 14
+		x = 10
+		y = 32
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
