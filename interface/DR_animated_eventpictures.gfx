@@ -43,4 +43,15 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Radio_sterliparizh"
+		texturefile = "gfx/animated_textures/Radio_sterliparizh.dds"
+		noOfFrames = 100
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 }
