@@ -771,7 +771,7 @@ focus_tree = {
 	###Военная_ветка
 	focus = {
 		id = MRD_armeyskaya_reforma
-		icon = GFX_sovarmy1
+		icon = GFX_MRD_goal_armeyskaya_reforma
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_perdviy_platsdarm_vzyat
@@ -795,7 +795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_morpekhi_na_zebrah
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_morpekhi_na_zebrah
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_armeyskaya_reforma
@@ -857,7 +857,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_sovetskoye_naslediye
-		icon = GFX_sovmission
+		icon = GFX_MRD_goal_sovetskoe_nasledie
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_armeyskaya_reforma
@@ -874,7 +874,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_krasnogvardeyskiye_soedineniya
-		icon = GFX_focus_cht_rabochaya_guard
+		icon = GFX_MRD_goal_krasnogvardeyskie_korpusa
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_zastavit_urok_derzhat_udar_na_solntse
@@ -899,7 +899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_traditsii_otryada_731
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_traditsii_otryada_731
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_himprom
@@ -923,7 +923,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_modern_doktrina
-		icon = GFX_focus_cht_razdacha_zemli
+		icon = GFX_MRD_goal_sovremennaya_doktrina
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_morpekhi_na_zebrah
@@ -960,7 +960,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_opit_lufdvaffe
-		icon = GFX_Stuka
+		icon = GFX_MRD_goal_opyt_lyuftvaffe
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_sovetskoye_naslediye
@@ -1079,7 +1079,7 @@ focus_tree = {
 	###Экономические фокусы
 	focus = {
 		id = MRD_prodolzhit_tisyacheletniy_plan
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_prodolzhit_tysyacheletniy_plan
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_perdviy_platsdarm_vzyat
@@ -1127,7 +1127,7 @@ focus_tree = {
 	#Металлургия_и_химпром
 	focus = {
 		id = MRD_razvitiye_metallurgii
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_razvitie_metallurgii
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_prodolzhit_tisyacheletniy_plan
@@ -1169,7 +1169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_himprom
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_rasshirit_khimicheskie_proizvodstva
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_ugol_kuzbassa
@@ -1217,7 +1217,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_amluminiy
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_vozrozhdenie_allyuminievoy_metallurgii
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_razvitiye_metallurgii
@@ -1280,7 +1280,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_avaprom
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_rasshirit_aviatsionnye_predpriatia
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_amluminiy
@@ -1349,7 +1349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_ugol_kuzbassa
-		icon = GFX_focus_generic_coal
+		icon = GFX_MRD_goal_ugol_kuzbassa
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_vopros_electroenergii
@@ -1387,7 +1387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_lesa_sibiri
-		icon = GFX_focus_generic_wood
+		icon = GFX_MRD_goal_lesa_sibiri
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_vopros_electroenergii
@@ -1437,7 +1437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_modernizatsiya_TES
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_modernizatsia_teploelektrostantsiy
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_lesa_sibiri
@@ -1484,7 +1484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_modennizatsiya_energosetei
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_modernizatsia_energosetey
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_modernizatsiya_TES
@@ -1560,7 +1560,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_electrortkhnika
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_proizvodstvo_elektrotekhniki
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_himprom
