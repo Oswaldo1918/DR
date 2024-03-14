@@ -1935,6 +1935,9 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_noviye_rabi
 		}
+		mutually_exclusive = {
+			focus = MRD_mordovskoye_krepostnoye_pravo
+		}
 		x = 21
 		y = 13
 		completion_reward = {
@@ -2182,7 +2185,7 @@ focus_tree = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
 		x = 10
-		y = 32
+		y = 18
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
@@ -2199,8 +2202,8 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 10
-		y = 32
+		x = 9
+		y = 19
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
@@ -2217,8 +2220,8 @@ focus_tree = {
 		prerequisite = {
 			focus = MRD_totalnaya_expropriatsiya
 		}
-		x = 10
-		y = 32
+		x = 11
+		y = 19
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { MRD_consumer_goods_factor = -0.05 }
