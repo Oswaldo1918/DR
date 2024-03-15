@@ -186,12 +186,49 @@ characters={
 			legacy_id = 0
 		}
 	}
+	BSH_Bravo = {
+		name = "Алексей «Bravo» Декин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Alexey_Dekin.dds"
+				small = "GFX_idea_BSH_Bravo"
+			}
+		}
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Bravo
+			allowed = {
+				original_tag = BSH
+				has_dlc = "La Resistance"
+			}
+			available = {		
+                has_government = memoism
+				has_intelligence_agency = yes
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { head_of_intelligence }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
 	BSH_krylov = {
 		name = "Матвей Крылов"
 		portraits = {
 			army = {
 				large = "gfx/leaders/BSH/.dds"
 				small = "GFX_idea_BSH_krylov"
+			}
+		}
+    }
+	BSH_Kotak_San = {
+		name = "Kotak San"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Kotak_San.dds"
+				small = "GFX_idea_BSH_Kotak_San"
 			}
 		}
     }
@@ -297,7 +334,7 @@ characters={
 			}
 			army = {
 			    large = "gfx/leaders/BSH/Tito.dds"
-				small = "GFX_idea_BSH_Tito"
+				small = "GFX_idea_BSH_tito"
 			}
 			
 		}
@@ -406,8 +443,8 @@ characters={
 		name = "Гоша Гачивар"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
-				small = GFX_portrait__small
+				large = "gfx/leaders/BSH/Gosha_Gachivar.dds"
+				small = GFX_idea_BSH_Gosha_Gachivar
 			}
 		}
 		corps_commander = {
@@ -424,8 +461,8 @@ characters={
 		name = "Бубсич"
 		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/.dds"
-				small = GFX_portrait__small
+				large = "gfx/leaders/BSH/Boobsich.dds"
+				small = GFX_idea_BSH_Boobsich
 			}
 		}
 		corps_commander = {
@@ -442,8 +479,8 @@ characters={
 		name = "Бебей Шутняра"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Bebey_Shutnyara.dds"
+				small = GFX_idea_BSH_Bebey_Shutnyara
 			}
 		}
 		corps_commander = {
@@ -460,8 +497,8 @@ characters={
 		name = "BrainDEAD"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/BrainDEAD.dds"
+				small = GFX_idea_BSH_BrainDEAD
 			}
 		}
 		corps_commander = {
@@ -478,8 +515,8 @@ characters={
 		name = "НЕВЗОРКА"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Nevzorka.dds"
+				small = GFX_idea_BSH_Nevzorka
 			}
 		}
 		corps_commander = {
@@ -496,8 +533,8 @@ characters={
 		name = "Донской Казак"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Donskoy_Kazak.dds"
+				small = GFX_idea_BSH_donskoy_kazak
 			}
 		}
 		corps_commander = {
@@ -510,48 +547,48 @@ characters={
 			legacy_id = 0
 		}
     }
-	BSH_Goy_Goyev = {
-		name = "Гой Гоев"
-		portraits = {
-			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
-			}
-		}
-		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-		}
-    }
-	BSH_Bebey_Shirokoy = {
-		name = "Бебей Широкий"
-		portraits = {
-			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
-			}
-		}
-		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-		}
-    }
+#	BSH_Mr_Kad= {	###Хз_его_стоит_делать_он_ваще_аи_каверы_выпускает
+#		name = "Mr.Kad"
+#		portraits = {
+#			army = {
+#				large = "gfx/leaders/BSH/Goy_Goyev.dds"
+#				small = GFX_idea_BSH_Goy_Goyev
+#			}
+#		}
+#		corps_commander = {
+#			traits = {  }
+#			skill = 1
+#			attack_skill = 1
+#			defense_skill = 1
+#			planning_skill = 1
+#			logistics_skill = 1
+#			legacy_id = 0
+#		}
+#   }
+#	BSH_Bebey_Shirokoy = {		###Надо_портрет_сделать
+#		name = "Бебей Широкий"
+#		portraits = {
+#			army = {
+#				large = "gfx/leaders/BSH/.dds"
+#				small = GFX_portrait__small
+#			}
+#		}
+#		corps_commander = {
+#			traits = {  }
+#			skill = 1
+#			attack_skill = 1
+#			defense_skill = 1
+#			planning_skill = 1
+#			logistics_skill = 1
+#			legacy_id = 0
+#		}
+#    }
 	BSH_Biboslav = {
-		name = "Гой Гоев"
+		name = "Бибослав"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Biboslav.dds"
+				small = GFX_idea_BSH_Biboslav
 			}
 		}
 		corps_commander = {
@@ -568,8 +605,8 @@ characters={
 		name = "Бебсофоб"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Bebsofob.dds"
+				small = GFX_idea_BSH_Bebsofob
 			}
 		}
 		corps_commander = {
@@ -586,8 +623,8 @@ characters={
 		name = "Follower Of Red Nose"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Follower_Of_Red_Nose.dds"
+				small = GFX_idea_BSH_Follower_Of_Red_Nose
 			}
 		}
 		corps_commander = {
@@ -604,8 +641,8 @@ characters={
 		name = "Ухо Сельдня"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = GFX_portrait_AUS_karl_eglseer
+				small = GFX_portrait_AUS_karl_eglseer_small
 			}
 		}
 		corps_commander = {
@@ -622,8 +659,8 @@ characters={
 		name = "еврейская жабка"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/yevreyskaya_zhabka.dds"
+				small = GFX_idea_BSH_yevreyskaya_zhabka
 			}
 		}
 		corps_commander = {
@@ -640,8 +677,8 @@ characters={
 		name = "Юля Металкор"
 		portraits = {
 			army = {
-				small = "gfx/leaders/BSH/.dds"
-				large = GFX_portrait__small
+				large = "gfx/leaders/BSH/Yulya_Metallcore.dds"
+				small = GFX_idea_BSH_Yulya_Metallcore
 			}
 		}
 		corps_commander = {
@@ -655,7 +692,7 @@ characters={
 		}
     }
 
-#	BSH_Andrey_EbaLumba = {
+#	BSH_Andrey_EbaLumba = {		###Хз_чё_с_ними_делать_они_вышли_из_коммьюнити
 #		name = "Андрей EbaLumba"
 #		portraits = {
 #			army = {
