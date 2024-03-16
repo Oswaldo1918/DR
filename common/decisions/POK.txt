@@ -78,9 +78,11 @@ POK_refer_SKT = {
 		transfer_state = 581
 		}
 		puppet = SKT
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
-POK_refer_BRT= { 
+POK_refer_BRT = { 
 	
 		cost = 15
 		
@@ -110,6 +112,8 @@ POK_refer_BRT= {
 		transfer_state = 565
 		}
 		puppet = BRT
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_YAK = { 
@@ -143,6 +147,8 @@ POK_refer_BRT= {
 			transfer_state = 644
 		}
 		puppet = YAK
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_KOL = { 
@@ -171,6 +177,8 @@ POK_refer_BRT= {
 			set_cosmetic_tag = KOL_pok
 		}
 		puppet = KOL
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_HAZ = { 
@@ -199,6 +207,8 @@ POK_refer_BRT= {
 			set_cosmetic_tag = HAZ_kalmyk
 		}
 		puppet = HAZ
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_KAZ = { 
@@ -248,6 +258,8 @@ POK_refer_BRT= {
 			transfer_state = 588
 			}
 			puppet = KAZ
+			add_to_variable = { demshiza = 1 }
+			custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_KYR = { 
@@ -275,6 +287,8 @@ POK_refer_BRT= {
 		transfer_state = 732
 		puppet = KYR
 		 }
+		 add_to_variable = { demshiza = 1 }
+		 custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_TMS = { 
@@ -304,6 +318,8 @@ POK_refer_BRT= {
 		transfer_state = 584
 		}
 		puppet = TMS
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_TAJ = { 
@@ -341,6 +357,8 @@ POK_refer_BRT= {
 			transfer_state = 742
 			}
 			puppet = TAJ
+			add_to_variable = { demshiza = 1 }
+			custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 		POK_refer_CHK = { 
@@ -382,6 +400,8 @@ POK_refer_BRT= {
 			set_cosmetic_tag = CHK_pok
 		 }
 		 puppet = CHK
+		 add_to_variable = { demshiza = 1 }
+		 custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_GEO = { 
@@ -411,6 +431,8 @@ POK_refer_BRT= {
 			transfer_state = 231
 		}
 		puppet = GEO
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 		POK_refer_AZR = { 
@@ -439,6 +461,8 @@ POK_refer_BRT= {
 		transfer_state = 229
 		}
 		puppet = AZR
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_ARM = { 
@@ -467,6 +491,8 @@ POK_refer_BRT= {
 		transfer_state = 230
 		}
 		puppet = ARM
+		add_to_variable = { demshiza = 1 }
+        custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_ZHE = { 
@@ -563,6 +589,8 @@ POK_refer_BRT= {
 			set_cosmetic_tag = ZHE_ukraina
 		}
 		puppet = ZHE
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_ZWN = { 
@@ -605,6 +633,8 @@ POK_refer_BRT= {
 			transfer_state = 194
 			}
 			puppet = ZWN
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_MHL = { 
@@ -641,6 +671,8 @@ POK_refer_BRT= {
 				SUO = { transfer_state = 146}
 			}
 			puppet = MHL
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_IDU = { 
@@ -696,6 +728,8 @@ POK_refer_BRT= {
 		
 			}
 		puppet = IDU 
+		add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_KHA = { 
@@ -723,6 +757,8 @@ POK_refer_BRT= {
 			transfer_state = 569
 			}
 			puppet = KHA
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_ALT = { 
@@ -750,6 +786,8 @@ POK_refer_BRT= {
 			transfer_state = 654
 			}
 			puppet = ALT
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_TAN = { 
@@ -777,6 +815,8 @@ POK_refer_BRT= {
 			transfer_state = 329
 			}
 			puppet = TAN
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 	POK_refer_NEN = { 
@@ -808,6 +848,8 @@ POK_refer_BRT= {
 			transfer_state = 579
 			}
 			puppet = NEN
+			add_to_variable = { demshiza = 1 }
+		custom_effect_tooltip = POK_demshiza1_tt
 	    }
 	}
 }
@@ -845,6 +887,8 @@ POK_refer1_SKT = {
 		transfer_state = 581
 		}
 		POK = { add_to_faction = SKT }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 POK_refer1_BRT = { 
@@ -882,6 +926,8 @@ POK_refer1_BRT = {
 		transfer_state = 565
 		}
 		POK = { add_to_faction = BRT }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_YAK = { 
@@ -919,6 +965,8 @@ POK_refer1_BRT = {
 			transfer_state = 644
 		}
 		POK = { add_to_faction = YAK }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_KOL = { 
@@ -947,6 +995,8 @@ POK_refer1_BRT = {
 			set_cosmetic_tag = KOL_pok
 		}
 		POK = { add_to_faction = KOL }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_HAZ = { 
@@ -976,6 +1026,8 @@ POK_refer1_BRT = {
 			set_cosmetic_tag = HAZ_kalmyk
 		}
 		POK = { add_to_faction = HAZ }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_KAZ = { 
@@ -1026,6 +1078,8 @@ POK_refer1_BRT = {
 			transfer_state = 588
 			}
 			POK = { add_to_faction = KAZ }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_KYR = { 
@@ -1054,6 +1108,8 @@ POK_refer1_BRT = {
 		transfer_state = 732 
 		}
 		POK = { add_to_faction = KYR }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_TMS = { 
@@ -1084,6 +1140,8 @@ POK_refer1_BRT = {
 		transfer_state = 584
 		}
 		POK = { add_to_faction = KYR }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_TAJ = { 
@@ -1122,6 +1180,8 @@ POK_refer1_BRT = {
 			transfer_state = 742
 			}
 			POK = { add_to_faction = TAJ }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 		POK_refer1_CHK = { 
@@ -1167,6 +1227,8 @@ POK_refer1_BRT = {
 			set_cosmetic_tag = CHK_pok
 		 }
 		 POK = { add_to_faction = CHK }
+		 add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_GEO = { 
@@ -1200,6 +1262,8 @@ POK_refer1_BRT = {
 			transfer_state = 231
 		}
 		POK = { add_to_faction = GEO }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 		POK_refer1_AZR = { 
@@ -1232,6 +1296,8 @@ POK_refer1_BRT = {
 			}
 		 }
 		POK = { add_to_faction = AZR }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_ARM = { 
@@ -1264,6 +1330,8 @@ POK_refer1_BRT = {
 			}
 		 }
 		 POK = { add_to_faction = ARM }
+		 add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_ZHE = { 
@@ -1361,6 +1429,8 @@ POK_refer1_BRT = {
 			set_cosmetic_tag = ZHE_ukraina
 		}
 		POK = { add_to_faction = ZHE }
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_ZWN = { 
@@ -1406,6 +1476,8 @@ POK_refer1_BRT = {
 			transfer_state = 194
 			}
 			POK = { add_to_faction = ZWN }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_MHL = { 
@@ -1447,6 +1519,8 @@ POK_refer1_BRT = {
 				SUO = { transfer_state = 146}
 			}
 			POK = { add_to_faction = MHL }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_IDU = { 
@@ -1515,6 +1589,8 @@ POK_refer1_BRT = {
 	}
 			}
 			POK = { add_to_faction = IDU }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_KHA= { 
@@ -1548,6 +1624,8 @@ POK_refer1_BRT = {
 			}
 			}
 			POK = { add_to_faction = KHA }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_ALT = { 
@@ -1581,6 +1659,8 @@ POK_refer1_BRT = {
 			}
 			}
 			POK = { add_to_faction = ALT }
+			add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_TAN = { 
@@ -1614,6 +1694,8 @@ POK_refer1_BRT = {
 			}
 			}
 		POK = { add_to_faction = TAN }	
+		add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt
 	    }
 	}
 	POK_refer1_NEN = {  
@@ -1652,7 +1734,9 @@ POK_refer1_BRT = {
 			add_state_core = 825
 			add_state_core = 579
 			}
-		POK = { add_to_faction = NEN } 
+		POK = { add_to_faction = NEN }
+add_to_variable = { demshiza = 3 }
+		custom_effect_tooltip = POK_demshiza3_tt		
 	    }
 	}
 }
