@@ -1,0 +1,13 @@
+﻿units= {
+	### Черноморский флот -- Мариуполь
+	fleet = {
+		name = "Основная флотилия Тихоокеанского флота"
+		naval_base = 6420 # Мариуполь
+		task_force = {				
+			name = "Надводный флот"
+			location = 6420 # Мариуполь
+			ship = { name = "Barzha" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+			ship = { name = "Tanker" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+		}			
+	}
+}

@@ -1,263 +1,7 @@
 ###################
   ### MORDOR ###
 ###################
-MRD_infiltratsiya_decisions_category = { 
-	MRD_decision_usilit_partizan = { #Усилить_партизан
-		
-		cost = 40
-		days_remove = 35
-		
-		icon = GFX_decision_generic_disband_irregulars 
 
-		visible = {
-			tag = MRD
-			has_country_flag = MRD_uspeshniy_reid_country_flag_1
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			MRD = { set_country_flag = MRD_usilit_partizan_flag }
-			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_1 }
-			custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt	
-		}
-	}
-	MRD_decision_koridor_dlya_bezhentsev = { #Коридор_для_беженцев
-	
-		cost = 40
-		days_remove = 35
-		
-		icon = GFX_decision_generic_disband_irregulars 
-
-		visible = {
-			tag = MRD
-			has_country_flag = MRD_uspeshniy_reid_country_flag_2
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_2 }
-			custom_effect_tooltip =  MRD_koridor_dlya_bezhentsev_conec_flag_tt
-			MRD = {
-				hidden_effect = {
-					add_to_variable = { MRD_monthly_population = 0.05 }
-					add_to_variable = { MRD_weekly_manpower = 50 }
-				}
-			}
-			custom_effect_tooltip = MRD_1_monthly_population_tt
-			custom_effect_tooltip = MRD_1_weekly_manpower_tt
-		}
-	}
-	MRD_decision_cherniy_rinok = { #Черный_рынок
-
-		cost = 40
-		days_remove = 35
-
-		icon = GFX_decision_generic_disband_irregulars 
-
-		visible = {
-			tag = MRD
-			has_country_flag = MRD_uspeshniy_reid_country_flag_3
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_3 }
-			custom_effect_tooltip =  MRD_cherniy_rinok_conec_flag_tt
-			MRD = {
-				hidden_effect = {
-					add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
-					add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
-				}
-			}
-			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
-			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt			
-		}
-	}
-}
-MRD_grib_saurona_decisions_category = {
-	MRD_uskorit_yaderniye_issledovaniya = {
-
-		icon = generic_research
-
-		cost = 50
-
-		allowed = {
-			always = yes
-		}
-
-		available = {
-			has_tech = atomic_research
-			NOT = {
-				has_idea = MRD_idea_uskorit_yaderniye_issledovaniya
-			}
-		}
-
-		visible = {
-            NOT = {
-				has_tech = nuclear_reactor
-			}
-		}
-
-		complete_effect = {
-			add_timed_idea = {		
-				idea = MRD_idea_uskorit_yaderniye_issledovaniya
-				days = 180
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	MRD_uskorit_rabotu_po_reaktoram = {
-
-		icon = generic_research
-		
-		cost = 50
-		days_remove = 180
-		
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-			nuclear_reactor < 10
-            NOT = {
-				has_tech = nukes
-			}
-		}
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor < 10
-			NOT = {
-				has_idea = MRD_idea_uskorit_rabotu_po_reaktoram
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		remove_effect = {
-			add_timed_idea = {			
-				idea = MRD_idea_uskorit_rabotu_po_reaktoram
-				days = 180
-			}
-		}
-	}
-	MRD_uskorit_virabotku_materiala = {
-	
-		icon = generic_research
-		
-		cost = 50
-		days_remove = 180
-		
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-			nuclear_reactor < 10
-		}
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor < 10
-			NOT = {
-				has_idea = MRD_idea_uskorit_virabotku_materiala
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		remove_effect = {
-			add_timed_idea = {			
-				idea = MRD_idea_uskorit_virabotku_materiala
-				days = 180
-			}
-		}
-	}
-	MRD_podgotovka_k_ispitaniyam = {
-	
-		icon = generic_research
-		
-		cost = 50
-		days_remove = 20
-		
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-            NOT = {
-				has_tech = nukes
-			}
-		}
-		
-		fire_only_once = yes
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor > 2
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		remove_effect = {
-			country_event = mordor.19
-		}
-	}
-	MRD_provesti_konsert_ramshtaina = {
-	
-		icon = generic_research
-		
-		cost = 10
-		days_remove = 7
-		
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-            NOT = {
-				has_tech = nukes
-			}
-		}
-		
-		fire_only_once = yes
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor > 2
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		remove_effect = {
-			goto_province = 13064
-			launch_nuke = {
-				province = 13064
-			}
-			custom_effect_tooltip = DR_4_skorost_tt
-			scoped_sound_effect = "MRD_audio_1"
-			country_event = mordor.23
-		}
-	}
-}
 MRD_mordovskava_armiya_decisions_category = { 
 	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
 
@@ -567,6 +311,328 @@ MRD_mordovskava_armiya_decisions_category = {
 	}	
 }
 
+MRD_grabit_corovani_decisions_category = {
+	MRD_grabit_corovan_decision = {
+		icon = GFX_decision_border_war
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				has_ROOT_at_least_1_div_in_current_state_scope = yes
+				any_neighbor_state = {
+					is_fully_controlled_by = FROM
+				}
+			}
+			has_war = no
+			FROM = { 
+				has_war = no
+				NOT = { has_country_flag = MRD_reidil_etih_uzhe } #Это_значит_что_мы_их_рейдили_уже
+			}
+		}
+
+		visible = {
+			NOT = {
+				is_puppet_of = FROM
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+				has_country_flag = MRD_reidili_uzhe #У_орков_законный_перерыв_на_90_дней
+			}
+			is_neighbor_of = FROM
+		}
+
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				NOT = {
+					is_puppet_of = ROOT
+					is_in_faction_with = ROOT
+					has_border_war_with = ROOT
+					has_non_aggression_pact_with = ROOT
+				}
+				if = {
+					limit = {
+						is_puppet = yes
+						ROOT = { is_puppet = yes }
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					state = FROM.defender_state_vs_@ROOT
+					AND = {
+						is_owned_and_controlled_by = FROM
+						any_neighbor_state = {
+							has_ROOT_at_least_1_div_in_current_state_scope = yes
+							is_fully_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 20
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.8
+				}
+				factor = 0.66
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.6
+				}
+				factor = 0.33
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.4
+				}
+				factor = 0
+			}
+		}
+
+		custom_cost_trigger = { command_power > 19.99 }
+		custom_cost_text = decision_cost_20_cp
+
+		days_re_enable = 30
+		days_remove = 7
+
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				FROM = { has_war = yes }
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
+		}
+
+		cancel_effect = {
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -20
+				set_country_flag = russia_preparing_raid
+			}
+		}
+		remove_effect = {
+			activate_targeted_decision = { target = FROM decision = russia_initiate_raid }
+			FROM = {
+				country_event = mordor.58
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = var:FROM.attacker_state_vs_@ROOT
+					num_provinces = 4
+					on_win = mordor.52
+					on_lose = mordor.53
+					on_cancel = mordor.54
+				}
+
+				defender = {
+					state = var:FROM.defender_state_vs_@ROOT
+					num_provinces = 4
+					on_win = mordor.55
+					on_lose = mordor.56
+					on_cancel = mordor.57
+				}
+			}
+			set_border_war_data = {
+				attacker = var:FROM.defender_state_vs_@ROOT
+				defender = var:FROM.defender_state_vs_@ROOT
+				combat_width = 60
+			}
+			hidden_effect = {
+				FROM = {
+					set_country_flag = {
+						flag = MRD_reidil_etih_uzhe
+						days = 90
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+MRD_grib_saurona_decisions_category = {
+	MRD_uskorit_yaderniye_issledovaniya = {
+
+		icon = generic_research
+
+		cost = 50
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			has_tech = atomic_research
+			NOT = {
+				has_idea = MRD_idea_uskorit_yaderniye_issledovaniya
+			}
+		}
+
+		visible = {
+            NOT = {
+				has_tech = nuclear_reactor
+			}
+		}
+
+		complete_effect = {
+			add_timed_idea = {		
+				idea = MRD_idea_uskorit_yaderniye_issledovaniya
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MRD_uskorit_rabotu_po_reaktoram = {
+
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+			NOT = {
+				has_idea = MRD_idea_uskorit_rabotu_po_reaktoram
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_rabotu_po_reaktoram
+				days = 180
+			}
+		}
+	}
+	MRD_uskorit_virabotku_materiala = {
+	
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+			NOT = {
+				has_idea = MRD_idea_uskorit_virabotku_materiala
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 180
+			}
+		}
+	}
+	MRD_podgotovka_k_ispitaniyam = {
+	
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 20
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			country_event = mordor.19
+		}
+	}
+	MRD_provesti_konsert_ramshtaina = {
+	
+		icon = generic_research
+		
+		cost = 10
+		days_remove = 7
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			goto_province = 13064
+			launch_nuke = {
+				province = 13064
+			}
+			custom_effect_tooltip = DR_4_skorost_tt
+			scoped_sound_effect = "MRD_audio_1"
+			country_event = mordor.23
+		}
+	}
+}
+
 MRD_poisk_nazgulov_decisions_category = {
 
 	MRD_nazgul_chumak = { ###Предложить_Чумаку
@@ -745,5 +811,96 @@ MRD_poisk_koltsa_decisions_category = {
 		}
 	}
 }
+
+MRD_infiltratsiya_decisions_category = { 
+	MRD_decision_usilit_partizan = { #Усилить_партизан
+		
+		cost = 40
+		days_remove = 35
+		
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_1
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			MRD = { set_country_flag = MRD_usilit_partizan_flag }
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_1 }
+			custom_effect_tooltip = MRD_usilit_partizan_conec_flag_tt	
+		}
+	}
+	MRD_decision_koridor_dlya_bezhentsev = { #Коридор_для_беженцев
+	
+		cost = 40
+		days_remove = 35
+		
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_2 }
+			custom_effect_tooltip =  MRD_koridor_dlya_bezhentsev_conec_flag_tt
+			MRD = {
+				hidden_effect = {
+					add_to_variable = { MRD_monthly_population = 0.05 }
+					add_to_variable = { MRD_weekly_manpower = 50 }
+				}
+			}
+			custom_effect_tooltip = MRD_1_monthly_population_tt
+			custom_effect_tooltip = MRD_1_weekly_manpower_tt
+		}
+	}
+	MRD_decision_cherniy_rinok = { #Черный_рынок
+
+		cost = 40
+		days_remove = 35
+
+		icon = GFX_decision_generic_disband_irregulars 
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_uspeshniy_reid_country_flag_3
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			ROOT = { clr_country_flag = MRD_uspeshniy_reid_country_flag_3 }
+			custom_effect_tooltip =  MRD_cherniy_rinok_conec_flag_tt
+			MRD = {
+				hidden_effect = {
+					add_to_variable = { MRD_production_factory_start_efficiency_factor = 0.05 }
+					add_to_variable = { MRD_industrial_capacity_factory = 0.05 }
+				}
+			}
+			custom_effect_tooltip = MRD_1_production_factory_start_efficiency_factor_tt
+			custom_effect_tooltip = MRD_1_industrial_capacity_factory_tt			
+		}
+	}
+}
+
+
 economy_decisions = {
 }
