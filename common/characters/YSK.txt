@@ -131,6 +131,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Gennadiy_Troshev
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_armored_1
+			}
+		}
     }
 	
 	YSK_Leonid_Reshetnikov = {
@@ -150,6 +161,21 @@ characters={
 	    logistics_skill = 1
 		legacy_id = -1
         }
+		advisor={
+			slot = political_advisor
+			idea_token = YSK_Leonid_Reshetnikov
+			allowed = {
+				original_tag = YSK
+				
+			}			
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
     }
 	
 	YSK_Alexsandr_Barkashov = {
@@ -438,6 +464,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Gennadiy_Troshev
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+		}
     }
 	
 	YSK_Eduard_Ulman = {
@@ -457,6 +494,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Eduard_Ulman
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_commando_1
+			}
+		}
     }	
 	YSK_Medvedev_Romanov = {
 		name = "Николай II"
@@ -483,6 +531,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = army_chief
+			idea_token = YSK_Yuriy_Budanov
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+		}
     }
 	YSK_Egor_Holmogorov = {
 		name = "Егор Холмогоров"
@@ -727,6 +786,17 @@ characters={
 	    logistics_skill = 1
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_UncleDED
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_infantry_1
+			}
+		}
     }
 	
 	YSK_Semyon_Tokmakov = {

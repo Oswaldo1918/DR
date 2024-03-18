@@ -1603,7 +1603,7 @@ focus_tree = {
 	focus = {
 		id = YSK_God_and_space
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_glory_vreredmolyashchiy
 		}
@@ -1620,7 +1620,7 @@ focus_tree = {
 	focus = {
 		id = YSK_souz_s_Great_Russia
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_glory_vreredmolyashchiy
 		}
@@ -1638,7 +1638,7 @@ focus_tree = {
 	focus = {
 		id = YSK_razbyrokrachivanie
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1656,7 +1656,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sobiranie_nation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_razbyrokrachivanie
 		}
@@ -1673,7 +1673,7 @@ focus_tree = {
 	focus = {
 		id = YSK_iskorenenie_oligarhov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1903,7 +1903,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sacred_mission_RPTs
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1920,7 +1920,7 @@ focus_tree = {
 	focus = {
 		id = YSK_osvyatit_weapon
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sacred_mission_RPTs
 		}
@@ -1934,11 +1934,11 @@ focus_tree = {
 	focus = {
 		id = YSK_kanonizirovat_Gagarina
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sacred_mission_RPTs
 		}
-		x = 52
+		x = 51
 		y = 14
 			completion_reward = {
 					swap_ideas = {
@@ -1951,7 +1951,7 @@ focus_tree = {
 	focus = {
 		id = YSK_nato_weapon
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_kosmovoyska
 		}
@@ -1970,7 +1970,7 @@ focus_tree = {
 	focus = {
 		id = YSK_kosmovoyska
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2001,7 +2001,7 @@ focus_tree = {
 	focus = {
 		id = YSK_lunohody
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_kosmovoyska
 		}
@@ -2026,7 +2026,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_energy
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2049,7 +2049,7 @@ focus_tree = {
 	focus = {
 		id = YSK_obyazatelnaya_norma_molitv
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_new_energy
 		}
@@ -2066,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = YSK_need_more_churchs
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_new_energy
 		}
@@ -2104,7 +2104,7 @@ focus_tree = {
 	focus = {
 		id = YSK_otrit_new_NII
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2121,11 +2121,11 @@ focus_tree = {
 	focus = {
 		id = YSK_toplivo_iz_svyat_vody
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
-		x = 56
+		x = 57
 		y = 14
 			completion_reward = {
 					add_ideas = YSK_toplivo_iz_svyat_vody
@@ -2163,7 +2163,7 @@ focus_tree = {
 	focus = {
 		id = YSK_dvigately_na_svyat_duhe
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
@@ -2183,7 +2183,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ortodox_batuts
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2200,7 +2200,7 @@ focus_tree = {
 	focus = {
 		id = YSK_letaushchie_hrami
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
@@ -2222,7 +2222,7 @@ focus_tree = {
 	focus = {
 		id = YSK_osvyatit_rakety
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
@@ -2243,7 +2243,7 @@ focus_tree = {
 	focus = {
 		id = YSK_POEHALI
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		x = 54
 		y = 17
 			available = {
@@ -2259,7 +2259,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Luna_rus_sputnik
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_POEHALI
 		}
@@ -2270,7 +2270,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Mars_nash
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_POEHALI
 		}
@@ -2281,7 +2281,7 @@ focus_tree = {
 	focus = {
 		id = YSK_i_Veneru_ti_nam_otdash
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Luna_rus_sputnik
 		}
