@@ -23,9 +23,9 @@ leader_traits = {
     architect = {
 		sprite = 10
 		random = not		
-		production_speed_buildings_factor = -0.05
-		production_speed_infrastructure_factor = -0.075
-		consumer_goods_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		production_speed_infrastructure_factor = 0.075
+		consumer_goods_factor = 0.035
 		
 		ai_will_do = {
 			factor = 2

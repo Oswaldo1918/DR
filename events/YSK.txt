@@ -50,7 +50,7 @@ country_event = {
 	}
 }
 
-#шанс нацболам?
+#шанс_нацболам?
 country_event = {
 	id = YSK.3
 	title = YSK.3.t
@@ -86,12 +86,12 @@ country_event = {
 				popularity = -0.075
 		}
 		571 = {
-		    add_manpower = - 17000  
+		    add_manpower = -17000  
 		}
 	}
 }
 
-#события в Ельцинбурге
+#события_в_Ельцинбурге
 country_event = {
 	id = YSK.4
 	title = YSK.4.t
@@ -128,7 +128,7 @@ country_event = {
 		set_country_flag = monarhist_win      		
 	}
 	option = {
-	name = YSK.5.c
+	name = YSK.5.e
 		set_country_flag = ultraprav_win      		
 	}
 }
@@ -221,6 +221,9 @@ country_event = {
 		retire_character = YSK_Yuriy_Bernikov
 		retire_character = YSK_Igor_Ivanov
 		retire_character = YSK_Leonid_Nikshich
+		retire_character = YSK_Semyon_Tokmakov
+		retire_character = YSK_Andrew_Kyle
+		retire_character = YSK_Aleksey_Gudilin
 		653 = {
 		    damage_building = {
                 type = infrastructure
@@ -536,6 +539,9 @@ country_event = {
         }
         complete_national_focus = YSK_RNR_NPF_Memory
 		retire_character = YSK_Tesak
+		retire_character = YSK_Semyon_Tokmakov
+		retire_character = YSK_Andrew_Kyle
+		retire_character = YSK_Aleksey_Gudilin
 		653 = {
 		    damage_building = {
                 type = infrastructure
