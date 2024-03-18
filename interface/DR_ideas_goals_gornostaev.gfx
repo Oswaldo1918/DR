@@ -1232,29 +1232,46 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_BSH_Bebsofob.dds"	
 	}
 	
+	###Мордовские_динамические
+	
 	SpriteType = {
-		name = "GFX_"
-		texturefile = "gfx/interface/goals/.dds"	
+		name = "GFX_idea_MRD_nasledie_4_obschevoyskovoy_armii" 
+		texturefile = "gfx/interface/ideas/idea_MRD_nasledie_4_obschevoyskovoy_armii.dds"	
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_" 
-		texturefile = "gfx/interface/ideas/.dds"	
+		name = "GFX_idea_MRD_mordovskaya_armiya" 
+		texturefile = "gfx/interface/ideas/idea_MRD_mordovskaya_armiya.dds"	
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_" 
-		texturefile = "gfx/interface/ideas/.dds"	
+		name = "GFX_idea_MRD_mechty_ob_idealnom_poddannom" 
+		texturefile = "gfx/interface/ideas/idea_MRD_mechty_ob_idealnom_poddannom.dds"	
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_" 
-		texturefile = "gfx/interface/ideas/.dds"	
+		name = "GFX_idea_MRD_idealny_totalitarizm" 
+		texturefile = "gfx/interface/ideas/idea_MRD_idealny_totalitarizm.dds"	
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_" 
-		texturefile = "gfx/interface/ideas/.dds"	
+		name = "GFX_idea_MRD_arbayten_po_stakhanovski" 
+		texturefile = "gfx/interface/ideas/idea_MRD_arbayten_po_stakhanovski.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MRD_uskorennoe_stroitelstvo_reaktorov" 
+		texturefile = "gfx/interface/ideas/idea_MRD_uskorennoe_stroitelstvo_reaktorov.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_MRD_uskorenie_yadernykh_issledovaniy" 
+		texturefile = "gfx/interface/ideas/idea_MRD_uskorenie_yadernykh_issledovaniy.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_MRD_vlivania_v_proizvodstvo_radioaktivnyh" 
+		texturefile = "gfx/interface/ideas/idea_MRD_vlivania_v_proizvodstvo_radioaktivnyh.dds"	
 	}
 	
 	SpriteType = {
@@ -3530,8 +3547,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_MRD_goal_razvitie_mashinostroenya"
-		texturefile = "gfx/interface/goals/MRD_goal_razvitie_mashinostroenya.dds"	
+		name = "GFX_MRD_goal_razvitie_stroitelstva"
+		texturefile = "gfx/interface/goals/MRD_goal_razvitie_stroitelstva.dds"	
 	}
 	
 	SpriteType = {
@@ -3580,10 +3597,124 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_MRD_goal_esmintsy_i_kreysera_proekta_23"
+		texturefile = "gfx/interface/goals/MRD_goal_esmintsy_i_kreysera_proekta_23.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_MRD_goal_tankovye_klinya"
+		texturefile = "gfx/interface/goals/MRD_goal_tankovye_klinya.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_MRD_goal_rasshirit_mordovskie_tyurmy"
+		texturefile = "gfx/interface/goals/MRD_goal_rasshirit_mordovskie_tyurmy.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_MRD_goal_razvitie_mashinostroeniya"
+		texturefile = "gfx/interface/goals/MRD_goal_razvitie_mashinostroeniya.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_kustarnoe_proizvodstvo"
+		texturefile = "gfx/interface/goals/DON_goal_kustarnoe_proizvodstvo.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_kazn_Poroshenko"
+		texturefile = "gfx/interface/goals/DON_goal_kazn_Poroshenko.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_iskra"
+		texturefile = "gfx/interface/goals/DON_goal_iskra.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_zakhvat_flota"
+		texturefile = "gfx/interface/goals/DON_goal_zakhvat_flota.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_zapadnaya_ukraina"
+		texturefile = "gfx/interface/goals/DON_goal_zapadnaya_ukraina.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_dopolnitelny_nazhim"
+		texturefile = "gfx/interface/goals/DON_goal_dopolnitelny_nazhim.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_defashizatsia"
+		texturefile = "gfx/interface/goals/DON_goal_defashizatsia.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_ukrainskaya_voyna"
+		texturefile = "gfx/interface/goals/DON_goal_ukrainskaya_voyna.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_usilit_armiyu"
+		texturefile = "gfx/interface/goals/DON_goal_usilit_armiyu.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_odessa_russkiy_gorod"
+		texturefile = "gfx/interface/goals/DON_goal_odessa_russkiy_gorod.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_narabotki_po_OGASu"
+		texturefile = "gfx/interface/goals/DON_goal_narabotki_po_OGASu.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_modernizatsia_flota"
+		texturefile = "gfx/interface/goals/DON_goal_modernizatsia_flota.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_DON_goal_mobilizirovat_opolchenie"
+		texturefile = "gfx/interface/goals/DON_goal_mobilizirovat_opolchenie.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_DON_goal_krym_nash"
+		texturefile = "gfx/interface/goals/DON_goal_krym_nash.dds"	
+	}
+
+	SpriteType = {
 		name = "GFX_"
 		texturefile = "gfx/interface/goals/.dds"	
 	}
 
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/.dds"	
+	}
 	SpriteType = {
 		name = "GFX_"
 		texturefile = "gfx/interface/goals/.dds"	

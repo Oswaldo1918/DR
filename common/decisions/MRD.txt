@@ -312,7 +312,7 @@ MRD_mordovskava_armiya_decisions_category = {
 }
 
 MRD_grabit_corovani_decisions_category = {
-	MRD_grabit_corovan_decision = {
+	MRD_prepare_raid_decision = {
 		icon = GFX_decision_border_war
 
 		available = {
@@ -323,26 +323,37 @@ MRD_grabit_corovani_decisions_category = {
 					is_fully_controlled_by = FROM
 				}
 			}
-			has_war = no
-			FROM = { 
-				has_war = no
-				NOT = { has_country_flag = MRD_reidil_etih_uzhe } #Это_значит_что_мы_их_рейдили_уже
+			NOT = { has_country_flag = russia_raid_succeeded }
+			NOT = { has_country_flag = russia_raid_failed }
+			custom_trigger_tooltip = {
+				tooltip = russia_has_loot_tt
+				FROM = {
+					check_variable = { loot_amount > 0 }
+				}
 			}
+			NOT = {
+				FROM = { has_country_flag = russia_is_raid_target }
+			}
+			has_war = no
+			FROM = { has_war = no }
 		}
 
 		visible = {
 			NOT = {
+				has_country_flag = russia_preparing_raid
+				has_country_flag = cannot_raid
 				is_puppet_of = FROM
 				is_in_faction_with = FROM
 				has_non_aggression_pact_with = FROM
-				has_country_flag = MRD_reidili_uzhe #У_орков_законный_перерыв_на_90_дней
 			}
 			is_neighbor_of = FROM
 		}
 
+		target_array = global.russian_warlords
 		target_trigger = {
 			FROM = {
 				is_neighbor_of = ROOT
+				is_wasteland = no
 				NOT = {
 					is_puppet_of = ROOT
 					is_in_faction_with = ROOT
@@ -353,6 +364,9 @@ MRD_grabit_corovani_decisions_category = {
 					limit = {
 						is_puppet = yes
 						ROOT = { is_puppet = yes }
+					}
+					OVERLORD = {
+						NOT = { tag = ROOT.OVERLORD } #Puppets from thee same overlord can't raid each other
 					}
 				}
 			}
@@ -414,49 +428,132 @@ MRD_grabit_corovani_decisions_category = {
 		}
 
 		cancel_effect = {
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target}
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision russia_prepare_raid target: [From.GetName]"
 			hidden_effect = {
 				add_command_power = -20
+				FROM = {
+					random_owned_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								is_fully_controlled_by = ROOT
+								has_ROOT_at_least_1_div_in_current_state_scope = yes
+							}
+						}
+						set_state_flag = RUS_DEFENDER_STATE
+						set_variable = { PREV.defender_state_vs_@ROOT = THIS }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						has_ROOT_at_least_1_div_in_current_state_scope = yes
+						any_neighbor_state = {
+							is_fully_controlled_by = FROM
+							has_state_flag = RUS_DEFENDER_STATE
+						}
+					}
+					set_variable = { FROM.attacker_state_vs_@ROOT = THIS }
+				}
 				set_country_flag = russia_preparing_raid
-			}
-		}
-		remove_effect = {
-			activate_targeted_decision = { target = FROM decision = russia_initiate_raid }
-			FROM = {
-				country_event = mordor.58
-			}
-			start_border_war = {
-				change_state_after_war = no
-				attacker = {
-					state = var:FROM.attacker_state_vs_@ROOT
-					num_provinces = 4
-					on_win = mordor.52
-					on_lose = mordor.53
-					on_cancel = mordor.54
-				}
-
-				defender = {
-					state = var:FROM.defender_state_vs_@ROOT
-					num_provinces = 4
-					on_win = mordor.55
-					on_lose = mordor.56
-					on_cancel = mordor.57
-				}
-			}
-			set_border_war_data = {
-				attacker = var:FROM.defender_state_vs_@ROOT
-				defender = var:FROM.defender_state_vs_@ROOT
-				combat_width = 60
-			}
-			hidden_effect = {
 				FROM = {
 					set_country_flag = {
-						flag = MRD_reidil_etih_uzhe
+						flag = russia_is_raid_target
 						days = 90
 						value = 1
 					}
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove russia_prepare_raid target: [From.GetName]"
+			activate_targeted_decision = { target = FROM decision = russia_initiate_raid }
+			hidden_effect = {
+				FROM = {
+					random_owned_controlled_state = {
+						limit = {
+							has_state_flag = RUS_DEFENDER_STATE
+						}
+						clr_state_flag = RUS_DEFENDER_STATE
+					}
+				}
+			}
+		}
+	}
+	MRD_prepare_raid_decision = {
+		icon = GFX_decision_border_war
+		icon = GFX_decision_border_war
+
+		activation = { always = no } #Activated from effect
+
+		available = {
+			var:FROM.attacker_state_vs_@ROOT = {
+				is_fully_controlled_by = ROOT
+			}
+			divisions_in_border_state = {
+				state = var:FROM.attacker_state_vs_@ROOT
+				border_state = var:FROM.defender_state_vs_@ROOT
+				size > 0
+			}
+		}
+
+		highlight_states = {
+			state = var:FROM.defender_state_vs_@ROOT
+		}
+
+		ai_will_do = {
+			base = 30
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio = 2
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				FROM = { has_war = yes }
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target }
+		}
+
+		fire_only_once = yes #Reactivation handled in effect
+		selectable_mission = yes
+
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout russia_initiate_raid"
+			hidden_effect = {
+				FROM = {
+					clear_variable = attacker_state_vs_@ROOT
+					clear_variable = defender_state_vs_@ROOT
+				}
+				remove_targeted_decision = { target = FROM decision = russia_initiate_raid }
+				activate_targeted_decision = { target = FROM decision = russia_prepare_raid }
+			}
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target }
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision russia_initiate_raid"
+			FROM = {
+				country_event = {
+					id = raiding.100
+					days = 1
 				}
 			}
 		}

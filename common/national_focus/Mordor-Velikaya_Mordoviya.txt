@@ -940,7 +940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_tankoviye_klinya
-		icon = GFX_goal_OBT
+		icon = GFX_MRD_goal_tankovye_klinya
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_modern_doktrina
@@ -1600,7 +1600,7 @@ focus_tree = {
 	#Строительство_и_машиностроение
 	focus = {
 		id = MRD_razvitiye_stroitelnoy_otrasli
-		icon = GFX_MRD_goal_razvitie_mashinostroenya
+		icon = GFX_MRD_goal_razvitie_stroitelstva
 		cost = 5,00
 		x = 15
 		y = 12
@@ -1685,7 +1685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_mashinostroyeniye
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_razvitie_mashinostroeniya
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_upor_na_tyazhprom
@@ -1973,7 +1973,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MRD_mordovskie_turmi
-		icon = GFX_goal_unknown
+		icon = GFX_MRD_goal_rasshirit_mordovskie_tyurmy
 		cost = 5,00
 		x = 20
 		y = 14
@@ -2177,7 +2177,7 @@ focus_tree = {
 
 	focus = {
 		id = MRD_esmintsi_proekta_23
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_MRD_goal_esmintsy_i_kreysera_proekta_23
 		cost = 5,00
 		prerequisite = {
 			focus = MRD_globalnaya_industrializatsiya

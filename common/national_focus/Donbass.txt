@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_iskra #Расширение_электротехнической_промышленности
-		icon = GFX_goal_generic_radar
+		icon = GFX_DON_goal_iskra
 		cost = 10,00
 		prerequisite = {
 			focus = DON_shahta_im_lavkrafta
@@ -547,7 +547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_narabotki_po_ogasy
-		icon = GFX_Computer_2
+		icon = GFX_DON_goal_narabotki_po_OGASu
 		cost = 10,00
 		prerequisite = {
 			focus = DON_iskra
@@ -1040,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_dopolnitelniy_nazhim
-		icon = GFX_cht_kluch_strelki
+		icon = GFX_DON_goal_dopolnitelny_nazhim
 		cost = 5,00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
@@ -1169,7 +1169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_usilit_armiu
-		icon = GFX_focus_cht_klonirovanie
+		icon = GFX_DON_goal_usilit_armiyu
 		cost = 5,00
 		prerequisite = {
 			focus = DON_propagandiskaya_kampaniya
@@ -1384,7 +1384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_mobilizovat_opolcheniye
-		icon = GFX_goal_rhineland
+		icon = GFX_DON_goal_mobilizirovat_opolchenie
 		cost = 1,00
 		prerequisite = {
 			focus = DON_kustarnoye_proizvodstvo
@@ -1430,7 +1430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_kustarnoye_proizvodstvo
-		icon = GFX_goal_generic_production
+		icon = GFX_DON_goal_kustarnoe_proizvodstvo
 		cost = 1,00
 		prerequisite = {
 			focus = DON_plan_B
@@ -1449,7 +1449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_ukrainskaya_voyna #Великая_Украинская_война
-		icon = GFX_focus_SOV_restore_cossack_units
+		icon = GFX_DON_goal_ukrainskaya_voyna
 		cost = 2,00
 		prerequisite = {
 			focus = DON_propagandiskaya_kampaniya
@@ -1532,7 +1532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_kazn_poroshenko
-		icon = GFX_goal_unknown
+		icon = GFX_DON_goal_kazn_Poroshenko
 		cost = 4,00
 		prerequisite = {
 			focus = DON_ukrainskaya_voyna
@@ -1554,7 +1554,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_defashizatsiya
-		icon = GFX_goal_unknown
+		icon = GFX_DON_goal_defashizatsia
 		cost = 4,00
 		prerequisite = {
 			focus = DON_ukrainskaya_voyna
@@ -1618,7 +1618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_odessa
-		icon = GFX_goal_russian_odessa
+		icon = GFX_DON_goal_odessa_russkiy_gorod
 		cost = 3,00
 		prerequisite = {
 			focus = DON_defashizatsiya
@@ -1640,7 +1640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_krimnash
-		icon = GFX_goal_crimea_nash
+		icon = GFX_DON_goal_krym_nash
 		cost = 2,00
 		prerequisite = {
 			focus = DON_odessa
@@ -1659,7 +1659,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_zahvat_flota
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_DON_goal_zakhvat_flota
 		cost = 5,00
 		prerequisite = {
 			focus = DON_odessa
@@ -1688,7 +1688,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_zapadnaya_ukraina
-		icon = GFX_goal_unknown
+		icon = GFX_DON_goal_zapadnaya_ukraina
 		cost = 3,00
 		prerequisite = {
 			focus = DON_na_chetvertiy_etazh
@@ -1711,7 +1711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DON_modernizatsiya_flota
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_DON_goal_modernizatsia_flota
 		cost = 5,00
 		prerequisite = {
 			focus = DON_krimnash
