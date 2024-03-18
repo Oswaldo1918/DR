@@ -6,7 +6,7 @@ country_event = {
 	id = YSK.1
 	title = YSK.1.t
 	desc = YSK.1.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RusKukozh
 	
 	is_triggered_only = yes	
 	
@@ -33,7 +33,7 @@ country_event = {
 	id = YSK.2
 	title = YSK.2.t
 	desc = YSK.2.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RusNationalist
 	
 	is_triggered_only = yes	
 	
@@ -55,7 +55,7 @@ country_event = {
 	id = YSK.3
 	title = YSK.3.t
 	desc = YSK.3.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_Letov
 	
 	is_triggered_only = yes	
 	
@@ -66,13 +66,28 @@ country_event = {
 				popularity = 0.075
 		}
 		add_manpower = 10000
+		OMS = {      
+            set_nationality = {
+				target_country = YSK     
+				character = OMS_Letov
+			}
+		}
+		OMS = {      
+            set_nationality = {
+				target_country = YSK     
+				character = OMS_Yanka
+			}
+		}
 	}
 	option = {
 	name = YSK.3.a
 		add_popularity = {
 				ideology = metacommy
 				popularity = -0.075
-		}      		
+		}
+		571 = {
+		    add_manpower = - 17000  
+		}
 	}
 }
 
@@ -81,7 +96,7 @@ country_event = {
 	id = YSK.4
 	title = YSK.4.t
 	desc = YSK.4.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_Pogrom
 	
 	is_triggered_only = yes	
 	
@@ -96,7 +111,7 @@ country_event = {
 	id = YSK.5
 	title = YSK.5.t
 	desc = YSK.5.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RNG
 	
 	is_triggered_only = yes	
 	
@@ -195,7 +210,143 @@ country_event = {
         set_politics = {
 	        ruling_party = fascism
         }
-        complete_national_focus = YSK_ultraright_visionary    		
+        complete_national_focus = YSK_ultraright_visionary
+		retire_character = YSK_Tesak
+		retire_character = YSK_Alexsandr_Barkashov
+		retire_character = YSK_Petr_Barkashov
+		retire_character = YSK_Alexsandr_Grushin
+		retire_character = YSK_Svyatoslav_Andreev
+		retire_character = YSK_Victor_Afanasev
+		retire_character = YSK_Nickolay_Skorodumov
+		retire_character = YSK_Yuriy_Bernikov
+		retire_character = YSK_Igor_Ivanov
+		retire_character = YSK_Leonid_Nikshich
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 	option = {
 	    name = YSK.8.b
@@ -222,7 +373,142 @@ country_event = {
 	        ruling_party = fascism
         }
         add_ideas = YSK_ns_besporyadki
-        complete_national_focus = YSK_NNP        		
+        complete_national_focus = YSK_NNP
+		retire_character = YSK_Alexsandr_Barkashov
+		retire_character = YSK_Petr_Barkashov
+		retire_character = YSK_Alexsandr_Grushin
+		retire_character = YSK_Svyatoslav_Andreev
+		retire_character = YSK_Victor_Afanasev
+		retire_character = YSK_Nickolay_Skorodumov
+		retire_character = YSK_Yuriy_Bernikov
+		retire_character = YSK_Igor_Ivanov
+		retire_character = YSK_Leonid_Nikshich
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 	option = {
 	    name = YSK.8.с
@@ -248,59 +534,134 @@ country_event = {
         set_politics = {
 	        ruling_party = fascism
         }
-        complete_national_focus = YSK_NPF_Memorys       		
-	}
-	option = {
-	    name = YSK.8.e
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.1
+        complete_national_focus = YSK_RNR_NPF_Memory
+		retire_character = YSK_Tesak
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
 		}
-        add_country_leader_role = {
-            character = YSK_Alexsandr_Barkashov
-            promote_leader = yes
-            country_leader = {
-                ideology = religious_fascism
-                expire = "1965.1.1.1"
-                traits = { national_socialist_paramilitarist }
-            }
-        }
-        set_party_name = {
-            ideology = fascism
-            long_name = YSK_fascism_nazism_long
-            name = YSK_fascism_nazism
-        }
-        set_cosmetic_tag = YSK_RUS_RNE
-        set_politics = {
-	        ruling_party = fascism
-        }
-        complete_national_focus = YSK_RNE         		
-	}	
-	option = {
-	    name = YSK.8.с
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.1
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
 		}
-        add_country_leader_role = {
-            character = YSK_Nickolay_Skorodumov
-            promote_leader = yes
-            country_leader = {
-                ideology = ultright_monarchy
-                expire = "1965.1.1.1"
-                traits = { crown_regent  }
-            }
-        }
-        set_party_name = {
-            ideology = fascism
-            long_name = YSK_fascism_ultright_monarchy_long
-            name = YSK_fascism_ultright_monarchy
-        }
-        set_cosmetic_tag = YSK_RUS_NPF_Memory
-        set_politics = {
-	        ruling_party = fascism
-        }
-        complete_national_focus = YSK_NPF_Memorys       		
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 }
 

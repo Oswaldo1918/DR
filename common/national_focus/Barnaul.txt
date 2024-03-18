@@ -389,24 +389,32 @@ focus_tree = {
             navy_experience  = 25
             random_list = {
                 50 = {
-                    POK_shmonov = {
-			            set_nationality = YSK
-			        }
+					POK = {      
+                        set_nationality = {
+						    target_country = YSK     
+						    character = POK_shmonov
+			            }
+					}
+					army_experience = 5
                 }
                 50 = {
-                    
+                    add_war_support = -0.01
                 }
             } 
             random_list = {
                 50 = {
-                    POK_zubov = {
-			            set_nationality = YSK
-			        }
+				    POK = {      
+                        set_nationality = {
+						    target_country = YSK     
+						    character = POK_zubov
+			            }
+					}
+					army_experience = 5
                 }
                 50 = {
-                    
+                    add_war_support = -0.01
                 }
-            }
+            } 
 		}       
 	}
 	focus = {
