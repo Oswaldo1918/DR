@@ -104,7 +104,7 @@ characters={
 			}
 		}
 		field_marshal = {
-	    traits = { politically_connected media_personality }
+	    traits = { politically_connected media_personality militias_officer }
 	    skill = 1
 	    attack_skill = 2
 	    defense_skill = 1
@@ -131,6 +131,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Gennadiy_Troshev
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_armored_1
+			}
+		}
     }
 	
 	YSK_Leonid_Reshetnikov = {
@@ -150,6 +161,21 @@ characters={
 	    logistics_skill = 1
 		legacy_id = -1
         }
+		advisor={
+			slot = political_advisor
+			idea_token = YSK_Leonid_Reshetnikov
+			allowed = {
+				original_tag = YSK
+				
+			}			
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
     }
 	
 	YSK_Alexsandr_Barkashov = {
@@ -383,6 +409,44 @@ characters={
         }
     }
 	
+	YSK_Igor_Ivanov = {
+		name = "Игорь Иванов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Igor_Ivanov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
+	YSK_Leonid_Nikshich = {
+		name = "Леонид Никтич"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Leonid_Nikshich.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	
 	YSK_Gennadiy_Troshev = {
 		name = "Геннадий Трошев"
 		portraits = {
@@ -400,6 +464,17 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Gennadiy_Troshev
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+		}
     }
 	
 	YSK_Eduard_Ulman = {
@@ -419,9 +494,20 @@ characters={
 	    logistics_skill = 2
 		legacy_id = -1
         }
+		advisor={
+			slot = high_command
+			idea_token = YSK_Eduard_Ulman
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_commando_1
+			}
+		}
     }	
 	YSK_Medvedev_Romanov = {
-		name = "Николай 2"
+		name = "Николай II"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/YSK/Medvedev_Romanov.dds"
@@ -443,6 +529,327 @@ characters={
 	    defense_skill = 2
 	    planning_skill = 2
 	    logistics_skill = 2
+		legacy_id = -1
+        }
+		advisor={
+			slot = army_chief
+			idea_token = YSK_Yuriy_Budanov
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+		}
+    }
+	YSK_Egor_Holmogorov = {
+		name = "Егор Холмогоров"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Egor_Holmogorov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+			    OR = { 
+				    has_government = neutrality
+					has_government = democratic
+				}	
+			}
+            traits = { traditionalist_theorist }
+	    }
+	}
+	YSK_Dmitriy_Bastrakov = {
+		name = "Дмитрий Бастраков"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Dmitriy_Bastrakov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+                OR = { 
+				    has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}      			
+			}
+            traits = { editor }
+	    }
+	}
+	YSK_Sergey_Grigorov = {
+		name = "Сергей Григоров"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Sergey_Grigorov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {			    
+				has_government = democratic	
+			}
+            traits = { silent_workhorse }
+	    }
+	}
+	YSK_Anatoliy_Carlin = {
+		name = "Анатолий Карлин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Anatoliy_Carlin
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {			    
+				has_government = fascism	
+			}
+            traits = { fascist_demagogue }
+	    }
+	}
+	YSK_Grigoriy_Bazhenov = {
+		name = "Григорий Баженов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Grigoriy_Bazhenov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {			    
+				has_government = democratic	
+			}
+            traits = { economist }
+	    }
+	}
+	YSK_Nikita_Safronov = {
+		name = "Никита Сафронов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Nikita_Safronov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+			    OR = { 
+				    has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}         
+			}
+            traits = { minister_of_ecclesiastical_affairs }
+	    }
+	}
+	YSK_Watoadmin = {
+		name = "Василий «Ватоадмин» Тополев"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Watoadmin
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+			    OR = { 
+				    has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}           
+			}
+            traits = { industry_reformer }
+	    }
+	}
+	YSK_Pavel_Gnilorybov = {
+		name = "Павел Гнилорыбов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Pavel_Gnilorybov
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+			    OR = { 
+				    has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}        
+			}
+            traits = { architect }
+	    }
+	}
+	YSK_Konstantin_Sinyushin = {
+		name = "Константин Синюшин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Konstantin_Sinyushin
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = {
+			    OR = { 
+				    has_government = neutrality
+					has_government = democratic
+				}      
+			}
+            traits = { predprinimatel }
+	    }
+	}
+	YSK_Evgeniy_Noreen = {
+		name = "Евгений Норин"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHT_wladislav_zalujniy"
+			}
+		}
+		advisor={
+	    	idea_token = YSK_Evgeniy_Noreen
+      		slot = political_advisor
+			allowed = {
+                original_tag = YSK
+				
+            }
+			available = { 
+                OR = { 
+				    has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}       			
+			}
+            traits = { istorik_journalist }
+	    }
+	}
+	YSK_UncleDED = {
+		name = "UncleDED"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/UncleDED.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 1
+	    planning_skill = 3
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+		advisor={
+			slot = high_command
+			idea_token = YSK_UncleDED
+
+			allowed = {
+				original_tag = YSK
+			}
+			traits = {
+				army_infantry_1
+			}
+		}
+    }
+	
+	YSK_Semyon_Tokmakov = {
+		name = "Семён «Бус» Токмаков"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Semyon_Tokmakov.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected militias_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    } 
+	YSK_Andrew_Kyle = {
+		name = "Андрей Кайль"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Andrew_Kyle.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected militias_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+		legacy_id = -1
+        }
+    }
+	YSK_Aleksey_Gudilin = {
+		name = "Алексей Гудилин"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YSK/Aleksey_Gudilin.dds"
+				small= "idea_CHK_Yts_Mi_Gov"
+			}
+		}
+		corps_commander = {
+	    traits = { politically_connected militias_officer }
+	    skill = 1
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
 		legacy_id = -1
         }
     }

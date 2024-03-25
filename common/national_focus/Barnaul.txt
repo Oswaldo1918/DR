@@ -389,24 +389,32 @@ focus_tree = {
             navy_experience  = 25
             random_list = {
                 50 = {
-                    POK_shmonov = {
-			            set_nationality = YSK
-			        }
+					POK = {      
+                        set_nationality = {
+						    target_country = YSK     
+						    character = POK_shmonov
+			            }
+					}
+					army_experience = 5
                 }
                 50 = {
-                    
+                    add_war_support = -0.01
                 }
             } 
             random_list = {
                 50 = {
-                    POK_zubov = {
-			            set_nationality = YSK
-			        }
+				    POK = {      
+                        set_nationality = {
+						    target_country = YSK     
+						    character = POK_zubov
+			            }
+					}
+					army_experience = 5
                 }
                 50 = {
-                    
+                    add_war_support = -0.01
                 }
-            }
+            } 
 		}       
 	}
 	focus = {
@@ -1595,7 +1603,7 @@ focus_tree = {
 	focus = {
 		id = YSK_God_and_space
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_glory_vreredmolyashchiy
 		}
@@ -1612,7 +1620,7 @@ focus_tree = {
 	focus = {
 		id = YSK_souz_s_Great_Russia
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_glory_vreredmolyashchiy
 		}
@@ -1630,7 +1638,7 @@ focus_tree = {
 	focus = {
 		id = YSK_razbyrokrachivanie
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1648,7 +1656,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sobiranie_nation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_razbyrokrachivanie
 		}
@@ -1665,7 +1673,7 @@ focus_tree = {
 	focus = {
 		id = YSK_iskorenenie_oligarhov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1895,7 +1903,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sacred_mission_RPTs
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1912,7 +1920,7 @@ focus_tree = {
 	focus = {
 		id = YSK_osvyatit_weapon
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sacred_mission_RPTs
 		}
@@ -1926,11 +1934,11 @@ focus_tree = {
 	focus = {
 		id = YSK_kanonizirovat_Gagarina
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sacred_mission_RPTs
 		}
-		x = 52
+		x = 51
 		y = 14
 			completion_reward = {
 					swap_ideas = {
@@ -1943,7 +1951,7 @@ focus_tree = {
 	focus = {
 		id = YSK_nato_weapon
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_kosmovoyska
 		}
@@ -1962,7 +1970,7 @@ focus_tree = {
 	focus = {
 		id = YSK_kosmovoyska
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -1993,7 +2001,7 @@ focus_tree = {
 	focus = {
 		id = YSK_lunohody
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_kosmovoyska
 		}
@@ -2018,7 +2026,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_energy
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2041,7 +2049,7 @@ focus_tree = {
 	focus = {
 		id = YSK_obyazatelnaya_norma_molitv
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_new_energy
 		}
@@ -2058,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = YSK_need_more_churchs
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_new_energy
 		}
@@ -2096,7 +2104,7 @@ focus_tree = {
 	focus = {
 		id = YSK_otrit_new_NII
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2113,11 +2121,11 @@ focus_tree = {
 	focus = {
 		id = YSK_toplivo_iz_svyat_vody
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
-		x = 56
+		x = 57
 		y = 14
 			completion_reward = {
 					add_ideas = YSK_toplivo_iz_svyat_vody
@@ -2155,7 +2163,7 @@ focus_tree = {
 	focus = {
 		id = YSK_dvigately_na_svyat_duhe
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_otrit_new_NII
 		}
@@ -2175,7 +2183,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ortodox_batuts
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God_and_space
 		}
@@ -2192,7 +2200,7 @@ focus_tree = {
 	focus = {
 		id = YSK_letaushchie_hrami
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
@@ -2214,7 +2222,7 @@ focus_tree = {
 	focus = {
 		id = YSK_osvyatit_rakety
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ortodox_batuts
 		}
@@ -2235,7 +2243,7 @@ focus_tree = {
 	focus = {
 		id = YSK_POEHALI
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		x = 54
 		y = 17
 			available = {
@@ -2251,7 +2259,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Luna_rus_sputnik
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_POEHALI
 		}
@@ -2262,7 +2270,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Mars_nash
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_POEHALI
 		}
@@ -2273,7 +2281,7 @@ focus_tree = {
 	focus = {
 		id = YSK_i_Veneru_ti_nam_otdash
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Luna_rus_sputnik
 		}
@@ -2896,7 +2904,7 @@ focus_tree = {
 			} 
             custom_effect_tooltip = YSK_1_pamyat_god_special_forces_cap_tt
 			custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
-   			custom_effect_tooltip = YSK_2_pamyat_god_army_morale_factor_tt
+   			custom_effect_tooltip = YSK_1_pamyat_god_army_morale_factor_tt
 			custom_effect_tooltip = YSK_1_pamyat_god_conscription_tt
 		}
 	}
@@ -3493,10 +3501,1403 @@ focus_tree = {
 		x = 77
 		y = 26
         completion_reward = {
-			declare_war_on = {
-            target = all
-            type = annex_everything
-            }
+			if = {
+				limit = {
+				    BRT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BRT
+                    type = annex_everything
+                }               
+			}
+            if = {
+				limit = {
+				    YAK = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = YAK
+                    type = annex_everything
+                }               
+			}
+            if = {
+				limit = {
+				    YWO = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = YWO
+                    type = annex_everything
+                }               
+			}
+  			if = {
+				limit = {
+				    TUB = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TUB
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KOL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KOL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MAG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MAG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    DOT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = DOT
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LIM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LIM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KAZ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KAZ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TAJ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TAJ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TMS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TMS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KYR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KYR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BSH = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BSH
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PRM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PRM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SKT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SKT
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ARK = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ARK
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CHT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CHT
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NOD = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NOD
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MHL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MHL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    EBN = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = EBN
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TUP = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TUP
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LAZ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LAZ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    UNT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = UNT
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MAT = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MAT
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KRR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KRR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    HAZ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = HAZ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    STR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = STR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    GEO = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = GEO
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CHK = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CHK
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    AZR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = AZR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ARM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ARM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    DON = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = DON
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    UKR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CHE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CHE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CRI = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CRI
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KUR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KUR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MOL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MOL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZHE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZHE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SIN = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SIN
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    WHS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = WHS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZWN = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZWN
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SPL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SPL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    VSB = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = VSB
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KLG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KLG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SUO = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SUO
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SWE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SWE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZBP = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZBP
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LUB = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LUB
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    POL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = POL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ECP = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ECP
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    HUN = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = HUN
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BER = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BER
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    YUG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = YUG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PGR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PGR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ALB = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ALB
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    HRV = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = HRV
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    FRG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = FRG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NEU = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NEU
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BAV = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BAV
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZCE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZCE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    AUS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = AUS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SWI = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SWI
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MRH = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MRH
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    EUF = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = EUF
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    EFR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = EFR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LFR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LFR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SFR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SFR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NRB = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NRB
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CNR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CNR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    GNR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = GNR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PRA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PRA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SPE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SPE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    UKE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = UKE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BRS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BRS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PBG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PBG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    UBR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = UBR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    FSK = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = FSK
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KOF = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KOF
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    RES = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = RES
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    VNR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = VNR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ETR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ETR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NII = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NII
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    UGI = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = UGI
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TUN = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TUN
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TSG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TSG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    OSM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = OSM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KRA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KRA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SIR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SIR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    IRQ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = IRQ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    IZR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = IZR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    HAL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = HAL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    HUS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = HUS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    DVA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = DVA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    EGY = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = EGY
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LBA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LBA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    LRG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = LRG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CHA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CHA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    KUW = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = KUW
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SAS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SAS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    RMS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = RMS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    IKR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = IKR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    AKI = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = AKI
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BLD = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BLD
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NAK = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NAK
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PNE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PNE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    NBU = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = NBU
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CMG = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CMG
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    TEL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = TEL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SHM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SHM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    GLA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = GLA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    CNA = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = CNA
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    MNR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = MNR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PRC = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PRC
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PUE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PUE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    FAL = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = FAL
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ALI = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ALI
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZCH = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZCH
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PCH = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PCH
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ZHR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ZHR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    GOM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = GOM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ASM = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ASM
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    BTS = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = BTS
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    JPE = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = JPE
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    COJ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = COJ
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    ASR = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = ASR
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    SKV = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = SKV
+                    type = annex_everything
+                }               
+			}
+			if = {
+				limit = {
+				    PRJ = {    
+					    exists = yes
+					}	
+				}
+				declare_war_on = {
+                    target = PRJ
+                    type = annex_everything
+                }               
+			}
 		}   
 	} 
 	#Нацдемы
@@ -4407,7 +5808,7 @@ focus_tree = {
 			focus = YSK_reparatsii_s_pensionerov
 		}
 		x = 28
-		y = 12
+		y = 12		
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = YSK_na_zlo_sovkam
@@ -4425,10 +5826,449 @@ focus_tree = {
 		}
 		x = 28
 		y = 13
+		available = {
+		    controls_state = 654
+            controls_state = 40   
+            controls_state = 570    
+            controls_state = 571     
+            controls_state = 403    
+            controls_state = 572      
+            controls_state = 582    
+            controls_state = 652      
+            controls_state = 401  
+            controls_state = 829    
+            controls_state = 217     
+            controls_state = 236      
+            controls_state = 237      
+            controls_state = 235    
+            controls_state = 234 
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = YSK_na_zlo_sovkam_2
 				add_idea = YSK_na_zlo_sovkam_3
+			}
+			654 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10713
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10531
+				}
+			}
+            40 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7680
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11410
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12613
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1797
+				}
+			}
+  			570 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4906
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12679
+				}
+			}
+			571 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12546
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1800
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10568
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7800
+				}
+			}
+			403 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4780
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12521
+				}
+			}
+			572 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1294
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1775
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10170
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10213
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12157
+				}
+			}
+			582 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7401
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4411
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7281
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10196
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10224
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4261
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1406
+				}
+			}
+			652 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1210
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1254
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4322
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3563
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9420
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11433
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6424
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9445
+				}
+			}
+			401 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6473
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 410
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6574
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3490
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6430
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9447
+				}
+			}
+			829 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6479
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3517
+				}
+			}
+			217 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6541
+				}
+			}
+			236 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6516
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6486
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9455
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11429
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3435
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 618
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9592
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11736
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+					    has_government = fascism     
+					    has_government = democratic    
+					}
+				}
+				237 = {
+				    add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 3726
+				    }
+					add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 742
+				    }
+					add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 745
+				    }
+			    }
+			    235 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11690
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6702
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6733
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6718
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11633
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 714
+				}
+			    }
+				234 = {
+				    add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 9691
+				    }
+					add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 6736
+				    }
+					add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 3717
+				    }
+					add_building_construction = {
+					    type = bunker
+					    level = 2
+					    instant_build = yes
+					    province = 717
+				    }
+			    }
 			}
 		}
 	}
