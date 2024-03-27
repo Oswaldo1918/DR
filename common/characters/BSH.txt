@@ -1,4 +1,5 @@
 characters={
+	###Лидеры
 	BSH_muhamed = {
 		name = "Товарищ Мухамедьянов"
 		portraits = {
@@ -9,6 +10,34 @@ characters={
 		country_leader = {
 	        expire = "1999.1.1"
 	        ideology = leninismus
+		    id=-1
+	   }
+    }
+	
+	BSH_cik_bash = {
+		name = "Парламент"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Kurultay.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = conservatism
+		    id=-1
+	   }
+    }
+	
+	BSH_grigorev = {
+		name = "Даниил Григорьев"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Grigorev.dds"
+			}
+		}
+		country_leader = {
+	        expire = "1999.1.1"
+	        ideology = ortodox_anstal
 		    id=-1
 	   }
     }
@@ -40,53 +69,7 @@ characters={
 		    id=-1
 	    }
     }
-	
-	BSH_babaynefash = {
-		name = "Бебнито Бебсолинни"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/BSH/babaynefas.dds"
-			}
-		}
-		
-		country_leader = {
-	        expire = "1999.1.1"
-			traits = {
-	         	vozhdya fascist_militia_leader
-	        }
-	        ideology = nefascism
-		    id=-1
-	    }
-    }
-	
-	BSH_grigorev = {
-		name = "Даниил Григорьев"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/BSH/Grigorev.dds"
-			}
-		}
-		country_leader = {
-	        expire = "1999.1.1"
-	        ideology = ortodox_anstal
-		    id=-1
-	   }
-    }
-	
-	BSH_cik_bash = {
-		name = "Парламент"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/BSH/Kurultay.dds"
-			}
-		}
-		country_leader = {
-	        expire = "1999.1.1"
-	        ideology = conservatism
-		    id=-1
-	   }
-    }
-	
+
 	BSH_ilgizar = {
 		name = "Ильгизар Азнагулов"
 		portraits = {
@@ -106,6 +89,70 @@ characters={
 		}
     }
 	
+	###Деградач
+	
+	BSH_babaynefash = {
+		name = "Бебнито Бебсолинни"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/babaynefas.dds"
+			}
+		}
+		
+		country_leader = {
+	        expire = "1999.1.1"
+			traits = {
+	         	vozhdya fascist_militia_leader
+	        }
+	        ideology = nefascism
+		    id=-1
+	    }
+    }
+	
+	###МОДЕРЫ
+	
+	BSH_Nastya = {
+		name = "Настя"
+		portraits = {
+			civilian = {     
+				small = "GFX_idea_BSH_Nastya"
+			}
+		}
+
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Nastya
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { princess_of_terror }
+	    }
+	}
+	BSH_vladislave_dikun = {
+		name = "Владислав Дикун"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/vladislave_dikun.dds"
+				small = "GFX_idea_BSH_vladislave_dikun"
+			}
+		}
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_vladislave_dikun
+			allowed = {
+                original_tag = BSH 
+				
+            }
+			available = {
+				has_completed_focus = BSH_babay
+			}
+            traits = { editor_degradach }
+	    }
+    }
 	BSH_Brenya = {
 		name = "Эфиоп Бреня"
 		portraits = {
@@ -129,8 +176,62 @@ characters={
 			}
             traits = { lieutenant_of_industry }
 	    }
+		field_marshal = {
+			traits = { old_guard trait_engineer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
 	}
-	
+	BSH_Bravo = {
+		name = "Алексей «Bravo» Декин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BSH/Alexey_Dekin.dds"
+				small = "GFX_idea_BSH_Bravo"
+			}
+		}
+		advisor={
+     		slot = political_advisor
+			idea_token = BSH_Bravo
+			allowed = {
+				original_tag = BSH
+				has_dlc = "La Resistance"
+			}
+			available = {		
+                has_government = memoism
+				has_intelligence_agency = yes
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { head_of_intelligence }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	BSH_krylov = {
+		name = "Матвей Крылов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/.dds"
+				small = "GFX_idea_BSH_krylov"
+			}
+		}
+    }
+	BSH_Kotak_San = {
+		name = "Kotak San"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Kotak_San.dds"
+				small = "GFX_idea_BSH_Kotak_San"
+			}
+		}
+    }
 	BSH_boykisser = {
 		name = "Бойкиссер"
 		portraits = {
@@ -151,7 +252,6 @@ characters={
             traits = {son_vozhd}
 	    }
 	}
-	
 	BSH_Andruha = {
 		name = "Андрюха"
 		portraits = {
@@ -174,29 +274,6 @@ characters={
             traits = { prince_of_terror }
 	    }
 	}
-	
-	BSH_Nastya = {
-		name = "Настя"
-		portraits = {
-			civilian = {     
-				small = "GFX_idea_BSH_Nastya"
-			}
-		}
-
-		advisor={
-     		slot = political_advisor
-			idea_token = BSH_Nastya
-			allowed = {
-                original_tag = BSH 
-				
-            }
-			available = {
-				has_completed_focus = BSH_babay
-			}
-            traits = { princess_of_terror }
-	    }
-	}
-	
 	BSH_Oleg = {
 		name = "Олег"
 		portraits = {
@@ -226,7 +303,6 @@ characters={
             traits = { popular_figurehead }
 	    }
 	}
-	
 	BSH_Tolyan = {
 		name = "Толян"
 		portraits = {
@@ -249,113 +325,22 @@ characters={
             traits = { popular_figurehead }
 	    }
 	}
-	
-	BSH_bebey_vezhaet = {
-		name = "Бебей Вещает"
+	###ГЕНШТАБ
+	BSH_Tito = {
+		name = "Тито"
 		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
+			civilian = {
+				small = "GFX_idea_BSH_tito"	
 			}
-		}
-    }
-	
-	BSH_grisha_rak = {
-		name = "Grisha Rak"
-		portraits = {
 			army = {
-				large = "gfx/leaders/BSH/grisha_rak.dds"
+			    large = "gfx/leaders/BSH/Tito.dds"
+				small = "GFX_idea_BSH_tito"
 			}
-		}
-    }
-	
-	BSH_andrey_EbaLumba = {
-		name = "Андрей EbaLumba"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
-			}
-		}
-    }
-	
-	BSH_bubsich = {
-		name = "Бубсич"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
-			}
-		}
-    }
-	
-	BSH_bebey_shutnyara = {
-		name = "Бебей Шутняра"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
-			}
-		}
-    }
-	
-	BSH_ulya_metalcor = {
-		name = "Юля Металкор"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
-			}
-		}
-    }
-	
-	BSH_gosha_gachivar = {
-		name = "Гоша Гачивар"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/gosha_gachivar.dds"
-			}
-		}
-    }
-	
-	BSH_krylov = {
-		name = "Матвей Крылов"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/.dds"
-				small = "GFX_idea_BSH_krylov"
-			}
-		}
-    }
-	
-	BSH_vladislave_dikun = {
-		name = "Владислав Дикун"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/vladislave_dikun.dds"
-				small = "GFX_idea_BSH_vladislave_dikun"
-			}
+			
 		}
 		advisor={
-     		slot = political_advisor
-			idea_token = BSH_vladislave_dikun
-			allowed = {
-                original_tag = BSH 
-				
-            }
-			available = {
-				has_completed_focus = BSH_babay
-			}
-            traits = { editor_degradach }
-	    }
-    }
-	
-	BSH_loggame = {
-		name = "Комиссар Логгейм"
-		portraits = {
-			army = {
-				large = "gfx/leaders/BSH/loggame.dds"
-				small = "GFX_idea_BSH_loggame"
-			}
-		}
-		advisor={
-     		slot = high_command
-			idea_token = BSH_loggame
+     		slot = army_chief
+			idea_token = BSH_Tito
 			allowed = {
 				original_tag = BSH
 			}
@@ -364,14 +349,22 @@ characters={
 				has_completed_focus = BSH_babay
 		    }
 			
-			traits = { army_regrouping_1 }
+			traits = { army_chief_defensive_1 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-    }
-	
+		field_marshal = {
+			traits = { old_guard defensive_doctrine }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
 	BSH_Gruzin = {
 		name = "Господин Грузин"
 		portraits = {
@@ -397,23 +390,28 @@ characters={
 				factor = 1
 			}
 		}
+		corps_commander = {
+			traits = { organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
     }
-	
-	BSH_Tito = {
-		name = "Тито"
+	BSH_LogGame = {
+		name = "Комиссар Логгейм"
 		portraits = {
-			civilian = {
-				small = "GFX_idea_BSH_tito"	
-			}
 			army = {
-			    large = "gfx/leaders/BSH/Tito.dds"
-				small = "GFX_idea_BSH_Tito"
+				large = "gfx/leaders/BSH/loggame.dds"
+				small = "GFX_idea_BSH_loggame"
 			}
-			
+
 		}
 		advisor={
-     		slot = army_chief
-			idea_token = BSH_Tito
+     		slot = high_command
+			idea_token = BSH_LogGame
 			allowed = {
 				original_tag = BSH
 			}
@@ -422,11 +420,292 @@ characters={
 				has_completed_focus = BSH_babay
 		    }
 			
-			traits = { army_chief_defensive_1 }
+			traits = { army_regrouping_1  }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	}
+		corps_commander = {
+			traits = { old_guard trait_reckless }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+    }
+	
+	###НАРЕЗЧИКИ
+
+	BSH_Gosha_Gachivar = {
+		name = "Гоша Гачивар"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Gosha_Gachivar.dds"
+				small = GFX_idea_BSH_Gosha_Gachivar
+			}
+		}
+		corps_commander = {
+			traits = { old_guard  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Bubsich = {
+		name = "Бубсич"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Boobsich.dds"
+				small = GFX_idea_BSH_Boobsich
+			}
+		}
+		corps_commander = {
+			traits = { old_guard  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Bebey_Shutnyara = {
+		name = "Бебей Шутняра"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Bebey_Shutnyara.dds"
+				small = GFX_idea_BSH_Bebey_Shutnyara
+			}
+		}
+		corps_commander = {
+			traits = { old_guard  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_BrainDEAD = {
+		name = "BrainDEAD"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/BrainDEAD.dds"
+				small = GFX_idea_BSH_BrainDEAD
+			}
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_NEVZORKA = {
+		name = "НЕВЗОРКА"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Nevzorka.dds"
+				small = GFX_idea_BSH_Nevzorka
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Donskoy_Kazak = {
+		name = "Донской Казак"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Donskoy_Kazak.dds"
+				small = GFX_idea_BSH_donskoy_kazak
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+#	BSH_Mr_Kad= {	###Хз_его_стоит_делать_он_ваще_аи_каверы_выпускает
+#		name = "Mr.Kad"
+#		portraits = {
+#			army = {
+#				large = "gfx/leaders/BSH/Goy_Goyev.dds"
+#				small = GFX_idea_BSH_Goy_Goyev
+#			}
+#		}
+#		corps_commander = {
+#			traits = {  }
+#			skill = 1
+#			attack_skill = 1
+#			defense_skill = 1
+#			planning_skill = 1
+#			logistics_skill = 1
+#			legacy_id = 0
+#		}
+#   }
+#	BSH_Bebey_Shirokoy = {		###Надо_портрет_сделать
+#		name = "Бебей Широкий"
+#		portraits = {
+#			army = {
+#				large = "gfx/leaders/BSH/.dds"
+#				small = GFX_portrait__small
+#			}
+#		}
+#		corps_commander = {
+#			traits = {  }
+#			skill = 1
+#			attack_skill = 1
+#			defense_skill = 1
+#			planning_skill = 1
+#			logistics_skill = 1
+#			legacy_id = 0
+#		}
+#    }
+	BSH_Biboslav = {
+		name = "Бибослав"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Biboslav.dds"
+				small = GFX_idea_BSH_Biboslav
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Bebsofob = {
+		name = "Бебсофоб"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Bebsofob.dds"
+				small = GFX_idea_BSH_Bebsofob
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Follower_Of_Red_Nose = {
+		name = "Follower Of Red Nose"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Follower_Of_Red_Nose.dds"
+				small = GFX_idea_BSH_Follower_Of_Red_Nose
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_Ukho_Seldnya = {
+		name = "Ухо Сельдня"
+		portraits = {
+			army = {
+				large = GFX_portrait_AUS_karl_eglseer
+				small = GFX_portrait_AUS_karl_eglseer_small
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_evreyskaya_zhabka = {
+		name = "еврейская жабка"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/yevreyskaya_zhabka.dds"
+				small = GFX_idea_BSH_yevreyskaya_zhabka
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+	BSH_ulya_metalcor = {
+		name = "Юля Металкор"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BSH/Yulya_Metallcore.dds"
+				small = GFX_idea_BSH_Yulya_Metallcore
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+    }
+
+#	BSH_Andrey_EbaLumba = {		###Хз_чё_с_ними_делать_они_вышли_из_коммьюнити
+#		name = "Андрей EbaLumba"
+#		portraits = {
+#			army = {
+#				small = "gfx/leaders/BSH/.dds"
+#			}
+#		}
+#    }
+#	BSH_bebey_vezhaet = {
+#		name = "Бебей Вещает"
+#		portraits = {
+#			army = {
+#				large = "gfx/leaders/BSH/.dds"
+#			}
+#		}
+#   }
 }

@@ -6,7 +6,7 @@ country_event = {
 	id = YSK.1
 	title = YSK.1.t
 	desc = YSK.1.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RusKukozh
 	
 	is_triggered_only = yes	
 	
@@ -33,13 +33,13 @@ country_event = {
 	id = YSK.2
 	title = YSK.2.t
 	desc = YSK.2.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RusNationalist
 	
 	is_triggered_only = yes	
 	
 	option = {
 	name = YSK.2.a
-	    custom_effect_tooltip = YSK_dobrodiv
+	    custom_effect_tooltip = YSK_dobrodiv_tt
 		add_popularity = {
 				ideology = memoism
 				popularity = 0.075
@@ -50,12 +50,12 @@ country_event = {
 	}
 }
 
-#шанс нацболам?
+#шанс_нацболам?
 country_event = {
 	id = YSK.3
 	title = YSK.3.t
 	desc = YSK.3.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_Letov
 	
 	is_triggered_only = yes	
 	
@@ -64,23 +64,39 @@ country_event = {
 		add_popularity = {
 				ideology = metacommy
 				popularity = 0.075
-		}      		
+		}
+		add_manpower = 10000
+		OMS = {      
+            set_nationality = {
+				target_country = YSK     
+				character = OMS_Letov
+			}
+		}
+		OMS = {      
+            set_nationality = {
+				target_country = YSK     
+				character = OMS_Yanka
+			}
+		}
 	}
 	option = {
 	name = YSK.3.a
 		add_popularity = {
 				ideology = metacommy
 				popularity = -0.075
-		}      		
+		}
+		571 = {
+		    add_manpower = -17000  
+		}
 	}
 }
 
-#события в Ельцинбурге
+#события_в_Ельцинбурге
 country_event = {
 	id = YSK.4
 	title = YSK.4.t
 	desc = YSK.4.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_Pogrom
 	
 	is_triggered_only = yes	
 	
@@ -90,18 +106,30 @@ country_event = {
 	}
 }
 
-#закрепление нацдемов
+#Выбор
 country_event = {
 	id = YSK.5
 	title = YSK.5.t
 	desc = YSK.5.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_RNG
 	
 	is_triggered_only = yes	
 	
 	option = {
 	name = YSK.5.a
 		set_country_flag = rusdem_win      		
+	}
+	option = {
+	name = YSK.5.b
+		set_country_flag = pogrom_win      		
+	}
+	option = {
+	name = YSK.5.c
+		set_country_flag = monarhist_win      		
+	}
+	option = {
+	name = YSK.5.e
+		set_country_flag = ultraprav_win      		
 	}
 }
 
@@ -182,7 +210,146 @@ country_event = {
         set_politics = {
 	        ruling_party = fascism
         }
-        complete_national_focus = YSK_ultraright_visionary    		
+        complete_national_focus = YSK_ultraright_visionary
+		retire_character = YSK_Tesak
+		retire_character = YSK_Alexsandr_Barkashov
+		retire_character = YSK_Petr_Barkashov
+		retire_character = YSK_Alexsandr_Grushin
+		retire_character = YSK_Svyatoslav_Andreev
+		retire_character = YSK_Victor_Afanasev
+		retire_character = YSK_Nickolay_Skorodumov
+		retire_character = YSK_Yuriy_Bernikov
+		retire_character = YSK_Igor_Ivanov
+		retire_character = YSK_Leonid_Nikshich
+		retire_character = YSK_Semyon_Tokmakov
+		retire_character = YSK_Andrew_Kyle
+		retire_character = YSK_Aleksey_Gudilin
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 	option = {
 	    name = YSK.8.b
@@ -209,7 +376,142 @@ country_event = {
 	        ruling_party = fascism
         }
         add_ideas = YSK_ns_besporyadki
-        complete_national_focus = YSK_NNP        		
+        complete_national_focus = YSK_NNP
+		retire_character = YSK_Alexsandr_Barkashov
+		retire_character = YSK_Petr_Barkashov
+		retire_character = YSK_Alexsandr_Grushin
+		retire_character = YSK_Svyatoslav_Andreev
+		retire_character = YSK_Victor_Afanasev
+		retire_character = YSK_Nickolay_Skorodumov
+		retire_character = YSK_Yuriy_Bernikov
+		retire_character = YSK_Igor_Ivanov
+		retire_character = YSK_Leonid_Nikshich
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
+		}
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 	option = {
 	    name = YSK.8.с
@@ -235,59 +537,137 @@ country_event = {
         set_politics = {
 	        ruling_party = fascism
         }
-        complete_national_focus = YSK_NPF_Memorys       		
-	}
-	option = {
-	    name = YSK.8.e
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.1
+        complete_national_focus = YSK_RNR_NPF_Memory
+		retire_character = YSK_Tesak
+		retire_character = YSK_Semyon_Tokmakov
+		retire_character = YSK_Andrew_Kyle
+		retire_character = YSK_Aleksey_Gudilin
+		653 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 5
+            }        
 		}
-        add_country_leader_role = {
-            character = YSK_Alexsandr_Barkashov
-            promote_leader = yes
-            country_leader = {
-                ideology = religious_fascism
-                expire = "1965.1.1.1"
-                traits = { national_socialist_paramilitarist }
-            }
-        }
-        set_party_name = {
-            ideology = fascism
-            long_name = YSK_fascism_nazism_long
-            name = YSK_fascism_nazism
-        }
-        set_cosmetic_tag = YSK_RUS_RNE
-        set_politics = {
-	        ruling_party = fascism
-        }
-        complete_national_focus = YSK_RNE         		
-	}	
-	option = {
-	    name = YSK.8.с
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.1
+		653 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 5
+            }        
 		}
-        add_country_leader_role = {
-            character = YSK_Nickolay_Skorodumov
-            promote_leader = yes
-            country_leader = {
-                ideology = ultright_monarchy
-                expire = "1965.1.1.1"
-                traits = { crown_regent  }
-            }
-        }
-        set_party_name = {
-            ideology = fascism
-            long_name = YSK_fascism_ultright_monarchy_long
-            name = YSK_fascism_ultright_monarchy
-        }
-        set_cosmetic_tag = YSK_RUS_NPF_Memory
-        set_politics = {
-	        ruling_party = fascism
-        }
-        complete_national_focus = YSK_NPF_Memorys       		
+		653 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 5
+            }        
+		}
+		653 = {
+		    add_manpower = -103598        
+		}
+		580 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		580 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		580 = {
+		    add_manpower = -10694        
+		}
+		403 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		403 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		403 = {
+		    add_manpower = -25980       
+		}
+		572 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		572 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		572 = {
+		    add_manpower = -24432       
+		}
+		573 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		573 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		573 = {
+		    add_manpower = -23745      
+		}
+		398 = {
+		    damage_building = {
+                type = infrastructure
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = arms_factory
+                damage = 3
+            }        
+		}
+		398 = {
+		    damage_building = {
+                type = industrial_complex
+                damage = 3
+            }        
+		}
+		398 = {
+		    add_manpower = -23745      
+		}
 	}
 }
 
@@ -559,7 +939,8 @@ country_event = {
             long_name = YSK_democratic_conservatism_long
             name = YSK_democratic_conservatism
         }
-        set_country_flag = YSK_Yuneman  		
+        set_country_flag = YSK_Yuneman
+  		set_cosmetic_tag = YSK_Yuneman_flag
 	}
     option = {
 	    name = YSK.19.b       
@@ -646,7 +1027,17 @@ country_event = {
 	    name = YSK.22.b       
         hidden_effect = {
 		    set_country_flag = Red_Goga
-		} 
+		}
+		complete_national_focus = YSK_red_day_kalendar
+        add_country_leader_role = {
+            character = YSK_Goga_Romanov
+            promote_leader = yes
+            country_leader = {
+                ideology = monarho_socialism
+                expire = "1965.1.1.1"
+                traits = { lieutenant_of_industry }
+            }
+        }   		
 	}      	
 }
 #Выбор монарха
@@ -689,7 +1080,34 @@ country_event = {
 		}
 	}      	
 }
-
+#переворот_монархистов
+country_event = {
+	id = YSK.24
+	title = YSK.24.t
+	desc = YSK.24.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.24.a
+		set_country_flag = monarhist_win        		
+	}
+}
+#Победа_Погрома
+country_event = {
+	id = YSK.25
+	title = YSK.25.t
+	desc = YSK.25.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = YSK.25.a
+		set_country_flag = pogrom_win        		
+	}
+}
 #
 country_event = {
 	id = YSK.555
@@ -702,7 +1120,7 @@ country_event = {
 	trigger = {
     tag = YSK
     YSK = { check_variable = { rusdem_coup > 3 } }
-	has_country_flag = YSK_rus_pobeda   
+	has_country_flag = YSK_rus_vibor   
     }
 	
 	option = {
@@ -722,11 +1140,51 @@ country_event = {
 	trigger = {
     tag = YSK
     YSK = { check_variable = { ultraprav_coup > 3 } }
-	has_country_flag = YSK_rus_pobeda 
+	has_country_flag = YSK_rus_vibor 
     }
 	
 	option = {
 	name = YSK.556.a
 		country_event = YSK.6       		
+	}
+}
+#переворот монархистов
+country_event = {
+	id = YSK.557
+	title = YSK.557.t
+	desc = YSK.557.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { monarhist_coup > 3 } }
+	has_country_flag = YSK_rus_vibor 
+    }
+	
+	option = {
+	name = YSK.557.a
+		country_event = YSK.24       		
+	}
+}
+#Укрепление_Погрома
+country_event = {
+	id = YSK.558
+	title = YSK.558.t
+	desc = YSK.558.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	trigger = {
+    tag = YSK
+    YSK = { check_variable = { pogrom_coup > 3 } }
+	has_country_flag = YSK_rus_vibor 
+    }
+	
+	option = {
+	name = YSK.558.a
+		country_event = YSK.25       		
 	}
 }

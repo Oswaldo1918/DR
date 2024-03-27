@@ -1,6 +1,914 @@
 ###################
   ### MORDOR ###
 ###################
+
+MRD_mordovskava_armiya_decisions_category = { 
+	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Красноярск
+		
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		available = {
+			controls_state = 568
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_40 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Барнаул_Алтайский_край
+
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		available = {
+			controls_state = 40
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_570 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Новосибирск
+
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		available = {
+			controls_state = 570
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+	MRD_raise_urki_units_571 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Омск
+
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		available = {
+			controls_state = 571
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_582 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Магнитогорск
+
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		available = {
+			controls_state = 582
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_raise_urki_units_653 = { ###Размещение дивизий только во время гражданской войны в Покаянии
+
+		icon = GFX_decision_generic_disband_irregulars #Ельцинбург
+
+		cost = 5
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+			OR = {
+				has_war_with = POK
+				has_war_with = MGN
+				has_war_with = YSK
+				has_war_with = OMS
+				has_war_with = GAL
+				has_war_with = ZNS
+			}
+			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		available = {
+			controls_state = 653
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
+			hidden_effect = {
+				MRD_spawn_urki_divisions_effect = yes
+			}
+		}
+	}
+
+	MRD_postavit_proizvodstvo_urok_na_potok = { ###Снятие_лимита
+
+		icon = GFX_decision_generic_disband_irregulars 
+
+		cost = 5
+		days_remove = 180
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+		}
+		
+		available = {
+			has_completed_focus = MRD_traditsii_otryada_731
+			NOT = { has_idea = MRD_idea_zaplanirovanniye_trati }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 180
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = -250 }
+			}
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+		}
+		timeout_effect = {
+			custom_effect_tooltip = MRD_razblokirovan_shablon_tt
+			set_division_template_lock = {
+				division_template = "Дивизия урок"
+				is_locked = no
+			}
+		}
+	}
+	
+	MRD_dopyacheika = { ###Допячейка_исследований
+
+		icon = generic_research 
+
+		cost = 5
+		days_remove = 90
+
+		visible = {
+			has_completed_focus = MRD_poneslas_mocha_po_trubam
+			tag = MRD
+		}
+		
+		available = {
+			has_completed_focus = MRD_traditsii_otryada_731
+			NOT = { has_idea = MRD_idea_zaplanirovanniye_trati }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 90
+			}
+			hidden_effect = {
+				add_to_variable = { MRD_weekly_manpower = -250 }
+			}
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+		}
+		timeout_effect = {
+			add_research_slot = 1
+		}
+	}	
+}
+
+MRD_grabit_corovani_decisions_category = {
+	MRD_prepare_raid_decision = {
+		icon = GFX_decision_border_war
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				has_ROOT_at_least_1_div_in_current_state_scope = yes
+				any_neighbor_state = {
+					is_fully_controlled_by = FROM
+				}
+			}
+			NOT = { has_country_flag = russia_raid_succeeded }
+			NOT = { has_country_flag = russia_raid_failed }
+			custom_trigger_tooltip = {
+				tooltip = russia_has_loot_tt
+				FROM = {
+					check_variable = { loot_amount > 0 }
+				}
+			}
+			NOT = {
+				FROM = { has_country_flag = russia_is_raid_target }
+			}
+			has_war = no
+			FROM = { has_war = no }
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = russia_preparing_raid
+				has_country_flag = cannot_raid
+				is_puppet_of = FROM
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
+			is_neighbor_of = FROM
+		}
+
+		target_array = global.russian_warlords
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+				is_wasteland = no
+				NOT = {
+					is_puppet_of = ROOT
+					is_in_faction_with = ROOT
+					has_border_war_with = ROOT
+					has_non_aggression_pact_with = ROOT
+				}
+				if = {
+					limit = {
+						is_puppet = yes
+						ROOT = { is_puppet = yes }
+					}
+					OVERLORD = {
+						NOT = { tag = ROOT.OVERLORD } #Puppets from thee same overlord can't raid each other
+					}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					state = FROM.defender_state_vs_@ROOT
+					AND = {
+						is_owned_and_controlled_by = FROM
+						any_neighbor_state = {
+							has_ROOT_at_least_1_div_in_current_state_scope = yes
+							is_fully_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 20
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.8
+				}
+				factor = 0.66
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.6
+				}
+				factor = 0.33
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.4
+				}
+				factor = 0
+			}
+		}
+
+		custom_cost_trigger = { command_power > 19.99 }
+		custom_cost_text = decision_cost_20_cp
+
+		days_re_enable = 30
+		days_remove = 7
+
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				FROM = { has_war = yes }
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision russia_prepare_raid target: [From.GetName]"
+			hidden_effect = {
+				add_command_power = -20
+				FROM = {
+					random_owned_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								is_fully_controlled_by = ROOT
+								has_ROOT_at_least_1_div_in_current_state_scope = yes
+							}
+						}
+						set_state_flag = RUS_DEFENDER_STATE
+						set_variable = { PREV.defender_state_vs_@ROOT = THIS }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						has_ROOT_at_least_1_div_in_current_state_scope = yes
+						any_neighbor_state = {
+							is_fully_controlled_by = FROM
+							has_state_flag = RUS_DEFENDER_STATE
+						}
+					}
+					set_variable = { FROM.attacker_state_vs_@ROOT = THIS }
+				}
+				set_country_flag = russia_preparing_raid
+				FROM = {
+					set_country_flag = {
+						flag = russia_is_raid_target
+						days = 90
+						value = 1
+					}
+				}
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove russia_prepare_raid target: [From.GetName]"
+			activate_targeted_decision = { target = FROM decision = russia_initiate_raid }
+			hidden_effect = {
+				FROM = {
+					random_owned_controlled_state = {
+						limit = {
+							has_state_flag = RUS_DEFENDER_STATE
+						}
+						clr_state_flag = RUS_DEFENDER_STATE
+					}
+				}
+			}
+		}
+	}
+	MRD_prepare_raid_decision = {
+		icon = GFX_decision_border_war
+		icon = GFX_decision_border_war
+
+		activation = { always = no } #Activated from effect
+
+		available = {
+			var:FROM.attacker_state_vs_@ROOT = {
+				is_fully_controlled_by = ROOT
+			}
+			divisions_in_border_state = {
+				state = var:FROM.attacker_state_vs_@ROOT
+				border_state = var:FROM.defender_state_vs_@ROOT
+				size > 0
+			}
+		}
+
+		highlight_states = {
+			state = var:FROM.defender_state_vs_@ROOT
+		}
+
+		ai_will_do = {
+			base = 30
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio = 2
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				FROM = { has_war = yes }
+				is_in_faction_with = FROM
+				has_non_aggression_pact_with = FROM
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target }
+		}
+
+		fire_only_once = yes #Reactivation handled in effect
+		selectable_mission = yes
+
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout russia_initiate_raid"
+			hidden_effect = {
+				FROM = {
+					clear_variable = attacker_state_vs_@ROOT
+					clear_variable = defender_state_vs_@ROOT
+				}
+				remove_targeted_decision = { target = FROM decision = russia_initiate_raid }
+				activate_targeted_decision = { target = FROM decision = russia_prepare_raid }
+			}
+			clr_country_flag = russia_preparing_raid
+			FROM = { clr_country_flag = russia_is_raid_target }
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision russia_initiate_raid"
+			FROM = {
+				country_event = {
+					id = raiding.100
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+MRD_grib_saurona_decisions_category = {
+	MRD_uskorit_yaderniye_issledovaniya = {
+
+		icon = generic_research
+
+		cost = 50
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			has_tech = atomic_research
+			NOT = {
+				has_idea = MRD_idea_uskorit_yaderniye_issledovaniya
+			}
+		}
+
+		visible = {
+            NOT = {
+				has_tech = nuclear_reactor
+			}
+		}
+
+		complete_effect = {
+			add_timed_idea = {		
+				idea = MRD_idea_uskorit_yaderniye_issledovaniya
+				days = 180
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	MRD_uskorit_rabotu_po_reaktoram = {
+
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+			NOT = {
+				has_idea = MRD_idea_uskorit_rabotu_po_reaktoram
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_rabotu_po_reaktoram
+				days = 180
+			}
+		}
+	}
+	MRD_uskorit_virabotku_materiala = {
+	
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 180
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+			nuclear_reactor < 10
+		}
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor < 10
+			NOT = {
+				has_idea = MRD_idea_uskorit_virabotku_materiala
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			add_timed_idea = {			
+				idea = MRD_idea_uskorit_virabotku_materiala
+				days = 180
+			}
+		}
+	}
+	MRD_podgotovka_k_ispitaniyam = {
+	
+		icon = generic_research
+		
+		cost = 50
+		days_remove = 20
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			country_event = mordor.19
+		}
+	}
+	MRD_provesti_konsert_ramshtaina = {
+	
+		icon = generic_research
+		
+		cost = 10
+		days_remove = 7
+		
+		visible = {
+			has_completed_focus = MRD_proyekt_grib_saurona
+			tag = MRD
+            NOT = {
+				has_tech = nukes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		available = {
+			has_tech = nuclear_reactor
+			nuclear_reactor > 2
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		remove_effect = {
+			goto_province = 13064
+			launch_nuke = {
+				province = 13064
+			}
+			custom_effect_tooltip = DR_4_skorost_tt
+			scoped_sound_effect = "MRD_audio_1"
+			country_event = mordor.23
+		}
+	}
+}
+
+MRD_poisk_nazgulov_decisions_category = {
+
+	MRD_nazgul_chumak = { ###Предложить_Чумаку
+
+		icon = generic_research 
+
+		cost = 25
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+}
+
+MRD_poisk_koltsa_decisions_category = {
+	MRD_proverit_ravshana_1 = { ###Проверить_Равшана_1
+
+		icon = generic_research 
+
+		cost = 50
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_shevtsova = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		cost = 50
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_Fillipa_Tsenina = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		cost = 50
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_proverit_Bebeya = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		cost = 50
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+	MRD_idti_k_kirkorovu = { ###Проверить_Шевцова
+
+		icon = generic_research 
+
+		cost = 50
+		days_remove = 90
+
+		visible = {
+			tag = MRD
+			has_country_flag = MRD_poisk_koltsa_1
+			has_country_flag = MRD_poisk_koltsa_2
+			has_country_flag = MRD_poisk_koltsa_3
+			has_country_flag = MRD_poisk_koltsa_4
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_koltsa_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		remove_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = DR_MRD_poisk_koltsa_cf
+			country_event = 
+		}
+	}
+}
+
 MRD_infiltratsiya_decisions_category = { 
 	MRD_decision_usilit_partizan = { #Усилить_партизан
 		
@@ -89,389 +997,7 @@ MRD_infiltratsiya_decisions_category = {
 		}
 	}
 }
-MRD_grib_saurona_decisions_category = {
-	targeted_race_for_the_bomb = {
 
-		icon = generic_research
 
-		allowed = {
-			always = yes
-		}
-
-		available = {
-			#Target is FROM
-			has_tech = atomic_research
-			NOT = { has_global_flag = first_nuke_dropped }
-			NOT = { has_idea = race_for_the_bomb }
-		}
-
-		target_root_trigger = {
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-		}
-
-		#If this trigger matches a country.
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		visible = {
-            #Target is FROM
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-            FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		complete_effect = {
-			set_country_flag = racing_for_the_bomb
-			add_ideas = race_for_the_bomb
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				any_other_country = { has_tech = nukes }
-			}
-		}
-	}
-	MRD_uskorit_rabotu_po_reaktoram = {
-
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 180
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-			nuclear_reactor < 10
-		}
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor < 10
-		}
-		
-		ai_will_do = {
-			base = 10
-		}
-		
-		remove_effect = {
-			add_timed_idea = {			
-				idea = MRD_idea_vosstanovleniye_posle_GV
-				days = 180
-			}
-		}
-	}
-	MRD_uskorit_virabotku_materiala = {
-	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-			nuclear_reactor < 10
-		}
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor < 10
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		remove_effect = {
-			add_timed_idea = {			
-				idea = MRD_idea_vosstanovleniye_posle_GV
-				days = 180
-			}
-		}
-	}
-	MRD_podgotovka_k_ispitaniyam = {
-	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-		}
-		
-		fire_only_once = yes
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor > 2
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		remove_effect = {
-			country_event = mordor.19
-		}
-	}
-	MRD_provesti_konsert_ramshtaina = {
-	
-		icon = GFX_decision_generic_disband_irregulars
-		days_remove = 160
-		visible = {
-			has_completed_focus = MRD_proyekt_grib_saurona
-			tag = MRD
-		}
-		
-		fire_only_once = yes
-		
-		available = {
-			has_tech = nuclear_reactor
-			nuclear_reactor > 2
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		remove_effect = {
-			goto_province = 13064
-			launch_nuke = {
-				province = 13064
-			}
-			custom_effect_tooltip = DR_4_skorost_tt
-			scoped_sound_effect = "MRD_audio_1"
-			country_event = mordor.23
-		}
-	}
-}
-MRD_mordovskava_armiya_decisions_category = { 
-	MRD_raise_urki_units_568 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Красноярск
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		available = {
-			controls_state = 568
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-
-	MRD_raise_urki_units_40 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Барнаул_Алтайский_край
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		available = {
-			controls_state = 40
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-
-	MRD_raise_urki_units_570 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Новосибирск
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		available = {
-			controls_state = 570
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-	MRD_raise_urki_units_571 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Омск
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		available = {
-			controls_state = 571
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-
-	MRD_raise_urki_units_582 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Магнитогорск
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		available = {
-			controls_state = 582
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-
-	MRD_raise_urki_units_653 = { ###Размещение дивизий только во время гражданской войны в Покаянии
-
-		icon = GFX_decision_generic_disband_irregulars #Ельцинбург
-
-		visible = {
-			has_completed_focus = MRD_poneslas_mocha_po_trubam
-			tag = MRD
-			OR = {
-				has_war_with = POK
-				has_war_with = MGN
-				has_war_with = YSK
-				has_war_with = OMS
-				has_war_with = GAL
-				has_war_with = ZNS
-			}
-			NOT = { has_completed_focus = MRD_perdviy_platsdarm_vzyat }
-		}
-		
-		ai_will_do = {
-			base = 100
-		}
-		
-		available = {
-			controls_state = 653
-		}
-		
-		fire_only_once = yes
-		
-		remove_effect = {
-			custom_effect_tooltip = MRD_urki_battalions_spawn_tt
-			hidden_effect = {
-				MRD_spawn_urki_divisions_effect = yes
-			}
-		}
-	}
-}
 economy_decisions = {
 }

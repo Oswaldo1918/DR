@@ -1531,7 +1531,7 @@ ideas = {
 		    }
             YSK_rus_respublikanism = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_rus_respublikanism_2
 			
 			    modifier = {
 				political_power_factor = 0.02
@@ -1542,7 +1542,7 @@ ideas = {
 		    }
             YSK_rus_respublikanism_1 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_rus_respublikanism_2
 			
 			    modifier = {
 				political_power_factor = 0.05
@@ -1553,7 +1553,7 @@ ideas = {
 		    }  
  			YSK_rus_respublikanism_2 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_rus_respublikanism_2
 			
 			    modifier = {
 				political_power_factor = 0.075
@@ -1578,7 +1578,7 @@ ideas = {
 		    }
 			YSK_aristocratic_nationalism = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_aristocratic_nationalism
 			
 			    modifier = {
 				conscription = 0.03
@@ -1761,7 +1761,7 @@ ideas = {
 		    }
 			YSK_russkost = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_russkost
 			
 			    modifier = {
 				political_power_factor = 0.02
@@ -1771,7 +1771,7 @@ ideas = {
 		    }
 			YSK_russkost_1 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_russkost
 			
 			    modifier = {
 				political_power_factor = 0.03
@@ -1784,7 +1784,7 @@ ideas = {
 		    }
 			YSK_russkost_2 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_russkost
 			
 			    modifier = {
 				political_power_factor = 0.05
@@ -1797,7 +1797,7 @@ ideas = {
 		    }
 			YSK_russkost_3 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_russkost
 			
 			    modifier = {
 				political_power_factor = 0.05
@@ -1812,7 +1812,7 @@ ideas = {
 		    }
 			YSK_svinhade = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_svinhade
 			
 			    modifier = {
 				political_power_factor = 0.02
@@ -1824,7 +1824,7 @@ ideas = {
 		    }
 			YSK_na_zlo_sovkam = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_na_zlo_sovkam
 			
 			    modifier = {
 				consumer_goods_factor = -0.05
@@ -1834,7 +1834,7 @@ ideas = {
 		    }
 			YSK_na_zlo_sovkam_1 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_na_zlo_sovkam
 			
 			    modifier = {
 				consumer_goods_factor = -0.03
@@ -1846,7 +1846,7 @@ ideas = {
 		    }
 			YSK_na_zlo_sovkam_2 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_na_zlo_sovkam
 			
 			    modifier = {
 				consumer_goods_factor = -0.03
@@ -1854,26 +1854,26 @@ ideas = {
 				party_popularity_stability_factor = 0.075
 				monthly_population = -0.25
 				weekly_manpower = -100
-				army_core_defence_factor = 0.03
-				production_speed_bunker_factor = 0.075
 			    }
 		    }
 			YSK_na_zlo_sovkam_3 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_na_zlo_sovkam
 			
 			    modifier = {
 				consumer_goods_factor = -0.05
 				stability_factor = -0.1
 				weekly_manpower = -100
 				party_popularity_stability_factor = 0.075
-				monthly_population = 0.25
+				monthly_population = -0.25
 				supply_consumption_factor = -0.05
+				army_core_defence_factor = 0.05
+				production_speed_bunker_factor = 0.1
 			    }
 		    }
 			YSK_den_otmshcheniya = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_den_otmshcheniya
 			
 			    modifier = {
 				army_attack_factor = 0.03
@@ -1883,7 +1883,7 @@ ideas = {
 		    }
 			YSK_den_otmshcheniya_1 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_den_otmshcheniya
 			
 			    modifier = {
 				army_attack_factor = 0.05
@@ -1897,7 +1897,7 @@ ideas = {
 		    }
 			YSK_den_otmshcheniya_2 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_den_otmshcheniya
 			
 			    modifier = {
 				army_attack_factor = 0.05
@@ -1915,7 +1915,7 @@ ideas = {
 		    }
 			YSK_den_otmshcheniya_3 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_den_otmshcheniya
 			
 			    modifier = {
 				army_attack_factor = 0.075
@@ -1981,7 +1981,7 @@ ideas = {
 		    }
 			YSK_zdorovaya_rus_family = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_zdorovaya_rus_family
 			
 			    modifier = {
 				political_power_factor = 0.025
@@ -1994,7 +1994,7 @@ ideas = {
 		    }
 			YSK_zdorovaya_rus_family_1 = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_zdorovaya_rus_family
 			
 			    modifier = {
 				political_power_factor = 0.025
@@ -2021,7 +2021,7 @@ ideas = {
 		    }
 			YSK_cult_nats_gomoerotic = {
 
-			    picture = YSK_perestroyka_gos_machine
+			    picture = YSK_cult_nats_gomoerotic
 			
 			    modifier = {
 				political_power_factor = 0.025

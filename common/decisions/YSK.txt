@@ -1,4 +1,228 @@
 YSK_vybor_storony = {
+    YSK_podderzhka_monarhistov = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		    add_to_variable = { monarhist_coup = 1 }
+			custom_effect_tooltip = YSK_help_monarhist_tt
+		}	
+	}
+    YSK_podderzhka_monarhistov_1 = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		    add_to_variable = { monarhist_coup = 1 }
+			custom_effect_tooltip = YSK_help_monarhist_tt
+		}	
+	}
+    YSK_Russia_kotoruy_mi_poteryali = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		    add_to_variable = { monarhist_coup = 1 }
+			custom_effect_tooltip = YSK_help_monarhist_tt
+		}	
+	}
+	YSK_peremanit_drugih_1 = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 25
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}        
+            add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		    add_to_variable = { monarhist_coup = 1 }
+			add_to_variable = { ultraprav_coup = -1 }
+			add_to_variable = { pogrom_coup = -1 }
+			add_to_variable = { rusdem_coup = -1 }
+			custom_effect_tooltip = YSK_help_monarhist_tt
+			custom_effect_tooltip = YSK_protiv_ultraprav_tt
+			custom_effect_tooltip = YSK_protiv_Pogrom_tt
+			custom_effect_tooltip = YSK_protiv_rusdem_tt
+		}	
+	}
+    YSK_podderzhka_Pogrom = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {	
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+      		add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		    add_to_variable = { pogrom_coup = 1 }
+			custom_effect_tooltip = YSK_help_Pogrom_tt
+		}	
+	}
+	YSK_podderzhka_Pogrom_1 = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {	
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+      		add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}      		
+		    add_to_variable = { pogrom_coup = 1 }
+			custom_effect_tooltip = YSK_help_Pogrom_tt
+		}	
+	}
+	YSK_kult_pogroma = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 45
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+      		add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}    		
+		    add_to_variable = { pogrom_coup = 1 }
+			custom_effect_tooltip = YSK_help_Pogrom_tt
+		}	
+	}
+	YSK_peremanit_drugih = { 
+	
+		cost = 20
+
+		available = {		
+		}
+		
+		days_re_enable = 25
+		
+		days_remove = 5
+		ai_will_do = {
+        factor = 100
+		}
+		remove_effect = {
+		    add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}        
+            add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}   		
+		    add_to_variable = { pogrom_coup = 1 }
+			add_to_variable = { ultraprav_coup = -1 }
+			add_to_variable = { monarhist_coup = -1 }
+			add_to_variable = { rusdem_coup = -1 }
+			custom_effect_tooltip = YSK_help_Pogrom_tt
+			custom_effect_tooltip = YSK_protiv_ultraprav_tt
+			custom_effect_tooltip = YSK_protiv_monarhist_tt
+			custom_effect_tooltip = YSK_protiv_rusdem_tt
+		}	
+	}
     YSK_podderzhka_rusdem = { 
 	
 		cost = 20
@@ -21,7 +245,7 @@ YSK_vybor_storony = {
 			custom_effect_tooltip = YSK_help_rusdem_tt
 		}	
 	}
-	YSK_podderzhka_rusdem_2 = { 
+	YSK_podderzhka_rusdem_1 = { 
 	
 		cost = 20
 
@@ -65,14 +289,14 @@ YSK_vybor_storony = {
 			custom_effect_tooltip = YSK_help_rusdem_tt
 		}	
 	}
-	YSK_igra_protiv_ultrapravih = { 
+	YSK_peremanit_drugih_2 = { 
 	
 		cost = 20
 
 		available = {		
 		}
 		
-		days_re_enable = 45
+		days_re_enable = 25
 		
 		days_remove = 5
 		ai_will_do = {
@@ -86,10 +310,19 @@ YSK_vybor_storony = {
             add_popularity = {
 				ideology = fascism
 				popularity = -0.05
-			}   		
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
 		    add_to_variable = { rusdem_coup = 1 }
 			add_to_variable = { ultraprav_coup = -1 }
+			add_to_variable = { pogrom_coup = -1 }
+			add_to_variable = { monarhist_coup = -1 }
 			custom_effect_tooltip = YSK_help_rusdem_tt
+			custom_effect_tooltip = YSK_protiv_ultraprav_tt
+			custom_effect_tooltip = YSK_protiv_monarhist_tt
+			custom_effect_tooltip = YSK_protiv_rusdem_tt
 		}	
 	}
 	YSK_podderzhka_ultraprav = { 
@@ -159,31 +392,40 @@ YSK_vybor_storony = {
 			custom_effect_tooltip = YSK_help_ultraprav_tt
 		}	
 	}
-	YSK_sratsya_s_rusdem = { 
+	YSK_peremanit_drugih_3 = { 
 	
 		cost = 20
 
 		available = {		
 		}
 		
-		days_re_enable = 45
+		days_re_enable = 25
 		
 		days_remove = 5
 		ai_will_do = {
         factor = 100
 		}
 		remove_effect = {
-            add_popularity = {
+		    add_popularity = {
 				ideology = fascism
 				popularity = 0.05
-			}
+			}        
             add_popularity = {
 				ideology = democratic
 				popularity = -0.05
-			}             		
-		    add_to_variable = { ultraprav_coup = 1 }
-			add_to_variable = { rusdem_coup = -1 }
-			custom_effect_tooltip = YSK_help_ultraprav_tt
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_manpower = -259
+		    add_to_variable = { rusdem_coup = 1 }
+			add_to_variable = { ultraprav_coup = -1 }
+			add_to_variable = { pogrom_coup = -1 }
+			add_to_variable = { monarhist_coup = -1 }
+			custom_effect_tooltip = YSK_help_rusdem_tt
+			custom_effect_tooltip = YSK_protiv_ultraprav_tt
+			custom_effect_tooltip = YSK_protiv_monarhist_tt
 			custom_effect_tooltip = YSK_protiv_rusdem_tt
 		}	
 	}

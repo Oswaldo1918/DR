@@ -11,7 +11,10 @@ bookmarks = {
 			history = "POK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				POK_home_of_the_free
+				POK_Metostazi_sovka
+				POK_Gore_Pobeditelam
+				POK_Politicheskaya_Nestabilnost
 			}
 			focuses = {
 				
@@ -21,10 +24,12 @@ bookmarks = {
 			history = "KUR_GATHERING_STORM_DESC"
 			ideology = metacommy
 			ideas = {
-				
+				KUR_polit_neodnoznach
+				KUR_nedobit_bander
+				KUR_razruha_v_umah	
 			}
 			focuses = {
-				
+
 			}
 		}
 		"NOD"={
@@ -58,7 +63,8 @@ bookmarks = {
 			history = "LAZ_GATHERING_STORM_DESC"
 			ideology = vmestolev
 			ideas = {
-				
+				LAZ_razdutyy_apparat_moderov
+				LAZ_kontra_0
 			}
 			focuses = {
 				LAZ_KNOR_politica
@@ -66,11 +72,22 @@ bookmarks = {
 				LAZ_KNOR_economica
 			}
 		}
+		"TUP"={
+			history = "TUP_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				TUP_dikiy_sevzapad
+				TUP_home_of_revolution
+			}
+			focuses = {
+			
+			}			
+		}
 		"DOT"={
 			history = "DOT_GATHERING_STORM_DESC"
 			ideology = anarhostalinism
 			ideas = {
-				
+				MAG_war_za_DV
 			}
 			focuses = {
 				DOT_srochnik_lives_matter
@@ -99,17 +116,17 @@ bookmarks = {
 				ALB_kozlorevolutsiya
 			}
 		}
-		"BSH"={
+		"BTS"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = "BTS_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
 			ideas = {
-				
+				BTS_ortodox_sopr
 			}
 			focuses = {
-				BSH_morgen
-				BSH_babay
-				BSH_grig
+				BTS_prodolzhit_k_pop_perestroyku
+				BTS_myatezhniki_v_verhah
+				BTS_patiletka
 			}
 		}
 		"KLG"={
@@ -117,7 +134,7 @@ bookmarks = {
 			history = "BSH_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				KLG_dom_Sovetov
 			}
 			focuses = {
 				KLG_plohie_vesti
@@ -143,23 +160,12 @@ bookmarks = {
 			history = "BSH_GATHERING_STORM_DESC"
 			ideology = metacommy
 			ideas = {
-				
+				DON_idea_Yg_bastion
+				DON_idea_silnaya_ruka
+				DON_idea_neprof_army	
 			}
 			focuses = {
 			
-			}
-		}	
-		"BTS"={
-			minor = yes
-			history = "BTS_GATHERING_STORM_DESC"
-			ideology = anarhostalinism
-			ideas = {
-				
-			}
-			focuses = {
-				BTS_prodolzhit_k_pop_perestroyku
-				BTS_myatezhniki_v_verhah
-				BTS_patiletka
 			}
 		}
 		"UKR"={
@@ -167,12 +173,10 @@ bookmarks = {
 			history = "BSH_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				
+				UKR_nahruk_level_1
+				UKR_ukraine_ne_oboytis_bez_uglya_donbassa
 			}
 			focuses = {
-				UKR_decommunisatsiya
-				UKR_kult_gramshi
-				UKR_sneyk
 			}
 		}
 		"SKT"={
@@ -180,12 +184,13 @@ bookmarks = {
 			history = "SKT_GATHERING_STORM_DESC"
 			ideology = memoism
 			ideas = {
-				
+				PRM_ural_karapuz
+				SKT_hui_ded_Maksim
 			}
 			focuses = {
 		    	SKT_blizost_smerti
-				SKT_left_boroda		
-		    	SKT_borodatie_vibory
+				SKT_borodatie_vibory
+				SKT_left_boroda
 			}
 		}
 		"PRM"={
@@ -193,7 +198,7 @@ bookmarks = {
 			history = "PRM_GATHERING_STORM_DESC"
 			ideology = memoism
 			ideas = {
-				
+				PRM_ural_karapuz
 			}
 			focuses = {
 			    PRM_show_must_go_on
@@ -201,9 +206,30 @@ bookmarks = {
 				PRM_sotsizm_is_magic
 			}
 		}
-
-
-
+		"BSH"={
+			minor = yes
+			history = "BSH_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				PRM_ural_karapuz
+			}
+			focuses = {
+				BSH_morgen
+				BSH_babay
+				BSH_grig
+			}
+		}
+		"MRD"={
+			minor = yes
+			history = "MRD_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+			}
+			focuses = {
+			    
+			}
+		}
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
