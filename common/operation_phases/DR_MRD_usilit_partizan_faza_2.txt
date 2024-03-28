@@ -43,3 +43,35 @@ MRD_cherniy_rinok_faza_2 = {
 		support_equipment = 50
 	}
 }
+
+###Поиск_карапузов
+
+MRD_poisk_karapuzov_faza_1 = { 
+	name = MRD_poisk_karapuzov_faza_1
+	desc = MRD_poisk_karapuzov_faza_1_desc
+	outcome = MRD_poisk_karapuzov_faza_1_outcome
+	picture = "GFX_phase_raid_MRD_poisk_karapuzov_faza_1"
+	icon = "GFX_phase_MRD_poisk_karapuzov_faza_1_small"
+	
+	requirements = {  }
+}
+
+MRD_poisk_karapuzov_faza_2 = { 
+	name = MRD_poisk_karapuzov_faza_2
+	desc = MRD_poisk_karapuzov_faza_2_desc
+	outcome = MRD_poisk_karapuzov_faza_2_outcome
+	picture = "GFX_phase_raid_MRD_poisk_karapuzov_faza_2"
+	icon = "GFX_phase_MRD_poisk_karapuzov_faza_2_small"
+	
+	requirements = {  }
+}
+
+MRD_poisk_karapuzov_faza_3 = { 
+	name = MRD_poisk_karapuzov_faza_3
+	desc = MRD_poisk_karapuzov_faza_3_desc
+	outcome = MRD_poisk_karapuzov_faza_3_outcome
+	picture = "GFX_phase_raid_MRD_poisk_karapuzov_faza_3"
+	icon = "GFX_phase_MRD_poisk_karapuzov_faza_3_small"
+	
+	requirements = {  }
+}
