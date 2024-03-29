@@ -1866,6 +1866,75 @@ country_event = {
 	
 	option = {
 	name = POK.41.a
+	POK = {
+		set_nationality = {
+		target_country = URL
+		character = POK_Katz
+		}
+		set_nationality = {
+		target_country = URL
+		character = POK_Panin
+		}
+		}
+		URL = {
+		promote_character = POK_Katz
+			add_country_leader_role = {
+			character = POK_Katz
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+		}
+		division_template = {
+					name = "ЧВК"
+					division_names_group = POK_PMC_01
+					template_counter = 30
+
+		regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }		
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }
+        light_tank_recon = { x = 0 y = 2 }
+        signal_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4 }      		
+	}
+				}
+
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
 	}
 }
 #Пригласить_в_альянс_brt

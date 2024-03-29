@@ -1008,12 +1008,16 @@ characters={
 
 			allowed = {
 				original_tag = POK
+				original_tag = IDU
 			}
 			ai_will_do = {
 				factor = 10
 			}
 			visible = {		
+			OR = {
 			has_completed_focus = POK_komitet_spaseniya
+			original_tag = IDU
+			}
 		    }
 			traits = {
 				prince_of_terror
@@ -1029,7 +1033,10 @@ characters={
         	logistics_skill = 1
 			legacy_id = 0
 			visible = {		
+			OR = {
 			has_completed_focus = POK_komitet_spaseniya
+			original_tag = IDU
+			}
 		    }
 		}       		
 	}

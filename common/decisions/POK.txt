@@ -700,7 +700,6 @@ POK_refer_BRT = {
 		}
 		
 		remove_effect = {
-		POK_Hamatova = {set_nationality = IDU}
 		IDU = { 
 			transfer_state = 399
 			transfer_state = 833
@@ -712,8 +711,15 @@ POK_refer_BRT = {
 			add_state_core = 651
 			add_state_core = 249
 			add_state_core = 256
-			hidden_effect = { retire_country_leader = yes }
-			promote_character = POK_Hamatova
+			}
+			POK = {
+		set_nationality = {
+		target_country = IDU
+		character = POK_Hamatova 
+		}
+		}
+		IDU = {
+		promote_character = POK_Hamatova
 			add_country_leader_role = {
 			character = POK_Hamatova
 			promote_leader = yes
@@ -725,8 +731,7 @@ POK_refer_BRT = {
 				}
 			}
 		}
-		
-			}
+		}
 		puppet = IDU 
 		add_to_variable = { demshiza = 1 }
 		custom_effect_tooltip = POK_demshiza1_tt
@@ -1562,8 +1567,16 @@ POK_refer1_BRT = {
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
+			}	
 			}
-			recruit_character = POK_Hamatova
+			POK = {
+		set_nationality = {
+		target_country = IDU
+		character = POK_Hamatova 
+		}
+		}
+		IDU = {
+		promote_character = POK_Hamatova
 			add_country_leader_role = {
 			character = POK_Hamatova
 			promote_leader = yes
@@ -1575,19 +1588,7 @@ POK_refer1_BRT = {
 				}
 			}
 		}
-		add_corps_commander_role = {
-		character = POK_Katz
-		traits = {
-            urban_assault_specialist   
-        }
-		skill = 2
-		attack_skill = 3
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 2
-		legacy_id = -1
-	}
-			}
+		}
 			POK = { add_to_faction = IDU }
 			add_to_variable = { demshiza = 3 }
 		custom_effect_tooltip = POK_demshiza3_tt
