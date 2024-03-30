@@ -1848,6 +1848,233 @@ owns_state = 229
 				elections_allowed = no
 			}
 		 }
+			}
+	if = { 
+		limit = {
+		NOT = { ZHE = exists }
+			POK = {		 
+			controls_state = 199
+			controls_state = 91
+			controls_state = 89
+			controls_state = 80
+			controls_state = 203
+			controls_state = 259
+			controls_state = 225
+			controls_state = 193
+			controls_state = 202
+			controls_state = 201
+			controls_state = 198
+			controls_state = 93
+			controls_state = 196
+			controls_state = 197
+			controls_state = 192
+			controls_state = 834
+			controls_state = 221
+			controls_state = 226
+			controls_state = 227
+			controls_state = 228
+			controls_state = 137
+			controls_state = 200
+			
+			}
+
+		}
+			ZHE = {
+			transfer_state = 199
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 80
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 201
+			transfer_state = 198
+			transfer_state = 93
+			transfer_state = 196
+			transfer_state = 197
+			transfer_state = 192
+			transfer_state = 834
+			transfer_state = 221
+			transfer_state = 226
+			transfer_state = 227
+			transfer_state = 228
+			transfer_state = 137
+			transfer_state = 200
+			    add_state_core = 202
+			    add_state_core = 201
+			    add_state_core = 91
+			    add_state_core = 93
+			    add_state_core = 199
+			    add_state_core = 198
+				add_state_core = 192
+			    add_state_core = 199
+			    add_state_core = 203
+			   	add_state_core = 197
+			    add_state_core = 766
+				add_state_core = 196
+			    add_state_core = 193
+			    add_state_core = 226
+			    add_state_core = 200
+			    add_state_core = 259
+				add_state_core = 225
+			    add_state_core = 221
+			    add_state_core = 228
+			    add_state_core = 227
+			    add_state_core = 80
+				add_state_core = 78
+			    add_state_core = 89
+				add_state_core = 834
+				set_capital = 202
+			set_cosmetic_tag = ZHE_ukraina
+		}
+	    }
+if = {
+				limit = {
+					NOT = { ZWN = exists } 
+					POK = {
+controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 207
+			controls_state = 206
+			controls_state = 241
+			controls_state = 204
+			controls_state = 194
+			}
+				}
+				ZWN = {
+		transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 241
+			transfer_state = 204
+			transfer_state = 194
+		 }
+			}	
+if = {
+				limit = {
+					SUO = exist
+					MHL = exist
+					OR = {
+					has_completed_focus = POK_russian_confederation 
+					has_completed_focus = POK_full_separation
+					}
+				}
+				SUO = { 
+			annex_country = {
+				target = MHL
+				transfer_troops = no
+			}
+			}	
+	}
+if = {
+				limit = {
+					SUO = exist
+					controls_state = 146
+					controls_state = 215 
+			controls_state = 216
+				}
+				SUO = { 
+			transfer_state = 146
+			transfer_state = 215
+		transfer_state = 216
+			}	
+	}	
+if = {
+				limit = {
+					NOT = { IDU = exists } 
+					POK = {
+controls_state = 399
+			controls_state = 833
+			controls_state = 651
+			controls_state = 249
+			controls_state = 256
+			}
+				}
+				IDU = { 
+			transfer_state = 399
+			transfer_state = 833
+			transfer_state = 651
+			transfer_state = 249
+			transfer_state = 256
+			add_state_core = 399
+			add_state_core = 833
+			add_state_core = 651
+			add_state_core = 249
+			add_state_core = 256
+			}
+			POK = {
+		set_nationality = {
+		target_country = IDU
+		character = POK_Hamatova 
+		}
+		}
+		IDU = {
+		promote_character = POK_Hamatova
+			add_country_leader_role = {
+			character = POK_Hamatova
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+		}
+			}
+if = {
+				limit = {
+					NOT = { KHA = exists } 
+					POK = {
+controls_state = 569
+			}
+				}
+				KHA = {
+	transfer_state = 569
+		 }
+			}	
+if = {
+				limit = {
+					NOT = { ALT = exists } 
+					POK = {
+controls_state = 654
+			}
+				}
+				ALT = {
+	transfer_state = 654
+		 }
+			}
+if = {
+				limit = {
+					NOT = { TAN = exists } 
+					POK = {
+controls_state = 329
+			}
+				}
+				TAN = {
+	transfer_state = 329
+		 }
+			}	
+if = {
+				limit = {
+					NOT = { NEN = exists } 
+					POK = {
+controls_state = 824
+			controls_state = 825
+			controls_state = 579
+			}
+				}
+				NEN = {
+	transfer_state = 824
+			transfer_state = 825
+			transfer_state = 579
+		 }
 			}			
 	}
 }
@@ -1882,7 +2109,7 @@ country_event = {
 			character = POK_Katz
 			promote_leader = yes
 			country_leader = {
-				ideology = liberalism
+				ideology = fascism_ideology
 				expire = "1965.1.1.1"
 				traits = {
 					

@@ -660,7 +660,8 @@ POK_refer_BRT = {
 		remove_effect = {
 				MHL = { 
 		transfer_state = 215
-		transfer_state = 216}
+		transfer_state = 216
+		}
 		if = {
 				limit = {
 					SUO = exist
@@ -831,8 +832,8 @@ POK_refer_BRT = {
 		available = {
 			POK = {
 		    has_war = no	
-			transfer_state = 824
-			transfer_state = 825
+			controls_state = 824
+			controls_state = 825
 			controls_state = 579
 			}
 
