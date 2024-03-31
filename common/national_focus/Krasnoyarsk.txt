@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position =  { x = 50 y = 100 }
 	focus = {
 		id = ZNS_proryv_tsepey_OMONa
 		icon = GFX_ZNS_proryv_tsepey_OMONa
@@ -2040,14 +2041,44 @@ focus_tree = {
 		}
 		x = 34
 		y = 10
-			completion_reward = {
-					remove_ideas = ZNS_posledstviya_gv_2
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.15
-						}
+		completion_reward = {
+			remove_ideas = ZNS_posledstviya_gv_2
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.15
+			}
+			add_manpower = 15000
+			OMS = {
+				set_nationality = {
+					target_country = ZNS
+					character = OMS_Letov
 				}
-
+			}
+			OMS = {
+				set_nationality = {
+					target_country = ZNS
+					character = OMS_Yanka
+				}
+			}
+			OMS = {
+				set_nationality = {
+					target_country = ZNS
+					character = OMS_Fedor_Letov
+				}
+			}
+			OMS = {
+				set_nationality = {
+					target_country = ZNS
+					character = OMS_Ryabinov
+				}
+			}
+			OMS = {
+				set_nationality = {
+					target_country = ZNS
+					character = OMS_Sergey_Letov
+				}
+			}
+		}
 	}
 	focus = {
 		id = ZNS_total_depokayanizatsiya
