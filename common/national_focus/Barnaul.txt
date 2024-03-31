@@ -87,7 +87,7 @@ focus_tree = {
 	focus = {
 		id = YSK_The_iron_tsar
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		x = 77
 		y = 20
 			available = {
@@ -167,7 +167,7 @@ focus_tree = {
 	focus = {
 		id = YSK_gubernii
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_moderate_rusnat
 		}
@@ -221,7 +221,7 @@ focus_tree = {
 	focus = {
 		id = YSK_kompromis_s_liberalami
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_moderate_rusnat
 		}
@@ -241,7 +241,7 @@ focus_tree = {
 	focus = {
 		id = YSK_peredacha_vlasti_munitsipalitetam
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_gubernii
 		}
@@ -259,7 +259,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rus_federalism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_gubernii
 		}
@@ -282,7 +282,7 @@ focus_tree = {
 	focus = {
 		id = YSK_agent_KNB
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_federalism
 		}
@@ -296,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rus_grazhdanskiy_nationalism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_moderate_rusnat
 		}
@@ -310,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = YSK_borba_s_migrantami
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_grazhdanskiy_nationalism
 		}
@@ -385,7 +385,7 @@ focus_tree = {
 	focus = {
 		id = YSK_svetskaya_strana
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_peredacha_vlasti_munitsipalitetam
 		}
@@ -403,7 +403,7 @@ focus_tree = {
 	focus = {
 		id = YSK_invest_v_infrastruktury
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_svetskaya_strana
 		}
@@ -417,7 +417,7 @@ focus_tree = {
 	focus = {
 		id = YSK_total_deregulyatsiya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_svetskaya_strana
 		}
@@ -480,7 +480,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rus_unitarism_1
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_grazhdanskiy_nationalism
 		}
@@ -503,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = YSK_anime_konservatism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_unitarism_1
 		}
@@ -517,7 +517,7 @@ focus_tree = {
 	focus = {
 		id = YSK_podderzhat_trapogvardeytsev
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_anime_konservatism
 		}
@@ -845,7 +845,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rev_nationalism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_vozhd
 		}
@@ -886,7 +886,7 @@ focus_tree = {
 	focus = {
 		id = YSK_aristocratic_nationalism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_regent
 		}
@@ -903,7 +903,7 @@ focus_tree = {
 	focus = {
 		id = YSK_svinhade
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_democraty_bez_levih
 		}
@@ -923,7 +923,7 @@ focus_tree = {
 	focus = {
 		id = YSK_nalog_na_russkost
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_svinhade
 		}
@@ -937,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = YSK_5_protsentov_true_russkih
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_nalog_na_russkost
 		}
@@ -954,7 +954,7 @@ focus_tree = {
 	focus = {
 		id = YSK_reparatsii_s_pensionerov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_svinhade
 		}
@@ -981,7 +981,7 @@ focus_tree = {
 	focus = {
 		id = YSK_pogromy_budut
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_svinhade
 		}
@@ -1012,7 +1012,7 @@ focus_tree = {
 	focus = {
 		id = YSK_eat_levakov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_pogromy_budut
 		}
@@ -1033,7 +1033,7 @@ focus_tree = {
 	focus = {
 		id = YSK_great_russian_wall
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_eat_levakov
 		}
@@ -1577,7 +1577,7 @@ focus_tree = {
 	focus = {
 		id = YSK_den_otmshcheniya_41
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_reparatsii_s_pensionerov
 		}
@@ -1784,7 +1784,7 @@ focus_tree = {
 	focus = {
 		id = YSK_true_ispilzovanie_recursov
 		icon = GFX_goal_generic_construct_civilian
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_irredentism
 		}
@@ -1798,7 +1798,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Restoration_monastres_and_consults
 		icon = GFX_focus_SOV_third_rome
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_true_ispilzovanie_recursov
 		}
@@ -1815,7 +1815,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Lobayev_arms
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Restoration_monastres_and_consults
 		}
@@ -1865,7 +1865,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_rus_nation
 		icon = GFX_focus_SOV_organization_centralization_discipline
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Lobayev_arms
 		}
@@ -1882,7 +1882,7 @@ focus_tree = {
 	focus = {
 		id = YSK_idealizatsiya_dorev_proshlogo
 		icon = GFX_focus_SOV_the_true_tsars
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Lobayev_arms
 		}
@@ -1899,7 +1899,7 @@ focus_tree = {
 	focus = {
 		id = YSK_help_farmers
 		icon = GFX_focus_generic_farmland
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_true_ispilzovanie_recursov
 		}
@@ -1961,7 +1961,7 @@ focus_tree = {
 	focus = {
 		id = YSK_vozvodit_soslovie_kazakov
 		icon = GFX_focus_URG_turmoil_of_paso_morlan
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_legacy_white_guardian
 		}
@@ -1997,7 +1997,7 @@ focus_tree = {
 	focus = {
 		id = YSK_raskol_v_dome
 		icon = GFX_focus_SOV_my_brothers_keeper
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sozvat_zemsobor
 		}
@@ -2011,7 +2011,7 @@ focus_tree = {
 	focus = {
 		id = YSK_psihicheskaya_atacka
 		icon = GFX_focus_generic_full_social_mobilization
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_legacy_white_guardian
 		}
@@ -2028,7 +2028,7 @@ focus_tree = {
 	focus = {
 		id = YSK_tsar_tank
 		icon = GFX_goal_generic_army_tanks
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_psihicheskaya_atacka
 			focus = YSK_vozvodit_soslovie_kazakov
@@ -2188,7 +2188,7 @@ focus_tree = {
 	focus = {
 		id = YSK_neokulaki
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ozhivlenie_derevni
 		}
@@ -2219,8 +2219,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YSK_dvoryanstvo
-		icon = GFX_focus_generic_diplomatic_treaty 
-		cost = 10,00
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ozhivlenie_derevni
 		}
@@ -2361,7 +2361,7 @@ focus_tree = {
 	focus = {
 		id = YSK_submarine_Kolchak
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_2_souznika
 		}
@@ -2385,7 +2385,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_dvoryanstvo
 		icon = GFX_goal_generic_improve_relations
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_kompensantsiya_ograblennogo
 		}
@@ -2421,7 +2421,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_tabel_o_rangah
 		icon = GFX_focus_generic_treaty
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_new_dvoryanstvo
 			focus = YSK_tradition_kupechestva
@@ -2458,7 +2458,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Linkor_anastasiya
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_2_souznika
 		}
@@ -2484,7 +2484,7 @@ focus_tree = {
 	focus = {
 		id = YSK_aeronosts_Nicolay_2
 		icon = GFX_goal_generic_navy_carrier
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_2_souznika
 		}
@@ -2523,7 +2523,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Ilya_muromets
 		icon = GFX_goal_generic_air_bomber
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_submarine_Kolchak
 			focus = YSK_Linkor_anastasiya
@@ -2551,7 +2551,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sky_taran
 		icon = GFX_goal_generic_air_fighter
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_aeronosts_Nicolay_2
 			focus = YSK_Linkor_anastasiya
@@ -2586,7 +2586,7 @@ focus_tree = {
 	focus = {
 		id = YSK_tsar_bimba
 		icon = GFX_focus_wonderweapons
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Ilya_muromets
 			focus = YSK_sky_taran
@@ -2724,7 +2724,7 @@ focus_tree = {
 	focus = {
 		id = YSK_yunker_shcools
 		icon = GFX_focus_generic_military_academy
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_derzhat_i_ne_puzhat
 		}
@@ -2754,7 +2754,7 @@ focus_tree = {
 	focus = {
 		id = YSK_evropean_connections
 		icon = GFX_goal_generic_major_alliance
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_yunker_shcools
 		}
@@ -2958,7 +2958,7 @@ focus_tree = {
 	focus = {
 		id = YSK_fraktsiya_RNE
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
@@ -3024,7 +3024,7 @@ focus_tree = {
 	focus = {
 		id = YSK_vozradit_rus_nation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_fraktsiya_RNE
 		}
@@ -3049,7 +3049,7 @@ focus_tree = {
 	focus = {
 		id = YSK_edinstvo_nasha_sila
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_vozradit_rus_nation
 		}
@@ -3070,7 +3070,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rebrending_svastika
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_fraktsiya_RNE
 		}
@@ -3096,7 +3096,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Russian_God
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
@@ -3121,7 +3121,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Nation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
@@ -3192,7 +3192,7 @@ focus_tree = {
 	focus = {
 		id = YSK_golos_nashego_vozhdya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Nation
 		}
@@ -3217,7 +3217,7 @@ focus_tree = {
 	focus = {
 		id = YSK_God
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
@@ -3276,7 +3276,7 @@ focus_tree = {
 	focus = {
 		id = YSK_antisionism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Nation
 			focus = YSK_God
@@ -3304,7 +3304,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rus_terror
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_antisionism
 		}
@@ -3331,7 +3331,7 @@ focus_tree = {
 	focus = {
 		id = YSK_nasledniki_velikih
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_golos_nashego_vozhdya
 		}
@@ -3352,7 +3352,7 @@ focus_tree = {
 	focus = {
 		id = YSK_zhestkaya_distsiplina
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_golos_nashego_vozhdya
 		}
@@ -3381,7 +3381,7 @@ focus_tree = {
 	focus = {
 		id = YSK_united_duh_disciplines
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God
 		}
@@ -3400,7 +3400,7 @@ focus_tree = {
 	focus = {
 		id = YSK_iron_charter
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_iron_tsar
 		}
@@ -3417,7 +3417,7 @@ focus_tree = {
 	focus = {
 		id = YSK_rebirth_duha
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_united_duh_disciplines
 		}
@@ -3436,7 +3436,7 @@ focus_tree = {
 	focus = {
 		id = YSK_doctina_fundament_pravoslaviya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_God
 		}
@@ -3459,7 +3459,7 @@ focus_tree = {
 	focus = {
 		id = YSK_war_monahi
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_doctina_fundament_pravoslaviya
 		}
@@ -3488,7 +3488,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Tsar
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
@@ -3553,7 +3553,7 @@ focus_tree = {
 	focus = {
 		id = YSK_bozh_zemskaya_ierarhiya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Tsar
 		}
@@ -3580,7 +3580,7 @@ focus_tree = {
 	focus = {
 		id = YSK_cult_Dmotriya_Vasileva
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_bozh_zemskaya_ierarhiya
 		}
@@ -3603,7 +3603,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ochishchenie_puti_k_prestolu
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Tsar
 		}
@@ -3622,7 +3622,7 @@ focus_tree = {
 	focus = {
 		id = YSK_neofeodalism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_bozh_zemskaya_ierarhiya
 		}
@@ -3653,7 +3653,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_sosloviya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
@@ -3680,7 +3680,7 @@ focus_tree = {
 	focus = {
 		id = YSK_new_ZemSobor
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_neofeodalism
 		}
@@ -3707,7 +3707,7 @@ focus_tree = {
 	focus = {
 		id = YSK_tsar_pushka
 		icon = GFX_goal_generic_army_artillery2
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_vozvodit_soslovie_kazakov
 			focus = YSK_psihicheskaya_atacka
@@ -3745,7 +3745,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sosaity_ulicnogo_nasiliya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zakonchit_s_besporyadkami
 		}
@@ -3765,7 +3765,7 @@ focus_tree = {
 	focus = {
 		id = YSK_anarhy_party_ne_nuzhna
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 		}
@@ -3782,7 +3782,7 @@ focus_tree = {
 	focus = {
 		id = YSK_skiny_navedut_poryadok
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zakonchit_s_besporyadkami
 		}
@@ -3817,7 +3817,7 @@ focus_tree = {
 	focus = {
 		id = YSK_obespech_vypolnenie_zakonov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_skiny_navedut_poryadok
 		}
@@ -3834,7 +3834,7 @@ focus_tree = {
 	focus = {
 		id = YSK_white_power
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sosaity_ulicnogo_nasiliya
 			focus = YSK_skiny_navedut_poryadok
@@ -3854,7 +3854,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ozhivit_skinhad_dvizh
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_white_power
 		}
@@ -3871,7 +3871,7 @@ focus_tree = {
 	focus = {
 		id = YSK_okkupay_pedofilyay
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
@@ -3885,7 +3885,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ostanovit_razlozheniya_sosaity
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_okkupay_pedofilyay
 		}
@@ -3899,7 +3899,7 @@ focus_tree = {
 	focus = {
 		id = YSK_shkola_race_prosveshceniya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ostanovit_razlozheniya_sosaity
 		}
@@ -3916,7 +3916,7 @@ focus_tree = {
 	focus = {
 		id = YSK_zdorovie_semi
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_shkola_race_prosveshceniya
 		}
@@ -3930,7 +3930,7 @@ focus_tree = {
 	focus = {
 		id = YSK_kult_sily
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_shkola_race_prosveshceniya
 		}
@@ -3947,7 +3947,7 @@ focus_tree = {
 	focus = {
 		id = YSK_white_gospodstvo
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zdorovie_semi
 		}
@@ -3967,7 +3967,7 @@ focus_tree = {
 	focus = {
 		id = YSK_skinhad_patrul
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
@@ -3984,7 +3984,7 @@ focus_tree = {
 	focus = {
 		id = YSK_sluzhba_white_rase
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_skinhad_patrul
 		}
@@ -4001,7 +4001,7 @@ focus_tree = {
 	focus = {
 		id = YSK_eternal_race_war
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sluzhba_white_rase
 		}
@@ -4018,7 +4018,7 @@ focus_tree = {
 	focus = {
 		id = YSK_social_tutovism
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_sluzhba_white_rase
 		}
@@ -4032,7 +4032,7 @@ focus_tree = {
 	focus = {
 		id = YSK_prazdniki_shtangentsirkulya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_eternal_race_war
 		}
@@ -4052,7 +4052,7 @@ focus_tree = {
 	focus = {
 		id = YSK_white_edinstvo
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ozhivit_skinhad_dvizh
 		}
@@ -4066,7 +4066,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ogon_po_churkam
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_white_edinstvo
 		}
@@ -4083,7 +4083,7 @@ focus_tree = {
 	focus = {
 		id = YSK_white_business
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_ogon_po_churkam
 		}
@@ -4188,7 +4188,7 @@ focus_tree = {
 	focus = {
 		id = YSK_gosvo_vam_nichevo_ne_dolzhno
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_white_business
 		}
@@ -4202,7 +4202,7 @@ focus_tree = {
 	focus = {
 		id = YSK_freedom_i_deregulyatsiya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_otmena_tk
 		}
@@ -4223,7 +4223,7 @@ focus_tree = {
 	focus = {
 		id = YSK_otmena_tk
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_white_business
 		}
@@ -4933,7 +4933,7 @@ focus_tree = {
 	focus = {
 		id = YSK_razovetsya_gordo_rus_styag
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_splav_hrist_i_yaziych
 		}
@@ -4954,7 +4954,7 @@ focus_tree = {
 	focus = {
 		id = YSK_splav_hrist_i_yaziych
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_vozradit_rus_nation
 		}
@@ -4978,7 +4978,7 @@ focus_tree = {
 	focus = {
 		id = YSK_form_chernorubashecnikov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Nation
 		}
@@ -5001,7 +5001,7 @@ focus_tree = {
 	focus = {
 		id = YSK_militarizirovat_molodezh
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_form_chernorubashecnikov
 		}
@@ -5022,7 +5022,7 @@ focus_tree = {
 	focus = {
 		id = YSK_zakony_bozhi
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_doctina_fundament_pravoslaviya
 		}
@@ -5045,7 +5045,7 @@ focus_tree = {
 	focus = {
 		id = YSK_the_struggle_of_good_with_evil
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_terror
 		}
@@ -5080,7 +5080,7 @@ focus_tree = {
 	focus = {
 		id = YSK_i_mechom
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_the_struggle_of_good_with_evil
 		}
@@ -5103,7 +5103,7 @@ focus_tree = {
 	focus = {
 		id = YSK_krestom
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_the_struggle_of_good_with_evil
 		}
@@ -5126,7 +5126,7 @@ focus_tree = {
 	focus = {
 		id = YSK_save_Russia
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_i_mechom
 		}
@@ -5143,7 +5143,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Migration_control
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_iron_tsar
 		}
@@ -5160,7 +5160,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Force_tnoids
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Migration_control
 		}
@@ -5179,7 +5179,7 @@ focus_tree = {
 	focus = {
 		id = YSK_drink_Russiano
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
 		}
@@ -5222,7 +5222,7 @@ focus_tree = {
 	focus = {
 		id = YSK_No_one_will_return_in_2007
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
 		}
@@ -5236,7 +5236,7 @@ focus_tree = {
 	focus = {
 		id = YSK_pp_2008
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
 		}
@@ -5260,7 +5260,7 @@ focus_tree = {
 	focus = {
 		id = YSK_The_fire_Is_kindled
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_pp_2008
 		}
@@ -5291,7 +5291,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Reign_to_our_glory
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
 		}
@@ -5312,7 +5312,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Reign_in_fear_of_your_enemies
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
 		}
@@ -5333,7 +5333,7 @@ focus_tree = {
 	focus = {
 		id = YSK_The_Orthodox_Tsar
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
 		}
@@ -5354,7 +5354,7 @@ focus_tree = {
 	focus = {
 		id = YSK_Coercion_to_the_Russian_world
 		icon = GFX_focus_generic_fascist_propaganda
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_Reign_to_our_glory
 		}
@@ -6770,7 +6770,7 @@ focus_tree = {
 	focus = {
 		id = YSK_deurbanisation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_agent_KNB
 		}
@@ -6856,7 +6856,7 @@ focus_tree = {
 	focus = {
 		id = YSK_dongat_Litvu
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_federalism
 		}
@@ -6942,7 +6942,7 @@ focus_tree = {
 	focus = {
 		id = YSK_repatriation
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_dongat_Litvu
 		}
@@ -6956,7 +6956,7 @@ focus_tree = {
 	focus = {
 		id = YSK_slezt_s_neft_igly
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_invest_v_infrastruktury
 		}
@@ -6973,7 +6973,7 @@ focus_tree = {
 	focus = {
 		id = YSK_zapret_voenkomatov
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_contract_army
 		}
@@ -6990,7 +6990,7 @@ focus_tree = {
 	focus = {
 		id = YSK_contract_army
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_rus_unitarism_1
 		}
@@ -7004,7 +7004,7 @@ focus_tree = {
 	focus = {
 		id = YSK_bremya_last_evropeytsa
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_slezt_s_neft_igly
 		}
@@ -7026,7 +7026,7 @@ focus_tree = {
 	focus = {
 		id = YSK_cult_homoerotic
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_pogromy_budut
 		}
@@ -7040,7 +7040,7 @@ focus_tree = {
 	focus = {
 		id = YSK_armyanskaya_kuhnya
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_cult_homoerotic
 		}
@@ -7055,7 +7055,7 @@ focus_tree = {
 	focus = {
 		id = YSK_zdorovaya_rus_family
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_pogromy_budut
 		}
@@ -7069,7 +7069,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ploditsya_bystree_chem_umirat
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zdorovaya_rus_family
 		}
@@ -7086,7 +7086,7 @@ focus_tree = {
 	focus = {
 		id = YSK_silver_bullet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_armyanskaya_kuhnya
 			focus = YSK_ploditsya_bystree_chem_umirat
@@ -7108,7 +7108,7 @@ focus_tree = {
 	focus = {
 		id = YSK_soversh_weapon
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_armyanskaya_kuhnya
 			focus = YSK_ploditsya_bystree_chem_umirat
@@ -7128,7 +7128,7 @@ focus_tree = {
 	focus = {
 		id = YSK_neupr_rocket
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_great_russian_wall
 			focus = YSK_ploditsya_bystree_chem_umirat
@@ -7228,7 +7228,7 @@ focus_tree = {
 	focus = {
 		id = YSK_boyare_i_chern
 		icon = GFX_focus_generic_industrialists
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zemskoe_samoupravlenie
 			focus = YSK_old_good_times_do_1861
@@ -7332,7 +7332,7 @@ focus_tree = {
 	focus = {
 		id = YSK_russian_imperskiy_femenism
 		icon = GFX_focus_generic_women_in_military
-		cost = 2,00
+		cost = 5,00
 		prerequisite = {
 			focus = YSK_zapret_abortov
 		}
