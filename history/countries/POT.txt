@@ -1,9 +1,10 @@
 ﻿capital = 516 #Norilsk
 
-#oob = "POT_1936"
+#oob = "BYA_1936"
 
 set_research_slots = 3
-
+set_stability = 0.7
+set_war_support = 0.5
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -13,11 +14,20 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
+		tech_trucks = 1
 	paratroopers = 1
 	gw_artillery = 1
-	mass_assault = 1
+	interwar_antiair = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1  
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
 	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
 }
 if = {
 	limit = {
@@ -85,19 +95,20 @@ if = {
 }
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no	
 }
 
 set_popularities = {
-	democratic = 70
-	fascism = 0
-	communism = 0
-	neutrality = 30
+    anarhostalinism = 0
+    vmestolev = 0
+    metacommy = 0
+    democratic = 98
+	fascism = 1
+	memoism = 0
+	neutrality = 1
 }
 
-
+set_convoys = 300
 
 
 

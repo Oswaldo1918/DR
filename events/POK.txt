@@ -1958,11 +1958,7 @@ controls_state = 96
 if = {
 				limit = {
 					SUO = exist
-					MHL = exist
-					OR = {
-					has_completed_focus = POK_russian_confederation 
-					has_completed_focus = POK_full_separation
-					}
+					MHL = { is_ally_with = POK }
 				}
 				SUO = { 
 			annex_country = {
@@ -2075,6 +2071,47 @@ controls_state = 824
 			transfer_state = 825
 			transfer_state = 579
 		 }
+			}
+if = {
+				limit = {
+					NOT = { POT = exists } 
+				POK = {
+            owns_state = 516
+			owns_state = 576
+			owns_state = 568
+			owns_state = 870
+				}
+				}
+				POT = { 
+			transfer_state = 516
+			transfer_state = 576
+			transfer_state = 568
+			transfer_state = 870
+			add_state_core = 516
+			add_state_core = 576
+			add_state_core = 568
+			add_state_core = 870
+			}
+			POK = {
+		set_nationality = {
+		target_country = POT
+		character = POK_potanin
+		}
+		}
+		POT = {
+		promote_character = POK_potanin
+			add_country_leader_role = {
+			character = POK_potanin
+			promote_leader = yes
+			country_leader = {
+				ideology = ancap
+				expire = "1965.1.1.1"
+				traits = {
+					
+				}
+			}
+		}
+		}
 			}			
 	}
 }
