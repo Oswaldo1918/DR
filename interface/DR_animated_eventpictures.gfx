@@ -1,5 +1,27 @@
 spriteTypes = {
 	frameAnimatedSpriteType = {
+		name = "GFX_news_event_Magic_outside_Hogwarts"
+		texturefile = "gfx/animated_textures/Magic_outside_Hogwarts.dds"
+		noOfFrames = 30
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_news_event_KAZ_Reunite_Borat"
+		texturefile = "gfx/animated_textures/KAZ_Reunite_Borat.dds"
+		noOfFrames = 26
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	frameAnimatedSpriteType = {
 		name = "GFX_news_event_BSH_bebey"
 		texturefile = "gfx/animated_textures/bebey_pobeda_na_viborah.dds"
 		noOfFrames = 38

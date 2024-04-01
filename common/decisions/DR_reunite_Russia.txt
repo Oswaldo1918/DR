@@ -843,6 +843,9 @@ DR_reunite_russia_decisions_category = {
 			}
 			has_war = no 
 			is_neighbor_of = NOD
+			has_army_manpower = {
+				size > 100000
+			}
 		}
 
 		visible = {
@@ -1101,6 +1104,9 @@ DR_reunite_russia_decisions_category = {
 				has_global_flag = pokoyanskaya_civil_war_end_gf
 			}
 			date > 7.01.01
+			has_army_manpower = {
+				size > 750000
+			}
 		}	
 		
 		fire_only_once = yes

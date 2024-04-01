@@ -1,5 +1,31 @@
 add_namespace = dk_news
 
+
+news_event = { #Магия_вне_хогвартса(лорное_объяснение_анимированных_ивентов)
+    id = dk_news.0
+	title = dk_news.0.t
+	desc = dk_news.0.d
+	picture = "GFX_news_event_Magic_outside_Hogwarts"
+	
+	major = yes
+	
+	trigger = {
+        date > 3.2.15
+		NOT = { has_global_flag = DR_news_event_magiya_vne_hogvartsa_gf }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = DR_news_event_magiya_vne_hogvartsa_gf 
+	}
+	
+	option = {
+		name = dk_news.0.a
+	}
+}
 news_event = { # Начало ГВ через выборы
     id = dk_news.1
 	title = dk_news.1.t
@@ -176,10 +202,17 @@ news_event = { #Залупа_Иваныча
 	
 	major = yes
 	
-	fire_only_once = yes
-	
 	trigger = {
-        date = 4.5.5
+        date > 4.5.5
+		NOT = { has_global_flag = DR_news_event_zalupa_ivanichya_gf }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		set_global_flag = DR_news_event_zalupa_ivanichya_gf 
 	}
 	
 	option = { #ЭТО_ШЕДЕВР
@@ -1227,12 +1260,16 @@ news_event = { #Падение_калиниграда
 	picture = GFX_news_event_DKR_KLG_padeniye_kalinilgrada
 	
 	major = yes
-	
-	fire_only_once = yes
 
 	trigger = {
-		763 = { NOT = { is_controlled_by = KLG } }
-		763 = { is_owned_by = KLG }
+		NOT = {
+			country_exists = KLG
+			has_global_flag = DR_news_event_fall_KLG_gf
+		}
+	}
+	
+	immediate = {
+		set_global_flag = DR_news_event_fall_KLG_gf
 	}
 	
 	option = {
@@ -1266,7 +1303,7 @@ news_event = { #Саурон_испытывает_ЯО
 	option = {
 		name = dk_news.62.a
 	}
-}
+} 
 news_event = { #Саурон_объединяет_Россию
     id = dk_news.63
 	title = dk_news.63.t
@@ -1279,5 +1316,45 @@ news_event = { #Саурон_объединяет_Россию
 
 	option = {
 		name = dk_news.63.a
+	}
+}
+news_event = { #Саурон_создаёт_СССР
+    id = dk_news.64
+	title = dk_news.64.t
+	desc = dk_news.64.d
+	picture = GFX_news_event_DKR_MRD_Sauron_nuckes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dk_news.63.a
+	}
+}
+news_event = { #Борат_Сагдиев_объединяет_Казахстан
+    id = dk_news.65
+	title = dk_news.65.t
+	desc = dk_news.65.d
+	picture = GFX_news_event_KAZ_Reunite_Borat
+	
+	major = yes
+	
+	immediate = {
+		set_global_flag = DR_KAZ_Borat
+	}
+
+	trigger = {
+		NOT = {
+			has_global_flag = DR_KAZ_Borat 
+		}
+		583 = { is_controlled_by = KAZ }
+		590 = { is_controlled_by = KAZ }
+		882 = { is_controlled_by = KAZ }
+		588 = { is_controlled_by = KAZ }
+	}
+	
+	option = {
+		name = dk_news.65.a
 	}
 }
