@@ -15,12 +15,10 @@ focus_tree = {
 		cost = 2
 		x = 12
 		y = 0
-			completion_reward = {
-					add_political_power = 10
-                    add_war_support = 0.1
-							
-				}
-
+		completion_reward = {
+			add_political_power = 10
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = OSV_common_usiliya
@@ -31,11 +29,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_all_power_against
 		}
-			completion_reward = {
-					add_stability = 0.1
-							
-				}
-
+		completion_reward = {
+			add_stability = 0.1				
+		}
 	}
 	focus = {
 		id = OSV_anti_revision
@@ -49,40 +45,39 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_wide_front
 		}
-			completion_reward = {
+		completion_reward = {
 			add_war_support = -0.1
 			add_to_variable = { kerb_power = 1 }
-					division_template = {
-									name = "Опергруппа"
-									division_names_group = OSV_KER_01
-									regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-
-												
-										}
-								}
-							248 = {
-									create_unit = {
-											division = "name = \"1-ya Opergruppa ''Kant''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-											owner = ROOT
-										}
-									create_unit = { 
-											division = "name = \"2-ya Opergruppa ''Hegel''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-											owner = ROOT
-										}
-									create_unit = {
-											division = "name = \"3-ya Opergruppa ''Marx''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-											owner = ROOT
-										}
-									create_unit = {
-											division = "name = \"4-ya Opergruppa ''Engels''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-											owner = ROOT
-										}
-								}
-							
+			division_template = {
+				name = "Опергруппа"
+				division_names_group = OSV_KER_01
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
 				}
-
+			}
+			248 = {
+				create_unit = {
+					division = "name = \"1-ya Opergruppa ''Kant''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2-ya Opergruppa ''Hegel''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3-ya Opergruppa ''Marx''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4-ya Opergruppa ''Engels''\" division_template = \"Опергруппа\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+					owner = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	focus = {
 		id = OSV_wide_front
@@ -96,74 +91,60 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_anti_revision
 		}
-			completion_reward = {
+		completion_reward = {
 			add_popularity = {
-							ideology = fascism
-							popularity = 0.05
-						}
+				ideology = fascism
+				popularity = 0.05
+			}
 			add_popularity = {
-							ideology = neutrality
-							popularity = 0.1
-						}			
-				division_template = {
-									name = "Широкофронитисты"
-									division_names_group = OSV_CHU_02
-									regiments = {
-											infantry = {
-													x = 0
-													y = 0
-												}
-											infantry = {
-													x = 0
-													y = 1
-												}
-											infantry = {
-													x = 0
-													y = 2
-												}
-											infantry = {
-													x = 0
-													y = 3
-												}	
-											support = {
-											  artillery = { x = 0 y = 0 }
-	                                }
-										}
-								}
-							248 = {
-									create_unit = {
-											division = "name = \"Дивизия национального возврождения \" division_template = \"Широкофронитисты\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Дивизия интернационалиста Антохина\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Народная Дружина Солидаристов\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Радикальные центристы\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Дивизия Архангела Михаила\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Союз Меча и Орала\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									create_unit = {
-											division = "name = \"Дивизия  Пастернака\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
-											owner = OSV
-										}
-									
-								}	
-							
+				ideology = neutrality
+				popularity = 0.1
+			}			
+			division_template = {
+				name = "Широкофронитисты"
+				division_names_group = OSV_CHU_02
+				regiments = {
+					infantry = {	x = 0	y = 0	}
+					infantry = {	x = 0	y = 1	}
+					infantry = {	x = 0	y = 2	}
+					infantry = {	x = 0	y = 3	}
+					infantry = {	x = 0	y = 4	}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
 				}
-
+			}
+			248 = {
+				create_unit = {
+					division = "name = \"Дивизия национального возврождения \" division_template = \"Широкофронитисты\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Дивизия интернационалиста Антохина\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Народная Дружина Солидаристов\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Радикальные центристы\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Дивизия Архангела Михаила\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Союз Меча и Орала\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+				create_unit = {
+					division = "name = \"Дивизия  Пастернака\" division_template = \"Широкофронитисты\" start_experience_factor = 0.1  start_equipment_factor = 0.5"
+					owner = OSV
+				}
+			}	
+		}
 	}
 	focus = {
 		id = OSV_roses_are_red
@@ -178,18 +159,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_1000_flowers
 		}
-			completion_reward = {
+		completion_reward = {
 			add_war_support = -0.05
 			add_to_variable = { kerb_power = 1 }
-	                 	random_owned_controlled_state = {
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	focus = {
 		id = OSV_1000_flowers
@@ -204,31 +187,29 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_roses_are_red
 		}
-			completion_reward = {
+		completion_reward = {
 			add_ideas = optimizaciya
-								random_list = { 
-	 50 = {
-	                 random_owned_controlled_state = {
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
+				random_list = { 
+				50 = {
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
 						}
-	 }
-	 50 = { 
-	 random_owned_controlled_state = {
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-	 }
-	 }
-							
+					}
 				}
-
+				50 = { 
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = OSV_ne_boltay
@@ -243,13 +224,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_free_speech
 		}
-			completion_reward = {
+		completion_reward = {
 			add_to_variable = { kerb_power = 1 }
-				add_political_power = -150
-				add_stability =	0.05	
-							
-				}
-
+			add_political_power = -150
+			add_stability =	0.05	
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	focus = {
 		id = OSV_free_speech
@@ -264,16 +246,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OSV_ne_boltay
 		}
-			completion_reward = {
+		completion_reward = {
 			add_political_power = 150
-				add_war_support = 0.02
-				add_stability =	-0.1
-				add_popularity = {
-							ideology = memoism
-							popularity = -0.15
-						}
-				}
-
+			add_war_support = 0.02
+			add_stability =	-0.1
+			add_popularity = {
+				ideology = memoism
+				popularity = -0.15
+			}
+		}
 	}
 	focus = {
 		id = OSV_personal_controversies
@@ -286,20 +267,17 @@ focus_tree = {
 			focus = OSV_free_speech
 		}
 		
-			completion_reward = {
-					if = {
+		completion_reward = {
+			if = {
 				limit = {
 					check_variable = { kerb_power > 1 }
 				}
 				complete_national_focus = OSV_kerb
-				 else ={
-				 complete_national_focus = OSV_chumak
-				 }
-				
+				else = {
+					complete_national_focus = OSV_chumak
+				}					
 			}
-							
-				}
-
+		}
 	}
 	focus = {
 		id = OSV_kerb
@@ -313,14 +291,13 @@ focus_tree = {
 		mutually_exclusive = {
 		focus = OSV_chumak
 		}
-			completion_reward = {
-					  set_politics = {
+		completion_reward = {
+			set_politics = {
 				ruling_party = metacommy
 				elections_allowed = no
 			}
 			add_ideas = OSV_kerb				
-				}
-
+		}
 	}
 	focus = {
 		id = OSV_kerb_left
@@ -331,20 +308,18 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_kerb
 		}
-		
-			completion_reward = {
+		completion_reward = {
 			add_manpower = -500
-					add_political_power = -100
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.2
-						}	
-				}
-
+			add_political_power = -100
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.2
+			}	
+		}
 	}
 	focus = {
 		id = OSV_kerb_nonactive
@@ -355,21 +330,19 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_kerb
 		}
-		
-			completion_reward = {
+		completion_reward = {
 			add_manpower = -500
-					add_political_power = -100
-					add_popularity = {
-							ideology = memoism
-							popularity = -0.1
-						}
-					add_popularity = {
-							ideology = anarhostalinism
-							popularity = 0.2
-						}
-				add_ideas = OSV_kerb_nonactive		
-				}
-
+			add_political_power = -100
+			add_popularity = {
+				ideology = memoism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = anarhostalinism
+				popularity = 0.2
+			}
+			add_ideas = OSV_kerb_nonactive		
+		}
 	}
 	focus = {
 		id = OSV_kerb_right
@@ -380,24 +353,22 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_kerb
 		}
-		
-			completion_reward = {
+		completion_reward = {
 			add_manpower = -500
 			add_political_power = -100
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = fascism
-							popularity = -0.1
-						}		
-					add_popularity = {
-							ideology = memoism
-							popularity = -0.1
-						}		
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
 				}
-
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}		
+				add_popularity = {
+					ideology = memoism
+					popularity = -0.1
+			}		
+		}
 	}
 	focus = {
 		id = OSV_ultraantirevis
@@ -410,19 +381,17 @@ focus_tree = {
 			focus = OSV_kerb_nonactive
 			focus = OSV_kerb_right
 		}
-		
-			completion_reward = {
+		completion_reward = {
 			add_political_power = 50
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.1
-						}		
-				}
-
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.1
+			}		
+		}
 	}
 	focus = {
 		id = OSV_magnum_opus
@@ -433,16 +402,14 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_ultraantirevis
 		}
-		
-			completion_reward = {
-					add_political_power = 300
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.1
-						}
-					add_country_leader_trait = dictator		
+		completion_reward = {
+			add_political_power = 300
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
 				}
-
+			add_country_leader_trait = dictator		
+		}
 	}
 	focus = {
 		id = OSV_ceation_of_usloviya
@@ -453,14 +420,12 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_magnum_opus
 		}
-		
-			completion_reward = {
-					add_timed_idea = {
-							idea = OSV_ceation_of_usloviya
-							days = 360
-						}	
-				}
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = OSV_ceation_of_usloviya
+				days = 360
+			}	
+		}
 	}
 	focus = {
 		id = OSV_true_prol_not_fat
@@ -471,12 +436,10 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_ceation_of_usloviya
 		}
-		
-			completion_reward = {
-				add_ideas = optimizaciya	
-				add_manpower = -15000			
-				}
-
+		completion_reward = {
+			add_ideas = optimizaciya	
+			add_manpower = -15000			
+		}
 	}
 	
 	focus = {
@@ -488,12 +451,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_ceation_of_usloviya
 		}
-		
-			completion_reward = {
-					
-					add_ideas = privatizaciya		
-				}
-
+		completion_reward = {
+			add_ideas = privatizaciya		
+		}
 	}
 	focus = {
 		id = OSV_attack_peasants
@@ -504,12 +464,10 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_true_prol_not_fat
 		}
-		
-			completion_reward = {
-					add_ideas = kolhozi
-					add_stability = -0.1		
-				}
-
+		completion_reward = {
+			add_ideas = kolhozi
+			add_stability = -0.1		
+		}
 	}
 	focus = {
 		id = OSV_fabricks_and_fabricants
@@ -520,28 +478,24 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_plan_of_privatization
 		}
-		
-			completion_reward = {
-				
-			  248 = {
-            add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes 
-			}
-			add_extra_state_shared_building_slots = 1	
-			
-		}
-		 246 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}				
+		completion_reward = {
+			248 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
 				}
-
+				add_extra_state_shared_building_slots = 1	
+			}
+			246 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = OSV_stimulate_class_conflict
@@ -552,12 +506,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_plan_of_privatization
 		}
-		
-			completion_reward = {
-					
-					add_ideas = OSV_stimulate_class_conflict		
-				}
-
+		completion_reward = {
+			add_ideas = OSV_stimulate_class_conflict		
+		}
 	}
 	focus = {
 		id = OSV_automatisation 
@@ -572,25 +523,20 @@ focus_tree = {
 			focus = OSV_fabricks_and_fabricants
 			
 		}
-		
-			completion_reward = {
-					
-				add_tech_bonus = {
+		completion_reward = {
+			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 1
 				category = industry
-				
-			   }
-			   add_tech_bonus = {
+			}
+			add_tech_bonus = {
 				name = electro_bonus
 				bonus = 1.0
 				uses = 2
 				category = electronics	
-				
-			   }
-				}
-
+			}
+		}
 	}
 	focus = {
 		id = OSV_pure_marxism
@@ -601,15 +547,12 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_magnum_opus
 		}
-		
-			completion_reward = {
-					add_popularity = {
-							ideology = metacommy
-							popularity = 0.25
-						}
-							
-				}
-
+		completion_reward = {
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.25
+			}
+		}
 	}
 	focus = {
 		id = OSV_desovetization
@@ -621,189 +564,16 @@ focus_tree = {
 			focus = OSV_pure_marxism
 		}
 		available = {
-					LAZ = {
-			      exists = no
-				}
-			} 
-			completion_reward = {
-					    create_wargoal = {
-							type = annex_everything
-							target = ARK
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = MAT
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = CHT
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = CDR
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = DRC
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = CVT
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = VTC
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = DGC
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = CCO
-						}
-			            create_wargoal = {
-							type = annex_everything
-							target = UNT
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = SKT
-						}
-			            create_wargoal = {
-							type = annex_everything
-							target = PRM
-						}
-					    create_wargoal = {
-							type = annex_everything
-							target = TUP
-						}
-			            create_wargoal = {
-							type = annex_everything
-							target = DON
-						}
-                        if = {
-							limit = {
-									country_exists = ARK
-								}
-							ARK = {
-									every_state = {
-											limit = {
-													is_owned_by = ARK
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}	
-                        if = {
-							limit = {
-									country_exists = MAT
-								}
-							MAT = {
-									every_state = {
-											limit = {
-													is_owned_by = MAT
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}  
-                        if = {
-							limit = {
-									country_exists = CHT
-								}
-							CHT = {
-									every_state = {
-											limit = {
-													is_owned_by = CHT
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}     
-                        if = {
-							limit = {
-									country_exists = UNT
-								}
-							UNT = {
-									every_state = {
-											limit = {
-													is_owned_by = UNT
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						} 
-                        if = {
-							limit = {
-									country_exists = SKT
-								}
-							SKT = {
-									every_state = {
-											limit = {
-													is_owned_by = SKT
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}                    
-                        if = {
-							limit = {
-									country_exists = PRM
-								}
-							PRM = {
-									every_state = {
-											limit = {
-													is_owned_by = PRM
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}   
-                        if = {
-							limit = {
-									country_exists = TUP
-								}
-							TUP = {
-									every_state = {
-											limit = {
-													is_owned_by = TUP
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}      
-                        if = {
-							limit = {
-									country_exists = DON
-								}
-							DON = {
-									every_state = {
-											limit = {
-													is_owned_by = DON
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}    
+			LAZ = {
+				exists = no
 			}
-
+		} 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OSV_kerb
+				add_idea = OSV_kerb_1
+			}	
+		}
 	}
 	focus = {
 		id = OSV_rev_in_europe
@@ -814,161 +584,12 @@ focus_tree = {
 		prerequisite = {
 			focus = OSV_desovetization
 		}
-		available = {
-					has_war = no
-		DON = {
-					exists = no
-					}
-		TUP = {
-					exists = no
-					}
-		PRM = {
-					exists = no
-					}	
-		SKT = {
-					exists = no
-					}
-		CHT = {
-					exists = no
-					}
-		UNT = {
-					exists = no
-					}
-		MAT = {
-					exists = no
-					}
-		ARK = {
-					exists = no
-					}	
-		
-				}
-			completion_reward = {
-		  add_state_core = 220
-		  add_state_core = 222
-		  add_state_core = 224
-		  add_state_core = 240
-		   add_state_core = 258
-		  add_state_core = 257
-		  add_state_core = 260
-		   add_state_core = 228
-		  add_state_core = 227
-		   add_state_core = 400
-		  add_state_core = 252
-		  add_state_core = 255
-		  add_state_core = 256
-		  add_state_core = 249
-		  add_state_core = 250
-		  add_state_core = 399
-		  add_state_core = 251
-		   add_state_core = 251
-		  add_state_core = 214
-		  add_state_core = 213
-		   add_state_core = 397
-		   add_state_core = 398
-		   add_state_core = 264
-		  add_state_core = 263
-		  add_state_core = 208
-		  add_state_core = 209
-		  add_state_core = 244
-		  add_state_core = 210
-		  add_state_core = 195
-					create_wargoal = {
-							type = annex_everything
-							target = WHS
-					}
-			        create_wargoal = {
-							type = annex_everything
-							target = SPL
-					}
-			        create_wargoal = {
-							type = annex_everything
-							target = ZWN
-					}
-			        create_wargoal = {
-							type = annex_everything
-							target = VSB
-					}
-			        create_wargoal = {
-							type = annex_everything
-							target = KLG
-					}		
-					if = {
-							limit = {
-									country_exists = WHS
-								}
-							WHS = {
-									every_state = {
-											limit = {
-													is_owned_by = WHS
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-					}	
-                    if = {
-							limit = {
-									country_exists = SPL
-								}
-							SPL = {
-									every_state = {
-											limit = {
-													is_owned_by = SPL
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-					} 
-                    if = {
-							limit = {
-									country_exists = ZWN
-								}
-							ZWN = {
-									every_state = {
-											limit = {
-													is_owned_by = ZWN
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-					}   
-                    if = {
-							limit = {
-									country_exists = VSB
-								}
-							VSB = {
-									every_state = {
-											limit = {
-													is_owned_by = VSB
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-					}   
-                    if = {
-							limit = {
-									country_exists = KLG
-								}
-							KLG = {
-									every_state = {
-											limit = {
-													is_owned_by = KLG
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-					}    					
+		completion_reward = {
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
 			}
-
+		}
 	}
 		focus = {
 		id = OSV_steps_tuhach
@@ -980,123 +601,28 @@ focus_tree = {
 			focus = OSV_rev_in_europe
 		}
 		available = {
-		WHS = {
-					exists = no
-					}
-		KLG = {
-					exists = no
-					}
-		VSB = {
-					exists = no
-					}	
-		ZWN = {
-					exists = no
-					}
-		SPL = {
-					exists = no
-					}		
+			WHS = {
+				exists = no
+			}
+			KLG = {
+				exists = no
+			}
+			VSB = {
+				exists = no
+			}	
+			ZWN = {
+				exists = no
+			}
+			SPL = {
+				exists = no
+			}		
 		}
-		
 		mutually_exclusive = {
-		focus = OSV_waiting
-		
+			focus = OSV_waiting
 	    }	
-		  completion_reward = {
-		   add_state_core = 207
-		  add_state_core = 206
-		  add_state_core = 204
-		  add_state_core = 241
-		  add_state_core = 194
-		   add_state_core = 191
-		  add_state_core = 12
-		  add_state_core = 13
-		   add_state_core = 96
-		  add_state_core = 95
-		  add_state_core = 94
-		   add_state_core = 784
-		  add_state_core = 11
-		  add_state_core = 189
-		  add_state_core = 190
-		   add_state_core = 763
-		
-			create_wargoal = {
-							type = annex_everything
-							target = POL
-						}
-			create_wargoal = {
-							type = annex_everything
-							target = LUB
-						}
-			create_wargoal = {
-							type = annex_everything
-							target = AUS
-						}
-			create_wargoal = {
-							type = annex_everything
-							target = HUN
-						}
-                        if = {
-							limit = {
-									country_exists = POL
-								}
-							POL = {
-									every_state = {
-											limit = {
-													is_owned_by = POL
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}     
-                        if = {
-							limit = {
-									country_exists = LUB
-								}
-							LUB = {
-									every_state = {
-											limit = {
-													is_owned_by = LUB
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}    
-                        if = {
-							limit = {
-									country_exists = AUS
-								}
-							AUS = {
-									every_state = {
-											limit = {
-													is_owned_by = AUS
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}     
-                        if = {
-							limit = {
-									country_exists = HUN
-								}
-							HUN = {
-									every_state = {
-											limit = {
-													is_owned_by = HUN
-												}
-											OSV = {
-													add_state_claim = PREV
-												}
-										}
-								}
-						}   						
-				}
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = OSV_waiting

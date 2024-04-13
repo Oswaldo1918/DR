@@ -312,7 +312,162 @@ MRD_mordovskava_armiya_decisions_category = {
 }
 
 MRD_nazgulstva_decisions_category = {
+	MRD_declare_war_MNR = {
 	
+		cost = 25
+
+		available = {
+			tag = MRD
+			has_war = no 
+			is_neighbor_of = MNR
+		}
+
+		visible = {
+			country_exists = MNR
+		}
+
+		fire_only_once = yes
+		
+		days_remove = 7
+		
+		ai_will_do = {
+			base = 15
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				target = MNR
+				type = annex_everything
+            }
+		}			
+	}
+	MRD_declare_war_GLA = {
+	
+		cost = 25
+
+		available = {
+			tag = MRD
+			has_war = no 
+			is_neighbor_of = GLA
+		}
+
+		visible = {
+			country_exists = GLA
+		}
+
+		fire_only_once = yes
+		
+		days_remove = 7
+		
+		ai_will_do = {
+			base = 15
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				target = MNR
+				type = annex_everything
+            }
+		}			
+	}
+	MRD_declare_war_ZNR = {
+	
+		cost = 25
+
+		available = {
+			tag = MRD
+			has_war = no 
+			is_neighbor_of = ZNR
+		}
+
+		visible = {
+			country_exists = ZNR
+		}
+
+		fire_only_once = yes
+		
+		days_remove = 7
+		
+		ai_will_do = {
+			base = 15
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				target = MNR
+				type = annex_everything
+            }
+		}			
+	}
+	MRD_nazgulstvo_Mongolia = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = MRD_korovani_yiga
+			controls_state = 619 #Уезд_Яркенд
+			controls_state = 287 #Такла-Макан
+			controls_state = 617 #Урумчи
+			controls_state = 618 #Джунгария
+			controls_state = 759 #Куньлунь-Шань
+			controls_state = 760 #Дабаньчень
+			controls_state = 756 #Цзюцюань
+			controls_state = 818 #Ховд
+			controls_state = 817 #Гоби
+			controls_state = 820 #Хувсел
+			controls_state = 330 #Улан-Батор
+			controls_state = 819 #Доронд
+			controls_state = 612 #Чахар
+			controls_state = 611 #Южный_Чахар
+			controls_state = 621 #Суйюуань
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			base = 15
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			release_on_controlled = MNR
+			MNR = {
+				controls_state = 619 #Уезд_Яркенд
+				controls_state = 287 #Такла-Макан
+				controls_state = 617 #Урумчи
+				controls_state = 618 #Джунгария
+				controls_state = 759 #Куньлунь-Шань
+				controls_state = 760 #Дабаньчень
+				controls_state = 756 #Цзюцюань
+				controls_state = 818 #Ховд
+				controls_state = 817 #Гоби
+				controls_state = 820 #Хувсел
+				controls_state = 330 #Улан-Батор
+				controls_state = 819 #Доронд
+				controls_state = 612 #Чахар
+				controls_state = 611 #Южный_Чахар
+				controls_state = 621 #Суйюуань
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				set_cosmetic_tag = UKR_reichskommissariat
+				create_country_leader = {
+					name = "Erich Koch"
+					picture = GFX_portrait_Erich_Koch
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+		}
+	}
+}
 }
 
 MRD_grib_saurona_decisions_category = {
