@@ -5,7 +5,7 @@
 DR_dela_chumnogo_pakta = {
 	icon = military_operation
 	picture = GFX_decision_category_chumnoy_pakt_picture
-	allowed = {
+	visible = {
 		OR = {
 			tag = LAZ
 			AND = {
@@ -43,5 +43,11 @@ LAZ_proizvodstvo_kontenta = {
 	icon = military_operation
 	allowed = {
 		tag = LAZ		
+	}
+	visible = {
+		tag = LAZ		
+	}
+	avalible = {
+		tag = LAZ
 	}
 }
