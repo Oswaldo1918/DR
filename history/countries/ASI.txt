@@ -1,16 +1,19 @@
-capital = 575
+capital = 571
 
 oob = 123_1936
 
-set_research_slots = 1
-set_stability = 0.9
-set_war_support = 0
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
 }
 
+recruit_character = 
 
+add_ideas = {
+}
 
 set_popularities = {
 	fascism = 100
@@ -20,14 +23,14 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
 
 create_country_leader = {
-	name = "Дед Кузя"
+	name = "Александр Хиневич"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Kuzya.dds"
+	picture = "Hinevich.dds"
 	expire = "1999.1.1"
-	ideology = falangism
+	ideology = right_neoyazych
 	traits = {
 		#
 	}

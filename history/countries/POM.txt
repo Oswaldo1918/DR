@@ -1,4 +1,4 @@
-capital = 405
+capital = 214
 
 oob = 123_1936
 
@@ -10,27 +10,27 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = 
+
 add_ideas = {
-limited_conscription
-low_economic_mobilisation
 }
 
 set_popularities = {
-	neutrality = 100
+	democratic = 100
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	elections_allowed = no	
 }
 
 set_convoys = 200
 
 create_country_leader = {
-	name = "Джамшут"
+	name = "Дмитрий Ларин"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Dzhamshut.dds"
+	picture = "Larin.dds"
 	expire = "1999.1.1"
-	ideology = despotism 
+	ideology = liberalism
 	traits = {
 		#
 	}

@@ -20,3 +20,17 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = KAZ.2
+	title = KAZ.2.t
+	desc = KAZ.2.d
+	picture = GFX_report_event_japanese_soldiers_02	
+	fire_only_once = yes	
+	option = {
+	    name = KAZ.2.a 
+        ASI = {
+			transfer_state = 571
+			add_state_core = 571
+		}
+	}
+}
