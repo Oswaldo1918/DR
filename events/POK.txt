@@ -2474,6 +2474,84 @@ if = {
 				add_state_core = 555
 			}
 	    }
+		if = {
+			limit = {
+				NOT = { SPL = exists } 
+			    POK = {
+					owns_state = 13
+					owns_state = 191
+					owns_state = 811
+					owns_state = 812
+					owns_state = 813
+			    }
+			}
+			SPL = {
+				transfer_state = 13
+                transfer_state = 191
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				set_country_flag = SPL_POK
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { VSB = exists } 
+			    POK = {
+					owns_state = 11
+					owns_state = 188
+					owns_state = 189
+					owns_state = 814
+					owns_state = 815
+					owns_state = 784
+			    }
+			}
+			VSB = {
+				transfer_state = 11
+                transfer_state = 188
+				transfer_state = 189
+				transfer_state = 814
+				transfer_state = 815
+				transfer_state = 784
+				set_country_flag = VSB_POK
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { LTV = exists } 
+			    POK = {
+					owns_state = 12
+					owns_state = 190
+					owns_state = 808
+					owns_state = 809
+					owns_state = 810
+			    }
+			}
+			LTV = {
+				transfer_state = 12
+                transfer_state = 190
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 810
+				add_state_core = 12
+				add_state_core = 190
+				add_state_core = 808
+				add_state_core = 809
+				add_state_core = 810
+			}
+	    }
+		if = {
+			limit = {
+				FRG = exists 
+			    POK = {
+					owns_state = 763
+			    }
+			}
+			FRG = {
+				transfer_state = 763
+				add_state_core = 763
+			}
+	    }
 		POK = {
 		    set_cosmetic_tag = POK_Malaya_Pokayaniya
 		}
