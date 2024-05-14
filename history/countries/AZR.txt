@@ -2,17 +2,19 @@ capital = 229
 
 oob = AZR_1936
 
-set_research_slots = 1
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
+	tech_mountaineers = 1
 }
 
 recruit_character = AZR_gasanov
 
 add_ideas = {
+    low_economic_mobilisation
 }
 
 set_popularities = {
@@ -23,4 +25,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200
