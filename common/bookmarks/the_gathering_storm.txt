@@ -14,10 +14,11 @@ bookmarks = {
 				POK_home_of_the_free
 				POK_Metostazi_sovka
 				POK_Gore_Pobeditelam
-				POK_Politicheskaya_Nestabilnost
 			}
 			focuses = {
-				
+				POK_russkiy_Pinochet
+				POK_pay_and_repent
+				POK_radical_decommunisation
 			}
 		}
 		"KUR"={
@@ -52,7 +53,7 @@ bookmarks = {
 				cht_loksists
 				cht_great_srach
 				cht_shue
-2			}
+			}
 			focuses = {
 				CHT_vibori
 				CHT_new_order
@@ -68,8 +69,8 @@ bookmarks = {
 			}
 			focuses = {
 				LAZ_KNOR_politica
-				LAZ_KNOR_voyenka
-				LAZ_KNOR_economica
+				LAZ_dvoyniye_drudodni
+				LAZ_KNOR_po_chatu
 			}
 		}
 		"TUP"={
@@ -80,7 +81,7 @@ bookmarks = {
 				TUP_home_of_revolution
 			}
 			focuses = {
-			
+
 			}			
 		}
 		"DOT"={
@@ -105,7 +106,7 @@ bookmarks = {
 		# minors #
 		"ALB"={
 			minor = yes
-			history = "WHS_GATHERING_STORM_DESC"
+			history = "ALB_GATHERING_STORM_DESC"
 			ideology = vmestolev
 			ideas = {
 				
@@ -131,7 +132,7 @@ bookmarks = {
 		}
 		"KLG"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
+			history = "KLG_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				KLG_dom_Sovetov
@@ -144,7 +145,7 @@ bookmarks = {
 		}
 		"SHM"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
+			history = "SHM_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				
@@ -155,9 +156,63 @@ bookmarks = {
 				SHM_drevnie_znania
 			}
 		}
+		"ARK"={
+			minor = yes
+			history = "ARK_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				ARK_sev_bastion
+				ARK_building_sevflot
+				UNT_neudach_vostoch_pohod
+			}
+			focuses = {
+
+			}
+		}
+		"WHS"={
+			minor = yes
+			history = "WHS_GATHERING_STORM_DESC"
+			ideology = anarhostalinism
+			ideas = {
+				WHS_zapad_bastion
+				WHS_nasledie_VeynshGV
+				UNT_neudach_vostoch_pohod
+			}
+			focuses = {
+
+			}
+		}
+		"UNT"={
+			minor = yes
+			history = "UNT_GATHERING_STORM_DESC"
+			ideology = vmestolev
+			ideas = {
+				UNT_YgVostok_bastion
+				UNT_indust_po_Untsu
+				UNT_neudach_vostoch_pohod
+			}
+			focuses = {
+
+			}
+		}
+		"MAT"={
+			minor = yes
+			history = "MAT_GATHERING_STORM_DESC"
+			ideology = metacommy
+			ideas = {
+				MAT_idea_YgZapad_bastion
+				MAT_idea_Dvoevlastiye
+				UNT_neudach_vostoch_pohod
+			}
+			focuses = {
+				MAT_reforma_GKO
+				MAT_chezvichayniye_meri
+				MAT_reshayushiy_udar
+			}
+		}
 		"DON"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
+			history = "DON_GATHERING_STORM_DESC"
 			ideology = metacommy
 			ideas = {
 				DON_idea_Yg_bastion
@@ -165,18 +220,23 @@ bookmarks = {
 				DON_idea_neprof_army	
 			}
 			focuses = {
-			
+				DON_snyat_tanki_s_postamentov
+				DON_novorosskoye_chudo
+				DON_ukrainskaya_voyna
 			}
 		}
 		"UKR"={
 			minor = yes
-			history = "BSH_GATHERING_STORM_DESC"
+			history = "UKR_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				UKR_nahruk_level_1
 				UKR_ukraine_ne_oboytis_bez_uglya_donbassa
 			}
 			focuses = {
+				UKR_armiya
+				UKR_mova
+				UKR_vira
 			}
 		}
 		"SKT"={
@@ -226,7 +286,9 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
-			    
+				MRD_logovo_saurona
+				MRD_proyekt_grib_saurona
+				MRD_proyekt_megakoltso
 			}
 		}
 		

@@ -2,58 +2,41 @@
   ### LAZARET_RSFSR ###
 #########################
 
-LAZ_military_annexation_kliki = {
+DR_dela_chumnogo_pakta = {
 	icon = military_operation
-	allowed = {
-		tag = LAZ	
-		
-	}
-	visible = { 
-	has_country_flag = LAZ_bilo_vosstaniye 
-	}
-}
-LAZ_integration_kliki = {
-	icon = military_operation
-	allowed = {
-		tag = LAZ	
-	}
-	visible = { 
-	has_completed_focus = LAZ_KNOR_po_chatu
-	NOT = {
-	has_country_flag = LAZ_bilo_vosstaniye 
-	}
-	}
-}
-LAZ_nationalization_SSSR = {
-	icon = military_operation
-	allowed = {
-		tag = LAZ		
-	}
-}
-LAZ_war_za_SSSR = {
-	icon = military_operation
-	allowed = {
-		tag = LAZ		
-	}
-	visible = { 
-	 OR = { 
-	 has_completed_focus = LAZ_plan_doka 
-	 has_completed_focus = LAZ_plan_shtazista
-	 }
-	}
-}
-LAZ_reunification_category = {
-	icon = military_operation
-	allowed = {
-		original_tag = LAZ
-	}
+	picture = GFX_decision_category_chumnoy_pakt_picture
 	visible = {
-	
-	OR = { 
-	 has_completed_focus = LAZ_plan_doka 
-	 has_completed_focus = LAZ_plan_shtazista
-	 
-	}
+		OR = {
+			tag = LAZ
+			AND = {
+				tag = ARK
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = WHS
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = UNT
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = MAT
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = DON
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = CHT
+				is_in_faction_with = LAZ
+			}
+			AND = {
+				tag = BSH
+				is_in_faction_with = LAZ
+			}
+		}
 	}
 }
 LAZ_proizvodstvo_kontenta = {
@@ -61,16 +44,10 @@ LAZ_proizvodstvo_kontenta = {
 	allowed = {
 		tag = LAZ		
 	}
-}
-LAZ_annex_puppets_cat = {
-	icon = military_operation
-	allowed = {
+	visible = {
 		tag = LAZ		
 	}
-	visible = { 
-	 OR = { 
-	 has_completed_focus = LAZ_plan_doka 
-	 has_completed_focus = LAZ_plan_shtazista
-	 }
+	avalible = {
+		tag = LAZ
 	}
 }

@@ -1,31 +1,49 @@
-LAZ_military_annexation_kliki = {
-
-	LAZ_war_ARK = { #Оккупация_Архангельска
+DR_dela_chumnogo_pakta = {
+	#Переподчинение_либо_аннексия_клик_после_гражданской_войны
+	LAZ_war_MAT = { #Оккупация_Орла
 	
 		cost = 25
 		
 		available = {
 			has_country_flag = LAZ_bilo_vosstaniye
 			has_war = no 
-
 		}
 		visible = {
-			country_exist = ARK		
-		}
-		
+			country_exist = MAT		
+		}	
 		fire_only_once = yes
 	    ai_will_do = {
 			factor = 100
 		}
-		
 		remove_effect = {
-			ARK = {
-				country_event = lazaret.29
+			MAT = {
+				country_event = lazaret.25
 		    }
-			set_country_flag = LAZ_AKR_int
+			set_country_flag = LAZ_MAT_int
 	    }
 	}
+	LAZ_war_UNT = { #Оккупация_Воронежа
 	
+		cost = 25
+		
+		available = {
+			has_country_flag = LAZ_bilo_vosstaniye
+			has_war = no 
+		}
+		visible = {
+			country_exist = UNT		
+		}	
+		fire_only_once = yes
+	    ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			UNT = {
+				country_event = lazaret.26
+		    }
+			set_country_flag = LAZ_UNT_int
+	    }
+	}
 	LAZ_war_WHS = { #Оккупация_Вейшнории
 	
 		cost = 25
@@ -43,96 +61,74 @@ LAZ_military_annexation_kliki = {
 		}
 		remove_effect = {
 			WHS = {
-			country_event = lazaret.27
+				country_event = lazaret.27
 		    }
 			set_country_flag = LAZ_WHS_int
 	    }
 	}
-	
-	LAZ_war_UNT = { #Оккупация_Воронежа
-	
-		cost = 25
-		
-		available = {
-		has_country_flag = LAZ_bilo_vosstaniye
-		has_war = no 
-		}
-		visible = {
-			country_exist = UNT		
-		}	
-		fire_only_once = yes
-	    ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			UNT = {
-			country_event = lazaret.26
-		    }
-			set_country_flag = LAZ_UNT_int
-	    }
-	}
-	
-	LAZ_war_MAT = { #Оккупация_Орла
-	
-		cost = 25
-		
-		available = {
-		has_country_flag = LAZ_bilo_vosstaniye
-		has_war = no 
-		}
-		visible = {
-			country_exist = MAT		
-		}	
-		fire_only_once = yes
-	    ai_will_do = {
-        factor = 100
-		}
-		remove_effect = {
-			MAT = {
-			country_event = lazaret.25
-		    }
-			set_country_flag = LAZ_MAT_int
-	    }
-	}
-	
 	LAZ_war_DON = { #Оккупация_Донбасса
 	
 		cost = 25
 		
 		available = {
-		has_country_flag = LAZ_bilo_vosstaniye
-		has_war = no 
+			has_country_flag = LAZ_bilo_vosstaniye
+			has_war = no 
 		}
 		visible = {
 			country_exist = DON		
 		}	
 		fire_only_once = yes
 	    ai_will_do = {
-        factor = 100
+			factor = 100
 		}
 		remove_effect = {
 			DON = {
-			country_event = lazaret.28
+				country_event = lazaret.28
 		    }
 			set_country_flag = LAZ_DON_int
 	    }
 	}
+	LAZ_war_ARK = { #Оккупация_Архангельска
+	
+		available = {
+			has_country_flag = LAZ_bilo_vosstaniye
+			has_war = no 
+		}
+		visible = {
+			country_exist = ARK		
+		}
+		
+		cost = 25
+		fire_only_once = yes
+		
+		remove_effect = {
+			ARK = {
+				country_event = lazaret.29
+		    }
+	    }
+	    ai_will_do = {
+			factor = 100
+		}
+	}
 }
-
-LAZ_integration_kliki = { #Интеграция_ЧАТа
-
+	#Интеграция_клик_по_завершении_их_экономического_развития
 	LAZ_annex_ChAT = {
 	    
 		cost = 75
 		
         visible = {
             has_completed_focus = LAZ_plan_shtazista
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
+			}
         }
 
 		fire_only_once = yes
 		
 		available = {
-			CHT = { 
+			CHT = {
+				is_puppet_of = LAZ
 				has_completed_focus = CHT_razvitoy_socialism 
 				has_government = vmestolev
 			}
@@ -141,122 +137,193 @@ LAZ_integration_kliki = { #Интеграция_ЧАТа
 		days_remove = 30
 		
 		remove_effect = {
-			LAZ = {
-				end_puppet = CHT
+			annex_country = {
+				target = CHT
+				transfer_troops = yes
 			}
-			CHT = { leave_faction = Chumnoy_pakt }
-			CHT = {
-				country_event = chat.228
-		    }
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				ARK = {
+					is_ai = no
+				}
+			}
 		}
     }
 
 	LAZ_int_ARK = { #Интеграция_Архангельска
 	
-		cost = 50
+		cost = 35
 		
-		available = {
-			ARK = { is_puppet_of = LAZ }
-		}
-		days_remove = 35
-		ai_will_do = {
-			factor = 100
-		}
-		fire_only_once = yes
-		remove_effect = {
-			LAZ = {
-				end_puppet = ARK
+		visible = { 
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
 			}
-			ARK = { leave_faction = Chumnoy_pakt }
+		}
+		available = {
 			ARK = {
-				country_event = lazaret.29
-		    }
-			set_country_flag = LAZ_ARK_int
+				is_puppet_of = LAZ
+				#has_completed_focus = ARK_integratsiya_v_lazaret
+				OR = {
+					has_government = vmestolev
+					has_government = anarhostalinism
+				}
+			}
+		}
+		
+		days_remove = 35
+		fire_only_once = yes
+		
+		remove_effect = {
+			annex_country = {
+				target = ARK
+				transfer_troops = yes
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				ARK = {
+					is_ai = no
+				}
+			}
 		}
 	}
 	
 	LAZ_int_WHS = { #Интеграция_Вейшнории
 	
-		cost = 75
-		
+		cost = 25
+
+		visible = { 
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
+			}
+		}
 		available = {
-			WHS = { is_puppet_of = LAZ }
-		}
-	
-		fire_only_once = yes
-	
-		days_remove = 70
-		ai_will_do = {
-			factor = 100
-		}
-		remove_effect = {
-		LAZ = {
-			end_puppet = WHS
-		}
-        WHS = { leave_faction = Chumnoy_pakt }
 			WHS = {
-				country_event = lazaret.27
-		    }
-			set_country_flag = LAZ_WHS_int
+				is_puppet_of = LAZ
+				#has_completed_focus = WHS_integratsiya_v_lazaret
+				OR = {
+					has_government = vmestolev
+					has_government = anarhostalinism
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 90
+
+		remove_effect = {
+			annex_country = {
+				target = WHS
+				transfer_troops = yes
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				WHS = {
+					is_ai = no
+				}
+			}
 		}
 	}
 	
 	LAZ_int_UNT = { #Интеграция_Воронежа
 	
 		cost = 25
-		
+		visible = { 
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
+			}
+		}
 		available = {
-			UNT = { is_puppet_of = LAZ }
+			UNT = {
+				is_puppet_of = LAZ
+				#has_completed_focus = UNT_integratsiya_v_lazaret
+				OR = {
+					has_government = vmestolev
+					has_government = anarhostalinism
+				}
+			}
 		}
 	
 		fire_only_once = yes
+		days_remove = 90
+		
+		remove_effect = {
+			annex_country = {
+				target = UNT
+				transfer_troops = yes
+			}
+		}
 		ai_will_do = {
-			factor = 100
-		}
-		 remove_effect = {
-		 LAZ = {
-			end_puppet = UNT
-		}
-        UNT = { leave_faction = Chumnoy_pakt }
-			UNT = {
-			country_event = lazaret.26
-		    }
-			set_country_flag = LAZ_UNT_int
+			base = 10
+			modifier = {
+				factor = 0
+				UNT = {
+					is_ai = no
+				}
+			}
 		}
 	}
 	
 	LAZ_int_MAT = { #Интеграция_Орла
 	
 		cost = 40
-		
+		visible = { 
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
+			}
+		}		
 		available = {
-			MAT = { 
+			MAT = {
 				is_puppet_of = LAZ 
+				has_completed_focus = MAT_integratsiya_v_lazaret
+				OR = {
+					has_government = metacommy
+					has_government = vmestolev
+				}
 			}
 		}
 	
 		fire_only_once = yes
-		days_remove = 14
-		
+		days_remove = 90
+
+		remove_effect = {
+			annex_country = {
+				target = MAT
+				transfer_troops = yes
+			}
+		}
 		ai_will_do = {
-			factor = 100
-		}
-		 remove_effect = {
-		 LAZ = {
-			end_puppet = MAT
-		}
-        MAT = { leave_faction = Chumnoy_pakt }
+			base = 10
+			modifier = {
+				factor = 0
 				MAT = {
-			country_event = lazaret.25
-		    }
-			set_country_flag = LAZ_MAT_int
+					is_ai = no
+				}
+			}
 		}
 	}	
 	
 	LAZ_int_DON = { #Интеграция_Донбасса
 	
-		cost = 5
-		
+		cost = 25
+		visible = { 
+			has_completed_focus = LAZ_KNOR_po_chatu
+			NOT = {
+				has_country_flag = LAZ_bilo_vosstaniye 
+			}
+		}
 		available = {
 			DON = {
 				is_puppet_of = LAZ 
@@ -264,22 +331,24 @@ LAZ_integration_kliki = { #Интеграция_ЧАТа
 				has_government = metacommy
 			}
 		}
-	
+		
 		fire_only_once = yes
-		days_remove = 14
-
-		ai_will_do = {
-			factor = 100
-		}
+		days_remove = 90
+		
 		remove_effect = {
-			LAZ = {
-				end_puppet = DON
+			annex_country = {
+				target = DON
+				transfer_troops = yes
 			}
-			DON = { leave_faction = Chumnoy_pakt }
-			DON = {
-				country_event = lazaret.28
-		    }
-			set_country_flag = LAZ_DON_int
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				DON = {
+					is_ai = no
+				}
+			}
 		}
 	}
 }
@@ -313,16 +382,16 @@ LAZ_proizvodstvo_kontenta = { #Производство_контента
 
 		timeout_effect = {
 		hidden_effect = {
-		remove_ideas = LAZ_psihologiya_1 
-		remove_ideas = LAZ_psihologiya_2
-		remove_ideas = LAZ_psihologiya_3
-		remove_ideas = LAZ_psihologiya_4
+			remove_ideas = LAZ_psihologiya_1 
+			remove_ideas = LAZ_psihologiya_2
+			remove_ideas = LAZ_psihologiya_3
+			remove_ideas = LAZ_psihologiya_4
 		}
-			country_event = { id = lazaret.9  days = 2 }
-			            248 = { set_demilitarized_zone = yes }
-			            247 = { set_demilitarized_zone = yes }
-						246 = { set_demilitarized_zone = yes }
-			            253 = { set_demilitarized_zone = yes }
+		country_event = { id = lazaret.9  days = 2 }
+			248 = { set_demilitarized_zone = yes }
+			247 = { set_demilitarized_zone = yes }
+			246 = { set_demilitarized_zone = yes }
+			253 = { set_demilitarized_zone = yes }
 		}
 	}
 	
@@ -339,16 +408,16 @@ LAZ_proizvodstvo_kontenta = { #Производство_контента
 		days_remove = 7
 		
 		ai_will_do = {
-        factor = 100
+			factor = 100
 		}
 		remove_effect = {
-		country_event = { id = lazaret.16  days = 2 }
+			country_event = { id = lazaret.16  days = 2 }
 			add_ideas = {
-		LAZ_psihologiya_1
-						}	
+				LAZ_psihologiya_1
+			}	
 			add_days_mission_timeout = {
-			mission = LAZ_razval_mission
-			days = 20
+				mission = LAZ_razval_mission
+				days = 20
 			}
 		}	
 	}
@@ -366,7 +435,7 @@ LAZ_proizvodstvo_kontenta = { #Производство_контента
 		
 		days_remove = 5
 		ai_will_do = {
-        factor = 100
+			factor = 100
 		}
 		remove_effect = {
 		country_event = { id = lazaret.17  days = 2 }

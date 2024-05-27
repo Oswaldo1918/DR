@@ -4502,17 +4502,6 @@ custom_effect_tooltip = POK_demshiza2_tt
 		}
 	}
 	shared_focus = {
-		id = POK_help_republics
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 5
-		prerequisite = {
-			focus = POK_russian_prometey
-		}
-		x = 40
-		y = 21
-
-	}
-	shared_focus = {
 		id = POK_SNG_reborn
 		icon = GFX_POK_SNG_reborn
 		cost = 5

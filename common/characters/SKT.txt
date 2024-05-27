@@ -201,7 +201,7 @@ characters={
                 has_government = vmestolev
 				has_completed_focus = SKT_left_boroda
 		    }
-            traits = { army_chief_offensive_1 }
+            traits = { army_chief_organizational_1 }
 	    }
     }
 	
@@ -408,5 +408,65 @@ characters={
 				factor = 1
 			}
 	    }
+	}
+	
+	SKT_RidGold = {
+		name = "RidGold"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/RidGold.dds"
+			}
+		}
+	}
+	SKT_Red_Dyatel = {
+		name = "Красный Дятел"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/Red_Dyatel.dds"
+			}
+		}
+	}
+	SKT_NoName_Signal = {
+		name = "NoName Signal"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/NoName_Signal.dds"
+			}
+		}
+	}
+	SKT_Vladimir_Shcheulov = {
+		name = "Владимир Щеулов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SKT/Vladimir_Shcheulov.dds"
+			}
+		}
+	}
+	SKT_Gamburg = {
+		name = "Дмитрий Гамбург"
+		portraits = {
+			army = {
+			    large = "gfx/leaders/SKT/Gamburg.dds"    
+				small = "GFX_idea_SKT_Gamburg"
+			}
+		}
+
+		advisor = {	
+		    slot = army_chief
+		    idea_token = SKT_Gamburg
+		    allowed = {
+				original_tag = SKT
+		    }
+			available = {		
+                has_government = vmestolev
+				has_completed_focus = SKT_left_boroda
+		    }
+			
+		    traits = { army_chief_offensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+	    	}
+		}	
 	}
 }

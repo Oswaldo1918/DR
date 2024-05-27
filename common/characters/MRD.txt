@@ -64,59 +64,27 @@ characters = {
 			}
 		}
 	}
-	
-	#####НАЗГУЛ#####
-	
-	MRD_korol_charodey = {
-		name = "Король-чародей Ангмара"
+	MRD_goliy = {
+		name = "Шмыга «Голый»"
 		portraits = {
-			army = {
-				small = "GFX_idea_korol_charodey"
-				large = "gfx/leaders/MRD/king_charodey.dds"
+			civilian = {
+				small = "GFX_idea_MRD_goliy"
 			}
 		}
+		gender = male
 		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
-			traits = {
-				blitzkrieg_theorist 
+			slot = political_advisor
+			idea_token = MRD_idea_goliy
+			available = {
+				has_country_leader = {
+					character  = MRD_Sauron_the_Great
+				}
 			}
-		}
-		corps_commander = {
-			traits = { brilliant_strategist armor_officer winter_specialist career_officer  offensive_doctrine }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 2
-		}
-	}
-	MRD_pendalf = {
-		name = "Глеб Егорович Пендальф"
-		portraits = {
-			army = {
-				small = "GFX_idea_pendalf"
-				large = "gfx/leaders/MRD/Pendalf.dds"
-			}
-		}
-		corps_commander = {
-			traits = { brilliant_strategist media_personality  war_hero infantry_officer winter_specialist }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
-		}
-		advisor = {
-			slot = high_command
-			idea_token = MRD_idea_pendalf
 			allowed  = {
 				original_tag = MRD
 			}
 			traits  = {
-				army_infantry_2 
+				first_lady 
 			}
 		}
 	}
@@ -151,30 +119,6 @@ characters = {
 			}
 		}
 	}
-	MRD_goliy = {
-		name = "Шмыга «Голый»"
-		portraits = {
-			civilian = {
-				small = "GFX_idea_MRD_goliy"
-			}
-		}
-		gender = male
-		advisor = {
-			slot = political_advisor
-			idea_token = MRD_idea_goliy
-			available = {
-				has_country_leader = {
-					character  = MRD_Sauron_the_Great
-				}
-			}
-			allowed  = {
-				original_tag = MRD
-			}
-			traits  = {
-				first_lady 
-			}
-		}
-	}
 	MRD_Albert_Wesker = {
 		name = "Альберт Вескер"
 		portraits = {
@@ -190,6 +134,249 @@ characters = {
 			}
 			traits = {
 				head_of_the_nkvd_beriya_initial
+			}
+		}
+	}
+	
+	#####НАЗГУЛ#####
+	
+	MRD_korol_charodey = {
+		name = "Король-чародей Ангмара"
+		portraits = {
+			army = {
+				small = "GFX_idea_korol_charodey"
+				large = "gfx/leaders/MRD/king_charodey.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+			traits = {
+				blitzkrieg_theorist 
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist armor_officer winter_specialist career_officer  offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_ = {
+		name = ""
+		portraits = {
+			army = {
+				small = "GFX_idea_"
+				large = "gfx/leaders/MRD/.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = korol_charodey
+			ledger = army
+		}
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	#####ГЕНЕРАЛЫ#####
+	
+	MRD_pendalf = {
+		name = "Глеб Егорович Пендальф"
+		portraits = {
+			army = {
+				small = "GFX_idea_pendalf"
+				large = "gfx/leaders/MRD/Pendalf.dds"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist media_personality  war_hero infantry_officer winter_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MRD_idea_pendalf
+			allowed  = {
+				original_tag = MRD
+			}
+			traits  = {
+				army_infantry_2 
 			}
 		}
 	}

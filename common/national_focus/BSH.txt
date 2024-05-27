@@ -1348,12 +1348,12 @@ focus_tree = {
 		}
 		x = 38
 		y = 9
-		    		    available = {
-                has_government = memoism 
-            }   
-			visible = {
-					has_completed_focus = BSH_new_formats
-				}
+		available = {
+			has_government = memoism 
+		}   
+		visible = {
+			has_completed_focus = BSH_new_formats
+		}
 		completion_reward = {
 			add_ideas = BSH_evrey
 			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt

@@ -9,8 +9,21 @@ ideas = {
 			
 			
 			modifier = {
-			metacommy_drift = 0.01
-			political_power_factor = 0.05
+				metacommy_drift = 0.01
+				political_power_factor = 0.05
+			}
+		}
+	    OSV_kerb_1 = {
+			picture = Triuf_Kerba
+			
+			removal_cost = -1
+			
+			allowed = { always = no }
+			
+			modifier = {
+				metacommy_drift = 0.01
+				political_power_factor = 0.15
+				justify_war_goal_time = -0.65
 			}
 		}
 		OSV_kerb_nonactive = {
@@ -22,9 +35,9 @@ ideas = {
 			
 			
 			modifier = {
-			stability_factor = -0.05
-			war_support_factor = 0.05
-			political_power_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.1
 			}
 		}
 		OSV_ceation_of_usloviya = {
@@ -36,8 +49,8 @@ ideas = {
 			
 			
 			modifier = {
-			stability_factor  = -0.1
-			consumer_goods_factor = 0.1
+				stability_factor  = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 		OSV_stimulate_class_conflict = {
@@ -49,13 +62,13 @@ ideas = {
 			
 			
 			modifier = {
-			stability_factor  = -0.1
-			vmestolev_drift = 0.01
-			fascism_drift = 0.01
-			metacommy_drift = 0.01
-			democratic_drift = 0.01
-            consumer_goods_factor = -0.1
-			drift_defence_factor = 0.1
+				stability_factor  = -0.1
+				vmestolev_drift = 0.01
+				fascism_drift = 0.01
+				metacommy_drift = 0.01
+				democratic_drift = 0.01
+				consumer_goods_factor = -0.1
+				drift_defence_factor = 0.1
 			}
 		}
 		OSV_waiting = {
@@ -67,9 +80,9 @@ ideas = {
 			
 			
 			modifier = {
-			stability_factor  = 0.1
-war_support_factor = -0.1
-defensive_war_stability_factor = 0.1
+				stability_factor  = 0.1
+				war_support_factor = -0.1
+				defensive_war_stability_factor = 0.1
 			}
 		}
 		OSV_only_right_books = {
@@ -81,10 +94,10 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			stability_factor  = 0.1
-			political_power_factor = 0.1
-			conscription = 0.02
-			research_speed_factor = 0.05
+				stability_factor  = 0.1
+				political_power_factor = 0.1
+				conscription = 0.02
+				research_speed_factor = 0.05
 			}
 		}
 		OSV_nicto_ne_dolzno_meshat = {
@@ -96,9 +109,9 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			stability_factor  = 0.1
-			political_power_factor = 0.2
-			research_speed_factor = -0.05
+				stability_factor  = 0.1
+				political_power_factor = 0.2
+				research_speed_factor = -0.05
 			}
 		}
 		OSV_only_Kerb_understand = {
@@ -110,14 +123,14 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			party_popularity_stability_factor = 0.1
-			stability_factor  = 0.1
-			political_power_factor = 0.1
-			war_support_factor = 0.1
-			political_advisor_cost_factor = -0.1
-			metacommy_drift = 0.01
-			democratic_drift = 0.01
-			memoism_drift = 0.01
+				party_popularity_stability_factor = 0.1
+				stability_factor  = 0.1
+				political_power_factor = 0.1
+				war_support_factor = 0.1
+				political_advisor_cost_factor = -0.1
+				metacommy_drift = 0.01
+				democratic_drift = 0.01
+				memoism_drift = 0.01
 			}
 		}
 		OSV_wide_selfmanagement = {
@@ -129,8 +142,8 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			stability_factor  = 0.1
-			political_power_factor = -0.1
+				stability_factor  = 0.1
+				political_power_factor = -0.1
 			}
 		}
 		OSV_end_of_dogma = {
@@ -142,10 +155,10 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			stability_factor  = -0.1
-			political_power_factor = 0.1
-			war_support_factor = 0.1
-			drift_defence_factor = -0.5
+				stability_factor  = -0.1
+				political_power_factor = 0.1
+				war_support_factor = 0.1
+				drift_defence_factor = -0.5
 			}
 		}
 		  OSV_ban_party = {
@@ -157,8 +170,8 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			     army_morale_factor = -0.1
-				 vmestolev_drift = -0.05
+				army_morale_factor = -0.1
+				vmestolev_drift = -0.05
 			}
 		}           
 		OSV_rospusk_army = {
@@ -170,11 +183,10 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			    command_power_gain_mult = -0.3
+				command_power_gain_mult = -0.3
 				army_core_attack_factor = -0.1
-                army_core_defence_factor = -0.1
-                army_org_factor = -0.5
-			
+				army_core_defence_factor = -0.1
+				army_org_factor = -0.5
 			}
 		}
 		OSV_Moscow_before_dark = {
@@ -186,8 +198,8 @@ defensive_war_stability_factor = 0.1
 			
 			
 			modifier = {
-			stability_factor  = -0.1
-			political_power_factor = -0.2
+				stability_factor  = -0.1
+				political_power_factor = -0.2
 			}
 		}
 	}

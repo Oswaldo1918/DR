@@ -214,6 +214,32 @@ characters={
 			}
 		}
     }
+	BSH_Doctor_Hammer = {
+		name = "Доктор Хаммер"
+		portraits = {
+			civilian = {
+				small = GFX_idea_BSH_Doctor_Hammer
+			}
+		}
+		advisor={
+     		slot = theorist
+			idea_token = BSH_Doctor_Hammer
+			cost = 200
+			allowed = {
+				original_tag = BSH
+			}
+			available = {		
+                has_government = memoism
+				has_completed_focus = BSH_babay
+		    }
+			
+			traits = { priznanniy_geniy }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
 	BSH_krylov = {
 		name = "Матвей Крылов"
 		portraits = {
