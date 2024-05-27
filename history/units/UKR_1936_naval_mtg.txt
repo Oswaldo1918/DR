@@ -1,0 +1,11 @@
+﻿units = {
+	fleet = {
+		name = "ВМСУ"			
+		naval_base = 9571
+		task_force = {				
+			name = "30-й дивизион надводных кораблей"			
+			location = 9571 
+			ship = { name = "Гетьман Сагайдачный" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Проект 11351 «Нерей»" } } }
+		}				
+	}
+}
