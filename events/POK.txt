@@ -1620,6 +1620,7 @@ country_event = {
 			POK = {
 			owns_state = 262
 			owns_state = 397
+			owns_state = 398
 			owns_state = 581 
 			}
 				}
@@ -1630,9 +1631,15 @@ country_event = {
 			}
 		transfer_state = 262
 		transfer_state = 397
+		transfer_state = 398
 		transfer_state = 581
+		transfer_state = 400
+		add_state_core = 400
 		}
-			}
+		    SKT = {
+		        load_focus_tree = generic_focus  
+		    } 
+		}
 		if = {
 				limit = {
 					NOT = { BRT = exists } 
@@ -1658,6 +1665,7 @@ if = {
 			owns_state = 876
 			owns_state = 877
 			owns_state = 644
+			owns_state = 562
 			}
 				}
 				YAK = {
@@ -1665,19 +1673,27 @@ if = {
 			transfer_state = 876
 			transfer_state = 877
 			transfer_state = 644
+			transfer_state = 562
+			add_state_core = 562
 		}
 			}
-if = {
-				limit = {
-					NOT = { KOL = exists } 
-					POK = {
-owns_state = 822
+    if = {
+		limit = {
+		    NOT = { KOL = exists } 
+			POK = {
+                owns_state = 822
+				owns_state = 637
+				owns_state = 874
 			}
-				}
-				KOL = {
+		}
+		KOL = {
 		    transfer_state = 822
+			transfer_state = 637
+			transfer_state = 874
+			add_state_core = 637
+			add_state_core = 874
 		}
-			}
+	}
 if = {
 				limit = {
 					NOT = { HAZ = exists } 
@@ -1723,6 +1739,9 @@ owns_state = 407
 			transfer_state = 590
 			transfer_state = 882
 			transfer_state = 588
+			transfer_state = 571
+			transfer_state = 652
+			transfer_state = 236
 			}
 			}
 if = {
@@ -1818,6 +1837,9 @@ owns_state = 826
 			transfer_state = 826
 			transfer_state = 231
 		}
+		GEO = { 
+			    remove_ideas = GEO_sevkavkaz_partizan_war
+			}
 			}
 if = {
 				limit = {
@@ -1875,7 +1897,7 @@ owns_state = 229
 			controls_state = 228
 			controls_state = 137
 			controls_state = 200
-			
+			controls_state = 260
 			}
 
 		}
@@ -1902,6 +1924,9 @@ owns_state = 229
 			transfer_state = 228
 			transfer_state = 137
 			transfer_state = 200
+			transfer_state = 260
+			transfer_state = 220
+			transfer_state = 240
 			    add_state_core = 202
 			    add_state_core = 201
 			    add_state_core = 91
@@ -1926,35 +1951,37 @@ owns_state = 229
 				add_state_core = 78
 			    add_state_core = 89
 				add_state_core = 834
+				add_state_core = 260
+				add_state_core = 220
+				add_state_core = 240
 				set_capital = 202
 			set_cosmetic_tag = ZHE_ukraina
 		}
 	    }
-if = {
-				limit = {
-					NOT = { ZWN = exists } 
-					POK = {
-controls_state = 96
-			controls_state = 95
-			controls_state = 94
-			controls_state = 207
-			controls_state = 206
-			controls_state = 241
-			controls_state = 204
-			controls_state = 194
+        if = {
+			limit = {
+				NOT = { ZWN = exists } 
+			    POK = {
+					owns_state = 242
+					owns_state = 243
+					owns_state = 205
+			    }
 			}
-				}
-				ZWN = {
-		transfer_state = 96
-			transfer_state = 95
-			transfer_state = 94
-			transfer_state = 207
-			transfer_state = 206
-			transfer_state = 241
-			transfer_state = 204
-			transfer_state = 194
-		 }
-			}	
+			ZWN = {
+				transfer_state = 242
+				transfer_state = 243
+				transfer_state = 205				
+				transfer_state = 96
+				transfer_state = 95			
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 194
+				transfer_state = 241
+				transfer_state = 94
+				transfer_state = 224
+			}
+	    }	
 if = {
 				limit = {
 					SUO = exist
@@ -1972,13 +1999,15 @@ if = {
 					SUO = exist
 					controls_state = 146
 					controls_state = 215 
-			controls_state = 216
+			        controls_state = 216
+					controls_state = 213
 				}
 				SUO = { 
-			transfer_state = 146
-			transfer_state = 215
-		transfer_state = 216
-			}	
+			        transfer_state = 146
+			        transfer_state = 215
+		            transfer_state = 216
+					transfer_state = 213
+			    }	
 	}	
 if = {
 				limit = {
@@ -2257,7 +2286,10 @@ if = {
 				        traits = {					
 				        }
 			        }
-		        }
+		        }				
+		    }
+			GAL = {
+		        load_focus_tree = generic_focus  
 		    }
 	    }
 		if = {
@@ -2300,29 +2332,247 @@ if = {
                     owns_state = 263
 			        owns_state = 246
 					owns_state = 264
-			        owns_state = 351
-					owns_state = 879
-					owns_state = 880
-					owns_state = 214
 			    }
 			}
 			NOV = { 
 			    transfer_state = 263
 			    transfer_state = 246
-				transfer_state = 264
-			    transfer_state = 351
-				transfer_state = 879
-				transfer_state = 880
-				transfer_state = 214			
+				transfer_state = 264			
 			    add_state_core = 263
 			    add_state_core = 246
 				add_state_core = 264
-			    add_state_core = 351
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { POM = exists } 
+			    POK = {
+					owns_state = 879
+					owns_state = 880
+					owns_state = 214
+					owns_state = 351
+			    }
+			}
+			POM = {
+				transfer_state = 879
+				transfer_state = 880
+				transfer_state = 214
+				transfer_state = 351
 				add_state_core = 879
 				add_state_core = 880
 				add_state_core = 214
+				add_state_core = 351
 			}
 	    }
+		if = {
+			limit = {
+				NOT = { KRR = exists } 
+			    POK = {
+					owns_state = 265
+					owns_state = 217
+					owns_state = 245
+					owns_state = 218
+					owns_state = 238
+					owns_state = 234
+					owns_state = 235
+					owns_state = 829
+				    owns_state = 239
+				    owns_state = 401
+				    owns_state = 251
+			    }
+			}
+			KRR = {
+				transfer_state = 265
+				transfer_state = 217
+				transfer_state = 245
+				transfer_state = 218
+				transfer_state = 238
+				transfer_state = 234
+				transfer_state = 235				
+				transfer_state = 829
+				transfer_state = 239
+				transfer_state = 401
+				transfer_state = 251				
+				add_state_core = 265
+				add_state_core = 217
+				add_state_core = 235
+				add_state_core = 829
+				add_state_core = 239
+				add_state_core = 401
+				add_state_core = 251
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { TAJ = exists } 
+			    POK = {
+					owns_state = 742
+			    }
+			}
+			TAJ = {
+				transfer_state = 742				
+				add_state_core = 742
+			}
+			TAJ = {
+				set_capital = 742
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { UZB = exists } 
+			    POK = {
+					owns_state = 830
+					owns_state = 405
+					owns_state = 585
+					owns_state = 823
+					owns_state = 831
+			    }
+			}
+			UZB = {
+				transfer_state = 830
+                transfer_state = 405
+                transfer_state = 585     
+                transfer_state = 823      
+				transfer_state = 831 
+				add_state_core = 830
+				add_state_core = 405
+				add_state_core = 585
+				add_state_core = 823
+				add_state_core = 831
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { ZHR = exists } 
+			    POK = {
+					owns_state = 408
+					owns_state = 409
+			    }
+			}
+			ZHR = {
+				transfer_state = 408
+                transfer_state = 409
+				add_state_core = 408
+				add_state_core = 409
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { PRJ = exists } 
+			    POK = {
+					owns_state = 655
+					owns_state = 537
+					owns_state = 555
+			    }
+			}
+			PRJ = {
+				transfer_state = 655
+                transfer_state = 537
+				transfer_state = 555
+				add_state_core = 655
+				add_state_core = 537
+				add_state_core = 555
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { SPL = exists } 
+			    POK = {
+					owns_state = 13
+					owns_state = 191
+					owns_state = 811
+					owns_state = 812
+					owns_state = 813
+			    }
+			}
+			SPL = {
+				transfer_state = 13
+                transfer_state = 191
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				set_country_flag = SPL_POK
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { VSB = exists } 
+			    POK = {
+					owns_state = 11
+					owns_state = 188
+					owns_state = 189
+					owns_state = 814
+					owns_state = 815
+					owns_state = 784
+			    }
+			}
+			VSB = {
+				transfer_state = 11
+                transfer_state = 188
+				transfer_state = 189
+				transfer_state = 814
+				transfer_state = 815
+				transfer_state = 784
+				set_country_flag = VSB_POK
+			}
+	    }
+		if = {
+			limit = {
+				NOT = { LTV = exists } 
+			    POK = {
+					owns_state = 12
+					owns_state = 190
+					owns_state = 808
+					owns_state = 809
+					owns_state = 810
+			    }
+			}
+			LTV = {
+				transfer_state = 12
+                transfer_state = 190
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 810
+				add_state_core = 12
+				add_state_core = 190
+				add_state_core = 808
+				add_state_core = 809
+				add_state_core = 810
+			}
+	    }
+		if = {
+			limit = {
+				FRG = exists 
+			    POK = {
+					owns_state = 763
+			    }
+			}
+			FRG = {
+				transfer_state = 763
+				add_state_core = 763
+			}
+	    }
+		POK = {
+		    set_cosmetic_tag = POK_Malaya_Pokayaniya
+		}
+		POK = {
+		    set_capital = 219
+		}
+		set_victory_points = {
+	        province = 301
+	        value = 10
+        }
+		news_event = dk_news.66
+		hidden_effect = {
+		    country_event = {
+                id = KAZ.2
+                days = 7
+            }
+			news_event = {
+                id = dk_news.67
+                days = 7
+            }
+		}
 	}
 }
 #Кац Базит

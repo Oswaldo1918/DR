@@ -8,11 +8,14 @@ set_war_support = 0.5
 set_technology = {
 	infantry_weapons = 1
 	basic_train = 1
+	tech_mountaineers = 1
 }
 
 recruit_character = ARM_nardy
 
 add_ideas = {
+    limited_conscription
+	low_economic_mobilisation
 }
 
 set_popularities = {
@@ -23,4 +26,4 @@ set_politics = {
 	elections_allowed = no	
 }
 
-set_convoys = 40
+set_convoys = 200

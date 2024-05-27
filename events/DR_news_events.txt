@@ -1362,3 +1362,27 @@ news_event = { #Борат_Сагдиев_объединяет_Казахста�
 		name = dk_news.65.a
 	}
 }
+news_event = { #Борат_Сагдиев_вернул_Омск
+    id = dk_news.66
+	title = dk_news.66.t
+	desc = dk_news.66.d
+	picture = GFX_news_event_DKR_KAZ_Omsk_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.66.a
+	}
+}
+news_event = { #Борат_Сагдиев_вернул_Омск
+    id = dk_news.67
+	title = dk_news.67.t
+	desc = dk_news.67.d
+	picture = GFX_news_event_DKR_KAZ_Omsk_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.67.a
+	}
+}
