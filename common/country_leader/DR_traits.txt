@@ -284,6 +284,15 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 	}
 	
+	graf_dyakula = {
+		random = no
+		trade_opinion_factor = 0.5
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+	} 
+	
 	uvazhaemiy_partner = {
 		random = no
 		opinion_gain_monthly_factor = 0.5

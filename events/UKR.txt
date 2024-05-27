@@ -14,7 +14,7 @@ country_event = {
 	option = {
 	name = UKR.1.a
 	UKR = { random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } OR = { is_in_home_area = yes NOT = { owner = { any_owned_state = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } is_in_home_area = yes } } } } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	add_timed_idea = { idea = UKR_investicii days = 180 } }
+	add_timed_idea = { idea = UKR_investicii days = 180 }
 	}
 	option = {
 	name = UKR.1.b
@@ -43,7 +43,8 @@ country_event = {
 	add_power_balance_value = {
 				id = UKR_koleso_genotbi
 				value = 0.2
-			}		
+			}
+        remove_ideas = UKR_ukraine_ne_oboytis_bez_uglya_donbassa			
 	}
 }	
 
@@ -153,9 +154,9 @@ country_event = {
 
 #Perekop has fallen
 country_event = {
-    id = UKR.6
-	title = UKR.6.t
-	desc = UKR.6.d
+    id = UKR.6a
+	title = UKR.6a.t
+	desc = UKR.6a.d
 	picture = GFX_news_event_034
 	
 	trigger = {
@@ -177,7 +178,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-	name = UKR.6.a
+	name = UKR.6a.a
 	add_power_balance_value = {
 				id = UKR_koleso_genotbi
 				value = 0.05
@@ -646,6 +647,7 @@ country_event = {
 				id = UKR_koleso_genotbi
 				value = -0.2
 			}		
+		add_ideas = UKR_ukraine_ne_oboytis_bez_uglya_donbassa	
 	}
 }		
 
@@ -1427,3 +1429,22 @@ country_event = {
 		}	
 	}
 }	
+
+country_event = {
+	id = UKR.51
+	title = UKR.51.t
+	desc = UKR.51.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = UKR.51.a
+    	complete_national_focus = UKR_moskali_ushli
+	}
+	option = {
+	name = UKR.51.b
+        complete_national_focus = UKR_totalnaya_ukroinizatsiya
+	}
+}

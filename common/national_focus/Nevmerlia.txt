@@ -14,7 +14,11 @@ focus_tree = {
 		cost = 2,00
 		x = 26
 		y = 0
-
+		
+		completion_reward = {
+				add_political_power = 150
+				UKR_nahruk_level_up = yes
+			}
 	}
 	focus = {
 		id = UKR_agrarnaya_sverhderzhava
@@ -36,6 +40,10 @@ focus_tree = {
 		}
 		x = 19
 		y = 1
+		
+			completion_reward = {
+				add_war_support = 0.05
+			}
 
 	}
 	focus = {
@@ -61,6 +69,10 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		
+		completion_reward = {
+					add_ideas = UKR_kiborgi
+				}
 
 	}
 	focus = {
@@ -72,6 +84,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
+		
+		completion_reward = {
+					add_ideas = UKR_oborona_v_kotlah
+				}
 
 	}
 	focus = {
@@ -312,6 +328,10 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		
+		completion_reward = {
+				country_event = UKR.51
+			}
 
 	}
 	focus = {
@@ -794,6 +814,21 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_graf_dyakula
+		icon = GFX_goal_generic_improve_relations
+		cost = 5,00
+		prerequisite = {
+			focus = UKR_uvazhaemiy_partner
+		}
+		x = 38
+		y = 2
+		
+		completion_reward = {
+					add_country_leader_trait = graf_dyakula
+				}
+
+	}
+	focus = {
 		id = UKR_uluchshit_otnoshenye_s_guziyey
 		icon = GFX_goal_generic_major_alliance
 		cost = 5,00
@@ -841,6 +876,42 @@ focus_tree = {
 			declare_war_on  = {
 				type = annex_everything
 				target = DON
+			}
+		}
+	}
+	focus = {
+		id = UKR_osvobozhdeniye
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		prerequisite = {
+			focus = UKR_sanitarniy_kordon
+		}
+		available = {
+					has_war = no
+					has_army_manpower = { size > 99999 }
+				}
+		x = 36
+		y = 5
+		completion_reward = {
+			declare_war_on  = {
+				type = annex_everything
+				target = KUR
+			}
+			declare_war_on  = {
+				type = annex_everything
+				target = CHE
+			}
+			declare_war_on  = {
+				type = annex_everything
+				target = CRI
+			}
+			declare_war_on  = {
+				type = annex_everything
+				target = ZHE
+			}
+			declare_war_on  = {
+				type = annex_everything
+				target = SIN
 			}
 		}
 	}
@@ -944,7 +1015,7 @@ focus_tree = {
 	focus = {
 		id = UKR_azovets
 		icon = GFX_goal_azovets
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_shushpanzeri
 		}
@@ -955,11 +1026,11 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_tech_bonus = {
-							name = motorized_bonus
-							ahead_reduction = 2
-							uses = 1
-							category = motorized_equipment
-						}
+				    	bonus = 1.0
+			      		uses = 1
+			     		name = mech_army_bonus
+			    		technology = mechanised_infantry
+			     	}	
 				}
 
 	}
