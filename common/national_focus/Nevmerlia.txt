@@ -438,6 +438,38 @@ focus_tree = {
 
 	}
 	focus = {
+		id = UKR_vosstanovit_pl_zaporozhe
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5,00
+		prerequisite = {
+			focus = UKR_dostroit_creiser_ukraina
+		}
+		x = 18
+		y = 5
+			available = {
+					controls_state = 137
+				}
+			completion_reward = {
+					set_technology = {
+							early_ship_hull_submarine = 1
+							basic_torpedo = 1
+						}
+			    	create_equipment_variant = {	
+	                	name = "Проект 641"
+	                	type = ship_hull_submarine_1
+	                	name_group = FRA_SS_HISTORICAL
+	                	parent_version = 0
+	                     	modules = {
+                    			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+	                    		fixed_ship_engine_slot = sub_ship_engine_1
+	                    		rear_1_custom_slot = empty
+	                    	}	
+                   	}	
+					load_oob = UKR_pl_zaporozhe
+				}
+
+	}
+	focus = {
 		id = UKR_mova
 		icon = GFX_focus_POL_ukrainian_army
 		cost = 5,00
@@ -471,7 +503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_a_teper_mozhno_i_po_russki
-		icon = GFX_goal_unknown
+		icon = GFX_goal_russian_odessa
 		cost = 10,00
 		prerequisite = {
 			focus = UKR_moskali_ushli
@@ -486,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_totalnaya_ukroinizatsiya
-		icon = GFX_focus_SAF_support_ossewabrandwag
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_mova
@@ -872,6 +904,7 @@ focus_tree = {
 		
 		completion_reward = {
 					add_ideas = UKR_voini_lisu_i
+					custom_effect_tooltip = UKR_voini_lesu_effect_tt
 				}
 
 	}
@@ -901,7 +934,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_kult_lichnosti
-		icon = GFX_focus_SAF_support_ossewabrandwag
+		icon = GFX_focus_generic_military_dictatorship
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_somostiynost
@@ -919,7 +952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_uvazhaemiy_partner
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_somostiynost
@@ -932,6 +965,10 @@ focus_tree = {
 		
 		completion_reward = {
 					add_country_leader_trait = uvazhaemiy_partner
+					set_country_leader_portrait = {
+                 	ideology = fascism_ideology
+	                portrait = "gfx/leaders/UKR/Poroshenko_gitler.dds"
+                    }
 				}
 
 	}

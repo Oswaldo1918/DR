@@ -1,0 +1,14 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "УПФ"			
+		naval_base = 3686
+		task_force = {				
+			name = "Подводная флотилия"			
+			location = 3686 
+			ship = { name = "Запорiжже" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = UKR version_name = "Проект 641" } } }
+		}				
+	}
+} 
