@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = UKR_somostiynost
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_goal_somostiynost
 		cost = 2,00
 		x = 26
 		y = 0
@@ -439,7 +439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_vosstanovit_pl_zaporozhe
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_goal_ukr_podlodka_shine
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_dostroit_creiser_ukraina
@@ -518,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_totalnaya_ukroinizatsiya
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_only_ukr
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_mova
