@@ -521,6 +521,40 @@ characters={
             traits = { prince_of_terror }
 	    }
 	}
+	UKR_farion = {
+		name = "Ирина Фарион"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_UKR_farion"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = UKR_farion
+			allowed = {
+                original_tag = UKR 
+			}				
+            traits = { ideological_crusader }
+	    }
+	}
+	UKR_korchinsky = {
+		name = "Дмитрий Корчинский"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_UKR_korchinsky"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = UKR_korchinsky
+			allowed = {
+                original_tag = UKR 
+			}				
+            traits = { fascist_militia_leader }
+	    }
+	}
 	UKR_Gayguk = {
 		name = "Сергей Гайдук"
 		portraits = {
