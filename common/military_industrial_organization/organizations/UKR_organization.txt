@@ -1,0 +1,165 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+UKR_rostic = {
+	include = generic_genialniy_tankoviy_konstructor_tank_organization
+	icon = GFX_idea_UKR_rostic
+	
+	available = {
+				owner = { has_country_leader = { character = UKR_poroshenko ruling_only = yes } }
+			}
+	
+	allowed = {	
+			tag = UKR
+	}
+}
+
+UKR_ZimM = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_UKR_ZimM
+	
+	allowed = {	
+		 OR = {
+			tag = UKR
+			tag = DON
+		}
+	}
+	
+	available = {
+     	owner = { controls_state = 221 }
+	    IF = {
+			limit = { FROM = { original_tag = DON } } 
+			has_completed_focus = DON_konstruktorskie_buro
+		}
+	}
+}
+
+UKR_HBZ = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_UKR_HBZ
+	
+	allowed = {	
+		 OR = {
+			tag = UKR
+			tag = DON
+		}
+	}
+	
+	available = {
+     	owner = { controls_state = 221 }
+	    IF = {
+			limit = { FROM = { original_tag = DON } } 
+			has_completed_focus = DON_konstruktorskie_buro
+		}
+	}
+}
+
+UKR_HKBM = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_UKR_HKBM
+	
+	allowed = {	
+			tag = UKR
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+UKR_MiGremont = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_UKR_MiGremont
+    allowed = {	
+			tag = UKR
+	}
+	
+}
+
+UKR_Motor_sich = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_UKR_Motor_sich
+    allowed = {	
+		 OR = {
+			tag = UKR
+			tag = DON
+		}
+	}
+	
+	available = {
+     	owner = { controls_state = 200 }
+	    IF = {
+			limit = { FROM = { original_tag = DON } } 
+			has_completed_focus = DON_konstruktorskie_buro
+		}
+	}
+	
+}
+
+UKR_chuguevskiy_ARZ = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_UKR_chuguevskiy_ARZ
+    allowed = {	
+			tag = UKR
+	}
+	
+}
+
+UKR_HAZ = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_UKR_HAZ
+    allowed = {	
+			tag = UKR
+	}
+	
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+UKR_ZAZ = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_UKR_ZAZ
+	allowed = {	
+			tag = UKR
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+		
+}

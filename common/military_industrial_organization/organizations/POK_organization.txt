@@ -1,0 +1,188 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+POK_UVZ = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_POK_UVZ
+	
+	allowed = {	
+		 OR = {
+			tag = POK
+			tag = MGN
+			tag = GAL
+			tag = YSK
+			tag = ZNS
+			tag = OMS
+			tag = MRD
+		}
+	}
+	
+	available = {
+		owner = { controls_state = 653 }
+	}
+}
+
+POK_OKMO = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_POK_OKMO
+	
+	allowed = {	
+		 OR = {
+			tag = POK
+			tag = MGN
+			tag = GAL
+			tag = YSK
+			tag = ZNS
+			tag = OMS
+			tag = MRD
+		}
+	}
+	
+	available = {
+		owner = { controls_state = 571 }
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+POK_salehardskiye_verfi = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_POK_salehardskiye_verfi
+	allowed = {	
+		 OR = {
+			tag = POK
+			tag = MGN
+			tag = GAL
+			tag = YSK
+			tag = ZNS
+			tag = OMS
+			tag = MRD
+		}
+	}
+	
+	available = {
+		owner = { controls_state = 579 }
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+POK_Irkut = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_POK_Irkut
+    allowed = {
+        OR = {
+		    original_tag = POK
+			original_tag = MGN
+			original_tag = GAL
+			original_tag = YSK
+			original_tag = ZNS
+			original_tag = OMS
+			original_tag = MRD
+			original_tag = BRT
+		}
+	}
+			
+	available = {
+	    owner = { controls_state = 566 }
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+POK_BMTBP = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_POK_BMTBP
+	allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
+				}
+			}		
+			available = {
+				owner = { controls_state = 40 }
+			}
+}
+
+POK_zavod9 = {
+	include = generic_artillery_organization
+	icon = GFX_idea_POK_zavod9
+	allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
+				}
+			}
+			available = {
+				owner = { controls_state = 653 }
+			}
+}
+
+POK_ural = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_POK_ural
+	allowed = {
+                OR = {
+					original_tag = POK
+					original_tag = MGN
+					original_tag = GAL
+					original_tag = YSK
+					original_tag = ZNS
+					original_tag = OMS
+					original_tag = MRD
+				}
+			}
+			available = {
+				owner = { controls_state = 573 }
+			}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}

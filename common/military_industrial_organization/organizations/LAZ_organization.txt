@@ -1,0 +1,151 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+LAZ_mitishinskiy_mash_zavod = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_LAZ_mitishinskiy_mash_zavod
+	
+	allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_gusenichniy_zavod = {
+	include = generic_tank_organization
+	icon = GFX_idea_LAZ_Zavod_GUSENITs
+	
+	allowed = {	
+			tag = LAZ
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+LAZ_Sevmash = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_LAZ_Sevmash
+	allowed = {	
+			tag = LAZ
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+LAZ_mig = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_LAZ_mig
+    allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_Su = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_LAZ_Su
+    allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_dubnenskiy_mash_zavod = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_LAZ_dubnenskiy_mash_zavod
+    allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_AK_im_ilyushina = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_LAZ_AK_im_ilyushina
+    allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_kamov = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_LAZ_kamov
+    allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_drozd_zavod = {
+	include = generic_drozd_aircraft_organization
+	icon = GFX_idea_LAZ_drozd_zavod
+    allowed = {	
+			tag = LAZ
+	}
+	
+	production_bonus = {
+     	drozd_equipment_arch  = {
+		    	production_capacity_factor = 0.05
+		}
+	}	
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+LAZ_tula = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_LAZ_tula
+	allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_mash_zavod_im_kalinina = {
+	include = generic_artillery_organization
+	icon = GFX_idea_LAZ_mash_zavod_im_kalinina
+	allowed = {	
+			tag = LAZ
+	}
+}
+
+LAZ_tutaev_motor_plant = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_LAZ_tutaev_motor_plant
+	allowed = {	
+			tag = LAZ
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}

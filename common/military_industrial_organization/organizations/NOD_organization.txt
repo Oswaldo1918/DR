@@ -1,0 +1,96 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+NOD_VTZ = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_NOD_VTZ
+	
+	allowed = {	
+			tag = NOD
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+NOD_VSZ = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_NOD_VSZ
+	allowed = {	
+			tag = NOD
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+NOD_SAZ = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_NOD_SAZ
+    allowed = {	
+			tag = NOD
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+NOD_rosteh = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_NOD_rosteh
+	allowed = {	
+			tag = NOD
+	}
+}
+
+NOD_FNPZ_titan-barricadi = {
+	include = generic_artillery_organization
+	icon = GFX_idea_NOD_FNPZ_titan-barricadi
+	allowed = {	
+			tag = NOD
+	}
+}
+
+NOD_trolza = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_NOD_trolza
+	allowed = {	
+			tag = NOD
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}

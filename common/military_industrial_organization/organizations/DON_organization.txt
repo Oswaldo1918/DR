@@ -1,0 +1,109 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+ 
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+DON_ASZ = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_DON_ASZ
+	allowed = {	
+			tag = DON
+	}
+	
+	available = {
+		has_completed_focus = DON_konstruktorskie_buro
+	}	
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+DON_LA-RZ = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_DON_LA-RZ
+    allowed = {	
+			tag = DON
+	}
+	
+	available = {
+		has_completed_focus = DON_konstruktorskie_buro
+	}	
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+DON_LPZ = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_DON_LPZ
+	allowed = {	
+			tag = DON
+	}
+	
+	available = {
+		has_completed_focus = DON_konstruktorskie_buro
+	}	
+}
+
+DON_DKZHI = {
+	include = generic_artillery_organization
+	icon = GFX_idea_DON_DKZHI
+	allowed = {	
+			tag = DON
+	}
+	
+	available = {
+		has_completed_focus = DON_konstruktorskie_buro
+	}	
+}
+
+DON_EARZ = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_DON_EARZ
+	allowed = {	
+			tag = DON
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+	
+	available = {
+		has_completed_focus = DON_konstruktorskie_buro
+	}	
+}

@@ -1,0 +1,112 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+CHT_Arzamasskiy_MZ = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_CHT_Arzamasskiy_MZ
+	
+	allowed = {	
+			tag = CHT
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+CHT_red_sormovo = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_CHT_red_sormovo
+	allowed = {	
+			tag = CHT
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+CHT_sokol = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_CHT_sokol
+    allowed = {	
+			tag = CHT
+	}
+}
+
+CHT_UAPK = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_CHT_UAPK
+    allowed = {	
+			tag = CHT
+	}
+}
+
+CHT_KazAvZ = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_CHT_KazAvZ
+    allowed = {	
+			tag = CHT
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CHT_Izhmash = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_CHT_Izhmash
+	allowed = {	
+			tag = CHT
+	}
+}
+
+CHT_Nizhegorodskiy_MZ = {
+	include = generic_artillery_organization
+	icon = GFX_idea_CHT_Nizhegorodskiy_MZ
+	allowed = {	
+			tag = CHT
+	}
+}
+
+CHT_GAZ = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_CHT_GAZ
+	allowed = {	
+			tag = CHT
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
+		}
+	}
+}
