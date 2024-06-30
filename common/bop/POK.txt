@@ -28,8 +28,7 @@ POK_prepar_balance = {
 			max = 0.35
 			modifier = {
 			    political_power_gain = -0.2
-				opinion_gain_monthly_same_ideology_factor = 0.05
-				party_popularity_stability_factor = -0.05
+				party_popularity_stability_factor = 0.05
 		}
 		on_activate = {
 					set_country_flag = par_win
@@ -47,8 +46,7 @@ POK_prepar_balance = {
 			modifier = {
 			    political_power_gain = -0.1
 				stability_factor = 0.01
-				opinion_gain_monthly_same_ideology_factor = 0.1
-				party_popularity_stability_factor = -0.1
+				party_popularity_stability_factor = 0.1
 			}
 			on_activate = {
 					set_country_flag = par_win
@@ -66,8 +64,7 @@ POK_prepar_balance = {
 			modifier = {
 			    political_power_gain = -0.05
 				stability_factor = 0.05
-				opinion_gain_monthly_same_ideology_factor = 0.15
-				party_popularity_stability_factor = -0.15
+				party_popularity_stability_factor = 0.15
 			}
 			on_activate = {
 					set_country_flag = par_win
@@ -83,8 +80,7 @@ POK_prepar_balance = {
 			modifier = {
 			    political_power_gain = -0.5
 				stability_factor = 0.1
-				opinion_gain_monthly_same_ideology_factor = 0.2
-				party_popularity_stability_factor = -0.2
+				party_popularity_stability_factor = 0.2
 			}
 			on_activate = {
 					set_country_flag = par_win
