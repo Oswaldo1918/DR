@@ -2123,6 +2123,21 @@ if = {
 					NOT = { NEN = exists } 
 					POK = {
 controls_state = 824
+
+			controls_state = 579
+			}
+				}
+				NEN = {
+	transfer_state = 824
+			transfer_state = 579
+			add_state_claim = 825
+		 }
+			}
+if = {
+				limit = {
+					NOT = { NEN = exists } 
+					POK = {
+controls_state = 824
 			controls_state = 825
 			controls_state = 579
 			}
@@ -2132,7 +2147,7 @@ controls_state = 824
 			transfer_state = 825
 			transfer_state = 579
 		 }
-			}
+			}			
 if = {
 				limit = {
 					NOT = { POT = exists } 

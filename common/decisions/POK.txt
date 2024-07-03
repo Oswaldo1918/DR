@@ -8,7 +8,7 @@ POK_prepar_balance_of_power_category = {
 		}	
 		days_remove = 10
 		fire_only_once = no
-		cost = 75
+		cost = 10
 		modifier = {
 			stability_weekly = -0.01
 			political_power_factor = -0.1
@@ -19,7 +19,7 @@ POK_prepar_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = POK_prepar_balance
-				value = -0.01
+				value = -0.05
 			}		
 		}
 	}
@@ -32,7 +32,7 @@ POK_prepar_balance_of_power_category = {
 		}	
 		days_remove = 10
 		fire_only_once = no
-		cost = 75
+		cost = 10
 		modifier = {
 			stability_weekly = -0.01
 			political_power_factor = -0.1
@@ -43,7 +43,7 @@ POK_prepar_balance_of_power_category = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = POK_prepar_balance
-				value = 0.01
+				value = 0.05
 			}		
 		}
 	}

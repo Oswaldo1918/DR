@@ -2519,6 +2519,65 @@ ideas = {
 	
 			modifier = {
 	        ai_focus_aggressive_factor = 0.9
+			surrender_limit = -0.5
+			}
+		}
+		
+		POK_russian_prometey = {
+
+			allowed = {
+				original_tag = POK
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+            consumer_goods_factor = 0.1
+			}
+		}
+		
+		POK_russian_prometey1 = {
+
+			allowed = {
+				original_tag = POK
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+            consumer_goods_factor = -0.1
+			master_ideology_drift = 0.03
+			request_lease_tension = -0.3
+			local_resources_factor = 0.3
+			monthly_population = 0.05
+			}
+		}
+		
+		POK_SNG_reborn = {
+
+			allowed = {
+				original_tag = POK
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+            consumer_goods_factor = -0.1
+			stability_factor = 0.05
+			}
+		}
+		
+		POK_SNG_reborn1 = {
+
+			allowed = {
+				original_tag = POK
+			}
+
+			picture = MRD_vosstanovlenie_posle_grazhdanskoy_voyny
+	
+			modifier = {
+            consumer_goods_factor = -0.1
+			stability_factor = 0.05
 			}
 		}
 		
