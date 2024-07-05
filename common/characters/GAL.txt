@@ -140,6 +140,17 @@ characters={
 		}		
 	}
 	
+	GAL_Drobyshevskiy = {
+		name = "Станислав Дробышевский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Drobyshevskiy"
+				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
+			}
+		}		
+	}
+	
 	GAL_Romanov = {
 		name = "Товарищ Борис Жидко"
 
@@ -171,5 +182,26 @@ characters={
 				large = "gfx/leaders/GAL/Chigur.dds"				
 			}
 		}		
+	}
+	GAL_military_council = {
+		name = "Военный совет"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_council_of_theorists
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = GAL_military_council
+			ledger = military
+			allowed = {
+				original_tag = GAL
+			}
+			available = {
+				has_completed_focus = GAL_voenspetsi
+			}
+			traits = { council_of_theorists }
+			cost = 100
+		}
 	}
 }
