@@ -988,19 +988,13 @@ country_event = { ###Начало гражданской войны в Пока�
 		add_manpower = -1200
 		hidden_effect = {
 			news_event = dk_news.26
-			add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }
+            add_ideas = POK_idea_GV
 			MRD = {
 				country_event = {
 					id = mordor.14
 					days = 7
 				}
-				add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }
+				add_ideas = POK_idea_GV
 			}
 			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до вступления_Мордора
 				target = MGN
@@ -1039,16 +1033,10 @@ country_event = { ###Начало гражданской войны в Пока�
 					target = ZNS
 					type = annex_everything
 				}
-				add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }
+				add_ideas = POK_idea_GV
 			}
 			YSK = {
-			add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }
+			add_ideas = POK_idea_GV
 			}
 			OMS = {
 			    declare_war_on = {
@@ -1063,10 +1051,7 @@ country_event = { ###Начало гражданской войны в Пока�
 					target = ZNS
 					type = annex_everything
 				}
-add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }				
+add_ideas = POK_idea_GV				
 			}
 			GAL = {
 			    declare_war_on = {
@@ -1077,20 +1062,14 @@ add_timed_idea = {
 					target = ZNS
 					type = annex_everything
 				}
-add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }				
+add_ideas = POK_idea_GV				
 			}
 			ZNS = {
 			    declare_war_on = {
 					target = YSK
 					type = annex_everything
 				}
-add_timed_idea = {
-                idea = POK_idea_GV
-                days = 900
-            }				
+add_ideas = POK_idea_GV				
 			}
 		}
 	}
@@ -1543,6 +1522,7 @@ country_event = {
 	
 	option = {
 	name = POK.39.a
+	remove_ideas = POK_idea_GV
 	set_country_flag = pokoyanskaya_civil_war_end_cf
 	set_global_flag = pokoyanskaya_civil_war_end_gf
 	complete_national_focus = POK_end_civil_conflict

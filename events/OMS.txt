@@ -26,6 +26,7 @@ country_event = {
 	option = {
 	name = OMS.1.a
 		ai_chance = { factor = 100 }
+		remove_ideas = POK_idea_GV
 		LIM = {
 			annex_country = {
 				target = OMS
@@ -44,8 +45,9 @@ country_event = {
 				modifier = TUR_traitors_of_the_revolution
 			}
 		}
-		remove_idea = OMS_radio_omsk 
-		remove_idea = OMS_radio_omsk_1
-		remove_idea = OMS_kustarnoe_proizvodstvo
+		remove_ideas = OMS_radio_omsk 
+		remove_ideas = OMS_radio_omsk_1
+		remove_ideas = OMS_kustarnoe_proizvodstvo
+		remove_ideas = POK_idea_GV
 	}	
 }	

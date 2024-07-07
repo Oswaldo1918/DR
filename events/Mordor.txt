@@ -373,6 +373,7 @@ country_event = { #Победа_в_гражданской_войне
 	
 	option = {
 		name = mordor.16.a
+		remove_ideas = POK_idea_GV
 		hidden_effect = {
 			remove_dynamic_modifier = { modifier =  MRD_poddaniy_dynamic_modifier }
 			add_dynamic_modifier = { modifier = MRD_totalitarism_dynamic_modifier }
