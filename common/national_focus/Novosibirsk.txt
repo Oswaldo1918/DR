@@ -918,21 +918,20 @@ focus_tree = {
         completion_reward = {
 			add_field_marshal_role = {
 				character = GAL_pusnoy
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
+				traits = { brilliant_strategist inspirational_leader }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_sndk
 				traits = {
                 }
-				skill = 1
-				attack_skill = 1
+				skill = 2
+				attack_skill = 2
 				defense_skill = 1
 				planning_skill = 3
 				logistics_skill = 1
@@ -942,32 +941,30 @@ focus_tree = {
 				character = GAL_Boyarshinov
 				traits = {
                 }
-				skill = 1
+				skill = 2
 				attack_skill = 1
-				defense_skill = 1
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 4
 				legacy_id = -1
 			}		
 			add_corps_commander_role = {
 				character = GAL_Deb
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
+				traits = { harsh_leader infantry_leader}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_Savvateev
-				traits = {
-                }
+				traits = { organizer }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 5
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -977,19 +974,18 @@ focus_tree = {
                 }
 				skill = 1
 				attack_skill = 1
-				defense_skill = 1
+				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 1
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_toples
-				traits = {
-                }
+				traits = { media_personality }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -1000,7 +996,7 @@ focus_tree = {
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -1085,14 +1081,13 @@ focus_tree = {
 			add_manpower = 30000
 			add_corps_commander_role = {
 				character = GAL_Drobyshevskiy
-				traits = {
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 3
-					logistics_skill = 1
-					legacy_id = -1
-				}
+				traits = { ranger }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				legacy_id = -1
 			}
 			
 		}
