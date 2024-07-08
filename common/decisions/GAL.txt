@@ -161,16 +161,25 @@ GST_cat = {
     }
 
 }
-import_marakumbi = {
+GAL_import_marakumbi = {
 
-    up_import_marakumbi = {
+    GAL_up_import_marakumbi = {
         icon = decision_category_generic_economy
 		days_re_enable = 0
 
         ai_will_do = {
 			factor = 4
 		}
+		available = {
+		tag = GAL
+		    has_completed_focus = GAL_import_marakumbi
+	      	has_country_flag = GAL_marakumba_cf
+			NOT = {has_idea = GAL_marakumba_import_3}
+			NOT = {has_idea = GAL_marakumba_6}
+		}
         visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_import_marakumbi
 	      	has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_3}
 			NOT = {has_idea = GAL_marakumba_6}
@@ -182,14 +191,22 @@ import_marakumbi = {
 
     }
 	
-	down_import_marakumbi = {
+	GAL_down_import_marakumbi = {
         icon = decision_category_generic_economy
 		days_re_enable = 0
 
         ai_will_do = {
 			factor = 4
 		}
+		available = {
+		    tag = GAL
+		    has_completed_focus = GAL_import_marakumbi
+            has_country_flag = GAL_marakumba_cf
+			NOT = {has_idea = GAL_marakumba_import_0}
+        }
         visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_import_marakumbi
             has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_0}
         }
