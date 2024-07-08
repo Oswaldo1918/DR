@@ -4,8 +4,11 @@ characters={
 
 		portraits = {
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_GAL_pusnoy"
 				large = "gfx/leaders/GAL/Pushnoy.dds"
+			}
+			civilian = {
+				small = "GFX_idea_GAL_pusnoy"
 			}
 		}
 
@@ -13,7 +16,22 @@ characters={
 			ideology = cybernetics
 			expire = "1999.3.1.1"
 			id = -1
-		}	
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = GAL_pusnoy
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				army_chief_morale_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}		
 	}
 
 	GAL_lukin = {
@@ -71,7 +89,22 @@ characters={
 				small = "GFX_idea_GAL_sndk"
 				large = "gfx/leaders/GAL/sndk.dds"				
 			}
-		}		
+			civilian = {
+				small = "GFX_idea_GAL_sndk"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = GAL_sndk
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				mad_scientist
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}
 	}
 	
 	GAL_Boyarshinov = {
@@ -82,7 +115,26 @@ characters={
 				small = "GFX_idea_GAL_Boyarshinov"
 				large = "gfx/leaders/GAL/Boyarshinov.dds"				
 			}
-		}		
+			civilian = {
+				small = "GFX_idea_GAL_Boyarshinov"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = GAL_Boyarshinov
+			ledger = army
+			allowed = {
+				original_tag = GAL
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}
 	}
 	
 	GAL_Deb = {
@@ -93,7 +145,37 @@ characters={
 				small = "GFX_idea_GAL_Deb"
 				large = "gfx/leaders/GAL/Deb.dds"				
 			}
-		}		
+			civilian = {
+				small = "GFX_idea_GAL_Deb"
+			}
+		}	
+		advisor = {
+			slot = high_command
+			idea_token = GAL_Deb
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = GAL_Deb
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				spartanist
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}
 	}
 	
 	GAL_Savvateev = {
@@ -104,7 +186,22 @@ characters={
 				small = "GFX_idea_GAL_Savvateev"
 				large = "gfx/leaders/GAL/Savvateev.dds"				
 			}
-		}		
+			civilian = {
+				small = "GFX_idea_GAL_Savvateev"
+			}
+		}	
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = GAL_Savvateev
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				pravoslavnyi_matematik
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}
 	}
 	
 	GAL_Sokolov = {
@@ -126,6 +223,21 @@ characters={
 				small = "GFX_idea_GAL_toples"
 				large = "gfx/leaders/GAL/toples.dds"				
 			}
+			civilian = {
+				small = "GFX_idea_GAL_toples"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = GAL_Toples
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				popular_bloger
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
 		}		
 	}
 	
@@ -136,6 +248,17 @@ characters={
 			army = {
 				small = "GFX_idea_GAL_Panchin"
 				large = "gfx/leaders/GAL/Panchin.dds"				
+			}
+		}		
+	}
+	
+	GAL_Drobyshevskiy = {
+		name = "Станислав Дробышевский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Drobyshevskiy"
+				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
 			}
 		}		
 	}
@@ -171,5 +294,26 @@ characters={
 				large = "gfx/leaders/GAL/Chigur.dds"				
 			}
 		}		
+	}
+	GAL_military_council = {
+		name = "Военный совет"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_council_of_theorists
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = GAL_military_council
+			ledger = military
+			allowed = {
+				original_tag = GAL
+			}
+			available = {
+				has_completed_focus = GAL_voenspetsi
+			}
+			traits = { council_of_theorists }
+			cost = 100
+		}
 	}
 }

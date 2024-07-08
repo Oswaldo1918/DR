@@ -261,6 +261,53 @@ ideas = {
 				research_speed_factor = 0.1
 			    }
 		    }
+			
+			GAL_tecnocratia = {
+	
+			   modifier = {
+				research_speed_factor = 0.15
+			   }
+		    }
+			GAL_military_nauka = {
+	
+			   modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+			   }
+		    }
+			GAL_military_nauka_2 = {
+	
+			   modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			   }
+		    }
+			GAL_military_nauka_oborona = {
+	
+			   modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				army_defence_factor = 0.1
+			   }
+		    }
+			GAL_military_nauka_proryv = {
+	
+			   modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+			   }
+		    }
+			GAL_students_in_army = {
+	
+			   modifier = {
+				conscription = 0.01
+				experience_loss_factor = 0.10
+			   }
+		    }
 	   }
 	   
 	tank_manufacturer = { 

@@ -918,21 +918,20 @@ focus_tree = {
         completion_reward = {
 			add_field_marshal_role = {
 				character = GAL_pusnoy
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
+				traits = { brilliant_strategist inspirational_leader }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_sndk
 				traits = {
                 }
-				skill = 1
-				attack_skill = 1
+				skill = 2
+				attack_skill = 2
 				defense_skill = 1
 				planning_skill = 3
 				logistics_skill = 1
@@ -942,32 +941,30 @@ focus_tree = {
 				character = GAL_Boyarshinov
 				traits = {
                 }
-				skill = 1
+				skill = 2
 				attack_skill = 1
-				defense_skill = 1
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 4
 				legacy_id = -1
 			}		
 			add_corps_commander_role = {
 				character = GAL_Deb
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
+				traits = { harsh_leader infantry_leader}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_Savvateev
-				traits = {
-                }
+				traits = { organizer }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 5
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -977,19 +974,18 @@ focus_tree = {
                 }
 				skill = 1
 				attack_skill = 1
-				defense_skill = 1
+				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 1
 				legacy_id = -1
 			}
 			add_corps_commander_role = {
 				character = GAL_toples
-				traits = {
-                }
+				traits = { media_personality }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -1000,7 +996,7 @@ focus_tree = {
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
 			}
@@ -1015,6 +1011,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
+		completion_reward = {
+			add_ideas = GAL_tecnocratia
+		}
 
 	}
 	focus = {
@@ -1026,6 +1025,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05	
+		}
 
 	}
 	focus = {
@@ -1037,7 +1040,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-
+		completion_reward = {
+			add_political_power = 50 
+		}
 	}
 	focus = {
 		id = GAL_delo_Lukina
@@ -1048,6 +1053,15 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
+		completion_reward = {
+			retire_character = GAL_lukin
+			add_popularity = {
+                ideology = metacommy
+                popularity = -0.3
+            }
+			add_manpower = -5000
+			
+		}
 
 	}
 	focus = {
@@ -1059,6 +1073,24 @@ focus_tree = {
 		}
 		x = 39
 		y = 5
+		available = {
+			OMS = { exists = no }
+			controls_state = 571
+		}
+		completion_reward = {
+			add_manpower = 30000
+			add_corps_commander_role = {
+				character = GAL_Drobyshevskiy
+				traits = { ranger }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				legacy_id = -1
+			}
+			
+		}
 
 	}
 	focus = {
@@ -1081,6 +1113,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
+		completion_reward = {
+			add_ideas = GAL_military_nauka 
+			army_experience = 50
+		}
 
 	}
 	focus = {
@@ -1092,6 +1128,10 @@ focus_tree = {
 		}
 		x = 41
 		y = 5
+		completion_reward = {
+			add_ideas = GAL_students_in_army
+			army_experience = 10
+		}
 
 	}
 	focus = {
@@ -1103,7 +1143,12 @@ focus_tree = {
 		}
 		x = 43
 		y = 5
-
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = GAL_military_nauka 
+				add_idea = GAL_military_nauka_2
+			}
+		}   
 	}
 	focus = {
 		id = GAL_zadacha_oborona
@@ -1117,6 +1162,12 @@ focus_tree = {
 		}
 		x = 42
 		y = 6
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = GAL_military_nauka_2
+				add_idea = GAL_military_nauka_oborona
+			}
+		}   
 
 	}
 	focus = {
@@ -1142,6 +1193,12 @@ focus_tree = {
 		}
 		x = 44
 		y = 6
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = GAL_military_nauka_2
+				add_idea = GAL_military_nauka_proryv
+			}
+		} 
 
 	}
 	focus = {
@@ -1209,7 +1266,16 @@ focus_tree = {
 		}
 		x = 45
 		y = 5
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = GAL_military_council
+		}
 	}
 	focus = {
 		id = GAL_pochemy_socialism
