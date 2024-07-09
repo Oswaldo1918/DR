@@ -15,6 +15,7 @@ country_event = {
 	
 	option = {
 	name = POK.1.a
+	transfer_units_fraction= { target = MGN stockpile_ratio = 0.05 }
 	MGN = {
 	add_state_core = 824
 			add_state_core = 577
@@ -45,6 +46,7 @@ country_event = {
 	
 	option = {
 	name = POK.1.b
+	transfer_units_fraction= { target = MGN stockpile_ratio = 0.05 }
 	MGN = {
 	add_state_core = 824
 			add_state_core = 577
@@ -89,6 +91,7 @@ country_event = {
 	
 	option = {
 	name = POK.2.a
+	transfer_units_fraction= { target = OMS stockpile_ratio = 0.05 }
 	OMS = {
 	add_state_core = 824
 			add_state_core = 577
@@ -119,6 +122,7 @@ country_event = {
 	
 	option = {
 	name = POK.2.b
+	transfer_units_fraction= { target = OMS stockpile_ratio = 0.05 }
 	OMS = {
 	add_state_core = 824
 			add_state_core = 577
@@ -163,6 +167,7 @@ country_event = {
 	
 	option = {
 	name = POK.3.a
+	transfer_units_fraction= { target = GAL stockpile_ratio = 0.05 }
 	GAL = {
 	add_state_core = 824
 			add_state_core = 577
@@ -193,6 +198,7 @@ country_event = {
 	
 	option = {
 	name = POK.3.b
+	transfer_units_fraction= { target = GAL stockpile_ratio = 0.05 }
 	GAL = {
 	add_state_core = 824
 			add_state_core = 577
@@ -237,6 +243,7 @@ country_event = {
 	
 	option = {
 	name = POK.4.a
+	transfer_units_fraction= { target = YSK stockpile_ratio = 0.05 }
 	YSK = {
 	add_state_core = 824
 			add_state_core = 577
@@ -267,6 +274,7 @@ country_event = {
 	
 	option = {
 	name = POK.4.b
+	transfer_units_fraction= { target = YSK stockpile_ratio = 0.05 }
 	YSK = {
 	add_state_core = 824
 			add_state_core = 577
@@ -311,6 +319,7 @@ country_event = {
 	
 	option = {
 	name = POK.5.a
+	transfer_units_fraction= { target = ZNS stockpile_ratio = 0.05 }
 	ZNS = {
 	add_state_core = 824
 			add_state_core = 577
@@ -341,6 +350,7 @@ country_event = {
 	
 	option = {
 	name = POK.5.b
+	transfer_units_fraction= { target = ZNS stockpile_ratio = 0.05 }
 	ZNS = {
 	add_state_core = 824
 			add_state_core = 577
