@@ -149,6 +149,18 @@ UKR_HAZ = {
 
 ###################################
 
+UKR_fort = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_UKR_fort
+	allowed = {	
+			tag = UKR
+	}
+	
+	available = {
+		owner = { controls_state = 198 }
+	}
+}
+
 UKR_ZAZ = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_UKR_ZAZ
