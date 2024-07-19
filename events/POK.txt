@@ -1731,10 +1731,28 @@ owns_state = 407
 			transfer_state = 882
 			transfer_state = 588
 			transfer_state = 571
-			transfer_state = 652
-			transfer_state = 236
 			}
 			}
+if = {
+limit = {
+POK = {
+owns_state = 652
+}
+}
+KAZ = {
+transfer_state = 652
+}
+}	
+if = {
+limit = {
+POK = {
+owns_state = 236
+}
+}
+KAZ = {
+transfer_state = 236
+}
+}
 if = {
 				limit = {
 					NOT = { KYR = exists } 
@@ -1987,19 +2005,32 @@ if = {
 	}
 if = {
 				limit = {
-					SUO = exist
-					controls_state = 146
+					POK = {
 					controls_state = 215 
 			        controls_state = 216
 					controls_state = 213
+					controls_state = 722
+					}
 				}
+				release = SUO
 				SUO = { 
-			        transfer_state = 146
 			        transfer_state = 215
 		            transfer_state = 216
 					transfer_state = 213
+					transfer_state = 722
 			    }	
 	}	
+if = {
+				limit = {
+					SUO = exist
+					POK = {
+					controls_state = 146
+					}
+				}
+				SUO = { 
+			        transfer_state = 146
+			    }	
+	}
 if = {
 				limit = {
 					NOT = { IDU = exists } 
@@ -2114,21 +2145,6 @@ if = {
 					NOT = { NEN = exists } 
 					POK = {
 controls_state = 824
-
-			controls_state = 579
-			}
-				}
-				NEN = {
-	transfer_state = 824
-			transfer_state = 579
-			add_state_claim = 825
-		 }
-			}
-if = {
-				limit = {
-					NOT = { NEN = exists } 
-					POK = {
-controls_state = 824
 			controls_state = 825
 			controls_state = 579
 			}
@@ -2137,6 +2153,20 @@ controls_state = 824
 	transfer_state = 824
 			transfer_state = 825
 			transfer_state = 579
+		 }
+			}
+if = {
+				limit = {
+					NOT = { NEN = exists } 
+					POK = {
+controls_state = 824
+controls_state = 579
+			}
+				}
+				NEN = {
+	transfer_state = 824
+			transfer_state = 579
+			add_state_claim = 825
 		 }
 			}			
 if = {
@@ -2586,7 +2616,7 @@ country_event = {
 	id = POK.41
 	title = POK.41.t
 	desc = POK.41.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_KATZcore
 	
 	trigger = {
 		tag = POK
@@ -2619,6 +2649,8 @@ country_event = {
 				}
 			}
 		}
+	set_politics = {ruling_party = fascism elections_allowed = no}
+    add_popularity = { ideology = fascism popularity = 0.5 }
 		}
 		division_template = {
 					name = "ЧВК"
