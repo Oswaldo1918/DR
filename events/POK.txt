@@ -2637,6 +2637,7 @@ country_event = {
 	option = {
 	name = POK.41.a
 	POK = {
+	delete_unit_template_and_units = { division_template = "ЧВК" }
 		set_nationality = {
 		target_country = URL
 		character = POK_Katz
