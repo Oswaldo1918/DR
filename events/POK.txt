@@ -1625,6 +1625,7 @@ country_event = {
 				custom_effect_tooltip = POK_BAZIM_KAZ_tt
 				set_global_flag = POK_BAZIM_KAZ
 			}
+			hidden_effect = {
 			if = {
 				limit = {
 					NOT = { SKT = exists } 
@@ -2762,6 +2763,7 @@ air_ratio = 0.05
     hours = 12
     random_hours = 6
     days = 5
+}
 }
 	}
 }
