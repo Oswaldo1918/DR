@@ -2812,6 +2812,7 @@ country_event = {
 	set_politics = {ruling_party = fascism elections_allowed = no}
     add_popularity = { ideology = fascism popularity = 0.5 }
 		}
+		URL = {
 		division_template = {
 					name = "ЧВК"
 					division_names_group = POK_PMC_01
@@ -2868,6 +2869,7 @@ country_event = {
 					}
 				}
 	set_country_flag = DR_start_reunite_Russia_cf
+	}
 	}
 }
 #Пригласить_в_альянс_brt
