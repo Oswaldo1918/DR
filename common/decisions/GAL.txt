@@ -184,8 +184,6 @@ GAL_import_marakumbi = {
         }
         visible = {
 		    tag = GAL
-		    has_completed_focus = GAL_import_marakumbi
-			NOT = {has_idea = GAL_marakumba_import_0}
         }
 		
 		complete_effect = {
