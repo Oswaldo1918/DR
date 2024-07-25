@@ -1111,11 +1111,13 @@ country_event = { ###Начало гражданской войны в Пока�
 		add_manpower = -1200
 		hidden_effect = {
 			news_event = dk_news.26
+			add_ideas = POK_idea_GV
 			MRD = {
 				country_event = {
 					id = mordor.14
 					days = 7
 				}
+				add_ideas = POK_idea_GV
 			}
 			declare_war_on = { #Покаяния_объявляет_войны_первой_чтобы_она_не_получала_бонус_за_оборонительную_войну_до_вступления_Мордора
 				target = MGN
@@ -1154,6 +1156,10 @@ country_event = { ###Начало гражданской войны в Пока�
 					target = ZNS
 					type = annex_everything
 				}
+				add_ideas = POK_idea_GV
+			}
+			YSK = {
+			add_ideas = POK_idea_GV
 			}
 			OMS = {
 			    declare_war_on = {
@@ -1167,7 +1173,8 @@ country_event = { ###Начало гражданской войны в Пока�
 			    declare_war_on = {
 					target = ZNS
 					type = annex_everything
-				}				
+				}
+add_ideas = POK_idea_GV				
 			}
 			GAL = {
 			    declare_war_on = {
@@ -1177,13 +1184,15 @@ country_event = { ###Начало гражданской войны в Пока�
 			    declare_war_on = {
 					target = ZNS
 					type = annex_everything
-				}				
+				}
+add_ideas = POK_idea_GV				
 			}
 			ZNS = {
 			    declare_war_on = {
 					target = YSK
 					type = annex_everything
-				}					
+				}
+add_ideas = POK_idea_GV				
 			}
 		}
 	}
@@ -1614,7 +1623,9 @@ country_event = {
 					 has_completed_focus = POK_private_armies
 				}
 				custom_effect_tooltip = POK_BAZIM_KAZ_tt
+				set_global_flag = POK_BAZIM_KAZ
 			}
+			hidden_effect = {
 			if = {
 				limit = {
 					NOT = { SKT = exists } 
@@ -2608,6 +2619,134 @@ if = {
 	        province = 301
 	        value = 10
         }
+		transfer_units_fraction= {
+target = URL
+size = 0.2
+stockpile_ratio = 0.2
+army_ratio = 0.2
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = GAL
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.1
+}
+transfer_units_fraction= {
+target = NEN
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.5
+air_ratio = 0
+}
+transfer_units_fraction= {
+target = POM
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.5
+air_ratio = 0.1
+}
+transfer_units_fraction= {
+target = ALT
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = POT
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = ZKR
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = TLM
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = KRR
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = IDU
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= { 
+target = SKT
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = NOV
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = KHA
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = TAN
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = YAK
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
+transfer_units_fraction= {
+target = CHK
+size = 0.05
+stockpile_ratio = 0.05
+army_ratio = 0.05
+navy_ratio = 0.0
+air_ratio = 0.05
+}
 		news_event = dk_news.66
 		hidden_effect = {
 		    country_event = {
@@ -2619,6 +2758,13 @@ if = {
                 days = 7
             }
 		}
+		country_event = {
+    id = POK.41
+    hours = 12
+    random_hours = 6
+    days = 5
+}
+}
 	}
 }
 #Кац Базит
@@ -2630,13 +2776,19 @@ country_event = {
 	
 	trigger = {
 		tag = POK
+
 	}
 	
-	is_triggered_only = yes	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 7
+	}
 	
 	option = {
 	name = POK.41.a
 	POK = {
+	delete_unit_template_and_units = { division_template = "ЧВК" }
 		set_nationality = {
 		target_country = URL
 		character = POK_Katz
@@ -2662,6 +2814,7 @@ country_event = {
 	set_politics = {ruling_party = fascism elections_allowed = no}
     add_popularity = { ideology = fascism popularity = 0.5 }
 		}
+		URL = {
 		division_template = {
 					name = "ЧВК"
 					division_names_group = POK_PMC_01
@@ -2707,6 +2860,18 @@ country_event = {
 						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
 					}
 				}
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"ЧВК ''Псы Войны''\" division_template = \"ЧВК\" start_experience_factor = 1.2 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+	set_country_flag = DR_start_reunite_Russia_cf
+	}
 	}
 }
 #Пригласить_в_альянс_brt

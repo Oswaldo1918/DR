@@ -773,7 +773,17 @@ focus_tree = {
 		}
 		  completion_reward = {
 					add_ideas = OSV_only_Kerb_understand
-							
+						
+					create_country_leader = {
+	name = "Александр Тарасов"
+	desc = "POLITICS_TARASOV_DESC"
+	picture = "KerbonavtTarasov.dds"
+	expire = "1999.1.1"
+	ideology = white_polpotism
+	traits = {
+		economic_reformer
+	}
+}		
 				}
 
 	}

@@ -1705,12 +1705,14 @@ ideas = {
 			research_bonus = {
 			}
 			targeted_modifier = {
-			    tag = NOD
-			    attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+			    tag = POK
+			    attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 		    }
 			modifier = {
-				war_support_factor = 0.1
+				war_support_factor = -0.25
+			    army_morale_factor = -0.1 
+				resistance_damage_to_garrison = 0.25 		
 			}
 		}
 		
