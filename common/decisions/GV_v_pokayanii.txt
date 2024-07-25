@@ -33,11 +33,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_329 }
         }
 		
 		complete_effect = {
 		clr_country_flag = stop_deystviya
+		set_global_flag = zahvat_329
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -93,11 +94,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_578 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_578
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -153,11 +155,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_569 }
         }
 
         complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_569
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -213,11 +216,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_577 }
         }
 		
 		complete_effect = {
-       clr_country_flag = stop_deystviya
+        clr_country_flag = stop_deystviya
+	    set_global_flag = zahvat_577
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -273,11 +277,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_576 }
         }
 		
 		complete_effect = {
             clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_576
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -333,11 +338,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_575 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_575
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -393,11 +399,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_567 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_567
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -453,11 +460,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_654 }
         }
 
         complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_654
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -513,11 +521,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_824 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_824
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -573,12 +582,13 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_403 }
         }
 		
 		complete_effect = {
 			LAZ = { country_event = osv.999 }
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_403
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -634,11 +644,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_572 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_572
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -694,11 +705,12 @@ GV_v_pokayanii_podgotovka = {
                     is_controlled_by = ROOT
                 }
             }
-			NOT = { has_country_flag = dva_deystviya }
+			NOT = { has_country_flag = dva_deystviya has_global_flag = zahvat_573 }
         }
 		
 		complete_effect = {
         	clr_country_flag = stop_deystviya
+			set_global_flag = zahvat_573
 	     	if = {
 				limit = {
 					NOT = { has_country_flag = one_deystviye }
@@ -764,7 +776,7 @@ GV_v_pokayanii_podgotovka = {
 		  add_equipment_to_stockpile = {
 							type = infantry_equipment_0
 							amount = 500
-							producer = ROOT
+							producer = POK
 						}
 		}
     }
@@ -800,7 +812,7 @@ GV_v_pokayanii_podgotovka = {
 		  add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 500
-				producer = ROOT
+				producer = POK
 			}
 		}
     }
@@ -835,7 +847,7 @@ GV_v_pokayanii_podgotovka = {
 		  add_equipment_to_stockpile = {
 				type = artillery_equipment_1
 				amount = 120
-				producer = ROOT
+				producer = POK
 			}
 		}
     }
@@ -870,7 +882,7 @@ GV_v_pokayanii_podgotovka = {
 		  add_equipment_to_stockpile = {
 				type = support_equipment_1
 				amount = 100
-				producer = ROOT
+				producer = POK
 			}
 		}
     }
