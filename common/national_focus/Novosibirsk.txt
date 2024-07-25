@@ -489,7 +489,7 @@ focus_tree = {
 		x = 21
 		y = 13
 			completion_reward = {
-					set_country_flag = GAL_gst_stroyka_country_flag
+					unlock_decision_category_tooltip = GST_cat
 				}
 
 	}
@@ -1659,8 +1659,8 @@ focus_tree = {
 		x = 15
 		y = 11
 			completion_reward = {
+	         		unlock_decision_category_tooltip = GAL_import_marakumbi
 					add_ideas = GAL_marakumba_import_0
-					set_country_flag = GAL_marakumba_cf
 				}
 
 	}

@@ -37,8 +37,6 @@ GAL_sssr = {
     }
 	
 	GAL_pobeda_v_gv = { #Интеграция_Сибири
-	
-		cost = 30
 
 		available = {
 			controls_state = 577
@@ -67,23 +65,6 @@ GAL_sssr = {
 		days_remove = 45
 		
 		remove_effect = {
-			add_state_core = 577
-			add_state_core = 571
-			add_state_core = 570
-			add_state_core = 578
-			add_state_core = 569
-			add_state_core = 576
-			add_state_core = 568
-			add_state_core = 40
-			add_state_core = 654
-            add_state_core = 329
-			add_state_core = 567
-			add_state_core = 575
-			add_state_core = 824
-			add_state_core = 579
-			add_state_core = 580
-			add_state_core = 516
-			add_state_core = 878
 			set_cosmetic_tag = GAL_SibRevSovDep
 			remove_idea = POK_idea_GV
 		}	
@@ -101,8 +82,8 @@ GST_cat = {
 			factor = 4
 		}
         visible = {
-		    has_country_flag = GAL_gst_stroyka_country_flag
 			NOT = { has_country_flag = GAL_GST_stroyka_cf }
+			has_completed_focus = GAL_proekt_velikikogo_kosmicheskogo_tambova
         }
 		
 		modifier = {
@@ -173,14 +154,12 @@ GAL_import_marakumbi = {
 		available = {
 		tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
-	      	has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_3}
 			NOT = {has_idea = GAL_marakumba_6}
 		}
         visible = {
 		    tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
-	      	has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_3}
 			NOT = {has_idea = GAL_marakumba_6}
         }
@@ -201,13 +180,11 @@ GAL_import_marakumbi = {
 		available = {
 		    tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
-            has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_0}
         }
         visible = {
 		    tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
-            has_country_flag = GAL_marakumba_cf
 			NOT = {has_idea = GAL_marakumba_import_0}
         }
 		
