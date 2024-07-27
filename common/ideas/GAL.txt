@@ -310,6 +310,39 @@ ideas = {
 				experience_loss_factor = 0.10
 			   }
 		    }
+			GAL_stroyka_dolg = {
+				modifier = {
+				 production_speed_buildings_factor = 0.1 
+			   }
+			}
+			GAL_stroyka_premiya = {
+				modifier = {
+				 production_speed_buildings_factor = 0.2
+				 consumer_goods_factor = 0.08
+			   }
+			}
+			GAL_rational_economy = {
+				modifier = {
+				 production_factory_efficiency_gain_factor = 0.1
+				 production_factory_max_efficiency_factor = 0.1
+				 industrial_capacity_factory = 0.1
+				}
+			}
+			GAL_rational_economy_2 = {
+				modifier = {
+				 production_factory_efficiency_gain_factor = 0.15
+				 production_factory_max_efficiency_factor = 0.15
+				 industrial_capacity_factory = 0.15
+				 global_building_slots_factor = 0.2
+				}
+			}
+			GAL_protiv_liberalisma = {
+				targeted_modifier = {
+					tag = POK
+					attack_bonus_against = 0.1
+				}
+			}
+			
 	   }
 	   
 	tank_manufacturer = { 

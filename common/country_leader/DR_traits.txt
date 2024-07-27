@@ -1315,4 +1315,23 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	organisator_festivaley = {
+		sprite = 10
+		random = not		
+		consumer_goods_factor = -0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	nazi_antropolog = {
+		sprite = 10
+		random = not		
+		monthly_population = 0.20
+		conscription_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
 }
