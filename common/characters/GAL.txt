@@ -26,7 +26,7 @@ characters={
 			traits = {
 				army_chief_morale_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -94,7 +94,7 @@ characters={
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = political_advisor
 			idea_token = GAL_sndk
 			allowed = {
@@ -120,7 +120,7 @@ characters={
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = GAL_Boyarshinov
 			ledger = army
@@ -158,14 +158,14 @@ characters={
 			traits = {
 				army_infantry_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = political_advisor
 			idea_token = GAL_Deb
 			allowed = {
@@ -191,7 +191,7 @@ characters={
 			}
 		}	
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = political_advisor
 			idea_token = GAL_Savvateev
 			allowed = {
@@ -212,6 +212,18 @@ characters={
 				small = "GFX_idea_GAL_Sokolov"
 				large = "gfx/leaders/GAL/Sokolov.dds"				
 			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Sokolov
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				organisator_festivaley
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
 		}		
 	}
 	
@@ -228,7 +240,7 @@ characters={
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = political_advisor
 			idea_token = GAL_Toples
 			allowed = {
@@ -260,7 +272,19 @@ characters={
 				small = "GFX_idea_GAL_Drobyshevskiy"
 				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
 			}
-		}		
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Drobyshevskiy
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				nazi_antropolog
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+		}			
 	}
 	
 	GAL_Romanov = {
@@ -296,7 +320,7 @@ characters={
 		}		
 	}
 	GAL_military_council = {
-		name = "Военный совет"
+		name = "Военспецы"
 		portraits = {
 			army = {
 				small = GFX_idea_generic_council_of_theorists
@@ -313,7 +337,7 @@ characters={
 				has_completed_focus = GAL_voenspetsi
 			}
 			traits = { council_of_theorists }
-			cost = 100
+			cost = 150
 		}
 	}
 }
