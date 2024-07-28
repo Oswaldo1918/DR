@@ -1,6 +1,6 @@
 ideas = {
-       country = {
-	        IRQ_torgovlya_s_Iydeey = {
+    country = {
+	    IRQ_torgovlya_s_Iydeey = {
 			
 			removal_cost = -1
 
@@ -11,6 +11,73 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}		
 		}
-	   }
 		
+	    IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki = {
+			
+			removal_cost = -1
+
+			picture = GFX_idea_GAL_vodochnaya_monopoliya_i
+
+			modifier = { 
+			    production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = -0.1
+			}		
+		}
+		
+		IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine = {
+			
+			removal_cost = -1
+
+			picture = idea_saf_history_of_segregation
+
+			modifier = { 
+			    monthly_population = 0.5
+			}		
+		}
+		
+		IRQ_voennoe_vmesto_yazikovogo_obucheniye = {
+			
+			removal_cost = -1
+
+			picture = idea_saf_history_of_segregation
+
+			modifier = { 
+			    opinion_gain_monthly_factor = -0.1
+				conscription_factor = 0.1
+			}		
+		}
+		
+		IRQ_berem_vseh = {
+			
+			removal_cost = -1
+
+			picture = idea_saf_history_of_segregation
+
+			modifier = { 
+				conscription_factor = 0.1
+			}		
+		}
+		
+		IRQ_mit_sapogi_v_indiyskom_okeane = {
+			
+			removal_cost = -1
+
+			picture = idea_saf_history_of_segregation
+
+			modifier = { 
+				acclimatization_hot_climate_gain_factor = 0.5
+			}		
+		}
+		
+		IRQ_fedaini_saddama = {
+			
+			removal_cost = -1
+
+			picture = idea_saf_history_of_segregation
+
+			modifier = { 
+				cconscription = 0.05
+			}		
+		}
+	}	
 }
