@@ -119,7 +119,7 @@ unit_medals = {
 	CHK_medal_za_otl_c_sluzhb1 = {
 		
 		available = { 
-			tag = CHK
+			should_have_chechen_medals_trigger = yes
 		}
 		frame = 1
 		icon = "GFX_medal_icon_chk"
@@ -140,7 +140,7 @@ unit_medals = {
 	CHK_medal_za_otl_c_sluzhb2 = {
 		
 		available = { 
-			tag = CHK
+			should_have_chechen_medals_trigger = yes
 		}
 		frame = 2
 		icon = "GFX_medal_icon_chk"
@@ -161,7 +161,7 @@ unit_medals = {
 	CHK_medal_zash_ChR = {
 		
 		available = { 
-			tag = CHK
+			should_have_chechen_medals_trigger = yes
 		}
 		frame = 3
 		icon = "GFX_medal_icon_chk"
@@ -181,7 +181,7 @@ unit_medals = {
 	CHK_orden_Akad = {
 		
 		available = { 
-			tag = CHK
+			should_have_chechen_medals_trigger = yes
 		}
 		frame = 4
 		icon = "GFX_medal_icon_chk"
@@ -204,6 +204,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = anarhostalinism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 1
 		icon = "GFX_medal_icon_anstal"
@@ -225,6 +226,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = anarhostalinism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 2
 		icon = "GFX_medal_icon_anstal"
@@ -246,6 +248,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = anarhostalinism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 3
 		icon = "GFX_medal_icon_anstal"
@@ -266,6 +269,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = anarhostalinism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 4
 		icon = "GFX_medal_icon_anstal"
@@ -286,6 +290,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = metacommy
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 1
 		icon = "GFX_medal_icon_metacommy"
@@ -307,6 +312,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = metacommy
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 2
 		icon = "GFX_medal_icon_metacommy"
@@ -328,6 +334,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = metacommy
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 3
 		icon = "GFX_medal_icon_metacommy"
@@ -348,6 +355,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = metacommy
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 4
 		icon = "GFX_medal_icon_metacommy"
@@ -368,6 +376,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = memoism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 1
 		icon = "GFX_medal_icon_memoism"
@@ -389,6 +398,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = memoism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 2
 		icon = "GFX_medal_icon_memoism"
@@ -410,6 +420,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = memoism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 3
 		icon = "GFX_medal_icon_memoism"
@@ -430,6 +441,7 @@ unit_medals = {
 		
 		available = { 
 			has_government = memoism
+			should_have_any_unique_medals_trigger = no
 		}
 		frame = 4
 		icon = "GFX_medal_icon_memoism"
@@ -449,7 +461,7 @@ unit_medals = {
 	UKR_za_nahruk = {
 		
 		available = { 
-			tag = UKR
+			should_have_hohli_medals_trigger = yes
 		}
 		frame = 1
 		icon = "GFX_medal_icon_ukr"
@@ -457,8 +469,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
-			army_fuel_consumption_factor = -0.15
+			army_strength_factor = 0.1
 		}
 		
 		one_time_effect = {
@@ -470,7 +481,7 @@ unit_medals = {
 	UKR_za_luchshuyu_hrukaninu = {
 		
 		available = { 
-			tag = UKR
+			should_have_hohli_medals_trigger = yes
 		}
 		frame = 2
 		icon = "GFX_medal_icon_ukr"
@@ -491,7 +502,7 @@ unit_medals = {
 	UKR_za_govnovbros = {
 		
 		available = { 
-			tag = UKR
+			should_have_hohli_medals_trigger = yes
 		}
 		frame = 3
 		icon = "GFX_medal_icon_ukr"
@@ -511,7 +522,7 @@ unit_medals = {
 	UKR_za_probeg_po_kotlam = {
 		
 		available = { 
-			tag = UKR
+			should_have_hohli_medals_trigger = yes
 		}
 		frame = 4
 		icon = "GFX_medal_icon_ukr"
@@ -519,7 +530,8 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_strength_factor = 0.1
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.15
 		}
 		
 		one_time_effect = {

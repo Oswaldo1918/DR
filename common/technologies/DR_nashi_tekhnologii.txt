@@ -74,4 +74,17 @@ technologies = {
 			}
 		}
 	}
+	
+	chemical_attack_tech = {
+		enable_tactic = tactic_chemical_attack
+		enable_tactic = tactic_chemical_defend
+
+		doctrine = yes
+		research_cost = 1
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
 }

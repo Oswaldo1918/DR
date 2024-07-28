@@ -36,7 +36,7 @@ UKR_ZimM = {
      	owner = { controls_state = 221 }
 	    IF = {
 			limit = { FROM = { original_tag = DON } } 
-			has_completed_focus = DON_konstruktorskie_buro
+			owner = { has_completed_focus = DON_konstruktorskie_buro }
 		}
 	}
 }
@@ -56,7 +56,7 @@ UKR_HBZ = {
      	owner = { controls_state = 221 }
 	    IF = {
 			limit = { FROM = { original_tag = DON } } 
-			has_completed_focus = DON_konstruktorskie_buro
+			owner = { has_completed_focus = DON_konstruktorskie_buro }
 		}
 	}
 }
@@ -114,7 +114,7 @@ UKR_Motor_sich = {
      	owner = { controls_state = 200 }
 	    IF = {
 			limit = { FROM = { original_tag = DON } } 
-			has_completed_focus = DON_konstruktorskie_buro
+			owner = { has_completed_focus = DON_konstruktorskie_buro }
 		}
 	}
 	

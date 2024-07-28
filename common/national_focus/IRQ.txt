@@ -12,7 +12,7 @@ focus_tree = {
 		id = IRQ_izr_vopros
 		icon = GFX_goal_jew_vlast
 		cost = 1,00
-		x = 22
+		x = 7
 		y = 0
 			available = {
 					IZR = {
@@ -28,6 +28,56 @@ focus_tree = {
 
 	}
 	focus = {
+		id = IRQ_ldpr
+		icon = GFX_goal_IRQ_zhirik
+		cost = 10,00
+		mutually_exclusive = {
+			focus = IRQ_baas
+		}
+		x = 14
+		y = 0
+			available = {
+					OR = {
+							has_government = neutrality
+						}
+				}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = anet
+							days = 1095
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_baas
+		icon = GFX_goal_IRQ_saddam
+		cost = 10,00
+		mutually_exclusive = {
+			focus = IRQ_ldpr
+		}
+		x = 24
+		y = 0
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							last_election = "1933.3.5"
+							election_frequency = 48
+							elections_allowed = no
+						}
+					set_popularities = {
+							neutrality = 30
+							fascism = 70
+						}
+				}
+
+	}
+	focus = {
 		id = IRQ_podderzhat_IZR
 		icon = GFX_goal_israel_ally
 		cost = 2,00
@@ -37,7 +87,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_podderzhat_Bashara
 		}
-		x = 17
+		x = 5
 		y = 1
 			ai_will_do = {
 					factor = 100
@@ -55,7 +105,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_podderzhat_IZR
 		}
-		x = 17
+		x = 5
 		y = 2
 			ai_will_do = {
 					factor = 100
@@ -103,7 +153,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_ukrepit_zapad
 		}
-		x = 16
+		x = 4
 		y = 3
 			ai_will_do = {
 					factor = 100
@@ -123,7 +173,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_ukrepit_zapad
 		}
-		x = 18
+		x = 6
 		y = 3
 			ai_will_do = {
 					factor = 100
@@ -149,165 +199,13 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_napravit_voensovetnikov_IZR
 		}
-		x = 17
+		x = 5
 		y = 4
 			ai_will_do = {
 					factor = 100
 				}
 			completion_reward = {
 					add_ideas = IRQ_torgovlya_s_Iydeey
-				}
-
-	}
-	focus = {
-		id = IRQ_ldpr
-		icon = GFX_BSH_ploteyshaya
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_izr_vopros
-		}
-		mutually_exclusive = {
-			focus = IRQ_baas
-		}
-		x = 21
-		y = 2
-			available = {
-					OR = {
-							has_government = neutrality
-						}
-				}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 5
-				}
-			completion_reward = {
-					add_timed_idea = {
-							idea = anet
-							days = 1095
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_bani
-		icon = GFX_goal_bani_ldpr
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_ldpr
-		}
-		mutually_exclusive = {
-			focus = IRQ_ubezhishe
-			focus = IRQ_nazionalniy_front
-		}
-		x = 20
-		y = 3
-			completion_reward = {
-					add_political_power = 150
-				}
-
-	}
-	focus = {
-		id = IRQ_berem_vseh
-		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_bani
-		}
-		x = 20
-		y = 4
-			completion_reward = {
-					add_ideas = scraping_the_barrel
-				}
-
-	}
-	focus = {
-		id = IRQ_nazionalniy_front
-		icon = GFX_goal_generic_alliance
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_izr_vopros
-		}
-		mutually_exclusive = {
-			focus = IRQ_bani
-			focus = IRQ_ubezhishe
-		}
-		x = 22
-		y = 3
-			completion_reward = {
-					add_stability = 0.1
-				}
-
-	}
-	focus = {
-		id = IRQ_razdel_sfer_vliyaniya
-		icon = GFX_focus_generic_military_academy
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_nazionalniy_front
-		}
-		x = 22
-		y = 4
-			completion_reward = {
-					add_political_power = 150
-				}
-
-	}
-	focus = {
-		id = IRQ_baas
-		icon = GFX_goal_arab_baas
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_izr_vopros
-		}
-		mutually_exclusive = {
-			focus = IRQ_ldpr
-		}
-		x = 23
-		y = 2
-			completion_reward = {
-					set_politics = {
-							ruling_party = fascism
-							last_election = "1933.3.5"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					set_popularities = {
-							neutrality = 30
-							fascism = 70
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_ubezhishe
-		icon = GFX_goal_saddam_hussein
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_baas
-		}
-		mutually_exclusive = {
-			focus = IRQ_bani
-			focus = IRQ_nazionalniy_front
-		}
-		x = 24
-		y = 3
-			completion_reward = {
-					add_ideas = ALB_bunkervodstvo
-				}
-
-	}
-	focus = {
-		id = IRQ_fedaini_saddama
-		icon = GFX_goal_rhineland
-		cost = 10,00
-		prerequisite = {
-			focus = IRQ_ubezhishe
-		}
-		x = 24
-		y = 4
-			completion_reward = {
-					add_ideas = paramilitarism_focus
 				}
 
 	}
@@ -321,7 +219,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_podderzhat_IZR
 		}
-		x = 27
+		x = 9
 		y = 1
 			ai_will_do = {
 					factor = 100
@@ -339,7 +237,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_podderzhat_Bashara
 		}
-		x = 27
+		x = 9
 		y = 2
 			ai_will_do = {
 					factor = 100
@@ -360,7 +258,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_vernut_sporterry
 		}
-		x = 26
+		x = 8
 		y = 3
 			ai_will_do = {
 					factor = 100
@@ -380,7 +278,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_vernut_sporterry
 		}
-		x = 28
+		x = 10
 		y = 3
 			ai_will_do = {
 					factor = 100
@@ -406,7 +304,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_otpravit_oruzhie
 		}
-		x = 27
+		x = 9
 		y = 4
 			ai_will_do = {
 					factor = 100
@@ -432,6 +330,161 @@ focus_tree = {
 
 	}
 	focus = {
+		id = IRQ_bani
+		icon = GFX_goal_bani_ldpr
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ldpr
+		}
+		x = 12
+		y = 1
+			completion_reward = {
+					add_country_leader_trait = boss_bani
+				}
+
+	}
+	focus = {
+		id = IRQ_berem_vseh
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_bani
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					add_ideas = scraping_the_barrel
+				}
+
+	}
+	focus = {
+		id = IRQ_voennoe_vmesto_yazikovogo_obucheniye
+		icon = GFX_goal_IRQ_ak_english
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ldpr
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = IRQ_prorok
+		icon = GFX_goal_IRQ_prorok
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_voennoe_vmesto_yazikovogo_obucheniye
+		}
+		x = 14
+		y = 2
+		
+		completion_reward = {
+					add_country_leader_trait = prorok
+				}
+
+	}
+	focus = {
+		id = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
+		icon = GFX_focus_SOV_womens_fascist_movement
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ldpr
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = IRQ_mit_sapogi_v_indiyskom_okeane
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
+		}
+		prerequisite = {
+			focus = IRQ_prorok
+		}
+		prerequisite = {
+			focus = IRQ_berem_vseh
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = IRQ_libya_ally
+		icon = GFX_goal_kadaffi_ally
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ldpr
+			focus = IRQ_baas
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = IRQ_ubezhishe
+		icon = GFX_goal_saddam_hussein
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_baas
+		}
+		x = 22
+		y = 1
+			completion_reward = {
+					add_ideas = ALB_bunkervodstvo
+				}
+
+	}
+	focus = {
+		id = IRQ_vozvrasheniye_k_vere
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ubezhishe
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = IRQ_republican_guard
+		icon = GFX_goal_IRQ_republican_guard
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_baas
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = IRQ_fedaini_saddama
+		icon = GFX_goal_rhineland
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_republican_guard
+		}
+		x = 24
+		y = 2
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
+
+	}
+	focus = {
 		id = IRQ_ogranichitsya_podderzhkoy
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 2,00
@@ -441,7 +494,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_edinim_frontom
 		}
-		x = 26
+		x = 8
 		y = 5
 			ai_will_do = {
 					factor = 100
@@ -467,7 +520,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_ogranichitsya_podderzhkoy
 		}
-		x = 28
+		x = 10
 		y = 5
 			ai_will_do = {
 					factor = 100
@@ -500,7 +553,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_ne_vlezat_v_voynu
 		}
-		x = 18
+		x = 6
 		y = 5
 			ai_will_do = {
 					factor = 100
@@ -539,7 +592,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_udar_v_tol
 		}
-		x = 16
+		x = 4
 		y = 5
 			ai_will_do = {
 					factor = 100
@@ -548,6 +601,52 @@ focus_tree = {
 					add_political_power = 150
 					add_stability = 0.1
 				}
+
+	}
+	focus = {
+		id = IRQ_chemical_warfare
+		icon = GFX_goal_IRQ_chemical_warfare
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_baas
+		}
+		x = 26
+		y = 1
+		
+		completion_reward = {
+					hidden_effect = {
+			        	set_technology = { chemical_attack_tech = 1 popup = no }
+	         		}
+	         		custom_effect_tooltip = IRQ_chemical_attack_tactic_tt
+				}
+
+	}
+	focus = {
+		id = IRQ_mest_za_iran_iraq_war
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_vozvrasheniye_k_vere
+		}
+		prerequisite = {
+			focus = IRQ_fedaini_saddama
+		}
+		prerequisite = {
+			focus = IRQ_anfal
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = IRQ_anfal
+		icon = GFX_focus_generic_attack_kurdistan
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_chemical_warfare
+		}
+		x = 26
+		y = 2
 
 	}
 }
