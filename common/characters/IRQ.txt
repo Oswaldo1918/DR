@@ -34,7 +34,7 @@ characters={
 				large="gfx/leaders/IRQ/Saddam.dds"
 			}
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_IRQ_saddam"
 				large = "gfx/leaders/IRQ/Saddam_general.dds"
 			}
 		}
@@ -61,7 +61,7 @@ characters={
 
 		portraits = {
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_IRQ_ali_hassan_al_majid"
 				large = "gfx/leaders/IRQ/ali_hassan_al_majid.dds"
 			}
 		}
@@ -74,9 +74,6 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
-			visible = {
-			NOT = { has_completed_focus = IRQ_ldpr }
-			}
 		}
 	}
 	
@@ -85,7 +82,7 @@ characters={
 
 		portraits = {
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_IRQ_Izzat_Ibrahim_al-Douri"
 				large = "gfx/leaders/IRQ/Izzat_Ibrahim_al-Douri.dds"
 			}
 		}
@@ -98,9 +95,6 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
-			visible = {
-			NOT = { has_completed_focus = IRQ_ldpr }
-			}
 		}
 	}
 	
@@ -109,7 +103,7 @@ characters={
 
 		portraits = {
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_IRQ_vlasov"
 				large = "gfx/leaders/IRQ/Vasiliy_Vlasov.dds"
 			}
 		}
@@ -122,9 +116,86 @@ characters={
         	planning_skill = 2
         	logistics_skill = 2
 			legacy_id = 0
-			visible = {
-			NOT = { has_completed_focus = IRQ_baas }
+		}
+		
+		advisor = {
+    		slot = political_advisor
+            idea_token = IRQ_Vasiliy_Vlasov			
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { workhorse }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	IRQ_Slutskiy = {
+		name = "Леонид Слуцкий"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_IRQ_slutskiy"
 			}
 		}
+
+		advisor = {
+    		slot = political_advisor
+            idea_token = IRQ_Slutskiy			
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { backroom_sponsor_rezhima }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}
+	
+	IRQ_Degtyarev = {
+		name = "Михаил Дегтярев"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_IRQ_degtyarev"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor
+            idea_token = IRQ_Slutskiy			
+			allowed = {
+				original_tag = NOD
+				
+			}			
+			traits = { workhorse }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
+	IRQ_lugovoy = {
+		name = "Андрей Луговой"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_IRQ_lugovoy"
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = IRQ_lugovoy
+			allowed = {
+				original_tag = DOT
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}
+    }
 }

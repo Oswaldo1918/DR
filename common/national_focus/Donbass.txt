@@ -276,8 +276,16 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ 
 			}
+		}
+		bypass = {
+		   NOT = {
+		  		OR = {
+			    	is_subject_of = LAZ
+		       		is_in_faction_with = LAZ 
+		       	}
+			}	
 		}
 		x = 7
 		y = 4
@@ -325,7 +333,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 9
@@ -434,8 +442,16 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ 
 			}
+		}
+		bypass = {
+		   NOT = {
+		  		OR = {
+			    	is_subject_of = LAZ
+		       		is_in_faction_with = LAZ 
+		       	}
+			}	
 		}
 		x = 7
 		y = 6
@@ -456,7 +472,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 8
@@ -509,7 +525,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 7
@@ -532,7 +548,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 7
@@ -556,7 +572,7 @@ focus_tree = {
 			num_of_factories > 25
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 7
@@ -571,7 +587,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = { 
 		id = DON_rekonstruktsiya_dneproges
 		icon = GFX_dock_clique_rekonstruktsia_DneproGES
 		cost = 10,00
@@ -584,7 +600,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 9
@@ -621,7 +637,7 @@ focus_tree = {
 			owns_state = 137
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 9
@@ -650,7 +666,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 11
@@ -677,7 +693,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 11
@@ -721,7 +737,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 11
@@ -746,7 +762,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 5
@@ -778,7 +794,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 3
@@ -815,7 +831,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 4
@@ -846,7 +862,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 4
@@ -894,7 +910,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 5
@@ -926,7 +942,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 3
@@ -956,7 +972,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 8
@@ -1024,7 +1040,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 		}
 		x = 14
@@ -1054,7 +1070,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 			NOT = { has_completed_focus = DON_ukrainskaya_voyna }
 		}
@@ -1082,7 +1098,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 			NOT = { has_completed_focus = DON_ukrainskaya_voyna }
 		}
@@ -1132,7 +1148,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 			NOT = { has_completed_focus = DON_ukrainskaya_voyna }
 		}
@@ -1180,7 +1196,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 			NOT = { has_completed_focus = DON_ukrainskaya_voyna }
 		}
@@ -1208,7 +1224,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = LAZ
-				is_in_faction_with = LAZ
+				is_in_faction_with = LAZ num_of_factories > 50
 			}
 			NOT = { has_completed_focus = DON_ukrainskaya_voyna }
 		}

@@ -518,8 +518,36 @@ focus_tree = {
 		y = 1
 		
 		completion_reward = {
-					load_oob = IRQ_republican_guard
+			division_template = {
+                name = "Республиканская гвардия"
+
+                regiments = {
+                   	motorized = { x = 0 y = 0 }
+                 	motorized = { x = 0 y = 1 }
+                 	motorized = { x = 1 y = 0 }
+                   	motorized = { x = 1 y = 1 }
+                    mot_artillery_brigade = { x = 2 y = 0 }
+	                light_armor = { x = 3 y = 0 }
+                }
+                priority = 1
+            }
+			
+			291 = {
+				create_unit = {
+					division = "name = \"1-я танковая дивизия «Хаммурапи» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					owner = IRQ
 				}
+				create_unit = {
+					division = "name = \"2-я танковая дивизия «Медина» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					owner = IRQ
+				}
+				create_unit = {
+					division = "name = \"3-я механизированная дивизия «Тавалкана» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					owner = IRQ
+				}
+	     	}
+			
+		}
 	}
 	focus = {
 		id = IRQ_fedaini_saddama

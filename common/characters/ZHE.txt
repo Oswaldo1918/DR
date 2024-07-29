@@ -47,18 +47,18 @@ characters={
 			logistics_skill = 3
 			legacy_id = 0
 		}
-	}    
-	ZHE_Victor_Muzhenko = {
-		name = "Виктор Муженко"
+	} 
+    ZHE_Alexander_Syrsky = {
+		name = "Александр Сырский"
 		portraits = {
 			army = {
-				large = "gfx/leaders/ZHE/Victor_Muzhenko.dds"
+				large = "gfx/leaders/ZHE/Alexander_Syrsky.dds"
 				small = GFX_portrait_SOV_lev_dovator_small
 			}
 		}
 
 		corps_commander = {
-			traits = { armor_officer }
+			traits = { combined_arms_expert }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -66,7 +66,7 @@ characters={
 			logistics_skill = 2
 			legacy_id = 0
 		}
-	}
+	}	
 	ZHE_Sergey_Naev = {
 		name = "Сергей Наев"
 		portraits = {

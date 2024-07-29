@@ -125,6 +125,16 @@ MGN_nationalization_Russia = {
 	}
 }
 
+MGN_mobilizatsiya = { 
+ icon = generic_prospect_for_resources
+    allowed = {
+		original_tag = MGN
+	}
+	visible = {
+		original_tag = MGN
+	}
+}
+
 MGN_poisk_relikviy = { 
  icon = generic_prospect_for_resources
     allowed = {

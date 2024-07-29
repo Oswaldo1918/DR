@@ -1,23 +1,4 @@
 characters={
-	SIN_Alexander_Syrsky = {
-		name = "Александр Сырский"
-		portraits = {
-			army = {
-				large = "gfx/leaders/SIN/Alexander_Syrsky.dds"
-				small = GFX_portrait_SOV_lev_dovator_small
-			}
-		}
-
-		corps_commander = {
-			traits = { combined_arms_expert }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = 0
-		}
-	}
 	SIN_Igor_Lunev = {
 		name = "Игорь Лунев"
 		portraits = {

@@ -124,6 +124,25 @@ characters={
 			legacy_id = 0
 		}	
 	}
+	UKR_Victor_Muzhenko = {
+		name = "Виктор Муженко"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/Victor_Muzhenko.dds"
+				small = GFX_portrait_SOV_lev_dovator_small
+			}
+		}
+
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
 	UKR_Koval_Zelenopolskiy = {
 		name = "Михаил Коваль"
 		portraits = {
@@ -172,9 +191,9 @@ characters={
             traits = { blockade_runner }
             skill = 5
          	attack_skill = 5
-        	defense_skill = 1
-        	maneuvering_skill = 1
-        	coordination_skill = 1
+        	defense_skill = 3
+        	maneuvering_skill = 3
+        	coordination_skill = 2
         }
 	}
 	UKR_Adam_Osmaev = {
@@ -365,10 +384,10 @@ characters={
 	    corps_commander = {
 			traits = { politically_connected militias_officer scavenger }
 			skill = 5
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 6
 			legacy_id = 0
 		}	
 		

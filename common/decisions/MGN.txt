@@ -44,6 +44,788 @@ MGN_soyuz_sionskih_socialnih_razrushiteley = {
 	}
 }
 
+MGN_mobilizatsiya = {
+
+    MGN_mob_572 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 572
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 572
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			572 = {
+				create_unit = {
+					division = "name = \"1-я Челябинская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Челябинская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_573 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 573
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 573
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			573 = {
+				create_unit = {
+					division = "name = \"1-я Уральская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Уральская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_653 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 653
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 653
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			653 = {
+				create_unit = {
+					division = "name = \"1-я Свердловская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Свердловская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_580 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 580
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 580
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			580 = {
+				create_unit = {
+					division = "name = \"1-я Югорская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Югорская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_579 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 579
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 579
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			579 = {
+				create_unit = {
+					division = "name = \"1-я Ямальская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Ямальская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_824 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 824
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 824
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			824 = {
+				create_unit = {
+					division = "name = \"1-я Уренгойская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Уренгойская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_577 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 577
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 577
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			577 = {
+				create_unit = {
+					division = "name = \"1-я Сургутская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Сургутская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_403 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 403
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 403
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			403 = {
+				create_unit = {
+					division = "name = \"1-я Тюменская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Тюменская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_571 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 571
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 571
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			571 = {
+				create_unit = {
+					division = "name = \"1-я Омская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Омская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_578 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 578
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 578
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			578 = {
+				create_unit = {
+					division = "name = \"1-я Томская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Томская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_570 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 570
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			570 = {
+				create_unit = {
+					division = "name = \"1-я Новосибирская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Новосибирская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_40 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 40
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 40
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			40 = {
+				create_unit = {
+					division = "name = \"1-я Алтайская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Алтайская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_654 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 654
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 654
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			654 = {
+				create_unit = {
+					division = "name = \"1-я Горноалтайская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Горноалтайская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_576 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 576
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 576
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			576 = {
+				create_unit = {
+					division = "name = \"1-я Енисейская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Енисейская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_569 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 569
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 569
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			569 = {
+				create_unit = {
+					division = "name = \"1-я Кузбасская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Кузбасская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_568 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 568
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 568
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			568 = {
+				create_unit = {
+					division = "name = \"1-я Красноярская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Красноярская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_329 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 568
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 329
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			329 = {
+				create_unit = {
+					division = "name = \"1-я Тувинская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Тувинская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_567 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 567
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 567
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			567 = {
+				create_unit = {
+					division = "name = \"1-я Североангарская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Североангарская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_575 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 575
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 575
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			575 = {
+				create_unit = {
+					division = "name = \"1-я Киренская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Киренская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_516 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 516
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 516
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			516 = {
+				create_unit = {
+					division = "name = \"1-я Таймырская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Таймырская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+	
+	MGN_mob_878 = {
+        icon = decision_eng_install_government
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 10
+		}
+		
+		cost = 50
+       available = {
+              controls_state = 878
+          }
+
+        visible = {
+			has_government = vmestolev
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 878
+			} 
+		}
+		days_remove = 30
+        remove_effect = {
+			878 = {
+				create_unit = {
+					division = "name = \"1-я Хатангская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+				create_unit = {
+					division = "name = \"2-я Хатангская дивизия \" division_template = \"Штрафники\" start_experience_factor = 0.25"  
+					owner = MGN
+				}
+	     	}
+		}	
+		fire_only_once = yes 
+	}
+
+
+}
+
 MGN_poisk_relikviy = {
 
     MGN_vanna_berii = {
