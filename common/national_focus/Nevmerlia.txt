@@ -995,8 +995,8 @@ focus_tree = {
 			focus = UKR_kult_lichnosti
 			focus = UKR_uvazhaemiy_partner
 		}
-		available = {
-			country_exists = GEO
+		bypass = {
+           GEO = { exists = no }
 		}
 		x = 36
 		y = 2
@@ -1012,9 +1012,9 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_uluchshit_otnoshenye_s_guziyey
 		}
-		available = {
-					country_exists = GEO
-				}
+		bypass = {
+           GEO = { exists = no }
+		}
 		x = 36
 		y = 3
             completion_reward = {
@@ -1027,6 +1027,14 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = UKR_sanitarniy_kordon
+		}
+		bypass = {
+		   NOT = {
+		  		OR = {
+			    	DON = { exists = yes }
+					has_war_with = DON
+		       	}
+			}	
 		}
 		x = 36
 		y = 4

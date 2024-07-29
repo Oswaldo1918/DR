@@ -122,10 +122,10 @@ characters={
     		slot = political_advisor
             idea_token = IRQ_Vasiliy_Vlasov			
 			allowed = {
-				original_tag = NOD
+				original_tag = IRQ
 				
 			}			
-			traits = { workhorse }
+			traits = { silent_workhorse }
 			ai_will_do = {
 				factor = 1
 			}
@@ -144,7 +144,7 @@ characters={
     		slot = political_advisor
             idea_token = IRQ_Slutskiy			
 			allowed = {
-				original_tag = NOD
+				original_tag = IRQ
 				
 			}			
 			traits = { backroom_sponsor_rezhima }
@@ -166,10 +166,10 @@ characters={
     		slot = political_advisor
             idea_token = IRQ_Slutskiy			
 			allowed = {
-				original_tag = NOD
+				original_tag = IRQ
 				
 			}			
-			traits = { workhorse }
+			traits = { conservative_grandee }
 			ai_will_do = {
 				factor = 1
 			}
@@ -188,7 +188,7 @@ characters={
 			slot = political_advisor
 			idea_token = IRQ_lugovoy
 			allowed = {
-				original_tag = DOT
+				original_tag = IRQ
 			}
 			available = {
 				has_intelligence_agency = yes
