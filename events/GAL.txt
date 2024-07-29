@@ -24,3 +24,80 @@ country_event = {
 	}
 }
 
+#Конец гражданки
+country_event = {
+	id = GAL.2
+	title = GAL.2.t
+	desc = GAL.2.d
+	picture = GFX_report_event_dkr_solzh_golova
+	
+	trigger = {
+	tag = GAL
+	POK = { exists = no }
+	MRD = { exists = no }
+	ZNS = { exists = no }
+	YSK = { exists = no }
+	OMS = { exists = no }
+	MGN = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+    fire_only_once = yes	
+	
+	option = {
+	name = GAL.2.a
+	remove_ideas = POK_idea_GV
+	set_country_flag = pokoyanskaya_civil_war_end_cf
+	set_global_flag = pokoyanskaya_civil_war_end_gf
+	complete_national_focus = GAL_nado_radovatsya
+			MRD = {
+				remove_state_core = 516
+				remove_state_core = 878
+			}
+			
+			every_state = {
+			limit = {
+				is_cored_by = MGN
+			}
+			MGN = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = YSK
+			}
+			YSK = {
+				remove_state_core = PREV
+			}
+		  }
+		  every_state = {
+			limit = {
+				is_cored_by = GAL
+			}
+			POK = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = OMS
+			}
+			OMS = {
+				remove_state_core = PREV
+			}
+		  } 
+		  every_state = {
+			limit = {
+				is_cored_by = ZNS
+			}
+			ZNS = {
+				remove_state_core = PREV
+			}
+		  } 
+	}
+}
+

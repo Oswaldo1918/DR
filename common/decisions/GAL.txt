@@ -1,3 +1,58 @@
+political_actions= {
+	GAL_wire_state = {
+		icon = decision_generic_electricity
+
+		allowed = {
+			original_tag = GAL
+		}
+
+		available = {
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = GAL_wired_state
+					}
+					has_state_flag = GAL_create_wire
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = GAL_issledovanie_noosfery
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = GAL_wired_state
+					}
+					has_state_flag = GAL_create_wire
+				}
+				is_controlled_by = GAL 
+			}
+		}
+		
+		target_root_trigger = {
+            has_completed_focus = GAL_issledovanie_noosfery
+        }
+        state_target = any_owned_state
+        targets = { 516 878 653 578 569 577 567 570 40 654 329 575 824 579 580 573 582 403 572 576 }
+		on_map_mode = map_only
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 10
+		days_remove = 20
+
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = GAL_wired_state
+				}
+				set_state_flag = GAL_create_wire
+			}
+		}
+	}
+}
 GAL_sssr = {
 
     GAL_sssr_baza = {
@@ -190,6 +245,5 @@ GAL_import_marakumbi = {
         	GAL_marakumba_torg_level_down
 		}
 
-    }
-	
+    }	
 }

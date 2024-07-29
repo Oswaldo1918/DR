@@ -2013,6 +2013,12 @@ focus_tree = {
 		}
 		x = 55
 		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GAL_tecnocratia
+				add_idea = GAL_tecnocratia_2
+			}
+		}
 
 	}
 	focus = {
@@ -2028,7 +2034,25 @@ focus_tree = {
 		}
 		x = 53
 		y = 9
+		completion_reward = {
+			set_politics = {
+				ruling_party = metacommy
+				elections_allowed = no
+			}
+			add_country_leader_role = {
+				Character = GAL_pusnoy 
+				Promote_leader = yes 
+				Country_leader = {
+					ideology = kybernetika_vernadsry
+					expire = “1965.1.1.1”
 
+				}
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.2
+			}
+		}
 	}
 	focus = {
 		id = GAL_otkaz_ot_radikalisma
