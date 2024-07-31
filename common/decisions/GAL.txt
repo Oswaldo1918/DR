@@ -18,6 +18,7 @@ political_actions= {
 		}
 		visible = {
 			has_completed_focus = GAL_issledovanie_noosfery
+			tag = GAL
 			FROM = {
 				NOT = {
 					has_dynamic_modifier = {
@@ -28,13 +29,20 @@ political_actions= {
 				is_controlled_by = GAL 
 			}
 		}
-		
-		target_root_trigger = {
-            has_completed_focus = GAL_issledovanie_noosfery
-        }
-        state_target = any_owned_state
-        targets = { 516 878 653 578 569 577 567 570 40 654 329 575 824 579 580 573 582 403 572 576 }
+		target_trigger = {
+			has_completed_focus = GAL_issledovanie_noosfery
+			FROM = {
+				is_core_of= ROOT
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = GAL_wired_state
+					}
+				}
+			}
+		}
 		on_map_mode = map_only
+		state_target = yes
+		target_array = controlled_states
 
 		ai_will_do = {
 			base = 100

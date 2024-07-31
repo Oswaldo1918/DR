@@ -273,21 +273,21 @@ ideas = {
 			GAL_tecnocratia_2 = {
 	
 			   modifier = {
-				research_speed_factor = 0.15
+				research_speed_factor = 0.2
 			   }
 		    }
 			GAL_military_nauka = {
 	
 			   modifier = {
 				army_org_factor = 0.1
-				army_attack_factor = 0.1
+				max_command_power = 30
 			   }
 		    }
 			GAL_military_nauka_2 = {
 	
 			   modifier = {
 				army_org_factor = 0.1
-				army_attack_factor = 0.1
+				max_command_power = 30
 				army_morale_factor = 0.1
 			   }
 		    }
@@ -295,18 +295,20 @@ ideas = {
 	
 			   modifier = {
 				army_org_factor = 0.1
-				army_attack_factor = 0.1
+				max_command_power = 30
 				army_morale_factor = 0.1
 				army_defence_factor = 0.1
+				max_dig_in = 10
 			   }
 		    }
 			GAL_military_nauka_proryv = {
 	
 			   modifier = {
 				army_org_factor = 0.1
-				army_attack_factor = 0.1
+				max_command_power = 30
 				army_morale_factor = 0.1
 				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
 			   }
 		    }
 			GAL_students_in_army = {
@@ -343,12 +345,25 @@ ideas = {
 				}
 			}
 			GAL_protiv_liberalisma = {
+				available = {
+					POK = { exists = yes }
+				}
 				targeted_modifier = {
 					tag = POK
 					attack_bonus_against = 0.1
 				}
 			}
-			
+			GAL_cowboyi_protivodeystvie = {
+				modifier = {
+				 stability_factor = -0.1
+				 war_support_factor = -0.1
+				}
+			}
+			GAL_infrakrasnoe_izluchenie = {
+				modifier = {
+				 monthly_population = 0.3
+				}
+			}			
 	   }
 	   
 	tank_manufacturer = { 
