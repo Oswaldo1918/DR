@@ -25,15 +25,17 @@ focus_tree = {
 		cost = 2,00
 		x = 31
 		y = 0
-			available = {
-					controls_state = 572
-				}
-			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.1
-					country_event = YSK.4
-				}
-
+	        available = {
+			controls_state = 653
+			POK = {
+			        exists = no
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		        country_event = YSK.4
+		}
 	}
 	focus = {
 		id = YSK_rus_irredentism
