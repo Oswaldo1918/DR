@@ -443,7 +443,7 @@ YSK_tnoidi = {
         cancel_trigger = {
             has_country_flag = YSK_Tsar_Nikolay
         }      
-		days_mission_timeout = 60	                         
+		days_mission_timeout = 60
 
 		remove_effect = {
 		}
@@ -703,7 +703,15 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		available = {
+					is_neighbor_of = SHM
+				}
 		remove_effect = {
+				create_wargoal = {
+				target = SHM
+				type = annex_everything
+            }
+			
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
@@ -915,7 +923,7 @@ YSK_tnoidi = {
 			397 = {
                 add_victory_points = {
 	            province = 108
-	            value = -9
+	            value = -10
                 }
        		}	
 			add_popularity = {
@@ -979,7 +987,7 @@ YSK_tnoidi = {
 			571 = {
                 add_victory_points = {
 	            province = 10696
-	            value = -2
+	            value = -5 
                 }
        		}	
 			add_popularity = {
