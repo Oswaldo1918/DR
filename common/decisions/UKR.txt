@@ -23,3 +23,40 @@ UKR_koleso_genotbi_balance_of_power_category = {
 		}
 	}
 }
+economy_decisions = {
+UKR_ugol_donbasa = {
+
+		icon = generic_construction
+
+		allowed = {
+			original_tag = UKR
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 227
+				state = 228
+			} 
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		days_remove = 20
+
+		available = {
+	    	OR = {
+		    	227 = { is_fully_controlled_by = UKR }
+				228 = { is_fully_controlled_by = UKR }
+			}	
+		}
+
+		visible = {
+			original_tag = UKR
+		}
+
+		complete_effect = {
+			remove_ideas = UKR_ukraine_ne_oboytis_bez_uglya_donbassa
+		}
+	}
+}

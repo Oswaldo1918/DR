@@ -467,12 +467,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_UKR_infantry_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/FIN_infantry_equipment_0.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/FIN_infantry_equipment_0.dds"
 	}
 	
 	SpriteType = {
@@ -657,12 +657,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_STR_motorised_infantry_medium"
-		texturefile = "gfx/interface/technologies/STR_uaz452.dds"
+		texturefile = "gfx/interface/technologies/STR_GAZ-53.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_STR_motorized_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/STR_uaz452.dds"
+		texturefile = "gfx/interface/technologies/STR_GAZ-53.dds"
 	}
 	
 	SpriteType = {
@@ -674,4 +674,24 @@ spriteTypes = {
 		name = "GFX_HRV_gw_artillery_medium"
 		texturefile = "gfx/interface/technologies/Kustarnaya_pushka.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_UKR_tech_trucks_medium"
+		texturefile = "gfx/interface/technologies/UKR_luaz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_UKR_motorized_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/UKR_luaz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_UKR_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/UKR_ukrop_hunya.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_UKR_mechanized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/UKR_ukrop_hunya.dds"
+	}
 }
