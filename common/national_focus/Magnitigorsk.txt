@@ -130,24 +130,23 @@ focus_tree = {
 		}
 		x = 12
 		y = 5
-		
-		available = {
-	    	NOT = {
-		    	OR = {
-		    		has_war_with = POK
-		     		has_war_with = OMS
-		    		has_war_with = ZNS
-		    		has_war_with = YSK
-		    		has_war_with = GAL
-		    		has_war_with = MRD
-		    	}	
-			}	
-		}
-				
+			available = {
+					NOT = {
+							OR = {
+									has_war_with = POK
+									has_war_with = OMS
+									has_war_with = ZNS
+									has_war_with = YSK
+									has_war_with = GAL
+									has_war_with = MRD
+								}
+						}
+				}
 			completion_reward = {
-				remove_ideas = MGN_voen_communism
-				add_ideas = MGN_neefect_com_ec
-			}
+					remove_ideas = MGN_voen_communism
+					add_ideas = MGN_neefect_com_ec
+				}
+
 	}
 	focus = {
 		id = MGN_zagubit_derevnu
@@ -244,19 +243,18 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
-		
-		available = {
-	    	NOT = {
-		    	OR = {
-		    		has_war_with = POK
-		     		has_war_with = OMS
-		    		has_war_with = ZNS
-		    		has_war_with = YSK
-		    		has_war_with = GAL
-		    		has_war_with = MRD
-		    	}	
-			}	
-		}
+			available = {
+					NOT = {
+							OR = {
+									has_war_with = POK
+									has_war_with = OMS
+									has_war_with = ZNS
+									has_war_with = YSK
+									has_war_with = GAL
+									has_war_with = MRD
+								}
+						}
+				}
 			completion_reward = {
 					add_political_power = 150
 				}
@@ -366,20 +364,18 @@ focus_tree = {
 		}
 		x = 23
 		y = 5
-		
-		available = {
-	    	NOT = {
-		    	OR = {
-		    		has_war_with = POK
-		     		has_war_with = OMS
-		    		has_war_with = ZNS
-		    		has_war_with = YSK
-		    		has_war_with = GAL
-		    		has_war_with = MRD
-		    	}	
-			}	
-		}
-		
+			available = {
+					NOT = {
+							OR = {
+									has_war_with = POK
+									has_war_with = OMS
+									has_war_with = ZNS
+									has_war_with = YSK
+									has_war_with = GAL
+									has_war_with = MRD
+								}
+						}
+				}
 			completion_reward = {
 					load_oob = MGN_shtraf_1936
 				}
@@ -594,6 +590,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = MGN_walter_mod2
+		icon = GFX_goal_walter_mod2
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_perevooruzheniye
+		}
+		mutually_exclusive = {
+			focus = MGN_mauseri
+		}
+		x = 26
+		y = 9
+			completion_reward = {
+					add_ideas = MGN_w_mod2
+				}
+
+	}
+	focus = {
 		id = MGN_rasprostranenie_evreyskoy_vlasti
 		icon = GFX_goal_jew_vlast
 		cost = 5,00
@@ -602,20 +615,18 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-		
-		available = {
-	    	NOT = {
-		    	OR = {
-		    		has_war_with = POK
-		     		has_war_with = OMS
-		    		has_war_with = ZNS
-		    		has_war_with = YSK
-		    		has_war_with = GAL
-		    		has_war_with = MRD
-		    	}	
-			}	
-		}
-		
+			available = {
+					NOT = {
+							OR = {
+									has_war_with = POK
+									has_war_with = OMS
+									has_war_with = ZNS
+									has_war_with = YSK
+									has_war_with = GAL
+									has_war_with = MRD
+								}
+						}
+				}
 			completion_reward = {
 					custom_effect_tooltip = MGN_new_resheniya_effect_tt
 				}
@@ -662,7 +673,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MGN_obratit_kazahov_v_rabov
 		}
-		x = 26
+		x = 27
 		y = 8
 			completion_reward = {
 					create_wargoal = {
@@ -681,56 +692,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MGN_ural
-		icon = GFX_goal_bsh_prm_skt
-		cost = 5,00
-		prerequisite = {
-			focus = MGN_obratit_kazahov_v_rabov
-		}
-		x = 28
-		y = 8
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = BSH
-						}
-					create_wargoal = {
-							type = annex_everything
-							target = PRM
-						}
-					create_wargoal = {
-							type = annex_everything
-							target = SKT
-						}
-				}
-
-	}
-	focus = {
-		id = MGN_mordor
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		id = MGN_pohod_na_kolimu
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 5,00
 		prerequisite = {
 			focus = MGN_rasprostranenie_evreyskoy_vlasti
 		}
 		x = 30
 		y = 6
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = MRD
-						}
-				}
-
-	}
-	focus = {
-		id = MGN_pohod_na_kolimu
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 5,00
-		prerequisite = {
-			focus = MGN_mordor
-		}
-		x = 30
-		y = 7
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -747,7 +716,7 @@ focus_tree = {
 			focus = MGN_pohod_na_kolimu
 		}
 		x = 30
-		y = 8
+		y = 7
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -777,14 +746,39 @@ focus_tree = {
 
 	}
 	focus = {
+		id = MGN_ural
+		icon = GFX_goal_bsh_prm_skt
+		cost = 5,00
+		prerequisite = {
+			focus = MGN_obratit_kazahov_v_rabov
+		}
+		prerequisite = {
+			focus = MGN_DV
+		}
+		x = 29
+		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = BSH
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = PRM
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = SKT
+						}
+				}
+
+	}
+	focus = {
 		id = MGN_laz
 		icon = GFX_focus_generic_attack_lazaret
 		cost = 5,00
 		prerequisite = {
 			focus = MGN_ural
-		}
-		prerequisite = {
-			focus = MGN_DV
 		}
 		x = 29
 		y = 9
@@ -1141,23 +1135,6 @@ focus_tree = {
 		y = 10
 			completion_reward = {
 					custom_effect_tooltip = MGN_new_resheniya_effect_tt
-				}
-
-	}
-	focus = {
-		id = MGN_walter_mod2
-		icon = GFX_goal_walter_mod2
-		cost = 5,00
-		prerequisite = {
-			focus = MGN_perevooruzheniye
-		}
-		mutually_exclusive = {
-			focus = MGN_mauseri
-		}
-		x = 26
-		y = 9
-			completion_reward = {
-					add_ideas = MGN_w_mod2
 				}
 
 	}

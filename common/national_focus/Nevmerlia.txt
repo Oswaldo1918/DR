@@ -759,6 +759,11 @@ focus_tree = {
 		y = 1
 			completion_reward = {
 					add_country_leader_trait = uvazhaemiy_partner
+					remove_trait = {
+                        character = UKR_poroshenko
+                        ideology = fascism_ideology
+                        trait = poroshenko_title
+                    }
 					set_country_leader_portrait = {
 							ideology = fascism_ideology
 							portrait = "gfx/leaders/UKR/Poroshenko_gitler.dds"
@@ -932,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pizdit_gaz
 		icon = GFX_UKR_pizdit_gaz
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}
@@ -953,7 +958,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pizdit_trubi
 		icon = GFX_UKR_pizdit_trubi
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}

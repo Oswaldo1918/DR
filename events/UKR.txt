@@ -1369,6 +1369,12 @@ country_event = {
 			uses = 2
 			category = armor
 		}
+		mio:UKR_ZimM = { add_mio_size = 1 }
+		mio:UKR_ZimM = { add_mio_funds_gain_factor = 0.10 }
+		mio:UKR_HBZ = { add_mio_size = 1 }
+		mio:UKR_HBZ = { add_mio_funds_gain_factor = 0.10 }
+		mio:UKR_HKBM = { add_mio_size = 1 }
+		mio:UKR_HKBM = { add_mio_funds_gain_factor = 0.10 }
 		 create_equipment_variant = {
 	         	name = "Пушiчнiй Шушпанцiр"
         		type = light_tank_chassis_0
@@ -1459,7 +1465,6 @@ country_event = {
 	
 	option = {
 	name = UKR.52.a
-	ai_chance = { factor = 100 }
 	UKR = {add_to_faction = GEO}
 	}
 	option = {

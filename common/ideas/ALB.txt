@@ -17,6 +17,8 @@ ideas = {
 			    modifier = {
 				production_speed_bunker_factor = 0.15
 				consumer_goods_factor = 0.1
+				land_bunker_effectiveness_factor = 0.2
+				coastal_bunker_effectiveness_factor = 0.2
 			    }
 		    }
 			ALB_chess_segregation = {
@@ -41,8 +43,8 @@ ideas = {
                 defensive_war_stability_factor = 0.3
 				offensive_war_stability_factor = -0.3
 				army_leader_start_defense_level = 1 
-				army_core_defence_factor = 0.05	
-                army_core_attack_factor = -0.5				
+				army_core_defence_factor = 0.2
+                army_core_attack_factor = 0.1
                 army_defence_factor = 0.05
 				max_dig_in_factor = 0.05
 			    }
@@ -228,6 +230,8 @@ ideas = {
 		
 			modifier = {
 			   production_speed_bunker_factor = 0.15
+			   land_bunker_effectiveness_factor = 0.2
+			   coastal_bunker_effectiveness_factor = 0.2
 			}
 
 			ai_will_do = {

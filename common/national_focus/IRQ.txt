@@ -534,15 +534,24 @@ focus_tree = {
 			
 			291 = {
 				create_unit = {
-					division = "name = \"1-я танковая дивизия «Хаммурапи» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					division = "name = \"1-я танковая дивизия «Хаммурапи» \" 
+					division_template = \"Республиканская гвардия\" 
+					start_experience_factor = 0.3"  
+					force_equipment_variants = { light_tank_chassis_1 = { owner = "IRQ" creator = "LRG" version_name = "Panzer I Ausf. A"} }
 					owner = IRQ
 				}
 				create_unit = {
-					division = "name = \"2-я танковая дивизия «Медина» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					division = "name = \"2-я танковая дивизия «Медина» \" 
+					division_template = \"Республиканская гвардия\" 
+					start_experience_factor = 0.3"  
+					force_equipment_variants = { light_tank_chassis_1 = { owner = "IRQ" creator = "LRG" version_name = "Panzer I Ausf. A"} }
 					owner = IRQ
 				}
 				create_unit = {
-					division = "name = \"3-я механизированная дивизия «Тавалкана» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
+					division = "name = \"3-я механизированная дивизия «Тавалкана» \" 
+					division_template = \"Республиканская гвардия\" 
+					start_experience_factor = 0.3"  
+					force_equipment_variants = { light_tank_chassis_1 = { owner = "IRQ" creator = "LRG" version_name = "Panzer I Ausf. A"} }
 					owner = IRQ
 				}
 	     	}

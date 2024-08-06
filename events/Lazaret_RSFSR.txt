@@ -282,7 +282,7 @@ country_event = { #Развал пакта
 		CHT = {leave_faction = Chumnoy_pakt}
 		hidden_effect = {
 		OSV = {
-		        
+		    inherit_technology = LAZ    
 				LAZ = {
 			every_state = {
 			limit = {
@@ -337,27 +337,27 @@ country_event = { #Развал пакта
 					owner = OSV
 				}
 		        create_unit = {
-					division = "name = \" 6-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"6-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 				create_unit = {
-					division = "name = \" 7-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"7-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 				create_unit = {
-					division = "name = \" 8-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"8-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 		        create_unit = {
-					division = "name = \" 9-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"9-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
                 create_unit = {
-					division = "name = \" 10-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"10-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 				create_unit = {
-					division = "name = \" 11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
+					division = "name = \"11-я дивизия \" division_template = \"Пехтура\" start_experience_factor = -0.3"  
 					owner = OSV
 				}
 			}
@@ -433,7 +433,7 @@ country_event = { #Развал пакта
 		}
 		hidden_effect = {
 		OSV = {
-		       
+		    inherit_technology = LAZ   
 				LAZ = {
 			every_state = {
 			limit = {
