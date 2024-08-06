@@ -43,7 +43,6 @@ UKR_ugol_donbasa = {
 		ai_will_do = {
         factor = 100
 		}
-		fire_only_once = yes
 
 		days_remove = 20
 
@@ -56,6 +55,7 @@ UKR_ugol_donbasa = {
 
 		visible = {
 			original_tag = UKR
+			has_idea = UKR_ukraine_ne_oboytis_bez_uglya_donbassa
 		}
 
 		remove_effect = {
