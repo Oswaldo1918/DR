@@ -477,12 +477,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_UKR_infantry_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/UKR_svb.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_UKR_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/UKR_svb.dds"
 	}
 	
 	SpriteType = {
@@ -693,5 +693,25 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_UKR_mechanized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/UKR_ukrop_hunya.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LRG_tech_trucks_medium"
+		texturefile = "gfx/interface/technologies/LRG_kubelwagen.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LRG_motorized_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/LRG_kubelwagen.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LRG_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/LRG_opel_blitz.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LRG_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/LRG_opel_blitz.dds"
 	}
 }
