@@ -19,7 +19,6 @@ focus_tree = {
 				}
 
 	}
-# ЛУКИН #
 	focus = {
 		id = GAL_cowboyi
 		icon = GFX_goal_lukin_cowboy
@@ -1231,442 +1230,9 @@ focus_tree = {
 				}
 
 	}
-# ПУШНОЙ #
-	focus = {
-		id = GAL_ey_uhnem
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nado_radovatsya
-		}
-		x = 36
-		y = 8
-
-	}
-	focus = {
-		id = GAL_nado_radovatsya
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_krisis_manager
-		}
-		available = {
-			always = no
-		}
-		x = 45
-		y = 7
-		completion_reward = {
-			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
-			set_country_flag = DR_start_reunite_Russia_cf
-		}
-
-	}
-	focus = {
-		id = GAL_rashirit_NII
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_ey_uhnem
-		}
-		x = 33
-		y = 9
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = GAL_ot_vinta
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rashirit_NII
-		}
-		x = 30
-		y = 10
-		completion_reward = {
-		air_experience = 50
-		mio:POK_Irkut = { add_mio_size = 2 }
-		mio:POK_Irkut = { add_mio_funds_gain_factor = 0.10 }
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = light_air
-			}
-		}
-	}
-	focus = {
-		id = GAL_narastit_aviareysy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_ot_vinta
-		}
-		x = 29
-		y = 11
-			completion_reward = {
-					653 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					572 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					573 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					403 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					571 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					570 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					40 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					569 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-					568 = {
-							add_building_construction = {
-									type = air_base
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = GAL_bombers
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_ot_vinta
-		}
-		x = 31
-		y = 11
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = heavy_air
-			}
-		}
-	}
-	focus = {
-		id = GAL_tankograd
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rashirit_NII
-		}
-		x = 32
-		y = 10
-		completion_reward = {
-		    572 = {
-				add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes 
-				}
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = armor
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_infantry
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rashirit_NII
-		}
-		x = 33
-		y = 11
-		completion_reward = {
-			mio:POK_BMTBP = { add_mio_size = 1 }
-			mio:POK_BMTBP = { add_mio_funds_gain_factor = 0.10 }
-			add_tech_bonus = {
-			bonus = 1
-			uses = 1
-			category = infantry_weapons
-			}
-			add_tech_bonus = {
-			bonus = 1
-			uses = 1
-			category = support_tech
-			}
-		}
-	}
-	focus = {
-		id = GAL_big_gun
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rashirit_NII
-		}
-		x = 34
-		y = 10
-		completion_reward = {
-			add_tech_bonus = {
-			bonus = 1
-			uses = 1
-			category = artillery
-			}
-			set_technology = { railway_gun = 1 }
-			set_technology = { armored_train = 1 }
-			create_railway_gun = { equipment = railway_gun_equipment_1 }
-			mio:POK_zavod9 = { add_mio_size = 1 }
-			mio:POK_zavod9 = { add_mio_funds_gain_factor = 0.10 }
-		}
-
-	}
-	focus = {
-		id = GAL_stroyki_za_dolgi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_ey_uhnem
-		}
-		mutually_exclusive = {
-			focus = GAL_stroyki_za_premiyu
-		}
-		x = 35
-		y = 9
-		completion_reward = {
-			add_ideas = GAL_stroyki_za_dolgi
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = construction_tech
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_stroyki_za_premiyu
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_ey_uhnem
-		}
-		mutually_exclusive = {
-			focus = GAL_stroyki_za_dolgi
-		}
-		x = 37
-		y = 9
-		completion_reward = {
-			add_ideas = GAL_stroyki_za_premiyu
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = construction_tech
-			}
-		}
-
-
-	}
-	focus = {
-		id = GAL_rational_economy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_stroyki_za_dolgi
-			focus = GAL_stroyki_za_premiyu
-		}
-		x = 36
-		y = 10
-		completion_reward = {
-			add_ideas = GAL_rational_economy
-		}
-
-	}
-	focus = {
-		id = GAL_grazdanskiy_sektor
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rational_economy
-		}
-		x = 35
-		y = 11
-		completion_reward = {
-			random_owned_controlled_state = {
-            add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes 
-				}		
-		    }
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes 
-				}	
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes 
-				}		
-		    }
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes 
-				}
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_vpk
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_rational_economy
-		}
-		x = 37
-		y = 11
-		completion_reward = {
-			random_owned_controlled_state = {
-            add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-				}		
-		    }
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-				}	
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-				}		
-		    }
-			random_owned_controlled_state = {
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-				}
-			}
-		}
-	}
-	focus = {
-		id = GAL_okonch_vosstanovlenie_strany
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_grazdanskiy_sektor
-		}
-		prerequisite = {
-			focus = GAL_vpk
-		}
-		x = 36
-		y = 12
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = GAL_rational_economy
-				add_idea = GAL_rational_economy_2
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_rashirit_TransSib
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_ey_uhnem
-		}
-		x = 39
-		y = 9
-		completion_reward = {
-			build_railway = { #Трансиб Покаянская часть
-				path = {
-					1821 307 1543 10189 4824 7846 7774 3472 10600 12652 4700 10696 12679 1733 1860 7825 7274 4866 7757 12631 7886 7815 4724 12691 12621 1876 1813 10549
-				}
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_zapolyar_ZhD
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_rashirit_TransSib
-		}
-		x = 39
-		y = 10
-		completion_reward = {
-
-		}
-
-	}
-	focus = {
-		id = GAL_bogatstvo_severa
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_zapolyar_ZhD
-		}
-		x = 39
-		y = 11
-
-	}
 	focus = {
 		id = GAL_mobilizaciya_nauchnih_sotrudnikov
-		icon = GFX_focus_bg_red_wreath_sold
+		icon = GFX_No_way
 		cost = 3,00
 		prerequisite = {
 			focus = GAL_koalicionnoye_pravitelstvo
@@ -1676,735 +1242,137 @@ focus_tree = {
 		}
 		x = 45
 		y = 1
-	    completion_reward = {
-			add_field_marshal_role = {
-				character = GAL_pusnoy
-				traits = { brilliant_strategist inspirational_leader }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 2
-				legacy_id = -1
-			}
-			add_corps_commander_role = {
-				character = GAL_sndk
-				traits = {
-                }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 3
-				logistics_skill = 1
-				legacy_id = -1
-			}
-			add_field_marshal_role = {
-				character = GAL_Boyarshinov
-				traits = {
-                }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 4
-				legacy_id = -1
-			}		
-			add_corps_commander_role = {
-				character = GAL_Deb
-				traits = { harsh_leader infantry_leader}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				legacy_id = -1
-			}
-			add_corps_commander_role = {
-				character = GAL_Savvateev
-				traits = { organizer }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 5
-				logistics_skill = 1
-				legacy_id = -1
-			}
-			add_corps_commander_role = {
-				character = GAL_Sokolov
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 1
-				legacy_id = -1
-			}
-			add_corps_commander_role = {
-				character = GAL_toples
-				traits = { media_personality }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
-			}
-			add_corps_commander_role = {
-				character = GAL_Panchin
-				traits = {
-                }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
-			}
-			division_template = {
-					name = "Университетская дивизия"
-					division_names_group = POK_2PV_01
-					template_counter = 05
-
-					regiments = {
-						motorized = { x = 0 y = 0 }
-						motorized = { x = 0 y = 1 }
-						motorized = { x = 0 y = 2 }
-						motorized = { x = 1 y = 0 }
-						motorized = { x = 1 y = 1 }
-						motorized = { x = 1 y = 2 }
-					}
-			}
-			capital_scope = {
-				create_unit = { 
-					division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = ROOT
-				}
-			}
-		}     		
-
-	}
-	focus = {
-		id = GAL_tehnat_pravitelstvo
-		icon = GFX_goal_unknown
-		cost = 3,00
-		prerequisite = {
-			focus = GAL_mobilizaciya_nauchnih_sotrudnikov
-		}
-		x = 45
-		y = 2
-		completion_reward = {
-			add_ideas = GAL_tecnocratia
-			add_ideas = GAL_cowboyi_protivodeystvie
-		}
-
-	}
-	focus = {
-		id = GAL_krisis_manager
-		icon = GFX_goal_unknown
-		cost = 3,00
-		prerequisite = {
-			focus = GAL_tehnat_pravitelstvo
-		}
-		x = 45
-		y = 3
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
-		    570 = {
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-				}
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_peregovor_komision
-		icon = GFX_goal_unknown
-		cost = 1,00
-		prerequisite = {
-			focus = GAL_krisis_manager
-		}
-		x = 43
-		y = 4
 			completion_reward = {
-					add_political_power = 50
-			}
-
-	}
-	focus = {
-		id = GAL_delo_Lukina
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_peregovor_komision
-		}
-		x = 42
-		y = 5
-			completion_reward = {
-					retire_character = GAL_lukin
-					retire_character = GAL_andrey_kupcov
-					add_manpower = -5000
-					remove_ideas = GAL_cowboyi_protivodeystvie
-				}
-
-	}
-	focus = {
-		id = GAL_Panki_Hoy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_peregovor_komision
-		}
-		x = 44
-		y = 5
-			available = {
-					OMS = {
-							exists = no
+					add_field_marshal_role = {
+							character = GAL_pusnoy
+							traits = { brilliant_strategist  inspirational_leader }
+							skill = 4
+							attack_skill = 3
+							defense_skill = 3
+							planning_skill = 3
+							logistics_skill = 2
+							legacy_id = -1
 						}
-					controls_state = 571
-				}
-		completion_reward = {
-			add_manpower = 30000
-			add_corps_commander_role = {
-				character = GAL_Drobyshevskiy
-				traits = { ranger }
-				skill = 3
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				legacy_id = -1
-			}
-			
-		}
-	}
-	focus = {
-		id = GAL_experimenty
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nado_radovatsya
-		}
-		x = 45
-		y = 8
+					add_corps_commander_role = {
+							character = GAL_sndk
+							traits = {
 
-	}
-	focus = {
-		id = GAL_nayka_pobezhdat
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_krisis_manager
-		}
-		x = 48
-		y = 4
-			completion_reward = {
-					add_ideas = GAL_military_nauka
-					army_experience = 50
-				}
+}
+							skill = 2
+							attack_skill = 2
+							defense_skill = 1
+							planning_skill = 3
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_field_marshal_role = {
+							character = GAL_Boyarshinov
+							traits = {
 
-	}
-	focus = {
-		id = GAL_voen_praktika
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nayka_pobezhdat
-		}
-		x = 46
-		y = 5
-		completion_reward = {
-			add_ideas = GAL_students_in_army
-			army_experience = 10
-			division_template = {
-					name = "Студенческая дивизия"
-					division_names_group = POK_2PV_01
-					template_counter = 05
+}
+							skill = 2
+							attack_skill = 1
+							defense_skill = 2
+							planning_skill = 3
+							logistics_skill = 4
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = GAL_Deb
+							traits = { harsh_leader  infantry_leader }
+							skill = 3
+							attack_skill = 3
+							defense_skill = 2
+							planning_skill = 3
+							logistics_skill = 2
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = GAL_Savvateev
+							traits = { organizer }
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 5
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = GAL_Sokolov
+							traits = {
 
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-					}
-			}
-			capital_scope = {
-				create_unit = { 
-					division = "name = \"Студенческая дивизия\" division_template = \"Студенческая дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"Студенческая дивизия\" division_template = \"Студенческая дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = ROOT
-				}
-			}
-		}
-	}
-	focus = {
-		id = GAL_sinarhy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		mutually_exclusive = {
-			focus = GAL_inkvisitor
-		}
-		x = 46
-		y = 9
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 2
+							planning_skill = 3
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = GAL_toples
+							traits = { media_personality }
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					add_corps_commander_role = {
+							character = GAL_Panchin
+							traits = {
 
-	}
-	focus = {
-		id = GAL_tsel_vyzhit
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nayka_pobezhdat
-		}
-		x = 48
-		y = 5
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GAL_military_nauka
-							add_idea = GAL_military_nauka_2
+}
+							skill = 1
+							attack_skill = 1
+							defense_skill = 1
+							planning_skill = 1
+							logistics_skill = 1
+							legacy_id = -1
+						}
+					division_template = {
+							name = "Университетская дивизия"
+							division_names_group = POK_2PV_01
+							template_counter = 05
+							regiments = {
+									motorized = {
+											x = 0
+											y = 0
+										}
+									motorized = {
+											x = 0
+											y = 1
+										}
+									motorized = {
+											x = 0
+											y = 2
+										}
+									motorized = {
+											x = 1
+											y = 0
+										}
+									motorized = {
+											x = 1
+											y = 1
+										}
+									motorized = {
+											x = 1
+											y = 2
+										}
+								}
+						}
+					capital_scope = {
+							create_unit = {
+									division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+									owner = ROOT
+								}
+							create_unit = {
+									division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+									owner = ROOT
+								}
 						}
 				}
-
-	}
-	focus = {
-		id = GAL_zadacha_oborona
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_tsel_vyzhit
-		}
-		mutually_exclusive = {
-			focus = GAL_zadacha_proryv
-		}
-		x = 47
-		y = 6
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GAL_military_nauka_2
-							add_idea = GAL_military_nauka_oborona
-						}
-				}
-
-	}
-	focus = {
-		id = GAL_razgrom
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 47
-		y = 10
-
-	}
-	focus = {
-		id = GAL_nuclear
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 48
-		y = 9
-
-	}
-	focus = {
-		id = GAL_zadacha_proryv
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_tsel_vyzhit
-		}
-		mutually_exclusive = {
-			focus = GAL_zadacha_oborona
-		}
-		x = 49
-		y = 6
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GAL_military_nauka_2
-							add_idea = GAL_military_nauka_proryv
-						}
-				}
-
-	}
-	focus = {
-		id = GAL_voenspetsi
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nayka_pobezhdat
-		}
-		x = 50
-		y = 5
-			completion_reward = {
-					add_doctrine_cost_reduction = {
-							name = land_doc_bonus
-							cost_reduction = 0.5
-							uses = 2
-							category = land_doctrine
-						}
-					custom_effect_tooltip = available_theorist
-					show_ideas_tooltip = GAL_military_council
-				}
-
-	}
-	focus = {
-		id = GAL_zadacha_osvobod_nauki
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_nado_radovatsya
-		}
-		x = 55
-		y = 8
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = GAL_tecnocratia
-				add_idea = GAL_tecnocratia_2
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_pochemy_socialism
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_zadacha_osvobod_nauki
-		}
-		mutually_exclusive = {
-			focus = GAL_otkaz_ot_radikalisma
-			focus = GAL_pisma_Saveleva
-		}
-		x = 53
-		y = 9
-		completion_reward = {
-			set_politics = {
-				ruling_party = metacommy
-				elections_allowed = no
-			}
-			add_country_leader_role = {
-				Character = GAL_pusnoy 
-				Promote_leader = yes 
-				Country_leader = {
-					ideology = kybernetika_vernadsry
-					expire = “1965.1.1.1”
-
-				}
-			}
-			add_popularity = {
-				ideology = metacommy
-				popularity = 0.1
-			}
-		}
-	}
-	focus = {
-		id = GAL_otkaz_ot_radikalisma
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_zadacha_osvobod_nauki
-		}
-		mutually_exclusive = {
-			focus = GAL_pochemy_socialism
-			focus = GAL_pisma_Saveleva
-		}
-		x = 55
-		y = 9
-
-	}
-	focus = {
-		id = GAL_pisma_Saveleva
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_zadacha_osvobod_nauki
-		}
-		mutually_exclusive = {
-			focus = GAL_otkaz_ot_radikalisma
-			focus = GAL_pochemy_socialism
-		}
-		x = 57
-		y = 9
-
-	}
-	focus = {
-		id = GAL_videnie_Pushnogo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_pochemy_socialism
-			focus = GAL_otkaz_ot_radikalisma
-			focus = GAL_pisma_Saveleva
-		}
-		x = 55
-		y = 10
-
-	}
-	focus = {
-		id = GAL_issledovanie_noosfery
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		x = 51
-		y = 12
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = electronics
-			}
-			custom_effect_tooltip = GAL_wire_decisions_tt
-		}
-
-	}
-	focus = {
-		id = GAL_krasniy_svet
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_issledovanie_noosfery
-		}
-		x = 50
-		y = 13
-		completion_reward = {
-			add_ideas = GAL_infrakrasnoe_izluchenie
-		}
-	}
-	focus = {
-		id = GAL_i_povolok_brevno
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_issledovanie_noosfery
-		}
-		x = 52
-		y = 13
-
-	}
-	focus = {
-		id = GAL_popytka_pochinit_mir
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		mutually_exclusive = {
-			focus = GAL_ne_trogat_to_chto_rabotaet
-		}
-		x = 54
-		y = 11
-
-	}
-	focus = {
-		id = GAL_rok_kotserty
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		x = 55
-		y = 12
-
-	}
-	focus = {
-		id = GAL_osoznanie
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_rok_kotserty
-		}
-		x = 55
-		y = 14
-
-	}
-	focus = {
-		id = GAL_ne_trogat_to_chto_rabotaet
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		mutually_exclusive = {
-			focus = GAL_popytka_pochinit_mir
-		}
-		x = 56
-		y = 11
-
-	}
-	focus = {
-		id = GAL_nauka_i_iskusstvo
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_rok_kotserty
-		}
-		x = 56
-		y = 13
-
-	}
-	focus = {
-		id = GAL_genetika_nauka
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		x = 59
-		y = 12
-
-	}
-	focus = {
-		id = GAL_konstruirovanie_kast
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_genetika_nauka
-		}
-		x = 58
-		y = 13
-
-	}
-	focus = {
-		id = GAL_soldat_ucheniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_pisma_Saveleva
-		}
-		mutually_exclusive = {
-			focus = GAL_oficer_ucheniy
-		}
-		x = 59
-		y = 10
-
-	}
-	focus = {
-		id = GAL_ozhivit_akadem_goroda
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_genetika_nauka
-		}
-		x = 59
-		y = 14
-
-	}
-	focus = {
-		id = GAL_ierarhiya_tehnokratii
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_genetika_nauka
-		}
-		x = 60
-		y = 13
-
-	}
-	focus = {
-		id = GAL_zvuk_oruzhie
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_rok_kotserty
-		}
-		x = 54
-		y = 13
-
-	}
-	focus = {
-		id = GAL_oficer_ucheniy
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_pisma_Saveleva
-		}
-		mutually_exclusive = {
-			focus = GAL_soldat_ucheniy
-		}
-		x = 61
-		y = 10
-
-	}
-	focus = {
-		id = GAL_liberalism_golovnogo_mozga
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_peregovor_komision
-		}
-		x = 43
-		y = 6
-		completion_reward = {
-			add_timed_idea = {
-				idea = GAL_protiv_liberalisma
-				days = 100
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.1
-			}
-		}
-
-	}
-	focus = {
-		id = GAL_vse_idet_po_planu
-		icon = GFX_goal_unknown
-		cost = 2,00
-		prerequisite = {
-			focus = GAL_issledovanie_noosfery
-		}
-		x = 51
-		y = 14
-
-	}
-	focus = {
-		id = GAL_inkvisitor
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		mutually_exclusive = {
-			focus = GAL_sinarhy
-		}
-		x = 44
-		y = 9
-
-	}
-	focus = {
-		id = GAL_kids
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 42
-		y = 9
-
-	}
-	focus = {
-		id = GAL_antropogenez
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 43
-		y = 10
 
 	}
 }
