@@ -1,0 +1,12 @@
+sub_units = {
+
+	cosmolet = {
+		sprite = heavy_plane
+		priority = 3
+		active = yes
+		type = category_strat_bomber 
+		need = { cosmolet_equipment_arch = 1 }
+		land_air_wing_size = 5
+	}
+	
+}

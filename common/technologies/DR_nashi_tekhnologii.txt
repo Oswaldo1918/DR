@@ -66,14 +66,27 @@ technologies = {
 			always = no
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
 	}
+	
+	cosmolet = {
+
+		enable_equipments = {
+			cosmolet_equipment	
+		}
+	
+		research_cost = 2
+		start_year = 3
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+	}
+	
+	
 	
 	chemical_attack_tech = {
 		enable_tactic = tactic_chemical_attack

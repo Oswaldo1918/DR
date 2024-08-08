@@ -1,28 +1,2 @@
 add_namespace = IRQ
 
-	
-#
-country_event = {
-	id = IRQ.1
-	title = IRQ.1.t
-	desc = IRQ.1.d
-	picture = GFX_report_event_japanese_soldiers_02
-	
-	fire_only_once = yes
-	
-	trigger = {
-	    tag = IRQ
-        date = 3.3.20
-    }
-	
-	option = {
-		name = IRQ.1.a 
-		news_event = dk_news.42
-		IRQ = {			
-			declare_war_on = {
-				target = KUW
-				type = annex_everything
-			}
-		}
-	}
-}

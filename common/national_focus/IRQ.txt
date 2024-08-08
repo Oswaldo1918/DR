@@ -28,60 +28,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_ldpr
-		icon = GFX_goal_IRQ_zhirik
-		cost = 5
-		mutually_exclusive = {
-			focus = IRQ_baas
-		}
-		x = 14
+		id = IRQ_attack_bush
+		icon = GFX_goal_IRQ_bush
+		cost = 5,00
+		x = 19
 		y = 0
-			available = {
-					OR = {
-							has_government = neutrality
-						}
-					date > 3.3.20
-				}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 5
-				}
-			completion_reward = {
-					add_timed_idea = {
-							idea = anet
-							days = 1095
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_baas
-		icon = GFX_goal_IRQ_saddam
-		cost = 5
-		mutually_exclusive = {
-			focus = IRQ_ldpr
+		
+		completion_reward = {
+			declare_war_on = {
+				target = KUW
+				type = annex_everything
+			}
 		}
-		x = 24
-		y = 0
-		available = {
-					OR = {
-							has_government = neutrality
-						}
-					date > 3.3.20
-				}
-			completion_reward = {
-					set_politics = {
-							ruling_party = fascism
-							last_election = "1933.3.5"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					set_popularities = {
-							neutrality = 30
-							fascism = 70
-						}
-				}
 
 	}
 	focus = {
@@ -103,7 +61,7 @@ focus_tree = {
 					NOT = {
 							has_completed_focus = IRQ_baas
 						}
-				}	
+				}
 			completion_reward = {
 					add_political_power = 150
 					add_stability = -0.15
@@ -342,14 +300,39 @@ focus_tree = {
 
 	}
 	focus = {
+		id = IRQ_ldpr
+		icon = GFX_goal_IRQ_zhirik
+		cost = 5,00
+		prerequisite = {
+			focus = IRQ_attack_bush
+		}
+		mutually_exclusive = {
+			focus = IRQ_baas
+		}
+		x = 14
+		y = 1
+			search_filters = { FOCUS_FILTER_POLITICAL }
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = anet
+							days = 1095
+						}
+				}
+
+	}
+	focus = {
 		id = IRQ_bani
 		icon = GFX_goal_bani_ldpr
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_ldpr
 		}
 		x = 12
-		y = 1
+		y = 2
 			completion_reward = {
 					add_country_leader_trait = boss_bani
 				}
@@ -358,12 +341,12 @@ focus_tree = {
 	focus = {
 		id = IRQ_berem_vseh
 		icon = GFX_goal_generic_improve_relations
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_bani
 		}
 		x = 12
-		y = 2
+		y = 3
 			completion_reward = {
 					add_ideas = IRQ_berem_vseh
 				}
@@ -372,14 +355,13 @@ focus_tree = {
 	focus = {
 		id = IRQ_voennoe_vmesto_yazikovogo_obucheniye
 		icon = GFX_goal_IRQ_ak_english
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_ldpr
 		}
 		x = 14
-		y = 1
-		
-		completion_reward = {
+		y = 2
+			completion_reward = {
 					add_ideas = IRQ_voennoe_vmesto_yazikovogo_obucheniye
 				}
 
@@ -387,14 +369,13 @@ focus_tree = {
 	focus = {
 		id = IRQ_prorok
 		icon = GFX_goal_IRQ_prorok
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_voennoe_vmesto_yazikovogo_obucheniye
 		}
 		x = 14
-		y = 2
-		
-		completion_reward = {
+		y = 3
+			completion_reward = {
 					add_country_leader_trait = prorok
 				}
 
@@ -402,14 +383,13 @@ focus_tree = {
 	focus = {
 		id = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
 		icon = GFX_focus_SOV_womens_fascist_movement
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_ldpr
 		}
 		x = 16
-		y = 1
-		
-		completion_reward = {
+		y = 2
+			completion_reward = {
 					add_stability = 0.05
 					add_ideas = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
 				}
@@ -418,14 +398,13 @@ focus_tree = {
 	focus = {
 		id = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
 		icon = GFX_focus_research
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
 		}
 		x = 16
-		y = 2
-		
-		completion_reward = {
+		y = 3
+			completion_reward = {
 					add_stability = 0.1
 					add_ideas = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
 				}
@@ -434,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = IRQ_mit_sapogi_v_indiyskom_okeane
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
 		}
@@ -445,39 +424,65 @@ focus_tree = {
 			focus = IRQ_berem_vseh
 		}
 		x = 14
-		y = 3
-		
-		completion_reward = {
+		y = 4
+			completion_reward = {
 					add_ideas = IRQ_mit_sapogi_v_indiyskom_okeane
+				}
+
+	}
+	focus = {
+		id = IRQ_baas
+		icon = GFX_goal_IRQ_saddam
+		cost = 5,00
+		prerequisite = {
+			focus = IRQ_attack_bush
+		}
+		mutually_exclusive = {
+			focus = IRQ_ldpr
+		}
+		x = 24
+		y = 1
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							last_election = "1933.3.5"
+							election_frequency = 48
+							elections_allowed = no
+						}
+					set_popularities = {
+							neutrality = 30
+							fascism = 70
+						}
 				}
 
 	}
 	focus = {
 		id = IRQ_libya_ally
 		icon = GFX_goal_kadaffi_ally
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_ldpr
 			focus = IRQ_baas
 		}
 		x = 19
-		y = 1
-		
-		completion_reward = {
+		y = 2
+			completion_reward = {
 					give_guarantee = LBA
-					LBA = { give_guarantee = IRQ }
+					LBA = {
+							give_guarantee = IRQ
+						}
 				}
 
 	}
 	focus = {
 		id = IRQ_ubezhishe
 		icon = GFX_goal_saddam_hussein
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_baas
 		}
 		x = 22
-		y = 1
+		y = 2
 			completion_reward = {
 					add_ideas = ALB_bunkervodstvo
 					676 = {
@@ -487,21 +492,20 @@ focus_tree = {
 									instant_build = yes
 									province = 8123
 								}
-					}			
+						}
 				}
 
 	}
 	focus = {
 		id = IRQ_vozvrasheniye_k_vere
 		icon = GFX_focus_TUR_turanist_ambition
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_ubezhishe
 		}
 		x = 22
-		y = 2
-		
-		completion_reward = {
+		y = 3
+			completion_reward = {
 					add_political_power = 150
 					add_stability = 0.1
 				}
@@ -510,54 +514,69 @@ focus_tree = {
 	focus = {
 		id = IRQ_republican_guard
 		icon = GFX_goal_IRQ_republican_guard
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_baas
 		}
 		x = 24
-		y = 1
-		
-		completion_reward = {
-			division_template = {
-                name = "Республиканская гвардия"
+		y = 2
+			completion_reward = {
+					division_template = {
+							name = "Республиканская гвардия"
+							regiments = {
+									motorized = {
+											x = 0
+											y = 0
+										}
+									motorized = {
+											x = 0
+											y = 1
+										}
+									motorized = {
+											x = 1
+											y = 0
+										}
+									motorized = {
+											x = 1
+											y = 1
+										}
+									mot_artillery_brigade = {
+											x = 2
+											y = 0
+										}
+									light_armor = {
+											x = 3
+											y = 0
+										}
+								}
+							priority = 2
+						}
+					291 = {
+							create_unit = {
+									division = "name = \"1-я танковая дивизия «Хаммурапи» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"
+									owner = IRQ
+								}
+							create_unit = {
+									division = "name = \"2-я танковая дивизия «Медина» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"
+									owner = IRQ
+								}
+							create_unit = {
+									division = "name = \"3-я механизированная дивизия «Тавалкана» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"
+									owner = IRQ
+								}
+						}
+				}
 
-                regiments = {
-                   	motorized = { x = 0 y = 0 }
-                 	motorized = { x = 0 y = 1 }
-                 	motorized = { x = 1 y = 0 }
-                   	motorized = { x = 1 y = 1 }
-                    mot_artillery_brigade = { x = 2 y = 0 }
-	                light_armor = { x = 3 y = 0 }
-                }
-                priority = 2
-            }
-			
-			291 = {
-				create_unit = {
-					division = "name = \"1-я танковая дивизия «Хаммурапи» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3" 
-					owner = IRQ
-				}
-				create_unit = {
-					division = "name = \"2-я танковая дивизия «Медина» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"
-					owner = IRQ
-				}
-				create_unit = {
-					division = "name = \"3-я механизированная дивизия «Тавалкана» \" division_template = \"Республиканская гвардия\" start_experience_factor = 0.3"  
-					owner = IRQ
-				}
-	     	}
-			
-		}
 	}
 	focus = {
 		id = IRQ_fedaini_saddama
 		icon = GFX_goal_rhineland
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_republican_guard
 		}
 		x = 24
-		y = 2
+		y = 3
 			completion_reward = {
 					add_ideas = IRQ_fedaini_saddama
 				}
@@ -685,25 +704,27 @@ focus_tree = {
 	focus = {
 		id = IRQ_chemical_warfare
 		icon = GFX_goal_IRQ_chemical_warfare
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_baas
 		}
 		x = 26
-		y = 1
-		
-		completion_reward = {
+		y = 2
+			completion_reward = {
 					hidden_effect = {
-			        	set_technology = { chemical_attack_tech = 1 popup = no }
-	         		}
-	         		custom_effect_tooltip = IRQ_chemical_attack_tactic_tt
+							set_technology = {
+									chemical_attack_tech = 1
+									popup = no
+								}
+						}
+					custom_effect_tooltip = IRQ_chemical_attack_tactic_tt
 				}
 
 	}
 	focus = {
 		id = IRQ_mest_za_iran_iraq_war
 		icon = GFX_goal_generic_major_war
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_vozvrasheniye_k_vere
 		}
@@ -714,32 +735,31 @@ focus_tree = {
 			focus = IRQ_anfal
 		}
 		x = 24
-		y = 3
-		
-		completion_reward = {
-	     	declare_war_on  = {
-				type = annex_everything
-				target = SAS
-			}
-        }
+		y = 4
+			completion_reward = {
+					declare_war_on = {
+							type = annex_everything
+							target = SAS
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_anfal
 		icon = GFX_focus_generic_attack_kurdistan
-		cost = 5
+		cost = 5,00
 		prerequisite = {
 			focus = IRQ_chemical_warfare
 		}
 		x = 26
-		y = 2
-		
-		completion_reward = {
-	     	add_stability = 0.05
-			add_war_support = 0.075
-			676 = {
-				add_manpower = -50000
-			}
-        }
+		y = 3
+			completion_reward = {
+					add_stability = 0.05
+					add_war_support = 0.075
+					676 = {
+							add_manpower = -50000
+						}
+				}
 
 	}
 }
