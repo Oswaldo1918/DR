@@ -471,7 +471,9 @@ focus_tree = {
 		x = 21
 		y = 11
 			completion_reward = {
-					add_ideas = GAL_kosmoleti_i
+					set_technology = {
+							cosmolet = 1
+						}
 				}
 
 	}
