@@ -7,8 +7,8 @@ focus_tree = {
 			tag = ZNS
 		}
 	}
-	default = no
 	continuous_focus_position =  { x = 50 y = 100 }
+	default = no
 	focus = {
 		id = ZNS_proryv_tsepey_OMONa
 		icon = GFX_ZNS_proryv_tsepey_OMONa
@@ -67,16 +67,17 @@ focus_tree = {
 		cost = 5,00
 		x = 28
 		y = 13
-		visible = {
+			visible = {
 					has_country_flag = antikrinzh_vosstanie
-		}
-	    available = {
-			has_completed_focus = ZNS_total_depokayanizatsiya
-			has_country_flag = ZNS_Pobeda_SA
-		}
-		completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }
+				}
+			available = {
+					has_completed_focus = ZNS_total_depokayanizatsiya
+					has_country_flag = ZNS_Pobeda_SA
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_osnovat_Soyuz_Anstalov
@@ -1048,12 +1049,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 14
-		visible = {
-			has_country_flag = antikrinzh_vosstanie
-		}
-        completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }     
+			visible = {
+					has_country_flag = antikrinzh_vosstanie
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_opiti_nad_zk
@@ -1064,12 +1066,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 15
-		visible = {
-			has_country_flag = antikrinzh_vosstanie
-		}
-        completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }     
+			visible = {
+					has_country_flag = antikrinzh_vosstanie
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_left_rep
@@ -1130,12 +1133,13 @@ focus_tree = {
 		}
 		x = 30
 		y = 14
-		visible = {
-			has_country_flag = antikrinzh_vosstanie
-		}
-        completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }        
+			visible = {
+					has_country_flag = antikrinzh_vosstanie
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_translirovat_BBT_v_drugie_strani
@@ -1146,12 +1150,13 @@ focus_tree = {
 		}
 		x = 30
 		y = 15
-		visible = {
-			has_country_flag = antikrinzh_vosstanie
-		}
-        completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }    
+			visible = {
+					has_country_flag = antikrinzh_vosstanie
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_Krasnoyarsk_budet_krasnym
@@ -1495,14 +1500,15 @@ focus_tree = {
 		}
 		x = 39
 		y = 7
-		available = {
-			has_completed_focus = ZNS_total_depokayanizatsiya
-		}
-		completion_reward = {
-			add_war_support = 0.2
-			set_country_flag = DR_start_reunite_Russia_cf
-			custom_effect_tooltip = YSK_irredentism_tt
-		}
+			available = {
+					has_completed_focus = ZNS_total_depokayanizatsiya
+				}
+			completion_reward = {
+					add_war_support = 0.2
+					set_country_flag = DR_start_reunite_Russia_cf
+					custom_effect_tooltip = YSK_irredentism_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_voyennyye_reformy_Konya
@@ -1778,7 +1784,7 @@ focus_tree = {
 			focus = ZNS_voyennyye_reformy_Konya
 		}
 		x = 45
-		y = 8
+		y = 10
 			completion_reward = {
 					load_oob = ZNS_kurery_1936
 				}
@@ -1792,7 +1798,7 @@ focus_tree = {
 			focus = ZNS_prizvat_bolshe_kurerov
 		}
 		x = 45
-		y = 9
+		y = 11
 			completion_reward = {
 					add_ideas = ZNS_prokachat_veliki
 				}
@@ -1809,7 +1815,7 @@ focus_tree = {
 			focus = ZNS_upor_na_nogi
 		}
 		x = 44
-		y = 10
+		y = 12
 			completion_reward = {
 					swap_ruler_traits = {
 							remove = Slabie_nogi
@@ -1829,7 +1835,7 @@ focus_tree = {
 			focus = ZNS_silnee_kachat_ruki
 		}
 		x = 46
-		y = 10
+		y = 12
 			completion_reward = {
 					swap_ruler_traits = {
 							remove = Slabie_nogi
@@ -2041,44 +2047,45 @@ focus_tree = {
 		}
 		x = 34
 		y = 10
-		completion_reward = {
-			remove_ideas = ZNS_posledstviya_gv_2
-			add_popularity = {
-				ideology = metacommy
-				popularity = 0.15
-			}
-			add_manpower = 15000
-			OMS = {
-				set_nationality = {
-					target_country = ZNS
-					character = OMS_Letov
+			completion_reward = {
+					remove_ideas = ZNS_posledstviya_gv_2
+					add_popularity = {
+							ideology = metacommy
+							popularity = 0.15
+						}
+					add_manpower = 15000
+					OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Letov
+								}
+						}
+					OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Yanka
+								}
+						}
+					OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Fedor_Letov
+								}
+						}
+					OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Ryabinov
+								}
+						}
+					OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Sergey_Letov
+								}
+						}
 				}
-			}
-			OMS = {
-				set_nationality = {
-					target_country = ZNS
-					character = OMS_Yanka
-				}
-			}
-			OMS = {
-				set_nationality = {
-					target_country = ZNS
-					character = OMS_Fedor_Letov
-				}
-			}
-			OMS = {
-				set_nationality = {
-					target_country = ZNS
-					character = OMS_Ryabinov
-				}
-			}
-			OMS = {
-				set_nationality = {
-					target_country = ZNS
-					character = OMS_Sergey_Letov
-				}
-			}
-		}
+
 	}
 	focus = {
 		id = ZNS_total_depokayanizatsiya
@@ -2112,12 +2119,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 16
-		visible = {
-			has_country_flag = antikrinzh_vosstanie
-		}
-        completion_reward = {
-            custom_effect_tooltip = ZNS_new_decision_tt        
-        }   
+			visible = {
+					has_country_flag = antikrinzh_vosstanie
+				}
+			completion_reward = {
+					custom_effect_tooltip = ZNS_new_decision_tt
+				}
+
 	}
 	focus = {
 		id = ZNS_vychistit_stalinistov_iz_partii
