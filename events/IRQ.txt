@@ -1,2 +1,22 @@
 add_namespace = IRQ
 
+country_event = {
+	id = IRQ_zhirik_predlozhil.1
+	title = IRQ_zhirik_predlozhil.t
+	desc = IRQ_zhirik_predlozhil.1.d
+	picture = GFX_report_event_dkr_IRQ_zhirik_predlozhil
+	is_triggered_only = yes
+	trigger = {
+		tag = IRQ
+	}
+
+	mean_time_to_happen = {
+		factor = 0.5
+	}
+
+	# Crash Effects
+	option = {
+		name = IRQ_zhirik_predlozhil.a
+		
+	}
+}

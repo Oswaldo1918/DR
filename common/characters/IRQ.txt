@@ -48,9 +48,9 @@ characters={
 		field_marshal = {
     		traits = { old_guard infantry_officer war_hero  }
         	skill = 2
-        	attack_skill = 2
-        	defense_skill = 2
-        	planning_skill = 2
+        	attack_skill = 3
+        	defense_skill = 3
+        	planning_skill = 1
         	logistics_skill = 2
 			legacy_id = 0
 		}
@@ -67,14 +67,27 @@ characters={
 		}
 		
 		corps_commander = {
-    		traits = { politically_connected  }
+    		traits = { politically_connected harsh_leader }
         	skill = 2
         	attack_skill = 2
         	defense_skill = 2
-        	planning_skill = 2
-        	logistics_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 3
 			legacy_id = 0
 		}
+		
+		advisor = {
+    		slot = political_advisor
+            idea_token = IRQ_ali_hassan_al_majid			
+			allowed = {
+				original_tag = IRQ
+				
+			}			
+			traits = { prince_of_terror }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}
 	
 	IRQ_Izzat_Ibrahim_al_Douri = {
@@ -88,13 +101,24 @@ characters={
 		}
 		
 		corps_commander = {
-    		traits = { politically_connected  }
+    		traits = { politically_connected guerilla_fighter }
         	skill = 2
         	attack_skill = 2
         	defense_skill = 2
-        	planning_skill = 2
-        	logistics_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 3
 			legacy_id = 0
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = IRQ_Izzat_Ibrahim_al_Douri
+			allowed = {
+				original_tag = IRQ
+			}
+			traits = {
+				guerilla_warfare_expert 
+			}
 		}
 	}
 	
@@ -110,11 +134,11 @@ characters={
 		
 		corps_commander = {
     		traits = { politically_connected  }
-        	skill = 2
+        	skill = 1
         	attack_skill = 2
-        	defense_skill = 2
-        	planning_skill = 2
-        	logistics_skill = 2
+        	defense_skill = 1
+        	planning_skill = 3
+        	logistics_skill = 3
 			legacy_id = 0
 		}
 		

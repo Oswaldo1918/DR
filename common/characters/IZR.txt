@@ -27,4 +27,49 @@ characters={
 			}
 		}	
 	}
+	IZR_Galant = {
+		name = "Йоав Галант"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Galant.dds"
+			}
+			army = {				
+				large = "gfx/leaders/ISR/Galant.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+        corps_commander = {
+	        traits = { war_hero harsh_leader urban_assault_specialist }
+         	skill = 4
+          	attack_skill = 3
+         	defense_skill = 2
+         	planning_skill = 3
+        	logistics_skill = 3
+    		legacy_id = -1
+        }		
+	}
+	IZR_Galkin = {
+		name = "Максим Галкин"
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Galkin.dds"
+			}
+			army = {				
+				large = "gfx/leaders/ISR/Galkin.dds"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+
+        corps_commander = {
+	        traits = { media_personality }
+         	skill = 1
+          	attack_skill = 1
+         	defense_skill = 1
+         	planning_skill = 1
+        	logistics_skill = 1
+    		legacy_id = -1
+        }				
+	}
 }
