@@ -83,15 +83,20 @@ GAL_sssr = {
 	}
 }
 
-GAL_import_marakumbi = { 
- icon = generic_prospect_for_resources
-    allowed = {
+GAL_kupcov_campaigns = {
+	priority = 100
+
+	icon = generic_prospect_for_resources
+
+	allowed = {
 		original_tag = GAL
 	}
-    visible = {
-		original_tag = GAL
+
+	visible = {
+		has_completed_focus = GAL_rasprostraneniye_knig_kupcova
 	}
 }
+
 MGN_soyuz_sionskih_socialnih_razrushiteley = { 
  icon = generic_prospect_for_resources
     allowed = {
@@ -141,5 +146,15 @@ MGN_poisk_relikviy = {
 	}
 	visible = {
 		original_tag = MGN
+	}
+}
+
+GAL_import_marakumbi = { 
+ icon = generic_prospect_for_resources
+    allowed = {
+		original_tag = GAL
+	}
+    visible = {
+		original_tag = GAL
 	}
 }

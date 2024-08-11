@@ -33,14 +33,13 @@ focus_tree = {
 		cost = 5,00
 		x = 19
 		y = 0
-		
-		completion_reward = {
-			declare_war_on = {
-				target = KUW
-				type = annex_everything
-			}
-			news_event = dk_news.42
-		}
+			completion_reward = {
+					declare_war_on = {
+							target = KUW
+							type = annex_everything
+						}
+					news_event = dk_news.42
+				}
 
 	}
 	focus = {
@@ -398,7 +397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = IRQ_kazhdomu_muzhchine-po_deshevoy_butilke_vodki
-		icon = GFX_focus_research
+		icon = GFX_goal_vodka
 		cost = 5,00
 		prerequisite = {
 			focus = IRQ_kazhdoy_odinokoy_zhenshine-po_muzhchine
