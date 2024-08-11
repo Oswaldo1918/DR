@@ -84,6 +84,7 @@ units = {
 		division_template = "Танковая дивизия"
 		start_experience_factor = 0.2
 		force_equipment_variants = { medium_tank_chassis_0 = { owner = "MRD" creator = "MRD" version_name = "T-28" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MRD" creator = "LAZ" } }
 	}
 }
 

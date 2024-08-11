@@ -137,7 +137,7 @@ focus_tree = {
 		x = 13
 		y = 4
 			completion_reward = {
-					add_political_power = 150
+					unlock_decision_category_tooltip = GAL_kupcov_campaigns
 				}
 
 	}
@@ -1142,7 +1142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_vodochnaya_monopoliya
-		icon = GFX_focus_research2
+		icon = GFX_goal_vodka
 		cost = 5,00
 		prerequisite = {
 			focus = GAL_ediniy_budget
@@ -1240,7 +1240,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GAL_cowboyi
 		}
-		x = 45
+		x = 43
 		y = 1
 			completion_reward = {
 					add_field_marshal_role = {
