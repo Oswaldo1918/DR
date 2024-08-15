@@ -1,5 +1,5 @@
 #########################
-  ### LAZARET_RSFSR ###
+      ### IRAQ ###
 #########################
 
 IRQ_core_KUW = {
@@ -7,4 +7,14 @@ IRQ_core_KUW = {
 	allowed = {
 		tag = IRQ		
 	}
+}
+
+IRQ_misli_zhirika = {
+	icon = military_operation
+	allowed = {
+		tag = IRQ		
+	}
+	visible = {
+		has_completed_focus = IRQ_ldpr
+    }
 }

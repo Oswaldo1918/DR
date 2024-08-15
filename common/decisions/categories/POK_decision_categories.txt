@@ -64,15 +64,6 @@ GV_v_pokayanii_podgotovka = {
 			}
 		}
 	}
-GST_cat = { 
- icon = generic_prospect_for_resources
-    allowed = {
-		original_tag = GAL
-	}
-	visible = {
-		original_tag = GAL
-	}
-}
 GAL_sssr = { 
  icon = generic_prospect_for_resources
     allowed = {
@@ -82,7 +73,15 @@ GAL_sssr = {
 		original_tag = GAL
 	}
 }
-
+GST_cat = { 
+ icon = generic_prospect_for_resources
+    allowed = {
+		original_tag = GAL
+	}
+	visible = {
+		original_tag = GAL
+	}
+}
 GAL_kupcov_campaigns = {
 	priority = 100
 
@@ -96,7 +95,19 @@ GAL_kupcov_campaigns = {
 		has_completed_focus = GAL_rasprostraneniye_knig_kupcova
 	}
 }
+GAL_marakumba_zapasi_balance_of_power_category = {
+    priority = 78
 
+	icon = generic_prospect_for_resources
+
+	allowed = {
+		original_tag = GAL
+	}
+
+	visible = {
+		has_completed_focus = GAL_import_marakumbi
+	}
+}
 MGN_soyuz_sionskih_socialnih_razrushiteley = { 
  icon = generic_prospect_for_resources
     allowed = {
@@ -146,15 +157,5 @@ MGN_poisk_relikviy = {
 	}
 	visible = {
 		original_tag = MGN
-	}
-}
-
-GAL_import_marakumbi = { 
- icon = generic_prospect_for_resources
-    allowed = {
-		original_tag = GAL
-	}
-    visible = {
-		original_tag = GAL
 	}
 }
