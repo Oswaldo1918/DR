@@ -131,6 +131,11 @@ focus_tree = {
 		x = 4
 		y = 9
 			completion_reward = {
+			set_party_name = {
+							ideology = anarhostalinism
+							long_name = ZNS_anarhostalinism_party_LT_long
+							name = ZNS_anarhostalinism_party_LT
+						}
 					swap_ideas = {
 							remove_idea = ZNS_Stalin_ili_Trotskiy
 							add_idea = ZNS_Trotskiy
@@ -138,6 +143,7 @@ focus_tree = {
 					add_to_variable = {
 							sous_anstalov = 1
 						}
+						
 					custom_effect_tooltip = ZNS_sous_anstalov_influence_up_tt
 				}
 
@@ -422,6 +428,7 @@ focus_tree = {
 		y = 10
 			completion_reward = {
 					add_war_support = 0.1
+					remove_ideas = ZNS_new_korenization
 				}
 
 	}
