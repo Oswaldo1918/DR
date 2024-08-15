@@ -5,7 +5,7 @@ country_event = {
 	id = ZNS.1 
 	title = ZNS.1.t
 	desc = ZNS.1.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_revolutsioner
 	
 	trigger = {
 		tag = ZNS
@@ -58,7 +58,7 @@ country_event = { #Выведение_сверхчеловека
 	id = ZNS.3 
 	title = ZNS.3.t
 	desc = ZNS.3.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -76,7 +76,7 @@ country_event = { #Опыты_со_сном
 	id = ZNS.4 
 	title = ZNS.4.t
 	desc = ZNS.4.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -97,7 +97,7 @@ country_event = { #Опыты_над_слухом
 	id = ZNS.5 
 	title = ZNS.5.t
 	desc = ZNS.5.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -118,7 +118,7 @@ country_event = { #Опыты_над_разумом
 	id = ZNS.6 
 	title = ZNS.6.t
 	desc = ZNS.6.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -139,7 +139,7 @@ country_event = { #Опыты_над_зк
 	id = ZNS.7 
 	title = ZNS.7.t
 	desc = ZNS.7.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -156,7 +156,7 @@ country_event = { #лечение_шизы
 	id = ZNS.8 
 	title = ZNS.8.t
 	desc = ZNS.8.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_alkogol
 	
 	trigger = {
 		tag = ZNS
@@ -174,7 +174,7 @@ country_event = { #эксперимент_над_учениками
 	id = ZNS.9 
 	title = ZNS.9.t
 	desc = ZNS.9.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = report_event_rudoy_i_baget
 	
 	trigger = {
 		tag = ZNS
@@ -192,7 +192,7 @@ country_event = { #Победа_фракции_Рудого
 	id = ZNS.10 
 	title = ZNS.10.t
 	desc = ZNS.10.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_rudoy
 	
 	trigger = {
 		tag = ZNS
@@ -222,7 +222,7 @@ country_event = { #Победа_фракции_Новых_Красных
 	id = ZNS.11 
 	title = ZNS.11.t
 	desc = ZNS.11.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_dark_green_kremlin
 	
 	trigger = {
 		tag = ZNS
@@ -255,7 +255,7 @@ country_event = { #лор_союза_ансталов
 	id = ZNS.12 
 	title = ZNS.12.t
 	desc = ZNS.12.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_rudoy_i_bomzh
 	
 	trigger = {
 		tag = ZNS
@@ -283,27 +283,36 @@ country_event = { #ивент_ветки_терезы_добавляющий_г�
 	id = ZNS.13 
 	title = ZNS.13.t
 	desc = ZNS.13.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_korabl
 	
 	trigger = {
 		tag = ZNS
+		ZNS = {
+		surrender_progress > 0.80
+		}
 	}
 	
 	is_triggered_only = yes	
+	
+	fire_only_once = yes
 	
 	option = {
 	    name = ZNS.13.a
 		add_popularity = {
 				ideology = metacommy
 				popularity = -0.2
-		}   	    
+		}
+		add_political_power = -300
+		add_stability = -0.1
+		add_war_support = 0.2
+   	    kill_country_leader = yes
     }
 }
 country_event = { #ивент_ветки_рудого_добавляющий_глубины
 	id = ZNS.14 
 	title = ZNS.14.t
 	desc = ZNS.14.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_rudoy
 	
 	trigger = {
 		tag = ZNS
@@ -319,7 +328,7 @@ country_event = { #Сталин_или_Троцкий
 	id = ZNS.15 
 	title = ZNS.15.t
 	desc = ZNS.15.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_dkr_red_flag_under_kremlin
 	
 	trigger = {
 		tag = ZNS

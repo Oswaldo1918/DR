@@ -101,6 +101,9 @@ focus_tree = {
 							long_name = ZNS_anarhostalinism_party_SoA_long
 							name = ZNS_anarhostalinism_party_SoA
 						}
+						country_event = {
+							id = ZNS.12
+						}
 				}
 
 	}
@@ -115,6 +118,9 @@ focus_tree = {
 		y = 8
 			completion_reward = {
 					add_ideas = ZNS_Stalin_ili_Trotskiy
+					country_event = {
+							id = ZNS.15
+						}
 				}
 
 	}
@@ -1127,6 +1133,9 @@ focus_tree = {
 							type = train_equipment_1
 							amount = 100
 							producer = ZNS
+						}
+						country_event = {
+							id = ZNS.14
 						}
 				}
 
