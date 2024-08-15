@@ -466,16 +466,15 @@ GAL_kupcov_campaigns = {
     }
 	
 }
-
-GAL_import_marakumbi = {
-
-    GAL_up_import_marakumbi = {
+GAL_marakumba_zapasi_balance_of_power_category = {
+	
+	GAL_up_import_marakumbi = {
         icon = decision_category_generic_economy
-		days_re_enable = 0
 
         ai_will_do = {
 			factor = 4
 		}
+		fire_only_once = no
 		available = {
 		tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
@@ -490,18 +489,18 @@ GAL_import_marakumbi = {
         }
 		
 		complete_effect = {
-            GAL_marakumba_torg_level_up
+            GAL_marakumba_torg_level_up = yes
 		}
 
     }
 	
 	GAL_down_import_marakumbi = {
         icon = decision_category_generic_economy
-		days_re_enable = 0
 
         ai_will_do = {
-			factor = 4
+			factor = 1
 		}
+		fire_only_once = no
 		available = {
 		    tag = GAL
 		    has_completed_focus = GAL_import_marakumbi
@@ -512,8 +511,9 @@ GAL_import_marakumbi = {
         }
 		
 		complete_effect = {
-        	GAL_marakumba_torg_level_down
+        	GAL_marakumba_torg_level_down = yes
 		}
 
-    }	
+    }
+
 }

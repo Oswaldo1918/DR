@@ -816,7 +816,7 @@ focus_tree = {
 		x = 15
 		y = 11
 			completion_reward = {
-					unlock_decision_category_tooltip = GAL_import_marakumbi
+					unlock_decision_category_tooltip = GAL_marakumba_zapasi_balance_of_power_category
 					add_ideas = GAL_marakumba_import_0
 					set_country_flag = GAL_marakumba_cf
 				}
@@ -1242,6 +1242,9 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
+		available = {
+					always = no
+				}
 			completion_reward = {
 					add_field_marshal_role = {
 							character = GAL_pusnoy

@@ -22,3 +22,27 @@ IRQ_core_KUW = {
 		}	
 	}
 }
+
+IRQ_misli_zhirika = { 
+
+	IRQ_zhirik_predlozhil = {
+
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = IRQ_ldpr
+        }   
+		available = {
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		random_list = { 50 = {country_event = iraq.1} 25 = {country_event = iraq.2} 20 = {country_event = iraq.3} 5 = {country_event = iraq.4} }
+		}
+	}
+}	

@@ -25,4 +25,23 @@ characters={
 		    id=-1
 	   }
     }
+	BTS_lankov = {
+		name = "Андрей Ланьков"
+		portraits = {
+			army = {
+		    	small = "GFX_idea_BTS_lankov"
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = BTS_lankov
+			allowed = {
+				original_tag = BTS
+			}
+			traits = {
+				the_academic 
+			}
+		}
+    }
 }
