@@ -54,7 +54,7 @@ country_event = { id = POK.7 }
 	shared_focus = { 
 		id = POK_prepare_first_free_elections
 		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_strana_svobodnih_lyudey
 		}
@@ -68,7 +68,7 @@ country_event = { id = POK.8 }
 	shared_focus = {
 		id = POK_ohrana_uchastkov
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -89,7 +89,7 @@ country_event = { id = POK.8 }
 	shared_focus = {
 		id = POK_the_viborshiki
 		icon = GFX_focus_chi_mission_to_the_us
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_ohrana_uchastkov
 		}
@@ -109,7 +109,7 @@ country_event = { id = POK.22 }
 	shared_focus = {
 		id = POK_european_standart
 		icon = GFX_focus_focus_fra_ratify_stresa
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_ohrana_uchastkov
 		}
@@ -130,7 +130,7 @@ country_event = { id = POK.22 }
 	shared_focus = {
 		id = POK_anti_totalitarian_cenz
 		icon = GFX_POK_antitotalit_cenz
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_european_standart
 			focus = POK_the_viborshiki
@@ -151,7 +151,7 @@ country_event = { id = POK.22 }
 	shared_focus = {
 		id = POK_smi
 		icon = GFX_POK_SMI
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -173,7 +173,7 @@ country_event = { id = POK.22 }
 	shared_focus = {
 		id = POK_registr_partiy
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_prepare_first_free_elections
 		}
@@ -187,7 +187,7 @@ country_event = { id = POK.17 }
 	shared_focus = {
 		id = POK_vote_heart
 		icon = GFX_POK_heart_voting
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_smi
 		}
@@ -212,7 +212,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_Pokayan_interview
 		icon = GFX_POK_interwiev_Pokayan
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_vote_heart
 		}
@@ -230,7 +230,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_vote_mind
 		icon = GFX_POK_smart_voting
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_smi
 		}
@@ -264,7 +264,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_war_of_compromats
 		icon = GFX_POK_war_of_compromats
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_vote_heart
 			focus = POK_vote_mind
@@ -280,7 +280,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_support_itelligentsiya
 		icon = GFX_POK_support_untelligentsiya
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_vote_mind
 		}
@@ -302,7 +302,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_promises
 		icon = GFX_goal_generic_improve_relations
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_Pokayan_interview
 			focus = POK_support_itelligentsiya
@@ -325,7 +325,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_under_one_umbrella
 		icon = GFX_goal_generic_defence
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_registr_partiy
 		}
@@ -339,13 +339,13 @@ add_power_balance_value = {
     id = POK_prepar_balance 
     value = -0.3
 }
+country_event = { id = POK.14 }
 }
-
 	}
 	shared_focus = {
 		id = POK_liberal_coalition
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_registr_partiy
 		}
@@ -359,13 +359,14 @@ add_power_balance_value = {
     id = POK_prepar_balance 
     value = 0.3
 }
+country_event = { id = POK.14 }
 }
 
 	}
 	shared_focus = {
 		id = POK_majoritar
 		icon = GFX_POK_majoritarnaya
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_liberal_coalition
 			focus = POK_under_one_umbrella
@@ -386,7 +387,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_proportional
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_liberal_coalition
 			focus = POK_under_one_umbrella
@@ -407,7 +408,7 @@ add_power_balance_value = {
 	shared_focus = {
 		id = POK_national_fronts
 		icon = GFX_focus_generic_forest_brothers
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_proportional
 			focus = POK_majoritar
@@ -811,7 +812,7 @@ country_event = { id = POK.18 }
 	shared_focus = {
 		id = POK_udar_po_partisanam
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_anti_totalitarian_cenz
 			focus = POK_imushestv_cenz
@@ -826,7 +827,7 @@ country_event = { id = POK.18 }
 	shared_focus = {
 		id = POK_imushestv_cenz
 		icon = GFX_POK_imushestvenniy_cenz
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = POK_the_viborshiki
 			focus = POK_european_standart
@@ -863,7 +864,7 @@ country_event = { id = POK.23 }
 	shared_focus = {
 		id = POK_support_buisenes
 		icon = GFX_POK_support_buisenes
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = POK_promises
 		}
