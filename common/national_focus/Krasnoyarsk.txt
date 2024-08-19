@@ -619,7 +619,7 @@ focus_tree = {
 			completion_reward = {
 					add_building_construction = {
 							type = radar_station
-							level = 2
+							level = 3
 							instant_build = yes
 							province = 4724
 						}
@@ -870,6 +870,11 @@ focus_tree = {
 		id = ZNS_federatsiya_profsoyuzov
 		icon = GFX_goal_unknown
 		cost = 1,00
+		available = {
+					NOT = {
+							has_completed_focus = ZNS_podchinit_partgos_apparutu
+						}
+				}
 		prerequisite = {
 			focus = ZNS_osvobodit_ot_bumazhnoy_volokty
 		}
@@ -2128,7 +2133,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZNS_eksperimentalnaya_metodika_lecheniya_shizy
+		id = ZNS_shiza
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {

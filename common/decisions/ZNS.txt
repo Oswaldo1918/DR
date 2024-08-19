@@ -234,7 +234,7 @@ ZNS_rap_experiments = {
 		}
 		remove_effect = {
 			country_event = {
-	            id = ZNS.9
+	            id = ZNS.3
 	        }
 		}	
 	}
@@ -253,6 +253,7 @@ ZNS_rap_experiments = {
         factor = 100
 		}
 		remove_effect = {
+		add_ideas = ZNS_zvuk_weapon
 			add_tech_bonus = {
 				name = infantry_bonus
 				bonus = 1.0
@@ -275,7 +276,8 @@ ZNS_rap_experiments = {
 		ai_will_do = {
         factor = 100
 		}
-		remove_effect = {
+		remove_effect = { 
+			add_ideas = ZNS_zvuk_tank
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -300,7 +302,7 @@ ZNS_rap_experiments = {
 		}
 		remove_effect = {
 			country_event = {
-	            id = ZNS.3
+	            id = ZNS.9
 	        }
 		}	
 	}
@@ -387,12 +389,12 @@ ZNS_rap_experiments = {
 	        }
 		}	
 	}
-    ZNS_eksperimentalnaya_metodika_lecheniya_shizy = { 
+    ZNS_shiza = { 
 	
 		cost = 100
 
 		available = {
-		has_completed_focus = ZNS_eksperimentalnaya_metodika_lecheniya_shizy
+		has_completed_focus = ZNS_shiza
 		}
 		
 		fire_only_once = yes

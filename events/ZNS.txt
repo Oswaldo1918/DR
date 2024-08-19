@@ -68,7 +68,7 @@ country_event = { #Выведение_сверхчеловека
 	
 	option = {
 	    name = ZNS.3.a
-	    add_ideas = ZNS_sverhchelovek_1
+	    add_ideas = ZNS_sverhchelovek
     }
 }
 
@@ -87,8 +87,8 @@ country_event = { #Опыты_со_сном
 	option = {
 	    name = ZNS.4.a      
 	    swap_ideas = {
-			remove_idea = ZNS_sverhchelovek_1
-			add_idea = ZNS_sverhchelovek_2
+			remove_idea = ZNS_sverhchelovek
+			add_idea = ZNS_sverhchelovek_1
 		}
     }
 }
@@ -108,8 +108,8 @@ country_event = { #Опыты_над_слухом
 	option = {
 	    name = ZNS.5.a      
 	    swap_ideas = {
-			remove_idea = ZNS_sverhchelovek_2
-			add_idea = ZNS_sverhchelovek_3
+			remove_idea = ZNS_sverhchelovek_1
+			add_idea = ZNS_sverhchelovek_2
 		}
     }
 }
@@ -129,8 +129,8 @@ country_event = { #Опыты_над_разумом
 	option = {
 	    name = ZNS.6.a      
 	    swap_ideas = {
-			remove_idea = ZNS_sverhchelovek_3
-			add_idea = ZNS_sverhchelovek_4
+			remove_idea = ZNS_sverhchelovek_2
+			add_idea = ZNS_sverhchelovek_3
 		}
     }
 }
