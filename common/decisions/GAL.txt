@@ -129,7 +129,7 @@ GAL_sssr = {
 		
 		remove_effect = {
 			set_cosmetic_tag = GAL_SibRevSovDep
-			remove_idea = POK_idea_GV
+			remove_ideas = POK_idea_GV
 			if = {
 			has_government = fascism
 			news_event = dk_news.51
