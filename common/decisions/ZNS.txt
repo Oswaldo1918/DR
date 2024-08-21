@@ -33,31 +33,8 @@ ZNS_depokoyaniya = {
 		days_remove = 0
 		
 		remove_effect = {
-			add_state_core = 573
-			add_state_core = 582
-			add_state_core = 587
-			add_state_core = 653
-			add_state_core = 580
-			add_state_core = 572
-			add_state_core = 403
-			add_state_core = 579
-			add_state_core = 516
-			add_state_core = 878
-			add_state_core = 577
-			add_state_core = 571
-			add_state_core = 570
-			add_state_core = 578
-			add_state_core = 569
-			add_state_core = 576
-			add_state_core = 568
-			add_state_core = 40
-			add_state_core = 654
-            add_state_core = 329
-			add_state_core = 567
-			add_state_core = 575
-			add_state_core = 824
+		    remove_ideas = POK_idea_GV
 			set_cosmetic_tag = ZNS_sibir
-			remove_idea = POK_idea_GV
 		}	
 	}
 }
@@ -69,6 +46,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_left_rep
+		has_idea = ZNS_antikrinzh_protest
 		}
 		
 		fire_only_once = yes
@@ -90,6 +68,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_fond_borby_s_alkogolizmom
+		has_idea = ZNS_antikrinzh_protest_1
 		}
 		
 		fire_only_once = yes
@@ -111,6 +90,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_fond_borby_s_alkogolizmom
+		has_idea = ZNS_antikrinzh_protest_2
 		}
 		
 		fire_only_once = yes
@@ -132,6 +112,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_rvansk_ritm_kurazha
+		has_idea = ZNS_antikrinzh_protest_3
 		}
 		
 		fire_only_once = yes
@@ -153,6 +134,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_borba_s_infokholuyami
+		has_idea = ZNS_antikrinzh_protest_4
 		}
 		
 		fire_only_once = yes
@@ -174,6 +156,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_borba_s_infokholuyami
+		has_idea = ZNS_antikrinzh_protest_5
 		}
 		
 		fire_only_once = yes
@@ -195,6 +178,7 @@ ZNS_khip_khop_revolyutsiya = {
 
 		available = {
 		has_completed_focus = ZNS_davay_gazochku_pribavlyay
+		has_idea = ZNS_antikrinzh_protest_6
 		}
 		
 		fire_only_once = yes
@@ -227,7 +211,7 @@ ZNS_rap_experiments = {
 		}
 		remove_effect = {
 			country_event = {
-	            id = ZNS.9
+	            id = ZNS.3
 	        }
 		}	
 	}
@@ -246,6 +230,7 @@ ZNS_rap_experiments = {
         factor = 100
 		}
 		remove_effect = {
+		add_ideas = ZNS_zvuk_weapon
 			add_tech_bonus = {
 				name = infantry_bonus
 				bonus = 1.0
@@ -268,7 +253,8 @@ ZNS_rap_experiments = {
 		ai_will_do = {
         factor = 100
 		}
-		remove_effect = {
+		remove_effect = { 
+			add_ideas = ZNS_zvuk_tank
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -293,7 +279,7 @@ ZNS_rap_experiments = {
 		}
 		remove_effect = {
 			country_event = {
-	            id = ZNS.3
+	            id = ZNS.9
 	        }
 		}	
 	}
@@ -380,12 +366,12 @@ ZNS_rap_experiments = {
 	        }
 		}	
 	}
-    ZNS_eksperimentalnaya_metodika_lecheniya_shizy = { 
+    ZNS_shiza = { 
 	
 		cost = 100
 
 		available = {
-		has_completed_focus = ZNS_eksperimentalnaya_metodika_lecheniya_shizy
+		has_completed_focus = ZNS_shiza
 		}
 		
 		fire_only_once = yes
