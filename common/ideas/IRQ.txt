@@ -79,5 +79,16 @@ ideas = {
 				conscription = 0.05
 			}		
 		}
+		
+		IRQ_ldpr_baas = {
+			
+			removal_cost = -1
+
+			picture = GFX_idea_IRQ_ldpr_baas
+
+			modifier = { 
+				stability_factor = 0.05
+			}		
+		}
 	}	
 }

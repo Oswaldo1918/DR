@@ -456,10 +456,15 @@ YSK_tnoidi = {
 				ideology = memoism
 				popularity = 0.075
 			}       
+			clr_country_flag = YSK_tno_up
 			if = {
 				limit = {
 					has_idea = YSK_TNO_0
+					NOT = {
+						has_country_flag = YSK_tno_up
+					}
 				}
+				set_country_flag = YSK_tno_up
 				swap_ideas = {
 					remove_idea = YSK_TNO_0
 					add_idea = YSK_TNO_1
@@ -468,7 +473,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_up
+					}
 				}
+				set_country_flag = YSK_tno_up
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_2
@@ -477,7 +486,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_up
+					}
 				}
+				set_country_flag = YSK_tno_up
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_3
@@ -486,7 +499,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_up
+					}
 				}
+				set_country_flag = YSK_tno_up
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_4
@@ -508,10 +525,15 @@ YSK_tnoidi = {
                 mission = YSK_tno_raspr_mission
                 days = 15
             }		
-            if = {
+           clr_country_flag = YSK_tno_down
+		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -520,7 +542,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -529,7 +555,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -538,12 +568,16 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
 				}
-			}
+			} 
 		}	
 	}
 	YSK_pishi_sokrashay = { 
@@ -557,10 +591,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.05
 		    }
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -569,7 +608,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -578,7 +621,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -587,7 +634,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -608,10 +659,15 @@ YSK_tnoidi = {
 			popularity = -0.05
 		    }
 			add_ideas = YSK_destroy_vertolets
+		    clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -620,7 +676,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -629,7 +689,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -638,7 +702,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -658,10 +726,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.05
 		    }
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -670,7 +743,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -679,7 +756,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -688,7 +769,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -712,10 +797,15 @@ YSK_tnoidi = {
 				type = annex_everything
             }
 			
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -724,7 +814,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -733,7 +827,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -742,7 +840,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -764,10 +866,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.05
 		    }
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -776,7 +883,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -785,7 +896,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -794,7 +909,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -815,10 +934,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.05
 		    }
+		    clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -827,7 +951,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -836,7 +964,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -845,7 +977,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -911,6 +1047,9 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		available = {
+            controls_state = 397    		
+		}
 		remove_effect = {
 		    397 = { add_manpower = -100000 }
 			397 = {
@@ -930,10 +1069,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.15
 		    }
+			clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -942,7 +1086,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -951,7 +1099,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -960,7 +1112,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -974,6 +1130,9 @@ YSK_tnoidi = {
 		
 		ai_will_do = {
         factor = 100
+		}
+		available = {
+            controls_state = 571
 		}
 		remove_effect = {
 		    571 = { add_manpower = -1000000 }
@@ -994,10 +1153,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.15
 		    }
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -1006,7 +1170,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -1015,7 +1183,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -1024,7 +1196,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -1045,10 +1221,15 @@ YSK_tnoidi = {
 			ideology = memoism
 			popularity = -0.05
 		    }
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -1057,7 +1238,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -1066,7 +1251,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -1075,7 +1264,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
@@ -1092,10 +1285,15 @@ YSK_tnoidi = {
 		}
 		remove_effect = {
 		    add_ideas = YSK_uprastit_panel_uprav
+		   clr_country_flag = YSK_tno_down
 		    if = {
 				limit = {
 					has_idea = YSK_TNO_4
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_4
 					add_idea = YSK_TNO_3
@@ -1104,7 +1302,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_3
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_3
 					add_idea = YSK_TNO_2
@@ -1113,7 +1315,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_2
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_2
 					add_idea = YSK_TNO_1
@@ -1122,7 +1328,11 @@ YSK_tnoidi = {
 			if = {
 				limit = {
 					has_idea = YSK_TNO_1
+					NOT = {
+						has_country_flag = YSK_tno_down
+					}
 				}
+				set_country_flag = YSK_tno_down
 				swap_ideas = {
 					remove_idea = YSK_TNO_1
 					add_idea = YSK_TNO_0
