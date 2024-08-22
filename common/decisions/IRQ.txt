@@ -32,6 +32,7 @@ IRQ_misli_zhirika = {
             has_completed_focus = IRQ_ldpr
         }   
 		available = {
+		    always = no
 		}
 		days_mission_timeout = 100
 
@@ -43,6 +44,9 @@ IRQ_misli_zhirika = {
 
 		timeout_effect = {
 		random_list = { 50 = {country_event = iraq.1} 25 = {country_event = iraq.2} 20 = {country_event = iraq.3} 5 = {country_event = iraq.4} }
+		hidden_effect = {
+					activate_mission = IRQ_zhirik_predlozhil
+				}
 		}
 	}
 }	

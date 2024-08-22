@@ -2900,6 +2900,10 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
+		mutually_exclusive = {
+			focus = YSK_NNP
+			focus = YSK_RNR_NPF_Memory
+		}
 		x = 54
 		y = 10
 
@@ -2910,6 +2914,10 @@ focus_tree = {
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
+		}
+		mutually_exclusive = {
+			focus = YSK_RNR_NPF_Memory
+			focus = YSK_ultraright_visionary
 		}
 		x = 63
 		y = 10
@@ -2928,6 +2936,10 @@ focus_tree = {
 		cost = 2,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
+		}
+		mutually_exclusive = {
+			focus = YSK_NNP
+			focus = YSK_ultraright_visionary
 		}
 		x = 77
 		y = 10
