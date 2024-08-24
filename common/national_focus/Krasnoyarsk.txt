@@ -2076,36 +2076,72 @@ focus_tree = {
 							popularity = 0.15
 						}
 					add_manpower = 15000
-					OMS = {
-							set_nationality = {
-									target_country = ZNS
-									character = OMS_Letov
-								}
-						}
-					OMS = {
-							set_nationality = {
-									target_country = ZNS
-									character = OMS_Yanka
-								}
-						}
-					OMS = {
-							set_nationality = {
-									target_country = ZNS
-									character = OMS_Fedor_Letov
-								}
-						}
-					OMS = {
-							set_nationality = {
-									target_country = ZNS
-									character = OMS_Ryabinov
-								}
-						}
-					OMS = {
+					random_list = { 
+	 35 = {
+	  add_manpower = -5
+	 }
+	 45 = {
+      OMS = {
 							set_nationality = {
 									target_country = ZNS
 									character = OMS_Sergey_Letov
 								}
 						}
+	 OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Ryabinov
+								}
+						}
+	 }
+	 15 = {
+	 OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Letov
+								}
+						}
+	  OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Sergey_Letov
+								}
+						}
+	  OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Ryabinov
+								}
+						}				
+	 }
+	 5 = { 
+	   OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Fedor_Letov
+								}
+						}
+	  OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Letov
+								}
+						}
+	  OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Sergey_Letov
+								}
+						}
+	  OMS = {
+							set_nationality = {
+									target_country = ZNS
+									character = OMS_Ryabinov
+								}
+						} 
+	 }
+	 }
+
 				}
 
 	}
