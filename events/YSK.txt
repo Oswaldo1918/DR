@@ -80,7 +80,7 @@ country_event = {
 		}
 	}
 	option = {
-	name = YSK.3.a
+	name = YSK.3.b
 		add_popularity = {
 				ideology = metacommy
 				popularity = -0.075
@@ -1052,6 +1052,9 @@ country_event = {
 	
 	option = {
 	    name = YSK.23.a
+					set_politics = {
+							ruling_party = neutrality
+						}
         add_country_leader_role = {
             character = YSK_Maria_Romanova
             promote_leader = yes
@@ -1064,6 +1067,9 @@ country_event = {
 	}
     option = {
 	    name = YSK.23.b
+					set_politics = {
+							ruling_party = neutrality
+						}
 		add_country_leader_role = {
             character = YSK_Goga_Romanov
             promote_leader = yes
