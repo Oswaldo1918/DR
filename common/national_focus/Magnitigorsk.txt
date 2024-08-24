@@ -256,9 +256,9 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					add_political_power = 150
-				}
-
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 	}
 	focus = {
 		id = MGN_posadit_tolko_nevinovnih
@@ -386,10 +386,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		cost = 5,00
 		prerequisite = {
-			focus = MGN_shtrafnaya_armiya
+			focus = MGN_cherenki
 		}
-		x = 21
-		y = 6
+		x = 22
+		y = 11
 			completion_reward = {
 					custom_effect_tooltip = MGN_new_resheniya_effect_tt
 				}
@@ -930,18 +930,13 @@ focus_tree = {
 		icon = GFX_goal_truck_hleb
 		cost = 5,00
 		prerequisite = {
-			focus = MGN_cherenki
+			focus = MGN_shtrafnaya_armiya
 		}
-		x = 22
-		y = 11
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							ahead_reduction = 2
-							uses = 1
-							category = motorized_equipment
-						}
-				}
+		x = 21
+		y = 6
+		completion_reward = {
+			set_technology = { motorised_infantry = 1 }			
+		}
 
 	}
 	focus = {
