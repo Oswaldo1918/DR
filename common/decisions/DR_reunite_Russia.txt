@@ -3994,7 +3994,10 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
+			    OR = {
 				tag = KUR
+				tag = MGN
+				}
 			}
 		}
 		
@@ -4033,7 +4036,10 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
+				OR = {
 				tag = ZHE
+				tag = MGN
+				}
 			}
 		}
 		
@@ -4067,7 +4073,10 @@ DR_core_russian_territories_decisions_category = {
 		
 		visible = {
 			NOT = {
+				OR = {
 				tag = SIN
+				tag = MGN
+				}
 			}
 		}
 		

@@ -1,0 +1,32 @@
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+SKT_KB_Gamburga = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_SKT_KB_Gamburga
+	allowed = {	
+		tag = SKT
+	}
+}
+
+PRM_Motovilihinskie_zavod = {
+	include = generic_artillery_organization
+	icon = GFX_idea_PRM_Motovilihinskie_zavod_1
+	allowed = {	
+		OR = {
+			tag = SKT
+			tag = PRM
+		}
+	}
+	available = {
+     	owner = { controls_state = 398 }
+	}
+}

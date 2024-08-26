@@ -810,14 +810,14 @@ focus_tree = {
 		x = 36
 		y = 4
 			bypass = {
-					NOT = {
-							OR = {
-									DON = {
-											exists = yes
-										}
-									has_war_with = DON
-								}
-						}
+		            OR = {
+				    	NOT = {
+						    DON = {
+				     			exists = yes
+					  		}
+						}	
+					    has_war_with = DON					
+					}	
 				}
 			completion_reward = {
 					news_event = dk_news.28

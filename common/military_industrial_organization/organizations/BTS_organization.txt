@@ -1,0 +1,21 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+BTS_seul_TZ = {
+	include = generic_tank_organization
+	icon = GFX_idea_BTS_seul_tz
+	
+	allowed = {	
+		tag = BTS
+	}
+	available = {
+		owner = { has_completed_focus = BTS_Seulskiy_TZ }
+    }
+}

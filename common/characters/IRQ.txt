@@ -200,6 +200,28 @@ characters={
 	    }
 	}
 	
+	IRQ_Aziz = {
+		name = "Тарик Азиз"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_IRQ_Tarik_Aziz"
+			}
+		}
+
+		advisor = {
+    		slot = political_advisor
+            idea_token = IRQ_Aziz			
+			allowed = {
+				original_tag = IRQ
+				
+			}			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 1
+			}
+	    }
+	}
+	
 	IRQ_lugovoy = {
 		name = "Андрей Луговой"
 		portraits = {
@@ -222,4 +244,59 @@ characters={
 			}
 		}
     }
+	
+	IRQ_Sultan_Hashim  = {
+		name = "Султан Хашим Ахмад"
+		portraits = {
+			army = {
+	    		large = "gfx/leaders/IRQ/sultan_hashim.dds"
+				small = "GFX_idea_IRQ_Sultan_Hashim"
+			}
+		}
+		
+		corps_commander = {
+    		traits = { politically_connected harsh_leader }
+        	skill = 3
+        	attack_skill = 2
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 3
+			legacy_id = 0
+		}
+
+		advisor = {	
+			slot = army_chief
+			idea_token = IRQ_Sultan_Hashim
+			allowed = {
+				original_tag = IRQ
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	IRQ_Hamid_Raja_Shalah = {
+		name = "Хамид Раджа Салах ат-Тикрити"
+		portraits = {
+			army = {
+				small = "GFX_idea_IRQ_Hamid_Raja_Shalah"
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = IRQ_Hamid_Raja_Shalah
+			allowed = {
+				original_tag = IRQ
+			}
+			traits = {
+				air_chief_safety_2
+			}
+		}
+	}
+
 }
