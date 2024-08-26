@@ -3202,7 +3202,12 @@ country_event = {
 					
 				}
 				add_ideas = POK_brirus
-				ENG = {add_ideas = POK_brirus1}
+				ENG = {add_ideas = POK_brirus1
+			set_autonomy = {
+target = POK
+autonomous_state = autonomy_cryptocolony
+}
+				}
 		}
 	}
 }
