@@ -38,6 +38,7 @@ BTS_soprotivleniye_btsnikov = {
 
 		available = {			
 			has_completed_focus = BTS_boyeviye_operacii
+			NOT = { has_completed_focus = BTS_vzatie_vlasti }
 		}
 		
 		days_remove = 30
@@ -73,6 +74,7 @@ BTS_soprotivleniye_btsnikov = {
 
 		available = {		
 			has_completed_focus = BTS_snabzheniye_otdalenih_regionov
+			NOT = { has_completed_focus = BTS_vzatie_vlasti }
 		}
 		
 		days_remove = 30

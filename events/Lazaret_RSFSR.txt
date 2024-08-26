@@ -364,6 +364,7 @@ country_event = { #Развал пакта
 			
 		}
 		}
+		send_equipment_fraction = { value = 0.2 target = OSV}
 		OSV = { change_tag_from = LAZ }
 		hidden_effect = {
 		                248 = { set_demilitarized_zone = no }
@@ -515,6 +516,7 @@ country_event = { #Развал пакта
 			}
 		}
 	}
+	send_equipment_fraction = { value = 0.2 target = OSV}
 	hidden_effect = {
 		                248 = { set_demilitarized_zone = no }
 			            247 = { set_demilitarized_zone = no }

@@ -29,8 +29,12 @@ IRQ_misli_zhirika = {
 
 		allowed = { always = no }
         activation = {
-            has_completed_focus = IRQ_ldpr
+            has_country_flag = IRQ_ldpr
         }   
+		visible = {
+		    tag = IRQ
+		    has_completed_focus = IRQ_ldpr
+        }
 		available = {
 		    always = no
 		}
@@ -43,7 +47,7 @@ IRQ_misli_zhirika = {
 		}
 
 		timeout_effect = {
-		random_list = { 50 = {country_event = iraq.1} 25 = {country_event = iraq.2} 20 = {country_event = iraq.3} 5 = {country_event = iraq.4} }
+		random_list = { 50 = {country_event = IRQ.1} 25 = {country_event = IRQ.2} 20 = {country_event = IRQ.3} 5 = {country_event = IRQ.4} }
 		hidden_effect = {
 					activate_mission = IRQ_zhirik_predlozhil
 				}

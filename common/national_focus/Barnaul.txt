@@ -291,9 +291,19 @@ focus_tree = {
 		x = 11
 		y = 10
 			completion_reward = {
-
+If = {
+NOT = {
+KAZ = exist
 }
-
+release_on_controlled = KAZ
+}
+KAZ = {
+			set_autonomy = {
+target = YSK
+autonomous_state = autonomy_cryptocolony
+}
+}
+}
 	}
 	focus = {
 		id = YSK_rus_grazhdanskiy_nationalism
@@ -881,7 +891,8 @@ focus_tree = {
 							ideology = neutrality
 							popularity = 0.05
 						}
-					complete_national_focus = YSK_raskol_v_dome
+					complete_national_focus = YSK_constit
+					
 				}
 
 	}
@@ -908,11 +919,7 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_democraty_bez_levih
-		}
-		prerequisite = {
 			focus = YSK_rev_nationalism
-		}
-		prerequisite = {
 			focus = YSK_aristocratic_nationalism
 		}
 		x = 26
@@ -2153,6 +2160,10 @@ focus_tree = {
 		}
 		x = 34
 		y = 10
+		available = {
+		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
+		}
+		}
 			completion_reward = {
 					set_variable = {
 							YSK_RusDerevnya_stability_factor = 0.025
@@ -2615,6 +2626,10 @@ focus_tree = {
 		}
 		x = 46
 		y = 10
+		available = {
+		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
+		}
+		}
 			completion_reward = {
 					set_variable = {
 							YSK_blesk_RusKoroni_stability_factor = -0.05
@@ -2896,7 +2911,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ultraright_visionary
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 3
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
@@ -2911,7 +2926,7 @@ focus_tree = {
 	focus = {
 		id = YSK_NNP
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 3
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
@@ -2933,7 +2948,7 @@ focus_tree = {
 	focus = {
 		id = YSK_RNR_NPF_Memory
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 3
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
@@ -3630,6 +3645,7 @@ focus_tree = {
 								}
 						}
 					custom_effect_tooltip = YSK_1_pamyat_tsar_political_power_gain_tt
+					country_event = YSK.12
 				}
 
 	}
@@ -3714,7 +3730,7 @@ focus_tree = {
 						}
 					custom_effect_tooltip = YSK_1_pamyat_tsar_stability_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_tsar_political_power_gain_tt
-					country_event = YSK.12
+					
 				}
 
 	}
@@ -5060,6 +5076,10 @@ focus_tree = {
 		id = YSK_the_struggle_of_good_with_evil
 		icon = GFX_goal_unknown
 		cost = 5,00
+		available = {
+		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
+		}
+		}
 		prerequisite = {
 			focus = YSK_rus_terror
 		}

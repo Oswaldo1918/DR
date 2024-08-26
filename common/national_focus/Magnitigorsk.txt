@@ -624,6 +624,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = MGN_new_resheniya_effect_tt
+					set_country_flag = DR_start_reunite_Russia_cf
 				}
 
 	}
@@ -636,6 +637,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
+		bypass = { NOT = { LIM = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -653,6 +655,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
+		bypass = { NOT = { KAZ = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -670,6 +673,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 8
+		bypass = { NOT = { TAJ = { exists = yes } KYR = { exists = yes } TMS = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -695,6 +699,7 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
+		bypass = { NOT = { KOL = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -712,6 +717,7 @@ focus_tree = {
 		}
 		x = 30
 		y = 7
+		bypass = { NOT = { BRT = { exists = yes } YAK = { exists = yes } YWO = { exists = yes } MAG = { exists = yes } DOT = { exists = yes } TUB = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -752,6 +758,7 @@ focus_tree = {
 		}
 		x = 29
 		y = 8
+		bypass = { NOT = { BSH = { exists = yes } PRM = { exists = yes } SKT = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -777,11 +784,16 @@ focus_tree = {
 		}
 		x = 29
 		y = 9
+		bypass = { NOT = { LAZ = { exists = yes } OSV = { exists = yes } CHT = { exists = yes } UNT = { exists = yes } MAT = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = LAZ
 						}
+					create_wargoal = {
+							type = annex_everything
+							target = OSV
+						}	
 					create_wargoal = {
 							type = annex_everything
 							target = CHT
@@ -806,6 +818,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 10
+		bypass = { NOT = { TUP = { exists = yes } ARK = { exists = yes } MHL = { exists = yes } EBN = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -835,6 +848,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 11
+		bypass = { NOT = { SPL = { exists = yes } VSB = { exists = yes } KLG = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -860,6 +874,7 @@ focus_tree = {
 		}
 		x = 31
 		y = 10
+		bypass = { NOT = { NOD = { exists = yes } KRR = { exists = yes } HAZ = { exists = yes } KUR = { exists = yes } STR = { exists = yes } CRI = { exists = yes } CHK = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -897,6 +912,7 @@ focus_tree = {
 		}
 		x = 29
 		y = 11
+		bypass = { NOT = { DON = { exists = yes } UKR = { exists = yes } CHE = { exists = yes } KUR = { exists = yes } SIN = { exists = yes } ZHE = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -948,6 +964,7 @@ focus_tree = {
 		}
 		x = 29
 		y = 10
+		bypass = { NOT = { ZWN = { exists = yes } WHS = { exists = yes } } }
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
