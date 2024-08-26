@@ -2,7 +2,7 @@
 state={
 	id=403
 	name="STATE_403" # Tyumen
-	manpower = 939067
+	manpower = 1939067
 	
 	state_category = rural
 
@@ -19,6 +19,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1 
 		}
 		add_core_of = POK
 	}

@@ -1,7 +1,7 @@
 
 state = { 
 	id = 577 # Surgut
-	manpower = 429299
+	manpower = 1029299
 	name = "STATE_577"
 	resources = {
 		oil=13 # was: 14
@@ -22,6 +22,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
+			fuel_silo = 1
 		}
 		add_core_of = POK
 	}

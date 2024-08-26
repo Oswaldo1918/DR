@@ -2,7 +2,7 @@
 state = {
 	id = 579
 	name = "STATE_579" # Salekhard
-	manpower = 95484
+	manpower = 195484
 	
 	state_category = pastoral
 
@@ -19,6 +19,7 @@ state = {
 		owner = POK
 		buildings = {
 			infrastructure = 2
+			fuel_silo = 1
 			4669 = {
 				naval_base = 2
 			}

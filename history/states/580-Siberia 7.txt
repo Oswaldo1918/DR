@@ -2,7 +2,7 @@
 state = {
 	id = 580
 	name = "STATE_580" # Tobolsk
-	manpower = 188126
+	manpower = 308126
 	
 	state_category = pastoral
 
@@ -22,7 +22,7 @@ state = {
 		owner = POK
 		buildings = {
 			infrastructure = 2
-
+            fuel_silo = 1
 		}
 		add_core_of = POK
 	}
