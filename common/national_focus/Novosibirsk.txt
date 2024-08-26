@@ -82,10 +82,10 @@ focus_tree = {
 							logistics_skill = 1
 							legacy_id = -1
 						}
-					set_popularities = {
-							fascism = 5
-							metacommy = 95
-						}
+					add_popularity = {
+		               	ideology = metacommy
+		            	popularity = 0.1
+	             	}
 					set_politics = {
 							ruling_party = metacommy
 							elections_allowed = no
@@ -123,6 +123,10 @@ focus_tree = {
 		y = 3
 			completion_reward = {
 					add_political_power = 150
+					add_popularity = {
+		              	ideology = vmestolev
+		               	popularity = -0.05
+		            }
 				}
 
 	}
@@ -195,6 +199,10 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_political_power = 50
+					add_popularity = {
+		              	ideology = fascism
+		               	popularity = 0.05
+		            }
 				}
 
 	}

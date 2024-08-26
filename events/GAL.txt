@@ -16,11 +16,19 @@ country_event = {
 	option = {
 	name = GAL.1.a
     add_stability = 0.1
+	    add_popularity = {
+		    ideology = anarhostalinism
+	       	popularity = 0.05
+		}
 	}
 	
 	option = {
 	name = GAL.1.b
     add_political_power = 150
+	    add_popularity = {
+           	ideology = anarhostalinism
+          	popularity = -0.05
+        }
 	}
 }
 
