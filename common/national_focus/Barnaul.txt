@@ -88,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YSK_The_iron_tsar
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Zhelezny_tsar
 		cost = 5,00
 		x = 77
 		y = 20
@@ -3428,7 +3428,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_iron_charter
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Chugunny_ustav
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_iron_tsar
@@ -5176,7 +5176,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_Migration_control
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Kontrol_za_migratsiey
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_iron_tsar
@@ -5193,7 +5193,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_Force_tnoids
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Prinuzhdenie_TNOidov
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_Migration_control
@@ -5212,7 +5212,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_drink_Russiano
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Vypit_russiano
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
@@ -5255,7 +5255,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_No_one_will_return_in_2007
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Nikto_ne_vernetsya_v_2007
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
@@ -5269,7 +5269,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_pp_2008
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_PP_2008
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_Force_tnoids
@@ -5293,7 +5293,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_The_fire_Is_kindled
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Ogon_razzhigaetsya
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_pp_2008
@@ -5324,7 +5324,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_Reign_to_our_glory
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Tsarstvuy_vo_slavu_nam
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
@@ -5345,7 +5345,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_Reign_in_fear_of_your_enemies
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Tsarstvuy_na_strakh_vragam
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
@@ -5366,7 +5366,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_The_Orthodox_Tsar
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Tsar_pravoslavny
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_The_fire_Is_kindled
@@ -5387,7 +5387,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_Coercion_to_the_Russian_world
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_YSK_Prinuzhdenie_k_russkomu_miru
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_Reign_to_our_glory
