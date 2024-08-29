@@ -10,9 +10,23 @@ state={
 		victory_points = {
 			9195 1
 		}
+		victory_points = {
+			94 1
+		}
+		victory_points = {
+			86 1
+		}
 		buildings = {
 			infrastructure = 2
-
+			9195 = {
+				naval_base = 2
+			}
+			94 = {
+				naval_base = 1
+			}
+			86 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = MHL
 	}

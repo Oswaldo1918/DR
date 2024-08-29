@@ -17,6 +17,9 @@ state={
 		victory_points = {
 			6181 1
 		}
+		victory_points = {
+			3121 1
+		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -26,6 +29,12 @@ state={
 			3134 = {
 				naval_base = 4
 				coastal_bunker = 1
+			}
+			6181 = {
+				naval_base = 2
+			}
+			3121 = {
+				naval_base = 1
 			}
 		}
 		add_core_of = EBN
