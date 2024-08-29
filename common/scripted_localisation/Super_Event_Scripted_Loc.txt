@@ -1,4 +1,4 @@
-#Titles
+#ЗАГОЛОВОК
 defined_text = {
     name = get_super_event_title
 	
@@ -72,7 +72,22 @@ defined_text = {
         localization_key = "sp_event_BSH_3_reunite_russia"
     }
 	
+	text = {
+        trigger = {
+            has_global_flag = MRD_reunite_russia
+        }
+        localization_key = "sp_event_MRD_Sauron_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GOM_reunite_china
+        }
+        localization_key = "sp_event_GOM_reunite_china"
+    }
+	
 }
+#ОПИСАНИЕ
 defined_text = {
     name = get_super_event_remark
     
@@ -145,7 +160,22 @@ defined_text = {
         }
         localization_key = "sp_event_BSH_3_reunite_russia_REMARK"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = MRD_reunite_russia
+        }
+        localization_key = "sp_event_MRD_Sauron_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GOM_reunite_china
+        }
+        localization_key = "sp_event_GOM_reunite_china_REMARK"
+    }
 }
+#РЕАКЦИЯ(КНОПКА)
 defined_text = {
     name = get_super_event_quote
     
@@ -218,4 +248,18 @@ defined_text = {
         }
         localization_key = "sp_event_BSH_3_reunite_russia_QUOTE"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = MRD_reunite_russia
+        }
+        localization_key = "sp_event_MRD_Sauron_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GOM_reunite_china
+        }
+        localization_key = "sp_event_GOM_reunite_china_QUOTE"
+    } 
 }	

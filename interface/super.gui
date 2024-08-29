@@ -84,7 +84,7 @@ guiTypes = {
 		
 	}
 	
-		containerWindowType = {
+	containerWindowType = {
 		name = "sp_event_mgn"	
 		position = { x = 0 y = 0 }	
 		size = { width = 600 height = 510 }
@@ -102,7 +102,7 @@ guiTypes = {
 		
 	}
 	
-		containerWindowType = {
+	containerWindowType = {
 		name = "sp_event_nod_barkov"	
 		position = { x = 0 y = 0 }	
 		size = { width = 600 height = 510 }
@@ -205,6 +205,42 @@ guiTypes = {
 		iconType = {
 			name = "Super_Event_SKT_Levoborod_reunite_russia"
 			spriteType = "GFX_sp_event_SKT_Levoborod_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+	containerWindowType = {
+		name = "sp_event_mrd_sauron"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_MRD_Sauron_reunite_russia"
+			spriteType = "GFX_sp_event_MRD_Sauron_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+	containerWindowType = {
+		name = "sp_event_taivan"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_GOM_reunite_china"
+			spriteType = "GFX_sp_event_GOM_reunite_china"
 			position = {x = 0 y = 0}
 		}	
 		

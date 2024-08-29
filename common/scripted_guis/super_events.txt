@@ -238,6 +238,54 @@ scripted_gui = {
 		}
 	}
 	
+	sp_event_mrd = {
+		window_name = "sp_event_mrd_sauron"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = MRD_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_MRD_Sauron_reunite_russia = {
+				has_global_flag = MRD_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_taivan = {
+		window_name = "sp_event_taivan"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = GOM_reunite_china
+		}
+		
+		triggers = {
+			Super_Event_GOM_reunite_china = {
+				has_global_flag = GOM_reunite_china
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
 	sp_event_window = {
 		window_name = "sp_event_window"
 		context_type = player_context
@@ -304,6 +352,18 @@ scripted_gui = {
 		triggers = {
 			Super_Event_BSH_3_reunite_russia = {
 				has_global_flag = BSH_3_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_MRD_Sauron_reunite_russia = {
+				has_global_flag = MRD_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_GOM_reunite_china = {
+				has_global_flag = GOM_reunite_china
 			}
 		}
 
@@ -380,8 +440,21 @@ scripted_gui = {
 					}
 					clr_global_flag = BSH_3_reunite_russia
 				}
+				
+				if = {
+					limit = {
+						has_global_flag = MRD_reunite_russia
+					}
+					clr_global_flag = MRD_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = GOM_reunite_china
+					}
+					clr_global_flag = GOM_reunite_china
+				}
 			}
 		}
 	}
-	
 }

@@ -13,13 +13,6 @@ sound = {
 }
 
 sound = {
-	name = "MAT_reunite_russia_song"
-	file = "menu/shumer_rus.wav"
-	volume = 1
-	always_load = yes
-}
-
-sound = {
 	name = "superevent_bebs_1"
 	file = "menu/superevent_bebs_1.wav"
 	volume = 0.75
@@ -39,6 +32,7 @@ sound = {
 	volume = 0.75
 	always_load = yes
 }
+
 sound = {
 	name = "superevent_barkov_mk_3"
 	file = "menu/superevent_barkov_mk_3.wav"
@@ -69,6 +63,20 @@ sound = {
 sound = {
 	name = "superevent_kamchatka_2"
 	file = "menu/superevent_kamchatka_2.wav"
+	volume = 0.75
+	always_load = yes
+}
+
+sound = {
+	name = "superevent_sauron"
+	file = "menu/superevent_sauron.wav"
+	volume = 0.75
+	always_load = yes
+}
+
+sound = {
+	name = "superevent_tayvan"
+	file = "menu/superevent_tayvan.wav"
 	volume = 0.75
 	always_load = yes
 }

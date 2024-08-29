@@ -489,7 +489,7 @@ news_event = { #Камчатка объединяет Россию
 		trigger = { 
 			NOT = { original_tag = DOT }
 		}
-		set_country_flag = LAZ_reunite_russia_kostil
+		set_country_flag = DOT_reunite_russia_kostil
 		country_event = { days = 1 id = super.4}
 	}
 }
@@ -1384,5 +1384,22 @@ news_event = { #Борат_Сагдиев_вернул_Омск
 	
 	option = {
 		name = dk_news.67.a
+	}
+}
+news_event = { #Тайвань_вернул_территории
+    id = dk_news.68
+	title = dk_news.68.t
+	desc = dk_news.68.d
+	picture = GFX_news_event_DKR_KAZ_Omsk_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.68.a
+		hidden_effect = {
+			GOM = {
+				country_event = super.12
+			}
+		}
 	}
 }

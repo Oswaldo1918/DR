@@ -349,10 +349,10 @@ country_event = {	#Саурон_объединяет_Россию
 	
 	trigger = {
 		AND = {
-			BSH = { has_government = memoism }
-			has_country_flag = BSH_3_reunite_russia_kostil
+			MRD = { has_government = metacommy }
+			has_country_flag = MRD_reunite_russia_kostil
 			NOT = {
-				has_global_flag = BSH_3_reunite_russia
+				has_global_flag = MRD_reunite_russia
 			}
 		}
 	}
@@ -360,11 +360,31 @@ country_event = {	#Саурон_объединяет_Россию
 	option = {
 		name = super.11.a
 		
-        set_global_flag = BSH_3_reunite_russia
+        set_global_flag = MRD_reunite_russia
 		set_global_flag = Super_Event_Visible
-	    sound_effect = "superevent_bebs_3"
+	    sound_effect = "superevent_sauron"
 		
 		#WW2 Flag
-		set_global_flag = BSH_3_reunite_russia_2
+		set_global_flag = MRD_reunite_russia_2
+	}
+}
+country_event = {	#Тайвань_объединяет_Китай
+	id = super.12
+	title = super.12.t
+	desc = super.12.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.12.a
+		
+        set_global_flag = GOM_reunite_china
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_tayvan"
+
+		set_global_flag = GOM_reunite_china_2	#Этот флаг точно нужен? Соответствий по поисковику не найдено
 	}
 }
