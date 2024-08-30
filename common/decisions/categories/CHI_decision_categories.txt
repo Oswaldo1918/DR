@@ -1,0 +1,17 @@
+################
+  ### CHI ###
+################
+
+DR_Reunite_China = {
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		tag = GOM	
+	}
+	visible = {
+		tag = GOM
+		NOT = {
+			is_ai = yes
+		}
+	}
+}
