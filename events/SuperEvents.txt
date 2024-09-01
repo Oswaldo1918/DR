@@ -388,3 +388,60 @@ country_event = {	#Тайвань_объединяет_Китай
 		set_global_flag = GOM_reunite_china_2	#Этот флаг точно нужен? Соответствий по поисковику не найдено
 	}
 }
+country_event = {	#Словолжицин_объединяет_Россию
+	id = super.13
+	title = super.13.t
+	desc = super.13.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.13.a
+		
+        set_global_flag = POK_Slovolzhicin_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Ельцин_объединяет_Россию
+	id = super.14
+	title = super.14.t
+	desc = super.14.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.14.a
+		
+        set_global_flag = POK_Eltsin_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Путин_объединяет_Россию
+	id = super.15
+	title = super.15.t
+	desc = super.15.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.15.a
+		
+        set_global_flag = POK_Putin_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}

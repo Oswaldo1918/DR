@@ -1390,7 +1390,7 @@ news_event = { #Тайвань_вернул_территории
     id = dk_news.68
 	title = dk_news.68.t
 	desc = dk_news.68.d
-	picture = GFX_news_event_DKR_KAZ_Omsk_2
+	picture = GFX_news_event_073
 	
 	is_triggered_only = yes
 	
@@ -1399,6 +1399,74 @@ news_event = { #Тайвань_вернул_территории
 		hidden_effect = {
 			GOM = {
 				country_event = super.12
+			}
+		}
+	}
+}
+news_event = { #Словолжицин объединяет Россию
+    id = dk_news.69
+	title = dk_news.69.t
+	desc = dk_news.69.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.69.a
+		hidden_effect = {
+			POK = {
+				country_event = super.13
+			}
+		}
+	}
+}
+news_event = { #Ельцин объединяет Россию
+    id = dk_news.70
+	title = dk_news.70.t
+	desc = dk_news.70.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.70.a
+		hidden_effect = {
+			POK = {
+				country_event = super.14
+			}
+		}
+	}
+}
+news_event = { #Путин объединяет Россию
+    id = dk_news.71
+	title = dk_news.71.t
+	desc = dk_news.71.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.71.a
+		hidden_effect = {
+			POK = {
+				country_event = super.15
+			}
+		}
+	}
+}
+news_event = { #Парламент объединяет Россию
+    id = dk_news.72
+	title = dk_news.72.t
+	desc = dk_news.72.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.72.a
+		hidden_effect = {
+			POK = {
+				country_event = super.16
 			}
 		}
 	}

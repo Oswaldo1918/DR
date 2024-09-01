@@ -86,6 +86,26 @@ defined_text = {
         localization_key = "sp_event_GOM_reunite_china"
     }
 	
+	text = {
+        trigger = {
+            has_global_flag = POK_Slovolzhicin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Slovolzhicin_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Eltsin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Eltsin_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Putin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Putin_reunite_russia"
+    }
 }
 #ОПИСАНИЕ
 defined_text = {
@@ -173,6 +193,27 @@ defined_text = {
             has_global_flag = GOM_reunite_china
         }
         localization_key = "sp_event_GOM_reunite_china_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Slovolzhicin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Slovolzhicin_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Eltsin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Eltsin_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Putin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Putin_reunite_russia_REMARK"
     }
 }
 #РЕАКЦИЯ(КНОПКА)
@@ -262,4 +303,25 @@ defined_text = {
         }
         localization_key = "sp_event_GOM_reunite_china_QUOTE"
     } 
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Slovolzhicin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Slovolzhicin_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Eltsin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Eltsin_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Putin_reunite_russia
+        }
+        localization_key = "sp_event_POK_Putin_reunite_russia_QUOTE"
+    }
 }	
