@@ -5108,8 +5108,20 @@ autonomous_state = autonomy_cryptocolony
 						}
 					custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
+				if = {
+					FRG = { NOT = { has_country_leader = { character = FRG_Navalniy ruling_only = yes } } }
+					has_completed_focus = YSK_fraktsiya_RNE
+					add_country_leader_role = {
+                        character = YSK_Navalniy
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nazism
+                            expire = "1965.1.1.1"
+                            traits = { oposition_furer }
+                        }
+                    } 
 				}
-
+			}
 	}
 	focus = {
 		id = YSK_i_mechom

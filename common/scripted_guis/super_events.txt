@@ -286,6 +286,150 @@ scripted_gui = {
 		}
 	}
 	
+	sp_event_slovolzhicin = {
+		window_name = "sp_event_slovolzhicin"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = POK_Slovolzhicin_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_POK_slovolzhicin_reunite_russia = {
+				has_global_flag = POK_Slovolzhicin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_eltsin = {
+		window_name = "sp_event_eltsin"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = POK_Eltsin_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_POK_eltsin_reunite_russia = {
+				has_global_flag = POK_Eltsin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_putin = {
+		window_name = "sp_event_putin"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = POK_Putin_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_POK_putin_reunite_russia = {
+				has_global_flag = POK_Putin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_parlament = {
+		window_name = "sp_event_parlament"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = POK_Parlament_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_POK_parlament_reunite_russia = {
+				has_global_flag = POK_Parlament_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_razval = {
+		window_name = "sp_event_razval"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = POK_Razval_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_POK_parlament_reunite_russia = {
+				has_global_flag = POK_Razval_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_lukin = {
+		window_name = "sp_event_lukin"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = GAL_Lukin_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_GAL_lukin_reunite_russia = {
+				has_global_flag = GAL_Lukin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
 	sp_event_window = {
 		window_name = "sp_event_window"
 		context_type = player_context
@@ -364,6 +508,42 @@ scripted_gui = {
 		triggers = {
 			Super_Event_GOM_reunite_china = {
 				has_global_flag = GOM_reunite_china
+			}
+		}
+		
+		triggers = {
+			Super_Event_POK_Slovolzhicin_reunite_russia = {
+				has_global_flag = POK_Slovolzhicin_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_POK_eltsin_reunite_russia = {
+				has_global_flag = POK_Eltsin_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_POK_putin_reunite_russia = {
+				has_global_flag = POK_Putin_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_POK_parlament_reunite_russia = {
+				has_global_flag = POK_Parlament_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_POK_razval_reunite_russia = {
+				has_global_flag = POK_Razval_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_GAL_lukin_reunite_russia = {
+				has_global_flag = GAL_Lukin_reunite_russia
 			}
 		}
 
@@ -453,6 +633,48 @@ scripted_gui = {
 						has_global_flag = GOM_reunite_china
 					}
 					clr_global_flag = GOM_reunite_china
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = POK_Slovolzhicin_reunite_russia
+					}
+					clr_global_flag = POK_Slovolzhicin_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = POK_Eltsin_reunite_russia
+					}
+					clr_global_flag = POK_Eltsin_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = POK_Putin_reunite_russia
+					}
+					clr_global_flag = POK_Putin_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = POK_Parlament_reunite_russia
+					}
+					clr_global_flag = POK_Parlament_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = POK_Razval_reunite_russia
+					}
+					clr_global_flag = POK_Razval_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = GAL_Lukin_reunite_russia
+					}
+					clr_global_flag = GAL_Lukin_reunite_russia
 				}
 			}
 		}
