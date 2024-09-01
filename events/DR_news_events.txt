@@ -1471,3 +1471,39 @@ news_event = { #Парламент объединяет Россию
 		}
 	}
 }
+
+news_event = { #Развал России
+    id = dk_news.73
+	title = dk_news.73.t
+	desc = dk_news.73.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.73.a
+		hidden_effect = {
+			POK = {
+				country_event = super.17
+			}
+		}
+	}
+}
+
+news_event = { #Лукин объединяет Россию
+    id = dk_news.74
+	title = dk_news.74.t
+	desc = dk_news.74.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.74.a
+		hidden_effect = {
+			GAL = {
+				country_event = super.18
+			}
+		}
+	}
+}

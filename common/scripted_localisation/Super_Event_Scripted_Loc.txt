@@ -106,6 +106,27 @@ defined_text = {
         }
         localization_key = "sp_event_POK_Putin_reunite_russia"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Parlament_reunite_russia
+        }
+        localization_key = "sp_event_POK_Parlament_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Razval_reunite_russia
+        }
+        localization_key = "sp_event_POK_Razval_reunite_russia"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GAL_Lukin_reunite_russia
+        }
+        localization_key = "sp_event_GAL_Lukin_reunite_russia"
+    }
 }
 #ОПИСАНИЕ
 defined_text = {
@@ -215,6 +236,27 @@ defined_text = {
         }
         localization_key = "sp_event_POK_Putin_reunite_russia_REMARK"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Parlament_reunite_russia
+        }
+        localization_key = "sp_event_POK_Parlament_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Razval_reunite_russia
+        }
+        localization_key = "sp_event_POK_Razval_reunite_russia_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GAL_Lukin_reunite_russia
+        }
+        localization_key = "sp_event_GAL_Lukin_reunite_russia_REMARK"
+    }
 }
 #РЕАКЦИЯ(КНОПКА)
 defined_text = {
@@ -323,5 +365,26 @@ defined_text = {
             has_global_flag = POK_Putin_reunite_russia
         }
         localization_key = "sp_event_POK_Putin_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Parlament_reunite_russia
+        }
+        localization_key = "sp_event_POK_Parlament_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = POK_Razval_reunite_russia
+        }
+        localization_key = "sp_event_POK_Razval_reunite_russia_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GAL_Lukin_reunite_russia
+        }
+        localization_key = "sp_event_GAL_Lukin_reunite_russia_QUOTE"
     }
 }	

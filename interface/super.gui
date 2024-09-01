@@ -299,4 +299,58 @@ guiTypes = {
 		}	
 		
 	}
+	
+	containerWindowType = {
+		name = "sp_event_parlament"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_POK_Parlament_reunite_russia"
+			spriteType = "GFX_sp_event_POK_Parlament_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+	containerWindowType = {
+		name = "sp_event_razval"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_POK_Razval_reunite_russia"
+			spriteType = "GFX_sp_event_POK_Razval_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
+	
+	containerWindowType = {
+		name = "sp_event_lukin"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_GAL_Lukin_reunite_russia"
+			spriteType = "GFX_sp_event_GAL_Lukin_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
 }
