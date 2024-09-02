@@ -502,3 +502,231 @@ country_event = {	#Лукин_объединяет_Россию
 		
 	}
 }
+country_event = {	#Рудой_объединяет_Россию
+	id = super.19
+	title = super.19.t
+	desc = super.19.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.19.a
+		
+        set_global_flag = ZNS_Rudoy_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Юнеман_объединяет_Россию
+	id = super.20
+	title = super.20.t
+	desc = super.20.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.20.a
+		
+        set_global_flag = YSK_Yuneman_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Райт_объединяет_Россию
+	id = super.21
+	title = super.21.t
+	desc = super.21.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.21.a
+		
+        set_global_flag = YSK_Wright_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Погром_объединяет_Россию
+	id = super.22
+	title = super.22.t
+	desc = super.22.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.22.a
+		
+        set_global_flag = YSK_Pogrom_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Романовы_объединяют_Россию
+	id = super.23
+	title = super.23.t
+	desc = super.23.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.23.a
+		
+        set_global_flag = YSK_Romanovi_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Гога_объединяет_Россию
+	id = super.24
+	title = super.24.t
+	desc = super.24.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.24.a
+		
+        set_global_flag = YSK_Goga_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Рогозин_объединяет_Россию
+	id = super.25
+	title = super.25.t
+	desc = super.25.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.25.a
+		
+        set_global_flag = YSK_Rogozin_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Тесак_объединяет_Россию
+	id = super.26
+	title = super.26.t
+	desc = super.26.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.26.a
+		
+        set_global_flag = YSK_Tesak_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#РНЕ_объединяет_Россию
+	id = super.27
+	title = super.27.t
+	desc = super.27.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.27.a
+		
+        set_global_flag = YSK_RNE_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#НПФ_объединяет_Россию
+	id = super.28
+	title = super.28.t
+	desc = super.28.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.28.a
+		
+        set_global_flag = YSK_NPF_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Медведев_объединяет_Россию
+	id = super.29
+	title = super.29.t
+	desc = super.29.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.29.a
+		
+        set_global_flag = YSK_Dimon_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}
+country_event = {	#Невмерлия_объединяет_Украину
+	id = super.30
+	title = super.30.t
+	desc = super.30.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.30.a
+		
+        set_global_flag = UKR_reunite_ukraine
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_sauron"
+		
+	}
+}

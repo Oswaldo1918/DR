@@ -393,7 +393,7 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_POK_parlament_reunite_russia = {
+			Super_Event_POK_razval_reunite_russia = {
 				has_global_flag = POK_Razval_reunite_russia
 			}
 		}
@@ -419,6 +419,294 @@ scripted_gui = {
 		triggers = {
 			Super_Event_GAL_lukin_reunite_russia = {
 				has_global_flag = GAL_Lukin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_rudoy = {
+		window_name = "sp_event_rudoy"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = ZNS_Rudoy_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_ZNS_rudoy_reunite_russia = {
+				has_global_flag = ZNS_Rudoy_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_yuneman = {
+		window_name = "sp_event_yuneman"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Yuneman_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_yuneman_reunite_russia = {
+				has_global_flag = YSK_Yuneman_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_wright = {
+		window_name = "sp_event_wright"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Wright_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_wright_reunite_russia = {
+				has_global_flag = YSK_Wright_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_pogrom = {
+		window_name = "sp_event_pogrom"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Pogrom_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_pogrom_reunite_russia = {
+				has_global_flag = YSK_Pogrom_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_romanovi = {
+		window_name = "sp_event_romanovi"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Romanovi_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_romanovi_reunite_russia = {
+				has_global_flag = YSK_Romanovi_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_goga = {
+		window_name = "sp_event_goga"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Goga_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_goga_reunite_russia = {
+				has_global_flag = YSK_Goga_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_rogozin = {
+		window_name = "sp_event_rogozin"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Rogozin_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_rogozin_reunite_russia = {
+				has_global_flag = YSK_Rogozin_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_tesak = {
+		window_name = "sp_event_tesak"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Tesak_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_tesak_reunite_russia = {
+				has_global_flag = YSK_Tesak_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_rne = {
+		window_name = "sp_event_rne"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_RNE_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_rne_reunite_russia = {
+				has_global_flag = YSK_RNE_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_npf = {
+		window_name = "sp_event_npf"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_NPF_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_npf_reunite_russia = {
+				has_global_flag = YSK_NPF_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_dimon = {
+		window_name = "sp_event_dimon"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = YSK_Dimon_reunite_russia
+		}
+		
+		triggers = {
+			Super_Event_YSK_dimon_reunite_russia = {
+				has_global_flag = YSK_Dimon_reunite_russia
+			}
+		}
+
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+			}
+		}
+	}
+	
+	sp_event_ukr = {
+		window_name = "sp_event_ukr"
+		context_type = player_context
+
+		visible = {
+		    is_ai = no
+			has_global_flag = Super_Event_Visible
+			has_global_flag = UKR_reunite_ukraine
+		}
+		
+		triggers = {
+			Super_Event_UKR_reunite_russia = {
+				has_global_flag = UKR_reunite_ukraine
 			}
 		}
 
@@ -544,6 +832,78 @@ scripted_gui = {
 		triggers = {
 			Super_Event_GAL_lukin_reunite_russia = {
 				has_global_flag = GAL_Lukin_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_ZNS_rudoy_reunite_russia = {
+				has_global_flag = ZNS_Rudoy_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_yuneman_reunite_russia = {
+				has_global_flag = YSK_Yuneman_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_wright_reunite_russia = {
+				has_global_flag = YSK_Wright_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_pogrom_reunite_russia = {
+				has_global_flag = YSK_Pogrom_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_romanovi_reunite_russia = {
+				has_global_flag = YSK_Romanovi_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_goga_reunite_russia = {
+				has_global_flag = YSK_Goga_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_rogozin_reunite_russia = {
+				has_global_flag = YSK_Rogozin_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_tesak_reunite_russia = {
+				has_global_flag = YSK_Tesak_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_rne_reunite_russia = {
+				has_global_flag = YSK_RNE_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_npf_reunite_russia = {
+				has_global_flag = YSK_NPF_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_YSK_dimon_reunite_russia = {
+				has_global_flag = YSK_Dimon_reunite_russia
+			}
+		}
+		
+		triggers = {
+			Super_Event_UKR_reunite_russia = {
+				has_global_flag = UKR_reunite_ukraine
 			}
 		}
 
@@ -675,6 +1035,90 @@ scripted_gui = {
 						has_global_flag = GAL_Lukin_reunite_russia
 					}
 					clr_global_flag = GAL_Lukin_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = ZNS_Rudoy_reunite_russia
+					}
+					clr_global_flag = ZNS_Rudoy_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Yuneman_reunite_russia
+					}
+					clr_global_flag = YSK_Yuneman_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Wright_reunite_russia
+					}
+					clr_global_flag = YSK_Wright_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Pogrom_reunite_russia
+					}
+					clr_global_flag = YSK_Pogrom_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Romanovi_reunite_russia
+					}
+					clr_global_flag = YSK_Romanovi_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Goga_reunite_russia
+					}
+					clr_global_flag = YSK_Goga_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Rogozin_reunite_russia
+					}
+					clr_global_flag = YSK_Rogozin_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Tesak_reunite_russia
+					}
+					clr_global_flag = YSK_Tesak_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_RNE_reunite_russia
+					}
+					clr_global_flag = YSK_RNE_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_NPF_reunite_russia
+					}
+					clr_global_flag = YSK_NPF_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = YSK_Dimon_reunite_russia
+					}
+					clr_global_flag = YSK_Dimon_reunite_russia
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = UKR_reunite_ukraine
+					}
+					clr_global_flag = UKR_reunite_ukraine
 				}
 			}
 		}

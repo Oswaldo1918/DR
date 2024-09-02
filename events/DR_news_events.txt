@@ -1507,3 +1507,219 @@ news_event = { #Лукин объединяет Россию
 		}
 	}
 }
+
+news_event = { #Рудой объединяет Россию
+    id = dk_news.75
+	title = dk_news.75.t
+	desc = dk_news.75.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.75.a
+		hidden_effect = {
+			ZNS = {
+				country_event = super.19
+			}
+		}
+	}
+}
+
+news_event = { #Юнеман объединяет Россию
+    id = dk_news.76
+	title = dk_news.76.t
+	desc = dk_news.76.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.76.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.20
+			}
+		}
+	}
+}
+
+news_event = { #Райт объединяет Россию
+    id = dk_news.77
+	title = dk_news.77.t
+	desc = dk_news.77.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.77.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.21
+			}
+		}
+	}
+}
+
+news_event = { #Погром объединяет Россию
+    id = dk_news.78
+	title = dk_news.78.t
+	desc = dk_news.78.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.78.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.22
+			}
+		}
+	}
+}
+
+news_event = { #Романовы объединяют Россию
+    id = dk_news.79
+	title = dk_news.79.t
+	desc = dk_news.79.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.79.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.23
+			}
+		}
+	}
+}
+
+news_event = { #Гога объединяет Россию
+    id = dk_news.80
+	title = dk_news.80.t
+	desc = dk_news.80.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.80.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.24
+			}
+		}
+	}
+}
+
+news_event = { #Рогозин объединяет Россию
+    id = dk_news.81
+	title = dk_news.81.t
+	desc = dk_news.81.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.81.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.25
+			}
+		}
+	}
+}
+
+news_event = { #Тесак объединяет Россию
+    id = dk_news.82
+	title = dk_news.82.t
+	desc = dk_news.82.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.82.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.26
+			}
+		}
+	}
+}
+
+news_event = { #РНЕ объединяет Россию
+    id = dk_news.83
+	title = dk_news.83.t
+	desc = dk_news.83.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.83.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.27
+			}
+		}
+	}
+}
+
+news_event = { #НПФ объединяет Россию
+    id = dk_news.84
+	title = dk_news.84.t
+	desc = dk_news.84.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.84.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.28
+			}
+		}
+	}
+}
+
+news_event = { #Медведев объединяет Россию
+    id = dk_news.85
+	title = dk_news.85.t
+	desc = dk_news.85.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.85.a
+		hidden_effect = {
+			YSK = {
+				country_event = super.29
+			}
+		}
+	}
+}
+
+news_event = { #Невмерлия объединяет Украину
+    id = dk_news.86
+	title = dk_news.86.t
+	desc = dk_news.86.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.86.a
+		hidden_effect = {
+			UKR = {
+				country_event = super.30
+			}
+		}
+	}
+}
