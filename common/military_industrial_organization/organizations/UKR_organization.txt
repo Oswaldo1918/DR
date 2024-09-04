@@ -80,6 +80,21 @@ UKR_HKBM = {
  
 #####################
 
+UKR_black_sea_shipyard_organization = {
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_SOV_black_sea_shipyard
+	
+	allowed = {	
+		OR = {
+			tag = UKR
+			tag = CHE
+		}
+	}
+	
+	available = {
+     	owner = { controls_state = 197 }
+	}
+}
 
 ###########################
 
@@ -153,7 +168,10 @@ UKR_fort = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_UKR_fort
 	allowed = {	
+		OR = {
 			tag = UKR
+			tag = KUR
+		}
 	}
 	
 	available = {
