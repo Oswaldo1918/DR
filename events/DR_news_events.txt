@@ -1723,3 +1723,21 @@ news_event = { #Невмерлия объединяет Украину
 		}
 	}
 }
+
+news_event = { #Магнитогорск объединяет Украину
+    id = dk_news.87
+	title = dk_news.87.t
+	desc = dk_news.87.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.87.a
+		hidden_effect = {
+			MGN = {
+				country_event = super.2
+			}
+		}
+	}
+}

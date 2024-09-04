@@ -1,42 +1,5 @@
 MGN_soyuz_sionskih_socialnih_razrushiteley = {
 
-    MGN_sssr = {
-        icon = decision_eng_install_government
-		days_re_enable = 0
-
-        ai_will_do = {
-			factor = 4
-		}
-       available = {
-              controls_state = 195
-			  controls_state = 219
-	          controls_state = 217
-	          controls_state = 570
-	          controls_state = 590
-	          controls_state = 202
-	          controls_state = 564
-	          controls_state = 408
-	          controls_state = 206
-		
-          }
-
-        visible = {
-			has_government = metacommy
-		}
-		days_remove = 0
-		ai_will_do = {
-        factor = 100
-		}
-        remove_effect = {
-			set_cosmetic_tag = MGN_ussr
-			set_country_flag = MGN_reunite_russia_kostil
-			news_event = {
-				id = dk_news.13
-			}
-		}
-		fire_only_once = yes 
-    }
-
 	MGN_pobeda_v_gv = { #Интеграция_Сибири
 
 		available = {

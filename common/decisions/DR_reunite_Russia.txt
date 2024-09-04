@@ -395,7 +395,7 @@ DR_form_russian_state_decisions_category = {
         remove_effect = {
 			set_cosmetic_tag = MGN_ussr
 			news_event = {
-				id = dk_news.13
+				id = dk_news.87
 			}
 		}
     }
@@ -427,7 +427,7 @@ DR_form_russian_state_decisions_category = {
 			factor = 100
 		}
 		remove_effect = {
-			set_cosmetic_tag = LAZ_ussr
+			set_cosmetic_tag = MGN_ussr
 			news_event = {
 				id = dk_news.30
 			}
@@ -464,6 +464,99 @@ DR_form_russian_state_decisions_category = {
 			set_cosmetic_tag = LAZ_ussr
 			news_event = {
 				id = dk_news.63
+			}
+		}
+	}
+	
+	POK_slovolzhitsin_decision = { #Провозглашение_России_за_Словолжицына
+        icon = decision_eng_install_government	
+		cost = 25
+
+		visible = {
+			has_country_leader = { character = POK_Slovolzhicen	ruling_only = yes }
+			tag = POK
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 564
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			news_event = {
+				id = dk_news.69
+			}
+		}
+	}
+	
+	POK_eltsin_decision = { #Провозглашение_России_за_Ельцина
+        icon = decision_eng_install_government	
+		cost = 25
+
+		visible = {
+			has_country_leader = { character = POK_Eltsin ruling_only = yes }
+			tag = POK
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 564
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			news_event = {
+				id = dk_news.70
+			}
+		}
+	}
+	
+	POK_putin_decision = { #Провозглашение_России_за_Путина
+        icon = decision_eng_install_government	
+		cost = 25
+
+		visible = {
+			has_country_leader = { character = POK_Putin ruling_only = yes }
+			tag = POK
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 564
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			news_event = {
+				id = dk_news.71
 			}
 		}
 	}
@@ -1100,12 +1193,9 @@ DR_reunite_russia_decisions_category = {
 				country_exists = ZNS
 				country_exists = MRD			
 			}
-			NOT = {
-				has_global_flag = pokoyanskaya_civil_war_end_gf
-			}
-			date > 7.01.01
+			date > 6.01.01
 			has_army_manpower = {
-				size > 750000
+				size > 250000
 			}
 		}	
 		
