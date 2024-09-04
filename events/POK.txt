@@ -1618,6 +1618,9 @@ country_event = {
 	
 	option = {
 	name = POK.40.a
+	news_event = {
+				id = dk_news.73
+			}
 	if = {
 				limit = {
 					 has_completed_focus = POK_private_armies
