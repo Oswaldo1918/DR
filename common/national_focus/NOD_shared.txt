@@ -1492,6 +1492,11 @@ completion_reward = {
 		prerequisite = {
 			focus = NOD_peregovory_s_kazakami
 		}
+		bypass = {
+			DON = { 
+			exists = no
+			}
+		}
 		available = {
 			has_war = no
 		}
@@ -1515,6 +1520,11 @@ completion_reward = {
 		}
 		x = 41
 		y = 4
+		bypass = {
+			CRI = { 
+			exists = no
+			}
+		}
 		available = {
 			has_war = no
 		}
@@ -1539,6 +1549,23 @@ CRI = {
 		}
 		x = 42
 		y = 5
+		bypass = {
+			UKR = { 
+			exists = no
+			}
+			CHE = { 
+			exists = no
+			}
+			KUR = { 
+			exists = no
+			}
+			ZHE = { 
+			exists = no
+			}
+			SIN = { 
+			exists = no
+			}
+		}
 		available = {
 			has_war = no
 		}
@@ -1620,6 +1647,11 @@ create_wargoal = {
 				factor = 0
 			}
 		}
+		bypass = {
+			HAZ = { 
+			exists = no
+			}
+		}
 		available = {
 			has_war = no
 		}
@@ -1643,6 +1675,20 @@ create_wargoal = {
 		}
 		prerequisite = {
 			focus = NOD_hazari
+		}
+		bypass = {
+			GEO = { 
+			exists = no
+			}
+			CHK = { 
+			exists = no
+			}
+			ARM = { 
+			exists = no
+			}
+			AZR = { 
+			exists = no
+			}
 		}
 		available = {
 			has_war = no
@@ -1815,7 +1861,14 @@ create_wargoal = {
 		prerequisite = {
 			focus = NOD_za_uralom
 		}
-		
+		bypass = {
+			BRT = { 
+			exists = no
+			}
+			MRD = { 
+			exists = no
+			}
+		}
 		available = {
 					has_war = no
 				}
@@ -1872,6 +1925,26 @@ completion_reward = {
 		cost = 5
 		prerequisite = {
 			focus = NOD_v_sibir
+		}
+		bypass = {
+			DOT = { 
+			exists = no
+			}
+			KOL = { 
+			exists = no
+			}
+			MAG = { 
+			exists = no
+			}
+			YAK = { 
+			exists = no
+			}
+			YWO = { 
+			exists = no
+			}
+			TUB = { 
+			exists = no
+			}
 		}
 		
 		available = {
@@ -2007,7 +2080,26 @@ completion_reward = {
 		prerequisite = {
 			focus = NOD_chat
 		}
-		
+		bypass = {
+			OSV = { 
+			exists = no
+			}
+			LAZ = { 
+			exists = no
+			}
+			UNT = { 
+			exists = no
+			}
+			ARK = { 
+			exists = no
+			}
+			YWO = { 
+			exists = no
+			}
+			MAT = { 
+			exists = no
+			}
+		}
 		available = {
 					has_war = no
 				}
@@ -2122,7 +2214,23 @@ completion_reward = {
 		prerequisite = {
 			focus = NOD_na_lazaret
 		}
-		
+		bypass = {
+			KUR = { 
+			exists = no
+			}
+			ZHE = { 
+			exists = no
+			}
+			SIN = { 
+			exists = no
+			}
+			CHE = { 
+			exists = no
+			}
+			UKR = { 
+			exists = no
+			}
+		}
 		available = {
 					has_war = no
 				}
@@ -2163,7 +2271,17 @@ create_wargoal = {
 		prerequisite = {
 			focus = NOD_moskva
 		}
-		
+		bypass = {
+			TUP = { 
+			exists = no
+			}
+			MHL = { 
+			exists = no
+			}
+			EBN = { 
+			exists = no
+			}
+		}
 		available = {
 					has_war = no
 				}
@@ -2275,6 +2393,14 @@ create_wargoal = {
 		prerequisite = {
 			focus = NOD_vnesnie_operatsii
 		}
+		bypass = {
+			WHS = { 
+			exists = no
+			}
+			ZWN = { 
+			exists = no
+			}
+		}
 		available = {
 		SIN = {
 					exists = no
@@ -2321,6 +2447,17 @@ create_wargoal = {
 		prerequisite = {
 			focus = NOD_bel
 		}
+		bypass = {
+			SPL = { 
+			exists = no
+			}
+			VSB = { 
+			exists = no
+			}
+			KLG = { 
+			exists = no
+			}
+		}
 		available = {
 		has_completed_focus = NOD_piter
 			has_war = no
@@ -2352,6 +2489,11 @@ create_wargoal = {
 		cost = 5
 		prerequisite = {
 			focus = NOD_vnesnie_operatsii
+		}
+		bypass = {
+			KAZ = { 
+			exists = no
+			}
 		}
 		available = {
 					has_war = no
@@ -2391,6 +2533,11 @@ create_wargoal = {
 			
 			focus = NOD_help_KZ
 		}
+		bypass = {
+			LIM = { 
+			exists = no
+			}
+		}
 		available = {		
 			has_war = no			
 				}
@@ -2410,6 +2557,17 @@ create_wargoal = {
 		prerequisite = {
 			
 			focus = NOD_help_KZ
+		}
+		bypass = {
+			TAJ = { 
+			exists = no
+			}
+			KYR = { 
+			exists = no
+			}
+			TMS = { 
+			exists = no
+			}
 		}
 		available = {
 		KAZ = {

@@ -2374,6 +2374,9 @@ DR_reunite_russia_decisions_category = {
 			NOT = {
 				tag = SPL
 			}
+			NOT = {
+				tag = POK
+			}
 			has_war = no 
 			is_neighbor_of = SPL
 		}
@@ -2411,6 +2414,9 @@ DR_reunite_russia_decisions_category = {
 		available = {
 			NOT = {
 				tag = VSB
+			}
+			NOT = {
+				tag = POK
 			}
 			has_war = no 
 			is_neighbor_of = VSB
@@ -2451,6 +2457,9 @@ DR_reunite_russia_decisions_category = {
 		available = {
 			NOT = {
 				tag = KLG
+			}
+			NOT = {
+				tag = POK
 			}
 			has_war = no 
 			is_neighbor_of = KLG
@@ -4171,6 +4180,9 @@ DR_core_russian_territories_decisions_category = {
 			NOT = {
 				tag = SPL
 			}
+			NOT = {
+				tag = POK
+			}
 		}
 		
 		available = {
@@ -4212,6 +4224,9 @@ DR_core_russian_territories_decisions_category = {
 			NOT = {
 				tag = VSB
 			}
+			NOT = {
+				tag = POK
+			}
 		}
 		
 		available = {
@@ -4252,6 +4267,9 @@ DR_core_russian_territories_decisions_category = {
 		visible = {
 			NOT = {
 				tag = KAL
+			}
+			NOT = {
+				tag = POK
 			}
 		}
 		
