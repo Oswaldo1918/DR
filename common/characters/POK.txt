@@ -60,7 +60,7 @@ characters={
 			}
 			army = {
 				large = "gfx/leaders/POK/Sharansky.dds"
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_POK_Sharanskiy"
 			}
 		}
 
@@ -742,9 +742,25 @@ characters={
 		portraits = {
 			army = {
 				large = "gfx/leaders/POK/Taburetka.dds"
-				small = "GFX_idea_taburetka"
+				small = "GFX_idea_POK_taburetka"
 			}
-		}	
+		}
+        advisor = {	
+			slot = army_chief
+			idea_token = POK_Taburetka
+			allowed = {
+				original_tag = POK
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {		
+			has_completed_focus = POK_reform_army
+		    } 
+		}		
 	}
 	POK_Elias_Wise = {
 		name = "Элиас Вайс"
@@ -762,7 +778,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/POK/Hodorkovskiy.dds"
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_POK_Hodor"
 			}
 		}
         advisor={
@@ -777,6 +793,7 @@ characters={
 			}
 			visible = {		
 			has_completed_focus = POK_komitet_spaseniya
+			NOT = { has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes } }
 		    }
 			traits = {
 				backroom_backstabber
@@ -842,7 +859,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				prince_of_terror
+				Oscillografinya
 			}
 		}
         corps_commander = {
@@ -880,7 +897,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
-				prince_of_terror
+				uchitel_goda
 			}
 		}       		
 	}
@@ -969,7 +986,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = "GFX_idea_POK_Ahedjakova"
+				small = "GFX_idea_POK_Ahedzhakova"
 			}
 		}
 		advisor={
@@ -1066,7 +1083,7 @@ characters={
 			has_completed_focus = POK_radical_decommunisation
 		    }
 			traits = {
-				
+				inkvizitor_decommunizatsii
 			}
 		}   
 
@@ -1209,7 +1226,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_POK_yumasheva"
 			}
 		}
         advisor={
@@ -1235,7 +1252,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_POK_yumashev"
 			}
 		}
         advisor={

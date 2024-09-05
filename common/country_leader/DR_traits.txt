@@ -26,6 +26,28 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	inkvizitor_decommunizatsii = {
+		random = no
+		sprite = 10
+		anarhostalinism_drift = -0.02
+		vmestolev_drift = -0.02
+		metacommy_drift = -0.02
+		war_support_factor = 0.05
+		army_morale_factor = 0.1
+	}
+	uchitel_goda = {
+		random = no
+		sprite = 10
+		party_popularity_stability_factor = 0.05
+		research_speed_factor = 0.05
+	}
+	Oscillografinya = {
+		random = no
+		sprite = 10
+		production_speed_rocket_site_factor = 0.5
+		acclimatization_cold_climate_gain_factor = 0.5
+		acclimatization_hot_climate_gain_factor = 0.5
+	}
 	boss_bani = {
 		random = no
 		sprite = 10

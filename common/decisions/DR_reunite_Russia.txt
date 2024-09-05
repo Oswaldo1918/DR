@@ -569,7 +569,10 @@ DR_form_russian_state_decisions_category = {
 		cost = 25
 
 		visible = {
+		    OR = {
 			has_country_leader = { character = POK_Shulman ruling_only = yes }
+			has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes }
+			}
 			tag = POK
 		}
 		
