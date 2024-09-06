@@ -133,6 +133,22 @@ characters={
         	logistics_skill = 3
 			legacy_id = 0
 		}
+		
+		advisor = {	
+		    slot = army_chief
+		    idea_token = POK_grudin
+			allowed = {
+			    original_tag = POK
+			}
+			
+			available = { 	   
+			}
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+	    }
 	}
 	
 	POK_nevzorov = {
@@ -153,6 +169,17 @@ characters={
         	planning_skill = 3
         	logistics_skill = 3
 			legacy_id = 0
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = POK_nevzorov
+			allowed = {
+				original_tag = POK
+			}
+			traits = {
+				army_cavalry_2 
+			}
 		}
 	}
 	
@@ -217,6 +244,17 @@ characters={
         	logistics_skill = 3
 			legacy_id = 0
 		}
+		
+		advisor={
+			slot = high_command
+			idea_token = POK_evdokimov
+			allowed = {
+				original_tag = POK
+			}
+			traits = {
+				army_armored_1 
+			}
+		}
 	}
 	
 	POK_shmonov = {
@@ -237,6 +275,17 @@ characters={
         	planning_skill = 2
         	logistics_skill = 1
 			legacy_id = 0
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = POK_shmonov
+			allowed = {
+				original_tag = POK
+			}
+			traits = {
+				army_commando_1 
+			}
 		}
 	}
 	
@@ -1003,6 +1052,7 @@ characters={
 			has_completed_focus = POK_komitet_spaseniya
 		    }
 			traits = {
+			    smooth_talking_charmer
 				prince_of_terror
 			}
 		}       		
@@ -1023,9 +1073,11 @@ characters={
 			slot = political_advisor
 			idea_token = POK_Hamatova
 
-			allowed = {
+			allowed = { 
+			    OR = {
 				original_tag = POK
 				original_tag = IDU
+				}
 			}
 			ai_will_do = {
 				factor = 10
@@ -1037,7 +1089,7 @@ characters={
 			}
 		    }
 			traits = {
-				prince_of_terror
+				staunch_loyalist
 			}
 		}   
 
@@ -1181,7 +1233,6 @@ characters={
 		    }
 			traits = {
 			disarmament_proponent
-			prince_of_terror
 			}
 		}
 		corps_commander = {
