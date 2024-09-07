@@ -247,10 +247,8 @@ country_event = { #Финальные_приготовления
 			add_to_variable = { MRD_mordor_army_attack_factor = 0.2 }
 			add_to_variable = { MRD_mordor_army_land_night_attack = 0.2 }
 			add_to_variable = { MRD_acclimatization_cold_climate_gain_factor = 0.2 }
-			set_technology = { MRD_urukhai_battalion_tech = 1 popup = no }
 			division_template = {
-				name = "Дивизия урок"
-				division_names_group = MRD_URK_01
+				name = "Urukhai"
 				is_locked = yes
 				division_cap = 18
 				template_counter = 35
@@ -478,6 +476,9 @@ country_event = {	###Проект_Гриб_Саурона_приглашение
 	
 	option = {
 		name = mordor.20.a
+		MRD = {
+			country_event = mordor.21
+		}
 	}
 }
 
@@ -492,7 +493,7 @@ country_event = {	###Проект_Гриб_Саурона_положительн
 	
 	option = {
 		name = mordor.21.a
-
+		set_country_flag = MRD_bomba_po_tihomu_budet_cf
 	}
 }
 
@@ -698,16 +699,18 @@ country_event = {	###Лазарет_начинает_ответную_игру
 	
 	option = {
 		name = mordor.33.a
+		LAZ = { country_event = mordor.34 }
 	}
 	option = {
-		name = mordor.33.a
+		name = mordor.33.b
+		LAZ = { country_event = mordor.35 }
 	}
 	option = {
-		name = mordor.33.a
-		add_ideas = MRD_LAZ_diversiya
+		name = mordor.33.c
+		LAZ = { country_event = mordor.36 }
 	}
 }
-country_event = {	###Саурон_согласен
+country_event = {	###Саурон_будет_воевать
 
 	id = mordor.34
         title = mordor.34.t
@@ -718,7 +721,10 @@ country_event = {	###Саурон_согласен
 	
 	option = {
 		name = mordor.34.a
-		add_ideas = MRD_LAZ_diversiya
+		declare_war_on = {
+			target = MRD
+			type = annex_everything
+		}
 	}
 }
 country_event = {	###Саурон_уклоняется
@@ -751,20 +757,6 @@ country_event = {	###Саурон_соглашается
 			target = MRD
 			end_wars = no
 		}
-	}
-}
-country_event = {	###Саурон_соглашается
-
-	id = mordor.36
-        title = mordor.36.t
-        desc = mordor.36.d
-	picture = GFX_report_event_dkr_sauron_hvatka
-
-	is_triggered_only = yes
-	
-	option = {
-		name = mordor.36.a
-		add_ideas = MRD_LAZ_diversiya
 	}
 }
 country_event = {	###Почему_мы_ищем_Равшана_1
@@ -929,7 +921,7 @@ country_event = {	###Итоги_разборок_с_Цениным
 		set_country_flag = MRD_poisk_koltsa_3
 	}
 }
-country_event = {	###Почему_мы_ищем_Бубуем
+country_event = {	###Почему_мы_ищем_Бубуея
 
 	id = mordor.46
         title = mordor.46.t
@@ -1122,5 +1114,141 @@ country_event = {	###Исходящий_ивент_о_рейде
 	
 	option = {
 		name = mordor.58.a
+	}
+}
+country_event = {	###Назгул-Чумак
+
+	id = mordor.59
+        title = mordor.59.t
+        desc = mordor.59.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.59.a
+		recruit_character = MRD_nazgul_Abdulpoel
+		OSV = {
+			retire_character = LAZ_Chumak
+		}
+	}
+}
+country_event = {	###Назгул-Орлов
+
+	id = mordor.60
+        title = mordor.60.t
+        desc = mordor.60.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.60.a
+		recruit_character = MRD_nazgul_Aigul
+		MAT = {
+			retire_character = MAT_Orlov
+		}
+	}
+}
+country_event = {	###Назгул-Пистон
+
+	id = mordor.61
+        title = mordor.61.t
+        desc = mordor.61.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.61.a
+		recruit_character = MRD_nazgul_Bibigul
+		MAG = {
+			retire_character = MAG_Piston
+		}
+	}
+}
+country_event = {	###Назгул-Дай-Лама
+
+	id = mordor.62
+        title = mordor.62.t
+        desc = mordor.62.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.62.a
+		recruit_character = MRD_nazgul_Gyulchatay
+		SHM = {
+			retire_character = SHM_Himmler
+		}
+	}
+}
+country_event = {	###Назгул-Роммель
+
+	id = mordor.63
+        title = mordor.63.t
+        desc = mordor.63.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.63.a
+		recruit_character = MRD_nazgul_Nazgul
+		LRG = {
+			retire_character = LRG_Rommel
+		}
+	}
+}
+country_event = {	###Назгул-Карл_Эглессер
+
+	id = mordor.64
+        title = mordor.64.t
+        desc = mordor.64.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.64.a
+		recruit_character = MRD_nazgul_Hamul
+		AUS = {
+			retire_character = AUS_Karl
+		}
+	}
+}
+country_event = {	###Назгул-Мафиозник
+
+	id = mordor.65
+        title = mordor.65.t
+        desc = mordor.65.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.62.a
+		recruit_character = MRD_nazgul_Shmaiser
+		MOL = {
+			kill_country_leader = yes
+		}
+	}
+}
+country_event = {	###Назгул-Томас_Шэлби
+
+	id = mordor.66
+        title = mordor.66.t
+        desc = mordor.66.d
+	picture = GFX_report_event_dkr_sauron_dovolen
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mordor.66.a
+		recruit_character = MRD_nazgul_Shredder
+		PBG = {
+			retire_character = PBG_Thomas_Shelby
+		}
 	}
 }

@@ -166,19 +166,13 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Abdulpoel = {
+		name = "Абдулпоел"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Abdulpoel"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Abdulpoel.dds"
 			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
@@ -189,19 +183,13 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Aigul = {
+		name = "Айгюль"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Aigul"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Aigul.dds"
 			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
@@ -212,19 +200,13 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Bibigul = {
+		name = "Бибигюль"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Bibigul"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Bibigul.dds"
 			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
@@ -235,19 +217,30 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Gyulchatay = {
+		name = "Гюльчатай"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Gyulchitay"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Gyulchitay.dds"
 			}
 		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
+		corps_commander = {
+			traits = { trait_MRD_megaklinok }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MRD_nazgul_Nazgul = {
+		name = "Назгуль"
+		portraits = {
+			army = {
+				small = "GFX_idea_Portrait_Mordor_Nazgul"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Nazgul.dds"
+			}
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
@@ -258,19 +251,13 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Hamul = {
+		name = "Хаммуль"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Hamul"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Hamul.dds"
 			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
@@ -281,20 +268,15 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Shmaiser = {
+		name = "Шмайсер"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Shmaiser"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Shmaiser.dds"
 			}
 		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
-		}
+
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }
 			skill = 2
@@ -304,42 +286,13 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	MRD_nazgul_ = {
-		name = ""
+	MRD_nazgul_Shredder = {
+		name = "Шреддер"
 		portraits = {
 			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
+				small = "GFX_idea_Portrait_Mordor_Shredder"
+				large = "gfx/leaders/MRD/Portrait_Mordor_Shredder.dds"
 			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
-		}
-		corps_commander = {
-			traits = { trait_MRD_megaklinok }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
-	}
-	MRD_nazgul_ = {
-		name = ""
-		portraits = {
-			army = {
-				small = "GFX_idea_"
-				large = "gfx/leaders/MRD/.dds"
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = korol_charodey
-			ledger = army
 		}
 		corps_commander = {
 			traits = { trait_MRD_megaklinok }

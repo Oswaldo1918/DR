@@ -253,9 +253,9 @@ MRD_mordovskava_armiya_decisions_category = {
 		
 		fire_only_once = yes
 		
-		remove_effect = {
+		complete_effect = {
 			add_timed_idea = {			
-				idea = MRD_idea_uskorit_virabotku_materiala
+				idea = MRD_idea_zaplanirovanniye_trati
 				days = 180
 			}
 			hidden_effect = {
@@ -263,10 +263,13 @@ MRD_mordovskava_armiya_decisions_category = {
 			}
 			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
 		}
-		timeout_effect = {
+		remove_effect = {
 			custom_effect_tooltip = MRD_razblokirovan_shablon_tt
+			hidden_effect = {
+				set_technology = { MRD_urukhai_battalion_tech = 1 popup = no }
+			}
 			set_division_template_lock = {
-				division_template = "Дивизия урок"
+				division_template = "Urukhai"
 				is_locked = no
 			}
 		}
@@ -295,17 +298,17 @@ MRD_mordovskava_armiya_decisions_category = {
 		
 		fire_only_once = yes
 		
-		remove_effect = {
+		complete_effect = {
 			add_timed_idea = {			
-				idea = MRD_idea_uskorit_virabotku_materiala
+				idea = MRD_idea_zaplanirovanniye_trati
 				days = 90
 			}
 			hidden_effect = {
 				add_to_variable = { MRD_weekly_manpower = -250 }
 			}
-			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt
+			custom_effect_tooltip = MRD_3_h_weekly_manpower_tt	
 		}
-		timeout_effect = {
+		remove_effect = {
 			add_research_slot = 1
 		}
 	}	
@@ -365,7 +368,11 @@ MRD_nazgulstva_decisions_category = {
 		
 		remove_effect = {
 			create_wargoal = {
-				target = MNR
+				target = GLA
+				type = annex_everything
+            }
+			create_wargoal = {
+				target = CNA
 				type = annex_everything
             }
 		}			
@@ -399,7 +406,7 @@ MRD_nazgulstva_decisions_category = {
             }
 		}			
 	}
-	MRD_nazgulstvo_Mongolia = {
+	MRD_nazgulstvo_Uigyriya = {
 	
 		icon = ger_reichskommissariats
 
@@ -412,14 +419,9 @@ MRD_nazgulstva_decisions_category = {
 			controls_state = 759 #Куньлунь-Шань
 			controls_state = 760 #Дабаньчень
 			controls_state = 756 #Цзюцюань
-			controls_state = 818 #Ховд
-			controls_state = 817 #Гоби
-			controls_state = 820 #Хувсел
-			controls_state = 330 #Улан-Батор
-			controls_state = 819 #Доронд
-			controls_state = 612 #Чахар
-			controls_state = 611 #Южный_Чахар
-			controls_state = 621 #Суйюуань
+			controls_state = 755 #Хайси
+			controls_state = 616 #Нинся
+			controls_state = 754 #Голог
 		}
 
 		cost = 25
@@ -429,13 +431,12 @@ MRD_nazgulstva_decisions_category = {
 		}
 
 		visible = {
-			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
+			has_completed_focus = MRD_exspluatatsiya_mongolii
 		}
 
 		complete_effect = {
-			release_on_controlled = MNR
-			MNR = {
+			release_on_controlled = GLA
+			GLA = {
 				controls_state = 619 #Уезд_Яркенд
 				controls_state = 287 #Такла-Макан
 				controls_state = 617 #Урумчи
@@ -443,31 +444,136 @@ MRD_nazgulstva_decisions_category = {
 				controls_state = 759 #Куньлунь-Шань
 				controls_state = 760 #Дабаньчень
 				controls_state = 756 #Цзюцюань
-				controls_state = 818 #Ховд
-				controls_state = 817 #Гоби
-				controls_state = 820 #Хувсел
-				controls_state = 330 #Улан-Батор
-				controls_state = 819 #Доронд
-				controls_state = 612 #Чахар
-				controls_state = 611 #Южный_Чахар
-				controls_state = 621 #Суйюуань
-				GER = {
+				controls_state = 755 #Хайси
+				controls_state = 616 #Нинся
+				controls_state = 754 #Голог
+				MRD = {
 					puppet = PREV
 					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 				}
-				set_cosmetic_tag = UKR_reichskommissariat
-				create_country_leader = {
-					name = "Erich Koch"
-					picture = GFX_portrait_Erich_Koch
-					expire = "1965.1.1"
-					ideology = nazism
-					traits = {
-					}
-				}
+				#set_cosmetic_tag = UKR_reichskommissariat
+				#create_country_leader = {
+				#	name = "Erich Koch"
+				#	picture = GFX_portrait_Erich_Koch
+				#	expire = "1965.1.1"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
 			}
 		}
 	}
-}
+	MRD_nazgulstvo_zheltorossiya = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = MRD_korovani_yiga
+			custom_trigger_tooltip = {
+				tooltip = DR_form_china_GOM_manchu_tt
+				controls_state = 761 #Манчжурия
+				controls_state = 714
+				controls_state = 717
+				controls_state = 328
+				controls_state = 716
+				controls_state = 610
+				controls_state = 715
+				controls_state = 745
+				controls_state = 609
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			base = 15
+		}
+
+		visible = {
+			has_completed_focus = MRD_exspluatatsiya_mongolii
+		}
+
+		complete_effect = {
+			release_on_controlled = ZNR
+			ZNR = {
+				controls_state = 761 #Манчжурия
+				controls_state = 714
+				controls_state = 717
+				controls_state = 328
+				controls_state = 716
+				controls_state = 610
+				controls_state = 715
+				controls_state = 745
+				controls_state = 609
+				MRD = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				#set_cosmetic_tag = UKR_reichskommissariat
+				#create_country_leader = {
+				#	name = "Erich Koch"
+				#	picture = GFX_portrait_Erich_Koch
+				#	expire = "1965.1.1"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+			}
+		}
+	}
+	MRD_nazgulstvo_Mongolia = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = MRD_korovani_yiga
+				controls_state = 818 #Монголия
+				controls_state = 820
+				controls_state = 330
+				controls_state = 817
+				controls_state = 819
+				controls_state = 612
+				controls_state = 611
+				controls_state = 621
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			base = 15
+		}
+
+		visible = {
+			has_completed_focus = MRD_exspluatatsiya_mongolii
+		}
+
+		complete_effect = {
+			release_on_controlled = MNR
+			MNR = {
+				controls_state = 818 #Монголия
+				controls_state = 820
+				controls_state = 330
+				controls_state = 817
+				controls_state = 819
+				controls_state = 612
+				controls_state = 611
+				controls_state = 621
+				MRD = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				#set_cosmetic_tag = UKR_reichskommissariat
+				#create_country_leader = {
+				#	name = "Erich Koch"
+				#	picture = GFX_portrait_Erich_Koch
+				#	expire = "1965.1.1"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+			}
+		}
+	}
 }
 
 MRD_grib_saurona_decisions_category = {
@@ -482,7 +588,6 @@ MRD_grib_saurona_decisions_category = {
 		}
 
 		available = {
-			has_tech = atomic_research
 			NOT = {
 				has_idea = MRD_idea_uskorit_yaderniye_issledovaniya
 			}
@@ -599,7 +704,9 @@ MRD_grib_saurona_decisions_category = {
 		}
 		
 		remove_effect = {
-			country_event = mordor.19
+			FRG = {
+				country_event = mordor.20
+			}
 		}
 	}
 	MRD_provesti_konsert_ramshtaina = {
@@ -610,6 +717,7 @@ MRD_grib_saurona_decisions_category = {
 		days_remove = 7
 		
 		visible = {
+			has_country_flag = MRD_bomba_po_tihomu_budet_cf
 			has_completed_focus = MRD_proyekt_grib_saurona
 			tag = MRD
             NOT = {
@@ -642,12 +750,12 @@ MRD_grib_saurona_decisions_category = {
 
 MRD_poisk_nazgulov_decisions_category = {
 
-	MRD_nazgul_chumak = { ###Предложить_Чумаку
+	MRD_nazgul_chumak = { ###Предложить_Чумаку_1
 
 		icon = generic_research 
 
 		cost = 25
-		days_remove = 90
+		#days_remove = 14
 
 		visible = {
 			tag = MRD
@@ -663,11 +771,207 @@ MRD_poisk_nazgulov_decisions_category = {
 		
 		fire_only_once = yes
 		
-		remove_effect = {
+		complete_effect = {
 		}
-		timeout_effect = {
+		remove_effect = {
 			clr_country_flag = DR_MRD_poisk_koltsa_cf
-			country_event = 
+			country_event = mordor.59
+		}
+	}
+	MRD_nazgul_orlov = { ###Предложить_Орлову_2
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.60
+		}
+	}
+	MRD_nazgul_piston = { ###Предложить_Пистону_3
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.61
+		}
+	}
+	MRD_nazgul_day_lama = { ###Предложить_Дай_Ламе_4
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.62
+		}
+	}
+	MRD_nazgul_rommel = { ###Предложить_Роммелю_5
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.63
+		}
+	}
+	MRD_nazgul_carl_egglesser = { ###Предложить_Карлу_Эглессеру_6
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.64
+		}
+	}
+	MRD_nazgul_mafioznik = { ###Предложить_Мафиознику_7
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.65
+		}
+	}
+	MRD_nazgul_tomas_shelbi = { ###Предложить_Томасу_Шэлби_8
+
+		icon = generic_research 
+
+		cost = 25
+		#days_remove = 14
+
+		visible = {
+			tag = MRD
+		}
+		
+		available = {
+			NOT = { has_country_flag = DR_MRD_poisk_nazgula_cf }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+		}
+		remove_effect = {
+			clr_country_flag = DR_MRD_poisk_nazgula_cf
+			country_event = mordor.66
 		}
 	}
 }
@@ -678,7 +982,7 @@ MRD_poisk_koltsa_decisions_category = {
 		icon = generic_research 
 
 		cost = 50
-		days_remove = 90
+		days_remove = 14
 
 		visible = {
 			tag = MRD
