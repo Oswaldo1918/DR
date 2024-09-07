@@ -454,6 +454,9 @@ focus_tree = {
                     id = IRQ_ldprbaas_balance
                     value < 0
                 }
+				NOT = {
+							has_completed_focus = IRQ_podderzhat_IZR
+						}
 			}	
 			completion_reward = {
 					set_politics = {
