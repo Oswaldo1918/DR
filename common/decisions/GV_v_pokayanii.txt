@@ -750,6 +750,10 @@ GV_v_pokayanii_podgotovka = {
 		days_remove = 20
 		days_re_enable = 0
 		
+		ai_will_do = {
+		    factor = 1
+		}
+		
         visible = {
 			NOT = { has_country_flag = dva_deystviya }
         }
@@ -786,6 +790,10 @@ GV_v_pokayanii_podgotovka = {
 		days_remove = 20
 		days_re_enable = 0
 		
+		ai_will_do = {
+		    factor = 1
+		}
+		
         visible = {
 			NOT = { has_country_flag = dva_deystviya }
         }
@@ -820,6 +828,10 @@ GV_v_pokayanii_podgotovka = {
         icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
+		
+		ai_will_do = {
+		    factor = 1
+		}
 
         visible = {
 			NOT = { has_country_flag = dva_deystviya }
@@ -855,6 +867,10 @@ GV_v_pokayanii_podgotovka = {
         icon = decision_generic_prepare_civil_war
 		days_remove = 20
 		days_re_enable = 0
+		
+		ai_will_do = {
+		    factor = 1
+		}
 
         visible = {
 			NOT = { has_country_flag = dva_deystviya }

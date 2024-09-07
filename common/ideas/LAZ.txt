@@ -964,6 +964,13 @@ ideas = {
 				original_tag = LAZ
 			}
 			
+			available = {
+	            IF = {
+	         		limit = { OSV = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
+			
 			research_bonus = {
 				industry = 0.05
 				synth_resources = 0.15
@@ -982,6 +989,13 @@ ideas = {
 				original_tag = LAZ
 			}
 			
+			available = {
+	            IF = {
+	         		limit = { OSV = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
+			
 			research_bonus = {
 				industry = 0.15
 				
@@ -998,6 +1012,13 @@ ideas = {
 			allowed = {
 				original_tag = LAZ
 			}
+			
+			available = {
+	            IF = {
+	         		limit = { OSV = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
 			
 			research_bonus = {
 				electronics = 0.15

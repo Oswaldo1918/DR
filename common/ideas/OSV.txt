@@ -252,4 +252,82 @@ ideas = {
             traits = { heels_nipper }
         }
 	}
+	
+	industrial_concern = {
+		
+		OSV_chumhimprom = {
+		
+	    	picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_tag = OSV
+			}
+			
+			available = {
+	            IF = {
+	         		limit = { LAZ = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		OSV_bolshevichka = {
+		
+	    	picture = GFX_idea_LAZ_bolshevichka
+			
+			allowed = {
+				original_tag = OSV
+			}
+			
+			available = {
+	            IF = {
+	         		limit = { LAZ = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		OSV_rubin = {
+		
+	    	picture = idea_LAZ_rubin
+			
+			allowed = {
+				original_tag = OSV
+			}
+			
+			available = {
+	            IF = {
+	         		limit = { LAZ = {exists = yes } } 
+	         		owner = { controls_state = 219 }
+	           	}
+            }
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
 }	

@@ -572,6 +572,7 @@ DR_form_russian_state_decisions_category = {
 		    OR = {
 			has_country_leader = { character = POK_Shulman ruling_only = yes }
 			has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes }
+			has_country_leader = { character = POK_NOVOD ruling_only = yes }
 			}
 			tag = POK
 		}
@@ -907,35 +908,6 @@ DR_form_russian_state_decisions_category = {
 		remove_effect = {
 			news_event = {
 				id = dk_news.85
-			}
-		}
-	}
-	
-	UKR_united_decision = { #Провозглашение_Украины
-        icon = decision_eng_install_government	
-
-		visible = {
-			tag = UKR
-		}
-		
-		available = {
-			controls_state = 202
-			controls_state = 93
-			controls_state = 91
-			controls_state = 192
-			controls_state = 227
-		}
-		
-		fire_only_once = yes
-		days_remove = 15
-		
-		ai_will_do = {
-			factor = 100
-		}
-		remove_effect = {
-			add_political_power = 150
-			news_event = {
-				id = dk_news.86
 			}
 		}
 	}

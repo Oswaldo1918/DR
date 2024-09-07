@@ -1189,26 +1189,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					declare_war_on = {
-							type = annex_everything
-							target = KUR
-						}
-					declare_war_on = {
-							type = annex_everything
-							target = CHE
-						}
-					declare_war_on = {
-							type = annex_everything
-							target = CRI
-						}
-					declare_war_on = {
-							type = annex_everything
-							target = ZHE
-						}
-					declare_war_on = {
-							type = annex_everything
-							target = SIN
-						}
+					unlock_decision_category_tooltip = UKR_vizvolene_decision_cat
 				}
 
 	}

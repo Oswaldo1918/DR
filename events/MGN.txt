@@ -7,10 +7,6 @@ country_event = { #деньги от ФРГ
 	desc = MGN.1.d
 	picture = GFX_report_event_japanese_soldiers_02
 	
-	trigger = {
-		tag = MGN
-	}
-	
 	is_triggered_only = yes	
 	
 	option = {
@@ -29,3 +25,31 @@ country_event = { #деньги от ФРГ
 	}
 }
 
+country_event = { #Перекат Самойлова для Магнитки
+	id = MGN.2
+	title = MGN.2.t
+	desc = MGN.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MGN.2.a
+	add_war_support = -0.05
+    POK = { country_event = MGN.3 }	
+	}
+}
+
+country_event = { #Перекат Самойлова для Покаянии
+	id = MGN.3
+	title = MGN.3.t
+	desc = MGN.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = MGN.3.a
+    add_war_support = 0.05
+	}
+}

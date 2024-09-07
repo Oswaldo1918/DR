@@ -131,6 +131,7 @@ characters={
 			traits = {
 				guerilla_warfare_expert 
 			}
+			cost = 150
 			on_add = {
                 add_power_balance_value = {
 				    id = IRQ_ldprbaas_balance
@@ -360,6 +361,7 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+			cost = 150
 			on_add = {
                 add_power_balance_value = {
 				    id = IRQ_ldprbaas_balance
@@ -392,6 +394,7 @@ characters={
 			traits = {
 				air_chief_safety_2
 			}
+			cost = 150
 			on_add = {
                 add_power_balance_value = {
 				    id = IRQ_ldprbaas_balance

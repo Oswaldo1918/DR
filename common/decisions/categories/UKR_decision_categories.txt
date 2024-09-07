@@ -18,3 +18,19 @@ UKR_koleso_genotbi_balance_of_power_category = {
 		# always = no 
 	}
 }
+UKR_vizvolene_decision_cat = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		tag = UKR
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		# always = no 
+	}
+}

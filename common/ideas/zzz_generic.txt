@@ -1808,7 +1808,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-	    		NOT = { OR = { tag = LAZ tag = CHT tag = NOD tag = DON tag = UKR tag = POK tag = GAL tag = OMS tag = ZNS tag = MGN tag = YSK} }
+	    		NOT = { OR = { tag = LAZ tag = CHT tag = NOD tag = DON tag = UKR tag = POK tag = GAL tag = OMS tag = ZNS tag = MGN tag = YSK tag = MRD tag = OSV} }
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1847,7 +1847,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = LAZ tag = CHT tag = NOD tag = DON tag = UKR tag = POK tag = GAL tag = OMS tag = ZNS tag = MGN tag = YSK} }
+				NOT = { OR = { tag = LAZ tag = CHT tag = NOD tag = DON tag = UKR tag = POK tag = GAL tag = OMS tag = ZNS tag = MGN tag = YSK tag = MRD tag = OSV} }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}

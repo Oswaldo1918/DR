@@ -63,3 +63,140 @@ UKR_ugol_donbasa = {
 		}
 	}
 }
+UKR_vizvolene_decision_cat = {
+    UKR_united_decision = { #Провозглашение_Украины
+        icon = decision_eng_install_government	
+
+		visible = {
+			
+		}
+		
+		available = {
+			controls_state = 202
+			controls_state = 93
+			controls_state = 91
+			controls_state = 192
+			controls_state = 227
+			controls_state = 137
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			add_political_power = 150
+			news_event = {
+				id = dk_news.86
+			}
+			set_province_name = { id = 525 name = "Куїв" }
+			set_capital = {state = 202}
+		}
+	}
+	UKR_attack_kur = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = no
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = KUR
+						}
+		}
+	}
+	
+	UKR_attack_che = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = no
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = CHE
+						}
+		}
+	}
+	
+	UKR_attack_cri = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = no
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = CRI
+						}
+		}
+	}
+	
+	UKR_attack_zhe = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = no
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = ZHE
+						}
+		}
+	}
+	
+	UKR_attack_sin = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = no
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = SIN
+						}
+		}
+	}
+}
