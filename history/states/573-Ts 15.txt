@@ -2,7 +2,7 @@
 state={
 	id=573
 	name="STATE_573" # Zlatoust
-	manpower = 556677
+	manpower = 856677
 	
 	state_category = pastoral
 	resources={
@@ -19,7 +19,7 @@ state={
 		owner = POK
 		buildings = {
 			infrastructure = 2
-
+            industrial_complex = 1
 		}
 		add_core_of = POK
 	}

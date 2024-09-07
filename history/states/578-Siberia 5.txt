@@ -2,14 +2,16 @@
 state={
 	id=578
 	name="STATE_578" # Tomsk
-	manpower = 1409304
+	manpower = 2409304
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = POK
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = POK
 		victory_points = {
