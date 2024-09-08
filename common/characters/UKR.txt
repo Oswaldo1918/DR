@@ -589,7 +589,7 @@ characters={
                 original_tag = UKR 
 			}				
             traits = { fortification_engineer }
-			visible = { has_completed_focus = UKR_velikiy_zabor  }
+			available = { has_completed_focus = UKR_velikiy_zabor  }
 	    }
 	}
 	UKR_turchinov = {
@@ -607,6 +607,10 @@ characters={
                 original_tag = UKR 
 			}				
             traits = { SWI_militaristic_nationalist }
+			
+			modifier = {
+			    neutrality_drift = -0.05
+			}
 	    }
 	}
 	UKR_Gayguk = {

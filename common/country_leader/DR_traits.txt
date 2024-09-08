@@ -22,6 +22,13 @@ leader_traits = {
 		experience_loss_factor = -0.15
 		weekly_manpower = 10
 	}
+	comrade_tsar = {
+		random = no
+		sprite = 5
+
+		stability_factor = 0.1
+		neutrality_acceptance = 50
+	}
 	oposition_furer = {
 		sprite = 10
 		random = not
