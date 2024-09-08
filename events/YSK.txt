@@ -1210,14 +1210,15 @@ country_event = {
 	
 	option = {
 	name = YSK.559.a
-	add_country_leader_role = {
-                                    character = YSK_Navalniy
-                                    promote_leader = yes
-                                    country_leader = {
-                                        ideology = nazism
-                                        expire = "1965.1.1.1"
-                                        traits = { oposition_furer }
-                                    }
-                                } 		
+    	add_country_leader_role = {
+            character = YSK_Navalniy
+            promote_leader = yes
+            country_leader = {
+                ideology = nazism
+                expire = "1965.1.1.1"
+                traits = { oposition_furer }
+            }
+        } 		
+		unlock_decision_category_tooltip = YSK_navalich_cat
 	}
 }

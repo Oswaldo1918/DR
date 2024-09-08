@@ -40,6 +40,26 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	korol_schoolnikov = {
+		sprite = 10
+		random = not
+		research_speed_factor = -0.05
+		conscription_factor = 0.1
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	diplom_nazionalist = {
+		sprite = 10
+		random = not
+		war_support_factor = 0.05
+		fascism_drift = 0.01
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
 	inkvizitor_decommunizatsii = {
 		random = no
 		sprite = 13

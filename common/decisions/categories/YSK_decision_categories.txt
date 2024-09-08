@@ -10,3 +10,13 @@ YSK_tnoidi = {
 		has_country_flag = YSK_borba_s_TNO
 	}
 }
+
+YSK_navalich_cat = {
+    icon = military_operation
+	allowed = {
+		tag = YSK		
+	}
+	visible = {			
+		has_country_leader = { character = YSK_Navalniy ruling_only = yes }
+	}
+}

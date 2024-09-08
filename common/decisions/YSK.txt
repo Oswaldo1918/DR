@@ -1380,3 +1380,84 @@ YSK_tnoidi = {
 		}	
 	}
 }
+YSK_navalich_cat = {
+    YSK_minoni_navalnogo = { 
+	
+		cost = 25
+
+		visible = {
+		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
+			tag = YSK
+		}
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 1
+		}
+		remove_effect = {
+			add_country_leader_trait = korol_schoolnikov
+		}	
+	}
+	
+	YSK_karatelnaya_stomatologia = { 
+	
+		cost = 25
+
+		visible = {
+		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
+			tag = YSK
+		}
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 1
+		}
+		remove_effect = {
+			add_country_leader_trait = diplom_nazionalist
+		}	
+	}
+	
+	YSK_svobodnoye_vladeniye_oruzhiyem = { 
+	
+		cost = 25
+
+		visible = {
+		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
+			tag = YSK
+		}
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 1
+		}
+		remove_effect = {
+			add_to_variable = {
+							YSK_RNE_conscription = 0.05
+						}
+					custom_effect_tooltip = YSK_1_RNE_conscription_tt
+		}	
+	}
+	
+	YSK_kirovles = { 
+	
+		cost = 25
+
+		visible = {
+		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
+			tag = YSK
+		}
+		
+		available = {
+            controls_state = 400     		
+		}
+		
+		days_remove = 35
+		ai_will_do = {
+        factor = 1
+		}
+		remove_effect = {
+		add_cic = 1500
+		}	
+	}
+	
+}	
