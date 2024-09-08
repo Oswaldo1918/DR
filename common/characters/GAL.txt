@@ -69,6 +69,19 @@ characters={
 				large = "gfx/leaders/GAL/Kupcov.dds"
 			}
 		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_andrey_kupcov
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				the_academic
+			}
+			visible = { has_completed_focus = GAL_lukinistskaya_revolutsiya  }
+		}
 
 	    field_marshal = {
 			traits = { old_guard career_officer inspirational_leader }
@@ -295,6 +308,19 @@ characters={
 				small = "GFX_idea_GAL_Romanov"
 				large = "gfx/leaders/GAL/Romanov.dds"				
 			}
+		}
+
+        advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Romanov
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				staunch_loyalist
+			}
+			visible = { has_completed_focus = GAL_lukinistskaya_revolutsiya  }
 		}		
 	}
 	
@@ -318,6 +344,19 @@ characters={
 				large = "gfx/leaders/GAL/Chigur.dds"				
 			}
 		}		
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Chigur
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				nikogo_ne_ubival
+			}
+			visible = { has_completed_focus = GAL_lukinistskaya_revolutsiya  }
+		}
 	}
 	GAL_military_council = {
 		name = "Военспецы"

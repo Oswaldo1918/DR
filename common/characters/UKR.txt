@@ -574,6 +574,41 @@ characters={
             traits = { fascist_militia_leader }
 	    }
 	}
+	UKR_yacenyuk = {
+		name = "Арсений Яценюк"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_UKR_yacenyuk"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = UKR_yacenyuk
+			allowed = {
+                original_tag = UKR 
+			}				
+            traits = { fortification_engineer }
+			visible = { has_completed_focus = UKR_velikiy_zabor  }
+	    }
+	}
+	UKR_turchinov = {
+		name = "Александр Турчинов"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_UKR_turchinov"
+			}
+		}
+
+		advisor={
+    		slot = political_advisor
+			idea_token = UKR_turchinov
+			allowed = {
+                original_tag = UKR 
+			}				
+            traits = { SWI_militaristic_nationalist }
+	    }
+	}
 	UKR_Gayguk = {
 		name = "Сергей Гайдук"
 		portraits = {

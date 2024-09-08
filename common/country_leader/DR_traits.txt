@@ -3,7 +3,7 @@
 @tier3 = 10
 
 leader_traits = {
-		Ne_v_svoyey_terelke = {
+	Ne_v_svoyey_terelke = {
 		sprite = 10
 		random = not
 		agency_upgrade_time = -0.05
@@ -14,6 +14,13 @@ leader_traits = {
 		ai_will_do = {
 			factor = 2
 		}
+	}
+	nikogo_ne_ubival = {
+		random = no
+		sprite = 5
+
+		experience_loss_factor = -0.15
+		weekly_manpower = 10
 	}
 	oposition_furer = {
 		sprite = 10

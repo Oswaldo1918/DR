@@ -5445,6 +5445,9 @@ autonomous_state = autonomy_cryptocolony
 		x = 77
 		y = 26
 			completion_reward = {
+			news_event = {
+				id = dk_news.85
+			}
 					if = {
 							limit = {
 									BRT = {

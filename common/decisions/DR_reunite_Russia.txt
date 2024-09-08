@@ -880,37 +880,6 @@ DR_form_russian_state_decisions_category = {
 			}
 		}
 	}
-	
-	YSK_medvedev_decision = { #Провозглашение_России_за_Медведева
-        icon = decision_eng_install_government	
-		
-
-		visible = {
-		    has_country_leader = { character = YSK_Medvedev_Romanov ruling_only = yes }
-			tag = YSK
-		}
-		
-		available = {
-			controls_state = 195
-			controls_state = 219
-			controls_state = 217
-			controls_state = 570
-			controls_state = 564
-			controls_state = 408
-		}
-		
-		fire_only_once = yes
-		days_remove = 15
-		
-		ai_will_do = {
-			factor = 100
-		}
-		remove_effect = {
-			news_event = {
-				id = dk_news.85
-			}
-		}
-	}
 }
 
 DR_reunite_russia_decisions_category = {
