@@ -1472,3 +1472,29 @@ country_event = {
 
 	}
 }
+
+#Belgorod has fallen
+country_event = {
+    id = UKR.53
+	title = UKR.53.t
+	desc = UKR.53.d
+	picture = GFX_news_event_034
+	
+	trigger = {
+    	tag = UKR
+		NOT = { 240 = { is_owned_by = DON } }
+		UKR = { 
+	    	has_war = yes
+            controls_province = 9449
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	name = UKR.53.a
+	add_power_balance_value = {
+				id = UKR_koleso_genotbi
+				value = 0.2
+			}			
+	}
+}	

@@ -342,7 +342,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		visible = {
-			has_completed_focus = ZNS_New_USSR
+			has_completed_focus = ZNS_Pau_Pau_Pau_Pau
 		}
 		
 		available = {
@@ -404,7 +404,7 @@ DR_form_russian_state_decisions_category = {
     }
 	MRD_reunification_RUS = { #Объединение_России_за_Мордор
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_government = metacommy
@@ -438,7 +438,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	MRD_reunification_SOV = { #Провозглашение_СССР_за_Мордор
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_government = metacommy
@@ -473,7 +473,7 @@ DR_form_russian_state_decisions_category = {
 	
 	POK_slovolzhitsin_decision = { #Провозглашение_России_за_Словолжицына
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = POK_Slovolzhicen	ruling_only = yes }
@@ -504,7 +504,7 @@ DR_form_russian_state_decisions_category = {
 	
 	POK_eltsin_decision = { #Провозглашение_России_за_Ельцина
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = POK_Eltsin ruling_only = yes }
@@ -535,7 +535,7 @@ DR_form_russian_state_decisions_category = {
 	
 	POK_putin_decision = { #Провозглашение_России_за_Путина
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = POK_Putin ruling_only = yes }
@@ -566,13 +566,13 @@ DR_form_russian_state_decisions_category = {
 	
 	POK_parlament_decision = { #Провозглашение_России_за_Шульман
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 		    OR = {
-			has_country_leader = { character = POK_Shulman ruling_only = yes }
-			has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes }
-			has_country_leader = { character = POK_NOVOD ruling_only = yes }
+		      	has_country_leader = { character = POK_Shulman ruling_only = yes }
+		      	has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes }
+	    		has_country_leader = { character = POK_NOVOD ruling_only = yes }
 			}
 			tag = POK
 		}
@@ -601,7 +601,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_yuneman_decision = { #Провозглашение_России_за_Юнемана
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Yuneman ruling_only = yes }
@@ -632,7 +632,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_wright_decision = { #Провозглашение_России_за_Райта
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Robert_Wright ruling_only = yes }
@@ -663,7 +663,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_pogrom_decision = { #Провозглашение_России_за_Погрома
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Egor_Prosvirnin ruling_only = yes }
@@ -694,7 +694,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_romanovi_decision = { #Провозглашение_России_за_Романовых
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Maria_Romanova ruling_only = yes }
@@ -725,7 +725,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_goga_decision = { #Провозглашение_России_за_Романовых
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Goga_Romanov ruling_only = yes }
@@ -756,7 +756,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_rogozin_decision = { #Провозглашение_России_за_Рогозина
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Dmitriy_Rogozin ruling_only = yes }
@@ -787,7 +787,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_tesak_decision = { #Провозглашение_России_за_Тесака
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 			has_country_leader = { character = YSK_Tesak ruling_only = yes }
@@ -818,7 +818,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_rne_decision = { #Провозглашение_России_за_РНЕ
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 		    OR = {
@@ -852,7 +852,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_npf_decision = { #Провозглашение_России_за_РНЕ
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 		    has_country_leader = { character = YSK_Nickolay_Skorodumov ruling_only = yes }
@@ -883,7 +883,7 @@ DR_form_russian_state_decisions_category = {
 	
 	YSK_medvedev_decision = { #Провозглашение_России_за_Медведева
         icon = decision_eng_install_government	
-		cost = 25
+		
 
 		visible = {
 		    has_country_leader = { character = YSK_Medvedev_Romanov ruling_only = yes }

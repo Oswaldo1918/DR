@@ -751,7 +751,18 @@ GV_v_pokayanii_podgotovka = {
 		days_re_enable = 0
 		
 		ai_will_do = {
-		    factor = 1
+			base = 0
+			modifier = {
+				if = {
+					limit = {
+						tag = GAL
+					}
+					factor = 1
+				}
+				else = {
+					factor = 0
+				}
+			}
 		}
 		
         visible = {
@@ -791,7 +802,18 @@ GV_v_pokayanii_podgotovka = {
 		days_re_enable = 0
 		
 		ai_will_do = {
-		    factor = 1
+			base = 0
+			modifier = {
+				if = {
+					limit = {
+						tag = GAL
+					}
+					factor = 1
+				}
+				else = {
+					factor = 0
+				}
+			}
 		}
 		
         visible = {
@@ -830,7 +852,18 @@ GV_v_pokayanii_podgotovka = {
 		days_re_enable = 0
 		
 		ai_will_do = {
-		    factor = 1
+			base = 0
+			modifier = {
+				if = {
+					limit = {
+						tag = GAL
+					}
+					factor = 1
+				}
+				else = {
+					factor = 0
+				}
+			}
 		}
 
         visible = {
@@ -869,7 +902,18 @@ GV_v_pokayanii_podgotovka = {
 		days_re_enable = 0
 		
 		ai_will_do = {
-		    factor = 1
+			base = 0
+			modifier = {
+				if = {
+					limit = {
+						tag = GAL
+					}
+					factor = 1
+				}
+				else = {
+					factor = 0
+				}
+			}
 		}
 
         visible = {

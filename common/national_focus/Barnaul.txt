@@ -82,9 +82,17 @@ focus_tree = {
 					has_completed_focus = YSK_osvyatit_rakety
 					has_completed_focus = YSK_new_energy
 					has_completed_focus = YSK_kanonizirovat_Gagarina
-					has_country_flag = YSK_poka_nedostupno
+					has_tech = experimental_rockets
 				}
-
+				
+            completion_reward = {
+					add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = rocketry
+                    }
+					add_idea = YSK_kosmicheskiye_poleti
+				}
 	}
 	focus = {
 		id = YSK_The_iron_tsar
@@ -4933,6 +4941,14 @@ autonomous_state = autonomy_cryptocolony
 		}
 		x = 53
 		y = 18
+		
+		available = {
+					has_tech = rocket_engines
+				}
+				
+            completion_reward = {
+                    add_offsite_building = { type = industrial_complex level = 3 }	
+				}
 
 	}
 	focus = {
@@ -4944,6 +4960,14 @@ autonomous_state = autonomy_cryptocolony
 		}
 		x = 55
 		y = 18
+		
+		available = {
+					has_tech = improved_rocket_engines
+				}
+		
+		completion_reward = {
+                    add_offsite_building = { type = industrial_complex level = 3 }	
+				}
 
 	}
 	focus = {
@@ -4958,6 +4982,14 @@ autonomous_state = autonomy_cryptocolony
 		}
 		x = 54
 		y = 19
+		
+		available = {
+					has_tech = advanced_rocket_engines
+				}
+		
+		completion_reward = {
+                    add_offsite_building = { type = industrial_complex level = 3 }	
+				}
 
 	}
 	focus = {
@@ -5105,24 +5137,22 @@ autonomous_state = autonomy_cryptocolony
 							add_to_variable = {
 									YSK_pamyat_nation_war_support_factor = 0.05
 								}
+							if = {
+		               			FRG = { NOT = { has_country_leader = { character = FRG_Navalniy ruling_only = yes } } }
+		            			has_completed_focus = YSK_fraktsiya_RNE
+		              			add_country_leader_role = {
+                                    character = YSK_Navalniy
+                                    promote_leader = yes
+                                    country_leader = {
+                                        ideology = nazism
+                                        expire = "1965.1.1.1"
+                                        traits = { oposition_furer }
+                                    }
+                                }
+			             	}
 						}
-					custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
-			hidden = {
-				if = {
-					FRG = { NOT = { has_country_leader = { character = FRG_Navalniy ruling_only = yes } } }
-					has_completed_focus = YSK_fraktsiya_RNE
-					add_country_leader_role = {
-                        character = YSK_Navalniy
-                        promote_leader = yes
-                        country_leader = {
-                            ideology = nazism
-                            expire = "1965.1.1.1"
-                            traits = { oposition_furer }
-                        }
-                    } 
-				}
-			}	
+			custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
+			custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
 		}
 	}
 	focus = {
@@ -7623,7 +7653,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_nichevo_lichnogo
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_LAZ_chistka_2
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_red_day_kalendar
@@ -7649,7 +7679,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_sobor_sovetov
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_compromis_s_levimi
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_nichevo_lichnogo
@@ -7668,7 +7698,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_chairman_Romanov
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_sobor_sovetov
@@ -7685,7 +7715,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_comrade_tsar
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga_tsar
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_sobor_sovetov
@@ -7785,7 +7815,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_tsar_indusrializatsiya
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_kollectiv_samoderzhavie
@@ -7854,7 +7884,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_mehanizatsiya
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_kollektivizaciya
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_vseobshee_prosvezhenie
@@ -7877,7 +7907,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_rev_strazha
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga_strazha
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_kollectiv_samoderzhavie
@@ -7893,7 +7923,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_day_chekista
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga_chekist
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_rev_strazha
@@ -7910,7 +7940,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_red_rpts
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga_red_church
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_kollectiv_samoderzhavie
@@ -7925,7 +7955,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_krest_pohod_za_communism
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_goga_crestonosci
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_red_rpts
@@ -7964,7 +7994,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_social_monarhy
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_compromis_s_levimi
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_kollectiv_samoderzhavie
@@ -7979,7 +8009,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_tituli_za_trud
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_LAZ_focus_trudodny
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_social_monarhy
@@ -7996,7 +8026,7 @@ autonomous_state = autonomy_cryptocolony
 	}
 	focus = {
 		id = YSK_iskuplenie_cherez_trud
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_kommuni
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_tituli_za_trud
