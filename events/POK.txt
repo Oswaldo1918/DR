@@ -3228,3 +3228,147 @@ country_event = {
 		name = POK.57.a
 	}
 }
+country_event = {
+    id = POK.58
+	title = POK.58.t
+	desc = POK.58.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		has_global_flag = POK_GV_v_pok
+		IF = {
+			limit = { 
+	     		original_tag = OMS 
+	         	OMS = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	POK = { exists = yes }
+        		GAL = { exists = yes }
+        		YSK = { exists = yes }
+        		ZNS = { exists = yes }
+        		MGN = { exists = yes }
+        		MRD = { exists = yes }
+	    	}
+		}
+		IF = {
+			limit = { 
+	     		original_tag = POK 
+	         	POK = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	OMS = { exists = yes }
+        		GAL = { exists = yes }
+        		YSK = { exists = yes }
+        		ZNS = { exists = yes }
+        		MGN = { exists = yes }
+        		MRD = { exists = yes }
+	    	}
+		}
+		IF = {
+			limit = { 
+	     		original_tag = GAL 
+	         	GAL = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	POK = { exists = yes }
+        		OMS = { exists = yes }
+        		YSK = { exists = yes }
+        		ZNS = { exists = yes }
+        		MGN = { exists = yes }
+        		MRD = { exists = yes }
+	    	}
+		}
+		IF = {
+			limit = { 
+	     		original_tag = YSK 
+	         	YSK = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	POK = { exists = yes }
+        		GAL = { exists = yes }
+        		OMS = { exists = yes }
+        		ZNS = { exists = yes }
+        		MGN = { exists = yes }
+        		MRD = { exists = yes }
+	    	}
+		}
+		IF = {
+			limit = { 
+	     		original_tag = MGN 
+	         	MGN = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	POK = { exists = yes }
+        		GAL = { exists = yes }
+        		YSK = { exists = yes }
+        		ZNS = { exists = yes }
+        		OMS = { exists = yes }
+        		MRD = { exists = yes }
+	    	}
+		}
+		IF = {
+			limit = { 
+	     		original_tag = MRD 
+	         	MRD = {
+	          		has_war = yes 
+		       	} 
+			} 
+			OR = {
+       	     	POK = { exists = yes }
+        		GAL = { exists = yes }
+        		YSK = { exists = yes }
+        		ZNS = { exists = yes }
+        		MGN = { exists = yes }
+        		OMS = { exists = yes }
+	    	}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	} 
+	
+	option = {
+	name = POK.58.a
+		if = { 
+	    	POK = { exists = yes } 
+			NOT = { tag = POK } 
+			declare_war_on = { type = annex_everything target = POK }
+		}
+		if = { 
+	    	GAL = { exists = yes } 
+			NOT = { tag = GAL } 
+			declare_war_on = { type = annex_everything target = GAL }
+		}
+		if = { 
+	    	YSK = { exists = yes } 
+			NOT = { tag = YSK } 
+			declare_war_on = { type = annex_everything target = YSK }
+		}
+		if = { 
+	    	ZNS = { exists = yes } 
+			NOT = { tag = ZNS } 
+			declare_war_on = { type = annex_everything target = ZNS }
+		}
+		if = { 
+	    	MGN = { exists = yes } 
+			NOT = { tag = MGN } 
+			declare_war_on = { type = annex_everything target = MGN }
+		}
+		if = { 
+	    	MRD = { exists = yes } 
+			NOT = { tag = MRD } 
+			declare_war_on = { type = annex_everything target = MRD }
+		}
+	}	
+}	
