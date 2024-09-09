@@ -132,3 +132,44 @@ country_event = {
 						}
 	}
 }
+country_event = {
+	id = IRQ.4
+	title = IRQ.4.t
+	desc = IRQ.4.d
+	picture = GFX_report_event_dkr_IRQ_kuwait
+	is_triggered_only = yes
+	trigger = {
+		tag = IRQ
+		focus_progress = {
+            focus = IRQ_attack_bush
+            progress > 0.1
+        }
+	}
+	option = {
+		name = IRQ.4.a
+		add_power_balance_value = {
+				    id = IRQ_ldprbaas_balance
+			     	value = -0.05
+		       	}
+	   	every_army_leader = {
+				limit = {
+					is_character = IRQ_saddam
+				}
+				add_unit_leader_trait = inflexible_strategist
+			}		
+	}
+	
+	option = {
+		name = IRQ.4.b
+		add_power_balance_value = {
+				    id = IRQ_ldprbaas_balance
+			     	value = 0.05
+		       	}
+    	every_army_leader = {
+				limit = {
+					is_character = IRQ_zhirik
+				}
+				add_unit_leader_trait = brilliant_strategist
+			}					
+	}
+}
