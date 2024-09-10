@@ -33,6 +33,9 @@ focus_tree = {
 		cost = 10
 		x = 19
 		y = 0
+		select_effect = {
+			country_event = { id = IRQ.5 days = 1 }
+		}
 			completion_reward = {
 					declare_war_on = {
 							target = KUW

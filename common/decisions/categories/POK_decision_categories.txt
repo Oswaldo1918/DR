@@ -159,3 +159,36 @@ MGN_poisk_relikviy = {
 		original_tag = MGN
 	}
 }
+
+GV_v_pokayanii_dobit = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+				tag = POK
+			}
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+				tag = POK
+			}
+	}
+}

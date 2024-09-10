@@ -947,3 +947,223 @@ GV_v_pokayanii_podgotovka = {
 		}
     }
 }
+GV_v_pokayanii_dobit = {
+
+    GV_POK_dobit_pok = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = POK
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+			}
+			POK = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = POK type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_oms = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = OMS
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = POK
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+			}
+			OMS = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = OMS type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_mgn = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = MGN
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = POK
+				tag = GAL
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+			}
+			MGN = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = MGN type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_gal = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = GAL
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = POK
+				tag = YSK
+				tag = ZNS
+				tag = MRD
+			}
+			GAL = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = GAL type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_ysk = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = YSK
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = POK
+				tag = ZNS
+				tag = MRD
+			}
+			YSK = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = YSK type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_zns = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = ZNS
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = POK
+				tag = MRD
+			}
+			ZNS = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = ZNS type = annex_everything }
+		}
+    }	
+	
+	GV_POK_dobit_mrd = {
+        icon = decision_category_border_conflicts
+		days_remove = 0
+		days_re_enable = 0
+
+        ai_will_do = {
+			factor = 100
+		}
+		available = {
+		    NOT = { 
+		    	has_war_with = MRD
+			}
+		}
+        visible = {
+			has_global_flag = POK_GV_v_pok
+			OR = { 
+		    	tag = OMS
+				tag = MGN
+				tag = GAL
+				tag = YSK
+				tag = POK
+				tag = ZNS
+			}
+			MRD = { exists = yes }
+        }
+
+		remove_effect = {
+		    declare_war_on = { target = MRD type = annex_everything }
+		}
+    }	
+}	
+		
