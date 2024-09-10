@@ -323,6 +323,12 @@ focus_tree = {
 		y = 8
 			completion_reward = {
 				add_ideas = GAL_nar_op_i
+				hidden_effect = {
+							set_technology = {
+									militia_tech = 1
+									popup = no
+								}
+						}
 				division_template = {
                     name = "Дивизия ополчения"
 
