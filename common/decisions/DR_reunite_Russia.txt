@@ -409,6 +409,7 @@ DR_form_russian_state_decisions_category = {
 		visible = {
 			has_government = metacommy
 			tag = MRD
+			NOT = { has_country_flag = MRD_obyedineniye_rossii_sssr }
 		}
 		
 		available = {
@@ -430,9 +431,9 @@ DR_form_russian_state_decisions_category = {
 			factor = 100
 		}
 		remove_effect = {
-			set_cosmetic_tag = MGN_ussr
+	    	set_country_flag = MRD_obyedineniye_rossii_sssr
 			news_event = {
-				id = dk_news.30
+				id = dk_news.63
 			}
 		}
 	}
@@ -443,6 +444,7 @@ DR_form_russian_state_decisions_category = {
 		visible = {
 			has_government = metacommy
 			tag = MRD
+			NOT = { has_country_flag = MRD_obyedineniye_rossii_sssr }
 		}
 		
 		available = {
@@ -465,8 +467,9 @@ DR_form_russian_state_decisions_category = {
 		}
 		remove_effect = {
 			set_cosmetic_tag = LAZ_ussr
+			set_country_flag = MRD_obyedineniye_rossii_sssr
 			news_event = {
-				id = dk_news.63
+				id = dk_news.64
 			}
 		}
 	}
