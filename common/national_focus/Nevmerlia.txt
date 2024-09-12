@@ -96,6 +96,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		available = {
+					has_full_control_of_state = 221
+					has_full_control_of_state = 226
+					has_full_control_of_state = 200
+				}
 			completion_reward = {
 					221 = {
 							add_building_construction = {
@@ -963,6 +968,12 @@ focus_tree = {
 		}
 		x = 10
 		y = 5
+		available = {
+					has_full_control_of_state = 228
+					has_full_control_of_state = 221
+					has_full_control_of_state = 225
+					has_full_control_of_state = 193
+				}
 			completion_reward = {
 					228 = {
 							add_building_construction = {
