@@ -1323,5 +1323,30 @@ characters={
 				prince_of_terror
 			}
 		}     		
-	}         	
+	}        
+    POK_nevzlin = {
+		name = "Леонид Невзлин"
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POK_nevzlin"
+			}
+		}
+        advisor = {
+			slot = political_advisor
+			idea_token = POK_nevzlin
+			allowed = {
+				original_tag = POK
+			}
+			visible = {		
+			has_country_leader = { character = POK_Hodorkovskiy ruling_only = yes }
+		    }
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}     		
+	}  	
 }
