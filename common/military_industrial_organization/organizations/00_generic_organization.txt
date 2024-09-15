@@ -15,7 +15,7 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD tag = BTS } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD tag = BTS tag = STR } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -6803,7 +6803,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD tag = IRQ tag = SKT tag = KUR } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD tag = IRQ tag = SKT tag = KUR tag = STR } }
 		NOT = {
 			AND = {
 				tag = POL

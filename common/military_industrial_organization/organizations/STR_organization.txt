@@ -1,0 +1,37 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+STR_avtorem_disel = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_STR_avtorem_disel
+	
+	allowed = {	
+		tag = STR
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+STR_red_metallist = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_STR_red_metallist
+	allowed = {	
+		tag = STR
+	}
+}
