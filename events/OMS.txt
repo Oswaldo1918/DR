@@ -27,6 +27,7 @@ country_event = {
 	name = OMS.1.a
 		ai_chance = { factor = 100 }
 		remove_ideas = POK_idea_GV
+		news_event = dk_news.50
 		OMS = {
 			every_unit_leader = {
 				set_nationality = LIM
@@ -68,6 +69,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		set_cosmetic_tag = OMS_nezavisimost
 		set_country_flag = DR_start_reunite_Russia_cf
+		news_event = dk_news.50
 		LIM = {
 			add_opinion_modifier = {
 				target = OMS
