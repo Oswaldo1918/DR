@@ -2524,5 +2524,14 @@ ideas = {
 				production_speed_rocket_site_factor = 0.5		
 			    }
 		    }
+			
+			YSK_agent_KNB = {
+
+			    modifier = {
+	     			cavalry_attack_factor = 0.15
+	            	cavalry_defence_factor = 0.15
+					army_core_defence_factor = 0.15
+			    }
+		    }
 	    }		
 }

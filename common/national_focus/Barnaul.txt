@@ -298,20 +298,21 @@ focus_tree = {
 		}
 		x = 11
 		y = 10
-			completion_reward = {
-If = {
-NOT = {
-KAZ = exist
-}
-release_on_controlled = KAZ
-}
-KAZ = {
-			set_autonomy = {
-target = YSK
-autonomous_state = autonomy_cryptocolony
-}
-}
-}
+		completion_reward = {
+            If = {
+                NOT = {
+                    KAZ = exist
+                }
+                release_on_controlled = KAZ
+            }
+            KAZ = {
+		      	set_autonomy = {
+                    target = YSK
+                    autonomous_state = autonomy_cryptocolony
+                }
+            }
+            add_ideas = YSK_agent_KNB
+        }
 	}
 	focus = {
 		id = YSK_rus_grazhdanskiy_nationalism
