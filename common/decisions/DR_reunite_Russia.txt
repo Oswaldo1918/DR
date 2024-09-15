@@ -1504,6 +1504,10 @@ DR_reunite_russia_decisions_category = {
 				is_neighbor_of = ZNS
 				is_neighbor_of = MRD
 			}
+			date > 6.01.01
+			has_army_manpower = {
+				size > 100000
+			}
 		}
 		
 		visible = {
@@ -1515,10 +1519,6 @@ DR_reunite_russia_decisions_category = {
 				country_exists = YSK
 				country_exists = ZNS
 				country_exists = MRD			
-			}
-			date > 6.01.01
-			has_army_manpower = {
-				size > 100000
 			}
 		}	
 		
