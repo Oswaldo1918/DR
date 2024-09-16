@@ -204,4 +204,29 @@ UKR_vizvolene_decision_cat = {
 						}
 		}
 	}
+	
+	UKR_attack_mol = {
+		icon = decision_eng_install_government  
+		allowed = { original_tag = UKR }
+		available = {
+		has_completed_focus = UKR_osvobozhdeniye
+		has_war = no 
+		is_neighbor_of = MOL
+	    	MOL = {
+                owns_state = 766
+	    	}	
+		}
+		visible = {
+
+		}	
+		days_remove = 0
+		fire_only_once = yes
+		cost = 25
+		remove_effect = {
+			declare_war_on = {
+							type = annex_everything
+							target = MOL
+						}
+		}
+	}
 }
