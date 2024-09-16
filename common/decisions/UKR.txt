@@ -224,9 +224,10 @@ UKR_vizvolene_decision_cat = {
 		cost = 25
 		remove_effect = {
 			declare_war_on = {
-							type = annex_everything
-							target = MOL
-						}
+                target = MOL
+                type = take_state_focus
+                generator = { 766 }
+			}
 		}
 	}
 }
