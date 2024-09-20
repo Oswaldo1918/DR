@@ -999,6 +999,17 @@ news_event = { #Карельская_война
 	
 	option = {
 		name = dk_news.47.a
+		trigger = {
+			NOT = {
+				tag = TUP
+			}
+		}
+	}
+	option = {
+		name = dk_news.47.b
+		trigger = {
+			tag = TUP
+		}
 	}
 }
 news_event = { #Покаяния_побеждает_в_покаянской_гражданской_войне
