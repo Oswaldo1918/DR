@@ -660,4 +660,17 @@ focus_tree = {
 			add_ideas = export_focus
 		}
 	}
+	focus = {
+		id = ARK_reorg_flota
+		icon = GFX_No_way
+		cost = 5,00
+		prerequisite = {
+			focus = ARK_pervaia_pyaitiletka
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = DON_noviye_fokusi_tt
+		}
+	}
 }

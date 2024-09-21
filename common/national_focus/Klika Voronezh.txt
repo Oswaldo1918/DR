@@ -661,73 +661,17 @@ focus_tree = {
 			add_ideas = export_focus
 		}
 	}
-	###Уникальная_экономическая_ветка
 	focus = {
-		id = UNT_forsirovannaya_kollektivizatsiya
-		icon = 
+		id = UNT_traktora_reaktivi
+		icon = GFX_No_way
 		cost = 5,00
-
-		available = {
-			OR = {
-				is_subject_of = LAZ
-				is_in_faction_with = LAZ
-			}
+		prerequisite = {
+			focus = UNT_pervaia_pyaitiletka
 		}
-		x = 12
-		y = 3
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = UNT_dvoyniye_trududni
-		icon = 
-		cost = 5,00
-
-		available = {
-			OR = {
-				is_subject_of = LAZ
-				is_in_faction_with = LAZ
-			}
-		}
-		x = 12
+		x = 16
 		y = 4
 		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = UNT_traktora_na_reaktivnoy_tyage
-		icon = 
-		cost = 5,00
-
-		available = {
-			OR = {
-				is_subject_of = LAZ
-				is_in_faction_with = LAZ
-			}
-		}
-		x = 12
-		y = 4
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = UNT_rasshirit_GULAG
-		icon = 
-		cost = 5,00
-
-		available = {
-			OR = {
-				is_subject_of = LAZ
-				is_in_faction_with = LAZ
-			}
-		}
-		x = 12
-		y = 5
-		completion_reward = {
-
+			custom_effect_tooltip = DON_noviye_fokusi_tt
 		}
 	}
 }
