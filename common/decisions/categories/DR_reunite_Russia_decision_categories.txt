@@ -4,11 +4,16 @@
 DR_form_russian_state_decisions_category = {
 	icon = military_operation
 	visible = {
-		is_puppet = no
-		is_subject = no
-		has_country_flag = DR_start_reunite_Russia_cf
-		NOT = { tag = MGN}
-		NOT = { tag = GAL}
+		OR = {
+			AND = {
+				is_puppet = no
+				is_subject = no
+				has_country_flag = DR_start_reunite_Russia_cf
+				NOT = { tag = MGN}
+				NOT = { tag = GAL}
+			}
+			is_debug = yes
+		}
 	}
 }
 DR_reunite_russia_decisions_category = {
