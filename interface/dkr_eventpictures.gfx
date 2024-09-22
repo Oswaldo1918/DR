@@ -376,7 +376,22 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_report_event_dkr_casus_belli"
 		texturefile = "gfx/event_pictures/report_event_dkr_casus_belli.dds"
-	}	
+	}
+	
+	spriteType = { 
+		name = "GFX_report_event_dkr_KATZcore"
+		texturefile = "gfx/event_pictures/report_event_dkr_KATZcore.dds"
+	}
+	
+	spriteType = { 
+		name = "GFX_report_event_dkr_IRQ_zhirik_predlozhil"
+		texturefile = "gfx/event_pictures/report_event_dkr_IRQ_zhirik_predlozhil.dds"
+	}
+	
+	spriteType = { 
+		name = "GFX_report_event_dkr_IRQ_kuwait"
+		texturefile = "gfx/event_pictures/report_event_dkr_IRQ_kuwait.dds"
+	}
 	
 	###НОВОСТНЫЕ
 	
@@ -533,19 +548,9 @@ spriteTypes = {
 		name = "GFX_news_event_DKR_KAZ_Omsk_2"
 		texturefile = "gfx/event_pictures/news_event_DKR_KAZ_Omsk_2.dds"
 	}
-	
+
 	spriteType = { 
-		name = "GFX_report_event_dkr_KATZcore"
-		texturefile = "gfx/event_pictures/report_event_dkr_KATZcore.dds"
-	}
-	
-	spriteType = { 
-		name = "GFX_report_event_dkr_IRQ_zhirik_predlozhil"
-		texturefile = "gfx/event_pictures/report_event_dkr_IRQ_zhirik_predlozhil.dds"
-	}
-	
-	spriteType = { 
-		name = "GFX_report_event_dkr_IRQ_kuwait"
-		texturefile = "gfx/event_pictures/report_event_dkr_IRQ_kuwait.dds"
+		name = "GFX_news_event_DKR_NOD_barkov_perevorot"
+		texturefile = "gfx/event_pictures/news_event_DKR_NOD_barkov_perevorot.dds"
 	}
 }

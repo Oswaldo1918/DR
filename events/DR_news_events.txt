@@ -289,10 +289,21 @@ news_event = { # НОД в Москве
 	picture = GFX_news_event_DKR_NOD_fedorov
 	
 	major = yes
+	
 	trigger = {
 		219 = { is_controlled_by = NOD }
+		NOT = { has_global_flag = DR_fall_of_moscow_NOD }
+		NOT = { NOD  = { has_government = neutrality } }
 	}
-	fire_only_once = yes
+	
+	immediate = {
+		set_global_flag = DR_fall_of_moscow_NOD
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = dk_news.9.a
 		trigger = {
@@ -301,7 +312,7 @@ news_event = { # НОД в Москве
 	}
 	
 	option = {
-	name = dk_news.9.b
+		name = dk_news.9.b
 		trigger = { 
 			NOT = { original_tag = NOD }
 		}
@@ -1749,6 +1760,53 @@ news_event = { #Магнитогорск объединяет Россию
 			MGN = {
 				country_event = super.2
 			}
+		}
+	}
+}
+news_event = { #Переворот_Баркова
+    id = dk_news.88
+	title = dk_news.88.t
+	desc = dk_news.88.d
+	picture = GFX_news_event_DKR_NOD_barkov_perevorot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.88.a
+	}
+}
+news_event = { #Барков_взял_Москву
+    id = dk_news.89
+	title = dk_news.89.t
+	desc = dk_news.89.d
+	picture = GFX_news_event_DKR_NOD_barkov_perevorot
+	
+	
+	trigger = {
+		219 = { is_controlled_by = NOD }
+		NOT = { has_global_flag = DR_fall_of_moscow_NOD }
+		NOD  = { has_government = neutrality }
+	}
+	
+	immediate = {
+		set_global_flag = DR_fall_of_moscow_NOD
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = dk_news.89.a
+		trigger = {
+			original_tag = NOD
+		}
+	}
+	
+	option = {
+		name = dk_news.89.b
+		trigger = { 
+			NOT = { original_tag = NOD }
 		}
 	}
 }

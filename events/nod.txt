@@ -455,24 +455,22 @@ country_event = {
 	}
 
 	option = {
-	name = nod.12.a
-	
-	add_political_power = -300
-	add_stability = -0.05
-	add_war_support = 0.05
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}	
-			add_popularity = { ideology = metacommy popularity = 0.02 }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
-			remove_unit_leader = 8010
+		name = nod.12.a
+		add_political_power = -300
+		add_stability = -0.05
+		add_war_support = 0.05
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}	
+		add_popularity = { ideology = metacommy popularity = 0.02 }
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		remove_unit_leader = 8010
 			
-			hidden_effect = {
-			
-            set_country_flag = NOD_barkov_revolt
+		hidden_effect = {	
+			set_country_flag = NOD_barkov_revolt
 		}
-			
+		news_event = dk_news.88
 	}
 }
 
