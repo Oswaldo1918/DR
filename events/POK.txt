@@ -15,6 +15,7 @@ country_event = {
 	
 	option = {
 	name = POK.1.a
+	hidden_effect = {
 	transfer_units_fraction = { target = MGN stockpile_ratio = 0.05 }
 	MGN = {
 	add_state_core = 824
@@ -39,14 +40,18 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 582
 	load_oob = MGN_1936
 	}
-	hidden_effect = { MGN = { country_event = { id = MGN.2 days = 10 } } }
+	MGN = { country_event = { id = MGN.2 days = 10 } } 
+	}
+	MGN = {
+	transfer_state = 582
+	}
 	}
 	
 	option = {
 	name = POK.1.b
+	hidden_effect = {
 	transfer_units_fraction = { target = MGN stockpile_ratio = 0.05 }
 	MGN = {
 	add_state_core = 824
@@ -71,11 +76,14 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 582
 	load_oob = MGN_1936
+	}
+	MGN = { country_event = { id = MGN.2 days = 10 } } 
+	}
+	MGN = {
+	transfer_state = 582
 	change_tag_from = POK
 	}
-	hidden_effect = { MGN = { country_event = { id = MGN.2 days = 10 } } }
 	}
 }
 
@@ -93,6 +101,7 @@ country_event = {
 	
 	option = {
 	name = POK.2.a
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = OMS}
 	OMS = {
 	add_state_core = 824
@@ -117,14 +126,18 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 571
 	load_oob = OMS_1936
 	inherit_technology = POK
+	}
+	}
+	OMS = {
+	transfer_state = 571
 	}
 	}
 	
 	option = {
 	name = POK.2.b
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = OMS}
 	OMS = {
 	add_state_core = 824
@@ -149,9 +162,12 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 571
 	load_oob = OMS_1936
 	inherit_technology = POK
+	}
+	}
+	OMS = {
+	transfer_state = 571
 	change_tag_from = POK
 	}
 	}
@@ -171,6 +187,7 @@ country_event = {
 	
 	option = {
 	name = POK.3.a
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = GAL}
 	GAL = {
 	add_state_core = 824
@@ -195,14 +212,18 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 570
 	load_oob = GAL_1936
 	inherit_technology = POK
+	}
+	}
+	GAL = {
+	transfer_state = 570
 	}
 	}
 	
 	option = {
 	name = POK.3.b
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = GAL}
 	GAL = {
 	add_state_core = 824
@@ -227,9 +248,12 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 570
 	load_oob = GAL_1936
 	inherit_technology = POK
+	}
+	}
+	GAL = {
+	transfer_state = 570
 	change_tag_from = POK
 	}
 	}
@@ -249,6 +273,7 @@ country_event = {
 	
 	option = {
 	name = POK.4.a
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = YSK}
 	YSK = {
 	add_state_core = 824
@@ -273,14 +298,18 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 40
 	inherit_technology = POK
 	load_oob = YSK_1936
+	}
+	}
+	YSK = {
+	transfer_state = 40
 	}
 	}
 	
 	option = {
 	name = POK.4.b
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = YSK}
 	YSK = {
 	add_state_core = 824
@@ -305,9 +334,12 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 40
 	load_oob = YSK_1936
 	inherit_technology = POK
+	}
+	}
+	YSK = {
+	transfer_state = 40
 	change_tag_from = POK
 	}
 	}
@@ -327,6 +359,7 @@ country_event = {
 	
 	option = {
 	name = POK.5.a
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = ZNS}
 	ZNS = {
 	add_state_core = 824
@@ -351,14 +384,18 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 568
 	load_oob = ZNS_1936
 	inherit_technology = POK
+	}
+	}
+	ZNS = {
+	transfer_state = 568
 	}
 	}
 	
 	option = {
 	name = POK.5.b
+	hidden_effect = {
 	send_equipment_fraction = { value = 0.05 target = ZNS}
 	ZNS = {
 	add_state_core = 824
@@ -383,9 +420,12 @@ country_event = {
 			add_state_core = 653
 			add_state_core = 580
 			add_state_core = 579
-	transfer_state = 568
 	load_oob = ZNS_1936
 	inherit_technology = POK
+	}
+	}
+	ZNS = {
+	transfer_state = 568
 	change_tag_from = POK
 	}
 	}
