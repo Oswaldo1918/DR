@@ -283,17 +283,6 @@ DR_form_russian_state_decisions_category = {
 	NOD_reunification_2 = { #Путин_объединяет_Россию
         icon = decision_eng_install_government		
 		cost = 25
-		allowed = {
-			OR = {
-				AND = {
-					tag = NOD
-					NOD = {
-						has_government = fascism 
-					}
-				}
-				is_debug = yes
-			}
-		}
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia		
 			controls_state = 195
@@ -305,9 +294,18 @@ DR_form_russian_state_decisions_category = {
 		}
 		  
 		visible = {
-			has_government = fascism
-			has_global_flag = NOD_putin_return
-			tag = NOD
+
+			OR = {
+				AND = {
+					tag = NOD
+					NOD = {
+						has_government = fascism 
+					}
+					has_government = fascism
+					has_global_flag = NOD_putin_return
+				}
+				is_debug = yes
+			}
 		}
 		
 		fire_only_once = yes
@@ -327,14 +325,6 @@ DR_form_russian_state_decisions_category = {
 	NOD_reunification_3 = {	#Барков_объединяет_Россию
         icon = decision_eng_install_government		
 		cost = 25
-		allowed = {
-			OR = {
-				AND = {
-					tag = NOD
-				}
-				is_debug = yes
-			}
-		}
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia	
 			controls_state = 195
@@ -346,6 +336,12 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		visible = {
+			OR = {
+				AND = {
+					tag = NOD
+				}
+				is_debug = yes
+			}
 			has_government = neutrality
 			tag = NOD
 		}
@@ -367,7 +363,7 @@ DR_form_russian_state_decisions_category = {
         icon = decision_eng_install_government	
 		cost = 30
 		
-		allowed = {
+		visible = {
 			OR = {
 				AND = {
 					tag = DOT
