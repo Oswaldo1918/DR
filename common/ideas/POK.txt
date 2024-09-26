@@ -111,13 +111,11 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-				land_doctrine = -0.50
-			}
 			modifier = {
 			    max_command_power = -50
 				conscription = -0.003
 				war_support_factor = -0.05
+				land_doctrine_cost_factor = 0.5
 			}
 		}
 		POK_Gore_Pobeditelam_1 = {
@@ -134,13 +132,12 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-				land_doctrine = -0.40
-			}
+
 			modifier = {
 			    max_command_power = -40
 				conscription = -0.002
 				war_support_factor = -0.04
+				land_doctrine_cost_factor = 0.4
 			}
 		}
 		POK_Gore_Pobeditelam_2 = {
@@ -157,13 +154,11 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-				land_doctrine = -0.20
-			}
 			modifier = {
 			    max_command_power = -20
 				conscription = 0.001
 				war_support_factor = 0.01
+				land_doctrine_cost_factor = 0.2
 			}
 		}
         POK_Gore_Pobeditelam_4 = {
@@ -180,8 +175,6 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-			}
 			modifier = {
 			    max_command_power = 10
 				conscription = 0.003
@@ -202,12 +195,10 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-				land_doctrine = -0.20
-			}
 			modifier = {
 			    max_command_power = -20
 				conscription_factor = 0.1
+				land_doctrine_cost_factor = 0.1
 			}
 		}
 		POK_Gore_Pobeditelam_5 = {
@@ -224,8 +215,6 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 			
-			research_bonus = {
-			}
 			modifier = {
 			    max_command_power = 10
 				conscription_factor = 0.1
@@ -1778,8 +1767,8 @@ ideas = {
 			}
 			modifier = {
 			    consumer_goods_factor = -0.03
-                stability_factor = -0.01
-                production_factory_efficiency_gain_factor = 0.01             
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = 0.05          
                 production_speed_buildings_factor = 0.1       				
 			}
 		}
