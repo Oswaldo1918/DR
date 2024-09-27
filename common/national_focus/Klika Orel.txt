@@ -385,8 +385,8 @@ focus_tree = {
 						special_type_slot_4 = secondary_turret_small_cannon
 					}
 					upgrades = {
-						tank_nsb_armor_upgrade = 5
-						tank_nsb_engine_upgrade = 7
+						tank_nsb_armor_upgrade = 1
+						tank_nsb_engine_upgrade = 4
 					}
 					icon = "GFX_SOV_basic_heavy_tank_medium"
 				}
@@ -405,11 +405,11 @@ focus_tree = {
 						special_type_slot_3 = secondary_turret_hmg
 					}
 					upgrades = {
-						tank_nsb_armor_upgrade = 4
-						tank_nsb_engine_upgrade = 9
+						tank_nsb_armor_upgrade = 1
+						tank_nsb_engine_upgrade = 4
 					}
-					icon = "GFX_SOV_basic_heavy_tank_medium" #Closer to T-35
-					#model = "SOV_heavy_armor_0" #Closer to T-35 but dependant on Soviet Tanks DLC
+					icon = "GFX_SOV_medium_gwtank_medium"
+					model = "SOV_medium_gw_armor_0_entity"
 				}
 			}
 			else = {
@@ -1143,6 +1143,11 @@ focus_tree = {
 		prerequisite = {
 			focus = MAT_tankoviye_patruli
 		}
+		bypass = {
+			KUR = {
+				is_exist = no
+			}
+		}
 		x = 13
 		y = 8
 		completion_reward = {
@@ -1381,6 +1386,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = MAT_zakrit_granitsu
+		}
+		bypass = {
+			KUR = {
+				is_exist = no
+			}
 		}
 		x = 15
 		y = 10

@@ -9,7 +9,8 @@ DR_dela_chumnogo_pakta = {
 			has_war = no 
 		}
 		visible = {
-			country_exist = MAT		
+			tag = LAZ
+			country_exist = MAT
 		}	
 		fire_only_once = yes
 	    ai_will_do = {
@@ -31,6 +32,7 @@ DR_dela_chumnogo_pakta = {
 			has_war = no 
 		}
 		visible = {
+			tag = LAZ
 			country_exist = UNT		
 		}	
 		fire_only_once = yes
@@ -53,6 +55,7 @@ DR_dela_chumnogo_pakta = {
 			has_war = no 
 		}
 		visible = {
+			tag = LAZ
 			country_exist = WHS		
 		}	
 		fire_only_once = yes
@@ -75,6 +78,7 @@ DR_dela_chumnogo_pakta = {
 			has_war = no 
 		}
 		visible = {
+			tag = LAZ
 			country_exist = DON		
 		}	
 		fire_only_once = yes
@@ -95,6 +99,7 @@ DR_dela_chumnogo_pakta = {
 			has_war = no 
 		}
 		visible = {
+			tag = LAZ
 			country_exist = ARK		
 		}
 		

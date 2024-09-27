@@ -496,7 +496,7 @@ country_event = { #Религиозный_вопрос
 	is_triggered_only = yes
 	
 	option = {
-		name = Orel.28.a #Атеизм
+		name = Orel.28.a 
 		add_ideas = MAT_idea_religiya_1
 		add_power_balance_value = {
 			id = MAT_hui_znaet_balance
@@ -504,11 +504,11 @@ country_event = { #Религиозный_вопрос
 		}
 	}
 	option = {
-		name = Orel.28.b #Православие
+		name = Orel.28.b
 		add_ideas = MAT_idea_religiya_2
 	}
 	option = {
-		name = Orel.28.с #Шумерская_религия
+		name = Orel.28.c
 		add_ideas = MAT_idea_religiya_3
 		add_power_balance_value = {
 			id = MAT_hui_znaet_balance
@@ -709,9 +709,15 @@ country_event = { #Телеграмма_в_Ставрополь
 	
 	option = {
 		name = Orel.35.a
+		MAT = {
+			country_event = Orel.36
+		}
 	}
 	option = {
 		name = Orel.35.b
+		MAT = {
+			country_event = Orel.37
+		}
 		ai_will_do = {
 			base = 10
 		}

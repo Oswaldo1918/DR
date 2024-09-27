@@ -1623,6 +1623,14 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_kazn_poroshenko
 		}
+		avalible = {
+			is_neighbor_of = KUR
+		}
+		bypass = {
+			KUR = {
+				is_exist = no
+			}
+		}
 		x = 16
 		y = 10
 		completion_reward = {
@@ -1642,6 +1650,14 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_kazn_poroshenko
 		}
+		avalible = {
+			is_neighbor_of = CHE
+		}
+		bypass = {
+			CHE = {
+				is_exist = no
+			}
+		}
 		x = 18
 		y = 10
 		completion_reward = {
@@ -1660,6 +1676,14 @@ focus_tree = {
 		cost = 2,00
 		prerequisite = {
 			focus = DON_odessa
+		}
+		avalible = {
+			is_neighbor_of = CRI
+		}
+		bypass = {
+			CRI = {
+				is_exist = no
+			}
 		}
 		x = 15
 		y = 11
@@ -1708,6 +1732,20 @@ focus_tree = {
 		cost = 3,00
 		prerequisite = {
 			focus = DON_na_chetvertiy_etazh
+		}
+		avalible = {
+			OR = {
+				is_neighbor_of = ZHE
+				is_neighbor_of = SIN
+			}
+		}
+		bypass = {
+			ZHE = {
+				is_exist = no
+			}
+			SIN = {
+				is_exist = no
+			}
 		}
 		x = 19
 		y = 11
