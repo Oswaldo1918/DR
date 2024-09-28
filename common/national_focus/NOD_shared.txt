@@ -1832,27 +1832,122 @@ create_wargoal = {
 		
 		x = 41
 		y = 7
-            completion_reward = {                   
-		    	create_wargoal = {
-							type = annex_everything
-							target = POK
-				}	
-                if = {
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = POK
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = POK
+				}
+				POK = {
+					every_state = {
 						limit = {
-							country_exists = POK
+							is_owned_by = POK
 						}
-						POK = {
-							every_state = {
-									limit = {
-										is_owned_by = POK
-									}
-									NOD = {
-									    add_state_claim = PREV
-									}
-							}
+						NOD = {
+							add_state_claim = PREV
 						}
-				}				
+					}
+				}
 			}
+			if = {
+				limit = {
+					country_exists = MGN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MGN
+				}	
+				MGN = {
+					every_state = {
+						limit = {
+							is_owned_by = MGN
+						}
+						NOD = {
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = YSK
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YSK
+				}	
+				YSK = {
+					every_state = {
+						limit = {
+							is_owned_by = YSK
+						}
+						NOD = {
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = OMS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = OMS
+				}	
+				OMS = {
+					every_state = {
+						limit = {
+							is_owned_by = OMS
+						}
+						NOD = {
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GAL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = GAL
+				}	
+				GAL = {
+					every_state = {
+						limit = {
+							is_owned_by = GAL
+						}
+						NOD = {
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ZNS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ZNS
+				}	
+				ZNS = {
+					every_state = {
+						limit = {
+							is_owned_by = ZNS
+						}
+						NOD = {
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = NOD_v_sibir
