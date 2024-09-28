@@ -36,7 +36,8 @@ SPE_dzhihad = {
 		ai_will_do = {
 			factor = 100
 		}
-		remove_effect = {		
+		remove_effect = {
+			news_event = dk_news.58
 		    declare_war_on = {
 		        target = GNR
 		        type = annex_everything
@@ -50,10 +51,10 @@ SPE_dzhihad = {
 		        type = annex_everything
 		    }
 			CNR = {
-            create_faction = Pact_vzaimooboroni
-            add_to_faction = CNR
-            add_to_faction = GNR
-            add_to_faction = NRB
+				create_faction = Pact_vzaimooboroni
+				add_to_faction = CNR
+				add_to_faction = GNR
+				add_to_faction = NRB
             }    			
 		}	
 	}
