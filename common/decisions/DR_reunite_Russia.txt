@@ -9,7 +9,10 @@ DR_form_russian_state_decisions_category = {
 					has_government = vmestolev
 					tag = LAZ
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -21,13 +24,12 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 570
 			controls_state = 590
 			controls_state = 202
-			controls_state = 564
 			controls_state = 408
 			controls_state = 206
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -50,7 +52,10 @@ DR_form_russian_state_decisions_category = {
 					has_government = vmestolev
 					tag = SKT
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -61,13 +66,12 @@ DR_form_russian_state_decisions_category = {
 	        controls_state = 570
 	        controls_state = 590
 	        controls_state = 202
-	        controls_state = 564
 	        controls_state = 408
 	        controls_state = 206		
         }
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -85,28 +89,24 @@ DR_form_russian_state_decisions_category = {
         icon = decision_eng_install_government	
 		cost = 25
 		
-		allowed = {
+		visible = {
 			OR = {
 				AND = {
 					tag = BSH
 					BSH = { 
 						has_government = memoism 
 					}
-				}
-				is_debug = yes
-			}
-		}	
-		
-		visible = {
-			OR = {
-				AND = {
 					has_completed_focus = BSH_materinskaya_liniya
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
 		available = {
+			has_completed_focus = BSH_materinskaya_liniya
 			controls_state = 214
 			controls_state = 213
 			controls_state = 516
@@ -116,7 +116,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -125,7 +125,9 @@ DR_form_russian_state_decisions_category = {
 			news_event = dk_news.43
 			set_cosmetic_tag = BSH_Sever_empire
 			set_country_flag = BSH_3_reunite_russia_kostil
-			country_event = { days = 1 id = super.10}
+			hidden_effect = {
+				country_event = { days = 1 id = super.10}
+			}
 		}	
 	}
 	
@@ -134,30 +136,24 @@ DR_form_russian_state_decisions_category = {
         icon = decision_eng_install_government	
 		cost = 25
 		
-		allowed = {
-			OR = {
-				AND = {
-					tag = BSH
-					BSH = { 
-						has_government = memoism 
-					}
-				}
-				is_debug = yes
-			}
-		}
-		
 		visible = {
 			OR = {
 				AND = {
+					tag = BSH
+					BSH = {
+						has_government = memoism 
+					}
 					has_completed_focus = BSH_ottsovskaya_liniya
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}			
 		}
 		
 		available = {
 			controls_state = 590
-			controls_state = 564
 			controls_state = 330
 			controls_state = 584
 			controls_state = 236
@@ -165,7 +161,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -174,7 +170,9 @@ DR_form_russian_state_decisions_category = {
 			news_event = dk_news.44
 			set_cosmetic_tag = BSH_Bashkir_hanstvo
 			set_country_flag = BSH_2_reunite_russia_kostil
-			country_event = { days = 1 id = super.9}
+			hidden_effect = {
+				country_event = { days = 1 id = super.9}
+			}
 		}	
 	}
 	
@@ -182,24 +180,19 @@ DR_form_russian_state_decisions_category = {
 		icon = decision_eng_install_government
 		cost = 25
 		
-		allowed = {
+		visible = {
 			OR = {
 				AND = {
 					tag = BSH
 					BSH = { 
 						has_government = memoism 
 					}
-				}
-				is_debug = yes
-			}
-		}
-		
-		visible = {
-			OR = {
-				AND = {
 					has_completed_focus = BSH_evrey
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -211,7 +204,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -220,7 +213,9 @@ DR_form_russian_state_decisions_category = {
 			news_event = dk_news.45
 			set_cosmetic_tag = BSH_Ural_Israel
 			set_country_flag = BSH_1_reunite_russia_kostil
-			country_event = { days = 1 id = super.8}
+			hidden_effect = {
+				country_event = { days = 1 id = super.8}
+			}
 		}	
 	}
 	
@@ -236,7 +231,10 @@ DR_form_russian_state_decisions_category = {
 						has_government = fascism 
 					}
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}	
 		available = {
@@ -245,7 +243,6 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		  
@@ -262,7 +259,7 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -289,12 +286,10 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		  
 		visible = {
-
 			OR = {
 				AND = {
 					tag = NOD
@@ -304,12 +299,15 @@ DR_form_russian_state_decisions_category = {
 					has_government = fascism
 					has_global_flag = NOD_putin_return
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -331,7 +329,6 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
@@ -339,15 +336,17 @@ DR_form_russian_state_decisions_category = {
 			OR = {
 				AND = {
 					tag = NOD
+					has_government = neutrality
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
-			has_government = neutrality
-			tag = NOD
 		}
 
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		ai_will_do = {
 			factor = 100
 		}
@@ -368,7 +367,10 @@ DR_form_russian_state_decisions_category = {
 				AND = {
 					tag = DOT
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -379,40 +381,33 @@ DR_form_russian_state_decisions_category = {
 		}
 		
 		fire_only_once = yes
-		days_remove = 35
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
 		}
 		remove_effect = {
 			set_country_flag = DOT_reunite_russia_kostil
-			country_event = { days = 1 id = super.4}
+			news_event = dk_news.17
+			hidden_effect = {
+				country_event = { days = 1 id = super.4}
+			}
 		}	
 	}
 	
 	ZNS_Sovet_Union = { #Формирование_Советского_Союза_Рудой
         icon = decision_eng_install_government
-		days_re_enable = 0
-
-        ai_will_do = {
-			factor = 100
-		}
-		
-		allowed = {
-			OR = {
-				AND = {
-					tag = ZNS
-				}
-				is_debug = yes
-			}
-		}
 		
 		visible = {
 			OR = {
 				AND = {
+					tag = ZNS
 					has_completed_focus = ZNS_Pau_Pau_Pau_Pau
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -423,13 +418,16 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 570
 			controls_state = 590
 			controls_state = 202
-			controls_state = 564
 			controls_state = 408
 			controls_state = 206
 		}
 		
-		days_remove = 15
+		days_remove = 14
 		fire_only_once = yes 
+		
+		ai_will_do = {
+			factor = 100
+		}
         remove_effect = {
 			set_cosmetic_tag = ZNS_ussr
 			news_event = {
@@ -452,7 +450,6 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 570
 			controls_state = 590
 			controls_state = 202
-			controls_state = 564
 			controls_state = 408
 			controls_state = 206
         }
@@ -469,7 +466,7 @@ DR_form_russian_state_decisions_category = {
 			}
 		}
 		
-		days_remove = 7
+		days_remove = 14
 		
         remove_effect = {
 			set_cosmetic_tag = MGN_ussr
@@ -481,7 +478,6 @@ DR_form_russian_state_decisions_category = {
 	MRD_reunification_RUS = { #Объединение_России_за_Мордор
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
@@ -489,7 +485,10 @@ DR_form_russian_state_decisions_category = {
 					tag = MRD
 					NOT = { has_country_flag = MRD_obyedineniye_rossii_sssr }
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -500,13 +499,12 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 570
 			controls_state = 590
 			controls_state = 202
-			controls_state = 564
 			controls_state = 408
 			controls_state = 206
 		}
 		
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -521,7 +519,6 @@ DR_form_russian_state_decisions_category = {
 	MRD_reunification_SOV = { #Провозглашение_СССР_за_Мордор
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
@@ -529,7 +526,10 @@ DR_form_russian_state_decisions_category = {
 					tag = MRD
 					NOT = { has_country_flag = MRD_obyedineniye_rossii_sssr }
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -540,13 +540,12 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 570
 			controls_state = 590
 			controls_state = 202
-			controls_state = 564
 			controls_state = 408
 			controls_state = 206
 		}
 		
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -563,14 +562,16 @@ DR_form_russian_state_decisions_category = {
 	POK_slovolzhitsin_decision = { #Провозглашение_России_за_Словолжицына
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = POK_Slovolzhicen	ruling_only = yes }
 					tag = POK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -579,12 +580,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -599,14 +599,16 @@ DR_form_russian_state_decisions_category = {
 	POK_eltsin_decision = { #Провозглашение_России_за_Ельцина
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = POK_Eltsin ruling_only = yes }
 					tag = POK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -615,12 +617,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -635,14 +636,16 @@ DR_form_russian_state_decisions_category = {
 	POK_putin_decision = { #Провозглашение_России_за_Путина
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = POK_Putin ruling_only = yes }
 					tag = POK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -651,12 +654,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -669,9 +671,8 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	POK_parlament_decision = { #Провозглашение_России_за_Шульман
-        icon = decision_eng_install_government	
+        icon = decision_eng_install_government
 		
-
 		visible = {
 			OR = {
 				AND = {
@@ -682,7 +683,10 @@ DR_form_russian_state_decisions_category = {
 					}
 					tag = POK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -691,12 +695,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -711,14 +714,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_yuneman_decision = { #Провозглашение_России_за_Юнемана
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Yuneman ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -727,12 +732,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -747,14 +751,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_wright_decision = { #Провозглашение_России_за_Райта
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Robert_Wright ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -763,12 +769,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -783,14 +788,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_pogrom_decision = { #Провозглашение_России_за_Погрома
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Egor_Prosvirnin ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -799,12 +806,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -819,14 +825,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_romanovi_decision = { #Провозглашение_России_за_Романовых
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Maria_Romanova ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -835,12 +843,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -855,14 +862,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_goga_decision = { #Провозглашение_России_за_Романовых
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Goga_Romanov ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -871,12 +880,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -891,14 +899,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_rogozin_decision = { #Провозглашение_России_за_Рогозина
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Dmitriy_Rogozin ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -907,12 +917,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -927,14 +936,16 @@ DR_form_russian_state_decisions_category = {
 	YSK_tesak_decision = { #Провозглашение_России_за_Тесака
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
 					has_country_leader = { character = YSK_Tesak ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -943,12 +954,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -963,7 +973,6 @@ DR_form_russian_state_decisions_category = {
 	YSK_rne_decision = { #Провозглашение_России_за_РНЕ
         icon = decision_eng_install_government	
 		
-
 		visible = {
 			OR = {
 				AND = {
@@ -973,7 +982,10 @@ DR_form_russian_state_decisions_category = {
 					}
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -982,12 +994,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -1007,7 +1018,10 @@ DR_form_russian_state_decisions_category = {
 					has_country_leader = { character = YSK_Nickolay_Skorodumov ruling_only = yes }
 					tag = YSK
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -1016,12 +1030,11 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 219
 			controls_state = 217
 			controls_state = 570
-			controls_state = 564
 			controls_state = 408
 		}
 		
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 14
 		
 		ai_will_do = {
 			factor = 100
@@ -3373,29 +3386,45 @@ DR_core_russian_territories_decisions_category = {
 		ai_will_do = {
 			base = 10.5
 		}
-		
-		remove_effect = {
+		#complete_effect = {
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				has_government = vmestolev
+		#				has_government = metacommy
+		#				has_government = anarhostalinism
+		#			}
+		#		}
+		#		set_province_name = { id = 3529 name = "Сталинград" }
+		#		set_province_name = { id = 11523 name = "Энгельс" }
+		#		set_province_name = { id = 9432 name = "Маркс" }
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			OR = {
+		#				has_government = democratic
+		#				has_government = memoism
+		#				has_government = neutrality
+		#			}
+		#		}
+		#		set_province_name = { id = 3529 name = "Волгоград" }
+		#		set_province_name = { id = 11523 name = "Покровск" }
+		#		set_province_name = { id = 9432 name = "Екатериненштадт" }
+		#	}
+		#	else = {
+		#		set_province_name = { id = 3529 name = "Царицын" }
+		#		set_province_name = { id = 11523 name = "Покровская слобода" }
+		#		set_province_name = { id = 9432 name = "Баронск" }
+		#	}		
+		#}
+#ТУДУ_переименование_переименование_городов_перенесено_так_как_ломает_уловие_починить_получилось_возможно_надо_делать_костыльный_ивент_на_переименование_городов_и_стейтов
+		remove_effect = { 
 			add_state_core = 217
 			add_state_core = 265
 			add_state_core = 245
 			add_state_core = 239
 			add_state_core = 401
 			add_state_core = 829
-			if = {
-				limit = {
-					OR = {
-						tag = LAZ
-						tag = MAT
-						tag = SKT
-						tag = MGN
-						tag = MRD
-						tag = ZNS						
-					}
-				}
-				set_province_name = { id = 3529 name = "Сталинград" }
-				set_province_name = { id = 11523 name = "Энгельс" }
-				set_province_name = { id = 9432 name = "Маркс" }
-			}
 		}
 	}
 	
@@ -4846,10 +4875,12 @@ DR_core_russian_territories_decisions_category = {
 		ai_will_do = {
 			base = 10.5
 		}
-		
+		#complete_effect = {
+		#	release_puppet = POL
+		#}
 		remove_effect = {
 			add_state_core = 763
-			release_puppet = POL
+			
 		}
 	}	
 }

@@ -1623,12 +1623,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_kazn_poroshenko
 		}
-		avalible = {
+		available = {
 			is_neighbor_of = KUR
 		}
 		bypass = {
 			KUR = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 16
@@ -1650,12 +1650,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_kazn_poroshenko
 		}
-		avalible = {
+		available = {
 			is_neighbor_of = CHE
 		}
 		bypass = {
 			CHE = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 18
@@ -1677,12 +1677,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_odessa
 		}
-		avalible = {
+		available = {
 			is_neighbor_of = CRI
 		}
 		bypass = {
 			CRI = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 15
@@ -1733,7 +1733,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DON_na_chetvertiy_etazh
 		}
-		avalible = {
+		available = {
 			OR = {
 				is_neighbor_of = ZHE
 				is_neighbor_of = SIN
@@ -1741,10 +1741,10 @@ focus_tree = {
 		}
 		bypass = {
 			ZHE = {
-				is_exist = no
+				exist = no
 			}
 			SIN = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 19

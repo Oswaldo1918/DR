@@ -1145,7 +1145,7 @@ focus_tree = {
 		}
 		bypass = {
 			KUR = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 13
@@ -1265,7 +1265,7 @@ focus_tree = {
 		}
 		x = 17
 		y = 8
-		avalible = {
+		available = {
 			has_tech = radio_detection
 		}
 		completion_reward = {
@@ -1389,7 +1389,7 @@ focus_tree = {
 		}
 		bypass = {
 			KUR = {
-				is_exist = no
+				exist = no
 			}
 		}
 		x = 15
@@ -1584,6 +1584,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = MAT_proriv_k_stavropolu
+		}
+		available = {
+			is_ai = no
 		}
 		x = 21
 		y = 12

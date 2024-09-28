@@ -54,6 +54,10 @@ country_event = { #ультиматум Яну от БОРОДа
 		}
 		ai_will_do = {
 			base = 10
+			modifier = {
+				factor = 0
+				is_subject = yes
+			}
 		}
 	}
 	option = {
