@@ -7,17 +7,17 @@ POK_prepar_balance_of_power_category = {
 	POK_bop_increase_pre_influence = {
 		icon = GFX_decision_category_generic
 		allowed = { 
-			original_tag = POK 
-		}
-		available = { 
 			tag = POK 
 		}
 		visible = {
-		
-		}	
+			has_any_power_balance = yes
+		}
+		available = { 
+			has_any_power_balance = yes
+		}		
 		days_remove = 7
 		fire_only_once = no
-		cost = 30
+		cost = 25
 		modifier = {
 			stability_weekly = -0.01
 			political_power_factor = -0.1
@@ -29,19 +29,25 @@ POK_prepar_balance_of_power_category = {
 			add_power_balance_value = {
 				id = POK_prepar_balance
 				value = -0.05
-			}		
+			}
 		}
 	}
 	###par
 	POK_bop_increase_par_influence = {
 		icon = GFX_decision_category_generic
 		available = { tag = POK }
+		allowed = { 
+			tag = POK 
+		}
 		visible = {
-			
-		}	
+			has_any_power_balance = yes
+		}
+		available = { 
+			has_any_power_balance = yes
+		}		
 		days_remove = 7
 		fire_only_once = no
-		cost = 30
+		cost = 25
 		modifier = {
 			stability_weekly = -0.01
 			political_power_factor = -0.1

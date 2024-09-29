@@ -222,21 +222,7 @@ DR_form_russian_state_decisions_category = {
 	NOD_reunification_1 = { #Стариков_объединяет_Россию
         icon = decision_eng_install_government		
 		cost = 25
-			
-		allowed = {
-			OR = {
-				AND = {
-					tag = NOD
-					NOD = {
-						has_government = fascism 
-					}
-				}
-				AND = {
-					is_debug = yes
-					is_ai = no
-				}
-			}
-		}	
+		
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia
 			controls_state = 195
@@ -252,9 +238,15 @@ DR_form_russian_state_decisions_category = {
 					NOT = {
 						has_global_flag = NOD_putin_return
 					}
+					NOD = {
+						has_government = fascism 
+					}
 					tag = NOD
 				}
-				is_debug = yes
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
 			}
 		}
 		
@@ -442,8 +434,23 @@ DR_form_russian_state_decisions_category = {
 		ai_will_do = {
 			factor = 100
 		}
-
+        visible = {
+			OR = {
+				AND = {
+					has_government = vmestolev
+					tag = MGN
+				}
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		
 		available = {
+			has_completed_focus = MGN_homo_soveticus
 			controls_state = 195
 			controls_state = 219
 			controls_state = 217
@@ -453,18 +460,6 @@ DR_form_russian_state_decisions_category = {
 			controls_state = 408
 			controls_state = 206
         }
-		
-		fire_only_once = yes
-		
-        visible = {
-			OR = {
-				AND = {
-					has_government = vmestolev
-					has_completed_focus = MGN_homo_soveticus
-				}
-				is_debug = yes
-			}
-		}
 		
 		days_remove = 14
 		

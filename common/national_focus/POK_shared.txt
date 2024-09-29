@@ -781,12 +781,14 @@ country_event = { id = POK.18 }
 		}
 		x = 16
 		y = 7
-		 available = {
-					has_country_flag = pre_win
-				}
-			completion_reward = {
+		available = {
+			NOT = {
+				has_country_flag = par_win
+			}
+		}
+		completion_reward = {
 
-}
+		}
 
 	}
 	shared_focus = {
@@ -801,12 +803,14 @@ country_event = { id = POK.18 }
 		}
 		x = 22
 		y = 7
-		 available = {
-					has_country_flag = par_win
-				}
-			completion_reward = {
+		available = {
+			NOT = {
+				has_country_flag = pre_win
+			}
+		}
+		completion_reward = {
 
-}
+		}
 
 	}
 	shared_focus = {
