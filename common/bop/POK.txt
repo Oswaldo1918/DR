@@ -4,7 +4,7 @@ POK_prepar_balance = {
 	right_side = POK_par_side
 	decision_category = POK_prepar_balance_of_power_category
 	
-	 range = {
+	range = {
         id = POK_mid_range
         min = -0.05
         max = 0.05
@@ -15,7 +15,6 @@ POK_prepar_balance = {
 			political_power_gain = -0.35
 			stability_weekly_factor = -0.01
 			war_support_weekly_factor = -0.01
-
         }
     }
 	
@@ -29,15 +28,15 @@ POK_prepar_balance = {
 			modifier = {
 			    political_power_gain = -0.2
 				party_popularity_stability_factor = 0.05
-		}
-		on_activate = {
-					set_country_flag = par_win
-					clr_country_flag = pre_win
-				}
-		on_deactivate = {
-					clr_country_flag = par_win
-					clr_country_flag = pre_win
-				}
+			}
+			on_activate = {
+				set_country_flag = par_win
+				clr_country_flag = pre_win
+			}
+			on_deactivate = {
+				clr_country_flag = par_win
+				clr_country_flag = pre_win
+			}
 		}
 		range = {
 			id = POK_par_power_range

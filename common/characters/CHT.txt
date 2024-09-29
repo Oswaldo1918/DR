@@ -744,31 +744,6 @@ characters = {
 	    }
 	}
 	
-	CHT_kot_fritz = {
-		name = "Кот Фриц"
-		portraits = {
-			army = {
-				small = "GFX_idea_kot_fritz"
-			}
-		}
-
-		advisor={
-    		slot = high_command	
-			idea_token = CHT_kot_fritz
-			allowed = {
-				original_tag = CHT
-			}
-	       available = {		
-           has_government = memoism
-		   }
-			traits = { army_commando_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-	    }
-	}
-	
 	CHT_nik_vas = {
 		name = "Никита Васиslave"
 		portraits = {

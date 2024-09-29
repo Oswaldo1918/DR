@@ -87,14 +87,22 @@ news_event = { # Победа Штазиста "оригинал"
 	option = {
 	name = dk_news.3.a
 		trigger = {
-			original_tag = CHT
+			has_government = vmestolev
+			country_exists = LAZ
 		}
 	}	
 
 	option = {
 	name = dk_news.3.b
 		trigger = { 
-			NOT = { original_tag = CHT }
+			NOT = { has_government = vmestolev  }
+			country_exists = LAZ
+		}
+	}
+	option = {
+	name = dk_news.3.c
+		trigger = { 
+			NOT = { country_exists = LAZ }
 		}
 	}
 }
@@ -1333,7 +1341,7 @@ news_event = { #Саурон_объединяет_Россию
     id = dk_news.63
 	title = dk_news.63.t
 	desc = dk_news.63.d
-	picture = GFX_news_event_DKR_MRD_Sauron_nuckes
+	picture = GFX_news_event_mordor_visotka
 	
 	major = yes
 	
@@ -1347,7 +1355,7 @@ news_event = { #Саурон_создаёт_СССР
     id = dk_news.64
 	title = dk_news.64.t
 	desc = dk_news.64.d
-	picture = GFX_news_event_DKR_MRD_Sauron_nuckes
+	picture = GFX_news_event_mordor_visotka
 	
 	major = yes
 	
@@ -1428,7 +1436,7 @@ news_event = { #Словолжицин объединяет Россию
     id = dk_news.69
 	title = dk_news.69.t
 	desc = dk_news.69.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_DKR_slovolzhitsin
 	
 	is_triggered_only = yes
 	
@@ -1445,7 +1453,7 @@ news_event = { #Ельцин объединяет Россию
     id = dk_news.70
 	title = dk_news.70.t
 	desc = dk_news.70.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_POK_yeltsin
 	
 	is_triggered_only = yes
 	
@@ -1462,7 +1470,7 @@ news_event = { #Путин объединяет Россию
     id = dk_news.71
 	title = dk_news.71.t
 	desc = dk_news.71.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_DKR_putin_lunarniy
 	
 	is_triggered_only = yes
 	
@@ -1479,7 +1487,7 @@ news_event = { #Парламент объединяет Россию
     id = dk_news.72
 	title = dk_news.72.t
 	desc = dk_news.72.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_parlament
 	
 	is_triggered_only = yes
 	
@@ -1497,7 +1505,7 @@ news_event = { #Развал России
     id = dk_news.73
 	title = dk_news.73.t
 	desc = dk_news.73.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_POK_razval
 	
 	is_triggered_only = yes
 	
@@ -1515,7 +1523,7 @@ news_event = { #Лукин объединяет Россию
     id = dk_news.74
 	title = dk_news.74.t
 	desc = dk_news.74.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_GAL_lukin
 	
 	is_triggered_only = yes
 	
@@ -1533,7 +1541,7 @@ news_event = { #Рудой объединяет Россию
     id = dk_news.75
 	title = dk_news.75.t
 	desc = dk_news.75.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_ZNS_yevroliviye
 	
 	is_triggered_only = yes
 	
@@ -1551,7 +1559,7 @@ news_event = { #Юнеман объединяет Россию
     id = dk_news.76
 	title = dk_news.76.t
 	desc = dk_news.76.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_natsdemi
 	
 	is_triggered_only = yes
 	
@@ -1569,7 +1577,7 @@ news_event = { #Райт объединяет Россию
     id = dk_news.77
 	title = dk_news.77.t
 	desc = dk_news.77.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_natsdemi
 	
 	is_triggered_only = yes
 	
@@ -1587,7 +1595,7 @@ news_event = { #Погром объединяет Россию
     id = dk_news.78
 	title = dk_news.78.t
 	desc = dk_news.78.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_pogrom_alt_2
 	
 	is_triggered_only = yes
 	
@@ -1605,7 +1613,7 @@ news_event = { #Романовы объединяют Россию
     id = dk_news.79
 	title = dk_news.79.t
 	desc = dk_news.79.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_tsar
 	
 	is_triggered_only = yes
 	
@@ -1623,7 +1631,7 @@ news_event = { #Гога объединяет Россию
     id = dk_news.80
 	title = dk_news.80.t
 	desc = dk_news.80.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_comradetsar
 	
 	is_triggered_only = yes
 	
@@ -1641,7 +1649,7 @@ news_event = { #Рогозин объединяет Россию
     id = dk_news.81
 	title = dk_news.81.t
 	desc = dk_news.81.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_DKR_YSK_izhevsk_dynamiks
 	
 	is_triggered_only = yes
 	
@@ -1659,7 +1667,7 @@ news_event = { #Тесак объединяет Россию
     id = dk_news.82
 	title = dk_news.82.t
 	desc = dk_news.82.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_tesak
 	
 	is_triggered_only = yes
 	
@@ -1677,7 +1685,7 @@ news_event = { #РНЕ объединяет Россию
     id = dk_news.83
 	title = dk_news.83.t
 	desc = dk_news.83.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_RNE
 	
 	is_triggered_only = yes
 	
@@ -1695,7 +1703,7 @@ news_event = { #НПФ объединяет Россию
     id = dk_news.84
 	title = dk_news.84.t
 	desc = dk_news.84.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_NFP_Pamyat
 	
 	is_triggered_only = yes
 	
@@ -1713,7 +1721,7 @@ news_event = { #Медведев объединяет Россию
     id = dk_news.85
 	title = dk_news.85.t
 	desc = dk_news.85.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_YSK_Medvedev
 	
 	is_triggered_only = yes
 	
@@ -1731,7 +1739,7 @@ news_event = { #Невмерлия объединяет Украину
     id = dk_news.86
 	title = dk_news.86.t
 	desc = dk_news.86.d
-	picture = GFX_news_event_073
+	picture = GFX_news_event_UKR_Poroh
 	
 	is_triggered_only = yes
 	
@@ -1749,7 +1757,7 @@ news_event = { #Магнитогорск объединяет Россию
     id = dk_news.87
 	title = dk_news.87.t
 	desc = dk_news.87.d
-	picture = GFX_news_event_073
+	picture = GFX_NKVD_rasstrel
 	
 	is_triggered_only = yes
 	
@@ -1806,6 +1814,53 @@ news_event = { #Барков_взял_Москву
 		name = dk_news.89.b
 		trigger = { 
 			NOT = { original_tag = NOD }
+		}
+	}
+}
+news_event = { #Бебей_взял_Москву
+    id = dk_news.90
+	title = dk_news.90.t
+	desc = dk_news.90.d
+	picture = GFX_news_event_BSH_bebey_v_moskve
+	
+	
+	trigger = {
+		219 = { is_controlled_by = BSH }
+		NOT = { has_global_flag = DR_fall_of_moscow_BSH }
+		BSH  = { has_government = memoism }
+	}
+	
+	immediate = {
+		set_global_flag = DR_fall_of_moscow_BSH
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = dk_news.90.a
+		trigger = {
+			tag = BSH
+		}
+	}
+	
+	option = {
+		name = dk_news.90.b
+		trigger = { 
+			NOT = { 
+				tag = BSH 
+			}
+			country_exists = NOD
+		}
+	}
+	option = {
+		name = dk_news.90.c
+		trigger = { 
+			NOT = { 
+				tag = BSH
+				country_exists = NOD
+			}
 		}
 	}
 }

@@ -166,7 +166,7 @@ country_event = {
 		name = Orel.15.a
 	}
 }
-country_event = { #Госпереворот_Шумера
+country_event = { #Госпереворот_Орлова
 	id = Orel.16
 	title = Orel.16.t
 	desc = Orel.16.d
@@ -214,6 +214,9 @@ country_event = {
 			popularity = 0.25
 		}
 		retire_character = MAT_Danil_Csukanov
+		recruit_character = MAT_Pavel_Ryzhkov
+		recruit_character = MAT_Adam_Abadiyev
+		recruit_character = MAT_Deryabin
 		remove_power_balance = {
 			id = MAT_hui_znaet_balance
 		}	
