@@ -137,7 +137,8 @@ characters = {
 		name = "Адам Абадиев"
 		portraits = {
 			civilian = {
-				small = "GFX_idea_MAT_Adam_Abadiyev"
+				large = "gfx/leaders/MAT/MAT_Kot_Fritz.dds"
+				small = "GFX_idea_kot_fritz"
 			}
 		}
 		advisor = {
@@ -150,23 +151,60 @@ characters = {
 				army_logistics_1
 			}
 		}
+		corps_commander={
+			traits={ cavalry_leader cavalry_expert substance_abuser }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
 	}
 	MAT_Pavel_Ryzhkov = {
 		name = "Павел Рыжков"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/MAT/MAT_Pavel_Ryzhkov.dds"
 				small = "GFX_idea_MAT_Pavel_Ryzhkov"
 			}
 		}
 		advisor = {
-			slot = captain_of_industry
+			slot = army_chief
 			idea_token = MAT_idea_Pavel_Ryzhkov
 			allowed  = {
 				original_tag = MAT
 			}
 			traits  = {
-				rabochaya_koshechka
+				army_chief_morale_2
 			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	MAT_Deryabin = {
+		name = "Антон Дерябин"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAT/MAT_Deryabin.dds"
+				#small = "GFX_idea_MAT_Deryabin"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=6
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
 		}
 	}
 }
