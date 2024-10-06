@@ -5141,10 +5141,12 @@ focus_tree = {
 									YSK_pamyat_nation_war_support_factor = 0.05
 								}
 							if = {
+							limit = {
 		               			FRG = { NOT = { has_country_leader = { character = FRG_Navalniy ruling_only = yes } } }
 		            			has_completed_focus = YSK_fraktsiya_RNE
 		              			country_event = YSK.559
 			             	}
+							}
 						}
 			custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
 			custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
