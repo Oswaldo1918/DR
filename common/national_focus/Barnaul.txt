@@ -25,18 +25,19 @@ focus_tree = {
 		cost = 2,00
 		x = 31
 		y = 0
-	        available = {
-			controls_state = 653
-			POK = {
-			        exists = no
-			}
-		}
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.1
-		        country_event = YSK.4
-				news_event = dk_news.53
-		}
+			available = {
+					controls_state = 653
+					POK = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.1
+					country_event = YSK.4
+					news_event = dk_news.53
+				}
+
 	}
 	focus = {
 		id = YSK_rus_irredentism
@@ -85,15 +86,15 @@ focus_tree = {
 					has_completed_focus = YSK_kanonizirovat_Gagarina
 					has_tech = experimental_rockets
 				}
-				
-            completion_reward = {
+			completion_reward = {
 					add_tech_bonus = {
-                        bonus = 0.5
-                        uses = 1
-                        category = rocketry
-                    }
+							bonus = 0.5
+							uses = 1
+							category = rocketry
+						}
 					add_ideas = YSK_kosmicheskiye_poleti
 				}
+
 	}
 	focus = {
 		id = YSK_The_iron_tsar
@@ -299,21 +300,22 @@ focus_tree = {
 		}
 		x = 11
 		y = 10
-		completion_reward = {
-            If = {
-                NOT = {
-                    KAZ = exist
-                }
-                release_on_controlled = KAZ
-            }
-            KAZ = {
-		      	set_autonomy = {
-                    target = YSK
-                    autonomous_state = autonomy_cryptocolony
-                }
-            }
-            add_ideas = YSK_agent_KNB
-        }
+			completion_reward = {
+					If = {
+							NOT = {
+									KAZ = exist
+								}
+							release_on_controlled = KAZ
+						}
+					KAZ = {
+							set_autonomy = {
+									target = YSK
+									autonomous_state = autonomy_cryptocolony
+								}
+						}
+					add_ideas = YSK_agent_KNB
+				}
+
 	}
 	focus = {
 		id = YSK_rus_grazhdanskiy_nationalism
@@ -902,7 +904,6 @@ focus_tree = {
 							popularity = 0.05
 						}
 					complete_national_focus = YSK_constit
-					
 				}
 
 	}
@@ -2170,10 +2171,11 @@ focus_tree = {
 		}
 		x = 34
 		y = 10
-		available = {
-		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
-		}
-		}
+			available = {
+					NOT = {
+							has_completed_focus = YSK_Sputnick_i_Pogrom
+						}
+				}
 			completion_reward = {
 					set_variable = {
 							YSK_RusDerevnya_stability_factor = 0.025
@@ -2636,10 +2638,11 @@ focus_tree = {
 		}
 		x = 46
 		y = 10
-		available = {
-		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
-		}
-		}
+			available = {
+					NOT = {
+							has_completed_focus = YSK_Sputnick_i_Pogrom
+						}
+				}
 			completion_reward = {
 					set_variable = {
 							YSK_blesk_RusKoroni_stability_factor = -0.05
@@ -2921,7 +2924,7 @@ focus_tree = {
 	focus = {
 		id = YSK_ultraright_visionary
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 3,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
@@ -2936,13 +2939,13 @@ focus_tree = {
 	focus = {
 		id = YSK_NNP
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 3,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
 		mutually_exclusive = {
-			focus = YSK_RNR_NPF_Memory
 			focus = YSK_ultraright_visionary
+			focus = YSK_RNR_NPF_Memory
 		}
 		x = 63
 		y = 10
@@ -2958,13 +2961,13 @@ focus_tree = {
 	focus = {
 		id = YSK_RNR_NPF_Memory
 		icon = GFX_goal_unknown
-		cost = 3
+		cost = 3,00
 		prerequisite = {
 			focus = YSK_chto_on_nam_neset
 		}
 		mutually_exclusive = {
-			focus = YSK_NNP
 			focus = YSK_ultraright_visionary
+			focus = YSK_NNP
 		}
 		x = 77
 		y = 10
@@ -3001,7 +3004,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
-		x = 71
+		x = 69
 		y = 12
 			available = {
 					NOT = {
@@ -3067,7 +3070,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_fraktsiya_RNE
 		}
-		x = 70
+		x = 68
 		y = 13
 			completion_reward = {
 					add_to_variable = {
@@ -3092,7 +3095,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_vozradit_rus_nation
 		}
-		x = 69
+		x = 67
 		y = 14
 			completion_reward = {
 					add_to_variable = {
@@ -3113,7 +3116,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_fraktsiya_RNE
 		}
-		x = 72
+		x = 70
 		y = 13
 			completion_reward = {
 					add_popularity = {
@@ -3139,7 +3142,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
-		x = 73
+		x = 71
 		y = 14
 			completion_reward = {
 					add_to_variable = {
@@ -3235,7 +3238,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Nation
 		}
-		x = 74
+		x = 73
 		y = 13
 			completion_reward = {
 					add_to_variable = {
@@ -3250,6 +3253,56 @@ focus_tree = {
 					custom_effect_tooltip = YSK_1_pamyat_nation_political_power_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_nation_stability_factor_tt
+				}
+
+	}
+	focus = {
+		id = YSK_nasledniki_velikih
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_golos_nashego_vozhdya
+		}
+		x = 72
+		y = 15
+			completion_reward = {
+					add_to_variable = {
+							YSK_pamyat_nation_conscription_factor = 0.075
+						}
+					add_to_variable = {
+							YSK_pamyat_nation_justify_war_goal_time = -0.05
+						}
+					custom_effect_tooltip = YSK_1_pamyat_nation_conscription_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_nation_justify_war_goal_time_tt
+				}
+
+	}
+	focus = {
+		id = YSK_zhestkaya_distsiplina
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_golos_nashego_vozhdya
+		}
+		x = 74
+		y = 15
+			completion_reward = {
+					add_to_variable = {
+							YSK_pamyat_nation_army_org_factor = 0.05
+						}
+					add_to_variable = {
+							YSK_pamyat_nation_drift_defence_factor = 0.1
+						}
+					add_to_variable = {
+							YSK_pamyat_nation_dig_in_speed_factor = 0.05
+						}
+					add_to_variable = {
+							YSK_pamyat_nation_recon_factor_while_entrenched = 0.05
+						}
+					custom_effect_tooltip = YSK_1_pamyat_nation_army_org_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_nation_drift_defence_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_nation_dig_in_speed_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_nation_recon_factor_while_entrenched_tt
 				}
 
 	}
@@ -3368,56 +3421,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_nasledniki_velikih
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_golos_nashego_vozhdya
-		}
-		x = 73
-		y = 15
-			completion_reward = {
-					add_to_variable = {
-							YSK_pamyat_nation_conscription_factor = 0.075
-						}
-					add_to_variable = {
-							YSK_pamyat_nation_justify_war_goal_time = -0.05
-						}
-					custom_effect_tooltip = YSK_1_pamyat_nation_conscription_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_nation_justify_war_goal_time_tt
-				}
-
-	}
-	focus = {
-		id = YSK_zhestkaya_distsiplina
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_golos_nashego_vozhdya
-		}
-		x = 75
-		y = 15
-			completion_reward = {
-					add_to_variable = {
-							YSK_pamyat_nation_army_org_factor = 0.05
-						}
-					add_to_variable = {
-							YSK_pamyat_nation_drift_defence_factor = 0.1
-						}
-					add_to_variable = {
-							YSK_pamyat_nation_dig_in_speed_factor = 0.05
-						}
-					add_to_variable = {
-							YSK_pamyat_nation_recon_factor_while_entrenched = 0.05
-						}
-					custom_effect_tooltip = YSK_1_pamyat_nation_army_org_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_nation_drift_defence_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_nation_dig_in_speed_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_nation_recon_factor_while_entrenched_tt
-				}
-
-	}
-	focus = {
 		id = YSK_united_duh_disciplines
 		icon = GFX_goal_unknown
 		cost = 5,00
@@ -3479,7 +3482,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_God
 		}
-		x = 80
+		x = 81
 		y = 13
 			completion_reward = {
 					hidden_effect = {
@@ -3502,7 +3505,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_doctina_fundament_pravoslaviya
 		}
-		x = 79
+		x = 80
 		y = 15
 			completion_reward = {
 					add_to_variable = {
@@ -3525,13 +3528,113 @@ focus_tree = {
 
 	}
 	focus = {
+		id = YSK_zakony_bozhi
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_doctina_fundament_pravoslaviya
+		}
+		x = 82
+		y = 15
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_god_political_power_factor = 0.025
+								}
+						}
+					custom_effect_tooltip = YSK_1_pamyat_god_stability_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_god_political_power_factor_tt
+				}
+
+	}
+	focus = {
+		id = YSK_the_struggle_of_good_with_evil
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_rus_terror
+		}
+		prerequisite = {
+			focus = YSK_zakony_bozhi
+		}
+		prerequisite = {
+			focus = YSK_nasledniki_velikih
+		}
+		prerequisite = {
+			focus = YSK_zhestkaya_distsiplina
+		}
+		prerequisite = {
+			focus = YSK_war_monahi
+		}
+		x = 77
+		y = 16
+			available = {
+					NOT = {
+							has_completed_focus = YSK_Sputnick_i_Pogrom
+						}
+				}
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_army_attack_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_nation_war_support_factor = 0.05
+								}
+							if = {
+									limit = {
+											FRG = {
+													NOT = {
+															has_country_leader = {
+																	character = FRG_Navalniy
+																	ruling_only = yes
+																}
+														}
+												}
+											has_completed_focus = YSK_fraktsiya_RNE
+											country_event = YSK.559
+										}
+								}
+						}
+					custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
+				}
+
+	}
+	focus = {
+		id = YSK_krestom
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = YSK_the_struggle_of_good_with_evil
+		}
+		x = 80
+		y = 17
+			completion_reward = {
+					hidden_effect = {
+							add_to_variable = {
+									YSK_pamyat_god_stability_factor = 0.025
+								}
+							add_to_variable = {
+									YSK_pamyat_god_non_core_manpower = 0.05
+								}
+						}
+					custom_effect_tooltip = YSK_1_pamyat_god_stability_factor_tt
+					custom_effect_tooltip = YSK_1_pamyat_god_non_core_manpower_tt
+				}
+
+	}
+	focus = {
 		id = YSK_Tsar
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
 			focus = YSK_prizuv_k_splachivaniyu_rus_patriotov
 		}
-		x = 83
+		x = 85
 		y = 12
 			available = {
 					NOT = {
@@ -3596,7 +3699,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 82
+		x = 84
 		y = 13
 			completion_reward = {
 					hidden_effect = {
@@ -3623,7 +3726,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_bozh_zemskaya_ierarhiya
 		}
-		x = 81
+		x = 83
 		y = 14
 			completion_reward = {
 					hidden_effect = {
@@ -3646,7 +3749,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_Tsar
 		}
-		x = 84
+		x = 86
 		y = 13
 			completion_reward = {
 					hidden_effect = {
@@ -3669,7 +3772,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
-		x = 83
+		x = 85
 		y = 14
 			completion_reward = {
 					hidden_effect = {
@@ -3697,7 +3800,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_ochishchenie_puti_k_prestolu
 		}
-		x = 85
+		x = 87
 		y = 14
 			completion_reward = {
 					hidden_effect = {
@@ -3727,7 +3830,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_new_sosloviya
 		}
-		x = 83
+		x = 85
 		y = 15
 			completion_reward = {
 					hidden_effect = {
@@ -3740,7 +3843,6 @@ focus_tree = {
 						}
 					custom_effect_tooltip = YSK_1_pamyat_tsar_stability_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_tsar_political_power_gain_tt
-					
 				}
 
 	}
@@ -4339,7 +4441,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 53
+		x = 52
 		y = 13
 			completion_reward = {
 					add_stability = 0.075
@@ -4374,7 +4476,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 55
+		x = 56
 		y = 13
 			completion_reward = {
 					add_timed_idea = {
@@ -4604,7 +4706,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 51
+		x = 50
 		y = 13
 			completion_reward = {
 					add_ideas = YSK_sacred_mission_RPTs
@@ -4689,7 +4791,7 @@ focus_tree = {
 							technology = paratroopers
 							technology = paratroopers2
 						}
-					add_ideas = YSK_kosmovoyska	
+					add_ideas = YSK_kosmovoyska
 				}
 
 	}
@@ -4723,10 +4825,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5,00
 		prerequisite = {
-			focus = YSK_God_and_space
-		}
-		prerequisite = {
-			focus = YSK_souz_s_Great_Russia
+			focus = YSK_sobiranie_nation
 		}
 		x = 54
 		y = 15
@@ -4806,7 +4905,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_souz_s_Great_Russia
 		}
-		x = 57
+		x = 58
 		y = 13
 			completion_reward = {
 					add_research_slot = 1
@@ -4944,13 +5043,14 @@ focus_tree = {
 		}
 		x = 53
 		y = 18
-		
-		available = {
+			available = {
 					has_tech = rocket_engines
 				}
-				
-            completion_reward = {
-                    add_offsite_building = { type = industrial_complex level = 3 }	
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
 				}
 
 	}
@@ -4963,13 +5063,14 @@ focus_tree = {
 		}
 		x = 55
 		y = 18
-		
-		available = {
+			available = {
 					has_tech = improved_rocket_engines
 				}
-		
-		completion_reward = {
-                    add_offsite_building = { type = industrial_complex level = 3 }	
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
 				}
 
 	}
@@ -4985,13 +5086,14 @@ focus_tree = {
 		}
 		x = 54
 		y = 19
-		
-		available = {
+			available = {
 					has_tech = advanced_rocket_engines
 				}
-		
-		completion_reward = {
-                    add_offsite_building = { type = industrial_complex level = 3 }	
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
 				}
 
 	}
@@ -5002,7 +5104,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_splav_hrist_i_yaziych
 		}
-		x = 71
+		x = 69
 		y = 15
 			completion_reward = {
 					add_to_variable = {
@@ -5026,7 +5128,7 @@ focus_tree = {
 		prerequisite = {
 			focus = YSK_rebrending_svastika
 		}
-		x = 71
+		x = 69
 		y = 14
 			completion_reward = {
 					add_to_variable = {
@@ -5085,74 +5187,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = YSK_zakony_bozhi
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_doctina_fundament_pravoslaviya
-		}
-		x = 81
-		y = 15
-			completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_god_stability_factor = 0.025
-								}
-							add_to_variable = {
-									YSK_pamyat_god_political_power_factor = 0.025
-								}
-						}
-					custom_effect_tooltip = YSK_1_pamyat_god_stability_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_god_political_power_factor_tt
-				}
-
-	}
-	focus = {
-		id = YSK_the_struggle_of_good_with_evil
-		icon = GFX_goal_unknown
-		cost = 5,00
-		available = {
-		NOT = { has_completed_focus = YSK_Sputnick_i_Pogrom
-		}
-		}
-		prerequisite = {
-			focus = YSK_rus_terror
-		}
-		prerequisite = {
-			focus = YSK_zakony_bozhi
-		}
-		prerequisite = {
-			focus = YSK_nasledniki_velikih
-		}
-		prerequisite = {
-			focus = YSK_zhestkaya_distsiplina
-		}
-		prerequisite = {
-			focus = YSK_war_monahi
-		}
-		x = 77
-		y = 16
-		completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_god_army_attack_factor = 0.025
-								}
-							add_to_variable = {
-									YSK_pamyat_nation_war_support_factor = 0.05
-								}
-							if = {
-							limit = {
-		               			FRG = { NOT = { has_country_leader = { character = FRG_Navalniy ruling_only = yes } } }
-		            			has_completed_focus = YSK_fraktsiya_RNE
-		              			country_event = YSK.559
-			             	}
-							}
-						}
-			custom_effect_tooltip = YSK_1_pamyat_god_army_attack_factor_tt
-			custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
-		}
-	}
-	focus = {
 		id = YSK_i_mechom
 		icon = GFX_goal_unknown
 		cost = 5,00
@@ -5172,29 +5206,6 @@ focus_tree = {
 						}
 					custom_effect_tooltip = YSK_1_pamyat_nation_army_attack_factor_tt
 					custom_effect_tooltip = YSK_1_pamyat_nation_war_support_factor_tt
-				}
-
-	}
-	focus = {
-		id = YSK_krestom
-		icon = GFX_goal_unknown
-		cost = 5,00
-		prerequisite = {
-			focus = YSK_the_struggle_of_good_with_evil
-		}
-		x = 80
-		y = 17
-			completion_reward = {
-					hidden_effect = {
-							add_to_variable = {
-									YSK_pamyat_god_stability_factor = 0.025
-								}
-							add_to_variable = {
-									YSK_pamyat_god_non_core_manpower = 0.05
-								}
-						}
-					custom_effect_tooltip = YSK_1_pamyat_god_stability_factor_tt
-					custom_effect_tooltip = YSK_1_pamyat_god_non_core_manpower_tt
 				}
 
 	}
@@ -5442,9 +5453,9 @@ focus_tree = {
 		x = 77
 		y = 26
 			completion_reward = {
-			news_event = {
-				id = dk_news.85
-			}
+					news_event = {
+							id = dk_news.85
+						}
 					if = {
 							limit = {
 									BRT = {

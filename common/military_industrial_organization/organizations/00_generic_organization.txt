@@ -2124,7 +2124,7 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST tag = POK tag = MGN tag = GAL tag = YSK tag = ZNS tag = OMS tag = MRD tag = LAZ tag = OSV tag = CHT tag = DON tag = UKR tag = NOD tag = ARK } }
 		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
 		NOT = {
 			AND = {
