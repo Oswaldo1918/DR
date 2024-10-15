@@ -1624,6 +1624,7 @@ focus_tree = {
 				id = MAT_hui_znaet_balance
 				value > 0.15
 			}
+			has_war = no
 		}
 		prerequisite = {
 			focus = MAT_chezvichayniye_meri
@@ -1647,6 +1648,9 @@ focus_tree = {
 		cost = 5,00
 		prerequisite = {
 			focus = MAT_atakovat_Untsa
+		}
+		available = {
+			has_war = no
 		}
 		x = 23
 		y = 7

@@ -463,10 +463,9 @@ country_event = {
 	option = {
 		name = chat.4.a
 		hidden_effect = {
-		set_country_flag = cht_ignor_svidetel
-		CHT = {
-			country_event = { days = 1 id = chat.6 }
-		}
+			CHT = {
+				country_event = { days = 1 id = chat.6 }
+			}
 		}
 	}
 	
@@ -490,9 +489,9 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { 
-	name = chat.5.a
-	set_country_flag = cht_arrest_svidetel
-    remove_unit_leader = 22800
+		name = chat.5.a
+		set_country_flag = CHT_arest_svidetel_cf
+		remove_unit_leader = 22800
 	}
 }
 
@@ -507,10 +506,8 @@ country_event = {
 	is_triggered_only = yes	
 	
 	option = {
-	name = chat.6.a
-	hidden_effect = {
-	complete_national_focus = CHT_war_polozheniye
-	}
+		name = chat.6.a
+		set_country_flag = CHT_ignor_svidetel_cf
 	}
 }	
 # Беспорядки на юге

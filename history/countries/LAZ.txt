@@ -56,6 +56,12 @@ recruit_character = LAZ_Anton_Orlov
 recruit_character = LAZ_Shchelkunova
 recruit_character = LAZ_mixan_teoretic
 
+create_import = {
+		resource = oil
+		factories = 1
+		exporter = BSH
+}
+
 add_ideas = {
 	LAZ_razdutyy_apparat_moderov
     LAZ_kontra_0
@@ -80,38 +86,38 @@ set_convoys = 40
 
 set_autonomy = {
 	target = CHT
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_puppet
 	freedom_level = 0.5
 }
 set_autonomy = {
 	target = DON
 	autonomous_state = autonomy_puppet
-	freedom_level = 0.8
+	freedom_level = 0.5
 }
 set_autonomy = {
 	target = WHS
 	autonomous_state = autonomy_puppet
-	freedom_level = 0.8
+	freedom_level = 0.5
 }
 set_autonomy = {
 	target = ARK
 	autonomous_state = autonomy_puppet
-	freedom_level = 0.8
+	freedom_level = 0.5
 }
 set_autonomy = {
 	target = UNT
 	autonomous_state = autonomy_puppet
-	freedom_level = 0.8
+	freedom_level = 0.5
 }
 set_autonomy = {
 	target = MAT
 	autonomous_state = autonomy_puppet
-	freedom_level = 0.8
+	freedom_level = 0.5
 }
 set_autonomy = {
 	target = BSH
-	autonomous_state = autonomy_dominion
-	freedom_level = 0.8
+	autonomous_state = autonomy_puppet
+	freedom_level = 0.5
 }
 
 create_faction = Chumnoi_Pakt
@@ -127,7 +133,6 @@ add_to_faction = BSH
 activate_mission = LAZ_razval_mission
 
 #Политики
-
 
 #Генералы
 

@@ -41,15 +41,14 @@ focus_tree = {
 		}
 		x = 26
 		y = 1
-			available = {
-					has_country_flag = cht_arrest_svidetel
-				}
-			completion_reward = {
-					country_event = {
-							id = chat.2
-						}
-				}
-
+		available = {
+			has_country_flag = CHT_arest_svidetel_cf
+		}
+		completion_reward = {
+			country_event = {
+				id = chat.2
+			}
+		}
 	}
 	focus = {
 		id = CHT_stazist
@@ -1226,11 +1225,11 @@ focus_tree = {
 				add_ideas = CHT_partizanskie_otryady_1
 				}
 	}
-	###
+	###Гражданская_война_через_штурм
 	focus = {
 		id = CHT_war_polozheniye
 		icon = GFX_focus_generic_military_mission
-		cost = 0.2
+		cost = 2
 		prerequisite = {
 			focus = CHT_syezd_partii
 		}
@@ -1239,13 +1238,12 @@ focus_tree = {
 		}
 		x = 60
 		y = 1
-			available = {
-					has_country_flag = cht_ignor_svidetel
-				}
-			completion_reward = {
-					add_political_power = -300
-				}
-
+		available = {
+			has_country_flag = CHT_ignor_svidetel_cf
+		}
+		completion_reward = {
+			add_political_power = -300
+		}
 	}
 	focus = {
 		id = CHT_bans
@@ -1323,7 +1321,7 @@ focus_tree = {
 	focus = {
 		id = CHT_oceplenie_sovet
 		icon = GFX_focus_cht_isolate_sovet
-		cost = 0.2
+		cost = 1
 		prerequisite = {
 			focus = CHT_vvesti_voyska
 		}
@@ -1375,7 +1373,7 @@ focus_tree = {
 	focus = {
 		id = CHT_sturm_chat_sovet
 		icon = GFX_focus_hol_war_on_pacifism
-		cost = 0
+		cost = 1
 		prerequisite = {
 			focus = CHT_new_order
 		}
