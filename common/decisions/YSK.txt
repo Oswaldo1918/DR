@@ -529,58 +529,7 @@ YSK_tnoidi = {
                 days = 15
             }		
            clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		    YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_pishi_sokrashay = { 
@@ -589,64 +538,14 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_popularity = {
 			ideology = memoism
 			popularity = -0.05
 		    }
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+			YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_destroy_vertolet = { 
@@ -656,6 +555,7 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_popularity = {
 			ideology = memoism
@@ -663,58 +563,7 @@ YSK_tnoidi = {
 		    }
 			add_ideas = YSK_destroy_vertolets
 		    clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes 
 		}	
 	}
 	YSK_zapret_Loliti = { 
@@ -724,64 +573,14 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_popularity = {
 			ideology = memoism
 			popularity = -0.05
 		    }
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_vtorshenie_v_Tibet = { 
@@ -791,6 +590,7 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		available = {
 					is_neighbor_of = SHM
 				}
@@ -801,58 +601,7 @@ YSK_tnoidi = {
             }
 			
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_zapret_chulkov = { 
@@ -862,6 +611,7 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_stability = -0.1
 			add_war_support = -0.1
@@ -870,58 +620,7 @@ YSK_tnoidi = {
 			popularity = -0.05
 		    }
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_zapret_warlord = { 
@@ -931,6 +630,7 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_political_power = -50
 			add_popularity = {
@@ -938,58 +638,7 @@ YSK_tnoidi = {
 			popularity = -0.05
 		    }
 		    clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_komendant_chas = { 
@@ -999,48 +648,14 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_manpower = -15000
 			add_popularity = {
 			ideology = memoism
 			popularity = -0.05
 		    }
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-				}
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-				}
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-				}
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-				}
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		   YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_cshech_SKT = { 
@@ -1053,6 +668,7 @@ YSK_tnoidi = {
 		available = {
             controls_state = 397    		
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    397 = { add_manpower = -100000 }
 			397 = {
@@ -1073,58 +689,7 @@ YSK_tnoidi = {
 			popularity = -0.15
 		    }
 			clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		    YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_cshech_Omsk = { 
@@ -1137,6 +702,7 @@ YSK_tnoidi = {
 		available = {
             controls_state = 571
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    571 = { add_manpower = -1000000 }
 			571 = {
@@ -1157,58 +723,7 @@ YSK_tnoidi = {
 			popularity = -0.15
 		    }
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		    YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_VHS = { 
@@ -1218,6 +733,7 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    
 			add_popularity = {
@@ -1225,58 +741,7 @@ YSK_tnoidi = {
 			popularity = -0.05
 		    }
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		    YSK_decrease_TNO_power = yes
 		}	
 	}
 	YSK_panel_uprav = { 
@@ -1286,61 +751,11 @@ YSK_tnoidi = {
 		ai_will_do = {
         factor = 100
 		}
+		fire_only_once = yes
 		remove_effect = {
 		    add_ideas = YSK_uprastit_panel_uprav
 		   clr_country_flag = YSK_tno_down
-		    if = {
-				limit = {
-					has_idea = YSK_TNO_4
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_4
-					add_idea = YSK_TNO_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_3
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_3
-					add_idea = YSK_TNO_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_2
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_2
-					add_idea = YSK_TNO_1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = YSK_TNO_1
-					NOT = {
-						has_country_flag = YSK_tno_down
-					}
-				}
-				set_country_flag = YSK_tno_down
-				swap_ideas = {
-					remove_idea = YSK_TNO_1
-					add_idea = YSK_TNO_0
-				}
-			} 
+		    YSK_decrease_TNO_power = yes
 		}	
 	}
     YSK_Syktyvkar = { 
@@ -1350,7 +765,7 @@ YSK_tnoidi = {
 		available = {
             controls_state = 397    		
 		}
-		
+		fire_only_once = yes
 		days_remove = 5
 		ai_will_do = {
         factor = 100
@@ -1370,7 +785,7 @@ YSK_tnoidi = {
 			has_idea = YSK_TNO_1
 		    }         		
 		}
-		
+		fire_only_once = yes
 		days_remove = 5
 		ai_will_do = {
         factor = 100
@@ -1389,7 +804,7 @@ YSK_navalich_cat = {
 		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
 			tag = YSK
 		}
-		
+
 		days_remove = 35
 		ai_will_do = {
         factor = 1
@@ -1407,7 +822,7 @@ YSK_navalich_cat = {
 		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
 			tag = YSK
 		}
-		
+
 		days_remove = 35
 		ai_will_do = {
         factor = 1
@@ -1425,7 +840,7 @@ YSK_navalich_cat = {
 		    has_country_leader = { character = YSK_Navalniy ruling_only = yes }
 			tag = YSK
 		}
-		
+
 		days_remove = 35
 		ai_will_do = {
         factor = 1

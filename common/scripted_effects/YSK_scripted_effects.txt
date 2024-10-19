@@ -1,0 +1,54 @@
+YSK_decrease_TNO_power = {
+	if = {
+		limit = {
+			has_idea = YSK_TNO_1
+			NOT = {
+				has_country_flag = YSK_tno_down
+			}
+		}
+		set_country_flag = YSK_tno_down
+		swap_ideas = {
+			remove_idea = YSK_TNO_1
+			add_idea = YSK_TNO_0
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = YSK_TNO_2
+			NOT = {
+				has_country_flag = YSK_tno_down
+			}
+		}
+		set_country_flag = YSK_tno_down
+		swap_ideas = {
+			remove_idea = YSK_TNO_2
+			add_idea = YSK_TNO_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = YSK_TNO_3
+			NOT = {
+				has_country_flag = YSK_tno_down
+			}
+		}
+		set_country_flag = YSK_tno_down
+		swap_ideas = {
+			remove_idea = YSK_TNO_3
+			add_idea = YSK_TNO_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = YSK_TNO_4
+			NOT = {
+				has_country_flag = YSK_tno_down
+			}
+		}
+		set_country_flag = YSK_tno_down
+		swap_ideas = {
+			remove_idea = YSK_TNO_4
+			add_idea = YSK_TNO_3
+		}
+	}
+}
