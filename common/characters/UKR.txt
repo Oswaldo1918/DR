@@ -673,4 +673,19 @@ characters={
 			}
 		}
 	}
+	UKR_rostic_abramov = {
+		name = "Ростик Абрамов"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/Rostic.dds"    
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
 }
