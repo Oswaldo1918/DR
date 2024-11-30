@@ -1,20 +1,20 @@
 technologies = {
 
 
-	@1 = 0
-	@2 = 2
-	@2 = 3
-	@3 = 4
-	@4 = 5
-	@5 = 5
-	@6 = 7
-	@7 = 7
-	@8 = 8
-	@9 = 9
-	@10 = 10
-	@11 = 11
-	@12 = 12
-	@13 = 20
+	@1918 = 0
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 5
+	@1939 = 7
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
@@ -299,7 +299,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				# Matilda II was designed and entered production in 4
+				# Matilda II was designed and entered production in 1937
 				tag = ENG
 				date > "3.9.1"
 			}
@@ -590,7 +590,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @4 }
+			position = { x = 2 y = @1937 }
 		}
 
 		ai_will_do = {
@@ -678,7 +678,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @7 }
+			position = { x = 2 y = @1940 }
 		}
 
 		on_research_complete = {
@@ -817,7 +817,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @10 }
+			position = { x = 2 y = @1943 }
 		}
 
 		on_research_complete = {
@@ -900,7 +900,7 @@ technologies = {
 			modifier = {
 				factor = 5.0
 				tag = GER
-				date > "10.1.1"
+				date > "1943.1.1"
 				has_completed_focus = GER_expand_kummersdorfs_capacity
 				has_tech_bonus = {
 				    category = cat_medium_armor
@@ -934,7 +934,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @12 }
+			position = { x = 2 y = @1945 }
 		}
 
 		ai_will_do = {
@@ -947,12 +947,12 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 
@@ -1079,7 +1079,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @7 }
+			position = { x = 5 y = @1940 }
 		}
 
 		on_research_complete = {
@@ -1155,7 +1155,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @10 }
+			position = { x = 5 y = @1943 }
 		}
 
 		on_research_complete = {
@@ -1217,7 +1217,7 @@ technologies = {
 		start_year = 8
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @8 }
+			position = { x = 9 y = @1941 }
 		}
 
 		path = {
@@ -1308,7 +1308,7 @@ technologies = {
 		start_year = 3
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @2 }
+			position = { x = 3 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1368,7 +1368,7 @@ technologies = {
 		start_year = 5
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @5 }
+			position = { x = 3 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1429,7 +1429,7 @@ technologies = {
 		start_year = 8
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @8 }
+			position = { x = 3 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1476,7 +1476,7 @@ technologies = {
 		start_year = 11
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @11 }
+			position = { x = 3 y = @1944 }
 		}
 
 		on_research_complete = {
@@ -1537,7 +1537,7 @@ technologies = {
 		start_year = 2
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2 }
+			position = { x = 2 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1595,7 +1595,7 @@ technologies = {
 		start_year = 5
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @5 }
+			position = { x = 2 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1651,7 +1651,7 @@ technologies = {
 		start_year = 8
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @8 }
+			position = { x = 2 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1698,7 +1698,7 @@ technologies = {
 		start_year = 11
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @11 }
+			position = { x = 2 y = @1944 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -1789,7 +1789,7 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 12 y = @8 }
+			position = { x = 12 y = @1941 }
 		}
 
 		enable_equipment_modules = {
@@ -1922,12 +1922,12 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 7 y = @10 }
+			position = { x = 7 y = @1943 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = @10 }
+			position = { x = 7 y = @1943 }
 		}
 
 		show_effect_as_desc = yes
@@ -2022,12 +2022,12 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @10 }
+			position = { x = 9 y = @1943 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = @10 }
+			position = { x = 9 y = @1943 }
 		}
 
 		show_effect_as_desc = yes
@@ -2092,12 +2092,12 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 11 y = @10 }
+			position = { x = 11 y = @1943 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = @10 }
+			position = { x = 11 y = @1943 }
 		}
 
 		show_effect_as_desc = yes
@@ -2156,12 +2156,12 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @12 }
+			position = { x = 9 y = @1945 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = @12 }
+			position = { x = 9 y = @1945 }
 		}
 
 		show_effect_as_desc = yes
@@ -2215,7 +2215,7 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 13 y = @10 }
+			position = { x = 13 y = @1943 }
 		}
 
 		enable_equipment_modules = {
