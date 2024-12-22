@@ -1,0 +1,64 @@
+sp_banhammer = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_artillery
+
+	allowed = {
+		has_dlc = "Gotterdammerung"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = infantry_weapons
+			NOT = { has_tech = bhammer }
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+
+	resource_cost = {
+		resources = { 
+			steel = 4
+			tungsten = 2
+		}
+	}
+	
+	project_output = {
+		enable_subunits = {
+			bhaminf
+		}
+
+		enable_equipments = {
+			bhammer_equipment_1
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_artillery_tech_1
+		sp_land_generic_reward_artillery_tech_2
+		sp_land_generic_reward_artillery_tech_3
+		sp_land_generic_reward_artillery_bonus_1
+		sp_land_generic_reward_artillery_bonus_2
+		sp_land_generic_reward_artillery_bonus_3
+		sp_land_generic_reward_resource_scarcity
+		sp_land_generic_reward_critical_failure
+	}
+}
