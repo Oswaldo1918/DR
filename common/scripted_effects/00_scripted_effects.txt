@@ -794,7 +794,7 @@ restore_ideology_popularities = {
 	hidden_effect = {
 		# Reset popluarities to what they were before puppeting 
 		set_popularities = {
-			communism = ROOT.communist_support_before_change
+			vmestolev = ROOT.communist_support_before_change
 			democratic = ROOT.democratic_support_before_change
 			fascism = ROOT.fascist_support_before_change
 			neutrality = ROOT.neutrality_support_before_change
