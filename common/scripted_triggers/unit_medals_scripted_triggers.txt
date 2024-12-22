@@ -48,6 +48,14 @@ should_have_chilean_medals_trigger = {
 	original_tag = CHL
 }
 
+should_have_austrian_medals_trigger = {
+	original_tag = AUS
+}
+
+should_have_hungarian_medals_trigger = {
+	original_tag = HUN
+}
+
 should_have_chechen_medals_trigger = {
 	original_tag = CHK
 }
@@ -70,6 +78,7 @@ should_have_any_unique_medals_trigger = {
 		should_have_norwegian_medals_trigger = yes 
 		should_have_chilean_medals_trigger = yes 
 		should_have_danish_medals_trigger = yes
+		should_have_hungarian_medals_trigger = yes
 		should_have_chechen_medals_trigger = yes
 		should_have_hohli_medals_trigger = yes
 	}
