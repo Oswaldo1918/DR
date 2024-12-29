@@ -67,7 +67,11 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			visible = { 
-				has_government = communism
+				OR = {
+					has_government = vmestolev
+					has_government = metacommy
+					has_government = anarhostalinism
+				} 
 			}
 			modifier = {
 				army_leader_start_level = 1
@@ -274,7 +278,13 @@ ideas = {
 
 		ideological_loyalty_spirit = {
 			ledger = army
-			visible = { has_government = communism }
+			visible = { 
+				OR = {
+					has_government = vmestolev
+					has_government = metacommy
+					has_government = anarhostalinism
+				} 
+			}
 			modifier = {
 				pocket_penalty = -0.2
 				weekly_manpower = 500

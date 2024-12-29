@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = DON_nam_nuzhen_plan #Начальный_экономический_план
 		icon = GFX_dock_clique_nam_nuzhen_plan
-		cost = 1,00
+		cost = 1.00
 		x = 7
 		y = 0
 		completion_reward = {
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = DON_sredstva_dlya_industrializatsii
 		icon = GFX_dock_clique_sredstva_dlya_industrializatsii
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
 		}
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = DON_kollektivizatsiya
 		icon = GFX_dock_clique_kollektivizatsiya
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_sredstva_dlya_industrializatsii
 		}
@@ -56,7 +56,7 @@ focus_tree = {
 	focus = {
 		id = DON_reformirovat_admonistratsiu
 		icon = GFX_dock_clique_reformirovat_administratsiu
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
 		}
@@ -73,7 +73,7 @@ focus_tree = {
 	focus = {
 		id = DON_razvedka_tayniov
 		icon = GFX_dock_clique_razvedka_taynikov
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_reformirovat_admonistratsiu
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 	focus = {
 		id = DON_pogotovit_nash_bazis
 		icon = GFX_dock_clique_podgotovit_nash_bazis
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_nam_nuzhen_plan
 		}
@@ -112,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = DON_raskonservatsiya_shaht
 		icon = GFX_dock_clique_raskonservatsiya_shaht
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_pogotovit_nash_bazis
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = DON_pervaia_pyaitiletka #Продвинутый_экономический_план
 		icon = GFX_dock_clique_pervaya_pyatiletka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_raskonservatsiya_shaht
 		}
@@ -149,7 +149,7 @@ focus_tree = {
 	focus = {
 		id = DON_socialist_obrazovaniye
 		icon = GFX_dock_clique_socialist_obrazovaniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 	focus = {
 		id = DON_novoye_pokoleniye
 		icon = GFX_dock_clique_novoye_pokoleniye
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = DON_socialist_obrazovaniye
 		}
@@ -184,7 +184,7 @@ focus_tree = {
 	focus = {
 		id = DON_leviy_povorot_v_tserkvi
 		icon = GFX_dock_clique_leviy_povorot_v_tserkvi
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_novoye_pokoleniye
 		}
@@ -198,7 +198,7 @@ focus_tree = {
 	focus = {
 		id = DON_legkoprom
 		icon = GFX_dock_clique_legkoprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
 		}
@@ -240,7 +240,7 @@ focus_tree = {
 	focus = {
 		id = DON_himprom
 		icon = GFX_dock_clique_himprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_legkoprom
 		}
@@ -269,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = DON_pomosh_lazaret
 		icon = GFX_goal_laz_donbass #GFX_goal_laz_mat GFX_goal_laz_unt GFX_goal_laz_whs GFX_goal_laz_ark
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
 		}
@@ -296,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = DON_voyenniye_zavodi
 		icon = GFX_dock_clique_voyenniye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
 		}
@@ -323,7 +323,7 @@ focus_tree = {
 	focus = {
 		id = DON_tyazholoye_mashinostroyeniye
 		icon = GFX_dock_clique_tyazholoye_mashinostroyeniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_voyenniye_zavodi
 		}
@@ -360,7 +360,7 @@ focus_tree = {
 	focus = {
 		id = DON_tankovaye_zavodi
 		icon = GFX_dock_clique_tankoviye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_voyenniye_zavodi
 		}
@@ -388,7 +388,7 @@ focus_tree = {
 	focus = {
 		id = DON_mariupol_port
 		icon = GFX_dock_clique_vosstanovit_port_Mariupolya
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_pervaia_pyaitiletka
 		}
@@ -419,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = DON_restavratsiya_institutov
 		icon = GFX_dock_clique_restavratsiya_institutov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_socialist_obrazovaniye
 		}
@@ -432,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = DON_rasshirit_pomosh_lazaret #Усовершенствованный_экономический_план
 		icon = GFX_goal_laz_donbass2 
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
 		}
@@ -462,7 +462,7 @@ focus_tree = {
 	focus = {
 		id = DON_prodolzhit_promishlenniy_plan
 		icon = GFX_dock_clique_prodolzhit_promishlenniy_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
 		}
@@ -518,7 +518,7 @@ focus_tree = {
 	focus = {
 		id = DON_shahta_im_lavkrafta #Расширение_добывающей_промышленности
 		icon = GFX_dock_clique_shakhta_imeni_Lavkrafta
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_prodolzhit_promishlenniy_plan
 		}
@@ -541,7 +541,7 @@ focus_tree = {
 	focus = {
 		id = DON_iskra #Расширение_электротехнической_промышленности
 		icon = GFX_DON_goal_iskra
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_shahta_im_lavkrafta
 		}
@@ -564,7 +564,7 @@ focus_tree = {
 	focus = {
 		id = DON_narabotki_po_ogasy
 		icon = GFX_DON_goal_narabotki_po_OGASu
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_iskra
 		}
@@ -590,7 +590,7 @@ focus_tree = {
 	focus = { 
 		id = DON_rekonstruktsiya_dneproges
 		icon = GFX_dock_clique_rekonstruktsia_DneproGES
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_prodolzhit_promishlenniy_plan
 		}
@@ -629,7 +629,7 @@ focus_tree = {
 	focus = {
 		id = DON_sevastopolskiye_verfi
 		icon = GFX_dock_clique_sevastopolskie_verfi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_rekonstruktsiya_dneproges
 		}
@@ -656,7 +656,7 @@ focus_tree = {
 	focus = {
 		id = DON_novoye_stankostroyeniye #Расширение_военной_промышленности
 		icon = GFX_dock_clique_novoe_stankostroenie
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_tankovaye_zavodi
 		}
@@ -686,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = DON_avtomobili
 		icon = GFX_dock_clique_sozdat_avtomobilestroenie
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_novoye_stankostroyeniye
 		}
@@ -730,7 +730,7 @@ focus_tree = {
 	focus = {
 		id = DON_konstruktorskie_buro
 		icon = GFX_dock_clique_konstruktorskie_byuro_na_baze_predpriatiy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_avtomobili
 		}
@@ -749,7 +749,7 @@ focus_tree = {
 	focus = {
 		id = DON_neftekhran #Расширение_нефтеперерабатывающей_промышленности
 		icon = GFX_Sistema_neftekhranilisch_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_himprom
 		}
@@ -781,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = DON_rezinka
 		icon = GFX_Sinteticheskaya_rezina_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_himprom
 		}
@@ -818,7 +818,7 @@ focus_tree = {
 	focus = {
 		id = DON_NPZ
 		icon = GFX_dock_clique_NPZ
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_himprom
 		}
@@ -855,7 +855,7 @@ focus_tree = {
 	focus = {
 		id = DON_sinteticheskaya_neft
 		icon = GFX_Sinteticheskaya_neft_kliki_Doka
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_NPZ
 		}
@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = DON_avtakriya #Выбор_основной_экономической_политики
 		icon = GFX_Avtarkia_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_NPZ
 		}
@@ -923,7 +923,7 @@ focus_tree = {
 	focus = {
 		id = DON_razvitiye_eksporta
 		icon = GFX_Rasshirit_export_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_NPZ
 		}
@@ -955,7 +955,7 @@ focus_tree = {
 	focus = {
 		id = DON_novorosskoye_chudo #Завершающий_экономический_фокус
 		icon = GFX_dock_clique_novorosskoye_chudo
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = DON_avtakriya
 			focus = DON_razvitiye_eksporta
@@ -1027,7 +1027,7 @@ focus_tree = {
 	focus = {
 		id = DON_plan_A #Военный_план_с_упором_на_поддержку_Чумного_Пакта
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_voyenniye_zavodi
 		}
@@ -1057,7 +1057,7 @@ focus_tree = {
 	focus = {
 		id = DON_dopolnitelniy_nazhim
 		icon = GFX_DON_goal_dopolnitelny_nazhim
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_tyazholoye_mashinostroyeniye
 		}
@@ -1091,7 +1091,7 @@ focus_tree = {
 	focus = {
 		id = DON_mobilizovat_rezervistov
 		icon = GFX_dock_clique_mobilizatsiya_rezervistov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_plan_A
 		}
@@ -1141,7 +1141,7 @@ focus_tree = {
 	focus = {
 		id = DON_azovskaya_flotiliya
 		icon = GFX_dock_clique_azovskaya_flotilia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_plan_A
 		}
@@ -1164,7 +1164,7 @@ focus_tree = {
 	focus = {
 		id = DON_propagandiskaya_kampaniya
 		icon = GFX_dock_clique_propagandistskaya_kampania
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_plan_A
 			focus = DON_plan_B
@@ -1186,7 +1186,7 @@ focus_tree = {
 	focus = {
 		id = DON_usilit_armiu
 		icon = GFX_DON_goal_usilit_armiyu
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_propagandiskaya_kampaniya
 		}
@@ -1214,7 +1214,7 @@ focus_tree = {
 	focus = {
 		id = DON_voyenniy_plan
 		icon = GFX_dock_clique_sozdat_plan_nastuplenia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_dopolnitelniy_nazhim
 		}
@@ -1240,7 +1240,7 @@ focus_tree = {
 	focus = {
 		id = DON_plan_B #Военный_план_с_упором_на_собственные_силы
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		mutually_exclusive = {
 			focus = DON_plan_A
 		}
@@ -1261,7 +1261,7 @@ focus_tree = {
 	focus = {
 		id = DON_vskrit_sladi_s_oruzhiyem
 		icon = GFX_dock_clique_skryt_skladfy_s_oruzhiem
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_plan_B
 		}
@@ -1284,7 +1284,7 @@ focus_tree = {
 	focus = {
 		id = DON_snyat_tanki_s_postamentov
 		icon = GFX_goal_tanks_on_postaments
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_vskrit_sladi_s_oruzhiyem
 		}
@@ -1401,7 +1401,7 @@ focus_tree = {
 	focus = {
 		id = DON_mobilizovat_opolcheniye
 		icon = GFX_DON_goal_mobilizirovat_opolchenie
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_kustarnoye_proizvodstvo
 		}
@@ -1447,7 +1447,7 @@ focus_tree = {
 	focus = {
 		id = DON_kustarnoye_proizvodstvo
 		icon = GFX_DON_goal_kustarnoe_proizvodstvo
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = DON_plan_B
 		}
@@ -1466,7 +1466,7 @@ focus_tree = {
 	focus = {
 		id = DON_ukrainskaya_voyna #Великая_Украинская_война
 		icon = GFX_DON_goal_ukrainskaya_voyna
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_propagandiskaya_kampaniya
 			focus = DON_snyat_tanki_s_postamentov
@@ -1549,7 +1549,7 @@ focus_tree = {
 	focus = {
 		id = DON_kazn_poroshenko
 		icon = GFX_DON_goal_kazn_Poroshenko
-		cost = 4,00
+		cost = 4.00
 		prerequisite = {
 			focus = DON_ukrainskaya_voyna
 		}
@@ -1571,7 +1571,7 @@ focus_tree = {
 	focus = {
 		id = DON_defashizatsiya
 		icon = GFX_DON_goal_defashizatsia
-		cost = 4,00
+		cost = 4.00
 		prerequisite = {
 			focus = DON_ukrainskaya_voyna
 		}
@@ -1616,7 +1616,7 @@ focus_tree = {
 	focus = {
 		id = DON_na_chetvertiy_etazh
 		icon = GFX_DON_goal_seno_k_korove_ne_hodit
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = DON_defashizatsiya
 		}
@@ -1643,7 +1643,7 @@ focus_tree = {
 	focus = {
 		id = DON_odessa
 		icon = GFX_DON_goal_odessa_russkiy_gorod
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = DON_defashizatsiya
 		}
@@ -1673,7 +1673,7 @@ focus_tree = {
 	focus = {
 		id = DON_krimnash
 		icon = GFX_DON_goal_krym_nash
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = DON_odessa
 		}
@@ -1700,7 +1700,7 @@ focus_tree = {
 	focus = {
 		id = DON_zahvat_flota
 		icon = GFX_DON_goal_zakhvat_flota
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_odessa
 		}
@@ -1729,7 +1729,7 @@ focus_tree = {
 	focus = {
 		id = DON_zapadnaya_ukraina
 		icon = GFX_DON_goal_zapadnaya_ukraina
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = DON_na_chetvertiy_etazh
 		}
@@ -1766,7 +1766,7 @@ focus_tree = {
 	focus = {
 		id = DON_modernizatsiya_flota
 		icon = GFX_DON_goal_modernizatsia_flota
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = DON_krimnash
 		}
@@ -1789,7 +1789,7 @@ focus_tree = {
 	focus = {
 		id = DON_svoy_pyt #Завершающие_политические_фокусы
 		icon = GFX_DON_goal_svoy_put
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = DON_zapadnaya_ukraina
 		}
@@ -1821,7 +1821,7 @@ focus_tree = {
 	focus = {
 		id = DON_dolgaya_doroga_domoy
 		icon = GFX_DON_goal_dolgaya_doroga_domoy
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = DON_novorosskoye_chudo
 		}

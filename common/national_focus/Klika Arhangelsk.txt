@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = ARK_nam_nuzhen_plan #Начальный_экономический_план
 		icon = GFX_dock_clique_nam_nuzhen_plan
-		cost = 1,00
+		cost = 1.00
 		x = 7
 		y = 0
 		completion_reward = {
@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = ARK_sredstva_dlya_industrializatsii
 		icon = GFX_dock_clique_sredstva_dlya_industrializatsii
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ARK_nam_nuzhen_plan
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 	focus = {
 		id = ARK_kollektivizatsiya
 		icon = GFX_dock_clique_kollektivizatsiya
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ARK_sredstva_dlya_industrializatsii
 		}
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = ARK_reformirovat_admonistratsiu
 		icon = GFX_dock_clique_reformirovat_administratsiu
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ARK_nam_nuzhen_plan
 		}
@@ -72,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = ARK_razvedka_tayniov
 		icon = GFX_dock_clique_razvedka_taynikov
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ARK_reformirovat_admonistratsiu
 		}
@@ -89,7 +89,7 @@ focus_tree = {
 	focus = {
 		id = ARK_pogotovit_nash_bazis
 		icon = GFX_dock_clique_podgotovit_nash_bazis
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ARK_nam_nuzhen_plan
 		}
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = ARK_raskonservatsiya_shaht
 		icon = GFX_dock_clique_raskonservatsiya_shaht
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ARK_pogotovit_nash_bazis
 		}
@@ -127,7 +127,7 @@ focus_tree = {
 	focus = {
 		id = ARK_pervaia_pyaitiletka #Продвинутый_экономический_план
 		icon = GFX_dock_clique_pervaya_pyatiletka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_raskonservatsiya_shaht
 		}
@@ -145,7 +145,7 @@ focus_tree = {
 	focus = {
 		id = ARK_socialist_obrazovaniye
 		icon = GFX_dock_clique_socialist_obrazovaniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_pervaia_pyaitiletka
 		}
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = ARK_novoye_pokoleniye
 		icon = GFX_dock_clique_novoye_pokoleniye
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = ARK_socialist_obrazovaniye
 		}
@@ -180,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = ARK_leviy_povorot_v_tserkvi
 		icon = GFX_dock_clique_leviy_povorot_v_tserkvi
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ARK_novoye_pokoleniye
 		}
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = ARK_legkoprom
 		icon = GFX_dock_clique_legkoprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_pervaia_pyaitiletka
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = ARK_himprom
 		icon = GFX_dock_clique_himprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_legkoprom
 		}
@@ -265,7 +265,7 @@ focus_tree = {
 	focus = {
 		id = ARK_pomosh_lazaret
 		icon = GFX_goal_laz_ark
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ARK_pervaia_pyaitiletka
 		}
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = ARK_voyenniye_zavodi
 		icon = GFX_dock_clique_voyenniye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_pervaia_pyaitiletka
 		}
@@ -308,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = ARK_tyazholoye_mashinostroyeniye
 		icon = GFX_dock_clique_tyazholoye_mashinostroyeniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_voyenniye_zavodi
 		}
@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = ARK_tankovaye_zavodi
 		icon = GFX_dock_clique_tankoviye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_voyenniye_zavodi
 		}
@@ -368,7 +368,7 @@ focus_tree = {
 	focus = {
 		id = ARK_restavratsiya_institutov
 		icon = GFX_dock_clique_restavratsiya_institutov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_socialist_obrazovaniye
 		}
@@ -381,7 +381,7 @@ focus_tree = {
 	focus = {
 		id = ARK_rasshirit_pomosh_lazaret #Усовершенствованный_экономический_план
 		icon = GFX_goal_laz_ark2
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ARK_tyazholoye_mashinostroyeniye
 		}
@@ -402,7 +402,7 @@ focus_tree = {
 	focus = {
 		id = ARK_prodolzhit_promishlenniy_plan
 		icon = GFX_dock_clique_prodolzhit_promishlenniy_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ARK_tyazholoye_mashinostroyeniye
 		}
@@ -457,7 +457,7 @@ focus_tree = {
 	focus = {
 		id = ARK_neftekhran #Расширение_нефтеперерабатывающей_промышленности
 		icon = GFX_Sistema_neftekhranilisch_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_himprom
 		}
@@ -489,7 +489,7 @@ focus_tree = {
 	focus = {
 		id = ARK_rezinka
 		icon = GFX_Sinteticheskaya_rezina_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_himprom
 		}
@@ -526,7 +526,7 @@ focus_tree = {
 	focus = {
 		id = ARK_NPZ
 		icon = GFX_dock_clique_NPZ
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_himprom
 		}
@@ -563,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = ARK_sinteticheskaya_neft
 		icon = GFX_Sinteticheskaya_neft_kliki_Doka
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = ARK_NPZ
 		}
@@ -599,7 +599,7 @@ focus_tree = {
 	focus = {
 		id = ARK_avtakriya #Выбор_основной_экономической_политики
 		icon = GFX_Avtarkia_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_NPZ
 		}
@@ -631,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = ARK_razvitiye_eksporta
 		icon = GFX_Rasshirit_export_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_NPZ
 		}
@@ -663,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = ARK_reorg_flota
 		icon = GFX_No_way
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ARK_pervaia_pyaitiletka
 		}

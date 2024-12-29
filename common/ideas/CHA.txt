@@ -3,8 +3,8 @@ ideas = {
 		CHA_All_Alone = {
 			picture = idea_isolation
 			modifier = {
-				can_create_factions = no
-				can_join_factions = no
+				set_rule = { can_create_factions = no }
+				set_rule = { can_join_factions = no }
 				military_leader_cost_factor = 250
 				monthly_population = -0.75
 				foreign_subversive_activites = -0.75
@@ -49,7 +49,6 @@ ideas = {
 			production_speed_bunker_factor = 0.75
 			production_speed_coastal_bunker_factor = 0.75
 			production_speed_anti_air_building_factor = 0.75
-			production_speed_arms_factory_factor = 0.75
 			planning_speed = 0.75
 			max_planning = 0.75
 			army_core_attack_factor = 0.75

@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_proryv_tsepey_OMONa
 		icon = GFX_ZNS_proryv_tsepey_OMONa
-		cost = 1,00
+		cost = 1.00
 		x = 34
 		y = 1
 			completion_reward = {
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_Big_Beriya_Teyp
 		icon = GFX_focus_eng_liberate_the_home_of_marx
-		cost = 5,00
+		cost = 5.00
 		x = 34
 		y = 6
 			available = {
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_sindikalizm
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 1,00
+		cost = 1.00
 		x = 19
 		y = 11
 			available = {
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_rap_experiments
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		x = 28
 		y = 13
 			visible = {
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_osnovat_Soyuz_Anstalov
 		icon = GFX_goal_generic_support_anstal
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Big_Beriya_Teyp
 		}
@@ -113,7 +113,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_Stalin_ili_Trotskiy
 		icon = GFX_focus_cht_historical_panuklonism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_osnovat_Soyuz_Anstalov
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_legkaya_reabilitatsiya_Trotskogo
 		icon = GFX_focus_fra_loyalty_trotzky
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Stalin_ili_Trotskiy
 		}
@@ -160,7 +160,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_trudovyye_armii
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
 		}
@@ -174,7 +174,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_novyye_lishentsy
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_trudovyye_armii
 		}
@@ -188,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_goneniya_na_byurokratiyu
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_trudovyye_armii
 		}
@@ -203,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_osudit_Stalina
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Trotskogo
 		}
@@ -228,7 +228,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_otklyuchit_tserkov_ot_finansirovaniya
 		icon = GFX_focus_ZNS_otklyuchit_tserkov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Stalin_ili_Trotskiy
 		}
@@ -242,7 +242,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_natsionalizatsiya
 		icon = GFX_goal_generic_production
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_otklyuchit_tserkov_ot_finansirovaniya
 		}
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_kollektivizatsiya
 		icon = GFX_focus_SOV_breadbasket_of_the_union
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_natsionalizatsiya
 		}
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_industrializatsiya
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = ZNS_kollektivizatsiya
 		}
@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_legkaya_reabilitatsiya_Stalina
 		icon = GFX_focus_fra_loyalty_stalin
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Stalin_ili_Trotskiy
 		}
@@ -369,7 +369,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vygnat_trotskistov
 		icon = GFX_focus_SOV_purge_trotskyists
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Stalina
 		}
@@ -390,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_kult_lichnosti_s_nizu
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vygnat_trotskistov
 		}
@@ -411,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_kurs_na_sotsializm_v_odnoy_strane
 		icon = GFX_focus_SOV_father_of_nations
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_kult_lichnosti_s_nizu
 		}
@@ -429,7 +429,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_spravedlivost_ili_genotsid
 		icon = GFX_focus_cht_zacryt_granyci
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_legkaya_reabilitatsiya_Stalina
 		}
@@ -444,7 +444,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_podderzhat_maloye_predprinimatelstvo
 		icon = GFX_goal_generic_national_unity
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_spravedlivost_ili_genotsid
 		}
@@ -488,7 +488,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_trud_zaklyuchonnykh
 		icon = GFX_focus_SOV_penal_battalions
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_spravedlivost_ili_genotsid
 		}
@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_sov_obzhepit
 		icon = GFX_focus_cht_zhitnica_evropy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_trud_zaklyuchonnykh
 		}
@@ -522,7 +522,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_znamya_burzh_svobod
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_kurs_na_sotsializm_v_odnoy_strane
 		}
@@ -558,7 +558,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_front_s_levoliberalami
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_osnovat_Soyuz_Anstalov
 		}
@@ -576,7 +576,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Uchitel
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -590,7 +590,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_osvobodit_ot_bumazhnoy_volokty
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Uchitel
 		}
@@ -607,7 +607,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_STATION_MARX
 		icon = GFX_focus_SOV_support_spanish_poum
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_osnovat_Soyuz_Anstalov
 		}
@@ -632,7 +632,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_tri_stati_dlya_vstupleniya_v_partiyu
 		icon = GFX_ZNS_tri_stati
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_STATION_MARX
 		}
@@ -646,7 +646,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_donaty_partii
 		icon = GFX_focus_cht_cumpital
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_tri_stati_dlya_vstupleniya_v_partiyu
 		}
@@ -663,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Krestyanin
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -677,7 +677,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_mekhanizatsiya_sol
 		icon = GFX_goal_proizvodstvo_combaynov
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Krestyanin
 		}
@@ -694,7 +694,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_FF
 		icon = GFX_goal_generic_major_alliance
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_STATION_MARX
 		}
@@ -718,7 +718,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_zhenshchiny_v_armii
 		icon = GFX_focus_generic_women_in_military
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_FF
 		}
@@ -732,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Rabochiy
 		icon = GFX_goal_generic_construct_civilian
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -746,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_uvelichit_zp
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Rabochiy
 		}
@@ -763,7 +763,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_kvoty_dlya_zhenshchin
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_FF
 		}
@@ -778,7 +778,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Kurer
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -792,7 +792,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_postroit_velodorozhki
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Kurer
 		}
@@ -809,7 +809,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_goskruzhki
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_STATION_MARX
 		}
@@ -823,7 +823,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_levyy_nauchop
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_goskruzhki
 		}
@@ -840,7 +840,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_profsoyuz_Uchonyy
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_sindikalizm
 		}
@@ -854,7 +854,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_novyye_NII
 		icon = GFX_focus_research2
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_profsoyuz_Uchonyy
 		}
@@ -872,7 +872,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_federatsiya_profsoyuzov
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1.00
 		available = {
 					NOT = {
 							has_completed_focus = ZNS_podchinit_partgos_apparutu
@@ -908,7 +908,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_khip_khop_revolyutsiya
 		icon = GFX_focus_AST_squander_bug
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_osnovat_Soyuz_Anstalov
 		}
@@ -932,7 +932,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_borba_s_infokholuyami
 		icon = GFX_goal_generic_propaganda
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -961,7 +961,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_zvukovoe_oruzhie
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_rap_experiments
 		}
@@ -983,7 +983,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_zvukovoy_tank
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_zvukovoe_oruzhie
 		}
@@ -1005,7 +1005,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_repkory_v_voyskah
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1019,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_fond_borby_s_alkogolizmom
 		icon = GFX_goal_generic_propaganda
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1033,7 +1033,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_dvigaysya_dvigaysya_dvigaysya
 		icon = GFX_focus_prc_infiltration
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1047,7 +1047,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_davay_gazochku_pribavlyay
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_dvigaysya_dvigaysya_dvigaysya
 		}
@@ -1064,7 +1064,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vivedenie_sverhcheloveka
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_rap_experiments
 		}
@@ -1081,7 +1081,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_opiti_nad_zk
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vivedenie_sverhcheloveka
 		}
@@ -1098,7 +1098,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_left_rep
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1116,7 +1116,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_rvansk_ritm_kurazha
 		icon = GFX_focus_cht_klonirovanie
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1130,7 +1130,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_khayp_treyn
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_khip_khop_revolyutsiya
 		}
@@ -1151,7 +1151,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_translirovat_BBT_vnutri_strani
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_rap_experiments
 		}
@@ -1168,7 +1168,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_translirovat_BBT_v_drugie_strani
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_translirovat_BBT_vnutri_strani
 		}
@@ -1185,7 +1185,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_Krasnoyarsk_budet_krasnym
 		icon = GFX_goal_generic_political_pressure
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_proryv_tsepey_OMONa
 		}
@@ -1203,7 +1203,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_prizyv_aktivistov
 		icon = GFX_goal_kulaki_muzhiki
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_Krasnoyarsk_budet_krasnym
 		}
@@ -1217,7 +1217,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_prizyv_uchiteley
 		icon = GFX_focus_cht_rabochaya_guard
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_prizyv_aktivistov
 		}
@@ -1235,7 +1235,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vosstanovleniye_ot_gv
 		icon = GFX_goal_generic_production
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Big_Beriya_Teyp
 		}
@@ -1249,7 +1249,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_szhech_dolgi
 		icon = GFX_cht_bumagi_ruka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vosstanovleniye_ot_gv
 		}
@@ -1266,7 +1266,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_forsirovannaya_depokayanizatsiya
 		icon = GFX_focus_bsh_poryadok_v_strane
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_Krasnoyarsk_budet_krasnym
 		}
@@ -1284,7 +1284,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_osvobodit_politzaklyuchonnykh
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_forsirovannaya_depokayanizatsiya
 		}
@@ -1311,7 +1311,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vyzhech_zarazu_shulmanioza
 		icon = GFX_focus_cht_ascetism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vosstanovleniye_ot_gv
 		}
@@ -1332,7 +1332,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_ochistit_nauchpoperov
 		icon = GFX_focus_hol_war_on_pacifism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vyzhech_zarazu_shulmanioza
 		}
@@ -1349,7 +1349,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_new_korenization
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = ZNS_forsirovannaya_depokayanizatsiya
 		}
@@ -1381,7 +1381,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_razgrom_Pogroma
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vyzhech_zarazu_shulmanioza
 		}
@@ -1402,7 +1402,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_shirokiy_levyy_front
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_Krasnoyarsk_budet_krasnym
 		}
@@ -1427,7 +1427,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_natsionalizirovat_Kraskon
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vosstanovleniye_ot_gv
 		}
@@ -1474,7 +1474,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_prodvizheniye_svoikh
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_shirokiy_levyy_front
 		}
@@ -1493,7 +1493,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_RevDrop
 		icon = GFX_focus_generic_join_comintern
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = ZNS_prizyv_uchiteley
 		}
@@ -1519,7 +1519,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_Pau_Pau_Pau_Pau
 		icon = GFX_goal_generic_territory_or_war
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Big_Beriya_Teyp
 		}
@@ -1538,7 +1538,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_voyennyye_reformy_Konya
 		icon = GFX_ZNS_voyennyye_reformy_Konya
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_Big_Beriya_Teyp
 		}
@@ -1561,7 +1561,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_stalnyye_koni
 		icon = GFX_focus_SOV_the_road_of_life
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_voyennyye_reformy_Konya
 		}
@@ -1585,7 +1585,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_postroit_mashzavodi
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_stalnyye_koni
 		}
@@ -1622,7 +1622,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_mass_motorization
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_postroit_mashzavodi
 		}
@@ -1636,7 +1636,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_new_project_tanks
 		icon = GFX_goal_generic_army_tanks
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_mass_motorization
 		}
@@ -1655,7 +1655,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_razrabotka_istrebitiley
 		icon = GFX_goal_generic_air_fighter
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_postroit_mashzavodi
 		}
@@ -1675,7 +1675,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_shturmoviki
 		icon = GFX_Stuka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_razrabotka_istrebitiley
 		}
@@ -1695,7 +1695,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_razrabotat_btr
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_new_project_tanks
 		}
@@ -1714,7 +1714,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_army_manevry
 		icon = GFX_goal_generic_army_doctrines
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_postroit_mashzavodi
 		}
@@ -1734,7 +1734,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_remroty
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_army_manevry
 		}
@@ -1753,7 +1753,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_roty_svyazi
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_remroty
 		}
@@ -1772,7 +1772,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_stalnaya_vilna
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_shturmoviki
 		}
@@ -1804,7 +1804,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_prizvat_bolshe_kurerov
 		icon = GFX_goal_generic_special_forces
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_voyennyye_reformy_Konya
 		}
@@ -1818,7 +1818,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_prokachat_veliki
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_prizvat_bolshe_kurerov
 		}
@@ -1832,7 +1832,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_silnee_kachat_ruki
 		icon = GFX_goal_generic_political_pressure
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_prokachat_veliki
 		}
@@ -1852,7 +1852,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_upor_na_nogi
 		icon = GFX_DOT_sapog
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_prokachat_veliki
 		}
@@ -1872,7 +1872,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_konoarmiyskiye_nashi_polki
 		icon = GFX_focus_SOV_restore_cossack_units
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_voyennyye_reformy_Konya
 		}
@@ -1896,7 +1896,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_novyy_Budonnyy
 		icon = GFX_goal_generic_political_pressure
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_konoarmiyskiye_nashi_polki
 		}
@@ -1910,7 +1910,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_konozavodi
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_novyy_Budonnyy
 		}
@@ -1931,7 +1931,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_new_tachanka
 		icon = GFX_goal_generic_army_motorized
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_konozavodi
 		}
@@ -1949,7 +1949,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_dragunskaya_mosinka
 		icon = GFX_focus_focus_fra_maquis
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_novyy_Budonnyy
 		}
@@ -1968,7 +1968,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_medbaty
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_dragunskaya_mosinka
 		}
@@ -1987,7 +1987,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vyvesti_novyye_porody
 		icon = GFX_goal_generic_cavalry
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_novyy_Budonnyy
 		}
@@ -2004,7 +2004,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_koni_titany
 		icon = GFX_goal_generic_cavalry
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vyvesti_novyye_porody
 		}
@@ -2021,7 +2021,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_postavit_bezotkatki_na_loshadey
 		icon = GFX_goal_generic_army_artillery2
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_koni_titany
 		}
@@ -2040,7 +2040,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_proyekt_konotanka
 		icon = GFX_goal_generic_army_tanks
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_postavit_bezotkatki_na_loshadey
 		}
@@ -2063,7 +2063,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_dogovor_s_Letovim
 		icon = GFX_goal_generic_improve_relations
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_razgrom_Pogroma
 		}
@@ -2151,7 +2151,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_total_depokayanizatsiya
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_dogovor_s_Letovim
 		}
@@ -2174,7 +2174,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_shiza
 		icon = GFX_ZNS_eksperimentalnaya_metodika_lecheniya_shizy
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_opiti_nad_zk
 		}
@@ -2191,7 +2191,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_vychistit_stalinistov_iz_partii
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_osudit_Stalina
 		}
@@ -2212,7 +2212,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_podchinit_partgos_apparutu
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_novyye_lishentsy
 		}
@@ -2229,7 +2229,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_kurs_na_mirovuyu_revolyutsiyu
 		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_vychistit_stalinistov_iz_partii
 		}
@@ -2250,7 +2250,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_demon_revolyutsii
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_kurs_na_mirovuyu_revolyutsiyu
 		}
@@ -2282,7 +2282,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_konskaya_volna
 		icon = GFX_focus_SOV_restore_cossack_units
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_proyekt_konotanka
 		}
@@ -2312,7 +2312,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_razvivat_inzhinernyye_voyska
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_novyye_obraztsy_PVO_i_PTO
 		}
@@ -2331,7 +2331,7 @@ focus_tree = {
 	focus = {
 		id = ZNS_novyye_obraztsy_PVO_i_PTO
 		icon = GFX_LAZ_Anti_Air_Guns
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = ZNS_new_tachanka
 		}

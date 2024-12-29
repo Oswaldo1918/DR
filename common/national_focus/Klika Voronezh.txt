@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = UNT_nam_nuzhen_plan #Начальный_экономический_план
 		icon = GFX_dock_clique_nam_nuzhen_plan
-		cost = 1,00
+		cost = 1.00
 		x = 7
 		y = 0
 		completion_reward = {
@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = UNT_sredstva_dlya_industrializatsii
 		icon = GFX_dock_clique_sredstva_dlya_industrializatsii
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = UNT_nam_nuzhen_plan
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 	focus = {
 		id = UNT_kollektivizatsiya
 		icon = GFX_dock_clique_kollektivizatsiya
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UNT_sredstva_dlya_industrializatsii
 		}
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = UNT_reformirovat_admonistratsiu
 		icon = GFX_dock_clique_reformirovat_administratsiu
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = UNT_nam_nuzhen_plan
 		}
@@ -72,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = UNT_razvedka_tayniov
 		icon = GFX_dock_clique_razvedka_taynikov
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UNT_reformirovat_admonistratsiu
 		}
@@ -89,7 +89,7 @@ focus_tree = {
 	focus = {
 		id = UNT_pogotovit_nash_bazis
 		icon = GFX_dock_clique_podgotovit_nash_bazis
-		cost = 1,00
+		cost = 1.00
 		prerequisite = {
 			focus = UNT_nam_nuzhen_plan
 		}
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = UNT_raskonservatsiya_shaht
 		icon = GFX_dock_clique_raskonservatsiya_shaht
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UNT_pogotovit_nash_bazis
 		}
@@ -127,7 +127,7 @@ focus_tree = {
 	focus = {
 		id = UNT_pervaia_pyaitiletka #Продвинутый_экономический_план
 		icon = GFX_dock_clique_pervaya_pyatiletka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_raskonservatsiya_shaht
 		}
@@ -145,7 +145,7 @@ focus_tree = {
 	focus = {
 		id = UNT_socialist_obrazovaniye
 		icon = GFX_dock_clique_socialist_obrazovaniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_pervaia_pyaitiletka
 		}
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = UNT_novoye_pokoleniye
 		icon = GFX_dock_clique_novoye_pokoleniye
-		cost = 15,00
+		cost = 15.00
 		prerequisite = {
 			focus = UNT_socialist_obrazovaniye
 		}
@@ -180,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = UNT_leviy_povorot_v_tserkvi
 		icon = GFX_dock_clique_leviy_povorot_v_tserkvi
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = UNT_novoye_pokoleniye
 		}
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = UNT_legkoprom
 		icon = GFX_dock_clique_legkoprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_pervaia_pyaitiletka
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = UNT_prodolzhit_promishlenniy_plan
 		icon = GFX_dock_clique_prodolzhit_promishlenniy_plan
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = UNT_tyazholoye_mashinostroyeniye
 		}
@@ -291,7 +291,7 @@ focus_tree = {
 	focus = {
 		id = UNT_himprom
 		icon = GFX_dock_clique_himprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_legkoprom
 		}
@@ -320,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = UNT_pomosh_lazaret
 		icon = GFX_goal_laz_unt
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UNT_pervaia_pyaitiletka
 		}
@@ -339,7 +339,7 @@ focus_tree = {
 	focus = {
 		id = UNT_voyenniye_zavodi
 		icon = GFX_dock_clique_voyenniye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_pervaia_pyaitiletka
 		}
@@ -364,7 +364,7 @@ focus_tree = {
 	focus = {
 		id = UNT_tyazholoye_mashinostroyeniye
 		icon = GFX_dock_clique_tyazholoye_mashinostroyeniye
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_voyenniye_zavodi
 		}
@@ -399,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = UNT_tankovaye_zavodi
 		icon = GFX_dock_clique_tankoviye_zavodi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_voyenniye_zavodi
 		}
@@ -424,7 +424,7 @@ focus_tree = {
 	focus = {
 		id = UNT_restavratsiya_institutov
 		icon = GFX_dock_clique_restavratsiya_institutov
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_socialist_obrazovaniye
 		}
@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = UNT_rasshirit_pomosh_lazaret #Усовершенствованный_экономический_план
 		icon = GFX_goal_laz_unt2
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UNT_tyazholoye_mashinostroyeniye
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 	focus = {
 		id = UNT_neftekhran #Расширение_нефтеперерабатывающей_промышленности
 		icon = GFX_Sistema_neftekhranilisch_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_himprom
 		}
@@ -490,7 +490,7 @@ focus_tree = {
 	focus = {
 		id = UNT_rezinka
 		icon = GFX_Sinteticheskaya_rezina_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_himprom
 		}
@@ -527,7 +527,7 @@ focus_tree = {
 	focus = {
 		id = UNT_NPZ
 		icon = GFX_dock_clique_NPZ
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_himprom
 		}
@@ -564,7 +564,7 @@ focus_tree = {
 	focus = {
 		id = UNT_sinteticheskaya_neft
 		icon = GFX_Sinteticheskaya_neft_kliki_Doka
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = UNT_NPZ
 		}
@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = UNT_avtakriya #Выбор_основной_экономической_политики
 		icon = GFX_Avtarkia_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_NPZ
 		}
@@ -632,7 +632,7 @@ focus_tree = {
 	focus = {
 		id = UNT_razvitiye_eksporta
 		icon = GFX_Rasshirit_export_kliki_Doka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_NPZ
 		}
@@ -664,7 +664,7 @@ focus_tree = {
 	focus = {
 		id = UNT_traktora_reaktivi
 		icon = GFX_No_way
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UNT_pervaia_pyaitiletka
 		}

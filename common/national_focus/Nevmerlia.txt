@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = UKR_somostiynost
 		icon = GFX_goal_somostiynost
-		cost = 2,00
+		cost = 2.00
 		x = 26
 		y = 0
 			completion_reward = {
@@ -23,7 +23,7 @@ focus_tree = {
 	focus = {
 		id = UKR_agrarnaya_sverhderzhava
 		icon = GFX_goal_hohli_sh
-		cost = 5,00
+		cost = 5.00
 		x = 43
 		y = 0
 			completion_reward = {
@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = UKR_project_antirussia
 		icon = GFX_goal_antirussia
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_somostiynost
 		}
@@ -48,7 +48,7 @@ focus_tree = {
 	focus = {
 		id = UKR_armiya
 		icon = GFX_UKR_armiya
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_project_antirussia
 		}
@@ -62,7 +62,7 @@ focus_tree = {
 	focus = {
 		id = UKR_kiborgi
 		icon = GFX_UKR_kiborgi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_armiya
 		}
@@ -76,7 +76,7 @@ focus_tree = {
 	focus = {
 		id = UKR_oborona_v_kotlah
 		icon = GFX_UKR_kotel
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_kiborgi
 		}
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = UKR_liniya_poroha
 		icon = GFX_UKR_liniya_poroha
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_kiborgi
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 	focus = {
 		id = UKR_stavka_na_natsbaty
 		icon = GFX_goal_nazbati
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_armiya
 		}
@@ -179,7 +179,7 @@ focus_tree = {
 	focus = {
 		id = UKR_stavka_na_VSU
 		icon = GFX_goal_vsu
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_armiya
 		}
@@ -196,7 +196,7 @@ focus_tree = {
 	focus = {
 		id = UKR_shushpanzeri
 		icon = GFX_UKR_shushpanzer
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_stavka_na_VSU
 			focus = UKR_stavka_na_natsbaty
@@ -211,7 +211,7 @@ focus_tree = {
 	focus = {
 		id = UKR_nazbati_v_VSU
 		icon = GFX_UKR_vsu
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_stavka_na_VSU
 		}
@@ -231,7 +231,7 @@ focus_tree = {
 	focus = {
 		id = UKR_berdyanskiye_verfi
 		icon = GFX_UKR_verf
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_armiya
 		}
@@ -255,7 +255,7 @@ focus_tree = {
 	focus = {
 		id = UKR_dostroit_creiser_ukraina
 		icon = GFX_UKR_creyser
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_berdyanskiye_verfi
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = UKR_mova
 		icon = GFX_UKR_mova
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_project_antirussia
 		}
@@ -290,7 +290,7 @@ focus_tree = {
 	focus = {
 		id = UKR_moskali_ushli
 		icon = GFX_goal_moskali_ushli
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = UKR_mova
 		}
@@ -307,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = UKR_a_teper_mozhno_i_po_russki
 		icon = GFX_goal_russian_odessa
-		cost = 10,00
+		cost = 10.00
 		prerequisite = {
 			focus = UKR_moskali_ushli
 		}
@@ -322,7 +322,7 @@ focus_tree = {
 	focus = {
 		id = UKR_totalnaya_ukroinizatsiya
 		icon = GFX_goal_only_ukr
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_mova
 		}
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = UKR_szhech_rus_knigi
 		icon = GFX_UKR_knigi
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_totalnaya_ukroinizatsiya
 		}
@@ -363,7 +363,7 @@ focus_tree = {
 	focus = {
 		id = UKR_vira
 		icon = GFX_UKR_vira
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_project_antirussia
 		}
@@ -377,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = UKR_avtokrfalia
 		icon = GFX_UKR_avtokefalia
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_vira
 		}
@@ -396,7 +396,7 @@ focus_tree = {
 	focus = {
 		id = UKR_stat_new_pravoslavnym_tsentrom
 		icon = GFX_UKR_vladimir
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_avtokrfalia
 		}
@@ -416,7 +416,7 @@ focus_tree = {
 	focus = {
 		id = UKR_TsIPSO
 		icon = GFX_goal_cipso
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_somostiynost
 		}
@@ -431,7 +431,7 @@ focus_tree = {
 	focus = {
 		id = UKR_decommunisatsiya
 		icon = GFX_UKR_antilenin
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_somostiynost
 		}
@@ -451,7 +451,7 @@ focus_tree = {
 	focus = {
 		id = UKR_Ukraine_tse_Europe
 		icon = GFX_UKR_ukr_europa
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_decommunisatsiya
 		}
@@ -480,7 +480,7 @@ focus_tree = {
 	focus = {
 		id = UKR_eurotsenosti
 		icon = GFX_UKR_eurocennosti
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_Ukraine_tse_Europe
 		}
@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = UKR_razlagat_tyl_vraga
 		icon = GFX_goal_razlagat_til_vraga
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_eurotsenosti
 		}
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = UKR_eurointegratsiya
 		icon = GFX_UKR_ukr_eu
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_Ukraine_tse_Europe
 		}
@@ -557,7 +557,7 @@ focus_tree = {
 	focus = {
 		id = UKR_zagranica_nam_pomozhet
 		icon = GFX_UKR_treba
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_eurointegratsiya
 		}
@@ -651,7 +651,7 @@ focus_tree = {
 	focus = {
 		id = UKR_zal_UPA
 		icon = GFX_goal_zal_upa
-		cost = 2,00
+		cost = 2.00
 		prerequisite = {
 			focus = UKR_decommunisatsiya
 		}
@@ -670,7 +670,7 @@ focus_tree = {
 	focus = {
 		id = UKR_voini_lesu
 		icon = GFX_goal_upa
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_zal_UPA
 		}
@@ -688,7 +688,7 @@ focus_tree = {
 	focus = {
 		id = UKR_ukrainskie_fronti_UPA
 		icon = GFX_goal_front_upa
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_zal_UPA
 		}
@@ -712,7 +712,7 @@ focus_tree = {
 	focus = {
 		id = UKR_kult_lichnosti
 		icon = GFX_UKR_kult
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_somostiynost
 		}
@@ -729,7 +729,7 @@ focus_tree = {
 	focus = {
 		id = UKR_uvazhaemiy_partner
 		icon = GFX_UKR_partner
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_somostiynost
 		}
@@ -755,7 +755,7 @@ focus_tree = {
 	focus = {
 		id = UKR_uluchshit_otnoshenye_s_guziyey
 		icon = GFX_UKR_gruziya
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_kult_lichnosti
 			focus = UKR_uvazhaemiy_partner
@@ -786,7 +786,7 @@ focus_tree = {
 	focus = {
 		id = UKR_sanitarniy_kordon
 		icon = GFX_UKR_sanitar
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_uluchshit_otnoshenye_s_guziyey
 		}
@@ -808,7 +808,7 @@ focus_tree = {
 	focus = {
 		id = UKR_ATO
 		icon = GFX_UKR_ATO
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_sanitarniy_kordon
 		}
@@ -836,7 +836,7 @@ focus_tree = {
 	focus = {
 		id = UKR_graf_dyakula
 		icon = GFX_UKR_dyakula
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_uvazhaemiy_partner
 		}
@@ -850,7 +850,7 @@ focus_tree = {
 	focus = {
 		id = UKR_vernut_zavod_roshen
 		icon = GFX_UKR_roshen_ukr
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}
@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = UKR_alkoprom
 		icon = GFX_UKR_alkoprom
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}
@@ -898,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = UKR_investicii_v_zavodi_roshen_v_rossii
 		icon = GFX_UKR_roshen_rus
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_vernut_zavod_roshen
 		}
@@ -918,7 +918,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pizdit_gaz
 		icon = GFX_UKR_pizdit_gaz
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}
@@ -939,7 +939,7 @@ focus_tree = {
 	focus = {
 		id = UKR_pizdit_trubi
 		icon = GFX_UKR_pizdit_trubi
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}
@@ -962,7 +962,7 @@ focus_tree = {
 	focus = {
 		id = UKR_velikiy_zabor
 		icon = GFX_UKR_zabor
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_liniya_poroha
 		}
@@ -1085,7 +1085,7 @@ focus_tree = {
 	focus = {
 		id = UKR_oplot
 		icon = GFX_goal_oplot
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_shushpanzeri
 		}
@@ -1107,7 +1107,7 @@ focus_tree = {
 	focus = {
 		id = UKR_vosstanovit_pl_zaporozhe
 		icon = GFX_goal_ukr_podlodka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_dostroit_creiser_ukraina
 		}
@@ -1139,7 +1139,7 @@ focus_tree = {
 	focus = {
 		id = UKR_bat_sheyh_mansura
 		icon = GFX_goal_ochkeriyci
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = UKR_TsIPSO
 		}
@@ -1159,7 +1159,7 @@ focus_tree = {
 	focus = {
 		id = UKR_zapadniye_instructori
 		icon = GFX_UKR_nato
-		cost = 3,00
+		cost = 3.00
 		prerequisite = {
 			focus = UKR_zagranica_nam_pomozhet
 		}
@@ -1187,7 +1187,7 @@ focus_tree = {
 	focus = {
 		id = UKR_osvobozhdeniye
 		icon = GFX_UKR_ukraina
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_ATO
 		}
@@ -1207,7 +1207,7 @@ focus_tree = {
 	focus = {
 		id = UKR_nazbati_v_MVD
 		icon = GFX_UKR_mvd
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_stavka_na_natsbaty
 		}
@@ -1221,7 +1221,7 @@ focus_tree = {
 	focus = {
 		id = UKR_azovets
 		icon = GFX_goal_azovets
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_shushpanzeri
 		}
@@ -1243,7 +1243,7 @@ focus_tree = {
 	focus = {
 		id = UKR_chushk_or_metal
 		icon = GFX_UKR_provoloka
-		cost = 5,00
+		cost = 5.00
 		prerequisite = {
 			focus = UKR_agrarnaya_sverhderzhava
 		}

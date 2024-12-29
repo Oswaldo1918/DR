@@ -99,7 +99,7 @@ ideas = {
 			
 			modifier = {
 			resistance_damage_to_garrison = -0.1
-		    enemy_partisan_effect = -0.01
+		    enemy_resistance_growth_on_our_occupied_states = -0.01
 			}
 			}
 			
@@ -349,13 +349,12 @@ ideas = {
 			
 			modifier = {
 			political_power_gain = -0.15
-			fasism_drift = 0.05
+			fascism_drift = 0.05
 			anarhostalinism_drift = 0.05
 			vmestolev_drift = 0.05
 			metacommy_drift = 0.05
 			democratic_drift = 0.05
 			memoism_drift = 0.05
-			milo_drift = 0.05
 			neutrality_drift = 0.05
 			}
 		}
@@ -450,7 +449,7 @@ ideas = {
 		picture = Revolyutsionnaya_armia_narodnogo_osvobozhdenia
 			
 			modifier = {
-			partisan_effect = 0.1
+			resistance_growth_on_our_occupied_states = 0.1
 			army_morale_factor = 0.1
 			training_time_factor = -0.1
 			army_org_factor = -0.05
@@ -462,7 +461,7 @@ ideas = {
 		picture = Partizanskie_otryady
 			
 			modifier = {
-			partisan_effect = 0.1
+			resistance_growth_on_our_occupied_states = 0.1
 			training_time_factor = -0.1
 			army_org_factor = -0.05
 			planning_speed = -0.10
@@ -474,7 +473,7 @@ ideas = {
 		picture = Partizanskie_otryady
 			
 			modifier = {
-			partisan_effect = 0.2
+			resistance_growth_on_our_occupied_states = 0.2
 			training_time_factor = -0.2
 			army_org_factor = -0.05
 			planning_speed = -0.10
@@ -555,7 +554,7 @@ ideas = {
 			modifier = {
 				resistance_target = -0.1
 			    compliance_gain = 0.1
-				partisan_effect = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
 			}
 		}	
 	CHT_obshinnaya_milicia2 	= {
@@ -567,7 +566,7 @@ ideas = {
 			modifier = {
 				resistance_target = -0.1
 			    compliance_gain = 0.1
-				partisan_effect = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
 				army_core_defence_factor = 0.05
 				
 			}
@@ -722,7 +721,7 @@ ideas = {
 			    stability_factor = -0.1
 				war_support_factor = -0.1
 				political_power_factor = -0.1
-				month_population = -0.25
+				monthly_population = -0.25
 			}
 		}
 	CHT_strategic_shcool_EWC = {
@@ -769,7 +768,7 @@ ideas = {
 
 			modifier = { 
 			    stability_factor = 0.1
-				month_population = 1
+				monthly_population = 1
 				research_speed_factor = -0.05
 				production_factory_max_efficiency_factor = -0.1
                 fascism_drift = 0.03 				
@@ -1015,7 +1014,7 @@ ideas = {
 			
 			modifier = {
 			resistance_damage_to_garrison = 0.1
-		    enemy_partisan_effect = 0.01
+		    enemy_resistance_growth_on_our_occupied_states = 0.01
 			conscription = -0.005
 			}
 	
@@ -1067,7 +1066,6 @@ ideas = {
 			
 			modifier = {
 			special_forces_defence_factor = 0.1
-			special_forces_speed_factor = 0.1
 			special_forces_attack_factor = 0.1
 			recon_factor = 0.2
 			special_forces_min = 50

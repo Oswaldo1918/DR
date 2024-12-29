@@ -439,7 +439,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			    army_artillery_speed_factor = 0.05
 		        army_artillery_attack_factor = 0.05
 		        army_artillery_defence_factor = 0.05
 			}
@@ -459,7 +458,6 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-			    army_artillery_speed_factor = 0.1
 		        army_artillery_attack_factor = 0.1
 		        army_artillery_defence_factor = 0.1 
 			}
@@ -2750,7 +2748,7 @@ ideas = {
 			
 			allowed = {
 				always = no
-				UKE = exist
+				country_exists = UKE
 			}
 
 			allowed_civil_war = {
@@ -2778,7 +2776,7 @@ ideas = {
 			
 			allowed = {
 				always = no
-				POK = exist
+				country_exists = POK 
 			}
 
 			allowed_civil_war = {

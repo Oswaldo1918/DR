@@ -1256,7 +1256,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_DOT = {	#Камчатская_Хунта
 		
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = DOT
 			}
 		}
@@ -1282,7 +1282,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_KOL = {	#Родина_нашего_страха
 
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = KOL
 			}
 		}
@@ -1311,7 +1311,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_MAG = {	#Арестантское_государство_Магадан
 	
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = MAG
 			}
 		}
@@ -1340,7 +1340,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_YAK = {	#Шаманство_Якутия
 	
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = YAK
 			}
 		}
@@ -1372,7 +1372,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_YWO = {	#Разорители_цирков
 	
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = YWO
 			}
 		}
@@ -1404,7 +1404,7 @@ DR_form_russian_far_east_state_decisions_category = {
     DR_FEW_annex_TUB = {	#Дальневосточная_республика
 	
 		visible = {
-			NOT { 
+			NOT = { 
 				tag = TUB
 			}
 		}

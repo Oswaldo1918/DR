@@ -331,7 +331,6 @@ ideas = {
 				resistance_target = -0.025
 				resistance_damage_to_garrison = -0.025
 				resistance_growth = -0.025
-				resistance_target = -0.025
 			    }
 		    }
 			YSK_vosrozhdenniy_skin_dvizh_2 = {
@@ -350,7 +349,6 @@ ideas = {
 				resistance_target = -0.025
 				resistance_damage_to_garrison = -0.025
 				resistance_growth = -0.025
-				resistance_target = -0.025
 				conscription = 0.03
 			    }
 		    }
@@ -370,7 +368,6 @@ ideas = {
 				resistance_target = -0.025
 				resistance_damage_to_garrison = -0.025
 				resistance_growth = -0.025
-				resistance_target = -0.025
 				conscription = 0.04
 				justify_war_goal_time = -0.1
 			    }
@@ -391,7 +388,6 @@ ideas = {
 				resistance_target = -0.05
 				resistance_damage_to_garrison = -0.05
 				resistance_growth = -0.05
-				resistance_target = -0.05
 				conscription = 0.05
 				conscription_factor = -0.1
 				justify_war_goal_time = -0.125
@@ -1071,9 +1067,9 @@ ideas = {
 				operative_slot = 2
 				agency_upgrade_time = -0.15
 				boost_ideology_mission_factor = 0.1
-				boost_diplomatic_pressure_mission_factor = 0.1
-				boost_propaganda_mission_factor = 0.1
-				boost_control_trade_mission_factor = 0.1
+				diplomatic_pressure_mission_factor = 0.1
+				propaganda_mission_factor = 0.1
+				control_trade_mission_factor = 0.1
 			    }
 		    }
             YSK_programma_repatriatsii = {
@@ -1484,16 +1480,6 @@ ideas = {
 				non_core_manpower = 0.05
 			    }
 		    }
-            YSK_new_rus_nation = {
-
-			    picture = YSK_perestroyka_gos_machine
-			
-			    modifier = {
-				political_power_factor = 0.025
-				stability_factor = 0.05
-				war_support_factor = 0.05				
-			    }
-		    }
             YSK_strong_socialka = {
 
 			    picture = YSK_perestroyka_gos_machine
@@ -1589,7 +1575,6 @@ ideas = {
 				conscription = 0.02
 				war_support_factor = 0.075
 				army_attack_factor = 0.01
-				army_attack_factor = 0.05
 				army_morale_factor = 0.05
     			fascism_drift = 0.03    				
 			    }
@@ -2365,7 +2350,6 @@ ideas = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				consumer_goods_factor = 0.04
-				army_morale_factor = 0.075
 				political_power_gain = 0.075
 				army_attack_factor = 0.075
 				org_loss_when_moving = -0.2

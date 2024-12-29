@@ -730,7 +730,7 @@ leader_traits = {
 
 		stability_factor = 0.1
 		political_power_factor = 0.1
-		defensive = 0.03
+		defence = 0.03
 	}
 	
 	Popadanets = {
@@ -878,7 +878,7 @@ leader_traits = {
 		political_power_factor = 0.05
 		consumer_goods_factor = 0.05
 		stability_factor = 0.07
-		month_population = 0.25
+		monthly_population = 0.25
 		
 
 		random = no
@@ -1098,9 +1098,7 @@ leader_traits = {
 		resistance_damage_to_garrison = -0.01
 		high_command_cost_factor = -0.01
 		war_support_weekly = 0.001
-		production_speed_arms_factory_factor = 0.01
 		political_power_gain = 0.01
-		high_command_cost_factor = -0.01
 		air_chief_cost_factor = -0.01
 		army_chief_cost_factor = -0.01
 		navy_chief_cost_factor = -0.01
@@ -1275,8 +1273,8 @@ leader_traits = {
 	
 	Ciganskiy_baron = {
 		random = no	
-		cavalry_attack_factor = 0,1
-		cavalry_defence_factor = 0,1
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
 		war_support_factor = 0.10
 		
 		ai_will_do = {
@@ -1316,7 +1314,7 @@ leader_traits = {
 	}
 	rabochaya_koshechka = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = 0.15
 		war_support_factor = 0.1
 		stability_factor = 0.05
@@ -1327,7 +1325,7 @@ leader_traits = {
 	}
 	specifichniy_prosvititel = {
 		sprite = 10
-		random = not
+		random = no
 		research_speed_factor = 0.15
 		weekly_manpower = -10
 		ai_will_do = {
@@ -1345,7 +1343,7 @@ leader_traits = {
 	}
 	priznanniy_geniy = {
 		sprite = 10
-		random = not
+		random = no
 		army_org_factor = 0.05
 		research_speed_factor = 0.2
 		ai_will_do = {
@@ -1354,7 +1352,7 @@ leader_traits = {
 	}
 	mad_scientist = {
 		sprite = 10
-		random = not		
+		random = no	
 		research_speed_factor = 0.15
 		stability_factor = -0.05
 		weekly_manpower = -10
@@ -1365,7 +1363,7 @@ leader_traits = {
 	}
 	spartanist = {
 		sprite = 10
-		random = not		
+		random = no		
 		army_org_factor = 0.1
 		army_morale_factor = -0.05
 		war_support_factor = 0.1
@@ -1377,7 +1375,7 @@ leader_traits = {
 	}
 	popular_bloger = {
 		sprite = 10
-		random = not		
+		random = no		
 		stability_factor = 0.1
 		political_power_factor = 0.15
 		
@@ -1398,7 +1396,7 @@ leader_traits = {
 	}
 	organisator_festivaley = {
 		sprite = 10
-		random = not		
+		random = no		
 		consumer_goods_factor = -0.1
 		
 		ai_will_do = {
@@ -1407,7 +1405,7 @@ leader_traits = {
 	}
 	nazi_antropolog = {
 		sprite = 10
-		random = not		
+		random = no		
 		monthly_population = 0.20
 		conscription_factor = 0.1
 		

@@ -264,9 +264,8 @@ is_available_to_collaboration_government = { # occupied_countries.1 should be up
 			is_puppet_of = PREV # if already created one do not create another
 			has_autonomy_state = autonomy_collaboration_government
 		}
-	}
 }
-
+	
 has_large_ally_not_pick_closed_economy = {
 	any_of_scopes = {
 		array = faction_members

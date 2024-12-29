@@ -195,7 +195,6 @@ technologies = {
 						original_tag = ITA
 						has_completed_focus = ITA_italian_tankettes
 					}
-					ITA_add_improved_light_tank_templates = yes
 				}
 			}
 
@@ -326,7 +325,6 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_italian_tankettes
 				}
-				ITA_add_improved_light_tank_templates = yes
 			}
 			IF = { #Hungarian templates
 				limit = {
@@ -690,7 +688,6 @@ technologies = {
 						has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
-				ITA_add_improved_medium_tank_templates = yes
 			}
 			IF = { #Hungarian templates
 				limit = {
@@ -826,7 +823,6 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
-				ITA_add_advanced_medium_tank_templates = yes
 			}
 			IF = { #Hungarian templates
 				limit = {
@@ -1091,7 +1087,6 @@ technologies = {
 						has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
-				ITA_add_improved_heavy_tank_templates = yes
 			}
 		}
 
@@ -1164,7 +1159,6 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
-				ITA_add_advanced_heavy_tank_templates = yes
 			}
 		}
 
@@ -1238,42 +1232,6 @@ technologies = {
 		path = {
 			leads_to_tech = sp_armored_lc_specialized_field_manuals_tech
 			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-			if = { #Italian templates
-				limit = {
-					original_tag = ITA
-				}
-				if = {
-					limit = {
-						has_completed_focus = ITA_capo_supremo
-					}
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_modern_musculus
-					}
-					ITA_add_modern_musculus_sh_tank_template_and_production = yes
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = ITA_a_time_for_war
-					}
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
-				}
-			}
-
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_land_land_cruiser	
-				}
-			}
 		}
 
 		ai_will_do = {

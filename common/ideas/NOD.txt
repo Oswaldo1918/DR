@@ -262,7 +262,7 @@ ideas = {
 			
 			modifier = {
 			justify_war_goal_time = -0.2
-            occupation_cost = -0.3
+            annex_cost_factor	 = -0.3
             offence = 0.05
             army_morale_factor = 0.05
 			}
@@ -427,7 +427,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				artillery_equipment = {
-					breakthrough_factor = 0.02				
+					breakthrough  = 0.02				
 					instant = yes
 				}
 			}
@@ -445,7 +445,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				motorized_rocket_unit = {
-					breakthrough_factor = 0.02				
+					breakthrough  = 0.02				
 					instant = yes
 				}
 			}
@@ -455,7 +455,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				rocket_artillery = {
-					breakthrough_factor = 0.02				
+					breakthrough  = 0.02				
 					instant = yes
 				}
 			}
@@ -473,7 +473,7 @@ ideas = {
 			army_org_factor = 0.05
 			war_support_factor = 0.05
 			special_forces_training_time_factor = -0.3
-			 enemy_partisan_effect = 0.01
+			 resistance_target = 0.01
 			}
 			
 		}
