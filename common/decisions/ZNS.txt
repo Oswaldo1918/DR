@@ -447,13 +447,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					DOT = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {
 			DOT = {
 			    add_timed_idea = {
@@ -481,13 +474,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					CHT = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {
 			CHT = {
 			    add_timed_idea = {
@@ -515,13 +501,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					BSH = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {
 			BSH = { 
 			    add_timed_idea = {
@@ -549,13 +528,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					NOD = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {
 			NOD = {
 			    add_timed_idea = {
@@ -583,13 +555,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					LAZ = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {
 			LAZ = {
 			    add_timed_idea = {
@@ -617,13 +582,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					UKR = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {  
 			UKR = {
 			    add_timed_idea = {
@@ -651,13 +609,6 @@ ZNS_translirovat_BBT_v_drugie_strani_1 = {
 		ai_will_do = {
         factor = 100
 		}
-		bypass = {
-				OR = {
-					SKT = {
-						exists = no
-					}
-				}
-		    }
 		remove_effect = {  
 			SKT = {
 			    add_timed_idea = {

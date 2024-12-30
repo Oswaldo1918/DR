@@ -84,6 +84,7 @@ GAL_sssr = {
           }
 
         visible = {
+			original_tag = GAL 
 			has_government = metacommy
 		}
 		days_remove = 0
@@ -131,10 +132,12 @@ GAL_sssr = {
 			set_cosmetic_tag = GAL_SibRevSovDep
 			remove_ideas = POK_idea_GV
 			if = {
+			original_tag = GAL
 			has_government = fascism
 			news_event = dk_news.51
 			}
 			if = {
+			original_tag = GAL
 			has_government = metacommy
 			news_event = dk_news.52
 			}

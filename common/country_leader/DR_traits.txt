@@ -5,7 +5,7 @@
 leader_traits = {
 	Ne_v_svoyey_terelke = {
 		sprite = 10
-		random = not
+		random = no
 		agency_upgrade_time = -0.05
 		decryption_power = 2
 		political_power_gain = -0.2
@@ -31,7 +31,7 @@ leader_traits = {
 	}
 	oposition_furer = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = 0.05
 		war_support_factor = 0.1
 		ai_focus_aggressive_factor = 0.5
@@ -42,7 +42,7 @@ leader_traits = {
 	}
 	korol_schoolnikov = {
 		sprite = 10
-		random = not
+		random = no
 		research_speed_factor = -0.05
 		conscription_factor = 0.1
 
@@ -52,7 +52,7 @@ leader_traits = {
 	}
 	diplom_nazionalist = {
 		sprite = 10
-		random = not
+		random = no
 		war_support_factor = 0.05
 		fascism_drift = 0.01
 
@@ -103,7 +103,7 @@ leader_traits = {
 	}
     predprinimatel = {
 		sprite = 10
-		random = not		
+		random = no		
 		production_factory_efficiency_gain_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		consumer_goods_factor = -0.025
@@ -114,7 +114,7 @@ leader_traits = {
 	}
     architect = {
 		sprite = 10
-		random = not		
+		random = no		
 		production_speed_buildings_factor = 0.05
 		production_speed_infrastructure_factor = 0.075
 		consumer_goods_factor = 0.035
@@ -125,7 +125,7 @@ leader_traits = {
 	}
     Povelitel_vremeni = {
 		sprite = 10
-		random = not		
+		random = no		
 		army_speed_factor = 0.1
 		org_loss_when_moving = -0.1
 		research_speed_factor = 0.05
@@ -136,7 +136,7 @@ leader_traits = {
 	}        
     Ne_v_soznanii = {
 		sprite = 10
-		random = not		
+		random = no		
 		political_power_gain = -0.1
 		command_power_gain = -0.1
 		
@@ -146,7 +146,7 @@ leader_traits = {
 	}    
     rus_regent = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = 0.035
 		war_support_factor = 0.035
 		political_power_factor = 0.01
@@ -169,7 +169,7 @@ leader_traits = {
 	}
     rus_president = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = 0.07
 		political_power_factor = 0.02
 		democratic_drift = 0.02
@@ -180,7 +180,7 @@ leader_traits = {
 	}
     part_org = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = 0.07
 		political_power_factor = 0.02
 		party_popularity_stability_factor = 0.075
@@ -193,7 +193,7 @@ leader_traits = {
 	}    
     tokio_dragon = {
 		sprite = 10
-		random = not
+		random = no
 		war_support_factor = 0.07
 		political_power_factor = 0.02
 		conscription = 0.005
@@ -204,7 +204,7 @@ leader_traits = {
 	}
     praktikuyuzhiy_memoist = {
 		sprite = 10
-		random = not
+		random = no
 		metacommy_drift = 0.01
 		decryption_factor = 0.1
 		encryption_factor = 0.1
@@ -215,7 +215,7 @@ leader_traits = {
 	}
     isekay = {
 		sprite = 10
-		random = not
+		random = no
 		war_support_factor = 0.07
 		stability_factor = 0.07
 		political_power_factor = 0.02
@@ -226,7 +226,7 @@ leader_traits = {
 	} 
     kadet = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = 0.07
 		political_power_factor = 0.02
 		democratic_drift = 0.01
@@ -237,7 +237,7 @@ leader_traits = {
 	}
     old_socdem = {
 		sprite = 13
-		random = not
+		random = no
 		stability_factor = 0.07
 		political_power_factor = 0.07
 		democratic_drift = 0.01
@@ -248,7 +248,7 @@ leader_traits = {
 	}  
     political_trup = {
 		sprite = 13
-		random = not
+		random = no
 		stability_factor = -0.05
 		political_power_factor = -0.15
 		
@@ -258,7 +258,7 @@ leader_traits = {
 	}
 	demshiza_magic = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = 0.5
 		political_power_factor = 0.2
 		democratic_drift = 0.1
@@ -274,7 +274,7 @@ leader_traits = {
 	}
     min_kult = {
 		sprite = 13
-		random = not
+		random = no
 		stability_factor = 0.05
 		political_power_factor = 0.03
 		
@@ -284,7 +284,7 @@ leader_traits = {
 	} 
     min_obr = {
 		sprite = 13
-		random = not
+		random = no
 		research_speed_factor = 0.05
 		
 		ai_will_do = {
@@ -293,7 +293,7 @@ leader_traits = {
 	}
     baron_sibir = {
 		sprite = 10
-		random = not
+		random = no
 		stability_factor = -0.05
 		trade_opinion_factor = 0.1
 		opinion_gain_monthly_factor = 0.1
@@ -305,7 +305,7 @@ leader_traits = {
 	
     a_chto = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = -0.03
 		civilian_intel_to_others = -5
         airforce_intel_to_others = -5  
@@ -318,7 +318,7 @@ leader_traits = {
 	} 
 	son_vozhd = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = 0.05
 		war_support_factor = 0.1
 		stability_factor = -0.05
@@ -331,7 +331,7 @@ leader_traits = {
 	
 	pretindent_na_DV = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = 0.05
 		war_support_factor = 0.05
 		army_attack_factor = 0.05
@@ -345,7 +345,7 @@ leader_traits = {
 
     obedinitel_DV = {
 		sprite = 10
-		random = not
+		random = no
 		political_power_factor = 0.1
 		war_support_factor = 0.1
 		stability_factor = 0.1
@@ -505,7 +505,7 @@ leader_traits = {
 		war_support_factor = 0.075
 	} 
 
-    nanotoliy = {
+    nanooliy = {
 		random = no
 		sprite = 13
 		stability_factor = -0.05
@@ -1334,7 +1334,7 @@ leader_traits = {
 	}
 	komissar_po_ideoligii_metacommy = {
 		sprite = 10
-		random = not
+		random = no
 		army_org_factor = 0.05
 		metacommy_drift = 0.005
 		ai_will_do = {
@@ -1385,7 +1385,7 @@ leader_traits = {
 	}
 	pravoslavnyi_matematik = {
 		sprite = 10
-		random = not		
+		random = no		
 		decryption_factor = 0.1
 		encryption_factor = 0.1
 		stability_factor = 0.05
