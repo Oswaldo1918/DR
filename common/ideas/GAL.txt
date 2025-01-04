@@ -279,13 +279,13 @@ ideas = {
 			GAL_tecnocratia = {
 	
 			   modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.15
 			   }
 		    }
 			GAL_tecnocratia_2 = {
 	
 			   modifier = {
-				research_speed_factor = 0.2
+				research_speed_factor = 0.3
 			   }
 		    }
 			GAL_military_nauka = {
@@ -375,7 +375,12 @@ ideas = {
 				modifier = {
 				 monthly_population = 0.3
 				}
-			}			
+			}
+			GAL_ey_uhnem = {
+				modifier = {
+				 consumer_goods_factor = -0.05
+				}
+			}
 	   }
 	   
 	tank_manufacturer = { 
