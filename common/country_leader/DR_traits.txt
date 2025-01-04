@@ -3,6 +3,18 @@
 @tier3 = 10
 
 leader_traits = {
+    aye_libsoc = {
+		sprite = 10
+		random = no
+		command_power_gain = -0.1
+		metacommy_drift = 0.02
+		anarhostalinism_drift = 0.02
+		resistance_growth_on_our_occupied_states = 0.25
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
 	Ne_v_svoyey_terelke = {
 		sprite = 10
 		random = no
