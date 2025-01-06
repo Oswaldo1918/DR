@@ -1341,7 +1341,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_sndk
-				traits = {}
+				traits = { harsh_leader trickster }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 1
@@ -1351,7 +1351,7 @@ focus_tree = {
 			}
 			add_field_marshal_role = {
 				character = GAL_Boyarshinov
-				traits = {}
+				traits = { old_guard trait_engineer }
 				skill = 2
 				attack_skill = 1
 				defense_skill = 2
@@ -1361,7 +1361,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_Deb
-				traits = { harsh_leader  infantry_leader }
+				traits = { harsh_leader infantry_leader }
 				skill = 3
 				attack_skill = 3
 				defense_skill = 2
@@ -1371,7 +1371,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_Savvateev
-				traits = { organizer }
+				traits = { jaeger }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
@@ -1381,7 +1381,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_Sokolov
-				traits = {}
+				traits = { organizer }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 2
@@ -1401,7 +1401,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_Panchin
-				traits = {}
+				traits = { unyielding_defender }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
