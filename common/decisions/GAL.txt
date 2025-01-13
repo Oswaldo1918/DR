@@ -126,20 +126,20 @@ GAL_sssr = {
 		}
 		fire_only_once = yes
 		
-		days_remove = 45
+		days_remove = 1
 		
 		remove_effect = {
-			set_cosmetic_tag = GAL_SibRevSovDep
+			hidden_effect = {
+				set_cosmetic_tag = GAL_SibRevSovDep
+			}
 			remove_ideas = POK_idea_GV
 			if = {
-			original_tag = GAL
-			has_government = fascism
-			news_event = dk_news.51
+			limit = { original_tag = GAL has_government = neutrality }
+				news_event = dk_news.51
+				complete_national_focus = GAL_nado_radovatsya
 			}
-			if = {
-			original_tag = GAL
-			has_government = metacommy
-			news_event = dk_news.52
+			else = {
+				news_event = dk_news.52
 			}
 		}	
 	}

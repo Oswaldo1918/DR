@@ -37,7 +37,7 @@ country_event = {
 	id = GAL.2
 	title = GAL.2.t
 	desc = GAL.2.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_soldiers_marching
 	
 	trigger = {
 	tag = GAL
@@ -108,4 +108,169 @@ country_event = {
 		  } 
 	}
 }
-
+# Либеральная чистка
+country_event = {
+	id = GAL.3
+	title = GAL.3.t
+	desc = GAL.3.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.3.a
+		retire_character = GAL_Boyarshinov 
+	}
+	
+	option = {
+	name = GAL.3.b
+		retire_character = GAL_Toples 
+	}
+	
+	option = {
+	name = GAL.3.c
+		retire_character = GAL_Panchin 
+	}
+	
+	option = {
+	name = GAL.3.f
+		add_stability = -0.1
+		add_political_power = -100
+	}
+}
+#Письмо Вассермана
+country_event = {
+	id = GAL.4
+	title = GAL.4.t
+	desc = GAL.4.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
+		focus_progress = {
+			focus = GAL_zadacha_osvobod_nauki
+			progress > 0.1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = GAL.4.a
+	}
+}
+#Письмо Савельева
+country_event = {
+	id = GAL.5
+	title = GAL.5.t
+	desc = GAL.5.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
+		focus_progress = {
+			focus = GAL_zadacha_osvobod_nauki
+			progress > 0.4
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = GAL.5.a
+	}
+}
+#Свой путь 
+country_event = {
+	id = GAL.6
+	title = GAL.6.t
+	desc = GAL.6.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
+		focus_progress = {
+			focus = GAL_zadacha_osvobod_nauki
+			progress > 0.8
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	name = GAL.6.a
+	}
+}
+#Бегство Савватеева 
+country_event = {
+	id = GAL.7
+	title = GAL.7.t
+	desc = GAL.7.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.7.a
+	    retire_character = GAL_Savvateev 
+		add_stability = -0.01
+	}
+}
+#Открытие клуба Сайберия
+country_event = {
+	id = GAL.8
+	title = GAL.8.t
+	desc = GAL.8.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.8.a
+		add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }		
+	}
+}
+#ГАЛИЛЕО
+country_event = {
+	id = GAL.9
+	title = GAL.9.t
+	desc = GAL.9.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.9.a	
+		set_portraits = {
+			character = GAL_pusnoy
+			civilian = { large = "gfx/leaders/GAL/Pushnoy_GALILEO.dds" }
+		}
+	}
+}

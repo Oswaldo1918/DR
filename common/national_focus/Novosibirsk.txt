@@ -1409,6 +1409,7 @@ focus_tree = {
 				logistics_skill = 1
 				legacy_id = -1
 			}
+			add_ideas = { GAL_cowboyi_protivodeystvie }
 		}
 	}
 	focus = {
@@ -1514,6 +1515,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = -0.1
 			}
+			country_event = { id = GAL.3 }
 		}
 
 	}
@@ -1528,6 +1530,12 @@ focus_tree = {
 		y = 7
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = DR_REU_RUS_open_reunific_tt
+			hidden_effect = {
+				set_country_flag = DR_start_reunite_Russia_cf
+			}
 		}
 	}
 	focus = {
@@ -2012,7 +2020,7 @@ focus_tree = {
 	focus = {
 		id = GAL_zadacha_osvobod_nauki
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 8.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
 		}
@@ -2068,6 +2076,11 @@ focus_tree = {
 		}
 		x = 58
 		y = 9
+		completion_reward = {
+			hidden_effect = {
+			 country_event = { id = GAL.7 days = 10 }
+			}
+		}
 
 	}
 	focus = {
@@ -2139,7 +2152,9 @@ focus_tree = {
 		}
 		x = 56
 		y = 12
-
+		completion_reward = {
+			country_event = { id = GAL.8 }
+		}
 	}
 	focus = {
 		id = GAL_ne_trogat_to_chto_rabotaet
