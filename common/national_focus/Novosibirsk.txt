@@ -12,7 +12,7 @@ focus_tree = {
 		id = GAL_koalicionnoye_pravitelstvo
 		icon = GFX_focus_generic_military_academy
 		cost = 1.00
-		x = 28
+		x = 30
 		y = 0
 			completion_reward = {
 					add_stability = 0.1
@@ -1518,17 +1518,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_trava
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_peregovor_komision
-		}
-		x = 40
-		y = 5
-
-	}
-	focus = {
 		id = GAL_nado_radovatsya
 		icon = GFX_goal_unknown
 		cost = 1.00
@@ -1544,11 +1533,14 @@ focus_tree = {
 	focus = {
 		id = GAL_ey_uhnem
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 8.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
 		}
-		x = 33
+		mutually_exclusive = {
+			focus = GAL_ne_nado_napragat
+		}
+		x = 32
 		y = 8
 		completion_reward = {
 			add_timed_idea = {
@@ -1559,11 +1551,30 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GAL_ne_nado_napragat
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = GAL_nado_radovatsya
+		}
+		mutually_exclusive = {
+			focus = GAL_ey_uhnem
+		}
+		x = 34
+		y = 8
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+
+	}
+	focus = {
 		id = GAL_rashirit_NII
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
+			focus = GAL_ne_nado_napragat
 		}
 		x = 30
 		y = 9
@@ -1660,6 +1671,7 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
+			focus = GAL_ne_nado_napragat
 		}
 		mutually_exclusive = {
 			focus = GAL_stroyki_za_premiyu
@@ -1667,7 +1679,7 @@ focus_tree = {
 		x = 32
 		y = 9
 		completion_reward = {
-			add_ideas = GAL_stroyka_dolg
+			add_ideas = GAL_stroyki_za_dolgi
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
@@ -1682,6 +1694,7 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
+			focus = GAL_ne_nado_napragat
 		}
 		mutually_exclusive = {
 			focus = GAL_stroyki_za_dolgi
@@ -1689,7 +1702,7 @@ focus_tree = {
 		x = 34
 		y = 9
 		completion_reward = {
-			add_ideas = GAL_stroyka_premiya
+			add_ideas = GAL_stroyki_za_premiyu
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
@@ -1704,6 +1717,7 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
+			focus = GAL_ne_nado_napragat
 		}
 		x = 36
 		y = 9
@@ -1782,7 +1796,7 @@ focus_tree = {
 	focus = {
 		id = GAL_nayka_pobezhdat
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 5.00
 		prerequisite = {
 			focus = GAL_krisis_manager
 		}
@@ -1797,7 +1811,7 @@ focus_tree = {
 	focus = {
 		id = GAL_voen_praktika
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 4.00
 		prerequisite = {
 			focus = GAL_nayka_pobezhdat
 		}
@@ -1812,7 +1826,7 @@ focus_tree = {
 	focus = {
 		id = GAL_tsel_vyzhit
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 5.00
 		prerequisite = {
 			focus = GAL_nayka_pobezhdat
 		}
@@ -1828,22 +1842,52 @@ focus_tree = {
 	focus = {
 		id = GAL_zadacha_oborona
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 6.00
 		prerequisite = {
 			focus = GAL_tsel_vyzhit
-		}
-		mutually_exclusive = {
-			focus = GAL_zadacha_proryv
 		}
 		x = 47
 		y = 6
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = GAL_military_nauka_2
-				add_idea = GAL_military_nauka_oborona
+			if = {
+				limit = { has_idea = GAL_military_nauka_um }
+				swap_ideas = {
+					remove_idea = GAL_military_nauka_um
+					add_idea = GAL_military_nauka_final
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = GAL_military_nauka_2
+					add_idea = GAL_military_nauka_ch
+				}
 			}
 		}
-
+	}
+	focus = {
+		id = GAL_zadacha_proryv
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = GAL_tsel_vyzhit
+		}
+		x = 49
+		y = 6
+		completion_reward = {
+			if = {
+				limit = { has_idea = GAL_military_nauka_ch }
+				swap_ideas = {
+					remove_idea = GAL_military_nauka_ch
+					add_idea = GAL_military_nauka_final
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = GAL_military_nauka_2
+					add_idea = GAL_military_nauka_um
+				}
+			}
+		}
 	}
 	focus = {
 		id = GAL_Deb
@@ -1876,26 +1920,6 @@ focus_tree = {
 		}
 		x = 47
 		y = 11
-
-	}
-	focus = {
-		id = GAL_zadacha_proryv
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = GAL_tsel_vyzhit
-		}
-		mutually_exclusive = {
-			focus = GAL_zadacha_oborona
-		}
-		x = 49
-		y = 6
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = GAL_military_nauka_2
-				add_idea = GAL_military_nauka_proryv
-			}
-		}
 
 	}
 	focus = {
@@ -1934,7 +1958,7 @@ focus_tree = {
 	focus = {
 		id = GAL_voenspetsi
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 4.00
 		prerequisite = {
 			focus = GAL_nayka_pobezhdat
 		}

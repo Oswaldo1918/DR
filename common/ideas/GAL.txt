@@ -291,38 +291,58 @@ ideas = {
 			GAL_military_nauka = {
 	
 			   modifier = {
-				army_org_factor = 0.1
-				max_command_power = 30
+				max_planning = 0.1
+				coordination_bonus = 0.1
 			   }
 		    }
 			GAL_military_nauka_2 = {
 	
 			   modifier = {
+				max_planning = 0.1
+				coordination_bonus = 0.1
 				army_org_factor = 0.1
-				max_command_power = 30
-				army_morale_factor = 0.1
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
 			   }
 		    }
-			GAL_military_nauka_oborona = {
+			GAL_military_nauka_um = {
 	
 			   modifier = {
+				max_planning = 0.1
+				coordination_bonus = 0.1
 				army_org_factor = 0.1
-				max_command_power = 30
-				army_morale_factor = 0.1
 				army_defence_factor = 0.1
-				max_dig_in = 10
+				army_attack_factor = 0.1
+				training_time_army_factor = 0.1
 			   }
 		    }
-			GAL_military_nauka_proryv = {
+			GAL_military_nauka_ch = {
 	
 			   modifier = {
+				max_planning = 0.1
+				coordination_bonus = 0.1
 				army_org_factor = 0.1
-				max_command_power = 30
-				army_morale_factor = 0.1
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				conscription_factor = -0.1
 				breakthrough_factor = 0.1
-				army_attack_factor = 0.1
+				army_morale_factor = 0.15
 			   }
 		    }
+			GAL_military_nauka_final = {
+			
+			   modifier = {
+				max_planning = 0.1
+				coordination_bonus = 0.1
+				army_org_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				training_time_army_factor = 0.1	
+				conscription_factor = -0.1
+				breakthrough_factor = 0.1
+				army_morale_factor = 0.15		
+			   }
+			}
 			GAL_students_in_army = {
 	
 			   modifier = {
@@ -378,7 +398,8 @@ ideas = {
 			}
 			GAL_ey_uhnem = {
 				modifier = {
-				 consumer_goods_factor = -0.05
+				 consumer_goods_factor = -0.15
+				 political_power_gain = -0.2
 				}
 			}
 	   }
