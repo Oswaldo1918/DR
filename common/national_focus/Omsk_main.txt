@@ -1,0 +1,384 @@
+focus_tree = {
+	id = Omsk_main
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMS
+		}
+	}
+	default = no
+	focus = {
+		id = OMS_red_platform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = OMS_vostanovlen_churches
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_red_platform
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = OMS_sila_knig
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_vostanovlen_churches
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = OMS_kniga_pamyati
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = OMS_kniga_yarosti
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = OMS_kniga_sily
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = OMS_divinity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_sily
+		}
+		mutually_exclusive = {
+			focus = OMS_voin_gospoden
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = OMS_knife_boy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_yarosti
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = OMS_sila_nostalgy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_pamyati
+		}
+		x = 0
+		y = 4
+
+	}
+	focus = {
+		id = OMS_kniga_radosti
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = OMS_voin_gospoden
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_radosti
+		}
+		mutually_exclusive = {
+			focus = OMS_divinity
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = OMS_kniga_terpeniya
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = OMS_SSSR
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_terpeniya
+		}
+		mutually_exclusive = {
+			focus = OMS_Rus_Fed
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = OMS_kniga_vlasti
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_knig
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = OMS_Rus_Fed
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_kniga_vlasti
+		}
+		mutually_exclusive = {
+			focus = OMS_SSSR
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = OMS_kniga_smysla
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_divinity
+			focus = OMS_voin_gospoden
+			focus = OMS_SSSR
+			focus = OMS_Rus_Fed
+		}
+		prerequisite = {
+			focus = OMS_knife_boy
+		}
+		prerequisite = {
+			focus = OMS_sila_nostalgy
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = OMS_sila_music
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_vostanovlen_churches
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = OMS_grob_records
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_music
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = OMS_orskay
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_grob_records
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = OMS_perepet_sovshdvr
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_grob_records
+		}
+		mutually_exclusive = {
+			focus = OMS_upor_na_original
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = OMS_upor_na_original
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_grob_records
+		}
+		mutually_exclusive = {
+			focus = OMS_perepet_sovshdvr
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = OMS_soviet_oficial
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_perepet_sovshdvr
+			focus = OMS_upor_na_original
+		}
+		mutually_exclusive = {
+			focus = OMS_gospank
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = OMS_experiment_zvuk
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_grob_records
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = OMS_industrial
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_sila_music
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = OMS_elektrogitara_ural
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_industrial
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = OMS_japan_treaty
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_industrial
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = OMS_heavy_music_heavy_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_elektrogitara_ural
+		}
+		prerequisite = {
+			focus = OMS_japan_treaty
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = OMS_gospank
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_perepet_sovshdvr
+			focus = OMS_upor_na_original
+		}
+		mutually_exclusive = {
+			focus = OMS_soviet_oficial
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = OMS_alchemy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_gospank
+			focus = OMS_soviet_oficial
+		}
+		mutually_exclusive = {
+			focus = OMS_old_songs
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = OMS_old_songs
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = OMS_gospank
+			focus = OMS_soviet_oficial
+		}
+		mutually_exclusive = {
+			focus = OMS_alchemy
+		}
+		x = 16
+		y = 6
+
+	}
+}

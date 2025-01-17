@@ -1425,4 +1425,16 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	lain = {
+		random = no
+		stability_factor = 0.15
+		civilian_intel_factor = 0.5
+		navy_intel_factor = 0.5
+		army_intel_factor = 0.5
+		airforce_intel_factor = 0.5
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
 }

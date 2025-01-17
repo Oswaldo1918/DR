@@ -2046,7 +2046,22 @@ focus_tree = {
 		}
 		x = 54
 		y = 9
-
+		completion_reward = {
+			add_country_leader_role = { 
+				character = GAL_pusnoy
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_PUSNOY_DESC"     
+					ideology = kybernetika_vernadsry
+					expire = "1965.1.1.1"
+				}
+			}
+			add_popularity = {
+				ideology = metacommy
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = metacommy elections_allowed = no }
+		}
 	}
 	focus = {
 		id = GAL_otkaz_ot_radikalisma
@@ -2061,7 +2076,12 @@ focus_tree = {
 		}
 		x = 56
 		y = 9
-
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = GAL_pisma_Saveleva
@@ -2077,11 +2097,24 @@ focus_tree = {
 		x = 58
 		y = 9
 		completion_reward = {
+			add_country_leader_role = { 
+				character = GAL_pusnoy
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_PUSNOY_DESC"     
+					ideology = cybernetics
+					expire = "1965.1.1.1"
+				}
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = fascism elections_allowed = no }
 			hidden_effect = {
-			 country_event = { id = GAL.7 days = 10 }
+				country_event = { id = GAL.7 days = 10 }
 			}
 		}
-
 	}
 	focus = {
 		id = GAL_videnie_Pushnogo
@@ -2105,7 +2138,14 @@ focus_tree = {
 		}
 		x = 52
 		y = 12
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+			custom_effect_tooltip = GAL_wire_decisions_tt
+		}
 	}
 	focus = {
 		id = GAL_krasniy_svet
@@ -2223,25 +2263,6 @@ focus_tree = {
 		}
 		x = 60
 		y = 14
-
-	}
-	focus = {
-		id = GAL_bombers
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_ot_vinta
-		}
-		x = 28
-		y = 11
-			completion_reward = {
-					air_experience = 25
-					add_tech_bonus = {
-							bonus = 1
-							uses = 2
-							category = heavy_air
-						}
-				}
 
 	}
 	focus = {

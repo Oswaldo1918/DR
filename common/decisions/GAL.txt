@@ -131,6 +131,51 @@ GAL_sssr = {
 		remove_effect = {
 			hidden_effect = {
 				set_cosmetic_tag = GAL_SibRevSovDep
+				MRD = {
+				remove_state_core = 516
+				remove_state_core = 878
+			}
+			
+			every_state = {
+			limit = {
+				is_cored_by = MGN
+			}
+			MGN = {
+				remove_state_core = PREV
+			}
+			} 
+		  every_state = {
+			limit = {
+				is_cored_by = YSK
+			}
+			YSK = {
+				remove_state_core = PREV
+			}
+			}
+		  every_state = {
+			limit = {
+				is_cored_by = GAL
+			}
+			POK = {
+				remove_state_core = PREV
+			}
+			} 
+		  every_state = {
+			limit = {
+				is_cored_by = OMS
+			}
+			OMS = {
+				remove_state_core = PREV
+			}
+			} 
+		  every_state = {
+			limit = {
+				is_cored_by = ZNS
+			}
+			ZNS = {
+				remove_state_core = PREV
+			}
+			}
 			}
 			remove_ideas = POK_idea_GV
 			if = {
