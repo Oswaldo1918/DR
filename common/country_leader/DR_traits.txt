@@ -1427,11 +1427,10 @@ leader_traits = {
 	}
 	lain = {
 		random = no
-		stability_factor = 0.15
-		civilian_intel_factor = 0.5
-		navy_intel_factor = 0.5
-		army_intel_factor = 0.5
-		airforce_intel_factor = 0.5
+		civilian_intel_factor = 1
+		navy_intel_factor = 1
+		army_intel_factor = 1
+		airforce_intel_factor = 1
 
 		ai_will_do = {
 			factor = 2

@@ -31,8 +31,6 @@ country_event = {
         }
 	}
 }
-
-#Конец гражданки
 country_event = {
 	id = GAL.2
 	title = GAL.2.t
@@ -100,7 +98,7 @@ country_event = {
 		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
 		focus_progress = {
 			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.1
+			progress > 0.3
 		}
 	}
 	
@@ -125,7 +123,7 @@ country_event = {
 		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
 		focus_progress = {
 			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.4
+			progress > 0.5
 		}
 	}
 	
@@ -150,7 +148,7 @@ country_event = {
 		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
 		focus_progress = {
 			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.8
+			progress > 0.7
 		}
 	}
 	
@@ -218,8 +216,9 @@ country_event = {
 	name = GAL.9.a	
 		set_portraits = {
 			character = GAL_pusnoy
-			civilian = { large = "gfx/leaders/GAL/Pushnoy_GALILEO.dds" }
+			civilian = { large = GFX_GAL_Pushnoy_GALILEO_ap }
 		}
+		add_country_leader_trait = popular_figurehead
 		add_country_leader_trait = lain
 	}
 }

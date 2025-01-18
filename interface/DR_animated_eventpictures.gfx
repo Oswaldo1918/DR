@@ -76,4 +76,15 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	frameAnimatedSpriteType = {
+		name = "GFX_GAL_Pushnoy_GALILEO_ap"
+		texturefile = "gfx/animated_textures/GAL_Pushnoy_GALILEO.dds"
+		noOfFrames = 14
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 }
