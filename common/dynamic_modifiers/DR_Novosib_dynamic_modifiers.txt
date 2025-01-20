@@ -1,7 +1,12 @@
 GAL_wired_state = {
+	enable = { is_controlled_by = GAL }
+	remove_trigger = {
+		NOT = { is_owned_by = GAL }
+	}
 	icon = GFX_idea_GAL_wired_state
-	recruitable_population_factor = 0.05
-	local_building_slots_factor = 0.05
-	state_resources_factor = 0.10
-	state_production_speed_buildings_factor = 0.05
+	local_supplies_for_controller = 0.15
+	recon_factor = 0.3
+	monthly_population = GAL_monthly_population
+	production_speed_buildings_factor = GAL_production_speed_buildings_factor
+	local_building_slots = GAL_local_building_slots
 }

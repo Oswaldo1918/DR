@@ -9,22 +9,20 @@ political_actions= {
 		available = {
 			FROM = {
 				NOT = {
-					has_dynamic_modifier = {
-						modifier = GAL_wired_state
-					}
-					has_state_flag = GAL_create_wire
+					has_dynamic_modifier = { modifier = GAL_wired_state }
 				}
 			}
 		}
 		visible = {
-			has_completed_focus = GAL_issledovanie_noosfery
+			AND = {
+				has_completed_focus = GAL_issledovanie_noosfery
+				has_completed_focus = GAL_krasniy_svet 
+				NOT = { has_completed_focus = GAL_i_povolok_brevno }
+			}
 			tag = GAL
 			FROM = {
 				NOT = {
-					has_dynamic_modifier = {
-						modifier = GAL_wired_state
-					}
-					has_state_flag = GAL_create_wire
+					has_dynamic_modifier = { modifier = GAL_wired_state }
 				}
 				is_controlled_by = GAL 
 			}
@@ -34,9 +32,7 @@ political_actions= {
 			FROM = {
 				is_core_of= ROOT
 				NOT = {
-					has_dynamic_modifier = {
-						modifier = GAL_wired_state
-					}
+					has_dynamic_modifier = { modifier = GAL_wired_state }
 				}
 			}
 		}
@@ -48,7 +44,7 @@ political_actions= {
 			base = 100
 		}
 
-		cost = 10
+		cost = 15
 		days_remove = 20
 
 		remove_effect = {
@@ -56,7 +52,180 @@ political_actions= {
 				add_dynamic_modifier = {
 					modifier = GAL_wired_state
 				}
-				set_state_flag = GAL_create_wire
+				add_to_variable = { var = GAL_monthly_population value = 0.3 }
+			}
+		}
+	}
+	GAL_wire_state_2 = {
+		icon = generic_electricity
+
+		allowed = {
+			original_tag = GAL
+		}
+
+		available = {
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		visible = {
+			AND = {
+				has_completed_focus = GAL_issledovanie_noosfery
+				NOT = { has_completed_focus = GAL_krasniy_svet }
+			}
+			tag = GAL
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+				is_controlled_by = GAL 
+			}
+		}
+		target_trigger = {
+			has_completed_focus = GAL_issledovanie_noosfery
+			FROM = {
+				is_core_of= ROOT
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		on_map_mode = map_only
+		state_target = yes
+		target_array = controlled_states
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 15
+		days_remove = 20
+		
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = GAL_wired_state
+				}
+			}
+		}
+	}
+	GAL_wire_state_3 = {
+		icon = generic_electricity
+
+		allowed = {
+			original_tag = GAL
+		}
+
+		available = {
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		visible = {
+			AND = {
+				has_completed_focus = GAL_issledovanie_noosfery
+				has_completed_focus = GAL_krasniy_svet 
+				has_completed_focus = GAL_i_povolok_brevno
+				NOT = { has_completed_focus = GAL_vse_idet_po_planu }
+			}
+			tag = GAL
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+				is_controlled_by = GAL 
+			}
+		}
+		target_trigger = {
+			has_completed_focus = GAL_issledovanie_noosfery
+			FROM = {
+				is_core_of= ROOT
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		on_map_mode = map_only
+		state_target = yes
+		target_array = controlled_states
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 15
+		days_remove = 20
+		
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = GAL_wired_state
+				}
+				add_to_variable = { var = GAL_monthly_population value = 0.3 }
+				add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
+			}
+		}
+	}
+	GAL_wire_state_4 = {
+		icon = generic_electricity
+
+		allowed = {
+			original_tag = GAL
+		}
+
+		available = {
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		visible = {
+			AND = {
+				has_completed_focus = GAL_issledovanie_noosfery
+				has_completed_focus = GAL_krasniy_svet 
+				has_completed_focus = GAL_i_povolok_brevno
+				has_completed_focus = GAL_vse_idet_po_planu 
+			}
+			tag = GAL
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+				is_controlled_by = GAL 
+			}
+		}
+		target_trigger = {
+			has_completed_focus = GAL_issledovanie_noosfery
+			FROM = {
+				is_core_of= ROOT
+				NOT = {
+					has_dynamic_modifier = { modifier = GAL_wired_state }
+				}
+			}
+		}
+		on_map_mode = map_only
+		state_target = yes
+		target_array = controlled_states
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 15
+		days_remove = 20
+		
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = GAL_wired_state
+				}
+				add_to_variable = { var = GAL_monthly_population value = 0.3 }
+				add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
 			}
 		}
 	}
@@ -85,7 +254,10 @@ GAL_sssr = {
 
         visible = {
 			original_tag = GAL 
-			has_government = metacommy
+			has_country_leader = {
+				character = GAL_lukin
+				ruling_only = yes
+			}
 		}
 		days_remove = 0
 		ai_will_do = {
@@ -138,7 +310,7 @@ GAL_sssr = {
 			
 			every_state = {
 			limit = {
-				is_cored_by = MGN
+				is_core_of = MGN
 			}
 			MGN = {
 				remove_state_core = PREV
@@ -146,7 +318,7 @@ GAL_sssr = {
 			} 
 		  every_state = {
 			limit = {
-				is_cored_by = YSK
+				is_core_of = YSK
 			}
 			YSK = {
 				remove_state_core = PREV
@@ -154,7 +326,7 @@ GAL_sssr = {
 			}
 		  every_state = {
 			limit = {
-				is_cored_by = GAL
+				is_core_of = GAL
 			}
 			POK = {
 				remove_state_core = PREV
@@ -162,7 +334,7 @@ GAL_sssr = {
 			} 
 		  every_state = {
 			limit = {
-				is_cored_by = OMS
+				is_core_of = OMS
 			}
 			OMS = {
 				remove_state_core = PREV
@@ -170,7 +342,7 @@ GAL_sssr = {
 			} 
 		  every_state = {
 			limit = {
-				is_cored_by = ZNS
+				is_core_of = ZNS
 			}
 			ZNS = {
 				remove_state_core = PREV

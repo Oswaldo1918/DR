@@ -95,18 +95,9 @@ country_event = {
 	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
-		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
-		focus_progress = {
-			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.3
-		}
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
+	is_triggered_only = yes	
 	
 	option = {
 	name = GAL.4.a
@@ -120,18 +111,9 @@ country_event = {
 	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
-		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
-		focus_progress = {
-			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.5
-		}
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
+	is_triggered_only = yes	
 	
 	option = {
 	name = GAL.5.a
@@ -145,18 +127,9 @@ country_event = {
 	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
-		NOT = { has_completed_focus = GAL_zadacha_osvobod_nauki }
-		focus_progress = {
-			focus = GAL_zadacha_osvobod_nauki
-			progress > 0.7
-		}
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
+	is_triggered_only = yes	
 	
 	option = {
 	name = GAL.6.a

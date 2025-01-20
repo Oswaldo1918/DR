@@ -1,5 +1,5 @@
 ideas = {
-       country = {
+    country = {
 	        GAL_barini_hozyaini = {
 	
 			   modifier = {
@@ -391,19 +391,14 @@ ideas = {
 				 war_support_factor = -0.1
 				}
 			}
-			GAL_infrakrasnoe_izluchenie = {
-				modifier = {
-				 monthly_population = 0.3
-				}
-			}
 			GAL_ey_uhnem = {
 				modifier = {
-				 consumer_goods_factor = -0.15
-				 political_power_gain = -0.2
+				 consumer_goods_factor = 0.15
+				 political_power_gain = -0.1
 				}
 			}
-	   }
-	   
+	}
+
 	tank_manufacturer = { 
 	
 		designer = yes

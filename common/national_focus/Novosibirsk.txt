@@ -1326,6 +1326,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_koalicionnoye_pravitelstvo
 		}
+		mutually_exclusive = {
+			focus = GAL_cowboyi
+		}
 		x = 45
 		y = 1
 		completion_reward = {
@@ -1545,6 +1548,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_nado_radovatsya
 		}
+		available = {
+			has_completed_focus = GAL_videnie_Pushnogo
+		}
 		mutually_exclusive = {
 			focus = GAL_ne_nado_napragat
 		}
@@ -1564,6 +1570,9 @@ focus_tree = {
 		cost = 4.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
+		}
+		available = {
+			has_completed_focus = GAL_videnie_Pushnogo
 		}
 		mutually_exclusive = {
 			focus = GAL_ey_uhnem
@@ -1741,6 +1750,9 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
+		}
+		available = {
+			has_completed_focus = GAL_videnie_Pushnogo
 		}
 		x = 45
 		y = 8
@@ -2026,11 +2038,19 @@ focus_tree = {
 		}
 		x = 56
 		y = 8
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = GAL.4 days = 15 } 
+				country_event = { id = GAL.5 days = 27 } 
+				country_event = { id = GAL.6 days = 36 } 
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = GAL_tecnocratia
 				add_idea = GAL_tecnocratia_2
 			}
+			
 		}	
 	}
 	focus = {
@@ -2136,6 +2156,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_videnie_Pushnogo
 		}
+		available = {
+			has_government = metacommy
+		}
 		x = 52
 		y = 12
 		completion_reward = {
@@ -2156,7 +2179,18 @@ focus_tree = {
 		}
 		x = 51
 		y = 13
-
+		completion_reward = {
+			custom_effect_tooltip = GAL_monthly_population_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+						has_dynamic_modifier = { modifier = GAL_wired_state }
+					}
+					add_to_variable = { GAL_monthly_population = 0.3 }
+				}
+			}
+		}
 	}
 	focus = {
 		id = GAL_i_povolok_brevno
@@ -2165,9 +2199,23 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_issledovanie_noosfery
 		}
+		available = {
+			has_completed_focus = GAL_krasniy_svet
+		}
 		x = 53
 		y = 13
-
+		completion_reward = {
+			custom_effect_tooltip = GAL_production_speed_buildings_factor_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+						has_dynamic_modifier = { modifier = GAL_wired_state }
+					}
+					add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
+				}
+			}
+		}
 	}
 	focus = {
 		id = GAL_popytka_pochinit_mir
@@ -2189,6 +2237,9 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_videnie_Pushnogo
+		}
+		available = {
+			has_government = neutrality
 		}
 		x = 56
 		y = 12
@@ -2227,6 +2278,9 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_videnie_Pushnogo
+		}
+		available = {
+			has_government = fascism
 		}
 		x = 60
 		y = 12
@@ -2480,8 +2534,23 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_issledovanie_noosfery
 		}
+		available = {
+			has_completed_focus = GAL_i_povolok_brevno
+		}
 		x = 52
 		y = 14
+		completion_reward = {
+			custom_effect_tooltip = GAL_local_building_slots_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+						has_dynamic_modifier = { modifier = GAL_wired_state }
+					}
+					add_to_variable = { var = GAL_local_building_slots value = 1 }
+				}
+			}
+		}
 
 	}
 	focus = {
