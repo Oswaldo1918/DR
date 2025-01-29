@@ -55,7 +55,7 @@ characters={
     }
 	
 	YSK_Dmitriy_Rogozin = {
-		name = "Дмитрий Рогозин"
+		name = YSK_Dmitriy_Rogozin 
 		portraits = {
             civilian= {
 				large = "gfx/leaders/YSK/Dmitriy_Rogozin.dds"
@@ -64,6 +64,12 @@ characters={
 			army = {
 				large = "gfx/leaders/YSK/Dmitriy_Rogozin_army.dds"
 				small= "GFX_idea_YSK_RNG"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist }
+			skills = {
+				specialization_air = 1
 			}
 		}
     }

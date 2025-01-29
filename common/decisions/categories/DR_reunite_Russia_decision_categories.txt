@@ -2,7 +2,7 @@
   ### REUNITE_RUSSIA/USSR ###
 ###############################
 DR_form_russian_state_decisions_category = {
-	icon = military_operation
+	icon = GFX_decision_generic_form_nation
 	visible = {
 		OR = {
 			AND = {
@@ -10,7 +10,7 @@ DR_form_russian_state_decisions_category = {
 				is_subject = no
 				has_country_flag = DR_start_reunite_Russia_cf
 				NOT = { tag = MGN}
-				NOT = { tag = GAL}
+				NOT = { has_country_leader = { character = GAL_lukin ruling_only = yes } }
 			}
 			is_debug = yes
 		}
@@ -26,11 +26,11 @@ DR_reunite_russia_decisions_category = {
 		has_country_flag = DR_start_reunite_Russia_cf	
 		NOT = { tag = NOD}
 		NOT = { tag = MGN}
-		NOT = { tag = GAL}
+		NOT = { has_country_leader = { character = GAL_lukin ruling_only = yes } }
 	}
 }
 DR_core_russian_territories_decisions_category = {
-	icon = military_operation
+	icon = GFX_decision_generic_nationalism
 	allowed = {
 	}
 	visible = {

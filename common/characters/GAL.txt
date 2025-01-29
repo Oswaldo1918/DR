@@ -95,7 +95,7 @@ characters={
 	}
 	
 	GAL_sndk = {
-		name = "Дмитрий Сыендук"
+		name = GAL_sndk
 
 		portraits = {
 			army = {
@@ -104,6 +104,12 @@ characters={
 			}
 			civilian = {
 				small = "GFX_idea_GAL_sndk"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 1
 			}
 		}
 		advisor = {
@@ -121,7 +127,7 @@ characters={
 	}
 	
 	GAL_Boyarshinov = {
-		name = "Борис Боярышников"
+		name = GAL_Boyarshinov_name 
 
 		portraits = {
 			army = {
@@ -141,7 +147,7 @@ characters={
 	}
 	
 	GAL_Deb = {
-		name = "Андрей «Дэб» Гайдулян"
+		name = GAL_Deb_name
 
 		portraits = {
 			army = {
@@ -151,7 +157,13 @@ characters={
 			civilian = {
 				small = "GFX_idea_GAL_Deb"
 			}
-		}	
+		}
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 1
+			}
+		}		
 		advisor = {
 			slot = high_command
 			idea_token = GAL_Deb
@@ -182,7 +194,7 @@ characters={
 	}
 	
 	GAL_Savvateev = {
-		name = "Алексей Савватеев"
+		name = GAL_Savvateev_name
 
 		portraits = {
 			army = {
@@ -231,7 +243,7 @@ characters={
 	}
 	
 	GAL_Toples = {
-		name = "Ян Топлес"
+		name = GAL_Toples_name 
 
 		portraits = {
 			army = {
@@ -257,7 +269,7 @@ characters={
 	}
 	
 	GAL_Panchin = {
-		name = "Александр Панчин"
+		name = GAL_Panchin_name 
 
 		portraits = {
 			army = {

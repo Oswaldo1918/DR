@@ -148,3 +148,11 @@ DR_is_Russian_scope = { #Страны_в_пределах_бывшей_РФ_в_�
 		tag = TUB
 	}
 }
+GAL_scientist_cd_over = {
+	NOT = {
+		has_country_flag = {
+			flag = GAL_inner_circle_cd_flag
+			days < 100
+		}
+	}
+}

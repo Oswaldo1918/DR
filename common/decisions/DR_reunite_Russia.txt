@@ -1,7 +1,6 @@
 DR_form_russian_state_decisions_category = {
 	LAZ_reunification = { #Формирование_Советского_Союза_Лазарет
-        icon = decision_eng_install_government	
-		cost = 25
+        icon = GFX_decision_generic_form_nation	
 
 		visible = {
 			OR = {
@@ -43,8 +42,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
     SKT_form_USSR = { #Формирование_Советского_Союза_Коми
-        icon = decision_eng_install_government	
-		cost = 25
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -86,8 +84,7 @@ DR_form_russian_state_decisions_category = {
 	
     BSH_form_Sever_empire = { #Формирование_Гипербореи_Бэбэй
 	
-        icon = decision_eng_install_government	
-		cost = 25
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -133,8 +130,7 @@ DR_form_russian_state_decisions_category = {
 	
 	BSH_form_Bashkir_hanstvo = { #Формирование_Башкирского_Ханства_Бэбэй
 	
-        icon = decision_eng_install_government	
-		cost = 25
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -177,8 +173,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
     BSH_form_Ural_Israel = { #Формирование_Уральского_Израиля_Бэбэй
-		icon = decision_eng_install_government
-		cost = 25
+		icon = GFX_decision_generic_form_nation
 		
 		visible = {
 			OR = {
@@ -220,8 +215,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	NOD_reunification_1 = { #Стариков_объединяет_Россию
-        icon = decision_eng_install_government		
-		cost = 25
+        icon = GFX_decision_generic_form_nation		
 		
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia
@@ -270,8 +264,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	NOD_reunification_2 = { #Путин_объединяет_Россию
-        icon = decision_eng_install_government		
-		cost = 25
+        icon = GFX_decision_generic_form_nation		
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia		
 			controls_state = 195
@@ -313,8 +306,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	NOD_reunification_3 = {	#Барков_объединяет_Россию
-        icon = decision_eng_install_government		
-		cost = 25
+        icon = GFX_decision_generic_form_nation		
 		available = {
 			has_completed_focus = NOD_vostanovit_suverenitet_Russia	
 			controls_state = 195
@@ -351,8 +343,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	DOT_Russia = { #Дальневосточная_Хунта_объединяет_Россию
-        icon = decision_eng_install_government	
-		cost = 30
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -388,7 +379,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	ZNS_Sovet_Union = { #Формирование_Советского_Союза_Рудой
-        icon = decision_eng_install_government
+        icon = GFX_decision_generic_form_nation
 		
 		visible = {
 			OR = {
@@ -429,7 +420,7 @@ DR_form_russian_state_decisions_category = {
     }
 	
 	MGN_soyuz_sionskih_socialnih_razrushiteley_baza = { #Формирование_Советского_Союза_Андеграунд
-		icon = decision_eng_install_government
+		icon = GFX_decision_generic_form_nation
 
 		ai_will_do = {
 			factor = 100
@@ -471,7 +462,7 @@ DR_form_russian_state_decisions_category = {
 		}
     }
 	MRD_reunification_RUS = { #Объединение_России_за_Мордор
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -512,7 +503,7 @@ DR_form_russian_state_decisions_category = {
 		}
 	}
 	MRD_reunification_SOV = { #Провозглашение_СССР_за_Мордор
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -555,7 +546,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	POK_slovolzhitsin_decision = { #Провозглашение_России_за_Словолжицына
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -592,7 +583,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	POK_eltsin_decision = { #Провозглашение_России_за_Ельцина
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -629,7 +620,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	POK_putin_decision = { #Провозглашение_России_за_Путина
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -666,7 +657,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	POK_parlament_decision = { #Провозглашение_России_за_Шульман
-        icon = decision_eng_install_government
+        icon = GFX_decision_generic_form_nation
 		
 		visible = {
 			OR = {
@@ -707,7 +698,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_yuneman_decision = { #Провозглашение_России_за_Юнемана
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -744,7 +735,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_wright_decision = { #Провозглашение_России_за_Райта
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -781,7 +772,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_pogrom_decision = { #Провозглашение_России_за_Погрома
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -818,7 +809,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_romanovi_decision = { #Провозглашение_России_за_Романовых
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -855,7 +846,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_goga_decision = { #Провозглашение_России_за_Романовых
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -892,7 +883,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_rogozin_decision = { #Провозглашение_России_за_Рогозина
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -929,7 +920,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_tesak_decision = { #Провозглашение_России_за_Тесака
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -966,7 +957,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_rne_decision = { #Провозглашение_России_за_РНЕ
-        icon = decision_eng_install_government	
+        icon = GFX_decision_generic_form_nation	
 		
 		visible = {
 			OR = {
@@ -1006,7 +997,7 @@ DR_form_russian_state_decisions_category = {
 	}
 	
 	YSK_npf_decision = { #Провозглашение_России_за_РНЕ
-        icon = decision_eng_install_government
+        icon = GFX_decision_generic_form_nation
 		visible = {
 			OR = {
 				AND = {
@@ -3070,7 +3061,7 @@ DR_reunite_russia_decisions_category = {
 DR_core_russian_territories_decisions_category = {
 
 	DR_REU_RUS_CORE_EBN = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3099,7 +3090,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MHL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3128,7 +3119,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_ARK = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3163,7 +3154,7 @@ DR_core_russian_territories_decisions_category = {
 	}	
 	
 	DR_REU_RUS_CORE_TUP = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3203,7 +3194,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_LAZ = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3249,7 +3240,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MAT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3282,7 +3273,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_UNT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3313,7 +3304,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_CHT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3356,7 +3347,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_NOD = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3424,7 +3415,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_KRR = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3455,7 +3446,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_STR = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3482,7 +3473,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_HAZ = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 
 		visible = {
@@ -3511,7 +3502,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_SKT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3542,7 +3533,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_PRM = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 
 		visible = {
@@ -3569,7 +3560,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_BSH = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3598,7 +3589,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 
 	DR_REU_RUS_CORE_POK = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3638,7 +3629,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MGN = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3675,7 +3666,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_OMS = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3714,7 +3705,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_GAL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3751,7 +3742,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_YSK	 = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3790,7 +3781,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_ZNS = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3829,7 +3820,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MRD = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3874,7 +3865,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_BRT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3915,7 +3906,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_YWO = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3954,7 +3945,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_YAK = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -3993,7 +3984,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_TUB = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4034,7 +4025,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MAG = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4071,7 +4062,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 
 	DR_REU_RUS_CORE_KOL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4108,7 +4099,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_DOT = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4147,7 +4138,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_LIM = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4180,7 +4171,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_KAZ = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4221,7 +4212,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_KYR = {
-		
+		icon = GFX_decision_generic_nationalism
 		visible = {
 			NOT = {
 				tag = KYR
@@ -4248,7 +4239,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_TAJ = {
-		
+		icon = GFX_decision_generic_nationalism
 		visible = {
 			NOT = {
 				tag = TAJ
@@ -4285,7 +4276,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_TMS = {
-	
+		icon = GFX_decision_generic_nationalism
 		visible = {
 			NOT = {
 				tag = TAJ
@@ -4314,7 +4305,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_CHK = {
-	
+		icon = GFX_decision_generic_nationalism
 		visible = {
 			NOT = {
 				tag = CHK
@@ -4343,7 +4334,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_AZR = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 
 		visible = {
@@ -4370,7 +4361,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_ARM = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 		
 		visible = {
@@ -4397,7 +4388,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_GEO = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4432,7 +4423,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_DON = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 25
 		
 		visible = {
@@ -4461,7 +4452,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 
 	DR_REU_RUS_CORE_UKR = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 25
 		
 		visible = {
@@ -4492,7 +4483,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_CRI = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 		
 		visible = {
@@ -4519,7 +4510,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_CHE = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4552,7 +4543,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_MOL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 25
 		
 		visible = {
@@ -4584,7 +4575,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_KUR = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4626,7 +4617,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_ZHE = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 25
 		
 		visible = {
@@ -4663,7 +4654,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_SIN = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 		
 		visible = {
@@ -4693,7 +4684,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_WHS = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4728,7 +4719,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_ZWN = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4759,7 +4750,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_SPL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4803,7 +4794,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_VSB = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 35
 		
 		visible = {
@@ -4847,7 +4838,7 @@ DR_core_russian_territories_decisions_category = {
 	}
 	
 	DR_REU_RUS_CORE_KAL = {
-	
+		icon = GFX_decision_generic_nationalism
 		cost = 15
 		
 		visible = {

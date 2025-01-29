@@ -1,3 +1,6 @@
+# CONSTANT FOR INNER CIRCLE TIMES (This is Focus cost so x7 to get the days) - THE CONSTANTS USED IN THE EVENT FILE need to be these values x7
+@inner_circle_time_tier_1 = 10
+@inner_circle_time_tier_2 = 15
 focus_tree = {
 	id = Novosibirsk
 	country = {
@@ -14,12 +17,12 @@ focus_tree = {
 		cost = 1.00
 		x = 30
 		y = 0
-			completion_reward = {
-					add_stability = 0.1
-					hidden_effect = {
-					load_oob = GAL_1936
-					}
-				}
+		completion_reward = {
+			add_stability = 0.1
+			hidden_effect = {
+			load_oob = GAL_1936
+			}
+		}
 
 	}
 	focus = {
@@ -1413,6 +1416,34 @@ focus_tree = {
 				legacy_id = -1
 			}
 			add_ideas = { GAL_cowboyi_protivodeystvie }
+				division_template = {
+					name = "Университетская дивизия"
+					division_names_group = POK_JBT_01
+
+		            regiments = {
+                    infantry = { x = 0 y = 0 }
+		            infantry = { x = 0 y = 1 }
+		            infantry = { x = 0 y = 2 }
+		            infantry = { x = 1 y = 0 }
+		            infantry = { x = 1 y = 1 }
+		            infantry = { x = 1 y = 2 }
+		            artillery_brigade = { x = 2 y = 0 }
+		            artillery_brigade = { x = 2 y = 1 }
+	                }
+					support = {
+					recon = { x = 0 y = 0 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = { 
+						division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"Университетская дивизия\" division_template = \"Университетская дивизия\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT
+					}
+				}
+			
 		}
 	}
 	focus = {
@@ -1438,8 +1469,7 @@ focus_tree = {
 		x = 45
 		y = 3
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1453,6 +1483,21 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_political_power = 50
+			POK = {
+				add_war_support = -0.05
+			}
+			MGN = {
+				add_war_support = -0.05
+			}
+			YSK = {
+				add_war_support = -0.05
+			}
+			OMS = {
+				add_war_support = -0.05
+			}
+			ZNS = {
+				add_war_support = -0.05
+			}
 		}
 	}
 	focus = {
@@ -1513,7 +1558,7 @@ focus_tree = {
 			add_timed_idea = {
 				idea = GAL_protiv_liberalisma
 					days = 100
-				}
+			}
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.1
@@ -1759,61 +1804,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_Syenduk
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 39
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Boyarshinov
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 41
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Toples
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 45
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Toples_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Toples
-		}
-		x = 45
-		y = 10
-
-	}
-	focus = {
-		id = GAL_Toples_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Toples_2
-		}
-		x = 45
-		y = 11
-
-	}
-	focus = {
 		id = GAL_nayka_pobezhdat
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -1910,72 +1900,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GAL_Deb
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 47
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Deb_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Deb
-		}
-		x = 47
-		y = 10
-
-	}
-	focus = {
-		id = GAL_Deb_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Deb_2
-		}
-		x = 47
-		y = 11
-
-	}
-	focus = {
-		id = GAL_Savvateev
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 49
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Savvateev_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Savvateev
-		}
-		x = 49
-		y = 10
-
-	}
-	focus = {
-		id = GAL_Savvateev_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Savvateev_2
-		}
-		x = 49
-		y = 11
-
-	}
-	focus = {
 		id = GAL_voenspetsi
 		icon = GFX_goal_unknown
 		cost = 4.00
@@ -1994,39 +1918,6 @@ focus_tree = {
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = GAL_military_council
 		}
-
-	}
-	focus = {
-		id = GAL_Panchin
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 51
-		y = 9
-
-	}
-	focus = {
-		id = GAL_Panchin_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Panchin
-		}
-		x = 51
-		y = 10
-
-	}
-	focus = {
-		id = GAL_Panchin_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_Panchin_2
-		}
-		x = 51
-		y = 11
 
 	}
 	focus = {
@@ -2080,7 +1971,7 @@ focus_tree = {
 				ideology = metacommy
 				popularity = 0.1
 			}
-			set_politics = { ruling_party = metacommy elections_allowed = no }
+			set_politics = { ruling_party = metacommy }
 		}
 	}
 	focus = {
@@ -2130,7 +2021,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.1
 			}
-			set_politics = { ruling_party = fascism elections_allowed = no }
+			set_politics = { ruling_party = fascism }
 			hidden_effect = {
 				country_event = { id = GAL.7 days = 10 }
 			}
@@ -2147,6 +2038,9 @@ focus_tree = {
 		}
 		x = 56
 		y = 10
+		completion_reward = {
+			add_country_leader_trait = verch_tehnokrat
+		}
 
 	}
 	focus = {
@@ -2218,20 +2112,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GAL_popytka_pochinit_mir
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		mutually_exclusive = {
-			focus = GAL_ne_trogat_to_chto_rabotaet
-		}
-		x = 55
-		y = 11
-
-	}
-	focus = {
 		id = GAL_rok_kotserty
 		icon = GFX_goal_unknown
 		cost = 2.00
@@ -2246,20 +2126,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = GAL.8 }
 		}
-	}
-	focus = {
-		id = GAL_ne_trogat_to_chto_rabotaet
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = GAL_videnie_Pushnogo
-		}
-		mutually_exclusive = {
-			focus = GAL_popytka_pochinit_mir
-		}
-		x = 57
-		y = 11
-
 	}
 	focus = {
 		id = GAL_nauka_i_iskusstvo
@@ -2495,17 +2361,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_Rogozin
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GAL_experimenty
-		}
-		x = 43
-		y = 9
-
-	}
-	focus = {
 		id = GAL_ierarhiya_tehnokratii
 		icon = GFX_goal_unknown
 		cost = 2.00
@@ -2554,69 +2409,805 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GAL_Syenduk
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 39
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_sndk
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.01 }
+			}
+		}
+	}
+	focus = {
 		id = GAL_Syenduk_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_1
 		prerequisite = {
 			focus = GAL_Syenduk
 		}
 		x = 39
 		y = 10
-
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Syenduk_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_sndk
+						FLAG_DAYS = [?GAL_Syenduk_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_sndk
+						FOCUS = GAL_Syenduk
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
+	
 	focus = {
 		id = GAL_Syenduk_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_2
 		prerequisite = {
 			focus = GAL_Syenduk_2
 		}
 		x = 39
 		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Syenduk_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_sndk
+						FLAG_DAYS = [?GAL_Syenduk_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_sndk
+						FOCUS = GAL_Syenduk_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = GAL_Boyarshinov
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 41
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_Boyarshinov_name
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.03 }
+			}
+		}
 
 	}
 	focus = {
 		id = GAL_Boyarshinov_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_1
 		prerequisite = {
 			focus = GAL_Boyarshinov
 		}
 		x = 41
 		y = 10
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Boyarshinov_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Boyarshinov
+						FLAG_DAYS = [?GAL_Boyarshinov_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Boyarshinov_name
+						FOCUS = GAL_Boyarshinov
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
 
 	}
 	focus = {
 		id = GAL_Boyarshinov_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_2
 		prerequisite = {
 			focus = GAL_Boyarshinov_2
 		}
 		x = 41
 		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Boyarshinov_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Boyarshinov_name
+						FLAG_DAYS = [?GAL_Boyarshinov_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Boyarshinov_name
+						FOCUS = GAL_Boyarshinov_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = GAL_Toples
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 45
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_Toples_name
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.05 }
+			}
+		}
+
+	}
+	focus = {
+		id = GAL_Toples_2
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_1
+		prerequisite = {
+			focus = GAL_Toples
+		}
+		x = 45
+		y = 10
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Toples_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Toples_name
+						FLAG_DAYS = [?GAL_Toples_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Toples_name
+						FOCUS = GAL_Toples
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = GAL_Toples_3
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_2
+		prerequisite = {
+			focus = GAL_Toples_2
+		}
+		x = 45
+		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Toples_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Toples_name
+						FLAG_DAYS = [?GAL_Toples_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Toples_name
+						FOCUS = GAL_Toples_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Rogozin
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 43
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			every_possible_country = {
+				limit = { has_character = YSK_Dmitriy_Rogozin }
+				random_character = {
+					limit = { is_character = YSK_Dmitriy_Rogozin }
+					set_nationality = GAL
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = YSK_Dmitriy_Rogozin
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.07 }
+			}
+		}
 
 	}
 	focus = {
 		id = GAL_Rogozin_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_1
 		prerequisite = {
 			focus = GAL_Rogozin
 		}
 		x = 43
 		y = 10
-
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Rogozin_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = YSK_Dmitriy_Rogozin
+						FLAG_DAYS = [?GAL_Rogozin_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = YSK_Dmitriy_Rogozin
+						FOCUS = GAL_Rogozin
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GAL_Rogozin_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = @inner_circle_time_tier_2
 		prerequisite = {
 			focus = GAL_Rogozin_2
 		}
 		x = 43
 		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Rogozin_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = YSK_Dmitriy_Rogozin
+						FLAG_DAYS = [?GAL_Rogozin_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = YSK_Dmitriy_Rogozin
+						FOCUS = GAL_Rogozin_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Panchin
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 51
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_Panchin_name
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.09 }
+			}
+		}
 
+	}
+	focus = {
+		id = GAL_Panchin_2
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_1
+		prerequisite = {
+			focus = GAL_Panchin
+		}
+		x = 51
+		y = 10
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Panchin_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Panchin_name
+						FLAG_DAYS = [?GAL_Panchin_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Panchin_name
+						FOCUS = GAL_Panchin	
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Panchin_3
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_2
+		prerequisite = {
+			focus = GAL_Panchin_2
+		}
+		x = 51
+		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Panchin_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Panchin_name
+						FLAG_DAYS = [?GAL_Panchin_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Panchin_name
+						FOCUS = GAL_Panchin_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Deb
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 47
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_Deb_name
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.11 }
+			}
+		}
+
+	}
+	focus = {
+		id = GAL_Deb_2
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_1
+		prerequisite = {
+			focus = GAL_Deb
+		}
+		x = 47
+		y = 10
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Deb_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Deb_name
+						FLAG_DAYS = [?GAL_Deb_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Deb_name
+						FOCUS = GAL_Deb
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Deb_3
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_2
+		prerequisite = {
+			focus = GAL_Deb_2
+		}
+		x = 47
+		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Deb_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Deb_name
+						FLAG_DAYS = [?GAL_Deb_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Deb_name
+						FOCUS = GAL_Deb_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Savvateev
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = GAL_experimenty
+		}
+		x = 49
+		y = 9
+		available = {
+			GAL_scientist_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GAL_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GAL_scientist_cd_days_tt
+					NOT = {	has_country_flag = GAL_inner_circle_cd_flag }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GAL_Savvateev_name
+			}
+			GAL_scientist_cd = yes
+			hidden_effect = {
+			country_event = { id = GAL_proekt.13 }
+			}
+		}
+
+	}
+	focus = {
+		id = GAL_Savvateev_2
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_1
+		prerequisite = {
+			focus = GAL_Savvateev
+		}
+		x = 49
+		y = 10
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Savvateev_2_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Savvateev_name
+						FLAG_DAYS = [?GAL_Savvateev_2_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Savvateev_name
+						FOCUS = GAL_Savvateev
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GAL_Savvateev_3
+		icon = GFX_goal_unknown
+		cost = @inner_circle_time_tier_2
+		prerequisite = {
+			focus = GAL_Savvateev_2
+		}
+		x = 49
+		y = 11
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = GAL_Savvateev_3_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_inner_circle_focus_in_progress_tt
+						CHARACTER = GAL_Savvateev_name
+						FLAG_DAYS = [?GAL_Savvateev_3_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
+						CHARACTER = GAL_Savvateev_name
+						FOCUS = GAL_Savvateev_2
+					}
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 }

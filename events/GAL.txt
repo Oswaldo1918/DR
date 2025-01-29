@@ -1,4 +1,5 @@
 add_namespace = GAL
+add_namespace = GAL_proekt
 
 	
 country_event = {
@@ -193,5 +194,477 @@ country_event = {
 		}
 		add_country_leader_trait = popular_figurehead
 		add_country_leader_trait = lain
+	}
+}
+
+ ###ПРОЕКТЫ УЧЕНЫХ###
+ 
+# СЫЕНДУК - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.01
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Syenduk
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Syenduk_2 }
+			}
+			activate_shine_on_focus = GAL_Syenduk_2
+			country_event = { id = GAL_proekt.02 days = 75 }
+			set_country_flag = { flag = GAL_Syenduk_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Syenduk_3 }
+			}
+			activate_shine_on_focus = GAL_Syenduk_3
+			country_event = { id = GAL_proekt.02 days = 100 }
+			set_country_flag = { flag = GAL_Syenduk_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# СЫЕНДУК - Закончил фокус
+country_event = {
+	id = GAL_proekt.02
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Syenduk
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Syenduk_2
+			}
+			complete_national_focus = {
+				focus = GAL_Syenduk_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.01 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Syenduk_3
+			}
+			complete_national_focus = {
+				focus = GAL_Syenduk_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# БОЯРШИНОВ - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.03
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Boyarshinov
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Boyarshinov_2 }
+			}
+			activate_shine_on_focus = GAL_Boyarshinov_2
+			country_event = { id = GAL_proekt.04 days = 70 }
+			set_country_flag = { flag = GAL_Boyarshinov_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Boyarshinov_3 }
+			}
+			activate_shine_on_focus = GAL_Boyarshinov_3
+			country_event = { id = GAL_proekt.04 days = 100 }
+			set_country_flag = { flag = GAL_Boyarshinov_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# БОЯРШИНОВ - Закончил фокус
+country_event = {
+	id = GAL_proekt.04
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Boyarshinov
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Boyarshinov_2
+			}
+			complete_national_focus = {
+				focus = GAL_Boyarshinov_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.03 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Boyarshinov_3
+			}
+			complete_national_focus = {
+				focus = GAL_Boyarshinov_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# ТОПЛЕС - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.05
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Toples
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Toples_2 }
+			}
+			activate_shine_on_focus = GAL_Toples_2
+			country_event = { id = GAL_proekt.06 days = 70 }
+			set_country_flag = { flag = GAL_Toples_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Toples_3 }
+			}
+			activate_shine_on_focus = GAL_Toples_3
+			country_event = { id = GAL_proekt.06 days = 100 }
+			set_country_flag = { flag = GAL_Toples_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# ТОПЛЕС - Закончил фокус
+country_event = {
+	id = GAL_proekt.06
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Toples
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Toples_2
+			}
+			complete_national_focus = {
+				focus = GAL_Boyarshinov_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.05 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Toples_3
+			}
+			complete_national_focus = {
+				focus = GAL_Toples_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# РОГОЗИН - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.07
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Rogozin
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Rogozin_2 }
+			}
+			activate_shine_on_focus = GAL_Rogozin_2
+			country_event = { id = GAL_proekt.08 days = 70 }
+			set_country_flag = { flag = GAL_Rogozin_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Rogozin_3 }
+			}
+			activate_shine_on_focus = GAL_Rogozin_3
+			country_event = { id = GAL_proekt.08 days = 100 }
+			set_country_flag = { flag = GAL_Rogozin_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# РОГОЗИН - Закончил фокус
+country_event = {
+	id = GAL_proekt.08
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Rogozin
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Rogozin_2
+			}
+			complete_national_focus = {
+				focus = GAL_Rogozin_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.07 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Rogozin_3
+			}
+			complete_national_focus = {
+				focus = GAL_Rogozin_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# ПАНЧИН - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.09
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Panchin
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Panchin_2 }
+			}
+			activate_shine_on_focus = GAL_Panchin_2
+			country_event = { id = GAL_proekt.10 days = 70 }
+			set_country_flag = { flag = GAL_Panchin_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Panchin_3 }
+			}
+			activate_shine_on_focus = GAL_Panchin_3
+			country_event = { id = GAL_proekt.10 days = 100 }
+			set_country_flag = { flag = GAL_Panchin_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# ПАНЧИН - Закончил фокус
+country_event = {
+	id = GAL_proekt.10
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Panchin
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Panchin_2
+			}
+			complete_national_focus = {
+				focus = GAL_Panchin_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.09 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Panchin_3
+			}
+			complete_national_focus = {
+				focus = GAL_Panchin_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# ДЭБ - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.11
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Deb
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Deb_2 }
+			}
+			activate_shine_on_focus = GAL_Deb_2
+			country_event = { id = GAL_proekt.12 days = 70 }
+			set_country_flag = { flag = GAL_Deb_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Deb_3 }
+			}
+			activate_shine_on_focus = GAL_Deb_3
+			country_event = { id = GAL_proekt.12 days = 100 }
+			set_country_flag = { flag = GAL_Deb_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# ДЭБ - Закончил фокус
+country_event = {
+	id = GAL_proekt.12
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Deb
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Deb_2
+			}
+			complete_national_focus = {
+				focus = GAL_Deb_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.11 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Deb_3
+			}
+			complete_national_focus = {
+				focus = GAL_Deb_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
+	}
+}
+# САВВАТЕЕВ - Начал работу над фокусом
+country_event = {
+	id = GAL_proekt.13
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Savvateev
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Savvateev_2 }
+			}
+			activate_shine_on_focus = GAL_Savvateev_2
+			country_event = { id = GAL_proekt.14 days = 70 }
+			set_country_flag = { flag = GAL_Savvateev_2_in_progress_flag days = 70 value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_completed_focus = GAL_Savvateev_3 }
+			}
+			activate_shine_on_focus = GAL_Savvateev_3
+			country_event = { id = GAL_proekt.14 days = 100 }
+			set_country_flag = { flag = GAL_Savvateev_3_in_progress_flag days = 100 value = 1 }
+		}
+	}
+}
+# САВВАТЕЕВ - Закончил фокус
+country_event = {
+	id = GAL_proekt.14
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		has_completed_focus = GAL_Savvateev
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Savvateev_2
+			}
+			complete_national_focus = {
+				focus = GAL_Savvateev_2
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+			country_event = { id = GAL_proekt.13 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GAL_Savvateev_3
+			}
+			complete_national_focus = {
+				focus = GAL_Savvateev_3
+				use_side_message = yes
+				originator_name = GAL_sndk
+			}
+		}
 	}
 }

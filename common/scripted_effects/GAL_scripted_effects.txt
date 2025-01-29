@@ -183,3 +183,10 @@ GAL_marakumba_torg_level_down = {
 						}
 			}
 }
+GAL_scientist_cd = {
+	set_country_flag = {
+		flag = GAL_inner_circle_cd_flag
+		days = 100
+		value = 1
+	}
+}
