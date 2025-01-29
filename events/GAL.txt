@@ -85,7 +85,7 @@ country_event = {
 	option = {
 	name = GAL.3.f
 		add_stability = -0.1
-		add_political_power = -100
+		add_political_power = -105
 	}
 }
 #Письмо Вассермана
@@ -196,6 +196,47 @@ country_event = {
 		add_country_leader_trait = lain
 	}
 }
+# Савватеев наводит суету
+country_event = {
+	id = GAL.10
+	title = GAL.10.t
+	desc = GAL.10.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+		has_government = fascism
+		owns_state = 564
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+	name = GAL.10.a
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		add_stability = -0.1
+	}
+}
+# Осознание
+country_event = {
+	id = GAL.11
+	title = GAL.11.t
+	desc = GAL.11.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.11.a
+	}
+}
 
  ###ПРОЕКТЫ УЧЕНЫХ###
  
@@ -225,8 +266,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Syenduk_3 }
 			}
 			activate_shine_on_focus = GAL_Syenduk_3
-			country_event = { id = GAL_proekt.02 days = 100 }
-			set_country_flag = { flag = GAL_Syenduk_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.02 days = 105 }
+			set_country_flag = { flag = GAL_Syenduk_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -292,8 +333,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Boyarshinov_3 }
 			}
 			activate_shine_on_focus = GAL_Boyarshinov_3
-			country_event = { id = GAL_proekt.04 days = 100 }
-			set_country_flag = { flag = GAL_Boyarshinov_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.04 days = 105 }
+			set_country_flag = { flag = GAL_Boyarshinov_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -359,8 +400,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Toples_3 }
 			}
 			activate_shine_on_focus = GAL_Toples_3
-			country_event = { id = GAL_proekt.06 days = 100 }
-			set_country_flag = { flag = GAL_Toples_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.06 days = 105 }
+			set_country_flag = { flag = GAL_Toples_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -426,8 +467,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Rogozin_3 }
 			}
 			activate_shine_on_focus = GAL_Rogozin_3
-			country_event = { id = GAL_proekt.08 days = 100 }
-			set_country_flag = { flag = GAL_Rogozin_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.08 days = 105 }
+			set_country_flag = { flag = GAL_Rogozin_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -493,8 +534,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Panchin_3 }
 			}
 			activate_shine_on_focus = GAL_Panchin_3
-			country_event = { id = GAL_proekt.10 days = 100 }
-			set_country_flag = { flag = GAL_Panchin_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.10 days = 105 }
+			set_country_flag = { flag = GAL_Panchin_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -560,8 +601,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Deb_3 }
 			}
 			activate_shine_on_focus = GAL_Deb_3
-			country_event = { id = GAL_proekt.12 days = 100 }
-			set_country_flag = { flag = GAL_Deb_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.12 days = 105 }
+			set_country_flag = { flag = GAL_Deb_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
@@ -627,8 +668,8 @@ country_event = {
 				NOT = { has_completed_focus = GAL_Savvateev_3 }
 			}
 			activate_shine_on_focus = GAL_Savvateev_3
-			country_event = { id = GAL_proekt.14 days = 100 }
-			set_country_flag = { flag = GAL_Savvateev_3_in_progress_flag days = 100 value = 1 }
+			country_event = { id = GAL_proekt.14 days = 105 }
+			set_country_flag = { flag = GAL_Savvateev_3_in_progress_flag days = 105 value = 1 }
 		}
 	}
 }
