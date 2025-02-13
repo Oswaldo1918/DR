@@ -399,6 +399,61 @@ ideas = {
 				 political_power_gain = -0.1
 				}
 			}
+			GAL_krasniy_rassvet = {
+				modifier = {
+				 consumer_goods_factor = -0.1
+				 local_resources_factor = 0.1
+				 production_speed_industrial_complex_factor = 0.1
+				 production_speed_infrastructure_factor = 0.1
+				}
+			}
+			GAL_svyaz_i_communocation = {
+				modifier = {
+				 production_speed_radar_station_factor = 0.2
+				 coordination_bonus = 0.1
+				 initiative_factor = 0.15
+				}
+			}
+			GAL_sinofobia = {
+				modifier = {
+				 production_speed_bunker_factor = 0.1
+				}
+				targeted_modifier = {
+					tag = CNA
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = PCH
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = ZCH
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = GOM
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = ALI
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = PRC
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+				targeted_modifier = {
+					tag = FAL
+					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
+				}
+			}
 	}
 
 	tank_manufacturer = { 

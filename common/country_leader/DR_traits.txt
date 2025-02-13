@@ -1365,7 +1365,8 @@ leader_traits = {
 	mad_scientist = {
 		sprite = 10
 		random = no	
-		research_speed_factor = 0.15
+		research_speed_factor = 0.1
+		special_project_speed_factor = 0.15
 		stability_factor = -0.05
 		weekly_manpower = -10
 		
@@ -1410,6 +1411,7 @@ leader_traits = {
 		sprite = 10
 		random = no		
 		consumer_goods_factor = -0.1
+		political_power_factor = 0.1
 		
 		ai_will_do = {
 			factor = 2
