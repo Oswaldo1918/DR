@@ -1533,15 +1533,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_manpower = 30000
-			add_corps_commander_role = {
-				character = GAL_Drobyshevskiy
-				traits = { ranger }
-				skill = 3
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				legacy_id = -1
+			every_possible_country = {
+				limit = { has_character = GAL_Drobyshevskiy }
+				random_character = {
+					limit = { is_character = GAL_Drobyshevskiy }
+					set_nationality = GAL
+				}
 			}
 		}
 	}
@@ -2081,7 +2078,7 @@ focus_tree = {
 						is_controlled_by = ROOT
 						has_dynamic_modifier = { modifier = GAL_wired_state }
 					}
-					add_to_variable = { GAL_monthly_population = 0.3 }
+					add_to_variable = { GAL_monthly_population = 0.15 }
 				}
 			}
 		}
@@ -2601,6 +2598,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 			country_event = { id = GAL_proekt.03 }
+			country_event = { id = GAL.12 days = 10 } 
 			}
 		}
 
@@ -2644,11 +2642,19 @@ focus_tree = {
 		completion_reward = {
 			ZHR = {
 				add_offsite_building = { type = arms_factory level = 3 }
+				add_opinion_modifier = { target = GAL modifier = offered_support }
 			}
 			GAL = {
 				add_offsite_building = { type = industrial_complex level = 3 }
 			}
 			add_ideas = GAL_sinofobia
+			send_embargo = CNA
+			send_embargo = PCH
+			send_embargo = ZCH
+			send_embargo = GOM
+			send_embargo = ALI
+			send_embargo = PRC
+			send_embargo = FAL
 		}
 
 	}
@@ -2689,9 +2695,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_breakthrough_progress = {
+			add_breakthrough_points = {
 				specialization = specialization_nuclear
-				value = 0.5
+				value = 1
 			}
 			GAL_Boyarshinov = {
 				add_scientist_level = {

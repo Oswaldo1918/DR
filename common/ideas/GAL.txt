@@ -279,15 +279,13 @@ ideas = {
 			GAL_tecnocratia = {
 	
 			   modifier = {
-			    stability_factor = -0.05
-				research_speed_factor = 0.15
+				research_speed_factor = 0.1
 			   }
 		    }
 			GAL_tecnocratia_2 = {
 	
 			   modifier = {
-			    stability_factor = -0.1
-				research_speed_factor = 0.3
+				research_speed_factor = 0.2
 			   }
 		    }
 			GAL_military_nauka = {
@@ -349,7 +347,7 @@ ideas = {
 	
 			   modifier = {
 				conscription = 0.01
-				experience_loss_factor = 0.10
+				experience_loss_factor = 0.1
 			   }
 		    }
 			GAL_stroyki_za_dolgi = {
@@ -375,7 +373,7 @@ ideas = {
 				 production_factory_efficiency_gain_factor = 0.15
 				 production_factory_max_efficiency_factor = 0.15
 				 industrial_capacity_factory = 0.15
-				 production_lack_of_resource_penalty_factor = -0.15
+				 line_change_production_efficiency_factor = 0.15
 				}
 			}
 			GAL_protiv_liberalisma = {
@@ -385,6 +383,7 @@ ideas = {
 				targeted_modifier = {
 					tag = POK
 					attack_bonus_against = 0.1
+					defence_bonus_against = 0.1
 				}
 			}
 			GAL_cowboyi_protivodeystvie = {
@@ -426,7 +425,7 @@ ideas = {
 				targeted_modifier = {
 					tag = PCH
 					attack_bonus_against = 0.1
-					defence_bonus_against = 0.1
+					
 				}
 				targeted_modifier = {
 					tag = ZCH
@@ -452,6 +451,20 @@ ideas = {
 					tag = FAL
 					attack_bonus_against = 0.1
 					defence_bonus_against = 0.1
+				}
+			}
+			GAL_spartanism = {
+				modifier = {
+				 research_speed_factor = 0.03
+				 production_lack_of_resource_penalty_factor = 0.05
+				 consumer_goods_factor = -0.03
+				}
+			}
+			GAL_spartanism_2 = {
+				modifier = {
+				 research_speed_factor = 0.06
+				 production_lack_of_resource_penalty_factor = 0.1
+				 consumer_goods_factor = -0.06
 				}
 			}
 	}

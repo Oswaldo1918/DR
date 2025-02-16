@@ -120,4 +120,31 @@ characters={
 			}
 		}		
 	}
+	GAL_Drobyshevskiy = {
+		name = "Станислав Дробышевский"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Drobyshevskiy"
+				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Drobyshevskiy
+			traits = {
+				nazi_antropolog
+			}
+		}
+		corps_commander = {
+			traits = { ranger }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}		
+	}
 }

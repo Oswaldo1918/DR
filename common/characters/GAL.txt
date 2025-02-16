@@ -141,7 +141,7 @@ characters={
 		scientist = {
 			traits = { scientist_trait_nuclear_specialist }
 			skills = {
-				specialization_nuclear = 1
+				specialization_nuclear = 2
 			}
 		}
 	}
@@ -277,29 +277,6 @@ characters={
 				large = "gfx/leaders/GAL/Panchin.dds"				
 			}
 		}		
-	}
-	
-	GAL_Drobyshevskiy = {
-		name = "Станислав Дробышевский"
-
-		portraits = {
-			army = {
-				small = "GFX_idea_GAL_Drobyshevskiy"
-				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = political_advisor
-			idea_token = GAL_Drobyshevskiy
-			allowed = {
-				original_tag = GAL
-			}
-			traits = {
-				nazi_antropolog
-			}
-			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-		}			
 	}
 	
 	GAL_Romanov = {

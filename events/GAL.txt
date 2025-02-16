@@ -211,6 +211,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 60
 	}
+	fire_only_once = yes
 	
 	option = {
 	name = GAL.10.a
@@ -235,6 +236,174 @@ country_event = {
 	
 	option = {
 	name = GAL.11.a
+	}
+}
+# Ноль
+country_event = {
+	id = GAL.12
+	title = GAL.12.t
+	desc = GAL.12.d
+	picture = GFX_report_event_dkr_boyarshinov_kruto
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = GAL.12.a
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.05
+        }
+		if = {
+			limit = {
+				controls_province = 4261
+				582 = { 
+					is_owned_and_controlled_by = ROOT
+					can_construct_building = nuclear_facility
+				}
+			}
+			582 = { 
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					province = 4261
+					instant_build = yes
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					can_construct_building = nuclear_facility
+				}
+				construct_building_in_random_province = { nuclear_facility = 1 }
+			}
+		}
+		hidden_effect = {
+			country_event = { id = GAL.13 days = 15 } 
+		}
+	}
+}
+# Целковый
+country_event = {
+	id = GAL.13
+	title = GAL.13.t
+	desc = GAL.13.d
+	picture = GFX_report_event_dkr_rybnikov
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.13.a
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.05
+        }
+		hidden_effect = {
+			country_event = { id = GAL.14 days = 15 } 
+		}
+	}
+}
+# Полушка
+country_event = {
+	id = GAL.14
+	title = GAL.14.t
+	desc = GAL.14.d
+	picture = GFX_report_event_dkr_boyarshinov_kruto
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.14.a
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.05
+        }
+		hidden_effect = {
+			country_event = { id = GAL.15 days = 30 } 
+		}
+	}
+}
+# Четвертушка
+country_event = {
+	id = GAL.15
+	title = GAL.15.t
+	desc = GAL.15.d
+	picture = GFX_report_event_dkr_boyarshinov
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.15.a
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.05
+        }
+	}
+	
+	option = {
+		name = GAL.15.b
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.1
+        }
+		add_breakthrough_progress = {
+			specialization = specialization_nuclear
+			value = 0.3
+		}
+	}
+}
+# Осьмушка
+country_event = {
+	id = GAL.16
+	title = GAL.16.t
+	desc = GAL.16.d
+	picture = GFX_report_event_dkr_kitaec
+	trigger = {
+		tag = GAL
+		has_completed_focus = GAL_Boyarshinov_3
+		is_special_project_completed = sp:sp_nuclear_bomb
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	fire_only_once = yes
+	
+	option = {
+	name = GAL.16.a
+		add_popularity = {
+            ideology = memoism
+            popularity = 0.1
+        }
+		add_political_power = -100
+		if = {
+			limit = { can_declare_war_on = MNR }
+			declare_war_on = {
+				target = MNR
+				type = annex_everything
+			}
+		}
+	}
+	
+	option = {
+	name = GAL.16.b
+		add_popularity = {
+            ideology = memoism
+            popularity = -0.1
+        }
+		retire_character = GAL_Boyarshinov
 	}
 }
 
