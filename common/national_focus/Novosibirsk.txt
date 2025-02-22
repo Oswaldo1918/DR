@@ -1924,7 +1924,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_nado_radovatsya
 		}
-		x = 56
+		x = 57
 		y = 8
 		select_effect = {
 			hidden_effect = {
@@ -1952,7 +1952,7 @@ focus_tree = {
 			focus = GAL_otkaz_ot_radikalisma
 			focus = GAL_pisma_Saveleva
 		}
-		x = 54
+		x = 55
 		y = 9
 		completion_reward = {
 			add_country_leader_role = { 
@@ -1982,7 +1982,7 @@ focus_tree = {
 			focus = GAL_pochemy_socialism
 			focus = GAL_pisma_Saveleva
 		}
-		x = 56
+		x = 57
 		y = 9
 		completion_reward = {
 			add_popularity = {
@@ -2002,7 +2002,7 @@ focus_tree = {
 			focus = GAL_pochemy_socialism
 			focus = GAL_otkaz_ot_radikalisma
 		}
-		x = 58
+		x = 59
 		y = 9
 		completion_reward = {
 			add_country_leader_role = { 
@@ -2033,7 +2033,7 @@ focus_tree = {
 			focus = GAL_otkaz_ot_radikalisma
 			focus = GAL_pisma_Saveleva
 		}
-		x = 56
+		x = 57
 		y = 10
 		completion_reward = {
 			add_country_leader_trait = verch_tehnokrat
@@ -2156,8 +2156,23 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 		}
-		x = 56
+		x = 57
 		y = 12
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GAL_syberia
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = GAL_rok_kotserty
+			focus = GAL_issledovanie_noosfery
+		}
+		available = {
+		}
+		x = 55
+		y = 13
 		completion_reward = {
 			country_event = { id = GAL.8 }
 		}
@@ -2169,8 +2184,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_rok_kotserty
 		}
-		x = 57
-		y = 13
+		x = 56
+		y = 14
 
 	}
 	focus = {
@@ -2183,8 +2198,20 @@ focus_tree = {
 		available = {
 			has_government = fascism
 		}
-		x = 60
+		x = 62
 		y = 12
+
+	}
+	focus = {
+		id = GAL_new_focus
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = GAL_genetika_nauka
+			focus = GAL_rok_kotserty
+		}
+		x = 59
+		y = 13
 
 	}
 	focus = {
@@ -2194,7 +2221,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_genetika_nauka
 		}
-		x = 59
+		x = 61
 		y = 13
 
 	}
@@ -2205,7 +2232,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_rok_kotserty
 		}
-		x = 56
+		x = 58
 		y = 14
 
 	}
@@ -2216,7 +2243,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_genetika_nauka
 		}
-		x = 60
+		x = 62
 		y = 14
 
 	}
@@ -2402,7 +2429,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_genetika_nauka
 		}
-		x = 61
+		x = 63
 		y = 13
 
 	}
@@ -2413,7 +2440,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_rok_kotserty
 		}
-		x = 55
+		x = 57
 		y = 13
 
 	}

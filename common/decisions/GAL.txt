@@ -255,7 +255,7 @@ GAL_sssr = {
 				ruling_only = yes
 			}
 		}
-		days_remove = 0
+		fire_only_once = yes
 		ai_will_do = {
         factor = 100
 		}
@@ -265,7 +265,6 @@ GAL_sssr = {
 				id = dk_news.74
 			}
 		}
-		fire_only_once = yes 
     }
 	
 	GAL_pobeda_v_gv = { #Интеграция_Сибири
@@ -293,8 +292,6 @@ GAL_sssr = {
         factor = 100
 		}
 		fire_only_once = yes
-		
-		days_remove = 1
 		
 		remove_effect = {
 			hidden_effect = {
@@ -732,4 +729,120 @@ GAL_marakumba_zapasi_balance_of_power_category = {
 
     }
 
+}
+GAL_rock_zhiv = {
+
+	GAL_lenin_poslal = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		days_remove = 100
+		days_re_enable = 1
+		modifier = {
+			industry_repair_factor = 0.5
+			production_speed_buildings_factor = 0.1
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_vse_po_planu = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		days_remove = 100
+		days_re_enable = 1
+		modifier = {
+			industrial_capacity_factory = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_nado_rad = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		days_remove = 100
+		days_re_enable = 1
+		available = {
+		    tag = GAL
+		    has_completed_focus = GAL_ne_nado_napragat
+        }
+		modifier = {
+			stability_weekly = 0.01
+			neutrality_drift = 0.05
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_ot_vint = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		days_remove = 100
+		days_re_enable = 1
+		modifier = {
+			experience_gain_air = 0.05
+			air_attack_factor = 0.25
+			air_defence_factor = 0.25
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_kak_na_voyne = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		days_remove = 100
+		days_re_enable = 1
+		modifier = {
+			war_support_weekly = 0.01
+			experience_gain_army = 0.05
+			army_attack_factor = 0.1
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_ey_uhnem = {
+		icon = eng_propaganda_campaigns
+		cost = 30
+		days_remove = 100
+		days_re_enable = 1
+		available = {
+		    tag = GAL
+		    has_completed_focus = GAL_ey_uhnem
+        }
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GAL_18_mne_uzhe = {
+		icon = eng_propaganda_campaigns
+		cost = 30
+		days_remove = 150
+		days_re_enable = 1
+		modifier = {
+			monthly_population = 0.5
+			weekly_manpower = 150
+		}
+		complete_effect = {}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

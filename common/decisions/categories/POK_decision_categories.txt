@@ -108,6 +108,18 @@ GAL_marakumba_zapasi_balance_of_power_category = {
 		has_completed_focus = GAL_import_marakumbi
 	}
 }
+GAL_rock_zhiv = { 
+    priority = 100
+	
+	icon = SOV_propaganda
+	
+	picture = GFX_decision_category_GAL_rock_picture
+	
+	visible = {
+		tag = GAL
+		has_completed_focus = GAL_rok_kotserty
+	}
+}
 MGN_soyuz_sionskih_socialnih_razrushiteley = { 
  icon = generic_prospect_for_resources
     allowed = {
