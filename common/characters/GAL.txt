@@ -165,23 +165,7 @@ characters={
 			}
 		}		
 		advisor = {
-			slot = high_command
-			idea_token = GAL_Deb
-			allowed = {
-				original_tag = GAL
-			}
-			traits = {
-				army_infantry_1
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-		}
-		advisor = {
-			cost = 150
-			slot = political_advisor
+			slot = army_chief
 			idea_token = GAL_Deb
 			allowed = {
 				original_tag = GAL
@@ -189,7 +173,12 @@ characters={
 			traits = {
 				spartanist
 			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+			available = { has_completed_focus = GAL_Deb }
 		}
 	}
 	
@@ -341,7 +330,7 @@ characters={
 		name = "Военспецы"
 		portraits = {
 			army = {
-				small = GFX_idea_generic_council_of_theorists
+				small = "GFX_idea_rus_council_of_theorists"
 			}
 		}
 		advisor = {

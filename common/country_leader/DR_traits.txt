@@ -2,6 +2,14 @@
 @tier2 = 20
 @tier3 = 10
 
+@tier1_cp_cap_increase = 10
+@tier2_cp_cap_increase = 20
+@tier3_cp_cap_increase = 30
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
 leader_traits = {
     aye_libsoc = {
 		sprite = 10
@@ -1374,18 +1382,6 @@ leader_traits = {
 			factor = 2
 		}
 	}
-	spartanist = {
-		sprite = 10
-		random = no		
-		army_org_factor = 0.1
-		army_morale_factor = -0.05
-		war_support_factor = 0.1
-		resistance_damage_to_garrison = -0.25
-		
-		ai_will_do = {
-			factor = 2
-		}
-	}
 	popular_bloger = {
 		sprite = 10
 		random = no		
@@ -1442,5 +1438,19 @@ leader_traits = {
 		random = no
 		political_power_factor = 0.1
 		research_speed_factor = 0.05
+	}
+	spartanist = {
+		sprite = 9
+		army_org_factor = 0.1
+		army_morale_factor = 0.05
+		war_support_factor = 0.1
+		experience_gain_army = 0.05
+		
+		experience_gain_army = @chief_experience_gain_medium
+		command_cap_increase = @tier2_cp_cap_increase
+		
+		ai_will_do = {
+			factor = 5
+		}
 	}
 }

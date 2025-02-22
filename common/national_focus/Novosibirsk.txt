@@ -1341,7 +1341,7 @@ focus_tree = {
 				skill = 3
 				attack_skill = 2
 				defense_skill = 2
-				planning_skill = 3
+				planning_skill = 2
 				logistics_skill = 2
 				legacy_id = -1
 			}
@@ -1355,7 +1355,7 @@ focus_tree = {
 				logistics_skill = 1
 				legacy_id = -1
 			}
-			add_field_marshal_role = {
+			add_corps_commander_role = {
 				character = GAL_Boyarshinov
 				traits = { old_guard trait_engineer }
 				skill = 2
@@ -1365,12 +1365,12 @@ focus_tree = {
 				logistics_skill = 4
 				legacy_id = -1
 			}
-			add_corps_commander_role = {
+			add_field_marshal_role = {
 				character = GAL_Deb
 				traits = { harsh_leader infantry_leader }
-				skill = 2
+				skill = 3
 				attack_skill = 2
-				defense_skill = 2
+				defense_skill = 1
 				planning_skill = 3
 				logistics_skill = 2
 				legacy_id = -1
@@ -2887,6 +2887,12 @@ focus_tree = {
 				CHARACTER = YSK_Dmitriy_Rogozin
 			}
 			GAL_scientist_cd = yes
+			add_tech_bonus = {
+				bonus = 1
+				ahead_reduction = 1
+				uses = 1
+				category = rocketry
+			}
 			hidden_effect = {
 			country_event = { id = GAL_proekt.07 }
 			}
@@ -3119,6 +3125,8 @@ focus_tree = {
 				CHARACTER = GAL_Deb_name
 			}
 			GAL_scientist_cd = yes
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = GAL_Deb
 			hidden_effect = {
 			country_event = { id = GAL_proekt.11 }
 			}
@@ -3162,7 +3170,17 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+			GAL_Deb = {
+				add_scientist_level = {
+					specialization = specialization_air
+					level = 1
+				}
+			}
+			sp:sp_air_radar = { add_project_progress_ratio = 0.4 }
 		}
 	}
 	focus = {
@@ -3202,7 +3220,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = { id = GAL.17 }
 		}
 	}
 	focus = {

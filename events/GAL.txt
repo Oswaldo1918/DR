@@ -406,6 +406,42 @@ country_event = {
 		retire_character = GAL_Boyarshinov
 	}
 }
+# Спартанизм
+country_event = {
+	id = GAL.17
+	title = GAL.17.t
+	desc = GAL.17.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.17.a
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.1
+        }
+		add_political_power = -50
+		add_ideas = GAL_spartanism_2
+		every_scientist = { add_scientist_trait = scientist_trait_resourceful }
+	}
+	
+	option = {
+	name = GAL.17.b
+		add_political_power = -25
+		add_ideas = GAL_spartanism_1
+		GAL_Deb = { add_scientist_trait = scientist_trait_resourceful }
+	}
+	
+	option = {
+	name = GAL.17.c
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
 
  ###ПРОЕКТЫ УЧЕНЫХ###
  
