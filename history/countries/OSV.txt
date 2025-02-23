@@ -25,9 +25,9 @@ set_politics = {
 set_convoys = 40
 
 create_country_leader = {
-	name = "Алексей Чумак"
+	name = "Паша Техник"
 	desc = "POLITICS_CHUMAK_DESC"
-	picture = "Chumak.dds"
+	picture = "Techniqie.dds"
 	expire = "1999.1.1"
 	ideology = postironism
 	traits = {
@@ -81,10 +81,10 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 create_corps_commander = {
-	name = "Алексей Чумак"
+	name = "Паша Техник"
 	id = 25111
-	portrait_path = "gfx/leaders/OSV/Chumak.dds"
-	traits = {  }
+	portrait_path = "gfx/leaders/OSV/Techniqie.dds"
+	traits = { substance_addict }
 	skill = 1
 	
 	attack_skill = 1
