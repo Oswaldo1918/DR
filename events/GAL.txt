@@ -239,11 +239,10 @@ country_event = {
 	}
 }
 # Ноль
-country_event = {
+unit_leader_event = {
 	id = GAL.12
 	title = GAL.12.t
 	desc = GAL.12.d
-	picture = GFX_report_event_dkr_boyarshinov_kruto
 	trigger = {
 		tag = GAL
 	}
@@ -257,32 +256,6 @@ country_event = {
             ideology = memoism
             popularity = 0.05
         }
-		if = {
-			limit = {
-				controls_province = 4261
-				582 = { 
-					is_owned_and_controlled_by = ROOT
-					can_construct_building = nuclear_facility
-				}
-			}
-			582 = { 
-				add_building_construction = {
-					type = nuclear_facility
-					level = 1
-					province = 4261
-					instant_build = yes
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					can_construct_building = nuclear_facility
-				}
-				construct_building_in_random_province = { nuclear_facility = 1 }
-			}
-		}
 		hidden_effect = {
 			country_event = { id = GAL.13 days = 15 } 
 		}
@@ -442,6 +415,102 @@ country_event = {
 		add_political_power = 50
 	}
 }
+# Мирный
+country_event = {
+	id = GAL.18
+	title = GAL.18.t
+	desc = GAL.18.d
+	picture = GFX_report_event_dkr_boyarshinov
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.18.a
+		if = {
+			limit = {
+				controls_province = 10557
+				582 = { 
+					is_owned_and_controlled_by = ROOT
+					can_construct_building = land_facility
+				}
+			}
+			572 = { 
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 10557
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+# Сыендук Знакомство
+unit_leader_event = {
+	id = GAL.19
+	title = GAL.19.t
+	desc = GAL.19.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.19.a
+		add_stability = -0.05
+		country_event = { id = GAL.18 days = 5 }
+	}
+}
+# Жидкое мясо
+country_event = {
+	id = GAL.20
+	title = GAL.20.t
+	desc = GAL.20.d
+	picture = GFX_report_event_dkr_meat
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.20.a
+		add_ideas = GAL_meat
+		
+	}
+}
+# Перепалка Сыендук
+country_event = {
+	id = GAL.21
+	title = GAL.21.t
+	desc = GAL.21.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.21.a
+		add_political_power = -100
+		custom_effect_tooltip = GAL21a_tt
+		hidden_effect = {
+			country_event = { id = GAL_proekt.01 }
+		}
+	}
+	
+	option = {
+	name = GAL.21.b
+		custom_effect_tooltip = GAL21b_tt
+		hidden_effect = {
+				country_event = { id = GAL_proekt.01 days = 100 }
+		}
+	}
+}
 
  ###ПРОЕКТЫ УЧЕНЫХ###
  
@@ -498,7 +567,6 @@ country_event = {
 				use_side_message = yes
 				originator_name = GAL_sndk
 			}
-			country_event = { id = GAL_proekt.01 }
 		}
 		else_if = {
 			limit = {
@@ -563,7 +631,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Boyarshinov_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Boyarshinov
 			}
 			country_event = { id = GAL_proekt.03 }
 		}
@@ -574,7 +642,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Boyarshinov_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Boyarshinov
 			}
 		}
 	}
@@ -630,7 +698,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Boyarshinov_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Toples
 			}
 			country_event = { id = GAL_proekt.05 }
 		}
@@ -641,7 +709,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Toples_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Toples
 			}
 		}
 	}
@@ -764,7 +832,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Panchin_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Panchin
 			}
 			country_event = { id = GAL_proekt.09 }
 		}
@@ -775,7 +843,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Panchin_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Panchin
 			}
 		}
 	}
@@ -831,7 +899,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Deb_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Deb
 			}
 			country_event = { id = GAL_proekt.11 }
 		}
@@ -842,7 +910,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Deb_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Deb
 			}
 		}
 	}
@@ -898,7 +966,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Savvateev_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Savvateev
 			}
 			country_event = { id = GAL_proekt.13 }
 		}
@@ -909,7 +977,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Savvateev_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = GAL_Savvateev
 			}
 		}
 	}

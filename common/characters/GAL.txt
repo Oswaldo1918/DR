@@ -123,6 +123,7 @@ characters={
 				mad_scientist
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+			available = { has_completed_focus = GAL_Syenduk }
 		}
 	}
 	
@@ -205,6 +206,7 @@ characters={
 				pravoslavnyi_matematik
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+			available = { has_completed_focus = GAL_Savvateev }
 		}
 	}
 	
@@ -251,9 +253,10 @@ characters={
 				original_tag = GAL
 			}
 			traits = {
-				popular_bloger
+				panoptikator
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+			available = { has_completed_focus = GAL_Toples }
 		}		
 	}
 	
@@ -266,6 +269,19 @@ characters={
 				large = "gfx/leaders/GAL/Panchin.dds"				
 			}
 		}		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Panchin
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				inkvizitor
+			}
+			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
+			available = { has_completed_focus = GAL_Panchin }
+		}
 	}
 	
 	GAL_Romanov = {

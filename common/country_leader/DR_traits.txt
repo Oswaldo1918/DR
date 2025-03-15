@@ -1382,11 +1382,12 @@ leader_traits = {
 			factor = 2
 		}
 	}
-	popular_bloger = {
+	panoptikator = {
 		sprite = 10
 		random = no		
-		stability_factor = 0.1
-		political_power_factor = 0.15
+		party_popularity_stability_factor = 0.15
+		intelligence_agency_defense = 0.2
+		civilian_intel_to_others = -10.0
 		
 		ai_will_do = {
 			factor = 2
@@ -1395,8 +1396,8 @@ leader_traits = {
 	pravoslavnyi_matematik = {
 		sprite = 10
 		random = no		
-		decryption_factor = 0.1
-		encryption_factor = 0.1
+		decryption_factor = 0.15
+		encryption_factor = 0.15
 		stability_factor = 0.05
 		
 		ai_will_do = {
@@ -1408,6 +1409,7 @@ leader_traits = {
 		random = no		
 		consumer_goods_factor = -0.1
 		political_power_factor = 0.1
+		political_advisor_cost_factor = -0.33
 		
 		ai_will_do = {
 			factor = 2
@@ -1451,6 +1453,17 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 5
+		}
+	}
+	inkvizitor = {
+		sprite = 10
+		random = no		
+		research_speed_factor = 0.05
+		compliance_growth = 0.1
+		resistance_target = -0.1
+		
+		ai_will_do = {
+			factor = 2
 		}
 	}
 }
