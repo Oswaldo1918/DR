@@ -479,6 +479,19 @@ ideas = {
 				 land_reinforce_rate = 0.15
 				}
 			}
+			GAL_war_idiokracy = {
+				modifier = {
+				 war_stability_factor = 0.15
+				 weekly_casualties_war_support = 0.005
+				}
+			}
+			GAL_otmena_turem_idea = {
+				modifier = {
+				 stability_factor = -0.1
+				 local_resources_factor = 0.1
+				 research_speed_factor = 0.03
+				}
+			}
 	}
 
 	tank_manufacturer = { 

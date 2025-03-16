@@ -120,6 +120,16 @@ GAL_rock_zhiv = {
 		has_completed_focus = GAL_rok_kotserty
 	}
 }
+GAL_akademgoroda_cat = { 
+    priority = 100
+	
+	icon = SOV_soviet_academy_of_sciences
+	
+	visible = {
+		tag = GAL
+		has_completed_focus = GAL_ozhivit_akadem_goroda
+	}
+}
 MGN_soyuz_sionskih_socialnih_razrushiteley = { 
  icon = generic_prospect_for_resources
     allowed = {

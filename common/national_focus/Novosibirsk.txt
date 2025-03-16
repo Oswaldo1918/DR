@@ -2140,7 +2140,11 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_plody_lybvi
+		}
+		prerequisite = {
 			focus = GAL_vse_idet_po_planu
+		}
+		prerequisite = {
 			focus = GAL_svyaz_i_communocation
 		}
 		x = 52
@@ -2159,6 +2163,7 @@ focus_tree = {
 		x = 57
 		y = 12
 		completion_reward = {
+			unlock_decision_category_tooltip = GAL_rock_zhiv
 		}
 	}
 	focus = {
@@ -2184,8 +2189,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_rok_kotserty
 		}
-		x = 56
-		y = 14
+		x = 57
+		y = 13
 
 	}
 	focus = {
@@ -2203,7 +2208,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_new_focus
+		id = GAL_unictozit_political_yarliks
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
@@ -2212,7 +2217,23 @@ focus_tree = {
 		}
 		x = 59
 		y = 13
-
+		completion_reward = {
+			if = {
+                limit = {
+                    has_completed_focus = GAL_rok_kotserty
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}
+			}
+			else_if = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+			}
+		}
 	}
 	focus = {
 		id = GAL_konstruirovanie_kast
@@ -2226,11 +2247,24 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GAL_otmena_turem
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = GAL_konstruirovanie_kast
+		}
+		x = 60
+		y = 14
+		completion_reward = {
+			add_ideas = GAL_otmena_turem_idea
+		}
+	}
+	focus = {
 		id = GAL_osoznanie
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = GAL_rok_kotserty
+			focus = GAL_nauka_i_iskusstvo
 		}
 		x = 58
 		y = 14
@@ -2245,6 +2279,41 @@ focus_tree = {
 		}
 		x = 62
 		y = 14
+		completion_reward = {
+			unlock_decision_category_tooltip = GAL_akademgoroda_cat
+			add_dynamic_modifier = { modifier = GAL_research_akademgoroda }
+		}
+
+	}
+	focus = {
+		id = GAL_stop_idiokraty
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = GAL_ierarhiya_tehnokratii
+		}
+		x = 64
+		y = 14
+		completion_reward = {
+			add_ideas = GAL_war_idiokracy
+		}
+
+	}
+	focus = {
+		id = GAL_proekt_complimintetion
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = GAL_otmena_turem
+		}
+		prerequisite = {
+			focus = GAL_ozhivit_akadem_goroda
+		}
+		prerequisite = {
+			focus = GAL_stop_idiokraty
+		}
+		x = 62
+		y = 15
 
 	}
 	focus = {
@@ -2267,11 +2336,6 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = support_tech
 			}
 		}
 
@@ -2438,10 +2502,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = GAL_rok_kotserty
+			focus = GAL_nauka_i_iskusstvo
 		}
-		x = 57
-		y = 13
+		x = 56
+		y = 14
 
 	}
 	focus = {

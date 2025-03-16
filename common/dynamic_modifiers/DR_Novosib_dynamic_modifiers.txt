@@ -10,3 +10,19 @@ GAL_wired_state = {
 	state_production_speed_buildings_factor = GAL_production_speed_buildings_factor
 	local_building_slots = GAL_local_building_slots
 }
+GAL_akademgorod = {
+	enable = { is_controlled_by = GAL }
+	remove_trigger = {
+		NOT = { is_owned_by = GAL }
+	}
+	icon = GFX_idea_GAL_akademgorod
+	state_production_speed_buildings_factor = 0.15
+	local_building_slots = 5
+	local_manpower = 0.3
+	mobilization_speed = 0.15
+}
+GAL_research_akademgoroda = {
+	enable = { always = yes }
+	icon = GFX_idea_GAL_akademgorod
+	research_speed_factor = GAL_research_speed_factor
+}
