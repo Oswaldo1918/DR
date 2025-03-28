@@ -148,12 +148,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = OMS_kniga_terpeniya
+			focus = OMS_kniga_vlasti
 		}
 		mutually_exclusive = {
 			focus = OMS_Rus_Fed
 		}
-		x = 8
+		x = 10
 		y = 4
 
 	}
@@ -173,12 +173,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = OMS_kniga_vlasti
+			focus = OMS_kniga_terpeniya
 		}
 		mutually_exclusive = {
 			focus = OMS_SSSR
 		}
-		x = 10
+		x = 8
 		y = 4
 
 	}

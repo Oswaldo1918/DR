@@ -1864,3 +1864,17 @@ news_event = { #Бебей_взял_Москву
 		}
 	}
 }
+news_event = { #Ничто_морковный_сок
+    id = dk_news.91
+	title = dk_news.91.t
+	desc = dk_news.91.d
+	picture = GFX_news_event_ZZZ_evangelion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.91.a
+	}
+}

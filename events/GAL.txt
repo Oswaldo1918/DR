@@ -511,7 +511,65 @@ country_event = {
 		}
 	}
 }
-
+# Начало экспедиции
+country_event = {
+	id = GAL.22
+	title = GAL.22.t
+	desc = GAL.22.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.22.a
+		retire_character = GAL_pusnoy
+		add_country_leader_role = { 
+			character = GAL_sndk
+			promote_leader = yes
+			country_leader = {
+			    desc = "POLITICS_NOVOD_DESC"     
+				ideology = fascism
+				expire = "1965.1.1.1"
+				traits = {
+					mad_scientist
+				}
+			}
+		}
+	}
+}
+# Конец экспедиции
+country_event = {
+	id = GAL.23
+	title = GAL.23.t
+	desc = GAL.23.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.23.a
+		hidden_effect = {
+			news_event = { id = dk_news.91 days = 1 }
+			ZZZ = {
+				set_cosmetic_tag = ZZZ_evangelion
+				load_focus_tree = Nichto_2
+				retire_ideology_leader = memoism
+				create_country_leader = {
+					name = "Именно Он?"
+					desc = "POLITICS_THORVALD_STAUNING_DESC"
+					picture = "Gegel_Evangelion.dds"
+					expire = "1999.1.1"
+					ideology = gegelianism
+					traits = { }
+				}
+			}
+		}
+	}
+}
  ###ПРОЕКТЫ УЧЕНЫХ###
  
 # СЫЕНДУК - Начал работу над фокусом

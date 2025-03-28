@@ -2314,6 +2314,12 @@ focus_tree = {
 		}
 		x = 62
 		y = 15
+		select_effect = {
+			country_event = { id = GAL.22 }
+		}
+		completion_reward = {
+			country_event = { id = GAL.23 }
+		}
 
 	}
 	focus = {

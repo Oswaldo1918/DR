@@ -5,6 +5,9 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = OMS
+			NOT = {
+				has_cosmetic_tag = OMS_nezavisimost
+			}
 		}
 	}
 	default = no

@@ -1,0 +1,22 @@
+focus_tree = {
+	id = Nichto_2
+	country = {
+		factor = 0
+		modifier = {
+			tag = ZZZ 
+			add = 10
+		}
+	}
+	default = no
+	focus = {
+		id = ZZZ_something_happened
+		icon = GFX_goal_ZZZ_something_happened
+		cost = 1
+
+		x = 6
+		y = 0
+		completion_reward = {
+		
+		}
+	}
+}
