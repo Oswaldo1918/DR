@@ -314,6 +314,47 @@ characters={
 			legacy_id = 0
 		}
 	}
+	ZHE_Lucy = {
+		name = "Люсиана де Монтефио"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZHE/Lucy.dds"
+				small = "GFX_portrait_ZHE_lucy"
+			}
+			civilian = {
+				small = "GFX_portrait_ZHE_lucy"
+			}
+		}
+
+		corps_commander = {
+			desc = ZHE_lucy_desc
+			traits = { infantry_officer harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+		
+		advisor={
+			desc = ZHE_lucy_desc
+			slot = high_command
+			ledger = army
+			idea_token = ZHE_lucy
+
+			allowed = {
+				original_tag = ZHE
+			}
+			ai_will_do = {
+				factor = 10
+			}
+			traits = {
+				pig_master
+			}
+			cost = 100
+		}
+	}
     ZHE_bit_ili = {
 		name = "Быть или"
 

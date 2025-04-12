@@ -7,16 +7,16 @@ characters={
 				large = "gfx/leaders/LRG/Rommel.dds"
 			}
 			army = {
-				small = "GFX_idea_georgy_zhukov"
+				small = "GFX_idea_ervin_rommel"
 				large = "gfx/leaders/LRG/Rommel.dds"
 			}
 		}
         
 		field_marshal = {
-    		traits = { old_guard infantry_officer war_hero  }
+    		traits = { trait_reckless media_personality armor_officer war_hero trickster war_hero  }
         	skill = 3
         	attack_skill = 4
-        	defense_skill = 2
+        	defense_skill = 3
         	planning_skill = 3
         	logistics_skill = 2
 			legacy_id = 0
@@ -27,5 +27,45 @@ characters={
 			expire = "1965.1.1"
         	traits = { our_right_to_survive Popadanets }
 		}	
+	}
+	LRG_Yukari = {
+		name = "Юкари Акияма"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_yakari"
+				large = "gfx/leaders/LRG/Yukari.dds"
+			}
+		}
+        
+		corps_commander = {
+    		traits = { armor_officer trickster }
+        	skill = 2
+        	attack_skill = 2
+        	defense_skill = 3
+        	planning_skill = 2
+        	logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	LRG_Riko = {
+		name = "Рико Мацумото"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_riko"
+				large = "gfx/leaders/LRG/Riko.dds"
+			}
+		}
+        
+		corps_commander = {
+    		traits = { armor_officer trait_reckless }
+        	skill = 2
+        	attack_skill = 3
+        	defense_skill = 2
+        	planning_skill = 3
+        	logistics_skill = 1
+			legacy_id = 0
+		}
 	}
 }
