@@ -9,7 +9,7 @@ characters={
 		}
         country_leader = {
     		desc = "POLITICS_LETOV_DESC"
-			ideology = nacbol			
+			ideology = religious_communism			
 			traits = {
 	         	
 	        }
@@ -24,6 +24,15 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+		}   		
+	}
+	OMS_Elizarov = {
+		name = "Михаил Елизаров"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/OMS/Mihail_Elizarov.dds"
+			}
 		}   		
 	}
 	OMS_Yanka = {
