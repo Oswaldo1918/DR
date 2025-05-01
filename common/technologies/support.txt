@@ -70,7 +70,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -124,7 +124,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -422,12 +422,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}	
@@ -473,7 +473,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -621,12 +621,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}
@@ -828,7 +828,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -996,12 +996,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}
@@ -1045,7 +1045,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -1222,12 +1222,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}
@@ -1289,7 +1289,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -1356,10 +1356,6 @@ technologies = {
 				date > "9.1.1"
 			}
 
-			modifier = {
-				factor = 2
-				tag = GER
-			}
 		}
 	}
 	
@@ -1451,12 +1447,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}
@@ -1545,7 +1541,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -1651,12 +1647,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "14.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "15.1.1"
 			}
 		}
 	}
@@ -1667,7 +1663,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1910
+		start_year = 2
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1 }
@@ -1700,7 +1696,7 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "4.1.1"
 			}
 			
 			modifier = {
@@ -1751,13 +1747,6 @@ technologies = {
 				factor = 1
 			}
 
-			modifier = {
-				OR = {
-					TAG = GER
-					tag = SOV
-				}
-				factor = 1.5
-			}
 		}
 	}
 

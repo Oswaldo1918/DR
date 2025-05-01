@@ -81,12 +81,6 @@ country_event = {
 	name = GAL.3.r
 		retire_character = GAL_Sokolov
 	}
-	
-	option = {
-	name = GAL.3.f
-		add_stability = -0.1
-		add_political_power = -105
-	}
 }
 #Письмо Вассермана
 country_event = {
@@ -137,11 +131,10 @@ country_event = {
 	}
 }
 #Бегство Савватеева 
-country_event = {
+unit_leader_event = {
 	id = GAL.7
 	title = GAL.7.t
 	desc = GAL.7.d
-	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
 	}
@@ -395,7 +388,7 @@ country_event = {
 	name = GAL.17.a
 		add_popularity = {
             ideology = fascism
-            popularity = 0.1
+            popularity = 0.05
         }
 		add_political_power = -50
 		add_ideas = GAL_spartanism_2
@@ -406,7 +399,6 @@ country_event = {
 	name = GAL.17.b
 		add_political_power = -25
 		add_ideas = GAL_spartanism_1
-		GAL_Deb = { add_scientist_trait = scientist_trait_resourceful }
 	}
 	
 	option = {
@@ -568,6 +560,83 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+#Рогозин знакомство
+country_event = {
+	id = GAL.24
+	title = GAL.24.t
+	desc = GAL.24.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.24.a
+		every_possible_country = {
+			limit = { has_character = YSK_Dmitriy_Rogozin }
+			random_character = {
+				limit = { is_character = YSK_Dmitriy_Rogozin }
+				set_nationality = GAL
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = metacommy
+				}
+				country_event = { id = GAL_proekt.07 }
+			}
+			else = { 
+				country_event = { id = GAL.25 }
+			}
+		}
+	}
+}
+# Рогозин - Проверка Панчина
+country_event = {
+	id = GAL.25
+	title = GAL.25.t
+	desc = GAL.25.d
+	picture = GFX_report_event_dkr_meat
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.25.a
+		add_political_power = -150
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = { id = GAL_proekt.07 }
+		}
+	}
+	
+	option = {
+	name = GAL.25.b
+		retire_character = YSK_Dmitriy_Rogozin
+	}
+}
+#Язык Бога
+country_event = {
+	id = GAL.26
+	title = GAL.26.t
+	desc = GAL.26.d
+	picture = GFX_report_event_dkr_bee
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.26.a
+		add_ideas = GAL_godmeow
+		news_event = { id = dk_news.92 }
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###

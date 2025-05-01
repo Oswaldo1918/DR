@@ -384,7 +384,7 @@ bba_support_boosts = {
 
 	enable = {
 		is_historical_focus_on = yes
-		date < 1939.1.1
+		date < 6.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -517,7 +517,6 @@ default_pp_spend_amount = {
 
 default_paratroopers_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
 	}
 	abort = {
@@ -984,20 +983,11 @@ default_market_convoy_purchases = {
 DEFAULT_early_template_design = {
 	enable = {
 		NOT = {
-			OR = {
-				tag = GER
-				tag = ENG
-				tag = SOV
-				tag = ITA
-				tag = JAP
-				tag = USA
-				tag = POL
-			}
 		}
-		date < 1940.1.1
+		date < 7.1.1
 	}
 	abort = {
-		date > 1940.1.1
+		date > 7.1.1
 	}
 
 	ai_strategy = {
@@ -1155,7 +1145,7 @@ build_intelligence_agency_as_major = {
 		is_major = yes
 		OR = {
 			has_war = yes
-			date > 1938.1.1
+			date > 5.1.1
 		}
 	}
 	abort_when_not_enabled = yes
@@ -1169,7 +1159,7 @@ build_intelligence_agency_as_major = {
 
 build_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 7.1.1
 		has_war = no
 		num_of_civilian_factories > 25
 	}
@@ -1189,7 +1179,7 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 7.1.1
 		num_of_civilian_factories > 50
 	}
 	abort = {

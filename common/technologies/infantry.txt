@@ -120,19 +120,6 @@ technologies = {
 		ai_will_do = {
 			base = 2
 			
-			modifier = {
-				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
 
 			modifier = {
 				factor = 5
@@ -369,10 +356,6 @@ technologies = {
 			base = 1
 			
 			
-			modifier = {
-				tag = GER
-				factor = 2.5
-			}
 
 			modifier = {
 				factor = 2
@@ -489,26 +472,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.5
 			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-
-			modifier = {
-				factor = 5
-				tag = GER
-				#TODO_Danne Add Fallschirmsjäger focus here!
-			}
 		}
 	}
 	
@@ -539,25 +502,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.5
 			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-
-			modifier = {
-				factor = 2
-				tag = GER
-			}
 		}
 	}
 
@@ -583,20 +527,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.5
 			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
 		}
 	}
 	
@@ -638,20 +568,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.7
 			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
 		}
 	}
 	
@@ -681,15 +597,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.7
 			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
 		}
 	}
 	
@@ -714,15 +621,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.7
 			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
 		}
 	}	
 	
@@ -1303,22 +1201,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			# All participants in this war will want to have this tech as early as possible
-			modifier = {
-				factor = 15
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-					tag = MAN
-					tag = MEN
-					tag = JAP
-				}
-			}
 
 			modifier = {
 				factor = 2
@@ -1379,19 +1261,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
-			modifier = {
-				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
 			modifier = {
 				factor = 2
 				date > "5.1.6"
@@ -1705,10 +1574,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -1734,7 +1599,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1914
+		start_year = 2
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @2 }
@@ -2026,10 +1891,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
 		}
 	}
 
@@ -2077,10 +1938,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
 		}
 	}
 

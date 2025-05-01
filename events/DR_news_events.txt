@@ -1878,3 +1878,17 @@ news_event = { #Ничто_морковный_сок
 		name = dk_news.91.a
 	}
 }
+news_event = { #Ничто_морковный_сок
+    id = dk_news.92
+	title = dk_news.92.t
+	desc = dk_news.92.d
+	picture = GFX_news_event_DKR_godmeow
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.92.a
+	}
+}
