@@ -113,6 +113,102 @@ ideas = {
 				army_speed_factor = 0.05
 			    }
 		    }
+			OMS_industrial = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.15 
+			    }
+		    }
+			OMS_industrial_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+               	breakthrough_factor = 0.15			
+			    }
+		    }
+			OMS_industrial_2 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+                breakthrough_factor = 0.15      				
+			    }
+		    }
+			OMS_kniga_pamyati = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				conscription = 0.02
+				war_support_factor = 0.1
+                army_org_factor = -0.05      				
+			    }
+		    }
+			OMS_kniga_pamyati_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				conscription = 0.02
+				war_support_factor = 0.1
+                army_org_factor = -0.05
+				compliance_gain = 0.05
+				resistance_growth = -0.05
+				metacommy_drift = 0.03
+			    }
+		    }
+			OMS_kniga_yarosti = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_attack_factor = 0.1
+				experience_loss_factor = 0.1
+			    }
+		    }
+			OMS_kniga_yarosti_1 = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_attack_factor = 0.1
+				experience_loss_factor = 0.1
+				attrition = -0.1
+				no_supply_grace = 240
+			    }
+		    }
+			OMS_kniga_sily = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				conscription_factor = 0.1
+				army_morale_factor = 0.1
+				casualty_trickleback = 0.1
+		        experience_loss_factor = -0.1
+			    }
+		    }
+			OMS_kniga_radosti = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				stability_factor = 0.15
+			    }
+		    }
+			OMS_kniga_terpeniya = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_defence_factor = 0.1
+				max_dig_in_factor = 0.05
+				no_supply_grace = 100
+			    }
+			}	
+		    OMS_kniga_vlasti = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				political_power_factor = 0.15
+			    }
+			}
 	    }
 		
 }

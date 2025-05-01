@@ -36,7 +36,26 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
-
+        completion_reward = {
+            hidden_effect = {
+			if = { 
+			        NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = OMS_Elizarov
+					}	
+				    }  
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			    }
+			}
+		}  
 	}
 	focus = {
 		id = OMS_kniga_pamyati
@@ -47,7 +66,19 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_pamyati
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}  
 	}
 	focus = {
 		id = OMS_kniga_yarosti
@@ -58,7 +89,19 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_yarosti
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_kniga_sily
@@ -69,7 +112,20 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_sily
+			add_manpower = 25000
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_divinity
@@ -83,7 +139,18 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}     
 	}
 	focus = {
 		id = OMS_knife_boy
@@ -94,7 +161,22 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-
+        completion_reward = {
+        swap_ideas = {
+			remove_idea = OMS_kniga_yarosti
+			add_idea = OMS_kniga_yarosti_1
+		}
+		hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}
 	}
 	focus = {
 		id = OMS_sila_nostalgy
@@ -105,7 +187,22 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-
+        completion_reward = {
+        swap_ideas = {
+			remove_idea = OMS_kniga_pamyati
+			add_idea = OMS_kniga_pamyati_1
+		}
+		hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_kniga_radosti
@@ -116,7 +213,20 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_radosti
+			add_political_power = -100
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}    
 	}
 	focus = {
 		id = OMS_voin_gospoden
@@ -130,7 +240,18 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}    
 	}
 	focus = {
 		id = OMS_kniga_terpeniya
@@ -141,7 +262,19 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_terpeniya
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_SSSR
@@ -155,7 +288,18 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}  
 	}
 	focus = {
 		id = OMS_kniga_vlasti
@@ -166,7 +310,19 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-
+        completion_reward = {
+            add_ideas = OMS_kniga_vlasti
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}    
 	}
 	focus = {
 		id = OMS_Rus_Fed
@@ -180,7 +336,18 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		} 
 	}
 	focus = {
 		id = OMS_kniga_smysla
@@ -200,7 +367,18 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+		}      
 	}
 	focus = {
 		id = OMS_sila_music
@@ -211,7 +389,18 @@ focus_tree = {
 		}
 		x = 15
 		y = 2
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_grob_records
@@ -222,7 +411,32 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-
+        completion_reward = {
+			571 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+            if = { 
+			        NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = OMS_Letov
+					}	
+				    }
+					promote_character = {
+    character = OMS_Letov
+    ideology = religious_communism
+}	
+			    }					
+			}    
 	}
 	focus = {
 		id = OMS_orskay
@@ -233,7 +447,39 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+        completion_reward = {
+		    division_template = {
+				name = "Urukhai"
+				is_locked = yes
+				division_cap = 18
+				template_counter = 35
+				regiments = {
+					urki_assault_battalion = { x = 0 y = 0 }
+					urki_assault_battalion = { x = 0 y = 1 }
+					urki_assault_battalion = { x = 0 y = 2 }
+					urki_assault_battalion = { x = 1 y = 0 }
+					urki_assault_battalion = { x = 1 y = 1 }
+					urki_assault_battalion = { x = 1 y = 2 }
+					urki_assault_battalion = { x = 2 y = 0 }
+					urki_assault_battalion = { x = 2 y = 1 }
+					urki_assault_battalion = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			MRD_spawn_urki_divisions_effect = yes
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+			}
+        }      		
 	}
 	focus = {
 		id = OMS_perepet_sovshdvr
@@ -247,7 +493,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_upor_na_original
@@ -261,7 +518,18 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}  
 	}
 	focus = {
 		id = OMS_soviet_oficial
@@ -276,7 +544,18 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}       
 	}
 	focus = {
 		id = OMS_experiment_zvuk
@@ -287,7 +566,18 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}        
 	}
 	focus = {
 		id = OMS_industrial
@@ -298,7 +588,19 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-
+        completion_reward = {
+		    add_ideas = OMS_industrial
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+        }     
 	}
 	focus = {
 		id = OMS_elektrogitara_ural
@@ -309,7 +611,22 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-
+		completion_reward = {
+        swap_ideas = {
+			remove_idea = OMS_industrial
+			add_idea = OMS_industrial_1
+		}
+		hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}
 	}
 	focus = {
 		id = OMS_japan_treaty
@@ -320,7 +637,23 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
-
+		completion_reward = {
+        add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = electronics
+		}
+		hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}
 	}
 	focus = {
 		id = OMS_heavy_music_heavy_industry
@@ -334,7 +667,46 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-
+        completion_reward = {
+        swap_ideas = {
+			remove_idea = OMS_industrial_1
+			add_idea = OMS_industrial_2
+		}
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+					}
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+					}
+		random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+					}
+			hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}		
+		}    
 	}
 	focus = {
 		id = OMS_gospank
@@ -349,7 +721,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}
 	}
 	focus = {
 		id = OMS_alchemy
@@ -364,7 +747,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}   
 	}
 	focus = {
 		id = OMS_old_songs
@@ -379,6 +773,17 @@ focus_tree = {
 		}
 		x = 16
 		y = 6
-
+        completion_reward = {
+            hidden_effect = {
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Letov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }	
+			}
+		}     
 	}
 }
