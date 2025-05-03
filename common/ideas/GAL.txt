@@ -279,12 +279,14 @@ ideas = {
 			GAL_tecnocratia = {
 	
 			   modifier = {
+			   political_power_gain = -0.05
 				research_speed_factor = 0.1
 			   }
 		    }
 			GAL_tecnocratia_2 = {
 	
 			   modifier = {
+			   political_power_gain = -0.1
 				research_speed_factor = 0.2
 			   }
 		    }
@@ -358,7 +360,7 @@ ideas = {
 			GAL_stroyki_za_premiyu = {
 				modifier = {
 				 production_speed_buildings_factor = 0.2
-				 consumer_goods_factor = 0.08
+				 consumer_goods_factor = 0.06
 			   }
 			}
 			GAL_rational_economy = {
@@ -395,7 +397,7 @@ ideas = {
 			GAL_ey_uhnem = {
 				modifier = {
 				 consumer_goods_factor = -0.15
-				 political_power_gain = -0.1
+				 political_power_factor = -0.1
 				}
 			}
 			GAL_krasniy_rassvet = {
@@ -410,7 +412,8 @@ ideas = {
 				modifier = {
 				 production_speed_radar_station_factor = 0.2
 				 coordination_bonus = 0.1
-				 initiative_factor = 0.15
+				 recon_factor = 0.1
+				 initiative_factor = 0.05
 				}
 			}
 			GAL_sinofobia = {
@@ -469,14 +472,18 @@ ideas = {
 			}
 			GAL_meat = {
 				modifier = {
+				 army_strength_factor = 0.1
 				 supply_consumption_factor  = -0.05
 				 land_reinforce_rate = 0.1
+				 monthly_population = 0.05
 				}
 			}
 			GAL_meat_2 = {
 				modifier = {
+				 army_strength_factor = 0.15
 				 supply_consumption_factor  = -0.1
 				 land_reinforce_rate = 0.15
+				 monthly_population = 0.1
 				}
 			}
 			GAL_war_idiokracy = {
@@ -498,6 +505,40 @@ ideas = {
 				 encryption_factor = 0.15
 				 crypto_strength = 1
 				 planning_speed = 0.33
+				}
+			}
+			GAL_ierarhiya_tehnokratii = {
+				modifier = {
+				 political_advisor_cost_factor = -0.15
+				 economy_cost_factor = -0.15
+				 trade_laws_cost_factor = -0.15
+				 mobilization_laws_cost_factor = -0.15
+				}
+			}
+			GAL_banya = {
+				modifier = {
+				 political_power_gain = 0.1
+				 intelligence_agency_defense = 0.5
+				 foreign_subversive_activites = -0.10
+				 enemy_operative_detection_chance_factor = 0.10
+				}
+			}
+			GAL_toples_program = {
+				modifier = {
+				 political_power_factor = 0.5
+				 stability_factor = 0.5
+				 research_speed_factor = -0.03
+				 consumer_goods_factor = -0.02
+				}
+			}
+			GAL_shering = {
+				modifier = {
+				 consumer_goods_factor = -0.1
+				}
+			}
+			GAL_sibgektar = {
+				modifier = {
+				 consumer_goods_factor = 0.2
 				}
 			}
 	}

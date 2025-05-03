@@ -114,12 +114,11 @@ country_event = {
 	name = GAL.5.a
 	}
 }
-#Свой путь 
-country_event = {
+#Бегство Панчина
+unit_leader_event = {
 	id = GAL.6
 	title = GAL.6.t
 	desc = GAL.6.d
-	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
 	}
@@ -128,6 +127,8 @@ country_event = {
 	
 	option = {
 	name = GAL.6.a
+		retire_character = GAL_Panchin
+		add_war_support = -0.02
 	}
 }
 #Бегство Савватеева 
@@ -144,7 +145,7 @@ unit_leader_event = {
 	option = {
 	name = GAL.7.a
 	    retire_character = GAL_Savvateev 
-		add_stability = -0.01
+		add_stability = -0.02
 	}
 }
 #Открытие клуба Сайберия
@@ -637,6 +638,106 @@ country_event = {
 	name = GAL.26.a
 		add_ideas = GAL_godmeow
 		news_event = { id = dk_news.92 }
+	}
+}
+#Топлес программа 
+country_event = {
+	id = GAL.27
+	title = GAL.27.t
+	desc = GAL.27.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.27.a
+		hidden_effect = {
+			country_event = { id = GAL_proekt.05 }
+		}
+	}
+	
+	option = {
+	name = GAL.27.b
+		retire_character = GAL_Toples
+	}
+	
+	option = {
+	name = GAL.27.c
+		add_political_power = -50
+		add_timed_idea = {
+			idea = GAL_toples_program
+			days = 300
+		}
+		hidden_effect = {
+			country_event = { id = GAL_proekt.05 }
+		}
+	}
+}
+#Баня Бочка
+country_event = {
+	id = GAL.28
+	title = GAL.28.t
+	desc = GAL.28.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.28.a
+		add_ideas = GAL_banya
+	}
+}
+#Шеринг экономизм
+country_event = {
+	id = GAL.29
+	title = GAL.29.t
+	desc = GAL.29.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.29.a
+		add_political_power = 50
+	}
+	
+	option = {
+	name = GAL.29.b
+		add_political_power = -50
+		add_ideas = GAL_shering
+	}
+	
+	option = {
+	name = GAL.29.c 
+		add_political_power = -50
+		add_stability = -0.1
+		add_ideas = GAL_shering
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 300
+			producer = GAL
+		}
+	}
+}
+#Савватеев Знакомство
+unit_leader_event = {
+	id = GAL.30
+	title = GAL.30.t
+	desc = GAL.30.d
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.30.a
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###
