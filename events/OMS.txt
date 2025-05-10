@@ -82,4 +82,41 @@ country_event = {
 		remove_ideas = OMS_kustarnoe_proizvodstvo
 		remove_ideas = POK_idea_GV
 	}	
+}
+country_event = {
+    id = OMS.2
+	title = OMS.2.t
+	desc = OMS.2.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = OMS
+	}
+	
+	
+	option = {
+	name = OMS.2.a
+	custom_effect_tooltip = OMS_Letov_1_tt
+	}
 }	
+country_event = {
+    id = OMS.3
+	title = OMS.3.t
+	desc = OMS.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = OMS
+	}
+	
+	
+	option = {
+	name = OMS.3.a
+	}
+}

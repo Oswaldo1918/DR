@@ -91,6 +91,7 @@ focus_tree = {
 		y = 3
         completion_reward = {
             add_ideas = OMS_kniga_yarosti
+			add_war_support = 0.1
 			hidden_effect = {
 					retire_country_leader = yes
 					add_country_leader_role = {
@@ -391,14 +392,10 @@ focus_tree = {
 		y = 2
         completion_reward = {
             hidden_effect = {
-					retire_country_leader = yes
-					add_country_leader_role = {
-                        character = OMS_Letov
-                        promote_leader = yes
-                        country_leader = {
-                            ideology = religious_communism
-                        }
-                    }	
+	promote_character = {
+    character = OMS_Letov
+    ideology = religious_communism
+}
 			}
 		}   
 	}
