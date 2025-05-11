@@ -99,6 +99,9 @@ country_event = {
 	
 	option = {
 	name = OMS.2.a
+	add_manpower = -65
+	add_political_power = -150
+	add_stability = -0.1
 	custom_effect_tooltip = OMS_Letov_1_tt
 	}
 }	
@@ -118,5 +121,41 @@ country_event = {
 	
 	option = {
 	name = OMS.3.a
+	}
+}
+country_event = {
+    id = OMS.4
+	title = OMS.4.t
+	desc = OMS.4.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = OMS
+	}
+	
+	
+	option = {
+	name = OMS.4.a
+	}
+}
+country_event = {
+    id = OMS.5
+	title = OMS.5.t
+	desc = OMS.5.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = OMS
+	}
+	
+	
+	option = {
+	name = OMS.5.a
 	}
 }
