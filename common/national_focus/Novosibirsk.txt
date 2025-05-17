@@ -2158,6 +2158,8 @@ focus_tree = {
 		y = 14
 		completion_reward = {
 			add_ideas = GAL_svyaz_i_communocation
+			set_technology = { GAL_signal_upgrade = 1 popup = yes }
+			custom_effect_tooltip = GAL_signal_upgrade_tt
 		}
 	}
 	focus = {
@@ -2217,6 +2219,9 @@ focus_tree = {
 		}
 		x = 57
 		y = 13
+		completion_reward = {
+			add_ideas = GAL_nauka_i_iskusstvo
+		}
 
 	}
 	focus = {
@@ -2231,6 +2236,12 @@ focus_tree = {
 		}
 		x = 62
 		y = 12
+		completion_reward = {
+			hidden_effect = {
+				activate_mission = GAL_drobysh_agenda
+				add_ideas = GAL_drobysh_idea
+			}
+		}
 
 	}
 	focus = {
@@ -2270,6 +2281,9 @@ focus_tree = {
 		}
 		x = 61
 		y = 13
+		completion_reward = {
+			add_ideas = GAL_kasty
+		}
 
 	}
 	focus = {
@@ -2286,14 +2300,31 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GAL_osoznanie
+		id = GAL_renesans
 		icon = GFX_goal_unknown
-		cost = 1-.00
+		cost = 5.00
 		prerequisite = {
 			focus = GAL_nauka_i_iskusstvo
 		}
 		x = 58
 		y = 14
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GAL_nauka_i_iskusstvo
+				add_idea = GAL_renesans
+			}
+		}
+
+	}
+	focus = {
+		id = GAL_osoznanie
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GAL_zvuk_oruzhie
+		}
+		x = 57
+		y = 16
 
 	}
 	focus = {
@@ -2535,7 +2566,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GAL_zvuk_oruzhie
+		id = GAL_new_galileo
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -2543,6 +2574,25 @@ focus_tree = {
 		}
 		x = 56
 		y = 14
+		completion_reward = {
+			add_ideas = {
+				GAL_new_galileo_idea
+			}
+		}
+
+	}
+	focus = {
+		id = GAL_zvuk_oruzhie
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = GAL_new_galileo
+		}
+		prerequisite = {
+			focus = GAL_renesans
+		}
+		x = 57
+		y = 15
 
 	}
 	focus = {
@@ -3022,13 +3072,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			every_possible_country = {
-				limit = { has_character = YSK_Dmitriy_Rogozin }
-				random_character = {
-					limit = { is_character = YSK_Dmitriy_Rogozin }
-					set_nationality = GAL
-				}
-			}
+			country_event = { id = GAL.24 }
 			custom_effect_tooltip = {
 				localization_key = GER_ascension_of_character_focus_tt
 				CHARACTER = YSK_Dmitriy_Rogozin
@@ -3039,9 +3083,6 @@ focus_tree = {
 				ahead_reduction = 1
 				uses = 1
 				category = rocketry
-			}
-			hidden_effect = {
-			country_event = { id = GAL_proekt.07 }
 			}
 		}
 

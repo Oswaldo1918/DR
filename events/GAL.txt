@@ -610,7 +610,7 @@ country_event = {
 	
 	option = {
 	name = GAL.25.a
-		add_political_power = -150
+		add_political_power = -100
 		add_war_support = -0.05
 		hidden_effect = {
 			country_event = { id = GAL_proekt.07 }
@@ -738,6 +738,86 @@ unit_leader_event = {
 	
 	option = {
 	name = GAL.30.a
+	}
+}
+#Генетика Наука Ученая Армия
+country_event = {
+	id = GAL.31
+	title = GAL.31.t
+	desc = GAL.31.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.31.a
+		activate_mission = GAL_uch_army_oficer
+	}
+	
+	option = {
+	name = GAL.31.b
+		activate_mission = GAL_uch_army_soldat
+	}
+}
+#Генетика Наука ГМО Солдат
+country_event = {
+	id = GAL.32
+	title = GAL.32.t
+	desc = GAL.32.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.32.a
+		activate_mission = GAL_gmo_catgirl
+	}
+	
+	option = {
+	name = GAL.32.b
+		activate_mission = GAL_gmo_dwarf
+	}
+}
+#Генетика Наука Кошкодевочки
+country_event = {
+	id = GAL.33
+	title = GAL.33.t
+	desc = GAL.33.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.33.a
+		set_technology = { GAL_catgirls_recon = 1 popup = yes }
+		custom_effect_tooltip = GAL_catgirls_recon_tt
+	}
+}
+#Генетика Наука Дворфы
+country_event = {
+	id = GAL.34
+	title = GAL.34.t
+	desc = GAL.34.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.34.a
+		set_technology = { GAL_dwarfes_engineer = 1 popup = yes }
+		custom_effect_tooltip = GAL_dwarfes_engineer_tt
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###

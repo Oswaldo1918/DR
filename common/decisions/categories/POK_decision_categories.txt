@@ -130,6 +130,22 @@ GAL_akademgoroda_cat = {
 		has_completed_focus = GAL_ozhivit_akadem_goroda
 	}
 }
+GAL_genetika_nauka_decisions_category = {
+	icon = GFX_decision_category_usa_congress
+
+	allowed = {
+		tag = GAL
+	}
+	priority = 500
+
+	visible = {
+		has_completed_focus = GAL_genetika_nauka
+	}
+	
+	visible_when_empty = yes
+
+	scripted_gui = genetika_nauka_decision_cat_gui
+}
 MGN_soyuz_sionskih_socialnih_razrushiteley = { 
  icon = generic_prospect_for_resources
     allowed = {

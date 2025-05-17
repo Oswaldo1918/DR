@@ -1,0 +1,15 @@
+guiTypes = {
+	containerWindowType = {
+		name = "genetika_nauka_decision_cat_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 200 }
+
+		iconType = {
+			name = "Drobysh"
+			position = { x = 175 y = 0 }
+			spriteType = "GFX_GAL_Drobysh"
+
+			pdx_tooltip = "Drobysh_tooltip"
+		}
+	}
+}

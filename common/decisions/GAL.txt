@@ -222,7 +222,7 @@ political_actions= {
 				}
 				add_to_variable = { var = GAL_monthly_population value = 0.3 }
 				add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
-				add_to_variable = { var = GAL_local_building_slots = 1 }
+				add_to_variable = { var = GAL_local_building_slots value = 1 }
 			}
 		}
 	}
@@ -914,7 +914,7 @@ GAL_akademgoroda_cat = {
 				name = GAL_akademgorod_17
 			}
 			set_victory_points = { province = 7274 value = 50 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 	GAL_ymantau = {
@@ -970,7 +970,7 @@ GAL_akademgoroda_cat = {
 			}
 			set_province_name = { id = 4311 name = GAL_ymantau }
 			set_victory_points = { province = 4311 value = 17 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 	GAL_grozniygrad = {
@@ -1036,7 +1036,7 @@ GAL_akademgoroda_cat = {
 			}		
 			set_province_name = { id = 1459 name = GAL_grozniygrad }
 			set_victory_points = { province = 1459 value = 20 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 	GAL_moskva_3 = {
@@ -1117,7 +1117,7 @@ GAL_akademgoroda_cat = {
 			}			
 			set_province_name = { id = 6380 name = GAL_moskva_3 }
 			set_victory_points = { province = 6380 value = 50 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 	GAL_lomonosov = {
@@ -1178,7 +1178,7 @@ GAL_akademgoroda_cat = {
 			}	
 			set_province_name = { id = 3151 name = GAL_lomonosov }
 			set_victory_points = { province = 3151 value = 35 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 	GAL_vladivostok_2000 = {
@@ -1239,7 +1239,177 @@ GAL_akademgoroda_cat = {
 			}	
 			set_province_name = { id = 957 name = GAL_vladivostok_2000 }
 			set_victory_points = { province = 957 value = 25 }
-			add_to_variable = { var = GAL_research_speed_factor = 0.003 }
+			add_to_variable = { var = GAL_research_speed_factor value = 0.003 }
 		}
 	}
 }
+GAL_genetika_nauka_decisions_category = {
+	GAL_drobysh_agenda = {
+		icon = generic_research
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = GAL_genetika_nauka
+        }   
+		visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_genetika_nauka
+        }
+		available = {
+		    always = no
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			random_list = { }
+			hidden_effect = {
+				activate_mission = GAL_drobysh_agenda
+			}
+		}
+	}
+	GAL_army_genetik = {
+		icon = generic_research
+		cost = 100
+		
+		fire_only_once = yes 
+
+        ai_will_do = {
+			factor = 4
+		}
+		visible = {
+			has_completed_focus = GAL_genetika_nauka
+        }
+		
+		complete_effect = {
+			country_event = { id = GAL.31 }
+		}
+
+    }
+	GAL_uch_army_oficer = {
+		icon = generic_research
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = GAL_genetika_nauka
+        }   
+		visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_genetika_nauka
+        }
+		available = {
+		    always = no
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			add_ideas = { GAL_oficer }
+		}
+	}
+	
+	GAL_uch_army_soldat = {
+		icon = generic_research
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = GAL_genetika_nauka
+        }   
+		visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_genetika_nauka
+        }
+		available = {
+		    always = no
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			add_ideas = { GAL_soldat }
+		}
+	}
+	
+	GAL_army_genetik_2 = {
+		icon = generic_research
+		cost = 100
+		
+		fire_only_once = yes 
+
+        ai_will_do = {
+			factor = 4
+		}
+		visible = {
+			has_completed_focus = GAL_genetika_nauka
+        }
+		
+		complete_effect = {
+			country_event = { id = GAL.32 }
+		}
+
+    }
+	
+	GAL_gmo_catgirl = {
+		icon = generic_research
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = GAL_genetika_nauka
+        }   
+		visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_genetika_nauka
+        }
+		available = {
+		    always = no
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			country_event = { id = GAL.33 }
+		}
+	}
+	
+	GAL_gmo_dwarf = {
+		icon = generic_research
+		allowed = { always = no }
+        activation = {
+            has_completed_focus = GAL_genetika_nauka
+        }   
+		visible = {
+		    tag = GAL
+		    has_completed_focus = GAL_genetika_nauka
+        }
+		available = {
+		    always = no
+		}
+		days_mission_timeout = 100
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			country_event = { id = GAL.34 }
+		}
+	}
+}	
