@@ -49,18 +49,21 @@ country_event = {
 					id = OMS.4
 						    }
             hidden_effect = {
-			if = { 
-			        NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = OMS_Elizarov
-					}	
-				    }
-					promote_character = {
-    character = OMS_Elizarov
-    ideology = nacbol
-}	
-			    }	
+					retire_country_leader = yes
+					add_country_leader_role = {
+                        character = OMS_Elizarov
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = nacbol
+                        }
+                    }	
+
+				OMS_Elizarov = {
+				add_trait = {
+				ideology = nacbol
+				trait = elizarov_trait
+				}
+				}
 			}
 		}  
 	}
@@ -360,15 +363,19 @@ country_event = {
 		y = 3
         completion_reward = {
             add_ideas = OMS_kniga_vlasti
-			hidden_effect = {
-					retire_country_leader = yes
-					add_country_leader_role = {
-                        character = OMS_Elizarov
-                        promote_leader = yes
-                        country_leader = {
-                            ideology = nacbol
-                        }
-                    }	
+			 hidden_effect = {
+					if = { 
+			        NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = OMS_Elizarov
+					}	
+				    }
+					promote_character = {
+    character = OMS_Elizarov
+    ideology = nacbol
+}	
+			    }		
 			}
 		}    
 	}
@@ -449,7 +456,7 @@ country_event = {
 	promote_character = {
     character = OMS_Letov
     ideology = religious_communism
-}
+}   
 			}
 		}   
 	}

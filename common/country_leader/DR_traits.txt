@@ -11,6 +11,36 @@
 @chief_experience_gain_high = 0.40
 
 leader_traits = {
+
+    letov_trait = {
+		sprite = 10
+		random = no
+		command_power_gain = 0.1
+		war_support_factor = 0.1
+		political_power_gain = 0.1
+		army_morale_factor = 0.1
+		metacommy_drift = 0.01
+		anarhostalinism_drift = 0.01
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	elizarov_trait = {
+		sprite = 10
+		random = no
+		political_power_gain = -0.3
+        stability_factor = 0.05
+        agency_upgrade_time = -0.05
+		decryption_power = 2
+        max_planning_factor = 0.2
+		metacommy_drift = 0.01
+		vmestolev_drift = 0.01
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
     aye_libsoc = {
 		sprite = 10
 		random = no
