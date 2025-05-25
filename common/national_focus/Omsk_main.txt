@@ -177,6 +177,18 @@ country_event = {
 }	
 			    }		
 			}
+			OMS_Letov = {
+				add_trait = {
+				ideology = religious_communism
+				trait = obretyonnaya_bozhestvennost
+				}
+				}
+		    OMS_Elizarov = {
+				add_trait = {
+				ideology = white_polpotism
+				trait = obretyonnaya_bozhestvennost
+				}
+				}
 		}     
 	}
 	focus = {
@@ -392,13 +404,7 @@ country_event = {
 		x = 8
 		y = 4
         completion_reward = {
-            if = { 
-			        NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = OMS_Elizarov
-					}	
-				    }
+             hidden_effect = { 
 					promote_character = {
     character = OMS_Elizarov
     ideology = white_polpotism
@@ -425,13 +431,7 @@ country_event = {
 		x = 5
 		y = 5
         completion_reward = {
-            if = { 
-			        NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = OMS_Elizarov
-					}	
-				    }
+            hidden_effect = {
 					promote_character = {
     character = OMS_Elizarov
     ideology = white_polpotism
@@ -482,13 +482,8 @@ country_event = {
 				uses = 1
 				category = electronics
 			}
-            if = { 
-			        NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = OMS_Letov
-					}	
-				    }
+			
+            hidden_effect = { 
 					promote_character = {
     character = OMS_Letov
     ideology = religious_communism

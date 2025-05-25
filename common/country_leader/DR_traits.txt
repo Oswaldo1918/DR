@@ -12,6 +12,15 @@
 
 leader_traits = {
 
+    obretyonnaya_bozhestvennost = {
+		sprite = 10
+		random = no
+		metacommy_drift = 0.01
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
     letov_trait = {
 		sprite = 10
 		random = no
