@@ -177,17 +177,12 @@ country_event = {
 }	
 			    }		
 			}
+			
 			OMS_Letov = {
-				add_trait = {
-				ideology = religious_communism
-				trait = obretyonnaya_bozhestvennost
-				}
+			add_country_leader_trait = obretyonnaya_bozhestvennost
 				}
 		    OMS_Elizarov = {
-				add_trait = {
-				ideology = white_polpotism
-				trait = obretyonnaya_bozhestvennost
-				}
+			add_country_leader_trait = obretyonnaya_bozhestvennost
 				}
 		}     
 	}
