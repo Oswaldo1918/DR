@@ -16,6 +16,10 @@ leader_traits = {
 		sprite = 10
 		random = no
 		metacommy_drift = 0.01
+		army_morale_factor = 0.05
+        Political_power_gain = 0.1
+        sickness_chance = -1
+		wounded_chance_factor = -1
 		ai_will_do = {
 			factor = 2
 		}
