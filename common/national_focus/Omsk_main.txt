@@ -177,7 +177,7 @@ country_event = {
 }	
 			    }		
 			}
-			
+			add_political_power = -500
 			OMS_Letov = {
 			add_country_leader_trait = obretyonnaya_bozhestvennost
 			add_unit_leader_trait = trait_OMS_bessmertie
@@ -289,6 +289,8 @@ country_event = {
 		x = 6
 		y = 4
         completion_reward = {
+		add_political_power = 100
+		add_ideas = OMS_voin_gospoden
             hidden_effect = {
 					if = { 
 			        NOT = {
