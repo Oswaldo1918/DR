@@ -284,6 +284,71 @@ characters={
 		}
 	}
 	
+	GAL_oso = {
+		name = "О-Сознание"
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Osonanie"
+				large = "gfx/leaders/GAL/Osoznanie.dds"				
+			}
+		}		
+	}
+	
+	GAL_oso_land = {
+		name = "О-Сознание"
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Osonanie"
+				large = "gfx/leaders/GAL/Osoznanie_l.dds"				
+			}
+		}		
+		scientist = {
+			traits = { scientist_trait_genius scientist_trait_bright scientist_trait_fast_learner   }
+			skills = {
+				specialization_land = 3
+			}
+			visible = { has_completed_focus = GAL_osoznanie  }
+		}	
+	}
+	
+	GAL_oso_air = {
+		name = "О-Сознание"
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Osonanie"
+				large = "gfx/leaders/GAL/Osoznanie_a.dds"				
+			}
+		}		
+		scientist = {
+			traits = { scientist_trait_genius scientist_trait_bright scientist_trait_fast_learner   }
+			skills = {
+				specialization_air = 3
+			}
+			visible = { has_completed_focus = GAL_osoznanie  }
+		}	
+	}
+	
+	GAL_oso_nuclear = {
+		name = "О-Сознание"
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Osonanie"
+				large = "gfx/leaders/GAL/Osoznanie_n.dds"				
+			}
+		}		
+		scientist = {
+			traits = { scientist_trait_genius scientist_trait_bright scientist_trait_fast_learner   }
+			skills = {
+				specialization_nuclear = 3
+			}
+			visible = { has_completed_focus = GAL_osoznanie  }
+		}	
+	}
+	
 	GAL_Romanov = {
 		name = "Товарищ Борис Жидко"
 

@@ -216,7 +216,7 @@ country_event = {
 		add_stability = -0.1
 	}
 }
-# Осознание
+# Осознание - Начало
 country_event = {
 	id = GAL.11
 	title = GAL.11.t
@@ -224,12 +224,28 @@ country_event = {
 	picture = GFX_report_event_dkr_solzh_golova
 	trigger = {
 		tag = GAL
+		has_completed_focus = GAL_otkaz_ot_radikalisma
+		count_triggers = {
+			amount = 3
+			has_completed_focus = GAL_Syenduk
+			has_completed_focus = GAL_Boyarshinov
+			has_completed_focus = GAL_Toples
+			has_completed_focus = GAL_Rogozin
+			has_completed_focus = GAL_Deb
+			has_completed_focus = GAL_Savvateev
+			has_completed_focus = GAL_Panchin
+		}
 	}
 	
-	is_triggered_only = yes	
+	mean_time_to_happen = {
+		days = 50
+	}
+	
+	fire_only_once = yes
 	
 	option = {
 	name = GAL.11.a
+		add_ideas = GAL_sovet_spor
 	}
 }
 # Ноль
@@ -393,7 +409,6 @@ country_event = {
         }
 		add_political_power = -50
 		add_ideas = GAL_spartanism_2
-		every_scientist = { add_scientist_trait = scientist_trait_resourceful }
 	}
 	
 	option = {
@@ -818,6 +833,48 @@ country_event = {
 	name = GAL.34.a
 		set_technology = { GAL_dwarfes_engineer = 1 popup = yes }
 		custom_effect_tooltip = GAL_dwarfes_engineer_tt
+	}
+}
+#Осознание - Сам Проект
+country_event = {
+	id = GAL.35
+	title = GAL.35.t
+	desc = GAL.35.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.35.a
+		retire_character = GAL_sndk
+		retire_character = GAL_Boyarshinov
+		retire_character = GAL_Deb
+		retire_character = GAL_Savvateev
+		retire_character = GAL_Toples
+		retire_character = GAL_Panchin
+		add_advisor_role = {
+			activate = yes
+			character = GAL_oso
+			advisor = {
+				slot = political_advisor
+				idea_token = GAL_oso
+				traits = { think_tank }
+				cost = 150
+			}
+		}
+		add_corps_commander_role = {
+			character = GAL_oso
+			traits = { organizer skilled_staffer }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###

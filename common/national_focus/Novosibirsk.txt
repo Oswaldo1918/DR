@@ -2175,6 +2175,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_svyaz_i_communocation
 		}
+		cancelable = no
 		x = 52
 		y = 15
 	}
@@ -2320,9 +2321,13 @@ focus_tree = {
 		id = GAL_osoznanie
 		icon = GFX_goal_unknown
 		cost = 10.00
+		available = {
+			has_idea = GAL_sovet_spor
+		}
 		prerequisite = {
 			focus = GAL_zvuk_oruzhie
 		}
+		cancelable = no
 		x = 57
 		y = 16
 
@@ -2369,6 +2374,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_stop_idiokraty
 		}
+		cancelable = no
 		x = 62
 		y = 15
 		select_effect = {
@@ -2625,15 +2631,16 @@ focus_tree = {
 		id = GAL_Syenduk
 		icon = GFX_goal_unknown
 		cost = 2
-		available = {
-			has_character = GAL_sndk
-		}
 		prerequisite = {
 			focus = GAL_experimenty
 		}
 		x = 39
 		y = 9
 		available = {
+			has_character = GAL_sndk
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -2760,15 +2767,16 @@ focus_tree = {
 		id = GAL_Boyarshinov
 		icon = GFX_goal_unknown
 		cost = 2
-		available = {
-			has_character = GAL_Boyarshinov
-		}
 		prerequisite = {
 			focus = GAL_experimenty
 		}
 		x = 41
 		y = 9
 		available = {
+			has_character = GAL_Boyarshinov
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -2788,7 +2796,7 @@ focus_tree = {
 			GAL_scientist_cd = yes
 			add_tech_bonus = {
 				bonus = 1
-				ahead_reduction = 1
+				ahead_reduction = 2
 				uses = 1
 				technology = atomic_research
 			}
@@ -2937,15 +2945,16 @@ focus_tree = {
 		id = GAL_Toples
 		icon = GFX_goal_unknown
 		cost = 2
-		available = {
-			has_character = GAL_Toples
-		}
 		prerequisite = {
 			focus = GAL_experimenty
 		}
 		x = 45
 		y = 9
 		available = {
+			has_character = GAL_Toples
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -3060,6 +3069,9 @@ focus_tree = {
 		x = 43
 		y = 9
 		available = {
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -3185,9 +3197,6 @@ focus_tree = {
 		id = GAL_Panchin
 		icon = GFX_goal_unknown
 		cost = 2
-		available = {
-			has_character = GAL_Panchin
-		}
 		prerequisite = {
 			focus = GAL_experimenty
 		}
@@ -3197,6 +3206,10 @@ focus_tree = {
 		x = 51
 		y = 9
 		available = {
+			has_character = GAL_Panchin
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -3306,15 +3319,16 @@ focus_tree = {
 		id = GAL_Deb
 		icon = GFX_goal_unknown
 		cost = 2
-		available = {
-			has_character = GAL_Deb
-		}
 		prerequisite = {
 			focus = GAL_experimenty
 		}
 		x = 47
 		y = 9
 		available = {
+			has_character = GAL_Deb
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {
@@ -3442,6 +3456,10 @@ focus_tree = {
 		x = 49
 		y = 9
 		available = {
+			has_character = GAL_Savvateev
+			NOT = {
+				has_idea = GAL_sovet_spor
+			}
 			GAL_scientist_cd_over = yes
 			if = {
 				limit = {

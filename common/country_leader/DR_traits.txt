@@ -1416,6 +1416,8 @@ leader_traits = {
 			factor = 2
 		}
 	}
+    ###GALILEO GALILEO####
+	
 	mad_scientist = {
 		random = no	
 		research_speed_factor = 0.05
@@ -1517,6 +1519,22 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	think_tank = {
+		random = no		
+		research_speed_factor = 0.1
+		special_project_speed_factor = 0.1
+		political_power_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		max_planning = 0.1
+		planning_speed = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	###UKRAINA ZELYA###
+	
 	pig_master = {
 		random = no
 		army_attack_factor = 0.05

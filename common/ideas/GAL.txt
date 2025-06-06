@@ -527,7 +527,7 @@ ideas = {
 				modifier = {
 				 political_power_factor = 0.5
 				 stability_factor = 0.5
-				 research_speed_factor = -0.03
+				 research_speed_factor = -0.05
 				 consumer_goods_factor = -0.02
 				}
 			}
@@ -584,6 +584,11 @@ ideas = {
 				 experience_gain_army_unit_factor = 0.20
 				 training_time_army_factor = -0.2
 				 experience_loss_factor = -0.2
+				}
+			}
+			GAL_sovet_spor = {
+				modifier = {
+				 political_power_factor = -0.15
 				}
 			}
 	}	
