@@ -536,10 +536,8 @@ country_event = {
 		add_country_leader_role = { 
 			character = GAL_sndk
 			promote_leader = yes
-			country_leader = {
-			    desc = "POLITICS_NOVOD_DESC"     
-				ideology = fascism
-				expire = "1965.1.1.1"
+			country_leader = {   
+				ideology = cybernetics
 				traits = {
 					mad_scientist
 				}
@@ -562,13 +560,14 @@ country_event = {
 	name = GAL.23.a
 		hidden_effect = {
 			news_event = { id = dk_news.91 days = 1 }
+			country_event = { id = GAL.36 days = 7}
 			ZZZ = {
 				set_cosmetic_tag = ZZZ_evangelion
 				load_focus_tree = Nichto_2
 				retire_ideology_leader = memoism
 				create_country_leader = {
 					name = "Именно Он?"
-					desc = "POLITICS_THORVALD_STAUNING_DESC"
+					desc = ""
 					picture = "Gegel_Evangelion.dds"
 					expire = "1999.1.1"
 					ideology = gegelianism
@@ -634,7 +633,7 @@ country_event = {
 	
 	option = {
 	name = GAL.25.b
-		retire_character = YSK_Dmitriy_Rogozin
+		custom_effect_tooltip = GAL25b_tt
 	}
 }
 #Язык Бога
@@ -874,6 +873,142 @@ country_event = {
 			planning_skill = 5
 			logistics_skill = 5
 			legacy_id = -1
+		}
+	}
+}
+#Разборки после экспедиции Пушного
+country_event = {
+	id = GAL.36
+	title = GAL.36.t
+	desc = GAL.36.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.36.a
+		retire_character = GAL_Deb
+		add_manpower = -10000
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+	
+	option = {
+	name = GAL.36.b
+		add_country_leader_role = { 
+			character = GAL_Deb
+			promote_leader = yes
+			country_leader = {   
+				ideology = cybernetics
+				traits = {
+					spartanist
+				}
+			}
+		}
+		retire_character = GAL_sndk
+		add_manpower = -10000
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+	
+	option = {
+	name = GAL.36.c
+		add_manpower = -10000
+		add_stability = -0.1
+		add_war_support = -0.1
+		country_event = { id = GAL.37 }
+	}
+}
+#Борьба за власть
+country_event = {
+	id = GAL.37
+	title = GAL.37.t
+	desc = GAL.37.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.37.1
+		retire_character = GAL_Deb
+		retire_character = GAL_sndk
+		add_country_leader_role = { 
+			character = GAL_Panchin
+			promote_leader = yes
+			country_leader = {
+			    desc = ""     
+				ideology = cybernetics
+				expire = "1965.1.1.1"
+				traits = {
+					inkvizitor
+				}
+			}
+		}
+	}
+	
+	option = {
+	name = GAL.37.2
+		trigger = {
+			has_character = GAL_Boyarshinov
+		}
+		retire_character = GAL_Deb
+		retire_character = GAL_sndk
+		add_country_leader_role = { 
+			character = GAL_Boyarshinov
+			promote_leader = yes
+			country_leader = {    
+				ideology = cybernetics
+				traits = {
+					nuclear_ded
+				}
+			}
+		}
+	}
+	
+	option = {
+	name = GAL.37.3
+		trigger = {
+			has_character = GAL_Toples
+		}
+		retire_character = GAL_Deb
+		retire_character = GAL_sndk
+		add_country_leader_role = { 
+			character = GAL_Toples
+			promote_leader = yes
+			country_leader = {     
+				ideology = cybernetics
+				traits = {
+					panoptikator
+				}
+			}
+		}
+	}
+	
+	option = {
+	name = GAL.37.4
+		trigger = {
+			AND = {
+				has_character = YSK_Dmitriy_Rogozin
+				has_completed_focus = GAL_Rogozin_2
+			}
+		}
+		retire_character = GAL_Deb
+		retire_character = GAL_sndk
+		add_country_leader_role = { 
+			character = YSK_Dmitriy_Rogozin
+			promote_leader = yes
+			country_leader = {  
+				ideology = cybernetics
+				traits = {
+					visioner
+				}
+			}
 		}
 	}
 }

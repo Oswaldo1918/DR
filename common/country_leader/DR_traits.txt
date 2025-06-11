@@ -1533,6 +1533,19 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	nuclear_ded = {
+		random = no 
+		production_speed_nuclear_reactor_factor = 0.2
+		nuclear_production_factor = 0.1
+		sp_tag_nuclear_warfare_speed_factor = 0.1
+		sp_tag_nuclear_power_speed_factor = 0.1
+	}
+	visioner = {
+		random = no 
+		production_speed_rocket_site_factor = 0.2
+		sp_tag_rocket_speed_factor = 0.1
+		rocket_attack_factor = 0.1
+	}
 	###UKRAINA ZELYA###
 	
 	pig_master = {

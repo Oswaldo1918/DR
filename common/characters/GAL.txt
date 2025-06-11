@@ -123,7 +123,10 @@ characters={
 				mad_scientist
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-			available = { has_completed_focus = GAL_Syenduk }
+			available = { 
+				has_completed_focus = GAL_Syenduk 
+				is_country_leader = no
+			}
 		}
 	}
 	
@@ -179,7 +182,10 @@ characters={
 				factor = 1.000
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-			available = { has_completed_focus = GAL_Deb }
+			available = { 
+				has_completed_focus = GAL_Deb 
+				is_country_leader = no
+			}
 		}
 	}
 	
@@ -256,7 +262,10 @@ characters={
 				panoptikator
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-			available = { has_completed_focus = GAL_Toples }
+			available = { 
+				has_completed_focus = GAL_Toples 
+				is_country_leader = no
+			}
 		}		
 	}
 	
@@ -280,7 +289,10 @@ characters={
 				inkvizitor
 			}
 			visible = { has_completed_focus = GAL_mobilizaciya_nauchnih_sotrudnikov  }
-			available = { has_completed_focus = GAL_Panchin }
+			available = { 
+				has_completed_focus = GAL_Panchin 
+				is_country_leader = no
+			}
 		}
 	}
 	
