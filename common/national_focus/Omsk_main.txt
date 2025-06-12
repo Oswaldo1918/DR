@@ -481,6 +481,57 @@ country_event = {
 				uses = 1
 				category = electronics
 			}
+			add_dynamic_modifier = {
+							modifier = OMS_GrOB_Record_dynamic_modifier
+						}
+			        set_variable = {
+							OMS_stability_factor = 0.0
+						}
+					set_variable = {
+							OMS_war_support_factor = 0.0
+						}
+					set_variable = {
+							OMS_consumer_goods_factor = 0.0
+						}
+					set_variable = {
+							OMS_memoism_drift = 0.0
+						}
+					set_variable = {
+							OMS_political_power_factor = 0.05
+						}
+					set_variable = {
+							OMS_party_popularity_stability_factor = 0.1
+						}
+					set_variable = {
+							OMS_drift_defence_factor = 0.0
+						}
+					set_variable = {
+							OMS_research_speed_factor = 0.0
+						}
+					set_variable = {
+							OMS_army_core_defence_factor = 0.0
+						}
+					set_variable = {
+							OMS_army_attack_factor = 0.0
+						}
+					set_variable = {
+							OMS_army_org_factor = 0.0
+						}
+					set_variable = {
+							OMS_offensive_war_stability_factor = 0.0
+						}
+					set_variable = {
+							OMS_defensive_war_stability_factor = 0.0
+						}
+					set_variable = {
+							OMS_mobilization_speed = 0.0
+						}
+					set_variable = {
+							OMS_max_command_power = 0.0
+						}
+					set_variable = {
+							OMS_command_power_gain = 0.0
+						}	
 			
             hidden_effect = { 
 					promote_character = {
@@ -551,6 +602,18 @@ country_event = {
 		x = 14
 		y = 4
         completion_reward = {
+		    add_to_variable = {
+				OMS_mobilization_speed = 0.1
+			}
+            add_to_variable = {
+				OMS_command_power_gain = 0.05
+			}
+			add_to_variable = { 
+				OMS_stability_factor = 0.05
+			}
+			custom_effect_tooltip = OMS_mobilization_speed_tt
+			custom_effect_tooltip = OMS_command_power_gain_tt
+			custom_effect_tooltip = OMS_stability_factor_tt
             hidden_effect = {
 					 if = { 
 			        NOT = {
@@ -580,6 +643,18 @@ country_event = {
 		x = 16
 		y = 4
         completion_reward = {
+		    add_to_variable = {
+				OMS_mobilization_speed = 0.1
+			}
+            add_to_variable = {
+				OMS_max_command_power = 0.05
+			}
+			add_to_variable = { 
+				OMS_war_support_factor = 0.05
+			}
+            custom_effect_tooltip = OMS_mobilization_speed_tt
+			custom_effect_tooltip = OMS_max_command_power_tt
+			custom_effect_tooltip = OMS_war_support_factor_tt			
             hidden_effect = {
 					 if = { 
 			        NOT = {
@@ -610,6 +685,14 @@ country_event = {
 		x = 16
 		y = 5
         completion_reward = {
+		    add_to_variable = {
+				OMS_defensive_war_stability_factor = 0.1
+			}
+			add_to_variable = { 
+				OMS_stability_factor = 0.05
+			}
+			custom_effect_tooltip = OMS_defensive_war_stability_factor_tt
+			custom_effect_tooltip = OMS_stability_factor_tt
             hidden_effect = {
 					 if = { 
 			        NOT = {
@@ -811,6 +894,14 @@ country_event = {
 		x = 14
 		y = 5
         completion_reward = {
+		    add_to_variable = {
+				OMS_offensive_war_stability_factor = 0.1
+			}
+			add_to_variable = { 
+				OMS_war_support_factor = 0.05
+			}
+			custom_effect_tooltip = OMS_offensive_war_stability_factor_tt
+			custom_effect_tooltip = OMS_war_support_factor_tt
             hidden_effect = {
 					 if = { 
 			        NOT = {
@@ -841,6 +932,30 @@ country_event = {
 		x = 14
 		y = 6
         completion_reward = {
+		    add_to_variable = {
+				OMS_consumer_goods_factor = 0.05
+			}
+			add_to_variable = { 
+				OMS_research_speed_factor = 0.05
+			}
+            add_to_variable = {
+				OMS_army_attack_factor = 0.05
+			}
+			add_to_variable = { 
+				OMS_non_core_manpower = 0.05
+			}
+			add_to_variable = {
+				OMS_army_org_factor = -0.025
+			}
+			add_to_variable = { 
+				OMS_memoism_drift = 0.01
+			}
+			custom_effect_tooltip = OMS_1_consumer_goods_factor_tt
+			custom_effect_tooltip = OMS_1_research_speed_factor_tt
+			custom_effect_tooltip = OMS_army_attack_factor_tt
+			custom_effect_tooltip = OMS_non_core_manpower_tt
+			custom_effect_tooltip = OMS_army_org_factor_tt
+			custom_effect_tooltip = OMS_memoism_drift_tt
             hidden_effect = {
 					 if = { 
 			        NOT = {
@@ -871,6 +986,22 @@ country_event = {
 		x = 16
 		y = 6
         completion_reward = {
+		    add_to_variable = {
+				OMS_consumer_goods_factor = -0.05
+			}
+			add_to_variable = { 
+				OMS_research_speed_factor = -0.05
+			}
+            add_to_variable = {
+				OMS_army_core_defence_factor = 0.05
+			}
+			add_to_variable = { 
+				OMS_drift_defence_factor = 0.1
+			}   
+			custom_effect_tooltip = OMS_2_consumer_goods_factor_tt
+			custom_effect_tooltip = OMS_2_research_speed_factor_tt
+			custom_effect_tooltip = OMS_army_core_defence_factor_tt
+			custom_effect_tooltip = OMS_drift_defence_factor_tt
             hidden_effect = {
 					 if = { 
 			        NOT = {
