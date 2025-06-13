@@ -1432,7 +1432,7 @@ leader_traits = {
 	panoptikator = {
 		random = no		
 		political_power_factor = 0.1
-		intelligence_agency_defense = 0.5
+		intelligence_agency_defense = 1
 		civilian_intel_to_others = -10.0
 		
 		ai_will_do = {
@@ -1441,9 +1441,8 @@ leader_traits = {
 	}
 	pravoslavnyi_matematik = {
 		random = no		
-		crypto_strength = 1
-		decryption_factor = 0.15
-		encryption_factor = 0.15
+		decryption_factor = 0.25
+		encryption_factor = 0.25
 		stability_factor = 0.05
 		
 		ai_will_do = {
@@ -1514,6 +1513,7 @@ leader_traits = {
 		random = no		
 		research_speed_factor = 0.03
 		party_popularity_stability_factor = 0.1
+		resistance_damage_to_garrison = -0.1
 		
 		ai_will_do = {
 			factor = 2

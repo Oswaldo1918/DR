@@ -413,7 +413,7 @@ ideas = {
 				 production_speed_radar_station_factor = 0.2
 				 coordination_bonus = 0.1
 				 recon_factor = 0.1
-				 initiative_factor = 0.05
+				 initiative_factor = 0.03
 				}
 			}
 			GAL_sinofobia = {
@@ -501,8 +501,7 @@ ideas = {
 			}
 			GAL_godmeow = {
 				modifier = {
-				 decryption_power_factor = 0.15
-				 encryption_factor = 0.15
+				 decryption_power = 15
 				 crypto_strength = 1
 				 planning_speed = 0.33
 				}
@@ -546,15 +545,16 @@ ideas = {
 				 political_power_factor = 0.05
 				 stability_factor = 0.05
 				 war_support_factor = 0.05
+				 trade_opinion_factor = 0.25
 				 research_speed_factor = 0.03
 				}
 			}
 			GAL_renesans = {
 				modifier = {
-				 surrender_limit = 0.15
 				 political_power_factor = 0.1
 				 stability_factor = 0.1
 				 war_support_factor = 0.1
+				 trade_opinion_factor = 0.5
 				 research_speed_factor = 0.06
 				}
 			}
@@ -589,6 +589,20 @@ ideas = {
 			GAL_sovet_spor = {
 				modifier = {
 				 political_power_factor = -0.15
+				}
+			}
+			GAL_ban_religion = {
+				modifier = {
+				 political_power_factor = -0.15
+				 stability_weekly = -0.005
+				 war_support_weekly = -0.005
+				}
+			}
+			GAL_panacea = {
+				modifier = {
+				 conscription = 0.1
+				 industrial_capacity_factory = 0.15
+				 army_morale_factor = 0.1
 				}
 			}
 	}	
