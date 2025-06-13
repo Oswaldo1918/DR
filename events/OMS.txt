@@ -173,3 +173,21 @@ country_event = {
 	name = OMS.5.a
 	}
 }
+country_event = {
+    id = OMS.6
+	title = OMS.6.t
+	desc = OMS.6.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = OMS
+	}
+	
+	
+	option = {
+	name = OMS.6.a
+	}
+}
