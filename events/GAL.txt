@@ -1012,6 +1012,26 @@ country_event = {
 		}
 	}
 }
+#Панацея Панчина
+country_event = {
+	id = GAL.38
+	title = GAL.38.t
+	desc = GAL.38.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.38.a
+		swap_ideas = {
+			remove_idea = GAL_ban_religion
+			add_idea = GAL_panacea
+		}
+	}
+}
  ###ПРОЕКТЫ УЧЕНЫХ###
  
 # СЫЕНДУК - Начал работу над фокусом

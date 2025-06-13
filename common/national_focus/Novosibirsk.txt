@@ -3136,7 +3136,7 @@ focus_tree = {
 			GAL_scientist_cd = yes
 			add_tech_bonus = {
 				bonus = 1
-				ahead_reduction = 1
+				ahead_reduction = 2
 				uses = 1
 				category = rocketry
 			}
@@ -3271,6 +3271,16 @@ focus_tree = {
 				CHARACTER = GAL_Panchin_name
 			}
 			GAL_scientist_cd = yes
+			if = {
+				limit = { has_intelligence_agency = no }
+				create_intelligence_agency = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }
+				}
+				upgrade_intelligence_agency = upgrade_interrogation_techniques 
+			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GAL_Panchin
 			hidden_effect = {
@@ -3316,7 +3326,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = GAL_ban_religion
 		}
 	}
 	focus = {
@@ -3356,7 +3366,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 25
+			country_event = { id = GAL.38 }
 		}
 	}
 	focus = {
@@ -3521,6 +3531,16 @@ focus_tree = {
 				CHARACTER = GAL_Savvateev_name
 			}
 			GAL_scientist_cd = yes
+			if = {
+				limit = { has_intelligence_agency = no }
+				create_intelligence_agency = yes
+			}
+			if = {
+				limit = {
+					NOT = { has_done_agency_upgrade = upgrade_form_department }
+				}
+				upgrade_intelligence_agency = upgrade_form_department
+			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GAL_Savvateev
 			hidden_effect = {
