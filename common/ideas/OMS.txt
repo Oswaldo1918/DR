@@ -242,6 +242,32 @@ ideas = {
 				metacommy_drift = 0.01
 			    }
 			}
+			OMS_Rus_Fed = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_org_factor = 0.15
+				training_time_factor = -0.2
+                invasion_preparation = -0.3
+				experience_loss_factor = -0.1
+				metacommy_drift = 0.01
+			    }
+			}
+			OMS_kniga_letova = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_defence_factor = 0.4
+			    }
+			}
+			
+			OMS_kniga_elizarova = {
+		        picture = CHT_lopati
+			
+			    modifier = {
+				army_core_defence_factor = 0.55
+			    }
+			}
 	    }
 		
 }

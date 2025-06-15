@@ -189,8 +189,78 @@ country_event = {
 	
 	option = {
 	name = OMS.6.a
+			hidden_effect = {
+					 if = { 
+			        NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = OMS_Elizarov
+					}	
+				    }
+					promote_character = {
+    character = OMS_Elizarov
+    ideology = white_polpotism
+}	
+			    }	
+			}
+			retire_character = OMS_Letov
+			add_ideas = OMS_kniga_elizarova
 	}
 	option = {
-	name = OMS.6.и
+	name = OMS.6.b
+		hidden_effect = {
+					 if = { 
+			        NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = OMS_Letov
+					}	
+				    }
+					promote_character = {
+    character = OMS_Letov
+    ideology = religious_communism
+}	
+			    }	
+			}
+			retire_character = OMS_Elizarov
+			add_ideas = OMS_kniga_letova
 	}
 }
+country_event = {
+    id = OMS.7
+	title = OMS.7.t
+	desc = OMS.7.d
+	picture = GFX_report_event_communists_cheer
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = OMS
+		has_completed_focus = OMS_kniga_smysla
+		has_country_leader = {
+						ruling_only = yes
+						character = OMS_Elizarov
+					}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	} 
+	
+	option = {
+	name = OMS.7.a
+		ai_chance = { factor = 100 }
+	}
+	option = {
+	name = OMS.7.b
+		ai_chance = { factor = 0 }	
+add_country_leader_role = {
+                        character = GAL_Drobyshevskiy
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = religious_communism
+                        }
+                    }
+		
+	}
+ }
