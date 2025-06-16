@@ -12,7 +12,16 @@
 
 leader_traits = {
 
-    obretyonnaya_bozhestvennost = {
+    drobletov_trait = {
+		sprite = 10
+		random = no
+		research_speed_factor = 0.15
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	obretyonnaya_bozhestvennost = {
 		sprite = 10
 		random = no
 		metacommy_drift = 0.01

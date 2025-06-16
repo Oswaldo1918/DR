@@ -134,7 +134,9 @@ country_event = {
     defense_skill = 3
     planning_skill = 2
     logistics_skill = 2
-	}	
+	}
+set_victory_points = { province = 6226 value = 10 }
+	250 = { add_manpower = 250000 } 
 	}
 }
 country_event = {
@@ -244,23 +246,26 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		days = 20
 	} 
 	
 	option = {
 	name = OMS.7.a
 		ai_chance = { factor = 100 }
+		add_stability = -0.1
 	}
 	option = {
 	name = OMS.7.b
-		ai_chance = { factor = 0 }	
+		ai_chance = { factor = 0 }
+		retire_country_leader = yes
 add_country_leader_role = {
-                        character = GAL_Drobyshevskiy
+                        character = OMS_DrobLetov
                         promote_leader = yes
                         country_leader = {
-                            ideology = religious_communism
+                            ideology = white_polpotism
+							traits = { drobletov_trait }
                         }
                     }
-		
+		retire_character = GAL_Drobyshevskiy
 	}
  }

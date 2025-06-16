@@ -423,8 +423,12 @@ country_event = {
 		prerequisite = {
 			focus = OMS_divinity
 			focus = OMS_voin_gospoden
+		}
+		prerequisite = {
 			focus = OMS_SSSR
 			focus = OMS_Rus_Fed
+		}
+		prerequisite = {
 			focus = OMS_alchemy
 			focus = OMS_old_songs
 		}
@@ -437,6 +441,14 @@ country_event = {
 		prerequisite = {
 			focus = OMS_sila_nostalgy
 		}
+		 available = {
+		            has_completed_focus = OMS_kniga_pamyati
+		            has_completed_focus = OMS_kniga_yarosti
+					has_completed_focus = OMS_kniga_sily
+					has_completed_focus = OMS_kniga_radosti
+					has_completed_focus = OMS_kniga_terpeniya
+					has_completed_focus = OMS_kniga_vlasti
+				}
 		x = 11
 		y = 7
         completion_reward = {
@@ -733,6 +745,14 @@ country_event = {
 		x = 18
 		y = 4
         completion_reward = {
+		random = {
+                chance = 50
+                add_ideas = OMS_zvuk_weapon
+            }
+		random = {
+                chance = 50
+                add_ideas = OMS_zvuk_tank
+            }
             hidden_effect = {
 					 if = { 
 			        NOT = {

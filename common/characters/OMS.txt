@@ -61,6 +61,15 @@ characters={
 				large = "gfx/leaders/OMS/Fedor_Letov.dds"
 			}
 		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = OMS_Fedor_Letov
+			traits = {
+				propaganda_expert
+			}
+			visible = { tag = OMS  }
+		}
 	    corps_commander = {
 			traits = { old_guard infantry_officer infantry_leader politically_connected }
 			skill = 3
@@ -156,5 +165,16 @@ characters={
 			logistics_skill = 2
 			legacy_id = -1
 		}		
+	}
+	OMS_DrobLetov = {
+		name = "Егор Летов?"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Drobyshevskiy"
+				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
+			}
+		}
+			
 	}
 }
