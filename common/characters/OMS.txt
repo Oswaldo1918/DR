@@ -16,6 +16,15 @@ characters={
 			expire = "1999.3.1"
 			id = -1
 		}
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = OMS_Letov
+			traits = {
+				army_chief_offensive_1
+			}
+			visible = { tag = OMS  }
+		}
         field_marshal = {
 			traits = { guerilla_fighter }
 			skill = 1
@@ -34,6 +43,27 @@ characters={
 				large = "gfx/leaders/OMS/Mihail_Elizarov.dds"
 			}
 		}   		
+	}
+	OMS_Pushnoy = {
+		name = "Александр Пушной"
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_pusnoy"
+				large = "gfx/leaders/GAL/Pushnoy.dds"
+			}
+			civilian = {
+				small = "GFX_idea_GAL_pusnoy"
+			}
+		} 
+ 		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = OMS_Pushnoy
+			traits = {
+				popular_figurehead3
+			}
+			visible = { tag = OMS has_completed_focus = OMS_experiment_zvuk }
+		}
 	}
 	OMS_Yanka = {
 		name = "Янка Дягилева"
@@ -67,6 +97,7 @@ characters={
 			idea_token = OMS_Fedor_Letov
 			traits = {
 				propaganda_expert
+				army_chief_old_guard
 			}
 			visible = { tag = OMS  }
 		}
@@ -145,6 +176,9 @@ characters={
 			army = {
 				small = "GFX_idea_GAL_Drobyshevskiy"
 				large = "gfx/leaders/GAL/Drobyshevskiy.dds"				
+			}
+			civilian = {
+				small = "GFX_idea_GAL_Drobyshevskiy"
 			}
 		}
 		advisor = {
