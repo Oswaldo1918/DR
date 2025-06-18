@@ -1992,6 +1992,10 @@ focus_tree = {
 				popularity = 0.1
 			}
 			set_politics = { ruling_party = metacommy }
+			set_portraits = {
+				character = GAL_pusnoy
+				civilian = { large = GFX_GAL_Pushnoy_Lenin }
+			}
 			hidden_effect = {
 				GAL_Panchin = {
 					unit_leader_event = { id = GAL.6 days = 15 }
@@ -2047,6 +2051,10 @@ focus_tree = {
 				popularity = 0.1
 			}
 			set_politics = { ruling_party = fascism }
+			set_portraits = {
+				character = GAL_pusnoy
+				civilian = { large = GFX_GAL_Pushnoy_Lysenko }
+			}
 			hidden_effect = {
 				GAL_Savvateev = {
 					unit_leader_event = { id = GAL.7 days = 15 }
@@ -2563,15 +2571,44 @@ focus_tree = {
 	focus = {
 		id = GAL_zapolyar_ZhD
 		icon = GFX_goal_unknown
-		cost = 2.00
+		cost = 4.00
 		prerequisite = {
 			focus = GAL_rashirit_TransSib
 		}
 		x = 36
 		y = 10
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = { building = infrastructure size > 0 }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = { building = infrastructure size > 0 }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = { building = infrastructure size > 0 }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
-
 	}
 	focus = {
 		id = GAL_bogatstvo_severa
@@ -2580,7 +2617,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GAL_zapolyar_ZhD
 		}
-		available = }
+		available = {
 			controls_state = 580
 			controls_state = 577
 		}
@@ -2643,7 +2680,9 @@ focus_tree = {
 		}
 		x = 57
 		y = 15
-
+		completion_reward = {
+			add_ideas = OMS_zvuk_weapon
+		}
 	}
 	focus = {
 		id = GAL_vse_idet_po_planu

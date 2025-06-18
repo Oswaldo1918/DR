@@ -226,6 +226,74 @@ political_actions= {
 			}
 		}
 	}
+	GAL_burunduk = {
+		icon = generic_intelligence_operation
+		cost = 10
+        ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = GAL
+			country_exists = ASM
+		}
+		visible = {
+			tag = GAL
+			has_completed_focus = GAL_Syenduk_1
+		}
+		fire_only_once
+		days_remove = 30
+		remove_effect = {
+			add_ideas = GAL_burunduk_army
+		}
+	}
+}
+economy_decisions = {
+	GAL_zvuk_dvigatel = {
+		icon = generic_research
+		cost = 50
+        ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = GAL
+		}
+		visible = {
+			tag = GAL
+			has_completed_focus = GAL_Toples_3
+		}
+		fire_only_once
+		days_remove = 70
+		modifier = {
+			civilian_factory_use = 4
+		}
+		remove_effect = {
+			set_technology = { GAL_zvuk_dvigatel = 1 popup = yes }
+			custom_effect_tooltip = GAL_zvuk_dvigatel_tt
+		}
+	}
+	GAL_radioteleskop = {
+		icon = generic_research
+		cost = 50
+        ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = GAL
+		}
+		visible = {
+			tag = GAL
+			has_completed_focus = GAL_Deb_2
+		}
+		fire_only_once
+		days_remove = 70
+		modifier = {
+			civilian_factory_use = 4
+		}
+		remove_effect = {
+			set_technology = { GAL_radioteleskop = 1 popup = yes }
+			custom_effect_tooltip = GAL_radioteleskop_tt
+		}
+	}
 }
 GAL_sssr = {
 
@@ -737,12 +805,19 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		available = {
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
+		}
 		modifier = {
 			industry_repair_factor = 0.5
 			production_speed_buildings_factor = 0.1
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -752,12 +827,19 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		available = {
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
+		}
 		modifier = {
 			industrial_capacity_factory = 0.15
 			production_factory_efficiency_gain_factor = 0.15
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -767,16 +849,24 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		visible = {
+			NOT = { has_completed_focus = GAL_ey_uhnem }
+		}
 		available = {
 		    tag = GAL
 		    has_completed_focus = GAL_ne_nado_napragat
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
         }
 		modifier = {
 			stability_weekly = 0.01
 			neutrality_drift = 0.05
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -786,13 +876,21 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		available = {
+			has_completed_focus = GAL_ot_vinta
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
+		}
 		modifier = {
 			experience_gain_air = 0.05
 			air_attack_factor = 0.25
 			air_defence_factor = 0.25
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -802,13 +900,20 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		available = {
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
+		}
 		modifier = {
 			war_support_weekly = 0.01
 			experience_gain_army = 0.05
 			army_attack_factor = 0.1
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -818,15 +923,23 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 30
 		days_remove = 100
-		days_re_enable = 1
+		days_re_enable = 50
+		visible = {
+			NOT = { has_completed_focus = GAL_ne_nado_napragat }
+		}
 		available = {
 		    tag = GAL
 		    has_completed_focus = GAL_ey_uhnem
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
         }
 		modifier = {
 			consumer_goods_factor = -0.1
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -836,12 +949,19 @@ GAL_rock_zhiv = {
 		icon = eng_propaganda_campaigns
 		cost = 30
 		days_remove = 150
-		days_re_enable = 1
+		days_re_enable = 50
+		available = {
+			NOT = {
+				has_country_flag = GAL_pesnya
+			}
+		}
 		modifier = {
 			monthly_population = 0.5
 			weekly_manpower = 150
 		}
-		complete_effect = {}
+		complete_effect = { 		
+			hidden_effect = { clr_country_flag = GAL_pesnya }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1266,7 +1386,7 @@ GAL_genetika_nauka_decisions_category = {
 		}
 
 		timeout_effect = {
-			random_list = { }
+			random_list = { 10 = {country_event = GAL_drob.1} 10 = {country_event = GAL_drob.2} 10 = {country_event = GAL_drob.3} 10 = {country_event = GAL_drob.4} 10 = {country_event = GAL_drob.5} 10 = {country_event = GAL_drob.6} 10 = {country_event = GAL_drob.7} 10 = {country_event = GAL_drob.8} 10 = {country_event = GAL_drob.9} 10 = {country_event = GAL_drob.10} }
 			hidden_effect = {
 				activate_mission = GAL_drobysh_agenda
 			}
@@ -1284,18 +1404,22 @@ GAL_genetika_nauka_decisions_category = {
 		visible = {
 			has_completed_focus = GAL_genetika_nauka
         }
-		
+		available = {
+			NOT = {
+				has_country_flag = GAL_drobysh_proekt
+			}
+		}
 		complete_effect = {
 			country_event = { id = GAL.31 }
+			hidden_effect = {
+				set_country_flag = GAL_drobysh_proekt
+			}
 		}
 
     }
 	GAL_uch_army_oficer = {
 		icon = generic_research
-		allowed = { always = no }
-        activation = {
-            has_completed_focus = GAL_genetika_nauka
-        }   
+		allowed = { always = no } 
 		visible = {
 		    tag = GAL
 		    has_completed_focus = GAL_genetika_nauka
@@ -1313,15 +1437,15 @@ GAL_genetika_nauka_decisions_category = {
 
 		timeout_effect = {
 			add_ideas = { GAL_oficer }
+			hidden_effect = {
+				clr_country_flag = GAL_drobysh_proekt
+			}
 		}
 	}
 	
 	GAL_uch_army_soldat = {
 		icon = generic_research
-		allowed = { always = no }
-        activation = {
-            has_completed_focus = GAL_genetika_nauka
-        }   
+		allowed = { always = no }  
 		visible = {
 		    tag = GAL
 		    has_completed_focus = GAL_genetika_nauka
@@ -1339,6 +1463,9 @@ GAL_genetika_nauka_decisions_category = {
 
 		timeout_effect = {
 			add_ideas = { GAL_soldat }
+			hidden_effect = {
+				clr_country_flag = GAL_drobysh_proekt
+			}
 		}
 	}
 	
@@ -1354,62 +1481,60 @@ GAL_genetika_nauka_decisions_category = {
 		visible = {
 			has_completed_focus = GAL_genetika_nauka
         }
-		
+		available = {
+			NOT = {
+				has_country_flag = GAL_drobysh_proekt
+			}
+		}
+		days_remove = 100
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
 		complete_effect = {
-			country_event = { id = GAL.32 }
+			hidden_effect = {
+				set_country_flag = GAL_drobysh_proekt
+			}
+		}
+		remove_effect = {
+			country_event = { id = GAL.33 }
+			hidden_effect = {
+				clr_country_flag = GAL_drobysh_proekt
+			}
 		}
 
     }
 	
-	GAL_gmo_catgirl = {
+	GAL_army_genetik_3 = {
 		icon = generic_research
-		allowed = { always = no }
-        activation = {
-            has_completed_focus = GAL_genetika_nauka
-        }   
+		cost = 100
+		
+		fire_only_once = yes 
+
+        ai_will_do = {
+			factor = 4
+		}
 		visible = {
-		    tag = GAL
-		    has_completed_focus = GAL_genetika_nauka
+			has_completed_focus = GAL_genetika_nauka
         }
 		available = {
-		    always = no
+			NOT = {
+				has_country_flag = GAL_drobysh_proekt
+			}
 		}
-		days_mission_timeout = 100
-
-		remove_effect = {
+		days_remove = 100
+		modifier = {
+			consumer_goods_factor = 0.1
 		}
-
 		complete_effect = {
+			hidden_effect = {
+				set_country_flag = GAL_drobysh_proekt
+			}
 		}
-
-		timeout_effect = {
-			country_event = { id = GAL.33 }
-		}
-	}
-	
-	GAL_gmo_dwarf = {
-		icon = generic_research
-		allowed = { always = no }
-        activation = {
-            has_completed_focus = GAL_genetika_nauka
-        }   
-		visible = {
-		    tag = GAL
-		    has_completed_focus = GAL_genetika_nauka
-        }
-		available = {
-		    always = no
-		}
-		days_mission_timeout = 100
-
 		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
 			country_event = { id = GAL.34 }
+			hidden_effect = {
+				clr_country_flag = GAL_drobysh_proekt
+			}
 		}
 	}
 }	

@@ -1,6 +1,6 @@
 add_namespace = GAL
 add_namespace = GAL_proekt
-
+add_namespace = GAL_drob
 	
 country_event = {
 	id = GAL.1 
@@ -1500,5 +1500,201 @@ country_event = {
 				originator_name = GAL_Savvateev
 			}
 		}
+	}
+}
+ ###Дробышевский предложил###
+ 
+#Убить тех кто обсуждает тело Ленина
+country_event = {
+	id = GAL_drob.1
+	title = GAL_drob.1.t
+	desc = GAL_drob.1.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.1.a
+		add_manpower = -6437
+	}
+}
+#Расстрелять спортзалы
+country_event = {
+	id = GAL_drob.2
+	title = GAL_drob.2.t
+	desc = GAL_drob.2.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.2.a
+		add_war_support = -0.03
+	}
+}
+#Всем пить чайный гриб
+country_event = {
+	id = GAL_drob.3
+	title = GAL_drob.3.t
+	desc = GAL_drob.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.3.a
+		add_stability = -0.03
+	}
+}
+#Убить вегетарианцев
+country_event = {
+	id = GAL_drob.4
+	title = GAL_drob.4.t
+	desc = GAL_drob.4.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.4.a
+		add_manpower = -5824
+	}
+}
+#Убить вейперов
+country_event = {
+	id = GAL_drob.5
+	title = GAL_drob.5.t
+	desc = GAL_drob.5.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.5.a
+		add_manpower = -7012
+	}
+}
+#Убить скотокатчиков
+country_event = {
+	id = GAL_drob.6
+	title = GAL_drob.6.t
+	desc = GAL_drob.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.6.a
+		add_manpower = -10342
+		add_stability = 0.01
+		add_war_support = 0.01
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.01
+        }
+	}
+}
+#Убить криптовалютчиков
+country_event = {
+	id = GAL_drob.7
+	title = GAL_drob.7.t
+	desc = GAL_drob.7.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.7.a
+		add_manpower = -5242
+	}
+}
+#Понизить продажу алкоголя
+country_event = {
+	id = GAL_drob.8
+	title = GAL_drob.8.t
+	desc = GAL_drob.8.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.8.a
+		add_stability = -0.02
+		add_war_support = -0.02
+	}
+}
+#Убить дебила чиновника
+country_event = {
+	id = GAL_drob.9
+	title = GAL_drob.9.t
+	desc = GAL_drob.9.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.9.a
+		add_political_power = -50
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.02
+        }
+	}
+}
+#Убить дегенерата лидера мнений
+country_event = {
+	id = GAL_drob.10
+	title = GAL_drob.10.t
+	desc = GAL_drob.10.d
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GAL
+	}
+
+	option = {
+	name = GAL_drob.10.a
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.05
+        }
 	}
 }

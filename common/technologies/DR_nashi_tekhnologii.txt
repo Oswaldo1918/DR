@@ -133,8 +133,8 @@ technologies = {
 		category_recon = {
 			recon = 1
 			breakthrough = 1
-			land_night_attack = 0.25
 		}
+		land_night_attack = 0.15
 	}
 	
 	GAL_dwarfes_engineer = {
@@ -178,5 +178,6 @@ technologies = {
 				attack = 0.10
 			}
 		}
+		local_resources_factor = 0.15
 	}
 }
