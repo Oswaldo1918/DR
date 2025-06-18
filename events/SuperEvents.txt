@@ -730,3 +730,22 @@ country_event = {	#Невмерлия_объединяет_Украину
 		
 	}
 }
+country_event = {	#Невмерлия_объединяет_Украину
+	id = super.31
+	title = super.31.t
+	desc = super.31.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.31.a
+		
+        set_global_flag = OMS_Letov_reunite_russia
+		set_global_flag = Super_Event_Visible
+	    sound_effect = "superevent_zhelezniy_dimon"
+		
+	}
+}

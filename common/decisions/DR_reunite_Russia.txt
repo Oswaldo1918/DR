@@ -1031,6 +1031,41 @@ DR_form_russian_state_decisions_category = {
 			}
 		}
 	}
+	
+	OMS_Russia = { #Омск_объединяет_Россию
+        icon = GFX_decision_generic_form_nation	
+		
+		visible = {
+			OR = {
+				AND = {
+					tag = OMS
+				}
+				AND = {
+					is_debug = yes
+					is_ai = no
+				}
+			}
+		}
+		
+		available = {
+			controls_state = 195
+			controls_state = 219
+			controls_state = 217
+			controls_state = 570
+			controls_state = 408
+		}
+		
+		fire_only_once = yes
+		days_remove = 14
+		
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			news_event = dk_news.93
+		}	
+	}
+	
 }
 
 DR_reunite_russia_decisions_category = {

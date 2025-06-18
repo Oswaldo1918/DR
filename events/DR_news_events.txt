@@ -1892,3 +1892,20 @@ news_event = { #Ничто_морковный_сок
 		name = dk_news.92.a
 	}
 }
+news_event = { #Омск_объединяет_Россию
+    id = dk_news.93
+	title = dk_news.93.t
+	desc = dk_news.93.d
+	picture = GFX_news_event_OMS_Letov
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dk_news.93.a
+		hidden_effect = {
+			OMS = {
+				country_event = super.31
+			}
+		}
+	}
+}
