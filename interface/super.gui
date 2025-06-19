@@ -569,4 +569,22 @@ guiTypes = {
 		}	
 		
 	}
+	
+	containerWindowType = {
+		name = "sp_event_letov"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		
+		iconType = {
+			name = "Super_Event_OMS_Letov_reunite_russia"
+			spriteType = "GFX_sp_event_OMS_Letov_reunite_russia"
+			position = {x = 0 y = 0}
+		}	
+		
+	}
 }

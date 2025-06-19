@@ -211,6 +211,13 @@ defined_text = {
         }
         localization_key = "sp_event_UKR_reunite_ukraine"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = OMS_Letov_reunite_russia
+        }
+        localization_key = "sp_event_OMS_Letov_reunite_russia"
+    }
 }
 #ОПИСАНИЕ
 defined_text = {
@@ -425,6 +432,13 @@ defined_text = {
         }
         localization_key = "sp_event_UKR_reunite_ukraine_REMARK"
     }
+	
+	text = {
+        trigger = {
+            has_global_flag = OMS_Letov_reunite_russia
+        }
+        localization_key = "sp_event_OMS_Letov_reunite_russia_REMARK"
+    }
 }
 #РЕАКЦИЯ(КНОПКА)
 defined_text = {
@@ -638,5 +652,12 @@ defined_text = {
             has_global_flag = UKR_reunite_ukraine
         }
         localization_key = "sp_event_UKR_reunite_ukraine_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = OMS_Letov_reunite_russia
+        }
+        localization_key = "sp_event_OMS_Letov_reunite_russia_QUOTE"
     }
 }	

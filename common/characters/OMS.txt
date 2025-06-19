@@ -42,7 +42,16 @@ characters={
 				small = "GFX_idea_OMS_Elizarov"
 				large = "gfx/leaders/OMS/Mihail_Elizarov.dds"
 			}
-		}   		
+		} 
+        advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = OMS_Elizarov
+			traits = {
+				army_chief_defensive_1
+			}
+			visible = { tag = OMS  }
+		}  		
 	}
 	OMS_Pushnoy = {
 		name = "Александр Пушной"
