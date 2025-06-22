@@ -3021,7 +3021,7 @@ focus_tree = {
 				}
 			}
 			sp:sp_nuclear_reactor = { add_project_progress_ratio = 0.3 }
-			sp:sp_nuclear_bomb = { add_project_progress_ratio = 0.3 }
+			sp:sp_nuclear_bomb = { add_project_progress_ratio = 0.5 }
 		}
 	}
 	focus = {
@@ -3140,6 +3140,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = GAL.29 }
+			sp:sp_air_supersonic_jet = { add_project_progress_ratio = 0.3 }
 		}
 	}
 	focus = {
@@ -3227,7 +3228,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = GAL_izhevsk_dynamics
-			sp:sp_air_jet_engine = { add_project_progress_ratio = 0.2 }
+			sp:sp_air_jet_engine = { add_project_progress_ratio = 0.5 }
 		}
 	}
 	focus = {
@@ -3627,13 +3628,8 @@ focus_tree = {
 				}
 			}
 		}
-		select_effect = {
-			add_timed_idea = {
-				idea = GAL_sibgektar
-				days = 70
-			}
-		}
 		completion_reward = {
+		 remove_ideas = GAL_sibgektar
 			580 = {
 				if = {
 					limit = {

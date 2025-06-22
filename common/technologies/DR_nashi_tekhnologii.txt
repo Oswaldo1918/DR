@@ -180,4 +180,16 @@ technologies = {
 		}
 		local_resources_factor = 0.15
 	}
+	
+	GAL_radioteleskop = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+		
+		static_anti_air_hit_chance_factor = 0.2
+		coordination_bonus = 0.02
+		air_interception_detect_factor = 0.1
+		air_superiority_detect_factor = 0.1
+	}
 }

@@ -271,7 +271,7 @@ economy_decisions = {
 			custom_effect_tooltip = GAL_zvuk_dvigatel_tt
 		}
 	}
-	GAL_radioteleskop = {
+	GAL_baikonur = {
 		icon = generic_research
 		cost = 50
         ai_will_do = {
@@ -285,13 +285,11 @@ economy_decisions = {
 			has_completed_focus = GAL_Deb_2
 		}
 		fire_only_once
-		days_remove = 70
-		modifier = {
-			civilian_factory_use = 4
+		days_remove = 15
+		modifier = { 
 		}
 		remove_effect = {
-			set_technology = { GAL_radioteleskop = 1 popup = yes }
-			custom_effect_tooltip = GAL_radioteleskop_tt
+		
 		}
 	}
 }
