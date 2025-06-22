@@ -95,6 +95,24 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0
 		}
-}
+	}
+	
+	trait_GAL_onepunch = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = 1
+			promote_cost_factor = 10.0
+			max_commander_army_size = -23
+		}
+		allowed = {
+			FROM = { original_tag = GAL }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 }
 

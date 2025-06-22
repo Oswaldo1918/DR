@@ -1409,7 +1409,7 @@ focus_tree = {
 			}
 			add_corps_commander_role = {
 				character = GAL_Panchin
-				traits = { }
+				traits = { trait_GAL_onepunch }
 				skill = 1
 				attack_skill = 1
 				defense_skill = 1
@@ -1819,10 +1819,13 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = GAL_videnie_Pushnogo
+			has_completed_focus = GAL_liberalism_golovnogo_mozga
 		}
 		x = 45
 		y = 8
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GAL_nayka_pobezhdat
@@ -2209,6 +2212,9 @@ focus_tree = {
 		cancelable = no
 		x = 52
 		y = 15
+		completion_reward = {
+			country_event = { id = GAL.9 }
+		}
 	}
 	focus = {
 		id = GAL_rok_kotserty
@@ -2269,6 +2275,7 @@ focus_tree = {
 		x = 62
 		y = 12
 		completion_reward = {
+			unlock_decision_category_tooltip = GAL_genetika_nauka_decisions_category
 			hidden_effect = {
 				activate_mission = GAL_drobysh_agenda
 				add_ideas = GAL_drobysh_idea
@@ -2361,7 +2368,9 @@ focus_tree = {
 		cancelable = no
 		x = 57
 		y = 16
-
+		completion_reward = {
+			country_event = { id = GAL.35 }
+		}
 	}
 	focus = {
 		id = GAL_ozhivit_akadem_goroda
@@ -2743,6 +2752,7 @@ focus_tree = {
 			GAL_scientist_cd = yes
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GAL_sndk
+			unlock_decision_tooltip = decision = GAL_burunduk 
 			hidden_effect = {
 				country_event = { id = GAL_proekt.01 }
 				GAL_sndk = {
@@ -3020,7 +3030,6 @@ focus_tree = {
 					level = 1
 				}
 			}
-			sp:sp_nuclear_reactor = { add_project_progress_ratio = 0.3 }
 			sp:sp_nuclear_bomb = { add_project_progress_ratio = 0.5 }
 		}
 	}
@@ -3275,6 +3284,9 @@ focus_tree = {
 			sp:sp_rockets_ballistic_missile = { add_project_progress_ratio = 0.1 }
 			sp:sp_rockets_medium_range_ballistic_missile = { add_project_progress_ratio = 0.1 }
 			sp:sp_rockets_long_range_ballistic_missile = { add_project_progress_ratio = 0.1 }
+			unlock_decision_tooltip = GAL_baikonur
+			unlock_decision_tooltip = GAL_moon
+			unlock_decision_tooltip = GAL_mars
 		}
 	}
 	focus = {
@@ -3492,6 +3504,7 @@ focus_tree = {
 				}
 			}
 			sp:sp_air_radar = { add_project_progress_ratio = 0.4 }
+			unlock_decision_tooltip = GAL_radioteleskop
 		}
 	}
 	focus = {
@@ -3629,7 +3642,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		 remove_ideas = GAL_sibgektar
+			remove_ideas = GAL_sibgektar
 			580 = {
 				if = {
 					limit = {

@@ -533,6 +533,7 @@ country_event = {
 	option = {
 	name = GAL.22.a
 		retire_character = GAL_pusnoy
+		remove_ideas = GAL_odealo
 		add_country_leader_role = { 
 			character = GAL_sndk
 			promote_leader = yes
@@ -730,7 +731,7 @@ country_event = {
 	option = {
 	name = GAL.29.c 
 		add_political_power = -50
-		add_stability = -0.1
+		add_stability = -0.05
 		add_ideas = GAL_shering
 		add_equipment_to_stockpile = {
 			type = motorized_equipment
@@ -777,7 +778,7 @@ country_event = {
 		activate_mission = GAL_uch_army_soldat
 	}
 }
-#Генетика Наука ГМО Солдат
+#Генетика Наука ГМО Солдат - ПЕРЕДЕЛАЛ
 country_event = {
 	id = GAL.32
 	title = GAL.32.t
@@ -1031,6 +1032,43 @@ country_event = {
 			remove_idea = GAL_ban_religion
 			add_idea = GAL_panacea
 		}
+	}
+}
+#Марсианин
+country_event = {
+	id = GAL.39
+	title = GAL.39.t
+	desc = GAL.39.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.39.a
+		swap_ideas = {
+			remove_idea = GAL_moon_colony
+			add_idea = GAL_moon_mars_colony
+		}
+	}
+}
+#10%
+country_event = {
+	id = GAL.40
+	title = GAL.40.t
+	desc = GAL.40.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.40.a
+		add_ideas = GAL_odealo
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###
@@ -1537,7 +1575,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.2.a
+	name = GAL_drob.1.a
 		add_war_support = -0.03
 	}
 }
@@ -1555,7 +1593,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.3.a
+	name = GAL_drob.1.a
 		add_stability = -0.03
 	}
 }
@@ -1573,7 +1611,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.4.a
+	name = GAL_drob.1.a
 		add_manpower = -5824
 	}
 }
@@ -1591,7 +1629,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.5.a
+	name = GAL_drob.1.a
 		add_manpower = -7012
 	}
 }
@@ -1609,7 +1647,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.6.a
+	name = GAL_drob.1.a
 		add_manpower = -10342
 		add_stability = 0.01
 		add_war_support = 0.01
@@ -1633,7 +1671,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.7.a
+	name = GAL_drob.1.a
 		add_manpower = -5242
 	}
 }
@@ -1651,7 +1689,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.8.a
+	name = GAL_drob.1.a
 		add_stability = -0.02
 		add_war_support = -0.02
 	}
@@ -1670,7 +1708,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.9.a
+	name = GAL_drob.1.a
 		add_political_power = -50
 		add_popularity = {
             ideology = fascism
@@ -1692,7 +1730,7 @@ country_event = {
 	}
 
 	option = {
-	name = GAL_drob.10.a
+	name = GAL_drob.1.a
 		add_popularity = {
             ideology = fascism
             popularity = -0.05

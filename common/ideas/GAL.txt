@@ -612,6 +612,28 @@ ideas = {
 				 army_core_defence_factor = 0.05
 				}
 			}
+			GAL_moon_colony = { 
+				modifier = {
+					country_resource_aluminium = 10
+					country_resource_steel = 10
+					country_resource_chromium = 10
+				}
+			}
+			GAL_moon_mars_colony = { 
+				modifier = {
+					country_resource_aluminium = 20
+					country_resource_steel = 20
+					country_resource_chromium = 20
+				}
+			}
+			GAL_odealo = {
+				modifier = {
+				 stability_factor = -0.1
+				 war_support_factor = 0.1
+				 fascism_drift = 0.01
+				}
+			}
+		}
 	}	
 	hidden_ideas = {
 	
