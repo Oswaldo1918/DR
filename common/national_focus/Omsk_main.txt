@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = OMS_red_platform
-		icon = GFX_goal_unknown
+		icon = GFX_goal_red_platform
 		cost = 10.00
 		x = 10
 		y = 0
@@ -22,7 +22,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_vostanovlen_churches
-		icon = GFX_goal_unknown
+		icon = GFX_goal_goga_red_church
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_red_platform
@@ -37,7 +37,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_sila_knig
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sila_knig
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_vostanovlen_churches
@@ -69,7 +69,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_pamyati
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_pamyati
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -96,7 +96,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_yarosti
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_yarosti
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -124,7 +124,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_sily
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_sily
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -152,7 +152,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_divinity
-		icon = GFX_goal_unknown
+		icon = GFX_goal_divinity
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_sily
@@ -191,7 +191,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_knife_boy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_knife_boy
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_yarosti
@@ -221,7 +221,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_sila_nostalgy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sila_nostalgy
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_pamyati
@@ -251,7 +251,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_radosti
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_radosti
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -279,7 +279,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_voin_gospoden
-		icon = GFX_goal_unknown
+		icon = GFX_goal_voin_gospoden
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_radosti
@@ -310,7 +310,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_terpeniya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_terpeniya
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -337,7 +337,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_SSSR
-		icon = GFX_goal_unknown
+		icon = GFX_goal_SSSR
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_vlasti
@@ -368,7 +368,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_vlasti
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_vlasti
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_knig
@@ -395,7 +395,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_Rus_Fed
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Rus_Fed
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_kniga_terpeniya
@@ -418,7 +418,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_kniga_smysla
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kniga_smysla
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_divinity
@@ -465,7 +465,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_sila_music
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sila_music
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_vostanovlen_churches
@@ -486,7 +486,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_grob_records
-		icon = GFX_goal_unknown
+		icon = GFX_goal_grob_records
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_music
@@ -568,7 +568,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_orskay
-		icon = GFX_goal_unknown
+		icon = GFX_goal_orskay
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_grob_records
@@ -617,7 +617,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_perepet_sovshdvr
-		icon = GFX_goal_unknown
+		icon = GFX_goal_perepet_sovshdvr
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_grob_records
@@ -658,7 +658,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_upor_na_original
-		icon = GFX_goal_unknown
+		icon = GFX_goal_upor_na_original
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_grob_records
@@ -699,7 +699,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_soviet_oficial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_soviet_oficial
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_perepet_sovshdvr
@@ -737,7 +737,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_experiment_zvuk
-		icon = GFX_goal_unknown
+		icon = GFX_goal_experiment_zvuk
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_grob_records
@@ -772,7 +772,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_industrial
-		icon = GFX_goal_unknown
+		icon = GFX_goal_industrial
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_sila_music
@@ -799,7 +799,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_elektrogitara_ural
-		icon = GFX_goal_unknown
+		icon = GFX_goal_elektrogitara_ural
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_industrial
@@ -829,7 +829,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_japan_treaty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_japan_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_industrial
@@ -860,7 +860,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_heavy_music_heavy_industry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_heavy_music_heavy_industry
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_elektrogitara_ural
@@ -917,7 +917,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_gospank
-		icon = GFX_goal_unknown
+		icon = GFX_goal_gospank
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_perepet_sovshdvr
@@ -955,7 +955,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_alchemy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_alchemy
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_gospank
@@ -1009,7 +1009,7 @@ country_event = {
 	}
 	focus = {
 		id = OMS_old_songs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_old_songs
 		cost = 10.00
 		prerequisite = {
 			focus = OMS_gospank
