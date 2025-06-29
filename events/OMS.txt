@@ -216,6 +216,7 @@ country_event = {
 			}
 			retire_character = OMS_Letov
 			add_ideas = OMS_kniga_elizarova
+			country_event = OMS.7
 	}
 	option = {
 	name = OMS.6.b
@@ -244,19 +245,11 @@ country_event = {
 	picture = GFX_report_event_dkr_stachka
 	
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = OMS
-		has_completed_focus = OMS_kniga_smysla
-		has_country_leader = {
-						ruling_only = yes
-						character = OMS_Elizarov
-					}
 	}
-	
-	mean_time_to_happen = {
-		days = 20
-	} 
 	
 	option = {
 	name = OMS.7.a
