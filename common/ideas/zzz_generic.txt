@@ -587,7 +587,7 @@ ideas = {
 			}
 		}
 		# Generic Focus Ideas
-
+             
 		special_forces = {
 			allowed = {
 				always = no
@@ -622,7 +622,10 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				democratic_drift = -0.02
+				memoism_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+				democratic_drift = -0.01
 			}
 		}
 	
@@ -784,7 +787,366 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+		
+	    anarhostalinism1  = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
 	
+			modifier = {
+				anarhostalinism_drift = 0.05
+			}
+		}
+		
+		kommuni  = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = -0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		democratichnaya_armiya  = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				anarhostalinism_drift = 0.01
+				army_morale_factor = 0.05
+				army_org_factor = -0.025
+				experience_gain_army_factor = -0.05
+				political_power_factor = 0.1
+			}
+		}
+		
+		kolhozi  = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				consumer_goods_factor = -0.025
+				monthly_population = 0.15
+				industrial_capacity_factory = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		
+		revarmy  = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				army_attack_factor = 0.025
+				experience_gain_army_factor = 0.025
+				army_org_factor = 0.025
+			}
+		}
+		
+		metacommy1  = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				metacommy_drift = 0.05
+			}
+		}
+		
+		vernost_vozhdu  = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				metacommy_drift = 0.01
+				political_power_factor = 0.1
+				compliance_growth = 0.05
+			}
+		}
+		
+		podavleniye_nevernih  = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				metacommy_drift = 0.01
+				political_power_gain = 0.025
+				resistance_target = -0.05
+			}
+		}
+		
+		memoism_ethos_focus  = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				metacommy_drift = -0.01
+				anarhostalinism_drift = -0.01
+				vmestolev_drift = -0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+				democratic_drift = -0.01
+			}
+		}
+		
+		memoism1 = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				memoism_drift = 0.05
+			}
+		} 
+		
+		memi = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				memoism_drift = 0.01
+				consumer_goods_factor = -0.025
+				compliance_growth = 0.01
+			    production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		
+		anticommy = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				metacommy_drift = -0.01
+				anarhostalinism_drift = -0.01
+				vmestolev_drift = -0.01
+				memoism_drift_drift = -0.01
+			}
+		}
+		
+		anet = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		rinpor = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+		
+		optimizaciya = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+			    political_power_factor = -0.025
+				consumer_goods_factor = -0.025
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		
+		privatizaciya = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+			    political_power_factor = -0.025
+				consumer_goods_factor = -0.025
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		
+		ruka_rinka = {
+						
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarhostalinism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				consumer_goods_factor = -0.025
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+			}
+		}
+		
 		neutrality_idea = {
 			
 			
