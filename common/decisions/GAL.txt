@@ -414,7 +414,6 @@ GAL_sssr = {
 		
 		remove_effect = {
 			hidden_effect = {
-				set_cosmetic_tag = GAL_SibRevSovDep
 				MRD = {
 				remove_state_core = 516
 				remove_state_core = 878
@@ -466,9 +465,11 @@ GAL_sssr = {
 			limit = { original_tag = GAL has_government = neutrality }
 				news_event = dk_news.51
 				complete_national_focus = GAL_nado_radovatsya
+				set_cosmetic_tag = GAL_Push
 			}
 			else = {
 				news_event = dk_news.52
+				set_cosmetic_tag = GAL_SibRevSovDep
 			}
 		}	
 	}
