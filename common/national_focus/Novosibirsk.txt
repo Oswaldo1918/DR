@@ -2097,7 +2097,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = { 
 		id = GAL_issledovanie_noosfery
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -2116,6 +2116,7 @@ focus_tree = {
 				category = electronics
 			}
 			custom_effect_tooltip = GAL_wire_decisions_tt
+            set_cosmetic_tag = GAL_Lain
 		}
 	}
 	focus = {
@@ -2230,6 +2231,7 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			unlock_decision_category_tooltip = GAL_rock_zhiv
+			set_cosmetic_tag = GAL_Galileya
 		}
 	}
 	focus = {
@@ -2279,6 +2281,7 @@ focus_tree = {
 			hidden_effect = {
 				activate_mission = GAL_drobysh_agenda
 				add_ideas = GAL_drobysh_idea
+				set_cosmetic_tag = GAL_Ier
 			}
 		}
 
