@@ -162,10 +162,19 @@ country_event = {
 	
 	option = {
 	name = GAL.8.a
-		add_popularity = {
+if = {
+			limit = { has_government = neutrality }
+			add_popularity = {
             ideology = neutrality
             popularity = 0.15
-        }	
+        }
+		else = {
+add_popularity = {
+            ideology = metacommy
+            popularity = 0.15
+        }		
+		}
+		}	
 		add_stability = 0.1
 	}
 }
