@@ -1100,6 +1100,23 @@ country_event = {
 	name = GAL.41.a
 	}
 }
+
+country_event = {
+	id = GAL.42
+	title = GAL.42.t
+	desc = GAL.42.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.42.a
+	set_cosmetic_tag = GAL_Ier
+	}
+}
  ###ПРОЕКТЫ УЧЕНЫХ###
  
 # СЫЕНДУК - Начал работу над фокусом

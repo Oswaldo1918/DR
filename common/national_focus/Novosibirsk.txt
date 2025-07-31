@@ -2290,10 +2290,12 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			unlock_decision_category_tooltip = GAL_genetika_nauka_decisions_category
+			country_event = {
+							id = GAL.42
+						}
 			hidden_effect = {
 				activate_mission = GAL_drobysh_agenda
 				add_ideas = GAL_drobysh_idea
-				set_cosmetic_tag = GAL_Ier
 			}
 		}
 
