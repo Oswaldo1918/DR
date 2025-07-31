@@ -248,7 +248,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 50
+		days = 30
 	}
 	
 	fire_only_once = yes
@@ -1082,6 +1082,22 @@ country_event = {
 	option = {
 	name = GAL.40.a
 		add_ideas = GAL_odealo
+	}
+}
+
+country_event = {
+	id = GAL.41
+	title = GAL.41.t
+	desc = GAL.41.d
+	picture = GFX_report_event_dkr_solzh_golova
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.41.a
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###
