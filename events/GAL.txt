@@ -854,7 +854,7 @@ country_event = {
 	id = GAL.35
 	title = GAL.35.t
 	desc = GAL.35.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_push_iskra
 	trigger = {
 		tag = GAL
 	}
@@ -1052,7 +1052,7 @@ country_event = {
 	id = GAL.39
 	title = GAL.39.t
 	desc = GAL.39.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
 	trigger = {
 		tag = GAL
 	}
@@ -1072,7 +1072,7 @@ country_event = {
 	id = GAL.40
 	title = GAL.40.t
 	desc = GAL.40.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
 	trigger = {
 		tag = GAL
 	}
@@ -1089,7 +1089,7 @@ country_event = {
 	id = GAL.41
 	title = GAL.41.t
 	desc = GAL.41.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
 	trigger = {
 		tag = GAL
 	}
@@ -1105,7 +1105,7 @@ country_event = {
 	id = GAL.42
 	title = GAL.42.t
 	desc = GAL.42.d
-	picture = GFX_report_event_dkr_solzh_golova
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
 	trigger = {
 		tag = GAL
 	}
@@ -1115,6 +1115,57 @@ country_event = {
 	option = {
 	name = GAL.42.a
 	set_cosmetic_tag = GAL_Ier
+	}
+}
+
+country_event = {
+	id = GAL.43
+	title = GAL.43.t
+	desc = GAL.43.d
+	picture = GFX_report_event_dkr_pushnoy_opit_govno
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.43.a
+	set_cosmetic_tag = GAL_Galileya
+	}
+}
+
+country_event = {
+	id = GAL.44
+	title = GAL.44.t
+	desc = GAL.44.d
+	picture = GFX_report_event_dkr_gudyat
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.44.a
+	set_cosmetic_tag = GAL_Lain
+	}
+}
+
+country_event = {
+	id = GAL.45
+	title = GAL.45.t
+	desc = GAL.45.d
+	picture = GFX_report_event_dkr_push_dumaet
+	trigger = {
+		tag = GAL
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = GAL.45.a
+	add_political_power = 100
 	}
 }
  ###ПРОЕКТЫ УЧЕНЫХ###

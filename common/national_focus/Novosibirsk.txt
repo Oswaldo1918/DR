@@ -1976,7 +1976,7 @@ focus_tree = {
 				remove_idea = GAL_tecnocratia
 				add_idea = GAL_tecnocratia_2
 			}
-			
+			country_event = { id = GAL.45 } 
 		}	
 	}
 	focus = {
@@ -2128,7 +2128,7 @@ focus_tree = {
 				category = electronics
 			}
 			custom_effect_tooltip = GAL_wire_decisions_tt
-            set_cosmetic_tag = GAL_Lain
+            country_event = { id = GAL.44 } 
 		}
 	}
 	focus = {
@@ -2243,7 +2243,7 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			unlock_decision_category_tooltip = GAL_rock_zhiv
-			set_cosmetic_tag = GAL_Galileya
+				country_event = { id = GAL.43 } 
 		}
 	}
 	focus = {
