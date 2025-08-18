@@ -1455,7 +1455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_tehnat_pravitelstvo
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_tehnat_pravitelstvo 
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_mobilizaciya_nauchnih_sotrudnikov
@@ -1645,7 +1645,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_rashirit_NII
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_research
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
@@ -1732,7 +1732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_big_gun
-		icon = GFX_goal_unknown
+		icon = GFX_goal_big_gun
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_rashirit_NII
@@ -1841,7 +1841,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_nayka_pobezhdat
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_nayka_pobezhdat
 		cost = 4.00
 		prerequisite = {
 			focus = GAL_krisis_manager
@@ -1871,7 +1871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_tsel_vyzhit
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_tsel_vyzhit
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_nayka_pobezhdat
