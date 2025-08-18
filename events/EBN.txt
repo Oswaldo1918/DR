@@ -1,0 +1,576 @@
+add_namespace = EBN
+
+	
+country_event = {
+	id = EBN.0 #Пищевые_добавки
+	title = EBN.0.t
+	desc = EBN.0.d
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.0.a #химдобавки
+	    add_to_variable = {
+			EBN_Survival_consumer_goods_factor = 0.01
+		}
+        add_to_variable = {
+			EBN_Survival_stability_factor  = -0.025
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_monthly_population  = -0.05
+		}
+		add_to_variable = {
+			EBN_Survival_weekly_manpower  = -3
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_1_tt
+		custom_effect_tooltip = EBN_stability_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_1_tt
+		custom_effect_tooltip = EBN_monthly_population_2_tt
+		custom_effect_tooltip = EBN_weekly_manpower_2_tt
+	}
+	option = {
+	name = EBN.0.b #кормовые_добавки
+        add_to_variable = {
+			EBN_Survival_consumer_goods_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_stability_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Survival_monthly_population  = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_weekly_manpower  = 7
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_2_tt
+		custom_effect_tooltip = EBN_stability_factor_1_tt
+		custom_effect_tooltip = EBN_weekly_manpower_1_tt
+		custom_effect_tooltip = EBN_monthly_population_1_tt
+	}
+	option = {
+	name = EBN.0.с #как_в_старые_добрые
+        add_to_variable = {
+			EBN_Survival_consumer_goods_factor = -0.015
+		}
+		add_to_variable = {
+			EBN_Survival_stability_factor  = -0.05
+		}
+		add_to_variable = {
+			EBN_Survival_monthly_population  = 0.05
+		}
+		add_to_variable = {
+			EBN_Survival_weekly_manpower  = 3
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_1_tt
+		custom_effect_tooltip = EBN_stability_factor_2_tt
+		custom_effect_tooltip = EBN_weekly_manpower_2_tt
+		custom_effect_tooltip = EBN_monthly_population_1_tt
+	}
+}
+	
+country_event = {
+	id = EBN.1 #Тепло
+	title = EBN.1.t
+	desc = EBN.1.d
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	trigger = {
+		tag = EBN
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.1.a #Тепловой_разгон
+        add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_max_efficiency_factor = 0.015
+		}
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_1_tt
+		custom_effect_tooltip = EBN_production_factory_max_efficiency_factor_1_tt
+	}
+	option = {
+	name = EBN.1.b #Рециркуляция тепла
+	    add_to_variable = {
+			EBN_Survival_consumer_goods_factor = -0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_start_efficiency_factor = 0.015
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_start_efficiency_factor_1_tt
+    }
+}
+
+
+country_event = {
+	id = EBN.2 #Товары
+	title = EBN.2.t
+	desc = EBN.2.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.2.a #ТМП
+	    add_to_variable = {
+			EBN_Survival_consumer_goods_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_max_efficiency_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_start_efficiency_factor = -0.05
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_1_tt
+		custom_effect_tooltip = EBN_production_factory_max_efficiency_factor_1_tt
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_1_tt
+		custom_effect_tooltip = EBN_production_factory_start_efficiency_factor_2_tt
+	}
+	option = {
+	name = EBN.2.b #Товары_длительного_пользования
+        add_to_variable = {
+			EBN_Survival_consumer_goods_factor = -0.025
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = -0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_max_efficiency_factor = -0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_start_efficiency_factor = 0.05
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_max_efficiency_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_start_efficiency_factor_1_tt
+	}
+}
+
+country_event = {
+	id = EBN.3 #подготовка_разведчиков
+	title = EBN.3.t
+	desc = EBN.3.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.3.a #следопыты
+	    add_to_variable = {
+			EBN_Survival_recon_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_recon_factor_while_entrenched = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_acclimatization_cold_climate_gain_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Survival_conscription = 0.015
+		}
+		add_to_variable = {
+			EBN_Survival_training_time_factor = -0.05
+		}
+		custom_effect_tooltip = EBN_recon_factor_1_tt
+		custom_effect_tooltip = EBN_recon_factor_while_entrenched_1_tt
+		custom_effect_tooltip = EBN_acclimatization_cold_climate_gain_factor_1_tt
+		custom_effect_tooltip = EBN_conscription_1_tt
+		custom_effect_tooltip = EBN_training_time_factor_1_tt
+	}	
+	option = {
+	name = EBN.3.b #механизированные
+        add_to_variable = {
+			EBN_Survival_recon_factor = 0.02
+		}
+		add_to_variable = {
+			EBN_Survival_recon_factor_while_entrenched = 0.02
+		} 
+        add_to_variable = {
+			EBN_Survival_acclimatization_cold_climate_gain_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Survival_army_speed_factor = 0.05
+		}
+		custom_effect_tooltip = EBN_recon_factor_1_tt
+		custom_effect_tooltip = EBN_recon_factor_while_entrenched_1_tt
+		custom_effect_tooltip = EBN_acclimatization_cold_climate_gain_factor_1_tt
+		custom_effect_tooltip = EBN_army_speed_factor_1_tt
+	}
+}
+
+
+country_event = {
+	id = EBN.4 #рабочие_смены
+	title = EBN.4.t
+	desc = EBN.4.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.4.a #погода
+	    add_to_variable = {
+			EBN_Survival_consumer_goods_factor = -0.015
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = -0.01
+		}
+		add_to_variable = {
+			EBN_Survival_monthly_population = 0.1
+		}
+		custom_effect_tooltip = EBN_consumer_goods_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_2_tt
+		custom_effect_tooltip = EBN_monthly_population_1_tt
+	}
+	option = {
+	name = EBN.4.b #машина
+        add_to_variable = {
+			EBN_Survival_production_factory_efficiency_gain_factor = 0.015
+		}
+        add_to_variable = {
+			EBN_Survival_stability_factor = -0.025
+		}
+        custom_effect_tooltip = EBN_stability_factor_2_tt
+		custom_effect_tooltip = EBN_production_factory_efficiency_gain_factor_1_tt		
+	}
+}
+
+country_event = {
+	id = EBN.5 #Аванпосты
+	title = EBN.5.t
+	desc = EBN.5.d
+	
+	trigger = {
+	}
+	
+	is_triggered_only = yes	
+	
+	option = {
+	name = EBN.5.a #Пограничные_Плацдармы
+	    add_to_variable = {
+			EBN_Survival_experience_gain_army = 0.015
+		}
+        add_to_variable = {
+			EBN_Survival_dig_in_speed_factor = 0.025
+		}
+		add_to_variable = {
+			EBN_Survival_land_bunker_effectiveness_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Survival_production_speed_land_bunker_factor = 0.05
+		}
+		custom_effect_tooltip = EBN_experience_gain_army_1_tt
+		custom_effect_tooltip = EBN_dig_in_speed_factor_1_tt
+		custom_effect_tooltip = EBN_land_bunker_effectiveness_factor_1_tt
+		custom_effect_tooltip = EBN_production_speed_land_bunker_factor_1_tt
+	}
+	option = {
+	name = EBN.5.b #Опорные_Пункты_Добычи
+	    add_to_variable = {
+			EBN_Survival_state_resources_factor = 0.1
+		}
+        add_to_variable = {
+			EBN_Survival_local_resources_factor = 0.1
+		}
+		add_to_variable = {
+			EBN_Survival_country_resource_oil = 10
+		}
+		add_to_variable = {
+			EBN_Survival_country_resource_steel = 10
+		}
+		add_to_variable = {
+			EBN_Survival_country_resource_tungsten = 10
+		}
+		add_to_variable = {
+			EBN_Survival_production_factory_start_efficiency_factor = 0.05
+		}
+		custom_effect_tooltip = EBN_local_resources_factor_1_tt
+		custom_effect_tooltip = EBN_state_resources_factor_1_tt
+		custom_effect_tooltip = EBN_production_factory_start_efficiency_factor_1_tt
+		custom_effect_tooltip = EBN_country_resource_oil_tt
+		custom_effect_tooltip = EBN_country_resource_steel_tt
+		custom_effect_tooltip = EBN_country_resource_tungsten_tt
+	}
+}
+
+country_event = {
+	id = EBN.6 #вопрос_алкоголя
+	title = EBN.6.t
+	desc = EBN.6.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EBN.6.a #запрещён
+		add_to_variable = {
+			EBN_Gorod_political_power_gain = -0.03
+		}
+		add_to_variable = {
+			EBN_Gorod_conscription_factor = -0.03
+		}
+		add_to_variable = {
+			EBN_Gorod_stability_factor = -0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_monthly_population = 0.15
+		}
+		add_to_variable = {
+			EBN_Gorod_production_speed_buildings_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.015
+		}
+	}
+	option = {
+		name = EBN.6.b #приватизация
+		add_to_variable = {
+			EBN_Gorod_stability_factor = 0.03
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.01
+		}
+        add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.015
+		}       		
+	}
+	option = {
+		name = EBN.6.c #алкомагазины
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.005
+		}
+        add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.03
+		}
+	}
+}
+
+country_event = {
+	id = EBN.7 #Обязанность_по_техническому_обслуживанию
+	title = EBN.7.t
+	desc = EBN.7.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EBN.7.a #Непродуктивное_Техническое_обслуживание	
+		add_to_variable = {
+			EBN_Gorod_industry_free_repair_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_industry_repair_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.015
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.015
+		}
+	}
+	option = {
+		name = EBN.7.b #Все_Занимаются_Техническим_обслуживанием
+		add_to_variable = {
+			EBN_Gorod_industry_free_repair_factor = 0.1
+		}
+		add_to_variable = {
+			EBN_Gorod_industry_repair_factor = 0.1
+		}
+		add_to_variable = {
+			EBN_Gorod_production_speed_buildings_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.01
+		}
+        add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.02
+		}       		
+	}
+}
+country_event = {
+	id = EBN.8 #Профилактика_заражения
+	title = EBN.8.t
+	desc = EBN.8.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EBN.8.a #Карантин	
+		add_to_variable = {
+			EBN_Gorod_monthly_population = 0.15
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = 0.04
+		}
+		add_to_variable = {
+			EBN_Gorod_experience_loss_factor = -0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_casualty_trickleback = 0.05
+		}
+	}
+	option = {
+		name = EBN.8.b #Инфекционный_Значок
+		add_to_variable = {
+			EBN_Gorod_monthly_population = 0.075
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_experience_loss_factor = -0.025
+		}
+		add_to_variable = {
+			EBN_Gorod_casualty_trickleback = 0.025
+		}
+        add_to_variable = {
+			EBN_Gorod_stability_factor = -0.04
+		}       		
+	}
+}
+country_event = {
+	id = EBN.9 #Предметы_первой_необходимости
+	title = EBN.9.t
+	desc = EBN.9.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EBN.9.a #Платные
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_stability_factor = -0.025
+		}
+	}
+	option = {
+		name = EBN.9.b #Бесплатные
+		add_to_variable = {
+			EBN_Gorod_monthly_population = 0.025
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = 0.025
+		}
+		add_to_variable = {
+			EBN_Gorod_stability_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_political_power_gain = 0.025
+		}
+        add_to_variable = {
+			EBN_Gorod_party_popularity_stability_factor = 0.1
+		}       		
+	}
+}
+country_event = {
+	id = EBN.10 #Предметы_первой_необходимости
+	title = EBN.10.t
+	desc = EBN.10.d
+	
+	picture = GFX_report_event_dkr_kozli_shahmati
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = EBN.10.a #Платные
+		add_to_variable = {
+			EBN_Gorod_production_factory_efficiency_gain_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_max_efficiency_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_production_factory_start_efficiency_factor = 0.005
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = -0.01
+		}
+		add_to_variable = {
+			EBN_Gorod_stability_factor = -0.025
+		}
+	}
+	option = {
+		name = EBN.10.b #Бесплатные
+		add_to_variable = {
+			EBN_Gorod_monthly_population = 0.025
+		}
+		add_to_variable = {
+			EBN_Gorod_consumer_goods_factor = 0.025
+		}
+		add_to_variable = {
+			EBN_Gorod_stability_factor = 0.05
+		}
+		add_to_variable = {
+			EBN_Gorod_political_power_gain = 0.025
+		}
+        add_to_variable = {
+			EBN_Gorod_party_popularity_stability_factor = 0.1
+		}       		
+	}
+}
