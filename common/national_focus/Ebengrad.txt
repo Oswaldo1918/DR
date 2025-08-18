@@ -1,0 +1,552 @@
+focus_tree = {
+	id = Ebengrad
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EBN
+		}
+	}
+	default = no
+	focus = {
+		id = EBN_Survival
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5
+		y = 1
+        completion_reward = {
+			set_variable = {
+				EBN_Survival_consumer_goods_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_stability_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_production_factory_efficiency_gain_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_production_factory_start_efficiency_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_production_factory_max_efficiency_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_weekly_manpower = 0.0
+			}
+			set_variable = {
+				EBN_Survival_monthly_population = 0.0
+			}
+			set_variable = {
+				EBN_Survival_recon_factor_while_entrenched = 0.0
+			}
+			set_variable = {
+				EBN_Survival_recon_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_conscription = 0.0
+			}
+			set_variable = {
+				EBN_Survival_acclimatization_cold_climate_gain_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_army_speed_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_training_time_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_experience_gain_army = 0.0
+			}
+			set_variable = {
+				EBN_Survival_dig_in_speed_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_land_bunker_effectiveness_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_production_speed_land_bunker_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_state_resources_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_local_resources_factor = 0.0
+			}
+			set_variable = {
+				EBN_Survival_country_resource_oil = 0.0
+			}
+			set_variable = {
+				EBN_Survival_country_resource_steel = 0.0
+			}
+			set_variable = {
+				EBN_Survival_country_resource_tungsten = 0.0
+			}
+			add_dynamic_modifier = {
+				modifier = EBN_Survival_dynamic_modifier
+			}
+		}   
+	}
+	focus = {
+		id = EBN_Gorod
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 12
+		y = 1
+        completion_reward = {
+			set_variable = {
+				EBN_Gorod_political_power_gain = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_conscription_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_stability_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_monthly_population = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_production_speed_buildings_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_production_factory_efficiency_gain_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_production_factory_max_efficiency_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_production_factory_start_efficiency_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_consumer_goods_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_industry_free_repair_factor = 0.0
+			}
+			set_variable = {
+				EBN_Gorod_industry_repair_factor = 0.0
+			}
+			add_dynamic_modifier = {
+				modifier = EBN_Gorod_dynamic_modifier
+			}
+		}   
+	}
+	focus = {
+		id = EBN_Obzhestvo
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = EBN_Zakon
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = EBN_pishdobavki
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 4
+		y = 2
+        completion_reward = {
+			country_event = EBN.0
+		}      
+	}
+	focus = {
+		id = EBN_teplo
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 4
+		y = 3
+        completion_reward = {
+			country_event = EBN.1
+		}     
+	}
+	focus = {
+		id = EBN_tovary
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 4
+		y = 4
+        completion_reward = {
+			country_event = EBN.2
+		}       
+	}
+	focus = {
+		id = EBN_podgotovka_razvedchikov
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 6
+		y = 2
+        completion_reward = {
+			country_event = EBN.3
+		}            
+	}
+	focus = {
+		id = EBN_rabochie_smeni
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 6
+		y = 3
+        completion_reward = {
+			country_event = EBN.4
+		}    
+	}
+	focus = {
+		id = EBN_avanposti
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Survival
+		}
+		x = 6
+		y = 4
+        completion_reward = {
+			country_event = EBN.5
+		}    
+	}
+	focus = {
+		id = EBN_Alcogol
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 9
+		y = 2
+        completion_reward = {
+			country_event = EBN.6
+		}          
+	}
+	focus = {
+		id = EBN_tech_obsluzhivanie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 9
+		y = 4
+        completion_reward = {
+			country_event = EBN.7
+		}    
+	}
+	focus = {
+		id = EBN_profilactika_zabolevaniy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 10
+		y = 3
+        completion_reward = {
+			country_event = EBN.8
+		}   
+	}
+	focus = {
+		id = EBN_PPN
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 11
+		y = 2
+        completion_reward = {
+			country_event = EBN.9
+		}    
+	}
+	focus = {
+		id = EBN_kompensatsiya_raboti
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 12
+		y = 3
+        completion_reward = {
+			country_event = EBN.10
+		}    
+	}
+	focus = {
+		id = EBN_control_rab_mesta
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = EBN_obshetsvennie_raboty
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = EBN_org_truda
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = EBN_raspredelenie_zhilya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = EBN_postoronnie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Gorod
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = EBN_molodost
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = EBN_detstvo
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = EBN_prodolzhenie_roda
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = EBN_vozmezhenie_uzherba
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = EBN_otnoshiniya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = EBN_ottsovstvo
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = EBN_lechenie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = EBN_licvid_prestupnosti
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = EBN_ohran_immunitet
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = EBN_pohoroni
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Obzhestvo
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = EBN_ohranniki_siloviki
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Zakon
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = EBN_opolchenie_capitana
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_ohranniki_siloviki
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = EBN_uprav_golosovanie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Zakon
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = EBN_voen_polozhenie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_uprav_golosovanie
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = EBN_buro_propogandi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_Zakon
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = EBN_tayniya_police
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_buro_propogandi
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = EBN_polnomochiya_capitana
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_opolchenie_capitana
+		}
+		prerequisite = {
+			focus = EBN_voen_polozhenie
+		}
+		prerequisite = {
+			focus = EBN_tayniya_police
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = EBN_mirnie_soglashenie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = EBN_polnomochiya_capitana
+		}
+		x = 27
+		y = 5
+
+	}
+}
