@@ -1500,10 +1500,8 @@ leader_traits = {
 	}
 	new_cybernetik = {
 		random = no 
-		research_bonus = {
-			electronics = 0.1
-		}
 		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
 	}
 	spartanist = {
 		random = no

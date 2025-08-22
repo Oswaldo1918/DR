@@ -162,18 +162,18 @@ country_event = {
 	
 	option = {
 	name = GAL.8.a
-if = {
+		if = {
 			limit = { has_government = neutrality }
 			add_popularity = {
-            ideology = neutrality
-            popularity = 0.15
-        }
-		else = {
-add_popularity = {
-            ideology = metacommy
-            popularity = 0.15
-        }		
-		}
+				ideology = neutrality
+				popularity = 0.15
+			}
+			else = {
+				add_popularity = {
+					ideology = metacommy
+					popularity = 0.15
+				}		
+			}
 		}	
 		add_stability = 0.1
 	}
@@ -498,7 +498,7 @@ country_event = {
 	option = {
 	name = GAL.20.a
 		add_ideas = GAL_meat
-		
+		country_event = { id = GAL.21 days = 5 }
 	}
 }
 # Перепалка Сыендук
@@ -514,7 +514,7 @@ country_event = {
 	
 	option = {
 	name = GAL.21.a
-		add_political_power = -100
+		add_political_power = -70
 		custom_effect_tooltip = GAL21a_tt
 		hidden_effect = {
 			country_event = { id = GAL_proekt.01 }
@@ -737,13 +737,13 @@ country_event = {
 	
 	option = {
 	name = GAL.29.b
-		add_political_power = -50
+		add_political_power = -15
 		add_ideas = GAL_shering
 	}
 	
 	option = {
 	name = GAL.29.c 
-		add_political_power = -50
+		add_political_power = -30
 		add_stability = -0.05
 		add_ideas = GAL_shering
 		add_equipment_to_stockpile = {
@@ -1084,7 +1084,7 @@ country_event = {
 		add_ideas = GAL_odealo
 	}
 }
-
+#Борьба за власть
 country_event = {
 	id = GAL.41
 	title = GAL.41.t
@@ -1100,7 +1100,7 @@ country_event = {
 	name = GAL.41.a
 	}
 }
-
+#Русское поле экспериментов
 country_event = {
 	id = GAL.42
 	title = GAL.42.t
@@ -1117,7 +1117,7 @@ country_event = {
 	set_cosmetic_tag = GAL_Ier
 	}
 }
-
+#Галилея
 country_event = {
 	id = GAL.43
 	title = GAL.43.t
@@ -1132,9 +1132,10 @@ country_event = {
 	option = {
 	name = GAL.43.a
 	set_cosmetic_tag = GAL_Galileya
+		add_ideas = GAL_lena
 	}
 }
-
+#Лена Ивакурова
 country_event = {
 	id = GAL.44
 	title = GAL.44.t
@@ -1287,7 +1288,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Boyarshinov_2
 				use_side_message = yes
-				originator_name = GAL_Boyarshinov
+				originator_name = GAL_Boyarshinov_name
 			}
 			country_event = { id = GAL_proekt.03 }
 		}
@@ -1298,7 +1299,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Boyarshinov_3
 				use_side_message = yes
-				originator_name = GAL_Boyarshinov
+				originator_name = GAL_Boyarshinov_name
 			}
 		}
 	}
@@ -1354,7 +1355,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Toples_2
 				use_side_message = yes
-				originator_name = GAL_Toples
+				originator_name = GAL_Toples_name
 			}
 			country_event = { id = GAL_proekt.05 }
 		}
@@ -1365,7 +1366,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Toples_3
 				use_side_message = yes
-				originator_name = GAL_Toples
+				originator_name = GAL_Toples_name
 			}
 		}
 	}
@@ -1421,7 +1422,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Rogozin_2
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = YSK_Dmitriy_Rogozin 
 			}
 			country_event = { id = GAL_proekt.07 }
 		}
@@ -1432,7 +1433,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Rogozin_3
 				use_side_message = yes
-				originator_name = GAL_sndk
+				originator_name = YSK_Dmitriy_Rogozin 
 			}
 		}
 	}
@@ -1488,7 +1489,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Panchin_2
 				use_side_message = yes
-				originator_name = GAL_Panchin
+				originator_name = GAL_Panchin_name
 			}
 			country_event = { id = GAL_proekt.09 }
 		}
@@ -1499,7 +1500,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Panchin_3
 				use_side_message = yes
-				originator_name = GAL_Panchin
+				originator_name = GAL_Panchin_name
 			}
 		}
 	}
@@ -1555,7 +1556,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Deb_2
 				use_side_message = yes
-				originator_name = GAL_Deb
+				originator_name = GAL_Deb_name
 			}
 			country_event = { id = GAL_proekt.11 }
 		}
@@ -1566,7 +1567,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Deb_3
 				use_side_message = yes
-				originator_name = GAL_Deb
+				originator_name = GAL_Deb_name
 			}
 		}
 	}
@@ -1622,7 +1623,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Savvateev_2
 				use_side_message = yes
-				originator_name = GAL_Savvateev
+				originator_name = GAL_Savvateev_name
 			}
 			country_event = { id = GAL_proekt.13 }
 		}
@@ -1633,7 +1634,7 @@ country_event = {
 			complete_national_focus = {
 				focus = GAL_Savvateev_3
 				use_side_message = yes
-				originator_name = GAL_Savvateev
+				originator_name = GAL_Savvateev_name
 			}
 		}
 	}
