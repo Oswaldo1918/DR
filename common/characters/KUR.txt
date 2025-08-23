@@ -148,4 +148,23 @@ characters={
 			legacy_id = 0
 		}     		
 	}
+	KUR_vasserman = {
+		name = "Анатолий Вассерман"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_KUR_vasserman"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = KUR_vasserman
+			allowed = {
+				original_tag = KUR
+			}
+			traits = {
+				technocrat
+			}
+		}	 		
+	}
 }

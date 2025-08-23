@@ -627,16 +627,22 @@ ideas = {
 				}
 			}
 			GAL_odealo = {
+				picture = GAL_odealo
 				modifier = {
+				 research_speed_factor = 0.1
 				 stability_factor = -0.1
 				 war_support_factor = 0.1
 				 fascism_drift = 0.01
 				}
 			}
 			GAL_lena = {
+				picture = GAL_lena
 				modifier = {
 				 political_power_factor = 0.15
 				 metacommy_drift = 0.01
+				}
+				research_bonus = {
+					electronics = 0.1
 				}
 			} 
 		}

@@ -296,6 +296,31 @@ characters={
 		}
 	}
 	
+	GAL_Antonov = {
+		name = "Виктор Антонов"
+		portraits = {
+			army = {
+				small = "GFX_idea_GAL_Antonov"
+				large = "gfx/leaders/GAL/Antonov.dds"				
+			}
+			civilian = {
+				small = "GFX_idea_GAL_Antonov"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GAL_Antonov
+			allowed = {
+				original_tag = GAL
+			}
+			traits = {
+				AUS_reknowned_architecht
+			}
+			visible = { has_completed_focus = GAL_ozhivit_akadem_goroda  }
+		}		
+	}
+	
 	GAL_oso = {
 		name = "О-Сознание"
 		
