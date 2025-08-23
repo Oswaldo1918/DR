@@ -2005,9 +2005,18 @@ focus_tree = {
 				character = GAL_pusnoy
 				civilian = { large = GFX_GAL_Pushnoy_Lenin }
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = KUR_vasserman
 			hidden_effect = {
 				GAL_Panchin = {
 					unit_leader_event = { id = GAL.6 days = 15 }
+				}
+				every_possible_country = {
+					limit = { has_character = KUR_vasserman }
+					random_character = {
+						limit = { is_character = KUR_vasserman }
+						set_nationality = GAL
+					}
 				}
 			}
 		}
@@ -2395,6 +2404,8 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = GAL_akademgoroda_cat
 			add_dynamic_modifier = { modifier = GAL_research_akademgoroda }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GAL_Antonov
 		}
 
 	}
