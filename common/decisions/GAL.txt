@@ -53,6 +53,7 @@ political_actions= {
 				}
 				add_to_variable = { var = GAL_monthly_population value = 0.3 }
 			}
+			add_to_variable = { GAL_wire_number = 1 }
 		}
 	}
 	GAL_wire_state_2 = {
@@ -107,6 +108,7 @@ political_actions= {
 					modifier = GAL_wired_state
 				}
 			}
+			add_to_variable = { GAL_wire_number = 1 }
 		}
 	}
 	GAL_wire_state_3 = {
@@ -165,6 +167,7 @@ political_actions= {
 				add_to_variable = { var = GAL_monthly_population value = 0.3 }
 				add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
 			}
+			add_to_variable = { GAL_wire_number = 1 }
 		}
 	}
 	GAL_wire_state_4 = {
@@ -224,6 +227,7 @@ political_actions= {
 				add_to_variable = { var = GAL_production_speed_buildings_factor value = 0.15 }
 				add_to_variable = { var = GAL_local_building_slots value = 1 }
 			}
+			add_to_variable = { GAL_wire_number = 1 }
 		}
 	}
 	GAL_burunduk = {
@@ -462,7 +466,7 @@ GAL_sssr = {
 			}
 			remove_ideas = POK_idea_GV
 			if = {
-			limit = { original_tag = GAL has_government = neutrality }
+				limit = { original_tag = GAL has_government = neutrality }
 				news_event = dk_news.51
 				complete_national_focus = GAL_nado_radovatsya
 				set_cosmetic_tag = GAL_Push

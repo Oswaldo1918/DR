@@ -2131,6 +2131,7 @@ focus_tree = {
 				category = electronics
 			}
 			custom_effect_tooltip = GAL_wire_decisions_tt
+			set_variable = { GAL_wire_number = 0 }
             country_event = { id = GAL.44 } 
 		}
 	}
@@ -2151,7 +2152,7 @@ focus_tree = {
 						is_controlled_by = ROOT
 						has_dynamic_modifier = { modifier = GAL_wired_state }
 					}
-					add_to_variable = { GAL_monthly_population = 0.15 }
+					add_to_variable = { GAL_monthly_population = 0.3 }
 				}
 			}
 		}
@@ -2223,13 +2224,17 @@ focus_tree = {
 			focus = GAL_svyaz_i_communocation
 		}
 		available = {
-			has_completed_focus = GAL_Savvateev_3
+			custom_override_tooltip = {
+				check_variable = { GAL_wire_number > 30 }
+				tooltip = GAL_wire_number_above_30
+			}
 		}
 		cancelable = no
 		x = 52
 		y = 15
 		completion_reward = {
 			country_event = { id = GAL.9 }
+			clear_variable = GAL_wire_number
 		}
 	}
 	focus = {
