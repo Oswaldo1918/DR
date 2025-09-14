@@ -3576,7 +3576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Savvateev
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Savvateev
 		cost = 2
 		available = {
 			has_character = GAL_Savvateev
@@ -3634,7 +3634,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Savvateev_2
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Savvateev_2 
 		cost = @inner_circle_time_tier_1
 		prerequisite = {
 			focus = GAL_Savvateev
@@ -3759,7 +3759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Savvateev_3
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Savvateev_3
 		cost = @inner_circle_time_tier_2
 		prerequisite = {
 			focus = GAL_Savvateev_2
