@@ -3181,7 +3181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Rogozin
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Rogozin
 		cost = 2
 		prerequisite = {
 			focus = GAL_experimenty
@@ -3221,7 +3221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Rogozin_2
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Rogozin_2
 		cost = @inner_circle_time_tier_1
 		prerequisite = {
 			focus = GAL_Rogozin
@@ -3269,7 +3269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_Rogozin_3
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_Rogozin_3
 		cost = @inner_circle_time_tier_2
 		prerequisite = {
 			focus = GAL_Rogozin_2
