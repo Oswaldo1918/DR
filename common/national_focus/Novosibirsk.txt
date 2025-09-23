@@ -1468,7 +1468,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_krisis_manager
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_krisis_manager
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_tehnat_pravitelstvo
@@ -1481,7 +1481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_peregovor_komision
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_peregovor_komision
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_krisis_manager
@@ -1592,7 +1592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_ey_uhnem
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_ey_uhnem
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
@@ -1753,7 +1753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_stroyki_za_dolgi
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_stroyki_za_dolgi
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
@@ -1799,7 +1799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_rashirit_TransSib
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_rashirit_TransSib
 		cost = 3.00
 		prerequisite = {
 			focus = GAL_ey_uhnem
@@ -2484,7 +2484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_rational_economy
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_rational_economy
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_stroyki_za_dolgi
@@ -2606,7 +2606,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_zapolyar_ZhD
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_zapolyar_ZhD
 		cost = 4.00
 		prerequisite = {
 			focus = GAL_rashirit_TransSib
@@ -2648,7 +2648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_bogatstvo_severa
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_bogatstvo_severa
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_zapolyar_ZhD
