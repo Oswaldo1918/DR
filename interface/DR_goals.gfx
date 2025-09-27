@@ -4161,7 +4161,7 @@ spriteTypes = {
 	
 	SpriteType = { 
 		name = "GFX_GAL_ey_uhnem"
-		texturefile = "gfx/interface/goals/GAL_ey_uhnem.dds"
+		texturefile = "gfx/interface/goals/GAL_ey_uhnem.tga"
 	}
 	
 	SpriteType = { 
@@ -4192,5 +4192,25 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GAL_zadacha_osvobod_nauki" 
 		texturefile = "gfx/interface/goals/GAL_zadacha_osvobod_nauki.dds"
+	}
+	
+	SpriteType = { 
+		name = "GAL_infantry" 
+		texturefile = "gfx/interface/goals/GAL_infantry.tga"
+	}
+	
+	SpriteType = { 
+		name = "GAL_vpk" 
+		texturefile = "gfx/interface/goals/GAL_vpk.tga"
+	}
+	
+	SpriteType = { 
+		name = "GAL_grazdanskiy_sektor" 
+		texturefile = "gfx/interface/goals/GAL_grazdanskiy_sektor.dds"
+	}
+	
+	SpriteType = { 
+		name = "GAL_stroyki_za_premiyu" 
+		texturefile = "gfx/interface/goals/GAL_stroyki_za_premiyu.tga"
 	}
 }
