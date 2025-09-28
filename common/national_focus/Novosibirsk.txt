@@ -1615,7 +1615,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_ne_nado_napragat
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_ne_nado_napragat
 		cost = 3.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
@@ -1651,7 +1651,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_ot_vinta
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_ot_vinta
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_rashirit_NII
@@ -1689,7 +1689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_tankograd
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_tankograd
 		cost = 5.00
 		prerequisite = {
 			focus = GAL_rashirit_NII
@@ -1814,8 +1814,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GAL_experimenty
-		icon = GFX_goal_unknown
+		id = GAL_experimenty 
+		icon = GFX_GAL_experimenty
 		cost = 2.00
 		prerequisite = {
 			focus = GAL_nado_radovatsya
@@ -1846,7 +1846,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GAL_voen_praktika
-		icon = GFX_goal_unknown
+		icon = GFX_GAL_voen_praktika
 		cost = 4.00
 		prerequisite = {
 			focus = GAL_nayka_pobezhdat
